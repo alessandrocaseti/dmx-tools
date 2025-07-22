@@ -1,0 +1,286 @@
+/* Scrollbar tema scuro */
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 12px;
+    background: #181c22;
+}
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 8px;
+    border: 2px solid #181c22;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+::-webkit-scrollbar-corner {
+    background: #181c22;
+}
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #181c22;
+}
+/* === Variabili Colori === */
+
+
+:root
+{
+    --colore-giallo: #ffeb3b;
+    --colore-bg-scuro: #181c22;
+    --colore-bg-tabella: #23272f;
+    --colore-bg-header: #181c22;
+    --colore-testo: #e0e0e0;
+    --colore-testo-chiaro: #fff;
+    --colore-testo-nero: #181c22;
+    --colore-bordo: #444;
+    --colore-bordo-chiaro: #c2c2c2;
+    --colore-hover: #ffe600;
+}
+
+@font-face
+{
+    font-family: 'IconFont';
+    src: url(fonts/icons.ttf);
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 80px;
+}
+
+img
+{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    background: #0d0d10;
+    color: #cdcdcd;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Bottoni colore */
+.colorBtn.default {
+    background: var(--colore-bg-scuro);
+    border: 1px solid var(--colore-bordo);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s, color 0.4s;
+    margin: 0 auto 0 auto !important;
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colorBtn.default:hover
+{
+    background: var(--colore-giallo);
+    color: var(--colore-bg-scuro);
+}
+.colorButtonIcon {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: IconFont;
+}
+/* Cerchio colore */
+.colorCircle {
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.5s !important;
+    display: block;
+    margin: 0 auto 0 auto !important;
+    min-width: 22px;
+    max-width: 22px;
+    min-height: 22px;
+    max-height: 22px;
+}
+.colorBtn:focus .colorCircle,
+.colorBtn:hover .colorCircle
+{
+    outline: 2px solid var(--colore-giallo);
+    box-shadow: 0 0 0 2px #ffeb3b44;
+}
+
+/* Opzioni patch */
+#patchOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Checkbox custom stile DMX Tools migliorata */
+#showImagesCheckbox {
+  accent-color: var(--colore-giallo);
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  background: var(--colore-bg-scuro);
+  border: 2px solid var(--colore-giallo);
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+  box-shadow: 0 0 0 0 #ffeb3b00;
+}
+#showImagesCheckbox:hover, #showImagesCheckbox:focus {
+  border-color: var(--colore-hover);
+  box-shadow: 0 0 0 2px #ffeb3b44;
+  outline: none;
+}
+label[for="showImagesCheckbox"], #patchOptions label {
+  color: var(--colore-giallo);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+/* Select custom arrow */
+#fixType {
+  background: #1c1f25 url('data:image/svg+xml;utf8,<svg fill="%23ffeb3b" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center/18px 18px;
+  padding-right: 32px !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 4px;
+  border: 1px solid var(--colore-bordo);
+  color: var(--colore-testo-chiaro);
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#fixType:focus {
+  border: 1.5px solid var(--colore-giallo);
+  box-shadow: 0 0 0 2px #ffeb3b44;
+  outline: none;
+}
+
+/* Checkbox custom stile DMX Tools */
+/* Unificato: checkbox custom */
+#showImagesCheckbox {
+  accent-color: var(--colore-giallo);
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  background: var(--colore-bg-scuro);
+  border: 2px solid var(--colore-giallo);
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+  box-shadow: 0 0 0 0 #ffeb3b00;
+  outline: none;
+  user-select: none;
+}
+#showImagesCheckbox:hover, #showImagesCheckbox:focus {
+  border-color: var(--colore-hover);
+  box-shadow: 0 0 0 2px #ffeb3b44;
+  outline: none;
+  user-select: none;
+}
+label[for="showImagesCheckbox"], #patchOptions label {
+  color: var(--colore-giallo);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  user-select: none;
+}
+/* Select generico form */
+#dmxForm select {
+    background: #1c1f25;
+    color: var(--colore-testo-chiaro);
+    border: 1px solid var(--colore-bordo);
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 16px;
+    margin-right: 8px;
+    transition: border .3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+#dmxForm select:focus {
+    border: 1px solid var(--colore-giallo);
+    outline: none;
+}
+
+/* Form e input */
+#dmxForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+#dmxForm label {
+    color: var(--colore-giallo);
+    font-weight: 500;
+    margin-right: 4px;
+}
+input {
+    background: #1c1f25;
+    color: var(--colore-testo-chiaro);
+    border: 1px solid var(--colore-bordo);
+    border-radius: 4px;
+    padding: 6px 10px;
+    width: 80px;
+    height: 22px;
+    font-size: 16px;
+    margin-right: 8px;
+    transition: border .3s ease;
+}
+input:focus {
+    border: 1px solid var(--colore-giallo);
+    background: #1c1f25;
+    color: var(--colore-testo-chiaro);
+    outline: none;
+}
+button {
+    background: var(--colore-bg-scuro);
+    color: var(--colore-giallo);
+    border: 1px solid var(--colore-bordo);
+    border-radius: 4px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 36px;
+    cursor: pointer;
+    transition: all 0.4s, color 0.4s;
+}
+button:hover {
+    background: var(--colore-giallo);
+    color: var(--colore-bg-scuro);
+}
+button:disabled, button[disabled] {
+    background: #444;
+    color: #bbb;
+    border: 1px solid #333;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.patchList .empty-message {
+    color: var(--colore-testo-chiaro);
+    text-align: center;
+    display: block;
+    margin: 32px auto;
+    font-size: 1.2em;
+    font-weight: 500;
+    max-width: 100vw;
+}
+
+.empty-message
+{
+    font-style: italic;
+}
