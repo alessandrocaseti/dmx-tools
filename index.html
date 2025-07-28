@@ -8,10 +8,23 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="pdf.css">
         <link rel="stylesheet" href="patch.css">
+        <link rel="icon" href="assets/dmxtools-logo.png" type="image/x-icon">
         <script src="script.js"></script>
     </head>
 
     <body>
+        <div class="print-only">
+            <div style="display: flex; flex-direction: row; gap: 20px; justify-content:left; margin-top: -30px;">
+                <img src="assets/dmxtools-logo.png" alt="DMX Tools Logo" style="width: 70px; height: 70px;">
+                <div style="margin-top: -8px;">
+                    <h2 style="margin-top: 2px; font-size: 1.5em; color: #000000; text-align: left;">DMX Tools</h2>
+                    <h3 style="margin-top: -16px; font-size: 0.8em; text-align: left; font-weight: 500;">Free DMX utilities developed by Alessandro Caseti</h3>
+                    <h3 style="margin-top: -8px; color:blue; font-size: 0.8em; text-align: left; font-weight: 500;">https://alessandrocaseti.github.io/dmx-tools/index.html</h3>
+                </div>
+            </div>
+        </div>
+        <h3 id="docNumber" style="margin-top: 2px; font-size: 1em; text-align: left; font-weight: 700;">Documento numero ...</h3>
+
         <h1>DMX Patch</h1>
         <form id="dmxForm" onsubmit="return false;">
             <label for="fixName">Name:</label>
@@ -83,7 +96,6 @@
 
         <div id="patchList" class="patchList"></div>
         <div class="print-only">Generato gratuitamente con <a href="https://alessandrocaseti.github.io/dmx-tools/" style="color: blue; text-decoration: underline;">alessandrocaseti.github.io/dmx-tools</a></div>
-
         <div style="margin-bottom: 30vh;"></div>
     </body>
 

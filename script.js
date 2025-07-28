@@ -1,3 +1,36 @@
+// --- CountAPI: documento globale ---
+function aggiornaNumeroDocumento() {
+  fetch('https://api.counterapi.dev/v2/dmx-tools/patch/')
+    .then(r => r.json())
+    .then(data => {
+        let numero = (typeof data.value === 'number' && !isNaN(data.value)) ? data.value : undefined;
+        const el = document.getElementById('docNumber');
+        if (el) el.textContent = `Documento numero ${numero}`;
+    });
+}
+
+function incrementaNumeroDocumento() 
+{
+  fetch('https://api.counterapi.dev/v2/dmx-tools/patch/up')
+    .then(r => r.json())
+    .then(data => {
+      const el = document.getElementById('docNumber');
+      if (el) el.textContent = `Documento numero ${data.value}`;
+    });
+}
+
+// Aggiorna il numero documento all'avvio
+document.addEventListener('DOMContentLoaded', aggiornaNumeroDocumento);
+
+// Incrementa il numero documento quando si esporta/stampa
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.getElementById('exportPdfBtn');
+  if (btn) {
+    btn.addEventListener('click', function() {
+      incrementaNumeroDocumento();
+    });
+  }
+});
 // DMX PATCH
 // Lista delle fixture da patchare, ogni fixture ha anche un colore
 let listaFixture = [];
