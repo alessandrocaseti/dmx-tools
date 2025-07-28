@@ -1,11 +1,22 @@
 // --- CountAPI: documento globale ---
-function aggiornaNumeroDocumento() {
-  fetch('https://api.counterapi.dev/v2/dmx-tools/patch/')
+function aggiornaNumeroDocumento() 
+{
+    const el = document.getElementById('docNumber');
+
+    fetch('https://api.counterapi.dev/v2/dmx-tools/patch/')
     .then(r => r.json())
     .then(data => {
-        let numero = (typeof data.value === 'number' && !isNaN(data.value)) ? data.value : undefined;
-        const el = document.getElementById('docNumber');
-        if (el) el.textContent = `Documento numero ${numero}`;
+        let numero = (typeof data.value === 'number' && !isNaN(data.value)) ? data.value : null;
+        if (el) {
+            if (numero !== null && numero > 0) {
+                el.textContent = `Documento numero ${numero}`;
+            } else {
+                el.textContent = 'Numero documento non disponibile';
+            }
+        }
+    })
+    .catch(() => {
+        if (el) el.textContent = 'Errore nel recupero del numero documento';
     });
 }
 
@@ -15,7 +26,7 @@ function incrementaNumeroDocumento()
     .then(r => r.json())
     .then(data => {
       const el = document.getElementById('docNumber');
-      if (el) el.textContent = `Documento numero ${data.value}`;
+      if (el) el.innerHTML = `Documento numero ${data.value}`;
     });
 }
 
