@@ -1,37 +1,57 @@
-// --- CountAPI: documento globale ---
-function aggiornaNumeroDocumento() 
-{
+const SHEETDB_API = 'https://sheetdb.io/api/v1/sk9zycjj00bvz';
+
+// Leggi il numero documento
+function aggiornaNumeroDocumento() {
     const el = document.getElementById('docNumber');
-
-    fetch('https://api.counterapi.dev/v2/dmx-tools/patch/')
-    .then(r => r.json())
-    .then(data => {
-        let numero = (typeof data.value === 'number' && !isNaN(data.value)) ? data.value : null;
-        if (el) {
-            if (numero !== null && numero > 0) {
-                el.textContent = `Documento numero ${numero}`;
-            } else {
-                el.textContent = 'Numero documento non disponibile';
+    fetch(SHEETDB_API)
+        .then(r => r.json())
+        .then(data => {
+            // Foglio con intestazione 'numero' in colonna A
+            let num = parseInt(data[0]?.numero, 10);
+            let formattedID = num.toString().padStart(4, '0'); // Formatta il numero a 3 cifre
+            if (el) {
+                if (!isNaN(num) && num >= 0) {
+                    el.textContent = `Documento numero ${formattedID}`;
+                } else {
+                    el.textContent = 'Numero documento non disponibile';
+                }
             }
-        }
-    })
-    .catch(() => {
-        if (el) el.textContent = 'Errore nel recupero del numero documento';
-    });
+        })
+        .catch(() => {
+            if (el) el.textContent = 'Errore nel recupero del numero documento';
+        });
 }
 
-function incrementaNumeroDocumento() 
-{
-  fetch('https://api.counterapi.dev/v2/dmx-tools/patch/up')
-    .then(r => r.json())
-    .then(data => {
-      const el = document.getElementById('docNumber');
-      if (el) el.innerHTML = `Documento numero ${data.value}`;
-    });
-}
+// Incrementa il numero documento
+function incrementaNumeroDocumento() {
+    const el = document.getElementById('docNumber');
+    fetch(SHEETDB_API)
+        .then(r => r.json())
+        .then(data => {
+            let num = parseInt(data[0]?.numero, 10);
+            let formattedID = (num+1).toString().padStart(4, '0'); // Formatta il numero a 3 cifre
+            el.textContent = `Documento numero ${formattedID}`;
 
-// Aggiorna il numero documento all'avvio
-document.addEventListener('DOMContentLoaded', aggiornaNumeroDocumento);
+            if (!isNaN(num)) {
+                // Aggiorna il valore nella riga con id 1
+                fetch('https://sheetdb.io/api/v1/sk9zycjj00bvz/numero/' + num, {
+                method: 'PATCH',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    data: {
+                        "numero": num + 1 // Incrementa il numero
+                    }
+                })
+
+                })
+                .then(() => aggiornaNumeroDocumento())
+                .catch(() => { alert("Errore nell'aggiornamento del numero documento"); });
+            }
+        });
+}
 
 // Incrementa il numero documento quando si esporta/stampa
 document.addEventListener('DOMContentLoaded', function() {
@@ -39,8 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
   if (btn) {
     btn.addEventListener('click', function() {
       incrementaNumeroDocumento();
+      window.print();
     });
   }
+    aggiornaNumeroDocumento();
 });
 // DMX PATCH
 // Lista delle fixture da patchare, ogni fixture ha anche un colore
