@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function()
                 chanText = "channels";
             }
             document.getElementById('dmxFootprint').textContent = universi.size + " " + unitext + " : " + totCanali + " " + chanText;
-            // await incrementaNumeroDocumento();
+            await incrementaNumeroDocumento();
             mostraPatchDMX();
             window.print();
         });
