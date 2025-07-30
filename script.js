@@ -31,11 +31,40 @@ document.addEventListener('DOMContentLoaded', function()
 {
     var btn = document.getElementById('exportPdfBtn');
     if (btn) {
-    btn.addEventListener('click', async function() {
-        await incrementaNumeroDocumento();
-        window.print();
-    });}
-});
+        btn.addEventListener('click', async function() {
+            // Popola i dati evento/luogo/autore patch e totali nella sezione print-only
+            document.getElementById('eventoPrint').textContent = document.getElementById('evento').value || 'Not specified';
+            document.getElementById('luogoPrint').textContent = document.getElementById('luogo').value || 'Not specified';
+            document.getElementById('autorePatchPrint').textContent = document.getElementById('autorePatch').value || 'Not specified';
+            // Calcola totale canali, universi e fixture
+            let totCanali = 0;
+            let universi = new Set();
+            let totFixture = 0;
+            if (typeof calcolaPatchDMXMulti === 'function') {
+                const lista = calcolaPatchDMXMulti(listaFixture);
+                lista.forEach(item => {
+                    universi.add(item.universo);
+                });
+                // Somma tutti i canali delle fixture
+                totCanali = listaFixture.reduce((acc, f) => acc + (f.numero * f.canali), 0);
+                // Somma tutte le fixture (quantità)
+                totFixture = listaFixture.reduce((acc, f) => acc + f.numero, 0);
+            }
+            document.getElementById('totFixturePrint').textContent = totFixture;
+            let unitext = "universe";
+            let chanText = "channel";
+            if(universi.size > 1) {
+                unitext = "universes";
+            }
+            if(totCanali > 1) {
+                chanText = "channels";
+            }
+            document.getElementById('dmxFootprint').textContent = universi.size + " " + unitext + " : " + totCanali + " " + chanText;
+            // await incrementaNumeroDocumento();
+            mostraPatchDMX();
+            window.print();
+        });
+}});
 
 // Lista delle fixture da patchare, ogni fixture ha anche un colore
 let listaFixture = [];
@@ -72,18 +101,21 @@ const PALETTE = [
   '#FF1744', // rosso vivo (ripetuto per sicurezza)
   '#00C853'  // verde smeraldo (ripetuto per sicurezza)
 ];
-function randomColor(excludeColor) {
-  // Restituisce un colore non già usato tra le fixture, e diverso da excludeColor se possibile
-  const usati = new Set(listaFixture.map(f => f.colore));
-  if (excludeColor) usati.add(excludeColor); // esclude anche il colore attuale
-  const disponibili = PALETTE.filter(c => !usati.has(c));
-  if (disponibili.length === 0) {
-    // Se tutti i colori sono usati, scegli uno diverso da excludeColor
-    const altri = PALETTE.filter(c => c !== excludeColor);
-    if (altri.length > 0) return altri[Math.floor(Math.random() * altri.length)];
-    return PALETTE[Math.floor(Math.random() * PALETTE.length)];
-  }
-  return disponibili[Math.floor(Math.random() * disponibili.length)];
+
+function randomColor(excludeColor) 
+{
+    // Restituisce un colore non già usato tra le fixture, e diverso da excludeColor se possibile
+    const usati = new Set(listaFixture.map(f => f.colore));
+    if (excludeColor) usati.add(excludeColor); // esclude anche il colore attuale
+    const disponibili = PALETTE.filter(c => !usati.has(c));
+    if (disponibili.length === 0) 
+    {
+        // Se tutti i colori sono usati, scegli uno diverso da excludeColor
+        const altri = PALETTE.filter(c => c !== excludeColor);
+        if (altri.length > 0) return altri[Math.floor(Math.random() * altri.length)];
+        return PALETTE[Math.floor(Math.random() * PALETTE.length)];
+    }
+    return disponibili[Math.floor(Math.random() * disponibili.length)];
 }
 
 function aggiungiFixture() 
@@ -131,7 +163,7 @@ function aggiornaTabellaFixture()
 
     let html = '<table class="patchTable firstTable">';
     html += '<thead>';
-    html += '<tr><th>Fixture</th><th>Tipo</th><th>Numero</th><th>Canali</th><th colspan="2">Colore</th><th class="rimuoviCol">Rimuovi</th></tr>';
+    html += '<tr><th>Fixture</th><th>Tipo</th><th>Number</th><th>Channels</th><th colspan="2">Color</th><th class="rimuoviCol">Remove</th></tr>';
     html += '</thead><tbody>';
     listaFixture.forEach((fixture, idx) => {
         html += `<tr>
@@ -143,7 +175,7 @@ function aggiornaTabellaFixture()
                 <span class="colorCircle" id="colorCircle${idx}" style="background-color:${fixture.colore} !important;"></span>
             </td>
             <td style="text-align:center;vertical-align:middle;padding:4;width:50px;">
-                <button class="colorBtn default" type="button" title="Cambia colore" onclick="cambiaColoreFixture(${idx})"><span class="colorButtonIcon"></span></button>
+                <button class="colorBtn default" type="button" onclick="cambiaColoreFixture(${idx})"><span class="colorButtonIcon"></span></button>
             </td>
             <td class="rimuoviCol"><button style="height:32px;font-family:IconFont;" onclick=\"rimuoviFixture(${idx})\"></button></td>
         </tr>`;
@@ -151,19 +183,21 @@ function aggiornaTabellaFixture()
     html += '</tbody></table>';
     div.innerHTML = html;
 
-// Cambia colore random alla fixture, evitando di riassegnare lo stesso colore
-window.cambiaColoreFixture = function(idx) {
-    const coloreAttuale = listaFixture[idx].colore;
-    let nuovoColore = randomColor(coloreAttuale);
-    // Se per qualche motivo il colore non cambia, riprova fino a 5 volte
-    let tentativi = 0;
-    while (nuovoColore === coloreAttuale && tentativi < 5) {
-        nuovoColore = randomColor(coloreAttuale);
-        tentativi++;
+    // Cambia colore random alla fixture, evitando di riassegnare lo stesso colore
+    window.cambiaColoreFixture = function(idx) 
+    {
+        const coloreAttuale = listaFixture[idx].colore;
+        let nuovoColore = randomColor(coloreAttuale);
+        // Se per qualche motivo il colore non cambia, riprova fino a 5 volte
+        let tentativi = 0;
+        while (nuovoColore === coloreAttuale && tentativi < 5) 
+        {
+            nuovoColore = randomColor(coloreAttuale);
+            tentativi++;
+        }
+        listaFixture[idx].colore = nuovoColore;
+        aggiornaTabellaFixture();
     }
-    listaFixture[idx].colore = nuovoColore;
-    aggiornaTabellaFixture();
-}
     if (calcolaBtn) calcolaBtn.disabled = false;
 }
 
@@ -191,9 +225,13 @@ function calcolaPatchDMXMulti(listaFixture)
             }
 
             let canaleFormattato = canaleCorrente.toString().padStart(3, '0');
+            let nomeFixture = fixture.nome;
+            if (fixture.numero > 1) {
+                nomeFixture += ` ${i}`;
+            }
             risultato.push({
                 tipo: fixture.tipo,
-                nome: `${fixture.nome} ${i}`,
+                nome: nomeFixture,
                 universo: universo,
                 canale: canaleFormattato,
                 colore: fixture.colore
@@ -223,7 +261,7 @@ function mostraPatchDMX()
     let showImages = true;
     const showImagesCheckbox = document.getElementById('showImagesCheckbox');
     if (showImagesCheckbox) showImages = showImagesCheckbox.checked;
-    let html = '<table class="patchTable" id="patchTable"><thead><tr><th class="tipoCol">Tipo</th><th class="coloreCol">Colore</th><th>Fixture</th><th>Universo</th><th>Canale</th></tr></thead><tbody>';
+    let html = '<table class="patchTable" id="patchTable"><thead><tr><th class="tipoCol">Type</th><th class="coloreCol">Color</th><th>Fixture</th><th>Universe</th><th>Channel</th></tr></thead><tbody>';
     lista.forEach(item => {
         const tipiConImg = [
             'beam','wash','spot','blinder','scanner','dimmer','strobo','par',
@@ -235,7 +273,7 @@ function mostraPatchDMX()
         if (showImages && tipiConImg.includes(item.tipo.toLowerCase())) {
             imgHtml = `<img src='images/${item.tipo.toLowerCase()}.png' alt='${item.tipo}' title='${item.tipo}' style='height:32px;max-width:40px;vertical-align:middle;margin-right:0px;'>`;
         }
-        let tipoColContent = `<span class='typeLayout'>${imgHtml}<span style='flex:1;margin-left:16px;justify-content:flex-start;text-align:left;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>${item.tipo}</span></span>`;
+        let tipoColContent = `<span class='typeLayout'>${imgHtml}<span class='typeText' style='flex:1;justify-content:flex-start;text-align:left;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>${item.tipo}</span></span>`;
         let colorCircle = `<span class='colorCircle' style='display:inline-block;width:22px;height:22px;border-radius:50%;background:${item.colore} !important;background-color:${item.colore} !important;vertical-align:middle;margin:0 auto;'></span>`;
         html += `<tr><td class="tipoCol">${tipoColContent}</td><td class="coloreCol">${colorCircle}</td><td class="nomeLuceCol">${item.nome}</td><td class="universoCol">${item.universo}</td><td class="canaleCol">${item.canale}</td></tr>`;
     });
