@@ -41,12 +41,14 @@ const SHEETDB_API = 'https://sheetdb.io/api/v1/sk9zycjj00bvz';
 
 async function getSetDocNumber() 
 {
+    document.getElementById('loadingOverlay').classList.add('active'); // Show overlay
+
     const text = document.getElementById('docNumber');
     // Leggi il numero attuale
     const r = await fetch(SHEETDB_API);
     const data = await r.json();
     let num = parseInt(data[0]?.numero, 10);
-    
+
     if (!isNaN(num)) 
     {
         await fetch('https://sheetdb.io/api/v1/sk9zycjj00bvz/numero/' + num, 
@@ -63,6 +65,8 @@ async function getSetDocNumber()
         let formattedID = (num+1).toString().padStart(4, '0');
         text.innerHTML = `#${formattedID}`;
     }
+
+    document.getElementById('loadingOverlay').classList.remove('active'); // Hide overlay
 }
 
 document.addEventListener('DOMContentLoaded', function() 
