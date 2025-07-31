@@ -1,6 +1,44 @@
+/// DMX TOOLS - DEVELOPED BY ALESSANDRO CASETI ///
+
+// Fixture list
+let listaFixture = [];
+
+const PALETTE = 
+[
+    '#FF1744', // rosso vivo
+    '#FF9100', // arancione vivo
+    '#FFD600', // giallo vivo
+    '#00E676', // verde acceso
+    '#00B8D4', // azzurro vivo
+    '#2979FF', // blu acceso
+    '#651FFF', // viola intenso
+    '#D500F9', // magenta
+    '#FF4081', // rosa acceso
+    '#AEEA00', // lime
+    '#FFEB3B', // giallo
+    '#00BFAE', // turchese
+    '#304FFE', // blu profondo
+    '#C51162', // fucsia scuro
+    '#FF3D00', // arancio scuro
+    '#64DD17', // verde lime
+    '#00C853', // verde smeraldo
+    '#AA00FF', // viola puro
+    '#FFAB00', // giallo/arancio
+    '#0091EA', // blu cielo
+    '#FF6D00', // arancio intenso
+    '#00BFAE', // turchese
+    '#D50000', // rosso puro
+    '#1DE9B6', // verde acqua
+    '#C6FF00', // giallo lime
+    '#6200EA', // indaco 
+    '#00E5FF', // ciano
+    '#FFD600', // giallo vivo (ripetuto per sicurezza)
+    '#FF1744', // rosso vivo (ripetuto per sicurezza)
+    '#00C853'  // verde smeraldo (ripetuto per sicurezza)
+];
+
 const SHEETDB_API = 'https://sheetdb.io/api/v1/sk9zycjj00bvz';
 
-// Incrementa il numero documento
 async function incrementaNumeroDocumento() 
 {
     const text = document.getElementById('docNumber');
@@ -10,7 +48,6 @@ async function incrementaNumeroDocumento()
     let num = parseInt(data[0]?.numero, 10);
     if (!isNaN(num)) 
     {
-        // Aggiorna il valore nella riga con id 1
         await fetch('https://sheetdb.io/api/v1/sk9zycjj00bvz/numero/' + num, 
         {
             method: 'PATCH',
@@ -29,78 +66,45 @@ async function incrementaNumeroDocumento()
 
 document.addEventListener('DOMContentLoaded', function() 
 {
-    var btn = document.getElementById('exportPdfBtn');
-    if (btn) {
-        btn.addEventListener('click', async function() {
-            // Popola i dati evento/luogo/autore patch e totali nella sezione print-only
+    const btn = document.getElementById('exportPdfBtn');
+    if (btn) 
+    {
+        btn.addEventListener('click', async function() 
+        {
+            // Dati evento/luogo/autore patch e totali nella sezione print-only
             document.getElementById('eventoPrint').textContent = document.getElementById('evento').value || 'Not specified';
             document.getElementById('luogoPrint').textContent = document.getElementById('luogo').value || 'Not specified';
             document.getElementById('autorePatchPrint').textContent = document.getElementById('autorePatch').value || 'Not specified';
+
             // Calcola totale canali, universi e fixture
             let totCanali = 0;
             let universi = new Set();
             let totFixture = 0;
-            if (typeof calcolaPatchDMXMulti === 'function') {
+
+            if (typeof calcolaPatchDMXMulti === 'function') 
+            {
                 const lista = calcolaPatchDMXMulti(listaFixture);
-                lista.forEach(item => {
-                    universi.add(item.universo);
-                });
+                lista.forEach(item => { universi.add(item.universo); });
                 // Somma tutti i canali delle fixture
                 totCanali = listaFixture.reduce((acc, f) => acc + (f.numero * f.canali), 0);
                 // Somma tutte le fixture (quantità)
                 totFixture = listaFixture.reduce((acc, f) => acc + f.numero, 0);
             }
-            document.getElementById('totFixturePrint').textContent = totFixture;
+
             let unitext = "universe";
             let chanText = "channel";
-            if(universi.size > 1) {
-                unitext = "universes";
-            }
-            if(totCanali > 1) {
-                chanText = "channels";
-            }
+            if(universi.size > 1) { unitext = "universes"; }
+            if(totCanali > 1) { chanText = "channels"; }
+
             document.getElementById('dmxFootprint').textContent = universi.size + " " + unitext + " : " + totCanali + " " + chanText;
+            document.getElementById('totFixturePrint').textContent = totFixture;
+
             await incrementaNumeroDocumento();
             mostraPatchDMX();
             window.print();
         });
-}});
-
-// Lista delle fixture da patchare, ogni fixture ha anche un colore
-let listaFixture = [];
-
-const PALETTE = [
-  '#FF1744', // rosso vivo
-  '#FF9100', // arancione vivo
-  '#FFD600', // giallo vivo
-  '#00E676', // verde acceso
-  '#00B8D4', // azzurro vivo
-  '#2979FF', // blu acceso
-  '#651FFF', // viola intenso
-  '#D500F9', // magenta
-  '#FF4081', // rosa acceso
-  '#AEEA00', // lime
-  '#FFEB3B', // giallo
-  '#00BFAE', // turchese
-  '#304FFE', // blu profondo
-  '#C51162', // fucsia scuro
-  '#FF3D00', // arancio scuro
-  '#64DD17', // verde lime
-  '#00C853', // verde smeraldo
-  '#AA00FF', // viola puro
-  '#FFAB00', // giallo/arancio
-  '#0091EA', // blu cielo
-  '#FF6D00', // arancio intenso
-  '#00BFAE', // turchese
-  '#D50000', // rosso puro
-  '#1DE9B6', // verde acqua
-  '#C6FF00', // giallo lime
-  '#6200EA', // indaco 
-  '#00E5FF', // ciano
-  '#FFD600', // giallo vivo (ripetuto per sicurezza)
-  '#FF1744', // rosso vivo (ripetuto per sicurezza)
-  '#00C853'  // verde smeraldo (ripetuto per sicurezza)
-];
+    }
+});
 
 function randomColor(excludeColor) 
 {
@@ -244,8 +248,6 @@ function calcolaPatchDMXMulti(listaFixture)
     return risultato;
 }
 
-// Funzione per collegare il form HTML e mostrare la patch DMX
-
 function mostraPatchDMX() 
 {
     const patchList = document.getElementById('patchList');
@@ -293,4 +295,3 @@ function mostraPatchDMX()
 
 // Inizializza la tabella fixture all'avvio
 window.onload = aggiornaTabellaFixture;
-

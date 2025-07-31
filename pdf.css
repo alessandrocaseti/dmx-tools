@@ -1,40 +1,35 @@
-
-.print-only 
-{
-    display: none;
-}
-
 @media print
 {
-    .web-only 
+    @page
     {
-        display: none;
+        font-family: 'Inter', sans-serif;
+        margin-top: 20mm;
+        margin-bottom: 20mm;
+    }
+    
+    @page:first
+    {
+        margin-top: 20mm;
+        margin-bottom: 20mm;
     }
 
-    /* Evita che la tabella patch vada a capo dopo il titolo in stampa/PDF */
-    #patchList, .patchTable, h1
+    body, html
     {
-        page-break-inside: auto !important;
-        page-break-before: auto !important;
-        table-layout: fixed !important;
+        background: #fff !important;
+        color: #000 !important;
     }
-    /* Nascondi la tabella fixture (quella dentro #fixtureList) completamente in stampa */
-    #fixtureList
+
+    body::after, html::after
+    {
+        display: none !important;
+        content: none !important;
+    }
+
+    .web-only 
     {
         display: none !important;
     }
-    /* Nascondi la colonna Rimuovi nella tabella fixture solo se l'intestazione è Rimuovi */
-    .patchTable th,
-    .patchTable td
-    {
-        display: table-cell !important;
-    }
-    .patchTable th.rimuoviCol,
-    .patchTable td.rimuoviCol
-    {
-        display: none !important;
-    }
-    /* Testo visibile solo in stampa */
+
     .print-only
     {
         display: block !important;
@@ -44,28 +39,34 @@
         margin: 32px auto 0 auto;
         font-weight: bold;
     }
-    /* Nascondi eventuali footer o percorsi file */
-    @page
+
+    /* Evita che la tabella patch vada a capo dopo il titolo in stampa/PDF */
+    #patchList, .patchTable, h1
     {
-        font-family: 'Inter', sans-serif !important;
-        margin-top: 20mm;
-        margin-bottom: 20mm;
+        page-break-inside: auto !important;
+        page-break-before: auto !important;
+        table-layout: fixed !important;
     }
-    @page:first
-    {
-        margin-top: 20mm;
-        margin-bottom: 20mm;
-    }
-    body, html
-    {
-        background: #fff !important;
-        color: #000 !important;
-    }
-    body::after, html::after
+
+    /* Nascondi la tabella fixture (quella dentro #fixtureList) completamente in stampa */
+    #fixtureList
     {
         display: none !important;
-        content: none !important;
     }
+
+    /* Nascondi la colonna Rimuovi nella tabella fixture solo se l'intestazione è Rimuovi */
+    .patchTable th,
+    .patchTable td
+    {
+        display: table-cell !important;
+    }
+
+    .patchTable th.rimuoviCol,
+    .patchTable td.rimuoviCol
+    {
+        display: none !important;
+    }
+
     .patchTable, .patchTable th, .patchTable td
     {
         background: #fff !important;
@@ -73,8 +74,10 @@
         border: 1px solid #222 !important;
         box-shadow: none !important;
     }
+
     .patchTable
     {
+
         min-width: 100% !important;
         max-width: 100% !important;
         margin: 20px auto 0 auto !important;
@@ -84,11 +87,13 @@
         color: #000 !important;
         border-bottom: 2px solid #222 !important;
     }
+
     .patchTable tr:nth-child(even),
     .patchTable tr:hover
     {
         background: #fff !important;
     }
+
     .patchTable thead, .patchTable tr, .patchTable th, .patchTable td
     {
         vertical-align: middle !important;
@@ -100,16 +105,19 @@
     {
         display: table-header-group !important;
     }
+
     .patchTable tr
     {
         page-break-inside: avoid !important;
     }
+
     .patchTable th.tipoCol, .patchTable td.tipoCol
     {
         min-width: 110px !important;
         max-width: 110px !important;
         padding: 0 !important;
     }
+
     .typeLayout 
     {
         display: flex;
@@ -119,15 +127,18 @@
         justify-content: flex-start;
         margin-left: 8px;
     }
+
     .typeText
     {
         margin-left: 14px;
     }
+
     .patchTable th.canaleCol, .patchTable td.canaleCol
     {
         min-width: 30px !important;
         max-width: 50px !important;
     }
+
     .patchTable td.nomeLuceCol
     {
         min-width: 120px !important;
@@ -138,6 +149,7 @@
         text-overflow: ellipsis !important;
         white-space: nowrap !important;
     }
+
     .colorCircle
     {
         box-shadow: none !important;
@@ -146,10 +158,12 @@
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
+
     #dmxForm, #listaLuci, #clearBtn, #patchOptions, #printBtn, #calcolaPatchBtn, .patchList .empty-message
     {
         display: none !important;
     }
+
     #patchList
     {
         width: 98% !important;
@@ -159,6 +173,7 @@
         margin-top: -20px !important;
         font-size: 16px !important;
     }
+
     #patchOptions
     {
         display: flex;
@@ -168,6 +183,7 @@
         border-collapse: collapse !important;
         table-layout: auto !important;
     }
+
     .docNumberContainer
     {
         justify-content: flex-end;
@@ -175,15 +191,18 @@
         margin-left: auto !important;
         margin-top: -15px;
     }
+
     h1
     {
         font-size: 1.3em !important;
         color: #000 !important;
     }
+
     .header
     {
         justify-content: left;
     }
+    
     .infoElement
     {
         font-weight: 500 !important;
@@ -192,6 +211,7 @@
         flex:1;
         border-bottom:1px dotted #bbb;
     }
+
     .infoListItem
     {
         margin-bottom: 8px !important;
@@ -200,6 +220,7 @@
         align-items: center !important;
         font-size: 0.9em !important;
     }
+
     .infoListTitle
     {
         min-width: 200px !important;
