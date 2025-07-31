@@ -39,7 +39,7 @@ const PALETTE =
 
 const SHEETDB_API = 'https://sheetdb.io/api/v1/sk9zycjj00bvz';
 
-async function incrementaNumeroDocumento() 
+async function getSetDocNumber() 
 {
     const text = document.getElementById('docNumber');
     // Leggi il numero attuale
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function()
             document.getElementById('dmxFootprint').textContent = universi.size + " " + unitext + " : " + totCanali + " " + chanText;
             document.getElementById('totFixturePrint').textContent = totFixture;
 
-            await incrementaNumeroDocumento();
+            await getSetDocNumber();
             mostraPatchDMX();
             window.print();
         });
@@ -131,14 +131,13 @@ function aggiungiFixture()
 
     if (!nome || !tipo || isNaN(numero) || isNaN(canali) || numero < 1 || canali < 1 || canali > 511) 
     {
-        alert('Valori non validi.');
+        alert('Invalid values. Please check the fixture name, type, quantity, and channels.');
         return;
     }
 
-    // Colore random per nuovo gruppo
     const colore = randomColor();
     listaFixture.push({ nome, tipo, numero, canali, colore });
-    aggiornaTabellaFixture();
+    updatePatch();
 }
 
 function clearAll() 
@@ -151,10 +150,10 @@ function clearAll()
     document.getElementById('fixChs').value = 1;
     document.getElementById('patchButtonText').innerHTML = "Calcola patch";
     document.getElementById('patchButtonIcon').innerHTML = "";
-    aggiornaTabellaFixture();
+    updatePatch();
 }
 
-function aggiornaTabellaFixture() 
+function updatePatch() 
 {
     const div = document.getElementById('fixtureList');
     const calcolaBtn = document.getElementById('calcolaPatchBtn');
@@ -200,7 +199,7 @@ function aggiornaTabellaFixture()
             tentativi++;
         }
         listaFixture[idx].colore = nuovoColore;
-        aggiornaTabellaFixture();
+        updatePatch();
     }
     if (calcolaBtn) calcolaBtn.disabled = false;
 }
@@ -208,7 +207,7 @@ function aggiornaTabellaFixture()
 function rimuoviFixture(idx) 
 {
     listaFixture.splice(idx, 1);
-    aggiornaTabellaFixture();
+    updatePatch();
 }
 
 function calcolaPatchDMXMulti(listaFixture) 
@@ -294,4 +293,4 @@ function mostraPatchDMX()
 }
 
 // Inizializza la tabella fixture all'avvio
-window.onload = aggiornaTabellaFixture;
+window.onload = updatePatch();
