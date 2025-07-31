@@ -148,7 +148,7 @@ function clearAll()
     document.getElementById('fixName').value = "Fixture";
     document.getElementById('fixQty').value = 1;
     document.getElementById('fixChs').value = 1;
-    document.getElementById('patchButtonText').innerHTML = "Calcola patch";
+    document.getElementById('patchButtonText').innerHTML = "Patch";
     document.getElementById('patchButtonIcon').innerHTML = "";
     updatePatch();
 }
@@ -157,9 +157,9 @@ function updatePatch()
 {
     const div = document.getElementById('fixtureList');
     const calcolaBtn = document.getElementById('calcolaPatchBtn');
-    if (!listaFixture.length) 
+    if (!listaFixture.length && div) 
     {
-        div.innerHTML = '<span class="empty-message">Aggiungi almeno una fixture</span>';
+        div.innerHTML = '<span class="empty-message">No fixtures added</span>';
         if (calcolaBtn) calcolaBtn.disabled = true;
         return;
     }
@@ -184,7 +184,7 @@ function updatePatch()
         </tr>`;
     });
     html += '</tbody></table>';
-    div.innerHTML = html;
+    if (div) div.innerHTML = html;
 
     // Cambia colore random alla fixture, evitando di riassegnare lo stesso colore
     window.cambiaColoreFixture = function(idx) 
@@ -253,7 +253,7 @@ function mostraPatchDMX()
 
     if (!listaFixture.length) 
     {
-        patchList.innerHTML = '<span style="color:red;">Aggiungi almeno una fixture.</span>';
+        patchList.innerHTML = '<span class="empty-message">No fixtures added</span>';
         return;
     }
 
@@ -262,26 +262,32 @@ function mostraPatchDMX()
     let showImages = true;
     const showImagesCheckbox = document.getElementById('showImagesCheckbox');
     if (showImagesCheckbox) showImages = showImagesCheckbox.checked;
+    
     let html = '<table class="patchTable" id="patchTable"><thead><tr><th class="tipoCol">Type</th><th class="coloreCol">Color</th><th>Fixture</th><th>Universe</th><th>Channel</th></tr></thead><tbody>';
-    lista.forEach(item => {
-        const tipiConImg = [
+
+    lista.forEach(item => 
+    {
+        const tipiConImg = 
+        [
             'beam','wash','spot','blinder','scanner','dimmer','strobo','par',
             'fx fog','fx haze','fx spark','fx co2','fx fire','fx pyro','fx confetti',
             'spotlight','led bar','moving bar','moving panel','laser','fan',
             'rgb','rgbw','rgbwav','effect','other'
         ];
         let imgHtml = '';
-        if (showImages && tipiConImg.includes(item.tipo.toLowerCase())) {
+        if (showImages && tipiConImg.includes(item.tipo.toLowerCase())) 
+        {
             imgHtml = `<img src='images/${item.tipo.toLowerCase()}.png' alt='${item.tipo}' title='${item.tipo}' style='height:32px;max-width:40px;vertical-align:middle;margin-right:0px;'>`;
         }
         let tipoColContent = `<span class='typeLayout'>${imgHtml}<span class='typeText' style='flex:1;justify-content:flex-start;text-align:left;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>${item.tipo}</span></span>`;
         let colorCircle = `<span class='colorCircle' style='display:inline-block;width:22px;height:22px;border-radius:50%;background:${item.colore} !important;background-color:${item.colore} !important;vertical-align:middle;margin:0 auto;'></span>`;
         html += `<tr><td class="tipoCol">${tipoColContent}</td><td class="coloreCol">${colorCircle}</td><td class="nomeLuceCol">${item.nome}</td><td class="universoCol">${item.universo}</td><td class="canaleCol">${item.canale}</td></tr>`;
     });
+
     html += '</tbody></table>';
     patchList.innerHTML = html;
     if (exportBtn) exportBtn.style.display = 'flex';
-    document.getElementById('patchButtonText').innerHTML = "Aggiorna patch";
+    document.getElementById('patchButtonText').innerHTML = "Update patch";
     document.getElementById('patchButtonIcon').innerHTML = "";
 
     // Aggiorna la tabella quando la checkbox cambia

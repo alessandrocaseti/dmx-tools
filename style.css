@@ -222,7 +222,7 @@ label[for="showImagesCheckbox"], #patchOptions label
     flex-wrap: wrap;
 }
 
-#dmxForm label 
+label 
 {
     color: var(--colore-giallo);
     font-weight: 500;
@@ -263,6 +263,7 @@ button
     height: 36px;
     cursor: pointer;
     transition: all 0.4s, color 0.4s;
+    user-select: none;
 }
 
 button:hover 
@@ -286,6 +287,7 @@ button:disabled, button[disabled]
     font-size: 1.1em;
     margin-right: 12px;
     display: flex;
+    user-select: none;
     align-items: center;
 }
 
@@ -294,6 +296,7 @@ button:disabled, button[disabled]
     font-family: 'Inter', Arial, sans-serif;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 
 .patchList .empty-message 
@@ -316,3 +319,6 @@ button:disabled, button[disabled]
 {
     display: none;
 }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
