@@ -60,6 +60,8 @@ img
     -webkit-user-drag: none;
 }
 
+html { overflow-y: scroll; }
+
 body
 {
     font-family: 'Inter', Arial, sans-serif;
@@ -241,6 +243,7 @@ input
     font-size: 16px;
     margin-right: 8px;
     transition: border .3s ease;
+    user-select: none;
 }
 
 input:focus 

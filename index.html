@@ -76,7 +76,7 @@
 
         <h1 class="web-only">DMX Patch</h1>
 
-        <div style="display: flex; flex-direction: row; gap: 20px; margin-bottom: 16px; justify-content: center; align-items: center;">
+        <div class="web-only" style="display: flex; flex-direction: row; gap: 20px; margin-bottom: 16px; justify-content: center; align-items: center;">
             <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
                 <label for="evento">Event/venue:</label>
                 <input type="text" id="evento" placeholder="Event/venue name" style="width: 22vh;" required>
@@ -94,7 +94,7 @@
         <form id="dmxForm" onsubmit="return false;" style="margin-top: 4vh;">
 
             <label for="fixName">Name:</label>
-            <input type="text" id="fixName" value="Fixture" style="width: 16vh;" required>
+            <input type="text" id="fixName" placeholder="Fixture name" style="width: 16vh;" required>
             <label for="fixType">Type:</label>
 
             <div class="selectWrapper" style="position:relative;display:inline-block;">
@@ -143,7 +143,7 @@
 
         <!-- Fixture List -->
         <div id="fixtureList" style="margin: 30px auto 0 auto; max-width: 50%">
-            <span class="empty-message">No fixtures added</span>
+            <span class="empty-message">- No fixtures added -</span>
         </div>
 
         <div style="display: flex; flex-direction: row; justify-content: center; gap: 20px; margin-top: 30px;">

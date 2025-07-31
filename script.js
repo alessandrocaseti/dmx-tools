@@ -46,6 +46,7 @@ async function getSetDocNumber()
     const r = await fetch(SHEETDB_API);
     const data = await r.json();
     let num = parseInt(data[0]?.numero, 10);
+    
     if (!isNaN(num)) 
     {
         await fetch('https://sheetdb.io/api/v1/sk9zycjj00bvz/numero/' + num, 
@@ -124,7 +125,7 @@ function randomColor(excludeColor)
 
 function aggiungiFixture() 
 {
-    const nome = document.getElementById('fixName').value.trim() || 'Fixture';
+    const nome = document.getElementById('fixName').value.trim() || "Fixture";
     const tipo = document.getElementById('fixType').value;
     const numero = parseInt(document.getElementById('fixQty').value, 10);
     const canali = parseInt(document.getElementById('fixChs').value, 10);
@@ -159,7 +160,7 @@ function updatePatch()
     const calcolaBtn = document.getElementById('calcolaPatchBtn');
     if (!listaFixture.length && div) 
     {
-        div.innerHTML = '<span class="empty-message">No fixtures added</span>';
+        div.innerHTML = '<span class="empty-message">- No fixtures added -</span>';
         if (calcolaBtn) calcolaBtn.disabled = true;
         return;
     }
@@ -180,7 +181,7 @@ function updatePatch()
             <td style="text-align:center;vertical-align:middle;padding:4;width:50px;">
                 <button class="colorBtn default" type="button" onclick="cambiaColoreFixture(${idx})"><span class="colorButtonIcon"></span></button>
             </td>
-            <td class="rimuoviCol"><button style="height:32px;font-family:IconFont;" onclick=\"rimuoviFixture(${idx})\"></button></td>
+            <td class="rimuoviCol"><button style="height:36px;font-family:IconFont;" onclick=\"rimuoviFixture(${idx})\"></button></td>
         </tr>`;
     });
     html += '</tbody></table>';
@@ -191,13 +192,6 @@ function updatePatch()
     {
         const coloreAttuale = listaFixture[idx].colore;
         let nuovoColore = randomColor(coloreAttuale);
-        // Se per qualche motivo il colore non cambia, riprova fino a 5 volte
-        let tentativi = 0;
-        while (nuovoColore === coloreAttuale && tentativi < 5) 
-        {
-            nuovoColore = randomColor(coloreAttuale);
-            tentativi++;
-        }
         listaFixture[idx].colore = nuovoColore;
         updatePatch();
     }
@@ -253,7 +247,7 @@ function mostraPatchDMX()
 
     if (!listaFixture.length) 
     {
-        patchList.innerHTML = '<span class="empty-message">No fixtures added</span>';
+        patchList.innerHTML = '<span class="empty-message">- No fixtures added -</span>';
         return;
     }
 
@@ -262,7 +256,7 @@ function mostraPatchDMX()
     let showImages = true;
     const showImagesCheckbox = document.getElementById('showImagesCheckbox');
     if (showImagesCheckbox) showImages = showImagesCheckbox.checked;
-    
+
     let html = '<table class="patchTable" id="patchTable"><thead><tr><th class="tipoCol">Type</th><th class="coloreCol">Color</th><th>Fixture</th><th>Universe</th><th>Channel</th></tr></thead><tbody>';
 
     lista.forEach(item => 
