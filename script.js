@@ -1,6 +1,7 @@
 /// DMX TOOLS - DEVELOPED BY ALESSANDRO CASETI ///
 
 let listaFixture = []; // Fixture list
+let docID = "0000"; // Document ID
 
 const PALETTE = 
 [
@@ -64,6 +65,7 @@ async function getSetDocNumber()
 
         let formattedID = (num+1).toString().padStart(4, '0');
         text.innerHTML = `#${formattedID}`;
+        docID = formattedID;
     }
 
     document.getElementById('loadingOverlay').classList.remove('active'); // Hide overlay
@@ -85,6 +87,7 @@ async function simulateOverlay()
 
 document.addEventListener('DOMContentLoaded', function() 
 {
+    startDotAnimation(); // Avvia l'animazione del CMD
     const btn = document.getElementById('exportPdfBtn');
     if (btn) 
     {
@@ -130,6 +133,7 @@ document.addEventListener('DOMContentLoaded', function()
             }
 
             mostraPatchDMX();
+            setCmdMessage('Successfully requested document number via API call. Generated PDF with ID #' + `${docID}.`);
             window.print();
         });
     }
@@ -167,6 +171,7 @@ function aggiungiFixture()
     const colore = randomColor();
     listaFixture.push({ nome, tipo, numero, canali, colore });
     updatePatch();
+    setCmdMessage(`Added fixture(s): ${nome} (${tipo}, ${numero} units, ${canali} channels per unit)`); //TODO singular or plural based on quantity
 }
 
 function clearAll() 
@@ -180,6 +185,7 @@ function clearAll()
     document.getElementById('patchButtonText').innerHTML = "Patch";
     document.getElementById('patchButtonIcon').innerHTML = "";
     updatePatch();
+    setCmdMessage("Project fully cleared. All fixtures have been deleted.");
 }
 
 function updatePatch() 
@@ -232,12 +238,14 @@ function updatePatch()
         let nuovoColore = randomColor(coloreAttuale);
         listaFixture[idx].colore = nuovoColore;
         updatePatch();
+        setCmdMessage(`Changed color of fixture(s): (${listaFixture[idx].nome}) to ${nuovoColore}`);
     }
     if (calcolaBtn) calcolaBtn.disabled = false;
 }
 
 function removeFixture(id) 
 {
+    setCmdMessage(`Successfully removed fixture(s): (${listaFixture[id].nome})`);
     listaFixture.splice(id, 1);
     updatePatch();
 }
@@ -336,6 +344,8 @@ function mostraPatchDMX()
         showImagesCheckbox.addEventListener('change', updateIconColor);
         showImagesCheckbox._listenerAdded = true;
     }
+
+    setCmdMessage(`Patch list created / updated with ${lista.length} fixture(s).`); // TODO: count fixtures and improve syntax
 }
 
 function updateIconColor()
@@ -354,3 +364,28 @@ function updateIconColor()
 
 // Inizializza la tabella fixture all'avvio
 window.onload = updatePatch();
+
+// facciamo una funzione per far apparire e scomparire il testo dentro dot
+// il dot appare e scompare ogni 500 millisecondi, e lo fa all'infinito
+function startDotAnimation() 
+{
+    const dotText = document.getElementById('dot');
+    dotText.style.display = 'none'; // Inizialmente nascosto
+    setInterval(() =>
+    {
+        if (dotText.style.display === 'none' || dotText.style.display === '') 
+        {
+            dotText.style.display = 'block';
+        }
+        else 
+        {
+            dotText.style.display = 'none';
+        }
+    }, 500); // Cambia ogni 500 millisecondi
+}
+
+function setCmdMessage(msg)
+{
+    const cmdMsg = document.getElementById('cmdMsg');
+    if (cmdMsg) { cmdMsg.textContent = msg; }
+}
