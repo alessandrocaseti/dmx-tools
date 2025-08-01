@@ -227,10 +227,10 @@ function calcolaPatchDMXMulti(listaFixture)
 
             let canaleFormattato = canaleCorrente.toString().padStart(3, '0');
             let nomeFixture = fixture.nome;
-            if (fixture.numero > 1) {
-                nomeFixture += ` ${i}`;
-            }
-            risultato.push({
+            if (fixture.numero > 1) { nomeFixture += ` ${i}`; }
+
+            risultato.push
+            ({
                 tipo: fixture.tipo,
                 nome: nomeFixture,
                 universo: universo,
@@ -261,7 +261,7 @@ function mostraPatchDMX()
     const showImagesCheckbox = document.getElementById('showImagesCheckbox');
     if (showImagesCheckbox) showImages = showImagesCheckbox.checked;
 
-    let html = '<table class="patchTable" id="patchTable"><thead><tr><th class="tipoCol">Type</th><th class="coloreCol">Color</th><th>Fixture</th><th>Universe</th><th>Channel</th></tr></thead><tbody>';
+    let html = '<table class="patchTable" id="patchTable"><thead><tr><th class="tipoCol">Type</th><th class="coloreCol">Color</th><th>Fixture</th><th>Universe</th><th>Address</th></tr></thead><tbody>';
 
     lista.forEach(item => 
     {
@@ -292,7 +292,22 @@ function mostraPatchDMX()
     if (showImagesCheckbox && !showImagesCheckbox._listenerAdded) 
     {
         showImagesCheckbox.addEventListener('change', mostraPatchDMX);
+        showImagesCheckbox.addEventListener('change', updateIconColor);
         showImagesCheckbox._listenerAdded = true;
+    }
+}
+
+function updateIconColor()
+{
+    const showImagesCheckbox = document.getElementById('showImagesCheckbox');
+    const icon = document.getElementById('showImagesCheckboxIcon');
+    if (showImagesCheckbox.checked)
+    {
+        icon.style.color = 'black';
+    }
+    else
+    {
+        icon.style.color = 'transparent';
     }
 }
 
