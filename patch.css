@@ -15,7 +15,8 @@
 
 .patchTable.firstTable
 {
-    width: 50%;
+    min-width: 40%;
+    max-width: 80%;
     table-layout: auto;
     margin: 20px auto 0 auto;
     border-collapse: collapse;
@@ -67,6 +68,7 @@
 .patchTable thead
 {
     background: var(--colore-bg-header);
+    user-select: none;
 }
 
 .patchTable th,
@@ -85,7 +87,12 @@
 
 .patchTable tr:hover
 {
-    background: #2d2d2d;
+    background: #1a1a1f;
+}
+
+.patchTable tr
+{
+    transition: background 0.3s ease;
 }
 
 .typeLayout 

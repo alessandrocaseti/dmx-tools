@@ -1,7 +1,6 @@
 /// DMX TOOLS - DEVELOPED BY ALESSANDRO CASETI ///
 
-// Fixture list
-let listaFixture = [];
+let listaFixture = []; // Fixture list
 
 const PALETTE = 
 [
@@ -48,6 +47,7 @@ async function getSetDocNumber()
     const r = await fetch(SHEETDB_API);
     const data = await r.json();
     let num = parseInt(data[0]?.numero, 10);
+    console.log("Current document number: " + num);
 
     if (!isNaN(num)) 
     {
@@ -67,6 +67,20 @@ async function getSetDocNumber()
     }
 
     document.getElementById('loadingOverlay').classList.remove('active'); // Hide overlay
+}
+
+async function simulateOverlay()
+{
+    // simuliamo un overlay di caricamento di un secondo in locale
+    document.getElementById('loadingOverlay').classList.add('active');
+    return new Promise(resolve =>
+    {
+        setTimeout(() =>
+        {
+            document.getElementById('loadingOverlay').classList.remove('active');
+            resolve();
+        }, 1000);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function() 
@@ -104,7 +118,17 @@ document.addEventListener('DOMContentLoaded', function()
             document.getElementById('dmxFootprint').textContent = universi.size + " " + unitext + " : " + totCanali + " " + chanText;
             document.getElementById('totFixturePrint').textContent = totFixture;
 
-            await getSetDocNumber();
+            // Evitiamo di raggiungere il limite mensile di chiamate API durante lo sviluppo locale
+            if(window.location.protocol.startsWith("http") && window.location.hostname !== "localhost") 
+            {
+                await getSetDocNumber(); // Esegui la chiamata API
+            } 
+            else 
+            {
+                console.log("Local environment detected, skipping API call.");
+                await simulateOverlay(); // Simula l'overlay di caricamento
+            }
+
             mostraPatchDMX();
             window.print();
         });
@@ -129,7 +153,7 @@ function randomColor(excludeColor)
 
 function aggiungiFixture() 
 {
-    const nome = document.getElementById('fixName').value.trim() || "Fixture";
+    const nome = document.getElementById('fixName').value.trim() || "Fixture name";
     const tipo = document.getElementById('fixType').value;
     const numero = parseInt(document.getElementById('fixQty').value, 10);
     const canali = parseInt(document.getElementById('fixChs').value, 10);
@@ -150,7 +174,7 @@ function clearAll()
     listaFixture = [];
     document.getElementById('patchList').innerHTML = '';
     document.getElementById('patchOptions').style.display = "none";
-    document.getElementById('fixName').value = "Fixture";
+    document.getElementById('fixName').value = "";
     document.getElementById('fixQty').value = 1;
     document.getElementById('fixChs').value = 1;
     document.getElementById('patchButtonText').innerHTML = "Patch";
@@ -170,11 +194,20 @@ function updatePatch()
     }
 
     let html = '<table class="patchTable firstTable">';
-    html += '<thead>';
-    html += '<tr><th>Fixture</th><th>Tipo</th><th>Number</th><th>Channels</th><th colspan="2">Color</th><th class="rimuoviCol">Remove</th></tr>';
-    html += '</thead><tbody>';
-    listaFixture.forEach((fixture, idx) => {
-        html += `<tr>
+
+    html += `<thead><tr>
+                <th>Fixture</th>
+                <th>Tipo</th>
+                <th>Number</th>
+                <th>Channels</th>
+                <th colspan="2">Color</th>
+                <th class="rimuoviCol">Remove</th></tr>
+            </thead><tbody>`;
+
+    listaFixture.forEach((fixture, idx) => 
+    {
+        html += 
+        `<tr>
             <td>${fixture.nome}</td>
             <td>${fixture.tipo}</td>
             <td>${fixture.numero}</td>
@@ -183,11 +216,12 @@ function updatePatch()
                 <span class="colorCircle" id="colorCircle${idx}" style="background-color:${fixture.colore} !important;"></span>
             </td>
             <td style="text-align:center;vertical-align:middle;padding:4;width:50px;">
-                <button class="colorBtn default" type="button" onclick="cambiaColoreFixture(${idx})"><span class="colorButtonIcon"></span></button>
+                <button class="colorBtn default" onclick="cambiaColoreFixture(${idx})"><span class="colorButtonIcon"></span></button>
             </td>
-            <td class="rimuoviCol"><button style="height:36px;font-family:IconFont;" onclick=\"rimuoviFixture(${idx})\"></button></td>
+            <td class="rimuoviCol"><button style="height:36px;font-family:IconFont;" onclick=\"removeFixture(${idx})\"></button></td>
         </tr>`;
     });
+
     html += '</tbody></table>';
     if (div) div.innerHTML = html;
 
@@ -202,9 +236,9 @@ function updatePatch()
     if (calcolaBtn) calcolaBtn.disabled = false;
 }
 
-function rimuoviFixture(idx) 
+function removeFixture(id) 
 {
-    listaFixture.splice(idx, 1);
+    listaFixture.splice(id, 1);
     updatePatch();
 }
 
@@ -251,7 +285,7 @@ function mostraPatchDMX()
 
     if (!listaFixture.length) 
     {
-        patchList.innerHTML = '<span class="empty-message">- No fixtures added -</span>';
+        patchList.innerHTML = `<span class="empty-message">- No fixtures added -</span>`;
         return;
     }
 
@@ -261,7 +295,12 @@ function mostraPatchDMX()
     const showImagesCheckbox = document.getElementById('showImagesCheckbox');
     if (showImagesCheckbox) showImages = showImagesCheckbox.checked;
 
-    let html = '<table class="patchTable" id="patchTable"><thead><tr><th class="tipoCol">Type</th><th class="coloreCol">Color</th><th>Fixture</th><th>Universe</th><th>Address</th></tr></thead><tbody>';
+    let html = `<table class="patchTable" id="patchTable">
+                    <thead><tr>
+                    <th class="tipoCol">Type</th>
+                    <th class="coloreCol">Color</th>
+                    <th>Fixture</th><th>Universe</th>
+                    <th>Address</th></tr></thead><tbody>`;
 
     lista.forEach(item => 
     {
@@ -272,11 +311,13 @@ function mostraPatchDMX()
             'spotlight','led bar','moving bar','moving panel','laser','fan',
             'rgb','rgbw','rgbwav','effect','other'
         ];
+
         let imgHtml = '';
         if (showImages && tipiConImg.includes(item.tipo.toLowerCase())) 
         {
             imgHtml = `<img src='images/${item.tipo.toLowerCase()}.png' alt='${item.tipo}' title='${item.tipo}' style='height:32px;max-width:40px;vertical-align:middle;margin-right:0px;'>`;
         }
+        
         let tipoColContent = `<span class='typeLayout'>${imgHtml}<span class='typeText' style='flex:1;justify-content:flex-start;text-align:left;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>${item.tipo}</span></span>`;
         let colorCircle = `<span class='colorCircle' style='display:inline-block;width:22px;height:22px;border-radius:50%;background:${item.colore} !important;background-color:${item.colore} !important;vertical-align:middle;margin:0 auto;'></span>`;
         html += `<tr><td class="tipoCol">${tipoColContent}</td><td class="coloreCol">${colorCircle}</td><td class="nomeLuceCol">${item.nome}</td><td class="universoCol">${item.universo}</td><td class="canaleCol">${item.canale}</td></tr>`;
