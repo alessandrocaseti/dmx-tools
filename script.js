@@ -93,7 +93,16 @@ document.addEventListener('DOMContentLoaded', function()
     {
         btn.addEventListener('click', async function() 
         {
-            // Dati evento/luogo/autore patch e totali nella sezione print-only
+            const evento = document.getElementById('evento').value.trim();
+            const luogo = document.getElementById('luogo').value.trim();
+            const autorePatch = document.getElementById('autorePatch').value.trim();
+
+            if (!evento || !luogo || !autorePatch) 
+            {
+                setCmdMessage('Please fill the patch details fields to continue (event/venue, place, patch author).', 'ERROR');
+                return;
+            }
+
             document.getElementById('eventoPrint').textContent = document.getElementById('evento').value || 'Not specified';
             document.getElementById('luogoPrint').textContent = document.getElementById('luogo').value || 'Not specified';
             document.getElementById('autorePatchPrint').textContent = document.getElementById('autorePatch').value || 'Not specified';
@@ -133,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function()
             }
 
             mostraPatchDMX();
-            setCmdMessage('Successfully requested document number via API call. Generated PDF with ID #' + `${docID}.`);
+            setCmdMessage('Successfully requested document number via API call. Generated PDF with ID #' + `${docID}.`, 'EXPORT');
             window.print();
         });
     }
@@ -164,14 +173,14 @@ function aggiungiFixture()
 
     if (!nome || !tipo || isNaN(numero) || isNaN(canali) || numero < 1 || canali < 1 || canali > 511) 
     {
-        alert('Invalid values. Please check the fixture name, type, quantity, and channels.');
+        setCmdMessage('Invalid values. Please check the fixture name, type, quantity, and channels.', 'ERROR');
         return;
     }
 
     const colore = randomColor();
     listaFixture.push({ nome, tipo, numero, canali, colore });
     updatePatch();
-    setCmdMessage(`Added fixture(s): ${nome} (${tipo}, ${numero} units, ${canali} channels per unit)`); //TODO singular or plural based on quantity
+    setCmdMessage(`Added fixture(s): ${nome} (${tipo}, ${numero} unit(s), ${canali} channel(s) per unit)`, 'ADD'); //TODO singular or plural based on quantity
 }
 
 function clearAll() 
@@ -185,7 +194,7 @@ function clearAll()
     document.getElementById('patchButtonText').innerHTML = "Patch";
     document.getElementById('patchButtonIcon').innerHTML = "";
     updatePatch();
-    setCmdMessage("Project fully cleared. All fixtures have been deleted.");
+    setCmdMessage("Project fully cleared. All fixtures have been deleted.", 'CLEAR');
 }
 
 function updatePatch() 
@@ -238,14 +247,14 @@ function updatePatch()
         let nuovoColore = randomColor(coloreAttuale);
         listaFixture[idx].colore = nuovoColore;
         updatePatch();
-        setCmdMessage(`Changed color of fixture(s): (${listaFixture[idx].nome}) to ${nuovoColore}`);
+        setCmdMessage(`Changed color of fixture(s): (${listaFixture[idx].nome}) to ${nuovoColore}`, 'COLOR CHANGE');
     }
     if (calcolaBtn) calcolaBtn.disabled = false;
 }
 
 function removeFixture(id) 
 {
-    setCmdMessage(`Successfully removed fixture(s): (${listaFixture[id].nome})`);
+    setCmdMessage(`Successfully removed fixture(s): (${listaFixture[id].nome})`, 'REMOVE');
     listaFixture.splice(id, 1);
     updatePatch();
 }
@@ -345,7 +354,7 @@ function mostraPatchDMX()
         showImagesCheckbox._listenerAdded = true;
     }
 
-    setCmdMessage(`Patch list created / updated with ${lista.length} fixture(s).`); // TODO: count fixtures and improve syntax
+    setCmdMessage(`Patch list created / updated with ${lista.length} fixture(s).`, 'PATCH'); // TODO: count fixtures and improve syntax
 }
 
 function updateIconColor()
@@ -384,8 +393,48 @@ function startDotAnimation()
     }, 500); // Cambia ogni 500 millisecondi
 }
 
-function setCmdMessage(msg)
+function setCmdMessage(msg, type)
 {
-    const cmdMsg = document.getElementById('cmdMsg');
+    const container = document.getElementById('cmdListContainer2');
+    container.innerHTML = ''; // Pulisce il contenitore
+    const cmdMsg = document.createElement('p');
+    const dot = document.createElement('p');
+    cmdMsg.className = 'command-msg';
+    cmdMsg.id = 'cmdMsg';
+    dot.className = 'command-msg dot';
+    dot.id = 'dot';
+    dot.textContent = '_';
     if (cmdMsg) { cmdMsg.textContent = msg; }
+    container.appendChild(cmdMsg); // Aggiunge il nuovo elemento
+    container.appendChild(dot); // Aggiunge il dot
+    startDotAnimation(); // Riavvia l'animazione del dot
+    const typeText = document.getElementById('cmdMsgType');
+    const containerType = document.getElementById('cmdMsgTypeContainer');
+    const cmdBar = document.getElementById('command-bar');
+
+    if (typeText) 
+    { 
+        typeText.innerHTML = type || 'WELCOME'; 
+        typeText.style.color = 'white';
+        containerType.style.borderColor = 'yellow';
+        containerType.style.backgroundColor = 'rgba(255, 255, 0, 0.0)';
+        cmdBar.style.backgroundColor = '#141414';
+    }
+
+    if (typeText && type === 'ERROR')
+    {
+        typeText.style.color = 'LightCoral';
+        containerType.style.borderColor = 'LightCoral';
+        containerType.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+        cmdBar.style.backgroundColor = '#340000ff';
+    }
+
+    if (typeText && type === 'WARNING')
+    {
+        typeText.style.color = 'orange';
+        containerType.style.borderColor = 'orange';
+        containerType.style.backgroundColor = 'rgba(255, 140, 0, 0.2)';
+        cmdBar.style.backgroundColor = '#3a2500ff';
+    }
+
 }

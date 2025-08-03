@@ -398,6 +398,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
     box-shadow: 0 -2px 8px rgba(0,0,0,0.5);
     overflow: hidden;
     z-index: 1000;
+    transition: background 0.3s ease;
 }
 
 .command-msg 
@@ -411,6 +412,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
     user-select: none;
 }
 
+.command-msg.dot
+{
+    color: var(--colore-giallo);
+    font-weight: 900;
+    margin-left: 8px;
+}
+
 .cmdListContainer
 {
     display: flex;
@@ -418,4 +426,25 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
     gap: 8px;
     flex-direction: row;
     justify-content: left;
+}
+
+#cmdMsg
+{
+    color: var(--colore-testo-chiaro);
+    margin-left: 4px;
+    animation: slide-up 0.4s ease forwards;
+}
+
+@keyframes slide-up 
+{
+  0% 
+  {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% 
+  {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }

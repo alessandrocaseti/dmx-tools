@@ -186,10 +186,18 @@
 
         <!-- Command Bar -->
         <div id="command-bar" class="web-only">
-            <p style="color: yellow;">CMD</p>
+            <div style="display: flex; flex-direction: row; align-items: center; gap: 12px;">
+                <p style="color: yellow; user-select: none;">CMD • Current message</p>
+                <div id="cmdMsgTypeContainer" style="transition: all 0.3s ease; background-color: rgba(255, 255, 0, 0.0); border: 1px solid yellow; height: 20px; border-radius: 4px; font-size: 14px; width: auto">
+                    <p id="cmdMsgType" style="transition: all 0.3s ease; margin-top: 0px; margin-bottom: 1px; margin-left: 4px; margin-right: 4px; user-select: none; font-family: 'Roboto Mono';">WELCOME</p>
+                </div>
+            </div>
             <div class="cmdListContainer">
-                <p class="command-msg" id="cmdMsg">Welcome on DMX tools! Start by adding some fixtures to the fixture list. Remember to specify their name, quantity and channels.</p>
-                <p class="command-msg" id="dot" style="font-weight: 900; color: #ffeb3b;">_</p>
+                <p class="command-msg">></p>
+                <div id="cmdListContainer2" style="display: flex; flex-direction: row;">
+                    <p class="command-msg" id="cmdMsg">Welcome on DMX tools! Start by indicating the project details and then proceed to set up your fixture list.</p>
+                    <p class="command-msg dot" id="dot">_</p>
+                </div>
             </div>
 
     </body>
