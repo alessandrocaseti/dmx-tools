@@ -194,6 +194,7 @@ function clearAll()
     document.getElementById('patchButtonText').innerHTML = "Patch";
     document.getElementById('patchButtonIcon').innerHTML = "";
     updatePatch();
+    update = false;
     setCmdMessage("Project fully cleared. All fixtures have been deleted.", 'CLEAR');
 }
 
@@ -247,14 +248,14 @@ function updatePatch()
         let nuovoColore = randomColor(coloreAttuale);
         listaFixture[idx].colore = nuovoColore;
         updatePatch();
-        setCmdMessage(`Changed color of fixture(s): (${listaFixture[idx].nome}) to ${nuovoColore}`, 'COLOR CHANGE');
+        setCmdMessage(`Changed color of fixture(s) ${listaFixture[idx].nome} to ${nuovoColore}`, 'COLOR CHANGE');
     }
     if (calcolaBtn) calcolaBtn.disabled = false;
 }
 
 function removeFixture(id) 
 {
-    setCmdMessage(`Successfully removed fixture(s): (${listaFixture[id].nome})`, 'REMOVE');
+    setCmdMessage(`Successfully removed fixture(s): ${listaFixture[id].nome}`, 'REMOVE');
     listaFixture.splice(id, 1);
     updatePatch();
 }
@@ -295,6 +296,10 @@ function calcolaPatchDMXMulti(listaFixture)
     }
     return risultato;
 }
+
+let update = false;
+let oldCount = 0; // Contatore per il numero di fixture
+let newCount = 0; // Contatore per il numero di fixture aggiornate
 
 function mostraPatchDMX() 
 {
@@ -346,6 +351,31 @@ function mostraPatchDMX()
     document.getElementById('patchButtonText').innerHTML = "Update patch";
     document.getElementById('patchButtonIcon').innerHTML = "";
 
+    if(update)
+    {
+        newCount = lista.length;
+        if (newCount > oldCount)
+        {
+            setCmdMessage(`Patch list updated with ${newCount - oldCount} new fixture(s).`, 'UPDATE');
+            oldCount = newCount;
+        }
+        else if (newCount < oldCount)
+        {
+            setCmdMessage(`Patch list updated with ${oldCount - newCount} fixture(s) removed.`, 'UPDATE');
+            oldCount = newCount;
+        }
+        else
+        {
+            setCmdMessage(`Patch list updated`, 'UPDATE');
+            oldCount = newCount;
+        }
+    }
+    else
+    {
+        setCmdMessage(`Patch list created with ${lista.length} fixture(s).`, 'PATCH');
+        oldCount = lista.length;
+    }
+
     // Aggiorna la tabella quando la checkbox cambia
     if (showImagesCheckbox && !showImagesCheckbox._listenerAdded) 
     {
@@ -354,7 +384,7 @@ function mostraPatchDMX()
         showImagesCheckbox._listenerAdded = true;
     }
 
-    setCmdMessage(`Patch list created / updated with ${lista.length} fixture(s).`, 'PATCH'); // TODO: count fixtures and improve syntax
+    update = true;
 }
 
 function updateIconColor()
@@ -364,10 +394,12 @@ function updateIconColor()
     if (showImagesCheckbox.checked)
     {
         icon.style.color = 'black';
+        setCmdMessage(`Fixture icons enabled`, 'UPDATE');
     }
     else
     {
         icon.style.color = 'transparent';
+        setCmdMessage(`Fixture icons disabled`, 'UPDATE');
     }
 }
 
