@@ -416,7 +416,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
 {
     color: var(--colore-giallo);
     font-weight: 900;
-    margin-left: 8px;
+    margin-left: 16px;
+    transition: visibility 0.3s ease-in-out;
 }
 
 .cmdListContainer
@@ -447,4 +448,24 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
     transform: translateY(0%);
     opacity: 1;
   }
+}
+
+@keyframes fade 
+{
+    from { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    to { opacity: 1.0; }
+}                                                                                                                                                                                                                                  
+
+@-webkit-keyframes fade 
+{
+    from { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    to { opacity: 1.0; }
+}
+
+.blink 
+{
+    animation:fade 1000ms infinite;
+    -webkit-animation:fade 1000ms infinite;
 }

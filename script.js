@@ -3,6 +3,16 @@
 let listaFixture = []; // Fixture list
 let docID = "0000"; // Document ID
 
+String.prototype.toProperCase = function () 
+{
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
+function isHexColor (hex) 
+{
+    return typeof hex === 'string' && hex.length === 6 && !isNaN(Number('0x' + hex))
+}
+
 const PALETTE = 
 [
     '#FF1744', // rosso vivo
@@ -85,9 +95,40 @@ async function simulateOverlay()
     });
 }
 
+function setStats(index)
+{
+    // Calcola totale canali, universi e fixture
+    let totCanali = 0;
+    let universi = new Set();
+    let totFixture = 0;
+
+    if (typeof calcolaPatchDMXMulti === 'function') 
+    {
+        const lista = calcolaPatchDMXMulti(listaFixture);
+        lista.forEach(item => { universi.add(item.universo); });
+        // Somma tutti i canali delle fixture
+        totCanali = listaFixture.reduce((acc, f) => acc + (f.numero * f.canali), 0);
+        // Somma tutte le fixture (quantità)
+        totFixture = listaFixture.reduce((acc, f) => acc + f.numero, 0);
+    }
+
+    let unitext = "universe";
+    let chanText = "channel";
+    if(universi.size > 1) { unitext = "universes"; }
+    if(totCanali > 1) { chanText = "channels"; }
+
+    document.getElementById('dmxFootprint').textContent = universi.size + " " + unitext + " : " + totCanali + " " + chanText;
+    document.getElementById('totFixturePrint').textContent = totFixture;
+
+    const footprint = universi.size + " " + unitext + " : " + totCanali + " " + chanText;
+    if(index === 1) return totFixture
+    if(index === 2) return footprint;
+    return;
+}
+
 document.addEventListener('DOMContentLoaded', function() 
 {
-    startDotAnimation(); // Avvia l'animazione del CMD
+    document.getElementById('cmdInput').focus();
     const btn = document.getElementById('exportPdfBtn');
     if (btn) 
     {
@@ -103,32 +144,13 @@ document.addEventListener('DOMContentLoaded', function()
                 return;
             }
 
+            mostraPatchDMX();
+
             document.getElementById('eventoPrint').textContent = document.getElementById('evento').value || 'Not specified';
             document.getElementById('luogoPrint').textContent = document.getElementById('luogo').value || 'Not specified';
             document.getElementById('autorePatchPrint').textContent = document.getElementById('autorePatch').value || 'Not specified';
 
-            // Calcola totale canali, universi e fixture
-            let totCanali = 0;
-            let universi = new Set();
-            let totFixture = 0;
-
-            if (typeof calcolaPatchDMXMulti === 'function') 
-            {
-                const lista = calcolaPatchDMXMulti(listaFixture);
-                lista.forEach(item => { universi.add(item.universo); });
-                // Somma tutti i canali delle fixture
-                totCanali = listaFixture.reduce((acc, f) => acc + (f.numero * f.canali), 0);
-                // Somma tutte le fixture (quantità)
-                totFixture = listaFixture.reduce((acc, f) => acc + f.numero, 0);
-            }
-
-            let unitext = "universe";
-            let chanText = "channel";
-            if(universi.size > 1) { unitext = "universes"; }
-            if(totCanali > 1) { chanText = "channels"; }
-
-            document.getElementById('dmxFootprint').textContent = universi.size + " " + unitext + " : " + totCanali + " " + chanText;
-            document.getElementById('totFixturePrint').textContent = totFixture;
+            setStats();
 
             // Evitiamo di raggiungere il limite mensile di chiamate API durante lo sviluppo locale
             if(window.location.protocol.startsWith("http") && window.location.hostname !== "localhost") 
@@ -141,7 +163,6 @@ document.addEventListener('DOMContentLoaded', function()
                 await simulateOverlay(); // Simula l'overlay di caricamento
             }
 
-            mostraPatchDMX();
             setCmdMessage('Successfully requested document number via API call. Generated PDF with ID #' + `${docID}.`, 'EXPORT');
             window.print();
         });
@@ -164,12 +185,27 @@ function randomColor(excludeColor)
     return disponibili[Math.floor(Math.random() * disponibili.length)];
 }
 
-function aggiungiFixture() 
+function aggiungiFixture(name, type, qty, channels) 
 {
-    const nome = document.getElementById('fixName').value.trim() || "Fixture name";
-    const tipo = document.getElementById('fixType').value;
-    const numero = parseInt(document.getElementById('fixQty').value, 10);
-    const canali = parseInt(document.getElementById('fixChs').value, 10);
+    let nome = "Fixture name";
+    let tipo = "Generic";
+    let numero = 1;
+    let canali = 1;
+
+    if(!add)
+    {
+        nome = document.getElementById('fixName').value.trim() || "Fixture name";
+        tipo = document.getElementById('fixType').value;
+        numero = parseInt(document.getElementById('fixQty').value, 10);
+        canali = parseInt(document.getElementById('fixChs').value, 10);
+    }
+    else
+    {
+        nome = name || "Fixture name";
+        tipo = type || "Generic";
+        numero = parseInt(qty, 10) || 1;
+        canali = parseInt(channels, 10) || 1;
+    }
 
     if (!nome || !tipo || isNaN(numero) || isNaN(canali) || numero < 1 || canali < 1 || canali > 511) 
     {
@@ -192,9 +228,11 @@ function clearAll()
     document.getElementById('fixQty').value = 1;
     document.getElementById('fixChs').value = 1;
     document.getElementById('patchButtonText').innerHTML = "Patch";
-    document.getElementById('patchButtonIcon').innerHTML = "";
+    document.getElementById('patchButtonIcon').innerHTML = "";
     updatePatch();
-    update = false;
+    oldCount = 0;
+    patch = true;
+    resetCmd(false);
     setCmdMessage("Project fully cleared. All fixtures have been deleted.", 'CLEAR');
 }
 
@@ -213,7 +251,7 @@ function updatePatch()
 
     html += `<thead><tr>
                 <th>Fixture</th>
-                <th>Tipo</th>
+                <th>Type</th>
                 <th>Number</th>
                 <th>Channels</th>
                 <th colspan="2">Color</th>
@@ -242,13 +280,23 @@ function updatePatch()
     if (div) div.innerHTML = html;
 
     // Cambia colore random alla fixture, evitando di riassegnare lo stesso colore
-    window.cambiaColoreFixture = function(idx) 
+    window.cambiaColoreFixture = function(idx, col = null) 
     {
         const coloreAttuale = listaFixture[idx].colore;
-        let nuovoColore = randomColor(coloreAttuale);
+        let nuovoColore;
+
+        if (col) 
+        {
+            nuovoColore = col; // Usa il colore passato come parametro
+        }
+        else
+        {
+            nuovoColore = randomColor(coloreAttuale);
+        }
+
         listaFixture[idx].colore = nuovoColore;
         updatePatch();
-        setCmdMessage(`Changed color of fixture(s) ${listaFixture[idx].nome} to ${nuovoColore}`, 'COLOR CHANGE');
+        setCmdMessage(`Changed color of fixture(s) '${listaFixture[idx].nome}' to ${nuovoColore}`, 'COLOR');
     }
     if (calcolaBtn) calcolaBtn.disabled = false;
 }
@@ -297,6 +345,7 @@ function calcolaPatchDMXMulti(listaFixture)
     return risultato;
 }
 
+let patch = true;
 let update = false;
 let oldCount = 0; // Contatore per il numero di fixture
 let newCount = 0; // Contatore per il numero di fixture aggiornate
@@ -335,9 +384,15 @@ function mostraPatchDMX()
         ];
 
         let imgHtml = '';
+
         if (showImages && tipiConImg.includes(item.tipo.toLowerCase())) 
         {
             imgHtml = `<img src='images/${item.tipo.toLowerCase()}.png' alt='${item.tipo}' title='${item.tipo}' style='height:32px;max-width:40px;vertical-align:middle;margin-right:0px;'>`;
+        }
+
+        else if (showImages)
+        {
+            imgHtml = `<img src='images/other.png' alt='${item.tipo}' title='${item.tipo}' style='height:32px;max-width:40px;vertical-align:middle;margin-right:0px;'>`;
         }
         
         let tipoColContent = `<span class='typeLayout'>${imgHtml}<span class='typeText' style='flex:1;justify-content:flex-start;text-align:left;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>${item.tipo}</span></span>`;
@@ -385,6 +440,7 @@ function mostraPatchDMX()
     }
 
     update = true;
+    patch = false;
 }
 
 function updateIconColor()
@@ -403,54 +459,96 @@ function updateIconColor()
     }
 }
 
-// Inizializza la tabella fixture all'avvio
-window.onload = updatePatch();
+window.onload = updatePatch(); // Inizializza la tabella fixture all'avvio
 
-// facciamo una funzione per far apparire e scomparire il testo dentro dot
-// il dot appare e scompare ogni 500 millisecondi, e lo fa all'infinito
+let specialBackground = false;
+
 function startDotAnimation() 
 {
     const dotText = document.getElementById('dot');
-    dotText.style.display = 'none'; // Inizialmente nascosto
+    const container = document.getElementById('cmdMsgTypeContainer');
+    dotText.style.visibility = 'hidden';
+    container.classList.add('blink');
+    document.getElementById('command-bar').style.backgroundColor = '#130036ff';
+    document.getElementById('cmdTitle').innerHTML = 'CMD • Waiting for input...';
+    specialBackground = true;
+
     setInterval(() =>
     {
-        if (dotText.style.display === 'none' || dotText.style.display === '') 
+        if (dotText.style.visibility === 'hidden') 
         {
-            dotText.style.display = 'block';
+            dotText.style.visibility = 'visible';
         }
         else 
         {
-            dotText.style.display = 'none';
+            dotText.style.visibility = 'hidden';
         }
     }, 500); // Cambia ogni 500 millisecondi
 }
 
-function setCmdMessage(msg, type)
+function stopDotAnimation()
 {
+    const dotText = document.getElementById('dot');
+    dotText.style.visibility = 'visible';
+    const container = document.getElementById('cmdMsgTypeContainer');
+    container.classList.remove('blink');
+    document.getElementById('cmdTitle').innerHTML = 'CMD • Current message';
+    document.getElementById('command-bar').style.backgroundColor = '#141414';
+}
+
+function setCmdMessage(msg, type)
+{   
+    stopDotAnimation();
     const container = document.getElementById('cmdListContainer2');
-    container.innerHTML = ''; // Pulisce il contenitore
     const cmdMsg = document.createElement('p');
     const dot = document.createElement('p');
-    cmdMsg.className = 'command-msg';
-    cmdMsg.id = 'cmdMsg';
     dot.className = 'command-msg dot';
     dot.id = 'dot';
-    dot.textContent = '_';
-    if (cmdMsg) { cmdMsg.textContent = msg; }
-    container.appendChild(cmdMsg); // Aggiunge il nuovo elemento
-    container.appendChild(dot); // Aggiunge il dot
-    startDotAnimation(); // Riavvia l'animazione del dot
+    dot.textContent = '>';
+
+    if (!freeze) 
+    { 
+        container.innerHTML = '';
+        cmdMsg.className = 'command-msg';
+        cmdMsg.id = 'cmdMsg';
+        cmdMsg.textContent = msg; 
+        container.appendChild(cmdMsg);
+        container.appendChild(dot);
+    }
+
+    else { document.getElementById('cmdMsg').textContent = "Command prompt frozen"}
+
     const typeText = document.getElementById('cmdMsgType');
     const containerType = document.getElementById('cmdMsgTypeContainer');
     const cmdBar = document.getElementById('command-bar');
 
+    if(freeze) { type = 'FREEZE'; }
+
+    if(!freeze)
+    {
+        document.getElementById('cmdInput').value = '';
+        focusCmd(false);
+    }
+
     if (typeText) 
     { 
-        typeText.innerHTML = type || 'WELCOME'; 
+        if (!freeze) typeText.innerHTML = type || 'WELCOME';
+        else typeText.innerHTML = 'FREEZE';
         typeText.style.color = 'white';
         containerType.style.borderColor = 'yellow';
         containerType.style.backgroundColor = 'rgba(255, 255, 0, 0.0)';
         cmdBar.style.backgroundColor = '#141414';
+        specialBackground = false;
+    }
+
+    if (typeText && type === 'FREEZE')
+    {
+        typeText.style.color = '#a4a4a4ff';
+        containerType.style.borderColor = '#a4a4a4ff';
+        containerType.style.backgroundColor = '#0f0f0f';
+        cmdBar.style.backgroundColor = '#0f0f0f';
+        specialBackground = true;
+        return;
     }
 
     if (typeText && type === 'ERROR')
@@ -459,14 +557,385 @@ function setCmdMessage(msg, type)
         containerType.style.borderColor = 'LightCoral';
         containerType.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
         cmdBar.style.backgroundColor = '#340000ff';
+        specialBackground = true;
     }
 
-    if (typeText && type === 'WARNING')
+    else if (typeText && type === 'WARNING')
     {
         typeText.style.color = 'orange';
         containerType.style.borderColor = 'orange';
         containerType.style.backgroundColor = 'rgba(255, 140, 0, 0.2)';
         cmdBar.style.backgroundColor = '#3a2500ff';
+        specialBackground = true;
     }
+}
 
+let remove = false;
+let add = false;
+let color = false;
+let doc = false;
+let rename = false;
+let freeze = false;
+
+function resetCmd(freezeTrigger = true)
+{
+    remove = false;
+    add = false;
+    color = false;
+    doc = false;
+    rename = false;
+    if (freezeTrigger) freeze = false;
+}
+
+function focusCmd(trigger)
+{
+    if(trigger && !specialBackground) document.getElementById('command-bar').style.backgroundColor = '#141414';
+    if(trigger && specialBackground) document.getElementById('command-bar').style.backgroundColor = oldBackground;
+    if(!trigger) document.getElementById('cmdInput').select();
+    return;
+}
+
+let oldBackground;
+
+function unfocusCmd()
+{
+    if(specialBackground) oldBackground = document.getElementById('command-bar').style.backgroundColor;
+    document.getElementById('command-bar').style.backgroundColor = '#0f0f0f';
+    return;
+}
+
+function handleCommand(event)
+{
+    if (event.key === 'Enter')
+    {
+        stopDotAnimation();
+        const cmdInput = document.getElementById('cmdInput');
+        const command = cmdInput.value.trim().toLowerCase();
+        cmdInput.value = '';
+        focusCmd(false);
+
+        // TODO -> gestire errori quando dentro a color/add/remove/docset/rename
+        // TODO -> aggiungere command includes / a tutti gli if
+        // TODO -> gestire lowercase / propercase
+        // TODO -> hero commands
+
+        if(freeze && command !== 'unfreeze' && command !== 'reset') { return };
+
+        if (command === 'reset') // reset ha la priorità su tutto
+        {
+            resetCmd();
+            setCmdMessage("Successfully resetted command prompt.", "RESET")
+            return;
+        }
+
+        else if (remove)
+        {
+            remove = false;
+
+            if (!isNaN(command) && command > -1 && command < listaFixture.length)
+            {
+                removeFixture(command);
+            }
+
+            else
+            {
+                setCmdMessage('Invalid fixture ID. Please enter a number between 0 and ' + (listaFixture.length - 1) + '.', 'ERROR');
+                startDotAnimation();
+                remove = true;
+            }
+            return;
+        }
+
+        else if (add)
+        {
+            let name, type, qty, channels;
+
+            if (command.includes('/')) // Se il comando contiene '/'
+            {
+                [name, type, qty, channels] = command.split('/').map(s => s.trim());
+                console.log(`Parsed fixture values: name=${name}, type=${type}, qty=${qty}, channels=${channels}`);
+                if (!name || !type || isNaN(qty) || isNaN(channels) || qty < 1 || channels < 1 || channels > 511)
+                {
+                    setCmdMessage('Invalid fixture values. Please check the name, type, quantity, and channels.', 'ERROR');
+                    add = true;
+                    startDotAnimation();
+                    return;
+                }
+            }
+            else
+            {
+                setCmdMessage('Invalid syntax. Please insert the fixture name / type / quantity / channels separated by a slash.', 'ERROR');
+                add = true;
+                startDotAnimation();
+                return;
+            }
+
+            aggiungiFixture(name.toProperCase(), type.toProperCase(), qty, channels);
+            add = false;
+            return;
+        }
+
+        else if (color)
+        {
+            color = false;
+            let id, hex;
+            [id, hex] = command.split('/').map(s => s.trim());
+            hex = hex.toString();// TO DO TOGLIERE IL CANCELLETTO SE C'è, LO RIMETTI ALLA FINE MA IL CONTROLLO NON LO VUOLE
+ 
+            console.log(`Parsed values: id=${id}, hex=${hex}`);
+
+            if (id > -1 && id < listaFixture.length && isHexColor(hex))
+            {
+                if(!hex.startsWith('#'))
+                {
+                    hex = '#' + hex;
+                }
+                window.cambiaColoreFixture(id, hex);
+            }
+            else
+            {
+                setCmdMessage('Invalid fixture ID or hex color code. Please enter proper values.', 'ERROR');
+                startDotAnimation();
+                color = true;
+            }
+            return;
+        }
+
+        else if (doc)
+        {
+            doc = false;
+            let event, location, author;
+            [event, location, author] = command.split('/').map(s => s.trim());
+ 
+            if (event && location && author)
+            {
+                document.getElementById('evento').value = event.toProperCase();
+                document.getElementById('luogo').value = location.toProperCase();
+                document.getElementById('autorePatch').value = author.toProperCase();
+                setCmdMessage('Successfully updated document details.', 'DOCSET');
+            }
+            else
+            {
+                setCmdMessage('Invalid syntax. Please insert the event / place / author names separated by a slash.', 'ERROR');
+                startDotAnimation();
+                doc = true;
+            }
+            return;
+        }
+
+        else if (rename)
+        {
+            rename = false;
+            let id, newName;
+            [id, newName] = command.split('/').map(s => s.trim());
+ 
+            if (id > -1 && id < listaFixture.length && newName)
+            {
+                setCmdMessage('Successfully renamed fixture "' + listaFixture[id].nome + '" to "' + newName + '".', 'RENAME');
+                listaFixture[id].nome = newName;
+                updatePatch();
+            }
+            else
+            {
+                setCmdMessage('Invalid fixture ID or new fixture name. Please enter proper values.', 'ERROR');
+                startDotAnimation();
+                rename = true;
+            }
+            return;
+        }
+
+        else if (command === '')
+        {
+            setCmdMessage('Please enter a command.', 'ERROR');
+            return;
+        }
+
+        else if (command === 'freeze')
+        {
+            stopDotAnimation();
+            freeze = true;
+            setCmdMessage("Command prompt frozen", "FREEZE")
+            return;
+        }
+        else if (command === 'unfreeze')
+        {
+            freeze = false;
+            setCmdMessage("Command prompt unfrozen", "UNFREEZE")
+            return;
+        }
+
+        else if (command === 'add')
+        {
+            setCmdMessage('Insert fixture name / fixture type / quantity / channels per unit or press enter to use defaults', 'ADD');
+            startDotAnimation();
+            add = true;
+            return;
+        }
+
+        else if (command === 'remove')
+        {
+            if (listaFixture.length > 0 && !remove)
+            {
+                setCmdMessage('Enter the fixture ID to remove (0 to ' + (listaFixture.length - 1) + '):', 'REMOVE');
+                startDotAnimation();
+                remove = true;
+            }
+            else
+            {
+                setCmdMessage('No fixtures to remove. Please add fixtures first.', 'ERROR');
+            }
+            return;
+        }
+
+        else if (command === 'color')
+        {
+            if (listaFixture.length > 0)
+            {
+                setCmdMessage('Enter the ID of the fixture / hex code of the new color without #:', 'COLOR');
+                startDotAnimation();
+                color = true;
+            }
+            else
+            {
+                setCmdMessage('No fixtures to change color. Please add fixtures first.', 'ERROR');
+            }
+            return;
+        }
+
+        else if (command === 'docset')
+        {
+            setCmdMessage('Enter the event venue / location / patch author names:', 'DOCSET');
+            startDotAnimation();
+            doc = true;
+            return;
+        }
+        
+        else if (command === 'rename')
+        {
+            if (listaFixture.length > 0)
+            {
+                setCmdMessage('Enter the ID of the fixture / new name:', 'RENAME');
+                startDotAnimation();
+                rename = true;
+            }
+            else
+            {
+                setCmdMessage('No fixtures to rename. Please add fixtures first.', 'ERROR');
+            }
+            return;
+        }
+
+        else if (command === 'clear')
+        {
+            clearAll();
+            return;
+        }
+
+        else if (command === 'patch')
+        {
+            if (listaFixture.length > 0 && patch)
+            {
+                mostraPatchDMX();
+            }
+            else if (!patch)
+            {
+                setCmdMessage("Patch already created. Use 'update' instead.", 'WARNING');
+            }
+            else
+            {
+                setCmdMessage('No fixtures added. Please add fixtures before patching.', 'ERROR');
+            }
+            return;
+        }
+
+        else if (command === 'update')
+        {
+            if (listaFixture.length > 0 && update)
+            {
+                mostraPatchDMX();
+            }
+            else if (!update)
+            {
+                setCmdMessage("Cannot update an empty patch. Use 'patch' instead.", 'WARNING');
+            }
+            else
+            {
+                setCmdMessage('Fixture list is empty, nothing to update.', 'ERROR');
+            }
+            return;
+        }
+
+        else if (command === 'export')
+        {
+            const evento = document.getElementById('evento').value.trim();
+            const luogo = document.getElementById('luogo').value.trim();
+            const autorePatch = document.getElementById('autorePatch').value.trim();    
+            if (!evento || !luogo || !autorePatch || !listaFixture.length)
+            {
+                setCmdMessage('Please fill the patch and fixture details fields to continue or type "docset" to set them here.', 'ERROR');
+                return;
+            }
+            const exportBtn = document.getElementById('exportPdfBtn');
+            if (exportBtn)
+            {
+                exportBtn.click();
+            }
+            else
+            {
+                setCmdMessage('Export button not found. Please check the HTML structure.', 'ERROR');
+            }
+            return;
+        }
+
+        else if (command === 'stats')
+        {
+            if (listaFixture.length > 0)
+            {
+                const totalFixtures = setStats(1);;
+                const footprint = setStats(2);;
+                setCmdMessage('Statistics. Total fixtures: ' + totalFixtures + '. DMX footprint: ' + footprint + '.', 'STATS');
+            }
+            else
+            {
+                setCmdMessage('No fixtures detected. Please add fixtures first.', 'ERROR');
+            }
+            return;
+        }
+
+        else if (command === 'help')
+        {
+            setCmdMessage('Available commands: add, remove, color, rename, patch, update, stats, docset, export, clear, freeze, unfreeze, help, about, reset', 'HELP');
+            return;
+        }
+
+        else if (command === 'about')
+        {
+            setCmdMessage('DMX Tools - Developed by Alessandro Caseti. For more information, visit the GitHub repository.', 'ABOUT');
+            return;
+        }
+
+        else if (command.startsWith('-'))
+        {
+            console.log("hero command detected");
+            return;
+        }
+
+        else if (command === 'skibidiboppi')
+        {
+            setCmdMessage('Forza Napoli.', 'SKIBIDIBOPPI');
+            return;
+        }
+
+        else if (command === 'forza napoli')
+        {
+            setCmdMessage('Skibidiboppi.', 'FORZA NAPOLI');
+            return;
+        }
+
+        else
+        {
+            setCmdMessage(`Unknown command: '${command}'. Type 'help' for a list of available commands.`, 'ERROR');
+            return;
+        }
+    }
 }
