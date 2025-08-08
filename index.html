@@ -11,196 +11,269 @@
         <link rel="stylesheet" href="patch.css">
         <link rel="icon" href="assets/dmxtools-logo.png" type="image/x-icon">
         <script src="script.js"></script>
+        <script src="cmd.js"></script>
+        <script src="database.js"></script>
+        <script src="power.js"></script>
     </head>
 
     <body>
 
-        <div id="loadingOverlay" class="loadingOverlay">
-            <div class="loader"></div>
-            <span style="color:white;font-size:1.5em;margin-top:20px;user-select: none;">Loading...</span>
+        <nav id="sidebar" class="web-only">
+            <div style="margin-top: 12px; display: flex; flex-direction: row; gap: 16px; margin-left: 12px;">
+                <img src="assets/dmxtools-logo.png" width="64" height="64">
+                <h2>DMX Tools</h2>
+            </div>
+            <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 16px; justify-content: center; align-items: center;">
+                <button class="navButton" onclick="navigateTo('home')">Home</button>
+                <button class="navButton" onclick="navigateTo('patch')">DMX Patch</button>
+                <button class="navButton" onclick="navigateTo('dip')">DIP Switch</button>
+                <button class="navButton" onclick="navigateTo('rgb')">RGB / CMY</button>
+                <button class="navButton" onclick="navigateTo('power')">Power Tools</button>
+                <button class="navButton" onclick="navigateTo('beam')">Beam Tools</button>
+                <button class="navButton" onclick="navigateTo('database')">Fixture Database</button>
+            </div>
+            <!--
+            <ul class="sidebar-menu">
+
+                <li><a>Home</a></li>
+                <li><a onclick="navigateTo('patch')">DMX Patch</a></li>
+                <li><a onclick="navigateTo('home')">DIP Switch</a></li>
+                <li><a onclick="navigateTo('home')">Power Tools</a></li>
+                <li><a onclick="navigateTo('home')">Beam Tools</a></li>
+                <li><a onclick="navigateTo('home')">Fixture Database</a></li>
+            </ul>
+            --->
+        </nav>
+
+        <div id="home" class="web-only defaultPage">
+            <h1 class="web-only" style="margin-top: 40px;">Home</h1>
         </div>
 
-        <!-- Print header -->
-        <div class="print-only">
-            <div style="display: flex; flex-direction: row; gap: 20px; justify-content:left; margin-top: -30px;">
-                <img src="assets/dmxtools-logo.png" alt="DMX Tools Logo" style="width: 74px; height: 74px;">
-                <div style="margin-top: -8px; margin-left: 8px;">
-                    <h2 style="margin-top: 2px; font-size: 1.5em; color: #000000; text-align: left;">DMX Tools</h2>
-                    <h3 style="margin-top: -16px; font-size: 0.8em; text-align: left; font-weight: 500;">Free DMX utilities developed by Alessandro Caseti</h3>
-                    <h3 style="margin-top: -8px; color:blue; font-size: 0.8em; text-align: left; font-weight: 500;">https://alessandrocaseti.github.io/dmx-tools</h3>
-                </div>
-                <div class="docNumberContainer">
-                    <h3 style="font-size: 0.8em; font-weight: 500;">Document number</h3>
-                    <div style="border: 1px solid #000000; height: 40px; margin-top: -8px; border-radius: 4px;">
-                        <h3 id="docNumber" style="margin-top: 8px;">#0000</h3>
+        <div class="defaultPage" id="patch" style="display: none;">
+
+            <div id="loadingOverlay" class="loadingOverlay">
+                <div class="loader"></div>
+                <span style="color:white;font-size:1.5em;margin-top:20px;user-select: none;">Loading...</span>
+            </div>
+
+            <!-- Print header -->
+            <div class="print-only">
+                <div style="display: flex; flex-direction: row; gap: 20px; justify-content:left; margin-top: -30px;">
+                    <img src="assets/dmxtools-logo.png" alt="DMX Tools Logo" style="width: 74px; height: 74px;">
+                    <div style="margin-top: -8px; margin-left: 8px;">
+                        <h2 style="margin-top: 2px; font-size: 1.5em; color: #000000; text-align: left;">DMX Tools</h2>
+                        <h3 style="margin-top: -16px; font-size: 0.8em; text-align: left; font-weight: 500;">Free DMX utilities developed by Alessandro Caseti</h3>
+                        <h3 style="margin-top: -8px; color:blue; font-size: 0.8em; text-align: left; font-weight: 500;">https://alessandrocaseti.github.io/dmx-tools</h3>
+                    </div>
+                    <div class="docNumberContainer">
+                        <h3 style="font-size: 0.8em; font-weight: 500;">Document number</h3>
+                        <div style="border: 1px solid #000000; height: 40px; margin-top: -8px; border-radius: 4px;">
+                            <h3 id="docNumber" style="margin-top: 8px;">#0000</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Print info -->
-        <div class="print-only" style="margin-top: 20px;height: 1px; border-top: 2px solid gray;"></div>
+            <!-- Print info -->
+            <div class="print-only" style="margin-top: 20px;height: 1px; border-top: 2px solid gray;"></div>
 
-        <div class="print-only" id="infoEventoPatch" style="margin-top:24px;">
-            <ul style="list-style:none;padding:0;font-size:1.1em; text-align: left;margin-left:28px;">
-                <li class="infoListItem">
-                    <img src="assets/event.png" width="16" height="16">
-                    <span class="infoListTitle">Event/venue:</span>
-                    <span class="infoElement" id="eventoPrint"></span>
-                </li>
-                <li class="infoListItem">
-                    <img src="assets/location.png" width="16" height="16">
-                    <span class="infoListTitle">Located in:</span>
-                    <span class="infoElement" id="luogoPrint"></span>
-                </li>
-                <li class="infoListItem">
-                    <img src="assets/author.png" width="16" height="16">
-                    <span class="infoListTitle">Patch author:</span>
-                    <span class="infoElement" id="autorePatchPrint"></span>
-                </li>
-                <li class="infoListItem">
-                    <img src="assets/fixture.png" width="16" height="16">
-                    <span class="infoListTitle">Total fixtures:</span>
-                    <span class="infoElement" id="totFixturePrint"></span>
-                </li>
-                <li class="infoListItem">
-                    <img src="assets/dmx.png" width="16" height="16">
-                    <span class="infoListTitle">DMX footprint:</span>
-                    <span class="infoElement" id="dmxFootprint"></span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="print-only">
-            <div style="display: flex; align-items: center; margin: 32px 0 24px 0;">
-                <div style="flex: 1; border-top: 2px dashed gray;"></div>
-                <h1 style="margin: 0 24px; padding: 0; font-size: 2em; font-weight: bold; text-align: center; line-height: 1;">DMX Patch</h1>
-                <div style="flex: 1; border-top: 2px dashed gray;"></div>
-            </div>
-        </div>
-
-        <h1 class="web-only">DMX Patch</h1>
-
-        <div class="web-only" style="display: flex; flex-direction: row; gap: 20px; margin-bottom: 16px; justify-content: center; align-items: center;">
-            <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
-                <label for="evento">Event/venue:</label>
-                <input type="text" id="evento" placeholder="Event/venue name" style="width: 22vh;" required>
-            </div>
-            <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
-                <label for="luogo">Located in:</label>
-                <input type="text" id="luogo" placeholder="Place name" style="width: 22vh;" required>
-            </div>
-            <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
-                <label for="autorePatch">Patch author:</label>
-                <input type="text" id="autorePatch" placeholder="Patch author name" style="width: 22vh;" required>
-            </div>
-        </div>
-
-        <form id="dmxForm" onsubmit="return false;" style="margin-top: 4vh;">
-
-            <label for="fixName">Name:</label>
-            <input type="text" id="fixName" placeholder="Fixture name" style="width: 16vh;" required>
-            <label for="fixType">Type:</label>
-
-            <div class="selectWrapper" style="position:relative;display:inline-block;">
-                <select id="fixType" required style="width: 16vh; height: 36px; padding-right: 28px;">
-                    <option value="Beam">Beam</option>
-                    <option value="Spot">Spot</option>
-                    <option value="Wash">Wash</option>
-                    <option value="Dimmer">Dimmer</option>
-                    <option value="Blinder">Blinder</option>
-                    <option value="Strobe">Strobe</option>
-                    <option value="Scanner">Scanner</option>
-                    <option value="Par">Par</option>
-                    <option value="FX Fog">FX Fog</option>
-                    <option value="FX Haze">FX Haze</option>
-                    <option value="FX Spark">FX Spark</option>
-                    <option value="FX CO2">FX CO2</option>
-                    <option value="FX Fire">FX Fire</option>
-                    <option value="FX Pyro">FX Pyro</option>
-                    <option value="FX Confetti">FX Confetti</option>
-                    <option value="Spotlight">Spotlight</option>
-                    <option value="Led Bar">Led Bar</option>
-                    <option value="Moving Bar">Moving Bar</option>
-                    <option value="Moving Panel">Moving Panel</option>
-                    <option value="Laser">Laser</option>
-                    <option value="Fan">Fan</option>
-                    <option value="RGB">RGB</option>
-                    <option value="RGBW">RGBW</option>
-                    <option value="RGBWAV">RGBWAV</option>
-                    <option value="Effect">Effect</option>
-                    <option value="Other">Other</option>
-                </select>
-                <span class="selectArrow" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:IconFont;font-size:1.2em;pointer-events:none;color:#ffeb3b;"></span>
+            <div class="print-only" id="infoEventoPatch" style="margin-top:24px;">
+                <ul style="list-style:none;padding:0;font-size:1.1em; text-align: left;margin-left:28px;">
+                    <li class="infoListItem">
+                        <img src="assets/event.png" width="16" height="16">
+                        <span class="infoListTitle">Event/venue:</span>
+                        <span class="infoElement" id="eventoPrint"></span>
+                    </li>
+                    <li class="infoListItem">
+                        <img src="assets/location.png" width="16" height="16">
+                        <span class="infoListTitle">Located in:</span>
+                        <span class="infoElement" id="luogoPrint"></span>
+                    </li>
+                    <li class="infoListItem">
+                        <img src="assets/author.png" width="16" height="16">
+                        <span class="infoListTitle">Patch author:</span>
+                        <span class="infoElement" id="autorePatchPrint"></span>
+                    </li>
+                    <li class="infoListItem">
+                        <img src="assets/fixture.png" width="16" height="16">
+                        <span class="infoListTitle">Total fixtures:</span>
+                        <span class="infoElement" id="totFixturePrint"></span>
+                    </li>
+                    <li class="infoListItem">
+                        <img src="assets/dmx.png" width="16" height="16">
+                        <span class="infoListTitle">DMX footprint:</span>
+                        <span class="infoElement" id="dmxFootprint"></span>
+                    </li>
+                </ul>
             </div>
 
-            <label for="fixQty">Quantity:</label>
-            <input type="number" id="fixQty" min="1" value="1" style="width: 8vh;" required>
-            <label for="fixChs">Channels:</label>
-            <input type="number" id="fixChs" min="1" value="1" style="width: 8vh;" required>
-
-            <button type="button" onclick="aggiungiFixture()" style="display: flex; align-items: center;">
-                <span class="buttonIcon"></span>
-                <span class="buttonText">Add</span>
-            </button>
-
-        </form>
-
-        <!-- Fixture List -->
-        <div id="fixtureList" style="margin: 30px auto 0 auto; max-width: 50%">
-            <span class="empty-message">- No fixtures added -</span>
-        </div>
-
-        <div style="display: flex; flex-direction: row; justify-content: center; gap: 20px; margin-top: 30px;">
-            <button id="calcolaPatchBtn" type="button" onclick="mostraPatchDMX()" style="display: flex; align-items: center;" disabled>
-                <span class="buttonIcon" id="patchButtonIcon"></span>
-                <span class="buttonText" id="patchButtonText">Patch</span>
-            </button>
-            <button id="clearBtn" type="button" onclick="clearAll()" style="display: flex; align-items: center;">
-                <span class="buttonIcon"></span>
-                <span class="buttonText">Clear all</span>
-            </button>
-        </div>
-
-        <div id="patchOptions" style="margin: 24px auto 0 auto; display: none; width: 50%; flex-direction: row; margin-bottom: -4px;">
-            <label style="font-size: 1.1em; justify-content: flex-start; display: flex; flex-direction: row; margin-bottom: -8px;">
-                <div style="position: relative; display: inline-block; vertical-align: middle;">
-                    <input type="checkbox" id="showImagesCheckbox" checked style="margin-right: 4px; margin-top: 20px; vertical-align: middle;">
-                    <p id="showImagesCheckboxIcon" style="color: black; margin-top: -24px; font-family: IconFont; font-size: 18px; font-weight: 600; transition: all 0.2s ease;"></p>
+            <div class="print-only">
+                <div style="display: flex; align-items: center; margin: 32px 0 24px 0;">
+                    <div style="flex: 1; border-top: 2px dashed gray;"></div>
+                    <h1 style="margin: 0 24px; padding: 0; font-size: 2em; font-weight: bold; text-align: center; line-height: 1;">DMX Patch</h1>
+                    <div style="flex: 1; border-top: 2px dashed gray;"></div>
                 </div>
-                <label for="showImagesCheckbox" style="margin-left: 8px; margin-top: 4px;">Show fixture icons</label>
-            </label>
-            <div style="margin-left: auto; display: flex; align-items: center;">
-                <button id="exportPdfBtn" type="button" style="display: flex; align-items: center;">
-                    <span class="buttonIcon"></span>
-                    <span class="buttonText">Export PDF / Print</span>
+            </div>
+
+            <h1 class="web-only" style="margin-top: 40px;">DMX Patch</h1>
+
+            <div class="web-only" style="display: flex; flex-direction: row; gap: 20px; margin-bottom: 16px; justify-content: center; align-items: center;">
+                <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
+                    <label for="evento">Event/venue:</label>
+                    <input type="text" id="evento" placeholder="Event/venue name" style="width: 22vh;" required>
+                </div>
+                <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
+                    <label for="luogo">Located in:</label>
+                    <input type="text" id="luogo" placeholder="Place name" style="width: 22vh;" required>
+                </div>
+                <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
+                    <label for="autorePatch">Patch author:</label>
+                    <input type="text" id="autorePatch" placeholder="Patch author name" style="width: 22vh;" required>
+                </div>
+            </div>
+
+            <form id="dmxForm" onsubmit="return false;" style="margin-top: 4vh;">
+
+                <label for="fixName">Name:</label>
+                <input type="text" id="fixName" placeholder="Fixture name" style="width: 16vh;" required>
+                <label for="fixType">Type:</label>
+
+                <div class="selectWrapper" style="position:relative;display:inline-block;">
+                    <select id="fixType" required style="width: 16vh; height: 36px; padding-right: 28px;">
+                        <option value="Beam">Beam</option>
+                        <option value="Spot">Spot</option>
+                        <option value="Wash">Wash</option>
+                        <option value="Dimmer">Dimmer</option>
+                        <option value="Blinder">Blinder</option>
+                        <option value="Strobe">Strobe</option>
+                        <option value="Scanner">Scanner</option>
+                        <option value="Par">Par</option>
+                        <option value="FX Fog">FX Fog</option>
+                        <option value="FX Haze">FX Haze</option>
+                        <option value="FX Spark">FX Spark</option>
+                        <option value="FX CO2">FX CO2</option>
+                        <option value="FX Fire">FX Fire</option>
+                        <option value="FX Pyro">FX Pyro</option>
+                        <option value="FX Confetti">FX Confetti</option>
+                        <option value="Spotlight">Spotlight</option>
+                        <option value="Led Bar">Led Bar</option>
+                        <option value="Moving Bar">Moving Bar</option>
+                        <option value="Moving Panel">Moving Panel</option>
+                        <option value="Laser">Laser</option>
+                        <option value="Fan">Fan</option>
+                        <option value="RGB">RGB</option>
+                        <option value="RGBW">RGBW</option>
+                        <option value="RGBWAV">RGBWAV</option>
+                        <option value="Effect">Effect</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="selectArrow" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:IconFont;font-size:1.2em;pointer-events:none;color:#ffeb3b;"></span>
+                </div>
+
+                <label for="fixQty">Quantity:</label>
+                <input type="number" id="fixQty" min="1" value="1" style="width: 8vh;" required>
+                <label for="fixChs">Channels:</label>
+                <input type="number" id="fixChs" min="1" value="1" style="width: 8vh;" required>
+
+                <button type="button" onclick="aggiungiFixture()" style="display: flex; align-items: center;">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Add</span>
+                </button>
+
+            </form>
+
+            <!-- Fixture List -->
+            <div id="fixtureList" style="margin: 30px auto 0 auto; max-width: 50%">
+                <span class="empty-message">- No fixtures added -</span>
+            </div>
+
+            <div style="display: flex; flex-direction: row; justify-content: center; gap: 20px; margin-top: 30px;">
+                <button id="calcolaPatchBtn" type="button" onclick="mostraPatchDMX()" style="display: flex; align-items: center;" disabled>
+                    <span class="buttonIcon" id="patchButtonIcon"></span>
+                    <span class="buttonText" id="patchButtonText">Patch</span>
+                </button>
+                <button id="clearBtn" type="button" onclick="clearAll()" style="display: flex; align-items: center;">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Clear all</span>
                 </button>
             </div>
+
+            <div id="patchOptions" style="margin: 24px auto 0 auto; display: none; width: 50%; flex-direction: row; margin-bottom: -4px;">
+                <label style="font-size: 1.1em; justify-content: flex-start; display: flex; flex-direction: row; margin-bottom: -8px;">
+                    <div style="position: relative; display: inline-block; vertical-align: middle;">
+                        <input type="checkbox" id="showImagesCheckbox" checked style="margin-right: 4px; margin-top: 20px; vertical-align: middle;">
+                        <p id="showImagesCheckboxIcon" style="color: black; margin-top: -24px; font-family: IconFont; font-size: 18px; font-weight: 600; transition: all 0.2s ease;"></p>
+                    </div>
+                    <label for="showImagesCheckbox" style="margin-left: 8px; margin-top: 4px;">Show fixture icons</label>
+                </label>
+                <div style="margin-left: auto; display: flex; align-items: center;">
+                    <button id="exportPdfBtn" type="button" style="display: flex; align-items: center;">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Export PDF / Print</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Patch List -->
+            <div id="patchList" class="patchList"></div>
+
+            <div class="print-only">Generated for free with <a href="https://alessandrocaseti.github.io/dmx-tools/" style="color: blue; text-decoration: underline;">alessandrocaseti.github.io/dmx-tools</a></div>
+            <div style="margin-bottom: 30vh;" class="web-only"></div>
+
+            <!-- Command Bar -->
+            <div id="command-bar" class="web-only" onclick="focusCmd()">
+                <div style="display: flex; flex-direction: row; align-items: center; gap: 12px;">
+                    <p style="color: yellow; user-select: none;" id="cmdTitle">CMD • Current message</p>
+                    <div id="cmdMsgTypeContainer" style="transition: all 0.3s ease; background-color: rgba(255, 255, 0, 0.0); border: 1px solid yellow; height: 20px; border-radius: 4px; font-size: 14px; width: auto">
+                        <p id="cmdMsgType" style="transition: all 0.3s ease; margin-top: 0px; margin-bottom: 1px; margin-left: 4px; margin-right: 4px; user-select: none; font-family: 'Roboto Mono';">WELCOME</p>
+                    </div>
+                </div>
+                <div class="cmdListContainer">
+                    <p class="command-msg">></p>
+                    <div id="cmdListContainer2" style="display: flex; flex-direction: row;">
+                        <p class="command-msg" id="cmdMsg">Welcome on DMX tools! Start by indicating the project details and then proceed to set up your fixture list.</p>
+                        <p class="command-msg dot" id="dot">></p>
+                    </div>
+                    <input type="text" id="cmdInput" onblur="unfocusCmd()" onfocus="focusCmd(true)" onkeydown="handleCommand(event)" style="margin-top: -4px;caret-color: yellow;flex-grow: 1; margin-left: -4px; border: none; outline: none; background-color: transparent; color: yellow; font-family: 'Roboto Mono';">
+                </div>
+            </div>
         </div>
 
-        <!-- Patch List -->
-        <div id="patchList" class="patchList"></div>
+        <div id="dip" class="web-only defaultPage" style="display: none;">
+            <h1 class="web-only" style="margin-top: 40px;">DIP Switch</h1>
+        </div>
 
-        <div class="print-only">Generated for free with <a href="https://alessandrocaseti.github.io/dmx-tools/" style="color: blue; text-decoration: underline;">alessandrocaseti.github.io/dmx-tools</a></div>
-        <div style="margin-bottom: 30vh;" class="web-only"></div>
+        <div id="rgb" class="web-only defaultPage" style="display: none;">
+            <h1 class="web-only" style="margin-top: 40px;">RGB / CMY</h1>
+        </div>
 
-        <!-- Command Bar -->
-        <div id="command-bar" class="web-only" onclick="focusCmd()">
-            <div style="display: flex; flex-direction: row; align-items: center; gap: 12px;">
-                <p style="color: yellow; user-select: none;" id="cmdTitle">CMD • Current message</p>
-                <div id="cmdMsgTypeContainer" style="transition: all 0.3s ease; background-color: rgba(255, 255, 0, 0.0); border: 1px solid yellow; height: 20px; border-radius: 4px; font-size: 14px; width: auto">
-                    <p id="cmdMsgType" style="transition: all 0.3s ease; margin-top: 0px; margin-bottom: 1px; margin-left: 4px; margin-right: 4px; user-select: none; font-family: 'Roboto Mono';">WELCOME</p>
-                </div>
+        <div id="power" class="web-only defaultPage" style="display: none;">
+            <h1 class="web-only" style="margin-top: 40px;">Power Tools</h1>
+
+
+
+
+
+
+
+        </div>
+
+        <div id="beam" class="web-only defaultPage" style="display: none;">
+            <h1 class="web-only" style="margin-top: 40px;">Beam Tools</h1>
+        </div>
+
+        <div id="database" class="web-only defaultPage" style="display: none;">
+            <h1 class="web-only" style="margin-top: 40px;">Fixture Database</h1>
+            <div style="display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; margin: 0 auto 0 auto;">
+                <button class="defaultButton brandButton">ACME</button>
+                <button class="defaultButton brandButton">Sagitter</button>
+                <button class="defaultButton brandButton">Proel</button>
+                <button class="defaultButton brandButton">Prolights</button>
+                <button class="defaultButton brandButton">FOS Lighting</button>
+                <button class="defaultButton brandButton">Robe</button>
+                <button class="defaultButton brandButton">SGM</button>
             </div>
-            <div class="cmdListContainer">
-                <p class="command-msg">></p>
-                <div id="cmdListContainer2" style="display: flex; flex-direction: row;">
-                    <p class="command-msg" id="cmdMsg">Welcome on DMX tools! Start by indicating the project details and then proceed to set up your fixture list.</p>
-                    <p class="command-msg dot" id="dot">></p>
-                </div>
-                <input type="text" id="cmdInput" onblur="unfocusCmd()" onfocus="focusCmd(true)" onkeydown="handleCommand(event)" style="margin-top: -4px;caret-color: yellow;flex-grow: 1; margin-left: -4px; border: none; outline: none; background-color: transparent; color: yellow; font-family: 'Roboto Mono';">
-            </div>
-
+        </div>
     </body>
 
 </html>

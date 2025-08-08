@@ -469,3 +469,62 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
     animation:fade 1000ms infinite;
     -webkit-animation:fade 1000ms infinite;
 }
+
+/* Container sidebar sempre visibile */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;            /* Larghezza fissa */
+  height: 100vh;
+  background-color: var(--colore-bg-scuro);  /* Opaco, senza alpha */
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* Menu items senza animazioni di apertura */
+.sidebar-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-menu li a 
+{
+  display: block;
+  padding: 1rem;
+  color: var(--colore-testo);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sidebar-menu li a:hover 
+{
+    background-color: var(--colore-bg-tabella);
+    color: var(--colore-hover);
+}
+
+/* Spazio per il contenuto principale */
+.defaultPage {
+  margin-left: 250px;      /* Equivale alla larghezza della sidebar */
+  padding: 2rem;
+}
+
+.navButton
+{
+    width: 200px;
+    color: var(--colore-bordo-chiaro);
+    background: transparent;
+    outline: none;
+    border-width: 0px;
+}
+
+.brandButton
+{
+    height: 48px;
+    width: 180px;
+    margin-top: 8px;
+}
