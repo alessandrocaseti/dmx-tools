@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="pdf.css">
         <link rel="stylesheet" href="patch.css">
+        <link rel="stylesheet" href="power.css">
         <link rel="icon" href="assets/dmxtools-logo.png" type="image/x-icon">
         <script src="script.js"></script>
         <script src="cmd.js"></script>
@@ -247,15 +248,75 @@
             <h1 class="web-only" style="margin-top: 40px;">RGB / CMY</h1>
         </div>
 
+        <!-- Power Tools Page -->
         <div id="power" class="web-only defaultPage" style="display: none;">
             <h1 class="web-only" style="margin-top: 40px;">Power Tools</h1>
+            <div class="power-tools-container">
+                <h2>Watt / Ampere / Volt Converter</h2>
 
+                <div class="converter-grid">
+                    <div class="input-group">
+                        <label for="watts">Power (Watts)</label>
+                        <input type="number" id="watts" placeholder="Enter watts" step="0.01">
+                    </div>
 
+                    <div class="input-group">
+                        <label for="volts">Voltage (Volts)</label>
+                        <input type="number" id="volts" placeholder="Enter volts" step="0.01">
+                    </div>
 
+                    <div class="input-group">
+                        <label for="amperes">Current (Amperes)</label>
+                        <input type="number" id="amperes" placeholder="Enter amperes" step="0.01">
+                    </div>
+                </div>
 
+                <div class="converter-buttons">
+                    <button onclick="powerConverter.calculate()" class="calculate-btn">Calculate Missing Value</button>
+                    <button onclick="powerConverter.clear()" class="clear-btn">Clear All</button>
+                </div>
 
+                <div id="result-display" class="result-display">
+                    <div id="calculation-result" class="calculation-result"></div>
+                </div>
 
+                <div class="power-formulas">
+                    <h3>Formulas Used:</h3>
+                    <ul>
+                        <li><strong>Watts (P) = Volts (V) × Amperes (I)</strong></li>
+                        <li><strong>Volts (V) = Watts (P) ÷ Amperes (I)</strong></li>
+                        <li><strong>Amperes (I) = Watts (P) ÷ Volts (V)</strong></li>
+                    </ul>
+                </div>
 
+                <div class="power-calculator">
+                    <h3>Power Calculator</h3>
+                    <div class="calculator-section">
+                        <h4>Calculate Total Power Consumption</h4>
+                        <div class="fixture-input">
+                            <label>Fixture Type:</label>
+                            <input type="text" id="fixture-type" placeholder="e.g., LED Par 64">
+                        </div>
+                        <div class="fixture-input">
+                            <label>Power per fixture (Watts):</label>
+                            <input type="number" id="fixture-power" placeholder="e.g., 80" step="0.1">
+                        </div>
+                        <div class="fixture-input">
+                            <label>Quantity:</label>
+                            <input type="number" id="fixture-quantity" placeholder="e.g., 12" min="1">
+                        </div>
+                        <button onclick="powerConverter.addFixture()" class="add-fixture-btn">Add to List</button>
+                    </div>
+
+                    <div id="fixture-list" class="fixture-list">
+                        <h4>Fixture List</h4>
+                        <div id="fixtures-container"></div>
+                        <div id="total-power" class="total-power">
+                            <strong>Total Power: <span id="total-watts">0</span> W</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="beam" class="web-only defaultPage" style="display: none;">
