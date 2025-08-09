@@ -139,7 +139,7 @@
                 <input type="text" id="fixName" placeholder="Fixture name" style="width: 16vh;" required>
                 <label for="fixType">Type:</label>
 
-                <div class="selectWrapper" style="position:relative;display:inline-block;">
+                <div style="position:relative;display:inline-block;">
                     <select id="fixType" required style="width: 16vh; height: 36px; padding-right: 28px;">
                         <option value="Beam">Beam</option>
                         <option value="Spot">Spot</option>
@@ -256,34 +256,40 @@
 
                 <div class="converter-grid">
                     <div class="input-group">
-                        <label for="watts">Power (Watts)</label>
-                        <input type="number" id="watts" placeholder="Enter watts" step="0.01">
+                        <label for="watts">Power (W):</label>
+                        <input type="number" id="watts" placeholder="Watts" step="0.01" style="width: 100px;">
                     </div>
 
                     <div class="input-group">
-                        <label for="volts">Voltage (Volts)</label>
-                        <input type="number" id="volts" placeholder="Enter volts" step="0.01">
+                        <label for="volts">Voltage (V):</label>
+                        <input type="number" id="volts" placeholder="Volts" step="0.01" style="width: 100px;">
                     </div>
 
                     <div class="input-group">
-                        <label for="amperes">Current (Amperes)</label>
-                        <input type="number" id="amperes" placeholder="Enter amperes" step="0.01">
+                        <label for="amperes">Current (A):</label>
+                        <input type="number" id="amperes" placeholder="Amperes" step="0.01" style="width: 100px;">
                     </div>
                 </div>
 
                 <div class="converter-buttons">
-                    <button onclick="powerConverter.calculate()" class="calculate-btn">Calculate Missing Value</button>
-                    <button onclick="powerConverter.clear()" class="clear-btn">Clear All</button>
+                    <button onclick="powerConverter.calculate()" style="display: flex; flex-direction: row;">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Calculate Missing Value</span>
+                    </button>
+                    <button onclick="powerConverter.clear()" style="display: flex; flex-direction: row;">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Clear all</span>
+                    </button>
                 </div>
 
                 <div id="result-display" class="result-display">
                     <div id="calculation-result" class="calculation-result"></div>
                 </div>
 
-                <div class="power-formulas">
+                <div class="power-formulas" style="display: none;">
                     <h3>Formulas Used:</h3>
                     <ul>
-                        <li><strong>Watts (P) = Volts (V) × Amperes (I)</strong></li>
+                        <li><strong>Watts (P) = Volts (V) x Amperes (I)</strong></li>
                         <li><strong>Volts (V) = Watts (P) ÷ Amperes (I)</strong></li>
                         <li><strong>Amperes (I) = Watts (P) ÷ Volts (V)</strong></li>
                     </ul>
@@ -294,18 +300,21 @@
                     <div class="calculator-section">
                         <h4>Calculate Total Power Consumption</h4>
                         <div class="fixture-input">
-                            <label>Fixture Type:</label>
-                            <input type="text" id="fixture-type" placeholder="e.g., LED Par 64">
+                            <label>Fixture name:</label>
+                            <input type="text" id="fixture-type" placeholder="Fixture name" style="width: 200px;">
                         </div>
                         <div class="fixture-input">
-                            <label>Power per fixture (Watts):</label>
-                            <input type="number" id="fixture-power" placeholder="e.g., 80" step="0.1">
+                            <label>Power per unit (W):</label>
+                            <input type="number" id="fixture-power" placeholder="Watts per unit" step="0.1" style="width: 200px;">
                         </div>
                         <div class="fixture-input">
                             <label>Quantity:</label>
-                            <input type="number" id="fixture-quantity" placeholder="e.g., 12" min="1">
+                            <input type="number" id="fixture-quantity" placeholder="Quantity" min="1" style="width: 200px;">
                         </div>
-                        <button onclick="powerConverter.addFixture()" class="add-fixture-btn">Add to List</button>
+                        <button onclick="powerConverter.addFixture()" style="display: flex; flex-direction: row;">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Add</span>
+                        </button>
                     </div>
 
                     <div id="fixture-list" class="fixture-list">

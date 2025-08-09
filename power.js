@@ -119,8 +119,8 @@ class PowerConverter
         const fixtureDiv = document.createElement('div');
         fixtureDiv.className = 'fixture-item';
         fixtureDiv.innerHTML = `
-            <span>${type} - ${power}W × ${quantity} = ${(power * quantity).toFixed(1)}W</span>
-            <button onclick="this.parentElement.remove(); powerConverter.updateTotalPower()" class="remove-btn">×</button>`;
+            <span>${type} | ${power}W × ${quantity} units = ${(power * quantity).toFixed(1)}W</span>
+            <button style="height:36px;font-family:IconFont;" onclick="this.parentElement.remove(); powerConverter.updateTotalPower()"></button>`;
         
         fixturesContainer.appendChild(fixtureDiv);
         this.updateTotalPower();
