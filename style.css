@@ -289,6 +289,37 @@ button:hover
     color: var(--colore-bg-scuro);
 }
 
+.selectedNavButton 
+{
+    background: transparent;
+    color: var(--colore-giallo);
+    border: 1px solid var(--colore-hover);
+    border-radius: var(--border-radius);
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 36px;
+    cursor: pointer;
+    transition: all 0.4s, color 0.4s;
+    user-select: none;
+}
+
+.unselectedNavButton 
+{
+    background: var(--colore-bg-scuro);
+    color: var(--colore-testo);
+    border: 1px solid transparent;
+    border-width: 1px;
+    border-radius: var(--border-radius);
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 36px;
+    cursor: pointer;
+    transition: all 0.4s, color 0.4s;
+    user-select: none;
+}
+
 button:disabled, button[disabled] 
 {
     background: #444;
@@ -518,12 +549,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
 .navButton
 {
     width: 200px;
-    color: var(--colore-bordo-chiaro);
-    background: transparent;
-    outline: none;
-    border-width: 0px;
 }
-
+/*
+.navButton:hover
+{
+    background: var(--colore-bordo);
+}
+*/
 .brandButton
 {
     height: 48px;
