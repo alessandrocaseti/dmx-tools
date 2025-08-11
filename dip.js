@@ -9,6 +9,7 @@ class DMXDIPSwitch
         this.maxAddress = 511;
         this.switches = 9; // 2^9 = 512, covers 0-511
         this.currentAddress = 0;
+        this.storedAddresses = [];
         this.init();
     }
 
@@ -29,7 +30,7 @@ class DMXDIPSwitch
                 <div class="dip-input-section">
                     <label for="dmxAddress">DMX Address:</label>
                     <input type="number" id="dmxAddress" min="0" max="511" value="0" placeholder="0-511">
-                    <button onclick="dipSwitch.updateFromAddress()">Store</button>
+                    <button onclick="dipSwitch.storeAddress()">Store</button>
                     <button onclick="dipSwitch.incrementAddress()">+</button>
                     <button onclick="dipSwitch.decrementAddress()">-</button>
                     <button onclick="dipSwitch.clearAddress()">Clear</button>
@@ -42,6 +43,27 @@ class DMXDIPSwitch
                     <div class="binary-display">
                         <span>Binary: </span>
                         <span id="binaryValue">000000000</span>
+                    </div>
+                </div>
+
+                <div class="stored-addresses-section">
+                    <h3>Stored Addresses</h3>
+                    <div id="storedAddressesTable">
+                        <table class="addresses-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Address</th>
+                                    <th>Binary</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="storedAddressesBody">
+                                <tr>
+                                    <td colspan="4" style="text-align: center; color: #666;">No addresses stored yet</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -86,6 +108,67 @@ class DMXDIPSwitch
         this.updateDisplay();
     }
 
+    storeAddress() 
+    {
+        const addressInput = document.getElementById('dmxAddress');
+        let address = parseInt(addressInput.value);
+        
+        if (isNaN(address)) address = 0;
+        if (address < 0) address = 0;
+        if (address > this.maxAddress) address = this.maxAddress;
+        
+        // Check if address already exists
+        if (!this.storedAddresses.includes(address)) {
+            this.storedAddresses.push(address);
+            this.storedAddresses.sort((a, b) => a - b);
+            this.updateStoredAddressesTable();
+        }
+    }
+
+    updateStoredAddressesTable() 
+    {
+        const tbody = document.getElementById('storedAddressesBody');
+        if (!tbody) return;
+
+        if (this.storedAddresses.length === 0) {
+            tbody.innerHTML = `
+                <tr>
+                    <td colspan="4" style="text-align: center; color: #666;">No addresses stored yet</td>
+                </tr>
+            `;
+            return;
+        }
+
+        tbody.innerHTML = '';
+        this.storedAddresses.forEach((address, index) => {
+            const binaryString = address.toString(2).padStart(9, '0');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${index + 1}</td>
+                <td>${address}</td>
+                <td>${binaryString}</td>
+                <td>
+                    <button onclick="dipSwitch.loadAddress(${address})" style="margin-right: 5px;">Load</button>
+                    <button onclick="dipSwitch.removeAddress(${index})" style="background-color: #dc3545;">Remove</button>
+                </td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    loadAddress(address) 
+    {
+        this.currentAddress = address;
+        this.updateDisplay();
+        document.getElementById('dmxAddress').value = address;
+    }
+
+    removeAddress(index) 
+    {
+        this.storedAddresses.splice(index, 1);
+        this.updateStoredAddressesTable();
+    }
+
     incrementAddress() 
     {
         const addressInput = document.getElementById('dmxAddress');
@@ -117,6 +200,66 @@ class DMXDIPSwitch
         this.currentAddress = 0;
         this.updateDisplay();
         document.getElementById('dmxAddress').value = 0;
+    }
+
+    storeAddress() 
+    {
+        const addressInput = document.getElementById('dmxAddress');
+        let address = parseInt(addressInput.value);
+        
+        if (isNaN(address)) address = 0;
+        if (address < 0) address = 0;
+        if (address > this.maxAddress) address = this.maxAddress;
+        
+        if (!this.storedAddresses.includes(address)) {
+            this.storedAddresses.push(address);
+            this.storedAddresses.sort((a, b) => a - b);
+            this.updateStoredAddressesTable();
+        }
+    }
+
+    updateStoredAddressesTable() 
+    {
+        const tbody = document.getElementById('storedAddressesBody');
+        if (!tbody) return;
+
+        if (this.storedAddresses.length === 0) {
+            tbody.innerHTML = `
+                <tr>
+                    <td colspan="4" style="text-align: center; color: #666;">No addresses stored yet</td>
+                </tr>
+            `;
+            return;
+        }
+
+        tbody.innerHTML = '';
+        this.storedAddresses.forEach((address, index) => {
+            const binaryString = address.toString(2).padStart(9, '0');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${index + 1}</td>
+                <td>${address}</td>
+                <td>${binaryString}</td>
+                <td>
+                    <button onclick="dipSwitch.loadAddress(${address})" style="margin-right: 5px;">Load</button>
+                    <button onclick="dipSwitch.removeAddress(${index})" style="background-color: #dc3545;">Remove</button>
+                </td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    loadAddress(address) 
+    {
+        this.currentAddress = address;
+        this.updateDisplay();
+        document.getElementById('dmxAddress').value = address;
+    }
+
+    removeAddress(index) 
+    {
+        this.storedAddresses.splice(index, 1);
+        this.updateStoredAddressesTable();
     }
 
     toggleSwitch(bit) 
