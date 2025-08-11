@@ -1,0 +1,168 @@
+/* DMX DIP Switch Styles */
+
+.dip-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dip-input-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dip-input-section label {
+    font-weight: bold;
+    color: var(--colore-testo);
+}
+
+.dip-input-section input {
+    padding: 8px 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+}
+
+.dip-switches-container {
+    background-color: var(--foreground);
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.dip-switches-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--colore-testo);
+}
+
+.switches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.switch-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--colore-testo);
+}
+
+.switch-value {
+    font-size: 10px;
+    color: #888;
+}
+
+.dip-switch {
+    width: 40px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.dip-switch .switch-lever {
+    width: 18px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.dip-switch.on {
+    background-color: var(--colore-giallo);
+}
+
+.dip-switch.on .switch-lever {
+    left: 20px;
+}
+
+.dip-switch:hover {
+    transform: scale(1.1);
+}
+
+.binary-display {
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--colore-testo);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .switches-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .dip-input-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .dip-input-section input {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Animation for switch toggles */
+@keyframes switchToggle {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.dip-switch.toggling {
+    animation: switchToggle 0.2s ease;
+}
+
+/* Print styles 
+@media print {
+    .dip-container {
+        max-width: none;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .dip-input-section button {
+        display: none;
+    }
+    
+    .dip-switch {
+        background-color: #000;
+    }
+    
+    .dip-switch.on {
+        background-color: #000;
+    }
+    
+    .dip-switch .switch-lever {
+        background-color: #fff;
+    }
+}
+
+*/
