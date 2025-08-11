@@ -82,7 +82,7 @@ class DMXDIPSwitch
                     <div class="dip-switch" data-bit="${i}" onclick="dipSwitch.toggleSwitch(${i})">
                         <div class="switch-lever"></div>
                     </div>
-                    <div class="switch-value">${i}</div>
+                    <div class="switch-value">${i+1}</div>
                 </div>
             `;
         }
