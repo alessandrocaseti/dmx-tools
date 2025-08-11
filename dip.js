@@ -10,6 +10,7 @@ class DMXDIPSwitch
         this.switches = 9; // 2^9 = 512, covers 0-511
         this.currentAddress = 0;
         this.storedAddresses = [];
+        this.isFlipped = true;
         this.init();
     }
 
@@ -29,11 +30,12 @@ class DMXDIPSwitch
             <div class="dip-container">
                 <div class="dip-input-section">
                     <label for="dmxAddress">DMX Address:</label>
+                    <button onclick="dipSwitch.decrementAddress()" disabled id="lessButton" style="font-size: 18px; font-family: 'IconFont';"></button>
                     <input type="number" id="dmxAddress" min="0" max="511" value="0" placeholder="0-511">
+                    <button onclick="dipSwitch.incrementAddress()" id="moreButton" style="font-size: 18px; font-family: 'IconFont';"></button>
                     <button onclick="dipSwitch.storeAddress()">Store</button>
-                    <button onclick="dipSwitch.incrementAddress()">+</button>
-                    <button onclick="dipSwitch.decrementAddress()">-</button>
                     <button onclick="dipSwitch.clearAddress()">Clear</button>
+                    <button onclick="dipSwitch.flipSwitches()">Flip</button>
                 </div>
                 
                 <div class="dip-switches-container">
@@ -46,10 +48,10 @@ class DMXDIPSwitch
                     </div>
                 </div>
 
-                <div class="stored-addresses-section">
+                <div>
                     <h3>Stored Addresses</h3>
                     <div id="storedAddressesTable">
-                        <table class="addresses-table">
+                        <table class="patchTable">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -60,7 +62,7 @@ class DMXDIPSwitch
                             </thead>
                             <tbody id="storedAddressesBody">
                                 <tr>
-                                    <td colspan="4" style="text-align: center; color: #666;">No addresses stored yet</td>
+                                    <td colspan="4" class="empty-message">No addresses stored yet</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -73,16 +75,21 @@ class DMXDIPSwitch
     createSwitchesHTML() 
     {
         let switchesHTML = '';
-        for (let i = 8; i >= 0; i--) 
+        const isFlipped = this.isFlipped || false;
+        
+        for (let i = 0; i < this.switches; i++) 
         {
-            const bitValue = Math.pow(2, i);
+            const displayIndex = isFlipped ? i : 8 - i;
+            const bitValue = Math.pow(2, displayIndex);
+            const switchNumber = isFlipped ? i + 1 : 9 - i;
+            
             switchesHTML += `
                 <div class="switch-container">
                     <div class="switch-label">${bitValue}</div>
-                    <div class="dip-switch" data-bit="${i}" onclick="dipSwitch.toggleSwitch(${i})">
+                    <div class="dip-switch" data-bit="${displayIndex}" onclick="dipSwitch.toggleSwitch(${displayIndex})">
                         <div class="switch-lever"></div>
                     </div>
-                    <div class="switch-value">${i+1}</div>
+                    <div class="switch-value">${switchNumber}</div>
                 </div>
             `;
         }
@@ -130,17 +137,19 @@ class DMXDIPSwitch
         const tbody = document.getElementById('storedAddressesBody');
         if (!tbody) return;
 
-        if (this.storedAddresses.length === 0) {
+        if (this.storedAddresses.length === 0) 
+        {
             tbody.innerHTML = `
                 <tr>
-                    <td colspan="4" style="text-align: center; color: #666;">No addresses stored yet</td>
+                    <td colspan="4" class="empty-message">No addresses stored yet</td>
                 </tr>
             `;
             return;
         }
 
         tbody.innerHTML = '';
-        this.storedAddresses.forEach((address, index) => {
+        this.storedAddresses.forEach((address, index) => 
+        {
             const binaryString = address.toString(2).padStart(9, '0');
             const row = document.createElement('tr');
             row.innerHTML = `
@@ -148,8 +157,8 @@ class DMXDIPSwitch
                 <td>${address}</td>
                 <td>${binaryString}</td>
                 <td>
-                    <button onclick="dipSwitch.loadAddress(${address})" style="margin-right: 5px;">Load</button>
-                    <button onclick="dipSwitch.removeAddress(${index})" style="background-color: #dc3545;">Remove</button>
+                    <button onclick="dipSwitch.loadAddress(${address})">Load</button>
+                    <button onclick="dipSwitch.removeAddress(${index})">Remove</button>
                 </td>
             `;
             tbody.appendChild(row);
@@ -187,7 +196,7 @@ class DMXDIPSwitch
         const addressInput = document.getElementById('dmxAddress');
         let address = parseInt(addressInput.value);
         
-        if(address > 1 && address < 512) address--;
+        if(address > 0 && address < 512) address--;
         else return;
         
         this.currentAddress = address;
@@ -211,7 +220,8 @@ class DMXDIPSwitch
         if (address < 0) address = 0;
         if (address > this.maxAddress) address = this.maxAddress;
         
-        if (!this.storedAddresses.includes(address)) {
+        if (!this.storedAddresses.includes(address)) 
+        {
             this.storedAddresses.push(address);
             this.storedAddresses.sort((a, b) => a - b);
             this.updateStoredAddressesTable();
@@ -223,17 +233,19 @@ class DMXDIPSwitch
         const tbody = document.getElementById('storedAddressesBody');
         if (!tbody) return;
 
-        if (this.storedAddresses.length === 0) {
+        if (this.storedAddresses.length === 0) 
+        {
             tbody.innerHTML = `
                 <tr>
-                    <td colspan="4" style="text-align: center; color: #666;">No addresses stored yet</td>
+                    <td colspan="4" class="empty-message">No addresses stored yet</td>
                 </tr>
             `;
             return;
         }
 
         tbody.innerHTML = '';
-        this.storedAddresses.forEach((address, index) => {
+        this.storedAddresses.forEach((address, index) => 
+        {
             const binaryString = address.toString(2).padStart(9, '0');
             const row = document.createElement('tr');
             row.innerHTML = `
@@ -241,8 +253,8 @@ class DMXDIPSwitch
                 <td>${address}</td>
                 <td>${binaryString}</td>
                 <td>
-                    <button onclick="dipSwitch.loadAddress(${address})" style="margin-right: 5px;">Load</button>
-                    <button onclick="dipSwitch.removeAddress(${index})" style="background-color: #dc3545;">Remove</button>
+                    <button onclick="dipSwitch.loadAddress(${address})">Load</button>
+                    <button onclick="dipSwitch.removeAddress(${index})">Remove</button>
                 </td>
             `;
             tbody.appendChild(row);
@@ -292,6 +304,25 @@ class DMXDIPSwitch
         const binaryString = this.currentAddress.toString(2).padStart(9, '0');
         const binaryValue = document.getElementById('binaryValue');
         if (binaryValue) { binaryValue.textContent = binaryString; }
+        if (this.currentAddress < 1) { document.getElementById('lessButton').disabled = true; }
+        else { document.getElementById('lessButton').disabled = false; }
+        if (this.currentAddress > 510) { document.getElementById('moreButton').disabled = true; }
+        else { document.getElementById('moreButton').disabled = false; }
+    }
+
+    flipSwitches() 
+    {
+        // Toggle the flip state
+        this.isFlipped = !this.isFlipped;
+        
+        // Recreate the interface with flipped layout
+        this.createInterface();
+        this.bindEvents();
+        this.updateDisplay();
+        this.updateStoredAddressesTable();
+        // Update address input
+        const addressInput = document.getElementById('dmxAddress');
+        if (addressInput) { addressInput.value = this.currentAddress; }
     }
 
     // Utility method to get switch states
