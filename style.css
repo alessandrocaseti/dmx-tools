@@ -43,6 +43,7 @@
     --colore-bordo-chiaro: #c2c2c2;
     --colore-hover: #ffe600;
     --border-radius: 6px;
+    --max-page-width: 70%;
 }
 
 @font-face
@@ -307,7 +308,7 @@ button:hover
 
 .unselectedNavButton 
 {
-    background: var(--colore-bg-scuro);
+    background: transparent;
     color: var(--colore-testo);
     border: 1px solid transparent;
     border-width: 1px;
@@ -511,7 +512,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
   left: 0;
   width: 250px;            /* Larghezza fissa */
   height: 100vh;
-  background-color: var(--colore-bg-scuro);  /* Opaco, senza alpha */
+  background-color: var(--foreground);  /* Opaco, senza alpha */
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
