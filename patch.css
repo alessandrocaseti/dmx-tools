@@ -2,8 +2,8 @@
 
 .patchTable 
 {
-    min-width: 70%;
-    max-width: 70%;
+    min-width: var(--max-page-width);
+    max-width: var(--max-page-width);
     table-layout: fixed;
     margin: 20px auto 0 auto;
     border-collapse: collapse;
@@ -15,7 +15,7 @@
 
 .patchTable.firstTable
 {
-    min-width: 40%;
+    min-width: var(--max-page-width);
     max-width: 80%;
     table-layout: auto;
     margin: 20px auto 0 auto;
