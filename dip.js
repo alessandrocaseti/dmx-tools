@@ -16,60 +16,9 @@ class DMXDIPSwitch
 
     init() 
     {
-        this.createInterface();
+        this.createSwitchesHTML();
         this.bindEvents();
         this.updateDisplay();
-    }
-
-    createInterface() 
-    {
-        const container = document.getElementById('dip');
-        container.innerHTML = `
-            <h1 style="margin-top: 40px;">DIP Switch</h1>
-            
-            <div class="dip-container">
-                <div class="dip-input-section">
-                    <label for="dmxAddress">DMX Address:</label>
-                    <button onclick="dipSwitch.decrementAddress()" disabled id="lessButton" style="font-size: 18px; font-family: 'IconFont';"></button>
-                    <input type="number" id="dmxAddress" min="0" max="511" value="0" placeholder="0-511">
-                    <button onclick="dipSwitch.incrementAddress()" id="moreButton" style="font-size: 18px; font-family: 'IconFont';"></button>
-                    <button onclick="dipSwitch.storeAddress()">Store</button>
-                    <button onclick="dipSwitch.clearAddress()">Clear</button>
-                    <button onclick="dipSwitch.flipSwitches()">Flip</button>
-                </div>
-                
-                <div class="dip-switches-container">
-                    <div class="switches-grid">
-                        ${this.createSwitchesHTML()}
-                    </div>
-                    <div class="binary-display">
-                        <span>Binary: </span>
-                        <span id="binaryValue">000000000</span>
-                    </div>
-                </div>
-
-                <div>
-                    <h3>Stored Addresses</h3>
-                    <div id="storedAddressesTable">
-                        <table class="patchTable">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Address</th>
-                                    <th>Binary</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody id="storedAddressesBody">
-                                <tr>
-                                    <td colspan="4" class="empty-message">No addresses stored yet</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        `;
     }
 
     createSwitchesHTML() 
@@ -93,7 +42,7 @@ class DMXDIPSwitch
                 </div>
             `;
         }
-        return switchesHTML;
+        document.getElementById('switchesHTML').innerHTML = switchesHTML;
     }
 
     bindEvents() 
@@ -316,7 +265,7 @@ class DMXDIPSwitch
         this.isFlipped = !this.isFlipped;
         
         // Recreate the interface with flipped layout
-        this.createInterface();
+        this.createSwitchesHTML();
         this.bindEvents();
         this.updateDisplay();
         this.updateStoredAddressesTable();
