@@ -59,34 +59,115 @@ class ColorConverter
     // Color picker setup
     setupColorPicker() 
     {
+        this.hue = 0; // default hue
+        this.saturation = 100;
+        this.lightness = 50;
+
         const picker = document.getElementById('colorPicker');
         const cursor = document.getElementById('colorCursor');
-        
+        const huePicker = document.getElementById('huePicker');
+        const hueCursor = document.getElementById('hueCursor');
+
+        // Handle saturation and lightness selection on right-click only
+        picker.addEventListener('contextmenu', (e) => e.preventDefault()); // prevent context menu
+
         picker.addEventListener('mousedown', (e) => {
-            this.handleColorPicker(e);
-            document.addEventListener('mousemove', this.handleColorPicker.bind(this));
-            document.addEventListener('mouseup', () => {
-                document.removeEventListener('mousemove', this.handleColorPicker.bind(this));
-            });
+            if (e.button === 2) { // right-click only
+                this.updateSaturationLightness(e);
+                const moveHandler = (ev) => this.updateSaturationLightness(ev);
+                document.addEventListener('mousemove', moveHandler);
+                document.addEventListener('mouseup', () => {
+                    document.removeEventListener('mousemove', moveHandler);
+                }, { once: true });
+            }
         });
 
-        picker.addEventListener('click', this.handleColorPicker.bind(this));
+        // Update hue on left-click or drag on hue bar
+        huePicker.addEventListener('mousedown', (e) => {
+            this.updateHue(e);
+            const moveHandler = (ev) => this.updateHue(ev);
+            document.addEventListener('mousemove', moveHandler);
+            document.addEventListener('mouseup', () => {
+                document.removeEventListener('mousemove', moveHandler);
+            }, { once: true });
+        });
+
+        // Cursor hover improvements
+        picker.addEventListener('mouseenter', () => {
+            picker.style.cursor = 'crosshair';
+        });
+        huePicker.addEventListener('mouseenter', () => {
+            huePicker.style.cursor = 'ns-resize';
+        });
+
+        this.updatePickerBackground();
+        this.updateCursors();
     }
 
-    handleColorPicker(e) 
+    updateSaturationLightness(e) 
     {
         const picker = document.getElementById('colorPicker');
         const rect = picker.getBoundingClientRect();
-        
+
         const x = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
         const y = Math.max(0, Math.min(e.clientY - rect.top, rect.height));
-        
-        const hue = (x / rect.width) * 360;
-        const saturation = (y / rect.height) * 100;
-        const lightness = 50;
-        
-        const rgb = this.hslToRgb(hue, saturation, lightness);
+
+        this.saturation = (x / rect.width) * 100;
+        this.lightness = 100 - (y / rect.height) * 100;
+
+        this.updateColor();
+        this.updateCursors();
+    }
+
+    updateHue(e) 
+    {
+        const huePicker = document.getElementById('huePicker');
+        const rect = huePicker.getBoundingClientRect();
+
+        const y = Math.max(0, Math.min(e.clientY - rect.top, rect.height));
+        this.hue = 360 - (y / rect.height) * 360;
+        if (this.hue === 360) this.hue = 0;
+
+        this.updatePickerBackground();
+        this.updateColor();
+        this.updateCursors();
+    }
+
+    updatePickerBackground() 
+    {
+        const picker = document.getElementById('colorPicker');
+        picker.style.background = `
+            linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)),
+            linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)),
+            hsl(${this.hue}, 100%, 50%)
+        `;
+    }
+
+    updateColor() 
+    {
+        const rgb = this.hslToRgb(this.hue, this.saturation, this.lightness);
         this.setColor(rgb.r, rgb.g, rgb.b);
+    }
+
+    updateCursors() 
+    {
+        const picker = document.getElementById('colorPicker');
+        const cursor = document.getElementById('colorCursor');
+        const huePicker = document.getElementById('huePicker');
+        const hueCursor = document.getElementById('hueCursor');
+
+        const pickerRect = picker.getBoundingClientRect();
+        const hueRect = huePicker.getBoundingClientRect();
+
+        // Saturation and lightness cursor position
+        const x = (this.saturation / 100) * pickerRect.width;
+        const y = ((100 - this.lightness) / 100) * pickerRect.height;
+        cursor.style.left = `${x}px`;
+        cursor.style.top = `${y}px`;
+
+        // Hue cursor position
+        const hueY = ((360 - this.hue) / 360) * hueRect.height;
+        hueCursor.style.top = `${hueY}px`;
     }
 
     hslToRgb(h, s, l) 
