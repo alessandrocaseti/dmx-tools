@@ -251,9 +251,22 @@
                     <button onclick="dipSwitch.decrementAddress()" disabled id="lessButton" style="font-size: 18px; font-family: 'IconFont';"></button>
                     <input type="number" id="dmxAddress" min="0" max="511" value="0" placeholder="0-511">
                     <button onclick="dipSwitch.incrementAddress()" id="moreButton" style="font-size: 18px; font-family: 'IconFont';"></button>
-                    <button onclick="dipSwitch.storeAddress()">Store</button>
-                    <button onclick="dipSwitch.clearAddress()">Clear</button>
-                    <button onclick="dipSwitch.flipSwitches()">Flip</button>
+                    <button onclick="dipSwitch.storeAddress()" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Store</span>
+                    </button>
+                    <button onclick="dipSwitch.clearAddress()" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Clear DIP</span>
+                    </button>
+                    <button onclick="dipSwitch.clearAll()" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Clear All</span>
+                    </button>
+                    <button onclick="dipSwitch.flipSwitches()" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Flip</span>
+                    </button>
                 </div>
 
                 <div class="dip-switches-container">
@@ -317,11 +330,11 @@
                 </div>
 
                 <div class="converter-buttons">
-                    <button onclick="powerConverter.calculate()" style="display: flex; flex-direction: row;">
+                    <button onclick="powerConverter.calculate()" class="iconButton">
                         <span class="buttonIcon"></span>
                         <span class="buttonText">Calculate Missing Value</span>
                     </button>
-                    <button onclick="powerConverter.clear()" style="display: flex; flex-direction: row;">
+                    <button onclick="powerConverter.clear()" class="iconButton">
                         <span class="buttonIcon"></span>
                         <span class="buttonText">Clear all</span>
                     </button>
@@ -356,7 +369,7 @@
                             <label>Quantity:</label>
                             <input type="number" id="fixture-quantity" placeholder="Quantity" min="1" style="width: 200px;">
                         </div>
-                        <button onclick="powerConverter.addFixture()" style="display: flex; flex-direction: row;">
+                        <button onclick="powerConverter.addFixture()" class="iconButton">
                             <span class="buttonIcon"></span>
                             <span class="buttonText">Add</span>
                         </button>

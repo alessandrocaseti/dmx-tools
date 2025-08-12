@@ -160,6 +160,15 @@ class DMXDIPSwitch
         document.getElementById('dmxAddress').value = 0;
     }
 
+    clearAll()
+    {
+        this.clearAddress();
+        for (let i = 0; i < this.storedAddresses.length; i++)
+        {
+            this.removeAddress(i);
+        }
+    }
+
     storeAddress() 
     {
         const addressInput = document.getElementById('dmxAddress');
