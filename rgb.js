@@ -190,8 +190,8 @@ class ColorConverter
     // Saved colors functionality
     saveColor() 
     {
-        const name = document.getElementById('colorName').value.trim();
-        if (!name) 
+        const inputName = document.getElementById('colorName').value.trim();
+        if (!inputName) 
         {
             alert('Please enter a color name');
             return;
@@ -199,7 +199,7 @@ class ColorConverter
 
         const color = 
         {
-            name,
+            name: inputName,
             rgb: this.currentColor,
             cmy: this.rgbToCmy(this.currentColor.r, this.currentColor.g, this.currentColor.b),
             hex: this.rgbToHex(this.currentColor.r, this.currentColor.g, this.currentColor.b)
