@@ -27,13 +27,34 @@
                 <h2>DMX Tools</h2>
             </div>
             <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 16px; justify-content: center; align-items: center;">
-                <button class="navButton selectedNavButton" onclick="navigateTo('home')" id="homeNavButton">Home</button>
-                <button class="navButton unselectedNavButton" onclick="navigateTo('patch')" id="patchNavButton">DMX Patch</button>
-                <button class="navButton unselectedNavButton" onclick="navigateTo('dip')" id="dipNavButton">DIP Switch</button>
-                <button class="navButton unselectedNavButton" onclick="navigateTo('rgb')" id="rgbNavButton">RGB / CMY</button>
-                <button class="navButton unselectedNavButton" onclick="navigateTo('power')" id="powerNavButton">Power Tools</button>
-                <button class="navButton unselectedNavButton" onclick="navigateTo('beam')" id="beamNavButton">Beam Tools</button>
-                <button class="navButton unselectedNavButton" onclick="navigateTo('database')" id="databaseNavButton">Fixture Database</button>
+                <button class="navButton selectedNavButton iconButton" onclick="navigateTo('home')" id="homeNavButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Home</span>
+                </button>
+                <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('patch')" id="patchNavButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">DMX Patch</span>
+                </button>
+                <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('dip')" id="dipNavButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">DIP Switch</span>
+                </button>
+                <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('rgb')" id="rgbNavButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">RGB / CMY</span>
+                </button>
+                <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('power')" id="powerNavButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Power Tools</span>
+                </button>
+                <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('beam')" id="beamNavButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Beam Tools</span>
+                </button>
+                <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('database')" id="databaseNavButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Fixture Database</span>
+                </button>
             </div>
         </nav>
 
