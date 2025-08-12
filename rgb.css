@@ -1,0 +1,209 @@
+/* RGB to CMY Color Converter - DMX Tools Native Styles */
+.rgb-container 
+{
+    max-width: var(--max-page-width);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.color-picker-container 
+{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-picker-section 
+{
+    text-align: center;
+    gap: 48px;
+    display: flex;
+    flex-direction: row;
+}
+
+.color-picker-square 
+{
+    width: 400px;
+    height: 400px;
+    border: 2px solid #444;
+    border-radius: 6px;
+    cursor: crosshair;
+    position: relative;
+    background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000),
+                linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,1));
+    background-blend-mode: multiply;
+    margin: 0 auto 10px;
+}
+
+.color-picker-cursor 
+{
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 1px #000;
+}
+
+.color-display 
+{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.color-values 
+{
+    flex: 1;
+    min-width: 300px;
+}
+
+.color-values h3 
+{
+    margin-bottom: 15px;
+    color: #ffeb3b;
+}
+
+.value-group 
+{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.value-group label 
+{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+.rgb-inputs, .cmy-inputs 
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#hexValue 
+{
+    width: 80px;
+    text-align: center;
+}
+
+.saved-colors-section 
+{
+    margin-top: 40px;
+}
+
+.saved-colors-section h3 
+{
+    margin-bottom: 20px;
+    color: #ffeb3b;
+}
+
+.save-color-form 
+{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.save-color-form input 
+{
+    flex: 1;
+    min-width: 200px;
+}
+
+.saved-colors-list 
+{
+    border-radius: 6px;
+    padding: 20px;
+    min-height: 100px;
+    background: var(--foreground);
+}
+
+.saved-color-item 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #181c22;
+    border-radius: 6px;
+    border-left: 4px solid #ffeb3b;
+}
+
+.saved-color-info 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.saved-color-preview 
+{
+    width: 48px;
+    height: 48px;
+    margin-left: 6px;
+    border: 1px solid #444;
+    border-radius: var(--border-radius);
+}
+
+.saved-color-details 
+{
+    font-size: 14px;
+    color: #e0e0e0;
+    text-align: left;
+}
+
+.saved-color-actions 
+{
+    display: flex;
+    gap: 5px;
+}
+
+.empty-message 
+{
+    text-align: center;
+    color: #e0e0e0;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .color-picker-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .color-picker-square {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .color-display {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .rgb-inputs, .cmy-inputs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .rgb-inputs input, .cmy-inputs input {
+        width: 100%;
+    }
+}

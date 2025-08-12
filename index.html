@@ -9,14 +9,16 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="pdf.css">
         <link rel="stylesheet" href="patch.css">
+        <link rel="stylesheet" href="rgb.css">
         <link rel="stylesheet" href="power.css">
         <link rel="stylesheet" href="dip.css">
         <link rel="icon" href="assets/dmxtools-logo.png" type="image/x-icon">
         <script src="script.js"></script>
         <script src="cmd.js"></script>
-        <script src="database.js"></script>
-        <script src="power.js"></script>
         <script src="dip.js"></script>
+        <script src="rgb.js"></script>
+        <script src="power.js"></script>
+        <script src="database.js"></script>
     </head>
 
     <body>
@@ -41,7 +43,7 @@
                 </button>
                 <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('rgb')" id="rgbNavButton">
                     <span class="buttonIcon"></span>
-                    <span class="buttonText">RGB / CMY</span>
+                    <span class="buttonText">RGB / CMY / HEX</span>
                 </button>
                 <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('power')" id="powerNavButton">
                     <span class="buttonIcon"></span>
@@ -314,9 +316,57 @@
             </div>
         </div>
 
-        <!-- RGB / CMY -->
+        <!-- RGB / CMY / HEX -->
         <div id="rgb" class="web-only defaultPage" style="display: none;">
-            <h1 style="margin-top: 40px;">RGB / CMY</h1>
+            <h1 style="margin-top: 40px;">RGB / CMY / HEX</h1>
+            <div class="rgb-container">
+
+                <div class="color-picker-container">
+                    <div class="color-picker-section">
+                        <div class="color-picker-square" id="colorPicker">
+                            <div class="color-picker-cursor" id="colorCursor"></div>
+                        </div>
+                        <div class="color-display" id="colorDisplay"></div>
+                    </div>
+
+                    <div class="color-values">
+                        <h3>Color Values</h3>
+                        <div class="value-group">
+                            <label>RGB:</label>
+                            <div class="rgb-inputs">
+                                <input type="number" id="rValue" min="0" max="255" value="255">
+                                <input type="number" id="gValue" min="0" max="255" value="0">
+                                <input type="number" id="bValue" min="0" max="255" value="0">
+                            </div>
+                        </div>
+
+                        <div class="value-group">
+                            <label>CMY:</label>
+                            <div class="cmy-inputs">
+                                <input type="number" id="cValue" min="0" max="100" value="0">
+                                <input type="number" id="mValue" min="0" max="100" value="100">
+                                <input type="number" id="yValue" min="0" max="100" value="100">
+                            </div>
+                        </div>
+
+                        <div class="value-group">
+                            <label>HEX:</label>
+                            <input type="text" id="hexValue" value="#FF0000" maxlength="7">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="saved-colors-section">
+                    <h3>Saved Colors</h3>
+                    <div class="save-color-form">
+                        <input type="text" id="colorName" placeholder="Color name">
+                        <button onclick="saveColor()">Save Color</button>
+                    </div>
+                    <div class="saved-colors-list" id="savedColorsList">
+                        <p class="empty-message">No saved colors yet</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Power Tools -->
