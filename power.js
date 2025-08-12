@@ -139,7 +139,7 @@ class PowerConverter
         fixtures.forEach(fixture => 
         {
             const text = fixture.querySelector('span').textContent;
-            const match = text.match(/(\d+\.?\d*)W × (\d+) = (\d+\.?\d*)W/);
+            const match = text.match(/(\d+\.?\d*)W × (\d+) units = (\d+\.?\d*)W/);
             if (match) { totalPower += parseFloat(match[3]); }
         });
         
