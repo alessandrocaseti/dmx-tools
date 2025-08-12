@@ -330,9 +330,10 @@ function updatePatch()
     let html = '<table class="patchTable firstTable">';
 
     html += `<thead><tr>
+                <th>ID</th>
                 <th>Fixture</th>
                 <th>Type</th>
-                <th>Number</th>
+                <th>Quantity</th>
                 <th>Channels</th>
                 <th colspan="2">Color</th>
                 <th class="rimuoviCol">Remove</th></tr>
@@ -342,6 +343,7 @@ function updatePatch()
     {
         html += 
         `<tr>
+            <td>${idx}</td>
             <td>${fixture.nome}</td>
             <td>${fixture.tipo}</td>
             <td>${fixture.numero}</td>
