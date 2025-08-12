@@ -249,7 +249,7 @@
                 <div class="dip-input-section">
                     <label for="dmxAddress">DMX Address:</label>
                     <button onclick="dipSwitch.decrementAddress()" disabled id="lessButton" style="font-size: 18px; font-family: 'IconFont';"></button>
-                    <input type="number" id="dmxAddress" min="0" max="511" value="0" placeholder="0-511">
+                    <input type="number" id="dmxAddress" min="0" max="511" value="000" placeholder="000-511">
                     <button onclick="dipSwitch.incrementAddress()" id="moreButton" style="font-size: 18px; font-family: 'IconFont';"></button>
                     <button onclick="dipSwitch.storeAddress()" class="iconButton">
                         <span class="buttonIcon"></span>
@@ -280,12 +280,11 @@
                 </div>
 
                 <div>
-                    <h3>Stored Addresses</h3>
+                    <h3 style="user-select: none;">Stored Addresses</h3>
                     <div id="storedAddressesTable">
-                        <table class="patchTable">
+                        <table class="patchTable" style="min-width: 100%;">
                             <thead>
                                 <tr>
-                                    <th>#</th>
                                     <th>Address</th>
                                     <th>Binary</th>
                                     <th>Action</th>

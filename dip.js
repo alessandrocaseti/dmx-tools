@@ -45,7 +45,7 @@ class DMXDIPSwitch
         document.getElementById('switchesHTML').innerHTML = switchesHTML;
     }
 
-    bindEvents() 
+    bindEvents()
     {
         const addressInput = document.getElementById('dmxAddress');
         if (addressInput) { addressInput.addEventListener('input', (e) => { this.updateFromAddress(); }); }
@@ -61,6 +61,7 @@ class DMXDIPSwitch
         if (address > this.maxAddress) address = this.maxAddress;
         
         this.currentAddress = address;
+        addressInput.value = address.toString().padStart(3, '0');
         this.updateDisplay();
     }
 
@@ -118,7 +119,7 @@ class DMXDIPSwitch
     {
         this.currentAddress = address;
         this.updateDisplay();
-        document.getElementById('dmxAddress').value = address;
+        document.getElementById('dmxAddress').value = address.toString().padStart(3, '0');
     }
 
     removeAddress(index) 
@@ -137,7 +138,7 @@ class DMXDIPSwitch
 
         this.currentAddress = address;
         this.updateDisplay();
-        addressInput.value = address;
+        addressInput.value = address.toString().padStart(3, '0');
     }
 
     decrementAddress() 
@@ -150,23 +151,21 @@ class DMXDIPSwitch
         
         this.currentAddress = address;
         this.updateDisplay();
-        addressInput.value = address;
+        addressInput.value = address.toString().padStart(3, '0');
     }
 
     clearAddress() 
     {
         this.currentAddress = 0;
         this.updateDisplay();
-        document.getElementById('dmxAddress').value = 0;
+        document.getElementById('dmxAddress').value = this.currentAddress.toString().padStart(3, '0');
     }
 
     clearAll()
     {
         this.clearAddress();
-        for (let i = 0; i < this.storedAddresses.length; i++)
-        {
-            this.removeAddress(i);
-        }
+        this.storedAddresses = [];
+        this.updateStoredAddressesTable();
     }
 
     storeAddress() 
@@ -207,12 +206,19 @@ class DMXDIPSwitch
             const binaryString = address.toString(2).padStart(9, '0');
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${index + 1}</td>
-                <td>${address}</td>
-                <td>${binaryString}</td>
+                <td>${address.toString().padStart(3, '0')}</td>
+                <td style="font-family: 'Roboto Mono', monospace">${binaryString}</td>
                 <td>
-                    <button onclick="dipSwitch.loadAddress(${address})">Load</button>
-                    <button onclick="dipSwitch.removeAddress(${index})">Remove</button>
+                    <div style="display: flex; flex-direction: row; justify-content: center; gap: 24px;">
+                        <button onclick="dipSwitch.loadAddress(${address})" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Load</span>
+                        </button>
+                        <button onclick="dipSwitch.removeAddress(${index})" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Remove</span>
+                        </button>
+                    </div>
                 </td>
             `;
             tbody.appendChild(row);
@@ -223,7 +229,7 @@ class DMXDIPSwitch
     {
         this.currentAddress = address;
         this.updateDisplay();
-        document.getElementById('dmxAddress').value = address;
+        document.getElementById('dmxAddress').value = address.toString().padStart(3, '0');
     }
 
     removeAddress(index) 
@@ -238,9 +244,13 @@ class DMXDIPSwitch
         if (this.currentAddress & bitValue) { this.currentAddress -= bitValue; }
         else { this.currentAddress += bitValue; }
         
+        // Ensure address stays within bounds
+        if (this.currentAddress < 0) this.currentAddress = 0;
+        if (this.currentAddress > this.maxAddress) this.currentAddress = this.maxAddress;
+
         // Update address input
         const addressInput = document.getElementById('dmxAddress');
-        if (addressInput) { addressInput.value = this.currentAddress; }
+        if (addressInput) { addressInput.value = this.currentAddress.toString().padStart(3, '0'); }
         
         this.updateDisplay();
     }
