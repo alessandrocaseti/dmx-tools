@@ -35,23 +35,14 @@
                 <button class="navButton unselectedNavButton" onclick="navigateTo('beam')" id="beamNavButton">Beam Tools</button>
                 <button class="navButton unselectedNavButton" onclick="navigateTo('database')" id="databaseNavButton">Fixture Database</button>
             </div>
-            <!--
-            <ul class="sidebar-menu">
-
-                <li><a>Home</a></li>
-                <li><a onclick="navigateTo('patch')">DMX Patch</a></li>
-                <li><a onclick="navigateTo('home')">DIP Switch</a></li>
-                <li><a onclick="navigateTo('home')">Power Tools</a></li>
-                <li><a onclick="navigateTo('home')">Beam Tools</a></li>
-                <li><a onclick="navigateTo('home')">Fixture Database</a></li>
-            </ul>
-            --->
         </nav>
 
+        <!-- Home -->
         <div id="home" class="web-only defaultPage">
             <h1 class="web-only" style="margin-top: 40px;">Home</h1>
         </div>
 
+        <!-- DMX Patch -->
         <div class="defaultPage" id="patch" style="display: none;">
 
             <div id="loadingOverlay" class="loadingOverlay">
@@ -242,6 +233,7 @@
             </div>
         </div>
 
+        <!-- DIP Switch -->
         <div id="dip" class="web-only defaultPage" style="display: none;">
             <h1 style="margin-top: 40px;">DIP Switch</h1>
 
@@ -280,7 +272,7 @@
                 </div>
 
                 <div>
-                    <h3 style="user-select: none;">Stored Addresses</h3>
+                    <h3 style="user-select: none; margin-top: 48px;">Stored Addresses</h3>
                     <div id="storedAddressesTable">
                         <table class="patchTable" style="min-width: 100%;">
                             <thead>
@@ -301,11 +293,12 @@
             </div>
         </div>
 
+        <!-- RGB / CMY -->
         <div id="rgb" class="web-only defaultPage" style="display: none;">
             <h1 style="margin-top: 40px;">RGB / CMY</h1>
         </div>
 
-        <!-- Power Tools Page -->
+        <!-- Power Tools -->
         <div id="power" class="web-only defaultPage" style="display: none;">
             <h1 style="margin-top: 40px;">Power Tools</h1>
             <div class="power-tools-container">
@@ -385,10 +378,12 @@
             </div>
         </div>
 
+        <!-- Beam Tools -->
         <div id="beam" class="web-only defaultPage" style="display: none;">
             <h1 style="margin-top: 40px;">Beam Tools</h1>
         </div>
 
+        <!-- Fixture Database -->
         <div id="database" class="web-only defaultPage" style="display: none;">
             <h1 style="margin-top: 40px;">Fixture Database</h1>
             <div style="display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; margin: 0 auto 0 auto;">
