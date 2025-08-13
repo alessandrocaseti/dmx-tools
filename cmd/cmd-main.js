@@ -1,6 +1,6 @@
 /// DMX TOOLS - DEVELOPED BY ALESSANDRO CASETI ///
 
-// Command Prompt functions
+// Command prompt main functions
 
 String.prototype.toProperCase = function () 
 {

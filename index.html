@@ -7,18 +7,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DMX Tools</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="pdf.css">
-        <link rel="stylesheet" href="patch.css">
-        <link rel="stylesheet" href="rgb.css">
-        <link rel="stylesheet" href="power.css">
-        <link rel="stylesheet" href="dip.css">
+        <link rel="stylesheet" href="export/pdf.css">
+        <link rel="stylesheet" href="pages/patch.css">
+        <link rel="stylesheet" href="pages/dip.css">
+        <link rel="stylesheet" href="pages/color.css">
+        <link rel="stylesheet" href="pages/power.css">
+        <link rel="stylesheet" href="pages/beam.css">
+        <link rel="stylesheet" href="pages/database.css">
+        <link rel="stylesheet" href="cmd/cmd.css">
         <link rel="icon" href="assets/dmxtools-logo.png" type="image/x-icon">
         <script src="script.js"></script>
-        <script src="cmd.js"></script>
-        <script src="dip.js"></script>
-        <script src="rgb.js"></script>
-        <script src="power.js"></script>
-        <script src="database.js"></script>
+        <script src="pages/patch.js"></script>
+        <script src="pages/dip.js"></script>
+        <script src="pages/color.js"></script>
+        <script src="pages/power.js"></script>
+        <script src="pages/beam.js"></script>
+        <script src="pages/database.js"></script>
+        <script src="cmd/cmd-main.js"></script>
     </head>
 
     <body>
@@ -43,11 +48,11 @@
                 </button>
                 <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('rgb')" id="rgbNavButton">
                     <span class="buttonIcon"></span>
-                    <span class="buttonText">RGB / CMY / HEX</span>
+                    <span class="buttonText">Color Converter</span>
                 </button>
                 <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('power')" id="powerNavButton">
                     <span class="buttonIcon"></span>
-                    <span class="buttonText">Power Tools</span>
+                    <span class="buttonText">Power Calculator</span>
                 </button>
                 <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('beam')" id="beamNavButton">
                     <span class="buttonIcon"></span>
@@ -316,9 +321,9 @@
             </div>
         </div>
 
-        <!-- RGB / CMY / HEX -->
+        <!-- Color Converter -->
         <div id="rgb" class="web-only defaultPage" style="display: none;">
-            <h1 style="margin-top: 40px;">RGB / CMY / HEX</h1>
+            <h1 style="margin-top: 40px;">Color Converter</h1>
             <div class="rgb-container">
 
                 <div class="color-picker-container">
@@ -372,9 +377,9 @@
             </div>
         </div>
 
-        <!-- Power Tools -->
+        <!-- Power Calculator -->
         <div id="power" class="web-only defaultPage" style="display: none;">
-            <h1 style="margin-top: 40px;">Power Tools</h1>
+            <h1 style="margin-top: 40px;">Power Calculator</h1>
             <div class="power-tools-container">
                 <h2>Watt / Ampere / Volt Converter</h2>
 
