@@ -46,7 +46,7 @@
                     <span class="buttonIcon"></span>
                     <span class="buttonText">DIP Switch</span>
                 </button>
-                <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('rgb')" id="rgbNavButton">
+                <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('color')" id="rgbNavButton">
                     <span class="buttonIcon"></span>
                     <span class="buttonText">Color Converter</span>
                 </button>
@@ -67,7 +67,7 @@
 
         <!-- Home -->
         <div id="home" class="web-only defaultPage">
-            <h1 class="web-only" style="margin-top: 40px;">Home</h1>
+            <h1 class="pageTitle">Home</h1>
         </div>
 
         <!-- DMX Patch -->
@@ -137,7 +137,7 @@
                 </div>
             </div>
 
-            <h1 class="web-only" style="margin-top: 40px;">DMX Patch</h1>
+            <h1 class="web-only pageTitle">DMX Patch</h1>
 
             <div class="web-only" style="display: flex; flex-direction: row; gap: 20px; margin-bottom: 16px; justify-content: center; align-items: center;">
                 <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
@@ -242,28 +242,11 @@
             <div class="print-only">Generated for free with <a href="https://alessandrocaseti.github.io/dmx-tools/" style="color: blue; text-decoration: underline;">alessandrocaseti.github.io/dmx-tools</a></div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
 
-            <!-- Command Bar -->
-            <div id="command-bar" class="web-only" onclick="focusCmd()">
-                <div style="display: flex; flex-direction: row; align-items: center; gap: 12px;">
-                    <p style="color: yellow; user-select: none;" id="cmdTitle">CMD • Current message</p>
-                    <div id="cmdMsgTypeContainer" style="transition: all 0.3s ease; background-color: rgba(255, 255, 0, 0.0); border: 1px solid yellow; height: 20px; border-radius: 4px; font-size: 14px; width: auto">
-                        <p id="cmdMsgType" style="transition: all 0.3s ease; margin-top: 0px; margin-bottom: 1px; margin-left: 4px; margin-right: 4px; user-select: none; font-family: 'Roboto Mono';">WELCOME</p>
-                    </div>
-                </div>
-                <div class="cmdListContainer">
-                    <p class="command-msg">></p>
-                    <div id="cmdListContainer2" style="display: flex; flex-direction: row;">
-                        <p class="command-msg" id="cmdMsg">Welcome on DMX tools! Start by indicating the project details and then proceed to set up your fixture list.</p>
-                        <p class="command-msg dot" id="dot">></p>
-                    </div>
-                    <input type="text" id="cmdInput" onblur="unfocusCmd()" onfocus="focusCmd(true)" onkeydown="handleCommand(event)" style="margin-top: -4px;caret-color: yellow;flex-grow: 1; margin-left: -4px; border: none; outline: none; background-color: transparent; color: yellow; font-family: 'Roboto Mono';">
-                </div>
-            </div>
         </div>
 
         <!-- DIP Switch -->
         <div id="dip" class="web-only defaultPage" style="display: none;">
-            <h1 style="margin-top: 40px;">DIP Switch</h1>
+            <h1 class="pageTitle">DIP Switch</h1>
 
             <div class="dip-container">
                 <div class="dip-input-section">
@@ -323,7 +306,7 @@
 
         <!-- Color Converter -->
         <div id="rgb" class="web-only defaultPage" style="display: none;">
-            <h1 style="margin-top: 40px;">Color Converter</h1>
+            <h1 class="pageTitle">Color Converter</h1>
             <div class="rgb-container">
 
                 <div class="color-picker-container">
@@ -379,7 +362,7 @@
 
         <!-- Power Calculator -->
         <div id="power" class="web-only defaultPage" style="display: none;">
-            <h1 style="margin-top: 40px;">Power Calculator</h1>
+            <h1 class="pageTitle">Power Calculator</h1>
             <div class="power-tools-container">
                 <h2>Watt / Ampere / Volt Converter</h2>
 
@@ -459,12 +442,12 @@
 
         <!-- Beam Tools -->
         <div id="beam" class="web-only defaultPage" style="display: none;">
-            <h1 style="margin-top: 40px;">Beam Tools</h1>
+            <h1 class="pageTitle">Beam Tools</h1>
         </div>
 
         <!-- Fixture Database -->
         <div id="database" class="web-only defaultPage" style="display: none;">
-            <h1 style="margin-top: 40px;">Fixture Database</h1>
+            <h1 class="pageTitle">Fixture Database</h1>
             <div style="display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; margin: 0 auto 0 auto;">
                 <button class="defaultButton brandButton">ACME</button>
                 <button class="defaultButton brandButton">Sagitter</button>
@@ -475,6 +458,25 @@
                 <button class="defaultButton brandButton">SGM</button>
             </div>
         </div>
+
+        <!-- Command Bar -->
+        <div id="command-bar" class="web-only" onclick="focusCmd()">
+            <div style="display: flex; flex-direction: row; align-items: center; gap: 12px;">
+                <p style="color: yellow; user-select: none;" id="cmdTitle">CMD • Current message</p>
+                <div id="cmdMsgTypeContainer" style="transition: all 0.3s ease; background-color: rgba(255, 255, 0, 0.0); border: 1px solid yellow; height: 20px; border-radius: 4px; font-size: 14px; width: auto">
+                    <p id="cmdMsgType" style="transition: all 0.3s ease; margin-top: 0px; margin-bottom: 1px; margin-left: 4px; margin-right: 4px; user-select: none; font-family: 'Roboto Mono';">WELCOME</p>
+                </div>
+            </div>
+            <div class="cmdListContainer">
+                <p class="command-msg">></p>
+                <div id="cmdListContainer2" style="display: flex; flex-direction: row;">
+                    <p class="command-msg" id="cmdMsg">Welcome on DMX tools! Start by indicating the project details and then proceed to set up your fixture list.</p>
+                    <p class="command-msg dot" id="dot">></p>
+                </div>
+                <input type="text" id="cmdInput" onblur="unfocusCmd()" onfocus="focusCmd(true)" onkeydown="handleCommand(event)" style="margin-top: -4px;caret-color: yellow;flex-grow: 1; margin-left: -4px; border: none; outline: none; background-color: transparent; color: yellow; font-family: 'Roboto Mono';">
+            </div>
+        </div>
+
     </body>
 
 </html>

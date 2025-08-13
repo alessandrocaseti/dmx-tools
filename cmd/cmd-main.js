@@ -127,6 +127,7 @@ let color = false;
 let doc = false;
 let rename = false;
 let freeze = false;
+let nav = false;
 
 function resetCmd(freezeTrigger = true)
 {
@@ -135,6 +136,7 @@ function resetCmd(freezeTrigger = true)
     color = false;
     doc = false;
     rename = false;
+    nav = false;
     if (freezeTrigger) freeze = false;
 }
 
@@ -176,6 +178,24 @@ function handleCommand(event)
         {
             resetCmd();
             setCmdMessage("Successfully resetted command prompt.", "RESET")
+            return;
+        }
+
+        else if (nav)
+        {
+            nav = false;
+
+            if (!command || command!== 'home' && command!== 'patch'  && command!== 'dip'  && command!== 'color' && command!== 'power' && command!== 'beam' && command!== 'database')
+            {
+                setCmdMessage('Invalid page name. Enter a page between home, patch, dip, color, power, beam or database.', 'ERROR');
+                startDotAnimation();
+                nav = true;
+            }
+            else
+            {
+                navigateTo(command);
+                setCmdMessage('Navigated to ' + command + '.', 'NAV');
+            }
             return;
         }
 
@@ -312,6 +332,14 @@ function handleCommand(event)
         {
             freeze = false;
             setCmdMessage("Command prompt unfrozen", "UNFREEZE")
+            return;
+        }
+
+        else if (command === 'nav')
+        {
+            nav = true;
+            setCmdMessage("Select page: home, patch, dip, color, power, beam, database.", "NAV")
+            startDotAnimation();
             return;
         }
 
@@ -455,8 +483,17 @@ function handleCommand(event)
 
         else if (command === 'help')
         {
-            setCmdMessage('Available commands: add, remove, color, rename, patch, update, stats, docset, export, clear, freeze, unfreeze, help, about, reset', 'HELP');
-            return;
+            if(currentPage === 'patch')
+            {
+                setCmdMessage('Available patch commands: nav, add, remove, color, rename, patch, update, stats, docset, export, clear, freeze, unfreeze, help, about, reset', 'HELP');
+                return;
+            }
+            else
+            {
+                setCmdMessage('Available generic commands: nav, freeze, unfreeze, help, about, reset', 'HELP');
+                return;
+            }
+
         }
 
         else if (command === 'about')

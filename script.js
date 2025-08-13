@@ -1,5 +1,7 @@
 /// DMX TOOLS - DEVELOPED BY ALESSANDRO CASETI ///
 
+let currentPage = 'home';
+
 // Main & navigation functions
 
 function navigateTo(page)
@@ -25,6 +27,8 @@ function navigateTo(page)
     document.getElementById('database').style.display = 'none';
     document.getElementById('databaseNavButton').classList.remove('selectedNavButton');
     document.getElementById('databaseNavButton').classList.add('unselectedNavButton');
+
+    currentPage = page;
 
     switch(page)
     {
@@ -52,7 +56,7 @@ function navigateTo(page)
             return;
         }
 
-        case 'rgb':
+        case 'color':
         {
             document.getElementById('rgb').style.display = 'block';
             document.getElementById('rgbNavButton').classList.remove('unselectedNavButton');
