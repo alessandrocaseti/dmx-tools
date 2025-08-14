@@ -37,6 +37,7 @@ function navigateTo(page)
             document.getElementById('home').style.display = 'block';
             document.getElementById('homeNavButton').classList.remove('unselectedNavButton');
             document.getElementById('homeNavButton').classList.add('selectedNavButton');
+            document.getElementById('cmdIcon').innerHTML = '';
             return;
         }
 
@@ -45,6 +46,7 @@ function navigateTo(page)
             document.getElementById('patch').style.display = 'block';
             document.getElementById('patchNavButton').classList.remove('unselectedNavButton');
             document.getElementById('patchNavButton').classList.add('selectedNavButton');
+            document.getElementById('cmdIcon').innerHTML = '';
             return;
         }
         
@@ -53,6 +55,7 @@ function navigateTo(page)
             document.getElementById('dip').style.display = 'block';
             document.getElementById('dipNavButton').classList.remove('unselectedNavButton');
             document.getElementById('dipNavButton').classList.add('selectedNavButton');
+            document.getElementById('cmdIcon').innerHTML = '';
             return;
         }
 
@@ -61,6 +64,7 @@ function navigateTo(page)
             document.getElementById('rgb').style.display = 'block';
             document.getElementById('rgbNavButton').classList.remove('unselectedNavButton');
             document.getElementById('rgbNavButton').classList.add('selectedNavButton');
+            document.getElementById('cmdIcon').innerHTML = '';
             return;
         }
 
@@ -75,6 +79,7 @@ function navigateTo(page)
                 powerConverter = new PowerConverter();
                 window.powerConverterInitialized = true;
             }
+            document.getElementById('cmdIcon').innerHTML = '';
             return;
         }
 
@@ -83,6 +88,7 @@ function navigateTo(page)
             document.getElementById('beam').style.display = 'block';
             document.getElementById('beamNavButton').classList.remove('unselectedNavButton');
             document.getElementById('beamNavButton').classList.add('selectedNavButton');
+            document.getElementById('cmdIcon').innerHTML = '';
             return;
         }
 
@@ -91,6 +97,7 @@ function navigateTo(page)
             document.getElementById('database').style.display = 'block';
             document.getElementById('databaseNavButton').classList.remove('unselectedNavButton');
             document.getElementById('databaseNavButton').classList.add('selectedNavButton');
+            document.getElementById('cmdIcon').innerHTML = '';
             return;
         }
     }
