@@ -490,7 +490,7 @@ function handleCommand(event)
             }
             else
             {
-                setCmdMessage('Available generic commands: nav, freeze, unfreeze, help, about, reset', 'HELP');
+                setCmdMessage('Available generic commands: nav, freeze, unfreeze, help, about, github, reset, reload', 'HELP');
                 return;
             }
 
@@ -506,6 +506,12 @@ function handleCommand(event)
         {
             setCmdMessage('Opened GitHub repository in a new browser page.', 'GITHUB');
             window.open('https://www.github.com/alessandrocaseti/dmx-tools', '_blank').focus();
+            return;
+        }
+
+        else if (command === 'reload')
+        {
+            location.reload();
             return;
         }
 
