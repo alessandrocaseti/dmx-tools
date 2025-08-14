@@ -266,88 +266,6 @@ input:focus
     outline: none;
 }
 
-button 
-{
-    background: var(--colore-bg-scuro);
-    color: var(--colore-giallo);
-    border: 1px solid var(--colore-bordo);
-    border-radius: var(--border-radius);
-    padding: 8px 18px;
-    font-size: 16px;
-    font-weight: bold;
-    height: 36px;
-    cursor: pointer;
-    transition: all 0.4s, color 0.4s;
-    user-select: none;
-    font-family: 'Inter', sans-serif;
-}
-
-button:hover 
-{
-    background: var(--colore-giallo);
-    color: var(--colore-bg-scuro);
-}
-
-.selectedNavButton 
-{
-    background: transparent;
-    color: var(--colore-giallo);
-    border: 1px solid var(--colore-hover);
-    border-radius: var(--border-radius);
-    padding: 8px 18px;
-    font-size: 16px;
-    font-weight: bold;
-    height: 36px;
-    cursor: pointer;
-    transition: all 0.3s, color 0.3s;
-    user-select: none;
-}
-
-.unselectedNavButton 
-{
-    background: transparent;
-    color: var(--colore-testo);
-    border: 1px solid transparent;
-    border-width: 1px;
-    border-radius: var(--border-radius);
-    padding: 8px 18px;
-    font-size: 16px;
-    font-weight: bold;
-    height: 36px;
-    cursor: pointer;
-    transition: all 0.3s, color 0.3s;
-    user-select: none;
-}
-
-button:disabled, button[disabled] 
-{
-    background: #444;
-    color: #bbb;
-    border: 1px solid #333;
-    cursor: not-allowed;
-    opacity: 0.7;
-}
-
-.buttonIcon
-{
-    font-family: 'IconFont', sans-serif;
-    font-weight: 550;
-    font-size: 1.1em;
-    margin-right: 12px;
-    display: flex;
-    user-select: none;
-    align-items: center;
-}
-
-.buttonText
-{
-    font-family: 'Inter', Arial, sans-serif;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    user-select: none;
-}
-
 .patchList .empty-message 
 {
     color: var(--colore-testo-chiaro);
@@ -431,22 +349,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
     padding: 2rem;
 }
 
-.navButton
+.defaultPageContent
 {
-    width: 200px;
-}
-
-.brandButton
-{
-    height: 48px;
-    width: 180px;
-    margin-top: 8px;
-}
-
-.iconButton
-{
-    display: flex;
-    flex-direction: row;
+    max-width: var(--max-page-width);
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .pageTitle
