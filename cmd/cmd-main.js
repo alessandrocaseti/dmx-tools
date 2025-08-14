@@ -502,6 +502,13 @@ function handleCommand(event)
             return;
         }
 
+        else if (command === 'github')
+        {
+            setCmdMessage('Opened GitHub repository in a new browser page.', 'GITHUB');
+            window.open('https://www.github.com/alessandrocaseti/dmx-tools', '_blank').focus();
+            return;
+        }
+
         else if (command.startsWith('-'))
         {
             console.log("hero command detected");
