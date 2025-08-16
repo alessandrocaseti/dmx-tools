@@ -393,7 +393,7 @@ function handleCommand(event)
         {
             if (listaFixture.length > 0)
             {
-                setCmdMessage('Enter the ID of the fixture / new name:', 'RENAME');
+                setCmdMessage('Enter the ID of the group / new name:', 'RENAME');
                 startDotAnimation();
                 rename = true;
             }

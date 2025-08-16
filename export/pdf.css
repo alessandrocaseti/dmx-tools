@@ -40,6 +40,13 @@
         font-weight: bold;
     }
 
+    .defaultPageContent
+    {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        padding: 0px
+    }
+
     /* Evita che la tabella patch vada a capo dopo il titolo in stampa/PDF */
     #patchList, .patchTable, h1
     {
@@ -112,9 +119,62 @@
 
     .patchTable th.tipoCol, .patchTable td.tipoCol
     {
-        min-width: 110px !important;
-        max-width: 110px !important;
+        min-width: 150px !important;
+        max-width: 150px !important;
         padding: 0 !important;
+    }
+
+    .patchTable th.idCol, .patchTable td.idCol
+    {
+        min-width: 36px !important;
+        max-width: 36px !important;
+        font-size: 14px;
+        padding: 0 !important;
+    }
+
+    td.idCol
+    {
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .patchTable th.coloreCol, .patchTable td.coloreCol
+    {
+        min-width: 70px !important;
+        max-width: 70px !important;
+        padding: 0 !important;
+    }
+
+    .patchTable td.nomeLuceCol
+    {
+        min-width: 220px !important;
+        max-width: 220px !important;
+        text-align: left !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+    }
+
+    .patchTable th.universoCol, .patchTable td.universoCol
+    {
+        min-width: 30px !important;
+        max-width: 30px !important;
+        padding: 0 !important;
+    }
+
+    td.universoCol
+    {
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    td.canaleCol
+    {
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .patchTable th.canaleCol, .patchTable td.canaleCol
+    {
+        min-width: 80px !important;
+        max-width: 80px !important;
     }
 
     .typeLayout 
@@ -129,24 +189,7 @@
 
     .typeText
     {
-        margin-left: 14px;
-    }
-
-    .patchTable th.canaleCol, .patchTable td.canaleCol
-    {
-        min-width: 30px !important;
-        max-width: 50px !important;
-    }
-
-    .patchTable td.nomeLuceCol
-    {
-        min-width: 120px !important;
-        max-width: 130px !important;
-        text-align: left !important;
-        font-weight: 500 !important;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-        white-space: nowrap !important;
+        margin-left: 10px;
     }
 
     .colorCircle
@@ -171,6 +214,7 @@
         justify-content: center;
         margin-top: -20px !important;
         font-size: 16px !important;
+        font-weight: 500;
     }
 
     #patchOptions
@@ -234,4 +278,14 @@
         margin-left: 0px;      /* Equivale alla larghezza della sidebar */
         padding: 0rem;
     }
+
+    .patchTypeImage
+    {
+        height:18px !important;
+        max-width:26px !important;
+        margin-top: 8px !important;
+        vertical-align:middle;
+        margin-right:0px;
+    }
+
 }

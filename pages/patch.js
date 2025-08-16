@@ -242,13 +242,13 @@ function updatePatch()
     let html = '<table class="patchTable firstTable">';
 
     html += `<thead><tr>
-                <th>ID</th>
-                <th>Fixture</th>
+                <th style="width: 70px;">ID</th>
+                <th>Name</th>
                 <th>Type</th>
-                <th>Quantity</th>
-                <th>Channels</th>
+                <th style="width: 70px;">Quantity</th>
+                <th style="width: 70px;">Channels</th>
                 <th colspan="2">Color</th>
-                <th class="rimuoviCol">Remove</th></tr>
+                <th class="rimuoviCol" style="width: 70px;">Remove</th></tr>
             </thead><tbody>`;
 
     listaFixture.forEach((fixture, idx) => 
@@ -362,12 +362,15 @@ function mostraPatchDMX()
 
     let html = `<table class="patchTable" id="patchTable">
                     <thead><tr>
+                    <th class="idCol" style="font-family: 'Inter';">ID</th>
                     <th class="tipoCol">Type</th>
                     <th class="coloreCol">Color</th>
-                    <th>Fixture</th><th>Universe</th>
-                    <th>Address</th></tr></thead><tbody>`;
+                    <th class="nomeLuceCol">Fixture</th>
+                    <th class="universoCol">Universe</th>
+                    <th class="canaleCol">Address</th>
+                    </tr></thead><tbody>`;
 
-    lista.forEach(item => 
+    lista.forEach((item, id) => 
     {
         const tipiConImg = 
         [
@@ -386,12 +389,12 @@ function mostraPatchDMX()
 
         else if (showImages)
         {
-            imgHtml = `<img src='images/other.png' alt='${item.tipo}' title='${item.tipo}' style='height:32px;max-width:40px;vertical-align:middle;margin-right:0px;'>`;
+            imgHtml = `<img src='images/other.png' alt='${item.tipo}' title='${item.tipo}' class="patchTypeImage">`;
         }
         
         let tipoColContent = `<span class='typeLayout'>${imgHtml}<span class='typeText' style='flex:1;justify-content:flex-start;text-align:left;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'>${item.tipo}</span></span>`;
         let colorCircle = `<span class='colorCircle' style='display:inline-block;width:22px;height:22px;border-radius:50%;background:${item.colore} !important;background-color:${item.colore} !important;vertical-align:middle;margin:0 auto;'></span>`;
-        html += `<tr><td class="tipoCol">${tipoColContent}</td><td class="coloreCol">${colorCircle}</td><td class="nomeLuceCol">${item.nome}</td><td class="universoCol">${item.universo}</td><td class="canaleCol">${item.canale}</td></tr>`;
+        html += `<tr><td class="idCol">${id+1}</td><td class="tipoCol">${tipoColContent}</td><td class="coloreCol">${colorCircle}</td><td class="nomeLuceCol">${item.nome}</td><td class="universoCol">${item.universo}</td><td class="canaleCol">${item.canale}</td></tr>`;
     });
 
     html += '</tbody></table>';
