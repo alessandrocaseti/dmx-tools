@@ -30,9 +30,8 @@
     <body>
 
         <nav id="sidebar" class="web-only">
-            <div style="margin-top: 12px; display: flex; flex-direction: row; gap: 16px; margin-left: 12px;">
-                <img src="assets/dmxtools-logo.png" width="64" height="64">
-                <h2>DMX Tools</h2>
+            <div style="margin-top: 24px; display: flex; flex-direction: row; gap: 16px; margin-left: 12px;">
+                <img src="assets/dmxtools-banner.png" width="235" height="65" style="margin-top: 12px; margin-left: -8px;">
             </div>
             <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 16px; justify-content: center; align-items: center;">
                 <button class="navButton selectedNavButton iconButton" onclick="navigateTo('home')" id="homeNavButton">
@@ -64,11 +63,18 @@
                     <span class="buttonText">Fixture Database</span>
                 </button>
             </div>
+            <div style="display: flex; flex-direction: row; gap: 8px; justify-content: center; bottom: 12vh; margin-top: 32vh; align-items: center;">
+                <a onclick="setCmdMessage('DMX Tools - Developed by Alessandro Caseti. For more information, visit the GitHub repository.', 'ABOUT')" target="_blank" class="defaultLink">About</a>
+                <h4 style="color: #666;user-select: none;">•</h4>
+                <a href="https://github.com/alessandrocaseti/dmx-tools" target="_blank" class="defaultLink">GitHub</a>
+            </div>
         </nav>
 
         <!-- Home -->
         <div id="home" class="web-only defaultPage">
-            <h1 class="pageTitle">Home</h1>
+            <div style="margin: 0 auto;">
+                <img src="assets/dmxtools-banner.png" width="470" height="130">
+            </div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
         </div>
 
@@ -209,7 +215,7 @@
                 </form>
 
                 <!-- Patch preview -->
-                <h2 style="margin-top: 30px; font-size: 20px;">Patch preview</h2>
+                <h2 style="margin-top: 30px; font-size: 20px;" class="web-only">Patch preview</h2>
                 <div id="fixtureList" style="margin: 30px auto 0 auto; max-width: 100%">
                     <span class="empty-message">- No fixtures added -</span>
                 </div>

@@ -345,7 +345,7 @@ function handleCommand(event)
 
         else if (command === 'add')
         {
-            setCmdMessage('Insert fixture name / fixture type / quantity / channels per unit or press enter to use defaults', 'ADD');
+            setCmdMessage('Insert fixture name / fixture type / quantity / channels per unit separated by a slash', 'ADD');
             startDotAnimation();
             add = true;
             return;

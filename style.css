@@ -360,3 +360,21 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
 {
     margin-top: 20px;
 }
+
+.defaultLink
+{
+    color: #666;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.defaultLink:hover
+{
+    color: var(--colore-hover);
+}
+
+.defaultLink:active
+{
+    color: var(--colore-giallo);
+}
