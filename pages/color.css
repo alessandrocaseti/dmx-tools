@@ -46,7 +46,7 @@
     height: 200px;
     border: 2px solid #333;
     border-radius: 8px;
-    background: linear-gradient(to bottom, 
+    background: linear-gradient(to top, 
         hsl(0, 100%, 50%), 
         hsl(60, 100%, 50%), 
         hsl(120, 100%, 50%), 
@@ -252,13 +252,13 @@
         width: 150px;
         height: 30px;
         background: linear-gradient(to right, 
-            hsl(0, 100%, 50%), 
-            hsl(60, 100%, 50%), 
-            hsl(120, 100%, 50%), 
-            hsl(180, 100%, 50%), 
-            hsl(240, 100%, 50%), 
+            hsl(360, 100%, 50%)),
             hsl(300, 100%, 50%), 
-            hsl(360, 100%, 50%));
+            hsl(240, 100%, 50%), 
+            hsl(180, 100%, 50%), 
+            hsl(120, 100%, 50%), 
+            hsl(60, 100%, 50%), 
+            hsl(0, 100%, 50%);
     }
     
     .hue-picker-cursor {

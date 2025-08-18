@@ -159,7 +159,6 @@ class EnhancedColorConverter
 
         const y = Math.max(0, Math.min(e.clientY - rect.top, rect.height));
         this.hue = Math.max(0, Math.min(360 - (y / rect.height) * 360, 360));
-        if (this.hue === 360) this.hue = 0;
 
         this.updatePickerBackground();
         this.updateColor();
@@ -171,8 +170,7 @@ class EnhancedColorConverter
         const picker = document.getElementById('colorPicker');
         picker.style.background = `
             linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)),
-            linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)),
-            hsl(${this.hue}, 100%, 50%)
+            linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), hsl(${this.hue}, 100%, 50%)
         `;
     }
 
