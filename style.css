@@ -367,6 +367,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
     cursor: pointer;
     text-decoration: underline;
     transition: color 0.3s ease;
+    user-select: none;
 }
 
 .defaultLink:hover

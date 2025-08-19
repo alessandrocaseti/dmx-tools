@@ -384,7 +384,7 @@ function mostraPatchDMX()
 
         if (showImages && tipiConImg.includes(item.tipo.toLowerCase())) 
         {
-            imgHtml = `<img src='images/${item.tipo.toLowerCase()}.png' alt='${item.tipo}' title='${item.tipo}' style='height:32px;max-width:40px;vertical-align:middle;margin-right:0px;'>`;
+            imgHtml = `<img src='images/${item.tipo.toLowerCase()}.png' alt='${item.tipo}' title='${item.tipo}' class="patchTypeImage">`;
         }
 
         else if (showImages)
