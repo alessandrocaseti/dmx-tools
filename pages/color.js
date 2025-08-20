@@ -1,8 +1,30 @@
 /// DMX TOOLS - DEVELOPED BY ALESSANDRO CASETI ///
 // RGB / CMY / HEX - Enhanced Color Converter with improved UX
 
-class EnhancedColorConverter 
-{
+class EnhancedColorConverter {
+    // RGB -> HSV conversion utility
+    rgbToHsv(r, g, b) {
+        r /= 255; g /= 255; b /= 255;
+        let max = Math.max(r, g, b), min = Math.min(r, g, b);
+        let h, s, v = max;
+        let d = max - min;
+        s = max === 0 ? 0 : d / max;
+        if (max === min) {
+            h = 0;
+        } else {
+            switch (max) {
+                case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                case g: h = (b - r) / d + 2; break;
+                case b: h = (r - g) / d + 4; break;
+            }
+            h /= 6;
+        }
+        return {
+            h: Math.round(h * 360),
+            s: Math.round(s * 100),
+            v: Math.round(v * 100)
+        };
+    }
     constructor() 
     {
         this.currentColor = { r: 255, g: 0, b: 0 };
@@ -368,8 +390,15 @@ class EnhancedColorConverter
 
     loadColor(index) 
     {
-        const color = this.savedColors[index];
-        this.setColor(color.rgb.r, color.rgb.g, color.rgb.b);
+    const color = this.savedColors[index];
+    this.setColor(color.rgb.r, color.rgb.g, color.rgb.b);
+    // Aggiorna HSV e cursori picker
+    const hsv = this.rgbToHsv(color.rgb.r, color.rgb.g, color.rgb.b);
+    this.hue = hsv.h;
+    this.saturation = hsv.s;
+    this.value = hsv.v;
+    this.updatePickerBackground();
+    this.updateCursors();
     }
 
     deleteColor(index) 
