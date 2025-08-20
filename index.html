@@ -334,26 +334,27 @@
 
                     <div class="color-values">
                         <div class="value-group">
-                            <label>RGB:</label>
-                            <div class="rgb-inputs">
-                                <input type="number" id="rValue" min="0" max="255" value="255">
-                                <input type="number" id="gValue" min="0" max="255" value="0">
-                                <input type="number" id="bValue" min="0" max="255" value="0">
+                            <label>RGB</label>
+                            <div class="rgb-inputs color-inputs-row">
+                                <input type="number" id="rValue" min="0" max="255" value="255" class="color-input">
+                                <input type="number" id="gValue" min="0" max="255" value="0" class="color-input">
+                                <input type="number" id="bValue" min="0" max="255" value="0" class="color-input">
                             </div>
                         </div>
 
                         <div class="value-group">
-                            <label>CMY:</label>
-                            <div class="cmy-inputs">
-                                <input type="number" id="cValue" min="0" max="100" value="0">
-                                <input type="number" id="mValue" min="0" max="100" value="100">
-                                <input type="number" id="yValue" min="0" max="100" value="100">
+                            <label>CMYK</label>
+                            <div class="cmyk-inputs color-inputs-row">
+                                <input type="number" id="cValue" min="0" max="100" value="0" class="color-input">
+                                <input type="number" id="mValue" min="0" max="100" value="100" class="color-input">
+                                <input type="number" id="yValue" min="0" max="100" value="100" class="color-input">
+                                <input type="number" id="kValue" min="0" max="100" value="0" class="color-input">
                             </div>
                         </div>
 
                         <div class="value-group">
-                            <label>HEX:</label>
-                            <input type="text" id="hexValue" value="#FF0000" maxlength="7" style="width: fit-content;">
+                            <label>HEX</label>
+                            <input type="text" id="hexValue" value="#FF0000" maxlength="7" class="color-input" style="width: 100px;">
                         </div>
                     </div>
                 </div>

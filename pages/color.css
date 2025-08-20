@@ -82,20 +82,23 @@
 
 .color-display {
     width: 60px;
-    height: 60px;
+    height: 200px;
     border: 2px solid #333;
     border-radius: 8px;
 }
 
 .color-values {
     display: flex;
+    margin-left: 300px;
+    flex: 1;
     flex-direction: column;
     gap: 15px;
 }
 
 .value-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     gap: 5px;
 }
 
@@ -109,38 +112,6 @@
     gap: 10px;
 }
 
-.rgb-inputs input, .cmy-inputs input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    background: #222;
-    color: #fff;
-    text-align: center;
-}
-
-.rgb-inputs input:focus, .cmy-inputs input:focus {
-    outline: none;
-    border-color: #ffeb3b;
-    box-shadow: 0 0 5px rgba(255, 235, 59, 0.3);
-}
-
-.value-group input[type="text"] {
-    width: 100px;
-    padding: 5px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    background: #222;
-    color: #fff;
-    text-align: center;
-}
-
-.value-group input[type="text"]:focus {
-    outline: none;
-    border-color: #ffeb3b;
-    box-shadow: 0 0 5px rgba(255, 235, 59, 0.3);
-}
-
 .saved-colors-section {
     display: flex;
     flex-direction: column;
@@ -151,28 +122,6 @@
     display: flex;
     gap: 10px;
     align-items: center;
-}
-
-.save-color-form input {
-    padding: 8px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    background: #222;
-    color: #fff;
-}
-
-.save-color-form button {
-    padding: 8px 15px;
-    background: #ffeb3b;
-    color: #000;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.save-color-form button:hover {
-    background: #fdd835;
 }
 
 .saved-colors-list {
@@ -211,24 +160,6 @@
 .saved-color-actions {
     display: flex;
     gap: 5px;
-}
-
-.saved-color-actions button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.8em;
-}
-
-.load-btn {
-    background: #4caf50;
-    color: white;
-}
-
-.delete-btn {
-    background: #f44336;
-    color: white;
 }
 
 .empty-message {
