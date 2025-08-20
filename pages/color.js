@@ -25,19 +25,30 @@ class EnhancedColorConverter
     }
 
     // Color conversion utilities
-    rgbToCmy(r, g, b) 
-    {
-        const c = Math.max(0, Math.min(Math.round(((255 - r) / 255) * 100), 100));
-        const m = Math.max(0, Math.min(Math.round(((255 - g) / 255) * 100), 100));
-        const y = Math.max(0, Math.min(Math.round(((255 - b) / 255) * 100), 100));
-        return { c, m, y };
+    // RGB -> CMYK
+    rgbToCmyk(r, g, b) {
+        r = r / 255; g = g / 255; b = b / 255;
+        const k = 1 - Math.max(r, g, b);
+        let c = 0, m = 0, y = 0;
+        if (k < 1) {
+            c = ((1 - r - k) / (1 - k));
+            m = ((1 - g - k) / (1 - k));
+            y = ((1 - b - k) / (1 - k));
+        }
+        return {
+            c: Math.round(c * 100),
+            m: Math.round(m * 100),
+            y: Math.round(y * 100),
+            k: Math.round(k * 100)
+        };
     }
 
-    cmyToRgb(c, m, y) 
-    {
-        const r = Math.max(0, Math.min(Math.round(255 * (1 - c / 100)), 255));
-        const g = Math.max(0, Math.min(Math.round(255 * (1 - m / 100)), 255));
-        const b = Math.max(0, Math.min(Math.round(255 * (1 - y / 100)), 255));
+    // CMYK -> RGB
+    cmykToRgb(c, m, y, k) {
+        c = c / 100; m = m / 100; y = y / 100; k = k / 100;
+        const r = Math.round(255 * (1 - c) * (1 - k));
+        const g = Math.round(255 * (1 - m) * (1 - k));
+        const b = Math.round(255 * (1 - y) * (1 - k));
         return { r, g, b };
     }
 
@@ -230,16 +241,15 @@ class EnhancedColorConverter
     // Enhanced input listeners with better validation
     setupInputListeners() 
     {
+
         // RGB inputs with validation
-        ['rValue', 'gValue', 'bValue'].forEach(id => 
-        {
+        ['rValue', 'gValue', 'bValue'].forEach(id => {
             const input = document.getElementById(id);
             if (input) {
                 input.addEventListener('input', (e) => {
                     let value = parseInt(e.target.value) || 0;
                     value = Math.max(0, Math.min(value, 255));
                     e.target.value = value;
-                    
                     const r = this.validateInput('rValue', 0, 255);
                     const g = this.validateInput('gValue', 0, 255);
                     const b = this.validateInput('bValue', 0, 255);
@@ -248,20 +258,19 @@ class EnhancedColorConverter
             }
         });
 
-        // CMY inputs with validation
-        ['cValue', 'mValue', 'yValue'].forEach(id => 
-        {
+        // CMYK inputs with validation
+        ['cValue', 'mValue', 'yValue', 'kValue'].forEach(id => {
             const input = document.getElementById(id);
             if (input) {
                 input.addEventListener('input', (e) => {
                     let value = parseInt(e.target.value) || 0;
                     value = Math.max(0, Math.min(value, 100));
                     e.target.value = value;
-                    
                     const c = this.validateInput('cValue', 0, 100);
                     const m = this.validateInput('mValue', 0, 100);
                     const y = this.validateInput('yValue', 0, 100);
-                    const rgb = this.cmyToRgb(c, m, y);
+                    const k = this.validateInput('kValue', 0, 100);
+                    const rgb = this.cmykToRgb(c, m, y, k);
                     this.setColor(rgb.r, rgb.g, rgb.b);
                 });
             }
@@ -304,7 +313,7 @@ class EnhancedColorConverter
     updateAllValues() 
     {
         const { r, g, b } = this.currentColor;
-        const cmy = this.rgbToCmy(r, g, b);
+        const cmyk = this.rgbToCmyk(r, g, b);
         const hex = this.rgbToHex(r, g, b);
 
         // Update inputs with validated values
@@ -314,14 +323,16 @@ class EnhancedColorConverter
         const cInput = document.getElementById('cValue');
         const mInput = document.getElementById('mValue');
         const yInput = document.getElementById('yValue');
+        const kInput = document.getElementById('kValue');
         const hexInput = document.getElementById('hexValue');
 
         if (rInput) rInput.value = r;
         if (gInput) gInput.value = g;
         if (bInput) bInput.value = b;
-        if (cInput) cInput.value = cmy.c;
-        if (mInput) mInput.value = cmy.m;
-        if (yInput) yInput.value = cmy.y;
+        if (cInput) cInput.value = cmyk.c;
+        if (mInput) mInput.value = cmyk.m;
+        if (yInput) yInput.value = cmyk.y;
+        if (kInput) kInput.value = cmyk.k;
         if (hexInput) hexInput.value = hex;
 
         // Update color display
@@ -345,7 +356,7 @@ class EnhancedColorConverter
         {
             name: inputName,
             rgb: this.currentColor,
-            cmy: this.rgbToCmy(this.currentColor.r, this.currentColor.g, this.currentColor.b),
+            cmyk: this.rgbToCmyk(this.currentColor.r, this.currentColor.g, this.currentColor.b),
             hex: this.rgbToHex(this.currentColor.r, this.currentColor.g, this.currentColor.b)
         };
 
@@ -386,7 +397,7 @@ class EnhancedColorConverter
                     <div class="saved-color-details">
                         <strong>${color.name}</strong><br>
                         RGB: ${color.rgb.r}, ${color.rgb.g}, ${color.rgb.b}<br>
-                        CMY: ${color.cmy.c}%, ${color.cmy.m}%, ${color.cmy.y}%<br>
+                        CMYK: ${color.cmyk ? `${color.cmyk.c}%, ${color.cmyk.m}%, ${color.cmyk.y}%, ${color.cmyk.k}%` : '-'}<br>
                         HEX: ${color.hex}
                     </div>
                 </div>
