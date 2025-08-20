@@ -9,6 +9,10 @@ class EnhancedColorConverter
         this.savedColors = this.loadSavedColors();
         this.isDragging = false;
         this.dragTarget = null;
+        // HSV state for picker
+        this.hue = 0;
+        this.saturation = 100;
+        this.value = 100;
         this.init();
     }
 
@@ -56,12 +60,31 @@ class EnhancedColorConverter
         } : null;
     }
 
+    // HSV to RGB conversion
+    hsvToRgb(h, s, v) {
+        s /= 100;
+        v /= 100;
+        let c = v * s;
+        let x = c * (1 - Math.abs((h / 60) % 2 - 1));
+        let m = v - c;
+        let r = 0, g = 0, b = 0;
+        if (h >= 0 && h < 60) { r = c; g = x; b = 0; }
+        else if (h >= 60 && h < 120) { r = x; g = c; b = 0; }
+        else if (h >= 120 && h < 180) { r = 0; g = c; b = x; }
+        else if (h >= 180 && h < 240) { r = 0; g = x; b = c; }
+        else if (h >= 240 && h < 300) { r = x; g = 0; b = c; }
+        else if (h >= 300 && h < 360) { r = c; g = 0; b = x; }
+        return {
+            r: Math.round((r + m) * 255),
+            g: Math.round((g + m) * 255),
+            b: Math.round((b + m) * 255)
+        };
+    }
+
     // Enhanced color picker setup
     setupColorPicker() 
     {
-        this.hue = 0;
-        this.saturation = 100;
-        this.lightness = 50;
+        // HSV state already set in constructor
 
         const picker = document.getElementById('colorPicker');
         const cursor = document.getElementById('colorCursor');
@@ -73,11 +96,9 @@ class EnhancedColorConverter
             return;
         }
 
-        // Enhanced mouse feedback with visual indicators
         picker.style.cursor = 'crosshair';
         huePicker.style.cursor = 'ns-resize';
 
-        // Add hover effects
         picker.addEventListener('mouseenter', () => {
             picker.style.boxShadow = '0 0 10px rgba(255, 255, 255, 0.3)';
         });
@@ -90,11 +111,11 @@ class EnhancedColorConverter
             e.preventDefault();
             this.isDragging = true;
             this.dragTarget = 'picker';
-            this.updateSaturationLightness(e);
+            this.updateSaturationValue(e);
             
             const moveHandler = (ev) => {
                 if (this.isDragging && this.dragTarget === 'picker') {
-                    this.updateSaturationLightness(ev);
+                    this.updateSaturationValue(ev);
                 }
             };
             
@@ -137,7 +158,8 @@ class EnhancedColorConverter
         this.updateCursors();
     }
 
-    updateSaturationLightness(e) 
+    // HSV picker logic
+    updateSaturationValue(e) 
     {
         const picker = document.getElementById('colorPicker');
         const rect = picker.getBoundingClientRect();
@@ -146,7 +168,7 @@ class EnhancedColorConverter
         const y = Math.max(0, Math.min(e.clientY - rect.top, rect.height));
 
         this.saturation = Math.max(0, Math.min((x / rect.width) * 100, 100));
-        this.lightness = Math.max(0, Math.min(100 - (y / rect.height) * 100, 100));
+        this.value = Math.max(0, Math.min(100 - (y / rect.height) * 100, 100));
 
         this.updateColor();
         this.updateCursors();
@@ -169,14 +191,15 @@ class EnhancedColorConverter
     {
         const picker = document.getElementById('colorPicker');
         picker.style.background = `
-            linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)),
-            linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)), hsl(${this.hue}, 100%, 50%)
+            linear-gradient(to top, black, transparent),
+            linear-gradient(to right, white, transparent),
+            hsl(${this.hue}, 100%, 50%)
         `;
     }
 
     updateColor() 
     {
-        const rgb = this.hslToRgb(this.hue, this.saturation, this.lightness);
+        const rgb = this.hsvToRgb(this.hue, this.saturation, this.value);
         this.setColor(rgb.r, rgb.g, rgb.b);
     }
 
@@ -190,9 +213,9 @@ class EnhancedColorConverter
         const pickerRect = picker.getBoundingClientRect();
         const hueRect = huePicker.getBoundingClientRect();
 
-        // Saturation and lightness cursor position
+        // Saturation and value cursor position
         const x = Math.max(0, Math.min((this.saturation / 100) * pickerRect.width, pickerRect.width));
-        const y = Math.max(0, Math.min(((100 - this.lightness) / 100) * pickerRect.height, pickerRect.height));
+        const y = Math.max(0, Math.min(((100 - this.value) / 100) * pickerRect.height, pickerRect.height));
         
         cursor.style.left = `${x}px`;
         cursor.style.top = `${y}px`;
@@ -202,31 +225,6 @@ class EnhancedColorConverter
         const hueY = Math.max(0, Math.min(((360 - this.hue) / 360) * hueRect.height, hueRect.height));
         hueCursor.style.top = `${hueY}px`;
         hueCursor.style.display = 'block';
-    }
-
-    hslToRgb(h, s, l) 
-    {
-        s = Math.max(0, Math.min(s / 100, 1));
-        l = Math.max(0, Math.min(l / 100, 1));
-        
-        const c = (1 - Math.abs(2 * l - 1)) * s;
-        const x = c * (1 - Math.abs((h / 60) % 2 - 1));
-        const m = l - c / 2;
-        
-        let r, g, b;
-        
-        if (h >= 0 && h < 60) { r = c; g = x; b = 0; } 
-        else if (h >= 60 && h < 120) { r = x; g = c; b = 0; }
-        else if (h >= 120 && h < 180) { r = 0; g = c; b = x; }
-        else if (h >= 180 && h < 240) { r = 0; g = x; b = c; }
-        else if (h >= 240 && h < 300) { r = x; g = 0; b = c; }
-        else { r = c; g = 0; b = x; }
-        
-        return {
-            r: Math.max(0, Math.min(Math.round((r + m) * 255), 255)),
-            g: Math.max(0, Math.min(Math.round((g + m) * 255), 255)),
-            b: Math.max(0, Math.min(Math.round((b + m) * 255), 255))
-        };
     }
 
     // Enhanced input listeners with better validation

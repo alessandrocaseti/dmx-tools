@@ -321,7 +321,6 @@
         <div id="rgb" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Color Converter</h1>
             <div class="defaultPageContent">
-
                 <div class="color-picker-container">
                     <div class="color-picker-section">
                         <div class="color-picker-square" id="colorPicker">
@@ -334,7 +333,6 @@
                     </div>
 
                     <div class="color-values">
-                        <h3>Color Values</h3>
                         <div class="value-group">
                             <label>RGB:</label>
                             <div class="rgb-inputs">
@@ -355,13 +353,13 @@
 
                         <div class="value-group">
                             <label>HEX:</label>
-                            <input type="text" id="hexValue" value="#FF0000" maxlength="7">
+                            <input type="text" id="hexValue" value="#FF0000" maxlength="7" style="width: fit-content;">
                         </div>
                     </div>
                 </div>
 
                 <div class="saved-colors-section">
-                    <h3>Saved Colors</h3>
+                    <h3 style="margin-top: 10vh;">Saved Colors</h3>
                     <div class="save-color-form">
                         <input type="text" id="colorName" placeholder="Color name">
                         <button onclick="saveColor()">Save Color</button>
