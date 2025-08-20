@@ -137,24 +137,28 @@
     border: 1px solid #333;
     border-radius: 4px;
     margin-bottom: 10px;
-    background: #222;
+    background: var(--foreground);
 }
 
 .saved-color-info {
     display: flex;
     align-items: center;
+    text-align: left;
+    margin-left: 2px;
     gap: 10px;
 }
 
 .saved-color-preview {
-    width: 30px;
-    height: 30px;
+    width: 56px;
+    height: 56px;
     border: 1px solid #333;
     border-radius: 4px;
+    margin-left: 12px;
 }
 
 .saved-color-details {
     font-size: 0.9em;
+    margin-left:12px;
 }
 
 .saved-color-actions {
