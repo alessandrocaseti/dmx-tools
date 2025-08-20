@@ -11,10 +11,10 @@
 }
 
 .color-picker-square {
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 260px;
     border: 2px solid #333;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     position: relative;
     cursor: crosshair;
     transition: box-shadow 0.2s ease;
@@ -43,9 +43,9 @@
 
 .hue-picker {
     width: 30px;
-    height: 200px;
+    height: 260px;
     border: 2px solid #333;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     background: linear-gradient(to top, 
         hsl(0, 100%, 50%), 
         hsl(60, 100%, 50%), 
@@ -82,17 +82,17 @@
 
 .color-display {
     width: 60px;
-    height: 200px;
+    height: 260px;
     border: 2px solid #333;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 }
 
 .color-values {
     display: flex;
-    margin-left: 300px;
+    margin-left: 200px;
     flex: 1;
     flex-direction: column;
-    gap: 15px;
+    gap: 48px;
 }
 
 .value-group {
@@ -135,7 +135,7 @@
     align-items: center;
     padding: 10px;
     border: 1px solid #333;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     margin-bottom: 10px;
     background: var(--foreground);
 }
@@ -152,7 +152,7 @@
     width: 56px;
     height: 56px;
     border: 1px solid #333;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     margin-left: 12px;
 }
 
@@ -163,7 +163,8 @@
 
 .saved-color-actions {
     display: flex;
-    gap: 5px;
+    gap: 12px;
+    margin-right: 12px;
 }
 
 .empty-message {

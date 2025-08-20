@@ -431,8 +431,14 @@ class EnhancedColorConverter {
                     </div>
                 </div>
                 <div class="saved-color-actions">
-                    <button class="load-btn" onclick="colorConverter.loadColor(${index})">Load</button>
-                    <button class="delete-btn" onclick="colorConverter.deleteColor(${index})">Delete</button>
+                    <button class="iconButton" onclick="colorConverter.loadColor(${index})">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Load</span>
+                    </button>
+                    <button class="iconButton" onclick="colorConverter.deleteColor(${index})">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Delete</span>
+                    </button>
                 </div>
             </div>
         `).join('');
