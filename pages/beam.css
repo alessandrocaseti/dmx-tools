@@ -18,10 +18,10 @@
 
 .tab-content {
     display: none;
-    background: #222;
+    background: var(--foreground);
     padding: 30px;
     border-radius: 8px;
-    border: 1px solid #444;
+    max-width: 50%;
 }
 
 .tab-content.active {

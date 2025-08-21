@@ -343,6 +343,24 @@
                         </div>
 
                         <div class="value-group">
+                            <label>HSL</label>
+                            <div class="rgb-inputs color-inputs-row">
+                                <input type="number" id="hValue" min="0" max="255" value="255" class="color-input">
+                                <input type="number" id="sValue" min="0" max="255" value="0" class="color-input">
+                                <input type="number" id="lValue" min="0" max="255" value="0" class="color-input">
+                            </div>
+                        </div>
+
+                        <div class="value-group">
+                            <label>CMY</label>
+                            <div class="rgb-inputs color-inputs-row">
+                                <input type="number" id="cyanValue" min="0" max="255" value="255" class="color-input">
+                                <input type="number" id="magentaValue" min="0" max="255" value="0" class="color-input">
+                                <input type="number" id="yellowValue" min="0" max="255" value="0" class="color-input">
+                            </div>
+                        </div>
+
+                        <div class="value-group">
                             <label>CMYK</label>
                             <div class="cmyk-inputs color-inputs-row">
                                 <input type="number" id="cValue" min="0" max="100" value="0" class="color-input">
@@ -354,7 +372,7 @@
 
                         <div class="value-group">
                             <label>HEX</label>
-                            <input type="text" id="hexValue" value="#FF0000" maxlength="7" class="color-input" style="width: 100px;">
+                            <input type="text" id="hexValue" value="#FF0000" maxlength="7" class="color-input" style="width: 400px;">
                         </div>
                     </div>
                 </div>
@@ -362,13 +380,17 @@
                 <div class="saved-colors-section">
                     <h2 style="margin-top: 6vh;">Saved Colors</h2>
                     <div class="save-color-form">
-                        <input type="text" id="colorName" placeholder="Color name" style="width: -webkit-fill-available;">
-                        <button onclick="saveColor()" style="width: 210px; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <input type="text" id="colorName" placeholder="Color name" style="width: 180px; margin-right: 8px;">
+                        <button onclick="saveColor()" class="iconButton">
                             <span class="buttonIcon"></span>
                             <span class="buttonText">Save color</span>
                         </button>
+                        <button onclick="colorConverter.deleteAllColors()" class="iconButton" style="margin-left: 8px;">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Clear list</span>
+                        </button>
                     </div>
-                    <div class="saved-colors-list" id="savedColorsList">
+                    <div style="margin-top: 2vh;" id="savedColorsList">
                         <p class="empty-message">No saved colors yet</p>
                     </div>
                 </div>
@@ -379,151 +401,153 @@
         <!-- Power Calculator -->
         <div id="power" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Power Calculator</h1>
-            <div class="defaultPageContent">
+            <div class="defaultPageContent"">
                 <h2>Watt / Ampere / Volt Converter</h2>
 
-                <div class="converter-grid">
-                    <div class="input-group">
-                        <label for="watts">Power (W):</label>
-                        <input type="number" id="watts" placeholder="Watts" step="0.01" style="width: 100px;">
-                    </div>
-
-                    <div class="input-group">
-                        <label for="volts">Voltage (V):</label>
-                        <input type="number" id="volts" placeholder="Volts" step="0.01" style="width: 100px;">
-                    </div>
-
-                    <div class="input-group">
-                        <label for="amperes">Current (A):</label>
-                        <input type="number" id="amperes" placeholder="Amperes" step="0.01" style="width: 100px;">
-                    </div>
+                <div class=" converter-grid">
+                <div class="input-group">
+                    <label for="watts">Power (W):</label>
+                    <input type="number" id="watts" placeholder="Watts" step="0.01" style="width: 100px;">
                 </div>
 
-                <div class="converter-buttons">
-                    <button onclick="powerConverter.calculate()" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Calculate Missing Value</span>
+                <div class="input-group">
+                    <label for="volts">Voltage (V):</label>
+                    <input type="number" id="volts" placeholder="Volts" step="0.01" style="width: 100px;">
+                </div>
+
+                <div class="input-group">
+                    <label for="amperes">Current (A):</label>
+                    <input type="number" id="amperes" placeholder="Amperes" step="0.01" style="width: 100px;">
+                </div>
+            </div>
+
+            <div class="converter-buttons">
+                <button onclick="powerConverter.calculate()" class="iconButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Calculate Missing Value</span>
+                </button>
+                <button onclick="powerConverter.clear()" class="iconButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Clear all</span>
+                </button>
+            </div>
+
+            <div id="result-display" class="result-display">
+                <div id="calculation-result" class="calculation-result"></div>
+            </div>
+
+            <div class="power-formulas" style="display: none;">
+                <h3>Formulas Used:</h3>
+                <ul>
+                    <li><strong>Watts (P) = Volts (V) x Amperes (I)</strong></li>
+                    <li><strong>Volts (V) = Watts (P) ÷ Amperes (I)</strong></li>
+                    <li><strong>Amperes (I) = Watts (P) ÷ Volts (V)</strong></li>
+                </ul>
+            </div>
+
+            <div class="power-calculator">
+                <h3>Power Calculator</h3>
+                <div class="calculator-section">
+                    <h4>Calculate Total Power Consumption</h4>
+                    <div class="fixture-input">
+                        <label>Fixture name:</label>
+                        <input type="text" id="fixture-type" placeholder="Fixture name" style="width: 200px;">
+                    </div>
+                    <div class="fixture-input">
+                        <label>Power per unit (W):</label>
+                        <input type="number" id="fixture-power" placeholder="Watts per unit" step="0.1" style="width: 200px;">
+                    </div>
+                    <div class="fixture-input">
+                        <label>Quantity:</label>
+                        <input type="number" id="fixture-quantity" placeholder="Quantity" min="1" style="width: 200px;">
+                    </div>
+                    <button onclick="powerConverter.addFixture()" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Add</span>
                     </button>
-                    <button onclick="powerConverter.clear()" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Clear all</span>
-                    </button>
                 </div>
 
-                <div id="result-display" class="result-display">
-                    <div id="calculation-result" class="calculation-result"></div>
-                </div>
-
-                <div class="power-formulas" style="display: none;">
-                    <h3>Formulas Used:</h3>
-                    <ul>
-                        <li><strong>Watts (P) = Volts (V) x Amperes (I)</strong></li>
-                        <li><strong>Volts (V) = Watts (P) ÷ Amperes (I)</strong></li>
-                        <li><strong>Amperes (I) = Watts (P) ÷ Volts (V)</strong></li>
-                    </ul>
-                </div>
-
-                <div class="power-calculator">
-                    <h3>Power Calculator</h3>
-                    <div class="calculator-section">
-                        <h4>Calculate Total Power Consumption</h4>
-                        <div class="fixture-input">
-                            <label>Fixture name:</label>
-                            <input type="text" id="fixture-type" placeholder="Fixture name" style="width: 200px;">
-                        </div>
-                        <div class="fixture-input">
-                            <label>Power per unit (W):</label>
-                            <input type="number" id="fixture-power" placeholder="Watts per unit" step="0.1" style="width: 200px;">
-                        </div>
-                        <div class="fixture-input">
-                            <label>Quantity:</label>
-                            <input type="number" id="fixture-quantity" placeholder="Quantity" min="1" style="width: 200px;">
-                        </div>
-                        <button onclick="powerConverter.addFixture()" class="iconButton">
-                            <span class="buttonIcon"></span>
-                            <span class="buttonText">Add</span>
-                        </button>
-                    </div>
-
-                    <div id="fixture-list" class="fixture-list">
-                        <h4>Fixture List</h4>
-                        <div id="fixtures-container"></div>
-                        <div id="total-power" class="total-power">
-                            <strong>Total Power: <span id="total-watts">0</span> W</strong>
-                        </div>
+                <div id="fixture-list" class="fixture-list">
+                    <h4>Fixture List</h4>
+                    <div id="fixtures-container"></div>
+                    <div id="total-power" class="total-power">
+                        <strong>Total Power: <span id="total-watts">0</span> W</strong>
                     </div>
                 </div>
             </div>
-            <div style="margin-bottom: 30vh;" class="web-only"></div>
+        </div>
+        <div style="margin-bottom: 30vh;" class="web-only"></div>
         </div>
 
         <!-- Beam Tools -->
         <div id="beam" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Beam Tools</h1>
             <div class="defaultPageContent">
-                <h2>Beam Calculator</h2>
-                <p>Calculate beam angle, distance, or diameter based on known values</p>
 
-                <div class="calculator-tabs">
-                    <button class="tab-button active" data-tab="angle">Calculate Angle</button>
-                    <button class="tab-button" data-tab="distance">Calculate Distance</button>
-                    <button class="tab-button" data-tab="diameter">Calculate Diameter</button>
-                </div>
+                <div style="display: flex; flex-direction: row; justify-content: center; max-width: 100%;">
+                    <div style="flex: 1;">
+                        <div class="calculator-tabs">
+                            <button class="tab-button active" data-tab="angle">Calculate Angle</button>
+                            <button class="tab-button" data-tab="distance">Calculate Distance</button>
+                            <button class="tab-button" data-tab="diameter">Calculate Diameter</button>
+                        </div>
 
-                <div class="tab-content active" id="angle-tab">
-                    <div class="input-group">
-                        <label for="distance-angle">Distance (m):</label>
-                        <input type="number" id="distance-angle" step="0.01" min="0.01" placeholder="Enter distance">
-                    </div>
-                    <div class="input-group">
-                        <label for="diameter-angle">Diameter (m):</label>
-                        <input type="number" id="diameter-angle" step="0.01" min="0.01" placeholder="Enter diameter">
-                    </div>
-                    <button class="calculate-btn" onclick="beamCalculator.calculateAngle()">Calculate Angle</button>
-                    <div class="result" id="angle-result"></div>
-                </div>
+                        <div class="tab-content active" id="angle-tab">
+                            <div class="input-group">
+                                <label for="distance-angle">Distance (m):</label>
+                                <input type="number" id="distance-angle" step="0.01" min="0.01" placeholder="Enter distance">
+                            </div>
+                            <div class="input-group">
+                                <label for="diameter-angle">Diameter (m):</label>
+                                <input type="number" id="diameter-angle" step="0.01" min="0.01" placeholder="Enter diameter">
+                            </div>
+                            <button class="calculate-btn" onclick="beamCalculator.calculateAngle()">Calculate Angle</button>
+                            <div class="result" id="angle-result"></div>
+                        </div>
 
-                <div class="tab-content" id="distance-tab">
-                    <div class="input-group">
-                        <label for="angle-distance">Angle (degrees):</label>
-                        <input type="number" id="angle-distance" step="0.1" min="0.1" max="180" placeholder="Enter angle">
-                    </div>
-                    <div class="input-group">
-                        <label for="diameter-distance">Diameter (m):</label>
-                        <input type="number" id="diameter-distance" step="0.01" min="0.01" placeholder="Enter diameter">
-                    </div>
-                    <button class="calculate-btn" onclick="beamCalculator.calculateDistance()">Calculate Distance</button>
-                    <div class="result" id="distance-result"></div>
-                </div>
+                        <div class="tab-content" id="distance-tab">
+                            <div class="input-group">
+                                <label for="angle-distance">Angle (degrees):</label>
+                                <input type="number" id="angle-distance" step="0.1" min="0.1" max="180" placeholder="Enter angle">
+                            </div>
+                            <div class="input-group">
+                                <label for="diameter-distance">Diameter (m):</label>
+                                <input type="number" id="diameter-distance" step="0.01" min="0.01" placeholder="Enter diameter">
+                            </div>
+                            <button class="calculate-btn" onclick="beamCalculator.calculateDistance()">Calculate Distance</button>
+                            <div class="result" id="distance-result"></div>
+                        </div>
 
-                <div class="tab-content" id="diameter-tab">
-                    <div class="input-group">
-                        <label for="angle-diameter">Angle (degrees):</label>
-                        <input type="number" id="angle-diameter" step="0.1" min="0.1" max="180" placeholder="Enter angle">
+                        <div class="tab-content" id="diameter-tab">
+                            <div class="input-group">
+                                <label for="angle-diameter">Angle (degrees):</label>
+                                <input type="number" id="angle-diameter" step="0.1" min="0.1" max="180" placeholder="Enter angle">
+                            </div>
+                            <div class="input-group">
+                                <label for="distance-diameter">Distance (m):</label>
+                                <input type="number" id="distance-diameter" step="0.01" min="0.01" placeholder="Enter distance">
+                            </div>
+                            <button class="calculate-btn" onclick="beamCalculator.calculateDiameter()">Calculate Diameter</button>
+                            <div class="result" id="diameter-result"></div>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="distance-diameter">Distance (m):</label>
-                        <input type="number" id="distance-diameter" step="0.01" min="0.01" placeholder="Enter distance">
-                    </div>
-                    <button class="calculate-btn" onclick="beamCalculator.calculateDiameter()">Calculate Diameter</button>
-                    <div class="result" id="diameter-result"></div>
-                </div>
 
-                <div class="beam-visualization">
-                    <h3>Beam Visualization</h3>
-                    <svg id="beam-svg" width="400" height="200">
-                        <line x1="200" y1="200" x2="200" y2="100" stroke="#ffeb3b" stroke-width="2" />
-                        <path id="beam-path" d="M 200 100 L 150 50 L 250 50 Z" fill="rgba(255, 235, 59, 0.3)" stroke="#ffeb3b" />
-                        <circle cx="200" cy="200" r="5" fill="#ffeb3b" />
-                        <text x="200" y="220" text-anchor="middle" fill="#fff" font-size="12">Fixture</text>
-                    </svg>
-                    <div class="visualization-controls">
-                        <label>
-                            <input type="checkbox" id="show-labels" checked> Show labels
-                        </label>
-                        <label>
-                            <input type="range" id="scale-slider" min="0.5" max="2" step="0.1" value="1"> Scale
-                        </label>
+                    <div class="beam-visualization">
+                        <h3>Beam Visualization</h3>
+                        <svg id="beam-svg" width="400" height="200">
+                            <line x1="200" y1="200" x2="200" y2="100" stroke="#ffeb3b" stroke-width="2" />
+                            <path id="beam-path" d="M 200 100 L 150 50 L 250 50 Z" fill="rgba(255, 235, 59, 0.3)" stroke="#ffeb3b" />
+                            <circle cx="200" cy="200" r="5" fill="#ffeb3b" />
+                            <text x="200" y="220" text-anchor="middle" fill="#fff" font-size="12">Fixture</text>
+                        </svg>
+                        <div class="visualization-controls">
+                            <label>
+                                <input type="checkbox" id="show-labels" checked> Show labels
+                            </label>
+                            <label>
+                                <input type="range" id="scale-slider" min="0.5" max="2" step="0.1" value="1"> Scale
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -533,7 +557,7 @@
         <!-- Fixture Database -->
         <div id="database" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Fixture Database</h1>
-            <div style="display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; margin: 0 auto 0 auto;">
+            <div style="display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; margin: 0 auto 0 auto; max-width: 1400px;">
                 <button class="defaultButton brandButton">ACME</button>
                 <button class="defaultButton brandButton">Sagitter</button>
                 <button class="defaultButton brandButton">Proel</button>
@@ -541,6 +565,9 @@
                 <button class="defaultButton brandButton">FOS Lighting</button>
                 <button class="defaultButton brandButton">Robe</button>
                 <button class="defaultButton brandButton">SGM</button>
+                <button class="defaultButton brandButton">Clay Paky</button>
+                <button class="defaultButton brandButton">SHEHDS</button>
+                <button class="defaultButton brandButton">Blue Sea</button>
             </div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
         </div>

@@ -1,26 +1,40 @@
 /// DMX TOOLS - DEVELOPED BY ALESSANDRO CASETI ///
-// RGB / CMY / HEX - Enhanced Color Converter with improved UX
 
-class EnhancedColorConverter {
-    // RGB -> HSV conversion utility
-    rgbToHsv(r, g, b) {
+class EnhancedColorConverter 
+{
+    rgbToHsv(r, g, b) 
+    {
         r /= 255; g /= 255; b /= 255;
         let max = Math.max(r, g, b), min = Math.min(r, g, b);
-        let h, s, v = max;
+        let h = 0, s = 0, v = max;
         let d = max - min;
         s = max === 0 ? 0 : d / max;
-        if (max === min) {
-            h = 0;
-        } else {
-            switch (max) {
+        if (d === 0) 
+        {
+            // Se il colore è nero o grigio, mantieni l'hue precedente se disponibile
+            if (typeof this !== 'undefined' && this.hue !== undefined) 
+            {
+                h = this.hue;
+            }
+            else 
+            {
+                h = 0;
+            }
+        } 
+        else 
+        {
+            switch (max) 
+            {
                 case r: h = (g - b) / d + (g < b ? 6 : 0); break;
                 case g: h = (b - r) / d + 2; break;
                 case b: h = (r - g) / d + 4; break;
             }
             h /= 6;
+            h = h * 360;
+            if (h < 0) h += 360;
         }
         return {
-            h: Math.round(h * 360),
+            h: Math.round(h),
             s: Math.round(s * 100),
             v: Math.round(v * 100)
         };
@@ -46,13 +60,14 @@ class EnhancedColorConverter {
         this.renderSavedColors();
     }
 
-    // Color conversion utilities
     // RGB -> CMYK
-    rgbToCmyk(r, g, b) {
+    rgbToCmyk(r, g, b) 
+    {
         r = r / 255; g = g / 255; b = b / 255;
         const k = 1 - Math.max(r, g, b);
         let c = 0, m = 0, y = 0;
-        if (k < 1) {
+        if (k < 1) 
+        {
             c = ((1 - r - k) / (1 - k));
             m = ((1 - g - k) / (1 - k));
             y = ((1 - b - k) / (1 - k));
@@ -66,7 +81,8 @@ class EnhancedColorConverter {
     }
 
     // CMYK -> RGB
-    cmykToRgb(c, m, y, k) {
+    cmykToRgb(c, m, y, k) 
+    {
         c = c / 100; m = m / 100; y = y / 100; k = k / 100;
         const r = Math.round(255 * (1 - c) * (1 - k));
         const g = Math.round(255 * (1 - m) * (1 - k));
@@ -94,19 +110,22 @@ class EnhancedColorConverter {
     }
 
     // HSV to RGB conversion
-    hsvToRgb(h, s, v) {
+    hsvToRgb(h, s, v) 
+    {
         s /= 100;
         v /= 100;
+        // Correggi hue=360 per essere identico a hue=0 (rosso)
+        let hNorm = h % 360;
         let c = v * s;
-        let x = c * (1 - Math.abs((h / 60) % 2 - 1));
+        let x = c * (1 - Math.abs((hNorm / 60) % 2 - 1));
         let m = v - c;
         let r = 0, g = 0, b = 0;
-        if (h >= 0 && h < 60) { r = c; g = x; b = 0; }
-        else if (h >= 60 && h < 120) { r = x; g = c; b = 0; }
-        else if (h >= 120 && h < 180) { r = 0; g = c; b = x; }
-        else if (h >= 180 && h < 240) { r = 0; g = x; b = c; }
-        else if (h >= 240 && h < 300) { r = x; g = 0; b = c; }
-        else if (h >= 300 && h < 360) { r = c; g = 0; b = x; }
+        if (hNorm >= 0 && hNorm < 60) { r = c; g = x; b = 0; }
+        else if (hNorm >= 60 && hNorm < 120) { r = x; g = c; b = 0; }
+        else if (hNorm >= 120 && hNorm < 180) { r = 0; g = c; b = x; }
+        else if (hNorm >= 180 && hNorm < 240) { r = 0; g = x; b = c; }
+        else if (hNorm >= 240 && hNorm < 300) { r = x; g = 0; b = c; }
+        else if (hNorm >= 300 && hNorm < 360) { r = c; g = 0; b = x; }
         return {
             r: Math.round((r + m) * 255),
             g: Math.round((g + m) * 255),
@@ -114,7 +133,6 @@ class EnhancedColorConverter {
         };
     }
 
-    // Enhanced color picker setup
     setupColorPicker() 
     {
         // HSV state already set in constructor
@@ -124,7 +142,8 @@ class EnhancedColorConverter {
         const huePicker = document.getElementById('huePicker');
         const hueCursor = document.getElementById('hueCursor');
 
-        if (!picker || !cursor || !huePicker || !hueCursor) {
+        if (!picker || !cursor || !huePicker || !hueCursor) 
+        {
             console.error('Color picker elements not found');
             return;
         }
@@ -132,27 +151,33 @@ class EnhancedColorConverter {
         picker.style.cursor = 'crosshair';
         huePicker.style.cursor = 'ns-resize';
 
-        picker.addEventListener('mouseenter', () => {
+        picker.addEventListener('mouseenter', () => 
+        {
             picker.style.boxShadow = '0 0 10px rgba(255, 255, 255, 0.3)';
         });
-        picker.addEventListener('mouseleave', () => {
+        picker.addEventListener('mouseleave', () => 
+        {
             picker.style.boxShadow = 'none';
         });
 
         // Universal click handling (both left and right clicks)
-        picker.addEventListener('mousedown', (e) => {
+        picker.addEventListener('mousedown', (e) => 
+        {
             e.preventDefault();
             this.isDragging = true;
             this.dragTarget = 'picker';
             this.updateSaturationValue(e);
             
-            const moveHandler = (ev) => {
-                if (this.isDragging && this.dragTarget === 'picker') {
+            const moveHandler = (ev) => 
+            {
+                if (this.isDragging && this.dragTarget === 'picker') 
+                {
                     this.updateSaturationValue(ev);
                 }
             };
             
-            const upHandler = () => {
+            const upHandler = () => 
+            {
                 this.isDragging = false;
                 this.dragTarget = null;
                 document.removeEventListener('mousemove', moveHandler);
@@ -163,20 +188,23 @@ class EnhancedColorConverter {
             document.addEventListener('mouseup', upHandler);
         });
 
-        // Enhanced hue picker with better feedback
-        huePicker.addEventListener('mousedown', (e) => {
+        huePicker.addEventListener('mousedown', (e) => 
+        {
             e.preventDefault();
             this.isDragging = true;
             this.dragTarget = 'hue';
             this.updateHue(e);
             
-            const moveHandler = (ev) => {
-                if (this.isDragging && this.dragTarget === 'hue') {
+            const moveHandler = (ev) => 
+            {
+                if (this.isDragging && this.dragTarget === 'hue') 
+                {
                     this.updateHue(ev);
                 }
             };
             
-            const upHandler = () => {
+            const upHandler = () => 
+            {
                 this.isDragging = false;
                 this.dragTarget = null;
                 document.removeEventListener('mousemove', moveHandler);
@@ -265,10 +293,13 @@ class EnhancedColorConverter {
     {
 
         // RGB inputs with validation
-        ['rValue', 'gValue', 'bValue'].forEach(id => {
+        ['rValue', 'gValue', 'bValue'].forEach(id => 
+        {
             const input = document.getElementById(id);
-            if (input) {
-                input.addEventListener('input', (e) => {
+            if (input) 
+            {
+                input.addEventListener('input', (e) => 
+                {
                     let value = parseInt(e.target.value) || 0;
                     value = Math.max(0, Math.min(value, 255));
                     e.target.value = value;
@@ -281,10 +312,13 @@ class EnhancedColorConverter {
         });
 
         // CMYK inputs with validation
-        ['cValue', 'mValue', 'yValue', 'kValue'].forEach(id => {
+        ['cValue', 'mValue', 'yValue', 'kValue'].forEach(id => 
+            {
             const input = document.getElementById(id);
-            if (input) {
-                input.addEventListener('input', (e) => {
+            if (input) 
+            {
+                input.addEventListener('input', (e) => 
+                {
                     let value = parseInt(e.target.value) || 0;
                     value = Math.max(0, Math.min(value, 100));
                     e.target.value = value;
@@ -301,14 +335,18 @@ class EnhancedColorConverter {
         // HEX input with validation
         const hexInput = document.getElementById('hexValue');
         if (hexInput) {
-            hexInput.addEventListener('input', (e) => {
+            hexInput.addEventListener('input', (e) => 
+            {
                 let hex = e.target.value;
-                if (hex.match(/^#[0-9A-Fa-f]{0,6}$/)) {
-                    if (hex.length === 7) {
+                if (hex.match(/^#[0-9A-Fa-f]{0,6}$/)) 
+                {
+                    if (hex.length === 7) 
+                    {
                         const rgb = this.hexToRgb(hex);
                         if (rgb) this.setColor(rgb.r, rgb.g, rgb.b);
                     }
-                } else {
+                } else 
+                {
                     // Remove invalid characters
                     e.target.value = '#' + hex.replace(/[^0-9A-Fa-f]/g, '').substring(0, 6);
                 }
@@ -329,6 +367,14 @@ class EnhancedColorConverter {
     setColor(r, g, b) 
     {
         this.currentColor = { r, g, b };
+        // Aggiorna HSV solo se non stiamo trascinando il picker (cioè se non è in corso un drag su saturation/value)
+        if (!this.isDragging || this.dragTarget !== 'picker') 
+        {
+            const hsv = this.rgbToHsv(r, g, b);
+            this.hue = hsv.h;
+            this.saturation = hsv.s;
+            this.value = hsv.v;
+        }
         this.updateAllValues();
     }
 
@@ -357,14 +403,10 @@ class EnhancedColorConverter {
         if (kInput) kInput.value = cmyk.k;
         if (hexInput) hexInput.value = hex;
 
-        // Update color display
         const colorDisplay = document.getElementById('colorDisplay');
-        if (colorDisplay) {
-            colorDisplay.style.backgroundColor = hex;
-        }
+        if (colorDisplay) { colorDisplay.style.backgroundColor = hex; }
     }
 
-    // Saved colors functionality (unchanged)
     saveColor() 
     {
         const inputName = document.getElementById('colorName').value.trim();
@@ -383,6 +425,7 @@ class EnhancedColorConverter {
         };
 
         this.savedColors.push(color);
+        this.savedColors.reverse();
         this.saveSavedColors();
         this.renderSavedColors();
         document.getElementById('colorName').value = '';
@@ -390,15 +433,14 @@ class EnhancedColorConverter {
 
     loadColor(index) 
     {
-    const color = this.savedColors[index];
-    this.setColor(color.rgb.r, color.rgb.g, color.rgb.b);
-    // Aggiorna HSV e cursori picker
-    const hsv = this.rgbToHsv(color.rgb.r, color.rgb.g, color.rgb.b);
-    this.hue = hsv.h;
-    this.saturation = hsv.s;
-    this.value = hsv.v;
-    this.updatePickerBackground();
-    this.updateCursors();
+        const color = this.savedColors[index];
+        this.setColor(color.rgb.r, color.rgb.g, color.rgb.b);
+        const hsv = this.rgbToHsv(color.rgb.r, color.rgb.g, color.rgb.b);
+        this.hue = hsv.h;
+        this.saturation = hsv.s;
+        this.value = hsv.v;
+        this.updatePickerBackground();
+        this.updateCursors();
     }
 
     deleteColor(index) 
@@ -406,6 +448,14 @@ class EnhancedColorConverter {
         this.savedColors.splice(index, 1);
         this.saveSavedColors();
         this.renderSavedColors();
+    }
+
+    deleteAllColors()
+    {
+        this.savedColors = [];
+        this.saveSavedColors();
+        this.renderSavedColors();
+        document.getElementById('colorName').value = '';
     }
 
     renderSavedColors() 
@@ -456,11 +506,7 @@ class EnhancedColorConverter {
     }
 }
 
-// Initialize the enhanced color converter
 let colorConverter;
-document.addEventListener('DOMContentLoaded', () => { 
-    colorConverter = new EnhancedColorConverter(); 
-});
+document.addEventListener('DOMContentLoaded', () => { colorConverter = new EnhancedColorConverter(); });
 
-// Global functions for HTML onclick events
 function saveColor() { colorConverter.saveColor(); }

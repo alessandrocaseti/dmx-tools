@@ -68,12 +68,13 @@
 }
 
 .hue-picker-cursor {
-    width: 34px;
+    width: 36px;
     height: 4px;
     background: white;
+    border-radius: 30%;
     border: 1px solid #333;
     position: absolute;
-    left: -2px;
+    left: -4px;
     transform: translateY(-50%);
     pointer-events: none;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
@@ -92,7 +93,7 @@
     margin-left: 200px;
     flex: 1;
     flex-direction: column;
-    gap: 48px;
+    gap: 21px;
 }
 
 .value-group {
@@ -104,12 +105,22 @@
 
 .value-group label {
     font-weight: bold;
+    width: 50px;
+    display: inline-block;
+    text-align: right;
     color: #fff;
 }
 
-.rgb-inputs, .cmy-inputs {
+.rgb-inputs, .cmy-inputs 
+{
     display: flex;
     gap: 10px;
+    align-content: flex-end;
+    flex: 1;
+}
+
+.rgb-inputs input{
+    width: 112px;
 }
 
 .saved-colors-section {
@@ -122,11 +133,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
-}
-
-.saved-colors-list {
-    max-height: 300px;
-    overflow-y: auto;
+    justify-content: center;
 }
 
 .saved-color-item {
@@ -134,7 +141,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border: 1px solid #333;
     border-radius: var(--border-radius);
     margin-bottom: 10px;
     background: var(--foreground);
@@ -173,18 +179,22 @@
 }
 
 /* Responsive design */
-@media (max-width: 600px) {
-    .color-picker-section {
+@media (max-width: 600px) 
+{
+    .color-picker-section 
+    {
         flex-direction: column;
         align-items: center;
     }
     
-    .color-picker-square {
+    .color-picker-square 
+    {
         width: 150px;
         height: 150px;
     }
     
-    .hue-picker {
+    .hue-picker 
+    {
         width: 150px;
         height: 30px;
         background: linear-gradient(to right, 
@@ -197,7 +207,8 @@
             hsl(0, 100%, 50%);
     }
     
-    .hue-picker-cursor {
+    .hue-picker-cursor 
+    {
         width: 4px;
         height: 34px;
         top: -2px;
