@@ -374,6 +374,8 @@ class EnhancedColorConverter
                     const g = this.validateInput('gValue', 0, 255);
                     const b = this.validateInput('bValue', 0, 255);
                     this.setColor(r, g, b);
+                    this.updatePickerBackground();
+                    this.updateCursors();
                 });
             }
         });
@@ -395,6 +397,8 @@ class EnhancedColorConverter
                     const k = this.validateInput('kValue', 0, 100);
                     const rgb = this.cmykToRgb(c, m, y, k);
                     this.setColor(rgb.r, rgb.g, rgb.b);
+                    this.updatePickerBackground();
+                    this.updateCursors();
                 });
             }
         });
@@ -437,6 +441,8 @@ class EnhancedColorConverter
                     const l = this.validateInput('hslLValue', 0, 100);
                     const rgb = this.hslToRgb(h, s, l);
                     this.setColor(rgb.r, rgb.g, rgb.b);
+                    this.updatePickerBackground();
+                    this.updateCursors();
                 });
             }
         });
@@ -457,6 +463,8 @@ class EnhancedColorConverter
                     const y = this.validateInput('cmyYValue', 0, 100);
                     const rgb = this.cmyToRgb(c, m, y);
                     this.setColor(rgb.r, rgb.g, rgb.b);
+                    this.updatePickerBackground();
+                    this.updateCursors();
                 });
             }
         });
@@ -474,6 +482,8 @@ class EnhancedColorConverter
                     l = Math.max(0, Math.min(l, 100));
                     const rgb = this.hslToRgb(h, s, l);
                     this.setColor(rgb.r, rgb.g, rgb.b);
+                    this.updatePickerBackground();
+                    this.updateCursors();
                 });
             }
         });
@@ -491,6 +501,8 @@ class EnhancedColorConverter
                     y = Math.max(0, Math.min(y, 100));
                     const rgb = this.cmyToRgb(c, m, y);
                     this.setColor(rgb.r, rgb.g, rgb.b);
+                    this.updatePickerBackground();
+                    this.updateCursors();
                 });
             }
         });
@@ -580,6 +592,8 @@ class EnhancedColorConverter
         {
             name: inputName,
             rgb: this.currentColor,
+            hsl: this.rgbToHsl(this.currentColor.r, this.currentColor.g, this.currentColor.b),
+            cmy: this.rgbToCmy(this.currentColor.r, this.currentColor.g, this.currentColor.b),
             cmyk: this.rgbToCmyk(this.currentColor.r, this.currentColor.g, this.currentColor.b),
             hex: this.rgbToHex(this.currentColor.r, this.currentColor.g, this.currentColor.b)
         };
@@ -633,14 +647,27 @@ class EnhancedColorConverter
             <div class="saved-color-item">
                 <div class="saved-color-info">
                     <div class="saved-color-preview" style="background-color: ${color.hex}"></div>
-                    <div class="saved-color-details">
-                        <strong>${color.name}</strong><br>
-                        RGB: ${color.rgb.r}, ${color.rgb.g}, ${color.rgb.b}<br>
-                        CMYK: ${color.cmyk ? `${color.cmyk.c}%, ${color.cmyk.m}%, ${color.cmyk.y}%, ${color.cmyk.k}%` : '-'}<br>
-                        HEX: ${color.hex}
+                    <div style="display: grid;grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 1fr; grid-column-gap: 0px;grid-row-gap: 0px;">
+                        <div class="saved-color-details" style="grid-area: 1 / 1 / 2 / 2; width: 140px;">
+                            <strong>${color.name}</strong><br>
+                            Palette: ${color.palette || 'None'}<br>
+                            HEX: ${color.hex}
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 4px; justify-content: center" class="saved-color-details" style="grid-area: 1 / 2 / 2 / 3;">
+                            RGB: ${color.rgb.r}, ${color.rgb.g}, ${color.rgb.b}<br>
+                            HSL: ${color.hsl ? `${color.hsl.h}°, ${color.hsl.s}%, ${color.hsl.l}%` : '-'}<br>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 4px; justify-content: center" class="saved-color-details" style="grid-area: 1 / 3 / 2 / 4;">
+                            CMY: ${color.cmy ? `${color.cmy.c}%, ${color.cmy.m}%, ${color.cmy.y}%` : '-'}<br>
+                            CMYK: ${color.cmyk ? `${color.cmyk.c}%, ${color.cmyk.m}%, ${color.cmyk.y}%, ${color.cmyk.k}%` : '-'}<br>
+                        </div>
                     </div>
                 </div>
                 <div class="saved-color-actions">
+                    <button class="iconButton" onclick="colorConverter.loadColor(${index})">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Link</span>
+                    </button>
                     <button class="iconButton" onclick="colorConverter.loadColor(${index})">
                             <span class="buttonIcon"></span>
                             <span class="buttonText">Load</span>
