@@ -133,6 +133,73 @@ class EnhancedColorConverter
         };
     }
 
+    // RGB <-> HSL
+    rgbToHsl(r, g, b) {
+        r /= 255; g /= 255; b /= 255;
+        let max = Math.max(r, g, b), min = Math.min(r, g, b);
+        let h, s, l = (max + min) / 2;
+        if (max === min) {
+            h = s = 0;
+        } else {
+            let d = max - min;
+            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+            switch (max) {
+                case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                case g: h = (b - r) / d + 2; break;
+                case b: h = (r - g) / d + 4; break;
+            }
+            h /= 6;
+        }
+        return {
+            h: Math.round((h || 0) * 360),
+            s: Math.round((s || 0) * 100),
+            l: Math.round((l || 0) * 100)
+        };
+    }
+    hslToRgb(h, s, l) {
+        h = (h % 360) / 360;
+        s /= 100;
+        l /= 100;
+        let r, g, b;
+        if (s === 0) {
+            r = g = b = l;
+        } else {
+            const hue2rgb = (p, q, t) => {
+                if (t < 0) t += 1;
+                if (t > 1) t -= 1;
+                if (t < 1/6) return p + (q - p) * 6 * t;
+                if (t < 1/2) return q;
+                if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+                return p;
+            };
+            let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+            let p = 2 * l - q;
+            r = hue2rgb(p, q, h + 1/3);
+            g = hue2rgb(p, q, h);
+            b = hue2rgb(p, q, h - 1/3);
+        }
+        return {
+            r: Math.round(r * 255),
+            g: Math.round(g * 255),
+            b: Math.round(b * 255)
+        };
+    }
+    // RGB <-> CMY (solo CMY, non CMYK)
+    rgbToCmy(r, g, b) {
+        return {
+            c: Math.round((1 - r / 255) * 100),
+            m: Math.round((1 - g / 255) * 100),
+            y: Math.round((1 - b / 255) * 100)
+        };
+    }
+    cmyToRgb(c, m, y) {
+        return {
+            r: Math.round(255 * (1 - c / 100)),
+            g: Math.round(255 * (1 - m / 100)),
+            b: Math.round(255 * (1 - y / 100))
+        };
+    }
+
     setupColorPicker() 
     {
         // HSV state already set in constructor
@@ -352,6 +419,81 @@ class EnhancedColorConverter
                 }
             });
         }
+
+        // HSL inputs with validation
+        ['hslHValue', 'hslSValue', 'hslLValue'].forEach(id => 
+        {
+            const input = document.getElementById(id);
+            if (input) 
+            {
+                input.addEventListener('input', (e) => 
+                {
+                    let value = parseInt(e.target.value) || 0;
+                    if (id === 'hslHValue') value = Math.max(0, Math.min(value, 360));
+                    else value = Math.max(0, Math.min(value, 100));
+                    e.target.value = value;
+                    const h = this.validateInput('hslHValue', 0, 360);
+                    const s = this.validateInput('hslSValue', 0, 100);
+                    const l = this.validateInput('hslLValue', 0, 100);
+                    const rgb = this.hslToRgb(h, s, l);
+                    this.setColor(rgb.r, rgb.g, rgb.b);
+                });
+            }
+        });
+
+        // CMY inputs with validation
+        ['cmyCValue', 'cmyMValue', 'cmyYValue'].forEach(id => 
+        {
+            const input = document.getElementById(id);
+            if (input) 
+            {
+                input.addEventListener('input', (e) => 
+                {
+                    let value = parseInt(e.target.value) || 0;
+                    value = Math.max(0, Math.min(value, 100));
+                    e.target.value = value;
+                    const c = this.validateInput('cmyCValue', 0, 100);
+                    const m = this.validateInput('cmyMValue', 0, 100);
+                    const y = this.validateInput('cmyYValue', 0, 100);
+                    const rgb = this.cmyToRgb(c, m, y);
+                    this.setColor(rgb.r, rgb.g, rgb.b);
+                });
+            }
+        });
+
+        // HSL inputs
+        ['hValue', 'sValue', 'lValue'].forEach(id => {
+            const input = document.getElementById(id);
+            if (input) {
+                input.addEventListener('input', (e) => {
+                    let h = parseInt(document.getElementById('hValue').value) || 0;
+                    let s = parseInt(document.getElementById('sValue').value) || 0;
+                    let l = parseInt(document.getElementById('lValue').value) || 0;
+                    h = Math.max(0, Math.min(h, 360));
+                    s = Math.max(0, Math.min(s, 100));
+                    l = Math.max(0, Math.min(l, 100));
+                    const rgb = this.hslToRgb(h, s, l);
+                    this.setColor(rgb.r, rgb.g, rgb.b);
+                });
+            }
+        });
+
+        // CMY inputs
+        ['cyanValue', 'magentaValue', 'yellowValue'].forEach(id => {
+            const input = document.getElementById(id);
+            if (input) {
+                input.addEventListener('input', (e) => {
+                    let c = parseInt(document.getElementById('cyanValue').value) || 0;
+                    let m = parseInt(document.getElementById('magentaValue').value) || 0;
+                    let y = parseInt(document.getElementById('yellowValue').value) || 0;
+                    c = Math.max(0, Math.min(c, 100));
+                    m = Math.max(0, Math.min(m, 100));
+                    y = Math.max(0, Math.min(y, 100));
+                    const rgb = this.cmyToRgb(c, m, y);
+                    this.setColor(rgb.r, rgb.g, rgb.b);
+                });
+            }
+        });
     }
 
     validateInput(id, min, max) 
@@ -383,6 +525,8 @@ class EnhancedColorConverter
         const { r, g, b } = this.currentColor;
         const cmyk = this.rgbToCmyk(r, g, b);
         const hex = this.rgbToHex(r, g, b);
+        const hsl = this.rgbToHsl(r, g, b);
+        const cmy = this.rgbToCmy(r, g, b);
 
         // Update inputs with validated values
         const rInput = document.getElementById('rValue');
@@ -393,6 +537,13 @@ class EnhancedColorConverter
         const yInput = document.getElementById('yValue');
         const kInput = document.getElementById('kValue');
         const hexInput = document.getElementById('hexValue');
+        // Nuovi input HSL e CMY (secondo la struttura HTML selezionata)
+        const hInput = document.getElementById('hValue');
+        const sInput = document.getElementById('sValue');
+        const lInput = document.getElementById('lValue');
+        const cyanInput = document.getElementById('cyanValue');
+        const magentaInput = document.getElementById('magentaValue');
+        const yellowInput = document.getElementById('yellowValue');
 
         if (rInput) rInput.value = r;
         if (gInput) gInput.value = g;
@@ -402,9 +553,18 @@ class EnhancedColorConverter
         if (yInput) yInput.value = cmyk.y;
         if (kInput) kInput.value = cmyk.k;
         if (hexInput) hexInput.value = hex;
+        if (hInput) hInput.value = hsl.h;
+        if (sInput) sInput.value = hsl.s;
+        if (lInput) lInput.value = hsl.l;
+        if (cyanInput) cyanInput.value = cmy.c;
+        if (magentaInput) magentaInput.value = cmy.m;
+        if (yellowInput) yellowInput.value = cmy.y;
 
+        // Update color display
         const colorDisplay = document.getElementById('colorDisplay');
-        if (colorDisplay) { colorDisplay.style.backgroundColor = hex; }
+        if (colorDisplay) {
+            colorDisplay.style.backgroundColor = hex;
+        }
     }
 
     saveColor() 
