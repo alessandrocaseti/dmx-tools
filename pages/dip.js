@@ -65,23 +65,6 @@ class DMXDIPSwitch
         this.updateDisplay();
     }
 
-    storeAddress() 
-    {
-        const addressInput = document.getElementById('dmxAddress');
-        let address = parseInt(addressInput.value);
-        
-        if (isNaN(address)) address = 0;
-        if (address < 0) address = 0;
-        if (address > this.maxAddress) address = this.maxAddress;
-        
-        // Check if address already exists
-        if (!this.storedAddresses.includes(address)) {
-            this.storedAddresses.push(address);
-            this.storedAddresses.sort((a, b) => a - b);
-            this.updateStoredAddressesTable();
-        }
-    }
-
     updateStoredAddressesTable() 
     {
         const tbody = document.getElementById('storedAddressesBody');
@@ -156,6 +139,7 @@ class DMXDIPSwitch
 
     clearAddress() 
     {
+        setCmdMessage('Cleared DIP. Current address set to 000.', 'CLEAR DIP');
         this.currentAddress = 0;
         this.updateDisplay();
         document.getElementById('dmxAddress').value = this.currentAddress.toString().padStart(3, '0');
@@ -166,6 +150,7 @@ class DMXDIPSwitch
         this.clearAddress();
         this.storedAddresses = [];
         this.updateStoredAddressesTable();
+        setCmdMessage('Cleared all stored addresses and reset current address to 000.', 'CLEAR ALL');
     }
 
     storeAddress() 
@@ -182,6 +167,11 @@ class DMXDIPSwitch
             this.storedAddresses.push(address);
             this.storedAddresses.sort((a, b) => a - b);
             this.updateStoredAddressesTable();
+            setCmdMessage(`Stored address ${address.toString().padStart(3, '0')}.`, 'STORE');
+        }
+        else
+        {
+            setCmdMessage(`Address ${address.toString().padStart(3, '0')} is already stored.`, 'WARNING');
         }
     }
 
@@ -227,6 +217,7 @@ class DMXDIPSwitch
 
     loadAddress(address) 
     {
+        setCmdMessage(`Loaded address ${address.toString().padStart(3, '0')}.`, 'LOAD');
         this.currentAddress = address;
         this.updateDisplay();
         document.getElementById('dmxAddress').value = address.toString().padStart(3, '0');
@@ -234,6 +225,8 @@ class DMXDIPSwitch
 
     removeAddress(index) 
     {
+        const address = this.storedAddresses[index];
+        setCmdMessage(`Removed address ${address.toString().padStart(3, '0')}.`, 'REMOVE');
         this.storedAddresses.splice(index, 1);
         this.updateStoredAddressesTable();
     }
@@ -291,6 +284,14 @@ class DMXDIPSwitch
         // Update address input
         const addressInput = document.getElementById('dmxAddress');
         if (addressInput) { addressInput.value = this.currentAddress; }
+        if(this.isFlipped)
+        {
+            setCmdMessage('DIP switch layout flipped (ascending order - 1/256).', 'FLIP');
+        }
+        else
+        {
+            setCmdMessage('DIP switch layout flipped (descending order - 256/1).', 'FLIP');
+        }
     }
 
     // Utility method to get switch states

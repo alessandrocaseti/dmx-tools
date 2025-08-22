@@ -594,7 +594,7 @@ class EnhancedColorConverter
         const inputName = document.getElementById('colorName').value.trim();
         if (!inputName) 
         {
-            alert('Please enter a color name');
+            setCmdMessage('Please enter a name for the color before saving.', 'ERROR');
             return;
         }
 
@@ -608,8 +608,9 @@ class EnhancedColorConverter
             hex: this.rgbToHex(this.currentColor.r, this.currentColor.g, this.currentColor.b)
         };
 
+        setCmdMessage(`Color "${inputName}" (${color.hex}) saved successfully.`, 'SAVE');
         this.savedColors.push(color);
-        this.savedColors.reverse();
+        this.savedColors.reverse(); 
         this.saveSavedColors();
         this.renderSavedColors();
         document.getElementById('colorName').value = '';
@@ -618,6 +619,7 @@ class EnhancedColorConverter
     loadColor(index) 
     {
         const color = this.savedColors[index];
+        setCmdMessage(`Loaded color "${color.name}" (${color.hex}).`, 'LOAD');
         this.setColor(color.rgb.r, color.rgb.g, color.rgb.b);
         const hsv = this.rgbToHsv(color.rgb.r, color.rgb.g, color.rgb.b);
         this.hue = hsv.h;
@@ -629,6 +631,8 @@ class EnhancedColorConverter
 
     deleteColor(index) 
     {
+        const color = this.savedColors[index];
+        setCmdMessage(`Deleted color "${color.name}" (${color.hex}).`, 'DELETE');
         this.savedColors.splice(index, 1);
         this.saveSavedColors();
         this.renderSavedColors();
@@ -636,6 +640,7 @@ class EnhancedColorConverter
 
     deleteAllColors()
     {
+        setCmdMessage('All saved colors have been deleted.', 'CLEAR LIST');
         this.savedColors = [];
         this.saveSavedColors();
         this.renderSavedColors();
