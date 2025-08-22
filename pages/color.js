@@ -45,7 +45,6 @@ class EnhancedColorConverter
         this.savedColors = this.loadSavedColors();
         this.isDragging = false;
         this.dragTarget = null;
-        // HSV state for picker
         this.hue = 0;
         this.saturation = 100;
         this.value = 100;
@@ -134,16 +133,18 @@ class EnhancedColorConverter
     }
 
     // RGB <-> HSL
-    rgbToHsl(r, g, b) {
+    rgbToHsl(r, g, b) 
+    {
         r /= 255; g /= 255; b /= 255;
         let max = Math.max(r, g, b), min = Math.min(r, g, b);
         let h, s, l = (max + min) / 2;
-        if (max === min) {
-            h = s = 0;
-        } else {
+        if (max === min) { h = s = 0; } 
+        else 
+        {
             let d = max - min;
             s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-            switch (max) {
+            switch (max) 
+            {
                 case r: h = (g - b) / d + (g < b ? 6 : 0); break;
                 case g: h = (b - r) / d + 2; break;
                 case b: h = (r - g) / d + 4; break;
@@ -156,15 +157,18 @@ class EnhancedColorConverter
             l: Math.round((l || 0) * 100)
         };
     }
-    hslToRgb(h, s, l) {
+
+    hslToRgb(h, s, l) 
+    {
         h = (h % 360) / 360;
         s /= 100;
         l /= 100;
         let r, g, b;
-        if (s === 0) {
-            r = g = b = l;
-        } else {
-            const hue2rgb = (p, q, t) => {
+        if (s === 0) { r = g = b = l; } 
+        else 
+        {
+            const hue2rgb = (p, q, t) => 
+            {
                 if (t < 0) t += 1;
                 if (t > 1) t -= 1;
                 if (t < 1/6) return p + (q - p) * 6 * t;
@@ -172,6 +176,7 @@ class EnhancedColorConverter
                 if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
                 return p;
             };
+
             let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
             let p = 2 * l - q;
             r = hue2rgb(p, q, h + 1/3);
@@ -184,15 +189,19 @@ class EnhancedColorConverter
             b: Math.round(b * 255)
         };
     }
+
     // RGB <-> CMY (solo CMY, non CMYK)
-    rgbToCmy(r, g, b) {
+    rgbToCmy(r, g, b) 
+    {
         return {
             c: Math.round((1 - r / 255) * 100),
             m: Math.round((1 - g / 255) * 100),
             y: Math.round((1 - b / 255) * 100)
         };
     }
-    cmyToRgb(c, m, y) {
+
+    cmyToRgb(c, m, y) 
+    {
         return {
             r: Math.round(255 * (1 - c / 100)),
             g: Math.round(255 * (1 - m / 100)),
@@ -202,8 +211,6 @@ class EnhancedColorConverter
 
     setupColorPicker() 
     {
-        // HSV state already set in constructor
-
         const picker = document.getElementById('colorPicker');
         const cursor = document.getElementById('colorCursor');
         const huePicker = document.getElementById('huePicker');
@@ -227,7 +234,6 @@ class EnhancedColorConverter
             picker.style.boxShadow = 'none';
         });
 
-        // Universal click handling (both left and right clicks)
         picker.addEventListener('mousedown', (e) => 
         {
             e.preventDefault();
@@ -341,7 +347,6 @@ class EnhancedColorConverter
         const pickerRect = picker.getBoundingClientRect();
         const hueRect = huePicker.getBoundingClientRect();
 
-        // Saturation and value cursor position
         const x = Math.max(0, Math.min((this.saturation / 100) * pickerRect.width, pickerRect.width));
         const y = Math.max(0, Math.min(((100 - this.value) / 100) * pickerRect.height, pickerRect.height));
         
@@ -349,17 +354,14 @@ class EnhancedColorConverter
         cursor.style.top = `${y}px`;
         cursor.style.display = 'block';
 
-        // Hue cursor position
-        const hueY = Math.max(0, Math.min(((360 - this.hue) / 360) * hueRect.height, hueRect.height));
+        const hueY = Math.max(0, Math.min(((360 - this.hue) / 360) * (hueRect.height - 6), (hueRect.height - 6)));
         hueCursor.style.top = `${hueY}px`;
         hueCursor.style.display = 'block';
     }
 
-    // Enhanced input listeners with better validation
     setupInputListeners() 
     {
-
-        // RGB inputs with validation
+        // RGB
         ['rValue', 'gValue', 'bValue'].forEach(id => 
         {
             const input = document.getElementById(id);
@@ -380,22 +382,21 @@ class EnhancedColorConverter
             }
         });
 
-        // CMYK inputs with validation
-        ['cValue', 'mValue', 'yValue', 'kValue'].forEach(id => 
-            {
+        // HSL
+        ['hValue', 'sValue', 'lValue'].forEach(id => 
+        {
             const input = document.getElementById(id);
             if (input) 
             {
                 input.addEventListener('input', (e) => 
                 {
-                    let value = parseInt(e.target.value) || 0;
-                    value = Math.max(0, Math.min(value, 100));
-                    e.target.value = value;
-                    const c = this.validateInput('cValue', 0, 100);
-                    const m = this.validateInput('mValue', 0, 100);
-                    const y = this.validateInput('yValue', 0, 100);
-                    const k = this.validateInput('kValue', 0, 100);
-                    const rgb = this.cmykToRgb(c, m, y, k);
+                    let h = parseInt(document.getElementById('hValue').value) || 0;
+                    let s = parseInt(document.getElementById('sValue').value) || 0;
+                    let l = parseInt(document.getElementById('lValue').value) || 0;
+                    h = Math.max(0, Math.min(h, 360));
+                    s = Math.max(0, Math.min(s, 100));
+                    l = Math.max(0, Math.min(l, 100));
+                    const rgb = this.hslToRgb(h, s, l);
                     this.setColor(rgb.r, rgb.g, rgb.b);
                     this.updatePickerBackground();
                     this.updateCursors();
@@ -403,28 +404,7 @@ class EnhancedColorConverter
             }
         });
 
-        // HEX input with validation
-        const hexInput = document.getElementById('hexValue');
-        if (hexInput) {
-            hexInput.addEventListener('input', (e) => 
-            {
-                let hex = e.target.value;
-                if (hex.match(/^#[0-9A-Fa-f]{0,6}$/)) 
-                {
-                    if (hex.length === 7) 
-                    {
-                        const rgb = this.hexToRgb(hex);
-                        if (rgb) this.setColor(rgb.r, rgb.g, rgb.b);
-                    }
-                } else 
-                {
-                    // Remove invalid characters
-                    e.target.value = '#' + hex.replace(/[^0-9A-Fa-f]/g, '').substring(0, 6);
-                }
-            });
-        }
-
-        // HSL inputs with validation
+        // HSL
         ['hslHValue', 'hslSValue', 'hslLValue'].forEach(id => 
         {
             const input = document.getElementById(id);
@@ -447,7 +427,29 @@ class EnhancedColorConverter
             }
         });
 
-        // CMY inputs with validation
+        // CMY
+        ['cyanValue', 'magentaValue', 'yellowValue'].forEach(id => 
+        {
+            const input = document.getElementById(id);
+            if (input) 
+            {
+                input.addEventListener('input', (e) => 
+                {
+                    let c = parseInt(document.getElementById('cyanValue').value) || 0;
+                    let m = parseInt(document.getElementById('magentaValue').value) || 0;
+                    let y = parseInt(document.getElementById('yellowValue').value) || 0;
+                    c = Math.max(0, Math.min(c, 100));
+                    m = Math.max(0, Math.min(m, 100));
+                    y = Math.max(0, Math.min(y, 100));
+                    const rgb = this.cmyToRgb(c, m, y);
+                    this.setColor(rgb.r, rgb.g, rgb.b);
+                    this.updatePickerBackground();
+                    this.updateCursors();
+                });
+            }
+        });
+
+        // CMY
         ['cmyCValue', 'cmyMValue', 'cmyYValue'].forEach(id => 
         {
             const input = document.getElementById(id);
@@ -469,18 +471,22 @@ class EnhancedColorConverter
             }
         });
 
-        // HSL inputs
-        ['hValue', 'sValue', 'lValue'].forEach(id => {
+        // CMYK
+        ['cValue', 'mValue', 'yValue', 'kValue'].forEach(id => 
+        {
             const input = document.getElementById(id);
-            if (input) {
-                input.addEventListener('input', (e) => {
-                    let h = parseInt(document.getElementById('hValue').value) || 0;
-                    let s = parseInt(document.getElementById('sValue').value) || 0;
-                    let l = parseInt(document.getElementById('lValue').value) || 0;
-                    h = Math.max(0, Math.min(h, 360));
-                    s = Math.max(0, Math.min(s, 100));
-                    l = Math.max(0, Math.min(l, 100));
-                    const rgb = this.hslToRgb(h, s, l);
+            if (input) 
+            {
+                input.addEventListener('input', (e) => 
+                {
+                    let value = parseInt(e.target.value) || 0;
+                    value = Math.max(0, Math.min(value, 100));
+                    e.target.value = value;
+                    const c = this.validateInput('cValue', 0, 100);
+                    const m = this.validateInput('mValue', 0, 100);
+                    const y = this.validateInput('yValue', 0, 100);
+                    const k = this.validateInput('kValue', 0, 100);
+                    const rgb = this.cmykToRgb(c, m, y, k);
                     this.setColor(rgb.r, rgb.g, rgb.b);
                     this.updatePickerBackground();
                     this.updateCursors();
@@ -488,24 +494,29 @@ class EnhancedColorConverter
             }
         });
 
-        // CMY inputs
-        ['cyanValue', 'magentaValue', 'yellowValue'].forEach(id => {
-            const input = document.getElementById(id);
-            if (input) {
-                input.addEventListener('input', (e) => {
-                    let c = parseInt(document.getElementById('cyanValue').value) || 0;
-                    let m = parseInt(document.getElementById('magentaValue').value) || 0;
-                    let y = parseInt(document.getElementById('yellowValue').value) || 0;
-                    c = Math.max(0, Math.min(c, 100));
-                    m = Math.max(0, Math.min(m, 100));
-                    y = Math.max(0, Math.min(y, 100));
-                    const rgb = this.cmyToRgb(c, m, y);
-                    this.setColor(rgb.r, rgb.g, rgb.b);
-                    this.updatePickerBackground();
-                    this.updateCursors();
-                });
-            }
-        });
+        // HEX
+        const hexInput = document.getElementById('hexValue');
+        if (hexInput) 
+        {
+            hexInput.addEventListener('input', (e) => 
+            {
+                let hex = e.target.value;
+                if (hex.match(/^#[0-9A-Fa-f]{0,6}$/)) 
+                {
+                    if (hex.length === 7) 
+                    {
+                        const rgb = this.hexToRgb(hex);
+                        if (rgb) this.setColor(rgb.r, rgb.g, rgb.b);
+                        this.updatePickerBackground();
+                        this.updateCursors();
+                    }
+                } else 
+                {
+                    // Remove invalid characters
+                    e.target.value = '#' + hex.replace(/[^0-9A-Fa-f]/g, '').substring(0, 6);
+                }
+            });
+        }
     }
 
     validateInput(id, min, max) 
@@ -540,7 +551,6 @@ class EnhancedColorConverter
         const hsl = this.rgbToHsl(r, g, b);
         const cmy = this.rgbToCmy(r, g, b);
 
-        // Update inputs with validated values
         const rInput = document.getElementById('rValue');
         const gInput = document.getElementById('gValue');
         const bInput = document.getElementById('bValue');
@@ -549,7 +559,6 @@ class EnhancedColorConverter
         const yInput = document.getElementById('yValue');
         const kInput = document.getElementById('kValue');
         const hexInput = document.getElementById('hexValue');
-        // Nuovi input HSL e CMY (secondo la struttura HTML selezionata)
         const hInput = document.getElementById('hValue');
         const sInput = document.getElementById('sValue');
         const lInput = document.getElementById('lValue');
@@ -574,9 +583,10 @@ class EnhancedColorConverter
 
         // Update color display
         const colorDisplay = document.getElementById('colorDisplay');
-        if (colorDisplay) {
-            colorDisplay.style.backgroundColor = hex;
-        }
+        if (colorDisplay) { colorDisplay.style.backgroundColor = hex; }
+
+        // Aggiorna cursori dopo aver aggiornato tutti i valori
+        this.updateCursors();
     }
 
     saveColor() 
@@ -647,17 +657,17 @@ class EnhancedColorConverter
             <div class="saved-color-item">
                 <div class="saved-color-info">
                     <div class="saved-color-preview" style="background-color: ${color.hex}"></div>
-                    <div style="display: grid;grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 1fr; grid-column-gap: 0px;grid-row-gap: 0px;">
-                        <div class="saved-color-details" style="grid-area: 1 / 1 / 2 / 2; width: 140px;">
+                    <div class="saved-color-details-grid">
+                        <div class="saved-color-details">
                             <strong>${color.name}</strong><br>
                             Palette: ${color.palette || 'None'}<br>
                             HEX: ${color.hex}
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: 4px; justify-content: center" class="saved-color-details" style="grid-area: 1 / 2 / 2 / 3;">
+                        <div class="saved-color-details" style="margin-left: -20px;">
                             RGB: ${color.rgb.r}, ${color.rgb.g}, ${color.rgb.b}<br>
                             HSL: ${color.hsl ? `${color.hsl.h}°, ${color.hsl.s}%, ${color.hsl.l}%` : '-'}<br>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: 4px; justify-content: center" class="saved-color-details" style="grid-area: 1 / 3 / 2 / 4;">
+                        <div class="saved-color-details" style="margin-left: -20px;">
                             CMY: ${color.cmy ? `${color.cmy.c}%, ${color.cmy.m}%, ${color.cmy.y}%` : '-'}<br>
                             CMYK: ${color.cmyk ? `${color.cmyk.c}%, ${color.cmyk.m}%, ${color.cmyk.y}%, ${color.cmyk.k}%` : '-'}<br>
                         </div>

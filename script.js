@@ -65,6 +65,7 @@ function navigateTo(page)
             document.getElementById('rgbNavButton').classList.remove('unselectedNavButton');
             document.getElementById('rgbNavButton').classList.add('selectedNavButton');
             document.getElementById('cmdIcon').innerHTML = '';
+            colorConverter.updateAllValues();
             return;
         }
 
