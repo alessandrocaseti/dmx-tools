@@ -589,13 +589,21 @@ class EnhancedColorConverter
         this.updateCursors();
     }
 
-    saveColor() 
+    saveColor(cmd = false, cmdInput = '') 
     {
-        const inputName = document.getElementById('colorName').value.trim();
-        if (!inputName) 
+        let inputName;
+        if(!cmd)
         {
-            setCmdMessage('Please enter a name for the color before saving.', 'ERROR');
-            return;
+            inputName = document.getElementById('colorName').value.trim();
+            if (!inputName) 
+            {
+                setCmdMessage('Please enter a name for the color before saving.', 'ERROR');
+                return;
+            }
+        }
+        else
+        {
+            inputName = cmdInput.trim();
         }
 
         const color = 

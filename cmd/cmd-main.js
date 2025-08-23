@@ -164,6 +164,7 @@ function handleCommand(event)
         stopDotAnimation();
         const cmdInput = document.getElementById('cmdInput');
         const command = cmdInput.value.trim().toLowerCase();
+        const rawCommand = cmdInput.value.trim();
         cmdInput.value = '';
         focusCmd(false);
 
@@ -481,6 +482,65 @@ function handleCommand(event)
             return;
         }
 
+        // DIP PAGE COMMANDS
+        else if (command === 'clear -d' && currentPage === 'dip')
+        {
+            dipSwitch.clearAddress();
+            return;
+        }
+
+        else if (command === 'clear -a' && currentPage === 'dip')
+        {
+            dipSwitch.clearAll();
+            return;
+        }
+
+        else if (command === 'store' && currentPage === 'dip')
+        {
+            dipSwitch.storeAddress();
+            return;
+        }
+
+        else if (command === 'flip' && currentPage === 'dip')
+        {
+            dipSwitch.flipSwitches();
+            return;
+        }
+
+        else if (command.startsWith('load') && currentPage === 'dip')
+        {
+            let value = rawCommand.slice(4).trim();
+            if (value && !isNaN(value) && value > 0 && value < 512)
+            {
+                dipSwitch.loadAddress(value);
+            }
+            else
+            {
+                setCmdMessage('Invalid DMX address. Please enter a number between 1 and 511.', 'ERROR');
+            }
+        }
+
+        // COLOR PAGE COMMANDS
+        else if (command.startsWith('-s') && currentPage === 'color')
+        {
+            let value = rawCommand.slice(2).trim();
+            if (command)
+            {
+                colorConverter.saveColor(true, value);
+            }
+            else
+            {
+                setCmdMessage('Invalid syntax.', 'ERROR');
+            }
+            return;
+        }
+
+        else if (command === 'clear list' && currentPage === 'color')
+        {
+            colorConverter.deleteAllColors();
+            return;
+        }
+
         else if (command === 'help')
         {
             if(currentPage === 'patch')
@@ -514,13 +574,13 @@ function handleCommand(event)
             location.reload();
             return;
         }
-
+        /*
         else if (command.startsWith('-'))
         {
             console.log("hero command detected");
             return;
         }
-
+        */
         else if (command === 'skibidiboppi')
         {
             setCmdMessage('Forza Napoli.', 'SKIBIDIBOPPI');
