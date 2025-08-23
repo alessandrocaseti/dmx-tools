@@ -344,7 +344,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'add')
+        else if (command === 'add' && currentPage === 'patch')
         {
             setCmdMessage('Insert fixture name / fixture type / quantity / channels per unit separated by a slash', 'ADD');
             startDotAnimation();
@@ -352,7 +352,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'remove')
+        else if (command === 'remove' && currentPage === 'patch')
         {
             if (listaFixture.length > 0 && !remove)
             {
@@ -367,7 +367,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'color')
+        else if (command === 'color' && currentPage === 'patch')
         {
             if (listaFixture.length > 0)
             {
@@ -382,7 +382,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'docset')
+        else if (command === 'docset' && currentPage === 'patch')
         {
             setCmdMessage('Enter the event venue / location / patch author names:', 'DOCSET');
             startDotAnimation();
@@ -390,7 +390,7 @@ function handleCommand(event)
             return;
         }
         
-        else if (command === 'rename')
+        else if (command === 'rename' && currentPage === 'patch')
         {
             if (listaFixture.length > 0)
             {
@@ -405,13 +405,13 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'clear')
+        else if (command === 'clear' && currentPage === 'patch')
         {
             clearAll();
             return;
         }
 
-        else if (command === 'patch')
+        else if (command === 'patch' && currentPage === 'patch')
         {
             if (listaFixture.length > 0 && patch)
             {
@@ -428,7 +428,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'update')
+        else if (command === 'update' && currentPage === 'patch')
         {
             if (listaFixture.length > 0 && update)
             {
@@ -445,7 +445,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'export')
+        else if (command === 'export' && currentPage === 'patch')
         {
             const evento = document.getElementById('evento').value.trim();
             const luogo = document.getElementById('luogo').value.trim();
@@ -467,7 +467,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'stats')
+        else if (command === 'stats' && currentPage === 'patch')
         {
             if (listaFixture.length > 0)
             {
@@ -543,17 +543,24 @@ function handleCommand(event)
 
         else if (command === 'help')
         {
-            if(currentPage === 'patch')
+            switch(currentPage)
             {
-                setCmdMessage('Available patch commands: nav, add, remove, color, rename, patch, update, stats, docset, export, clear, freeze, unfreeze, help, about, reset', 'HELP');
-                return;
+                case 'home':
+                    setCmdMessage('Available generic commands: nav, freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
+                    return;
+                case 'patch':
+                    setCmdMessage('Available patch commands: add, remove, color, rename, patch, update, stats, docset, export, clear.', 'HELP');
+                    return;
+                case 'dip':
+                    setCmdMessage('Available DIP commands: clear -d, clear -a, store, flip, load {address}.', 'HELP');
+                    return;
+                case 'color':
+                    setCmdMessage('Available color commands: -s {color name}, clear list.', 'HELP');
+                    return;
+                default:
+                    setCmdMessage('Available generic commands: nav, freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
+                    return;
             }
-            else
-            {
-                setCmdMessage('Available generic commands: nav, freeze, unfreeze, help, about, github, reset, reload', 'HELP');
-                return;
-            }
-
         }
 
         else if (command === 'about')
@@ -595,7 +602,7 @@ function handleCommand(event)
 
         else
         {
-            setCmdMessage(`Unknown command: '${command}'. Type 'help' for a list of available commands.`, 'ERROR');
+            setCmdMessage(`Unknown command in this context: '${command}'. Type 'help' for a list of available commands.`, 'ERROR');
             return;
         }
     }
