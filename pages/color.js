@@ -655,6 +655,21 @@ class EnhancedColorConverter
         document.getElementById('colorName').value = '';
     }
 
+    generateRandomColor()
+    {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        this.setColor(r, g, b);
+        const hsv = this.rgbToHsv(r, g, b);
+        this.hue = hsv.h;
+        this.saturation = hsv.s;
+        this.value = hsv.v;
+        this.updatePickerBackground();
+        this.updateCursors();
+        setCmdMessage(`Generated random color (${this.rgbToHex(r, g, b)}).`, 'RAND');
+    }
+
     renderSavedColors() 
     {
         const container = document.getElementById('savedColorsList');

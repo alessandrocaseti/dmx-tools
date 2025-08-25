@@ -510,14 +510,38 @@ function handleCommand(event)
         else if (command.startsWith('load') && currentPage === 'dip')
         {
             let value = rawCommand.slice(4).trim();
-            if (value && !isNaN(value) && value > 0 && value < 512)
+            if (value && !isNaN(value) && value > -1 && value < 512)
             {
                 dipSwitch.loadAddress(value);
             }
             else
             {
-                setCmdMessage('Invalid DMX address. Please enter a number between 1 and 511.', 'ERROR');
+                setCmdMessage('Invalid DMX address. Please enter a number between 0 and 511.', 'ERROR');
             }
+        }
+
+        else if (command === '+' || command === 'increment' && currentPage === 'dip')
+        {
+            if(dipSwitch.currentAddress >= 511)
+            {
+                setCmdMessage('Address is already at maximum (511). Cannot increment further.', 'WARNING');
+                return;
+            }
+            dipSwitch.incrementAddress();
+            setCmdMessage('Incremented address to ' + dipSwitch.currentAddress + '.', 'INCREMENT');
+            return;
+        }
+
+        else if (command === '-' || command === 'decrement' && currentPage === 'dip')
+        {
+            if(dipSwitch.currentAddress <= 0)
+            {
+                setCmdMessage('Address is already at minimum (0). Cannot decrement further.', 'WARNING');
+                return;
+            }
+            dipSwitch.decrementAddress();
+            setCmdMessage('Decremented address to ' + dipSwitch.currentAddress + '.', 'DECREMENT');
+            return;
         }
 
         // COLOR PAGE COMMANDS
@@ -532,6 +556,12 @@ function handleCommand(event)
             {
                 setCmdMessage('Invalid syntax.', 'ERROR');
             }
+            return;
+        }
+
+        else if (command === 'rand' && currentPage === 'color')
+        {
+            colorConverter.generateRandomColor();
             return;
         }
 
@@ -552,10 +582,10 @@ function handleCommand(event)
                     setCmdMessage('Available patch commands: add, remove, color, rename, patch, update, stats, docset, export, clear.', 'HELP');
                     return;
                 case 'dip':
-                    setCmdMessage('Available DIP commands: clear -d, clear -a, store, flip, load {address}.', 'HELP');
+                    setCmdMessage('Available DIP commands: clear -d, clear -a, store, flip, load {address}, increment (or +), decrement (or -).', 'HELP');
                     return;
                 case 'color':
-                    setCmdMessage('Available color commands: -s {color name}, clear list.', 'HELP');
+                    setCmdMessage('Available color commands: -s {color name}, clear list, rand.', 'HELP');
                     return;
                 default:
                     setCmdMessage('Available generic commands: nav, freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
