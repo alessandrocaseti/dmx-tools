@@ -344,6 +344,33 @@ function handleCommand(event)
             return;
         }
 
+        else if (command.startsWith('-n'))
+        {
+            const page = rawCommand.slice(3).trim().toLowerCase();
+            if (!page || page!== 'home' && page!== 'patch'  && page!== 'dip'  && page!== 'color' && page!== 'power' && page!== 'beam' && page!== 'database')
+            {
+                setCmdMessage('Invalid page name. Enter a page between home, patch, dip, color, power, beam or database.', 'ERROR');
+                return;
+            }
+            navigateTo(page);
+            setCmdMessage("Navigated to " + page + ".", "NAV")
+            return;
+        }
+
+        else if (command === '>' )
+        {
+            NextPage();
+            setCmdMessage("Navigated to " + currentPage + ".", "NAV")
+            return;
+        }
+
+        else if (command === '<' )
+        {
+            PreviousPage();
+            setCmdMessage("Navigated to " + currentPage + ".", "NAV")
+            return;
+        }
+
         else if (command === 'add' && currentPage === 'patch')
         {
             setCmdMessage('Insert fixture name / fixture type / quantity / channels per unit separated by a slash', 'ADD');
@@ -576,7 +603,7 @@ function handleCommand(event)
             switch(currentPage)
             {
                 case 'home':
-                    setCmdMessage('Available generic commands: nav, freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
+                    setCmdMessage('Available generic commands: nav (or -n), freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
                     return;
                 case 'patch':
                     setCmdMessage('Available patch commands: add, remove, color, rename, patch, update, stats, docset, export, clear.', 'HELP');
@@ -588,7 +615,7 @@ function handleCommand(event)
                     setCmdMessage('Available color commands: -s {color name}, clear list, rand.', 'HELP');
                     return;
                 default:
-                    setCmdMessage('Available generic commands: nav, freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
+                    setCmdMessage('Available generic commands: nav (or -n), freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
                     return;
             }
         }

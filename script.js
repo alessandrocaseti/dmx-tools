@@ -104,3 +104,99 @@ function navigateTo(page)
     }
 }
 
+function NextPage()
+{
+    switch(currentPage)
+    {
+        case 'home':
+        {
+            navigateTo('patch');
+            return;
+        }
+
+        case 'patch':
+        {
+            navigateTo('dip');
+            return;
+        }
+        
+        case 'dip':
+        {
+            navigateTo('color');
+            return;
+        }
+
+        case 'color':
+        {
+            navigateTo('power');
+            return;
+        }
+
+        case 'power':
+        {
+            navigateTo('beam');
+            return;
+        }
+
+        case 'beam':
+        {
+            navigateTo('database');
+            return;
+        }
+
+        case 'database':
+        {
+            navigateTo('home');
+            return;
+        }
+    }
+}
+
+function PreviousPage()
+{
+    switch(currentPage)
+    {
+        case 'home':
+        {
+            navigateTo('database');
+            return;
+        }
+
+        case 'patch':
+        {
+            navigateTo('home');
+            return;
+        }
+        
+        case 'dip':
+        {
+            navigateTo('patch');
+            return;
+        }
+
+        case 'color':
+        {
+            navigateTo('dip');
+            return;
+        }
+
+        case 'power':
+        {
+            navigateTo('color');
+            return;
+        }
+
+        case 'beam':
+        {
+            navigateTo('power');
+            return;
+        }
+
+        case 'database':
+        {
+            navigateTo('beam');
+            return;
+        }
+    }
+}
+
