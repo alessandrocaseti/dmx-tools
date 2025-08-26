@@ -34,7 +34,7 @@ function startDotAnimation()
         {
             dotText.style.visibility = 'hidden';
         }
-    }, 500); // Cambia ogni 500 millisecondi
+    }, 500);
 }
 
 function stopDotAnimation()
@@ -638,13 +638,7 @@ function handleCommand(event)
             location.reload();
             return;
         }
-        /*
-        else if (command.startsWith('-'))
-        {
-            console.log("hero command detected");
-            return;
-        }
-        */
+
         else if (command === 'skibidiboppi')
         {
             setCmdMessage('Forza Napoli.', 'SKIBIDIBOPPI');

@@ -3,6 +3,7 @@
 // DMX Patch functions
 
 let listaFixture = []; // Fixture list
+let patchedFixtures = []; // Detailed fixture list for every unit
 let docID = "0000"; // Document ID
 
 const PALETTE = 
@@ -230,6 +231,7 @@ function clearAll()
 
 function updatePatch() 
 {
+    updatePatchedFixtures();
     const div = document.getElementById('fixtureList');
     const calcolaBtn = document.getElementById('calcolaPatchBtn');
     if (!listaFixture.length && div) 
@@ -266,7 +268,7 @@ function updatePatch()
             <td style="text-align:center;vertical-align:middle;padding:4;width:50px;">
                 <button class="colorBtn default" onclick="cambiaColoreFixture(${idx})"><span class="colorButtonIcon"></span></button>
             </td>
-            <td class="rimuoviCol"><button style="height:36px;font-family:IconFont;" onclick=\"removeFixture(${idx})\"></button></td>
+            <td class="rimuoviCol"><button style="height:36px;font-family:IconFont;" onclick=\"removeFixture(${idx})"></button></td>
         </tr>`;
     });
 
@@ -325,6 +327,7 @@ function calcolaPatchDMXMulti(listaFixture)
 
             risultato.push
             ({
+                id: count -1,
                 tipo: fixture.tipo,
                 nome: nomeFixture,
                 universo: universo,
@@ -337,6 +340,10 @@ function calcolaPatchDMXMulti(listaFixture)
         }
     }
     return risultato;
+}
+
+function updatePatchedFixtures() {
+    patchedFixtures = calcolaPatchDMXMulti(listaFixture);
 }
 
 let patch = true;
@@ -354,7 +361,7 @@ function mostraPatchDMX()
         return;
     }
 
-    const lista = calcolaPatchDMXMulti(listaFixture);
+    updatePatchedFixtures();
     const exportBtn = document.getElementById('patchOptions');
     let showImages = true;
     const showImagesCheckbox = document.getElementById('showImagesCheckbox');
@@ -370,7 +377,7 @@ function mostraPatchDMX()
                     <th class="canaleCol">Address</th>
                     </tr></thead><tbody>`;
 
-    lista.forEach((item, id) => 
+    patchedFixtures.forEach((item, id) => 
     {
         const tipiConImg = 
         [
@@ -405,7 +412,7 @@ function mostraPatchDMX()
 
     if(update)
     {
-        newCount = lista.length;
+        newCount = patchedFixtures.length;
         if (newCount > oldCount)
         {
             setCmdMessage(`Patch list updated with ${newCount - oldCount} new fixture(s).`, 'UPDATE');
@@ -424,8 +431,8 @@ function mostraPatchDMX()
     }
     else
     {
-        setCmdMessage(`Patch list created with ${lista.length} fixture(s).`, 'PATCH');
-        oldCount = lista.length;
+        setCmdMessage(`Patch list created with ${patchedFixtures.length} fixture(s).`, 'PATCH');
+        oldCount = patchedFixtures.length;
     }
 
     // Aggiorna la tabella quando la checkbox cambia

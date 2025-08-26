@@ -81,17 +81,30 @@ class DMXDIPSwitch
         }
 
         tbody.innerHTML = '';
-        this.storedAddresses.forEach((address, index) => 
+        this.storedAddresses.forEach((storedAddress, index) => 
         {
-            const binaryString = address.toString(2).padStart(9, '0');
+            const binaryString = storedAddress.address.toString(2).padStart(9, '0');
             const row = document.createElement('tr');
+            let fixtureName = storedAddress.fixture ? storedAddress.fixture.nome : 'N/A';
             row.innerHTML = `
-                <td>${index + 1}</td>
-                <td>${address}</td>
-                <td>${binaryString}</td>
+                <td>${storedAddress.address.toString().padStart(3, '0')}</td>
+                <td style="font-family: 'Roboto Mono', monospace">${binaryString}</td>
+                <td>${fixtureName}</td>
                 <td>
-                    <button onclick="dipSwitch.loadAddress(${address})">Load</button>
-                    <button onclick="dipSwitch.removeAddress(${index})">Remove</button>
+                    <div style="display: flex; flex-direction: row; justify-content: center; gap: 24px;">
+                        <button onclick="dipSwitch.loadAddress(${storedAddress.address})" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Load</span>
+                        </button>
+                        <button onclick="dipSwitch.openFixtureDialog(${index})" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Link to Fixture</span>
+                        </button>
+                        <button onclick="dipSwitch.removeAddress(${index})" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Remove</span>
+                        </button>
+                    </div>
                 </td>
             `;
             tbody.appendChild(row);
@@ -100,6 +113,7 @@ class DMXDIPSwitch
 
     loadAddress(address) 
     {
+        setCmdMessage(`Loaded address ${address.toString().padStart(3, '0')}.`, 'LOAD');
         this.currentAddress = address;
         this.updateDisplay();
         document.getElementById('dmxAddress').value = address.toString().padStart(3, '0');
@@ -107,6 +121,8 @@ class DMXDIPSwitch
 
     removeAddress(index) 
     {
+        const address = this.storedAddresses[index].address;
+        setCmdMessage(`Removed address ${address.toString().padStart(3, '0')}.`, 'REMOVE');
         this.storedAddresses.splice(index, 1);
         this.updateStoredAddressesTable();
     }
@@ -162,10 +178,10 @@ class DMXDIPSwitch
         if (address < 0) address = 0;
         if (address > this.maxAddress) address = this.maxAddress;
         
-        if (!this.storedAddresses.includes(address)) 
+        if (!this.storedAddresses.some(stored => stored.address === address)) 
         {
-            this.storedAddresses.push(address);
-            this.storedAddresses.sort((a, b) => a - b);
+            this.storedAddresses.push({ address: address, fixture: null });
+            this.storedAddresses.sort((a, b) => a.address - b.address);
             this.updateStoredAddressesTable();
             setCmdMessage(`Stored address ${address.toString().padStart(3, '0')}.`, 'STORE');
         }
@@ -173,62 +189,6 @@ class DMXDIPSwitch
         {
             setCmdMessage(`Address ${address.toString().padStart(3, '0')} is already stored.`, 'WARNING');
         }
-    }
-
-    updateStoredAddressesTable() 
-    {
-        const tbody = document.getElementById('storedAddressesBody');
-        if (!tbody) return;
-
-        if (this.storedAddresses.length === 0) 
-        {
-            tbody.innerHTML = `
-                <tr>
-                    <td colspan="4" class="empty-message">No addresses stored yet</td>
-                </tr>
-            `;
-            return;
-        }
-
-        tbody.innerHTML = '';
-        this.storedAddresses.forEach((address, index) => 
-        {
-            const binaryString = address.toString(2).padStart(9, '0');
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${address.toString().padStart(3, '0')}</td>
-                <td style="font-family: 'Roboto Mono', monospace">${binaryString}</td>
-                <td>
-                    <div style="display: flex; flex-direction: row; justify-content: center; gap: 24px;">
-                        <button onclick="dipSwitch.loadAddress(${address})" class="iconButton">
-                            <span class="buttonIcon"></span>
-                            <span class="buttonText">Load</span>
-                        </button>
-                        <button onclick="dipSwitch.removeAddress(${index})" class="iconButton">
-                            <span class="buttonIcon"></span>
-                            <span class="buttonText">Remove</span>
-                        </button>
-                    </div>
-                </td>
-            `;
-            tbody.appendChild(row);
-        });
-    }
-
-    loadAddress(address) 
-    {
-        setCmdMessage(`Loaded address ${address.toString().padStart(3, '0')}.`, 'LOAD');
-        this.currentAddress = address;
-        this.updateDisplay();
-        document.getElementById('dmxAddress').value = address.toString().padStart(3, '0');
-    }
-
-    removeAddress(index) 
-    {
-        const address = this.storedAddresses[index];
-        setCmdMessage(`Removed address ${address.toString().padStart(3, '0')}.`, 'REMOVE');
-        this.storedAddresses.splice(index, 1);
-        this.updateStoredAddressesTable();
     }
 
     toggleSwitch(bit) 
@@ -292,6 +252,36 @@ class DMXDIPSwitch
         {
             setCmdMessage('DIP switch layout flipped (descending order - 256/1).', 'FLIP');
         }
+    }
+
+    openFixtureDialog(addressIndex) {
+        const modal = document.getElementById('fixtureLinkModal');
+        const fixtureList = document.getElementById('fixtureLinkList');
+        fixtureList.innerHTML = '';
+
+        if (patchedFixtures.length === 0) {
+            fixtureList.innerHTML = '<p>No fixtures available in the patch.</p>';
+        } else {
+            patchedFixtures.forEach((fixture) => {
+                const fixtureItem = document.createElement('button');
+                fixtureItem.className = 'fixture-item';
+                fixtureItem.textContent = `${fixture.nome} (${fixture.tipo}) - Address: ${fixture.canale}`;
+                fixtureItem.onclick = () => {
+                    this.storedAddresses[addressIndex].fixture = fixture;
+                    this.updateStoredAddressesTable();
+                    this.closeFixtureDialog();
+                };
+                fixtureList.appendChild(fixtureItem);
+            });
+        }
+
+        modal.classList.add('show');
+    }
+
+    closeFixtureDialog() 
+    {
+        const modal = document.getElementById('fixtureLinkModal');
+        modal.classList.remove('show');
     }
 
     // Utility method to get switch states

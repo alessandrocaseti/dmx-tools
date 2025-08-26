@@ -302,6 +302,7 @@
                                 <tr>
                                     <th>Address</th>
                                     <th>Binary</th>
+                                    <th>Fixture</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -570,6 +571,14 @@
                 <button class="defaultButton brandButton">Blue Sea</button>
             </div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
+        </div>
+
+        <div id="fixtureLinkModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="dipSwitch.closeFixtureDialog()">&times;</span>
+                <h2>Link Fixture to Address</h2>
+                <div id="fixtureLinkList"></div>
+            </div>
         </div>
 
         <!-- Command Bar -->
