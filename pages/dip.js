@@ -241,7 +241,6 @@ class DMXDIPSwitch
         this.bindEvents();
         this.updateDisplay();
         this.updateStoredAddressesTable();
-        // Update address input
         const addressInput = document.getElementById('dmxAddress');
         if (addressInput) { addressInput.value = this.currentAddress; }
         if(this.isFlipped)
@@ -254,19 +253,22 @@ class DMXDIPSwitch
         }
     }
 
-    openFixtureDialog(addressIndex) {
+    openFixtureDialog(addressIndex) 
+    {
         const modal = document.getElementById('fixtureLinkModal');
         const fixtureList = document.getElementById('fixtureLinkList');
         fixtureList.innerHTML = '';
 
-        if (patchedFixtures.length === 0) {
-            fixtureList.innerHTML = '<p>No fixtures available in the patch.</p>';
-        } else {
-            patchedFixtures.forEach((fixture) => {
+        if (patchedFixtures.length === 0) { fixtureList.innerHTML = '<p>No fixtures available in the patch.</p>';} 
+        else 
+        {
+            patchedFixtures.forEach((fixture) => 
+            {
                 const fixtureItem = document.createElement('button');
                 fixtureItem.className = 'fixture-item';
                 fixtureItem.textContent = `${fixture.nome} (${fixture.tipo}) - Address: ${fixture.canale}`;
-                fixtureItem.onclick = () => {
+                fixtureItem.onclick = () => 
+                {
                     this.storedAddresses[addressIndex].fixture = fixture;
                     this.updateStoredAddressesTable();
                     this.closeFixtureDialog();
@@ -275,13 +277,16 @@ class DMXDIPSwitch
             });
         }
 
-        modal.classList.add('show');
+        modal.style.display = 'flex';
+        // Small delay to allow display property to apply before transition starts
+        setTimeout(() => { modal.classList.add('show');}, 10);
     }
 
     closeFixtureDialog() 
     {
         const modal = document.getElementById('fixtureLinkModal');
         modal.classList.remove('show');
+        setTimeout(() => { modal.style.display = 'none'; }, 300); // Match timeout with CSS transition duration
     }
 
     // Utility method to get switch states
