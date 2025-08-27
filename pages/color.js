@@ -626,7 +626,26 @@ class EnhancedColorConverter
 
     loadColor(index) 
     {
-        const color = this.savedColors[index];
+        let color;
+        if(isNaN(index))
+        {
+            color = this.savedColors.find(c => c.name.toLowerCase() === index);
+            if(!color)
+            {
+                setCmdMessage('Invalid color name.', 'ERROR');
+                return;
+            }
+            index = this.savedColors.indexOf(color);
+        }
+        else 
+        {
+            if(index < 0 || index >= this.savedColors.length)
+            {
+                setCmdMessage('Invalid color index.', 'ERROR');
+                return;
+            }
+            color = this.savedColors[index];
+        }
         setCmdMessage(`Loaded color "${color.name}" (${color.hex}).`, 'LOAD');
         this.setColor(color.rgb.r, color.rgb.g, color.rgb.b);
         const hsv = this.rgbToHsv(color.rgb.r, color.rgb.g, color.rgb.b);

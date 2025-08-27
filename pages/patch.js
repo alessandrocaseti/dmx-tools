@@ -351,7 +351,7 @@ let update = false;
 let oldCount = 0; // Contatore per il numero di fixture
 let newCount = 0; // Contatore per il numero di fixture aggiornate
 
-function mostraPatchDMX() 
+function mostraPatchDMX(cmdTrigger = false) 
 {
     const patchList = document.getElementById('patchList');
 
@@ -361,7 +361,7 @@ function mostraPatchDMX()
         return;
     }
 
-    updatePatchedFixtures();
+    if(!cmdTrigger) { updatePatchedFixtures(); }
     const exportBtn = document.getElementById('patchOptions');
     let showImages = true;
     const showImagesCheckbox = document.getElementById('showImagesCheckbox');

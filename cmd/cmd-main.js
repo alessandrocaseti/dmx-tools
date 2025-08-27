@@ -432,6 +432,29 @@ function handleCommand(event)
             return;
         }
 
+        else if (command.startsWith('rename -f') && currentPage === 'patch')
+        {
+            if (listaFixture.length > 0)
+            {
+                const newCommand = rawCommand.slice(9).trim();
+                [id, newName] = newCommand.split('/').map(s => s.trim());
+                if (!newName || !id || isNaN(id) || id <= 0 || id > patchedFixtures.length + 1)
+                {
+                    setCmdMessage('Invalid syntax. Please enter fixture ID / new name after "rename -f".', 'ERROR');
+                    return;
+                }
+                let oldName = patchedFixtures[id-1].nome;
+                patchedFixtures[id-1].nome = newName;
+                mostraPatchDMX(true);
+                setCmdMessage('Successfully renamed fixture "' + oldName + '" to "' + newName + '".', 'RENAME');
+            }
+            else
+            {
+                setCmdMessage('No fixtures to rename. Please add fixtures first.', 'ERROR');
+            }
+            return;
+        }
+
         else if (command === 'clear' && currentPage === 'patch')
         {
             clearAll();
@@ -572,9 +595,14 @@ function handleCommand(event)
         }
 
         // COLOR PAGE COMMANDS
-        else if (command.startsWith('-s') && currentPage === 'color')
+        else if (command.startsWith('-s') || command.startsWith('save') && currentPage === 'color')
         {
             let value = rawCommand.slice(2).trim();
+            if(command.startsWith('save'))
+            {
+                value = rawCommand.slice(4).trim();
+            }
+
             if (command)
             {
                 colorConverter.saveColor(true, value);
@@ -586,7 +614,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'rand' && currentPage === 'color')
+        else if (command === 'rand' || command === '-r' && currentPage === 'color')
         {
             colorConverter.generateRandomColor();
             return;
@@ -596,6 +624,39 @@ function handleCommand(event)
         {
             colorConverter.deleteAllColors();
             return;
+        }
+
+        else if (command.startsWith('-l') || command.startsWith('load') && currentPage === 'color')
+        {
+            let value = command.slice(2).trim();
+            if(command.startsWith('load'))
+            {
+                value = command.slice(4).trim();
+            }
+
+            if(isNaN(value))
+            {
+                if (value && colorConverter.savedColors.some(stored => stored.name.toLowerCase() === value.toLowerCase()))
+                {
+                    colorConverter.loadColor(value);
+                }
+                else
+                {
+                    setCmdMessage('Invalid color name.', 'ERROR');
+                }
+            }
+            else
+            {
+                id = parseInt(value);
+                if (id >= 0 && id <= colorConverter.savedColors.length)
+                {
+                    colorConverter.loadColor(id);
+                }
+                else
+                {
+                    setCmdMessage('Invalid color ID.', 'ERROR');
+                }
+            }
         }
 
         else if (command === 'help')
@@ -612,7 +673,7 @@ function handleCommand(event)
                     setCmdMessage('Available DIP commands: clear -d, clear -a, store, flip, load {address}, increment (or +), decrement (or -).', 'HELP');
                     return;
                 case 'color':
-                    setCmdMessage('Available color commands: -s {color name}, clear list, rand.', 'HELP');
+                    setCmdMessage('Available color commands: save (or -s) {color name}, clear list, rand, load (or -l) {color name or id}.', 'HELP');
                     return;
                 default:
                     setCmdMessage('Available generic commands: nav (or -n), freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
