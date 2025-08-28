@@ -6,20 +6,26 @@ const downloadButton = document.getElementById('downloadButton');
 const output = document.getElementById('output');
 let convertedFiles = [];
 
-convertButton.addEventListener('click', () => {
+convertButton.addEventListener('click', () => 
+{
     const files = fileInput.files;
-    if (files.length > 0) {
+    if (files.length > 0) 
+    {
         convertedFiles = [];
         output.textContent = '';
         let filesProcessed = 0;
 
-        for (const file of files) {
+        for (const file of files) 
+        {
             const reader = new FileReader();
-            reader.onload = (e) => {
+            reader.onload = (e) => 
+            {
                 const xmlData = e.target.result;
                 const jsonData = convertQxfToJson(xmlData);
-                if (jsonData) {
-                    convertedFiles.push({
+                if (jsonData) 
+                {
+                    convertedFiles.push
+                    ({
                         name: file.name.replace('.qxf', '.json'),
                         data: jsonData
                     });
@@ -35,14 +41,17 @@ convertButton.addEventListener('click', () => {
                     preview.appendChild(pre);
 
                     output.appendChild(preview);
-                } else {
+                } 
+                else 
+                {
                     const error = document.createElement('p');
                     error.textContent = `Error converting ${file.name}.\n`;
                     output.appendChild(error);
                 }
 
                 filesProcessed++;
-                if (filesProcessed === files.length && convertedFiles.length > 0) {
+                if (filesProcessed === files.length && convertedFiles.length > 0) 
+                {
                     downloadButton.disabled = false;
                 }
             };
@@ -51,14 +60,18 @@ convertButton.addEventListener('click', () => {
     }
 });
 
-downloadButton.addEventListener('click', () => {
-    if (convertedFiles.length > 0) {
+downloadButton.addEventListener('click', () => 
+{
+    if (convertedFiles.length > 0) 
+    {
         const zip = new JSZip();
-        for (const file of convertedFiles) {
+        for (const file of convertedFiles) 
+        {
             zip.file(file.name, JSON.stringify(file.data, null, 2));
         }
 
-        zip.generateAsync({ type: 'blob' }).then((content) => {
+        zip.generateAsync({ type: 'blob' }).then((content) => 
+        {
             const downloadAnchorNode = document.createElement('a');
             const objectURL = URL.createObjectURL(content);
             downloadAnchorNode.setAttribute('href', objectURL);
@@ -70,7 +83,6 @@ downloadButton.addEventListener('click', () => {
         });
     }
 });
-
 
 function convertQxfToJson(xmlData) 
 {
@@ -113,9 +125,12 @@ function convertQxfToJson(xmlData)
     {
         const channel = channels[i];
         let channelType = getText(channel, "Group");
+        let channelName = channel.getAttribute("Name");
+        let chanName = channelName.toLowerCase();
+
         if (!channelType)
         {
-            const preset = channel.getAttribute('Preset');
+            const preset = channel.getAttribute('Preset') || 'Unknown';
             switch (preset)
             {
                 case 'PositionPan': channelType = 'Pan'; break;
@@ -194,12 +209,37 @@ function convertQxfToJson(xmlData)
                 case 'SilentModeOff': channelType = 'Manteinance'; break;
                 case 'SilentModeAutomatic': channelType = 'Manteinance'; break;
                 case 'Alias': channelType = 'Manteinance'; break;
+                default: channelType = 'Unknown'; break;
+            }
+            if(channelType === 'Unknown')
+            {
+                if(chanName.includes('dimmer')) channelType = 'Intensity';
+                if(chanName.includes('pan')) channelType = 'Pan';
+                if(chanName.includes('tilt')) channelType = 'Tilt';
+                if(chanName.includes('shutter')) channelType = 'Shutter';
+                if(chanName.includes('focus')) channelType = 'Focus';
+                if(chanName.includes('zoom')) channelType = 'Zoom';
+                if(chanName.includes('iris')) channelType = 'Iris';
+                if(chanName.includes('frost')) channelType = 'Frost';
+                if(chanName.includes('prism')) channelType = 'Prism';
+                if(chanName.includes('gobo')) channelType = 'Gobo';
+                if(chanName.includes('color') || chanName.includes('colour')) channelType = 'Color';
+                if(chanName.includes('cto')) channelType = 'Color';
+                if(chanName.includes('cmy')) channelType = 'Color';
+                if(chanName.includes('white')) channelType = 'White';
+                if(chanName.includes('red')) channelType = 'Red';
+                if(chanName.includes('green')) channelType = 'Green';
+                if(chanName.includes('blue')) channelType = 'Blue';
+                if(chanName.includes('amber')) channelType = 'Amber';
+                if(chanName.includes('uv')) channelType = 'UV';
+                if(chanName.includes('speed')) channelType = 'Speed';
+                if(chanName.includes('strobe')) channelType = 'Shutter';
             }
         }
         if (channelType === 'Colour') channelType = 'Color';
         extractedData.channels.push
         ({
-            name: channel.getAttribute("Name"),
+            name: channelName,
             type: channelType
         });
     }

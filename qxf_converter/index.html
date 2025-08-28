@@ -4,15 +4,19 @@
     <head>
         <title>QXF to JSON Converter</title>
         <link rel="stylesheet" href="converter.css">
+        <link rel="icon" href="../assets/dmxtools-logo.png" type="image/x-icon">
     </head>
 
     <body>
-        <h1>Convert QXF to JSON</h1>
-        <input type='file' id='fileInput' accept='.qxf' multiple>
-        <button id='convertButton'>Convert Files</button>
-        <button id='downloadButton' disabled>Download All JSONs</button>
-        <pre id='output'></pre>
-
+        <main>
+            <h1>Convert QXF to JSON</h1>
+            <div class="controls">
+                <input type='file' id='fileInput' accept='.qxf' multiple>
+                <button id='convertButton'>Convert Files</button>
+                <button id='downloadButton' disabled>Download All JSONs</button>
+            </div>
+            <div id='output'></div>
+        </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
         <script src='converter.js'></script>

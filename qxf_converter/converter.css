@@ -1,18 +1,75 @@
-.file-preview {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body 
+{
+    background-color: #0d0d10;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 2rem;
 }
 
-.file-preview h3 {
+h1 
+{
+    color: #ffeb3b;
+    text-align: center;
+}
+
+#output 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.file-preview 
+{
+    background-color: #181c22;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 1rem;
+    flex: 1 1 calc(33.333% - 2rem);
+    box-sizing: border-box;
+    min-width: 300px;
+}
+
+.file-preview h3 
+{
     margin-top: 0;
+    color: #ffeb3b;
 }
 
-.file-preview pre {
-    background-color: #f4f4f4;
+.file-preview pre 
+{
+    background-color: #23272f;
     padding: 10px;
     border-radius: 5px;
     white-space: pre-wrap;
     word-wrap: break-word;
+    color: #e0e0e0;
+}
+
+button, input[type='file']::file-selector-button 
+{
+    background-color: #1c1f25;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover, input[type='file']::file-selector-button:hover 
+{
+    background-color: #23272f;
+    border-color: #ffeb3b;
+}
+
+button:disabled 
+{
+    opacity: 0.5;
+    cursor: not-allowed;
 }
