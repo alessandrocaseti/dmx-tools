@@ -1,100 +1,105 @@
-// Helper to ensure we always work with an array, as the parser might return a single object
-const ensureArray = (item) => {
-    if (!item) return [];
-    return Array.isArray(item) ? item : [item];
-};
 
-/**
- * Parses a QLC+ Fixture Definition file (QXF) and converts it to a JSON object.
- * @param {string} xmlData The QXF file content as a string.
- * @returns {object|null} A JSON object representing the fixture, or null on error.
- */
 function convertQxfToJson(xmlData) {
-    try {
-        // Configure the parser to keep attributes, which are crucial for QXF files.
-        const parser = new fxp.XMLParser({
-            ignoreAttributes: false,
-            attributeNamePrefix: "_"
-        });
-        const jsonObj = parser.parse(xmlData);
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(xmlData, "text/xml");
 
-        const fixtureDef = jsonObj.FixtureDefinition;
-
-        if (!fixtureDef) {
-            throw new Error("Invalid QXF file: Missing FixtureDefinition root element.");
-        }
-
-        const channels = ensureArray(fixtureDef.Channel).map(ch => {
-            const capabilities = ensureArray(ch.Capability).map(cap => ({
-                min: cap._Min,
-                max: cap._Max,
-                description: cap["#text"]
-            }));
-
-            return {
-                name: ch._Name,
-                type: ch.Group ? ch.Group['#text'] : 'Generic',
-                capabilities: capabilities
-            };
-        });
-
-        const modes = ensureArray(fixtureDef.Mode).map(mode => {
-            const modeChannels = ensureArray(mode.Channel).map(mc => ({
-                number: mc._Number,
-                name: mc["#text"]
-            }));
-
-            return {
-                name: mode._Name,
-                channels: modeChannels,
-            };
-        });
-
-        let physical = {};
-        if (fixtureDef.Physical) {
-            const p = fixtureDef.Physical;
-            physical = {
-                bulb: p.Bulb ? {
-                    type: p.Bulb._Type,
-                    lumens: p.Bulb._Lumens,
-                    colourTemperature: p.Bulb._ColourTemperature
-                } : {},
-                dimensions: p.Dimensions ? {
-                    weight: p.Dimensions._Weight,
-                    width: p.Dimensions._Width,
-                    height: p.Dimensions._Height,
-                    depth: p.Dimensions._Depth
-                } : {},
-                lens: p.Lens ? {
-                    name: p.Lens._Name,
-                    degreesMin: p.Lens._DegreesMin,
-                    degreesMax: p.Lens._DegreesMax
-                } : {},
-                focus: p.Focus ? {
-                    type: p.Focus._Type,
-                    panMax: p.Focus._PanMax,
-                    tiltMax: p.Focus._TiltMax
-                } : {},
-                technical: p.Technical ? {
-                    powerConsumption: p.Technical._PowerConsumption,
-                    dmxConnector: p.Technical._DmxConnector
-                } : {}
-            };
-        }
-
-        const result = {
-            manufacturer: fixtureDef.Manufacturer,
-            model: fixtureDef.Model,
-            type: fixtureDef.Type,
-            channels: channels,
-            modes: modes,
-            physical: physical
-        };
-
-        return result;
-
-    } catch (error) {
-        console.error(`Error processing QXF file: ${error.message}`);
+    if (xmlDoc.getElementsByTagName("parsererror").length > 0) {
+        alert("Error parsing XML");
         return null;
     }
+
+    const fixture = xmlDoc.getElementsByTagName("FixtureDefinition")[0];
+
+    if (!fixture) {
+        alert("Invalid QXF file: Missing FixtureDefinition");
+        return null;
+    }
+
+    const getText = (element, tagName) => {
+        const node = element.getElementsByTagName(tagName)[0];
+        return node ? node.textContent : "";
+    };
+
+    const extractedData = {
+        manufacturer: getText(fixture, "Manufacturer"),
+        model: getText(fixture, "Model"),
+        type: getText(fixture, "Type"),
+        channels: [],
+        modes: [],
+        physical: {}
+    };
+
+    // Extract Channels
+    const channels = fixture.getElementsByTagName("Channel");
+    for (let i = 0; i < channels.length; i++) {
+        const channel = channels[i];
+        extractedData.channels.push({
+            id: channel.getAttribute("Name"),
+            name: channel.getAttribute("Name"),
+            type: getText(channel, "Group")
+        });
+    }
+
+    // Extract Modes
+    const modes = fixture.getElementsByTagName("Mode");
+    for (let i = 0; i < modes.length; i++) {
+        const mode = modes[i];
+        const modeChannels = [];
+        const chs = mode.getElementsByTagName("Channel");
+        for (let j = 0; j < chs.length; j++) {
+            modeChannels.push(chs[j].textContent);
+        }
+        extractedData.modes.push({
+            name: mode.getAttribute("Name"),
+            totalChannels: modeChannels.length,
+            channels: modeChannels
+        });
+    }
+
+    // Extract Physical
+    const physical = fixture.getElementsByTagName("Physical")[0];
+    if (physical) {
+        const bulb = physical.getElementsByTagName("Bulb")[0];
+        if (bulb) {
+            extractedData.physical.bulb = {
+                type: bulb.getAttribute("Type"),
+                lumens: bulb.getAttribute("Lumens"),
+                colourTemperature: bulb.getAttribute("ColourTemperature")
+            };
+        }
+        const dimensions = physical.getElementsByTagName("Dimensions")[0];
+        if (dimensions) {
+            extractedData.physical.dimensions = {
+                weight: dimensions.getAttribute("Weight"),
+                width: dimensions.getAttribute("Width"),
+                height: dimensions.getAttribute("Height"),
+                depth: dimensions.getAttribute("Depth")
+            };
+        }
+        const lens = physical.getElementsByTagName("Lens")[0];
+        if (lens) {
+            extractedData.physical.lens = {
+                name: lens.getAttribute("Name"),
+                degreesMin: lens.getAttribute("DegreesMin"),
+                degreesMax: lens.getAttribute("DegreesMax")
+            };
+        }
+        const focus = physical.getElementsByTagName("Focus")[0];
+        if (focus) {
+            extractedData.physical.focus = {
+                type: focus.getAttribute("Type"),
+                panMax: focus.getAttribute("PanMax"),
+                tiltMax: focus.getAttribute("TiltMax")
+            };
+        }
+        const technical = physical.getElementsByTagName("Technical")[0];
+        if (technical) {
+            extractedData.physical.technical = {
+                powerConsumption: technical.getAttribute("PowerConsumption"),
+                dmxConnector: technical.getAttribute("DmxConnector")
+            };
+        }
+    }
+
+    return extractedData;
 }
