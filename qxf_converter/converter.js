@@ -109,11 +109,19 @@ function convertQxfToJson(xmlData)
         return node ? node.textContent : "";
     };
 
+    // Extract Fixture Info
+    let fixtureType = getText(fixture, "Type");
+    if (fixtureType === 'Color Changer') fixtureType = 'Par';
+    if (fixtureType === 'Flower') fixtureType = 'Other';
+    if (fixtureType === 'Smoke') fixtureType = 'FX Fog';
+    if (fixtureType === 'LED Bar (Pixels)') fixtureType = 'Led Bar';
+    if (fixtureType === 'LED Bar (Beams)') fixtureType = 'Led Bar';
+
     const extractedData = 
     {
         manufacturer: getText(fixture, "Manufacturer"),
         model: getText(fixture, "Model"),
-        type: getText(fixture, "Type"),
+        type: fixtureType || 'Other',
         channels: [],
         modes: [],
         physical: {}
