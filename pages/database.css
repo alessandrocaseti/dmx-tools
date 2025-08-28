@@ -1,0 +1,110 @@
+
+#databaseButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    max-width: 1400px;
+}
+
+.fixture-details {
+    background-color: var(--foreground);
+    border-radius: 8px;
+    padding: 24px;
+    margin: 24px auto;
+    max-width: var(--max-width);
+    min-width: var(--max-width);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.fixture-details h2 {
+    color: #ffeb3b;
+    margin-top: 0;
+    border-bottom: 2px solid #444;
+    padding-bottom: 12px;
+}
+
+.fixture-details h3 {
+    color: #ffeb3b;
+    margin-top: 24px;
+}
+
+.fixture-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fixture-details li {
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+.fixture-details .channel-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fixture-details .channel-name {
+    font-weight: bold;
+}
+
+.fixture-details .channel-type {
+    color: #aaa;
+}
+
+.fixture-back-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.fixture-back-button:hover {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+.physical-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.physical-details div {
+    background-color: #333;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.mode-item {
+    background-color: #333;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.mode-item h4 {
+    margin-top: 0;
+    color: #ffeb3b;
+}
+
+.mode-channels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.mode-channel {
+    background-color: #444;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
