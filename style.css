@@ -36,7 +36,7 @@
     --colore-bg-scuro: #13161b;
     --colore-bg-tabella: #23272f;
     --colore-bg-header: #181c22;
-    --colore-testo: #e0e0e0;
+    --colore-testo: #cdcdcd;
     --colore-testo-chiaro: #fff;
     --colore-testo-nero: #181c22;
     --colore-bordo: #444;
@@ -70,7 +70,7 @@ body
 {
     font-family: 'Inter', Arial, sans-serif;
     background: #0d0d10;
-    color: #cdcdcd;
+    color: var(--colore-testo);
     margin: 0;
     padding: 0;
     text-align: center;

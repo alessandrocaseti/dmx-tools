@@ -12,22 +12,54 @@ let currentView = "folders"; // "folders", "files", "details"
 let currentFolder = "";
 let currentFile = "";
 
+// Utility to update the address bar
+function updateAddressBar() {
+    const addressBar = document.getElementById("databaseAddressBar");
+    let path = '';
+    const brandPattern = new RegExp('^' + currentFolder + '[-_ ]*', 'i');
+    if (currentView === "folders") {
+        path = 'Fixtures / ';
+    } else if (currentView === "files") {
+        path = 'Fixtures / ' + currentFolder + ' / ';
+    } else if (currentView === "details") {
+        path = 'Fixtures / ' + currentFolder + ' / ' + (currentFile ? currentFile.replace('.json', '').replace(/-/g, ' ').replace(brandPattern, '').trim() : '');
+    }
+    addressBar.textContent = path;
+}
+
+// Utility to enable/disable back button
+function updateBackButton() {
+    const backBtn = document.getElementById("databaseBackButton");
+    if (currentView === "folders") {
+        backBtn.disabled = true;
+    } else {
+        backBtn.disabled = false;
+    }
+}
+
+// Main logic
 document.addEventListener("DOMContentLoaded", function() {
     const databaseButtonsDiv = document.getElementById("databaseButtons");
-    
-    // Load initial folder buttons
+    const backBtn = document.getElementById("databaseBackButton");
+    const addressBar = document.getElementById("databaseAddressBar");
+
+    // Back button handler
+    backBtn.onclick = function() {
+        if (currentView === "files" || currentView === "details") {
+            loadFolders();
+        }
+    };
+
+    // Initial load
     loadFolders();
-    
-    // Function to load folders
+
     function loadFolders() {
         currentView = "folders";
         currentFolder = "";
         currentFile = "";
-        
-        // Clear existing content
+
         databaseButtonsDiv.innerHTML = '';
-        
-        // Create folder buttons
+
         fixtureFolders.forEach(folder => {
             const folderButton = document.createElement("button");
             folderButton.className = "folderButton";
@@ -35,38 +67,36 @@ document.addEventListener("DOMContentLoaded", function() {
             folderButton.onclick = () => loadFiles(folder);
             databaseButtonsDiv.appendChild(folderButton);
         });
+
+        updateAddressBar();
+        updateBackButton();
     }
-    
-    // Function to load files from a folder
+
     function loadFiles(folder) {
         currentView = "files";
         currentFolder = folder;
         currentFile = "";
-        
-        // Clear existing content
+
         databaseButtonsDiv.innerHTML = '';
-        
-        // Create back button
-        const backButton = document.createElement("button");
-        backButton.className = "fixture-back-button";
-        backButton.innerHTML = "&#8592; Back";
-        backButton.onclick = loadFolders;
-        databaseButtonsDiv.appendChild(backButton);
-        
-        // Get files for the selected folder
+
         const files = getFilesForFolder(folder);
-        
-        // Create file buttons
+
         files.forEach(file => {
             const fileButton = document.createElement("button");
             fileButton.className = "fileButton";
-            fileButton.innerText = file.replace('.json', ''); // Remove .json extension for display
+            let displayName = file.replace('.json', '');
+            const brandPattern = new RegExp('^' + folder + '[-_ ]*', 'i');
+            displayName = displayName.replace(brandPattern, '');
+            displayName = displayName.replace(/-/g, ' ').trim();
+            fileButton.innerText = displayName;
             fileButton.onclick = () => loadFixtureDetails(folder, file);
             databaseButtonsDiv.appendChild(fileButton);
         });
+
+        updateAddressBar();
+        updateBackButton();
     }
-    
-    // Function to get files for a folder
+
     function getFilesForFolder(folder) {
         // This would normally be dynamic, but we'll define it statically for now
         const folderFiles = {
@@ -183,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 "Stairville-xBrick-Quad-16x8W-RGBW.json",
                 "Stairville-Z100M.json",
                 "Stairville-ZF-1500.json",
-                "Starville-Stage-Quad-LED-Bundle-RGB-WW.json"
+                "Stairville-Stage-Quad-LED-Bundle-RGB-WW.json"
             ]
         };
         
@@ -207,20 +237,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 return response.json();
             })
             .then(data => {
-                // Create back button
-                const backButton = document.createElement("button");
-                backButton.className = "fixture-back-button";
-                backButton.innerHTML = "&#8592; Back";
-                backButton.onclick = () => loadFiles(folder);
-                
-                // Create details view
                 databaseButtonsDiv.innerHTML = '';
-                databaseButtonsDiv.appendChild(backButton);
-                
+
                 const detailsDiv = document.createElement("div");
                 detailsDiv.className = "fixture-details";
-                
-                // Build the HTML for fixture details
+
                 let channelsHTML = '';
                 if (data.channels && data.channels.length > 0) {
                     channelsHTML = '<h3>Channels:</h3><ul>';
@@ -229,7 +250,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     });
                     channelsHTML += '</ul>';
                 }
-                
+
                 let modesHTML = '';
                 if (data.modes && data.modes.length > 0) {
                     modesHTML = '<h3>Modes:</h3>';
@@ -239,24 +260,21 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <h4>${mode.name} (${mode.totalChannels} Channels)</h4>
                                 <div class="mode-channels">
                         `;
-                        
                         if (mode.channels && mode.channels.length > 0) {
                             mode.channels.forEach(channel => {
                                 modesHTML += `<span class="mode-channel">${channel}</span>`;
                             });
                         }
-                        
                         modesHTML += `
                                 </div>
                             </div>
                         `;
                     });
                 }
-                
+
                 let physicalHTML = '';
                 if (data.physical) {
                     physicalHTML = '<h3>Physical Details:</h3><div class="physical-details">';
-                    
                     if (data.physical.dimensions) {
                         physicalHTML += `
                             <div><strong>Weight:</strong> ${data.physical.dimensions.weight || 'N/A'} kg</div>
@@ -265,17 +283,15 @@ document.addEventListener("DOMContentLoaded", function() {
                             <div><strong>Depth:</strong> ${data.physical.dimensions.depth || 'N/A'} mm</div>
                         `;
                     }
-                    
                     if (data.physical.technical) {
                         physicalHTML += `
                             <div><strong>Power Consumption:</strong> ${data.physical.technical.powerConsumption || 'N/A'} W</div>
                             <div><strong>DMX Connector:</strong> ${data.physical.technical.dmxConnector || 'N/A'}</div>
                         `;
                     }
-                    
                     physicalHTML += '</div>';
                 }
-                
+
                 detailsDiv.innerHTML = `
                     <h2>${data.manufacturer || folder} - ${data.model || file.replace('.json', '')}</h2>
                     <h3>Type: ${data.type || 'N/A'}</h3>
@@ -283,17 +299,21 @@ document.addEventListener("DOMContentLoaded", function() {
                     ${modesHTML}
                     ${physicalHTML}
                 `;
-                
+
                 databaseButtonsDiv.appendChild(detailsDiv);
+
+                updateAddressBar();
+                updateBackButton();
             })
             .catch(error => {
                 console.error('Error loading fixture details:', error);
                 databaseButtonsDiv.innerHTML = `
                     <div style="text-align: center; padding: 50px;">
                         <p>Error loading fixture details. Please try again.</p>
-                        <button class="fixture-back-button" onclick="loadFiles('${folder}')">&#8592; Back</button>
                     </div>
                 `;
+                updateAddressBar();
+                updateBackButton();
             });
     }
 });
