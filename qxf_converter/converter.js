@@ -1,5 +1,77 @@
 // DMX TOOLS - QXF to JSON Converter
 
+const fileInput = document.getElementById('fileInput');
+const convertButton = document.getElementById('convertButton');
+const downloadButton = document.getElementById('downloadButton');
+const output = document.getElementById('output');
+let convertedFiles = [];
+
+convertButton.addEventListener('click', () => {
+    const files = fileInput.files;
+    if (files.length > 0) {
+        convertedFiles = [];
+        output.textContent = '';
+        let filesProcessed = 0;
+
+        for (const file of files) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const xmlData = e.target.result;
+                const jsonData = convertQxfToJson(xmlData);
+                if (jsonData) {
+                    convertedFiles.push({
+                        name: file.name.replace('.qxf', '.json'),
+                        data: jsonData
+                    });
+                    const preview = document.createElement('div');
+                    preview.classList.add('file-preview');
+
+                    const title = document.createElement('h3');
+                    title.textContent = file.name.replace('.qxf', '.json');
+                    preview.appendChild(title);
+
+                    const pre = document.createElement('pre');
+                    pre.textContent = JSON.stringify(jsonData, null, 2);
+                    preview.appendChild(pre);
+
+                    output.appendChild(preview);
+                } else {
+                    const error = document.createElement('p');
+                    error.textContent = `Error converting ${file.name}.\n`;
+                    output.appendChild(error);
+                }
+
+                filesProcessed++;
+                if (filesProcessed === files.length && convertedFiles.length > 0) {
+                    downloadButton.disabled = false;
+                }
+            };
+            reader.readAsText(file);
+        }
+    }
+});
+
+downloadButton.addEventListener('click', () => {
+    if (convertedFiles.length > 0) {
+        const zip = new JSZip();
+        for (const file of convertedFiles) {
+            zip.file(file.name, JSON.stringify(file.data, null, 2));
+        }
+
+        zip.generateAsync({ type: 'blob' }).then((content) => {
+            const downloadAnchorNode = document.createElement('a');
+            const objectURL = URL.createObjectURL(content);
+            downloadAnchorNode.setAttribute('href', objectURL);
+            downloadAnchorNode.setAttribute('download', 'converted_files.zip');
+            document.body.appendChild(downloadAnchorNode);
+            downloadAnchorNode.click();
+            downloadAnchorNode.remove();
+            URL.revokeObjectURL(objectURL);
+        });
+    }
+});
+
+
 function convertQxfToJson(xmlData) 
 {
     const parser = new DOMParser();
