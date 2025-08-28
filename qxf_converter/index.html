@@ -12,7 +12,7 @@
         <button id='downloadButton' disabled>Download JSON</button>
         <pre id='output'></pre>
 
-        
+
         <script src='converter.js'></script>
         <script>
             const fileInput = document.getElementById('fileInput');
@@ -41,7 +41,7 @@
                 if (jsonData) {
                     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(jsonData, null, 2));
                     const downloadAnchorNode = document.createElement('a');
-                    downloadAnchorNode.setAttribute("href",     dataStr);
+                    downloadAnchorNode.setAttribute("href", dataStr);
                     downloadAnchorNode.setAttribute("download", "fixture.json");
                     document.body.appendChild(downloadAnchorNode); // required for firefox
                     downloadAnchorNode.click();
