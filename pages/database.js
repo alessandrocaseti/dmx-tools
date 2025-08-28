@@ -201,6 +201,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 "Stairville-SonicPulse-LED-Bar-10.json",
                 "Stairville-SonicPulse-MH-Wash-1208.json",
                 "Stairville-Stage-PAR-CX-2-RGBAW.json",
+                "Stairville-Stage-Quad-LED-Bundle-RGB-WW.json",
                 "Stairville-Tri-Flat-PAR-Profile-5x3W-RGB.json",
                 "Stairville-TRI-LED-Bundle-Complete.json",
                 "Stairville-WGF-2000.json",
@@ -212,8 +213,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 "Stairville-xBrick-Full-Colour.json",
                 "Stairville-xBrick-Quad-16x8W-RGBW.json",
                 "Stairville-Z100M.json",
-                "Stairville-ZF-1500.json",
-                "Stairville-Stage-Quad-LED-Bundle-RGB-WW.json"
+                "Stairville-ZF-1500.json"
             ]
         };
         
@@ -244,16 +244,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 let channelsHTML = '';
                 if (data.channels && data.channels.length > 0) {
-                    channelsHTML = '<h3>Channels:</h3><ul>';
+                    channelsHTML = '<h3>Channels</h3><ul>';
                     data.channels.forEach(channel => {
-                        channelsHTML += `<li class="channel-item"><span class="channel-name">${channel.name}</span> - <span class="channel-type">${channel.type}</span></li>`;
+                        channelsHTML += `<li class="channel-item"><span class="channel-name">${channel.name}</span><span class="channel-type">${channel.type}</span></li>`;
                     });
                     channelsHTML += '</ul>';
                 }
 
                 let modesHTML = '';
                 if (data.modes && data.modes.length > 0) {
-                    modesHTML = '<h3>Modes:</h3>';
+                    modesHTML = '<h3>Modes</h3>';
                     data.modes.forEach(mode => {
                         modesHTML += `
                             <div class="mode-item">
@@ -261,8 +261,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <div class="mode-channels">
                         `;
                         if (mode.channels && mode.channels.length > 0) {
-                            mode.channels.forEach(channel => {
-                                modesHTML += `<span class="mode-channel">${channel}</span>`;
+                            mode.channels.forEach((channel, id) => {
+                                modesHTML += `<span class="mode-channel">${id + 1} ${channel}</span>`;
                             });
                         }
                         modesHTML += `
@@ -274,19 +274,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 let physicalHTML = '';
                 if (data.physical) {
-                    physicalHTML = '<h3>Physical Details:</h3><div class="physical-details">';
+                    physicalHTML = '<h3>Physical Details</h3><div class="physical-details">';
                     if (data.physical.dimensions) {
                         physicalHTML += `
-                            <div><strong>Weight:</strong> ${data.physical.dimensions.weight || 'N/A'} kg</div>
-                            <div><strong>Width:</strong> ${data.physical.dimensions.width || 'N/A'} mm</div>
-                            <div><strong>Height:</strong> ${data.physical.dimensions.height || 'N/A'} mm</div>
-                            <div><strong>Depth:</strong> ${data.physical.dimensions.depth || 'N/A'} mm</div>
+                            <div><strong>Weight</strong><br><br> ${data.physical.dimensions.weight || 'N/A'} kg</div>
+                            <div><strong>Width</strong><br><br> ${data.physical.dimensions.width || 'N/A'} mm</div>
+                            <div><strong>Height</strong><br><br> ${data.physical.dimensions.height || 'N/A'} mm</div>
+                            <div><strong>Depth</strong><br><br> ${data.physical.dimensions.depth || 'N/A'} mm</div>
                         `;
                     }
                     if (data.physical.technical) {
                         physicalHTML += `
-                            <div><strong>Power Consumption:</strong> ${data.physical.technical.powerConsumption || 'N/A'} W</div>
-                            <div><strong>DMX Connector:</strong> ${data.physical.technical.dmxConnector || 'N/A'}</div>
+                            <div><strong>Power Consuption</strong><br><br> ${data.physical.technical.powerConsumption || 'N/A'} W</div>
+                            <div><strong>DMX Connector</strong><br><br> ${data.physical.technical.dmxConnector || 'N/A'}</div>
                         `;
                     }
                     physicalHTML += '</div>';
