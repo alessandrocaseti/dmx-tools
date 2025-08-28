@@ -1,0 +1,67 @@
+{
+  "manufacturer": "Stairville",
+  "model": "HL-x9-18 DCL CW-WWFlood 9-18x6W",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "ColdWhite",
+      "type": "White"
+    },
+    {
+      "name": "WarmWhite",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Macro",
+      "type": "Effect"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "5 Channel",
+      "totalChannels": 5,
+      "channels": [
+        "ColdWhite",
+        "WarmWhite",
+        "Strobe",
+        "Macro",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1032",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4",
+      "width": "300",
+      "height": "125",
+      "depth": "165"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "35",
+      "degreesMax": "35"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "56",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

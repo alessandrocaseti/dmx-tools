@@ -1,0 +1,84 @@
+{
+  "manufacturer": "Stairville",
+  "model": "LED Blinder 2 COB 2x65W",
+  "type": "Strobe",
+  "channels": [
+    {
+      "name": "LED Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED 1 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED 2 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 Channel",
+      "totalChannels": 1,
+      "channels": [
+        "LED Dimmer"
+      ]
+    },
+    {
+      "name": "2 Channel (2A)",
+      "totalChannels": 2,
+      "channels": [
+        "LED 1 Dimmer",
+        "LED 2 Dimmer"
+      ]
+    },
+    {
+      "name": "2 Channel (2B)",
+      "totalChannels": 2,
+      "channels": [
+        "LED Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "3 Channel",
+      "totalChannels": 3,
+      "channels": [
+        "LED 1 Dimmer",
+        "LED 2 Dimmer",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "2700"
+    },
+    "dimensions": {
+      "weight": "4.5",
+      "width": "530",
+      "height": "330",
+      "depth": "150"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "70",
+      "degreesMax": "70"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

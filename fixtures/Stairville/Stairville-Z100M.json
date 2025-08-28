@@ -1,0 +1,72 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Z100M",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Stroboscope",
+      "type": "Shutter"
+    },
+    {
+      "name": "Fine Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "1-Channel",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "2-Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Stroboscope"
+      ]
+    },
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Fine Dimmer",
+        "Stroboscope"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "3000"
+    },
+    "dimensions": {
+      "weight": "3.4",
+      "width": "275",
+      "height": "224",
+      "depth": "491"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "11",
+      "degreesMax": "35"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "115",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "manufacturer": "Stairville",
+  "model": "LED PAR 64 COB RGBW 60W",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Intensity Red",
+      "type": "Red"
+    },
+    {
+      "name": "Intensity Green",
+      "type": "Green"
+    },
+    {
+      "name": "Intensity Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Intensity White",
+      "type": "White"
+    },
+    {
+      "name": "Fixed colour pattern",
+      "type": "Color"
+    },
+    {
+      "name": "Strobe effect",
+      "type": "Shutter"
+    },
+    {
+      "name": "Operating mode selection",
+      "type": "Effect"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "6Ch Operating mode selection",
+      "type": "Effect"
+    },
+    {
+      "name": "6Ch Effects speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "8 Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Intensity Red",
+        "Intensity Green",
+        "Intensity Blue",
+        "Intensity White",
+        "Fixed colour pattern",
+        "Strobe effect",
+        "Operating mode selection",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "6 Channel",
+      "totalChannels": 6,
+      "channels": [
+        "6Ch Operating mode selection",
+        "Intensity Red",
+        "Intensity Green",
+        "Intensity Blue",
+        "Intensity White",
+        "6Ch Effects speed"
+      ]
+    },
+    {
+      "name": "4 Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Intensity Red",
+        "Intensity Green",
+        "Intensity Blue",
+        "Intensity White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.93",
+      "width": "280",
+      "height": "200",
+      "depth": "500"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "60",
+      "degreesMax": "60"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

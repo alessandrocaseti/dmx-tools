@@ -1,0 +1,112 @@
+{
+  "manufacturer": "Lixada",
+  "model": "Mini Gobo Moving Head",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color Control",
+      "type": "Color"
+    },
+    {
+      "name": "Gobo Selection",
+      "type": "Gobo"
+    },
+    {
+      "name": "Lamp Control",
+      "type": "Intensity"
+    },
+    {
+      "name": "Master dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Function Controls",
+      "type": "Shutter"
+    },
+    {
+      "name": "Effects",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "11 Channel",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Color Control",
+        "Gobo Selection",
+        "Lamp Control",
+        "Master dimmer fine",
+        "Pan/Tilt speed",
+        "Function Controls",
+        "Effects"
+      ]
+    },
+    {
+      "name": "9 Channel",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color Control",
+        "Gobo Selection",
+        "Lamp Control",
+        "Master dimmer fine",
+        "Pan/Tilt speed",
+        "Function Controls",
+        "Effects"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.4",
+      "width": "210",
+      "height": "260",
+      "depth": "280"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "25",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

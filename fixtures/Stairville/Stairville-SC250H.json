@@ -1,0 +1,77 @@
+{
+  "manufacturer": "Stairville",
+  "model": "SC250H",
+  "type": "Scanner",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Shutter/Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo"
+    },
+    {
+      "name": "Colour",
+      "type": "Color"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "No function",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "7ch colour split",
+      "totalChannels": 7,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Shutter/Strobe",
+        "Gobo",
+        "Colour",
+        "No function",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "ELC 250W",
+      "lumens": "800",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "10",
+      "width": "270",
+      "height": "555",
+      "depth": "285"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

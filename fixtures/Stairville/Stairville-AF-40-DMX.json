@@ -1,0 +1,47 @@
+{
+  "manufacturer": "Stairville",
+  "model": "AF-40 DMX",
+  "type": "Hazer",
+  "channels": [
+    {
+      "name": "Fog amount",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 1,
+      "channels": [
+        "Fog amount"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.1",
+      "width": "280",
+      "height": "190",
+      "depth": "150"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "400",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

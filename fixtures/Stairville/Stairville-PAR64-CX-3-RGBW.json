@@ -1,0 +1,108 @@
+{
+  "manufacturer": "Stairville",
+  "model": "PAR 64 CX-3 RGBW",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Fixed Color Pattern",
+      "type": "Effect"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Operating mode",
+      "type": "Effect"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Operating Mode 2",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "8ch",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Fixed Color Pattern",
+        "Strobe",
+        "Operating mode",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "4ch",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "6ch",
+      "totalChannels": 6,
+      "channels": [
+        "Operating Mode 2",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.4",
+      "width": "270",
+      "height": "270",
+      "depth": "330"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "152",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

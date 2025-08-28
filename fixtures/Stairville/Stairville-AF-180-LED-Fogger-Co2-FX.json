@@ -1,0 +1,77 @@
+{
+  "manufacturer": "Stairville",
+  "model": "AF-180 LED Fogger Co2 FX",
+  "type": "FX Fog",
+  "channels": [
+    {
+      "name": "Amount of Fog",
+      "type": "Intensity"
+    },
+    {
+      "name": "Brightness of All LEDs",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour effect",
+      "type": "Color"
+    },
+    {
+      "name": "Stroboscope Effect",
+      "type": "Effect"
+    },
+    {
+      "name": "Intensity Colour Effect Red",
+      "type": "Red"
+    },
+    {
+      "name": "Intensity Colour Effect Green",
+      "type": "Green"
+    },
+    {
+      "name": "Intensity Colour Effect Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "7 Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Amount of Fog",
+        "Brightness of All LEDs",
+        "Colour effect",
+        "Stroboscope Effect",
+        "Intensity Colour Effect Red",
+        "Intensity Colour Effect Green",
+        "Intensity Colour Effect Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.9",
+      "width": "190",
+      "height": "300",
+      "depth": "340"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "850",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

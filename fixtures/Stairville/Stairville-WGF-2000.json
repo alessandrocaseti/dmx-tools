@@ -1,0 +1,57 @@
+{
+  "manufacturer": "Stairville",
+  "model": "WGF 2000",
+  "type": "FX Fog",
+  "channels": [
+    {
+      "name": "Smoke",
+      "type": "Intensity"
+    },
+    {
+      "name": "Fan",
+      "type": "Intensity"
+    },
+    {
+      "name": "Program",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 3,
+      "channels": [
+        "Smoke",
+        "Fan",
+        "Program"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.2",
+      "width": "345",
+      "height": "360",
+      "depth": "785"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "2000",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

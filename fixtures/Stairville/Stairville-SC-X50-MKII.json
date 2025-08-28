@@ -1,0 +1,111 @@
+{
+  "manufacturer": "Stairville",
+  "model": "SC-X50 MKII",
+  "type": "Scanner",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Speed"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Special functions",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Built-in programs",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "11 channels",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Shutter",
+        "Dimmer",
+        "Gobo",
+        "Gobo rotation",
+        "Prism",
+        "Focus",
+        "Special functions",
+        "Built-in programs"
+      ]
+    },
+    {
+      "name": "8 channels",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Shutter",
+        "Gobo",
+        "Gobo rotation",
+        "Prism",
+        "Focus"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "186",
+      "height": "140",
+      "depth": "456"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "60"
+    },
+    "technical": {
+      "powerConsumption": "135",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

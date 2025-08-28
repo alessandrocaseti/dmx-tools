@@ -1,0 +1,97 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Tri Flat PAR Profile 5x3W RGB",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Operating Mode",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Constant Colour / Progress Speed",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3-channel",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "5-channel",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "7-channel",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Operating Mode",
+        "Constant Colour / Progress Speed",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.1",
+      "width": "164",
+      "height": "164",
+      "depth": "105"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "18",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

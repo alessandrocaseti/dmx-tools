@@ -1,0 +1,113 @@
+{
+  "manufacturer": "Stairville",
+  "model": "MH-X20",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Response speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour wheel",
+      "type": "Color"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo Wheel",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Speed"
+    },
+    {
+      "name": "Special functions",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Built-in programs",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "11 Ch",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan Fine",
+        "Tilt Fine",
+        "Response speed",
+        "Colour wheel",
+        "Shutter",
+        "Dimmer",
+        "Gobo Wheel",
+        "Special functions",
+        "Built-in programs"
+      ]
+    },
+    {
+      "name": "6 Ch",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour wheel",
+        "Shutter",
+        "Gobo Wheel",
+        "Gobo rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "9800",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.2",
+      "width": "200",
+      "height": "290",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

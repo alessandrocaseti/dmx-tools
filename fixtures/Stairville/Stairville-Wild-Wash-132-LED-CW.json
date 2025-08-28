@@ -1,0 +1,93 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Wild Wash 132 LED CW",
+  "type": "Strobe",
+  "channels": [
+    {
+      "name": "Strobe 1",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Flash impulse",
+      "type": "Speed"
+    },
+    {
+      "name": "Strobe 2",
+      "type": "Shutter"
+    },
+    {
+      "name": "Sound control",
+      "type": "Maintenance"
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 Channel",
+      "totalChannels": 1,
+      "channels": [
+        "Strobe 1"
+      ]
+    },
+    {
+      "name": "2 Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "3 Channel 1",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Flash impulse"
+      ]
+    },
+    {
+      "name": "3 Channel 2",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobe 2",
+        "Sound control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.05",
+      "width": "310",
+      "height": "70",
+      "depth": "70"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "75",
+      "degreesMax": "75"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

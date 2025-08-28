@@ -1,0 +1,62 @@
+{
+  "manufacturer": "Stairville",
+  "model": "SC-100",
+  "type": "Scanner",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Patterne/Chase",
+      "type": "Effect"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Alm",
+      "totalChannels": 4,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Patterne/Chase",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "117",
+      "height": "140",
+      "depth": "420"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "180",
+      "tiltMax": "45"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

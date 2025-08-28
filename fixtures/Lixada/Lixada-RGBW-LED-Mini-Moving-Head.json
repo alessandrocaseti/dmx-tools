@@ -1,0 +1,127 @@
+{
+  "manufacturer": "Lixada",
+  "model": "RGBW LED Mini Moving Head",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color selector",
+      "type": "Color"
+    },
+    {
+      "name": "Color jumps",
+      "type": "Color"
+    },
+    {
+      "name": "Custom controls",
+      "type": "Maintenance"
+    }
+  ],
+  "modes": [
+    {
+      "name": "14 Channels",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color selector",
+        "Color jumps",
+        "Custom controls",
+        "Reset"
+      ]
+    },
+    {
+      "name": "9 Channels",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Pan/Tilt Speed",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.8",
+      "width": "175",
+      "height": "245",
+      "depth": "170"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "70",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

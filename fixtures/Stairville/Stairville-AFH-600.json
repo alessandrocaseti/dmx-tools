@@ -1,0 +1,47 @@
+{
+  "manufacturer": "Stairville",
+  "model": "AFH-600",
+  "type": "Hazer",
+  "channels": [
+    {
+      "name": "Haze Intensity",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX",
+      "totalChannels": 1,
+      "channels": [
+        "Haze Intensity"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "None",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.5",
+      "width": "290",
+      "height": "265",
+      "depth": "450"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1290",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

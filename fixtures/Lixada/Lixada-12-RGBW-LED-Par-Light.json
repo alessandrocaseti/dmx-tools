@@ -1,0 +1,82 @@
+{
+  "manufacturer": "Lixada",
+  "model": "12 RGBW LED Par Light",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color macro",
+      "type": "Color"
+    },
+    {
+      "name": "Change Color Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 8,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Color macro",
+        "Change Color Speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "0.4",
+      "width": "120",
+      "height": "120",
+      "depth": "140"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "15",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

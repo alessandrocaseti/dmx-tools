@@ -1,0 +1,62 @@
+{
+  "manufacturer": "Stairville",
+  "model": "maTrixx SC-100",
+  "type": "Scanner",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pattern/Chase",
+      "type": "Effect"
+    },
+    {
+      "name": "Strobe",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "4-Channel Mode",
+      "totalChannels": 4,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pattern/Chase",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "420",
+      "height": "140",
+      "depth": "171"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "180",
+      "tiltMax": "45"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

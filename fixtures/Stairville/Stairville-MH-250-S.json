@@ -1,0 +1,100 @@
+{
+  "manufacturer": "Stairville",
+  "model": "MH-250 S",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Shutter / Shaking",
+      "type": "Shutter"
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo"
+    },
+    {
+      "name": "Normal Color",
+      "type": "Color"
+    },
+    {
+      "name": "Split Color",
+      "type": "Color"
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Effect"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal Color",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Shutter / Shaking",
+        "Gobo",
+        "Normal Color",
+        "Gobo Rotation",
+        "Dimmer",
+        "Focus"
+      ]
+    },
+    {
+      "name": "Split Color",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Shutter / Shaking",
+        "Gobo",
+        "Split Color",
+        "Gobo Rotation",
+        "Dimmer",
+        "Focus"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "26",
+      "width": "397",
+      "height": "503",
+      "depth": "360"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "13"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

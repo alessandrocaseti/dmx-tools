@@ -1,0 +1,52 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Hz-200 DMX",
+  "type": "Hazer",
+  "channels": [
+    {
+      "name": "Haze",
+      "type": "Intensity"
+    },
+    {
+      "name": "Fan Speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 2,
+      "channels": [
+        "Haze",
+        "Fan Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.5",
+      "width": "280",
+      "height": "380",
+      "depth": "330"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "615",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

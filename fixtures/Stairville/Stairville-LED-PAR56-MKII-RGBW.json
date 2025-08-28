@@ -1,0 +1,112 @@
+{
+  "manufacturer": "Stairville",
+  "model": "LED Par56 MKII RGBW",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Mode",
+      "type": "Effect"
+    },
+    {
+      "name": "Chase",
+      "type": "Speed"
+    },
+    {
+      "name": "Macros",
+      "type": "Effect"
+    },
+    {
+      "name": "Strobe / Fade speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Mode",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Master",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "RGBW",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "RGBW/Chase",
+      "totalChannels": 6,
+      "channels": [
+        "Mode",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Chase"
+      ]
+    },
+    {
+      "name": "Full",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Macros",
+        "Strobe / Fade speed",
+        "Mode",
+        "Master"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.6",
+      "width": "220",
+      "height": "205",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "45",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "21",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Octagon Theater",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Cold White",
+      "type": "White"
+    },
+    {
+      "name": "Warm White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Colour Macros",
+      "type": "Color"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "5 channels",
+      "totalChannels": 5,
+      "channels": [
+        "Cold White",
+        "Warm White",
+        "Strobe",
+        "Colour Macros",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.3",
+      "width": "301",
+      "height": "215",
+      "depth": "248"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "42",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "manufacturer": "Stairville",
+  "model": "HL-x9 Quad Color Flood 9x8W",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Mode",
+      "type": "Effect"
+    },
+    {
+      "name": "Effect Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color Pattern",
+      "type": "Color"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Extended Mode",
+      "type": "Effect"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "4 Channels",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "6 channels",
+      "totalChannels": 6,
+      "channels": [
+        "Mode",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Effect Speed"
+      ]
+    },
+    {
+      "name": "8 channels",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Pattern",
+        "Strobe",
+        "Extended Mode",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4",
+      "width": "300",
+      "height": "165",
+      "depth": "125"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "35",
+      "degreesMax": "35"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "76",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

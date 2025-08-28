@@ -1,0 +1,72 @@
+{
+  "manufacturer": "Sagitter",
+  "model": "Miniscan 2001",
+  "type": "Scanner",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color"
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Speed"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Gobo",
+        "Gobo Rotation",
+        "Shutter"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "6500",
+      "colourTemperature": "1700"
+    },
+    "dimensions": {
+      "weight": "9.5",
+      "width": "244",
+      "height": "163",
+      "depth": "483"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "19",
+      "degreesMax": "19"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "147",
+      "tiltMax": "115"
+    },
+    "technical": {
+      "powerConsumption": "500",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

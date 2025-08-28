@@ -1,0 +1,105 @@
+{
+  "manufacturer": "Stairville",
+  "model": "MH-x30 LED Beam",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan & Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Colour wheel",
+      "type": "Color"
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo"
+    },
+    {
+      "name": "Special settings",
+      "type": "Maintenance"
+    }
+  ],
+  "modes": [
+    {
+      "name": "10 Channel",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan & Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Colour wheel",
+        "Gobo wheel",
+        "Special settings"
+      ]
+    },
+    {
+      "name": "7 Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan & Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Colour wheel",
+        "Gobo wheel"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED ",
+      "lumens": "0",
+      "colourTemperature": "6000"
+    },
+    "dimensions": {
+      "weight": "5.8",
+      "width": "260",
+      "height": "386",
+      "depth": "150"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "2.8",
+      "degreesMax": "2.8"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "68",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

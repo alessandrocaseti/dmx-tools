@@ -1,0 +1,169 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Beam Moving Head B5R",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Colour Wheel",
+      "type": "Color"
+    },
+    {
+      "name": "Strobe effect",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobos",
+      "type": "Gobo"
+    },
+    {
+      "name": "Prism Rotation",
+      "type": "Prism"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism"
+    },
+    {
+      "name": "Effects Movement",
+      "type": "Effect"
+    },
+    {
+      "name": "Frost",
+      "type": "Effect"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Function",
+      "type": "Effect"
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Lamp Control",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Pan - Tilt Time",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour Time",
+      "type": "Speed"
+    },
+    {
+      "name": "Beam Time",
+      "type": "Speed"
+    },
+    {
+      "name": "Gobo Time",
+      "type": "Speed"
+    },
+    {
+      "name": "Prism zoom",
+      "type": "Prism"
+    },
+    {
+      "name": "Without function",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "17-channel",
+      "totalChannels": 17,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan - Tilt Time",
+        "Colour Wheel",
+        "Strobe effect",
+        "Dimmer",
+        "Gobos",
+        "Frost",
+        "Reset",
+        "Focus",
+        "Lamp Control",
+        "Prism",
+        "Prism Rotation",
+        "Prism zoom",
+        "Without function"
+      ]
+    },
+    {
+      "name": "16-channel",
+      "totalChannels": 16,
+      "channels": [
+        "Colour Wheel",
+        "Strobe effect",
+        "Dimmer",
+        "Gobos",
+        "Prism",
+        "Prism Rotation",
+        "Prism zoom",
+        "Frost",
+        "Focus",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Without function",
+        "Reset",
+        "Lamp Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 200W",
+      "lumens": "7950",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "19",
+      "width": "390",
+      "height": "485",
+      "depth": "330"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "3.8"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "230",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

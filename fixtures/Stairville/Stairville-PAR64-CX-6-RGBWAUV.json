@@ -1,0 +1,126 @@
+{
+  "manufacturer": "Stairville",
+  "model": "PAR64 CX-6 RGBWAUV",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Operating Mode Selection",
+      "type": "Color"
+    },
+    {
+      "name": "Effects Speed and Sound Control Sensitivity",
+      "type": "Speed"
+    },
+    {
+      "name": "Fixed Colour Pattern",
+      "type": "Color"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Operating Mode Selection 2",
+      "type": "Effect"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "6 Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "8 Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Operating Mode Selection",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Effects Speed and Sound Control Sensitivity"
+      ]
+    },
+    {
+      "name": "10 Channel",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Fixed Colour Pattern",
+        "Strobe",
+        "Operating Mode Selection 2",
+        "Master dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.1",
+      "width": "275",
+      "height": "410",
+      "depth": "270"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "170",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

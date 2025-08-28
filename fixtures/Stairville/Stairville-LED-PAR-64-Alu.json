@@ -1,0 +1,67 @@
+{
+  "manufacturer": "Stairville",
+  "model": "LED PAR 64 Alu",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Effect"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 5,
+      "channels": [
+        "Mode",
+        "Red",
+        "Green",
+        "Blue",
+        "Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.12",
+      "width": "260",
+      "height": "260",
+      "depth": "290"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "16",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

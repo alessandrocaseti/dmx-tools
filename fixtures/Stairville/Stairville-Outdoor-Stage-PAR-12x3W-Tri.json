@@ -1,0 +1,71 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Outdoor Stage PAR 12x3W Tri",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 channel",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4 channel",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "184",
+      "height": "170",
+      "depth": "184"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "42",
+      "dmxConnector": "3-pin IP65"
+    }
+  }
+}

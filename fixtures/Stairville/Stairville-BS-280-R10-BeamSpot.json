@@ -1,0 +1,168 @@
+{
+  "manufacturer": "Stairville",
+  "model": "BS-280 R10 BeamSpot",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Special functions",
+      "type": "Effect"
+    },
+    {
+      "name": "Colour wheel",
+      "type": "Color"
+    },
+    {
+      "name": "Gobo wheel 1",
+      "type": "Gobo"
+    },
+    {
+      "name": "Rotation of the gobo in gobo wheel 2",
+      "type": "Gobo"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism"
+    },
+    {
+      "name": "Prism rotation",
+      "type": "Prism"
+    },
+    {
+      "name": "Zoom",
+      "type": "Zoom"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Frost",
+      "type": "Beam"
+    },
+    {
+      "name": "Strobe effect",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo wheel 2",
+      "type": "Gobo"
+    },
+    {
+      "name": "Fine adjustment for rotation (pan)",
+      "type": "Pan"
+    },
+    {
+      "name": "Fine adjustment for inclination (tilt)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Movement macros",
+      "type": "Effect"
+    },
+    {
+      "name": "Speed of the movement macro",
+      "type": "Speed"
+    },
+    {
+      "name": "Fine adjustment of the zoom",
+      "type": "Zoom"
+    },
+    {
+      "name": "Fine adjustment of the focus",
+      "type": "Focus"
+    }
+  ],
+  "modes": [
+    {
+      "name": "15 Channel",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Special functions",
+        "Colour wheel",
+        "Gobo wheel 1",
+        "Gobo wheel 2",
+        "Rotation of the gobo in gobo wheel 2",
+        "Prism",
+        "Prism rotation",
+        "Zoom",
+        "Focus",
+        "Frost",
+        "Strobe effect",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "21 Channel",
+      "totalChannels": 21,
+      "channels": [
+        "Pan",
+        "Fine adjustment for rotation (pan)",
+        "Tilt",
+        "Fine adjustment for inclination (tilt)",
+        "Pan/Tilt speed",
+        "Special functions",
+        "Movement macros",
+        "Speed of the movement macro",
+        "Colour wheel",
+        "Gobo wheel 1",
+        "Gobo wheel 2",
+        "Rotation of the gobo in gobo wheel 2",
+        "Prism",
+        "Prism rotation",
+        "Zoom",
+        "Fine adjustment of the zoom",
+        "Focus",
+        "Fine adjustment of the focus",
+        "Frost",
+        "Strobe effect",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HRI 280W",
+      "lumens": "11000",
+      "colourTemperature": "7800"
+    },
+    "dimensions": {
+      "weight": "17",
+      "width": "365",
+      "height": "574",
+      "depth": "256"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "3",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "347",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "manufacturer": "Stairville",
+  "model": "CLB4 RGB Compact LED Bar 4",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Red Spot 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Spot 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Spot 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Spot 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red 12",
+      "type": "Red"
+    },
+    {
+      "name": "Green 12",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 12",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 34",
+      "type": "Red"
+    },
+    {
+      "name": "Green 34",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 34",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 1234",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1234",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1234",
+      "type": "Blue"
+    },
+    {
+      "name": "AutoShow2",
+      "type": "Color"
+    },
+    {
+      "name": "AutoShow7",
+      "type": "Color"
+    },
+    {
+      "name": "Speed and Mode Controller",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "2 Channel",
+      "totalChannels": 2,
+      "channels": [
+        "AutoShow2",
+        "Speed and Mode Controller"
+      ]
+    },
+    {
+      "name": "3 Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Red 1234",
+        "Green 1234",
+        "Blue 1234"
+      ]
+    },
+    {
+      "name": "4 Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Red 1234",
+        "Green 1234",
+        "Blue 1234",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "7 Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Red 1234",
+        "Green 1234",
+        "Blue 1234",
+        "AutoShow7",
+        "Speed and Mode Controller",
+        "Strobe",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "8 Channel",
+      "totalChannels": 14,
+      "channels": [
+        "Red 12",
+        "Green 12",
+        "Blue 12",
+        "Red 34",
+        "Green 34",
+        "Blue 34",
+        "Strobe",
+        "Dimmer",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "name": "14 Channel",
+      "totalChannels": 26,
+      "channels": [
+        "Red Spot 1",
+        "Green Spot 1",
+        "Blue Spot 1",
+        "Red Spot 2",
+        "Green Spot 2",
+        "Blue Spot 2",
+        "Red Spot 3",
+        "Green Spot 3",
+        "Blue Spot 3",
+        "Red Spot 4",
+        "Green Spot 4",
+        "Blue Spot 4",
+        "Strobe",
+        "Dimmer",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.4",
+      "width": "682",
+      "height": "270",
+      "depth": "60"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "45",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "80",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

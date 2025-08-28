@@ -1,0 +1,127 @@
+{
+  "manufacturer": "Stairville",
+  "model": "MH-100 Beam 36x3 LED",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "White with Full Intensity and Adjustable Colour Temperature",
+      "type": "Color"
+    },
+    {
+      "name": "Preprogrammed Colours",
+      "type": "Color"
+    },
+    {
+      "name": "Special Functions",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "9-Ch Mode",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "14-Ch Mode",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "White with Full Intensity and Adjustable Colour Temperature",
+        "Preprogrammed Colours",
+        "Strobe",
+        "Special Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "949",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.9",
+      "width": "260",
+      "height": "310",
+      "depth": "148"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "8",
+      "degreesMax": "8"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "630",
+      "tiltMax": "220"
+    },
+    "technical": {
+      "powerConsumption": "150",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

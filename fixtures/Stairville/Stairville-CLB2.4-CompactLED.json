@@ -1,0 +1,232 @@
+{
+  "manufacturer": "Stairville",
+  "model": "CLB2.4 Compact LED PAR System",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red Spot 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Spot 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Spot 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Spot 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Master Red",
+      "type": "Red"
+    },
+    {
+      "name": "Master Green",
+      "type": "Green"
+    },
+    {
+      "name": "Master Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Spot 1-2",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 1-2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 1-2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Spot 3-4",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 3-4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 3-4",
+      "type": "Blue"
+    },
+    {
+      "name": "Preprogrammed automatic Shows",
+      "type": "Effect"
+    },
+    {
+      "name": "Speed/Sensitivity",
+      "type": "Speed"
+    },
+    {
+      "name": "Fixed colors",
+      "type": "Color"
+    }
+  ],
+  "modes": [
+    {
+      "name": "14 Channel",
+      "totalChannels": 26,
+      "channels": [
+        "Dimmer",
+        "Red Spot 1",
+        "Green Spot 1",
+        "Blue Spot 1",
+        "Red Spot 2",
+        "Green Spot 2",
+        "Blue Spot 2",
+        "Red Spot 3",
+        "Green Spot 3",
+        "Blue Spot 3",
+        "Red Spot 4",
+        "Green Spot 4",
+        "Blue Spot 4",
+        "Strobe",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "name": "3 Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Master Red",
+        "Master Green",
+        "Master Blue"
+      ]
+    },
+    {
+      "name": "4 Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Master Red",
+        "Master Green",
+        "Master Blue"
+      ]
+    },
+    {
+      "name": "8 Channel",
+      "totalChannels": 14,
+      "channels": [
+        "Dimmer",
+        "Red Spot 1-2",
+        "Green Spot 1-2",
+        "Blue Spot 1-2",
+        "Red Spot 3-4",
+        "Green Spot 3-4",
+        "Blue Spot 3-4",
+        "Strobe",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "name": "2 Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Preprogrammed automatic Shows",
+        "Fixed colors"
+      ]
+    },
+    {
+      "name": "7 Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Master Red",
+        "Master Green",
+        "Master Blue",
+        "Preprogrammed automatic Shows",
+        "Speed/Sensitivity",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1364",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.6",
+      "width": "1007",
+      "height": "305",
+      "depth": "63"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

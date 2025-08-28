@@ -1,0 +1,177 @@
+{
+  "manufacturer": "Stairville",
+  "model": "SonicPulse MH Wash 1208",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red (All LEDS)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (All LEDS)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (All LEDS)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (All LEDs)",
+      "type": "White"
+    },
+    {
+      "name": "Special functions (hold for at least 5 seconds)",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour settings",
+      "type": "Color"
+    },
+    {
+      "name": "Colour change",
+      "type": "Color"
+    },
+    {
+      "name": "Red (LED 1)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (LED 1)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (LED 1)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (LED 1)",
+      "type": "White"
+    },
+    {
+      "name": "Red (LED 2)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (LED 2)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (LED 2)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (LED 2)",
+      "type": "White"
+    },
+    {
+      "name": "Colour effect",
+      "type": "Color"
+    }
+  ],
+  "modes": [
+    {
+      "name": "10 channel",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Red (All LEDS)",
+        "Green (All LEDS)",
+        "Blue (All LEDS)",
+        "White (All LEDs)",
+        "Special functions (hold for at least 5 seconds)"
+      ]
+    },
+    {
+      "name": "19 channel",
+      "totalChannels": 27,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Colour settings",
+        "Colour change",
+        "Colour effect",
+        "Red (LED 1)",
+        "Green (LED 1)",
+        "Blue (LED 1)",
+        "White (LED 1)",
+        "Red (LED 2)",
+        "Green (LED 2)",
+        "Blue (LED 2)",
+        "White (LED 2)",
+        "Special functions (hold for at least 5 seconds)",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.3",
+      "width": "198",
+      "height": "271",
+      "depth": "159"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "9",
+      "degreesMax": "9"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "220"
+    },
+    "technical": {
+      "powerConsumption": "82",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

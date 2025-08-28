@@ -1,0 +1,77 @@
+{
+  "manufacturer": "Stairville",
+  "model": "DJ Lase BlueStar MK-II LED",
+  "type": "Laser",
+  "channels": [
+    {
+      "name": "Operating mode selection",
+      "type": "Effect"
+    },
+    {
+      "name": "Red laser",
+      "type": "Effect"
+    },
+    {
+      "name": "Green laser",
+      "type": "Effect"
+    },
+    {
+      "name": "Rotation of the red and green laser around the Z-axis (rolling)",
+      "type": "Effect"
+    },
+    {
+      "name": "Rotation of the blue LED background illumination around the Z-axis (rolling)",
+      "type": "Effect"
+    },
+    {
+      "name": "Intensity of the blue LED background illumination",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe effect (flashing) of the blue LED background illumination",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "7 channel",
+      "totalChannels": 7,
+      "channels": [
+        "Operating mode selection",
+        "Red laser",
+        "Green laser",
+        "Rotation of the red and green laser around the Z-axis (rolling)",
+        "Rotation of the blue LED background illumination around the Z-axis (rolling)",
+        "Intensity of the blue LED background illumination",
+        "Strobe effect (flashing) of the blue LED background illumination"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.5",
+      "width": "200",
+      "height": "92",
+      "depth": "175"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "160",
+      "degreesMax": "160"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "15",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

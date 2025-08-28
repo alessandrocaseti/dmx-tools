@@ -1,0 +1,93 @@
+{
+  "manufacturer": "Stairville",
+  "model": "JunoScan MKII",
+  "type": "Scanner",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color-Wheel",
+      "type": "Color"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter"
+    },
+    {
+      "name": "Gobo-Wheel",
+      "type": "Gobo"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Settings",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Included Shows",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "5 Channel",
+      "totalChannels": 5,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color-Wheel",
+        "Shutter",
+        "Gobo-Wheel"
+      ]
+    },
+    {
+      "name": "8 Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color-Wheel",
+        "Shutter",
+        "Dimmer",
+        "Gobo-Wheel",
+        "Settings",
+        "Included Shows"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.3",
+      "width": "140",
+      "height": "396",
+      "depth": "106"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "22",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

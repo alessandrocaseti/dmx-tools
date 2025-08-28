@@ -1,0 +1,66 @@
+{
+  "manufacturer": "Stairville",
+  "model": "DDS 405",
+  "type": "Dimmer",
+  "channels": [
+    {
+      "name": "Ch 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "Ch 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "Ch 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "Ch 4",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode1",
+      "totalChannels": 8,
+      "channels": [
+        "Ch 1",
+        "Ch 2",
+        "Ch 3",
+        "Ch 4",
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.85",
+      "width": "170",
+      "height": "205",
+      "depth": "650"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "3500",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

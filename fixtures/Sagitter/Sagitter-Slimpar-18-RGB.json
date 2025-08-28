@@ -1,0 +1,107 @@
+{
+  "manufacturer": "Sagitter",
+  "model": "Slimpar 18 RGB",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Function",
+      "type": "Effect"
+    },
+    {
+      "name": "Color Macro Speed - Microphone Sensitivity",
+      "type": "Effect"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color"
+    }
+  ],
+  "modes": [
+    {
+      "name": "7 Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Function",
+        "Color Macro Speed - Microphone Sensitivity",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "3 Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4 Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "1 Channel",
+      "totalChannels": 1,
+      "channels": [
+        "Color Macro"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "4400",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.1",
+      "width": "257",
+      "height": "250",
+      "depth": "130"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "70",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

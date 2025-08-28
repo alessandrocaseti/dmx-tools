@@ -1,0 +1,137 @@
+{
+  "manufacturer": "Stairville",
+  "model": "novaWash Quad LED",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Special Function",
+      "type": "Effect"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Pan/Tilt Macro",
+      "type": "Effect"
+    },
+    {
+      "name": "Macro Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour",
+      "type": "Color"
+    },
+    {
+      "name": "Fade Speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "9 Channel",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Shutter",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer",
+        "Special Function"
+      ]
+    },
+    {
+      "name": "16 Channel",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Pan/Tilt Macro",
+        "Macro Speed",
+        "Special Function",
+        "Dimmer",
+        "Shutter",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Colour",
+        "Fade Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "50000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.5",
+      "width": "335",
+      "height": "404",
+      "depth": "236"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "20"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

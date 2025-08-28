@@ -1,0 +1,88 @@
+{
+  "manufacturer": "Stairville",
+  "model": "DCL Flat Par 18x4W CW/WW",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Warm White",
+      "type": "White"
+    },
+    {
+      "name": "Cold White",
+      "type": "White"
+    },
+    {
+      "name": "Programs",
+      "type": "Effect"
+    },
+    {
+      "name": "Colour Setting / Process Speed / Sound-Control Sensitivity",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Warm White, if Channel 4 = 0",
+      "type": "Intensity"
+    },
+    {
+      "name": "Cold White, if Channel 4 = 0",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "2 Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Warm White",
+        "Cold White"
+      ]
+    },
+    {
+      "name": "6 Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Master Dimmer",
+        "Warm White, if Channel 4 = 0",
+        "Cold White, if Channel 4 = 0",
+        "Programs",
+        "Colour Setting / Process Speed / Sound-Control Sensitivity",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.34",
+      "width": "164",
+      "height": "164",
+      "depth": "105"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "68",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

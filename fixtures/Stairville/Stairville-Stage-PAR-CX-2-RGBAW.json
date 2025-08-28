@@ -1,0 +1,147 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Stage PAR CX-2 RGBAW",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Colour Macros",
+      "type": "Color"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Functions",
+      "type": "Effect"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber (outer LED ring)",
+      "type": "Amber"
+    },
+    {
+      "name": "White (inner LED ring)",
+      "type": "White"
+    },
+    {
+      "name": "Red (outer LED ring)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (outer LED ring)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (outer LED ring)",
+      "type": "Blue"
+    },
+    {
+      "name": "Red (inner LED ring)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (inner LED ring)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (inner LED ring)",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Colour Macros",
+        "Dimmer",
+        "Functions"
+      ]
+    },
+    {
+      "name": "5 Channel",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber (outer LED ring)",
+        "White (inner LED ring)"
+      ]
+    },
+    {
+      "name": "7 Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber (outer LED ring)",
+        "White (inner LED ring)",
+        "Dimmer",
+        "Functions"
+      ]
+    },
+    {
+      "name": "8 Channel",
+      "totalChannels": 16,
+      "channels": [
+        "Red (outer LED ring)",
+        "Green (outer LED ring)",
+        "Blue (outer LED ring)",
+        "Amber (outer LED ring)",
+        "Red (inner LED ring)",
+        "Green (inner LED ring)",
+        "Blue (inner LED ring)",
+        "White (inner LED ring)",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "High-Power RGBAW",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.4",
+      "width": "305",
+      "height": "380",
+      "depth": "215"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "107",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

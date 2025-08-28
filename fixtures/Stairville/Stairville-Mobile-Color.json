@@ -1,0 +1,47 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Mobile Color",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Colour",
+      "type": "Color"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 1,
+      "channels": [
+        "Colour"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "JCR 15V 150W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "140",
+      "height": "160",
+      "depth": "265"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

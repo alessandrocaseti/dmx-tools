@@ -1,0 +1,82 @@
+{
+  "manufacturer": "Stairville",
+  "model": "DJ Lase 25+25-G MK-II",
+  "type": "Laser",
+  "channels": [
+    {
+      "name": "Operating Mode Selection",
+      "type": "Effect"
+    },
+    {
+      "name": "Pattern selection",
+      "type": "Gobo"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Rotation around the Y-axis (rolling)",
+      "type": "Effect"
+    },
+    {
+      "name": "Rotation around the X-axis (rolling)",
+      "type": "Effect"
+    },
+    {
+      "name": "Rotation around the Z-axis (rolling)",
+      "type": "Effect"
+    },
+    {
+      "name": "X-axis movement",
+      "type": "Pan"
+    },
+    {
+      "name": "Y-axis movement",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "8 Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Operating Mode Selection",
+        "Pattern selection",
+        "Zoom",
+        "Rotation around the Y-axis (rolling)",
+        "Rotation around the X-axis (rolling)",
+        "Rotation around the Z-axis (rolling)",
+        "X-axis movement",
+        "Y-axis movement"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Laser",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.5",
+      "width": "195",
+      "height": "85",
+      "depth": "145"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "90"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "90",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "12",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

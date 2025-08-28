@@ -1,0 +1,129 @@
+{
+  "manufacturer": "Sagitter",
+  "model": "Smart DL Wash",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed Pan-Tilt",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Macro",
+      "type": "Effect"
+    },
+    {
+      "name": "Macro Speed or Sound Sensitivity",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "15 Channel",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Speed Pan-Tilt",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "UV",
+        "Amber",
+        "Macro",
+        "Macro Speed or Sound Sensitivity"
+      ]
+    },
+    {
+      "name": "6 Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Dimmer",
+        "Strobe",
+        "Macro",
+        "Macro Speed or Sound Sensitivity"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.8",
+      "width": "175",
+      "height": "250",
+      "depth": "175"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "135",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

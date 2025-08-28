@@ -1,0 +1,112 @@
+{
+  "manufacturer": "Stairville",
+  "model": "LED PAR64 MKII RGBW",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Fixed colour pattern",
+      "type": "Effect"
+    },
+    {
+      "name": "Strobe effect",
+      "type": "Shutter"
+    },
+    {
+      "name": "Operating mode selection",
+      "type": "Effect"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Operating mode selection - 6Channels",
+      "type": "Effect"
+    },
+    {
+      "name": "Effects speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "4 Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "6 Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Operating mode selection - 6Channels",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Effects speed"
+      ]
+    },
+    {
+      "name": "8 Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Fixed colour pattern",
+        "Strobe effect",
+        "Operating mode selection",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.1",
+      "width": "260",
+      "height": "285",
+      "depth": "395"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "13",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

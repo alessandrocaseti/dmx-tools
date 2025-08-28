@@ -1,0 +1,192 @@
+{
+  "manufacturer": "Lixada",
+  "model": "5LED 50W Beam Wash Double Sides RGBW",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Dimmer total",
+      "type": "Intensity"
+    },
+    {
+      "name": "X Motor",
+      "type": "Pan"
+    },
+    {
+      "name": "Y Motor",
+      "type": "Tilt"
+    },
+    {
+      "name": "Y axis infinite rotation",
+      "type": "Tilt"
+    },
+    {
+      "name": "XY Motor speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Motor/Sound mode",
+      "type": "Effect"
+    },
+    {
+      "name": "Music Sensitivity",
+      "type": "Effect"
+    },
+    {
+      "name": "Light bulb auto run",
+      "type": "Color"
+    },
+    {
+      "name": "Light bulb auto run speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance"
+    },
+    {
+      "name": "X Motor fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Y Motor fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "15 Channel",
+      "totalChannels": 15,
+      "channels": [
+        "X Motor",
+        "Y Motor",
+        "Y axis infinite rotation",
+        "XY Motor speed",
+        "Dimmer total",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Motor/Sound mode",
+        "Music Sensitivity",
+        "Light bulb auto run",
+        "Light bulb auto run speed",
+        "Reset"
+      ]
+    },
+    {
+      "name": "21 Channel",
+      "totalChannels": 29,
+      "channels": [
+        "X Motor",
+        "X Motor fine",
+        "Y Motor",
+        "Y Motor fine",
+        "Y axis infinite rotation",
+        "XY Motor speed",
+        "Dimmer total",
+        "Strobe",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Motor/Sound mode",
+        "Music Sensitivity",
+        "Light bulb auto run",
+        "Light bulb auto run speed",
+        "Reset",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2500",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "2.37",
+      "width": "235",
+      "height": "145",
+      "depth": "155"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Barrel",
+      "panMax": "540",
+      "tiltMax": "740"
+    },
+    "technical": {
+      "powerConsumption": "35",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "manufacturer": "Stairville",
+  "model": "MH-X60th LED Spot",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Rotation",
+      "type": "Pan"
+    },
+    {
+      "name": "Fine Adjustment Rotation",
+      "type": "Pan"
+    },
+    {
+      "name": "Inclination",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Adjustment Inclination",
+      "type": "Tilt"
+    },
+    {
+      "name": "Response Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour Wheel",
+      "type": "Color"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter"
+    },
+    {
+      "name": "Electronic Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo Wheel",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo"
+    },
+    {
+      "name": "Special Functions",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Built in Programs",
+      "type": "Effect"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism"
+    },
+    {
+      "name": "Sharpness",
+      "type": "Beam"
+    }
+  ],
+  "modes": [
+    {
+      "name": "14 ch mode",
+      "totalChannels": 14,
+      "channels": [
+        "Rotation",
+        "Inclination",
+        "Fine Adjustment Rotation",
+        "Fine Adjustment Inclination",
+        "Response Speed",
+        "Colour Wheel",
+        "Shutter",
+        "Electronic Dimmer",
+        "Gobo Wheel",
+        "Gobo Rotation",
+        "Special Functions",
+        "Built in Programs",
+        "Prism",
+        "Sharpness"
+      ]
+    },
+    {
+      "name": "8 ch mode",
+      "totalChannels": 8,
+      "channels": [
+        "Rotation",
+        "Inclination",
+        "Colour Wheel",
+        "Shutter",
+        "Gobo Wheel",
+        "Gobo Rotation",
+        "Prism",
+        "Sharpness"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1019",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "10.4",
+      "width": "325",
+      "height": "435",
+      "depth": "290"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "170",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

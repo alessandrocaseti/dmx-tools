@@ -1,0 +1,136 @@
+{
+  "manufacturer": "Sagitter",
+  "model": "Lite Beam 5R",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color wheel",
+      "type": "Color"
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Focus",
+      "type": "Beam"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism"
+    },
+    {
+      "name": "Frost",
+      "type": "Effect"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Fixture Control",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Color speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Gobo speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "13 Channel",
+      "totalChannels": 13,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Color wheel",
+        "Gobo wheel",
+        "Shutter",
+        "Dimmer",
+        "Focus",
+        "Prism",
+        "Frost",
+        "Pan/Tilt speed",
+        "Fixture Control"
+      ]
+    },
+    {
+      "name": "15 Channel",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Color wheel",
+        "Gobo wheel",
+        "Shutter",
+        "Dimmer",
+        "Focus",
+        "Prism",
+        "Frost",
+        "Pan/Tilt speed",
+        "Fixture Control",
+        "Color speed",
+        "Gobo speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Philips 5R 189W",
+      "lumens": "7950",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "13",
+      "width": "298",
+      "height": "434",
+      "depth": "203"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "2.5",
+      "degreesMax": "2.5"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "630",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "230",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "manufacturer": "Stairville",
+  "model": "MH-360",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Special",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color/Chase/Fade",
+      "type": "Effect"
+    },
+    {
+      "name": "Chase/Fade Speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 13,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt Speed",
+        "Special",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "Color/Chase/Fade",
+        "Chase/Fade Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "800",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "9",
+      "width": "260",
+      "height": "285",
+      "depth": "317"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "220"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

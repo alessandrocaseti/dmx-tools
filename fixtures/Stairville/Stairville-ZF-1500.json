@@ -1,0 +1,62 @@
+{
+  "manufacturer": "Stairville",
+  "model": "ZF-1500",
+  "type": "FX Fog",
+  "channels": [
+    {
+      "name": "On-Off",
+      "type": "Shutter"
+    },
+    {
+      "name": "Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Sleep interval",
+      "type": "Speed"
+    },
+    {
+      "name": "Spraying duration",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 4,
+      "channels": [
+        "On-Off",
+        "Intensity",
+        "Sleep interval",
+        "Spraying duration"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "15",
+      "width": "300",
+      "height": "210",
+      "depth": "620"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1500",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

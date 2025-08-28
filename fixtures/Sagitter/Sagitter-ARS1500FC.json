@@ -1,0 +1,77 @@
+{
+  "manufacturer": "Sagitter",
+  "model": "ARS1500FC",
+  "type": "FX Fog",
+  "channels": [
+    {
+      "name": "Smoke",
+      "type": "Effect"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color macro",
+      "type": "Color"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "7 Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Smoke",
+        "Dimmer",
+        "Color macro",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.5",
+      "width": "415",
+      "height": "225",
+      "depth": "358"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1600",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

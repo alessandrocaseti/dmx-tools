@@ -1,0 +1,121 @@
+{
+  "manufacturer": "Stairville",
+  "model": "LED BAR 252 RGB (no. 234564)",
+  "type": "Led Bar",
+  "channels": [
+    {
+      "name": "Mode 1",
+      "type": "Effect"
+    },
+    {
+      "name": "Shutter / Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Red1 / All Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green1 / All Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1 / All Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Mode 2",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 20,
+      "channels": [
+        "Mode 1",
+        "Shutter / Speed",
+        "Red1 / All Red",
+        "Green1 / All Green",
+        "Blue 1 / All Blue",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "Mode 2",
+        "Shutter / Speed",
+        "Red1 / All Red",
+        "Green1 / All Green",
+        "Blue 1 / All Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "4500"
+    },
+    "dimensions": {
+      "weight": "4.5",
+      "width": "1100",
+      "height": "161",
+      "depth": "114"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "20"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

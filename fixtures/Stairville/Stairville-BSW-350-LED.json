@@ -1,0 +1,234 @@
+{
+  "manufacturer": "Stairville",
+  "model": "BSW-350 LED",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt-fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Cyan",
+      "type": "Unknown"
+    },
+    {
+      "name": "Cyan fine",
+      "type": "Unknown"
+    },
+    {
+      "name": "Magenta",
+      "type": "Unknown"
+    },
+    {
+      "name": "Magenta fine",
+      "type": "Unknown"
+    },
+    {
+      "name": "Yellow",
+      "type": "Unknown"
+    },
+    {
+      "name": "Yellow fine",
+      "type": "Unknown"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber fine",
+      "type": "Amber"
+    },
+    {
+      "name": "Color wheel",
+      "type": "Color"
+    },
+    {
+      "name": "CRI",
+      "type": "Color"
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo rotation fine",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo wheel 2",
+      "type": "Gobo"
+    },
+    {
+      "name": "Zoom",
+      "type": "Zoom"
+    },
+    {
+      "name": "Zoom fine",
+      "type": "Zoom"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Focus fine",
+      "type": "Focus"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism"
+    },
+    {
+      "name": "Prism rotation",
+      "type": "Prism"
+    },
+    {
+      "name": "Frost filter",
+      "type": "Beam"
+    },
+    {
+      "name": "Macro pan and tilt",
+      "type": "Effect"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "DimmerCurve",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Special functions",
+      "type": "Maintenance"
+    }
+  ],
+  "modes": [
+    {
+      "name": "32-channel",
+      "totalChannels": 32,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt-fine",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Cyan",
+        "Cyan fine",
+        "Magenta",
+        "Magenta fine",
+        "Yellow",
+        "Yellow fine",
+        "Amber",
+        "Amber fine",
+        "Color wheel",
+        "CRI",
+        "Gobo wheel",
+        "Gobo rotation",
+        "Gobo rotation fine",
+        "Gobo wheel 2",
+        "Zoom",
+        "Zoom fine",
+        "Focus",
+        "Focus fine",
+        "Prism",
+        "Prism rotation",
+        "Frost filter",
+        "Macro pan and tilt",
+        "Pan/Tilt speed",
+        "DimmerCurve",
+        "Special functions"
+      ]
+    },
+    {
+      "name": "26-channel",
+      "totalChannels": 26,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt-fine",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Amber",
+        "Color wheel",
+        "CRI",
+        "Gobo wheel",
+        "Gobo rotation",
+        "Gobo rotation fine",
+        "Gobo wheel 2",
+        "Zoom",
+        "Focus",
+        "Prism",
+        "Prism rotation",
+        "Frost filter",
+        "Macro pan and tilt",
+        "Pan/Tilt speed",
+        "DimmerCurve",
+        "Special functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "7000"
+    },
+    "dimensions": {
+      "weight": "25.8",
+      "width": "420",
+      "height": "698",
+      "depth": "265"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "5",
+      "degreesMax": "35"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "370",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

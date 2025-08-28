@@ -1,0 +1,57 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Matrixx FL-110 DMX",
+  "type": "Other",
+  "channels": [
+    {
+      "name": "Pattern/Macro",
+      "type": "Effect"
+    },
+    {
+      "name": "Strobe/Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 channel",
+      "totalChannels": 3,
+      "channels": [
+        "Pattern/Macro",
+        "Strobe/Speed",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "196",
+      "height": "139",
+      "depth": "225"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "12",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "manufacturer": "Stairville",
+  "model": "Mini Stage Par RGBW",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Fixed colour pattern",
+      "type": "Effect"
+    },
+    {
+      "name": "Strobe effect",
+      "type": "Shutter"
+    },
+    {
+      "name": "Mode selection",
+      "type": "Effect"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Mode Selection - 6 Channels",
+      "type": "Effect"
+    },
+    {
+      "name": "Effects speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "4 Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "6 Channels",
+      "totalChannels": 6,
+      "channels": [
+        "Mode Selection - 6 Channels",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Effects speed"
+      ]
+    },
+    {
+      "name": "8 Channels",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Fixed colour pattern",
+        "Strobe effect",
+        "Mode selection",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.9",
+      "width": "195",
+      "height": "140",
+      "depth": "230"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "36",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "manufacturer": "Stairville",
+  "model": "LED PAR64",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Macro",
+      "type": "Color"
+    },
+    {
+      "name": "Speed/Strobe",
+      "type": "Speed"
+    },
+    {
+      "name": "Mode",
+      "type": "Effect"
+    },
+    {
+      "name": "Master Dim",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Macro",
+        "Speed/Strobe",
+        "Mode",
+        "Master Dim"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.7",
+      "width": "230",
+      "height": "400",
+      "depth": "230"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "17",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

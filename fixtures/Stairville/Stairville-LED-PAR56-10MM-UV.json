@@ -1,0 +1,52 @@
+{
+  "manufacturer": "Stairville",
+  "model": "LED PAR56 10MM UV",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.6",
+      "width": "205",
+      "height": "210",
+      "depth": "220"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "10",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "manufacturer": "Stairville",
+  "model": "DJ Lase GR-140 RGY MKII",
+  "type": "Laser",
+  "channels": [
+    {
+      "name": "Mode selection",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Patten rotation",
+      "type": "Effect"
+    },
+    {
+      "name": "Vibration",
+      "type": "Effect"
+    },
+    {
+      "name": "Red Laser",
+      "type": "Beam"
+    },
+    {
+      "name": "Green Laser",
+      "type": "Beam"
+    },
+    {
+      "name": "Colour selection",
+      "type": "Beam"
+    },
+    {
+      "name": "Strobing (strobe effect)",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX 1 mode",
+      "totalChannels": 5,
+      "channels": [
+        "Mode selection",
+        "Patten rotation",
+        "Vibration",
+        "Red Laser",
+        "Green Laser"
+      ]
+    },
+    {
+      "name": "DMX 2 mode",
+      "totalChannels": 5,
+      "channels": [
+        "Mode selection",
+        "Patten rotation",
+        "Vibration",
+        "Colour selection",
+        "Strobing (strobe effect)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.8",
+      "width": "145",
+      "height": "80",
+      "depth": "160"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "15",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

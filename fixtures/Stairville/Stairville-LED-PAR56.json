@@ -1,0 +1,67 @@
+{
+  "manufacturer": "Stairville",
+  "model": "LED PAR56",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Color"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Speed control",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Mode",
+        "Red",
+        "Green",
+        "Blue",
+        "Speed control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.4",
+      "width": "220",
+      "height": "220",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "16",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

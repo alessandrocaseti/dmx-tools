@@ -1,0 +1,146 @@
+{
+  "manufacturer": "Stairville",
+  "model": "xBrick Full-Colour 16X3W",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Red1",
+      "type": "Red"
+    },
+    {
+      "name": "Red2",
+      "type": "Red"
+    },
+    {
+      "name": "Red3",
+      "type": "Red"
+    },
+    {
+      "name": "Red4",
+      "type": "Red"
+    },
+    {
+      "name": "Green1",
+      "type": "Green"
+    },
+    {
+      "name": "Green2",
+      "type": "Green"
+    },
+    {
+      "name": "Green3",
+      "type": "Green"
+    },
+    {
+      "name": "Green4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue4",
+      "type": "Blue"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe Effect",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "5 channel",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master Dimmer",
+        "Strobe Effect"
+      ]
+    },
+    {
+      "name": "13 channel",
+      "totalChannels": 25,
+      "channels": [
+        "Red1",
+        "Green1",
+        "Blue1",
+        "Red2",
+        "Green2",
+        "Blue2",
+        "Red3",
+        "Green3",
+        "Blue3",
+        "Red4",
+        "Green4",
+        "Blue4",
+        "Master Dimmer",
+        "2",
+        "0",
+        "1",
+        "4",
+        "5",
+        "3",
+        "8",
+        "6",
+        "7",
+        "10",
+        "11",
+        "9"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "310",
+      "height": "175",
+      "depth": "72"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

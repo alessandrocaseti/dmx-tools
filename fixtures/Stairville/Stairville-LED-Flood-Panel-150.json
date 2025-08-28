@@ -1,0 +1,101 @@
+{
+  "manufacturer": "Stairville",
+  "model": "LED Flood Panel 150",
+  "type": "Par",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red/Colour preset/Speed (slow to fast)/Sensitivity (low to high)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe",
+      "type": "Speed"
+    },
+    {
+      "name": "Mode",
+      "type": "Effect"
+    },
+    {
+      "name": "ID control",
+      "type": "Effect"
+    },
+    {
+      "name": "Fader response",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3-channel",
+      "totalChannels": 3,
+      "channels": [
+        "Red/Colour preset/Speed (slow to fast)/Sensitivity (low to high)",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4-channel",
+      "totalChannels": 4,
+      "channels": [
+        "Master dimmer",
+        "Red/Colour preset/Speed (slow to fast)/Sensitivity (low to high)",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "8-channel",
+      "totalChannels": 8,
+      "channels": [
+        "Master dimmer",
+        "Red/Colour preset/Speed (slow to fast)/Sensitivity (low to high)",
+        "Green",
+        "Blue",
+        "Strobe",
+        "Mode",
+        "ID control",
+        "Fader response"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.8",
+      "width": "260",
+      "height": "210",
+      "depth": "68"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "18",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

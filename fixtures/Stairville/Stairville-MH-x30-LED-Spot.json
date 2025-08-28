@@ -1,0 +1,117 @@
+{
+  "manufacturer": "Stairville",
+  "model": "MH-x30 LED Spot",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed pan/tilt",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe effect",
+      "type": "Shutter"
+    },
+    {
+      "name": "Colour wheel",
+      "type": "Color"
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Special settings",
+      "type": "Maintenance"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1: dmx 9 ch mode",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Speed pan/tilt",
+        "Dimmer",
+        "Strobe effect",
+        "Colour wheel",
+        "Gobo wheel",
+        "Gobo rotation",
+        "Focus"
+      ]
+    },
+    {
+      "name": "Mode 2: dmx 12 ch mode",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Speed pan/tilt",
+        "Dimmer",
+        "Strobe effect",
+        "Colour wheel",
+        "Gobo wheel",
+        "Gobo rotation",
+        "Focus",
+        "Special settings"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "6000"
+    },
+    "dimensions": {
+      "weight": "5.8",
+      "width": "280",
+      "height": "374",
+      "depth": "150"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "14",
+      "degreesMax": "14"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "200"
+    },
+    "technical": {
+      "powerConsumption": "94",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

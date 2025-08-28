@@ -1,0 +1,139 @@
+{
+  "manufacturer": "Stairville",
+  "model": "MH-x200 Pro Spot",
+  "type": "Moving Head",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan Fine, 16 Bit",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine, 16 Bit",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed Rotation /Inclination",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour Wheel",
+      "type": "Color"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo Wheel 1, Movable",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo Wheel 2, Static",
+      "type": "Gobo"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Aperture",
+      "type": "Beam"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism"
+    },
+    {
+      "name": "Functions",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Effects",
+      "type": "Effect"
+    }
+  ],
+  "modes": [
+    {
+      "name": "11 Channels",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour Wheel",
+        "Shutter",
+        "Dimmer",
+        "Gobo Wheel 1, Movable",
+        "Gobo Rotation",
+        "Gobo Wheel 2, Static",
+        "Focus",
+        "Aperture",
+        "Prism"
+      ]
+    },
+    {
+      "name": "16 Channels",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan Fine, 16 Bit",
+        "Tilt Fine, 16 Bit",
+        "Speed Rotation /Inclination",
+        "Colour Wheel",
+        "Shutter",
+        "Dimmer",
+        "Gobo Wheel 1, Movable",
+        "Gobo Rotation",
+        "Gobo Wheel 2, Static",
+        "Focus",
+        "Aperture",
+        "Prism",
+        "Functions",
+        "Effects"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2096",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "20.5",
+      "width": "495",
+      "height": "482",
+      "depth": "422"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

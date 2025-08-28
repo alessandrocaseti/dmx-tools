@@ -1,0 +1,104 @@
+{
+  "manufacturer": "Stairville",
+  "model": "BEL6 IP Bar HEX",
+  "type": "Led Bar",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Function selection",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Automatic Show Speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "6-channel",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "10-channel",
+      "totalChannels": 10,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Function selection",
+        "Automatic Show Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.5",
+      "width": "510",
+      "height": "100",
+      "depth": "90"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "70",
+      "dmxConnector": "3-pin IP65"
+    }
+  }
+}

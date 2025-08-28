@@ -1,0 +1,82 @@
+{
+  "manufacturer": "Stairville",
+  "model": "DJ Lase 40-G MK-III",
+  "type": "Laser",
+  "channels": [
+    {
+      "name": "Operating Mode",
+      "type": "Maintenance"
+    },
+    {
+      "name": "Pattern Selection",
+      "type": "Gobo"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Y Axis Rotation",
+      "type": "Effect"
+    },
+    {
+      "name": "X Axis Rotation",
+      "type": "Effect"
+    },
+    {
+      "name": "Z Axis Rotation",
+      "type": "Effect"
+    },
+    {
+      "name": "X-Axis Moving",
+      "type": "Pan"
+    },
+    {
+      "name": "Y-Axis Moving",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "8 Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Operating Mode",
+        "Pattern Selection",
+        "Zoom",
+        "Y Axis Rotation",
+        "X Axis Rotation",
+        "Z Axis Rotation",
+        "X-Axis Moving",
+        "Y-Axis Moving"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.26",
+      "width": "155",
+      "height": "85",
+      "depth": "145"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Barrel",
+      "panMax": "360",
+      "tiltMax": "360"
+    },
+    "technical": {
+      "powerConsumption": "12",
+      "dmxConnector": "3-pin"
+    }
+  }
+}
