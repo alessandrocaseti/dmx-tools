@@ -5,7 +5,14 @@
   "channels": [
     {
       "name": "Pump",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pump"
+        }
+      ]
     }
   ],
   "modes": [

@@ -1753,15 +1753,186 @@
     },
     {
       "name": "Show Programs 1",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Show program 01"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Show program 02"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Show program 03"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Show program 04"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Show program 05"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Show program 06"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Show program 07"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Show program 08"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Show program 09"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Show program 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Show program 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Show program 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Show program 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Show program 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Show program 15"
+        }
+      ]
     },
     {
       "name": "Show Programs 2",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Show program 16"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Show program 17"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Show program 18"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Show program 19"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Show program 20"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Show program 21"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Show program 22"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Show program 23"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Show program 24"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Show program 25"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Show program 26"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Show program 27"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Show program 28"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Show program 29"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Show program 30"
+        }
+      ]
     },
     {
       "name": "Program Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program speed - slow ... fast"
+        }
+      ]
     }
   ],
   "modes": [

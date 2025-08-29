@@ -29,7 +29,54 @@
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe closed"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Randomly pulsing (ascending)"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Randomly increasing (ascending)"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Randomly decreasing (ascending)"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random strobe effect (ascending)"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Strobe effect pause (5s to 1s)"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe (ascending)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
     },
     {
       "name": "Cyan",
@@ -65,27 +112,409 @@
     },
     {
       "name": "Color wheel",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "15",
+          "name": "Open / dark red"
+        },
+        {
+          "min": "16",
+          "max": "25",
+          "name": "Dark red"
+        },
+        {
+          "min": "26",
+          "max": "35",
+          "name": "Dark red / dark orange"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Dark orange"
+        },
+        {
+          "min": "46",
+          "max": "55",
+          "name": "Dark orange / dark blue"
+        },
+        {
+          "min": "56",
+          "max": "65",
+          "name": "Dark blue"
+        },
+        {
+          "min": "66",
+          "max": "75",
+          "name": "Dark blue / yellow"
+        },
+        {
+          "min": "76",
+          "max": "85",
+          "name": "Yellow"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "Yellow / dark green"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Dark green"
+        },
+        {
+          "min": "106",
+          "max": "115",
+          "name": "Dark green / lavender"
+        },
+        {
+          "min": "116",
+          "max": "125",
+          "name": "Lavender"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Lavender / cyan"
+        },
+        {
+          "min": "136",
+          "max": "145",
+          "name": "Cyan"
+        },
+        {
+          "min": "146",
+          "max": "185",
+          "name": "Open"
+        },
+        {
+          "min": "186",
+          "max": "218",
+          "name": "Clockwise run-through (descending)"
+        },
+        {
+          "min": "219",
+          "max": "222",
+          "name": "Stop"
+        },
+        {
+          "min": "223",
+          "max": "255",
+          "name": "Anti-clockwise run-through (ascending)"
+        }
+      ]
     },
     {
       "name": "CRI",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "CRI off"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "CRI open"
+        }
+      ]
     },
     {
       "name": "Gobo wheel",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "17",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "18",
+          "max": "29",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "41",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "42",
+          "max": "53",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "54",
+          "max": "65",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "66",
+          "max": "77",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "78",
+          "max": "89",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "90",
+          "max": "101",
+          "name": "Gobo 1 shake effect (ascending)"
+        },
+        {
+          "min": "102",
+          "max": "113",
+          "name": "Gobo 2 shake effect (ascending)"
+        },
+        {
+          "min": "114",
+          "max": "125",
+          "name": "Gobo 3 shake effect (ascending)"
+        },
+        {
+          "min": "126",
+          "max": "137",
+          "name": "Gobo 4 shake effect (ascending)"
+        },
+        {
+          "min": "138",
+          "max": "149",
+          "name": "Gobo 5 shake effect (ascending)"
+        },
+        {
+          "min": "150",
+          "max": "161",
+          "name": "Gobo 6 shake effect (ascending)"
+        },
+        {
+          "min": "162",
+          "max": "173",
+          "name": "Gobo 7 shake effect (ascending)"
+        },
+        {
+          "min": "174",
+          "max": "185",
+          "name": "Open"
+        },
+        {
+          "min": "186",
+          "max": "218",
+          "name": "Clockwise run-through (descending)"
+        },
+        {
+          "min": "219",
+          "max": "222",
+          "name": "Stop"
+        },
+        {
+          "min": "223",
+          "max": "255",
+          "name": "Anti-clockwise run-through (ascending)"
+        }
+      ]
     },
     {
       "name": "Gobo rotation",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Gobo rotation off"
+        },
+        {
+          "min": "6",
+          "max": "128",
+          "name": "Gobo position 0°...540°"
+        },
+        {
+          "min": "129",
+          "max": "191",
+          "name": "Clockwise gobo rotation (descending)"
+        },
+        {
+          "min": "192",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Anti-clockwise gobo rotation (ascending)"
+        }
+      ]
     },
     {
       "name": "Gobo rotation fine",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Gobo rotation fine adjustment"
+        }
+      ]
     },
     {
       "name": "Gobo wheel 2",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Open shake effect (ascending)"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Gobo 1 shake effect (ascending)"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "Gobo 2 shake effect (ascending)"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Gobo 3 shake effect (ascending)"
+        },
+        {
+          "min": "126",
+          "max": "133",
+          "name": "Gobo 4 shake effect (ascending)"
+        },
+        {
+          "min": "134",
+          "max": "141",
+          "name": "Gobo 5 shake effect (ascending)"
+        },
+        {
+          "min": "142",
+          "max": "149",
+          "name": "Gobo 6 shake effect (ascending)"
+        },
+        {
+          "min": "150",
+          "max": "157",
+          "name": "Gobo 7 shake effect (ascending)"
+        },
+        {
+          "min": "158",
+          "max": "165",
+          "name": "Gobo 8 shake effect (ascending)"
+        },
+        {
+          "min": "166",
+          "max": "173",
+          "name": "Gobo 9 shake effect (ascending)"
+        },
+        {
+          "min": "174",
+          "max": "181",
+          "name": "Gobo 10 shake effect (ascending)"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Gobo 11 shake effect (ascending)"
+        },
+        {
+          "min": "190",
+          "max": "197",
+          "name": "Open"
+        },
+        {
+          "min": "198",
+          "max": "225",
+          "name": "Clockwise gobo rotation (descending)"
+        },
+        {
+          "min": "226",
+          "max": "227",
+          "name": "Stop"
+        },
+        {
+          "min": "228",
+          "max": "255",
+          "name": "Anti-clockwise gobo rotation (descending)"
+        }
+      ]
     },
     {
       "name": "Zoom",
@@ -105,19 +534,107 @@
     },
     {
       "name": "Prism",
-      "type": "Prism"
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No prism"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Prism (5 facets)"
+        }
+      ]
     },
     {
       "name": "Prism rotation",
-      "type": "Prism"
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Prism rotation off"
+        },
+        {
+          "min": "6",
+          "max": "128",
+          "name": "Prism position 0...540°"
+        },
+        {
+          "min": "129",
+          "max": "191",
+          "name": "Prism rotation (descending)"
+        },
+        {
+          "min": "192",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Prism rotation (descending)"
+        }
+      ]
     },
     {
       "name": "Frost filter",
-      "type": "Beam"
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Frost filter 0 to 100%"
+        }
+      ]
     },
     {
       "name": "Macro pan and tilt",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Off"
+        },
+        {
+          "min": "6",
+          "max": "40",
+          "name": "Pan (small to large)"
+        },
+        {
+          "min": "41",
+          "max": "75",
+          "name": "Tilt (small to large)"
+        },
+        {
+          "min": "76",
+          "max": "110",
+          "name": "Pan and tilt (small to large)"
+        },
+        {
+          "min": "111",
+          "max": "145",
+          "name": "Pan and tilt inverted (small to large)"
+        },
+        {
+          "min": "146",
+          "max": "180",
+          "name": "Circle (small to large)"
+        },
+        {
+          "min": "181",
+          "max": "215",
+          "name": "Circle inverted (small to large)"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Random (small to large)"
+        }
+      ]
     },
     {
       "name": "Pan/Tilt speed",
@@ -125,11 +642,125 @@
     },
     {
       "name": "DimmerCurve",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "63",
+          "name": "Linear dimmer curve"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Exponential dimmer curve"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Logarithmic dimmer curve"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "S-shaped dimmer curve"
+        }
+      ]
     },
     {
       "name": "Special functions",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "20",
+          "name": "Blackout while moving (press and hold 3s)"
+        },
+        {
+          "min": "21",
+          "max": "35",
+          "name": "Blackout while moving (press and hold 5s)"
+        },
+        {
+          "min": "36",
+          "max": "50",
+          "name": "Inverted rotation on (press and hold 3s)"
+        },
+        {
+          "min": "51",
+          "max": "65",
+          "name": "Inverted rotation off (press and hold 5s)"
+        },
+        {
+          "min": "66",
+          "max": "80",
+          "name": "Inverted inclination on (press and hold 3s)"
+        },
+        {
+          "min": "81",
+          "max": "95",
+          "name": "Inverted inclination off (press and hold 5s)"
+        },
+        {
+          "min": "96",
+          "max": "110",
+          "name": "Automatic fan (press and hold 3s)"
+        },
+        {
+          "min": "111",
+          "max": "125",
+          "name": "Silent fan (press and hold 5s)"
+        },
+        {
+          "min": "126",
+          "max": "140",
+          "name": "LED PWM freq. 800Hz (press and hold 3s)"
+        },
+        {
+          "min": "141",
+          "max": "155",
+          "name": "LED PWM freq. 1200Hz (press and hold 3s)"
+        },
+        {
+          "min": "156",
+          "max": "170",
+          "name": "LED PWM freq. 2000Hz (press and hold 3s)"
+        },
+        {
+          "min": "171",
+          "max": "185",
+          "name": "LED PWM freq. 3600Hz (press and hold 3s)"
+        },
+        {
+          "min": "186",
+          "max": "200",
+          "name": "LED PWM freq. 25kHz (press and hold 3s)"
+        },
+        {
+          "min": "201",
+          "max": "215",
+          "name": "Pan/tilt reset (press and hold 3s)"
+        },
+        {
+          "min": "216",
+          "max": "230",
+          "name": "Head reset (press and hold 3s)"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Full reset (press and hold 3s)"
+        }
+      ]
     }
   ],
   "modes": [

@@ -13,11 +13,45 @@
     },
     {
       "name": "Patterne/Chase",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "159",
+          "name": "Pattern"
+        },
+        {
+          "min": "160",
+          "max": "255",
+          "name": "Chase"
+        }
+      ]
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Strobe"
+        },
+        {
+          "min": "10",
+          "max": "249",
+          "name": "Strobe Speed"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Stand Alone"
+        }
+      ]
     }
   ],
   "modes": [

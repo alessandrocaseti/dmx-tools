@@ -5,7 +5,29 @@
   "channels": [
     {
       "name": "Mode",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "RGB control"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "7 colour fades"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "7 colour changes"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "3 colour changes"
+        }
+      ]
     },
     {
       "name": "Red",
@@ -21,7 +43,29 @@
     },
     {
       "name": "Speed control",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "100",
+          "name": "High to slow"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "No function"
+        },
+        {
+          "min": "151",
+          "max": "255",
+          "name": "Speed control by the device or controller"
+        }
+      ]
     }
   ],
   "modes": [

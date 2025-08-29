@@ -37,11 +37,45 @@
     },
     {
       "name": "Function selection",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Settings of color and birghtness via channels 1...8"
+        },
+        {
+          "min": "5",
+          "max": "80",
+          "name": "Selection of a mixed color"
+        },
+        {
+          "min": "81",
+          "max": "150",
+          "name": "Color change effect"
+        },
+        {
+          "min": "151",
+          "max": "220",
+          "name": "Color transition effect"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "Automatic sound controlled show"
+        }
+      ]
     },
     {
       "name": "Automatic Show Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Running speed of automatic show, increasing when channel 9 = 81...220"
+        }
+      ]
     }
   ],
   "modes": [

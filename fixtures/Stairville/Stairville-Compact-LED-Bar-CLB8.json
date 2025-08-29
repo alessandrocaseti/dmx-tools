@@ -13,11 +13,145 @@
     },
     {
       "name": "Speed/Sensitivity",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed/sensitivity increasing"
+        }
+      ]
     },
     {
       "name": "Colour Selection/Shows/Sound Mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "LEDs off"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Amber"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Green"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Ice-blue"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Blue"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cold white"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Warm white"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pink"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Cyan"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Light blue"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Preprogrammed automatic show no. 1"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Preprogrammed automatic show no. 2"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Preprogrammed automatic show no. 3"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Preprogrammed automatic show no. 4"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Preprogrammed automatic show no. 5"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Preprogrammed automatic show no. 6"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Preprogrammed automatic show no. 7"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Preprogrammed automatic show no. 8"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Preprogrammed automatic show no. 9"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Preprogrammed automatic show no. 10"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Preprogrammed automatic show no. 11"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Preprogrammed automatic show no. 12"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Mode"
+        }
+      ]
     },
     {
       "name": "White Spot 1",

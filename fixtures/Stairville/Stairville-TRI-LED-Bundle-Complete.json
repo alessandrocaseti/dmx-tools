@@ -5,7 +5,24 @@
   "channels": [
     {
       "name": "Control/Operating Mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "RGB Mode (ch. 2-15)"
+        },
+        {
+          "min": "10",
+          "max": "249",
+          "name": "Auto programs"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound activated"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -13,7 +30,19 @@
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No effect"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe (inc speed)"
+        }
+      ]
     },
     {
       "name": "Red Spot 1",
@@ -105,11 +134,145 @@
     },
     {
       "name": "Macros",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Yellow"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Green"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Cyan"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Blue"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "White"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Program01"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Program02"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Program03"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Program04"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Program05"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Program06"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Program07"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Program08"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Program09"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Program10"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Program11"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Program12"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Program13"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Program14"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Program15"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Program16"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound mode"
+        }
+      ]
     },
     {
       "name": "Speed/Sensitivity",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed or sound sensitivity (0 to 100%)"
+        }
+      ]
     }
   ],
   "modes": [

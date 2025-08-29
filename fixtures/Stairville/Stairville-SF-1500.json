@@ -5,7 +5,29 @@
   "channels": [
     {
       "name": "On-Off",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "Off"
+        },
+        {
+          "min": "14",
+          "max": "127",
+          "name": "Continuos CH2"
+        },
+        {
+          "min": "128",
+          "max": "231",
+          "name": "Timer-Controlled CH2,3,4"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Continuos to MAX"
+        }
+      ]
     },
     {
       "name": "Intensity",
@@ -13,11 +35,135 @@
     },
     {
       "name": "Fog Duration",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Duration 1s"
+        },
+        {
+          "min": "5",
+          "max": "29",
+          "name": "Duration 13s"
+        },
+        {
+          "min": "30",
+          "max": "54",
+          "name": "Duration 33s"
+        },
+        {
+          "min": "55",
+          "max": "79",
+          "name": "Duration 53s"
+        },
+        {
+          "min": "80",
+          "max": "104",
+          "name": "Duration 73s"
+        },
+        {
+          "min": "105",
+          "max": "129",
+          "name": "Duration 92s"
+        },
+        {
+          "min": "130",
+          "max": "154",
+          "name": "Duration 112s"
+        },
+        {
+          "min": "155",
+          "max": "179",
+          "name": "Duration 131s"
+        },
+        {
+          "min": "180",
+          "max": "204",
+          "name": "Duration 151s"
+        },
+        {
+          "min": "205",
+          "max": "229",
+          "name": "Duration 107s"
+        },
+        {
+          "min": "230",
+          "max": "254",
+          "name": "Duration 190s"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Duration 200s"
+        }
+      ]
     },
     {
       "name": "Time interval",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Interval 1s"
+        },
+        {
+          "min": "5",
+          "max": "29",
+          "name": "Interval 13s"
+        },
+        {
+          "min": "30",
+          "max": "54",
+          "name": "Interval33s"
+        },
+        {
+          "min": "55",
+          "max": "79",
+          "name": "Interval 53s"
+        },
+        {
+          "min": "80",
+          "max": "104",
+          "name": "Interval 73s"
+        },
+        {
+          "min": "105",
+          "max": "129",
+          "name": "Interval 92s"
+        },
+        {
+          "min": "130",
+          "max": "154",
+          "name": "Interval 112s"
+        },
+        {
+          "min": "155",
+          "max": "179",
+          "name": "Interval 131s"
+        },
+        {
+          "min": "180",
+          "max": "204",
+          "name": "Interval 151s"
+        },
+        {
+          "min": "205",
+          "max": "229",
+          "name": "Interval 107s"
+        },
+        {
+          "min": "230",
+          "max": "254",
+          "name": "Interval 190s"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Interval 200s"
+        }
+      ]
     }
   ],
   "modes": [

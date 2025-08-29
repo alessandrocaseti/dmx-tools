@@ -21,15 +21,56 @@
     },
     {
       "name": "Function",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "No function"
+        },
+        {
+          "min": "64",
+          "max": "128",
+          "name": "Color macro 1 (fade)"
+        },
+        {
+          "min": "129",
+          "max": "192",
+          "name": "Color macro 2 (color change)"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Sound mode (strobe)"
+        }
+      ]
     },
     {
       "name": "Color Macro Speed - Microphone Sensitivity",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color macro speed (ch5) - Microphone sensitivity (ch5)"
+        }
+      ]
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "11",
+          "name": "No Strobe"
+        },
+        {
+          "min": "12",
+          "max": "255",
+          "name": "Strobe from min to max"
+        }
+      ]
     },
     {
       "name": "Color Macro",

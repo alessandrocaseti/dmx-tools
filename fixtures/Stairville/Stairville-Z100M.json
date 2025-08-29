@@ -9,7 +9,29 @@
     },
     {
       "name": "Stroboscope",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Strobe Effect"
+        },
+        {
+          "min": "16",
+          "max": "95",
+          "name": "Stroboscope Effect, Speed increasing (1 Hz ... 25 Hz)"
+        },
+        {
+          "min": "96",
+          "max": "175",
+          "name": "Stroboscope Effect, Speed increasing (1 Hz)"
+        },
+        {
+          "min": "176",
+          "max": "255",
+          "name": "Stroboscope Effect, random speed"
+        }
+      ]
     },
     {
       "name": "Fine Dimmer",

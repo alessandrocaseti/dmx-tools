@@ -21,15 +21,116 @@
     },
     {
       "name": "Color Control",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Color Selection"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Color Rotation Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Rotation Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Color Rotation Slow to Fast"
+        }
+      ]
     },
     {
       "name": "Gobo Selection",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Gobo Selection"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Gobo Jitter"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Gobo Rotation Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Gobo Rotation Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Gobo Rotation Slow to Fast"
+        }
+      ]
     },
     {
       "name": "Lamp Control",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Lamp Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Lamp On"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Lamp Strobe Speed - Slow to Fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Lamp On"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fade On Fast, Fade Off Slow"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Lamp On"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Lamp on Fast, Lamp off Slow"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Lamp On"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe Control"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Lamp On"
+        }
+      ]
     },
     {
       "name": "Master dimmer fine",
@@ -41,11 +142,95 @@
     },
     {
       "name": "Function Controls",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Lamp Off During X/Y Rotation"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "No function"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Lamp Off During Color Wheel Rotation"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No function"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Lamp Off During Gobo Rotation"
+        },
+        {
+          "min": "120",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound Mode On/Off"
+        }
+      ]
     },
     {
       "name": "Effects",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard Lighting Effects"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage Lighting Effects"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV Lighting Effects"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural Lighting Effects"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theater Lighting Effects"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default Lamp Effect"
+        }
+      ]
     }
   ],
   "modes": [

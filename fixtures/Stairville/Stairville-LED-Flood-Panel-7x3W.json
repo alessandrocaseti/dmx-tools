@@ -9,7 +9,154 @@
     },
     {
       "name": "Red/Colour preset/Speed (slow to fast)/Sensitivity (low to high)",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Red: 255"
+        },
+        {
+          "min": "9",
+          "max": "17",
+          "name": "Red: 255, Green: 50"
+        },
+        {
+          "min": "18",
+          "max": "26",
+          "name": "Red: 255, Green: 150"
+        },
+        {
+          "min": "27",
+          "max": "35",
+          "name": "Red: 255, Green: 255"
+        },
+        {
+          "min": "36",
+          "max": "44",
+          "name": "Red: 200, Green: 255"
+        },
+        {
+          "min": "45",
+          "max": "53",
+          "name": "Red: 100, Green: 255"
+        },
+        {
+          "min": "54",
+          "max": "62",
+          "name": "Red: 40, Green: 255"
+        },
+        {
+          "min": "63",
+          "max": "71",
+          "name": "Green: 255"
+        },
+        {
+          "min": "72",
+          "max": "80",
+          "name": "Green: 255, Blue:50"
+        },
+        {
+          "min": "81",
+          "max": "89",
+          "name": "Green: 255, Blue: 150"
+        },
+        {
+          "min": "90",
+          "max": "98",
+          "name": "Green: 255, Blue: 255"
+        },
+        {
+          "min": "99",
+          "max": "107",
+          "name": "Green: 150, Blue: 255"
+        },
+        {
+          "min": "108",
+          "max": "116",
+          "name": "Green: 50, Blue: 255"
+        },
+        {
+          "min": "117",
+          "max": "125",
+          "name": "Blue: 255"
+        },
+        {
+          "min": "126",
+          "max": "134",
+          "name": "Red: 50, Blue: 255"
+        },
+        {
+          "min": "135",
+          "max": "143",
+          "name": "Red: 150, Blue: 255"
+        },
+        {
+          "min": "144",
+          "max": "152",
+          "name": "Red: 255, Blue: 255"
+        },
+        {
+          "min": "153",
+          "max": "161",
+          "name": "Red: 220, Blue: 255"
+        },
+        {
+          "min": "162",
+          "max": "170",
+          "name": "Red: 150, Green: 50, Blue: 100"
+        },
+        {
+          "min": "171",
+          "max": "179",
+          "name": "Red: 50, Green: 180, Blue: 220"
+        },
+        {
+          "min": "180",
+          "max": "188",
+          "name": "Red: 50, Green: 220, Blue: 100"
+        },
+        {
+          "min": "189",
+          "max": "197",
+          "name": "Red: 150, Green: 220"
+        },
+        {
+          "min": "198",
+          "max": "206",
+          "name": "Red: 150, Blue: 220"
+        },
+        {
+          "min": "207",
+          "max": "215",
+          "name": "Green: 180, Blue: 220"
+        },
+        {
+          "min": "216",
+          "max": "224",
+          "name": "Green: 220, Blue: 50"
+        },
+        {
+          "min": "225",
+          "max": "233",
+          "name": "Red: 220, Green 180, Blue: 220"
+        },
+        {
+          "min": "234",
+          "max": "242",
+          "name": "Red: 220, Green: 200, Blue: 100"
+        },
+        {
+          "min": "243",
+          "max": "251",
+          "name": "Red: 255, Green: 200, Blue: 150"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Red: 255, Green: 255, Blue: 255"
+        }
+      ]
     },
     {
       "name": "Green",
@@ -21,19 +168,217 @@
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe (slow to fast)"
+        }
+      ]
     },
     {
       "name": "Mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Static RGB mix as defined with channels 2, 3 and 4"
+        },
+        {
+          "min": "1",
+          "max": "24",
+          "name": "Static colour, as defined with channel 2"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "Sets Pr02 (7-colour gradual change)"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "Sets Pr03 (3-colour gradual change)"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "Sets Pr04 (7-colour jumping change)"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Sets Pr05 (3-colour jumping change)"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "Sets Pr06 (fantasy change 1)"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "Sets Pr07 (fantasy change 2)"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "Sets Pr08 (red gradual change)"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Sets Pr09 (green gradual change)"
+        },
+        {
+          "min": "225",
+          "max": "249",
+          "name": "Sets Pr10 (blue gradual change)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sets the sound active mode"
+        }
+      ]
     },
     {
       "name": "ID control",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "All IDs (ID1...ID66)"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "ID1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "ID2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "ID3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "ID4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "ID5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "ID6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "ID7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "ID8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "ID9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "ID10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "ID11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "ID12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "ID13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "ID14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "ID15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "ID16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "ID17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "ID18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "ID19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "ID20"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "ID21...ID66"
+        }
+      ]
     },
     {
       "name": "Fader response",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Instant fader response for channel 1, 2, 3, 4"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Delayed fader response for channel 1, 2, 3, 4"
+        }
+      ]
     }
   ],
   "modes": [

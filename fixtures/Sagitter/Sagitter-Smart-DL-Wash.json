@@ -57,11 +57,50 @@
     },
     {
       "name": "Macro",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "49",
+          "name": "No function"
+        },
+        {
+          "min": "50",
+          "max": "189",
+          "name": "Macro (to be used with dimmer channel)"
+        },
+        {
+          "min": "190",
+          "max": "233",
+          "name": "Not used"
+        },
+        {
+          "min": "234",
+          "max": "236",
+          "name": "Reset"
+        },
+        {
+          "min": "237",
+          "max": "249",
+          "name": "Not used"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound Mode (to be used with dimmer channel)"
+        }
+      ]
     },
     {
       "name": "Macro Speed or Sound Sensitivity",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Macro speed or sound sensitivity"
+        }
+      ]
     }
   ],
   "modes": [

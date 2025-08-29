@@ -17,7 +17,44 @@
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "123",
+          "name": "Strobe effect, increasing frequency"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "185",
+          "name": "Strobe effect, random frequency, LED 1 and 2 synchronous"
+        },
+        {
+          "min": "186",
+          "max": "190",
+          "name": "Open"
+        },
+        {
+          "min": "191",
+          "max": "249",
+          "name": "Strobe effect, random frequency, LED 1 and 2 asynchronous"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
     }
   ],
   "modes": [

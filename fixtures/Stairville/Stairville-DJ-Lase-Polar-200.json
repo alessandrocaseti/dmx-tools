@@ -5,27 +5,144 @@
   "channels": [
     {
       "name": "Operating mode selection",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Laser off"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Automatic show in random order, fast"
+        },
+        {
+          "min": "103",
+          "max": "154",
+          "name": "Automatic show in random order, slow"
+        },
+        {
+          "min": "155",
+          "max": "206",
+          "name": "Sound controlled automatic show in random order"
+        },
+        {
+          "min": "207",
+          "max": "255",
+          "name": "DMX mode This setting enables the function of the other DMX channels"
+        }
+      ]
     },
     {
       "name": "Red laser",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Laser off"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Laser is constantly on"
+        },
+        {
+          "min": "128",
+          "max": "254",
+          "name": "Strobe effect (flashing), decreasing speed"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound controlled strobe effect (flashing)"
+        }
+      ]
     },
     {
       "name": "Green laser",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Laser off"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Laser is constantly on"
+        },
+        {
+          "min": "128",
+          "max": "254",
+          "name": "Strobe effect (flashing), decreasing speed"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound controlled strobe effect (flashing)"
+        }
+      ]
     },
     {
       "name": "Rotation of the red and green laser around the Z-axis (rolling)",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No rotation"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Clockwise rotating effect, speed increasing from slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "No rotation"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Anti-clockwise rotating effect, speed increasing from slow to fast"
+        }
+      ]
     },
     {
       "name": "Intensity of the blue LED background illumination",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Intensity of the blue LED background illumination"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "Increasing brightness (0 %...100 %)"
+        }
+      ]
     },
     {
       "name": "Strobe effect (flashing) of the blue LED background illumination",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Background illumination off"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "Background illumination is constantly on"
+        }
+      ]
     }
   ],
   "modes": [

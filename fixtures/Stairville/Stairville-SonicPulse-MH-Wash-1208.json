@@ -21,7 +21,24 @@
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "127",
+          "name": "Linear strobe, increasing speed"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Random strobe effect, increasing speed"
+        }
+      ]
     },
     {
       "name": "Red (All LEDS)",
@@ -41,7 +58,99 @@
     },
     {
       "name": "Special functions (hold for at least 5 seconds)",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Reset if the value is transmitted for at least 5 seconds"
+        },
+        {
+          "min": "15",
+          "max": "44",
+          "name": "No function"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Automatic ventilation"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Fast ventilation"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Slow ventilation"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Ventilation off"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Linear proportional course (Linear)"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Quadratic curve with a flat profile at the beginning and a steep profile at the end (Square Law)"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Inverted square curve with a steep course at the beginning and a flat course at the end (inverse square law)"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Non-linear curve with a distinctive flat profile at the beginning and end (S-Curve)"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Steep gradient"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Flat course"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Normal rotation"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Inverted rotation"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Normal tilt"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Inverted tilt"
+        },
+        {
+          "min": "115",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
     },
     {
       "name": "Pan fine",
@@ -53,11 +162,260 @@
     },
     {
       "name": "Colour settings",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "No function"
+        },
+        {
+          "min": "25",
+          "max": "31",
+          "name": "R: 255; G: 000; B: 000; W: 000"
+        },
+        {
+          "min": "32",
+          "max": "38",
+          "name": "R: 255; G: 000; B: 000; W: 100"
+        },
+        {
+          "min": "39",
+          "max": "45",
+          "name": "R: 255; G: 000; B: 000; W: 200"
+        },
+        {
+          "min": "46",
+          "max": "52",
+          "name": "R: 255; G: 050; B: 000; W: 000"
+        },
+        {
+          "min": "53",
+          "max": "59",
+          "name": "R: 255; G: 150; B: 000; W: 000"
+        },
+        {
+          "min": "60",
+          "max": "66",
+          "name": "R: 255; G: 255; B: 000; W: 000"
+        },
+        {
+          "min": "67",
+          "max": "73",
+          "name": "R: 255; G: 255; B: 000; W: 075"
+        },
+        {
+          "min": "74",
+          "max": "80",
+          "name": "R: 000; G: 255; B: 000; W: 255"
+        },
+        {
+          "min": "81",
+          "max": "87",
+          "name": "R: 000; G: 255; B: 000; W: 150"
+        },
+        {
+          "min": "88",
+          "max": "94",
+          "name": "R: 000; G: 255; B: 000; W: 050"
+        },
+        {
+          "min": "95",
+          "max": "101",
+          "name": "R: 000; G: 255; B: 000; W: 000"
+        },
+        {
+          "min": "102",
+          "max": "108",
+          "name": "R: 000; G: 255; B: 050; W: 000"
+        },
+        {
+          "min": "109",
+          "max": "115",
+          "name": "R: 000; G: 255; B: 150; W: 000"
+        },
+        {
+          "min": "116",
+          "max": "122",
+          "name": "R: 000; G: 255; B: 255; W: 000"
+        },
+        {
+          "min": "123",
+          "max": "129",
+          "name": "R: 000; G: 255; B: 255; W: 075"
+        },
+        {
+          "min": "130",
+          "max": "136",
+          "name": "R: 000; G: 255; B: 255; W: 150"
+        },
+        {
+          "min": "137",
+          "max": "143",
+          "name": "R: 000; G: 100; B: 255; W: 255"
+        },
+        {
+          "min": "144",
+          "max": "150",
+          "name": "R: 000; G: 000; B: 255; W: 100"
+        },
+        {
+          "min": "151",
+          "max": "157",
+          "name": "R: 000; G: 000; B: 255; W: 050"
+        },
+        {
+          "min": "158",
+          "max": "164",
+          "name": "R: 000; G: 000; B: 255; W: 000"
+        },
+        {
+          "min": "165",
+          "max": "171",
+          "name": "R: 075; G: 000; B: 255; W: 000"
+        },
+        {
+          "min": "172",
+          "max": "178",
+          "name": "R: 160; G: 000; B: 255; W: 000"
+        },
+        {
+          "min": "179",
+          "max": "185",
+          "name": "R: 255; G: 000; B: 255; W: 000"
+        },
+        {
+          "min": "186",
+          "max": "192",
+          "name": "R: 255; G: 000; B: 175; W: 000"
+        },
+        {
+          "min": "193",
+          "max": "199",
+          "name": "R: 255; G: 000; B: 100; W: 000"
+        },
+        {
+          "min": "200",
+          "max": "206",
+          "name": "R: 255; G: 000; B: 100; W: 050"
+        },
+        {
+          "min": "207",
+          "max": "213",
+          "name": "R: 255; G: 000; B: 025; W: 050"
+        },
+        {
+          "min": "214",
+          "max": "220",
+          "name": "R: 255; G: 000; B: 025; W: 025"
+        },
+        {
+          "min": "221",
+          "max": "227",
+          "name": "R: 255; G: 000; B: 025; W: 000"
+        },
+        {
+          "min": "228",
+          "max": "234",
+          "name": "R: 000; G: 000; B: 000; W: 255"
+        },
+        {
+          "min": "235",
+          "max": "241",
+          "name": "R: 075; G: 075; B: 000; W: 255"
+        },
+        {
+          "min": "242",
+          "max": "248",
+          "name": "R: 000; G: 000; B: 100; W: 255"
+        },
+        {
+          "min": "249",
+          "max": "255",
+          "name": "R: 255; G: 255; B: 255; W: 255"
+        }
+      ]
     },
     {
       "name": "Colour change",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "No function"
+        },
+        {
+          "min": "18",
+          "max": "34",
+          "name": "Colour shift 1"
+        },
+        {
+          "min": "35",
+          "max": "51",
+          "name": "Colour shift 2"
+        },
+        {
+          "min": "52",
+          "max": "68",
+          "name": "Colour shift 3"
+        },
+        {
+          "min": "69",
+          "max": "85",
+          "name": "Colour shift 4"
+        },
+        {
+          "min": "86",
+          "max": "102",
+          "name": "Colour shift 5"
+        },
+        {
+          "min": "103",
+          "max": "119",
+          "name": "Colour shift 6"
+        },
+        {
+          "min": "120",
+          "max": "136",
+          "name": "Colour shift 7"
+        },
+        {
+          "min": "137",
+          "max": "153",
+          "name": "Colour gradient 1"
+        },
+        {
+          "min": "154",
+          "max": "170",
+          "name": "Colour gradient 2"
+        },
+        {
+          "min": "171",
+          "max": "187",
+          "name": "Colour gradient 3"
+        },
+        {
+          "min": "188",
+          "max": "204",
+          "name": "Colour gradient 4"
+        },
+        {
+          "min": "205",
+          "max": "221",
+          "name": "Colour gradient 5"
+        },
+        {
+          "min": "222",
+          "max": "238",
+          "name": "Colour gradient 6"
+        },
+        {
+          "min": "239",
+          "max": "255",
+          "name": "Colour gradient 7"
+        }
+      ]
     },
     {
       "name": "Red (LED 1)",
@@ -93,7 +451,14 @@
     },
     {
       "name": "Colour effect",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Colour effect, increasing speed"
+        }
+      ]
     }
   ],
   "modes": [

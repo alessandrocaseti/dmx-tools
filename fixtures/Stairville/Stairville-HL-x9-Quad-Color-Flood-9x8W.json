@@ -21,23 +21,133 @@
     },
     {
       "name": "Mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Constant color, set with channels 2-5"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Automatic color change 7 colors"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Automatic color change 12 colors"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Automatic color change 4 colors"
+        }
+      ]
     },
     {
       "name": "Effect Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No automatic color change"
+        },
+        {
+          "min": "11",
+          "max": "100",
+          "name": "Automatic color change as set in channel 1 (fast to slow)"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "No automatic color change"
+        },
+        {
+          "min": "151",
+          "max": "255",
+          "name": "Automatic color change as set in channel 1, speed random"
+        }
+      ]
     },
     {
       "name": "Color Pattern",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No color pattern"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "One of 31 color patterns (channels 6,7 disabled)"
+        }
+      ]
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No strobe"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe (slow to fast), Channel 5 has to be 0-15"
+        }
+      ]
     },
     {
       "name": "Extended Mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Constant color (defined by channels 1-4)"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Fade-out, speed controlled by channel 6, color defined by channels 2-5"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Fade-in, speed controlled by channel 6, color defined by channels 2-5"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Fade-in-out, speed controlled by channel 6, color defined by channels 2-5"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto-mix, speed controlled by channel 6, channels 1-5 without function"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Chase (4 colors), speed controlled by channel 6, channels 1-5 without function"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Chase (12 colors), speed controlled by channel 6, channels 1-5 without function"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Music controlled color change (12 colors)"
+        }
+      ]
     },
     {
       "name": "Dimmer",

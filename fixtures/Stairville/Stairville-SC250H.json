@@ -13,15 +13,216 @@
     },
     {
       "name": "Shutter/Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "132",
+          "max": "247",
+          "name": "Shake, slow to fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
     },
     {
       "name": "Gobo",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Open"
+        },
+        {
+          "min": "9",
+          "max": "17",
+          "name": "Gobo 01"
+        },
+        {
+          "min": "18",
+          "max": "25",
+          "name": "Gobo 02"
+        },
+        {
+          "min": "26",
+          "max": "34",
+          "name": "Gobo 03"
+        },
+        {
+          "min": "35",
+          "max": "43",
+          "name": "Gobo 04"
+        },
+        {
+          "min": "44",
+          "max": "51",
+          "name": "Gobo 05"
+        },
+        {
+          "min": "52",
+          "max": "59",
+          "name": "Gobo 06"
+        },
+        {
+          "min": "60",
+          "max": "68",
+          "name": "Gobo 07"
+        },
+        {
+          "min": "69",
+          "max": "76",
+          "name": "Gobo 08"
+        },
+        {
+          "min": "77",
+          "max": "85",
+          "name": "Gobo 09"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "94",
+          "max": "102",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "103",
+          "max": "110",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "111",
+          "max": "119",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo 14"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotate"
+        }
+      ]
     },
     {
       "name": "Colour",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Green"
+        },
+        {
+          "min": "16",
+          "max": "22",
+          "name": "Green/Magenta"
+        },
+        {
+          "min": "23",
+          "max": "30",
+          "name": "Magenta"
+        },
+        {
+          "min": "31",
+          "max": "37",
+          "name": "Light blue"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Amber"
+        },
+        {
+          "min": "46",
+          "max": "52",
+          "name": "Red"
+        },
+        {
+          "min": "53",
+          "max": "60",
+          "name": "Red/Blue"
+        },
+        {
+          "min": "61",
+          "max": "67",
+          "name": "Blue"
+        },
+        {
+          "min": "68",
+          "max": "75",
+          "name": "UV"
+        },
+        {
+          "min": "76",
+          "max": "82",
+          "name": "Light green"
+        },
+        {
+          "min": "83",
+          "max": "90",
+          "name": "Light green/Orange"
+        },
+        {
+          "min": "91",
+          "max": "97",
+          "name": "Orange"
+        },
+        {
+          "min": "98",
+          "max": "105",
+          "name": "Orange/Yellow"
+        },
+        {
+          "min": "106",
+          "max": "112",
+          "name": "Yellow"
+        },
+        {
+          "min": "113",
+          "max": "120",
+          "name": "Yellow/Pink"
+        },
+        {
+          "min": "121",
+          "max": "127",
+          "name": "Pink"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow"
+        }
+      ]
     },
     {
       "name": "Dimmer",

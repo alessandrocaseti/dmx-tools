@@ -5,35 +5,326 @@
   "channels": [
     {
       "name": "Operating Mode",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Laser off"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Automatic show in random order"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Sound controlled automatic show in random order"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "DMX mode"
+        }
+      ]
     },
     {
       "name": "Pattern Selection",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Circle"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Dotted Circle"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Triangle"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Square"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Broken Square"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Square in Square"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Hollow Cross"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Star"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Inverse L"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Bowtie"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Spiral"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Mirrored C"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Fishing Rod"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "1/8 Circle"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Sunglasses"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Waves"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "V"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "M"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Radiator"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Line"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Broken Line"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Broad Line"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Parallel Lines"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Cross"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Offset Lines"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Broken Rhomb"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "2 Edge Boxes"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "4 Edge Boxes"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Small Circle"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Dotted Line"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dotted Half Circle"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Fog"
+        }
+      ]
     },
     {
       "name": "Zoom",
-      "type": "Beam"
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed zoom (100% - 5%)"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Zooming in Effect (Slow to Fast)"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Zooming out Effect (Slow to Fast)"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Alternating Zoom Effect (Slow to Fast)"
+        }
+      ]
     },
     {
       "name": "Y Axis Rotation",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position of Y-axis (0 - 359°)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "CW rotating effect (Slow to Fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "CCW rotating effect (Slow to Fast)"
+        }
+      ]
     },
     {
       "name": "X Axis Rotation",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position of X-axis (0 - 359°)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "CW rotating effect (Slow to Fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "CCW rotating effect (Slow to Fast)"
+        }
+      ]
     },
     {
       "name": "Z Axis Rotation",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position of Z-axis (0 - 359°)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "CW rotating effect (Slow to Fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "CCW rotating effect (Slow to Fast)"
+        }
+      ]
     },
     {
       "name": "X-Axis Moving",
-      "type": "Pan"
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed positions on X-axis"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "CW moving effect (Slow to Fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "CCW moving effect (Slow to Fast)"
+        }
+      ]
     },
     {
       "name": "Y-Axis Moving",
-      "type": "Tilt"
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed positions on Y-axis"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "CW moving effect (Slow to Fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "CCW moving effect (Slow to Fast)"
+        }
+      ]
     }
   ],
   "modes": [

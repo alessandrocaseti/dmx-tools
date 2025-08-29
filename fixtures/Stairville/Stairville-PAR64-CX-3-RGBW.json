@@ -21,15 +21,81 @@
     },
     {
       "name": "Fixed Color Pattern",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "31 Preprogrammed color macro"
+        }
+      ]
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No Effect"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe Speed"
+        }
+      ]
     },
     {
       "name": "Operating mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Constant Color"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Fade-out effect (Speed ch 6)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Fade-in effect (Speed ch 6)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Fade-in-out effect (Speed ch 6)"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto-mix effect (speed ch 6)"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Chase 4 colors (Speed Ch6)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Chase 12 colors (speed ch 6)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound-Control"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -37,7 +103,29 @@
     },
     {
       "name": "Operating Mode 2",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Constant color"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "7 Automatic colors change"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "12 Automatic colors change"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "4 Automatic colors change"
+        }
+      ]
     }
   ],
   "modes": [

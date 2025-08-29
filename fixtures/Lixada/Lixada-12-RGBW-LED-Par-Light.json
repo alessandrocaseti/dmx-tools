@@ -17,7 +17,14 @@
     },
     {
       "name": "Change Color Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - Fast"
+        }
+      ]
     },
     {
       "name": "Red",

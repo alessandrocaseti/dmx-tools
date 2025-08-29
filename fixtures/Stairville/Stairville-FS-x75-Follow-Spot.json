@@ -9,11 +9,75 @@
     },
     {
       "name": "Colour Selection",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "White"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Yellow"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Magenta"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Green"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Red"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Cyan"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Orange"
+        }
+      ]
     },
     {
       "name": "Shutter",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Blackout"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "215",
+          "name": "Strobe Effect, Speed Increasing"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
     }
   ],
   "modes": [

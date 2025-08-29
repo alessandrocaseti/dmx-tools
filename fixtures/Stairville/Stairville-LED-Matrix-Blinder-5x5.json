@@ -9,15 +9,326 @@
     },
     {
       "name": "Operating-Mode (28-Channel Mode)",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "LEDs off"
+        },
+        {
+          "min": "1",
+          "max": "9",
+          "name": "All LEDs on"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Letter display, to be selected with channel 28"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Number display, to be selected with channel 28"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Preprogrammed automatic show no. 1"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Preprogrammed automatic show no. 2"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Preprogrammed automatic show no. 3"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Preprogrammed automatic show no. 4"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Preprogrammed automatic show no. 5"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Preprogrammed automatic show no. 6"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Preprogrammed automatic show no. 7"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Preprogrammed automatic show no. 8"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Preprogrammed automatic show no. 9"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Preprogrammed automatic show no. 10"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Preprogrammed automatic show no. 11"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Preprogrammed automatic show no. 12"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Preprogrammed automatic show no. 13"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Preprogrammed automatic show no. 14"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Preprogrammed automatic show no. 15"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Preprogrammed automatic show no. 16"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Preprogrammed automatic show no. 17"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Preprogrammed automatic show no. 18"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Preprogrammed automatic show no. 19"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Preprogrammed automatic show no. 20"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Preprogrammed automatic show no. 21"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound-controlled show"
+        }
+      ]
     },
     {
       "name": "Letter/Number/Speed Adjustment (Increasing Speed 0..255)",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Letter 'A'/Number '0'"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Letter 'B'/Number '0'"
+        },
+        {
+          "min": "20",
+          "max": "27",
+          "name": "Letter 'C'/Number '0'"
+        },
+        {
+          "min": "28",
+          "max": "29",
+          "name": "Letter 'C'/Number '1'"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Letter 'D'/Number '1'"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Letter 'E'/Number '1'"
+        },
+        {
+          "min": "50",
+          "max": "55",
+          "name": "Letter 'F'/Number '1'"
+        },
+        {
+          "min": "56",
+          "max": "59",
+          "name": "Letter 'F'/Number '2'"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Letter 'G'/Number '2'"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Letter 'H'/Number '2'"
+        },
+        {
+          "min": "80",
+          "max": "83",
+          "name": "Letter 'I'/Number '2'"
+        },
+        {
+          "min": "84",
+          "max": "89",
+          "name": "Letter 'I'/Number '3'"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Letter 'J'/Number '3'"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Letter 'K'/Number '3'"
+        },
+        {
+          "min": "110",
+          "max": "111",
+          "name": "Letter 'L'/Number '3'"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Letter 'L'/Number '4'"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Letter 'M'/Number '4'"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Letter 'N'/Number '4'"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Letter 'O'/Number '5'"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Letter 'P'/Number '5'"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Letter 'Q'/Number '5'"
+        },
+        {
+          "min": "168",
+          "max": "169",
+          "name": "Letter 'Q'/Number '6'"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Letter 'R'/Number '6'"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Letter 'S'/Number '6'"
+        },
+        {
+          "min": "190",
+          "max": "195",
+          "name": "Letter 'T'/Number '6'"
+        },
+        {
+          "min": "196",
+          "max": "199",
+          "name": "Letter 'T'/Number '7'"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Letter 'U'/Number '7'"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Letter 'V'/Number '7'"
+        },
+        {
+          "min": "220",
+          "max": "224",
+          "name": "Letter 'W'/Number '7'"
+        },
+        {
+          "min": "225",
+          "max": "229",
+          "name": "Letter 'W'/Number '8'"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Letter 'X'/Number '8'"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Letter 'Y'/Number '8'"
+        },
+        {
+          "min": "250",
+          "max": "251",
+          "name": "Letter 'Z'/Number '8'"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Letter 'Z'/Number '9'"
+        }
+      ]
     },
     {
       "name": "Speed Adjustment (chan 27=30...255)",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Increasing speed"
+        }
+      ]
     },
     {
       "name": "Dimmer for LED No. 1",
@@ -121,11 +432,135 @@
     },
     {
       "name": "Operating Mode (4-Channel Mode)",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Blackout"
+        },
+        {
+          "min": "1",
+          "max": "11",
+          "name": "Preprogrammed automatic show no. 1"
+        },
+        {
+          "min": "12",
+          "max": "23",
+          "name": "Preprogrammed automatic show no. 2"
+        },
+        {
+          "min": "24",
+          "max": "35",
+          "name": "Preprogrammed automatic show no. 3"
+        },
+        {
+          "min": "36",
+          "max": "47",
+          "name": "Preprogrammed automatic show no. 4"
+        },
+        {
+          "min": "48",
+          "max": "59",
+          "name": "Preprogrammed automatic show no. 5"
+        },
+        {
+          "min": "60",
+          "max": "71",
+          "name": "Preprogrammed automatic show no. 6"
+        },
+        {
+          "min": "72",
+          "max": "83",
+          "name": "Preprogrammed automatic show no. 7"
+        },
+        {
+          "min": "84",
+          "max": "95",
+          "name": "Preprogrammed automatic show no. 8"
+        },
+        {
+          "min": "96",
+          "max": "107",
+          "name": "Preprogrammed automatic show no. 9"
+        },
+        {
+          "min": "108",
+          "max": "119",
+          "name": "Preprogrammed automatic show no. 10"
+        },
+        {
+          "min": "120",
+          "max": "131",
+          "name": "Preprogrammed automatic show no. 11"
+        },
+        {
+          "min": "132",
+          "max": "143",
+          "name": "Preprogrammed automatic show no. 12"
+        },
+        {
+          "min": "144",
+          "max": "155",
+          "name": "Preprogrammed automatic show no. 13"
+        },
+        {
+          "min": "156",
+          "max": "167",
+          "name": "Preprogrammed automatic show no. 14"
+        },
+        {
+          "min": "168",
+          "max": "179",
+          "name": "Preprogrammed automatic show no. 15"
+        },
+        {
+          "min": "180",
+          "max": "191",
+          "name": "Preprogrammed automatic show no. 16"
+        },
+        {
+          "min": "192",
+          "max": "203",
+          "name": "Preprogrammed automatic show no. 17"
+        },
+        {
+          "min": "204",
+          "max": "215",
+          "name": "Preprogrammed automatic show no. 18"
+        },
+        {
+          "min": "216",
+          "max": "227",
+          "name": "Preprogrammed automatic show no. 19"
+        },
+        {
+          "min": "228",
+          "max": "239",
+          "name": "Preprogrammed automatic show no. 20"
+        },
+        {
+          "min": "240",
+          "max": "251",
+          "name": "Preprogrammed automatic show no. 21"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Sound-controlled show"
+        }
+      ]
     },
     {
       "name": "Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Increasing"
+        }
+      ]
     },
     {
       "name": "Strobe Effect",

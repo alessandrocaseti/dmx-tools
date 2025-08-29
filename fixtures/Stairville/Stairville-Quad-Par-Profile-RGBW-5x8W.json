@@ -25,11 +25,145 @@
     },
     {
       "name": "Macro",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Manual mode"
+        },
+        {
+          "min": "1",
+          "max": "24",
+          "name": "Constant color controlled by Ch. 7"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "Automatic show 1"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "Automatic show 2"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "Automatic show 3"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Automatic show 4"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "Automatic show 5"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "Automatic show 6"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "Automatic show 7"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Automatic show 8"
+        },
+        {
+          "min": "225",
+          "max": "249",
+          "name": "Automatic show 9"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound show"
+        }
+      ]
     },
     {
       "name": "Constant Color/Chasespeed Ch. 6",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "18",
+          "name": "Black"
+        },
+        {
+          "min": "19",
+          "max": "37",
+          "name": "Red"
+        },
+        {
+          "min": "38",
+          "max": "56",
+          "name": "Orange"
+        },
+        {
+          "min": "57",
+          "max": "75",
+          "name": "Yellow"
+        },
+        {
+          "min": "76",
+          "max": "94",
+          "name": "Green"
+        },
+        {
+          "min": "95",
+          "max": "113",
+          "name": "Light blue"
+        },
+        {
+          "min": "114",
+          "max": "132",
+          "name": "Blue"
+        },
+        {
+          "min": "133",
+          "max": "151",
+          "name": "Violet"
+        },
+        {
+          "min": "152",
+          "max": "170",
+          "name": "Pink"
+        },
+        {
+          "min": "171",
+          "max": "189",
+          "name": "White"
+        },
+        {
+          "min": "190",
+          "max": "208",
+          "name": "Red + white"
+        },
+        {
+          "min": "209",
+          "max": "227",
+          "name": "Green + white"
+        },
+        {
+          "min": "228",
+          "max": "246",
+          "name": "Blue + white"
+        },
+        {
+          "min": "247",
+          "max": "255",
+          "name": "Red + green + blue + white"
+        }
+      ]
     },
     {
       "name": "Strobe",

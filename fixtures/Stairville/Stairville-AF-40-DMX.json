@@ -5,7 +5,14 @@
   "channels": [
     {
       "name": "Fog amount",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fog output (0 - 100%)"
+        }
+      ]
     }
   ],
   "modes": [

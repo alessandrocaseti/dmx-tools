@@ -17,15 +17,76 @@
     },
     {
       "name": "Macro",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Macro"
+        }
+      ]
     },
     {
       "name": "Speed/Strobe",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed/Strobe"
+        }
+      ]
     },
     {
       "name": "Mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Strobe"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Fade_out"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Fade_in"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Fade_in/out"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto_mix"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "3_colour_chases"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "7_colour_chases"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound_to_light"
+        }
+      ]
     },
     {
       "name": "Master Dim",

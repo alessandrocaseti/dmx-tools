@@ -5,7 +5,19 @@
   "channels": [
     {
       "name": "Colour Macros",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "42 programmed colour macros (colour mixes)"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -13,7 +25,24 @@
     },
     {
       "name": "Functions",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Colour Hue"
+        },
+        {
+          "min": "1",
+          "max": "10",
+          "name": "Sound control"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe effect"
+        }
+      ]
     },
     {
       "name": "Red",

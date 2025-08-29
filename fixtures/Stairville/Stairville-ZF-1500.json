@@ -5,7 +5,14 @@
   "channels": [
     {
       "name": "On-Off",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "On-off"
+        }
+      ]
     },
     {
       "name": "Intensity",
@@ -13,11 +20,25 @@
     },
     {
       "name": "Sleep interval",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sleep interval (1s to 200s)"
+        }
+      ]
     },
     {
       "name": "Spraying duration",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Spraying duration (1s to 200s)"
+        }
+      ]
     }
   ],
   "modes": [

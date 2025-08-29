@@ -5,43 +5,268 @@
   "channels": [
     {
       "name": "Mode Selection",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "Auto, red+green+yellow"
+        },
+        {
+          "min": "30",
+          "max": "59",
+          "name": "Auto, green"
+        },
+        {
+          "min": "60",
+          "max": "89",
+          "name": "Auto, red"
+        },
+        {
+          "min": "90",
+          "max": "119",
+          "name": "Auto, yellow"
+        },
+        {
+          "min": "120",
+          "max": "149",
+          "name": "Sound-controlled, red+green+yellow"
+        },
+        {
+          "min": "150",
+          "max": "179",
+          "name": "Sound-controlled, green"
+        },
+        {
+          "min": "180",
+          "max": "209",
+          "name": "Sound-controlled, red"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "Sound-controlled, yellow"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "DMX mode"
+        }
+      ]
     },
     {
       "name": "Pattern Selection",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "From list"
+        }
+      ]
     },
     {
       "name": "Colour Selection",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "Blackout"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "Original pre-programmed"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "Red"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "Green"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Yellow"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "Alternating red and green"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "Alternating red and yellow"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "Alternating green and yellow"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Alternating red, green and yellow"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "Colour rolling"
+        }
+      ]
     },
     {
       "name": "Colour Changing Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No change"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "Speed increasing"
+        }
+      ]
     },
     {
       "name": "Zoom",
-      "type": "Beam"
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed (100% to 5%)"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Zoom-in effect, speed increasing"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Zoom-out effect, speed increasing"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Zoom-in and zoom-out effect, speed increasing"
+        }
+      ]
     },
     {
       "name": "X Axis Rotation",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "0° to 359° position"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise rolling effect, speed increasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Anti-clockwise rolling effect, speed increasing"
+        }
+      ]
     },
     {
       "name": "Y Axis Rotation",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "0° to 359° position"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise rolling effect, speed increasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Anti-clockwise rolling effect, speed increasing"
+        }
+      ]
     },
     {
       "name": "Z Axis Rotation",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "0° to 359° position"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise rolling effect, speed increasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Anti-clockwise rolling effect, speed increasing"
+        }
+      ]
     },
     {
       "name": "X Axis Moving",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "128 different fixed positions"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise moving effect, speed increasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Anti-clockwise moving effect, speed increasing"
+        }
+      ]
     },
     {
       "name": "Y Axis Moving",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "128 different fixed positions"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise moving effect, speed increasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Anti-clockwise moving effect, speed increasing"
+        }
+      ]
     }
   ],
   "modes": [

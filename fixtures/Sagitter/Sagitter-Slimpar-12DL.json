@@ -37,19 +37,72 @@
     },
     {
       "name": "Color Macro / Sound Mode",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "No function"
+        },
+        {
+          "min": "51",
+          "max": "101",
+          "name": "Color Macro 1 (Fade)\n   \n  "
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Color Macro 2 (Color Change)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Sound Mode 1 (Strobe)\n   \n  "
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Sound Mode 2 (Color Change)"
+        }
+      ]
     },
     {
       "name": "Color Macro speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color Macro speed"
+        }
+      ]
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Strobe"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe from min to max"
+        }
+      ]
     },
     {
       "name": "Microphone Sensibility",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Microphone Sensibility"
+        }
+      ]
     }
   ],
   "modes": [

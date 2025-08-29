@@ -5,11 +5,150 @@
   "channels": [
     {
       "name": "Pattern/Macro",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Pattern 01"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Pattern 02"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Pattern 03"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Pattern 04"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Pattern 05"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Pattern 06"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pattern 07"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pattern 08"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pattern 09"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pattern 10"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pattern 11"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pattern 12"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pattern 13"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pattern 14"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pattern 15"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Macro 01"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Macro 02"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Macro 03"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Macro 04"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Macro 05"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Macro 06"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Macro 07"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Macro 08"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Macro 09"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Macro 10"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Stand alone"
+        }
+      ]
     },
     {
       "name": "Strobe/Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pattern Strobe/Macro Speed"
+        }
+      ]
     },
     {
       "name": "Dimmer",

@@ -25,7 +25,24 @@
     },
     {
       "name": "Dimmer / Strobe",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "134",
+          "name": "Dimmer Min > Max"
+        },
+        {
+          "min": "135",
+          "max": "239",
+          "name": "Strobe Slow > Fast"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Dimmer 100%"
+        }
+      ]
     },
     {
       "name": "Red",
@@ -45,19 +62,217 @@
     },
     {
       "name": "Color",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "21",
+          "name": "White (Full RGBW)"
+        },
+        {
+          "min": "22",
+          "max": "34",
+          "name": "Red"
+        },
+        {
+          "min": "35",
+          "max": "49",
+          "name": "Green"
+        },
+        {
+          "min": "50",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "77",
+          "name": "White"
+        },
+        {
+          "min": "78",
+          "max": "91",
+          "name": "Light Blue"
+        },
+        {
+          "min": "92",
+          "max": "105",
+          "name": "Light Red"
+        },
+        {
+          "min": "106",
+          "max": "119",
+          "name": "Yellow"
+        },
+        {
+          "min": "120",
+          "max": "133",
+          "name": "Blue Violet"
+        },
+        {
+          "min": "134",
+          "max": "147",
+          "name": "Orange"
+        },
+        {
+          "min": "148",
+          "max": "161",
+          "name": "Light Green"
+        },
+        {
+          "min": "162",
+          "max": "175",
+          "name": "Vivid Tangerine"
+        },
+        {
+          "min": "176",
+          "max": "189",
+          "name": "Crimson"
+        },
+        {
+          "min": "190",
+          "max": "203",
+          "name": "Amber"
+        },
+        {
+          "min": "204",
+          "max": "217",
+          "name": "CTO"
+        },
+        {
+          "min": "218",
+          "max": "231",
+          "name": "Lavender Purple"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Auto Change Colors"
+        }
+      ]
     },
     {
       "name": "Speed Auto Change Colors",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed Auto Change Colors"
+        }
+      ]
     },
     {
       "name": "Auto",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "38",
+          "max": "53",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "54",
+          "max": "67",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "68",
+          "max": "83",
+          "name": "Auto Program 5"
+        },
+        {
+          "min": "84",
+          "max": "97",
+          "name": "Auto Program 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Auto Program 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Auto Program 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Auto Program 1 (Sound Active)"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Auto Program 2 (Sound Active)"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Auto Program 3 (Sound Active)"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Auto Program 4 (Sound Active)"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Auto Program 5 (Sound Active)"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Auto Program 6 (Sound Active)"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Auto Program 7 (Sound Active)"
+        },
+        {
+          "min": "233",
+          "max": "255",
+          "name": "Auto Program 8 (Sound Active)"
+        }
+      ]
     },
     {
       "name": "Reset",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "149",
+          "name": "No function"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "All Reset (after 2 seconds)"
+        }
+      ]
     }
   ],
   "modes": [

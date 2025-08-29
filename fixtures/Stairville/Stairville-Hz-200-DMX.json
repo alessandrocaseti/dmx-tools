@@ -5,11 +5,25 @@
   "channels": [
     {
       "name": "Haze",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Amount of haze 0-100 %"
+        }
+      ]
     },
     {
       "name": "Fan Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fan speed 0-100 %"
+        }
+      ]
     }
   ],
   "modes": [

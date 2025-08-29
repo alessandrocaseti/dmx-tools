@@ -9,23 +9,173 @@
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "LEDs on"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "LEDs off (blackout)"
+        },
+        {
+          "min": "11",
+          "max": "250",
+          "name": "Strobe effect, speed increasing from approx. 0 Hz to 30 Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "LEDs on"
+        }
+      ]
     },
     {
       "name": "Flash impulse",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash impulse duration, increasing from 0 ms to 510 ms"
+        }
+      ]
     },
     {
       "name": "Strobe 1Ch",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "LEDs off (blackout)"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe effect, speed increasing from approx. 0 Hz to 30 Hz"
+        }
+      ]
     },
     {
       "name": "Colour macro",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "LEDs off (blackout)"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Warm yellow"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm white"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold white"
+        },
+        {
+          "min": "126",
+          "max": "128",
+          "name": "Ending colour change"
+        },
+        {
+          "min": "129",
+          "max": "192",
+          "name": "Colour change, increasing speed"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Gradual colour change, increasing speed"
+        }
+      ]
     },
     {
       "name": "Sound control",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Sound control off"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Sound control on, increasing sensitivity"
+        }
+      ]
     },
     {
       "name": "Red",
@@ -41,7 +191,54 @@
     },
     {
       "name": "Strobe 4Ch",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "LEDs on, brightness controlled by channel 1"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "LEDs off (blackout)"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Random impulses, increasing speed"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Randomly increasing brightness, increasing speed"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Randomly decreasing brightness, increasing speed"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random Strobe effect, increasing speed"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Interrupt effect, 5 s to 1 s"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe effect, speed increasing from approx. 0 Hz to 30 Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "LEDs on, brightness controlled by channel 1"
+        }
+      ]
     }
   ],
   "modes": [

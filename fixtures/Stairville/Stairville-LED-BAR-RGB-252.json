@@ -5,11 +5,65 @@
   "channels": [
     {
       "name": "Mode 1",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "Black out"
+        },
+        {
+          "min": "41",
+          "max": "80",
+          "name": "3-Segment Dimmer"
+        },
+        {
+          "min": "81",
+          "max": "120",
+          "name": "1-Segment Dimmer"
+        },
+        {
+          "min": "121",
+          "max": "160",
+          "name": "Color Shutter"
+        },
+        {
+          "min": "161",
+          "max": "200",
+          "name": "Color Change"
+        },
+        {
+          "min": "201",
+          "max": "240",
+          "name": "Color Flow"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Dream Flow"
+        }
+      ]
     },
     {
       "name": "Shutter / Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "No Function"
+        },
+        {
+          "min": "41",
+          "max": "160",
+          "name": "Shutter"
+        },
+        {
+          "min": "161",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
     },
     {
       "name": "Red1 / All Red",
@@ -49,7 +103,44 @@
     },
     {
       "name": "Mode 2",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "Black out"
+        },
+        {
+          "min": "41",
+          "max": "80",
+          "name": "<11-Channel>"
+        },
+        {
+          "min": "81",
+          "max": "120",
+          "name": "1-Segment Dimmer"
+        },
+        {
+          "min": "121",
+          "max": "160",
+          "name": "Color Shutter"
+        },
+        {
+          "min": "161",
+          "max": "200",
+          "name": "Color Change"
+        },
+        {
+          "min": "201",
+          "max": "240",
+          "name": "Color Flow"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Dream Flow"
+        }
+      ]
     }
   ],
   "modes": [

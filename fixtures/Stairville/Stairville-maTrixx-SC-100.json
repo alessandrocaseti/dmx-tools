@@ -13,11 +13,160 @@
     },
     {
       "name": "Pattern/Chase",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Pattern 01 (red, green, blue, white)"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Pattern 02 (red)"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Pattern 03 (green)"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Pattern 04 (blue)"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Pattern 05 (white)"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pattern 06 (red, blue)"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pattern 07 (red, blue)"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pattern 08 (red, white)"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pattern 09 (red, white)"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pattern 10 (red, blue, white)"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pattern 11 (red, blue, white)"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pattern 12 (red, green, blue, white)"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pattern 13 (red, green, blue, white)"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pattern 14 (red, green)"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Pattern 15 (green, blue)"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Chase 01 (red, green, blue, white)"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Chase 02 (red, green, blue, white)"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Chase 03 (red, blue, white)"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Chase 04 (red, green)"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Chase 05 (red, blue, white)"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Chase 06 (red, green, blue, white)"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Chase 07 (red, green, blue, white)"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Chase 08 (red, green, blue, white)"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Chase 09 (red, green, blue, white)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Chase 10 (red, green, blue, white)"
+        }
+      ]
     },
     {
       "name": "Strobe",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Strobe"
+        },
+        {
+          "min": "10",
+          "max": "249",
+          "name": "Slow Strobe - Fast Strobe"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Stand-Alone"
+        }
+      ]
     }
   ],
   "modes": [

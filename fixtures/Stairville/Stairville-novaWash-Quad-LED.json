@@ -13,7 +13,54 @@
     },
     {
       "name": "Shutter",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe Increasing Speed"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow Open to Fast Close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Slow Close to Fast Open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
     },
     {
       "name": "Red",
@@ -37,7 +84,44 @@
     },
     {
       "name": "Special Function",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "Nothing"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blackout during Pan or Tilt"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "No Blackout during Pan or Tilt"
+        },
+        {
+          "min": "90",
+          "max": "199",
+          "name": "Nothing"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "Nothing"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Standalone"
+        }
+      ]
     },
     {
       "name": "Pan Fine",
@@ -53,19 +137,122 @@
     },
     {
       "name": "Pan/Tilt Macro",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Stop"
+        },
+        {
+          "min": "16",
+          "max": "35",
+          "name": "Macro 1"
+        },
+        {
+          "min": "36",
+          "max": "55",
+          "name": "Macro 2"
+        },
+        {
+          "min": "56",
+          "max": "75",
+          "name": "Macro 3"
+        },
+        {
+          "min": "76",
+          "max": "95",
+          "name": "Macro 4"
+        },
+        {
+          "min": "96",
+          "max": "115",
+          "name": "Macro 5"
+        },
+        {
+          "min": "116",
+          "max": "135",
+          "name": "Macro 6"
+        },
+        {
+          "min": "136",
+          "max": "155",
+          "name": "Macro 7"
+        },
+        {
+          "min": "156",
+          "max": "175",
+          "name": "Macro 8"
+        },
+        {
+          "min": "176",
+          "max": "195",
+          "name": "Macro 9"
+        },
+        {
+          "min": "196",
+          "max": "215",
+          "name": "Macro 10"
+        },
+        {
+          "min": "216",
+          "max": "235",
+          "name": "Macro 11"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Macro 12"
+        }
+      ]
     },
     {
       "name": "Macro Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fast to Slow"
+        }
+      ]
     },
     {
       "name": "Colour",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Normal"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Colour 1-32"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Macro 1-16"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Colour Fade 1-16"
+        }
+      ]
     },
     {
       "name": "Fade Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
     }
   ],
   "modes": [

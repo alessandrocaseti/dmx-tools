@@ -45,19 +45,122 @@
     },
     {
       "name": "CTO",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "35",
+          "name": "Blackout, all LEDs off"
+        },
+        {
+          "min": "36",
+          "max": "55",
+          "name": "3200K"
+        },
+        {
+          "min": "56",
+          "max": "75",
+          "name": "3400K"
+        },
+        {
+          "min": "76",
+          "max": "95",
+          "name": "4200K"
+        },
+        {
+          "min": "96",
+          "max": "115",
+          "name": "4900K"
+        },
+        {
+          "min": "116",
+          "max": "135",
+          "name": "5600K"
+        },
+        {
+          "min": "136",
+          "max": "175",
+          "name": "6500K"
+        },
+        {
+          "min": "176",
+          "max": "195",
+          "name": "7200K"
+        },
+        {
+          "min": "196",
+          "max": "215",
+          "name": "8000K"
+        },
+        {
+          "min": "216",
+          "max": "235",
+          "name": "8500K"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "10000K"
+        }
+      ]
     },
     {
       "name": "Colour Macro",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Blackout, all LEDs off"
+        },
+        {
+          "min": "15",
+          "max": "255",
+          "name": "One of 28 preprogrammed colours"
+        }
+      ]
     },
     {
       "name": "Strobe effect",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "140",
+          "name": "Strobe, Increasing speed"
+        },
+        {
+          "min": "141",
+          "max": "255",
+          "name": "Strobe, Random speed"
+        }
+      ]
     },
     {
       "name": "Special functions",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "99",
+          "name": "Without function"
+        },
+        {
+          "min": "100",
+          "max": "199",
+          "name": "Automatic sound"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
     }
   ],
   "modes": [

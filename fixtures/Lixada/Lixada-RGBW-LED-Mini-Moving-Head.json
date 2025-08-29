@@ -13,7 +13,29 @@
     },
     {
       "name": "Dimmer",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed the light"
+        },
+        {
+          "min": "8",
+          "max": "134",
+          "name": "Dimmer:0～100%"
+        },
+        {
+          "min": "135",
+          "max": "239",
+          "name": "Strobe from slow to fast"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Switch"
+        }
+      ]
     },
     {
       "name": "Red",
@@ -37,7 +59,24 @@
     },
     {
       "name": "Reset",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "149",
+          "name": "No Function"
+        },
+        {
+          "min": "150",
+          "max": "200",
+          "name": "Reset"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "No Function"
+        }
+      ]
     },
     {
       "name": "Pan fine",
@@ -49,15 +88,66 @@
     },
     {
       "name": "Color selector",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Select color"
+        },
+        {
+          "min": "8",
+          "max": "231",
+          "name": "Built in color"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Seven colors Jumping"
+        }
+      ]
     },
     {
       "name": "Color jumps",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Seven colors jumping (speed from slow to fast)"
+        }
+      ]
     },
     {
       "name": "Custom controls",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Custom control"
+        },
+        {
+          "min": "8",
+          "max": "63",
+          "name": "Moving head light working in fast"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Moving head light working in slow"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Moving head light working in Sound1Active"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Moving head light working in Sound2Active"
+        }
+      ]
     }
   ],
   "modes": [

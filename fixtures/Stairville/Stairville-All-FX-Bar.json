@@ -5,71 +5,955 @@
   "channels": [
     {
       "name": "Automatic show for all components",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "22",
+          "name": "AUT1"
+        },
+        {
+          "min": "23",
+          "max": "40",
+          "name": "AUT2"
+        },
+        {
+          "min": "41",
+          "max": "58",
+          "name": "AUT3"
+        },
+        {
+          "min": "59",
+          "max": "76",
+          "name": "AUT4"
+        },
+        {
+          "min": "77",
+          "max": "94",
+          "name": "AUT5"
+        },
+        {
+          "min": "95",
+          "max": "112",
+          "name": "AUT6"
+        },
+        {
+          "min": "113",
+          "max": "129",
+          "name": "AUT7"
+        },
+        {
+          "min": "130",
+          "max": "147",
+          "name": "AUT8"
+        },
+        {
+          "min": "148",
+          "max": "165",
+          "name": "AUT9"
+        },
+        {
+          "min": "166",
+          "max": "183",
+          "name": "AUT10"
+        },
+        {
+          "min": "184",
+          "max": "201",
+          "name": "AUT11"
+        },
+        {
+          "min": "202",
+          "max": "219",
+          "name": "AUT12"
+        },
+        {
+          "min": "220",
+          "max": "237",
+          "name": "AUT13"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "AUT14"
+        }
+      ]
     },
     {
       "name": "Sound controlled automatic show for all components",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "22",
+          "name": "SOU1"
+        },
+        {
+          "min": "23",
+          "max": "40",
+          "name": "SOU2"
+        },
+        {
+          "min": "41",
+          "max": "58",
+          "name": "SOU3"
+        },
+        {
+          "min": "59",
+          "max": "76",
+          "name": "SOU4"
+        },
+        {
+          "min": "77",
+          "max": "94",
+          "name": "SOU5"
+        },
+        {
+          "min": "95",
+          "max": "112",
+          "name": "SOU6"
+        },
+        {
+          "min": "113",
+          "max": "129",
+          "name": "SOU7"
+        },
+        {
+          "min": "130",
+          "max": "147",
+          "name": "SOU8"
+        },
+        {
+          "min": "148",
+          "max": "165",
+          "name": "SOU9"
+        },
+        {
+          "min": "166",
+          "max": "183",
+          "name": "SOU10"
+        },
+        {
+          "min": "184",
+          "max": "201",
+          "name": "SOU11"
+        },
+        {
+          "min": "202",
+          "max": "219",
+          "name": "SOU12"
+        },
+        {
+          "min": "220",
+          "max": "237",
+          "name": "SOU13"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "SOU14"
+        }
+      ]
     },
     {
       "name": "Show speed/Microphone sensitivity",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Run speed of the automatic show, from slow to fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sensitivity of the music control microphone from low to high\n   \n   \n   \n   \n   \n  "
+        }
+      ]
     },
     {
       "name": "Automatic show for UV LEDs",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "AP01"
+        },
+        {
+          "min": "56",
+          "max": "106",
+          "name": "AP02"
+        },
+        {
+          "min": "107",
+          "max": "155",
+          "name": "AP03"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "AP04"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "APM (mix program)"
+        }
+      ]
     },
     {
       "name": "Sound controlled automatic show for UV LEDs",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "SP01"
+        },
+        {
+          "min": "56",
+          "max": "106",
+          "name": "SP02"
+        },
+        {
+          "min": "107",
+          "max": "155",
+          "name": "SP03"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "SP04"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "SPM (mix program)"
+        }
+      ]
     },
     {
       "name": "Automatic show for beam LEDs",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "AB01"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "AB02"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "AB03"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "AB04"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "AB05"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "AB06"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "AB07"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "AB08"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "AB09"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "AB10"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "AB11"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "AB12"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "AB13"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "AB14"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "AB15"
+        },
+        {
+          "min": "126",
+          "max": "133",
+          "name": "AB16"
+        },
+        {
+          "min": "134",
+          "max": "141",
+          "name": "AB17"
+        },
+        {
+          "min": "142",
+          "max": "149",
+          "name": "AB18"
+        },
+        {
+          "min": "150",
+          "max": "157",
+          "name": "AB19"
+        },
+        {
+          "min": "158",
+          "max": "165",
+          "name": "AB20"
+        },
+        {
+          "min": "166",
+          "max": "173",
+          "name": "AB21"
+        },
+        {
+          "min": "174",
+          "max": "181",
+          "name": "AB22"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "AB23"
+        },
+        {
+          "min": "190",
+          "max": "197",
+          "name": "AB24"
+        },
+        {
+          "min": "198",
+          "max": "205",
+          "name": "AB25"
+        },
+        {
+          "min": "206",
+          "max": "213",
+          "name": "AB26"
+        },
+        {
+          "min": "214",
+          "max": "221",
+          "name": "AB27"
+        },
+        {
+          "min": "222",
+          "max": "229",
+          "name": "AB28"
+        },
+        {
+          "min": "230",
+          "max": "237",
+          "name": "AB29"
+        },
+        {
+          "min": "238",
+          "max": "245",
+          "name": "AB30"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "ABM (mix program)"
+        }
+      ]
     },
     {
       "name": "Sound controlled automatic show for beam LEDs",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "SB01"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "SB02"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "SB03"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "SB04"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "SB05"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "SB06"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "SB07"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "SB08"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "SB09"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "SB10"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "SB11"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "SB12"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "SB13"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "SB14"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "SB15"
+        },
+        {
+          "min": "126",
+          "max": "133",
+          "name": "SB16"
+        },
+        {
+          "min": "134",
+          "max": "141",
+          "name": "SB17"
+        },
+        {
+          "min": "142",
+          "max": "149",
+          "name": "SB18"
+        },
+        {
+          "min": "150",
+          "max": "157",
+          "name": "SB19"
+        },
+        {
+          "min": "158",
+          "max": "165",
+          "name": "SB20"
+        },
+        {
+          "min": "166",
+          "max": "173",
+          "name": "SB21"
+        },
+        {
+          "min": "174",
+          "max": "181",
+          "name": "SB22"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "SB23"
+        },
+        {
+          "min": "190",
+          "max": "197",
+          "name": "SB24"
+        },
+        {
+          "min": "198",
+          "max": "205",
+          "name": "SB25"
+        },
+        {
+          "min": "206",
+          "max": "213",
+          "name": "SB26"
+        },
+        {
+          "min": "214",
+          "max": "221",
+          "name": "SB27"
+        },
+        {
+          "min": "222",
+          "max": "229",
+          "name": "SB28"
+        },
+        {
+          "min": "230",
+          "max": "237",
+          "name": "SB29"
+        },
+        {
+          "min": "238",
+          "max": "245",
+          "name": "SB30"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "SBM (mix program)"
+        }
+      ]
     },
     {
       "name": "Automatic show for laser",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "40",
+          "name": "AL01"
+        },
+        {
+          "min": "41",
+          "max": "76",
+          "name": "AL02"
+        },
+        {
+          "min": "77",
+          "max": "112",
+          "name": "AL03"
+        },
+        {
+          "min": "113",
+          "max": "147",
+          "name": "AL04"
+        },
+        {
+          "min": "148",
+          "max": "183",
+          "name": "AL05"
+        },
+        {
+          "min": "184",
+          "max": "219",
+          "name": "AL06"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "ALM (mix program)"
+        }
+      ]
     },
     {
       "name": "Sound controlled automatic show for laser",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "40",
+          "name": "SL01"
+        },
+        {
+          "min": "41",
+          "max": "76",
+          "name": "SL02"
+        },
+        {
+          "min": "77",
+          "max": "112",
+          "name": "SL03"
+        },
+        {
+          "min": "113",
+          "max": "147",
+          "name": "SL04"
+        },
+        {
+          "min": "148",
+          "max": "183",
+          "name": "SL05"
+        },
+        {
+          "min": "184",
+          "max": "219",
+          "name": "SL06"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "SLM (mix program)"
+        }
+      ]
     },
     {
       "name": "Automatic show for strobe LEDs",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "27",
+          "name": "AF01"
+        },
+        {
+          "min": "28",
+          "max": "50",
+          "name": "AF02"
+        },
+        {
+          "min": "51",
+          "max": "73",
+          "name": "AF03"
+        },
+        {
+          "min": "74",
+          "max": "95",
+          "name": "AF04"
+        },
+        {
+          "min": "96",
+          "max": "118",
+          "name": "AF05"
+        },
+        {
+          "min": "119",
+          "max": "141",
+          "name": "AF06"
+        },
+        {
+          "min": "142",
+          "max": "163",
+          "name": "AF07"
+        },
+        {
+          "min": "164",
+          "max": "186",
+          "name": "AF08"
+        },
+        {
+          "min": "187",
+          "max": "209",
+          "name": "AF09"
+        },
+        {
+          "min": "210",
+          "max": "232",
+          "name": "AF10"
+        },
+        {
+          "min": "233",
+          "max": "255",
+          "name": "AFM (mix program)"
+        }
+      ]
     },
     {
       "name": "Sound controlled automatic show for strobe LEDs",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "27",
+          "name": "SF01"
+        },
+        {
+          "min": "28",
+          "max": "50",
+          "name": "SF02"
+        },
+        {
+          "min": "51",
+          "max": "73",
+          "name": "SF03"
+        },
+        {
+          "min": "74",
+          "max": "95",
+          "name": "SF04"
+        },
+        {
+          "min": "96",
+          "max": "118",
+          "name": "SF05"
+        },
+        {
+          "min": "119",
+          "max": "141",
+          "name": "SF06"
+        },
+        {
+          "min": "142",
+          "max": "163",
+          "name": "SF07"
+        },
+        {
+          "min": "164",
+          "max": "186",
+          "name": "SF08"
+        },
+        {
+          "min": "187",
+          "max": "209",
+          "name": "SF09"
+        },
+        {
+          "min": "210",
+          "max": "232",
+          "name": "SF10"
+        },
+        {
+          "min": "233",
+          "max": "255",
+          "name": "SFM (mix program)"
+        }
+      ]
     },
     {
       "name": "Dimmer/Strobe",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "128",
+          "name": "Dimmer (0% to 100%)"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Strobe effect with increasing speed"
+        }
+      ]
     },
     {
       "name": "Laser selection",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "48",
+          "name": "Red laser switched on"
+        },
+        {
+          "min": "49",
+          "max": "89",
+          "name": "Green laser switched on"
+        },
+        {
+          "min": "90",
+          "max": "131",
+          "name": "Red and green laser switched on"
+        },
+        {
+          "min": "132",
+          "max": "173",
+          "name": "Strobe effect red laser, green laser switched on"
+        },
+        {
+          "min": "174",
+          "max": "215",
+          "name": "Red laser switched on, strobe effect green laser"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Strobe effect red and green lasers"
+        }
+      ]
     },
     {
       "name": "Laser rotation",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Clockwise rotation, increasing speed"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Laser paused"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Counter-clockwise rotation, increasing speed"
+        }
+      ]
     },
     {
       "name": "Strobe LEDs show run speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Run speed of the automatic show, from slow to fast"
+        }
+      ]
     },
     {
       "name": "Sound control selection",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "35",
+          "name": "No function"
+        },
+        {
+          "min": "36",
+          "max": "71",
+          "name": "Sound-controlled automatic show for beam LEDs"
+        },
+        {
+          "min": "72",
+          "max": "106",
+          "name": "Sound-controlled automatic show for laser"
+        },
+        {
+          "min": "107",
+          "max": "141",
+          "name": "Sound-controlled automatic show for strobe LEDs"
+        },
+        {
+          "min": "142",
+          "max": "176",
+          "name": "Sound-controlled automatic show for beam LEDs and laser"
+        },
+        {
+          "min": "177",
+          "max": "211",
+          "name": "Sound-controlled automatic show for strobe LEDs and laser"
+        },
+        {
+          "min": "212",
+          "max": "255",
+          "name": "Sound-controlled automatic show for beam LEDs, laser and strobe LEDs"
+        }
+      ]
     },
     {
       "name": "Beam LEDs show run speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Run speed of the automatic show, from slow to fast"
+        }
+      ]
     },
     {
       "name": "Strobe",
@@ -85,11 +969,40 @@
     },
     {
       "name": "UV LEDs strobe/sound control",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Strobe effect with increasing speed"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-controlled strobe effect"
+        }
+      ]
     },
     {
       "name": "Laser strobe/sound control",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe effect with increasing speed"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-controlled strobe effect"
+        }
+      ]
     }
   ],
   "modes": [

@@ -105,19 +105,647 @@
     },
     {
       "name": "Virtual Colour Wheel",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Dark/Off"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Colour 1"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Colour 2"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Colour 3"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Colour 4"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Colour 5"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Colour 6"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Colour 7"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Colour 8"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Colour 9"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Colour 10"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Colour 11"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Colour 12"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Colour 13"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Colour 14"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Colour 15"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Colour 16"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Colour 17"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Colour 18"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Colour 19"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Colour 20"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Colour 21"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Colour 22"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Colour 23"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Colour 24"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Colour 25"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Colour 26"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Colour 27"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Colour 28"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Colour 29"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "Colour 30"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Colour 31"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "Colour 32"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Colour 33"
+        },
+        {
+          "min": "170",
+          "max": "174",
+          "name": "Colour 34"
+        },
+        {
+          "min": "175",
+          "max": "179",
+          "name": "Dark/Off"
+        },
+        {
+          "min": "180",
+          "max": "201",
+          "name": "Automatic change from colour 1 to 34, fast to slow"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "Stop colour change"
+        },
+        {
+          "min": "208",
+          "max": "229",
+          "name": "Automatic change from colour 34 to 1, fast to slow"
+        },
+        {
+          "min": "230",
+          "max": "234",
+          "name": "Dark/Off"
+        },
+        {
+          "min": "235",
+          "max": "249",
+          "name": "Automatic sudden colour change, fast to slow"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound controlled colour change"
+        }
+      ]
     },
     {
       "name": "Selection of LED groups",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Active LED Group: 1-5"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Active LED Group: 1-4"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Active LED Group: 1-3"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Active LED Group: 1-2"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Active LED Group: 1"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Dark/Off"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Active LED Group: 5"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Active LED Group: 4-5"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Active LED Group: 3-5"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Active LED Group: 2-5"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Active LED Group: 1-5"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Active LED Group: 5"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Active LED Group: 4"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Active LED Group: 3"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Active LED Group: 2"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Active LED Group: 1"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Active LED Group: 4-5"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Active LED Group: 3-4"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Active LED Group: 2-3"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Active LED Group: 1-2"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Active LED Group: 1, 5"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Active LED Group: 3-5"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Active LED Group: 2-4"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Active LED Group: 1-3"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Active LED Group: 1, 2, 5"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Active LED Group: 1, 4, 5"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Active LED Group: 2-5"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Active LED Group: 1-4"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Active LED Group: 1-3, 5"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Active LED Group: 1, 3-5"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Active LED Group: 1, 3-5"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Active LED Group: 1-5"
+        }
+      ]
     },
     {
       "name": "Preprogrammed Light Effects",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No effect"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Light Effect 1 (Colour selection on channel 4-7/26)"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "Light Effect 2"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Light Effect 3"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Light Effect 4"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Light Effect 5"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Light Effect 6"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Light Effect 7"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Light Effect 8"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Light Effect 9"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Light Effect 10"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Light Effect 11"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Light Effect 12"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "Light Effect 13"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "Light Effect 14"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "Light Effect 15"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "Light Effect 16"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "Light Effect 17"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "Light Effect 18"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "Light Effect 19"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "Light Effect 20"
+        },
+        {
+          "min": "116",
+          "max": "120",
+          "name": "Light Effect 21"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "Light Effect 22"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "Light Effect 23"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "Light Effect 24"
+        },
+        {
+          "min": "136",
+          "max": "140",
+          "name": "Light Effect 25 (multi colour)"
+        },
+        {
+          "min": "141",
+          "max": "145",
+          "name": "Light Effect 26"
+        },
+        {
+          "min": "146",
+          "max": "150",
+          "name": "Light Effect 27"
+        },
+        {
+          "min": "151",
+          "max": "155",
+          "name": "Light Effect 28"
+        },
+        {
+          "min": "156",
+          "max": "160",
+          "name": "Light Effect 29"
+        },
+        {
+          "min": "161",
+          "max": "165",
+          "name": "Light Effect 30"
+        },
+        {
+          "min": "166",
+          "max": "170",
+          "name": "Light Effect 31"
+        },
+        {
+          "min": "171",
+          "max": "175",
+          "name": "Light Effect 32"
+        },
+        {
+          "min": "176",
+          "max": "180",
+          "name": "Light Effect 33"
+        },
+        {
+          "min": "181",
+          "max": "185",
+          "name": "Light Effect 34"
+        },
+        {
+          "min": "186",
+          "max": "190",
+          "name": "Light Effect 35"
+        },
+        {
+          "min": "191",
+          "max": "195",
+          "name": "Light Effect 36"
+        },
+        {
+          "min": "196",
+          "max": "200",
+          "name": "Light Effect 37"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "Light Effect 38"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "Light Effect 39"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "Light Effect 40"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "Light Effect 41"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Light Effect 42"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Light Effect 43"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Light Effect 44"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Light Effect 45"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Light Effect 46"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Light Effect 47"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Light Effect 48"
+        }
+      ]
     },
     {
       "name": "Light Effect Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Light effect speed, slow to fast"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -125,7 +753,119 @@
     },
     {
       "name": "Shutter",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Closed"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Open"
+        },
+        {
+          "min": "25",
+          "max": "64",
+          "name": "Strobe Effect 1, fast to slow"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Open"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "Strobe Effect 2, fast on, slow off, from fast to slow follow-ups"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Open"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Strobe Effect 3, slow on, fast off, from fast to slow follow-ups"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Open"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Strobe Effect 4, random, from fast to slow follow-ups"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Open"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "Strobe Effect 5, random, fast on, slow off, from fast to slow follow-ups"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Open"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Strobe Effect 6, random, slow on, fast off, from fast to slow follow-ups"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Open"
+        },
+        {
+          "min": "170",
+          "max": "184",
+          "name": "Strobe Effect 7, pulse series, increasing time between pulses"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "204",
+          "name": "Strobe Effect 8, pulse series with random frequency, from fast to slow follow-ups"
+        },
+        {
+          "min": "205",
+          "max": "209",
+          "name": "Open"
+        },
+        {
+          "min": "210",
+          "max": "224",
+          "name": "Strobe Effect 9, single pulses, from fast to slow follow-ups"
+        },
+        {
+          "min": "225",
+          "max": "229",
+          "name": "Open"
+        },
+        {
+          "min": "230",
+          "max": "244",
+          "name": "Strobe Effect 10, inverted pulse series, increasing time between pulses"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
     },
     {
       "name": "Optical Zoom",
@@ -133,11 +873,215 @@
     },
     {
       "name": "Special Functions",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Stop of current movement"
+        },
+        {
+          "min": "15",
+          "max": "49",
+          "name": "No function"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Pan reset"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Tilt reset"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Zoom reset"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Reset of all functions"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "No function"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Inversion of Pan and tilt"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Inversion of Pan"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Inversion of Tilt"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Cancel inversion of Pan"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Cancel inversion Tilt"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Cancel inversion of Pan and Tilt"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Moving speed normal"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Moving speed fast"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Moving speed slow"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Maximum fan speed"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Automatic fan speed"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Dimmer speed fast"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Dimmer speed slow"
+        },
+        {
+          "min": "145",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
     },
     {
       "name": "Preprogrammed movement patterns",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No movement"
+        },
+        {
+          "min": "8",
+          "max": "23",
+          "name": "Movement pattern 1"
+        },
+        {
+          "min": "24",
+          "max": "39",
+          "name": "Movement pattern 2"
+        },
+        {
+          "min": "40",
+          "max": "55",
+          "name": "Movement pattern 3"
+        },
+        {
+          "min": "56",
+          "max": "71",
+          "name": "Movement pattern 4"
+        },
+        {
+          "min": "72",
+          "max": "87",
+          "name": "Movement pattern 5"
+        },
+        {
+          "min": "88",
+          "max": "103",
+          "name": "Movement pattern 6"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "Movement pattern 7"
+        },
+        {
+          "min": "120",
+          "max": "135",
+          "name": "Movement pattern 8"
+        },
+        {
+          "min": "136",
+          "max": "151",
+          "name": "Movement pattern 1 with sound control"
+        },
+        {
+          "min": "152",
+          "max": "167",
+          "name": "Movement pattern 2 with sound control"
+        },
+        {
+          "min": "168",
+          "max": "183",
+          "name": "Movement pattern 3 with sound control"
+        },
+        {
+          "min": "184",
+          "max": "199",
+          "name": "Movement pattern 4 with sound control"
+        },
+        {
+          "min": "200",
+          "max": "215",
+          "name": "Movement pattern 5 with sound control"
+        },
+        {
+          "min": "216",
+          "max": "231",
+          "name": "Movement pattern 6 with sound control"
+        },
+        {
+          "min": "232",
+          "max": "247",
+          "name": "Movement pattern 7 with sound control"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Movement pattern 8 with sound control"
+        }
+      ]
     },
     {
       "name": "Intensity Red (when channel 8 = 0)",

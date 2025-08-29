@@ -5,31 +5,200 @@
   "channels": [
     {
       "name": "Mode selection",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "Laser off"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Auto show"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Sound-controlled automatic show"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "DMX 1 mode"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "DMX 2 mode"
+        }
+      ]
     },
     {
       "name": "Patten rotation",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No rotation"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Clockwise rotation (slow to fast)"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "No rotation"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Counterclockwise rotation (slow to fast)"
+        }
+      ]
     },
     {
       "name": "Vibration",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Vibration effect of patterns (small to large vibrations)"
+        }
+      ]
     },
     {
       "name": "Red Laser",
-      "type": "Beam"
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Laser off"
+        },
+        {
+          "min": "5",
+          "max": "10",
+          "name": "Laser on"
+        },
+        {
+          "min": "11",
+          "max": "254",
+          "name": "Strobing (strobe effect), slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound-controlled strobe effect"
+        }
+      ]
     },
     {
       "name": "Green Laser",
-      "type": "Beam"
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Laser off"
+        },
+        {
+          "min": "5",
+          "max": "10",
+          "name": "Laser on"
+        },
+        {
+          "min": "11",
+          "max": "254",
+          "name": "Strobing (strobe effect), slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound-controlled strobe effect"
+        }
+      ]
     },
     {
       "name": "Colour selection",
-      "type": "Beam"
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Laser off"
+        },
+        {
+          "min": "5",
+          "max": "20",
+          "name": "Constantly red"
+        },
+        {
+          "min": "21",
+          "max": "35",
+          "name": "Red off, constantly green"
+        },
+        {
+          "min": "36",
+          "max": "50",
+          "name": "Red and green constantly"
+        },
+        {
+          "min": "51",
+          "max": "80",
+          "name": "Strobe effect for red, green off"
+        },
+        {
+          "min": "81",
+          "max": "110",
+          "name": "Red off, strobe effect for green"
+        },
+        {
+          "min": "111",
+          "max": "140",
+          "name": "Strobe effect for red and green"
+        },
+        {
+          "min": "141",
+          "max": "170",
+          "name": "Constantly red, strobe effect for green"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "Strobe effect for red, constantly green"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Alternating strobe effect for red and green"
+        }
+      ]
     },
     {
       "name": "Strobing (strobe effect)",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "254",
+          "name": "Strobing (strobe effect), slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound-controlled strobe effect"
+        }
+      ]
     }
   ],
   "modes": [

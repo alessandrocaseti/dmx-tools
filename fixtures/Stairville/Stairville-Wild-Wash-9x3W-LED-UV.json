@@ -9,15 +9,51 @@
     },
     {
       "name": "Shutter",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No strobe effect"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe effect, increasing frequency"
+        }
+      ]
     },
     {
       "name": "Function",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "All LEDs off"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Auto show selection"
+        }
+      ]
     },
     {
       "name": "Show speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "249",
+          "name": "Auto show speed, slow to fast"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound-controlled auto show"
+        }
+      ]
     },
     {
       "name": "Brightness LED 1",

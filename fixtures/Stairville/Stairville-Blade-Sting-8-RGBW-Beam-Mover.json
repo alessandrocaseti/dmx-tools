@@ -29,11 +29,35 @@
     },
     {
       "name": "Rotation Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Movement speed rotation and tilting movement, increasing speed"
+        }
+      ]
     },
     {
       "name": "Pan/Tilt Rotation",
-      "type": "Pan"
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "129",
+          "name": "No function"
+        },
+        {
+          "min": "130",
+          "max": "192",
+          "name": "Clockwise rotation movement, speed increasing"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Counter-clockwise rotation movement, speed increasing"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -169,15 +193,86 @@
     },
     {
       "name": "Auto mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Auto operation"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Preprogrammed automatic show no. 01"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Preprogrammed automatic show no. 02"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Preprogrammed automatic show no. 03"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Preprogrammed automatic show no. 04"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Preprogrammed automatic show no. 05"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Preprogrammed automatic show no. 06"
+        },
+        {
+          "min": "80",
+          "max": "129",
+          "name": "No function"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Sound-controlled operation, increasing sensitivity"
+        }
+      ]
     },
     {
       "name": "Chaser light speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Chaser light speed"
+        }
+      ]
     },
     {
       "name": "Flash frequency",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "No function"
+        },
+        {
+          "min": "15",
+          "max": "255",
+          "name": "Flash frequency auto operation"
+        }
+      ]
     },
     {
       "name": "Intensity red LED",

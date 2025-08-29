@@ -13,7 +13,19 @@
     },
     {
       "name": "Mode",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Haze"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Smoke\n   \n  "
+        }
+      ]
     },
     {
       "name": "No function",

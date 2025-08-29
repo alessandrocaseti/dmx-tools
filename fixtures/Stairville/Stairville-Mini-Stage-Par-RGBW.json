@@ -21,15 +21,81 @@
     },
     {
       "name": "Fixed colour pattern",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No fixed colour and movement pattern"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "One of 41 preprogrammed automatic shows (macros), channels 6 and 7 without function"
+        }
+      ]
     },
     {
       "name": "Strobe effect",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Full brightness, no strobe effect"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe effect, increasing speed, if channel 5 = 0...15"
+        }
+      ]
     },
     {
       "name": "Mode selection",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Constant colour, the hue is set by channels 1 to 4"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Fade-out effect, speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Fade-in effect, speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Fade-in-out effect, speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto-mix effect, speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Chase (4 colours), speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Chase (12 colours), speed controlled by channel 6, channels 1 to 5 without function"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -37,11 +103,55 @@
     },
     {
       "name": "Mode Selection - 6 Channels",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Constant colour, the hue is set by channels 2 to 5"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Automatic colour change with 7 colours, channels 2 to 5 without function"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Automatic colour change with 12 colours, channels 2 to 5 without function"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Automatic colour change with 4 colours, channels 2 to 5 without function"
+        }
+      ]
     },
     {
       "name": "Effects speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No automatic colour change"
+        },
+        {
+          "min": "11",
+          "max": "100",
+          "name": "Automatic colour change as set by channel 1, decreasing speed from fast to slow"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "No automatic colour change"
+        },
+        {
+          "min": "151",
+          "max": "255",
+          "name": "Automatic colour change as set by channel 1, speed changing randomly"
+        }
+      ]
     }
   ],
   "modes": [

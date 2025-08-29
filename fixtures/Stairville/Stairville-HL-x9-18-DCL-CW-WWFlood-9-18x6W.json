@@ -17,7 +17,19 @@
     },
     {
       "name": "Macro",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Macro off"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Macro-function (0% to 100% in steps of 31)"
+        }
+      ]
     },
     {
       "name": "Dimmer",

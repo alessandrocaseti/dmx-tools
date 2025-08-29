@@ -405,19 +405,67 @@
     },
     {
       "name": "Program Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program speed - slow ... fast"
+        }
+      ]
     },
     {
       "name": "Reset",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "50",
+          "name": "Reset, if the value is transmitted for at least 5 seconds"
+        },
+        {
+          "min": "51",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
     },
     {
       "name": "Auto-correction of pan and tilt",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto-correction of rotation (pan) and inclination (tilt), decreasing speed"
+        }
+      ]
     },
     {
       "name": "Pan",
-      "type": "Pan"
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position (0° to 540°)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Constant clockwise rotation, speed decreasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Constant anti-clockwise rotation, speed increasing"
+        }
+      ]
     },
     {
       "name": "Pan fine",
@@ -425,7 +473,24 @@
     },
     {
       "name": "Tilt",
-      "type": "Tilt"
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position (0° to 270°)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Constant clockwise inclination, speed decreasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Constant anti-clockwise inclination, speed increasing"
+        }
+      ]
     },
     {
       "name": "Tilt fine",
@@ -433,11 +498,45 @@
     },
     {
       "name": "Continous Pan",
-      "type": "Pan"
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No movement"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Continuous clockwise rotation, speed decreasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Continuous anti-clockwise rotation, speed increasing"
+        }
+      ]
     },
     {
       "name": "Continous Tilt",
-      "type": "Tilt"
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No movement"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Continuous clockwise rotation, speed decreasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Continuous anti-clockwise rotation, speed increasing"
+        }
+      ]
     },
     {
       "name": "Master Dimmer",
@@ -445,27 +544,154 @@
     },
     {
       "name": "Programs",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No program"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "Program 1"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "Program 2"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "Program 3"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "Program 4"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "Program 5"
+        },
+        {
+          "min": "158",
+          "max": "255",
+          "name": "Program 6"
+        }
+      ]
     },
     {
       "name": "Preprogrammed automatic show",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "Preprogrammed automatic show no. 1"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "Preprogrammed automatic show no. 2"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "Preprogrammed automatic show no. 3"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "Preprogrammed automatic show no. 4"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "Preprogrammed automatic show no. 5"
+        },
+        {
+          "min": "158",
+          "max": "255",
+          "name": "Preprogrammed automatic show no. 6"
+        }
+      ]
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "LEDs off"
+        },
+        {
+          "min": "7",
+          "max": "128",
+          "name": "Impulse effect, increasing speed"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Constant strobe effect, increasing speed"
+        }
+      ]
     },
     {
       "name": "Colour macro",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Colour macros 1 to 32"
+        }
+      ]
     },
     {
       "name": "Text Number",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "77",
+          "name": "Numbers from 0 to 9"
+        },
+        {
+          "min": "78",
+          "max": "255",
+          "name": "Letters from A to Z"
+        }
+      ]
     },
     {
       "name": "Preprogrammed show speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Running speed decreasing"
+        }
+      ]
     }
   ],
   "modes": [

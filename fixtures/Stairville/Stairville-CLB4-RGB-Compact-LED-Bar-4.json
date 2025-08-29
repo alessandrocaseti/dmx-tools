@@ -97,15 +97,351 @@
     },
     {
       "name": "AutoShow2",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "All LEDs Off"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "All Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "All Yellow"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "All Green"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "All Cyan"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "All Blue"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "All Pink"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "All White"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Preprogrammed Automatic Show 01"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Preprogrammed Automatic Show 02"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Preprogrammed Automatic Show 03"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Preprogrammed Automatic Show 04"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Preprogrammed Automatic Show 05"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Preprogrammed Automatic Show 06"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Preprogrammed Automatic Show 07"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Preprogrammed Automatic Show 08"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Preprogrammed Automatic Show 09"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Preprogrammed Automatic Show 10"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Preprogrammed Automatic Show 11"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Preprogrammed Automatic Show 12"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Preprogrammed Automatic Show 13"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Preprogrammed Automatic Show 14"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Preprogrammed Automatic Show 15"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Preprogrammed Automatic Show 16"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Controlled Show"
+        }
+      ]
     },
     {
       "name": "AutoShow7",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "All LEDs Set via Channels 1-3"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "All Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "All Yellow"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "All Green"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "All Cyan"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "All Blue"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "All Pink"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "All White"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Preprogrammed Automatic Show 01"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Preprogrammed Automatic Show 02"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Preprogrammed Automatic Show 03"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Preprogrammed Automatic Show 04"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Preprogrammed Automatic Show 05"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Preprogrammed Automatic Show 06"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Preprogrammed Automatic Show 07"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Preprogrammed Automatic Show 08"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Preprogrammed Automatic Show 09"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Preprogrammed Automatic Show 10"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Preprogrammed Automatic Show 11"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Preprogrammed Automatic Show 12"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Preprogrammed Automatic Show 13"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Preprogrammed Automatic Show 14"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Preprogrammed Automatic Show 15"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Preprogrammed Automatic Show 16"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Controlled Show"
+        }
+      ]
     },
     {
       "name": "Speed and Mode Controller",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Sound Mode 01 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Sound Mode 02 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Sound Mode 03 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Sound Mode 04 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Sound Mode 05 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Sound Mode 06 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Sound Mode 07 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Sound Mode 08 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Sound Mode 09 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Sound Mode 10 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Sound Mode 11 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Sound Mode 12 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Sound Mode 13 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Sound Mode 14 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Sound Mode 15 (or increase speed when previous channel is [0-239] )"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Mode 16 (or increase speed when previous channel is [0-239] )"
+        }
+      ]
     }
   ],
   "modes": [

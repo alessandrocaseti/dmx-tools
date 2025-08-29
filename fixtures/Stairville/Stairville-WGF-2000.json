@@ -5,15 +5,41 @@
   "channels": [
     {
       "name": "Smoke",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Smoke Intensity (0%-100%)"
+        }
+      ]
     },
     {
       "name": "Fan",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Van Intensity (0%-100%)"
+        }
+      ]
     },
     {
       "name": "Program",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Heavy Mode (Fluid and Water)"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Light Mode (Water only)"
+        }
+      ]
     }
   ],
   "modes": [

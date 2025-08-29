@@ -29,19 +29,307 @@
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Strobe effect off"
+        },
+        {
+          "min": "11",
+          "max": "128",
+          "name": "Random Strobe effect, increasing speed"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Strobe effect, decreasing speed"
+        }
+      ]
     },
     {
       "name": "Colour wheel",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "11",
+          "name": "White"
+        },
+        {
+          "min": "12",
+          "max": "23",
+          "name": "Red"
+        },
+        {
+          "min": "24",
+          "max": "35",
+          "name": "Green"
+        },
+        {
+          "min": "36",
+          "max": "47",
+          "name": "Light blue"
+        },
+        {
+          "min": "48",
+          "max": "59",
+          "name": "Purple"
+        },
+        {
+          "min": "60",
+          "max": "71",
+          "name": "Yellow"
+        },
+        {
+          "min": "72",
+          "max": "83",
+          "name": "Blue"
+        },
+        {
+          "min": "84",
+          "max": "95",
+          "name": "Orange"
+        },
+        {
+          "min": "96",
+          "max": "107",
+          "name": "White + red"
+        },
+        {
+          "min": "108",
+          "max": "119",
+          "name": "Red + green"
+        },
+        {
+          "min": "120",
+          "max": "131",
+          "name": "Green + light blue"
+        },
+        {
+          "min": "132",
+          "max": "143",
+          "name": "Light blue + purple"
+        },
+        {
+          "min": "144",
+          "max": "155",
+          "name": "Purple + yellow"
+        },
+        {
+          "min": "156",
+          "max": "167",
+          "name": "Yellow + blue"
+        },
+        {
+          "min": "168",
+          "max": "179",
+          "name": "Blue + orange"
+        },
+        {
+          "min": "180",
+          "max": "191",
+          "name": "Orange + white"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Rainbow effect (gobo wheel rotation) in positive rotation direction, decreasing speed"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Rainbow effect (gobo wheel rotation) in negative rotation direction, increasing speed"
+        }
+      ]
     },
     {
       "name": "Gobo wheel",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "11",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "12",
+          "max": "17",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "18",
+          "max": "23",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "24",
+          "max": "29",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "30",
+          "max": "35",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "36",
+          "max": "41",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "42",
+          "max": "47",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "48",
+          "max": "53",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "54",
+          "max": "59",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "60",
+          "max": "65",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "66",
+          "max": "71",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "72",
+          "max": "77",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "78",
+          "max": "83",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "84",
+          "max": "89",
+          "name": "Gobo 14"
+        },
+        {
+          "min": "90",
+          "max": "95",
+          "name": "Gobo 14 shake, increasing speed"
+        },
+        {
+          "min": "96",
+          "max": "101",
+          "name": "Gobo 13 shake, increasing speed"
+        },
+        {
+          "min": "102",
+          "max": "107",
+          "name": "Gobo 12 shake, increasing speed"
+        },
+        {
+          "min": "108",
+          "max": "113",
+          "name": "Gobo 11 shake, increasing speed"
+        },
+        {
+          "min": "114",
+          "max": "119",
+          "name": "Gobo 10 shake, increasing speed"
+        },
+        {
+          "min": "120",
+          "max": "125",
+          "name": "Gobo 9 shake, increasing speed"
+        },
+        {
+          "min": "126",
+          "max": "131",
+          "name": "Gobo 8 shake, increasing speed"
+        },
+        {
+          "min": "132",
+          "max": "137",
+          "name": "Gobo 7 shake, increasing speed"
+        },
+        {
+          "min": "138",
+          "max": "143",
+          "name": "Gobo 6 shake, increasing speed"
+        },
+        {
+          "min": "144",
+          "max": "149",
+          "name": "Gobo 5 shake, increasing speed"
+        },
+        {
+          "min": "150",
+          "max": "155",
+          "name": "Gobo 4 shake, increasing speed"
+        },
+        {
+          "min": "156",
+          "max": "161",
+          "name": "Gobo 3 shake, increasing speed"
+        },
+        {
+          "min": "162",
+          "max": "167",
+          "name": "Gobo 2 shake, increasing speed"
+        },
+        {
+          "min": "168",
+          "max": "173",
+          "name": "Gobo 1 shake, increasing speed"
+        },
+        {
+          "min": "174",
+          "max": "179",
+          "name": "Open"
+        },
+        {
+          "min": "180",
+          "max": "217",
+          "name": "Rainbow effect (gobo wheel rotation) in positive rotation direction, decreasing speed"
+        },
+        {
+          "min": "218",
+          "max": "255",
+          "name": "Rainbow effect (gobo wheel rotation) in negative rotation direction, increasing speed"
+        }
+      ]
     },
     {
       "name": "Special settings",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Without function"
+        },
+        {
+          "min": "10",
+          "max": "20",
+          "name": "Reset after five seconds"
+        },
+        {
+          "min": "21",
+          "max": "255",
+          "name": "Without function"
+        }
+      ]
     }
   ],
   "modes": [

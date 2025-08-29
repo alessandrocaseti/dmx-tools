@@ -5,11 +5,115 @@
   "channels": [
     {
       "name": "Program",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "all LEDs off"
+        },
+        {
+          "min": "6",
+          "max": "19",
+          "name": "Auto program 1, if channel 2 = 0 ... 250 Sound program 1, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "20",
+          "max": "34",
+          "name": "Auto program 2, if channel 2 = 0 ... 250 Sound program 2, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "35",
+          "max": "48",
+          "name": "Auto program 3, if channel 2 = 0 ... 250 Sound program 3, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "49",
+          "max": "63",
+          "name": "Auto program 4, if channel 2 = 0 ... 250 Sound program 4, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "64",
+          "max": "77",
+          "name": "Auto program 5, if channel 2 = 0 ... 250 Sound program 5, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "78",
+          "max": "92",
+          "name": "Auto program 6, if channel 2 = 0 ... 250 Sound program 6, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "93",
+          "max": "106",
+          "name": "Auto program 7, if channel 2 = 0 ... 250 Sound program 7, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "107",
+          "max": "121",
+          "name": "Auto program 8, if channel 2 = 0 ... 250 Sound program 8, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "122",
+          "max": "135",
+          "name": "Auto program 9, if channel 2 = 0 ... 250 Sound program 9, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Auto program 10, if channel 2 = 0 ... 250 Sound program 10, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "151",
+          "max": "164",
+          "name": "Auto program 11, if channel 2 = 0 ... 250 Sound program 11, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "165",
+          "max": "179",
+          "name": "Auto program 12, if channel 2 = 0 ... 250 Sound program 12, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "180",
+          "max": "193",
+          "name": "Auto program 13, if channel 2 = 0 ... 250 Sound program 13, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "194",
+          "max": "208",
+          "name": "Auto program 14, if channel 2 = 0 ... 250 Sound program 13, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "209",
+          "max": "222",
+          "name": "Auto program 15, if channel 2 = 0 ... 250 Sound program 13, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "223",
+          "max": "237",
+          "name": "Auto program 16, if channel 2 = 0 ... 250 Sound program 13, if channel 2 = 251 ... 255"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Auto program 17, if channel 2 = 0 ... 250 Sound program 13, if channel 2 = 251 ... 255"
+        }
+      ]
     },
     {
       "name": "Program mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Program speed increasing"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-controlled mode, specifies the auto program / sound program setting for channel 1."
+        }
+      ]
     },
     {
       "name": "Intensity red",
@@ -25,7 +129,24 @@
     },
     {
       "name": "Strobe effect",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe effect off"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe effect, increasing speed, all colour LEDs"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe effect sound mode, all colour LEDs"
+        }
+      ]
     },
     {
       "name": "Intensity blue",
@@ -33,7 +154,29 @@
     },
     {
       "name": "Strobe function",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "20",
+          "name": "Strobe LED ring constantly on"
+        },
+        {
+          "min": "21",
+          "max": "250",
+          "name": "Strobe effect, increasing speed, strobe LED ring"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe effect sound mode, strobe LED ring"
+        }
+      ]
     },
     {
       "name": "Intensity red PAR LEDs",
@@ -65,11 +208,50 @@
     },
     {
       "name": "Strobe effect2",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe effect off"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe effect, increasing speed, all colour LEDs"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe effect sound mode, all colour LEDs"
+        }
+      ]
     },
     {
       "name": "Strobe function2",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "20",
+          "name": "Strobe LED ring constantly on"
+        },
+        {
+          "min": "21",
+          "max": "250",
+          "name": "Strobe effect, increasing speed, strobe LED ring"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe effect sound mode, strobe LED ring"
+        }
+      ]
     },
     {
       "name": "Intensity red PAR LEDs zone 1",
@@ -89,7 +271,24 @@
     },
     {
       "name": "Strobe effect zone 1",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe effect off, zone 1"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe effect, increasing speed, zone 1"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe effect sound mode, zone 1"
+        }
+      ]
     },
     {
       "name": "Intensity red PAR LEDs zone 2",
@@ -109,7 +308,24 @@
     },
     {
       "name": "Strobe effect zone 2",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe effect off, zone 2"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe effect, increasing speed, zone 2"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe effect sound mode, zone 2"
+        }
+      ]
     },
     {
       "name": "Intensity red PAR LEDs zone 3",
@@ -129,23 +345,183 @@
     },
     {
       "name": "Strobe effect zone 3",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe effect off, zone 3"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe effect, increasing speed, zone 3"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe effect sound mode, zone 3"
+        }
+      ]
     },
     {
       "name": "Strobe effect COB LED",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe effect off"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe effect, increasing speed, COB LED"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe effect sound mode, COB LED"
+        }
+      ]
     },
     {
       "name": "Strobe LED ring",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "20",
+          "name": "Strobe LED ring constantly on"
+        },
+        {
+          "min": "21",
+          "max": "250",
+          "name": "Strobe effect, increasing speed, strobe LED ring"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe effect sound mode, strobe LED ring"
+        }
+      ]
     },
     {
       "name": "Auto programs, Sound programs",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "all LEDs off"
+        },
+        {
+          "min": "6",
+          "max": "19",
+          "name": "Auto program 1, if channel 22 = 0 ... 250 Sound program 1, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "20",
+          "max": "34",
+          "name": "Auto program 2, if channel 22 = 0 ... 250 Sound program 2, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "35",
+          "max": "48",
+          "name": "Auto program 3, if channel 22 = 0 ... 250 Sound program 3, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "49",
+          "max": "63",
+          "name": "Auto program 4, if channel 22 = 0 ... 250 Sound program 4, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "64",
+          "max": "77",
+          "name": "Auto program 5, if channel 22 = 0 ... 250 Sound program 5, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "78",
+          "max": "92",
+          "name": "Auto program 6, if channel 22 = 0 ... 250 Sound program 6, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "93",
+          "max": "106",
+          "name": "Auto program 7, if channel 22 = 0 ... 250 Sound program 7, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "107",
+          "max": "121",
+          "name": "Auto program 8, if channel 22 = 0 ... 250 Sound program 8, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "122",
+          "max": "135",
+          "name": "Auto program 9, if channel 22 = 0 ... 250 Sound program 9, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Auto program 10, if channel 22 = 0 ... 250 Sound program 10, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "151",
+          "max": "164",
+          "name": "Auto program 11, if channel 22 = 0 ... 250 Sound program 11, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "165",
+          "max": "179",
+          "name": "Auto program 12, if channel 22 = 0 ... 250 Sound program 12, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "180",
+          "max": "193",
+          "name": "Auto program 13, if channel 22 = 0 ... 250 Sound program 13, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "194",
+          "max": "208",
+          "name": "Auto program 14, if channel 22 = 0 ... 250 Sound program 13, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "209",
+          "max": "222",
+          "name": "Auto program 15, if channel 22 = 0 ... 250 Sound program 13, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "223",
+          "max": "237",
+          "name": "Auto program 16, if channel 22 = 0 ... 250 Sound program 13, if channel 22 = 251 ... 255"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Auto program 17, if channel 22 = 0 ... 250 Sound program 13, if channel 22 = 251 ... 255"
+        }
+      ]
     },
     {
       "name": "Program mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Program speed increasing"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-controlled mode, specifies the auto program / sound program setting for channel 21."
+        }
+      ]
     }
   ],
   "modes": [

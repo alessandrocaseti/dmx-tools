@@ -21,15 +21,311 @@
     },
     {
       "name": "Color wheel",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Yellow"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Magenta"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Light Blue"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pink"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "CTO"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "CTB"
+        },
+        {
+          "min": "110",
+          "max": "127",
+          "name": "UV"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise rotation from slow to fast"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Rotation stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counterclockwise rotation from slow to fast"
+        }
+      ]
     },
     {
       "name": "Gobo wheel",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Gobo 14"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Gobo 15"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Gobo 16"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Gobo 17"
+        },
+        {
+          "min": "85",
+          "max": "92",
+          "name": "Gobo 1 shaking from slow to fast"
+        },
+        {
+          "min": "93",
+          "max": "100",
+          "name": "Gobo 2 shaking from slow to fast"
+        },
+        {
+          "min": "101",
+          "max": "108",
+          "name": "Gobo 3 shaking from slow to fast"
+        },
+        {
+          "min": "109",
+          "max": "116",
+          "name": "Gobo 4 shaking from slow to fast"
+        },
+        {
+          "min": "117",
+          "max": "124",
+          "name": "Gobo 5 shaking from slow to fast"
+        },
+        {
+          "min": "125",
+          "max": "132",
+          "name": "Gobo 6 shaking from slow to fast"
+        },
+        {
+          "min": "133",
+          "max": "140",
+          "name": "Gobo 7 shaking from slow to fast"
+        },
+        {
+          "min": "141",
+          "max": "148",
+          "name": "Gobo 8 shaking from slow to fast"
+        },
+        {
+          "min": "149",
+          "max": "156",
+          "name": "Gobo 9 shaking from slow to fast"
+        },
+        {
+          "min": "157",
+          "max": "164",
+          "name": "Gobo 10 shaking from slow to fast"
+        },
+        {
+          "min": "165",
+          "max": "172",
+          "name": "Gobo 11 shaking from slow to fast"
+        },
+        {
+          "min": "173",
+          "max": "180",
+          "name": "Gobo 12 shaking from slow to fast"
+        },
+        {
+          "min": "181",
+          "max": "188",
+          "name": "Gobo 13 shaking from slow to fast"
+        },
+        {
+          "min": "189",
+          "max": "196",
+          "name": "Gobo 14 shaking from slow to fast"
+        },
+        {
+          "min": "197",
+          "max": "204",
+          "name": "Gobo 15 shaking from slow to fast"
+        },
+        {
+          "min": "205",
+          "max": "212",
+          "name": "Gobo 16 shaking from slow to fast"
+        },
+        {
+          "min": "213",
+          "max": "255",
+          "name": "Gobo wheel rotation from slow to fast"
+        }
+      ]
     },
     {
       "name": "Shutter",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe from slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter open"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Pulse-in effect from slow to fast"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Pulse-out effect from fast to slow"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe from slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -37,31 +333,200 @@
     },
     {
       "name": "Focus",
-      "type": "Beam"
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Beam (Near to far)"
+        }
+      ]
     },
     {
       "name": "Prism",
-      "type": "Prism"
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Prism off"
+        },
+        {
+          "min": "6",
+          "max": "127",
+          "name": "Prism on"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Prism clockwise rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Rotation stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Prism counterclockwise rotation from slow to fast"
+        }
+      ]
     },
     {
       "name": "Frost",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "Frost swing out (hole)"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Frost swing in"
+        }
+      ]
     },
     {
       "name": "Pan/Tilt speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Pan/Tilt speed from max to min"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Blackout during pan/tilt movement"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Blackout during color/gobo change"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
     },
     {
       "name": "Fixture Control",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "39",
+          "name": "No function"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Lamp on (after 20 seconds)"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Lamp off"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Total reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Pan / Tilt reset"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "Color reset"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Gobo reset"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "Shutter reset"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "Other reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal Program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal Program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal Program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal Program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal Program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal Program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal Program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Internal Program 8"
+        }
+      ]
     },
     {
       "name": "Color speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color speed from max. to min."
+        }
+      ]
     },
     {
       "name": "Gobo speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Gobo speed from max. to min."
+        }
+      ]
     }
   ],
   "modes": [

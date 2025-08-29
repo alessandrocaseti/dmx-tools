@@ -121,15 +121,236 @@
     },
     {
       "name": "Strobe effect",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "Stroboscope effect (0 % to 100 %)"
+        }
+      ]
     },
     {
       "name": "Preprogrammed automatic show",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Dimmer"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Preprogrammed automatic show 00"
+        },
+        {
+          "min": "6",
+          "max": "11",
+          "name": "Preprogrammed automatic show 1"
+        },
+        {
+          "min": "12",
+          "max": "17",
+          "name": "Preprogrammed automatic show 2"
+        },
+        {
+          "min": "18",
+          "max": "23",
+          "name": "Preprogrammed automatic show 3"
+        },
+        {
+          "min": "24",
+          "max": "29",
+          "name": "Preprogrammed automatic show 4"
+        },
+        {
+          "min": "30",
+          "max": "35",
+          "name": "Preprogrammed automatic show 5"
+        },
+        {
+          "min": "36",
+          "max": "41",
+          "name": "Preprogrammed automatic show 6"
+        },
+        {
+          "min": "42",
+          "max": "47",
+          "name": "Preprogrammed automatic show 7"
+        },
+        {
+          "min": "48",
+          "max": "53",
+          "name": "Preprogrammed automatic show 8"
+        },
+        {
+          "min": "54",
+          "max": "59",
+          "name": "Preprogrammed automatic show 9"
+        },
+        {
+          "min": "60",
+          "max": "65",
+          "name": "Preprogrammed automatic show 10"
+        },
+        {
+          "min": "66",
+          "max": "71",
+          "name": "Preprogrammed automatic show 11"
+        },
+        {
+          "min": "72",
+          "max": "77",
+          "name": "Preprogrammed automatic show 12"
+        },
+        {
+          "min": "78",
+          "max": "83",
+          "name": "Preprogrammed automatic show 13 (‘Carnival in Rio’)"
+        },
+        {
+          "min": "84",
+          "max": "89",
+          "name": "Preprogrammed automatic show 14"
+        },
+        {
+          "min": "90",
+          "max": "95",
+          "name": "Preprogrammed automatic show 15"
+        },
+        {
+          "min": "96",
+          "max": "101",
+          "name": "Preprogrammed automatic show 16"
+        },
+        {
+          "min": "102",
+          "max": "107",
+          "name": "Preprogrammed automatic show 17"
+        },
+        {
+          "min": "108",
+          "max": "113",
+          "name": "Preprogrammed automatic show 18"
+        },
+        {
+          "min": "114",
+          "max": "119",
+          "name": "Preprogrammed automatic show 19"
+        },
+        {
+          "min": "120",
+          "max": "125",
+          "name": "Preprogrammed automatic show 20"
+        },
+        {
+          "min": "126",
+          "max": "131",
+          "name": "Preprogrammed automatic show 21"
+        },
+        {
+          "min": "132",
+          "max": "137",
+          "name": "Preprogrammed automatic show 22"
+        },
+        {
+          "min": "138",
+          "max": "143",
+          "name": "Preprogrammed automatic show 23"
+        },
+        {
+          "min": "144",
+          "max": "149",
+          "name": "Preprogrammed automatic show 24"
+        },
+        {
+          "min": "150",
+          "max": "155",
+          "name": "Preprogrammed automatic show 25"
+        },
+        {
+          "min": "156",
+          "max": "161",
+          "name": "Preprogrammed automatic show 26"
+        },
+        {
+          "min": "162",
+          "max": "167",
+          "name": "Preprogrammed automatic show 27"
+        },
+        {
+          "min": "168",
+          "max": "173",
+          "name": "Preprogrammed automatic show 28"
+        },
+        {
+          "min": "174",
+          "max": "179",
+          "name": "Preprogrammed automatic show 29"
+        },
+        {
+          "min": "180",
+          "max": "185",
+          "name": "Preprogrammed automatic show 30 (‘Blue & Orange’)"
+        },
+        {
+          "min": "186",
+          "max": "191",
+          "name": "Preprogrammed automatic show 31 (‘Campfire’)"
+        },
+        {
+          "min": "192",
+          "max": "197",
+          "name": "Preprogrammed automatic show 32 (‘Ice Time’)"
+        },
+        {
+          "min": "198",
+          "max": "203",
+          "name": "Preprogrammed automatic show 33 (‘Old School’)"
+        },
+        {
+          "min": "204",
+          "max": "209",
+          "name": "Preprogrammed automatic show 34 (‘Pink Panther’)"
+        },
+        {
+          "min": "210",
+          "max": "215",
+          "name": "Preprogrammed automatic show 35 (‘Rainbow’)"
+        },
+        {
+          "min": "216",
+          "max": "221",
+          "name": "Preprogrammed automatic show 36 (‘Reggae’)"
+        },
+        {
+          "min": "222",
+          "max": "227",
+          "name": "Preprogrammed automatic show 37 (‘Techno Time’)"
+        },
+        {
+          "min": "228",
+          "max": "255",
+          "name": "Sound-controlled show"
+        }
+      ]
     },
     {
       "name": "Function depending on setting of channel 18",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Function depending on setting of channel 18"
+        }
+      ]
     }
   ],
   "modes": [

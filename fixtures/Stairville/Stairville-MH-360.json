@@ -25,7 +25,44 @@
     },
     {
       "name": "Special",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Enable BlackOut while Pan or Tilt move"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Disable BlackOut while Pan or Tilt move"
+        },
+        {
+          "min": "90",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Stand-Alone"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -33,7 +70,54 @@
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Fast strobe -> Slow strobe"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "No function"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast close -> Slow open"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Slow close -> Fast open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
     },
     {
       "name": "Red",
@@ -49,11 +133,345 @@
     },
     {
       "name": "Color/Chase/Fade",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "11",
+          "name": "Color 1"
+        },
+        {
+          "min": "12",
+          "max": "15",
+          "name": "Color 2"
+        },
+        {
+          "min": "16",
+          "max": "18",
+          "name": "Color 3"
+        },
+        {
+          "min": "19",
+          "max": "22",
+          "name": "Color 4"
+        },
+        {
+          "min": "23",
+          "max": "26",
+          "name": "Color 5"
+        },
+        {
+          "min": "27",
+          "max": "30",
+          "name": "Color 6"
+        },
+        {
+          "min": "31",
+          "max": "33",
+          "name": "Color 7"
+        },
+        {
+          "min": "34",
+          "max": "37",
+          "name": "Color 8"
+        },
+        {
+          "min": "38",
+          "max": "41",
+          "name": "Color 9"
+        },
+        {
+          "min": "42",
+          "max": "45",
+          "name": "Color 10"
+        },
+        {
+          "min": "46",
+          "max": "48",
+          "name": "Color 11"
+        },
+        {
+          "min": "49",
+          "max": "52",
+          "name": "Color 12"
+        },
+        {
+          "min": "53",
+          "max": "56",
+          "name": "Color 13"
+        },
+        {
+          "min": "57",
+          "max": "60",
+          "name": "Color 14"
+        },
+        {
+          "min": "61",
+          "max": "63",
+          "name": "Color 15"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "Color 16"
+        },
+        {
+          "min": "68",
+          "max": "71",
+          "name": "Color 17"
+        },
+        {
+          "min": "72",
+          "max": "75",
+          "name": "Color 18"
+        },
+        {
+          "min": "76",
+          "max": "78",
+          "name": "Color 19"
+        },
+        {
+          "min": "79",
+          "max": "82",
+          "name": "Color 20"
+        },
+        {
+          "min": "83",
+          "max": "86",
+          "name": "Color 21"
+        },
+        {
+          "min": "87",
+          "max": "90",
+          "name": "Color 22"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Color 23"
+        },
+        {
+          "min": "94",
+          "max": "97",
+          "name": "Color 24"
+        },
+        {
+          "min": "98",
+          "max": "101",
+          "name": "Color 25"
+        },
+        {
+          "min": "102",
+          "max": "105",
+          "name": "Color 26"
+        },
+        {
+          "min": "106",
+          "max": "108",
+          "name": "Color 27"
+        },
+        {
+          "min": "109",
+          "max": "112",
+          "name": "Color 28"
+        },
+        {
+          "min": "113",
+          "max": "116",
+          "name": "Color 29"
+        },
+        {
+          "min": "117",
+          "max": "120",
+          "name": "Color 30"
+        },
+        {
+          "min": "121",
+          "max": "123",
+          "name": "Color 31"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "Color 32"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Color Chase 1"
+        },
+        {
+          "min": "132",
+          "max": "135",
+          "name": "Color Chase 2"
+        },
+        {
+          "min": "136",
+          "max": "139",
+          "name": "Color Chase 3"
+        },
+        {
+          "min": "140",
+          "max": "143",
+          "name": "Color Chase 4"
+        },
+        {
+          "min": "144",
+          "max": "147",
+          "name": "Color Chase 5"
+        },
+        {
+          "min": "148",
+          "max": "151",
+          "name": "Color Chase 6"
+        },
+        {
+          "min": "152",
+          "max": "155",
+          "name": "Color Chase 7"
+        },
+        {
+          "min": "156",
+          "max": "159",
+          "name": "Color Chase 8"
+        },
+        {
+          "min": "160",
+          "max": "163",
+          "name": "Color Chase 9"
+        },
+        {
+          "min": "164",
+          "max": "167",
+          "name": "Color Chase 10"
+        },
+        {
+          "min": "168",
+          "max": "171",
+          "name": "Color Chase 11"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "Color Chase 12"
+        },
+        {
+          "min": "176",
+          "max": "179",
+          "name": "Color Chase 13"
+        },
+        {
+          "min": "180",
+          "max": "183",
+          "name": "Color Chase 14"
+        },
+        {
+          "min": "184",
+          "max": "187",
+          "name": "Color Chase 15"
+        },
+        {
+          "min": "188",
+          "max": "191",
+          "name": "Color Chase 16"
+        },
+        {
+          "min": "192",
+          "max": "195",
+          "name": "Color Fade 1"
+        },
+        {
+          "min": "196",
+          "max": "199",
+          "name": "Color Fade 2"
+        },
+        {
+          "min": "200",
+          "max": "203",
+          "name": "Color Fade 3"
+        },
+        {
+          "min": "204",
+          "max": "207",
+          "name": "Color Fade 4"
+        },
+        {
+          "min": "208",
+          "max": "211",
+          "name": "Color Fade 5"
+        },
+        {
+          "min": "212",
+          "max": "215",
+          "name": "Color Fade 6"
+        },
+        {
+          "min": "216",
+          "max": "219",
+          "name": "Color Fade 7"
+        },
+        {
+          "min": "220",
+          "max": "223",
+          "name": "Color Fade 8"
+        },
+        {
+          "min": "224",
+          "max": "227",
+          "name": "Color Fade 9"
+        },
+        {
+          "min": "228",
+          "max": "231",
+          "name": "Color Fade 10"
+        },
+        {
+          "min": "232",
+          "max": "235",
+          "name": "Color Fade 11"
+        },
+        {
+          "min": "236",
+          "max": "239",
+          "name": "Color Fade 12"
+        },
+        {
+          "min": "240",
+          "max": "243",
+          "name": "Color Fade 13"
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "Color Fade 14"
+        },
+        {
+          "min": "248",
+          "max": "251",
+          "name": "Color Fade 15"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Color Fade 16"
+        }
+      ]
     },
     {
       "name": "Chase/Fade Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "slow -> fast"
+        }
+      ]
     }
   ],
   "modes": [

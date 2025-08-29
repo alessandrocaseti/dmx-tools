@@ -57,7 +57,14 @@
     },
     {
       "name": "Strobe Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Strobe Speed"
+        }
+      ]
     }
   ],
   "modes": [

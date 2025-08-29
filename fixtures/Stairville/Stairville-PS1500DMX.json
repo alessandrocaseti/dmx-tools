@@ -5,7 +5,14 @@
   "channels": [
     {
       "name": "Flash rate",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash rate slow to fast"
+        }
+      ]
     },
     {
       "name": "Dimmer",

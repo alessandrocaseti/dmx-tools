@@ -5,11 +5,200 @@
   "channels": [
     {
       "name": "Color wheel",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "White"
+        },
+        {
+          "min": "7",
+          "max": "10",
+          "name": "White + Red"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Red"
+        },
+        {
+          "min": "16",
+          "max": "19",
+          "name": "Red + Orange"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Orange"
+        },
+        {
+          "min": "25",
+          "max": "28",
+          "name": "Orange + Cyan"
+        },
+        {
+          "min": "29",
+          "max": "33",
+          "name": "Cyan"
+        },
+        {
+          "min": "34",
+          "max": "37",
+          "name": "Cyan + Green"
+        },
+        {
+          "min": "38",
+          "max": "42",
+          "name": "Green"
+        },
+        {
+          "min": "43",
+          "max": "46",
+          "name": "Green + Light Green"
+        },
+        {
+          "min": "47",
+          "max": "51",
+          "name": "Light Green"
+        },
+        {
+          "min": "52",
+          "max": "55",
+          "name": "Light Green + Pink"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Pink"
+        },
+        {
+          "min": "61",
+          "max": "64",
+          "name": "Pink + Yellow"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Yellow"
+        },
+        {
+          "min": "70",
+          "max": "73",
+          "name": "Yellow + Magenta"
+        },
+        {
+          "min": "74",
+          "max": "78",
+          "name": "Magenta"
+        },
+        {
+          "min": "79",
+          "max": "82",
+          "name": "Magenta + Blue"
+        },
+        {
+          "min": "83",
+          "max": "87",
+          "name": "Blue"
+        },
+        {
+          "min": "88",
+          "max": "91",
+          "name": "Blue + Gold"
+        },
+        {
+          "min": "92",
+          "max": "96",
+          "name": "Gold"
+        },
+        {
+          "min": "97",
+          "max": "100",
+          "name": "Gold + CTO"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "CTO"
+        },
+        {
+          "min": "106",
+          "max": "109",
+          "name": "CTO + CTB"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "CTB"
+        },
+        {
+          "min": "115",
+          "max": "118",
+          "name": "CTB + UV"
+        },
+        {
+          "min": "119",
+          "max": "123",
+          "name": "UV"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "UV + White"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotation from slow to fast"
+        }
+      ]
     },
     {
       "name": "Shutter",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Linear Strobe from slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Reserved"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe from slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -17,15 +206,216 @@
     },
     {
       "name": "Gobo wheel",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Gobo open"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "60",
+          "max": "63",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "68",
+          "max": "71",
+          "name": "Gobo 14"
+        },
+        {
+          "min": "72",
+          "max": "113",
+          "name": "Forwards rotation from fast to slow"
+        },
+        {
+          "min": "114",
+          "max": "117",
+          "name": "Ratation stop"
+        },
+        {
+          "min": "118",
+          "max": "159",
+          "name": "Backwards rotation from slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "166",
+          "name": "Gobo 1 Shaking from slow to fast"
+        },
+        {
+          "min": "167",
+          "max": "173",
+          "name": "Gobo 2 Shaking from slow to fast"
+        },
+        {
+          "min": "174",
+          "max": "180",
+          "name": "Gobo 3 Shaking from slow to fast"
+        },
+        {
+          "min": "181",
+          "max": "187",
+          "name": "Gobo 4 Shaking from slow to fast"
+        },
+        {
+          "min": "188",
+          "max": "194",
+          "name": "Gobo 5 Shaking from slow to fast"
+        },
+        {
+          "min": "195",
+          "max": "201",
+          "name": "Gobo 6 Shaking from slow to fast"
+        },
+        {
+          "min": "202",
+          "max": "208",
+          "name": "Gobo 7 Shaking from slow to fast"
+        },
+        {
+          "min": "209",
+          "max": "215",
+          "name": "Gobo 8 Shaking from slow to fast"
+        },
+        {
+          "min": "216",
+          "max": "222",
+          "name": "Gobo 9 Shaking from slow to fast"
+        },
+        {
+          "min": "223",
+          "max": "229",
+          "name": "Gobo 10 Shaking from slow to fast"
+        },
+        {
+          "min": "230",
+          "max": "236",
+          "name": "Gobo 11 Shaking from slow to fast"
+        },
+        {
+          "min": "237",
+          "max": "243",
+          "name": "Gobo 12 Shaking from slow to fast"
+        },
+        {
+          "min": "244",
+          "max": "250",
+          "name": "Gobo 13 Shaking from slow to fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Gobo 14 Shaking from slow to fast"
+        }
+      ]
     },
     {
       "name": "Prism insertion",
-      "type": "Prism"
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Prism disabled"
+        },
+        {
+          "min": "20",
+          "max": "127",
+          "name": "Prism enabled"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Prism + Gobo macros"
+        }
+      ]
     },
     {
       "name": "Prism rotation",
-      "type": "Prism"
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No rotation"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Forwards rotation from fast to slow"
+        },
+        {
+          "min": "128",
+          "max": "129",
+          "name": "Rotation stop"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Backwards rotation from slow to fast"
+        }
+      ]
     },
     {
       "name": "Reserved 1",
@@ -37,7 +427,14 @@
     },
     {
       "name": "Focus",
-      "type": "Beam"
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Beam focus far to near"
+        }
+      ]
     },
     {
       "name": "Pan",
@@ -57,15 +454,101 @@
     },
     {
       "name": "Pan / Tilt Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Max speed"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Speed from fast to slow"
+        }
+      ]
     },
     {
       "name": "Color / Gobo Speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Color / Gobo Speed low"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Color / Gobo Speed high"
+        }
+      ]
     },
     {
       "name": "Fixture Control",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "128",
+          "name": "Reserved"
+        },
+        {
+          "min": "129",
+          "max": "139",
+          "name": "Lamp On"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pan / Tilt Reset"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Color Reset"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Gobo Reset"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dimmer / Shutter Reset"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Focus / Zoom / Frost Reset"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Iris / Effect Reset"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset All"
+        },
+        {
+          "min": "210",
+          "max": "229",
+          "name": "Reserved"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Lamp Off"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Reserved"
+        }
+      ]
     },
     {
       "name": "Dimmer fine",
@@ -73,15 +556,36 @@
     },
     {
       "name": "Reserved 3",
-      "type": "Nothing"
+      "type": "Nothing",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Reserved"
+        }
+      ]
     },
     {
       "name": "Pan / Tilt macro selection",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pan / Tilt macro selection"
+        }
+      ]
     },
     {
       "name": "Pan / Tilt macro speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pan / Tilt macro speed"
+        }
+      ]
     }
   ],
   "modes": [

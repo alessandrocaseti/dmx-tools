@@ -25,11 +25,120 @@
     },
     {
       "name": "Operating Mode",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Manual mode; colours can be adjusted via channels 2 to 4"
+        },
+        {
+          "min": "1",
+          "max": "27",
+          "name": "Preprogrammed automatic show no. 1"
+        },
+        {
+          "min": "28",
+          "max": "55",
+          "name": "Preprogrammed automatic show no. 2"
+        },
+        {
+          "min": "56",
+          "max": "83",
+          "name": "Preprogrammed automatic show no. 3"
+        },
+        {
+          "min": "84",
+          "max": "111",
+          "name": "Preprogrammed automatic show no. 4"
+        },
+        {
+          "min": "112",
+          "max": "139",
+          "name": "Preprogrammed automatic show no. 5"
+        },
+        {
+          "min": "140",
+          "max": "167",
+          "name": "Preprogrammed automatic show no. 6"
+        },
+        {
+          "min": "168",
+          "max": "195",
+          "name": "Preprogrammed automatic show no. 7"
+        },
+        {
+          "min": "196",
+          "max": "223",
+          "name": "Preprogrammed automatic show no. 8"
+        },
+        {
+          "min": "224",
+          "max": "251",
+          "name": "Preprogrammed automatic show no. 9"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Sound-controlled show"
+        }
+      ]
     },
     {
       "name": "Constant Colour / Progress Speed",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "27",
+          "name": "Dark, when channel 5 = 1...24"
+        },
+        {
+          "min": "28",
+          "max": "55",
+          "name": "Red, when channel 5 = 1...24"
+        },
+        {
+          "min": "56",
+          "max": "83",
+          "name": "Orange, when channel 5 = 1...24"
+        },
+        {
+          "min": "84",
+          "max": "111",
+          "name": "Yellow, when channel 5 = 1...24"
+        },
+        {
+          "min": "112",
+          "max": "139",
+          "name": "Light green, when channel 5 = 1...24"
+        },
+        {
+          "min": "140",
+          "max": "167",
+          "name": "Light blue, when channel 5 = 1...24"
+        },
+        {
+          "min": "168",
+          "max": "195",
+          "name": "Blue, when channel 5 = 1...24"
+        },
+        {
+          "min": "196",
+          "max": "223",
+          "name": "Purple, when channel 5 = 1...24"
+        },
+        {
+          "min": "224",
+          "max": "251",
+          "name": "Pink, when channel 5 = 1...24"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Red + green + blue, when channel 5 = 1...24"
+        }
+      ]
     }
   ],
   "modes": [

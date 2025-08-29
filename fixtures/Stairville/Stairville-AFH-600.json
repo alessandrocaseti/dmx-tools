@@ -5,7 +5,14 @@
   "channels": [
     {
       "name": "Haze Intensity",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Amount of haze"
+        }
+      ]
     }
   ],
   "modes": [

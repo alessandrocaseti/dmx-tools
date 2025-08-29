@@ -13,19 +13,212 @@
     },
     {
       "name": "Colour",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Greenish"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Blueish"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Green"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Purple"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Blue"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Yellow"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Dark Green"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Pink"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Orange"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Dark Purple"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Red/Blue"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Yellow/Green"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Blue/Pink"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Rainbow Forward"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Rainbow Backward"
+        }
+      ]
     },
     {
       "name": "Gobo",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "23",
+          "name": "Blank"
+        },
+        {
+          "min": "24",
+          "max": "47",
+          "name": "Crosslines"
+        },
+        {
+          "min": "48",
+          "max": "79",
+          "name": "Flower"
+        },
+        {
+          "min": "80",
+          "max": "103",
+          "name": "Starcircles"
+        },
+        {
+          "min": "104",
+          "max": "127",
+          "name": "Bubbles"
+        },
+        {
+          "min": "128",
+          "max": "151",
+          "name": "Sun"
+        },
+        {
+          "min": "152",
+          "max": "175",
+          "name": "Ring of Spots"
+        },
+        {
+          "min": "176",
+          "max": "207",
+          "name": "Fine Sun"
+        },
+        {
+          "min": "208",
+          "max": "231",
+          "name": "Stars"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Spiral"
+        }
+      ]
     },
     {
       "name": "Gobo Rotation",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Rotation 0-360"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Rotation Forward Fast -> Slow"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Rotation Backward slow -> fast"
+        }
+      ]
     },
     {
       "name": "Shutter",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "95",
+          "name": "Shutter Closed -> Open"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Strobe"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "No function"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Pulse fast -> Slow -> Fast"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Strobe Patterns"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Full"
+        }
+      ]
     }
   ],
   "modes": [

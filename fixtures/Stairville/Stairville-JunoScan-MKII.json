@@ -13,15 +13,261 @@
     },
     {
       "name": "Color-Wheel",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "White"
+        },
+        {
+          "min": "6",
+          "max": "11",
+          "name": "Yellow"
+        },
+        {
+          "min": "12",
+          "max": "17",
+          "name": "Pink"
+        },
+        {
+          "min": "18",
+          "max": "23",
+          "name": "Green"
+        },
+        {
+          "min": "24",
+          "max": "29",
+          "name": "Red"
+        },
+        {
+          "min": "30",
+          "max": "35",
+          "name": "Blue"
+        },
+        {
+          "min": "36",
+          "max": "41",
+          "name": "Orange"
+        },
+        {
+          "min": "42",
+          "max": "47",
+          "name": "Dark blue"
+        },
+        {
+          "min": "48",
+          "max": "53",
+          "name": "Kelly-Green"
+        },
+        {
+          "min": "54",
+          "max": "63",
+          "name": "Orangered"
+        },
+        {
+          "min": "64",
+          "max": "73",
+          "name": "White + Yellow"
+        },
+        {
+          "min": "74",
+          "max": "79",
+          "name": "Yellow + Pink"
+        },
+        {
+          "min": "80",
+          "max": "85",
+          "name": "Pink + Green"
+        },
+        {
+          "min": "86",
+          "max": "91",
+          "name": "Green + Red"
+        },
+        {
+          "min": "92",
+          "max": "97",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "98",
+          "max": "103",
+          "name": "Blue + Orange"
+        },
+        {
+          "min": "104",
+          "max": "109",
+          "name": "Orange + Dark blue"
+        },
+        {
+          "min": "110",
+          "max": "115",
+          "name": "Dark Blue + Kelly-Green"
+        },
+        {
+          "min": "116",
+          "max": "121",
+          "name": "Kelly-Green + Orangered"
+        },
+        {
+          "min": "122",
+          "max": "127",
+          "name": "Orangered + White"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Rainbow-Effect with positive direction of rotation, speed increasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Rainbow-Effect with negative direction of rotation, speed increasing"
+        }
+      ]
     },
     {
       "name": "Shutter",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Closed (blackout)"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "215",
+          "name": "Strobe effect, speed increasing"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
     },
     {
       "name": "Gobo-Wheel",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "11",
+          "name": "Gobo 01"
+        },
+        {
+          "min": "12",
+          "max": "17",
+          "name": "Gobo 02"
+        },
+        {
+          "min": "18",
+          "max": "23",
+          "name": "Gobo 03"
+        },
+        {
+          "min": "24",
+          "max": "29",
+          "name": "Gobo 04"
+        },
+        {
+          "min": "30",
+          "max": "35",
+          "name": "Gobo 05"
+        },
+        {
+          "min": "36",
+          "max": "41",
+          "name": "Gobo 06"
+        },
+        {
+          "min": "42",
+          "max": "47",
+          "name": "Gobo 07"
+        },
+        {
+          "min": "48",
+          "max": "53",
+          "name": "Gobo 08"
+        },
+        {
+          "min": "54",
+          "max": "63",
+          "name": "Gobo 09"
+        },
+        {
+          "min": "64",
+          "max": "73",
+          "name": "Gobo 09 shake, speed increasing"
+        },
+        {
+          "min": "74",
+          "max": "79",
+          "name": "Gobo 08 shake, speed increasing"
+        },
+        {
+          "min": "80",
+          "max": "85",
+          "name": "Gobo 07 shake, speed increasing"
+        },
+        {
+          "min": "86",
+          "max": "91",
+          "name": "Gobo 06 shake, speed increasing"
+        },
+        {
+          "min": "92",
+          "max": "97",
+          "name": "Gobo 05 shake, speed increasing"
+        },
+        {
+          "min": "98",
+          "max": "103",
+          "name": "Gobo 04 shake, speed increasing"
+        },
+        {
+          "min": "104",
+          "max": "109",
+          "name": "Gobo 03 shake, speed increasing"
+        },
+        {
+          "min": "110",
+          "max": "115",
+          "name": "Gobo 02 shake, speed increasing"
+        },
+        {
+          "min": "116",
+          "max": "121",
+          "name": "Gobo 01 shake, speed increasing"
+        },
+        {
+          "min": "122",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Rainbow-Effect with positive direction of rotation, speed increasing"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Rainbow-Effect with negative direction of rotation, speed increasing"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -29,11 +275,175 @@
     },
     {
       "name": "Settings",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Not used"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Blackout during tilt and pan"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Blackout during rotation of color-wheel"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Blackout during rotation of gobo-wheel"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "No Blackout during rotation of color-wheel and pan/tilt"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "No Blackout during rotation of gobo-wheel and pan/tilt"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "No Blackout during rotation of color/gobo-wheel and pan/tilt"
+        },
+        {
+          "min": "56",
+          "max": "95",
+          "name": "Not used"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Reset pan"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Reset tilt"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Reset color-wheel"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Reset gobo-wheel"
+        },
+        {
+          "min": "128",
+          "max": "151",
+          "name": "Not Used"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Reset all"
+        },
+        {
+          "min": "160",
+          "max": "255",
+          "name": "Not Used"
+        }
+      ]
     },
     {
       "name": "Included Shows",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Not Used"
+        },
+        {
+          "min": "8",
+          "max": "23",
+          "name": "Program 01"
+        },
+        {
+          "min": "24",
+          "max": "39",
+          "name": "Program 02"
+        },
+        {
+          "min": "40",
+          "max": "55",
+          "name": "Program 03"
+        },
+        {
+          "min": "56",
+          "max": "71",
+          "name": "Program 04"
+        },
+        {
+          "min": "72",
+          "max": "87",
+          "name": "Program 05"
+        },
+        {
+          "min": "88",
+          "max": "103",
+          "name": "Program 06"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "Program 07"
+        },
+        {
+          "min": "120",
+          "max": "135",
+          "name": "Program 08"
+        },
+        {
+          "min": "136",
+          "max": "151",
+          "name": "Soundcontrol 01"
+        },
+        {
+          "min": "152",
+          "max": "167",
+          "name": "Soundcontrol 02"
+        },
+        {
+          "min": "168",
+          "max": "183",
+          "name": "Soundcontrol 03"
+        },
+        {
+          "min": "184",
+          "max": "199",
+          "name": "Soundcontrol 04"
+        },
+        {
+          "min": "200",
+          "max": "215",
+          "name": "Soundcontrol 05"
+        },
+        {
+          "min": "216",
+          "max": "231",
+          "name": "Soundcontrol 06"
+        },
+        {
+          "min": "232",
+          "max": "247",
+          "name": "Soundcontrol 07"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Soundcontrol 08"
+        }
+      ]
     }
   ],
   "modes": [

@@ -5,7 +5,19 @@
   "channels": [
     {
       "name": "Strobe 1",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "LEDs off (blackout)"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe effect, speed increasing from approx. 0 Hz to 30 Hz"
+        }
+      ]
     },
     {
       "name": "Dimmer",
@@ -13,19 +25,107 @@
     },
     {
       "name": "Strobe",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "LEDs on"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "LEDs off (blackout)"
+        },
+        {
+          "min": "11",
+          "max": "250",
+          "name": "Strobe effect, speed increasing from approx. 0 Hz to 30 Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "LEDs on"
+        }
+      ]
     },
     {
       "name": "Flash impulse",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash impulse duration, increasing from 0 ms to 510 ms"
+        }
+      ]
     },
     {
       "name": "Strobe 2",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "LEDs on, brightness controlled by channel 1"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "LEDs off (blackout)"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Random impulses, increasing speed"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Randomly increasing brightness, increasing speed"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Randomly decreasing brightness, increasing speed"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random Strobe effect, increasing speed"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Interrupt effect, 5 s to 1 s"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe effect, speed increasing from approx. 0 Hz to 30 Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "LEDs on, brightness controlled by channel 1"
+        }
+      ]
     },
     {
       "name": "Sound control",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Sound control off"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Sound control on, increasing sensitivity"
+        }
+      ]
     }
   ],
   "modes": [

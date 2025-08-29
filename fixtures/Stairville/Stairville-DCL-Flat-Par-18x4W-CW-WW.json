@@ -17,11 +17,70 @@
     },
     {
       "name": "Programs",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "42",
+          "name": "Program 01"
+        },
+        {
+          "min": "43",
+          "max": "85",
+          "name": "Program 02"
+        },
+        {
+          "min": "86",
+          "max": "128",
+          "name": "Program 03"
+        },
+        {
+          "min": "129",
+          "max": "171",
+          "name": "Program 04"
+        },
+        {
+          "min": "172",
+          "max": "214",
+          "name": "Program 05"
+        },
+        {
+          "min": "215",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
     },
     {
       "name": "Colour Setting / Process Speed / Sound-Control Sensitivity",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "No function, if channel 4 = 0/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Warm white, if channel 4 = 1...42 (program 01)/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Cold white, if channel 4 = 1..42 (program 01)/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "All, if channel 4 = 1..42 (program 01)/Speed, if channel 4 = 43..214/Sensitivity, if channel 4 = 215..255"
+        }
+      ]
     },
     {
       "name": "Strobe",
@@ -29,11 +88,25 @@
     },
     {
       "name": "Warm White, if Channel 4 = 0",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Colour temperature selection warm white, if channel 4 = 0"
+        }
+      ]
     },
     {
       "name": "Cold White, if Channel 4 = 0",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Colour temperature selection cold white, if channel 4 = 0"
+        }
+      ]
     }
   ],
   "modes": [

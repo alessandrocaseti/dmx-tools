@@ -17,7 +17,14 @@
     },
     {
       "name": "Y axis infinite rotation",
-      "type": "Tilt"
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Y infinite"
+        }
+      ]
     },
     {
       "name": "XY Motor speed",
@@ -45,11 +52,30 @@
     },
     {
       "name": "Motor/Sound mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "128",
+          "name": "Motor auto run"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Sound activation mode"
+        }
+      ]
     },
     {
       "name": "Music Sensitivity",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sound Sensitivity (less -> more)"
+        }
+      ]
     },
     {
       "name": "Light bulb auto run",
@@ -57,11 +83,30 @@
     },
     {
       "name": "Light bulb auto run speed",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Light bulb auto run speed"
+        }
+      ]
     },
     {
       "name": "Reset",
-      "type": "Maintenance"
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "reset 5 seconds"
+        }
+      ]
     },
     {
       "name": "X Motor fine",

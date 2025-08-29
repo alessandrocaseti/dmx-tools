@@ -25,11 +25,70 @@
     },
     {
       "name": "2-channel DMX mode - 1. Channel",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "LEDs off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Constant unicoloured pattern in red"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Constant unicoloured pattern in red and green"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Constant unicoloured pattern in green"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Constant unicoloured pattern in blue and green"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Constant unicoloured pattern in blue"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Constant unicoloured pattern in blue and red"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Constant unicoloured pattern in red, green and blue"
+        },
+        {
+          "min": "64",
+          "max": "231",
+          "name": "Preprogrammed automatic shows"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Sound-controlled shows"
+        }
+      ]
     },
     {
       "name": "2-channel DMX mode - 2. Channel",
-      "type": "Intensity"
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Increasing speed / Mic Sensitivity"
+        }
+      ]
     },
     {
       "name": "Red2",

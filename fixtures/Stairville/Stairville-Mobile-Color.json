@@ -5,7 +5,79 @@
   "channels": [
     {
       "name": "Colour",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "White"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Red"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Yellow"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Blue"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Green"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Amber"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Orange"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Light Green"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Light Blue"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Magenta"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Pink"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Rainbow effect, slow -> fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Strobe, slow -> fast"
+        }
+      ]
     }
   ],
   "modes": [

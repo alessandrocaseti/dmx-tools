@@ -13,23 +13,273 @@
     },
     {
       "name": "Shutter / Shaking",
-      "type": "Shutter"
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Shutter speed slow to fast"
+        },
+        {
+          "min": "132",
+          "max": "247",
+          "name": "Shaking speed slow to fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
     },
     {
       "name": "Gobo",
-      "type": "Gobo"
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Gobo change from slow to fast"
+        }
+      ]
     },
     {
       "name": "Normal Color",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "12",
+          "name": "White"
+        },
+        {
+          "min": "13",
+          "max": "25",
+          "name": "Green"
+        },
+        {
+          "min": "26",
+          "max": "38",
+          "name": "Magenta"
+        },
+        {
+          "min": "39",
+          "max": "51",
+          "name": "Light blue"
+        },
+        {
+          "min": "52",
+          "max": "63",
+          "name": "Yellow"
+        },
+        {
+          "min": "64",
+          "max": "76",
+          "name": "Orange"
+        },
+        {
+          "min": "77",
+          "max": "89",
+          "name": "Blue"
+        },
+        {
+          "min": "90",
+          "max": "102",
+          "name": "UV purple"
+        },
+        {
+          "min": "103",
+          "max": "115",
+          "name": "Light green"
+        },
+        {
+          "min": "116",
+          "max": "127",
+          "name": "Pink"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow effect slow to fast"
+        }
+      ]
     },
     {
       "name": "Split Color",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Green"
+        },
+        {
+          "min": "16",
+          "max": "22",
+          "name": "Green + Magenta"
+        },
+        {
+          "min": "23",
+          "max": "30",
+          "name": "Magenta"
+        },
+        {
+          "min": "31",
+          "max": "37",
+          "name": "Magenta + Light blue"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Light blue"
+        },
+        {
+          "min": "46",
+          "max": "52",
+          "name": "Light blue + Yellow"
+        },
+        {
+          "min": "53",
+          "max": "60",
+          "name": "Yellow"
+        },
+        {
+          "min": "61",
+          "max": "67",
+          "name": "Yellow + Orange"
+        },
+        {
+          "min": "68",
+          "max": "75",
+          "name": "Orange"
+        },
+        {
+          "min": "76",
+          "max": "82",
+          "name": "Orange + Blue"
+        },
+        {
+          "min": "83",
+          "max": "90",
+          "name": "Blue"
+        },
+        {
+          "min": "91",
+          "max": "97",
+          "name": "Blue + UV purple"
+        },
+        {
+          "min": "98",
+          "max": "105",
+          "name": "UV purple"
+        },
+        {
+          "min": "106",
+          "max": "112",
+          "name": "UV purple + Light green"
+        },
+        {
+          "min": "113",
+          "max": "120",
+          "name": "Light green"
+        },
+        {
+          "min": "121",
+          "max": "127",
+          "name": "Pink"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow effect slow to fast"
+        }
+      ]
     },
     {
       "name": "Gobo Rotation",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stopped"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Rotation counterclockwise fast to slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "Stopped"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Rotation clockwise slow to fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Stopped"
+        }
+      ]
     },
     {
       "name": "Dimmer",

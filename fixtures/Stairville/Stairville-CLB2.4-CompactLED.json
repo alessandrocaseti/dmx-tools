@@ -97,15 +97,176 @@
     },
     {
       "name": "Preprogrammed automatic Shows",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "auto Show 1"
+        },
+        {
+          "min": "18",
+          "max": "35",
+          "name": "auto Show 2"
+        },
+        {
+          "min": "36",
+          "max": "53",
+          "name": "auto Show 3"
+        },
+        {
+          "min": "54",
+          "max": "71",
+          "name": "auto Show 4"
+        },
+        {
+          "min": "72",
+          "max": "89",
+          "name": "auto Show 5"
+        },
+        {
+          "min": "90",
+          "max": "107",
+          "name": "auto Show 6"
+        },
+        {
+          "min": "108",
+          "max": "125",
+          "name": "auto Show 7"
+        },
+        {
+          "min": "126",
+          "max": "143",
+          "name": "auto Show 8"
+        },
+        {
+          "min": "144",
+          "max": "161",
+          "name": "auto Show 9"
+        },
+        {
+          "min": "162",
+          "max": "179",
+          "name": "auto Show 10"
+        },
+        {
+          "min": "180",
+          "max": "197",
+          "name": "auto Show 11"
+        },
+        {
+          "min": "198",
+          "max": "215",
+          "name": "auto Show 12"
+        },
+        {
+          "min": "216",
+          "max": "233",
+          "name": "auto Show 13"
+        },
+        {
+          "min": "234",
+          "max": "251",
+          "name": "auto Show 14"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Sound"
+        }
+      ]
     },
     {
       "name": "Speed/Sensitivity",
-      "type": "Speed"
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed or sound sensitivity (0 to 100%)"
+        }
+      ]
     },
     {
       "name": "Fixed colors",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "LEDs off"
+        },
+        {
+          "min": "18",
+          "max": "35",
+          "name": "Cyan"
+        },
+        {
+          "min": "36",
+          "max": "53",
+          "name": "Purple"
+        },
+        {
+          "min": "54",
+          "max": "71",
+          "name": "Pink"
+        },
+        {
+          "min": "72",
+          "max": "89",
+          "name": "Orange"
+        },
+        {
+          "min": "90",
+          "max": "107",
+          "name": "White"
+        },
+        {
+          "min": "108",
+          "max": "125",
+          "name": "Light red"
+        },
+        {
+          "min": "126",
+          "max": "143",
+          "name": "Light green"
+        },
+        {
+          "min": "144",
+          "max": "161",
+          "name": "Light blue"
+        },
+        {
+          "min": "162",
+          "max": "179",
+          "name": "Yellow"
+        },
+        {
+          "min": "180",
+          "max": "197",
+          "name": "Warm white"
+        },
+        {
+          "min": "198",
+          "max": "215",
+          "name": "Red"
+        },
+        {
+          "min": "216",
+          "max": "233",
+          "name": "Green"
+        },
+        {
+          "min": "234",
+          "max": "251",
+          "name": "Blue"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Amber"
+        }
+      ]
     }
   ],
   "modes": [
