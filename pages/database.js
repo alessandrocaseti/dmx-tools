@@ -244,11 +244,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 let channelsHTML = '';
                 if (data.channels && data.channels.length > 0) {
-                    channelsHTML = '<h3>Channels</h3><ul>';
+                    channelsHTML = '<h3>Channels</h3><div class="channels-container">';
                     data.channels.forEach(channel => {
-                        channelsHTML += `<li class="channel-item"><span class="channel-name">${channel.name}</span><span class="channel-type">${channel.type}</span></li>`;
+                        channelsHTML += `
+                            <div class="channel-item">
+                                <div class="channel-header">
+                                    <span class="channel-name">${channel.name}</span>
+                                    <span class="channel-type">${channel.type}</span>
+                                    <span class="expander-arrow">▶</span>
+                                </div>
+                                <div class="channel-capabilities">`;
+                        if (channel.capabilities && channel.capabilities.length > 0) {
+                            channelsHTML += '<ul>';
+                            channel.capabilities.forEach(cap => {
+                                channelsHTML += `<li><strong>${cap.min}-${cap.max}:</strong> ${cap.name}</li>`;
+                            });
+                            channelsHTML += '</ul>';
+                        } else {
+                            channelsHTML += '<p>No capabilities defined.</p>';
+                        }
+                        channelsHTML += `</div></div>`;
                     });
-                    channelsHTML += '</ul>';
+                    channelsHTML += '</div>';
                 }
 
                 let modesHTML = '';
@@ -302,6 +319,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 databaseButtonsDiv.appendChild(detailsDiv);
 
+                const channelItems = detailsDiv.querySelectorAll('.channel-item .channel-header');
+                channelItems.forEach(item => {
+                    item.addEventListener('click', () => {
+                        item.parentElement.classList.toggle('expanded');
+                    });
+                });
+                
                 updateAddressBar();
                 updateBackButton();
             })
