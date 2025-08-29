@@ -694,6 +694,13 @@ function handleCommand(event)
             return;
         }
 
+        else if (command === 'qxf')
+        {
+            setCmdMessage('Opened QXF to JSON converter in a new browser page.', 'QXF');
+            window.open('qxf_converter/index.html', '_blank').focus();
+            return;
+        }
+
         else if (command === 'reload')
         {
             location.reload();
