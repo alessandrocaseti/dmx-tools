@@ -73,19 +73,31 @@
 
 .fixture-details .channel-header 
 {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 24px 150px 1fr auto;
     align-items: center;
+    gap: 15px;
+}
+
+.fixture-details .channel-icon
+{
+    width: 22px;
+    height: 22px;
+    font-family: 'IconFont';
+    font-size: 22px;
+    color: var(--colore-giallo);
 }
 
 .fixture-details .channel-name 
 {
     font-weight: bold;
+    text-align: left;
 }
 
 .fixture-details .channel-type 
 {
     color: #aaa;
+    text-align: left;
 }
 
 .fixture-details .expander-arrow 

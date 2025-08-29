@@ -245,12 +245,98 @@ document.addEventListener("DOMContentLoaded", function() {
                 let channelsHTML = '';
                 if (data.channels && data.channels.length > 0) {
                     channelsHTML = '<h3>Channels</h3><div class="channels-container">';
-                    data.channels.forEach(channel => {
+                    data.channels.forEach(channel => 
+                    {
+                        let currentIcon = '';
+                        let iconColor = 'yellow';
+                        switch (channel.type) 
+                        {
+                            case 'Pan': currentIcon = ''; break;
+                            case 'Tilt': currentIcon = ''; break;
+                            case 'Color': currentIcon = ''; break;
+                            case 'Intensity': currentIcon = ''; break;
+                            case 'Effect': currentIcon = ''; break;
+                            case 'Maintenance': currentIcon = ''; break;
+                            case 'Nothing': currentIcon = ''; break;
+                            case 'Unknown': currentIcon = ''; break;
+                            case 'Speed': currentIcon = '&#xEC4A;'; break;
+                            case 'Shutter': currentIcon = ''; break;
+                            case 'Prism': currentIcon = ''; break;
+                            case 'Beam': currentIcon = ''; break;
+                            case 'Red':
+                            {
+                                currentIcon = '';
+                                iconColor = 'red';
+                                break;
+                            }
+                            case 'Green':
+                            {
+                                currentIcon = '';
+                                iconColor = 'green';
+                                break;
+                            }
+                            case 'Blue':
+                            {
+                                currentIcon = '';
+                                iconColor = 'blue';
+                                break;
+                            }
+                            case 'White':
+                            {
+                                currentIcon = '';
+                                iconColor = 'white';
+                                break;
+                            }
+                            case 'Amber':
+                            {
+                                currentIcon = '';
+                                iconColor = 'darkorange';
+                                break;
+                            }
+                            case 'UV':
+                            {
+                                currentIcon = '';
+                                iconColor = 'indigo';
+                                break;
+                            }
+                            case 'Indigo':
+                            {
+                                currentIcon = '';
+                                iconColor = 'indigo';
+                                break;
+                            }
+                            case 'Lime':
+                            {
+                                currentIcon = '';
+                                iconColor = 'lime';
+                                break;
+                            }
+                            case 'Cyan':
+                            {
+                                currentIcon = '';
+                                iconColor = 'cyan';
+                                break;
+                            }
+                            case 'Magenta':
+                            {
+                                currentIcon = '';
+                                iconColor = 'magenta';
+                                break;
+                            }
+                            case 'Yellow':
+                            {
+                                currentIcon = '';
+                                iconColor = 'yellow';
+                                break;
+                            }
+                            default : currentIcon = ''; break;
+                        }
                         channelsHTML += `
                             <div class="channel-item">
                                 <div class="channel-header">
-                                    <span class="channel-name">${channel.name}</span>
+                                    <span class="channel-icon" style="color: ${iconColor}">${currentIcon}</span>
                                     <span class="channel-type">${channel.type}</span>
+                                    <span class="channel-name">${channel.name}</span>
                                     <span class="expander-arrow">▶</span>
                                 </div>
                                 <div class="channel-capabilities">`;
