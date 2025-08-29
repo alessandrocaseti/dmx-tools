@@ -256,10 +256,10 @@ document.addEventListener("DOMContentLoaded", function() {
                             case 'Color': currentIcon = ''; break;
                             case 'Intensity': currentIcon = ''; break;
                             case 'Effect': currentIcon = ''; break;
-                            case 'Maintenance': currentIcon = ''; break;
+                            case 'Maintenance': currentIcon = ''; break;
                             case 'Nothing': currentIcon = ''; break;
                             case 'Unknown': currentIcon = ''; break;
-                            case 'Speed': currentIcon = '&#xEC4A;'; break;
+                            case 'Speed': currentIcon = ''; break;
                             case 'Shutter': currentIcon = ''; break;
                             case 'Prism': currentIcon = ''; break;
                             case 'Beam': currentIcon = ''; break;
@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             case 'Green':
                             {
                                 currentIcon = '';
-                                iconColor = 'green';
+                                iconColor = 'lime';
                                 break;
                             }
                             case 'Blue':
@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             case 'Lime':
                             {
                                 currentIcon = '';
-                                iconColor = 'lime';
+                                iconColor = 'palegreen';
                                 break;
                             }
                             case 'Cyan':

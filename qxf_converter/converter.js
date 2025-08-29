@@ -147,8 +147,8 @@ function convertQxfToJson(xmlData)
                 case 'PositionTiltFine': channelType = 'Tilt'; break;
                 case 'ColorWheelFine' : channelType = 'Color'; break;
                 case 'GoboWheelFine' : channelType = 'Gobo'; break;
-                case 'BeamZoomSmallBig' : channelType = 'Zoom'; break;
-                case 'BeamZoomFine' : channelType = 'Zoom'; break;
+                case 'BeamZoomSmallBig' : channelType = 'Beam'; break;
+                case 'BeamZoomFine' : channelType = 'Beam'; break;
                 case 'BeamFocusNearFar' : channelType = 'Focus'; break;
                 case 'BeamFocusFarNear' : channelType = 'Focus'; break;
                 case 'IntensityDimmer' : channelType = 'Intensity'; break;
@@ -157,8 +157,8 @@ function convertQxfToJson(xmlData)
                 case 'FastToSlow': channelType = 'Speed'; break;
                 case 'NearToFar': channelType = 'Focus'; break;
                 case 'FarToNear': channelType = 'Focus'; break;
-                case 'BigToSmall': channelType = 'Zoom'; break;
-                case 'SmallToBig': channelType = 'Zoom'; break;
+                case 'BigToSmall': channelType = 'Beam'; break;
+                case 'SmallToBig': channelType = 'Beam'; break;
                 case 'ShutterOpen': channelType = 'Shutter'; break;
                 case 'ShutterClose': channelType = 'Shutter'; break;
                 case 'StrobeSlowToFast': channelType = 'Shutter'; break;
@@ -226,7 +226,7 @@ function convertQxfToJson(xmlData)
                 if(chanName.includes('tilt')) channelType = 'Tilt';
                 if(chanName.includes('shutter')) channelType = 'Shutter';
                 if(chanName.includes('focus')) channelType = 'Focus';
-                if(chanName.includes('zoom')) channelType = 'Zoom';
+                if(chanName.includes('zoom')) channelType = 'Beam';
                 if(chanName.includes('iris')) channelType = 'Iris';
                 if(chanName.includes('frost')) channelType = 'Frost';
                 if(chanName.includes('prism')) channelType = 'Prism';
@@ -240,6 +240,11 @@ function convertQxfToJson(xmlData)
                 if(chanName.includes('blue')) channelType = 'Blue';
                 if(chanName.includes('amber')) channelType = 'Amber';
                 if(chanName.includes('uv')) channelType = 'UV';
+                if(chanName.includes('indigo')) channelType = 'Indigo';
+                if(chanName.includes('lime')) channelType = 'Lime';
+                if(chanName.includes('cyan')) channelType = 'Cyan';
+                if(chanName.includes('magenta')) channelType = 'Magenta';
+                if(chanName.includes('yellow')) channelType = 'Yellow';
                 if(chanName.includes('speed')) channelType = 'Speed';
                 if(chanName.includes('strobe')) channelType = 'Shutter';
                 if(chanName.includes('reserved')) channelType = 'Nothing';
