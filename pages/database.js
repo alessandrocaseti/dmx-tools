@@ -247,6 +247,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     channelsHTML = '<h3>Channels</h3><div class="channels-container">';
                     data.channels.forEach(channel => 
                     {
+                        let capabilitiesCount = channel.capabilities ? channel.capabilities.length : 0;
+                        if(capabilitiesCount === 1) capabilitiesCount += ' capability';
+                        else capabilitiesCount += ' capabilities';
+
                         let currentIcon = '';
                         let iconColor = 'yellow';
                         switch (channel.type) 
@@ -337,6 +341,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                     <span class="channel-icon" style="color: ${iconColor}">${currentIcon}</span>
                                     <span class="channel-type">${channel.type}</span>
                                     <span class="channel-name">${channel.name}</span>
+                                    <span class="channel-info">${capabilitiesCount}</span>
                                     <span class="expander-arrow">▶</span>
                                 </div>
                                 <div class="channel-capabilities">`;

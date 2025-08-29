@@ -74,7 +74,7 @@
 .fixture-details .channel-header 
 {
     display: grid;
-    grid-template-columns: 24px 150px 1fr auto;
+    grid-template-columns: 24px 150px 500px 1fr auto;
     align-items: center;
     gap: 15px;
 }
@@ -100,9 +100,17 @@
     text-align: left;
 }
 
+.fixture-details .channel-info
+{
+    color: #aaa;
+    text-align: right;
+    margin-right: 4px;
+}
+
 .fixture-details .expander-arrow 
 {
     font-size: 12px;
+    text-align: right;
     transform: rotate(0deg);
     transition: transform 0.3s ease;
 }
