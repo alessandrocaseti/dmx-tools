@@ -242,6 +242,7 @@ function convertQxfToJson(xmlData)
                 if(chanName.includes('uv')) channelType = 'UV';
                 if(chanName.includes('speed')) channelType = 'Speed';
                 if(chanName.includes('strobe')) channelType = 'Shutter';
+                if(chanName.includes('reserved')) channelType = 'Nothing';
             }
         }
         if (channelType === 'Colour') channelType = 'Color';
