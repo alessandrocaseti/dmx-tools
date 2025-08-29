@@ -245,11 +245,33 @@ function convertQxfToJson(xmlData)
             }
         }
         if (channelType === 'Colour') channelType = 'Color';
-        extractedData.channels.push
-        ({
+
+        const channelData = 
+        {
             name: channelName,
             type: channelType
-        });
+        };
+
+        // Exctract channel capabilities
+        const capabilities = [];
+        const caps = channel.getElementsByTagName('Capability');
+        for (let j = 0; j < caps.length; j++) 
+        {
+            const capability = 
+            {
+                min: caps[j].getAttribute('Min'),
+                max: caps[j].getAttribute('Max'),
+                name: caps[j].textContent
+            };
+            capabilities.push(capability);
+        }
+
+        if (capabilities.length > 0) 
+        {
+            channelData.capabilities = capabilities;
+        }
+
+        extractedData.channels.push(channelData);
     }
 
     // Extract Modes
