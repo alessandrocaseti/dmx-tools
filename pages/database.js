@@ -361,7 +361,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 let modesHTML = '';
                 if (data.modes && data.modes.length > 0) {
-                    modesHTML = '<h3>Modes</h3>';
+                    modesHTML = '<h3>Modes</h3><div class="modes-container">';
                     data.modes.forEach(mode => {
                         modesHTML += `
                             <div class="mode-item">
@@ -370,7 +370,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         `;
                         if (mode.channels && mode.channels.length > 0) {
                             mode.channels.forEach((channel, id) => {
-                                modesHTML += `<span class="mode-channel">${id + 1} ${channel}</span>`;
+                                modesHTML += `<div class="mode-channel">${id + 1}<span style="display: inline-block; width: 2ch;">&#9;</span>${channel}</div>`;
                             });
                         }
                         modesHTML += `
@@ -378,6 +378,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>
                         `;
                     });
+                    modesHTML += '</div>';
                 }
 
                 let physicalHTML = '';
@@ -410,10 +411,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 databaseButtonsDiv.appendChild(detailsDiv);
 
-                const channelItems = detailsDiv.querySelectorAll('.channel-item .channel-header');
+                const channelItems = detailsDiv.querySelectorAll('.channel-item');
                 channelItems.forEach(item => {
                     item.addEventListener('click', () => {
-                        item.parentElement.classList.toggle('expanded');
+                        item.classList.toggle('expanded');
                     });
                 });
                 

@@ -206,7 +206,7 @@ label[for="showImagesCheckbox"], #patchOptions label
 
 #dmxForm select 
 {
-    background: #1c1f25;
+    background: var(--colore-bg-scuro);
     color: var(--colore-testo-chiaro);
     border: 1px solid var(--colore-bordo);
     border-radius: var(--border-radius);
@@ -245,7 +245,7 @@ label
 
 input 
 {
-    background: #1c1f25;
+    background: var(--colore-bg-scuro);
     color: var(--colore-testo-chiaro);
     border: 1px solid var(--colore-bordo);
     border-radius: var(--border-radius);
@@ -261,7 +261,7 @@ input
 input:focus 
 {
     border: 1px solid var(--colore-giallo);
-    background: #1c1f25;
+    background: var(--colore-bg-scuro);
     color: var(--colore-testo-chiaro);
     outline: none;
 }
