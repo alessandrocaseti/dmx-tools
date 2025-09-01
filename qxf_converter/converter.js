@@ -6,6 +6,8 @@ const downloadButton = document.getElementById('downloadButton');
 const output = document.getElementById('output');
 let convertedFiles = [];
 
+const converterVersion = '1.0'
+
 convertButton.addEventListener('click', () => 
 {
     const files = fileInput.files;
@@ -24,17 +26,39 @@ convertButton.addEventListener('click', () =>
                 const jsonData = convertQxfToJson(xmlData);
                 if (jsonData) 
                 {
+                    const fileName = file.name.replace('.qxf', '.json');
                     convertedFiles.push
                     ({
-                        name: file.name.replace('.qxf', '.json'),
+                        name: fileName,
                         data: jsonData
                     });
                     const preview = document.createElement('div');
                     preview.classList.add('file-preview');
 
                     const title = document.createElement('h3');
-                    title.textContent = file.name.replace('.qxf', '.json');
+                    title.textContent = fileName;
                     preview.appendChild(title);
+
+                    const inputsContainer = document.createElement('div');
+                    inputsContainer.classList.add('manual-inputs');
+
+                    const createInput = (labelText, placeholder, field) => {
+                        const label = document.createElement('label');
+                        label.textContent = labelText;
+                        const input = document.createElement('input');
+                        input.type = 'text';
+                        input.placeholder = placeholder;
+                        input.dataset.filename = fileName;
+                        input.dataset.field = field;
+                        label.appendChild(input);
+                        return label;
+                    };
+
+                    inputsContainer.appendChild(createInput('Image URL:', 'Image URL', 'image'));
+                    inputsContainer.appendChild(createInput('Product Page:', 'Product Page URL', 'productPage'));
+                    inputsContainer.appendChild(createInput('Manual:', 'Manual URL', 'manual'));
+                    
+                    preview.appendChild(inputsContainer);
 
                     const pre = document.createElement('pre');
                     pre.textContent = JSON.stringify(jsonData, null, 2);
@@ -67,6 +91,20 @@ downloadButton.addEventListener('click', () =>
         const zip = new JSZip();
         for (const file of convertedFiles) 
         {
+            const imageInput = document.querySelector(`input[data-filename="${file.name}"][data-field="image"]`);
+            const productPageInput = document.querySelector(`input[data-filename="${file.name}"][data-field="productPage"]`);
+            const manualInput = document.querySelector(`input[data-filename="${file.name}"][data-field="manual"]`);
+
+            if (imageInput) {
+                file.data.image = imageInput.value;
+            }
+            if (productPageInput) {
+                file.data.productPage = productPageInput.value;
+            }
+            if (manualInput) {
+                file.data.manual = manualInput.value;
+            }
+
             zip.file(file.name, JSON.stringify(file.data, null, 2));
         }
 
@@ -119,9 +157,13 @@ function convertQxfToJson(xmlData)
 
     const extractedData = 
     {
+        version: converterVersion,
         manufacturer: getText(fixture, "Manufacturer"),
         model: getText(fixture, "Model"),
         type: fixtureType || 'Other',
+        image: "",
+        productPage: "",
+        manual: "",
         channels: [],
         modes: [],
         physical: {}
@@ -285,7 +327,7 @@ function convertQxfToJson(xmlData)
     for (let i = 0; i < modes.length; i++) 
     {
         const mode = modes[i];
-        const chs = mode.getElementsByTagName("Channel");
+        const chs = mode.querySelectorAll(":scope > Channel");
         const modeChannels = Array.from(chs).map(channel => channel.textContent);
         extractedData.modes.push
         ({
@@ -353,3 +395,8 @@ function convertQxfToJson(xmlData)
 
     return extractedData;
 }
+
+document.addEventListener('DOMContentLoaded', () => 
+{
+    document.getElementById('versionText').innerHTML = 'Version: ' + converterVersion;
+});
