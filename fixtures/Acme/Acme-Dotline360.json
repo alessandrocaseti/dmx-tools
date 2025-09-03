@@ -1,0 +1,624 @@
+{
+  "version": "1.0",
+  "manufacturer": "Acme",
+  "model": "Dotline360",
+  "type": "Moving Head",
+  "image": "https://en.acmelighting.com/Uploads/Album/20190401/original_img/201904012009533247.jpg",
+  "productPage": "https://en.acmelighting.com/old/index/productdetailold?cat_id=195&id=1812",
+  "manual": "https://en.acmelighting.com/Uploads/download/file_material/17225905116a9dd6cb46f755ea.pdf",
+  "channels": [
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Auto speed"
+        },
+        {
+          "min": "8",
+          "max": "247",
+          "name": "Tilt (Slow to fast)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Auto speed"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect (Fast to slow)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse-effect in sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect (Slow to fast)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "LED1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED1 White",
+      "type": "White"
+    },
+    {
+      "name": "LED2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED2 White",
+      "type": "White"
+    },
+    {
+      "name": "LED3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED3 White",
+      "type": "White"
+    },
+    {
+      "name": "LED4 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED4 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED4 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED4 White",
+      "type": "White"
+    },
+    {
+      "name": "LED5 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED5 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED5 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED5 White",
+      "type": "White"
+    },
+    {
+      "name": "LED6 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED6 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED6 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED6 White",
+      "type": "White"
+    },
+    {
+      "name": "Special Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "60",
+          "name": "No function"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Black out when Tilt moving"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Disable Black out when Tilt moving"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Reset All Motor"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Reset Tilt Motor"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Reset Zoom Motor"
+        },
+        {
+          "min": "161",
+          "max": "180",
+          "name": "Dimmer Speed: Smooth"
+        },
+        {
+          "min": "181",
+          "max": "200",
+          "name": "Dimmer Speed: Fast"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Invert Pixel Order: No"
+        },
+        {
+          "min": "221",
+          "max": "240",
+          "name": "Invert Pixel Order: Yes"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "No function"
+        },
+        {
+          "min": "9",
+          "max": "38",
+          "name": "Macro 1"
+        },
+        {
+          "min": "39",
+          "max": "68",
+          "name": "Macro 2"
+        },
+        {
+          "min": "69",
+          "max": "98",
+          "name": "Macro 3"
+        },
+        {
+          "min": "99",
+          "max": "128",
+          "name": "Macro 4"
+        },
+        {
+          "min": "129",
+          "max": "158",
+          "name": "Macro 5"
+        },
+        {
+          "min": "159",
+          "max": "187",
+          "name": "Macro 6"
+        },
+        {
+          "min": "188",
+          "max": "255",
+          "name": "Macro 7"
+        }
+      ]
+    },
+    {
+      "name": "Foreground Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Foreground Color"
+        }
+      ]
+    },
+    {
+      "name": "Background Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Background Color"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "LED7 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED7 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED7 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED7 White",
+      "type": "White"
+    },
+    {
+      "name": "LED8 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED8 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED8 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED8 White",
+      "type": "White"
+    },
+    {
+      "name": "LED9 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED9 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED9 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED9 White",
+      "type": "White"
+    },
+    {
+      "name": "LED10 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED10 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED10 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED10 White",
+      "type": "White"
+    },
+    {
+      "name": "LED11 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED11 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED11 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED11 White",
+      "type": "White"
+    },
+    {
+      "name": "LED12 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED12 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED12 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED12 White",
+      "type": "White"
+    },
+    {
+      "name": "Zoom 1",
+      "type": "Beam"
+    },
+    {
+      "name": "Zoom 2",
+      "type": "Beam"
+    }
+  ],
+  "modes": [
+    {
+      "name": "57 Channel",
+      "totalChannels": 57,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Tilt speed",
+        "Zoom 1",
+        "Zoom 2",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "LED1 Red",
+        "LED1 Green",
+        "LED1 Blue",
+        "LED1 White",
+        "LED2 Red",
+        "LED2 Green",
+        "LED2 Blue",
+        "LED2 White",
+        "LED3 Red",
+        "LED3 Green",
+        "LED3 Blue",
+        "LED3 White",
+        "LED4 Red",
+        "LED4 Green",
+        "LED4 Blue",
+        "LED4 White",
+        "LED5 Red",
+        "LED5 Green",
+        "LED5 Blue",
+        "LED5 White",
+        "LED6 Red",
+        "LED6 Green",
+        "LED6 Blue",
+        "LED6 White",
+        "LED7 Red",
+        "LED7 Green",
+        "LED7 Blue",
+        "LED7 White",
+        "LED8 Red",
+        "LED8 Green",
+        "LED8 Blue",
+        "LED8 White",
+        "LED9 Red",
+        "LED9 Green",
+        "LED9 Blue",
+        "LED9 White",
+        "LED10 Red",
+        "LED10 Green",
+        "LED10 Blue",
+        "LED10 White",
+        "LED11 Red",
+        "LED11 Green",
+        "LED11 Blue",
+        "LED11 White",
+        "LED12 Red",
+        "LED12 Green",
+        "LED12 Blue",
+        "LED12 White",
+        "Special Function"
+      ]
+    },
+    {
+      "name": "14 Channel",
+      "totalChannels": 14,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Macro",
+        "Foreground Color",
+        "Background Color",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Special Function"
+      ]
+    },
+    {
+      "name": "9+ Channels (DMX)",
+      "totalChannels": 9,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Tilt speed",
+        "Zoom 1",
+        "Zoom 2",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Special Function"
+      ]
+    },
+    {
+      "name": "9+ Channels (Art-Net)",
+      "totalChannels": 48,
+      "channels": [
+        "LED1 Red",
+        "LED1 Green",
+        "LED1 Blue",
+        "LED1 White",
+        "LED2 Red",
+        "LED2 Green",
+        "LED2 Blue",
+        "LED2 White",
+        "LED3 Red",
+        "LED3 Green",
+        "LED3 Blue",
+        "LED3 White",
+        "LED4 Red",
+        "LED4 Green",
+        "LED4 Blue",
+        "LED4 White",
+        "LED5 Red",
+        "LED5 Green",
+        "LED5 Blue",
+        "LED5 White",
+        "LED6 Red",
+        "LED6 Green",
+        "LED6 Blue",
+        "LED6 White",
+        "LED7 Red",
+        "LED7 Green",
+        "LED7 Blue",
+        "LED7 White",
+        "LED8 Red",
+        "LED8 Green",
+        "LED8 Blue",
+        "LED8 White",
+        "LED9 Red",
+        "LED9 Green",
+        "LED9 Blue",
+        "LED9 White",
+        "LED10 Red",
+        "LED10 Green",
+        "LED10 Blue",
+        "LED10 White",
+        "LED11 Red",
+        "LED11 Green",
+        "LED11 Blue",
+        "LED11 White",
+        "LED12 Red",
+        "LED12 Green",
+        "LED12 Blue",
+        "LED12 White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "4790",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "18.5",
+      "width": "278",
+      "height": "113",
+      "depth": "1000"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "3.5",
+      "degreesMax": "38"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "0",
+      "tiltMax": "220"
+    },
+    "technical": {
+      "powerConsumption": "440",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

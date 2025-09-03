@@ -1,0 +1,1228 @@
+{
+  "version": "1.0",
+  "manufacturer": "Acme",
+  "model": "Oxygen",
+  "type": "Moving Head",
+  "image": "https://en.acmelighting.com/upload/image/20250109/09076d9b637b8ef4992ae64cbcbb496f.png",
+  "productPage": "https://en.acmelighting.com/item/OXYGEN",
+  "manual": "",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Close"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe (Slow to fast)"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast Close Slow Open (Slow to fast)"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast Open Slow Close (Slow to fast)"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe (Slow to fast)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "CTO",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Null"
+        },
+        {
+          "min": "1",
+          "max": "4",
+          "name": "8000K"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "7900K"
+        },
+        {
+          "min": "10",
+          "max": "13",
+          "name": "7800K"
+        },
+        {
+          "min": "14",
+          "max": "18",
+          "name": "7700K"
+        },
+        {
+          "min": "19",
+          "max": "22",
+          "name": "7600K"
+        },
+        {
+          "min": "23",
+          "max": "27",
+          "name": "7500K"
+        },
+        {
+          "min": "28",
+          "max": "31",
+          "name": "7400K"
+        },
+        {
+          "min": "32",
+          "max": "36",
+          "name": "7300K"
+        },
+        {
+          "min": "37",
+          "max": "40",
+          "name": "7200K"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "7100K"
+        },
+        {
+          "min": "46",
+          "max": "49",
+          "name": "7000K"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "6900K"
+        },
+        {
+          "min": "55",
+          "max": "58",
+          "name": "6800K"
+        },
+        {
+          "min": "59",
+          "max": "63",
+          "name": "6700K"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "6600K"
+        },
+        {
+          "min": "68",
+          "max": "72",
+          "name": "6500K"
+        },
+        {
+          "min": "73",
+          "max": "76",
+          "name": "6400K"
+        },
+        {
+          "min": "77",
+          "max": "81",
+          "name": "6300K"
+        },
+        {
+          "min": "82",
+          "max": "85",
+          "name": "6200K"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "6100K"
+        },
+        {
+          "min": "91",
+          "max": "94",
+          "name": "6000K"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "5900K"
+        },
+        {
+          "min": "100",
+          "max": "103",
+          "name": "5800K"
+        },
+        {
+          "min": "104",
+          "max": "108",
+          "name": "5700K"
+        },
+        {
+          "min": "109",
+          "max": "112",
+          "name": "5600K"
+        },
+        {
+          "min": "113",
+          "max": "117",
+          "name": "5500K"
+        },
+        {
+          "min": "118",
+          "max": "121",
+          "name": "5400K"
+        },
+        {
+          "min": "122",
+          "max": "126",
+          "name": "5300K"
+        },
+        {
+          "min": "127",
+          "max": "130",
+          "name": "5200K"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "5100K"
+        },
+        {
+          "min": "136",
+          "max": "139",
+          "name": "5000K"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "4900K"
+        },
+        {
+          "min": "145",
+          "max": "148",
+          "name": "4800K"
+        },
+        {
+          "min": "149",
+          "max": "153",
+          "name": "4700K"
+        },
+        {
+          "min": "154",
+          "max": "157",
+          "name": "4600K"
+        },
+        {
+          "min": "158",
+          "max": "162",
+          "name": "4500K"
+        },
+        {
+          "min": "163",
+          "max": "166",
+          "name": "4400K"
+        },
+        {
+          "min": "167",
+          "max": "171",
+          "name": "4300K"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "4200K"
+        },
+        {
+          "min": "176",
+          "max": "180",
+          "name": "4100K"
+        },
+        {
+          "min": "181",
+          "max": "184",
+          "name": "4000K"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "3900K"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "3800K"
+        },
+        {
+          "min": "194",
+          "max": "198",
+          "name": "3700K"
+        },
+        {
+          "min": "199",
+          "max": "202",
+          "name": "3600K"
+        },
+        {
+          "min": "203",
+          "max": "207",
+          "name": "3500K"
+        },
+        {
+          "min": "208",
+          "max": "211",
+          "name": "3400K"
+        },
+        {
+          "min": "212",
+          "max": "216",
+          "name": "3300K"
+        },
+        {
+          "min": "217",
+          "max": "220",
+          "name": "3200K"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "3100K"
+        },
+        {
+          "min": "226",
+          "max": "229",
+          "name": "3000K"
+        },
+        {
+          "min": "230",
+          "max": "234",
+          "name": "2900K"
+        },
+        {
+          "min": "235",
+          "max": "238",
+          "name": "2800K"
+        },
+        {
+          "min": "239",
+          "max": "243",
+          "name": "2700K"
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "2600K"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "2500K"
+        }
+      ]
+    },
+    {
+      "name": "Color macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Null"
+        },
+        {
+          "min": "8",
+          "max": "11",
+          "name": "Color 1"
+        },
+        {
+          "min": "12",
+          "max": "15",
+          "name": "Color 2"
+        },
+        {
+          "min": "16",
+          "max": "19",
+          "name": "Color 3"
+        },
+        {
+          "min": "20",
+          "max": "23",
+          "name": "Color 4"
+        },
+        {
+          "min": "24",
+          "max": "27",
+          "name": "Color 5"
+        },
+        {
+          "min": "28",
+          "max": "31",
+          "name": "Color 6"
+        },
+        {
+          "min": "32",
+          "max": "35",
+          "name": "Color 7"
+        },
+        {
+          "min": "36",
+          "max": "39",
+          "name": "Color 8"
+        },
+        {
+          "min": "40",
+          "max": "43",
+          "name": "Color 9"
+        },
+        {
+          "min": "44",
+          "max": "47",
+          "name": "Color 10"
+        },
+        {
+          "min": "48",
+          "max": "51",
+          "name": "Color 11"
+        },
+        {
+          "min": "52",
+          "max": "55",
+          "name": "Color 12"
+        },
+        {
+          "min": "56",
+          "max": "59",
+          "name": "Color 13"
+        },
+        {
+          "min": "60",
+          "max": "63",
+          "name": "Color 14"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "Color 15"
+        },
+        {
+          "min": "68",
+          "max": "71",
+          "name": "Color 16"
+        },
+        {
+          "min": "72",
+          "max": "75",
+          "name": "Color 17"
+        },
+        {
+          "min": "76",
+          "max": "79",
+          "name": "Color 18"
+        },
+        {
+          "min": "80",
+          "max": "83",
+          "name": "Color 19"
+        },
+        {
+          "min": "84",
+          "max": "87",
+          "name": "Color 20"
+        },
+        {
+          "min": "88",
+          "max": "91",
+          "name": "Color 21"
+        },
+        {
+          "min": "92",
+          "max": "95",
+          "name": "Color 22"
+        },
+        {
+          "min": "96",
+          "max": "99",
+          "name": "Color 23"
+        },
+        {
+          "min": "100",
+          "max": "103",
+          "name": "Color 24"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Color 25"
+        },
+        {
+          "min": "108",
+          "max": "111",
+          "name": "Color 26"
+        },
+        {
+          "min": "112",
+          "max": "115",
+          "name": "Color 27"
+        },
+        {
+          "min": "116",
+          "max": "119",
+          "name": "Color 28"
+        },
+        {
+          "min": "120",
+          "max": "123",
+          "name": "Color 29"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "Color 30"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Color 31"
+        },
+        {
+          "min": "132",
+          "max": "135",
+          "name": "Color 32"
+        },
+        {
+          "min": "136",
+          "max": "165",
+          "name": "Clockwise Rotation, Fast to Slow"
+        },
+        {
+          "min": "166",
+          "max": "195",
+          "name": "Counter-Clockwise Rotation, Slow to Fast"
+        },
+        {
+          "min": "196",
+          "max": "205",
+          "name": "Red>Green (Fast to slow)"
+        },
+        {
+          "min": "206",
+          "max": "215",
+          "name": "Red>Blue (Fast to slow)"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "Red>White (Fast to slow)"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Green>Blue (Fast to slow)"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Green>White (Fast to slow)"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Blue>White (Fast to slow)"
+        }
+      ]
+    },
+    {
+      "name": "Pixel select",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Open"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Pattern 1"
+        },
+        {
+          "min": "8",
+          "max": "11",
+          "name": "Pattern 2"
+        },
+        {
+          "min": "12",
+          "max": "15",
+          "name": "Pattern 3"
+        },
+        {
+          "min": "16",
+          "max": "19",
+          "name": "Pattern 4"
+        },
+        {
+          "min": "20",
+          "max": "23",
+          "name": "Pattern 5"
+        },
+        {
+          "min": "24",
+          "max": "27",
+          "name": "Pattern 6"
+        },
+        {
+          "min": "28",
+          "max": "31",
+          "name": "Pattern 7"
+        },
+        {
+          "min": "32",
+          "max": "35",
+          "name": "Pattern 8"
+        },
+        {
+          "min": "36",
+          "max": "39",
+          "name": "Pattern 9"
+        },
+        {
+          "min": "40",
+          "max": "43",
+          "name": "Pattern 10"
+        },
+        {
+          "min": "44",
+          "max": "47",
+          "name": "Pattern 11"
+        },
+        {
+          "min": "48",
+          "max": "51",
+          "name": "Pattern 12"
+        },
+        {
+          "min": "52",
+          "max": "55",
+          "name": "Pattern 13"
+        },
+        {
+          "min": "56",
+          "max": "59",
+          "name": "Pattern 14"
+        },
+        {
+          "min": "60",
+          "max": "63",
+          "name": "Pattern 15"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "Pattern 16"
+        },
+        {
+          "min": "68",
+          "max": "71",
+          "name": "Pattern 17"
+        },
+        {
+          "min": "72",
+          "max": "75",
+          "name": "Pattern 18"
+        },
+        {
+          "min": "76",
+          "max": "79",
+          "name": "Pattern 19"
+        },
+        {
+          "min": "80",
+          "max": "83",
+          "name": "Pattern 20"
+        },
+        {
+          "min": "84",
+          "max": "87",
+          "name": "Pattern 21"
+        },
+        {
+          "min": "88",
+          "max": "91",
+          "name": "Pattern 22"
+        },
+        {
+          "min": "92",
+          "max": "95",
+          "name": "Pattern 23"
+        },
+        {
+          "min": "96",
+          "max": "99",
+          "name": "Pattern 24"
+        },
+        {
+          "min": "100",
+          "max": "103",
+          "name": "Pattern 25"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Pattern 26"
+        },
+        {
+          "min": "108",
+          "max": "111",
+          "name": "Pattern 27"
+        },
+        {
+          "min": "112",
+          "max": "115",
+          "name": "Pattern 28"
+        },
+        {
+          "min": "116",
+          "max": "119",
+          "name": "Pattern 29"
+        },
+        {
+          "min": "120",
+          "max": "123",
+          "name": "Pattern 30"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "Pattern 31"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Pattern 32"
+        },
+        {
+          "min": "132",
+          "max": "135",
+          "name": "Pattern 33"
+        },
+        {
+          "min": "136",
+          "max": "139",
+          "name": "Pattern 34"
+        },
+        {
+          "min": "140",
+          "max": "143",
+          "name": "Pattern 35"
+        },
+        {
+          "min": "144",
+          "max": "147",
+          "name": "Pattern 36"
+        },
+        {
+          "min": "148",
+          "max": "151",
+          "name": "Pattern 37"
+        },
+        {
+          "min": "152",
+          "max": "155",
+          "name": "Pattern 38"
+        },
+        {
+          "min": "156",
+          "max": "159",
+          "name": "Pattern 39"
+        },
+        {
+          "min": "160",
+          "max": "163",
+          "name": "Pattern 40"
+        },
+        {
+          "min": "164",
+          "max": "167",
+          "name": "Pattern 41"
+        },
+        {
+          "min": "168",
+          "max": "171",
+          "name": "Pattern 42"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "Pattern 43"
+        },
+        {
+          "min": "176",
+          "max": "179",
+          "name": "Pattern 44"
+        },
+        {
+          "min": "180",
+          "max": "183",
+          "name": "Pattern 45"
+        },
+        {
+          "min": "184",
+          "max": "187",
+          "name": "Pattern 46"
+        },
+        {
+          "min": "188",
+          "max": "191",
+          "name": "Pattern 47"
+        },
+        {
+          "min": "192",
+          "max": "195",
+          "name": "Pattern 48"
+        },
+        {
+          "min": "196",
+          "max": "199",
+          "name": "Pattern 49"
+        },
+        {
+          "min": "200",
+          "max": "203",
+          "name": "Pattern 50"
+        },
+        {
+          "min": "204",
+          "max": "207",
+          "name": "Pattern 51"
+        },
+        {
+          "min": "208",
+          "max": "211",
+          "name": "Pattern 52"
+        },
+        {
+          "min": "212",
+          "max": "215",
+          "name": "Pattern 53"
+        },
+        {
+          "min": "216",
+          "max": "219",
+          "name": "Pattern 54"
+        },
+        {
+          "min": "220",
+          "max": "223",
+          "name": "Pattern 55"
+        },
+        {
+          "min": "224",
+          "max": "227",
+          "name": "Pattern 56"
+        },
+        {
+          "min": "228",
+          "max": "231",
+          "name": "Pattern 57"
+        },
+        {
+          "min": "232",
+          "max": "235",
+          "name": "Pattern 58"
+        },
+        {
+          "min": "236",
+          "max": "239",
+          "name": "Pattern 59"
+        },
+        {
+          "min": "240",
+          "max": "243",
+          "name": "Pattern 60"
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "Random (Pattern 1-7)"
+        },
+        {
+          "min": "248",
+          "max": "251",
+          "name": "Pattern 61"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Pixel rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Null"
+        },
+        {
+          "min": "32",
+          "max": "91",
+          "name": "Clockwise rotation (Fast to slow)"
+        },
+        {
+          "min": "92",
+          "max": "101",
+          "name": "Null"
+        },
+        {
+          "min": "102",
+          "max": "161",
+          "name": "Counter-Clockwise Rotation (Slow to fast)"
+        },
+        {
+          "min": "162",
+          "max": "255",
+          "name": "Null"
+        }
+      ]
+    },
+    {
+      "name": "Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "Null"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dimmer Speed: Smooth"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Dimmer Speed: Fast"
+        },
+        {
+          "min": "100",
+          "max": "139",
+          "name": "Null"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pan/Tilt Reset"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Effect Reset"
+        },
+        {
+          "min": "160",
+          "max": "199",
+          "name": "Null"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset All"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Null"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White 4",
+      "type": "White"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "White 5",
+      "type": "White"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "White 6",
+      "type": "White"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "White 7",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "17 Channel",
+      "totalChannels": 17,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "CTO",
+        "Color macro",
+        "Pixel select",
+        "Pixel rotation",
+        "Function"
+      ]
+    },
+    {
+      "name": "37 Channel",
+      "totalChannels": 37,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "White 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "White 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "White 7",
+        "Function"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "4200",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.3",
+      "width": "216",
+      "height": "343",
+      "depth": "165"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "6",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "230"
+    },
+    "technical": {
+      "powerConsumption": "340",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

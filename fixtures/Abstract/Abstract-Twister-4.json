@@ -1,0 +1,240 @@
+{
+  "version": "1.0",
+  "manufacturer": "Abstract",
+  "model": "Twister 4",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "https://www.manualslib.com/products/Abstract-Twister-4-9616194.html",
+  "channels": [
+    {
+      "name": "Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "11",
+          "name": "Stop"
+        },
+        {
+          "min": "12",
+          "max": "111",
+          "name": "Fastest speed clockwise"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Slowest speed clockwise"
+        },
+        {
+          "min": "128",
+          "max": "140",
+          "name": "Stop"
+        },
+        {
+          "min": "141",
+          "max": "243",
+          "name": "Slowest speed a.clockwise"
+        },
+        {
+          "min": "244",
+          "max": "254",
+          "name": "Fastest speed a.clockwise"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Stop"
+        }
+      ]
+    },
+    {
+      "name": "Gobo/Colour",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "25",
+          "name": "White [Open]"
+        },
+        {
+          "min": "26",
+          "max": "42",
+          "name": "Red [Dot Tunnel]"
+        },
+        {
+          "min": "43",
+          "max": "58",
+          "name": "Blue [Slash]"
+        },
+        {
+          "min": "59",
+          "max": "74",
+          "name": "Green [Segment]"
+        },
+        {
+          "min": "75",
+          "max": "90",
+          "name": "Yellow [Triangle]"
+        },
+        {
+          "min": "91",
+          "max": "107",
+          "name": "Cyan [Tunnel]"
+        },
+        {
+          "min": "108",
+          "max": "123",
+          "name": "Orange [Bubbles]"
+        },
+        {
+          "min": "124",
+          "max": "139",
+          "name": "Pink [Stars]"
+        },
+        {
+          "min": "140",
+          "max": "155",
+          "name": "Multi Colour [Quadrant]"
+        },
+        {
+          "min": "156",
+          "max": "172",
+          "name": "Orange [Bubbles]"
+        },
+        {
+          "min": "173",
+          "max": "188",
+          "name": "Cyan [Tunnel]"
+        },
+        {
+          "min": "189",
+          "max": "220",
+          "name": "Yellow [Triangle]"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Blue [Slash]"
+        },
+        {
+          "min": "238",
+          "max": "253",
+          "name": "Slow Strobe"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "Fast Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "23",
+          "name": "Blackout"
+        },
+        {
+          "min": "24",
+          "max": "225",
+          "name": "Open"
+        },
+        {
+          "min": "226",
+          "max": "229",
+          "name": "Slow Strobe"
+        },
+        {
+          "min": "230",
+          "max": "233",
+          "name": "Strobe 2"
+        },
+        {
+          "min": "234",
+          "max": "237",
+          "name": "Strobe 3"
+        },
+        {
+          "min": "238",
+          "max": "241",
+          "name": "Strobe 4"
+        },
+        {
+          "min": "242",
+          "max": "245",
+          "name": "Strobe 5"
+        },
+        {
+          "min": "246",
+          "max": "249",
+          "name": "Strobe 6"
+        },
+        {
+          "min": "250",
+          "max": "253",
+          "name": "Strobe 7"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "Fast Strobe"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 CE (2 Channels)",
+      "totalChannels": 2,
+      "channels": [
+        "Rotation",
+        "Gobo/Colour"
+      ]
+    },
+    {
+      "name": "HP (3 Channels)",
+      "totalChannels": 3,
+      "channels": [
+        "Rotation",
+        "Gobo/Colour",
+        "Shutter"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "A1/259",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "200",
+      "height": "200",
+      "depth": "400"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "250",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

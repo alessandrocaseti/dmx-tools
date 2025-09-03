@@ -1,0 +1,3214 @@
+{
+  "version": "1.0",
+  "manufacturer": "Acme",
+  "model": "Super Dotline",
+  "type": "Moving Head",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZ6G5Dn-A_ifDYzoA3TVzjGSA3SCJqTkRDw&s",
+  "productPage": "https://en.acmelighting.com/item/SUPER-DOTLINE",
+  "manual": "",
+  "channels": [
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Main Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Close"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe (Slow to fast)"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow Open Fast Close (Slow to fast)"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast Open Slow Close (Slow to fast)"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe (Slow to fast)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Main Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 1",
+      "type": "White"
+    },
+    {
+      "name": "Main Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 2",
+      "type": "White"
+    },
+    {
+      "name": "Main Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 3",
+      "type": "White"
+    },
+    {
+      "name": "Main Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 4",
+      "type": "White"
+    },
+    {
+      "name": "Main Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 5",
+      "type": "White"
+    },
+    {
+      "name": "Main Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 6",
+      "type": "White"
+    },
+    {
+      "name": "Special Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "Null"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Dimmer Curve: Linear"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Dimmer Curve: Square Law"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Dimmer Curve: Inv SQ Law"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Dimmer Curve: S Curve"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Power Mode: Standard"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Null"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Power Mode: Quiet"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "LED Frequency Setting Enable"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "LED Frequency Setting Disable"
+        },
+        {
+          "min": "120",
+          "max": "122",
+          "name": "Null"
+        },
+        {
+          "min": "123",
+          "max": "123",
+          "name": "900Hz"
+        },
+        {
+          "min": "124",
+          "max": "124",
+          "name": "1000Hz"
+        },
+        {
+          "min": "125",
+          "max": "125",
+          "name": "1100Hz"
+        },
+        {
+          "min": "126",
+          "max": "126",
+          "name": "1200Hz"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "1300Hz"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "1400Hz"
+        },
+        {
+          "min": "129",
+          "max": "129",
+          "name": "1500Hz"
+        },
+        {
+          "min": "130",
+          "max": "130",
+          "name": "2500Hz"
+        },
+        {
+          "min": "131",
+          "max": "131",
+          "name": "4000Hz"
+        },
+        {
+          "min": "132",
+          "max": "132",
+          "name": "5000Hz"
+        },
+        {
+          "min": "133",
+          "max": "133",
+          "name": "6000Hz"
+        },
+        {
+          "min": "134",
+          "max": "134",
+          "name": "10KHz"
+        },
+        {
+          "min": "135",
+          "max": "135",
+          "name": "15KHz"
+        },
+        {
+          "min": "136",
+          "max": "136",
+          "name": "20KHz"
+        },
+        {
+          "min": "137",
+          "max": "137",
+          "name": "25KHz"
+        },
+        {
+          "min": "138",
+          "max": "139",
+          "name": "Null"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Tilt Reset"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Effect Reset"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "CCT Calibration: On"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "CCT Calibration: Off"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Null"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "All Reset"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Dimmer Speed: Fast"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Dimmer Speed: Smooth"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Line Power Mode: Off"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Line Power Mode: On"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Null"
+        }
+      ]
+    },
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "No function"
+        },
+        {
+          "min": "9",
+          "max": "38",
+          "name": "Macro 1"
+        },
+        {
+          "min": "39",
+          "max": "68",
+          "name": "Macro 2"
+        },
+        {
+          "min": "69",
+          "max": "98",
+          "name": "Macro 3"
+        },
+        {
+          "min": "99",
+          "max": "128",
+          "name": "Macro 4"
+        },
+        {
+          "min": "129",
+          "max": "158",
+          "name": "Macro 5"
+        },
+        {
+          "min": "159",
+          "max": "187",
+          "name": "Macro 6"
+        },
+        {
+          "min": "188",
+          "max": "255",
+          "name": "Macro 7"
+        }
+      ]
+    },
+    {
+      "name": "Main Red",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White",
+      "type": "White"
+    },
+    {
+      "name": "Main Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 7",
+      "type": "White"
+    },
+    {
+      "name": "Main Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 8",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 8",
+      "type": "White"
+    },
+    {
+      "name": "Main Red 9",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 9",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 9",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 9",
+      "type": "White"
+    },
+    {
+      "name": "Main Red 10",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 10",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 10",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 10",
+      "type": "White"
+    },
+    {
+      "name": "LINE_W Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Close"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe (Slow to fast)"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow Open Fast Close (Slow to fast)"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast Open Slow Close (Slow to fast)"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe (Slow to fast)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "LINE_RGB Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Close"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe (Slow to fast)"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow Open Fast Close (Slow to fast)"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast Open Slow Close (Slow to fast)"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe (Slow to fast)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "LINE_W CW",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_RGB Red",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Main CCT",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Null"
+        },
+        {
+          "min": "1",
+          "max": "4",
+          "name": "8000K"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "7900K"
+        },
+        {
+          "min": "10",
+          "max": "13",
+          "name": "7800K"
+        },
+        {
+          "min": "14",
+          "max": "18",
+          "name": "7700K"
+        },
+        {
+          "min": "19",
+          "max": "22",
+          "name": "7600K"
+        },
+        {
+          "min": "23",
+          "max": "27",
+          "name": "7500K"
+        },
+        {
+          "min": "28",
+          "max": "31",
+          "name": "7400K"
+        },
+        {
+          "min": "32",
+          "max": "36",
+          "name": "7300K"
+        },
+        {
+          "min": "37",
+          "max": "40",
+          "name": "7200K"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "7100K"
+        },
+        {
+          "min": "46",
+          "max": "49",
+          "name": "7000K"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "6900K"
+        },
+        {
+          "min": "55",
+          "max": "58",
+          "name": "6800K"
+        },
+        {
+          "min": "59",
+          "max": "63",
+          "name": "6700K"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "6600K"
+        },
+        {
+          "min": "68",
+          "max": "72",
+          "name": "6500K"
+        },
+        {
+          "min": "73",
+          "max": "76",
+          "name": "6400K"
+        },
+        {
+          "min": "77",
+          "max": "81",
+          "name": "6300K"
+        },
+        {
+          "min": "82",
+          "max": "85",
+          "name": "6200K"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "6100K"
+        },
+        {
+          "min": "91",
+          "max": "94",
+          "name": "6000K"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "5900K"
+        },
+        {
+          "min": "100",
+          "max": "103",
+          "name": "5800K"
+        },
+        {
+          "min": "104",
+          "max": "108",
+          "name": "5700K"
+        },
+        {
+          "min": "109",
+          "max": "112",
+          "name": "5600K"
+        },
+        {
+          "min": "113",
+          "max": "117",
+          "name": "5500K"
+        },
+        {
+          "min": "118",
+          "max": "121",
+          "name": "5400K"
+        },
+        {
+          "min": "122",
+          "max": "126",
+          "name": "5300K"
+        },
+        {
+          "min": "127",
+          "max": "130",
+          "name": "5200K"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "5100K"
+        },
+        {
+          "min": "136",
+          "max": "139",
+          "name": "5000K"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "4900K"
+        },
+        {
+          "min": "145",
+          "max": "148",
+          "name": "4800K"
+        },
+        {
+          "min": "149",
+          "max": "153",
+          "name": "4700K"
+        },
+        {
+          "min": "154",
+          "max": "157",
+          "name": "4600K"
+        },
+        {
+          "min": "158",
+          "max": "162",
+          "name": "4500K"
+        },
+        {
+          "min": "163",
+          "max": "166",
+          "name": "4400K"
+        },
+        {
+          "min": "167",
+          "max": "171",
+          "name": "4300K"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "4200K"
+        },
+        {
+          "min": "176",
+          "max": "180",
+          "name": "4100K"
+        },
+        {
+          "min": "181",
+          "max": "184",
+          "name": "4000K"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "3900K"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "3800K"
+        },
+        {
+          "min": "194",
+          "max": "198",
+          "name": "3700K"
+        },
+        {
+          "min": "199",
+          "max": "202",
+          "name": "3600K"
+        },
+        {
+          "min": "203",
+          "max": "207",
+          "name": "3500K"
+        },
+        {
+          "min": "208",
+          "max": "211",
+          "name": "3400K"
+        },
+        {
+          "min": "212",
+          "max": "216",
+          "name": "3300K"
+        },
+        {
+          "min": "217",
+          "max": "220",
+          "name": "3200K"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "3100K"
+        },
+        {
+          "min": "226",
+          "max": "229",
+          "name": "3000K"
+        },
+        {
+          "min": "230",
+          "max": "234",
+          "name": "2900K"
+        },
+        {
+          "min": "235",
+          "max": "238",
+          "name": "2800K"
+        },
+        {
+          "min": "239",
+          "max": "243",
+          "name": "2700K"
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "2600K"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "2500K"
+        }
+      ]
+    },
+    {
+      "name": "Main Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Null"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Color 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Color 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Color 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Color 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Color 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Color 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Color 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Color 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Color 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Color 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Color 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Color 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Color 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Color 14"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Color 15"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Color 16"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Color 17"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Color 18"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Color 19"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Color 20"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Color 21"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Color 22"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Color 23"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Color 24"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Color 25"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Color 26"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Color 27"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Color 28"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Color 29"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Color 30"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Color 31"
+        }
+      ]
+    },
+    {
+      "name": "Main Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Null"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Built-in Effect 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Built-in Effect 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Built-in Effect 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Built-in Effect 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Built-in Effect 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Built-in Effect 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Built-in Effect 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Built-in Effect 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Built-in Effect 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Built-in Effect 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Built-in Effect 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Built-in Effect 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Built-in Effect 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Built-in Effect 14"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Built-in Effect 15"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Built-in Effect 16"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Built-in Effect 17"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Built-in Effect 18"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Built-in Effect 19"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Built-in Effect 20"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Built-in Effect 21"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Built-in Effect 22"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Built-in Effect 23"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Null"
+        }
+      ]
+    },
+    {
+      "name": "Main Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Slow to Fast without Fade"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Slow to Fast with Fade"
+        }
+      ]
+    },
+    {
+      "name": "LINE_W CCT",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "67",
+          "name": "Null"
+        },
+        {
+          "min": "68",
+          "max": "72",
+          "name": "6500K"
+        },
+        {
+          "min": "73",
+          "max": "76",
+          "name": "6400K"
+        },
+        {
+          "min": "77",
+          "max": "81",
+          "name": "6300K"
+        },
+        {
+          "min": "82",
+          "max": "85",
+          "name": "6200K"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "6100K"
+        },
+        {
+          "min": "91",
+          "max": "94",
+          "name": "6000K"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "5900K"
+        },
+        {
+          "min": "100",
+          "max": "103",
+          "name": "5800K"
+        },
+        {
+          "min": "104",
+          "max": "108",
+          "name": "5700K"
+        },
+        {
+          "min": "109",
+          "max": "112",
+          "name": "5600K"
+        },
+        {
+          "min": "113",
+          "max": "117",
+          "name": "5500K"
+        },
+        {
+          "min": "118",
+          "max": "121",
+          "name": "5400K"
+        },
+        {
+          "min": "122",
+          "max": "126",
+          "name": "5300K"
+        },
+        {
+          "min": "127",
+          "max": "130",
+          "name": "5200K"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "5100K"
+        },
+        {
+          "min": "136",
+          "max": "139",
+          "name": "5000K"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "4900K"
+        },
+        {
+          "min": "145",
+          "max": "148",
+          "name": "4800K"
+        },
+        {
+          "min": "149",
+          "max": "153",
+          "name": "4700K"
+        },
+        {
+          "min": "154",
+          "max": "157",
+          "name": "4600K"
+        },
+        {
+          "min": "158",
+          "max": "162",
+          "name": "4500K"
+        },
+        {
+          "min": "163",
+          "max": "166",
+          "name": "4400K"
+        },
+        {
+          "min": "167",
+          "max": "171",
+          "name": "4300K"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "4200K"
+        },
+        {
+          "min": "176",
+          "max": "180",
+          "name": "4100K"
+        },
+        {
+          "min": "181",
+          "max": "184",
+          "name": "4000K"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "3900K"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "3800K"
+        },
+        {
+          "min": "194",
+          "max": "198",
+          "name": "3700K"
+        },
+        {
+          "min": "199",
+          "max": "202",
+          "name": "3600K"
+        },
+        {
+          "min": "203",
+          "max": "207",
+          "name": "3500K"
+        },
+        {
+          "min": "208",
+          "max": "211",
+          "name": "3400K"
+        },
+        {
+          "min": "212",
+          "max": "216",
+          "name": "3300K"
+        },
+        {
+          "min": "217",
+          "max": "220",
+          "name": "3200K"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "3100K"
+        },
+        {
+          "min": "226",
+          "max": "229",
+          "name": "3000K"
+        },
+        {
+          "min": "230",
+          "max": "234",
+          "name": "2900K"
+        },
+        {
+          "min": "235",
+          "max": "238",
+          "name": "2800K"
+        },
+        {
+          "min": "239",
+          "max": "243",
+          "name": "2700K"
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "2600K"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "2500K"
+        }
+      ]
+    },
+    {
+      "name": "LINE_W Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Null"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Built-in Effect 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Built-in Effect 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Built-in Effect 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Built-in Effect 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Built-in Effect 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Built-in Effect 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Built-in Effect 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Built-in Effect 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Built-in Effect 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Built-in Effect 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Built-in Effect 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Built-in Effect 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Built-in Effect 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Built-in Effect 14"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Built-in Effect 15"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Built-in Effect 16"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Built-in Effect 17"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Built-in Effect 18"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Built-in Effect 19"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Built-in Effect 20"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Built-in Effect 21"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Built-in Effect 22"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Built-in Effect 23"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Null"
+        }
+      ]
+    },
+    {
+      "name": "LINE_W Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Slow to Fast without Fade"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Slow to Fast with Fade"
+        }
+      ]
+    },
+    {
+      "name": "LINE_RGB Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Null"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Color 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Color 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Color 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Color 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Color 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Color 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Color 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Color 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Color 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Color 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Color 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Color 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Color 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Color 14"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Color 15"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Color 16"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Color 17"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Color 18"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Color 19"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Color 20"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Color 21"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Color 22"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Color 23"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Color 24"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Color 25"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Color 26"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Color 27"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Color 28"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Color 29"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Color 30"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Color 31"
+        }
+      ]
+    },
+    {
+      "name": "LINE_RGB Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Null"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Built-in Effect 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Built-in Effect 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Built-in Effect 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Built-in Effect 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Built-in Effect 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Built-in Effect 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Built-in Effect 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Built-in Effect 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Built-in Effect 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Built-in Effect 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Built-in Effect 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Built-in Effect 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Built-in Effect 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Built-in Effect 14"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Built-in Effect 15"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Built-in Effect 16"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Built-in Effect 17"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Built-in Effect 18"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Built-in Effect 19"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Built-in Effect 20"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Built-in Effect 21"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Built-in Effect 22"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Built-in Effect 23"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Null"
+        }
+      ]
+    },
+    {
+      "name": "LINE_RGB Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Slow to Fast without Fade"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Slow to Fast with Fade"
+        }
+      ]
+    },
+    {
+      "name": "LINE_W CW 1",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 1",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 2",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 2",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 3",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W  WW 3",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 4",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 4",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 5",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 5",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 6",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 6",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 7",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 7",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 8",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 8",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 9",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 9",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W  CW 10",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 10",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 11",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 11",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 12",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 12",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 13",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 13",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 14",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 14",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 15",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 15",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 16",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 16",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 17",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 17",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 18",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 18",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 19",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 19",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 20",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 20",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 21",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 21",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 22",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 22",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 23",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 23",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W CW 24",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_W WW 24",
+      "type": "Unknown"
+    },
+    {
+      "name": "LINE_RGB Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 6 ",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 7 ",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 8",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 9",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 9",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 9",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 10",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 10",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 10",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 11",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 11",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 11",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 12",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 12",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 12",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 13",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 13",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 13",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 14",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 14",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 14",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 15",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 15",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 15",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 16",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 16",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 16",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 17",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 17",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 17",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 18",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 18",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 18",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 19",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 19",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 19",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 20",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 20",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 20",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 21",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 21",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 21",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 22",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 22",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 22",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 23",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 23",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 23",
+      "type": "Blue"
+    },
+    {
+      "name": "LINE_RGB Red 24",
+      "type": "Red"
+    },
+    {
+      "name": "LINE_RGB Green 24",
+      "type": "Green"
+    },
+    {
+      "name": "LINE_RGB Blue 24",
+      "type": "Blue"
+    },
+    {
+      "name": "Main Red 11&12",
+      "type": "Red"
+    },
+    {
+      "name": "Main Green 11&12",
+      "type": "Green"
+    },
+    {
+      "name": "Main Blue 11&12",
+      "type": "Blue"
+    },
+    {
+      "name": "Main White 11&12",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "17 Channel",
+      "totalChannels": 17,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Main Strobe",
+        "LINE_W Strobe",
+        "LINE_RGB Strobe",
+        "Special Function",
+        "Main Red",
+        "Main Green",
+        "Main Blue",
+        "Main White",
+        "LINE_W CW",
+        "LINE_W WW",
+        "LINE_RGB Red",
+        "LINE_RGB Green",
+        "LINE_RGB Blue"
+      ]
+    },
+    {
+      "name": "27 Channel",
+      "totalChannels": 27,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Main Strobe",
+        "LINE_W Strobe",
+        "LINE_RGB Strobe",
+        "Special Function",
+        "Main Red",
+        "Main Green",
+        "Main Blue",
+        "Main White",
+        "Main CCT",
+        "Main Color",
+        "Main Macro",
+        "Main Macro Speed",
+        "LINE_W WW",
+        "LINE_W CW",
+        "LINE_W CCT",
+        "LINE_W Macro",
+        "LINE_W Macro Speed",
+        "LINE_RGB Red",
+        "LINE_RGB Green",
+        "LINE_RGB Blue",
+        "LINE_RGB Color",
+        "LINE_RGB Macro",
+        "LINE_RGB Macro Speed"
+      ]
+    },
+    {
+      "name": "99 Channel",
+      "totalChannels": 99,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Main Strobe",
+        "LINE_W Strobe",
+        "LINE_RGB Strobe",
+        "Special Function",
+        "Main Red 1",
+        "Main Green 1",
+        "Main Blue 1",
+        "Main White 1",
+        "Main Red 2",
+        "Main Green 2",
+        "Main Blue 2",
+        "Main White 2",
+        "Main Red 3",
+        "Main Green 3",
+        "Main Blue 3",
+        "Main White 3",
+        "Main Red 4",
+        "Main Green 4",
+        "Main Blue 4",
+        "Main White 4",
+        "Main Red 5",
+        "Main Green 5",
+        "Main Blue 5",
+        "Main White 5",
+        "Main Red 6",
+        "Main Green 6",
+        "Main Blue 6",
+        "Main White 6",
+        "Main Red 7",
+        "Main Green 7",
+        "Main Blue 7",
+        "Main White 7",
+        "Main Red 8",
+        "Main Green 8",
+        "Main Blue 8",
+        "Main White 8",
+        "Main Red 9",
+        "Main Green 9",
+        "Main Blue 9",
+        "Main White 9",
+        "Main Red 10",
+        "Main Green 10",
+        "Main Blue 10",
+        "Main White 10",
+        "LINE_W CW 1",
+        "LINE_W WW 1",
+        "LINE_W CW 2",
+        "LINE_W WW 2",
+        "LINE_W CW 3",
+        "LINE_W  WW 3",
+        "LINE_W CW 4",
+        "LINE_W WW 4",
+        "LINE_W CW 5",
+        "LINE_W WW 5",
+        "LINE_W CW 6",
+        "LINE_W WW 6",
+        "LINE_W CW 7",
+        "LINE_W WW 7",
+        "LINE_W CW 8",
+        "LINE_W WW 8",
+        "LINE_W CW 9",
+        "LINE_W WW 9",
+        "LINE_W  CW 10",
+        "LINE_W WW 10",
+        "LINE_W CW 11",
+        "LINE_W WW 11",
+        "LINE_W CW 12",
+        "LINE_W WW 12",
+        "LINE_W CW 13",
+        "LINE_W WW 13",
+        "LINE_W CW 14",
+        "LINE_W WW 14",
+        "LINE_W CW 15",
+        "LINE_W WW 15",
+        "LINE_W CW 16",
+        "LINE_W WW 16",
+        "LINE_W CW 17",
+        "LINE_W WW 17",
+        "LINE_W CW 18",
+        "LINE_W WW 18",
+        "LINE_W CW 19",
+        "LINE_W WW 19",
+        "LINE_W CW 20",
+        "LINE_W WW 20",
+        "LINE_W CW 21",
+        "LINE_W WW 21",
+        "LINE_W CW 22",
+        "LINE_W WW 22",
+        "LINE_W CW 23",
+        "LINE_W WW 23",
+        "LINE_W CW 24",
+        "LINE_W WW 24",
+        "LINE_RGB Red",
+        "LINE_RGB Green",
+        "LINE_RGB Blue"
+      ]
+    },
+    {
+      "name": "108 Channel",
+      "totalChannels": 108,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Main Strobe",
+        "LINE_W Strobe",
+        "LINE_RGB Strobe",
+        "Special Function",
+        "Main Red 1",
+        "Main Green 1",
+        "Main Blue 1",
+        "Main White 1",
+        "Main Red 2",
+        "Main Green 2",
+        "Main Blue 2",
+        "Main White 2",
+        "Main Red 3",
+        "Main Green 3",
+        "Main Blue 3",
+        "Main White 3",
+        "Main Red 4",
+        "Main Green 4",
+        "Main Blue 4",
+        "Main White 4",
+        "Main Red 5",
+        "Main Green 5",
+        "Main Blue 5",
+        "Main White 5",
+        "Main Red 6",
+        "Main Green 6",
+        "Main Blue 6",
+        "Main White 6",
+        "Main Red 7",
+        "Main Green 7",
+        "Main Blue 7",
+        "Main White 7",
+        "Main Red 8",
+        "Main Green 8",
+        "Main Blue 8",
+        "Main White 8",
+        "Main Red 9",
+        "Main Green 9",
+        "Main Blue 9",
+        "Main White 9",
+        "Main Red 10",
+        "Main Green 10",
+        "Main Blue 10",
+        "Main White 10",
+        "LINE_W CW 1",
+        "LINE_W WW 1",
+        "LINE_W CW 2",
+        "LINE_W WW 2",
+        "LINE_W CW 3",
+        "LINE_W  WW 3",
+        "LINE_W CW 4",
+        "LINE_W WW 4",
+        "LINE_W CW 5",
+        "LINE_W WW 5",
+        "LINE_W CW 6",
+        "LINE_W WW 6",
+        "LINE_W CW 7",
+        "LINE_W WW 7",
+        "LINE_W CW 8",
+        "LINE_W WW 8",
+        "LINE_W CW 9",
+        "LINE_W WW 9",
+        "LINE_W  CW 10",
+        "LINE_W WW 10",
+        "LINE_W CW 11",
+        "LINE_W WW 11",
+        "LINE_W CW 12",
+        "LINE_W WW 12",
+        "LINE_RGB Red 1",
+        "LINE_RGB Green 1",
+        "LINE_RGB Blue 1",
+        "LINE_RGB Red 2",
+        "LINE_RGB Green 2",
+        "LINE_RGB Blue 2",
+        "LINE_RGB Red 3",
+        "LINE_RGB Green 3",
+        "LINE_RGB Blue 3",
+        "LINE_RGB Red 4",
+        "LINE_RGB Green 4",
+        "LINE_RGB Blue 4",
+        "LINE_RGB Red 5",
+        "LINE_RGB Green 5",
+        "LINE_RGB Blue 5",
+        "LINE_RGB Red 6 ",
+        "LINE_RGB Green 6",
+        "LINE_RGB Blue 6",
+        "LINE_RGB Red 7",
+        "LINE_RGB Green 7 ",
+        "LINE_RGB Blue 7",
+        "LINE_RGB Red 8",
+        "LINE_RGB Green 8",
+        "LINE_RGB Blue 8",
+        "LINE_RGB Red 9",
+        "LINE_RGB Green 9",
+        "LINE_RGB Blue 9",
+        "LINE_RGB Red 10",
+        "LINE_RGB Green 10",
+        "LINE_RGB Blue 10",
+        "LINE_RGB Red 11",
+        "LINE_RGB Green 11",
+        "LINE_RGB Blue 11",
+        "LINE_RGB Red 12",
+        "LINE_RGB Green 12",
+        "LINE_RGB Blue 12"
+      ]
+    },
+    {
+      "name": "168 Channel",
+      "totalChannels": 168,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Main Strobe",
+        "LINE_W Strobe",
+        "LINE_RGB Strobe",
+        "Special Function",
+        "Main Red 1",
+        "Main Green 1",
+        "Main Blue 1",
+        "Main White 1",
+        "Main Red 2",
+        "Main Green 2",
+        "Main Blue 2",
+        "Main White 2",
+        "Main Red 3",
+        "Main Green 3",
+        "Main Blue 3",
+        "Main White 3",
+        "Main Red 4",
+        "Main Green 4",
+        "Main Blue 4",
+        "Main White 4",
+        "Main Red 5",
+        "Main Green 5",
+        "Main Blue 5",
+        "Main White 5",
+        "Main Red 6",
+        "Main Green 6",
+        "Main Blue 6",
+        "Main White 6",
+        "Main Red 7",
+        "Main Green 7",
+        "Main Blue 7",
+        "Main White 7",
+        "Main Red 8",
+        "Main Green 8",
+        "Main Blue 8",
+        "Main White 8",
+        "Main Red 9",
+        "Main Green 9",
+        "Main Blue 9",
+        "Main White 9",
+        "Main Red 10",
+        "Main Green 10",
+        "Main Blue 10",
+        "Main White 10",
+        "LINE_W CW 1",
+        "LINE_W WW 1",
+        "LINE_W CW 2",
+        "LINE_W WW 2",
+        "LINE_W CW 3",
+        "LINE_W  WW 3",
+        "LINE_W CW 4",
+        "LINE_W WW 4",
+        "LINE_W CW 5",
+        "LINE_W WW 5",
+        "LINE_W CW 6",
+        "LINE_W WW 6",
+        "LINE_W CW 7",
+        "LINE_W WW 7",
+        "LINE_W CW 8",
+        "LINE_W WW 8",
+        "LINE_W CW 9",
+        "LINE_W WW 9",
+        "LINE_W  CW 10",
+        "LINE_W WW 10",
+        "LINE_W CW 11",
+        "LINE_W WW 11",
+        "LINE_W CW 12",
+        "LINE_W WW 12",
+        "LINE_W CW 13",
+        "LINE_W WW 13",
+        "LINE_W CW 14",
+        "LINE_W WW 14",
+        "LINE_W CW 15",
+        "LINE_W WW 15",
+        "LINE_W CW 16",
+        "LINE_W WW 16",
+        "LINE_W CW 17",
+        "LINE_W WW 17",
+        "LINE_W CW 18",
+        "LINE_W WW 18",
+        "LINE_W CW 19",
+        "LINE_W WW 19",
+        "LINE_W CW 20",
+        "LINE_W WW 20",
+        "LINE_W CW 21",
+        "LINE_W WW 21",
+        "LINE_W CW 22",
+        "LINE_W WW 22",
+        "LINE_W CW 23",
+        "LINE_W WW 23",
+        "LINE_W CW 24",
+        "LINE_W WW 24",
+        "LINE_RGB Red 1",
+        "LINE_RGB Green 1",
+        "LINE_RGB Blue 1",
+        "LINE_RGB Red 2",
+        "LINE_RGB Green 2",
+        "LINE_RGB Blue 2",
+        "LINE_RGB Red 3",
+        "LINE_RGB Green 3",
+        "LINE_RGB Blue 3",
+        "LINE_RGB Red 4",
+        "LINE_RGB Green 4",
+        "LINE_RGB Blue 4",
+        "LINE_RGB Red 5",
+        "LINE_RGB Green 5",
+        "LINE_RGB Blue 5",
+        "LINE_RGB Red 6 ",
+        "LINE_RGB Green 6",
+        "LINE_RGB Blue 6",
+        "LINE_RGB Red 7",
+        "LINE_RGB Green 7 ",
+        "LINE_RGB Blue 7",
+        "LINE_RGB Red 8",
+        "LINE_RGB Green 8",
+        "LINE_RGB Blue 8",
+        "LINE_RGB Red 9",
+        "LINE_RGB Green 9",
+        "LINE_RGB Blue 9",
+        "LINE_RGB Red 10",
+        "LINE_RGB Green 10",
+        "LINE_RGB Blue 10",
+        "LINE_RGB Red 11",
+        "LINE_RGB Green 11",
+        "LINE_RGB Blue 11",
+        "LINE_RGB Red 12",
+        "LINE_RGB Green 12",
+        "LINE_RGB Blue 12",
+        "LINE_RGB Red 13",
+        "LINE_RGB Green 13",
+        "LINE_RGB Blue 13",
+        "LINE_RGB Red 14",
+        "LINE_RGB Green 14",
+        "LINE_RGB Blue 14",
+        "LINE_RGB Red 15",
+        "LINE_RGB Green 15",
+        "LINE_RGB Blue 15",
+        "LINE_RGB Red 16",
+        "LINE_RGB Green 16",
+        "LINE_RGB Blue 16",
+        "LINE_RGB Red 17",
+        "LINE_RGB Green 17",
+        "LINE_RGB Blue 17",
+        "LINE_RGB Red 18",
+        "LINE_RGB Green 18",
+        "LINE_RGB Blue 18",
+        "LINE_RGB Red 19",
+        "LINE_RGB Green 19",
+        "LINE_RGB Blue 19",
+        "LINE_RGB Red 20",
+        "LINE_RGB Green 20",
+        "LINE_RGB Blue 20",
+        "LINE_RGB Red 21",
+        "LINE_RGB Green 21",
+        "LINE_RGB Blue 21",
+        "LINE_RGB Red 22",
+        "LINE_RGB Green 22",
+        "LINE_RGB Blue 22",
+        "LINE_RGB Red 23",
+        "LINE_RGB Green 23",
+        "LINE_RGB Blue 23",
+        "LINE_RGB Red 24",
+        "LINE_RGB Green 24",
+        "LINE_RGB Blue 24"
+      ]
+    },
+    {
+      "name": "8+100 Channels (DMX)",
+      "totalChannels": 8,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Main Strobe",
+        "LINE_W Strobe",
+        "LINE_RGB Strobe",
+        "Special Function"
+      ]
+    },
+    {
+      "name": "8+100 Channels (Art-Net)",
+      "totalChannels": 100,
+      "channels": [
+        "Main Red 1",
+        "Main Green 1",
+        "Main Blue 1",
+        "Main White 1",
+        "Main Red 2",
+        "Main Green 2",
+        "Main Blue 2",
+        "Main White 2",
+        "Main Red 3",
+        "Main Green 3",
+        "Main Blue 3",
+        "Main White 3",
+        "Main Red 4",
+        "Main Green 4",
+        "Main Blue 4",
+        "Main White 4",
+        "Main Red 5",
+        "Main Green 5",
+        "Main Blue 5",
+        "Main White 5",
+        "Main Red 6",
+        "Main Green 6",
+        "Main Blue 6",
+        "Main White 6",
+        "Main Red 7",
+        "Main Green 7",
+        "Main Blue 7",
+        "Main White 7",
+        "Main Red 8",
+        "Main Green 8",
+        "Main Blue 8",
+        "Main White 8",
+        "Main Red 9",
+        "Main Green 9",
+        "Main Blue 9",
+        "Main White 9",
+        "Main Red 10",
+        "Main Green 10",
+        "Main Blue 10",
+        "Main White 10",
+        "LINE_W CW 1",
+        "LINE_W WW 1",
+        "LINE_W CW 2",
+        "LINE_W WW 2",
+        "LINE_W CW 3",
+        "LINE_W  WW 3",
+        "LINE_W CW 4",
+        "LINE_W WW 4",
+        "LINE_W CW 5",
+        "LINE_W WW 5",
+        "LINE_W CW 6",
+        "LINE_W WW 6",
+        "LINE_W CW 7",
+        "LINE_W WW 7",
+        "LINE_W CW 8",
+        "LINE_W WW 8",
+        "LINE_W CW 9",
+        "LINE_W WW 9",
+        "LINE_W  CW 10",
+        "LINE_W WW 10",
+        "LINE_W CW 11",
+        "LINE_W WW 11",
+        "LINE_W CW 12",
+        "LINE_W WW 12",
+        "LINE_RGB Red 1",
+        "LINE_RGB Green 1",
+        "LINE_RGB Blue 1",
+        "LINE_RGB Red 2",
+        "LINE_RGB Green 2",
+        "LINE_RGB Blue 2",
+        "LINE_RGB Red 3",
+        "LINE_RGB Green 3",
+        "LINE_RGB Blue 3",
+        "LINE_RGB Red 4",
+        "LINE_RGB Green 4",
+        "LINE_RGB Blue 4",
+        "LINE_RGB Red 5",
+        "LINE_RGB Green 5",
+        "LINE_RGB Blue 5",
+        "LINE_RGB Red 6 ",
+        "LINE_RGB Green 6",
+        "LINE_RGB Blue 6",
+        "LINE_RGB Red 7",
+        "LINE_RGB Green 7 ",
+        "LINE_RGB Blue 7",
+        "LINE_RGB Red 8",
+        "LINE_RGB Green 8",
+        "LINE_RGB Blue 8",
+        "LINE_RGB Red 9",
+        "LINE_RGB Green 9",
+        "LINE_RGB Blue 9",
+        "LINE_RGB Red 10",
+        "LINE_RGB Green 10",
+        "LINE_RGB Blue 10",
+        "LINE_RGB Red 11",
+        "LINE_RGB Green 11",
+        "LINE_RGB Blue 11",
+        "LINE_RGB Red 12",
+        "LINE_RGB Green 12",
+        "LINE_RGB Blue 12"
+      ]
+    },
+    {
+      "name": "8+160 Channels (DMX)",
+      "totalChannels": 8,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Main Strobe",
+        "LINE_W Strobe",
+        "LINE_RGB Strobe",
+        "Special Function"
+      ]
+    },
+    {
+      "name": "8+160 Channels (Art-Net)",
+      "totalChannels": 160,
+      "channels": [
+        "Main Red 1",
+        "Main Green 1",
+        "Main Blue 1",
+        "Main White 1",
+        "Main Red 2",
+        "Main Green 2",
+        "Main Blue 2",
+        "Main White 2",
+        "Main Red 3",
+        "Main Green 3",
+        "Main Blue 3",
+        "Main White 3",
+        "Main Red 4",
+        "Main Green 4",
+        "Main Blue 4",
+        "Main White 4",
+        "Main Red 5",
+        "Main Green 5",
+        "Main Blue 5",
+        "Main White 5",
+        "Main Red 6",
+        "Main Green 6",
+        "Main Blue 6",
+        "Main White 6",
+        "Main Red 7",
+        "Main Green 7",
+        "Main Blue 7",
+        "Main White 7",
+        "Main Red 8",
+        "Main Green 8",
+        "Main Blue 8",
+        "Main White 8",
+        "Main Red 9",
+        "Main Green 9",
+        "Main Blue 9",
+        "Main White 9",
+        "Main Red 10",
+        "Main Green 10",
+        "Main Blue 10",
+        "Main White 10",
+        "LINE_W CW 1",
+        "LINE_W WW 1",
+        "LINE_W CW 2",
+        "LINE_W WW 2",
+        "LINE_W CW 3",
+        "LINE_W  WW 3",
+        "LINE_W CW 4",
+        "LINE_W WW 4",
+        "LINE_W CW 5",
+        "LINE_W WW 5",
+        "LINE_W CW 6",
+        "LINE_W WW 6",
+        "LINE_W CW 7",
+        "LINE_W WW 7",
+        "LINE_W CW 8",
+        "LINE_W WW 8",
+        "LINE_W CW 9",
+        "LINE_W WW 9",
+        "LINE_W  CW 10",
+        "LINE_W WW 10",
+        "LINE_W CW 11",
+        "LINE_W WW 11",
+        "LINE_W CW 12",
+        "LINE_W WW 12",
+        "LINE_W CW 13",
+        "LINE_W WW 13",
+        "LINE_W CW 14",
+        "LINE_W WW 14",
+        "LINE_W CW 15",
+        "LINE_W WW 15",
+        "LINE_W CW 16",
+        "LINE_W WW 16",
+        "LINE_W CW 17",
+        "LINE_W WW 17",
+        "LINE_W CW 18",
+        "LINE_W WW 18",
+        "LINE_W CW 19",
+        "LINE_W WW 19",
+        "LINE_W CW 20",
+        "LINE_W WW 20",
+        "LINE_W CW 21",
+        "LINE_W WW 21",
+        "LINE_W CW 22",
+        "LINE_W WW 22",
+        "LINE_W CW 23",
+        "LINE_W WW 23",
+        "LINE_W CW 24",
+        "LINE_W WW 24",
+        "LINE_RGB Red 1",
+        "LINE_RGB Green 1",
+        "LINE_RGB Blue 1",
+        "LINE_RGB Red 2",
+        "LINE_RGB Green 2",
+        "LINE_RGB Blue 2",
+        "LINE_RGB Red 3",
+        "LINE_RGB Green 3",
+        "LINE_RGB Blue 3",
+        "LINE_RGB Red 4",
+        "LINE_RGB Green 4",
+        "LINE_RGB Blue 4",
+        "LINE_RGB Red 5",
+        "LINE_RGB Green 5",
+        "LINE_RGB Blue 5",
+        "LINE_RGB Red 6 ",
+        "LINE_RGB Green 6",
+        "LINE_RGB Blue 6",
+        "LINE_RGB Red 7",
+        "LINE_RGB Green 7 ",
+        "LINE_RGB Blue 7",
+        "LINE_RGB Red 8",
+        "LINE_RGB Green 8",
+        "LINE_RGB Blue 8",
+        "LINE_RGB Red 9",
+        "LINE_RGB Green 9",
+        "LINE_RGB Blue 9",
+        "LINE_RGB Red 10",
+        "LINE_RGB Green 10",
+        "LINE_RGB Blue 10",
+        "LINE_RGB Red 11",
+        "LINE_RGB Green 11",
+        "LINE_RGB Blue 11",
+        "LINE_RGB Red 12",
+        "LINE_RGB Green 12",
+        "LINE_RGB Blue 12",
+        "LINE_RGB Red 13",
+        "LINE_RGB Green 13",
+        "LINE_RGB Blue 13",
+        "LINE_RGB Red 14",
+        "LINE_RGB Green 14",
+        "LINE_RGB Blue 14",
+        "LINE_RGB Red 15",
+        "LINE_RGB Green 15",
+        "LINE_RGB Blue 15",
+        "LINE_RGB Red 16",
+        "LINE_RGB Green 16",
+        "LINE_RGB Blue 16",
+        "LINE_RGB Red 17",
+        "LINE_RGB Green 17",
+        "LINE_RGB Blue 17",
+        "LINE_RGB Red 18",
+        "LINE_RGB Green 18",
+        "LINE_RGB Blue 18",
+        "LINE_RGB Red 19",
+        "LINE_RGB Green 19",
+        "LINE_RGB Blue 19",
+        "LINE_RGB Red 20",
+        "LINE_RGB Green 20",
+        "LINE_RGB Blue 20",
+        "LINE_RGB Red 21",
+        "LINE_RGB Green 21",
+        "LINE_RGB Blue 21",
+        "LINE_RGB Red 22",
+        "LINE_RGB Green 22",
+        "LINE_RGB Blue 22",
+        "LINE_RGB Red 23",
+        "LINE_RGB Green 23",
+        "LINE_RGB Blue 23",
+        "LINE_RGB Red 24",
+        "LINE_RGB Green 24",
+        "LINE_RGB Blue 24"
+      ]
+    },
+    {
+      "name": "21 Channel",
+      "totalChannels": 21,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Main Strobe",
+        "LINE_W Strobe",
+        "LINE_RGB Strobe",
+        "Special Function",
+        "Main Red",
+        "Main Green",
+        "Main Blue",
+        "Main White",
+        "LINE_W CW",
+        "LINE_W WW",
+        "LINE_RGB Red",
+        "LINE_RGB Green",
+        "LINE_RGB Blue",
+        "Main Red 11&12",
+        "Main Green 11&12",
+        "Main Blue 11&12",
+        "Main White 11&12"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "22400",
+      "colourTemperature": "6300"
+    },
+    "dimensions": {
+      "weight": "25",
+      "width": "290",
+      "height": "120",
+      "depth": "1000"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "2.8",
+      "degreesMax": "31"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "0",
+      "tiltMax": "202"
+    },
+    "technical": {
+      "powerConsumption": "1205",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

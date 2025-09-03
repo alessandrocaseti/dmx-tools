@@ -3,6 +3,8 @@
 // Define the folder structure directly in the code
 const fixtureFolders = 
 [
+    "Abstract",
+    "Acme",
     "Lixada",
     "Sagitter",
     "Stairville"
@@ -11,6 +13,19 @@ const fixtureFolders =
 // This would normally be dynamic, but we'll define it statically for now
 const folderFiles = 
     {
+        "Abstract":
+        [
+            "Abstract-Twister-4.json",
+            "Abstract-VR8.json"
+        ],
+        "Acme":
+        [
+            "Acme-Dotline180.json",
+            "Acme-Dotline360.json",
+            "Acme-Oxygen.json",
+            "Acme-Pixel-Line-IP.json",
+            "Acme-Super-Dotline.json"
+        ],
         "Lixada": 
         [
             "Lixada-5LED-50W-Beam-Wash-Double-Sides-RGBW.json",

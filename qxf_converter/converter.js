@@ -95,15 +95,9 @@ downloadButton.addEventListener('click', () =>
             const productPageInput = document.querySelector(`input[data-filename="${file.name}"][data-field="productPage"]`);
             const manualInput = document.querySelector(`input[data-filename="${file.name}"][data-field="manual"]`);
 
-            if (imageInput) {
-                file.data.image = imageInput.value;
-            }
-            if (productPageInput) {
-                file.data.productPage = productPageInput.value;
-            }
-            if (manualInput) {
-                file.data.manual = manualInput.value;
-            }
+            if (imageInput) { file.data.image = imageInput.value; }
+            if (productPageInput) { file.data.productPage = productPageInput.value; }
+            if (manualInput) { file.data.manual = manualInput.value; }
 
             zip.file(file.name, JSON.stringify(file.data, null, 2));
         }

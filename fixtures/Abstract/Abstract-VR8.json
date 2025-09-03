@@ -1,0 +1,428 @@
+{
+  "version": "1.0",
+  "manufacturer": "Abstract",
+  "model": "VR8",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "https://www.manualslib.com/manual/1141251/Abstract-Vr8.html",
+  "channels": [
+    {
+      "name": "Mirror Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color (VR mode)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "White"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Blue"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Green"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Yellow"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Cyan"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Orange"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Magenta"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Neon Green"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Pink"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "UV Blue"
+        },
+        {
+          "min": "176",
+          "max": "241",
+          "name": "Aqua"
+        },
+        {
+          "min": "242",
+          "max": "255",
+          "name": "Slow color scroll"
+        }
+      ]
+    },
+    {
+      "name": "Gobo (VR mode)",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Laser"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Star"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Slice"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Tunnel"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Heart"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Eurostars"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Sunburst"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Triangle"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Slash"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Bubbles"
+        },
+        {
+          "min": "192",
+          "max": "241",
+          "name": "Segment"
+        },
+        {
+          "min": "242",
+          "max": "254",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Gobo (CE mode)",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "23",
+          "name": "Blackout"
+        },
+        {
+          "min": "24",
+          "max": "39",
+          "name": "Open"
+        },
+        {
+          "min": "40",
+          "max": "55",
+          "name": "Laser"
+        },
+        {
+          "min": "56",
+          "max": "71",
+          "name": "Star"
+        },
+        {
+          "min": "72",
+          "max": "87",
+          "name": "Slice"
+        },
+        {
+          "min": "88",
+          "max": "103",
+          "name": "Tunnel"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "Heart"
+        },
+        {
+          "min": "120",
+          "max": "135",
+          "name": "Eurostars"
+        },
+        {
+          "min": "136",
+          "max": "151",
+          "name": "Sunburst"
+        },
+        {
+          "min": "152",
+          "max": "167",
+          "name": "Triangle"
+        },
+        {
+          "min": "168",
+          "max": "183",
+          "name": "Slash"
+        },
+        {
+          "min": "184",
+          "max": "199",
+          "name": "Bubbles"
+        },
+        {
+          "min": "200",
+          "max": "225",
+          "name": "Segment"
+        },
+        {
+          "min": "226",
+          "max": "254",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Gobo (CE mode off)",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Dot line"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Bars"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Tunnel"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Star circle"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Triangle"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Slash"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Bubbles"
+        }
+      ]
+    },
+    {
+      "name": "Color (CE mode)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "White"
+        },
+        {
+          "min": "26",
+          "max": "42",
+          "name": "Red"
+        },
+        {
+          "min": "43",
+          "max": "58",
+          "name": "Blue"
+        },
+        {
+          "min": "59",
+          "max": "74",
+          "name": "Green"
+        },
+        {
+          "min": "75",
+          "max": "90",
+          "name": "Yellow"
+        },
+        {
+          "min": "91",
+          "max": "107",
+          "name": "Cyan"
+        },
+        {
+          "min": "108",
+          "max": "123",
+          "name": "Orange"
+        },
+        {
+          "min": "124",
+          "max": "139",
+          "name": "Magenta"
+        },
+        {
+          "min": "140",
+          "max": "155",
+          "name": "Neon Green"
+        },
+        {
+          "min": "156",
+          "max": "172",
+          "name": "Pink"
+        },
+        {
+          "min": "173",
+          "max": "188",
+          "name": "UV Blue"
+        },
+        {
+          "min": "189",
+          "max": "245",
+          "name": "Aqua"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Slow color scroll"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "VR",
+      "totalChannels": 4,
+      "channels": [
+        "Mirror Pan",
+        "Mirror Tilt",
+        "Color (VR mode)",
+        "Gobo (VR mode)"
+      ]
+    },
+    {
+      "name": "CE on",
+      "totalChannels": 4,
+      "channels": [
+        "Mirror Pan",
+        "Mirror Tilt",
+        "Color (VR mode)",
+        "Gobo (CE mode)"
+      ]
+    },
+    {
+      "name": "CE  off",
+      "totalChannels": 4,
+      "channels": [
+        "Mirror Pan",
+        "Mirror Tilt",
+        "Color (VR mode)",
+        "Gobo (CE mode off)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "CDM 150W",
+      "lumens": "0",
+      "colourTemperature": "5000"
+    },
+    "dimensions": {
+      "weight": "5.62",
+      "width": "209",
+      "height": "415",
+      "depth": "2115"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "170",
+      "tiltMax": "100"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

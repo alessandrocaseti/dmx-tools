@@ -1,0 +1,416 @@
+{
+  "version": "1.0",
+  "manufacturer": "Acme",
+  "model": "Dotline180",
+  "type": "Moving Head",
+  "image": "https://en.acmelighting.com/Uploads/Album/20190402/original_img/201904021807233724.jpg",
+  "productPage": "https://en.acmelighting.com/cms/old/productdetailold?cat_id=195&id=2174",
+  "manual": "https://en.acmelighting.com/Uploads/download/file_material/161796400862c1fbdb6256a7b8.pdf",
+  "channels": [
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Auto speed"
+        },
+        {
+          "min": "8",
+          "max": "247",
+          "name": "Tilt (Slow to fast)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Auto speed"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect (Fast to slow)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse-effect in sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect (Slow to fast)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "LED1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED1 White",
+      "type": "White"
+    },
+    {
+      "name": "LED2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED2 White",
+      "type": "White"
+    },
+    {
+      "name": "LED3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED3 White",
+      "type": "White"
+    },
+    {
+      "name": "LED4 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED4 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED4 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED4 White",
+      "type": "White"
+    },
+    {
+      "name": "LED5 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED5 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED5 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED5 White",
+      "type": "White"
+    },
+    {
+      "name": "LED6 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED6 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED6 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED6 White",
+      "type": "White"
+    },
+    {
+      "name": "Special Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "60",
+          "name": "No function"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Black out when Tilt moving"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Disable Black out when Tilt moving"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Reset All Motor"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Reset Tilt Motor"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Reset Zoom Motor"
+        },
+        {
+          "min": "161",
+          "max": "180",
+          "name": "Dimmer Speed: Smooth"
+        },
+        {
+          "min": "181",
+          "max": "200",
+          "name": "Dimmer Speed: Fast"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "No function"
+        },
+        {
+          "min": "9",
+          "max": "38",
+          "name": "Macro 1"
+        },
+        {
+          "min": "39",
+          "max": "68",
+          "name": "Macro 2"
+        },
+        {
+          "min": "69",
+          "max": "98",
+          "name": "Macro 3"
+        },
+        {
+          "min": "99",
+          "max": "128",
+          "name": "Macro 4"
+        },
+        {
+          "min": "129",
+          "max": "158",
+          "name": "Macro 5"
+        },
+        {
+          "min": "159",
+          "max": "187",
+          "name": "Macro 6"
+        },
+        {
+          "min": "188",
+          "max": "255",
+          "name": "Macro 7"
+        }
+      ]
+    },
+    {
+      "name": "Foreground Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Foreground Color"
+        }
+      ]
+    },
+    {
+      "name": "Background Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Background Color"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "32 Channel",
+      "totalChannels": 32,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Tilt speed",
+        "Zoom",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "LED1 Red",
+        "LED1 Green",
+        "LED1 Blue",
+        "LED1 White",
+        "LED2 Red",
+        "LED2 Green",
+        "LED2 Blue",
+        "LED2 White",
+        "LED3 Red",
+        "LED3 Green",
+        "LED3 Blue",
+        "LED3 White",
+        "LED4 Red",
+        "LED4 Green",
+        "LED4 Blue",
+        "LED4 White",
+        "LED5 Red",
+        "LED5 Green",
+        "LED5 Blue",
+        "LED5 White",
+        "LED6 Red",
+        "LED6 Green",
+        "LED6 Blue",
+        "LED6 White",
+        "Special Function"
+      ]
+    },
+    {
+      "name": "14 Channel",
+      "totalChannels": 14,
+      "channels": [
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Macro",
+        "Foreground Color",
+        "Background Color",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Special Function"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2600",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "10.7",
+      "width": "278",
+      "height": "113",
+      "depth": "500"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "3.5",
+      "degreesMax": "38"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "0",
+      "tiltMax": "220"
+    },
+    "technical": {
+      "powerConsumption": "240",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}
