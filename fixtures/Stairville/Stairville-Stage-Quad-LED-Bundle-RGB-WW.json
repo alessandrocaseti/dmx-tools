@@ -1,15 +1,218 @@
 {
+  "version": "1.0",
   "manufacturer": "Stairville",
   "model": "Stage Quad LED Bundle RGB WW",
   "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
   "channels": [
     {
       "name": "Operation Mode",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Automatic show Pr.01"
+        },
+        {
+          "min": "11",
+          "max": "21",
+          "name": "Automatic show Pr.02"
+        },
+        {
+          "min": "22",
+          "max": "32",
+          "name": "Automatic show Pr.03"
+        },
+        {
+          "min": "33",
+          "max": "43",
+          "name": "Automatic show Pr.04"
+        },
+        {
+          "min": "44",
+          "max": "54",
+          "name": "Automatic show Pr.05"
+        },
+        {
+          "min": "55",
+          "max": "65",
+          "name": "Automatic show Pr.06"
+        },
+        {
+          "min": "66",
+          "max": "76",
+          "name": "Automatic show Pr.07"
+        },
+        {
+          "min": "77",
+          "max": "87",
+          "name": "Automatic show Pr.08"
+        },
+        {
+          "min": "88",
+          "max": "98",
+          "name": "Automatic show Pr.09"
+        },
+        {
+          "min": "99",
+          "max": "109",
+          "name": "Automatic show Pr.10"
+        },
+        {
+          "min": "110",
+          "max": "120",
+          "name": "Automatic show Pr.11"
+        },
+        {
+          "min": "121",
+          "max": "131",
+          "name": "Automatic show Pr.12"
+        },
+        {
+          "min": "132",
+          "max": "142",
+          "name": "Automatic show Pr.13"
+        },
+        {
+          "min": "143",
+          "max": "153",
+          "name": "Automatic show Pr.14"
+        },
+        {
+          "min": "154",
+          "max": "164",
+          "name": "Automatic show Pr.15"
+        },
+        {
+          "min": "165",
+          "max": "175",
+          "name": "Automatic show Pr.16"
+        },
+        {
+          "min": "176",
+          "max": "186",
+          "name": "Automatic show Pr.17"
+        },
+        {
+          "min": "187",
+          "max": "197",
+          "name": "Automatic show Pr.18"
+        },
+        {
+          "min": "198",
+          "max": "208",
+          "name": "Automatic show Pr.19"
+        },
+        {
+          "min": "209",
+          "max": "219",
+          "name": "Automatic show Pr.20"
+        },
+        {
+          "min": "220",
+          "max": "230",
+          "name": "Automatic show Pr.21"
+        },
+        {
+          "min": "231",
+          "max": "241",
+          "name": "Automatic show Pr.22"
+        },
+        {
+          "min": "242",
+          "max": "255",
+          "name": "Sound controlled show"
+        }
+      ]
     },
     {
       "name": "Function depending on setting of channel 1",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "Off"
+        },
+        {
+          "min": "17",
+          "max": "33",
+          "name": "Basic colour cyan"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Basic colour pink"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Basic colour magenta"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "Basic colour orange"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Basic colour cold white"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Basic colour pompadour"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Basic colour light green"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Basic colour light blue"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Basic colour yellow"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Basic colour warm white"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Basic colour red"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Basic colour green"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Basic colour blue"
+        },
+        {
+          "min": "238",
+          "max": "254",
+          "name": "Basic colour amber"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "maximum brightness"
+        }
+      ]
     },
     {
       "name": "Red intensity",
@@ -33,11 +236,215 @@
     },
     {
       "name": "Operation Mode 2",
-      "type": "Effect"
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "10",
+          "name": "Automatic show Pr.01"
+        },
+        {
+          "min": "11",
+          "max": "21",
+          "name": "Automatic show Pr.02"
+        },
+        {
+          "min": "22",
+          "max": "32",
+          "name": "Automatic show Pr.03"
+        },
+        {
+          "min": "33",
+          "max": "43",
+          "name": "Automatic show Pr.04"
+        },
+        {
+          "min": "44",
+          "max": "54",
+          "name": "Automatic show Pr.05"
+        },
+        {
+          "min": "55",
+          "max": "65",
+          "name": "Automatic show Pr.06"
+        },
+        {
+          "min": "66",
+          "max": "76",
+          "name": "Automatic show Pr.07"
+        },
+        {
+          "min": "77",
+          "max": "87",
+          "name": "Automatic show Pr.08"
+        },
+        {
+          "min": "88",
+          "max": "98",
+          "name": "Automatic show Pr.09"
+        },
+        {
+          "min": "99",
+          "max": "109",
+          "name": "Automatic show Pr.10"
+        },
+        {
+          "min": "110",
+          "max": "120",
+          "name": "Automatic show Pr.11"
+        },
+        {
+          "min": "121",
+          "max": "131",
+          "name": "Automatic show Pr.12"
+        },
+        {
+          "min": "132",
+          "max": "142",
+          "name": "Automatic show Pr.13"
+        },
+        {
+          "min": "143",
+          "max": "153",
+          "name": "Automatic show Pr.14"
+        },
+        {
+          "min": "154",
+          "max": "164",
+          "name": "Automatic show Pr.15"
+        },
+        {
+          "min": "165",
+          "max": "175",
+          "name": "Automatic show Pr.16"
+        },
+        {
+          "min": "176",
+          "max": "186",
+          "name": "Automatic show Pr.17"
+        },
+        {
+          "min": "187",
+          "max": "197",
+          "name": "Automatic show Pr.18"
+        },
+        {
+          "min": "198",
+          "max": "208",
+          "name": "Automatic show Pr.19"
+        },
+        {
+          "min": "209",
+          "max": "219",
+          "name": "Automatic show Pr.20"
+        },
+        {
+          "min": "220",
+          "max": "230",
+          "name": "Automatic show Pr.21"
+        },
+        {
+          "min": "231",
+          "max": "241",
+          "name": "Automatic show Pr.22"
+        },
+        {
+          "min": "242",
+          "max": "255",
+          "name": "Sound controlled show"
+        }
+      ]
     },
     {
       "name": "Function depending on setting of channel 6",
-      "type": "Color"
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "Off"
+        },
+        {
+          "min": "17",
+          "max": "33",
+          "name": "Basic colour cyan"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Basic colour pink"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Basic colour magenta"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "Basic colour orange"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Basic colour cold white"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Basic colour pompadour"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Basic colour light green"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Basic colour light blue"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Basic colour yellow"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Basic colour warm white"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Basic colour red"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Basic colour green"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Basic colour blue"
+        },
+        {
+          "min": "238",
+          "max": "254",
+          "name": "Basic colour amber"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "maximum brightness"
+        }
+      ]
     },
     {
       "name": "Strobe",
