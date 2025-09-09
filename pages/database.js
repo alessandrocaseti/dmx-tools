@@ -323,8 +323,7 @@ document.addEventListener("DOMContentLoaded", function()
                 databaseButtonsDiv.innerHTML = `
                     <div style="text-align: center; padding: 50px;">
                         <p>Error loading fixture details. Please try again.</p>
-                    </div>
-                `;
+                    </div>`;
                 updateAddressBar();
                 updateBackButton();
             });

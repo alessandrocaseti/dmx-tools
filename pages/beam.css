@@ -1,4 +1,3 @@
-
 .beam-calculator h2 {
     color: #ffeb3b;
     margin-bottom: 10px;
@@ -87,4 +86,18 @@
 
 .visualization-controls input[type="range"] {
     width: 150px;
+}
+
+.drag-handle {
+    fill: #ffeb3b;
+    stroke: #fff;
+    stroke-width: 2;
+    cursor: move;
+}
+
+.label {
+    fill: #fff;
+    font-size: 12px;
+    text-anchor: middle;
+    pointer-events: none;
 }
