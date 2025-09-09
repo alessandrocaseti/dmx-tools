@@ -6,7 +6,7 @@ const downloadButton = document.getElementById('downloadButton');
 const output = document.getElementById('output');
 let convertedFiles = [];
 
-const converterVersion = '1.0'
+const converterVersion = '1.1'
 
 convertButton.addEventListener('click', () => 
 {
@@ -258,32 +258,32 @@ function convertQxfToJson(xmlData)
             if(channelType === 'Unknown')
             {
                 if(chanName.includes('dimmer')) channelType = 'Intensity';
-                else if(chanName.includes('pan')) channelType = 'Pan';
-                else if(chanName.includes('tilt')) channelType = 'Tilt';
-                else if(chanName.includes('shutter')) channelType = 'Shutter';
-                else if(chanName.includes('focus')) channelType = 'Focus';
-                else if(chanName.includes('zoom')) channelType = 'Beam';
-                else if(chanName.includes('iris')) channelType = 'Iris';
-                else if(chanName.includes('frost')) channelType = 'Frost';
-                else if(chanName.includes('prism')) channelType = 'Prism';
-                else if(chanName.includes('gobo')) channelType = 'Gobo';
-                else if(chanName.includes('color') || chanName.includes('colour')) channelType = 'Color';
-                else if(chanName.includes('cto')) channelType = 'Color';
-                else if(chanName.includes('cmy')) channelType = 'Color';
-                else if(chanName.includes('white')) channelType = 'White';
-                else if(chanName.includes('red')) channelType = 'Red';
-                else if(chanName.includes('green')) channelType = 'Green';
-                else if(chanName.includes('blue')) channelType = 'Blue';
-                else if(chanName.includes('amber')) channelType = 'Amber';
-                else if(chanName.includes('uv')) channelType = 'UV';
-                else if(chanName.includes('indigo')) channelType = 'Indigo';
-                else if(chanName.includes('lime')) channelType = 'Lime';
-                else if(chanName.includes('cyan')) channelType = 'Cyan';
-                else if(chanName.includes('magenta')) channelType = 'Magenta';
-                else if(chanName.includes('yellow')) channelType = 'Yellow';
-                else if(chanName.includes('speed')) channelType = 'Speed';
-                else if(chanName.includes('strobe')) channelType = 'Shutter';
-                else if(chanName.includes('reserved')) channelType = 'Nothing';
+                if(chanName.includes('pan')) channelType = 'Pan';
+                if(chanName.includes('tilt')) channelType = 'Tilt';
+                if(chanName.includes('shutter')) channelType = 'Shutter';
+                if(chanName.includes('focus')) channelType = 'Focus';
+                if(chanName.includes('zoom')) channelType = 'Beam';
+                if(chanName.includes('iris')) channelType = 'Iris';
+                if(chanName.includes('frost')) channelType = 'Frost';
+                if(chanName.includes('prism')) channelType = 'Prism';
+                if(chanName.includes('gobo')) channelType = 'Gobo';
+                if(chanName.includes('color') || chanName.includes('colour')) channelType = 'Color';
+                if(chanName.includes('cto')) channelType = 'Color';
+                if(chanName.includes('cmy')) channelType = 'Color';
+                if(chanName.includes('white')) channelType = 'White';
+                if(chanName.includes('red')) channelType = 'Red';
+                if(chanName.includes('green')) channelType = 'Green';
+                if(chanName.includes('blue')) channelType = 'Blue';
+                if(chanName.includes('amber')) channelType = 'Amber';
+                if(chanName.includes('uv')) channelType = 'UV';
+                if(chanName.includes('indigo')) channelType = 'Indigo';
+                if(chanName.includes('lime')) channelType = 'Lime';
+                if(chanName.includes('cyan')) channelType = 'Cyan';
+                if(chanName.includes('magenta')) channelType = 'Magenta';
+                if(chanName.includes('yellow')) channelType = 'Yellow';
+                if(chanName.includes('speed')) channelType = 'Speed';
+                if(chanName.includes('strobe')) channelType = 'Shutter';
+                if(chanName.includes('reserved')) channelType = 'Nothing';
             }
         }
         if (channelType === 'Colour') channelType = 'Color';
