@@ -486,68 +486,31 @@
             <h1 class="pageTitle">Beam Tools</h1>
             <div class="defaultPageContent">
 
-                <div style="display: flex; flex-direction: row; justify-content: center; max-width: 100%;">
-                    <div style="flex: 1;">
-                        <div class="calculator-tabs">
-                            <button class="tab-button active" data-tab="angle">Calculate Angle</button>
-                            <button class="tab-button" data-tab="distance">Calculate Distance</button>
-                            <button class="tab-button" data-tab="diameter">Calculate Diameter</button>
+                <div class="beam-tools-container">
+                    <div class="beam-calculator-panel">
+                        <div class="input-group">
+                            <label for="beam-angle">Angle (degrees):</label>
+                            <input type="number" id="beam-angle" step="0.1" min="0.1" max="179">
                         </div>
-
-                        <div class="tab-content active" id="angle-tab">
-                            <div class="input-group">
-                                <label for="distance-angle">Distance (m):</label>
-                                <input type="number" id="distance-angle" step="0.01" min="0.01" placeholder="Enter distance">
-                            </div>
-                            <div class="input-group">
-                                <label for="diameter-angle">Diameter (m):</label>
-                                <input type="number" id="diameter-angle" step="0.01" min="0.01" placeholder="Enter diameter">
-                            </div>
-                            <button class="calculate-btn" onclick="beamCalculator.calculateAngle()">Calculate Angle</button>
-                            <div class="result" id="angle-result"></div>
+                        <div class="input-group">
+                            <label for="beam-distance">Distance (m):</label>
+                            <input type="number" id="beam-distance" step="0.01" min="0.01" max="1000">
                         </div>
-
-                        <div class="tab-content" id="distance-tab">
-                            <div class="input-group">
-                                <label for="angle-distance">Angle (degrees):</label>
-                                <input type="number" id="angle-distance" step="0.1" min="0.1" max="180" placeholder="Enter angle">
-                            </div>
-                            <div class="input-group">
-                                <label for="diameter-distance">Diameter (m):</label>
-                                <input type="number" id="diameter-distance" step="0.01" min="0.01" placeholder="Enter diameter">
-                            </div>
-                            <button class="calculate-btn" onclick="beamCalculator.calculateDistance()">Calculate Distance</button>
-                            <div class="result" id="distance-result"></div>
-                        </div>
-
-                        <div class="tab-content" id="diameter-tab">
-                            <div class="input-group">
-                                <label for="angle-diameter">Angle (degrees):</label>
-                                <input type="number" id="angle-diameter" step="0.1" min="0.1" max="180" placeholder="Enter angle">
-                            </div>
-                            <div class="input-group">
-                                <label for="distance-diameter">Distance (m):</label>
-                                <input type="number" id="distance-diameter" step="0.01" min="0.01" placeholder="Enter distance">
-                            </div>
-                            <button class="calculate-btn" onclick="beamCalculator.calculateDiameter()">Calculate Diameter</button>
-                            <div class="result" id="diameter-result"></div>
+                        <div class="input-group">
+                            <label for="beam-diameter">Diameter (m):</label>
+                            <input type="number" id="beam-diameter" step="0.01" min="0.01" max="1000">
                         </div>
                     </div>
 
                     <div class="beam-visualization">
                         <h3>Beam Visualization</h3>
-                        <svg id="beam-svg" width="400" height="200">
-                            <line x1="200" y1="200" x2="200" y2="100" stroke="#ffeb3b" stroke-width="2" />
-                            <path id="beam-path" d="M 200 200 L 190 175.8 L 210 175.8 Z" fill="rgba(255, 235, 59, 0.3)" stroke="#ffeb3b" />
-                            <circle cx="200" cy="200" r="5" fill="#ffeb3b" />
-                            <text x="200" y="220" text-anchor="middle" fill="#fff" font-size="12">Fixture</text>
-                        </svg>
+                        <svg id="beam-svg" width="600" height="300"></svg>
                         <div class="visualization-controls">
                             <label>
                                 <input type="checkbox" id="show-labels" checked> Show labels
                             </label>
                             <label>
-                                <input type="range" id="scale-slider" min="0.5" max="2" step="0.1" value="1"> Scale
+                                <input type="range" id="scale-slider" min="0.8" max="2.5" step="0.1" value="1"> Zoom
                             </label>
                         </div>
                     </div>
