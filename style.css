@@ -74,7 +74,6 @@ body
     margin: 0;
     padding: 0;
     text-align: center;
-    overflow: hidden !important;
 }
 
 /* Bottoni colore */
@@ -381,13 +380,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
     color: var(--colore-giallo);
 }
 
-#home 
-{
-    overflow: hidden !important;
-    min-height: 100vh;
-    max-height: 100vh;
-}
-
 .homeVideo
 {
     position: absolute;
@@ -398,6 +390,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
     object-fit: cover;
     opacity: 0.5;
     pointer-events: none;
-    overflow: hidden;
-    overflow-y: hidden;
+}
+
+#home > div, #home > section, #home > .web-only {
+    position: relative;
+    z-index: 1;
 }
