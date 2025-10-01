@@ -74,6 +74,7 @@ body
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow: hidden !important;
 }
 
 /* Bottoni colore */
@@ -378,4 +379,25 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
 .defaultLink:active
 {
     color: var(--colore-giallo);
+}
+
+#home 
+{
+    overflow: hidden !important;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.homeVideo
+{
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    object-fit: cover;
+    opacity: 0.5;
+    pointer-events: none;
+    overflow: hidden;
+    overflow-y: hidden;
 }

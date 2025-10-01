@@ -72,8 +72,11 @@
         </nav>
 
         <!-- Home -->
-        <div id="home" class="web-only defaultPage">
-            <div style="margin: 0 auto;">
+        <div id="home" class="web-only defaultPage" style="position: relative; overflow: hidden; min-height: 100vh;">
+            <video autoplay muted loop id="homeHero" class="homeVideo">
+                <source src="assets/homevideo.mp4" type="video/mp4">
+            </video>
+            <div style="margin: 0 auto; position: relative; z-index: 1;">
                 <img src="assets/dmxtools-banner.png" width="470" height="130">
             </div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
