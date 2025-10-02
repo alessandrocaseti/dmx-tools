@@ -73,53 +73,156 @@
 
         <!-- Home -->
         <div id="home" class="web-only defaultPage" style="position: relative; overflow: hidden; min-height: 100vh;">
-            <video autoplay muted loop id="homeHero" class="homeVideo">
-                <source src="assets/homevideo.mp4" type="video/mp4">
-            </video>
-            <div style="margin: 0 auto; position: relative; z-index: 1;">
-                <img src="assets/dmxtools-banner.png" width="470" height="130">
+            <!-- Add a relative container for video and floating div -->
+            <div style="position: absolute; width: 100%; height: 100vh;">
+                <!-- Floating div above video -->
+                <div class="blink homeCard" style="position: absolute; left: 50%; bottom: 150px; transform: translateX(-75%); z-index: 2; text-align: center;">
+                    <span style="color: #ffeb3b; font-size: 1.2em; font-weight: bold;">Explore features</span><br>
+                    <button onclick="scrollToFeatures()" style="background: none; border: none; cursor: pointer; margin-top: 8px;">
+                        <span style="font-size: 2.5em; color: #ffeb3b; font-family: 'IconFont';"></span>
+                    </button>
+                </div>
+                <!-- Video background -->
+                <div style="margin: 0 auto; position: relative; z-index: 1;">
+                    <img src="assets/dmxtools-banner.png" width="470" height="130" style="transform: translateX(-10%);">
+                </div>
+                <video autoplay muted loop id="homeHero" class="homeVideo" style="margin-top: -110px; margin-left: -32px;">
+                    <source src="assets/homevideo.mp4" type="video/mp4">
+                </video>
             </div>
+            <div id="featuresSection" style="margin-top: 120vh;"></div>
+            <script>
+                // filepath: c:\Users\alex0\Documents\GitHub\dmx-tools\dmx-tools\script.js
+                function scrollToCards() {
+                    window.scrollTo({ top: 2000, behavior: 'smooth' });
+                }
+
+                function scrollToFeatures() {
+                    const featuresSection = document.getElementById('featuresSection');
+                    if (featuresSection) { featuresSection.scrollIntoView({ behavior: 'smooth' }); }
+                }
+
+                // Animazione zoom su scroll per homeHeroBg
+                window.addEventListener('scroll', function () {
+                    const img = document.getElementById('homeHeroBg');
+                    if (!img) return;
+                    const scrollY = window.scrollY || window.pageYOffset;
+                    let scale = 1 + Math.min(scrollY / 400, 1) * 0.15;
+                    img.style.transform = `scale(${scale})`;
+                    img.style.opacity = 0.9;
+
+                    // Fade-in animazione per testi
+                    const heroTitle = document.getElementById('heroTitle');
+                    const featureCards = document.querySelectorAll('#featureCards .fade-in');
+                    // Mostra il titolo appena la pagina viene caricata
+                    if (heroTitle && !heroTitle.classList.contains('visible')) {
+                        heroTitle.classList.add('visible');
+                    }
+                    // Mostra le card quando sono visibili nello scroll, con delay sequenziale
+                    featureCards.forEach(function (card, i) {
+                        const rect = card.getBoundingClientRect();
+                        if (rect.top < window.innerHeight - 60) {
+                            card.style.transitionDelay = (i * 0.15) + 's';
+                            card.style.opacity = '1';
+                            card.classList.add('visible');
+                        } else {
+                            card.style.opacity = '0';
+                            card.classList.remove('visible');
+                        }
+                    });
+                });
+                // Mostra il titolo subito all'avvio
+                window.addEventListener('DOMContentLoaded', function () {
+                    const heroTitle = document.getElementById('heroTitle');
+                    if (heroTitle) heroTitle.classList.add('visible');
+                    // Applica il delay alle card all'avvio
+                    const featureCards = document.querySelectorAll('#featureCards .fade-in');
+                    featureCards.forEach(function (card, i) {
+                        card.style.transitionDelay = (i * 0.15) + 's';
+                    });
+                });
+            </script>
             <!-- Spazio per scrollare sotto il video -->
             <div style="margin-top: 100vh;"></div>
             <!-- Hero Slogan Section -->
-            <section style="background: #111; color: #fff; padding: 64px 0 48px 0; text-align: center; margin-top: -4px;">
-                <h1 style="font-size: 3em; font-weight: bold; letter-spacing: 2px; margin-bottom: 0;">Hero Title Goes Here</h1>
-            </section>
+            <div id="homeHero" style="position: relative; height: 70vh; width: 100%;">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%">
+                    <h1 class="fade-in chrome" id="heroTitle" style="margin-top: -400px; font-size: 4em; font-weight: bold; margin-bottom: 0; opacity: 1; z-index: 1;">The #1 all-in-one tool for lighting designers</h1>
+                </div>
+                <section id="featureCards" style="display: flex; flex-wrap: wrap; row-gap: 300px;column-gap: 30px; justify-content: center; z-index: 1; margin-top: -420px;">
+                    <div class="fade-in homeCard" style="z-index: 1; opacity: 0.9; background: rgba(0, 0, 25, 0.5); backdrop-filter: blur(12px); border-radius: 12px; padding: 0px 24px; min-width: 260px; max-width: 320px; box-shadow: 0 2px 12px #0004;">
+                        <p style="font-family: 'IconFont'; color: yellow; font-size: 64px; margin-top: 48px;"></p>
+                        <h2 style="color: #ffeb3b; font-size: 1.4em; margin-bottom: 12px; margin-top: -36px;">Easy to use & understand</h2>
+                        <p style="color: #ccc;">Designed for everyone, from beginners to professionals.</p>
+                    </div>
+                    <div class="fade-in homeCard" style="z-index: 1; opacity: 0.9; background: rgba(0, 0, 25, 0.5); backdrop-filter: blur(12px); border-radius: 12px; padding: 0px 24px; min-width: 260px; max-width: 320px; box-shadow: 0 2px 12px #0004;">
+                        <p style="font-family: 'Inter'; color: yellow; font-size: 64px; margin-top: 36px;">&#60;/&#62;</p>
+                        <h2 style="color: #ffeb3b; font-size: 1.4em; margin-bottom: 12px; margin-top: -36px;">Integrated command prompt</h2>
+                        <p style="color: #ccc;">Control every aspect of your project with simple commands.</p>
+                    </div>
+                    <div class="fade-in homeCard" style="z-index: 1; opacity: 0.9; background: rgba(0, 0, 25, 0.5); backdrop-filter: blur(12px); border-radius: 12px; padding: 0px 24px; min-width: 260px; max-width: 320px; box-shadow: 0 2px 12px #0004;">
+                        <p style="font-family: 'IconFont'; color: yellow; font-size: 64px; margin-top: 48px;"></p>
+                        <h2 style="color: #ffeb3b; font-size: 1.4em; margin-bottom: 12px; margin-top: -36px;">Large fixture database</h2>
+                        <p style="color: #ccc;">Hundreds of fixtures ready to use and always growing.</p>
+                    </div>
+                    <div class="fade-in homeCard" style="z-index: 1; opacity: 0.9; background: rgba(0, 0, 25, 0.5); backdrop-filter: blur(12px); border-radius: 12px; padding: 0px 24px; min-width: 260px; max-width: 320px; box-shadow: 0 2px 12px #0004;">
+                        <p style="font-family: 'IconFont'; color: yellow; font-size: 64px; margin-top: 48px;"></p>
+                        <h2 style="color: #ffeb3b; font-size: 1.4em; margin-bottom: 12px; margin-top: -36px;">Export & autosave functions</h2>
+                        <p style="color: #ccc;">Never lose your work with local storage and export features.</p>
+                    </div>
+                </section>
+                <img id="homeHeroBg" src="assets/home_hero.png" alt="Home Hero" style="margin-left: -36px; margin-top: -128px; position: absolute; left: 0; top: 0; width: 110%; height: 100%; object-fit: cover; opacity: 0.1; z-index: 0; pointer-events: none; transition: transform 3s cubic-bezier(.4,0,.2,1), opacity 5s cubic-bezier(.4,0,.2,1)">
+            </div>
             <!-- Feature Cards Section -->
-            <section style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center; background: #181818; padding: 36px 0;">
-                <div style="background: #222; border-radius: 12px; padding: 32px 24px; min-width: 260px; max-width: 320px; box-shadow: 0 2px 12px #0004;">
-                    <h2 style="color: #ffeb3b; font-size: 1.4em; margin-bottom: 12px;">Easy to use and understand</h2>
-                    <p style="color: #ccc;">Designed for everyone, from beginners to professionals.</p>
-                </div>
-                <div style="background: #222; border-radius: 12px; padding: 32px 24px; min-width: 260px; max-width: 320px; box-shadow: 0 2px 12px #0004;">
-                    <h2 style="color: #ffeb3b; font-size: 1.4em; margin-bottom: 12px;">Integrated Command Prompt</h2>
-                    <p style="color: #ccc;">Control every aspect of your project with simple commands.</p>
-                </div>
-                <div style="background: #222; border-radius: 12px; padding: 32px 24px; min-width: 260px; max-width: 320px; box-shadow: 0 2px 12px #0004;">
-                    <h2 style="color: #ffeb3b; font-size: 1.4em; margin-bottom: 12px;">Large Fixture Library</h2>
-                    <p style="color: #ccc;">Hundreds of fixtures ready to use and always growing.</p>
-                </div>
-                <div style="background: #222; border-radius: 12px; padding: 32px 24px; min-width: 260px; max-width: 320px; box-shadow: 0 2px 12px #0004;">
-                    <h2 style="color: #ffeb3b; font-size: 1.4em; margin-bottom: 12px;">100% Open Source</h2>
-                    <p style="color: #ccc;">Free to use, modify, and share. Community-driven development.</p>
-                </div>
-            </section>
+
+            <h1 class="fade-in" style="margin-top: -24px; color: yellow;font-size: 2em; font-weight: bold; opacity: 1; z-index: 1;">Discover the key features</h1>
+            <button onclick="scrollToCards()" style="background: none; border: none; cursor: pointer; margin-top: 48px;">
+                <span style="font-size: 2.5em; color: #ffeb3b; font-family: 'IconFont';"></span>
+            </button>
             <!-- Tool Shortcut Cards Section -->
-            <section style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center; background: #101010; padding: 36px 0 48px 0;">
-                <div onclick="navigateTo('patch')" style="background: #232323; border-radius: 12px; padding: 32px 24px; min-width: 220px; max-width: 260px; box-shadow: 0 2px 12px #0004; cursor: pointer; transition: box-shadow 0.2s;">
-                    <h2 style="color: #ffeb3b; font-size: 1.2em; margin-bottom: 12px;">DMX Patch</h2>
-                    <p style="color: #bbb;">Create and manage your DMX patch easily.</p>
+            <section style="position: relative; display: flex; flex-direction: column; gap: 48px; justify-content: center; align-items: center; padding: 36px 0 48px 0; overflow: hidden; margin-top: 100px;">
+                <!-- Animated background pattern -->
+                <div style="background: #232323 url('assets/patch.png') center/cover no-repeat; text-align: right; border-radius: 12px; padding: 48px 48px; min-width: 80%; box-shadow: 0 2px 12px #0004; transition: box-shadow 0.2s;">
+                    <h2 style="color: #ffeb3b; font-size: 2.4em; margin-bottom: 36px;">DMX Patch</h2>
+                    <p style="color: #bbb; font-size: 1.2em; margin-top: -24px;">Create and manage your DMX patch easily.</p>
+                    <div style="display: flex; justify-content: right;">
+                        <button type="button" onclick="navigateTo('patch')" style="display: flex; align-items: center;">
+                            <span>Try it yourself</span>
+                            <span style="font-family: 'IconFont'; margin-left: 12px;"></span>
+                        </button>
+                    </div>
                 </div>
-                <div onclick="navigateTo('color')" style="background: #232323; border-radius: 12px; padding: 32px 24px; min-width: 220px; max-width: 260px; box-shadow: 0 2px 12px #0004; cursor: pointer; transition: box-shadow 0.2s;">
-                    <h2 style="color: #ffeb3b; font-size: 1.2em; margin-bottom: 12px;">Color Converter</h2>
-                    <p style="color: #bbb;">Convert and manage colors for your fixtures.</p>
+                <div style="margin-top: 24px; background: #232323 url('assets/color.png') center/cover no-repeat; text-align: left; border-radius: 12px; padding: 48px 48px; min-width: 80%; box-shadow: 0 2px 12px #0004; transition: box-shadow 0.2s;">
+                    <h2 style="color: #ffeb3b; font-size: 2.4em; margin-bottom: 36px;">Color Converter</h2>
+                    <p style="color: #bbb; font-size: 1.2em; margin-top: -24px;">Manage different color formats & store your favourite ones.</p>
+                    <div style="display: flex; justify-content: left;">
+                        <button type="button" onclick="navigateTo('color')" style="display: flex; align-items: center;">
+                            <span>Try it yourself</span>
+                            <span style="font-family: 'IconFont'; margin-left: 12px;"></span>
+                        </button>
+                    </div>
                 </div>
-                <div onclick="navigateTo('database')" style="background: #232323; border-radius: 12px; padding: 32px 24px; min-width: 220px; max-width: 260px; box-shadow: 0 2px 12px #0004; cursor: pointer; transition: box-shadow 0.2s;">
-                    <h2 style="color: #ffeb3b; font-size: 1.2em; margin-bottom: 12px;">Fixture Database</h2>
-                    <p style="color: #bbb;">Browse and search the fixture library.</p>
+                <div style="margin-top: 24px; background: #232323 url('assets/database.png') center/cover no-repeat; text-align: right; border-radius: 12px; padding: 48px 48px; min-width: 80%; box-shadow: 0 2px 12px #0004; transition: box-shadow 0.2s;">
+                    <h2 style="color: #ffeb3b; font-size: 2.4em; margin-bottom: 36px;">Fixture Database</h2>
+                    <p style="color: #bbb; font-size: 1.2em; margin-top: -24px;">Explore 1000s of fixtures to quickly patch or view them.</p>
+                    <div style="display: flex; justify-content: right;">
+                        <button type="button" onclick="navigateTo('database')" style="display: flex; align-items: center;">
+                            <span>Try it yourself</span>
+                            <span style="font-family: 'IconFont'; margin-left: 12px;"></span>
+                        </button>
+                    </div>
                 </div>
             </section>
-            <div style="margin-bottom: 30vh;" class="web-only"></div>
+
+            <h1 class="fade-in" style="margin-top: 0; color: yellow;font-size: 2em; font-weight: bold; opacity: 1; z-index: 1;">And more has to come...</h1>
+            <p style="margin-top: 64px;">Star the project on GitHub to support its development!</p>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <button type="button" onclick="window.open('https://www.github.com/alessandrocaseti/dmx-tools', '_blank').focus()" style="display: flex; align-items: center; margin-top: 24px;">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Star on GitHub</span>
+                </button>
+            </div>
+            <div id="featureCards" style="margin-bottom: 16vh;" class="web-only"></div>
         </div>
 
         <!-- DMX Patch -->
