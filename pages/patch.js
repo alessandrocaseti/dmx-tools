@@ -369,7 +369,7 @@ function mostraPatchDMX(cmdTrigger = false)
 
     let html = `<table class="patchTable" id="patchTable">
                     <thead><tr>
-                    <th class="idCol" style="font-family: 'Inter';">ID</th>
+                    <th class="idCol" style="font-family: 'Inter';">#</th>
                     <th class="tipoCol">Type</th>
                     <th class="coloreCol">Color</th>
                     <th class="nomeLuceCol">Fixture</th>
@@ -381,7 +381,7 @@ function mostraPatchDMX(cmdTrigger = false)
     {
         const tipiConImg = 
         [
-            'beam','wash','spot','blinder','scanner','dimmer','strobo','par',
+            'beam','wash','spot','blinder','scanner','dimmer','strobe','par',
             'fx fog','fx haze','fx spark','fx co2','fx fire','fx pyro','fx confetti',
             'spotlight','led bar','moving bar','moving panel','laser','fan',
             'rgb','rgbw','rgbwav','effect','other'
