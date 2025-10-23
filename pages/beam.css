@@ -1,7 +1,7 @@
 .beam-tools-container {
     display: flex;
     flex-direction: row;
-    gap: 20px; /* Reduced gap */
+    gap: 20px;
     align-items: flex-start;
 }
 
@@ -9,16 +9,20 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    background-color: var(--foreground);
+    border-radius: var(--border-radius);
 }
 
 .beam-visualization {
-    flex: 1.5; /* Give more space to the visualization */
-    margin-top: 0; /* Reset margin */
+    flex: 1.5;
+    margin-top: 0;
 }
 
 .tab-content .input-group {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -28,25 +32,16 @@
     margin: 20px auto 0;
 }
 
-
-/* Futuristic theme using CSS variables */
-.beam-visualization h3 {
-    color: var(--colore-giallo);
-    margin-bottom: 20px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    user-select: none;
-}
-
 #beam-svg {
-    background-color: var(--colore-bg-scuro);
-    background-image: radial-gradient(var(--colore-bordo) 1px, transparent 0);
+    background-color: rgb(10, 10, 10);
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 40 40'><g stroke='%23444' stroke-width='0.5' stroke-dasharray='1' opacity='0.45'><line x1='20' y1='0' x2='20' y2='40'/><line x1='0' y1='20' x2='40' y2='20'/></g><g stroke='%23ffeb3b' stroke-width='1' opacity='0.08'><line x1='20' y1='0' x2='20' y2='40'/><line x1='0' y1='20' x2='40' y2='20'/></g></svg>");
     background-size: 20px 20px;
     border: 1px solid var(--colore-giallo);
     border-radius: var(--border-radius);
     margin: 20px auto;
     display: block;
-    box-shadow: 0 0 15px #ffeb3b44, inset 0 0 10px rgba(0, 0, 0, 0.5);
+    min-height: 48vh;
+    margin-top: 0px;
 }
 
 #beam-svg text {
@@ -55,30 +50,30 @@
 
 #beam-path {
     stroke-width: 0.1;
-    fill: #ffeb3b33; /* Yellow with alpha */
+    fill: #ffeb3b33;
     stroke: var(--colore-giallo);
-    transition: d 0.3s ease-out;
+    transition: d 0.1s ease-out;
 }
 
 #fixture-circle {
     fill: var(--colore-giallo);
-    transition: r 0.3s ease-out;
+    transition: r 0.1s ease-out;
 }
 
 .drag-handle {
-    fill: var(--colore-giallo);
-    stroke: var(--colore-testo-chiaro);
-    stroke-width: 0.2;
+    fill: var(--colore-testo);
+    stroke: var(--foreground);
+    stroke-width: 0.1;
     cursor: move;
     filter: drop-shadow(0 0 2px var(--colore-giallo));
-    transition: cx 0.3s ease-out, cy 0.3s ease-out;
+    transition: cx 0.1s ease-out, cy 0.1s ease-out;
 }
 
 .label {
     fill: var(--colore-testo-chiaro);
-    font-size: 0.6px; /* Further reduced size */
+    font-size: 0.4px;
     text-anchor: middle;
     pointer-events: none;
     font-family: 'Roboto Mono', monospace;
-    transition: x 0.3s ease-out, y 0.3s ease-out;
+    transition: x 0.1s ease-out, y 0.1s ease-out;
 }

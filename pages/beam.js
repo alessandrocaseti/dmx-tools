@@ -59,9 +59,9 @@ class BeamCalculator {
     setupSVG() {
         this.beamPath = this.createSVGElement('path', { id: 'beam-path', fill: '#ffeb3b33', stroke: 'var(--colore-giallo)' });
         this.fixtureCircle = this.createSVGElement('circle', { id: 'fixture-circle', cx: this.fixturePos.x, cy: this.fixturePos.y, r: 0.2, fill: 'var(--colore-giallo)' });
-        this.fixtureText = this.createSVGElement('text', { x: this.fixturePos.x, y: this.fixturePos.y - 0.5, 'text-anchor': 'middle', fill: 'var(--colore-testo-chiaro)', 'font-size': '0.8px' });
+        this.fixtureText = this.createSVGElement('text', { x: this.fixturePos.x, y: this.fixturePos.y - 0.6, 'text-anchor': 'middle', fill: 'var(--colore-testo-chiaro)', 'font-size': '0.6px' });
         this.fixtureText.textContent = 'Fixture';
-
+ 
         this.handles = {
             distance: this.createHandle(0, 0, 'distance-handle', 0.25),
             diameter: this.createHandle(0, 0, 'diameter-handle', 0.25)
