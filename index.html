@@ -635,16 +635,50 @@
                 <div class="beam-tools-container">
                     <div class="beam-calculator-panel">
                         <div class="input-group">
-                            <label for="beam-angle">Angle (degrees):</label>
-                            <input type="number" id="beam-angle" step="0.1" min="0.1" max="179">
+                            <label for="beam-angle" class="label-with-icon">
+                                <span class="icon"></span>
+                                <span>Angle (degrees)</span>
+                            </label>
+                            <input type="number" id="beam-angle" step="0.1" min="0.1" max="179" value="10">
                         </div>
                         <div class="input-group">
-                            <label for="beam-distance">Distance (m):</label>
-                            <input type="number" id="beam-distance" step="0.01" min="0.01" max="1000">
+                            <label for="beam-distance" class="label-with-icon">
+                                <span class="icon"></span>
+                                <span>Distance (m)</span>
+                            </label>
+                            <input type="number" id="beam-distance" step="0.01" min="0.01" max="1000" value="10">
                         </div>
                         <div class="input-group">
-                            <label for="beam-diameter">Diameter (m):</label>
+                            <label for="beam-diameter" class="label-with-icon">
+                                <span class="icon"></span>
+                                <span>Diameter (m)</span>
+                            </label>
                             <input type="number" id="beam-diameter" step="0.01" min="0.01" max="1000">
+                        </div>
+                        <div class="input-group">
+                            <label for="beam-lumen" class="label-with-icon">
+                                <span class="icon"></span>
+                                <span>Lumen (lm)</span>
+                            </label>
+                            <input type="number" id="beam-lumen" step="1" min="1" value="3000">
+                        </div>
+                        <div class="output-group">
+                            <label>Illuminance:</label>
+                            <span id="beam-lux-output" class="lux-output">0 lux</span>
+                        </div>
+                        <div class="lock-controls">
+                            <button id="lock-angle-btn" class="iconButton">
+                                <span class="buttonIcon"></span>
+                                <span class="buttonText">Angle</span>
+                            </button>
+                            <button id="lock-distance-btn" class="iconButton">
+                                <span class="buttonIcon"></span>
+                                <span class="buttonText">Distance</span>
+                            </button>
+                            <button id="lock-diameter-btn" class="iconButton">
+                                <span class="buttonIcon"></span>
+                                <span class="buttonText">Diameter</span>
+                            </button>
                         </div>
                     </div>
 

@@ -20,11 +20,37 @@
     margin-top: 0;
 }
 
-.tab-content .input-group {
+.input-group {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+}
+
+.label-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.label-with-icon .icon {
+    font-family: 'IconFont';
+    font-size: 1.2em;
+}
+
+.output-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #111;
+    border-radius: 4px;
+}
+
+.lux-output {
+    font-weight: bold;
+    color: var(--colore-giallo);
+    font-size: 1.2em;
 }
 
 .tab-content .calculate-btn {
@@ -65,8 +91,16 @@
     stroke: var(--foreground);
     stroke-width: 0.1;
     cursor: move;
-    filter: drop-shadow(0 0 2px var(--colore-giallo));
-    transition: cx 0.1s ease-out, cy 0.1s ease-out;
+    transition: cx 0.1s ease-out, cy 0.1s ease-out, fill 0.3s ease-out, stroke 0.3s ease-out;
+}
+
+body.dragging, body.dragging .drag-handle {
+    cursor: grabbing !important;
+}
+
+.drag-handle.disabled {
+    fill: #888;
+    cursor: not-allowed;
 }
 
 .label {
@@ -76,4 +110,32 @@
     pointer-events: none;
     font-family: 'Roboto Mono', monospace;
     transition: x 0.1s ease-out, y 0.1s ease-out;
+}
+
+.lock-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.lock-controls .iconButton {
+    flex: 1;
+    justify-content: center;
+}
+
+.lock-controls .iconButton.locked {
+    background-color: var(--colore-giallo);
+    color: #000;
+    font-weight: bold;
+}
+
+input:disabled {
+    background: #444;
+    color: #bbb;
+    border-color: #333;
+    cursor: not-allowed;
+    opacity: 0.7;
 }
