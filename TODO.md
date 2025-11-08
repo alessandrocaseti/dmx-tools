@@ -1,12 +1,25 @@
 # TODO
 
+## Engine
+
+[] Localstorage for more items than just colors
+
 ## Patch
 
 [] Add Fixture dialog with database, icon and properties
-[] Fixture starting address, universe and address gap
+[] Fixture starting address, universe and address gap options
 [] Proper fixture patch unit renaming
-[] Link fixture color to saved color
+[] Link fixture color to saved color via cmd or dialog
 [] Implement more hero commands
+
+## Universe View
+
+[] Create page
+[] Create Universe grid
+[] Create Universe selection item
+[] Ability to move fixtures between the universe
+[] Ability to cut / copy / paste / remove fixtures from the grid/patch
+[] Overlapping errors when channel conflicts happen
 
 ## DIP
 
@@ -17,7 +30,7 @@
 ## Color
 
 [] User Palettes system
-[] Lee and Rosco colors
+[] Lee and Rosco color palettes
 
 ## Power
 
@@ -31,12 +44,15 @@
 [] CMD Messages
 [] CMD Commands
 [] Beam dynamic graph visualizer
+[] Select fixture angle from database
 
 ## Fixture Database
 
-[] QXF to JSON Converter
-[] Initialize database/browser algorythm
-[] Fixture page creation
+[x] QXF to JSON Converter
+[x] Initialize database/browser algorythm
+[x] Fixture page creation
+[] Convert all QLC+ 5.0.1 fixtures
+[] Brand header (name/logo, location, website)
 
 ## Settings
 
