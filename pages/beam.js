@@ -1,7 +1,7 @@
-// pages/beam.js
-
-class BeamCalculator {
-    constructor() {
+class BeamCalculator 
+{
+    constructor() 
+    {
         this.svg = document.getElementById('beam-svg');
         this.scaleSlider = document.getElementById('scale-slider');
         this.angleInput = document.getElementById('beam-angle');
@@ -19,7 +19,8 @@ class BeamCalculator {
 
         this.fixturePos = { x: 0, y: 0 };
 
-        this.beam = {
+        this.beam = 
+        {
             angle: 10,
             distance: 10,
             diameter: 1.76,
@@ -32,81 +33,85 @@ class BeamCalculator {
         this.lockedValue = null; // 'angle', 'distance', 'diameter', or null
         this.dragStart = { y: 0, angle: 0 };
 
-        this.limits = {
-            angle: { min: 0.1, max: 179 },
+        this.limits = 
+        {
+            angle: { min: 1, max: 179 },
             distance: { min: 0.01, max: 1000 },
             diameter: { min: 0.01, max: 1000 },
             lumen: { min: 1, max: 1000000 },
-            userScale: { min: 0.8, max: 2.5 }
+            userScale: { min: 0.8, max: 2.0 }
         };
 
         this.init();
     }
 
-    init() {
+    init() 
+    {
         this.setupSVG();
         this.bindEvents();
         this.updateFromInput('angle');
         this.updateLockUI();
-        
-        requestAnimationFrame(() => {
-            this.adjustSVGHeight();
-        });
+        requestAnimationFrame(() => { this.adjustSVGHeight(); });
     }
 
-    adjustSVGHeight() {
+    adjustSVGHeight() 
+    {
         const calculatorPanel = document.querySelector('.beam-calculator-panel');
-        if (calculatorPanel) {
+        if (calculatorPanel) 
+        {
             let newHeight = calculatorPanel.offsetHeight;
-            if (newHeight < 100) { 
-                newHeight = 350;
-            }
+            if (newHeight < 100) { newHeight = 350; }
             this.svg.setAttribute('height', newHeight);
             this.svgHeight = newHeight;
             this.updateVisualization();
         }
     }
 
-    setupSVG() {
+    setupSVG() 
+    {
         this.beamPath = this.createSVGElement('path', { id: 'beam-path', fill: '#ffeb3b33', stroke: 'var(--colore-giallo)' });
         
         this.fixtureCircle = this.createSVGElement('circle', { id: 'fixture-circle', cx: this.fixturePos.x, cy: this.fixturePos.y, r: 0.2, fill: 'var(--colore-giallo)' });
         this.fixtureText = this.createSVGElement('text', { x: this.fixturePos.x, y: this.fixturePos.y - 0.6, 'text-anchor': 'middle', fill: 'var(--colore-testo-chiaro)', 'font-size': '0.6px' });
         this.fixtureText.textContent = 'Fixture';
  
-        this.handles = {
+        this.handles = 
+        {
             angle: this.createHandle(this.fixturePos.x, this.fixturePos.y, 'angle-handle', 0.35),
             distance: this.createHandle(0, 0, 'distance-handle', 0.25),
             diameter: this.createHandle(0, 0, 'diameter-handle', 0.25)
         };
         
-        this.labels = {
+        this.labels = 
+        {
             distance: this.createLabel(0, 0, ''),
             diameter: this.createLabel(0, 0, ''),
             angle: this.createLabel(0, 0, '')
         };
     }
     
-    createSVGElement(tag, attributes) {
+    createSVGElement(tag, attributes) 
+    {
         const el = document.createElementNS('http://www.w3.org/2000/svg', tag);
-        for (const key in attributes) {
-            el.setAttribute(key, attributes[key]);
-        }
+        for (const key in attributes) { el.setAttribute(key, attributes[key]); }
         this.svg.appendChild(el);
         return el;
     }
 
-    createHandle(cx, cy, id, radius = 0.3) {
+    createHandle(cx, cy, id, radius = 0.3) 
+    {
         return this.createSVGElement('circle', { id: id, class: 'drag-handle', cx: cx, cy: cy, r: radius });
     }
     
-    createLabel(x, y, text) {
+    createLabel(x, y, text) 
+    {
         const label = this.createSVGElement('text', { class: 'label', x: x, y: y });
         label.textContent = text;
         return label;
     }
 
-    bindEvents() {
+    bindEvents() 
+    {
         window.addEventListener('resize', () => this.adjustSVGHeight());
 
         this.angleInput.addEventListener('input', () => this.updateFromInput('angle'));
@@ -124,30 +129,37 @@ class BeamCalculator {
         this.svg.addEventListener('mouseleave', () => this.endDrag());
         
         document.getElementById('show-labels').addEventListener('change', () => this.updateVisualization());
-        this.scaleSlider.addEventListener('input', (e) => {
+        this.scaleSlider.addEventListener('input', (e) => 
+        {
             this.userScale = parseFloat(e.target.value);
             this.updateVisualization();
         });
     }
 
-    toggleLock(value) {
+    toggleLock(value) 
+    {
         this.lockedValue = this.lockedValue === value ? null : value;
         this.updateLockUI();
     }
 
-    updateLockUI() {
-        const buttons = {
+    updateLockUI() 
+    {
+        const buttons = 
+        {
             angle: this.lockAngleBtn,
             distance: this.lockDistanceBtn,
             diameter: this.lockDiameterBtn
         };
-        const inputs = {
+
+        const inputs = 
+        {
             angle: this.angleInput,
             distance: this.distanceInput,
             diameter: this.diameterInput
         };
 
-        for (const value in buttons) {
+        for (const value in buttons) 
+        {
             const isLocked = this.lockedValue === value;
             buttons[value].classList.toggle('locked', isLocked);
             buttons[value].querySelector('.buttonIcon').textContent = isLocked ? '' : ''; // lock and lock_open icons
@@ -159,7 +171,8 @@ class BeamCalculator {
         this.handles.diameter.classList.toggle('disabled', this.lockedValue === 'diameter');
     }
 
-    calculateLux() {
+    calculateLux() 
+    {
         // Use luminous flux Phi (lm) and beam solid angle to get on-axis illuminance:
         // Omega = 2π(1 - cos(theta/2)), theta in radians (full beam angle)
         // On-axis illuminance E = Phi / (Omega * r^2)
@@ -172,11 +185,15 @@ class BeamCalculator {
         // solid angle of a cone
         const Omega = 2 * Math.PI * (1 - Math.cos(halfTheta));
 
-        if (Omega > 1e-8 && r > 0) {
+        if (Omega > 1e-8 && r > 0) 
+        {
             // on-axis illuminance (lux)
             const I = Phi / Omega; // luminous intensity (cd)
             this.beam.lux = I / (r * r);
-        } else {
+        }
+
+        else
+        {
             // fallback: approximate using illuminated area at distance (uniform flux)
             const radius = Math.tan(halfTheta) * r; // in meters
             const area = Math.PI * Math.pow(radius, 2);
@@ -184,7 +201,8 @@ class BeamCalculator {
         }
     }
 
-    enforceLimits(beam) {
+    enforceLimits(beam) 
+    {
         beam.angle = Math.max(this.limits.angle.min, Math.min(beam.angle, this.limits.angle.max));
         beam.distance = Math.max(this.limits.distance.min, Math.min(beam.distance, this.limits.distance.max));
         beam.diameter = Math.max(this.limits.diameter.min, Math.min(beam.diameter, this.limits.diameter.max));
@@ -192,51 +210,46 @@ class BeamCalculator {
         return beam;
     }
 
-    updateFromInput(source) {
-        if (source !== this.lockedValue) {
+    updateFromInput(source) 
+    {
+        if (source !== this.lockedValue) 
+        {
             if (!this.angleInput.disabled) this.beam.angle = parseFloat(this.angleInput.value) || this.beam.angle;
             if (!this.distanceInput.disabled) this.beam.distance = parseFloat(this.distanceInput.value) || this.beam.distance;
             if (!this.diameterInput.disabled) this.beam.diameter = parseFloat(this.diameterInput.value) || this.beam.diameter;
         }
         if (!this.lumenInput.disabled) this.beam.lumen = parseFloat(this.lumenInput.value) || this.beam.lumen;
 
-        try {
-            if (this.lockedValue) {
-                switch (this.lockedValue) {
+        try 
+        {
+            if (this.lockedValue) 
+            {
+                switch (this.lockedValue) 
+                {
                     case 'angle':
-                        if (source === 'distance') {
-                            this.beam.diameter = 2 * Math.tan((this.beam.angle / 2) * (Math.PI / 180)) * this.beam.distance;
-                        } else if (source === 'diameter') {
-                            this.beam.distance = (this.beam.diameter / 2) / Math.tan((this.beam.angle / 2) * (Math.PI / 180));
-                        }
+                        if (source === 'distance') { this.beam.diameter = 2 * Math.tan((this.beam.angle / 2) * (Math.PI / 180)) * this.beam.distance; } 
+                        else if (source === 'diameter') { this.beam.distance = (this.beam.diameter / 2) / Math.tan((this.beam.angle / 2) * (Math.PI / 180)); }
                         break;
                     case 'distance':
-                        if (source === 'angle') {
-                            this.beam.diameter = 2 * Math.tan((this.beam.angle / 2) * (Math.PI / 180)) * this.beam.distance;
-                        } else if (source === 'diameter') {
-                            this.beam.angle = 2 * Math.atan((this.beam.diameter / 2) / this.beam.distance) * (180 / Math.PI);
-                        }
+                        if (source === 'angle') { this.beam.diameter = 2 * Math.tan((this.beam.angle / 2) * (Math.PI / 180)) * this.beam.distance; } 
+                        else if (source === 'diameter') { this.beam.angle = 2 * Math.atan((this.beam.diameter / 2) / this.beam.distance) * (180 / Math.PI); }
                         break;
                     case 'diameter':
-                        if (source === 'angle') {
-                            this.beam.distance = (this.beam.diameter / 2) / Math.tan((this.beam.angle / 2) * (Math.PI / 180));
-                        } else if (source === 'distance') {
-                            this.beam.angle = 2 * Math.atan((this.beam.diameter / 2) / this.beam.distance) * (180 / Math.PI);
-                        }
+                        if (source === 'angle') { this.beam.distance = (this.beam.diameter / 2) / Math.tan((this.beam.angle / 2) * (Math.PI / 180)); } 
+                        else if (source === 'distance') { this.beam.angle = 2 * Math.atan((this.beam.diameter / 2) / this.beam.distance) * (180 / Math.PI); }
                         break;
                 }
-            } else {
-                if (source === 'angle' || source === 'distance') {
-                    this.beam.diameter = 2 * Math.tan((this.beam.angle / 2) * (Math.PI / 180)) * this.beam.distance;
-                } else if (source === 'diameter') {
-                    if (this.beam.distance > 0) {
-                        this.beam.angle = 2 * Math.atan((this.beam.diameter / 2) / this.beam.distance) * (180 / Math.PI);
-                    }
+            }
+
+            else 
+            {
+                if (source === 'angle' || source === 'distance') { this.beam.diameter = 2 * Math.tan((this.beam.angle / 2) * (Math.PI / 180)) * this.beam.distance; } 
+                else if (source === 'diameter') 
+                {
+                    if (this.beam.distance > 0) { this.beam.angle = 2 * Math.atan((this.beam.diameter / 2) / this.beam.distance) * (180 / Math.PI); }
                 }
             }
-        } catch (e) {
-            console.error("Calculation error:", e);
-        }
+        } catch (e) { console.error("Calculation error:", e); }
         
         this.beam = this.enforceLimits(this.beam);
         this.calculateLux();
@@ -244,23 +257,17 @@ class BeamCalculator {
         this.updateVisualization();
     }
 
-    updateInputFields() {
-        if (document.activeElement !== this.angleInput) {
-            this.angleInput.value = this.beam.angle.toFixed(2);
-        }
-        if (document.activeElement !== this.distanceInput) {
-            this.distanceInput.value = this.beam.distance.toFixed(2);
-        }
-        if (document.activeElement !== this.diameterInput) {
-            this.diameterInput.value = this.beam.diameter.toFixed(2);
-        }
-        if (document.activeElement !== this.lumenInput) {
-            this.lumenInput.value = this.beam.lumen.toFixed(0);
-        }
+    updateInputFields() 
+    {
+        if (document.activeElement !== this.angleInput) { this.angleInput.value = this.beam.angle.toFixed(2); }
+        if (document.activeElement !== this.distanceInput) { this.distanceInput.value = this.beam.distance.toFixed(2); }
+        if (document.activeElement !== this.diameterInput) { this.diameterInput.value = this.beam.diameter.toFixed(2); }
+        if (document.activeElement !== this.lumenInput) { this.lumenInput.value = this.beam.lumen.toFixed(0); }
         this.luxOutput.textContent = `${this.beam.lux.toFixed(0)} lux`;
     }
 
-    updateVisualization() {
+    updateVisualization() 
+    {
         const { distance, diameter, angle } = this.beam;
 
         const halfDiameter = diameter / 2;
@@ -278,64 +285,63 @@ class BeamCalculator {
         if (this.svgHeight === 0) return;
         const aspectRatio = this.svgWidth / this.svgHeight;
 
-        if (worldWidth / worldHeight > aspectRatio) {
-            worldHeight = worldWidth / aspectRatio;
-        } else {
-            worldWidth = worldHeight * aspectRatio;
-        }
+        if (worldWidth / worldHeight > aspectRatio) { worldHeight = worldWidth / aspectRatio; } 
+        else { worldWidth = worldHeight * aspectRatio; }
         
         worldWidth /= this.userScale;
         worldHeight /= this.userScale;
 
-        const viewBox = [
+        const viewBox = 
+        [
             -worldWidth / 2,
             -padding,
             worldWidth,
             worldHeight
         ].join(' ');
-        this.svg.setAttribute('viewBox', viewBox);
 
+        this.svg.setAttribute('viewBox', viewBox);
         this.updateLabels(distance, diameter, angle);
     }
     
-    updateLabels(distance, diameter, angle) {
+    updateLabels(distance, diameter, angle) 
+    {
         const M_TO_FT = 3.28084;
         const isMetersDisplay = document.getElementById('unit-m-btn')?.classList.contains('active') ?? true;
         const showLabelsEl = document.getElementById('show-labels');
 
-        if (showLabelsEl && showLabelsEl.checked) {
+        if (showLabelsEl.checked) 
+        {
             const distLabel = isMetersDisplay ? `${distance.toFixed(2)} m` : `${(distance * M_TO_FT).toFixed(2)} ft`;
             const diamLabel = isMetersDisplay ? `${diameter.toFixed(2)} m` : `${(diameter * M_TO_FT).toFixed(2)} ft`;
 
-            if (this.labels.distance) {
-                this.labels.distance.textContent = distLabel;
-                this.labels.distance.setAttribute('x', this.fixturePos.x + 0.5);
-                this.labels.distance.setAttribute('y', distance / 2);
-            }
-            if (this.labels.diameter) {
-                this.labels.diameter.textContent = diamLabel;
-                this.labels.diameter.setAttribute('x', this.fixturePos.x);
-                this.labels.diameter.setAttribute('y', distance + 1.5);
-            }
-            if (this.labels.angle) {
-                this.labels.angle.textContent = `${angle.toFixed(2)}°`;
-                this.labels.angle.setAttribute('x', this.fixturePos.x - 1);
-                this.labels.angle.setAttribute('y', this.fixturePos.y + 1);
-            }
-        } else {
+            this.labels.distance.textContent = distLabel;
+            this.labels.distance.setAttribute('x', this.fixturePos.x + 0.5);
+            this.labels.distance.setAttribute('y', distance / 2);
+            this.labels.diameter.textContent = diamLabel;
+            this.labels.diameter.setAttribute('x', this.fixturePos.x);
+            this.labels.diameter.setAttribute('y', distance + 1.5);
+            this.labels.angle.textContent = `${angle.toFixed(2)}°`;
+            this.labels.angle.setAttribute('x', this.fixturePos.x - 1);
+            this.labels.angle.setAttribute('y', this.fixturePos.y + 1);
+        }
+        else
+        {
             this.labels.distance.textContent = '';
             this.labels.diameter.textContent = '';
             this.labels.angle.textContent = '';
         }
     }
 
-    startDrag(e) {
-        if (e.target.classList.contains('drag-handle') && !e.target.classList.contains('disabled')) {
+    startDrag(e) 
+    {
+        if (e.target.classList.contains('drag-handle') && !e.target.classList.contains('disabled')) 
+        {
             document.body.classList.add('dragging');
             this.dragging = e.target.id;
             this.scaleSlider.disabled = true;
 
-            if (this.dragging === 'angle-handle') {
+            if (this.dragging === 'angle-handle') 
+            {
                 const pt = this.getSVGPoint(e);
                 this.dragStart.y = pt.y;
                 this.dragStart.angle = this.beam.angle;
