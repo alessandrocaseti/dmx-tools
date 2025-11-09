@@ -14,6 +14,10 @@ class BeamCalculator
         this.lockDistanceBtn = document.getElementById('lock-distance-btn');
         this.lockDiameterBtn = document.getElementById('lock-diameter-btn');
 
+        this.unitMBtn = document.getElementById('unit-m-btn');
+        this.unitFBtn = document.getElementById('unit-f-btn');
+        this.M_TO_FT = 3.28084;
+
         this.svgWidth = 600;
         this.svgHeight = 300;
 
@@ -51,6 +55,7 @@ class BeamCalculator
         this.bindEvents();
         this.updateFromInput('angle');
         this.updateLockUI();
+        this.setActiveUnit(true);
         requestAnimationFrame(() => { this.adjustSVGHeight(); });
     }
 
@@ -122,6 +127,27 @@ class BeamCalculator
         this.lockAngleBtn.addEventListener('click', () => this.toggleLock('angle'));
         this.lockDistanceBtn.addEventListener('click', () => this.toggleLock('distance'));
         this.lockDiameterBtn.addEventListener('click', () => this.toggleLock('diameter'));
+
+        if (this.unitMBtn) 
+        {
+            this.unitMBtn.addEventListener('click', () => 
+            {
+                if (this.isCurrentMeters()) return;
+                this.convertValues(true);
+                document.getElementById('currentUnitDistance').innerHTML = '(m)';
+                document.getElementById('currentUnitDiameter').innerHTML = '(m)';
+            });
+        }
+        if (this.unitFBtn) 
+        {
+            this.unitFBtn.addEventListener('click', () => 
+            {
+                if (!this.isCurrentMeters()) return;
+                this.convertValues(false);
+                document.getElementById('currentUnitDistance').innerHTML = '(ft)';
+                document.getElementById('currentUnitDiameter').innerHTML = '(ft)';
+            });
+        }
 
         this.svg.addEventListener('mousedown', (e) => this.startDrag(e));
         this.svg.addEventListener('mousemove', (e) => this.drag(e));
@@ -259,9 +285,22 @@ class BeamCalculator
 
     updateInputFields() 
     {
+        const isMetersDisplay = this.isCurrentMeters();
+
         if (document.activeElement !== this.angleInput) { this.angleInput.value = this.beam.angle.toFixed(2); }
-        if (document.activeElement !== this.distanceInput) { this.distanceInput.value = this.beam.distance.toFixed(2); }
-        if (document.activeElement !== this.diameterInput) { this.diameterInput.value = this.beam.diameter.toFixed(2); }
+        
+        if (document.activeElement !== this.distanceInput) 
+        { 
+            const displayDist = isMetersDisplay ? this.beam.distance : this.beam.distance * this.M_TO_FT;
+            this.distanceInput.value = displayDist.toFixed(2);
+        }
+
+        if (document.activeElement !== this.diameterInput) 
+        { 
+            const displayDiam = isMetersDisplay ? this.beam.diameter : this.beam.diameter * this.M_TO_FT;
+            this.diameterInput.value = displayDiam.toFixed(2);
+        }
+
         if (document.activeElement !== this.lumenInput) { this.lumenInput.value = this.beam.lumen.toFixed(0); }
         this.luxOutput.textContent = `${this.beam.lux.toFixed(0)} lux`;
     }
@@ -305,14 +344,13 @@ class BeamCalculator
     
     updateLabels(distance, diameter, angle) 
     {
-        const M_TO_FT = 3.28084;
-        const isMetersDisplay = document.getElementById('unit-m-btn')?.classList.contains('active') ?? true;
+        const isMetersDisplay = this.isCurrentMeters();
         const showLabelsEl = document.getElementById('show-labels');
 
         if (showLabelsEl.checked) 
         {
-            const distLabel = isMetersDisplay ? `${distance.toFixed(2)} m` : `${(distance * M_TO_FT).toFixed(2)} ft`;
-            const diamLabel = isMetersDisplay ? `${diameter.toFixed(2)} m` : `${(diameter * M_TO_FT).toFixed(2)} ft`;
+            const distLabel = isMetersDisplay ? `${distance.toFixed(2)} m` : `${(distance * this.M_TO_FT).toFixed(2)} ft`;
+            const diamLabel = isMetersDisplay ? `${diameter.toFixed(2)} m` : `${(diameter * this.M_TO_FT).toFixed(2)} ft`;
 
             this.labels.distance.textContent = distLabel;
             this.labels.distance.setAttribute('x', this.fixturePos.x + 0.5);
@@ -349,44 +387,61 @@ class BeamCalculator
         }
     }
 
-    drag(e) {
+    drag(e) 
+    {
         if (!this.dragging) return;
 
         const pt = this.getSVGPoint(e);
 
-        if (this.dragging === 'angle-handle') {
+        if (this.dragging === 'angle-handle') 
+        {
             const dy = this.dragStart.y - pt.y;
-            this.beam.angle = this.dragStart.angle + dy * 2; // Sensitivity factor
+            this.beam.angle = this.dragStart.angle + dy * 3; // Sensitivity factor
 
-            if (this.lockedValue === 'diameter') {
+            if (this.lockedValue === 'diameter') 
+            {
                 this.beam.distance = (this.beam.diameter / 2) / Math.tan((this.beam.angle / 2) * (Math.PI / 180));
-            } else { // distance is locked or nothing is locked
+            } 
+            else // distance is locked or nothing is locked
+            {
                 this.beam.diameter = 2 * Math.tan((this.beam.angle / 2) * (Math.PI / 180)) * this.beam.distance;
             }
 
-        } else if (this.dragging === 'distance-handle') {
+        } 
+        else if (this.dragging === 'distance-handle') 
+        {
             if (this.lockedValue === 'distance') return;
             this.beam.distance = pt.y > 0 ? pt.y : 0;
 
-            if (this.lockedValue === 'angle') {
+            if (this.lockedValue === 'angle') 
+            {
                 this.beam.diameter = 2 * Math.tan((this.beam.angle / 2) * (Math.PI / 180)) * this.beam.distance;
-            } else { // diameter is locked or nothing is locked
+            } 
+            else // diameter is locked or nothing is locked
+            {
                 this.beam.angle = 2 * Math.atan((this.beam.diameter / 2) / this.beam.distance) * (180 / Math.PI);
             }
 
-        } else if (this.dragging === 'diameter-handle') {
+        } 
+        else if (this.dragging === 'diameter-handle') 
+        {
             if (this.lockedValue === 'diameter') return;
             
             const newDistance = pt.y > 0 ? pt.y : 0;
             const newDiameter = Math.abs(pt.x) * 2;
 
-            if (this.lockedValue === 'distance') {
+            if (this.lockedValue === 'distance') 
+            {
                 this.beam.diameter = newDiameter;
                 this.beam.angle = 2 * Math.atan((this.beam.diameter / 2) / this.beam.distance) * (180 / Math.PI);
-            } else if (this.lockedValue === 'angle') {
+            } 
+            else if (this.lockedValue === 'angle') 
+            {
                 this.beam.distance = newDistance;
                 this.beam.diameter = 2 * Math.tan((this.beam.angle / 2) * (Math.PI / 180)) * this.beam.distance;
-            } else { // No lock
+            } 
+            else // No lock
+            {
                 this.beam.distance = newDistance;
                 this.beam.diameter = newDiameter;
                 this.beam.angle = 2 * Math.atan((this.beam.diameter / 2) / this.beam.distance) * (180 / Math.PI);
@@ -399,125 +454,72 @@ class BeamCalculator
         this.updateVisualization();
     }
 
-    endDrag() {
-        if (this.dragging) {
+    endDrag() 
+    {
+        if (this.dragging) 
+        {
             document.body.classList.remove('dragging');
             this.dragging = null;
             this.scaleSlider.disabled = false;
         }
     }
 
-    getSVGPoint(e) {
+    getSVGPoint(e) 
+    {
         const pt = this.svg.createSVGPoint();
         pt.x = e.clientX;
         pt.y = e.clientY;
         const ctm = this.svg.getScreenCTM();
-        if (ctm) {
-            return pt.matrixTransform(ctm.inverse());
-        }
+        if (ctm) { return pt.matrixTransform(ctm.inverse()); }
         return pt;
+    }
+
+    _fmt(v) { return (Math.round(v * 100) / 100).toString(); }
+
+    setActiveUnit(isMeters) 
+    {
+        if (!this.unitMBtn || !this.unitFBtn) return;
+        if (isMeters) 
+        {
+            this.unitMBtn.classList.add('active');
+            this.unitFBtn.classList.remove('active');
+        } 
+        else
+        {
+            this.unitFBtn.classList.add('active');
+            this.unitMBtn.classList.remove('active');
+        }
+    }
+
+    isCurrentMeters() { return this.unitMBtn?.classList.contains('active') ?? true; }
+
+    convertValues(targetUnitMeters) 
+    {
+        const dispDist = parseFloat(this.distanceInput.value || '0');
+        const dispDiam = parseFloat(this.diameterInput.value || '0');
+        if (isNaN(dispDist) || isNaN(dispDiam)) return;
+
+        const currentlyMeters = this.isCurrentMeters();
+
+        const metersDist = currentlyMeters ? dispDist : (dispDist / this.M_TO_FT);
+        const metersDiam = currentlyMeters ? dispDiam : (dispDiam / this.M_TO_FT);
+
+        const enforced = this.enforceLimits({ ...this.beam, distance: metersDist, diameter: metersDiam });
+        this.beam.distance = enforced.distance;
+        this.beam.diameter = enforced.diameter;
+        
+        this.calculateLux();
+        this.setActiveUnit(targetUnitMeters);
+        this.updateInputFields();
+        this.updateVisualization();
     }
 }
 
-// Unit conversion for beam panel (meters <-> feet) — run after DOM ready and guard elements
-document.addEventListener('DOMContentLoaded', function () {
-    const M_TO_FT = 3.28084;
-    const unitMBtn = document.getElementById('unit-m-btn');
-    const unitFBtn = document.getElementById('unit-f-btn');
-    const distInput = document.getElementById('beam-distance');
-    const diamInput = document.getElementById('beam-diameter');
-
-    // If any control missing, bail out safely
-    if (!unitMBtn || !unitFBtn || !distInput || !diamInput) return;
-
-    // Helper to format numeric values
-    function fmt(v) { return (Math.round(v * 100) / 100).toString(); }
-
-    // Toggle active state helper
-    function setActiveUnit(isMeters) {
-        if (isMeters) {
-            unitMBtn.classList.add('active');
-            unitFBtn.classList.remove('active');
-        } else {
-            unitFBtn.classList.add('active');
-            unitMBtn.classList.remove('active');
-        }
-    }
-
-    // Read current unit
-    function isCurrentMeters() {
-        return unitMBtn.classList.contains('active');
-    }
-
-    // Convert function: targetUnitMeters = boolean
-    function convertValues(targetUnitMeters) {
-        // parse displayed numbers (whatever unit currently shown)
-        const dispDist = parseFloat(distInput.value || '0');
-        const dispDiam = parseFloat(diamInput.value || '0');
-        if (isNaN(dispDist) || isNaN(dispDiam)) return;
-
-        const currentlyMeters = isCurrentMeters();
-
-        // compute internal meters values from displayed numbers
-        const metersDist = currentlyMeters ? dispDist : (dispDist / M_TO_FT);
-        const metersDiam = currentlyMeters ? dispDiam : (dispDiam / M_TO_FT);
-
-        // decide display values for target unit
-        const displayDist = targetUnitMeters ? metersDist : (metersDist * M_TO_FT);
-        const displayDiam = targetUnitMeters ? metersDiam : (metersDiam * M_TO_FT);
-
-        // Always update displayed inputs (even if inputs are disabled)
-        distInput.value = fmt(displayDist);
-        diamInput.value = fmt(displayDiam);
-
-        // Update BeamCalculator internal model (meters) if available
-        if (window.beamCalculator) {
-            const bc = window.beamCalculator;
-            // enforce limits on the new meters values
-            const enforced = bc.enforceLimits({ ...bc.beam, distance: metersDist, diameter: metersDiam });
-            bc.beam.distance = enforced.distance;
-            bc.beam.diameter = enforced.diameter;
-            // Recalculate derived values and refresh UI
-            bc.calculateLux();
-            // ensure unit buttons state matches target
-            setActiveUnit(targetUnitMeters);
-            bc.updateInputFields();
-            bc.updateVisualization();
-        } else {
-            // if beamCalculator not present, still set unit state
-            setActiveUnit(targetUnitMeters);
-        }
-    }
-
-    // Click handlers
-    unitMBtn.addEventListener('click', function () {
-        if (isCurrentMeters()) return;
-        // convert current display -> meters
-        convertValues(true);
-    });
-    unitFBtn.addEventListener('click', function () {
-        if (!isCurrentMeters()) return;
-        // convert current display -> feet
-        convertValues(false);
-    });
-
-    // NOTE: lock buttons are controlled by BeamCalculator.toggleLock (no extra toggles here)
-
-    // Initialize state: ensure unit buttons reflect "meters" by default
-    setActiveUnit(true);
-});
-
-// --- fixed initialization & expose global instance ---
 let beamCalculator = null;
-document.addEventListener('DOMContentLoaded', () => {
-    if (document.getElementById('beam')) {
-        beamCalculator = new BeamCalculator();
-    }
-});
+document.addEventListener('DOMContentLoaded', () => { beamCalculator = new BeamCalculator(); });
 
 // Re-initialize when navigating to the page
-window.addEventListener('hashchange', () => {
-    if (window.location.hash === '#beam' && !beamCalculator) {
-        beamCalculator = new BeamCalculator();
-    }
+window.addEventListener('hashchange', () => 
+{
+    if (window.location.hash === '#beam' && !beamCalculator) { beamCalculator = new BeamCalculator(); }
 });
