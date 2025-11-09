@@ -47,6 +47,10 @@
     border-radius: 4px;
 }
 
+.output-group label {
+    color: var(--colore-testo);
+}
+
 .lux-output {
     font-weight: bold;
     color: var(--colore-testo);
@@ -112,13 +116,28 @@ body.dragging, body.dragging .drag-handle {
     transition: x 0.1s ease-out, y 0.1s ease-out;
 }
 
+.microHeader
+{
+    margin-top: 8px;
+    color: var(--colore-testo);
+    font-size: 14px;
+    text-align: left;
+}
+
+.separator
+{
+    height: 1px;
+    width: 100%;
+    background-color: var(--colore-bordo);
+}
+
 .lock-controls {
     display: flex;
     flex-direction: row;
     gap: 8px;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
+    margin-top: 2px;
 }
 
 .lock-controls .iconButton {
@@ -132,6 +151,11 @@ body.dragging, body.dragging .drag-handle {
     font-weight: bold;
 }
 
+.lock-controls .iconButton.locked:hover {
+    box-shadow: none;
+    background: var(--colore-bg-scuro);
+}
+
 input:disabled {
     background: #444;
     color: #bbb;
@@ -141,27 +165,27 @@ input:disabled {
 }
 
 /* Unit controls styling - reuse iconButton look, show active state */
-.unit-controls .iconButton {
+.unit-controls .iconButton, .lock-controls .iconButton {
     background: var(--colore-bg-scuro);
     border: 1px solid var(--colore-bordo);
     color: var(--colore-testo-chiaro);
     padding: 8px 12px;
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     min-width: 48px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-.unit-controls .iconButton:hover {
+.unit-controls .iconButton:hover, .lock-controls .iconButton:hover {
     box-shadow: 0 0 0 3px #ffeb3b11;
     border-color: var(--colore-giallo);
 }
 
-.unit-controls .iconButton.active {
-    background: linear-gradient(180deg, rgba(255,235,59,0.12), rgba(255,235,59,0.04));
+.unit-controls .iconButton.active, .lock-controls .iconButton.locked{
+    background: rgba(255,235,59,0.08);
     border: 1px solid var(--colore-giallo);
     color: var(--colore-giallo);
     box-shadow: 0 0 10px #ffeb3b33;

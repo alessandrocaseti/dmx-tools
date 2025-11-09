@@ -549,82 +549,82 @@
         <!-- Power Calculator -->
         <div id="power" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Power Calculator</h1>
-            <div class="defaultPageContent"">
+            <div class="defaultPageContent">
                 <h2>Watt / Ampere / Volt Converter</h2>
 
                 <div class=" converter-grid">
-                <div class="input-group">
-                    <label for="watts">Power (W):</label>
-                    <input type="number" id="watts" placeholder="Watts" step="0.01" style="width: 100px;">
+                    <div class="input-group">
+                        <label for="watts">Power (W)</label>
+                        <input type="number" id="watts" placeholder="Watts" step="0.01" style="width: 100px;">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="volts">Voltage (V)</label>
+                        <input type="number" id="volts" placeholder="Volts" step="0.01" style="width: 100px;">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="amperes">Current (A)</label>
+                        <input type="number" id="amperes" placeholder="Amperes" step="0.01" style="width: 100px;">
+                    </div>
                 </div>
 
-                <div class="input-group">
-                    <label for="volts">Voltage (V):</label>
-                    <input type="number" id="volts" placeholder="Volts" step="0.01" style="width: 100px;">
-                </div>
-
-                <div class="input-group">
-                    <label for="amperes">Current (A):</label>
-                    <input type="number" id="amperes" placeholder="Amperes" step="0.01" style="width: 100px;">
-                </div>
-            </div>
-
-            <div class="converter-buttons">
-                <button onclick="powerConverter.calculate()" class="iconButton">
-                    <span class="buttonIcon"></span>
-                    <span class="buttonText">Calculate Missing Value</span>
-                </button>
-                <button onclick="powerConverter.clear()" class="iconButton">
-                    <span class="buttonIcon"></span>
-                    <span class="buttonText">Clear all</span>
-                </button>
-            </div>
-
-            <div id="result-display" class="result-display">
-                <div id="calculation-result" class="calculation-result"></div>
-            </div>
-
-            <div class="power-formulas" style="display: none;">
-                <h3>Formulas Used:</h3>
-                <ul>
-                    <li><strong>Watts (P) = Volts (V) x Amperes (I)</strong></li>
-                    <li><strong>Volts (V) = Watts (P) ÷ Amperes (I)</strong></li>
-                    <li><strong>Amperes (I) = Watts (P) ÷ Volts (V)</strong></li>
-                </ul>
-            </div>
-
-            <div class="power-calculator">
-                <h3>Power Calculator</h3>
-                <div class="calculator-section">
-                    <h4>Calculate Total Power Consumption</h4>
-                    <div class="fixture-input">
-                        <label>Fixture name:</label>
-                        <input type="text" id="fixture-type" placeholder="Fixture name" style="width: 200px;">
-                    </div>
-                    <div class="fixture-input">
-                        <label>Power per unit (W):</label>
-                        <input type="number" id="fixture-power" placeholder="Watts per unit" step="0.1" style="width: 200px;">
-                    </div>
-                    <div class="fixture-input">
-                        <label>Quantity:</label>
-                        <input type="number" id="fixture-quantity" placeholder="Quantity" min="1" style="width: 200px;">
-                    </div>
-                    <button onclick="powerConverter.addFixture()" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Add</span>
+                <div class="converter-buttons">
+                    <button onclick="powerConverter.calculate()" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Calculate Missing Value</span>
+                    </button>
+                    <button onclick="powerConverter.clear()" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Clear all</span>
                     </button>
                 </div>
 
-                <div id="fixture-list" class="fixture-list">
-                    <h4>Fixture List</h4>
-                    <div id="fixtures-container"></div>
-                    <div id="total-power" class="total-power">
-                        <strong>Total Power: <span id="total-watts">0</span> W</strong>
+                <div id="result-display" class="result-display">
+                    <div id="calculation-result" class="calculation-result"></div>
+                </div>
+
+                <div class="power-formulas" style="display: none;">
+                    <h3>Formulas Used</h3>
+                    <ul>
+                        <li><strong>Watts (P) = Volts (V) x Amperes (I)</strong></li>
+                        <li><strong>Volts (V) = Watts (P) ÷ Amperes (I)</strong></li>
+                        <li><strong>Amperes (I) = Watts (P) ÷ Volts (V)</strong></li>
+                    </ul>
+                </div>
+
+                <div class="power-calculator">
+                    <h3>Power Calculator</h3>
+                    <div class="calculator-section">
+                        <h4>Calculate Total Power Consumption</h4>
+                        <div class="fixture-input">
+                            <label>Fixture name</label>
+                            <input type="text" id="fixture-type" placeholder="Fixture name" style="width: 200px;">
+                        </div>
+                        <div class="fixture-input">
+                            <label>Power per unit (W)</label>
+                            <input type="number" id="fixture-power" placeholder="Watts per unit" step="0.1" style="width: 200px;">
+                        </div>
+                        <div class="fixture-input">
+                            <label>Quantity</label>
+                            <input type="number" id="fixture-quantity" placeholder="Quantity" min="1" style="width: 200px;">
+                        </div>
+                        <button onclick="powerConverter.addFixture()" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Add</span>
+                        </button>
+                    </div>
+
+                    <div id="fixture-list" class="fixture-list">
+                        <h4>Fixture List</h4>
+                        <div id="fixtures-container"></div>
+                        <div id="total-power" class="total-power">
+                            <strong>Total Power: <span id="total-watts">0</span> W</strong>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div style="margin-bottom: 30vh;" class="web-only"></div>
+            <div style="margin-bottom: 30vh;" class="web-only"></div>
         </div>
 
         <!-- Beam Tools -->
@@ -634,6 +634,8 @@
 
                 <div class="beam-tools-container">
                     <div class="beam-calculator-panel">
+                        <label class="microHeader">Input beam values</label>
+                        <div class="separator"></div>
                         <div class="input-group">
                             <label for="beam-angle" class="label-with-icon">
                                 <span class="icon"></span>
@@ -652,7 +654,7 @@
                         <div class="input-group">
                             <label for="beam-diameter" class="label-with-icon">
                                 <span class="icon"></span>
-                                <span>Diametee</span>
+                                <span>Diameter</span>
                                 <span id="currentUnitDiameter" style="margin-left: -4px;">(m)</span>
                             </label>
                             <input type="number" id="beam-diameter" step="0.01" min="0.01" max="1000">
@@ -668,6 +670,8 @@
                             <label>Illuminance @ distance</label>
                             <span id="beam-lux-output" class="lux-output">0 lux</span>
                         </div>
+                        <label class="microHeader">Input values settings</label>
+                        <div class="separator"></div>
                         <div class="lock-controls">
                             <button id="lock-angle-btn" class="iconButton">
                                 <span class="buttonIcon"></span>
@@ -684,10 +688,10 @@
                         </div>
                         <div class="unit-controls" style="display:flex; gap:8px; margin-top:8px;">
                             <button id="unit-m-btn" class="iconButton active" title="Meters">
-                                <span class="buttonText">m</span>
+                                <span class="buttonText">meters</span>
                             </button>
                             <button id="unit-f-btn" class="iconButton" title="Feet">
-                                <span class="buttonText">ft</span>
+                                <span class="buttonText">feet</span>
                             </button>
                         </div>
                     </div>
