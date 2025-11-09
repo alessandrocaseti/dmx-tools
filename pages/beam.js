@@ -23,7 +23,7 @@ class BeamCalculator {
             angle: 10,
             distance: 10,
             diameter: 1.76,
-            lumen: 3000,
+            lumen: 5000,
             lux: 0
         };
 
@@ -160,8 +160,28 @@ class BeamCalculator {
     }
 
     calculateLux() {
-        const area = Math.PI * Math.pow(this.beam.diameter / 2, 2);
-        this.beam.lux = area > 0 ? this.beam.lumen / area : 0;
+        // Use luminous flux Phi (lm) and beam solid angle to get on-axis illuminance:
+        // Omega = 2π(1 - cos(theta/2)), theta in radians (full beam angle)
+        // On-axis illuminance E = Phi / (Omega * r^2)
+        const Phi = parseFloat(this.beam.lumen) || 0;
+        const r = parseFloat(this.beam.distance) || 0;
+        const thetaDeg = parseFloat(this.beam.angle) || 0;
+        const thetaRad = thetaDeg * Math.PI / 180;
+        const halfTheta = thetaRad / 2;
+
+        // solid angle of a cone
+        const Omega = 2 * Math.PI * (1 - Math.cos(halfTheta));
+
+        if (Omega > 1e-8 && r > 0) {
+            // on-axis illuminance (lux)
+            const I = Phi / Omega; // luminous intensity (cd)
+            this.beam.lux = I / (r * r);
+        } else {
+            // fallback: approximate using illuminated area at distance (uniform flux)
+            const radius = Math.tan(halfTheta) * r; // in meters
+            const area = Math.PI * Math.pow(radius, 2);
+            this.beam.lux = area > 0 ? Phi / area : 0;
+        }
     }
 
     enforceLimits(beam) {
@@ -279,18 +299,29 @@ class BeamCalculator {
     }
     
     updateLabels(distance, diameter, angle) {
-        if (document.getElementById('show-labels').checked) {
-            this.labels.distance.textContent = `${distance.toFixed(2)} m`;
-            this.labels.distance.setAttribute('x', this.fixturePos.x + 0.5);
-            this.labels.distance.setAttribute('y', distance / 2);
-            
-            this.labels.diameter.textContent = `${diameter.toFixed(2)} m`;
-            this.labels.diameter.setAttribute('x', this.fixturePos.x);
-            this.labels.diameter.setAttribute('y', distance + 1.5);
+        const M_TO_FT = 3.28084;
+        const isMetersDisplay = document.getElementById('unit-m-btn')?.classList.contains('active') ?? true;
+        const showLabelsEl = document.getElementById('show-labels');
 
-            this.labels.angle.textContent = `${angle.toFixed(2)}°`;
-            this.labels.angle.setAttribute('x', this.fixturePos.x - 1);
-            this.labels.angle.setAttribute('y', this.fixturePos.y + 1);
+        if (showLabelsEl && showLabelsEl.checked) {
+            const distLabel = isMetersDisplay ? `${distance.toFixed(2)} m` : `${(distance * M_TO_FT).toFixed(2)} ft`;
+            const diamLabel = isMetersDisplay ? `${diameter.toFixed(2)} m` : `${(diameter * M_TO_FT).toFixed(2)} ft`;
+
+            if (this.labels.distance) {
+                this.labels.distance.textContent = distLabel;
+                this.labels.distance.setAttribute('x', this.fixturePos.x + 0.5);
+                this.labels.distance.setAttribute('y', distance / 2);
+            }
+            if (this.labels.diameter) {
+                this.labels.diameter.textContent = diamLabel;
+                this.labels.diameter.setAttribute('x', this.fixturePos.x);
+                this.labels.diameter.setAttribute('y', distance + 1.5);
+            }
+            if (this.labels.angle) {
+                this.labels.angle.textContent = `${angle.toFixed(2)}°`;
+                this.labels.angle.setAttribute('x', this.fixturePos.x - 1);
+                this.labels.angle.setAttribute('y', this.fixturePos.y + 1);
+            }
         } else {
             this.labels.distance.textContent = '';
             this.labels.diameter.textContent = '';
@@ -382,7 +413,96 @@ class BeamCalculator {
     }
 }
 
-let beamCalculator;
+// Unit conversion for beam panel (meters <-> feet) — run after DOM ready and guard elements
+document.addEventListener('DOMContentLoaded', function () {
+    const M_TO_FT = 3.28084;
+    const unitMBtn = document.getElementById('unit-m-btn');
+    const unitFBtn = document.getElementById('unit-f-btn');
+    const distInput = document.getElementById('beam-distance');
+    const diamInput = document.getElementById('beam-diameter');
+
+    // If any control missing, bail out safely
+    if (!unitMBtn || !unitFBtn || !distInput || !diamInput) return;
+
+    // Helper to format numeric values
+    function fmt(v) { return (Math.round(v * 100) / 100).toString(); }
+
+    // Toggle active state helper
+    function setActiveUnit(isMeters) {
+        if (isMeters) {
+            unitMBtn.classList.add('active');
+            unitFBtn.classList.remove('active');
+        } else {
+            unitFBtn.classList.add('active');
+            unitMBtn.classList.remove('active');
+        }
+    }
+
+    // Read current unit
+    function isCurrentMeters() {
+        return unitMBtn.classList.contains('active');
+    }
+
+    // Convert function: targetUnitMeters = boolean
+    function convertValues(targetUnitMeters) {
+        // parse displayed numbers (whatever unit currently shown)
+        const dispDist = parseFloat(distInput.value || '0');
+        const dispDiam = parseFloat(diamInput.value || '0');
+        if (isNaN(dispDist) || isNaN(dispDiam)) return;
+
+        const currentlyMeters = isCurrentMeters();
+
+        // compute internal meters values from displayed numbers
+        const metersDist = currentlyMeters ? dispDist : (dispDist / M_TO_FT);
+        const metersDiam = currentlyMeters ? dispDiam : (dispDiam / M_TO_FT);
+
+        // decide display values for target unit
+        const displayDist = targetUnitMeters ? metersDist : (metersDist * M_TO_FT);
+        const displayDiam = targetUnitMeters ? metersDiam : (metersDiam * M_TO_FT);
+
+        // Always update displayed inputs (even if inputs are disabled)
+        distInput.value = fmt(displayDist);
+        diamInput.value = fmt(displayDiam);
+
+        // Update BeamCalculator internal model (meters) if available
+        if (window.beamCalculator) {
+            const bc = window.beamCalculator;
+            // enforce limits on the new meters values
+            const enforced = bc.enforceLimits({ ...bc.beam, distance: metersDist, diameter: metersDiam });
+            bc.beam.distance = enforced.distance;
+            bc.beam.diameter = enforced.diameter;
+            // Recalculate derived values and refresh UI
+            bc.calculateLux();
+            // ensure unit buttons state matches target
+            setActiveUnit(targetUnitMeters);
+            bc.updateInputFields();
+            bc.updateVisualization();
+        } else {
+            // if beamCalculator not present, still set unit state
+            setActiveUnit(targetUnitMeters);
+        }
+    }
+
+    // Click handlers
+    unitMBtn.addEventListener('click', function () {
+        if (isCurrentMeters()) return;
+        // convert current display -> meters
+        convertValues(true);
+    });
+    unitFBtn.addEventListener('click', function () {
+        if (!isCurrentMeters()) return;
+        // convert current display -> feet
+        convertValues(false);
+    });
+
+    // NOTE: lock buttons are controlled by BeamCalculator.toggleLock (no extra toggles here)
+
+    // Initialize state: ensure unit buttons reflect "meters" by default
+    setActiveUnit(true);
+});
+
+// --- fixed initialization & expose global instance ---
+let beamCalculator = null;
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('beam')) {
         beamCalculator = new BeamCalculator();

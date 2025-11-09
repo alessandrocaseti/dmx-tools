@@ -658,12 +658,12 @@
                         <div class="input-group">
                             <label for="beam-lumen" class="label-with-icon">
                                 <span class="icon"></span>
-                                <span>Lumen (lm)</span>
+                                <span>Luminous flux (lm)</span>
                             </label>
-                            <input type="number" id="beam-lumen" step="1" min="1" value="3000">
+                            <input type="number" id="beam-lumen" step="1" min="1" value="5000">
                         </div>
                         <div class="output-group">
-                            <label>Illuminance:</label>
+                            <label>Illuminance @ distance</label>
                             <span id="beam-lux-output" class="lux-output">0 lux</span>
                         </div>
                         <div class="lock-controls">
@@ -678,6 +678,14 @@
                             <button id="lock-diameter-btn" class="iconButton">
                                 <span class="buttonIcon"></span>
                                 <span class="buttonText">Diameter</span>
+                            </button>
+                        </div>
+                        <div class="unit-controls" style="display:flex; gap:8px; margin-top:8px;">
+                            <button id="unit-m-btn" class="iconButton active" title="Meters">
+                                <span class="buttonText">m</span>
+                            </button>
+                            <button id="unit-f-btn" class="iconButton" title="Feet">
+                                <span class="buttonText">ft</span>
                             </button>
                         </div>
                     </div>
