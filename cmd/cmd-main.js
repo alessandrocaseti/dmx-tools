@@ -660,6 +660,15 @@ function handleCommand(event)
             }
         }
 
+        // BEAM PAGE COMMANDS
+
+        else if (command === 'clear' && currentPage === 'beam')
+        {
+            beamCalculator.clear();
+            setCmdMessage('Successfully resetted beam calculator.', 'CLEAR');
+            return;
+        }
+
         else if (command === 'help')
         {
             switch(currentPage)

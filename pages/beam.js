@@ -513,6 +513,13 @@ class BeamCalculator
         this.updateInputFields();
         this.updateVisualization();
     }
+
+    clear()
+    {
+        this.beam = { angle: 10, distance: 10, diameter: 1.76, lumen: 5000, lux: 0 };
+        this.updateInputFields();
+        this.updateVisualization();
+    }
 }
 
 let beamCalculator = null;
