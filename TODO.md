@@ -3,6 +3,9 @@
 ## Engine
 
 [] Localstorage for more items than just colors
+[] Undo/redo mechanism via CMD
+[] CMD history is saved in localstorage (?)
+[] Main version
 
 ## Patch
 
@@ -15,7 +18,7 @@
 ## Universe View
 
 [] Create page
-[] Create Universe grid
+[] Create Universe grid (32x16)
 [] Create Universe selection item
 [] Ability to move fixtures between the universe
 [] Ability to cut / copy / paste / remove fixtures from the grid/patch
@@ -53,6 +56,9 @@
 [x] Fixture page creation
 [] Convert all QLC+ 5.0.1 fixtures
 [] Brand header (name/logo, location, website)
+[] Database version
+[] Total/folder fixture count
+
 
 ## Settings
 
