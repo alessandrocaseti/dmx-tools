@@ -2,6 +2,10 @@
 
 let currentPage = 'home';
 
+const version = '1.0.0 Alpha 1';
+const date = '16/11/2025';
+const author = 'Alessandro Caseti';
+
 // Main & navigation functions
 
 function navigateTo(page)
