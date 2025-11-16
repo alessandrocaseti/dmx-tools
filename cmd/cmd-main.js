@@ -772,6 +772,9 @@ function handleCommand(event)
                 case 'color':
                     setCmdMessage('Available color commands: save (or -s {color name}), clear list, rand, load (or -l {color name or id}).', 'HELP');
                     return;
+                case 'beam':
+                    setCmdMessage('Available beam commands: set (or -s) {parameter} {value}, clear, lock (or -l) {parameter}, ft (or feet), m (or meters).', 'HELP');
+                    return;
                 default:
                     setCmdMessage('Available generic commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
                     return;
