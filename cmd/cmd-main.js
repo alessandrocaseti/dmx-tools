@@ -723,6 +723,18 @@ function handleCommand(event)
             return;
         }
 
+        else if ((command.startsWith('-l') || command.startsWith('lock')) && currentPage === 'beam')
+        {
+            let value;
+            if(command.startsWith('-l')) { value = command.slice(2).trim() }
+            if(command.startsWith('lock')) { value = command.slice(4).trim() }
+
+            if(value == 'angle' || value == '-a') { beamCalculator.toggleLock('angle'); return; }
+            if(value == 'distance' || value == '-ds') { beamCalculator.toggleLock('distance'); return; }
+            if(value == 'diameter' || value == '-dm') { beamCalculator.toggleLock('diameter'); return; }
+            setCmdMessage('Invalid syntax. Please enter a valid parameter (-a, -ds, -dm).', 'ERROR');
+        }
+
         else if (command === 'clear' && currentPage === 'beam')
         {
             beamCalculator.clear();

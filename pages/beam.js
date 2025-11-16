@@ -222,6 +222,7 @@ class BeamCalculator
     {
         this.lockedValue = this.lockedValue === value ? null : value;
         this.updateLockUI();
+        setCmdMessage('Toggled lock on ' + value + ' parameter.', 'LOCK')
     }
 
     updateLockUI() 
