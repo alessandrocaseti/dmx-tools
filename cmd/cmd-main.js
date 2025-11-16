@@ -683,7 +683,7 @@ function handleCommand(event)
 
         else if (command === 'about')
         {
-            setCmdMessage('DMX Tools - Developed by Alessandro Caseti. For more information, visit the GitHub repository.', 'ABOUT');
+            setCmdMessage(appName  + ' - Developed by ' + author + '. ' + 'Version ' + version + ' - ' + date + '.', 'ABOUT');
             return;
         }
 

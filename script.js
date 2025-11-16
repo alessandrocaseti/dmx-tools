@@ -2,6 +2,7 @@
 
 let currentPage = 'home';
 
+const appName = 'DMX Tools';
 const version = '1.0.0 Alpha 1';
 const date = '16/11/2025';
 const author = 'Alessandro Caseti';

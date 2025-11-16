@@ -5,7 +5,7 @@
 [] Localstorage for more items than just colors
 [] Undo/redo mechanism via CMD
 [] CMD history is saved in localstorage (?)
-[] Main version
+[x] Main version
 
 ## Patch
 
