@@ -27,7 +27,7 @@ class BeamCalculator
         {
             angle: 10,
             distance: 10,
-            diameter: 1.76,
+            diameter: 1.75,
             lumen: 5000,
             lux: 0
         };
@@ -115,6 +115,24 @@ class BeamCalculator
         return label;
     }
 
+    setUnit(unit)
+    {
+        if (unit === 'm')
+        {
+            if (this.isCurrentMeters()) return;
+            this.convertValues(true);
+            document.getElementById('currentUnitDistance').innerHTML = '(m)';
+            document.getElementById('currentUnitDiameter').innerHTML = '(m)';
+        }
+        else // ft
+        {
+            if (!this.isCurrentMeters()) return;
+            this.convertValues(false);
+            document.getElementById('currentUnitDistance').innerHTML = '(ft)';
+            document.getElementById('currentUnitDiameter').innerHTML = '(ft)';
+        }
+    }
+
     bindEvents() 
     {
         window.addEventListener('resize', () => this.adjustSVGHeight());
@@ -128,26 +146,8 @@ class BeamCalculator
         this.lockDistanceBtn.addEventListener('click', () => this.toggleLock('distance'));
         this.lockDiameterBtn.addEventListener('click', () => this.toggleLock('diameter'));
 
-        if (this.unitMBtn) 
-        {
-            this.unitMBtn.addEventListener('click', () => 
-            {
-                if (this.isCurrentMeters()) return;
-                this.convertValues(true);
-                document.getElementById('currentUnitDistance').innerHTML = '(m)';
-                document.getElementById('currentUnitDiameter').innerHTML = '(m)';
-            });
-        }
-        if (this.unitFBtn) 
-        {
-            this.unitFBtn.addEventListener('click', () => 
-            {
-                if (!this.isCurrentMeters()) return;
-                this.convertValues(false);
-                document.getElementById('currentUnitDistance').innerHTML = '(ft)';
-                document.getElementById('currentUnitDiameter').innerHTML = '(ft)';
-            });
-        }
+        if (this.unitMBtn) { this.unitMBtn.addEventListener('click', () => { this.setUnit('m'); }); }
+        if (this.unitFBtn) { this.unitFBtn.addEventListener('click', () => { this.setUnit('ft'); }); }
 
         this.svg.addEventListener('mousedown', (e) => this.startDrag(e));
         this.svg.addEventListener('mousemove', (e) => this.drag(e));
@@ -516,7 +516,8 @@ class BeamCalculator
 
     clear()
     {
-        this.beam = { angle: 10, distance: 10, diameter: 1.76, lumen: 5000, lux: 0 };
+        this.beam = { angle: 10, distance: 10, diameter: 1.75, lumen: 5000, lux: 0 };
+        this.calculateLux();
         this.updateInputFields();
         this.updateVisualization();
     }

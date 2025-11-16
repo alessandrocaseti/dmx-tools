@@ -669,6 +669,20 @@ function handleCommand(event)
             return;
         }
 
+        else if (command === 'm' || command === 'meters' && currentPage === 'beam')
+        {
+            beamCalculator.setUnit('m');
+            setCmdMessage('Setted meteres as current unit.', 'METERS');
+            return;
+        }
+
+        else if (command === 'ft' || command === 'feet' && currentPage === 'beam')
+        {
+            beamCalculator.setUnit('ft');
+            setCmdMessage('Setted feet as current unit.', 'FEET');
+            return;
+        }
+
         else if (command === 'help')
         {
             switch(currentPage)
