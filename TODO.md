@@ -44,6 +44,7 @@
 ## Beam
 
 [] Improve UI
+[] Improve distance parameter
 [] CMD Messages
 [] CMD Commands
 [] Beam dynamic graph visualizer

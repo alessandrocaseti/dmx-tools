@@ -31,7 +31,7 @@ class BeamCalculator
             lumen: 5000,
             lux: 0
         };
-
+        this.currentUnit = 'm';
         this.userScale = 1;
         this.dragging = null;
         this.lockedValue = null; // 'angle', 'distance', 'diameter', or null
@@ -123,6 +123,7 @@ class BeamCalculator
             this.convertValues(true);
             document.getElementById('currentUnitDistance').innerHTML = '(m)';
             document.getElementById('currentUnitDiameter').innerHTML = '(m)';
+            this.currentUnit = 'm';
         }
         else // ft
         {
@@ -130,7 +131,62 @@ class BeamCalculator
             this.convertValues(false);
             document.getElementById('currentUnitDistance').innerHTML = '(ft)';
             document.getElementById('currentUnitDiameter').innerHTML = '(ft)';
+            this.currentUnit = 'ft';
         }
+    }
+
+    setAngle(value)
+    {
+        if(this.angleInput.disabled)
+        {
+            setCmdMessage('Parameter locked. Unable to set angle.', 'ERROR');
+            return;
+        }
+        setCmdMessage('Setted angle to ' + value + ' degrees.', 'SET ANGLE');
+        this.beam.angle = value;
+        this.angleInput.value = value;
+        this.updateFromInput('angle');
+    }
+
+    setDistance(value)
+    {
+        if(this.distanceInput.disabled)
+        {
+            setCmdMessage('Parameter locked. Unable to set distance.', 'ERROR');
+            return;
+        }
+        setCmdMessage('Setted distance to ' + value + ' ' + this.currentUnit + '.', 'SET DISTANCE');
+        // value is provided in the currently displayed unit (m or ft). Set the input
+        // and let updateFromInput convert it into internal meters.
+        this.distanceInput.value = value;
+        this.updateFromInput('distance');
+    }
+
+    setDiameter(value)
+    {
+        if(this.diameterInput.disabled)
+        {
+            setCmdMessage('Parameter locked. Unable to set diameter.', 'ERROR');
+            return;
+        }
+        setCmdMessage('Setted diameter to ' + value + ' ' + this.currentUnit + '.', 'SET DIAMETER');
+        // value is provided in the currently displayed unit (m or ft). Set the input
+        // and let updateFromInput convert it into internal meters.
+        this.diameterInput.value = value;
+        this.updateFromInput('diameter');
+    }
+
+    setFlux(value)
+    {
+        if(this.lumenInput.disabled)
+        {
+            setCmdMessage('Parameter locked. Unable to set flux.', 'ERROR');
+            return;
+        }
+        setCmdMessage('Setted flux to ' + value + ' lumen.', 'SET FLUX');
+        this.beam.lumen = value;
+        this.lumenInput.value = value;
+        this.updateFromInput('lumen');
     }
 
     bindEvents() 
@@ -238,11 +294,25 @@ class BeamCalculator
 
     updateFromInput(source) 
     {
+        const isMetersDisplay = this.isCurrentMeters();
+
         if (source !== this.lockedValue) 
         {
             if (!this.angleInput.disabled) this.beam.angle = parseFloat(this.angleInput.value) || this.beam.angle;
-            if (!this.distanceInput.disabled) this.beam.distance = parseFloat(this.distanceInput.value) || this.beam.distance;
-            if (!this.diameterInput.disabled) this.beam.diameter = parseFloat(this.diameterInput.value) || this.beam.diameter;
+
+            if (!this.distanceInput.disabled) 
+            {
+                let d = parseFloat(this.distanceInput.value);
+                if (!isNaN(d)) { d = isMetersDisplay ? d : (d / this.M_TO_FT); }
+                this.beam.distance = d || this.beam.distance;
+            }
+
+            if (!this.diameterInput.disabled) 
+            {
+                let dia = parseFloat(this.diameterInput.value);
+                if (!isNaN(dia)) { dia = isMetersDisplay ? dia : (dia / this.M_TO_FT); }
+                this.beam.diameter = dia || this.beam.diameter;
+            }
         }
         if (!this.lumenInput.disabled) this.beam.lumen = parseFloat(this.lumenInput.value) || this.beam.lumen;
 

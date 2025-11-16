@@ -596,7 +596,7 @@ function handleCommand(event)
         }
 
         // COLOR PAGE COMMANDS
-        else if (command.startsWith('-s') || command.startsWith('save') && currentPage === 'color')
+        else if ((command.startsWith('-s') || command.startsWith('save')) && currentPage === 'color')
         {
             let value = rawCommand.slice(2).trim();
             if(command.startsWith('save'))
@@ -615,7 +615,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'rand' || command === '-r' && currentPage === 'color')
+        else if ((command === 'rand' || command === '-r') && currentPage === 'color')
         {
             colorConverter.generateRandomColor();
             return;
@@ -627,7 +627,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command.startsWith('-l') || command.startsWith('load') && currentPage === 'color')
+        else if ((command.startsWith('-l') || command.startsWith('load')) && currentPage === 'color')
         {
             let value = command.slice(2).trim();
             if(command.startsWith('load'))
@@ -662,6 +662,67 @@ function handleCommand(event)
 
         // BEAM PAGE COMMANDS
 
+        else if (command.startsWith('-s') || command.startsWith('set') && currentPage === 'beam')
+        {
+            let value, val;
+            if(command.startsWith('-s')) { value = command.slice(2).trim() }
+            if(command.startsWith('set')) { value = command.slice(3).trim() }
+
+            if(value.startsWith('-a') || value.startsWith('angle')) // ANGLE
+            {
+                if(value.startsWith('-a')) { val = value.slice(2).trim() }
+                if(value.startsWith('angle')) { val = value.slice(5).trim() }
+                if(isNaN(val))
+                {
+                    setCmdMessage('Invalid angle value. Please enter valid number.', 'ERROR');
+                    return;
+                }
+                beamCalculator.setAngle(parseFloat(val));
+                return; 
+            }
+
+            if(value.startsWith('-ds') || value.startsWith('distance')) // DISTANCE
+            {
+                if(value.startsWith('-ds')) { val = value.slice(3).trim() }
+                if(value.startsWith('distance')) { val = value.slice(8).trim() }
+                if(isNaN(val))
+                {
+                    setCmdMessage('Invalid distance value. Please enter valid number.', 'ERROR');
+                    return;
+                }
+                beamCalculator.setDistance(parseFloat(val));
+                return; 
+            }
+
+            if(value.startsWith('-dm') || value.startsWith('diameter')) // DIAMETER
+            {
+                if(value.startsWith('-dm')) { val = value.slice(3).trim() }
+                if(value.startsWith('diameter')) { val = value.slice(8).trim() }
+                if(isNaN(val))
+                {
+                    setCmdMessage('Invalid diameter value. Please enter valid number.', 'ERROR');
+                    return;
+                }
+                beamCalculator.setDiameter(parseFloat(val));
+                return; 
+            }
+
+            if(value.startsWith('-fl') || value.startsWith('flux')) // FLUX
+            {
+                if(value.startsWith('-fl')) { val = value.slice(3).trim() }
+                if(value.startsWith('flux')) { val = value.slice(4).trim() }
+                if(isNaN(val))
+                {
+                    setCmdMessage('Invalid lumious flux value. Please enter valid number.', 'ERROR');
+                    return;
+                }
+                beamCalculator.setFlux(parseFloat(val));
+                return; 
+            }
+            setCmdMessage('Invalid syntax. Please enter a valid parameter (-a, -ds, -dm, -fl).', 'ERROR')
+            return;
+        }
+
         else if (command === 'clear' && currentPage === 'beam')
         {
             beamCalculator.clear();
@@ -672,7 +733,7 @@ function handleCommand(event)
         else if (command === 'm' || command === 'meters' && currentPage === 'beam')
         {
             beamCalculator.setUnit('m');
-            setCmdMessage('Setted meteres as current unit.', 'METERS');
+            setCmdMessage('Setted meters as current unit.', 'METERS');
             return;
         }
 
