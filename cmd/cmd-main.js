@@ -172,6 +172,7 @@ function handleCommand(event)
         // TODO -> aggiungere command includes / a tutti gli if
         // TODO -> gestire lowercase / propercase
         // TODO -> hero commands
+        // TODO -> usare switch al posto di if/else
 
         if(freeze && command !== 'unfreeze' && command !== 'reset') { return };
 
@@ -664,7 +665,7 @@ function handleCommand(event)
             switch(currentPage)
             {
                 case 'home':
-                    setCmdMessage('Available generic commands: nav (or -n), freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
+                    setCmdMessage('Available generic commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
                     return;
                 case 'patch':
                     setCmdMessage('Available patch commands: add, remove, color, rename, patch, update, stats, docset, export, clear.', 'HELP');
@@ -673,10 +674,10 @@ function handleCommand(event)
                     setCmdMessage('Available DIP commands: clear -d, clear -a, store, flip, load {address}, increment (or +), decrement (or -).', 'HELP');
                     return;
                 case 'color':
-                    setCmdMessage('Available color commands: save (or -s) {color name}, clear list, rand, load (or -l) {color name or id}.', 'HELP');
+                    setCmdMessage('Available color commands: save (or -s {color name}), clear list, rand, load (or -l {color name or id}).', 'HELP');
                     return;
                 default:
-                    setCmdMessage('Available generic commands: nav (or -n), freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
+                    setCmdMessage('Available generic commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
                     return;
             }
         }
