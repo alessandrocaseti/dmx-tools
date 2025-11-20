@@ -126,47 +126,12 @@ body
     box-shadow: 0 0 0 2px #ffeb3b44;
 }
 
-/* Opzioni patch */
 #patchOptions 
 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 16px;
-}
-
-#showImagesCheckbox 
-{
-    accent-color: var(--colore-giallo);
-    width: 24px;
-    height: 24px;
-    border-radius: 5px;
-    background: var(--colore-bg-scuro);
-    border: 1px solid var(--colore-giallo);
-    margin-right: 10px;
-    vertical-align: middle;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 0 0 0 #ffeb3b00;
-    outline: none;
-    user-select: none;
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-#showImagesCheckbox:checked
-{
-    background: var(--colore-giallo);
-}
-
-#showImagesCheckbox:not(:checked)
-{
-    border: 1px solid var(--colore-bordo);
-} 
-
-#showImagesCheckbox:hover
-{
-    border: 1px solid var(--colore-giallo);
 }
 
 label[for="showImagesCheckbox"], #patchOptions label 
@@ -241,6 +206,7 @@ label
     color: var(--colore-giallo);
     font-weight: 500;
     margin-right: 4px;
+    user-select: none;
 }
 
 input 
