@@ -256,24 +256,24 @@
 
                 <div class="web-only" style="display: flex; flex-direction: row; gap: 20px; margin-bottom: 16px; justify-content: center; align-items: center;">
                     <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
-                        <label for="evento">Event/venue:</label>
+                        <label for="evento">Event/venue</label>
                         <input type="text" id="evento" placeholder="Event/venue name" style="width: 22vh;" required autocomplete="off">
                     </div>
                     <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
-                        <label for="luogo">Located in:</label>
+                        <label for="luogo">Located in</label>
                         <input type="text" id="luogo" placeholder="Place name" style="width: 22vh;" required autocomplete="off">
                     </div>
                     <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
-                        <label for="autorePatch">Patch author:</label>
+                        <label for="autorePatch">Patch author</label>
                         <input type="text" id="autorePatch" placeholder="Patch author name" style="width: 22vh;" required autocomplete="off">
                     </div>
                 </div>
 
                 <form id="dmxForm" onsubmit="return false;" style="margin-top: 4vh;">
 
-                    <label for="fixName">Name:</label>
+                    <label for="fixName">Name</label>
                     <input type="text" id="fixName" placeholder="Fixture name" style="width: 16vh;" required>
-                    <label for="fixType">Type:</label>
+                    <label for="fixType">Type</label>
 
                     <div class="selectDiv">
                         <select id="fixType" required style="width: 16vh; height: 36px; padding-right: 28px;">
@@ -307,9 +307,9 @@
                         <span class="selectArrow"></span>
                     </div>
 
-                    <label for="fixQty">Quantity:</label>
+                    <label for="fixQty">Quantity</label>
                     <input type="number" id="fixQty" min="1" value="1" style="width: 8vh;" required>
-                    <label for="fixChs">Channels:</label>
+                    <label for="fixChs">Channels</label>
                     <input type="number" id="fixChs" min="1" value="1" style="width: 8vh;" required>
 
                     <button type="button" onclick="aggiungiFixture()" style="display: flex; align-items: center;">
@@ -367,7 +367,7 @@
             <div class="defaultPageContent">
 
                 <div class="dip-input-section">
-                    <label for="dmxAddress">DMX Address:</label>
+                    <label for="dmxAddress">DMX Address</label>
                     <button onclick="dipSwitch.decrementAddress()" disabled id="lessButton" style="font-size: 18px; font-family: 'IconFont';"></button>
                     <input type="number" id="dmxAddress" min="0" max="511" value="000" placeholder="000-511">
                     <button onclick="dipSwitch.incrementAddress()" id="moreButton" style="font-size: 18px; font-family: 'IconFont';"></button>
