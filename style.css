@@ -133,38 +133,6 @@ label[for="showImagesCheckbox"], #patchOptions label
     margin-left: 16px;
 }
 
-#dmxForm select 
-{
-    background: var(--colore-bg-scuro);
-    color: var(--colore-testo-chiaro);
-    border: 1px solid var(--colore-bordo);
-    border-radius: var(--border-radius);
-    padding: 6px 10px;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    margin-right: 8px;
-    transition: border .3s ease;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-#dmxForm select:focus 
-{
-    border: 1px solid var(--colore-giallo);
-    outline: none;
-}
-
-#dmxForm 
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 24px;
-    flex-wrap: wrap;
-}
-
 .print-only { display: none; }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; }
@@ -259,23 +227,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
     color: var(--colore-giallo);
 }
 
-.homeVideo
-{
-    position: absolute;
-    inset: 0;
-    width: 105%;
-    height: 105vh;
-    z-index: 0;
-    object-fit: cover;
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-#home > div, #home > section, #home > .web-only {
-    position: relative;
-    z-index: 1;
-}
-
 .shine, .chrome {
 	font-size: 3em;
 	margin: 0 auto;
@@ -326,14 +277,4 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-app
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-.homeCard
-{
-    user-select: none;
-}
-
-.homeCard:hover
-{
-    transform: scale(1.15);
 }

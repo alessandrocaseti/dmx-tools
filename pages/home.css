@@ -1,0 +1,26 @@
+.homeCard
+{
+    user-select: none;
+}
+
+.homeCard:hover
+{
+    transform: scale(1.15);
+}
+
+.homeVideo
+{
+    position: absolute;
+    inset: 0;
+    width: 105%;
+    height: 105vh;
+    z-index: 0;
+    object-fit: cover;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#home > div, #home > section, #home > .web-only {
+    position: relative;
+    z-index: 1;
+}
