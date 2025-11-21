@@ -1,0 +1,22 @@
+input 
+{
+    background: var(--colore-bg-scuro);
+    color: var(--colore-testo-chiaro);
+    border: 1px solid var(--colore-bordo);
+    border-radius: var(--border-radius);
+    padding: 6px 10px;
+    width: 80px;
+    height: 22px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    transition: all .3s ease;
+    user-select: none;
+}
+
+input:focus
+{
+    border: 1px solid var(--colore-giallo);
+    background: var(--colore-bg-scuro);
+    color: var(--colore-testo-chiaro);
+    outline: none;
+}
