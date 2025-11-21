@@ -146,17 +146,18 @@ document.addEventListener('DOMContentLoaded', function()
             setStats();
 
             // Evitiamo di raggiungere il limite mensile di chiamate API durante lo sviluppo locale
-            if(window.location.protocol.startsWith("http") && window.location.hostname !== "localhost") 
+            if(window.location.protocol.startsWith("http") && window.location.hostname !== "localhost" && window.location.href !== "http://127.0.0.1:5500/index.html") 
             {
                 await getSetDocNumber(); // Esegui la chiamata API
+                setCmdMessage('Successfully requested document number via API call. Generated PDF with ID #' + `${docID}.`, 'EXPORT');
             } 
             else 
             {
                 console.log("Local environment detected, skipping API call.");
                 await simulateOverlay(); // Simula l'overlay di caricamento
+                setCmdMessage('Local environment detected, skipping API call. Generated PDF with nullified ID #' + `${docID}.`, 'EXPORT');
             }
 
-            setCmdMessage('Successfully requested document number via API call. Generated PDF with ID #' + `${docID}.`, 'EXPORT');
             window.print();
         });
     }
