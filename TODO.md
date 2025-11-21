@@ -29,12 +29,13 @@
 
 [] Improve link dialog: add "same address" element + divide by rest of the patch
 [] Improve link dialog design
+[] Fix binary when using load command
 [] Add linked DIP addresses to exported PDF
 
 ## Color
 
 [] User Palettes system
-[] Lee and Rosco color palettes
+[] Lee and Rosco color palettes (maybe not)
 
 ## Power
 

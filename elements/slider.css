@@ -1,0 +1,93 @@
+:root 
+{
+	--slider-accent: #ffeb3b; /* site yellow */
+	--slider-track-bg: rgba(255, 255, 255, 0.064);
+	--slider-track-fill: rgba(255, 235, 59, 0.291);
+	--slider-thumb-size: 18px;
+	--slider-transition: .2s ease;
+}
+
+input[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 16px;
+	background: transparent;
+	margin: 6px 0;
+	cursor: pointer;
+    outline: none;
+}
+
+/* Common track (invisible — specific engines below) */
+input[type="range"]::-webkit-slider-runnable-track {
+	height: 10px;
+	background: var(--slider-track-bg);
+	border-radius: 999px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.6);
+	transition: background var(--slider-transition), box-shadow var(--slider-transition);
+}
+
+input[type="range"]::-moz-range-track {
+	height: 8px;
+	background: var(--slider-track-bg);
+	border-radius: 999px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.6);
+}
+
+input[type="range"]::-ms-track {
+	height: 8px;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+/* Thumb */
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: var(--slider-thumb-size);
+	height: var(--slider-thumb-size);
+	margin-top: -5px; /* center the thumb on the track */
+	border-radius: 50%;
+	background: linear-gradient(180deg, var(--slider-accent), #f7e84a);
+	transition: transform var(--slider-transition);
+}
+
+input[type="range"]::-moz-range-thumb {
+	width: var(--slider-thumb-size);
+	height: var(--slider-thumb-size);
+	border-radius: 50%;
+	background: linear-gradient(180deg, var(--slider-accent), #f7e84a);
+	border: 2px solid rgba(0,0,0,0.25);
+	transition: transform var(--slider-transition);
+}
+
+input[type="range"]::-ms-thumb {
+	width: var(--slider-thumb-size);
+	height: var(--slider-thumb-size);
+	border-radius: 50%;
+	background: linear-gradient(180deg, var(--slider-accent), #f7e84a);
+	border: 2px solid rgba(0,0,0,0.25);
+}
+
+/* Hover / active states */
+input[type="range"]:hover::-webkit-slider-thumb,
+input[type="range"]:active::-webkit-slider-thumb {
+	transform: scale(1.3);
+}
+
+input[type="range"]:hover::-moz-range-thumb,
+input[type="range"]:active::-moz-range-thumb {
+	transform: scale(1.3);
+}
+
+/* Small responsive tweak for large thumbs on mobile */
+@media (max-width: 600px) {
+	:root { --slider-thumb-size: 22px; }
+}
+
+/* Optional utility: .compact-range reduces visual size where needed */
+.compact-range {
+	height: 8px;
+}
+
+/* End of slider styles */
