@@ -168,7 +168,7 @@ function setStats(index)
     document.getElementById('totFixturePrint').textContent = totFixture;
 
     const footprint = universi.size + " " + unitext + " : " + totCanali + " " + chanText;
-    if(index === 1) return totFixture
+    if(index === 1) return totFixture;
     if(index === 2) return footprint;
     return;
 }

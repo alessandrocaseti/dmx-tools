@@ -10,25 +10,12 @@
     flex-wrap: wrap;
 }
 
-.patchTable 
-{
-    min-width: 100%;
-    table-layout: fixed;
-    margin: 20px auto 0 auto;
-    border-collapse: collapse;
-    background: var(--colore-bg-tabella);
-    color: var(--colore-testo);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-    border-radius: 8px;
-}
-
 .patchTable.firstTable
 {
     min-width: 100%;
     table-layout: auto;
     margin: 20px auto 0 auto;
     border-collapse: collapse;
-    background: var(--colore-bg-tabella);
     color: var(--colore-testo);
     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
     border-radius: 8px;
@@ -86,36 +73,6 @@
     padding: 0;
     min-width: 150px;
     max-width: 150px;
-}
-
-.patchTable thead
-{
-    background: var(--colore-bg-header);
-    user-select: none;
-}
-
-.patchTable th,
-.patchTable td
-{
-    border: 1px solid var(--colore-bordo);
-    padding: 10px 14px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.patchTable tr:nth-child(even)
-{
-    background: #2c313a;
-}
-
-.patchTable tr:hover
-{
-    background: #1a1a1f;
-}
-
-.patchTable tr
-{
-    transition: background 0.3s ease;
 }
 
 .typeLayout 

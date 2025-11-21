@@ -1,0 +1,39 @@
+.patchTable 
+{
+    min-width: 100%;
+    table-layout: fixed;
+    margin: 20px auto 0 auto;
+    border-collapse: collapse;
+    color: var(--colore-testo);
+    background: #181818;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.patchTable thead
+{
+    background: #121212;
+    user-select: none;
+}
+
+.patchTable th,
+.patchTable td
+{
+    border: 1px solid var(--colore-bordo);
+    padding: 10px 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.patchTable tr:nth-child(even)
+{
+    background: #252525;
+}
+
+.patchTable tbody>tr:hover
+{
+    background: #303030;
+}
+
+.patchTable tr
+{
+    transition: background 0.3s ease;
+}

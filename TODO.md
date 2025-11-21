@@ -40,6 +40,7 @@
 ## Power
 
 [] Improve UI
+[] Cable section calculator
 [] CMD Messages
 [] CMD Commands
 
