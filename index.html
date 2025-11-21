@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="elements/input.css">
         <link rel="stylesheet" href="elements/label.css">
         <link rel="stylesheet" href="elements/scrollbar.css">
+        <link rel="stylesheet" href="elements/select.css">
         <link rel="stylesheet" href="elements/slider.css">
         <link rel="stylesheet" href="export/pdf.css">
         <link rel="stylesheet" href="pages/home.css">
@@ -274,7 +275,7 @@
                     <input type="text" id="fixName" placeholder="Fixture name" style="width: 16vh;" required>
                     <label for="fixType">Type:</label>
 
-                    <div style="position:relative;display:inline-block;">
+                    <div class="selectDiv">
                         <select id="fixType" required style="width: 16vh; height: 36px; padding-right: 28px;">
                             <option value="Beam">Beam</option>
                             <option value="Spot">Spot</option>
@@ -303,7 +304,7 @@
                             <option value="Effect">Effect</option>
                             <option value="Other">Other</option>
                         </select>
-                        <span class="selectArrow" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:IconFont;font-size:1.2em;pointer-events:none;color:#ffeb3b;"></span>
+                        <span class="selectArrow"></span>
                     </div>
 
                     <label for="fixQty">Quantity:</label>

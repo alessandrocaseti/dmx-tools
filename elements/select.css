@@ -1,0 +1,39 @@
+select 
+{
+    background: var(--colore-bg-scuro);
+    color: var(--colore-testo-chiaro);
+    border: 1px solid var(--colore-bordo);
+    border-radius: var(--border-radius);
+    padding: 6px 10px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    margin-right: 8px;
+    transition: border .3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select:focus 
+{
+    border: 1px solid var(--colore-giallo);
+    outline: none;
+}
+
+.selectArrow
+{
+    position:absolute;
+    right:16px;
+    top:50%;
+    transform:translateY(-50%);
+    font-family:IconFont;
+    font-size:1.2em;
+    pointer-events:none;
+    color:#ffeb3b;
+}
+
+.selectDiv
+{
+    position:relative;
+    display:inline-block;
+}
