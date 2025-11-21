@@ -47,31 +47,85 @@ async function getSetDocNumber()
     document.getElementById('loadingOverlay').classList.add('active'); // Show overlay
 
     const text = document.getElementById('docNumber');
-    // Leggi il numero attuale
-    const r = await fetch(SHEETDB_API);
-    const data = await r.json();
-    let num = parseInt(data[0]?.numero, 10);
-    console.log("Current document number: " + num);
 
-    if (!isNaN(num)) 
+    // helper: fetch con timeout e gestione errori
+    async function fetchWithTimeout(url, options = {}, timeout = 8000) 
     {
-        await fetch('https://sheetdb.io/api/v1/sk9zycjj00bvz/numero/' + num, 
+        const controller = new AbortController();
+        const id = setTimeout(() => controller.abort(), timeout);
+        try 
         {
-            method: 'PATCH',
-            headers: 
-            {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ data: { "numero": num + 1 } })
-        });
-
-        let formattedID = (num+1).toString().padStart(4, '0');
-        text.innerHTML = `#${formattedID}`;
-        docID = formattedID;
+            const res = await fetch(url, { ...options, signal: controller.signal });
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            return await res.json();
+        } 
+        finally { clearTimeout(id); }
     }
 
-    document.getElementById('loadingOverlay').classList.remove('active'); // Hide overlay
+    // retry semplice con exponential backoff
+    async function retryFetch(url, options = {}, tries = 3, timeout = 8000) {
+        let attempt = 0;
+        let lastErr;
+        while (attempt < tries) 
+        {
+            try { return await fetchWithTimeout(url, options, timeout); } 
+            catch (err) 
+            {
+                lastErr = err;
+                attempt++;
+                const wait = Math.pow(2, attempt) * 250; // 500ms, 1000ms, 2000ms...
+                await new Promise(r => setTimeout(r, wait));
+            }
+        }
+        throw lastErr;
+    }
+
+    try
+    {
+        // Leggi il numero attuale (con retry)
+        const data = await retryFetch(SHEETDB_API);
+        let num = parseInt(data[0]?.numero, 10);
+        console.log("Current document number: " + num);
+
+        if (!isNaN(num)) 
+        {
+            // PATCH per incrementare il numero (con retry)
+            const patchUrl = SHEETDB_API + '/numero/' + num;
+            await retryFetch(patchUrl, 
+            {
+                method: 'PATCH',
+                headers: 
+                {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ data: { "numero": num + 1 } })
+            });
+
+            let formattedID = (num+1).toString().padStart(4, '0');
+            text.innerHTML = `#${formattedID}`;
+            docID = formattedID;
+
+            setCmdMessage('Successfully requested document number via API call. Generated ID #' + docID + '.', 'EXPORT');
+        } 
+        else 
+        {
+            throw new Error('Invalid response from API');
+        }
+    }
+    catch (err)
+    {
+        console.error('getSetDocNumber error:', err);
+        const msg = err.name === 'AbortError' ? 'Request timed out.' : (err.message || 'Network error.');
+        setCmdMessage('Unable to contact numbering API: ' + msg + ' Using local fallback. Generated pdf with ID #' + docID + '.', 'ERROR');
+
+        // fallback: simuliamo l'overlay e manteniamo docID invariato o impostiamo un valore locale
+        await simulateOverlay();
+    }
+    finally
+    {
+        document.getElementById('loadingOverlay').classList.remove('active'); // Hide overlay
+    }
 }
 
 async function simulateOverlay()
@@ -149,7 +203,6 @@ document.addEventListener('DOMContentLoaded', function()
             if(window.location.protocol.startsWith("http") && window.location.hostname !== "localhost" && window.location.href !== "http://127.0.0.1:5500/index.html") 
             {
                 await getSetDocNumber(); // Esegui la chiamata API
-                setCmdMessage('Successfully requested document number via API call. Generated PDF with ID #' + `${docID}.`, 'EXPORT');
             } 
             else 
             {
