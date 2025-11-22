@@ -553,28 +553,34 @@
                 </div>
 
                 <div class="power-calculator">
-                    <h3>Total power consumption</h3>
+                    <h3 style="margin-top: 16px;">Total power consumption</h3>
+                    <div class="separator"></div>
                     <div class="calculator-section">
                         <div class="fixture-input">
-                            <label>Fixture name</label>
+                            <label>Fixture</label>
                             <input type="text" id="fixture-type" placeholder="Fixture name" style="width: 200px;">
                         </div>
                         <div class="fixture-input">
-                            <label>Power per unit (W)</label>
-                            <input type="number" id="fixture-power" placeholder="Watts per unit" step="0.1" style="width: 200px;">
+                            <label>Watts</label>
+                            <input type="number" id="fixture-power" placeholder="Watts per unit" step="0.1" style="width: 180px;">
                         </div>
                         <div class="fixture-input">
                             <label>Quantity</label>
-                            <input type="number" id="fixture-quantity" placeholder="Quantity" min="1" style="width: 200px;">
+                            <input type="number" id="fixture-quantity" placeholder="Units" min="1" style="width: 100px;">
                         </div>
-                        <button onclick="powerConverter.addFixture()" class="iconButton">
-                            <span class="buttonIcon"></span>
-                            <span class="buttonText">Add</span>
-                        </button>
+                        <div style="display: flex; flex-direction: row; gap: 12px;">
+                            <button onclick="powerConverter.addFixture()" class="iconButton">
+                                <span class="buttonIcon"></span>
+                                <span class="buttonText">Add</span>
+                            </button>
+                            <button onclick="powerConverter.clearTotalPower()" class="iconButton">
+                                <span class="buttonIcon"></span>
+                                <span class="buttonText">Clear</span>
+                            </button>
+                        </div>
                     </div>
-
                     <div id="fixture-list" class="fixture-list">
-                        <h4>Fixture List</h4>
+                        <h4 id="noPowerFixtures" class="empty-message">- No fixtures added -</h4>
                         <div id="fixtures-container"></div>
                         <div id="total-power" class="total-power">
                             <strong>Total Power: <span id="total-watts">0</span> W</strong>

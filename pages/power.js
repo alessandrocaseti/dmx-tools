@@ -111,10 +111,10 @@ class PowerConverter
         
         if (!type || isNaN(power) || isNaN(quantity)) 
         {
-            alert('Please fill in all fields correctly');
+            setCmdMessage('Invalid fixture values. Please insert proper a fixture name, power consumption or quantity.', 'ERROR');
             return;
         }
-        
+        document.getElementById('noPowerFixtures').style.display = 'none';
         const fixturesContainer = document.getElementById('fixtures-container');
         const fixtureDiv = document.createElement('div');
         fixtureDiv.className = 'fixture-item';
@@ -125,7 +125,6 @@ class PowerConverter
         fixturesContainer.appendChild(fixtureDiv);
         this.updateTotalPower();
         
-        // Clear inputs
         document.getElementById('fixture-type').value = '';
         document.getElementById('fixture-power').value = '';
         document.getElementById('fixture-quantity').value = '';
@@ -140,10 +139,21 @@ class PowerConverter
         {
             const text = fixture.querySelector('span').textContent;
             const match = text.match(/(\d+\.?\d*)W × (\d+) units = (\d+\.?\d*)W/);
-            if (match) { totalPower += parseFloat(match[3]); }
+            if (match) { totalPower += parseInt(match[3]); }
         });
         
-        document.getElementById('total-watts').textContent = totalPower.toFixed(1);
+        document.getElementById('total-watts').textContent = totalPower;
+    }
+
+    clearTotalPower()
+    {
+        const container = document.getElementById('fixtures-container');
+        if (container) { while (container.firstChild) { container.removeChild(container.firstChild); } }
+        document.getElementById('noPowerFixtures').style.display = 'block';
+        document.getElementById('fixture-type').value = '';
+        document.getElementById('fixture-power').value = '';
+        document.getElementById('fixture-quantity').value = '';
+        document.getElementById('total-watts').textContent = '0';
     }
 }
 

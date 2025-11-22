@@ -72,20 +72,22 @@
 .power-calculator 
 {
     margin-top: 40px;
-    padding: 20px;
+    padding: 12px;
     background-color: var(--foreground);
     border-radius: var(--border-radius);
-}
-
-.power-calculator h3 {
-    color: #ffeb3b;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .calculator-section {
+    margin-top: 32px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .fixture-input 
@@ -93,12 +95,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 12px;
+    gap: 16px;
 }
 
 .fixture-list {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .fixture-item 
@@ -108,16 +109,16 @@
     align-items: center;
     padding: 10px;
     background-color: var(--colore-bg-header);
-    margin: 5px 0;
+    margin: 16px 0;
     border-radius: var(--border-radius);
 }
 
 .total-power 
 {
-    margin-top: 20px;
+    margin-top: 32px;
     padding: 15px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #111;
+    color: var(--colore-giallo);
     border-radius: var(--border-radius);
     text-align: center;
     font-size: 1.2em;
