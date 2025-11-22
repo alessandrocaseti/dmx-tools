@@ -361,6 +361,16 @@
             </div>
         </div>
 
+        <!-- DIP Link address to fixture modal -->
+        <div id="fixtureLinkModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="dipSwitch.closeFixtureDialog()"></span>
+                <h2>Link Fixture to Address</h2>
+                <div class="separator"></div>
+                <div id="fixtureLinkList"></div>
+            </div>
+        </div>
+
         <!-- DIP Switch -->
         <div id="dip" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">DIP Switch</h1>
@@ -692,14 +702,6 @@
             </div>
             <div id="databaseButtons"></div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
-        </div>
-
-        <div id="fixtureLinkModal" class="modal">
-            <div class="modal-content">
-                <span class="close-button" onclick="dipSwitch.closeFixtureDialog()">&times;</span>
-                <h2>Link Fixture to Address</h2>
-                <div id="fixtureLinkList"></div>
-            </div>
         </div>
 
         <!-- Command Bar -->

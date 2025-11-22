@@ -133,10 +133,13 @@
 {
     color: var(--colore-testo-chiaro);
     float: right;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s;
+    user-select: none;
+    font-family: IconFont;
+    text-align: right;
 }
 
 .close-button:hover,
@@ -149,9 +152,8 @@
 {
     overflow-y: auto;
     height: 100%;
-    border-top: 1px solid var(--colore-bordo);
-    margin-top: 16px;
-    padding-top: 16px;
+    margin-top: 12px;
+    align-items: center;
 }
 
 #fixtureLinkList .fixture-item 

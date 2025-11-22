@@ -259,14 +259,14 @@ class DMXDIPSwitch
         const fixtureList = document.getElementById('fixtureLinkList');
         fixtureList.innerHTML = '';
 
-        if (patchedFixtures.length === 0) { fixtureList.innerHTML = '<p>No fixtures available in the patch.</p>';} 
+        if (patchedFixtures.length === 0) { fixtureList.innerHTML = '<p class="empty-message">- No fixtures available in the patch -</p>';} 
         else 
         {
             patchedFixtures.forEach((fixture) => 
             {
                 const fixtureItem = document.createElement('button');
                 fixtureItem.className = 'fixture-item';
-                fixtureItem.textContent = `${fixture.nome} (${fixture.tipo}) - Address: ${fixture.canale}`;
+                fixtureItem.textContent = `${fixture.nome} (${fixture.tipo}) - Address ${fixture.canale}`;
                 fixtureItem.onclick = () => 
                 {
                     this.storedAddresses[addressIndex].fixture = fixture;
