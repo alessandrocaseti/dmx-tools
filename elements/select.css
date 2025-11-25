@@ -12,6 +12,7 @@ select
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    user-select: none;
 }
 
 select:focus 
@@ -30,6 +31,7 @@ select:focus
     font-size:1.2em;
     pointer-events:none;
     color:#ffeb3b;
+    user-select: none;
 }
 
 .selectDiv

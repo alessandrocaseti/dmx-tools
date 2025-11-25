@@ -176,7 +176,7 @@
 .mode-item 
 {
     background-color: #202020;
-    padding: 16px;
+    padding: 12px;
     border-radius: 8px;
     text-align: left;
 }
@@ -195,8 +195,13 @@
 .mode-channel 
 {
     background-color: #2c2c2c;
-    padding: 8px 12px;
+    padding: 0px 12px;
     border-radius: 4px;
     font-size: 14px;
     margin-bottom: 6px;
+    display: grid;
+    grid-template-columns: 24px minmax(160px, 260px) 1fr 80px;
+    align-items: center;
+    gap: 8px;
+    line-height: 0%;
 }

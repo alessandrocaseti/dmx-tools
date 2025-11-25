@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function()
                         {
                             mode.channels.forEach((channel, id) => 
                             {
-                                modesHTML += `<div class="mode-channel">${id + 1}<span style="display: inline-block; width: 2ch;">&#9;</span>${channel}</div>`;
+                                modesHTML += `<div class="mode-channel"><p>${id + 1}</p><p>${channel}</p></div>`;
                             });
                         }
                         modesHTML += `
