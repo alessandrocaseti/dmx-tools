@@ -62,6 +62,7 @@
 [] Brand header (name/logo, location, website)
 [x] Database version
 [x] Total/folder fixture count
+[] More physical details
 
 
 ## Settings

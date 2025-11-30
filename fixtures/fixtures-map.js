@@ -1,6 +1,7 @@
 // DMX TOOLS - Developed by Alessandro Caseti
 
-const FIXTURE_DATABASE_VERSION = "0.1"
+const FIXTURE_DATABASE_VERSION = "0.1";
+const QXF_DATABASE_VERSION = "5.0.1";
 
 // Define the folder structure directly in the code
 const fixtureFolders = 
