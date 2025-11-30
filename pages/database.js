@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function()
                             if(caps < totalCaps - 1) { channelsHTML += `<div id='${"sep" + caps}' class="capability-separator"></div>`; } caps++;});
                         channelsHTML += '</ul>';
                     } 
-                    else { channelsHTML += '<p>No capabilities defined.</p>'; }
+                    else { channelsHTML += '<p class="empty-message">- No capabilities defined -</p>'; }
                     channelsHTML += `</div></div>`;
                 });
                 channelsHTML += '</div>';
@@ -342,7 +342,7 @@ document.addEventListener("DOMContentLoaded", function()
             let physicalHTML = '';
             if (data.physical) 
             {
-                physicalHTML = '<h3>Physical Details</h3><div class="separator"></div><div class="physical-details">';
+                physicalHTML = '<h3>Physical details</h3><div class="separator"></div><div class="physical-details">';
                 if (data.physical.dimensions) 
                 {
                     physicalHTML += `
