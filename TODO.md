@@ -60,8 +60,8 @@
 [x] Fixture page creation
 [] Convert all QLC+ 5.0.1 fixtures
 [] Brand header (name/logo, location, website)
-[] Database version
-[] Total/folder fixture count
+[x] Database version
+[x] Total/folder fixture count
 
 
 ## Settings
