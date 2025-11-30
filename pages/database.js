@@ -50,11 +50,22 @@ function updateBackButton()
     }
 }
 
+function editFixture()
+{
+    const editBtn = document.getElementById("databaseEditButton");
+
+    if(editBtn)
+    {
+        setCmdMessage('Opened fixture JSON file in a new browser page.', 'EDIT FIXTURE');
+        window.open('https://github.com/alessandrocaseti/dmx-tools/blob/main/fixtures/' + currentFolder + '/' + currentFile, '_blank').focus();
+        return;
+    };
+}
+
 document.addEventListener("DOMContentLoaded", function() 
 {
     const databaseButtonsDiv = document.getElementById("databaseButtons");
     const backBtn = document.getElementById("databaseBackButton");
-
     backBtn.onclick = function() 
     {
         if (currentView === "files") 
@@ -378,6 +389,10 @@ document.addEventListener("DOMContentLoaded", function()
                 ${channelsHTML}
                 ${modesHTML}
                 ${physicalHTML}
+                <button id="databaseEditButton" onClick="editFixture();" class="iconButton" style="margin-top: 48px;">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Edit this fixture</span>
+                </button>
             `;
 
             databaseButtonsDiv.appendChild(detailsDiv);
