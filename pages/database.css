@@ -180,6 +180,32 @@
     margin-top: 16px;
 }
 
+.capability-range
+{
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 16px;
+    margin-bottom: 4px;
+}
+
+.capability-range strong
+{
+    font-family: Roboto Mono, monospace;
+}
+
+.capability-separator
+{
+    height: 1px;
+    width: 98%;
+    margin: 0 auto;
+    background-color: var(--colore-bordo);
+}
+
+.capability-range span
+{
+    margin-left: 24px;
+}
+
 .physical-details 
 {
     display: grid;

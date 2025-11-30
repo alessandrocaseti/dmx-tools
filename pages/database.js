@@ -300,7 +300,11 @@ document.addEventListener("DOMContentLoaded", function()
                     if (channel.capabilities && channel.capabilities.length > 0) 
                     {
                         channelsHTML += '<ul>';
-                        channel.capabilities.forEach(cap => { channelsHTML += `<li><strong>${cap.min}-${cap.max}:</strong> ${cap.name}</li>`; });
+                        let caps = 0;
+                        let totalCaps = channel.capabilities.length;
+                        console.log("ttcs" + totalCaps)
+                        channel.capabilities.forEach(cap => { channelsHTML += `<li class="capability-range"><strong>${cap.min.padStart(3, 0)}-${cap.max.padStart(3, 0)}</strong> <span>${cap.name}</span></li>`
+                            if(caps < totalCaps - 1) { channelsHTML += `<div id='${"sep" + caps}' class="capability-separator"></div>`; } caps++;});
                         channelsHTML += '</ul>';
                     } 
                     else { channelsHTML += '<p>No capabilities defined.</p>'; }
