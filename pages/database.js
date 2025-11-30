@@ -3,6 +3,7 @@
 let currentView = "folders"; // "folders", "files", "details"
 let currentFolder = "";
 let currentFile = "";
+let currentFixturesCount = 0;
 
 function getFilesForFolder(folder) 
 {
@@ -12,6 +13,7 @@ function getFilesForFolder(folder)
 function updateAddressBar() 
 {
     const addressBar = document.getElementById("databaseAddressBar");
+    const fixturesCount = document.getElementById("fixtures-count");
     let path = '';
     const brandPattern = new RegExp('^' + currentFolder + '[-_ ]*', 'i');
 
@@ -31,6 +33,8 @@ function updateAddressBar()
     }
 
     addressBar.textContent = path;
+    if(currentFixturesCount > 1) { fixturesCount.textContent = currentFixturesCount + " fixtures found"; }
+    else { fixturesCount.textContent = currentFixturesCount + " fixture found"; }
 }
 
 function updateBackButton() 
@@ -62,8 +66,51 @@ document.addEventListener("DOMContentLoaded", function()
             loadFiles(currentFolder);
         }
     };
+    
+    // Initial load
+    loadFolders();
+    countFixtures();
 
-    loadFolders(); // Initial load
+    function countFixtures()
+    {
+        const fixturesCount =  document.getElementById("fixtures-count");
+
+        if (currentView === "details") 
+        {
+            fixturesCount.style.display = "none";
+            return;
+        } 
+        else 
+        {
+            fixturesCount.style.display = "block";
+        }
+
+        // Se non ci sono le variabili globali attese, metti a zero
+        if (typeof fixtureFolders === 'undefined' || typeof folderFiles === 'undefined') 
+        {
+            currentFixturesCount = 0;
+            return 0;
+        }
+
+        // Se siamo nella vista principale (tutte le cartelle) conta tutte le fixtures
+        if (currentView === "folders")
+        {
+            let total = 0;
+            fixtureFolders.forEach(folder => 
+            {
+                const files = getFilesForFolder(folder) || [];
+                total += files.length;
+            });
+            currentFixturesCount = total;
+        }  
+        else // Se siamo dentro una cartella (files o details) conta i file di quella cartella
+        {
+            const files = getFilesForFolder(currentFolder) || [];
+            currentFixturesCount = files.length;
+        }
+
+        return currentFixturesCount;
+    }
 
     function loadFolders() 
     {
@@ -82,6 +129,7 @@ document.addEventListener("DOMContentLoaded", function()
             databaseButtonsDiv.appendChild(folderButton);
         });
 
+        countFixtures();
         updateAddressBar();
         updateBackButton();
     }
@@ -109,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function()
             databaseButtonsDiv.appendChild(fileButton);
         });
 
+        countFixtures();
         updateAddressBar();
         updateBackButton();
     }
@@ -117,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function()
     {
         currentView = "details";
         currentFile = file;
-        
+        countFixtures();
         databaseButtonsDiv.innerHTML = '<div style="text-align: center; padding: 50px;"><p>Loading fixture details...</p></div>';
         
         // Fetch the JSON file

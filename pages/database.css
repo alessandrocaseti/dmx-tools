@@ -1,12 +1,26 @@
-#databaseButtons 
+#databaseButtons
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    max-width: 80%;
+    align-content: flex-start;
+    margin-top: 16px;
+}
+
+#databaseNavBar
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 18px;
-    justify-content: center;
+    align-items: center;
+    justify-content: left;
     margin: 0 auto 0 auto;
-    max-width: 80%;
+    max-width: 75%;
     align-content: flex-start;
 }
 
@@ -16,8 +30,8 @@
     border-radius: 8px;
     padding: 24px;
     margin: 24px auto;
-    max-width: 86%;
-    min-width: 86%;
+    max-width: 90%;
+    min-width: 90%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -235,4 +249,15 @@
 .mode-text, .mode-channel-number
 {
     margin-top: 0px;
+}
+
+#fixtures-count
+{
+    margin-left: auto;
+    text-align: right;
+    font-size: 20px;
+    margin-top: 0px;
+    color: #707070;
+    user-select: none;
+    font-style: italic;
 }
