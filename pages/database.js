@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function()
                 let channelsHTML = '';
                 if (data.channels && data.channels.length > 0) 
                 {
-                    channelsHTML = '<h3>Channels</h3><div class="channels-container">';
+                    channelsHTML = '<h3>Channels</h3><div class="separator"></div><div class="channels-container">';
                     data.channels.forEach(channel => 
                     {
                         let capabilitiesCount = channel.capabilities ? channel.capabilities.length : 0;
@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function()
                 let modesHTML = '';
                 if (data.modes && data.modes.length > 0) 
                 {
-                    modesHTML = '<h3>Modes</h3><div class="modes-container">';
+                    modesHTML = '<h3>Channel modes</h3><div class="separator"></div><div class="modes-container">';
                     data.modes.forEach(mode => 
                     {
                         modesHTML += `
@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function()
                         {
                             mode.channels.forEach((channel, id) => 
                             {
-                                modesHTML += `<div class="mode-channel"><p>${id + 1}</p><p>${channel}</p></div>`;
+                                modesHTML += `<div class="mode-channel"><p>${id + 1}</p><p class="mode-text">${channel}</p></div>`;
                             });
                         }
                         modesHTML += `
@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function()
                 let physicalHTML = '';
                 if (data.physical) 
                 {
-                    physicalHTML = '<h3>Physical Details</h3><div class="physical-details">';
+                    physicalHTML = '<h3>Physical Details</h3><div class="separator"></div><div class="physical-details">';
                     if (data.physical.dimensions) 
                     {
                         physicalHTML += `
@@ -302,8 +302,11 @@ document.addEventListener("DOMContentLoaded", function()
                 }
 
                 detailsDiv.innerHTML = `
+                    <div class="fixtureHeaderDiv">
                     <h2>${data.manufacturer || folder} - ${data.model || file.replace('.json', '')}</h2>
-                    <h3>Type: ${data.type || 'N/A'}</h3>
+                    <h3 style="text-align: right; line-height: 0%;margin-top: -20px;">Type: ${data.type || 'N/A'}</h3>
+                    </div>   
+                    <div class="separator" style="margin-top: -16px;"></div>
                     ${channelsHTML}
                     ${modesHTML}
                     ${physicalHTML}
