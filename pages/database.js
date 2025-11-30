@@ -46,7 +46,6 @@ function updateBackButton()
     }
 }
 
-// Main logic
 document.addEventListener("DOMContentLoaded", function() 
 {
     const databaseButtonsDiv = document.getElementById("databaseButtons");
@@ -114,12 +113,11 @@ document.addEventListener("DOMContentLoaded", function()
         updateBackButton();
     }
 
-    // Function to load fixture details from a JSON file
-    function loadFixtureDetails(folder, file) {
+    function loadFixtureDetails(folder, file) 
+    {
         currentView = "details";
         currentFile = file;
         
-        // Show loading message
         databaseButtonsDiv.innerHTML = '<div style="text-align: center; padding: 50px;"><p>Loading fixture details...</p></div>';
         
         // Fetch the JSON file
@@ -267,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function()
                         {
                             mode.channels.forEach((channel, id) => 
                             {
-                                modesHTML += `<div class="mode-channel"><p>${id + 1}</p><p class="mode-text">${channel}</p></div>`;
+                                modesHTML += `<div class="mode-channel"><p class="mode-channel-number">${id + 1}</p><p class="mode-text">${channel}</p></div>`;
                             });
                         }
                         modesHTML += `
@@ -303,7 +301,7 @@ document.addEventListener("DOMContentLoaded", function()
 
                 detailsDiv.innerHTML = `
                     <div class="fixtureHeaderDiv">
-                    <h2>${data.manufacturer || folder} - ${data.model || file.replace('.json', '')}</h2>
+                    <h2>${data.model || file.replace('.json', '')}</h2>
                     <h3 style="text-align: right; line-height: 0%;margin-top: -20px;">Type: ${data.type || 'N/A'}</h3>
                     </div>   
                     <div class="separator" style="margin-top: -16px;"></div>
