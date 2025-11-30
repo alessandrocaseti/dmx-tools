@@ -344,6 +344,28 @@ document.addEventListener("DOMContentLoaded", function()
                         <div><strong>DMX Connector</strong><br><br> ${data.physical.technical.dmxConnector || 'N/A'}</div>
                     `;
                 }
+                if (data.physical.bulb) 
+                {
+                    physicalHTML += `
+                        <div><strong>Bulb</strong><br><br> ${data.physical.bulb.type || 'N/A'} W</div>
+                        <div><strong>Lumens</strong><br><br> ${data.physical.bulb.lumens || 'N/A'}</div>
+                        <div><strong>Color Temperature</strong><br><br> ${data.physical.bulb.colourTemperature || 'N/A'} K</div>
+                    `;
+                }
+                if (data.physical.lens) 
+                {
+                    physicalHTML += `
+                        <div><strong>Min angle</strong><br><br> ${data.physical.lens.degreesMin || 'N/A'}°</div>
+                        <div><strong>Max angle</strong><br><br> ${data.physical.lens.degreesMax || 'N/A'}°</div>
+                    `;
+                }
+                if (data.physical.focus) 
+                {
+                    physicalHTML += `
+                        <div><strong>Max pan</strong><br><br> ${data.physical.focus.panMax || 'N/A'}°</div>
+                        <div><strong>Max tilt</strong><br><br> ${data.physical.focus.tiltMax || 'N/A'}°</div>
+                    `;
+                }
                 physicalHTML += '</div>';
             }
 
