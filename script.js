@@ -11,6 +11,8 @@ const author = 'Alessandro Caseti';
 
 function navigateTo(page)
 {
+    window.scrollTo(0, 0);
+
     document.getElementById('home').style.display = 'none';
     document.getElementById('homeNavButton').classList.remove('selectedNavButton');
     document.getElementById('homeNavButton').classList.add('unselectedNavButton');
