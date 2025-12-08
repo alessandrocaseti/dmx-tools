@@ -75,8 +75,8 @@ class PowerConverter
         
         else 
         {
-            result = 'Please enter exactly 2 values to calculate the third';
-            calculation = '';
+            setCmdMessage("Please enter two valid values to calculate the third", 'ERROR')
+            return;
         }
         
         this.displayResult(result, calculation);

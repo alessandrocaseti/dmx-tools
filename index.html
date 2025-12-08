@@ -521,28 +521,26 @@
             <h1 class="pageTitle">Power Calculator</h1>
             <div class="defaultPageContent">
                 <div class="converter-div">
-                    <h3 style="margin-top: 12px;">Watt / Ampere / Volt converter</h3>
+                    <h3 style="margin-top: 12px;">Electrical calculator</h3>
                     <div class="separator"></div>
                     <div class="converter-grid">
                         <div class="input-group">
                             <label for="watts">Power (W)</label>
                             <input type="number" id="watts" placeholder="Watts" step="0.01" style="width: 100px;">
                         </div>
-
-                        <div class="input-group">
-                            <label for="volts">Voltage (V)</label>
-                            <input type="number" id="volts" placeholder="Volts" step="0.01" style="width: 100px;">
-                        </div>
-
                         <div class="input-group">
                             <label for="amperes">Current (A)</label>
                             <input type="number" id="amperes" placeholder="Amperes" step="0.01" style="width: 100px;">
+                        </div>
+                        <div class="input-group">
+                            <label for="volts">Voltage (V)</label>
+                            <input type="number" id="volts" placeholder="Volts" step="0.01" style="width: 100px;">
                         </div>
                     </div>
                     <div class="converter-buttons">
                         <button onclick="powerConverter.calculate()" class="iconButton">
                             <span class="buttonIcon"></span>
-                            <span class="buttonText">Calculate Missing Value</span>
+                            <span class="buttonText">Solve for missing value</span>
                         </button>
                         <button onclick="powerConverter.clear()" class="iconButton">
                             <span class="buttonIcon"></span>
@@ -557,15 +555,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="power-formulas" style="display: none;">
-                    <h3>Formulas Used</h3>
-                    <ul>
-                        <li><strong>Watts (P) = Volts (V) x Amperes (I)</strong></li>
-                        <li><strong>Volts (V) = Watts (P) ÷ Amperes (I)</strong></li>
-                        <li><strong>Amperes (I) = Watts (P) ÷ Volts (V)</strong></li>
-                    </ul>
                 </div>
 
                 <div class="power-calculator">
