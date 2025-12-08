@@ -13,7 +13,6 @@ function getFilesForFolder(folder)
 function updateAddressBar() 
 {
     const addressBar = document.getElementById("databaseAddressBar");
-    const fixturesCount = document.getElementById("fixtures-count");
     let path = '';
     const brandPattern = new RegExp('^' + currentFolder + '[-_ ]*', 'i');
 
@@ -38,8 +37,6 @@ function updateAddressBar()
     }
 
     addressBar.textContent = path;
-    if(currentFixturesCount > 1) { fixturesCount.textContent = currentFixturesCount + " fixtures found"; }
-    else { fixturesCount.textContent = currentFixturesCount + " fixture found"; }
 
     const brandFixtures =  document.getElementById("currentBrandFixtures");
     if (brandFixtures) { brandFixtures.innerHTML = currentFixturesCount; }
@@ -92,16 +89,16 @@ document.addEventListener("DOMContentLoaded", function()
 
     function countFixtures()
     {
-        const fixturesCount =  document.getElementById("fixtures-count");
+        const sbox =  document.getElementById("fixture-searchbox");
 
         if (currentView === "details") 
         {
-            fixturesCount.style.display = "none";
+            sbox.style.display = "none";
             return;
         } 
         else 
         {
-            fixturesCount.style.display = "block";
+            sbox.style.display = "block";
         }
 
         // Se non ci sono le variabili globali attese, metti a zero
