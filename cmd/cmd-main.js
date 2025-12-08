@@ -794,6 +794,13 @@ function handleCommand(event)
             return;
         }
 
+        else if (command === 'liveclock')
+        {
+            setCmdMessage('Opened liveclock app in a new browser page.', 'LIVECLOCK');
+            window.open('https://alessandrocaseti.github.io/live-clock', '_blank').focus();
+            return;
+        }
+
         else if (command === 'qxf')
         {
             setCmdMessage('Opened QXF to JSON converter in a new browser page.', 'QXF');
