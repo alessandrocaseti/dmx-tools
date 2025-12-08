@@ -18,7 +18,8 @@ function updateAddressBar()
 
     if (currentView === "folders") 
     {
-        path = currentFixturesCount + " fixtures found";
+        if(currentFixturesCount === 1) { path = currentFixturesCount + " fixture found"; }
+        else { path = currentFixturesCount + " fixtures found"; }
     }
     
     else if (currentView === "files") 
@@ -83,6 +84,119 @@ document.addEventListener("DOMContentLoaded", function()
         }
     };
     
+    // --- Ricerca ---
+    let previousView = currentView;
+    let previousFolder = currentFolder;
+    const searchBox = document.getElementById("fixture-searchbox");
+
+    function restorePreviousView()
+    {
+        // Ripristina la vista precedente (cartelle o files) quando la ricerca è vuota
+        if (previousView === "files" && previousFolder) { loadFiles(previousFolder); }
+        else { loadFolders(); }
+    }
+
+    function performSearch(query)
+    {
+        const q = (query || '').trim().toLowerCase();
+        if (!q)
+        {
+            // nessuna query: ripristina vista precedente
+            restorePreviousView();
+            return;
+        }
+
+        // salva lo stato precedente per un possibile restore
+        previousView = currentView;
+        previousFolder = currentFolder;
+
+        // Mostra risultati: svuota area e metti header
+        databaseButtonsDiv.innerHTML = '';
+        const header = document.createElement('div');
+        header.className = 'search-results-header';
+        header.style.width = '100%';
+        header.style.textAlign = 'center';
+        header.style.marginBottom = '12px';
+        header.style.color = 'var(--colore-testo)';
+        header.style.fontStyle = 'italic';
+        header.textContent = `Results for "${query}"`;
+        databaseButtonsDiv.appendChild(header);
+
+        const results = [];
+
+        // Cerca in tutte le cartelle e file
+        if (typeof fixtureFolders !== 'undefined' && typeof folderFiles !== 'undefined')
+        {
+            fixtureFolders.forEach(folder =>
+            {
+                const files = getFilesForFolder(folder) || [];
+                // match su nome cartella
+                if (folder.toLowerCase().includes(q))
+                {
+                    // aggiungi tutti i file della cartella come risultati
+                    files.forEach(file => results.push({ folder, file }));
+                }
+                else
+                {
+                    // match su file singolo
+                    files.forEach(file =>
+                    {
+                        const fileName = file.replace('.json','').replace(/[-_]/g,' ').toLowerCase();
+                        if (fileName.includes(q)) { results.push({ folder, file }); }
+                    });
+                }
+            });
+        }
+
+        // Se non ci sono risultati, mostra messaggio
+        if (results.length === 0)
+        {
+            const empty = document.createElement('div');
+            empty.className = 'empty-message';
+            empty.style.width = '100%';
+            empty.style.textAlign = 'center';
+            empty.style.padding = '28px';
+            empty.textContent = '- No results -';
+            databaseButtonsDiv.appendChild(empty);
+            currentFixturesCount = 0;
+            updateAddressBar();
+            updateBackButton();
+            return;
+        }
+
+        // Crea pulsanti per i risultati (ordinati per brand quindi nome)
+        results.forEach(r =>
+        {
+            const fileButton = document.createElement("button");
+            fileButton.className = "fileButton";
+            let displayName = r.file.replace('.json', '');
+            const brandPattern = new RegExp('^' + r.folder + '[-_ ]*', 'i');
+            displayName = displayName.replace(brandPattern, '');
+            displayName = displayName.replace(/-/g, ' ').trim();
+            fileButton.innerText = `${r.folder} • ${displayName}`;
+            fileButton.onclick = () => loadFixtureDetails(r.folder, r.file);
+            databaseButtonsDiv.appendChild(fileButton);
+        });
+
+        // aggiorna contatore e barra indirizzo (manteniamo currentView su 'folders' per coerenza)
+        currentView = "folders";
+        currentFixturesCount = results.length;
+        updateAddressBar();
+        updateBackButton();
+    }
+
+    if (searchBox)
+    {
+        // Esegui ricerca ad ogni input (debounce semplice)
+        let debounceTimer = null;
+        searchBox.addEventListener('input', (e) =>
+        {
+            const val = e.target.value;
+            if (debounceTimer) clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => performSearch(val), 180);
+        });
+    }
+
     // Initial load
     loadFolders();
     countFixtures();
@@ -199,7 +313,9 @@ document.addEventListener("DOMContentLoaded", function()
     {
         currentView = "details";
         currentFile = file;
+        currentFolder = folder;
         countFixtures();
+        document.getElementById("fixture-searchbox").value = "";
         databaseButtonsDiv.innerHTML = '<div style="text-align: center; padding: 50px;"><p class="empty-message">Loading fixture details...</p></div>';
         document.getElementById("brandHeroDiv").innerHTML = "";
 
