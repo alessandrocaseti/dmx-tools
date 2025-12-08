@@ -63,8 +63,8 @@
 [x] Database version
 [x] Total/folder fixture count
 [x] More physical details
-[] Searchbox
-
+[x] Searchbox
+[] CMD Commands / status messages
 
 ## Settings
 
