@@ -6,7 +6,7 @@
 [] Undo/redo mechanism via CMD
 [] CMD history is saved in localstorage (?)
 [x] Main version
-[] Create custom tags for controls
+[] Create custom tags for controls (?)
 
 ## Patch
 
@@ -58,13 +58,14 @@
 [x] QXF to JSON Converter
 [x] Initialize database/browser algorythm
 [x] Fixture page creation
-[] Convert all QLC+ 5.0.1 fixtures
 [x] Brand header (name/logo, location, website)
 [x] Database version
 [x] Total/folder fixture count
 [x] More physical details
 [x] Searchbox
 [] CMD Commands / status messages
+[] Convert all QLC+ 5.1.0 fixtures to database version 1.1
+[] Powered by info text
 
 ## Settings
 
