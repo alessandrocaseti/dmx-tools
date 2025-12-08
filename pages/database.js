@@ -112,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function()
 
         // Mostra risultati: svuota area e metti header
         databaseButtonsDiv.innerHTML = '';
+        document.getElementById("brandHeroDiv").innerHTML = "";
         const header = document.createElement('div');
         header.className = 'search-results-header';
         header.style.width = '100%';
@@ -174,6 +175,13 @@ document.addEventListener("DOMContentLoaded", function()
             displayName = displayName.replace(brandPattern, '');
             displayName = displayName.replace(/-/g, ' ').trim();
             fileButton.innerText = `${r.folder} • ${displayName}`;
+            if (fileButton.innerText.length > 39)
+            {
+                const fullText = fileButton.innerText;
+                fileButton.innerText = fullText.slice(0, 36) + '...';
+                fileButton.title = fullText;
+                fileButton.setAttribute('aria-label', fullText);
+            }
             fileButton.onclick = () => loadFixtureDetails(r.folder, r.file);
             databaseButtonsDiv.appendChild(fileButton);
         });
@@ -247,7 +255,6 @@ document.addEventListener("DOMContentLoaded", function()
         currentView = "folders";
         currentFolder = "";
         currentFile = "";
-
         databaseButtonsDiv.innerHTML = '';
         document.getElementById("brandHeroDiv").innerHTML = "";
 
@@ -441,7 +448,6 @@ document.addEventListener("DOMContentLoaded", function()
                         channelsHTML += '<ul>';
                         let caps = 0;
                         let totalCaps = channel.capabilities.length;
-                        console.log("ttcs" + totalCaps)
                         channel.capabilities.forEach(cap => { channelsHTML += `<li class="capability-range"><strong>${cap.min.padStart(3, 0)}-${cap.max.padStart(3, 0)}</strong> <span>${cap.name}</span></li>`
                             if(caps < totalCaps - 1) { channelsHTML += `<div id='${"sep" + caps}' class="capability-separator"></div>`; } caps++;});
                         channelsHTML += '</ul>';
@@ -467,7 +473,7 @@ document.addEventListener("DOMContentLoaded", function()
                     {
                         mode.channels.forEach((channel, id) => 
                         {
-                            modesHTML += `<div class="mode-channel"><p class="mode-channel-number">${id + 1}</p><p class="mode-text">${channel}</p></div>`;
+                            modesHTML += `<div class="mode-channel" title="${channel}" aria-label="${channel}"><p class="mode-channel-number">${id + 1}</p><p class="mode-text">${channel}</p></div>`;
                         });
                     }
                     modesHTML += `
