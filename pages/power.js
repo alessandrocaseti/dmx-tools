@@ -87,7 +87,7 @@ class PowerConverter
         const resultDiv = document.getElementById('calculation-result');
         resultDiv.innerHTML = `
             <div class="result-item">
-                <h4>Result:</h4>
+                <h4>Result</h4>
                 <p class="result-value">${result}</p>
                 ${calculation ? `<p class="calculation-steps">${calculation}</p>` : ''}
             </div>
@@ -99,7 +99,10 @@ class PowerConverter
         document.getElementById('watts').value = '';
         document.getElementById('volts').value = '';
         document.getElementById('amperes').value = '';
-        document.getElementById('calculation-result').innerHTML = '';
+        document.getElementById('calculation-result').innerHTML = `<div class="result-item">
+                                <p class="result-value">Result</p>
+                                <p class="calculation-steps">Result will be displayed here</p>
+                            </div>`;
         this.validateInputs();
     }
 

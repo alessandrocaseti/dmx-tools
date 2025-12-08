@@ -520,38 +520,43 @@
         <div id="power" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Power Calculator</h1>
             <div class="defaultPageContent">
-                <h2>Watt / Ampere / Volt Converter</h2>
+                <div class="converter-div">
+                    <h3 style="margin-top: 12px;">Watt / Ampere / Volt converter</h3>
+                    <div class="separator"></div>
+                    <div class="converter-grid">
+                        <div class="input-group">
+                            <label for="watts">Power (W)</label>
+                            <input type="number" id="watts" placeholder="Watts" step="0.01" style="width: 100px;">
+                        </div>
 
-                <div class=" converter-grid">
-                    <div class="input-group">
-                        <label for="watts">Power (W)</label>
-                        <input type="number" id="watts" placeholder="Watts" step="0.01" style="width: 100px;">
+                        <div class="input-group">
+                            <label for="volts">Voltage (V)</label>
+                            <input type="number" id="volts" placeholder="Volts" step="0.01" style="width: 100px;">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="amperes">Current (A)</label>
+                            <input type="number" id="amperes" placeholder="Amperes" step="0.01" style="width: 100px;">
+                        </div>
                     </div>
-
-                    <div class="input-group">
-                        <label for="volts">Voltage (V)</label>
-                        <input type="number" id="volts" placeholder="Volts" step="0.01" style="width: 100px;">
+                    <div class="converter-buttons">
+                        <button onclick="powerConverter.calculate()" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Calculate Missing Value</span>
+                        </button>
+                        <button onclick="powerConverter.clear()" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Clear all</span>
+                        </button>
                     </div>
-
-                    <div class="input-group">
-                        <label for="amperes">Current (A)</label>
-                        <input type="number" id="amperes" placeholder="Amperes" step="0.01" style="width: 100px;">
+                    <div id="result-display" class="total-power">
+                        <div id="calculation-result" class="calculation-result">
+                            <div class="result-item">
+                                <p class="result-value">Result</p>
+                                <p class="calculation-steps">Result will be displayed here</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="converter-buttons">
-                    <button onclick="powerConverter.calculate()" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Calculate Missing Value</span>
-                    </button>
-                    <button onclick="powerConverter.clear()" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Clear all</span>
-                    </button>
-                </div>
-
-                <div id="result-display" class="result-display">
-                    <div id="calculation-result" class="calculation-result"></div>
                 </div>
 
                 <div class="power-formulas" style="display: none;">
@@ -564,7 +569,7 @@
                 </div>
 
                 <div class="power-calculator">
-                    <h3 style="margin-top: 16px;">Total power consumption</h3>
+                    <h3 style="margin-top: 16px;">Total power calculator</h3>
                     <div class="separator"></div>
                     <div class="calculator-section">
                         <div class="fixture-input">
