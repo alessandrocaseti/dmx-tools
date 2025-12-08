@@ -29,7 +29,7 @@
     background-color: var(--foreground);
     border-radius: 8px;
     padding: 24px;
-    margin: 24px auto;
+    margin: 8px auto;
     max-width: 90%;
     min-width: 90%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -286,4 +286,93 @@
     color: #707070;
     user-select: none;
     font-style: italic;
+}
+
+.brand-hero
+{
+    height: 80px; /* max height */
+    border-radius: var(--border-radius);
+    background: var(--foreground);
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 75%;
+    margin-top: 16px;
+}
+
+.brandContainer
+{
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    grid-template-areas: "brand fixtures country website";
+    gap: 12px 80px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.brand-name
+{
+    grid-area: brand;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--colore-testo);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    margin-left: 12px;
+}
+
+.brand-fixtures
+{
+    font-size: 1.1rem;
+    grid-area: fixtures;
+    text-align: right;
+    user-select: none;
+}
+
+.brand-country
+{
+    font-size: 1.1rem;
+    grid-area: country;
+    color: var(--colore-testo);
+    text-align: right;
+    min-width: 110px;
+    user-select: none;
+}
+
+.brand-website
+{
+    font-size: 1.1rem;
+    grid-area: website;
+    text-align: right;
+    color: var(--colore-giallo);
+    text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+    margin-right: 12px;
+    transition: all .5s;
+}
+
+.brand-website:hover
+{
+    color: #d5c113;
+}
+
+@media (max-width: 800px)
+{
+    .brandContainer
+    {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "brand brand"
+            "fixtures website";
+        gap: 8px 12px;
+    }
 }

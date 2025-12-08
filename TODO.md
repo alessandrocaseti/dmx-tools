@@ -59,10 +59,11 @@
 [x] Initialize database/browser algorythm
 [x] Fixture page creation
 [] Convert all QLC+ 5.0.1 fixtures
-[] Brand header (name/logo, location, website)
+[x] Brand header (name/logo, location, website)
 [x] Database version
 [x] Total/folder fixture count
-[] More physical details
+[x] More physical details
+[] Searchbox
 
 
 ## Settings

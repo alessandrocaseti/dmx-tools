@@ -19,22 +19,30 @@ function updateAddressBar()
 
     if (currentView === "folders") 
     {
-        path = 'Fixtures / ';
+        path = currentFixturesCount + " fixtures found";
     }
     
     else if (currentView === "files") 
     {
-        path = 'Fixtures / ' + currentFolder + ' / ';
+        path ='Fixtures / ';
+    }
+    
+    else if (currentView === "files") 
+    {
+        path = 'Fixtures / ';
     }
     
     else if (currentView === "details") 
     {
-        path = 'Fixtures / ' + currentFolder + ' / ' + (currentFile ? currentFile.replace('.json', '').replace(/-/g, ' ').replace(brandPattern, '').trim() : '');
+        path = 'Fixtures / ' + currentFolder + ' / ';
     }
 
     addressBar.textContent = path;
     if(currentFixturesCount > 1) { fixturesCount.textContent = currentFixturesCount + " fixtures found"; }
     else { fixturesCount.textContent = currentFixturesCount + " fixture found"; }
+
+    const brandFixtures =  document.getElementById("currentBrandFixtures");
+    if (brandFixtures) { brandFixtures.innerHTML = currentFixturesCount; }
 }
 
 function updateBackButton() 
@@ -130,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function()
         currentFile = "";
 
         databaseButtonsDiv.innerHTML = '';
+        document.getElementById("brandHeroDiv").innerHTML = "";
 
         fixtureFolders.forEach(folder => 
         {
@@ -152,6 +161,22 @@ document.addEventListener("DOMContentLoaded", function()
         currentFile = "";
 
         databaseButtonsDiv.innerHTML = '';
+        document.getElementById("brandHeroDiv").innerHTML = "";
+        const brandHero = document.createElement("div");
+        brandHero.className = "brand-hero";
+
+        const meta = brandMetadata[folder] || { name: folder, country: "Unknown", website: "" };
+
+        brandHero.innerHTML = `
+            <div class="brandContainer">
+                <h2 class="brand-name">${meta.name}</h2>
+                <div class="brand-fixtures">Fixtures: <strong id="currentBrandFixtures" style="margin-left:6px;"></strong></div>
+                <div class="brand-country">Country: <strong style="margin-left:6px;">${meta.country}</strong></div>
+                ${meta.website ? `<a href="${meta.website}" target="_blank" rel="noopener noreferrer" class="brand-website">Visit website</a>` : ""}
+            </div>
+        `;
+
+        document.getElementById("brandHeroDiv").appendChild(brandHero);
 
         const files = getFilesForFolder(folder);
 
@@ -178,8 +203,9 @@ document.addEventListener("DOMContentLoaded", function()
         currentView = "details";
         currentFile = file;
         countFixtures();
-        databaseButtonsDiv.innerHTML = '<div style="text-align: center; padding: 50px;"><p>Loading fixture details...</p></div>';
-        
+        databaseButtonsDiv.innerHTML = '<div style="text-align: center; padding: 50px;"><p class="empty-message">Loading fixture details...</p></div>';
+        document.getElementById("brandHeroDiv").innerHTML = "";
+
         fetch(`fixtures/${folder}/${file}`)
         .then(response => 
         {
@@ -363,22 +389,22 @@ document.addEventListener("DOMContentLoaded", function()
                 {
                     physicalHTML += `
                         <div><strong>Bulb</strong><br><br> ${data.physical.bulb.type || 'N/A'} W</div>
-                        <div><strong>Lumens</strong><br><br> ${data.physical.bulb.lumens || 'N/A'}</div>
+                        <div><strong>Luminous Flux</strong><br><br> ${data.physical.bulb.lumens || 'N/A'} lm</div>
                         <div><strong>Color Temperature</strong><br><br> ${data.physical.bulb.colourTemperature || 'N/A'} K</div>
                     `;
                 }
                 if (data.physical.lens) 
                 {
                     physicalHTML += `
-                        <div><strong>Min angle</strong><br><br> ${data.physical.lens.degreesMin || 'N/A'}°</div>
-                        <div><strong>Max angle</strong><br><br> ${data.physical.lens.degreesMax || 'N/A'}°</div>
+                        <div><strong>Min beam angle</strong><br><br> ${data.physical.lens.degreesMin || 'N/A'}°</div>
+                        <div><strong>Max beam angle</strong><br><br> ${data.physical.lens.degreesMax || 'N/A'}°</div>
                     `;
                 }
                 if (data.physical.focus) 
                 {
                     physicalHTML += `
-                        <div><strong>Max pan</strong><br><br> ${data.physical.focus.panMax || 'N/A'}°</div>
-                        <div><strong>Max tilt</strong><br><br> ${data.physical.focus.tiltMax || 'N/A'}°</div>
+                        <div><strong>Max pan range</strong><br><br> ${data.physical.focus.panMax || 'N/A'}°</div>
+                        <div><strong>Max tilt range</strong><br><br> ${data.physical.focus.tiltMax || 'N/A'}°</div>
                     `;
                 }
                 physicalHTML += '</div>';
