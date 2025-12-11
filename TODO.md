@@ -64,10 +64,13 @@
 [x] More physical details
 [x] Searchbox
 [] CMD Commands / status messages
-[] Convert all QLC+ 5.1.0 fixtures to database version 1.1
 [] Powered by info text
+[] Fixture header infos (version, qxf author, website, manual)
+[] QXF converter 1.2
+[] Convert all QLC+ 5.1.0 fixtures to database version 1.2
 
 ## Settings
 
 [] Freeze CMD setting
 [] CMD commands table
+[] Ask before clearing (via CMD)

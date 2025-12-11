@@ -55,6 +55,17 @@
     animation: slide-up 0.4s ease forwards;
 }
 
+#cmdIcon
+{
+    user-select: none;
+    color: rgb(81, 81, 81);
+    font-size: 48px;
+    margin-right: 36px;
+    margin-top: -24px;
+    font-family: 'IconFont';
+    transition: color .3s ease;
+}
+
 @keyframes slide-up 
 {
   0% 

@@ -53,10 +53,11 @@ function setCmdMessage(msg, type)
     const container = document.getElementById('cmdListContainer2');
     const cmdMsg = document.createElement('p');
     const dot = document.createElement('p');
+    const icon = document.getElementById("cmdIcon");
     dot.className = 'command-msg dot';
     dot.id = 'dot';
     dot.textContent = '>';
-
+    icon.style.color = "rgb(81, 81, 81)";
     if (!freeze) 
     { 
         container.innerHTML = '';
@@ -109,6 +110,7 @@ function setCmdMessage(msg, type)
         containerType.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
         cmdBar.style.backgroundColor = '#340000ff';
         specialBackground = true;
+        icon.style.color = "rgba(165, 18, 18, 1)";
     }
 
     else if (typeText && type === 'WARNING')
@@ -118,6 +120,7 @@ function setCmdMessage(msg, type)
         containerType.style.backgroundColor = 'rgba(255, 140, 0, 0.2)';
         cmdBar.style.backgroundColor = '#3a2500ff';
         specialBackground = true;
+        icon.style.color = 'rgba(165, 133, 18, 1)';
     }
 }
 
