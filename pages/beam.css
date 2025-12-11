@@ -189,3 +189,12 @@ input:disabled {
     color: var(--colore-giallo);
     box-shadow: 0 0 10px #ffeb3b33;
 }
+
+.visualization-controls
+{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
