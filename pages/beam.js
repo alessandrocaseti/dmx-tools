@@ -1,5 +1,6 @@
 class BeamCalculator 
 {
+    currentFixtureName = "Fixture";
     constructor() 
     {
         this.svg = document.getElementById('beam-svg');
@@ -43,7 +44,7 @@ class BeamCalculator
             distance: { min: 0.01, max: 1000 },
             diameter: { min: 0.01, max: 1000 },
             lumen: { min: 1, max: 1000000 },
-            userScale: { min: 0.8, max: 2.0 }
+            userScale: { min: 1.5, max: 2.0 }
         };
 
         this.init();
@@ -78,13 +79,13 @@ class BeamCalculator
         
         this.fixtureCircle = this.createSVGElement('circle', { id: 'fixture-circle', cx: this.fixturePos.x, cy: this.fixturePos.y, r: 0.2, fill: 'var(--colore-giallo)' });
         this.fixtureText = this.createSVGElement('text', { x: this.fixturePos.x, y: this.fixturePos.y - 0.6, 'text-anchor': 'middle', fill: 'var(--colore-testo-chiaro)', 'font-size': '0.6px' });
-        this.fixtureText.textContent = 'Fixture';
+        this.fixtureText.textContent = this.currentFixtureName;
  
         this.handles = 
         {
-            angle: this.createHandle(this.fixturePos.x, this.fixturePos.y, 'angle-handle', 0.35),
-            distance: this.createHandle(0, 0, 'distance-handle', 0.25),
-            diameter: this.createHandle(0, 0, 'diameter-handle', 0.25)
+            angle: this.createHandle(this.fixturePos.x, this.fixturePos.y, 'angle-handle', 0.25),
+            distance: this.createHandle(0, 0, 'distance-handle', 0.20),
+            diameter: this.createHandle(0, 0, 'diameter-handle', 0.20)
         };
         
         this.labels = 
@@ -422,22 +423,24 @@ class BeamCalculator
         {
             const distLabel = isMetersDisplay ? `${distance.toFixed(2)} m` : `${(distance * this.M_TO_FT).toFixed(2)} ft`;
             const diamLabel = isMetersDisplay ? `${diameter.toFixed(2)} m` : `${(diameter * this.M_TO_FT).toFixed(2)} ft`;
-
+            this.currentFixtureName = 'Fixture';
             this.labels.distance.textContent = distLabel;
-            this.labels.distance.setAttribute('x', this.fixturePos.x + 0.5);
+            this.labels.distance.setAttribute('x', this.fixturePos.x + 1.5);
             this.labels.distance.setAttribute('y', distance / 2);
             this.labels.diameter.textContent = diamLabel;
             this.labels.diameter.setAttribute('x', this.fixturePos.x);
-            this.labels.diameter.setAttribute('y', distance + 1.5);
+            this.labels.diameter.setAttribute('y', distance + 1);
             this.labels.angle.textContent = `${angle.toFixed(2)}°`;
             this.labels.angle.setAttribute('x', this.fixturePos.x - 1);
             this.labels.angle.setAttribute('y', this.fixturePos.y + 1);
+            this.fixtureText.textContent = this.currentFixtureName;
         }
         else
         {
             this.labels.distance.textContent = '';
             this.labels.diameter.textContent = '';
             this.labels.angle.textContent = '';
+            this.fixtureText.textContent = '';       
         }
     }
 

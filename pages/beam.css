@@ -1,43 +1,52 @@
-.beam-tools-container {
+.beam-tools-container 
+{
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: flex-start;
 }
 
-.beam-calculator-panel {
+.beam-calculator-panel 
+{
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 12px;
+    padding: 16px;
+    min-width: 45%;
+    max-height: 62%;
     background-color: var(--foreground);
     border-radius: var(--border-radius);
 }
 
-.beam-visualization {
+.beam-visualization 
+{
     flex: 1.5;
     margin-top: 0;
 }
 
-.input-group {
+.input-group 
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.label-with-icon {
+.label-with-icon 
+{
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.label-with-icon .icon {
+.label-with-icon .icon 
+{
     font-family: 'IconFont';
     font-size: 1.2em;
 }
 
-.output-group {
+.output-group 
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,69 +56,80 @@
     border-radius: 4px;
 }
 
-.output-group label {
+.output-group label 
+{
     color: var(--colore-testo);
 }
 
-.lux-output {
+.lux-output 
+{
     font-weight: bold;
     color: var(--colore-testo);
     font-size: 1.2em;
 }
 
-.tab-content .calculate-btn {
+.tab-content .calculate-btn 
+{
     display: block;
     margin: 20px auto 0;
 }
 
-#beam-svg {
+#beam-svg 
+{
     background-color: rgb(10, 10, 10);
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 40 40'><g stroke='%23444' stroke-width='0.5' stroke-dasharray='1' opacity='0.45'><line x1='20' y1='0' x2='20' y2='40'/><line x1='0' y1='20' x2='40' y2='20'/></g><g stroke='%23ffeb3b' stroke-width='1' opacity='0.08'><line x1='20' y1='0' x2='20' y2='40'/><line x1='0' y1='20' x2='40' y2='20'/></g></svg>");
-    background-size: 20px 20px;
-    border: 1px solid var(--colore-giallo);
+    background-size: 18px 18px;
+    border: 1px solid rgba(255, 255, 0, 0.662);
     border-radius: var(--border-radius);
     margin: 20px auto;
     display: block;
-    min-height: 60vh;
+    min-height: 62vh;
     margin-top: 0px;
 }
 
-#beam-svg text {
+#beam-svg text 
+{
     user-select: none;
 }
 
-#beam-path {
-    stroke-width: 0.1;
+#beam-path 
+{
+    stroke-width: 0.05;
     fill: #ffeb3b33;
     stroke: var(--colore-giallo);
     transition: d 0.1s ease-out;
 }
 
-#fixture-circle {
+#fixture-circle 
+{
     fill: var(--colore-giallo);
     transition: r 0.1s ease-out;
 }
 
-.drag-handle {
+.drag-handle 
+{
     fill: var(--colore-testo);
     stroke: var(--foreground);
-    stroke-width: 0.1;
+    stroke-width: 0.07;
     cursor: move;
     transition: cx 0.1s ease-out, cy 0.1s ease-out, fill 0.3s ease-out, stroke 0.3s ease-out;
 }
 
-body.dragging, body.dragging .drag-handle {
+body.dragging, body.dragging .drag-handle 
+{
     cursor: grabbing !important;
 }
 
-.drag-handle.disabled {
+.drag-handle.disabled 
+{
     fill: #888;
     cursor: not-allowed;
 }
 
-.label {
+.label 
+{
     fill: var(--colore-testo-chiaro);
-    font-size: 0.4px;
+    font-size: 0.3px;
     text-anchor: middle;
     pointer-events: none;
     font-family: 'Roboto Mono', monospace;
@@ -131,7 +151,8 @@ body.dragging, body.dragging .drag-handle {
     background-color: var(--colore-bordo);
 }
 
-.lock-controls {
+.lock-controls 
+{
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -140,23 +161,27 @@ body.dragging, body.dragging .drag-handle {
     margin-top: 2px;
 }
 
-.lock-controls .iconButton {
+.lock-controls .iconButton 
+{
     flex: 1;
     justify-content: center;
 }
 
-.lock-controls .iconButton.locked {
+.lock-controls .iconButton.locked 
+{
     background-color: var(--colore-giallo);
     color: #000;
     font-weight: bold;
 }
 
-.lock-controls .iconButton.locked:hover {
+.lock-controls .iconButton.locked:hover 
+{
     box-shadow: none;
     background: var(--colore-bg-scuro);
 }
 
-input:disabled {
+input:disabled 
+{
     background: #444;
     color: #bbb;
     border-color: #333;
@@ -164,7 +189,8 @@ input:disabled {
     opacity: 0.7;
 }
 
-.unit-controls .iconButton, .lock-controls .iconButton {
+.unit-controls .iconButton, .lock-controls .iconButton 
+{
     background: var(--colore-bg-scuro);
     border: 1px solid var(--colore-bordo);
     color: var(--colore-testo-chiaro);
@@ -178,12 +204,14 @@ input:disabled {
     justify-content: center;
 }
 
-.unit-controls .iconButton:hover, .lock-controls .iconButton:hover {
+.unit-controls .iconButton:hover, .lock-controls .iconButton:hover 
+{
     box-shadow: 0 0 0 3px #ffeb3b11;
     border-color: var(--colore-giallo);
 }
 
-.unit-controls .iconButton.active, .lock-controls .iconButton.locked{
+.unit-controls .iconButton.active, .lock-controls .iconButton.locked
+{
     background: rgba(255,235,59,0.08);
     border: 1px solid var(--colore-giallo);
     color: var(--colore-giallo);
