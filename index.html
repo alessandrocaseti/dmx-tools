@@ -429,6 +429,16 @@
             <div style="margin-bottom: 30vh;" class="web-only"></div>
         </div>
 
+        <!-- DIP Link address to fixture modal -->
+        <div id="fixtureLinkModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="dipSwitch.closeFixtureDialog()"></span>
+                <h2>Link Fixture to Address</h2>
+                <div class="separator"></div>
+                <div id="fixtureLinkList"></div>
+            </div>
+        </div>
+
         <!-- Color Converter -->
         <div id="rgb" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Color Converter</h1>
@@ -612,7 +622,7 @@
                                 <span>Distance</span>
                                 <span id="currentUnitDistance" style="margin-left: -4px;">(m)</span>
                             </label>
-                            <input type="number" id="beam-distance" step="0.01" min="0.01" max="1000" value="10">
+                            <input type="number" id="beam-distance" step="0.01" min="0.01" max="1000" value="2">
                         </div>
                         <div class="input-group">
                             <label for="beam-diameter" class="label-with-icon">
@@ -656,7 +666,7 @@
                             <button id="unit-f-btn" class="iconButton" title="Feet">
                                 <span class="buttonText">feet</span>
                             </button>
-                            <button id="importBeamFixture" onclick="setCmdMessage('Added Fixture...', 'Add Fixture')" class="iconButton" style="margin-left: auto;">
+                            <button id="importBeamFixture" onclick="beamCalculator.openDialog()" class="iconButton" style="margin-left: auto;">
                                 <span class="buttonIcon"></span>
                                 <span class="buttonText">Import fixture</span>
                             </button>
@@ -681,6 +691,16 @@
                 </div>
             </div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
+        </div>
+
+        <!-- Beam import fixture dialog -->
+        <div id="fixtureBeamModal" class="modal">
+            <div class="modal-content" style="width: 800px;">
+                <span class="close-button" onclick="beamCalculator.closeDialog()"></span>
+                <h2>Import fixture angle values</h2>
+                <div class="separator"></div>
+                <div id="fixtureBeamList"></div>
+            </div>
         </div>
 
         <!-- Fixture Database -->
@@ -715,16 +735,6 @@
                 </div>
                 <input type="text" id="cmdInput" onblur="unfocusCmd()" onfocus="focusCmd(true)" onkeydown="handleCommand(event)" style="margin-top: -4px;caret-color: yellow;flex-grow: 1; margin-left: -4px; border: none; outline: none; background-color: transparent; color: yellow; font-family: 'Roboto Mono';">
                 <div id="cmdIcon"></div>
-            </div>
-        </div>
-
-        <!-- DIP Link address to fixture modal -->
-        <div id="fixtureLinkModal" class="modal">
-            <div class="modal-content">
-                <span class="close-button" onclick="dipSwitch.closeFixtureDialog()"></span>
-                <h2>Link Fixture to Address</h2>
-                <div class="separator"></div>
-                <div id="fixtureLinkList"></div>
             </div>
         </div>
 

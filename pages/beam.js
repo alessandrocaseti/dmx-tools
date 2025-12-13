@@ -19,15 +19,15 @@ class BeamCalculator
         this.unitFBtn = document.getElementById('unit-f-btn');
         this.M_TO_FT = 3.28084;
 
-        this.svgWidth = 600;
-        this.svgHeight = 300;
+        this.svgWidth = 700;
+        this.svgHeight = 400;
 
         this.fixturePos = { x: 0, y: 0 };
 
         this.beam = 
         {
             angle: 10,
-            distance: 10,
+            distance: 2,
             diameter: 1.75,
             lumen: 5000,
             lux: 0
@@ -78,7 +78,7 @@ class BeamCalculator
         this.beamPath = this.createSVGElement('path', { id: 'beam-path', fill: '#ffeb3b33', stroke: 'var(--colore-giallo)' });
         
         this.fixtureCircle = this.createSVGElement('circle', { id: 'fixture-circle', cx: this.fixturePos.x, cy: this.fixturePos.y, r: 0.2, fill: 'var(--colore-giallo)' });
-        this.fixtureText = this.createSVGElement('text', { x: this.fixturePos.x, y: this.fixturePos.y - 0.6, 'text-anchor': 'middle', fill: 'var(--colore-testo-chiaro)', 'font-size': '0.6px' });
+        this.fixtureText = this.createSVGElement('text', { x: this.fixturePos.x, y: this.fixturePos.y - 0.6, 'text-anchor': 'middle', fill: 'var(--colore-testo-chiaro)', 'font-size': '0.5px' });
         this.fixtureText.textContent = this.currentFixtureName;
  
         this.handles = 
@@ -424,7 +424,6 @@ class BeamCalculator
         {
             const distLabel = isMetersDisplay ? `${distance.toFixed(2)} m` : `${(distance * this.M_TO_FT).toFixed(2)} ft`;
             const diamLabel = isMetersDisplay ? `${diameter.toFixed(2)} m` : `${(diameter * this.M_TO_FT).toFixed(2)} ft`;
-            this.currentFixtureName = 'Fixture';
             this.labels.distance.textContent = distLabel;
             this.labels.distance.setAttribute('x', this.fixturePos.x + 1.5);
             this.labels.distance.setAttribute('y', distance / 2);
@@ -602,9 +601,90 @@ class BeamCalculator
     clear()
     {
         this.beam = { angle: 10, distance: 10, diameter: 1.75, lumen: 5000, lux: 0 };
+        this.currentFixtureName = 'Fixture';
         this.calculateLux();
         this.updateInputFields();
         this.updateVisualization();
+    }
+
+    openDialog() 
+    {
+        const modal = document.getElementById('fixtureBeamModal');
+        const fixtureList = document.getElementById('fixtureBeamList');
+        fixtureList.innerHTML = `
+            <div class="fixture-tree">
+                <div class="brand-column">
+                    ${fixtureFolders.map(brand => `<button class="brand-btn" data-brand="${brand}">${brand}</button>`).join('')}
+                </div>
+                <div class="fixture-column" id="fixture-column">
+                    <p>Select a brand to view fixtures.</p>
+                </div>
+            </div>
+        `;
+
+        // Add event listeners for brand buttons
+        fixtureList.querySelectorAll('.brand-btn').forEach(btn => 
+        {
+            btn.addEventListener('click', (e) => 
+            {
+                const brand = e.target.dataset.brand;
+                this.showFixtures(brand);
+            });
+        });
+
+        modal.style.display = 'flex';
+        // Small delay to allow display property to apply before transition starts
+        setTimeout(() => { modal.classList.add('show');}, 10);
+    }
+
+    showFixtures(brand) 
+    {
+        const fixtureColumn = document.getElementById('fixture-column');
+        fixtureColumn.innerHTML = folderFiles[brand].map(file => 
+        {
+            const name = file.replace('.json', '').replace(new RegExp('^' + brand + '[-_ ]*', 'i'), '');
+            return `<button class="fixture-btn" data-brand="${brand}" data-file="${file}">${name}</button>`;
+        }).join('');
+
+        // Add event listeners for fixture buttons
+        fixtureColumn.querySelectorAll('.fixture-btn').forEach(btn => 
+        {
+            btn.addEventListener('click', async (e) => 
+            {
+                const brand = e.target.dataset.brand;
+                const file = e.target.dataset.file;
+                await this.selectFixture(brand, file);
+            });
+        });
+    }
+
+    async selectFixture(brand, file) 
+    {
+        try 
+        {
+            const response = await fetch(`fixtures/${brand}/${file}`);
+            const data = await response.json();
+            const angle = data.physical?.lens?.degreesMin || 10;
+            const lumen = parseInt(data.physical?.bulb?.lumens) || 5000;
+            this.currentFixtureName = data.manufacturer + ' ' + data.model;
+            this.setAngle(angle);
+            this.setFlux(lumen);
+            this.toggleLock('angle');
+            this.closeDialog();
+            setCmdMessage(`Loaded fixture: ${this.currentFixtureName}`, 'IMPORT');
+        }
+        catch (error) 
+        {
+            console.error('Error loading fixture:', error);
+            setCmdMessage('Error loading fixture data.', 'ERROR');
+        }
+    }
+
+    closeDialog() 
+    {
+        const modal = document.getElementById('fixtureBeamModal');
+        modal.classList.remove('show');
+        setTimeout(() => { modal.style.display = 'none'; }, 300); // Match timeout with CSS transition duration
     }
 }
 

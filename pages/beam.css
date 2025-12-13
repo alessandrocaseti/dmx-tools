@@ -235,3 +235,39 @@ input:disabled
     justify-content: center;
     gap: 8px;
 }
+
+.fixture-tree 
+{
+    display: flex;
+    gap: 20px;
+    height: 400px;
+}
+
+.brand-column, .fixture-column 
+{
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid var(--colore-bordo);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+.brand-btn, .fixture-btn 
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px;
+    background: var(--foreground);
+    border: 1px solid var(--colore-bordo);
+    border-radius: var(--border-radius);
+    color: var(--colore-testo);
+    cursor: pointer;
+    text-align: left;
+}
+
+.brand-btn:hover, .fixture-btn:hover 
+{
+    background: var(--colore-hover);
+    color: var(--colore-bg-scuro);
+}
