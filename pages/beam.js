@@ -210,6 +210,7 @@ class BeamCalculator
         this.svg.addEventListener('mousemove', (e) => this.drag(e));
         this.svg.addEventListener('mouseup', () => this.endDrag());
         this.svg.addEventListener('mouseleave', () => this.endDrag());
+        this.svg.addEventListener('wheel', (e) => this.handleWheel(e));
         
         document.getElementById('show-labels').addEventListener('change', () => this.updateVisualization());
         this.scaleSlider.addEventListener('input', (e) => 
@@ -442,6 +443,16 @@ class BeamCalculator
             this.labels.angle.textContent = '';
             this.fixtureText.textContent = '';       
         }
+    }
+
+    handleWheel(e) 
+    {
+        e.preventDefault();
+        const delta = e.deltaY > 0 ? 0.05 : -0.05;
+        this.userScale += delta;
+        this.userScale = Math.max(0.8, Math.min(2.5, this.userScale));
+        this.scaleSlider.value = this.userScale;
+        this.updateVisualization();
     }
 
     startDrag(e) 

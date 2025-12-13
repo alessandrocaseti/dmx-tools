@@ -189,7 +189,7 @@ input:disabled
     opacity: 0.7;
 }
 
-.unit-controls .iconButton, .lock-controls .iconButton 
+.unit-controls .iconButton, .lock-controls .iconButton
 {
     background: var(--colore-bg-scuro);
     border: 1px solid var(--colore-bordo);
@@ -216,6 +216,15 @@ input:disabled
     border: 1px solid var(--colore-giallo);
     color: var(--colore-giallo);
     box-shadow: 0 0 10px #ffeb3b33;
+}
+
+.unit-controls
+{
+    width: fill;
+}
+
+#importBeamFixture{
+    color: var(--colore-giallo) !important;
 }
 
 .visualization-controls
