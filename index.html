@@ -42,6 +42,7 @@
 
     <body>
 
+        <!-- Sidebar -->
         <nav id="sidebar" class="web-only">
             <div style="margin-top: 24px; display: flex; flex-direction: row; gap: 16px; margin-left: 12px;">
                 <img src="assets/dmxtools-banner.png" width="235" height="65" style="margin-top: 12px; margin-left: -8px;">
@@ -76,6 +77,7 @@
                     <span class="buttonText">Fixture Database</span>
                 </button>
             </div>
+            <!-- Bottom Links -->
             <div style="display: flex; flex-direction: row; gap: 8px; justify-content: center; bottom: 12vh; margin-top: 32vh; align-items: center;">
                 <a onclick="setCmdMessage('DMX Tools - Developed by Alessandro Caseti. For more information, visit the GitHub repository.', 'ABOUT')" target="_blank" class="defaultLink">About</a>
                 <h4 style="color: #666;user-select: none;">•</h4>
@@ -253,6 +255,7 @@
                 </div>
             </div>
 
+            <!-- DMX Patch Page -->
             <h1 class="web-only pageTitle">DMX Patch</h1>
 
             <div class="defaultPageContent">
@@ -360,16 +363,6 @@
 
                 <div class="print-only">Generated for free with <a href="https://alessandrocaseti.github.io/dmx-tools/" style="color: blue; text-decoration: underline;">alessandrocaseti.github.io/dmx-tools</a></div>
                 <div style="margin-bottom: 30vh;" class="web-only"></div>
-            </div>
-        </div>
-
-        <!-- DIP Link address to fixture modal -->
-        <div id="fixtureLinkModal" class="modal">
-            <div class="modal-content">
-                <span class="close-button" onclick="dipSwitch.closeFixtureDialog()"></span>
-                <h2>Link Fixture to Address</h2>
-                <div class="separator"></div>
-                <div id="fixtureLinkList"></div>
             </div>
         </div>
 
@@ -491,7 +484,7 @@
 
                         <div class="value-group">
                             <label>HEX</label>
-                            <input type="text" id="hexValue" value="#FF0000" maxlength="7" class="color-input" style="width: 400px;">
+                            <input type="text" id="hexValue" value="#FF0000" maxlength="7" class="color-input" style="width: 400px;" autocomplete="off">
                         </div>
                     </div>
                 </div>
@@ -499,7 +492,7 @@
                 <div class="saved-colors-section">
                     <h2 style="margin-top: 6vh;">Saved colors</h2>
                     <div class="save-color-form">
-                        <input type="text" id="colorName" placeholder="Color name" style="width: 180px; margin-right: 8px;">
+                        <input type="text" id="colorName" placeholder="Color name" style="width: 180px; margin-right: 8px;" autocomplete="off">
                         <button onclick="saveColor()" class="iconButton">
                             <span class="buttonIcon"></span>
                             <span class="buttonText">Save color</span>
@@ -564,7 +557,7 @@
                     <div class="calculator-section">
                         <div class="fixture-input">
                             <label>Fixture</label>
-                            <input type="text" id="fixture-type" placeholder="Fixture name" style="width: 200px;">
+                            <input type="text" id="fixture-type" placeholder="Fixture name" style="width: 200px;" autocomplete="off">
                         </div>
                         <div class="fixture-input">
                             <label>Watts</label>
@@ -699,7 +692,7 @@
                     <span class="buttonText">Back</span>
                 </button>
                 <span id="databaseAddressBar" style="font-size: 20px; margin-top: -20px; color: #707070; user-select: none;"></span>
-                <input type="text" placeholder="Search..." id="fixture-searchbox">
+                <input type="text" placeholder="Search..." id="fixture-searchbox" autocomplete="off">
             </div>
             <div id="brandHeroDiv"></div>
             <div id="databaseButtons"></div>
@@ -722,6 +715,16 @@
                 </div>
                 <input type="text" id="cmdInput" onblur="unfocusCmd()" onfocus="focusCmd(true)" onkeydown="handleCommand(event)" style="margin-top: -4px;caret-color: yellow;flex-grow: 1; margin-left: -4px; border: none; outline: none; background-color: transparent; color: yellow; font-family: 'Roboto Mono';">
                 <div id="cmdIcon"></div>
+            </div>
+        </div>
+
+        <!-- DIP Link address to fixture modal -->
+        <div id="fixtureLinkModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="dipSwitch.closeFixtureDialog()"></span>
+                <h2>Link Fixture to Address</h2>
+                <div class="separator"></div>
+                <div id="fixtureLinkList"></div>
             </div>
         </div>
 
