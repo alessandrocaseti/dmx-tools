@@ -764,7 +764,7 @@ function handleCommand(event)
             switch(currentPage)
             {
                 case 'home':
-                    setCmdMessage('Available generic commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
+                    setCmdMessage('Available generic commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload, liveclock.', 'HELP');
                     return;
                 case 'patch':
                     setCmdMessage('Available patch commands: add, remove, color, rename, patch, update, stats, docset, export, clear.', 'HELP');
@@ -779,7 +779,7 @@ function handleCommand(event)
                     setCmdMessage('Available beam commands: set (or -s) {parameter} {value}, clear, lock (or -l) {parameter}, ft (or feet), m (or meters).', 'HELP');
                     return;
                 default:
-                    setCmdMessage('Available generic commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload.', 'HELP');
+                    setCmdMessage('Available generic commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload, liveclock.', 'HELP');
                     return;
             }
         }
@@ -808,6 +808,17 @@ function handleCommand(event)
         {
             setCmdMessage('Opened QXF to JSON converter in a new browser page.', 'QXF');
             window.open('qxf_converter/index.html', '_blank').focus();
+            return;
+        }
+
+        else if (command === 'qxf--test')
+        {
+            setCmdMessage('Downloaded a text QXF file & opened QXF to JSON converter in a new browser page.', 'QXF TEST');
+            window.open('qxf_converter/index.html', '_blank').focus();
+            const link = document.createElement('a');
+            link.href = 'qxf_converter/utils/test.qxf';
+            link.download = 'test.qxf';
+            link.click();
             return;
         }
 
