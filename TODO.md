@@ -29,7 +29,7 @@
 
 [] Improve link dialog: add "same address" element + divide by rest of the patch
 [] Improve link dialog design
-[] Fix binary when using load command
+[x] Fix binary when using load command
 [] Add linked DIP addresses to exported PDF
 
 ## Color
@@ -52,6 +52,7 @@
 [] CMD Commands
 [] Beam dynamic graph visualizer
 [] Select fixture angle from database
+[] Test values
 
 ## Fixture Database
 
@@ -64,8 +65,8 @@
 [x] More physical details
 [x] Searchbox
 [] CMD Commands / status messages
-[] Powered by info text
-[] Fixture header infos (version, qxf author, website, manual)
+[x] Powered by info text
+[] Fixture header infos (patch, version, qxf author, website, manual)
 [] QXF converter 1.2
 [] Convert all QLC+ 5.1.0 fixtures to database version 1.2
 

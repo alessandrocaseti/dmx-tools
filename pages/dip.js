@@ -114,7 +114,7 @@ class DMXDIPSwitch
     loadAddress(address) 
     {
         setCmdMessage(`Loaded address ${address.toString().padStart(3, '0')}.`, 'LOAD');
-        this.currentAddress = address;
+        this.currentAddress = parseInt(address);
         this.updateDisplay();
         document.getElementById('dmxAddress').value = address.toString().padStart(3, '0');
     }
