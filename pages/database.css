@@ -361,6 +361,21 @@
     color: #beac0e;
 }
 
+.bottomControlsDiv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 48px;
+    align-items: center;
+}
+
+.poweredByButton
+{
+    margin-left: auto;
+    text-align: right;
+}
+
 @media (max-width: 800px)
 {
     .brandContainer

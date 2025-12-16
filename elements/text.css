@@ -32,3 +32,20 @@ h1
     text-align: center;
     margin-top: 80px;
 }
+
+a
+{
+    font-size: 1.1rem;
+    color: var(--colore-giallo);
+    text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+    transition: all .3s;
+}
+
+a:hover
+{
+    color: #beac0e;
+}

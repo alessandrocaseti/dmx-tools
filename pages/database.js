@@ -538,10 +538,13 @@ document.addEventListener("DOMContentLoaded", function()
                 ${channelsHTML}
                 ${modesHTML}
                 ${physicalHTML}
-                <button id="databaseEditButton" onClick="editFixture();" class="iconButton" style="margin-top: 48px;">
-                    <span class="buttonIcon"></span>
-                    <span class="buttonText">Edit this fixture</span>
-                </button>
+                <div class="bottomControlsDiv">
+                    <button id="databaseEditButton" onClick="editFixture();" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Edit this fixture</span>
+                    </button>
+                    <a href="https://github.com/mcallegari/qlcplus" target="_blank" rel="noopener noreferrer" class="poweredByButton">Powered by QLC+</a>
+                </div>
             `;
 
             databaseButtonsDiv.appendChild(detailsDiv);
