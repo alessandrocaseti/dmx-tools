@@ -7,6 +7,13 @@ String.prototype.toProperCase = function ()
     return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 };
 
+function isBinaryString(str) 
+{
+    // Regular expression pattern to match
+    const binaryPattern = /^[01]+$/; // only 0s and 1s
+    return binaryPattern.test(str); // Test if the string matches the pattern
+}
+
 function isHexColor (hex) 
 {
     return typeof hex === 'string' && hex.length === 6 && !isNaN(Number('0x' + hex))
@@ -566,11 +573,20 @@ function handleCommand(event)
             let value = rawCommand.slice(4).trim();
             if (value && !isNaN(value) && value > -1 && value < 512)
             {
-                dipSwitch.loadAddress(value);
+                let v = parseInt(value);
+                dipSwitch.loadAddress(v);
             }
             else
             {
-                setCmdMessage('Invalid DMX address. Please enter a number between 0 and 511.', 'ERROR');
+                if (isBinaryString(value))
+                {
+                    let v = parseInt(value, 2);
+                    dipSwitch.loadAddress(v);
+                }
+                else
+                {
+                    setCmdMessage('Invalid DMX address. Please enter a number between 0 and 511.', 'ERROR');
+                }
             }
         }
 
