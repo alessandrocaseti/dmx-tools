@@ -627,18 +627,24 @@ class BeamCalculator
         {
             btn.addEventListener('click', (e) => 
             {
+                fixtureList.querySelectorAll('.brand-btn').forEach(btn => btn.classList.remove('selected'));
+                btn.classList.add('selected');
                 const brand = e.target.dataset.brand;
                 this.showFixtures(brand);
             });
         });
 
         modal.style.display = 'flex';
+        document.getElementById("minAngle").innerHTML = '0°';
+        document.getElementById("maxAngle").innerHTML = '0°';
+        document.getElementById("lumiFlux").innerHTML = '0 lm';
         // Small delay to allow display property to apply before transition starts
         setTimeout(() => { modal.classList.add('show');}, 10);
     }
 
     showFixtures(brand) 
     {
+        document.getElementById("beamImportFixtureBtn").disabled = true;
         const fixtureColumn = document.getElementById('fixture-column');
         fixtureColumn.innerHTML = folderFiles[brand].map(file => 
         {
@@ -649,8 +655,18 @@ class BeamCalculator
         // Add event listeners for fixture buttons
         fixtureColumn.querySelectorAll('.fixture-btn').forEach(btn => 
         {
+            if (btn.innerText.length > 30)
+            {
+                const fullText = btn.innerText;
+                btn.innerText = fullText.slice(0, 27) + '...';
+                btn.title = fullText;
+                btn.setAttribute('aria-label', fullText);
+            }
             btn.addEventListener('click', async (e) => 
             {
+                document.getElementById("beamImportFixtureBtn").disabled = false;
+                fixtureColumn.querySelectorAll('.fixture-btn').forEach(but => but.classList.remove('selected'));
+                btn.classList.add('selected');
                 const brand = e.target.dataset.brand;
                 const file = e.target.dataset.file;
                 await this.selectFixture(brand, file);
@@ -664,14 +680,13 @@ class BeamCalculator
         {
             const response = await fetch(`fixtures/${brand}/${file}`);
             const data = await response.json();
-            const angle = data.physical?.lens?.degreesMin || 10;
+            const angleMin = data.physical?.lens?.degreesMin || 10;
+            const angleMax = data.physical?.lens?.degreesMax || 10;
             const lumen = parseInt(data.physical?.bulb?.lumens) || 5000;
-            this.currentFixtureName = data.manufacturer + ' ' + data.model;
-            this.setAngle(angle);
-            this.setFlux(lumen);
-            this.toggleLock('angle');
-            this.closeDialog();
-            setCmdMessage(`Loaded fixture: ${this.currentFixtureName}`, 'IMPORT');
+            document.getElementById("minAngle").innerHTML = angleMin + '°';
+            document.getElementById("maxAngle").innerHTML = angleMax + '°';
+            document.getElementById("lumiFlux").innerHTML = lumen + ' lm';
+            document.getElementById("beamImportFixtureBtn").addEventListener('click', () => this.importFixture(data, angleMin, angleMax, lumen));
         }
         catch (error) 
         {
@@ -680,11 +695,22 @@ class BeamCalculator
         }
     }
 
+    importFixture(data, angleMin, angleMax, lumen)
+    {
+        this.currentFixtureName = data.manufacturer + ' ' + data.model;
+        this.setAngle(angleMin);
+        this.setFlux(lumen);
+        this.toggleLock('angle');
+        this.closeDialog();
+        setCmdMessage(`Loaded fixture: ${this.currentFixtureName}`, 'IMPORT');
+    }
+
     closeDialog() 
     {
         const modal = document.getElementById('fixtureBeamModal');
         modal.classList.remove('show');
         setTimeout(() => { modal.style.display = 'none'; }, 300); // Match timeout with CSS transition duration
+        document.getElementById("beamImportFixtureBtn").disabled = true;
     }
 }
 

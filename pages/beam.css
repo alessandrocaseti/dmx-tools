@@ -241,6 +241,7 @@ input:disabled
     display: flex;
     gap: 20px;
     height: 400px;
+    margin-top: 18px;
 }
 
 .brand-column, .fixture-column 
@@ -270,4 +271,28 @@ input:disabled
 {
     background: var(--colore-hover);
     color: var(--colore-bg-scuro);
+}
+
+.brand-btn.selected, .fixture-btn.selected 
+{
+    background: var(--foreground);
+    color: var(--colore-giallo);
+    border: 1px solid var(--colore-giallo);
+}
+
+.previewBeamValues
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+#minAngle, #maxAngle, #lumiFlux
+{
+    margin-left: -48px;
+    font-weight: 600;
+    color: var(--colore-giallo);
+    font-family: Roboto Mono, monospace;
 }
