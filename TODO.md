@@ -36,6 +36,7 @@
 
 [] User Palettes system
 [] Lee and Rosco color palettes (maybe not)
+[] Link to palette
 
 ## Power
 
@@ -69,6 +70,7 @@
 [] Fixture header infos (patch, version, qxf author, website, manual)
 [] QXF converter 1.2
 [] Convert all QLC+ 5.1.0 fixtures to database version 1.2
+[] Add fixture to favorites
 
 ## Settings
 

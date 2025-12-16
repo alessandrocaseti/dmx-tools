@@ -786,8 +786,7 @@ function handleCommand(event)
 
         else if (command === 'about')
         {
-            setCmdMessage(appName  + ' - Developed by ' + author + '. ' + 'Version ' + version + ' - ' + date + '.', 'ABOUT');
-            return;
+            about(); return;
         }
 
         else if (command === 'github')
@@ -824,20 +823,17 @@ function handleCommand(event)
 
         else if (command === 'reload')
         {
-            location.reload();
-            return;
+            location.reload(); return;
         }
 
         else if (command === 'skibidiboppi')
         {
-            setCmdMessage('Forza Napoli.', 'SKIBIDIBOPPI');
-            return;
+            setCmdMessage('Forza Napoli.', 'SKIBIDIBOPPI'); return;
         }
 
         else if (command === 'forza napoli')
         {
-            setCmdMessage('Skibidiboppi.', 'FORZA NAPOLI');
-            return;
+            setCmdMessage('Skibidiboppi.', 'FORZA NAPOLI'); return;
         }
 
         else
@@ -846,4 +842,10 @@ function handleCommand(event)
             return;
         }
     }
+}
+
+function about()
+{
+    setCmdMessage(appName  + ' - Developed by ' + author + '. ' + 'Version ' + version + ' - ' + date + '.', 'ABOUT');
+    return;
 }
