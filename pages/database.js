@@ -558,6 +558,7 @@ document.addEventListener("DOMContentLoaded", function()
         .catch(error => 
         {
             console.error('Error loading fixture details:', error);
+            setCmdMessage('Error loading fixture details: ' + error.message + '.', 'ERROR');
             databaseButtonsDiv.innerHTML = `
                 <div style="text-align: center; padding: 50px;">
                     <p>Error loading fixture details. Please try again.</p>

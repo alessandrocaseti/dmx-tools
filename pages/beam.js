@@ -691,7 +691,7 @@ class BeamCalculator
         catch (error) 
         {
             console.error('Error loading fixture:', error);
-            setCmdMessage('Error loading fixture data.', 'ERROR');
+            setCmdMessage('Error loading fixture data: ' + error.message + '.', 'ERROR');
         }
     }
 
