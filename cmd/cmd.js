@@ -544,33 +544,37 @@ function handleCommand(event)
         }
 
         // DIP PAGE COMMANDS
-        else if (command === 'clear -d' && currentPage === 'dip')
+        else if (command === 'clear -d' || command === '--cd' && currentPage === 'dip')
         {
             dipSwitch.clearAddress();
             return;
         }
 
-        else if (command === 'clear -a' && currentPage === 'dip')
+        else if (command === 'clear -a' || command === '--ca' && currentPage === 'dip')
         {
             dipSwitch.clearAll();
             return;
         }
 
-        else if (command === 'store' && currentPage === 'dip')
+        else if (command === 'store' || command === '--s' && currentPage === 'dip')
         {
             dipSwitch.storeAddress();
             return;
         }
 
-        else if (command === 'flip' && currentPage === 'dip')
+        else if (command === 'flip' || command === '--f' && currentPage === 'dip')
         {
             dipSwitch.flipSwitches();
             return;
         }
 
-        else if (command.startsWith('load') && currentPage === 'dip')
+        else if (command.startsWith('load') || command.startsWith('-l') && currentPage === 'dip')
         {
             let value = rawCommand.slice(4).trim();
+            if(command.startsWith('-l'))
+            {
+                value = rawCommand.slice(2).trim();
+            }
             if (value && !isNaN(value) && value > -1 && value < 512)
             {
                 let v = parseInt(value);
@@ -793,7 +797,7 @@ function handleCommand(event)
                     setCmdMessage('Available patch commands: add, remove, color, rename, patch, update, stats, docset, export, clear.', 'HELP');
                     return;
                 case 'dip':
-                    setCmdMessage('Available DIP commands: clear -d, clear -a, store, flip, load {address}, increment (or +), decrement (or -).', 'HELP');
+                    setCmdMessage('Available DIP commands: clear -d (or --cd), clear -a (or --ca), store (or --s), flip (or --f), load (or -l) {address}, increment (or +), decrement (or -).', 'HELP');
                     return;
                 case 'color':
                     setCmdMessage('Available color commands: save (or -s {color name}), clear list, rand, load (or -l {color name or id}).', 'HELP');
