@@ -579,6 +579,7 @@ function handleCommand(event)
             {
                 let v = parseInt(value);
                 dipSwitch.loadAddress(v);
+                return;
             }
             else
             {
@@ -588,15 +589,18 @@ function handleCommand(event)
                     if(v > -1 && v < 512)
                     {
                         dipSwitch.loadAddress(v);
+                        return;
                     }
                     else
                     {
                         setCmdMessage("Invalid binary string.", "ERROR");
+                        return;
                     }
                 }
                 else
                 {
                     setCmdMessage('Invalid DMX address. Please enter a number between 0 and 511.', 'ERROR');
+                    return;
                 }
             }
         }

@@ -286,13 +286,19 @@ input:disabled
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 0px;
+    gap: 8px;
 }
 
 #minAngle, #maxAngle, #lumiFlux
 {
-    margin-left: -48px;
+    width: 14%;
+    margin-left: -24px;
     font-weight: 600;
     color: var(--colore-giallo);
     font-family: Roboto Mono, monospace;
+}
+
+#minAngle, #maxAngle
+{
+    margin-left: -48px;
 }

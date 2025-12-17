@@ -631,15 +631,13 @@ class BeamCalculator
                 btn.classList.add('selected');
                 const brand = e.target.dataset.brand;
                 this.showFixtures(brand);
+                this.resetDialogValues();
             });
         });
 
         modal.style.display = 'flex';
-        document.getElementById("minAngle").innerHTML = '0°';
-        document.getElementById("maxAngle").innerHTML = '0°';
-        document.getElementById("lumiFlux").innerHTML = '0 lm';
-        // Small delay to allow display property to apply before transition starts
-        setTimeout(() => { modal.classList.add('show');}, 10);
+        this.resetDialogValues();
+        setTimeout(() => { modal.classList.add('show');}, 10);  // Small delay to allow display property to apply before transition starts
     }
 
     showFixtures(brand) 
@@ -711,6 +709,13 @@ class BeamCalculator
         modal.classList.remove('show');
         setTimeout(() => { modal.style.display = 'none'; }, 300); // Match timeout with CSS transition duration
         document.getElementById("beamImportFixtureBtn").disabled = true;
+    }
+
+    resetDialogValues()
+    {
+        document.getElementById("minAngle").innerHTML = '--';
+        document.getElementById("maxAngle").innerHTML = '--';
+        document.getElementById("lumiFlux").innerHTML = '--';
     }
 }
 
