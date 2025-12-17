@@ -37,7 +37,7 @@
 [] User Palettes system
 [] Lee and Rosco color palettes (maybe not)
 [] Link to palette
-[] Saved colors order
+[x] Saved colors order
 
 ## Power
 

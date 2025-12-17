@@ -617,8 +617,7 @@ class EnhancedColorConverter
         };
 
         setCmdMessage(`Color "${inputName}" (${color.hex}) saved successfully.`, 'SAVE');
-        this.savedColors.push(color);
-        this.savedColors.reverse(); 
+        this.savedColors.unshift(color);
         this.saveSavedColors();
         this.renderSavedColors();
         document.getElementById('colorName').value = '';
