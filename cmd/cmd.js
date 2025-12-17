@@ -581,7 +581,14 @@ function handleCommand(event)
                 if (isBinaryString(value))
                 {
                     let v = parseInt(value, 2);
-                    dipSwitch.loadAddress(v);
+                    if(v > -1 && v < 512)
+                    {
+                        dipSwitch.loadAddress(v);
+                    }
+                    else
+                    {
+                        setCmdMessage("Invalid binary string.", "ERROR");
+                    }
                 }
                 else
                 {
