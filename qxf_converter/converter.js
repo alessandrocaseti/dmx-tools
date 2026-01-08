@@ -6,7 +6,7 @@ const downloadButton = document.getElementById('downloadButton');
 const output = document.getElementById('output');
 let convertedFiles = [];
 
-const converterVersion = '1.1'
+const converterVersion = '1.2'
 
 convertButton.addEventListener('click', () => 
 {
@@ -146,6 +146,7 @@ function convertQxfToJson(xmlData)
     if (fixtureType === 'Color Changer') fixtureType = 'Par';
     if (fixtureType === 'Flower') fixtureType = 'Other';
     if (fixtureType === 'Smoke') fixtureType = 'FX Fog';
+    if (fixtureType === 'Hazer') fixtureType = 'FX Haze';
     if (fixtureType === 'LED Bar (Pixels)') fixtureType = 'Led Bar';
     if (fixtureType === 'LED Bar (Beams)') fixtureType = 'Led Bar';
 
@@ -158,6 +159,7 @@ function convertQxfToJson(xmlData)
         image: "",
         productPage: "",
         manual: "",
+        author: getText(fixture, "Author"),
         channels: [],
         modes: [],
         physical: {}
@@ -323,9 +325,16 @@ function convertQxfToJson(xmlData)
         const mode = modes[i];
         const chs = mode.querySelectorAll(":scope > Channel");
         const modeChannels = Array.from(chs).map(channel => channel.textContent);
+        const chsQty = modeChannels.length;
+        let modeName = mode.getAttribute("Name");
+        if (modeName === chsQty + " Channel" || modeName === chsQty + " Channels"
+        || modeName === chsQty + " channel" || modeName === chsQty + " channels")
+        {
+            modeName = "Mode " + (i + 1);
+        }
         extractedData.modes.push
         ({
-            name: mode.getAttribute("Name"),
+            name: modeName,
             totalChannels: modeChannels.length,
             channels: modeChannels
         });
@@ -392,5 +401,5 @@ function convertQxfToJson(xmlData)
 
 document.addEventListener('DOMContentLoaded', () => 
 {
-    document.getElementById('versionText').innerHTML = 'Version: ' + converterVersion;
+    document.getElementById('versionText').innerHTML = 'Version ' + converterVersion;
 });
