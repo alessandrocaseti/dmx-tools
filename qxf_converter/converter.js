@@ -5,6 +5,7 @@ const convertButton = document.getElementById('convertButton');
 const downloadButton = document.getElementById('downloadButton');
 const output = document.getElementById('output');
 let convertedFiles = [];
+let globalBrand = '';
 
 const converterVersion = '1.2'
 
@@ -81,6 +82,7 @@ convertButton.addEventListener('click', () =>
             };
             reader.readAsText(file);
         }
+        globalBrand = getText(fixture, "Manufacturer");
     }
 });
 
@@ -88,6 +90,7 @@ downloadButton.addEventListener('click', () =>
 {
     if (convertedFiles.length > 0) 
     {
+        let brandName = globalBrand;
         const zip = new JSZip();
         for (const file of convertedFiles) 
         {
@@ -107,7 +110,7 @@ downloadButton.addEventListener('click', () =>
             const downloadAnchorNode = document.createElement('a');
             const objectURL = URL.createObjectURL(content);
             downloadAnchorNode.setAttribute('href', objectURL);
-            downloadAnchorNode.setAttribute('download', 'converted_files.zip');
+            downloadAnchorNode.setAttribute('download', brandName + '.zip');
             document.body.appendChild(downloadAnchorNode);
             downloadAnchorNode.click();
             downloadAnchorNode.remove();
@@ -120,7 +123,6 @@ function convertQxfToJson(xmlData)
 {
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(xmlData, "text/xml");
-
     if (xmlDoc.getElementsByTagName("parsererror").length > 0) 
     {
         alert("Error parsing XML");
@@ -141,6 +143,8 @@ function convertQxfToJson(xmlData)
         return node ? node.textContent : "";
     };
 
+    globalBrand = getText(fixture, "Manufacturer");
+    
     // Extract Fixture Info
     let fixtureType = getText(fixture, "Type");
     if (fixtureType === 'Color Changer') fixtureType = 'Par';
