@@ -646,7 +646,7 @@ class BeamCalculator
         const fixtureColumn = document.getElementById('fixture-column');
         fixtureColumn.innerHTML = folderFiles[brand].map(file => 
         {
-            const name = file.replace('.json', '').replace(new RegExp('^' + brand + '[-_ ]*', 'i'), '').replace(/-/g, ' ').trim();
+            const name = getFixtureName(brand, file);
             return `<button class="fixture-btn" data-brand="${brand}" data-file="${file}">${name}</button>`;
         }).join('');
 

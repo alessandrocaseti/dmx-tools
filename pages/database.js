@@ -14,7 +14,6 @@ function updateAddressBar()
 {
     const addressBar = document.getElementById("databaseAddressBar");
     let path = '';
-    const brandPattern = new RegExp('^' + currentFolder + '[-_ ]*', 'i');
 
     if (currentView === "folders") 
     {
@@ -68,6 +67,16 @@ function editFixture()
     };
 }
 
+function getFixtureName(folder, file)
+{
+    let displayName = file.replace('.json', '');
+    const brandPattern = new RegExp('^' + folder + '[-_ ]*', 'i');
+    displayName = displayName.replace(brandPattern, '');
+    displayName = displayName.replace(/-/g, ' ').trim();
+    if(displayName.startsWith(folder)) { displayName = displayName.replace(folder, ''); }
+    return displayName;
+}
+
 document.addEventListener("DOMContentLoaded", function() 
 {
     const databaseButtonsDiv = document.getElementById("databaseButtons");
@@ -84,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function()
         }
     };
     
-    // --- Ricerca ---
+    // --- Search ---
     let previousView = currentView;
     let previousFolder = currentFolder;
     const searchBox = document.getElementById("fixture-searchbox");
@@ -170,11 +179,7 @@ document.addEventListener("DOMContentLoaded", function()
         {
             const fileButton = document.createElement("button");
             fileButton.className = "fileButton";
-            let displayName = r.file.replace('.json', '');
-            const brandPattern = new RegExp('^' + r.folder + '[-_ ]*', 'i');
-            displayName = displayName.replace(brandPattern, '');
-            displayName = displayName.replace(/-/g, ' ').trim();
-            fileButton.innerText = `${r.folder} • ${displayName}`;
+            fileButton.innerText = `${r.folder} • ${getFixtureName(r.folder, r.file)}`;
             if (fileButton.innerText.length > 39)
             {
                 const fullText = fileButton.innerText;
@@ -302,11 +307,7 @@ document.addEventListener("DOMContentLoaded", function()
         {
             const fileButton = document.createElement("button");
             fileButton.className = "fileButton";
-            let displayName = file.replace('.json', '');
-            const brandPattern = new RegExp('^' + folder + '[-_ ]*', 'i');
-            displayName = displayName.replace(brandPattern, '');
-            displayName = displayName.replace(/-/g, ' ').trim();
-            fileButton.innerText = displayName;
+            fileButton.innerText = getFixtureName(folder, file);
             fileButton.onclick = () => loadFixtureDetails(folder, file);
             databaseButtonsDiv.appendChild(fileButton);
         });

@@ -271,7 +271,7 @@ const folderFiles =
     ],
     "Art Systems":
     [
-        "Art-System-GC-18x15-RGBWA.json"
+        "Art-Systems-GC-18x15-RGBWA.json"
     ],
     "Astera":
     [
