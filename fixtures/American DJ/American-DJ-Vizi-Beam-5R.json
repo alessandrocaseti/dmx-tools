@@ -1,0 +1,435 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Vizi Beam 5R",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "daniel",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open / White"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Blue"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Green"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Yellow"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Magenta"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "11"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "UV"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise rainbow Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counterclockwise Rainbow Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 14"
+        },
+        {
+          "min": "120",
+          "max": "217",
+          "name": "Shakes"
+        },
+        {
+          "min": "218",
+          "max": "255",
+          "name": "Wheel Rotation Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Open"
+        },
+        {
+          "min": "4",
+          "max": "63",
+          "name": "Clockwise rotation Fast to Slow"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "Stop"
+        },
+        {
+          "min": "68",
+          "max": "127",
+          "name": "Counterclockwise rotation Slow to Fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Macros"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe Slow to Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Effect in Sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Slow to Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Frost",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Intensity 0 - 100%"
+        }
+      ]
+    },
+    {
+      "name": "Pan / Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Maintenance",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Colour Change normal"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Color Change to any position"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Color and Gobo Chane to any Position"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Lamp On"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Lamp Off"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All Motor Reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Scan Motor Reset"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "Colour Motor Reset"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Gobo Motor Reset"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "Shutter / Dimmer motor reset"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "Other Motor Reset"
+        },
+        {
+          "min": "100",
+          "max": "239",
+          "name": "Internal Programs"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active Programs"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Colour",
+        "Gobos",
+        "Prism",
+        "Shutter",
+        "Dimmer",
+        "Frost",
+        "Pan / Tilt Speed",
+        "Maintenance"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Gobos",
+        "Prism",
+        "Shutter",
+        "Dimmer",
+        "Frost",
+        "Pan / Tilt Speed",
+        "Maintenance"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Philips Platinum 5R",
+      "lumens": "13500",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "11",
+      "width": "310",
+      "height": "448",
+      "depth": "335"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "2",
+      "degreesMax": "2"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

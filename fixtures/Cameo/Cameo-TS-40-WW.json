@@ -1,0 +1,149 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "TS 40 WW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Andrew",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe slow -> fast < 1 Hz - 20 Hz"
+        }
+      ]
+    },
+    {
+      "name": "Set Dimmer Curve",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "63",
+          "name": "Linear dimmer curve"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Exponential dimmer curve"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Logarithmic dimmer curve"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "S-curve dimmer curve"
+        }
+      ]
+    },
+    {
+      "name": "Device Settings",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "63",
+          "name": "Dimmer response LED (hold 3s)"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Dimmer response halogen (hold 3s)"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine",
+        "Strobe",
+        "Set Dimmer Curve",
+        "Device Settings"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1567",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.8",
+      "width": "145",
+      "height": "205",
+      "depth": "240"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "38"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,1227 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Focus Spot 5Z",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Mark B.",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color Wheel 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open / White"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Red"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Orange"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Yellow"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Green"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "Purple"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "Light Blue"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Magenta"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation Fast - Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter Clockwise Rotation Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Wheel 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open / White"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Lavender"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Blue"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "CTB 5600"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Green"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "Yellow"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "UV"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "CTO 3200"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Pink"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation Fast - Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter Clockwise Rotation Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Open"
+        },
+        {
+          "min": "5",
+          "max": "19",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "34",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "35",
+          "max": "49",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "50",
+          "max": "64",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "65",
+          "max": "79",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "80",
+          "max": "94",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "95",
+          "max": "109",
+          "name": "Gobo 1 Shake (Slow - Fast)"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Gobo 2 Shake (Slow - Fast)"
+        },
+        {
+          "min": "125",
+          "max": "139",
+          "name": "Gobo 3 Shake (Slow - Fast)"
+        },
+        {
+          "min": "140",
+          "max": "154",
+          "name": "Gobo 4 Shake (Slow - Fast)"
+        },
+        {
+          "min": "155",
+          "max": "169",
+          "name": "Gobo 5 Shake (Slow - Fast)"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Gobo 6 Shake (Slow - Fast)"
+        },
+        {
+          "min": "190",
+          "max": "221",
+          "name": "Clockwise Rotation (Fast - Slow)"
+        },
+        {
+          "min": "222",
+          "max": "223",
+          "name": "No Rotation"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation (Slow - Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation (Fast - Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation (Slow - Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter Closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobing (Slow - Fast)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Effect (Slow - Fast)"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobing (Slow - Fast)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Master Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Prism 1 (6 Facet Circular)",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Prism 2 (5 Facet Linear)",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Prism 1 Indexing & Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation (Fast - Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation (Slow - Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Prism 2 Indexing & Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation (Fast - Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation (Slow - Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Prism 1 Indexing Fine",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Indexing Fine"
+        }
+      ]
+    },
+    {
+      "name": "Prism 2 Indexing Fine",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Indexing Fine"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Zoom Fine",
+      "type": "Beam"
+    },
+    {
+      "name": "Frost 1",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Frost 1"
+        }
+      ]
+    },
+    {
+      "name": "Frost 2",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Frost 2"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Modes",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theater"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Stage 2"
+        },
+        {
+          "min": "121",
+          "max": "121",
+          "name": "Dimming Speed 0.1 Sec."
+        },
+        {
+          "min": "122",
+          "max": "122",
+          "name": "Dimming Speed 0.2 Sec."
+        },
+        {
+          "min": "123",
+          "max": "123",
+          "name": "Dimming Speed 0.3 Sec."
+        },
+        {
+          "min": "124",
+          "max": "124",
+          "name": "Dimming Speed 0.4 Sec."
+        },
+        {
+          "min": "125",
+          "max": "125",
+          "name": "Dimming Speed 0.5 Sec."
+        },
+        {
+          "min": "126",
+          "max": "126",
+          "name": "Dimming Speed 0.6 Sec."
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Dimming Speed 0.7 Sec."
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Dimming Speed 0.8 Sec."
+        },
+        {
+          "min": "129",
+          "max": "129",
+          "name": "Dimming Speed 0.9 Sec."
+        },
+        {
+          "min": "130",
+          "max": "130",
+          "name": "Dimming Speed 1.0 Sec."
+        },
+        {
+          "min": "131",
+          "max": "131",
+          "name": "Dimming Speed 1.5 Sec."
+        },
+        {
+          "min": "132",
+          "max": "132",
+          "name": "Dimming Speed 2.0 Sec."
+        },
+        {
+          "min": "133",
+          "max": "133",
+          "name": "Dimming Speed 3.0 Sec."
+        },
+        {
+          "min": "134",
+          "max": "134",
+          "name": "Dimming Speed 4.0 Sec."
+        },
+        {
+          "min": "135",
+          "max": "135",
+          "name": "Dimming Speed 5.0 Sec."
+        },
+        {
+          "min": "136",
+          "max": "136",
+          "name": "Dimming Speed 6.0 Sec."
+        },
+        {
+          "min": "137",
+          "max": "137",
+          "name": "Dimming Speed 7.0 Sec."
+        },
+        {
+          "min": "138",
+          "max": "138",
+          "name": "Dimming Speed 8.0 Sec."
+        },
+        {
+          "min": "139",
+          "max": "139",
+          "name": "Dimming Speed 9.0 Sec."
+        },
+        {
+          "min": "140",
+          "max": "140",
+          "name": "Dimming Speed 10 Sec."
+        },
+        {
+          "min": "141",
+          "max": "255",
+          "name": "Default to Unit Setting"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Linear"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Square"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Inverse Square"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "S-Curve"
+        },
+        {
+          "min": "81",
+          "max": "255",
+          "name": "No Function"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Special Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Default LED Refresh Rate 1200Hz"
+        },
+        {
+          "min": "11",
+          "max": "11",
+          "name": "LED Refresh Rate 1 - 900"
+        },
+        {
+          "min": "12",
+          "max": "12",
+          "name": "LED Refresh Rate 2 - 910"
+        },
+        {
+          "min": "13",
+          "max": "13",
+          "name": "LED Refresh Rate 3 - 920"
+        },
+        {
+          "min": "14",
+          "max": "14",
+          "name": "LED Refresh Rate 4 - 930"
+        },
+        {
+          "min": "15",
+          "max": "15",
+          "name": "LED Refresh Rate 5 - 940"
+        },
+        {
+          "min": "16",
+          "max": "16",
+          "name": "LED Refresh Rate 6 - 950"
+        },
+        {
+          "min": "17",
+          "max": "17",
+          "name": "LED Refresh Rate 7 - 960"
+        },
+        {
+          "min": "18",
+          "max": "18",
+          "name": "LED Refresh Rate 8 - 970"
+        },
+        {
+          "min": "19",
+          "max": "19",
+          "name": "LED Refresh Rate 9 - 980"
+        },
+        {
+          "min": "20",
+          "max": "20",
+          "name": "LED Refresh Rate 10 - 990"
+        },
+        {
+          "min": "21",
+          "max": "21",
+          "name": "LED Refresh Rate 11 - 1000"
+        },
+        {
+          "min": "22",
+          "max": "22",
+          "name": "LED Refresh Rate 12 - 1010"
+        },
+        {
+          "min": "23",
+          "max": "23",
+          "name": "LED Refresh Rate 13 - 1020"
+        },
+        {
+          "min": "24",
+          "max": "24",
+          "name": "LED Refresh Rate 14 - 1030"
+        },
+        {
+          "min": "25",
+          "max": "25",
+          "name": "LED Refresh Rate 15 - 1040"
+        },
+        {
+          "min": "26",
+          "max": "26",
+          "name": "LED Refresh Rate 16 - 1050"
+        },
+        {
+          "min": "27",
+          "max": "27",
+          "name": "LED Refresh Rate 17 - 1060"
+        },
+        {
+          "min": "28",
+          "max": "28",
+          "name": "LED Refresh Rate 18 - 1070"
+        },
+        {
+          "min": "29",
+          "max": "29",
+          "name": "LED Refresh Rate 19 - 1080"
+        },
+        {
+          "min": "30",
+          "max": "30",
+          "name": "LED Refresh Rate 20 - 1090"
+        },
+        {
+          "min": "31",
+          "max": "31",
+          "name": "LED Refresh Rate 21 - 1100"
+        },
+        {
+          "min": "32",
+          "max": "32",
+          "name": "LED Refresh Rate 22 - 1110"
+        },
+        {
+          "min": "33",
+          "max": "33",
+          "name": "LED Refresh Rate 23 - 1120"
+        },
+        {
+          "min": "34",
+          "max": "34",
+          "name": "LED Refresh Rate 24 - 1130"
+        },
+        {
+          "min": "35",
+          "max": "35",
+          "name": "LED Refresh Rate 25 - 1140"
+        },
+        {
+          "min": "36",
+          "max": "36",
+          "name": "LED Refresh Rate 26 - 1150"
+        },
+        {
+          "min": "37",
+          "max": "37",
+          "name": "LED Refresh Rate 27 - 1160"
+        },
+        {
+          "min": "38",
+          "max": "38",
+          "name": "LED Refresh Rate 28 - 1170"
+        },
+        {
+          "min": "39",
+          "max": "39",
+          "name": "LED Refresh Rate 29 - 1180"
+        },
+        {
+          "min": "40",
+          "max": "40",
+          "name": "LED Refresh Rate 30 - 1190"
+        },
+        {
+          "min": "41",
+          "max": "41",
+          "name": "LED Refresh Rate 31 - 1210"
+        },
+        {
+          "min": "42",
+          "max": "42",
+          "name": "LED Refresh Rate 32 - 1220"
+        },
+        {
+          "min": "43",
+          "max": "43",
+          "name": "LED Refresh Rate 33 - 1230"
+        },
+        {
+          "min": "44",
+          "max": "44",
+          "name": "LED Refresh Rate 34 - 1240"
+        },
+        {
+          "min": "45",
+          "max": "45",
+          "name": "LED Refresh Rate 35 - 1250"
+        },
+        {
+          "min": "46",
+          "max": "46",
+          "name": "LED Refresh Rate 36 - 1260"
+        },
+        {
+          "min": "47",
+          "max": "47",
+          "name": "LED Refresh Rate 37 - 1270"
+        },
+        {
+          "min": "48",
+          "max": "48",
+          "name": "LED Refresh Rate 38 - 1280"
+        },
+        {
+          "min": "49",
+          "max": "49",
+          "name": "LED Refresh Rate 39 - 1290"
+        },
+        {
+          "min": "50",
+          "max": "50",
+          "name": "LED Refresh Rate 40 - 1300"
+        },
+        {
+          "min": "51",
+          "max": "51",
+          "name": "LED Refresh Rate 41 - 1310"
+        },
+        {
+          "min": "52",
+          "max": "52",
+          "name": "LED Refresh Rate 42 - 1320"
+        },
+        {
+          "min": "53",
+          "max": "53",
+          "name": "LED Refresh Rate 43 - 1330"
+        },
+        {
+          "min": "54",
+          "max": "54",
+          "name": "LED Refresh Rate 44 - 1340"
+        },
+        {
+          "min": "55",
+          "max": "55",
+          "name": "LED Refresh Rate 45 - 1350"
+        },
+        {
+          "min": "56",
+          "max": "56",
+          "name": "LED Refresh Rate 46 - 1360"
+        },
+        {
+          "min": "57",
+          "max": "57",
+          "name": "LED Refresh Rate 47 - 1370"
+        },
+        {
+          "min": "58",
+          "max": "58",
+          "name": "LED Refresh Rate 48 - 1380"
+        },
+        {
+          "min": "59",
+          "max": "59",
+          "name": "LED Refresh Rate 49 - 1390"
+        },
+        {
+          "min": "60",
+          "max": "60",
+          "name": "LED Refresh Rate 50 - 1400"
+        },
+        {
+          "min": "61",
+          "max": "61",
+          "name": "LED Refresh Rate 51 - 1410"
+        },
+        {
+          "min": "62",
+          "max": "62",
+          "name": "LED Refresh Rate 52 - 1420"
+        },
+        {
+          "min": "63",
+          "max": "63",
+          "name": "LED Refresh Rate 53 - 1430"
+        },
+        {
+          "min": "64",
+          "max": "64",
+          "name": "LED Refresh Rate 54 - 1440"
+        },
+        {
+          "min": "65",
+          "max": "65",
+          "name": "LED Refresh Rate 55 - 1450"
+        },
+        {
+          "min": "66",
+          "max": "66",
+          "name": "LED Refresh Rate 56 - 1460"
+        },
+        {
+          "min": "67",
+          "max": "67",
+          "name": "LED Refresh Rate 57 - 1470"
+        },
+        {
+          "min": "68",
+          "max": "68",
+          "name": "LED Refresh Rate 58 - 1480"
+        },
+        {
+          "min": "69",
+          "max": "69",
+          "name": "LED Refresh Rate 59 - 1490"
+        },
+        {
+          "min": "70",
+          "max": "70",
+          "name": "LED Refresh Rate 60 - 1500"
+        },
+        {
+          "min": "71",
+          "max": "71",
+          "name": "LED Refresh Rate 61- 2500"
+        },
+        {
+          "min": "72",
+          "max": "72",
+          "name": "LED Refresh Rate 62 - 4000"
+        },
+        {
+          "min": "73",
+          "max": "73",
+          "name": "LED Refresh Rate 63 - 5000"
+        },
+        {
+          "min": "74",
+          "max": "74",
+          "name": "LED Refresh Rate 64 - 6000"
+        },
+        {
+          "min": "75",
+          "max": "75",
+          "name": "LED Refresh Rate 65 - 10K"
+        },
+        {
+          "min": "76",
+          "max": "76",
+          "name": "LED Refresh Rate 66 - 15K"
+        },
+        {
+          "min": "77",
+          "max": "77",
+          "name": "LED Refresh Rate 67 - 20K"
+        },
+        {
+          "min": "78",
+          "max": "78",
+          "name": "LED Refresh Rate 68 - 25K"
+        },
+        {
+          "min": "79",
+          "max": "79",
+          "name": "Disable LED Refresh Rate"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Enable Blackout w/Pan/Tilt Movement"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Disable Blackout w/Pan/Tilt Movement"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Enable Blackout w/Color Change"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Disable Blackout w/Color Change"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Enable Blackout w/Gobo Change"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Disable Blackout w/Gobo Change"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Reset All"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Reset Pan/Tilt"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Reset Color & Gobo"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Reset Effect & Focus"
+        },
+        {
+          "min": "180",
+          "max": "185",
+          "name": "Internal Program 1  (Scenes 1-8)"
+        },
+        {
+          "min": "186",
+          "max": "191",
+          "name": "Internal Program 2  (Scenes 9-16)"
+        },
+        {
+          "min": "192",
+          "max": "197",
+          "name": "Internal Program 3  (Scenes 17-24)"
+        },
+        {
+          "min": "198",
+          "max": "199",
+          "name": "Internal Program 4  (Scenes 25-32)"
+        },
+        {
+          "min": "200",
+          "max": "205",
+          "name": "Internal Program 5  (Scenes 33-40)"
+        },
+        {
+          "min": "206",
+          "max": "211",
+          "name": "Internal Program 6  (Scenes 41-48)"
+        },
+        {
+          "min": "212",
+          "max": "216",
+          "name": "Internal Program 7  (Scenes 49-56)"
+        },
+        {
+          "min": "217",
+          "max": "227",
+          "name": "Fan Mode Low"
+        },
+        {
+          "min": "228",
+          "max": "238",
+          "name": "Fan Mode High"
+        },
+        {
+          "min": "239",
+          "max": "249",
+          "name": "Fan Mode Auto"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "No Function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Basic",
+      "totalChannels": 19,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color Wheel 1",
+        "Color Wheel 2",
+        "Gobo Wheel",
+        "Gobo Rotation",
+        "Shutter",
+        "Master Dimmer",
+        "Prism 1 (6 Facet Circular)",
+        "Prism 1 Indexing & Rotation",
+        "Prism 2 (5 Facet Linear)",
+        "Prism 2 Indexing & Rotation",
+        "Focus",
+        "Zoom",
+        "Frost 1",
+        "Frost 2",
+        "Dimmer Modes",
+        "Pan/Tilt Speed",
+        "Special Functions"
+      ]
+    },
+    {
+      "name": "Standard",
+      "totalChannels": 22,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Color Wheel 1",
+        "Color Wheel 2",
+        "Gobo Wheel",
+        "Gobo Rotation",
+        "Shutter",
+        "Master Dimmer",
+        "Prism 1 (6 Facet Circular)",
+        "Prism 1 Indexing & Rotation",
+        "Prism 2 (5 Facet Linear)",
+        "Prism 2 Indexing & Rotation",
+        "Focus",
+        "Zoom",
+        "Frost 1",
+        "Frost 2",
+        "Dimmer Modes",
+        "Dimmer Curves",
+        "Pan/Tilt Speed",
+        "Special Functions"
+      ]
+    },
+    {
+      "name": "Extended",
+      "totalChannels": 26,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Color Wheel 1",
+        "Color Wheel 2",
+        "Gobo Wheel",
+        "Gobo Rotation",
+        "Shutter",
+        "Master Dimmer",
+        "Master Dimmer Fine",
+        "Prism 1 (6 Facet Circular)",
+        "Prism 1 Indexing & Rotation",
+        "Prism 1 Indexing Fine",
+        "Prism 2 (5 Facet Linear)",
+        "Prism 2 Indexing & Rotation",
+        "Prism 2 Indexing Fine",
+        "Focus",
+        "Zoom",
+        "Zoom Fine",
+        "Frost 1",
+        "Frost 2",
+        "Dimmer Modes",
+        "Dimmer Curves",
+        "Pan/Tilt Speed",
+        "Special Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "9000",
+      "colourTemperature": "6700"
+    },
+    "dimensions": {
+      "weight": "10",
+      "width": "279",
+      "height": "457",
+      "depth": "182"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "11",
+      "degreesMax": "22"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "630",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "280",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

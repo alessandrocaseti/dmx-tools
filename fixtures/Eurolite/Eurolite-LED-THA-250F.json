@@ -1,0 +1,89 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED THA-250F",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Andrea Ugolini",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED OFF"
+        },
+        {
+          "min": "32",
+          "max": "95",
+          "name": "Linear strobe effect with increasing speed"
+        },
+        {
+          "min": "96",
+          "max": "159",
+          "name": "Pulse strobe effect with increasing speed"
+        },
+        {
+          "min": "160",
+          "max": "223",
+          "name": "Random strobe effect with increasing speed"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED ON"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Focus",
+        "Strobe",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED COB 250 W, white",
+      "lumens": "7000",
+      "colourTemperature": "2800"
+    },
+    "dimensions": {
+      "weight": "5.5",
+      "width": "3356",
+      "height": "3985",
+      "depth": "4573"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "13",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "265",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

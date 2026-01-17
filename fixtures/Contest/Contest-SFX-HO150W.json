@@ -1,0 +1,106 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "SFX-HO150W",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ray Console - cd",
+  "channels": [
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED Off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED On"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect at increasing speed"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED On"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse effects sequence"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED On"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect at increasing speed"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED On"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "6.2",
+      "width": "295",
+      "height": "315",
+      "depth": "377"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "155",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

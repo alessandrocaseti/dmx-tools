@@ -1,0 +1,79 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Atlas",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Closed"
+        },
+        {
+          "min": "7",
+          "max": "64",
+          "name": "Bands opened progressively (right to left)"
+        },
+        {
+          "min": "65",
+          "max": "139",
+          "name": "Bands obscured progressively (right to left)"
+        },
+        {
+          "min": "140",
+          "max": "243",
+          "name": "Strobe (slow to fast)"
+        },
+        {
+          "min": "244",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 1,
+      "channels": [
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HTI 575W",
+      "lumens": "49000",
+      "colourTemperature": "5600"
+    },
+    "dimensions": {
+      "weight": "27",
+      "width": "725",
+      "height": "400",
+      "depth": "600"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "1",
+      "degreesMax": "1"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "575",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

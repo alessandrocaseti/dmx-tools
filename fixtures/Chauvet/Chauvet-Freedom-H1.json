@@ -1,0 +1,322 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Freedom H1",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jason R Johnston",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "R: 100% G: 0-100% B: 0% A: 0%"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "R: 100-0% G: 100% B: 0% A: 0%"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "R: 0% G: 100% B: 0-100% A: 0%"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "R: 0% G: 100-0% B: 0% A: 0%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "R: 0-100% G: 100% B: 100% A: 0%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "R: 100% G: 100% B: 100-0% A: 0%"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "R: 100% G: 0-100% B: 0-100% A: 0%"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "R: 100-0% G: 100-0% B: 100% A: 0%"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "R: 100% G: 100% B: 100% A: 100%"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "Color 1"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "Color 2"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "Color 3"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "Color 4"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Color 5"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Color 6"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Color 7"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Color 8"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Color 9"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Color 10"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Color 11"
+        }
+      ]
+    },
+    {
+      "name": "Auto/Sound-Active Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Fuction"
+        },
+        {
+          "min": "11",
+          "max": "60",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "61",
+          "max": "120",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "121",
+          "max": "180",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "181",
+          "max": "240",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound-Active Program\n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto program Speed, Slow Fast"
+        }
+      ]
+    },
+    {
+      "name": "Sound Sensitivity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Sound-Sensitivity Off"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Sound-Sensitivity, Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed Mode",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Preset Dimmer"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer Speed Mode Off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer Speed Mode 1"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer Speed Mode 2"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer Speed Mode 3"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 12,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV",
+        "Strobe",
+        "Color Macro",
+        "Auto/Sound-Active Programs",
+        "Auto Speed",
+        "Dimmer Speed Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "268",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "0.7",
+      "width": "97",
+      "height": "135",
+      "depth": "75"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "10",
+      "dmxConnector": "Wireless"
+    }
+  }
+}

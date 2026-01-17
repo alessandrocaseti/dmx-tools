@@ -1,0 +1,352 @@
+{
+  "version": "1.2",
+  "manufacturer": "Audibax",
+  "model": "Iowa 70",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Cristian",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimming / Strobe",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No Effect"
+        },
+        {
+          "min": "8",
+          "max": "134",
+          "name": "Dimming"
+        },
+        {
+          "min": "135",
+          "max": "239",
+          "name": "Strobe from slow to fast"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Light on"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Color Choose",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Color Assortment 1"
+        },
+        {
+          "min": "8",
+          "max": "21",
+          "name": "Color Assortment 2"
+        },
+        {
+          "min": "22",
+          "max": "34",
+          "name": "Color Assortment 3"
+        },
+        {
+          "min": "35",
+          "max": "49",
+          "name": "Color Assortment 4"
+        },
+        {
+          "min": "50",
+          "max": "63",
+          "name": "Color Assortment 5"
+        },
+        {
+          "min": "64",
+          "max": "77",
+          "name": "Color Assortment 6"
+        },
+        {
+          "min": "78",
+          "max": "91",
+          "name": "Color Assortment 7"
+        },
+        {
+          "min": "92",
+          "max": "105",
+          "name": "Color Assortment 8"
+        },
+        {
+          "min": "106",
+          "max": "119",
+          "name": "Color Assortment 9"
+        },
+        {
+          "min": "120",
+          "max": "134",
+          "name": "Color Assortment 10"
+        },
+        {
+          "min": "135",
+          "max": "147",
+          "name": "Color Assortment 11"
+        },
+        {
+          "min": "148",
+          "max": "161",
+          "name": "Color Assortment 12"
+        },
+        {
+          "min": "162",
+          "max": "175",
+          "name": "Color Assortment 13"
+        },
+        {
+          "min": "176",
+          "max": "189",
+          "name": "Color Assortment 14"
+        },
+        {
+          "min": "190",
+          "max": "203",
+          "name": "Color Assortment 15"
+        },
+        {
+          "min": "204",
+          "max": "217",
+          "name": "Color Assortment 16"
+        },
+        {
+          "min": "218",
+          "max": "231",
+          "name": "Color Assortment 17"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Color Saltus"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "149",
+          "name": "No Function"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    },
+    {
+      "name": "Color Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color Speed"
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Movement (Auto & Sound Effect)"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Auto 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Auto 2"
+        },
+        {
+          "min": "38",
+          "max": "53",
+          "name": "Auto 3"
+        },
+        {
+          "min": "54",
+          "max": "67",
+          "name": "Auto 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Auto 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Auto 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Auto 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Auto 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Sound 1"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Sound 2"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Sound 3"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Sound 4"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Sound 5"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Sound 6"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Sound 7"
+        },
+        {
+          "min": "233",
+          "max": "255",
+          "name": "Sound 8"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Basic",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Dimming / Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Pan/Tilt speed",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Advanced",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimming / Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Choose",
+        "Color Speed",
+        "Auto",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "3920",
+      "colourTemperature": "4000"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "175",
+      "height": "235",
+      "depth": "175"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "36",
+      "degreesMax": "36"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "100",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

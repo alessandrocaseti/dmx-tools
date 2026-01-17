@@ -1,0 +1,801 @@
+{
+  "version": "1.2",
+  "manufacturer": "DTS",
+  "model": "XR7 Spot",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Nicolò Zanon",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Movement speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Standard"
+        },
+        {
+          "min": "11",
+          "max": "25",
+          "name": "Fast movemet"
+        },
+        {
+          "min": "26",
+          "max": "127",
+          "name": "Vector mode from fast to slow"
+        },
+        {
+          "min": "128",
+          "max": "247",
+          "name": "Variable time reaction to DMX signal (fast to slow)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Slow reaction time to DMX signal"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Black-out"
+        },
+        {
+          "min": "9",
+          "max": "255",
+          "name": "Proportional dimmer"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Black-out"
+        },
+        {
+          "min": "10",
+          "max": "23",
+          "name": "Strobo random speed"
+        },
+        {
+          "min": "24",
+          "max": "37",
+          "name": "Strobo speed 1 min."
+        },
+        {
+          "min": "38",
+          "max": "51",
+          "name": "Strobe speed 2"
+        },
+        {
+          "min": "52",
+          "max": "65",
+          "name": "Strobe speed 3"
+        },
+        {
+          "min": "66",
+          "max": "79",
+          "name": "Strobe speed 4"
+        },
+        {
+          "min": "80",
+          "max": "93",
+          "name": "Strobe speed 5"
+        },
+        {
+          "min": "94",
+          "max": "107",
+          "name": "Strobe speed 6 max"
+        },
+        {
+          "min": "108",
+          "max": "121",
+          "name": "Pulse open speed 1 min"
+        },
+        {
+          "min": "122",
+          "max": "135",
+          "name": "Pulse open speed 2"
+        },
+        {
+          "min": "136",
+          "max": "149",
+          "name": "Pulse open speed 3"
+        },
+        {
+          "min": "150",
+          "max": "163",
+          "name": "Pulse open speed 4 max"
+        },
+        {
+          "min": "164",
+          "max": "177",
+          "name": "Pulse closed speed 1 min"
+        },
+        {
+          "min": "178",
+          "max": "191",
+          "name": "Pulse closed speed 2"
+        },
+        {
+          "min": "192",
+          "max": "205",
+          "name": "Pulse closed speed 3"
+        },
+        {
+          "min": "206",
+          "max": "219",
+          "name": "Pulse closed speed 4 max"
+        },
+        {
+          "min": "220",
+          "max": "227",
+          "name": "Colour and Gobo in black -out"
+        },
+        {
+          "min": "228",
+          "max": "233",
+          "name": "Pan and Tilt in black-out"
+        },
+        {
+          "min": "234",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Colour1"
+        },
+        {
+          "min": "11",
+          "max": "21",
+          "name": "Bicolour 1/2"
+        },
+        {
+          "min": "22",
+          "max": "32",
+          "name": "Colour2"
+        },
+        {
+          "min": "33",
+          "max": "43",
+          "name": "Bicolour 2/3"
+        },
+        {
+          "min": "44",
+          "max": "54",
+          "name": "Colour3"
+        },
+        {
+          "min": "55",
+          "max": "65",
+          "name": "Bicolour 3/4"
+        },
+        {
+          "min": "66",
+          "max": "76",
+          "name": "Colour4"
+        },
+        {
+          "min": "77",
+          "max": "87",
+          "name": "Bicolour 4/5"
+        },
+        {
+          "min": "88",
+          "max": "98",
+          "name": "Colour5"
+        },
+        {
+          "min": "99",
+          "max": "109",
+          "name": "Bicolour 5/6"
+        },
+        {
+          "min": "110",
+          "max": "120",
+          "name": "Colour6"
+        },
+        {
+          "min": "121",
+          "max": "131",
+          "name": "Bicolour 6/7"
+        },
+        {
+          "min": "132",
+          "max": "142",
+          "name": "Colour7"
+        },
+        {
+          "min": "143",
+          "max": "153",
+          "name": "Bicolour 7/8"
+        },
+        {
+          "min": "154",
+          "max": "164",
+          "name": "Colour8"
+        },
+        {
+          "min": "165",
+          "max": "175",
+          "name": "Bicolour 8/9"
+        },
+        {
+          "min": "176",
+          "max": "186",
+          "name": "Colour9"
+        },
+        {
+          "min": "187",
+          "max": "197",
+          "name": "Bicolour 9/1"
+        },
+        {
+          "min": "198",
+          "max": "200",
+          "name": "Right rotation speed 1 min"
+        },
+        {
+          "min": "201",
+          "max": "203",
+          "name": "Right rotation speed 2"
+        },
+        {
+          "min": "204",
+          "max": "206",
+          "name": "Right rotation speed 3"
+        },
+        {
+          "min": "207",
+          "max": "209",
+          "name": "Right rotation speed 4"
+        },
+        {
+          "min": "210",
+          "max": "212",
+          "name": "Right rotation speed 5"
+        },
+        {
+          "min": "213",
+          "max": "215",
+          "name": "Right rotation speed 6"
+        },
+        {
+          "min": "216",
+          "max": "218",
+          "name": "Right rotation speed 7"
+        },
+        {
+          "min": "219",
+          "max": "221",
+          "name": "Right rotation speed 8"
+        },
+        {
+          "min": "222",
+          "max": "224",
+          "name": "Right rotation speed 9 max"
+        },
+        {
+          "min": "225",
+          "max": "228",
+          "name": "Stop"
+        },
+        {
+          "min": "229",
+          "max": "231",
+          "name": "Left rotation speed 1 min"
+        },
+        {
+          "min": "232",
+          "max": "234",
+          "name": "Left rotation speed 2"
+        },
+        {
+          "min": "235",
+          "max": "237",
+          "name": "Left rotation speed 3"
+        },
+        {
+          "min": "238",
+          "max": "240",
+          "name": "Left rotation speed 4"
+        },
+        {
+          "min": "241",
+          "max": "243",
+          "name": "Left rotation speed 5"
+        },
+        {
+          "min": "244",
+          "max": "246",
+          "name": "Left rotation speed 6"
+        },
+        {
+          "min": "247",
+          "max": "249",
+          "name": "Left rotation speed 7"
+        },
+        {
+          "min": "250",
+          "max": "252",
+          "name": "Left rotation speed 8"
+        },
+        {
+          "min": "253",
+          "max": "255",
+          "name": "Left rotation speed 9 max"
+        }
+      ]
+    },
+    {
+      "name": "Proportional colour (priority)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No effect"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Proportional colour"
+        }
+      ]
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Open"
+        },
+        {
+          "min": "26",
+          "max": "51",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "52",
+          "max": "77",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "78",
+          "max": "103",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "104",
+          "max": "129",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "130",
+          "max": "155",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "156",
+          "max": "181",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "182",
+          "max": "207",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "208",
+          "max": "213",
+          "name": "Speed rotation 1 min"
+        },
+        {
+          "min": "214",
+          "max": "219",
+          "name": "Speed rotation 2"
+        },
+        {
+          "min": "220",
+          "max": "225",
+          "name": "Speed rotation 3"
+        },
+        {
+          "min": "226",
+          "max": "231",
+          "name": "Speed rotation 4"
+        },
+        {
+          "min": "232",
+          "max": "237",
+          "name": "Speed rotation 5"
+        },
+        {
+          "min": "238",
+          "max": "243",
+          "name": "Speed rotation 6"
+        },
+        {
+          "min": "244",
+          "max": "249",
+          "name": "Speed rotation 7"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Speed rotation 8 man"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Proportional from 0° to 360°"
+        },
+        {
+          "min": "128",
+          "max": "180",
+          "name": "Left rotation"
+        },
+        {
+          "min": "181",
+          "max": "202",
+          "name": "Stop"
+        },
+        {
+          "min": "203",
+          "max": "255",
+          "name": "Right rotation"
+        }
+      ]
+    },
+    {
+      "name": "Prism / prism rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "No effect"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Prism"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Left rotation"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Right rotation"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Light beam angle",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "84",
+          "name": "No lens 13°"
+        },
+        {
+          "min": "85",
+          "max": "170",
+          "name": "First lens 18°"
+        },
+        {
+          "min": "171",
+          "max": "255",
+          "name": "Second lens 21°"
+        }
+      ]
+    },
+    {
+      "name": "Frost (priority)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No lens"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Frost"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "No effect"
+        },
+        {
+          "min": "30",
+          "max": "85",
+          "name": "Lamp OFF (active after 3 seconds)"
+        },
+        {
+          "min": "86",
+          "max": "170",
+          "name": "Internal motor reset"
+        },
+        {
+          "min": "171",
+          "max": "235",
+          "name": "Total reset"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Lamp ON (active after 3 seconds)"
+        }
+      ]
+    },
+    {
+      "name": "Shutter (8/10ch)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Black out"
+        },
+        {
+          "min": "10",
+          "max": "85",
+          "name": "Dimmer"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "Strobo random speed"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Strobo speed 1 min"
+        },
+        {
+          "min": "106",
+          "max": "115",
+          "name": "Strobo speed 2"
+        },
+        {
+          "min": "116",
+          "max": "125",
+          "name": "Strobo speed 3"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Strobo speed 4"
+        },
+        {
+          "min": "136",
+          "max": "145",
+          "name": "Strobo speed 5"
+        },
+        {
+          "min": "146",
+          "max": "155",
+          "name": "Strobo speed 6 max"
+        },
+        {
+          "min": "156",
+          "max": "165",
+          "name": "Pulse open speed 1 min"
+        },
+        {
+          "min": "166",
+          "max": "175",
+          "name": "Pulse open speed 2"
+        },
+        {
+          "min": "176",
+          "max": "185",
+          "name": "Pulse open speed 3"
+        },
+        {
+          "min": "186",
+          "max": "195",
+          "name": "Pulse open speed 4 max"
+        },
+        {
+          "min": "196",
+          "max": "205",
+          "name": "Pulse closed speed 1 min"
+        },
+        {
+          "min": "206",
+          "max": "215",
+          "name": "Pulse closed speed 2"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "Pulse closed speed 3"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Pulse closed speed 4 max"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Colour/gobo/pan/tilt in black out"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Focus / light beam angle / frost",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "72",
+          "name": "No lens 13°"
+        },
+        {
+          "min": "73",
+          "max": "145",
+          "name": "First lens 18°"
+        },
+        {
+          "min": "146",
+          "max": "218",
+          "name": "Second lens 21°"
+        },
+        {
+          "min": "219",
+          "max": "255",
+          "name": "Frost"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Gobo rotation",
+        "Color",
+        "Gobo wheel",
+        "Shutter (8/10ch)",
+        "Pan",
+        "Tilt",
+        "Prism / prism rotation",
+        "Focus / light beam angle / frost"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Gobo rotation",
+        "Color",
+        "Gobo wheel",
+        "Shutter (8/10ch)",
+        "Pan",
+        "Tilt",
+        "Prism / prism rotation",
+        "Focus / light beam angle / frost",
+        "Pan Fine",
+        "Tilt Fine"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Movement speed",
+        "Dimmer",
+        "Shutter",
+        "Color",
+        "Proportional colour (priority)",
+        "Gobo wheel",
+        "Gobo rotation",
+        "Prism / prism rotation",
+        "Focus",
+        "Light beam angle",
+        "Frost (priority)",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSR 575/2 W",
+      "lumens": "49000",
+      "colourTemperature": "7200"
+    },
+    "dimensions": {
+      "weight": "26",
+      "width": "450",
+      "height": "660",
+      "depth": "360"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "21"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "319"
+    },
+    "technical": {
+      "powerConsumption": "800",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

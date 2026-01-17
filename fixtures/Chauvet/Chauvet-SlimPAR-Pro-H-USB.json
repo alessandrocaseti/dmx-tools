@@ -1,0 +1,242 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "SlimPAR Pro H USB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Pete Mueller",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color macros"
+        }
+      ]
+    },
+    {
+      "name": "Speed/Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Slow to fast/Off"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Slow to fast/Control the level"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Pulse effect 0-100%"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Pulse effect 100%-0"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse effect 100%-0-100%"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto fade transition"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Auto snap transition (6 colors)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Auto snap transition (32 colors)"
+        },
+        {
+          "min": "224",
+          "max": "249",
+          "name": "Sound-active (6 colors)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound-active (32 colors)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Default set from menu"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Mode 1 (fast speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Mode 2 (medium speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Mode 3 (slow speed)"
+        }
+      ]
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No Effect"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 12,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV",
+        "Strobe",
+        "Color Macros",
+        "Mode",
+        "Speed/Sensitivity",
+        "Dimmer Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED 10W",
+      "lumens": "1827",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.3",
+      "width": "253",
+      "height": "290",
+      "depth": "98"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "24",
+      "degreesMax": "24"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "99",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

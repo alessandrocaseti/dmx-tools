@@ -1,0 +1,447 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "Oz-37x15QC",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jan Lachman",
+  "channels": [
+    {
+      "name": "Pan movement",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt movement",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt movement speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Fast to slow speed settings"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Black out during movements"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "No function, max speed"
+        }
+      ]
+    },
+    {
+      "name": "Shutter & Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LEDs off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "No function, LEDs on"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Slow to fast strobe"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "No function, LEDs on"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Slow to fast pulse effect"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "No function, LEDs on"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Slow to fast random strobe"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "No function, LEDs off"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "All LEDs Red",
+      "type": "Red"
+    },
+    {
+      "name": "All LEDs Green",
+      "type": "Green"
+    },
+    {
+      "name": "All LEDs Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "All LEDs White",
+      "type": "White"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Colour macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "39",
+          "name": "From red to yellow"
+        },
+        {
+          "min": "40",
+          "max": "71",
+          "name": "From yellow to green"
+        },
+        {
+          "min": "72",
+          "max": "103",
+          "name": "From green to cyan"
+        },
+        {
+          "min": "104",
+          "max": "135",
+          "name": "From cyan to blue"
+        },
+        {
+          "min": "136",
+          "max": "167",
+          "name": "From blue to magenta"
+        },
+        {
+          "min": "168",
+          "max": "199",
+          "name": "From magenta to red"
+        },
+        {
+          "min": "200",
+          "max": "231",
+          "name": "From red to white"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Slow to fast rainbow effect"
+        }
+      ]
+    },
+    {
+      "name": "Preset colours",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "White 2700K"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "White 3200K"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "White 4300K"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "White 5600K"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "White 6500K"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "White 8000K"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Red"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Green"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Blue"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Cold white"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Warm white"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Yellow"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "75",
+          "name": "Cyan"
+        },
+        {
+          "min": "76",
+          "max": "114",
+          "name": "Colour palette"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Red/White"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Green/White"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Blue/Red"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "White/Red"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "White/Pink"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "White/Turquoise"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Light red/White"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "Slow to fast rainbow effect"
+        }
+      ]
+    },
+    {
+      "name": "Preset colour dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "100% - 0%"
+        }
+      ]
+    },
+    {
+      "name": "Patterns sequencing",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "No function"
+        },
+        {
+          "min": "15",
+          "max": "255",
+          "name": "Sequences"
+        }
+      ]
+    },
+    {
+      "name": "Patterns sequencing speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "125",
+          "name": "From fast to slow"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "Stop"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "From slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Patterns sequencing fader",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fast to slow fader"
+        }
+      ]
+    },
+    {
+      "name": "White balance",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "254",
+          "name": "New white balance"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Save new balance"
+        }
+      ]
+    },
+    {
+      "name": "Internal programs and options",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "No function"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Resets"
+        },
+        {
+          "min": "100",
+          "max": "230",
+          "name": "Internal program 1-7"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Music sensitive program"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "18 Ch Basic mode",
+      "totalChannels": 18,
+      "channels": [
+        "Pan movement",
+        "Tilt movement",
+        "Pan/Tilt movement speed",
+        "Shutter & Strobe",
+        "Dimmer",
+        "All LEDs Red",
+        "All LEDs Green",
+        "All LEDs Blue",
+        "All LEDs White",
+        "Zoom",
+        "Colour macros",
+        "Preset colours",
+        "Preset colour dimmer",
+        "Patterns sequencing",
+        "Patterns sequencing speed",
+        "Patterns sequencing fader",
+        "White balance",
+        "Internal programs and options"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "22.5",
+      "width": "498",
+      "height": "594",
+      "depth": "330"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "16",
+      "degreesMax": "56"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "265"
+    },
+    "technical": {
+      "powerConsumption": "650",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

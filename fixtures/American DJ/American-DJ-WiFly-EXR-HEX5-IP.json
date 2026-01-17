@@ -1,0 +1,593 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "WiFly EXR HEX5 IP",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macros/Programs/Auto Run",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Off/Color change/fade 1/Slow to fast"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Red/Color change/fade 1/Slow to fast"
+        },
+        {
+          "min": "8",
+          "max": "11",
+          "name": "Green/Color change/fade 1/Slow to fast"
+        },
+        {
+          "min": "12",
+          "max": "15",
+          "name": "Blue/Color change/fade 1/Slow to fast"
+        },
+        {
+          "min": "16",
+          "max": "19",
+          "name": "White/Color change/fade 2/Slow to fast"
+        },
+        {
+          "min": "20",
+          "max": "23",
+          "name": "Amber/Color change/fade 2/Slow to fast"
+        },
+        {
+          "min": "24",
+          "max": "27",
+          "name": "UV/Color change/fade 2/Slow to fast"
+        },
+        {
+          "min": "28",
+          "max": "31",
+          "name": "R+G/Color change/fade 2/Slow to fast"
+        },
+        {
+          "min": "32",
+          "max": "35",
+          "name": "R+B/Color change/fade 3/Slow to fast"
+        },
+        {
+          "min": "36",
+          "max": "39",
+          "name": "R+W/Color change/fade 3/Slow to fast"
+        },
+        {
+          "min": "40",
+          "max": "43",
+          "name": "R+A/Color change/fade 3/Slow to fast"
+        },
+        {
+          "min": "44",
+          "max": "47",
+          "name": "R+UV/Color change/fade 3/Slow to fast"
+        },
+        {
+          "min": "48",
+          "max": "51",
+          "name": "G+B/Color change/fade 4/Slow to fast"
+        },
+        {
+          "min": "52",
+          "max": "55",
+          "name": "G+W/Color change/fade 4/Slow to fast"
+        },
+        {
+          "min": "56",
+          "max": "59",
+          "name": "G+A/Color change/fade 4/Slow to fast"
+        },
+        {
+          "min": "60",
+          "max": "63",
+          "name": "G+UV/Color change/fade 4/Slow to fast"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "B+W/Color change/fade 5/Slow to fast"
+        },
+        {
+          "min": "68",
+          "max": "71",
+          "name": "B+A/Color change/fade 5/Slow to fast"
+        },
+        {
+          "min": "72",
+          "max": "75",
+          "name": "B+UV/Color change/fade 5/Slow to fast"
+        },
+        {
+          "min": "76",
+          "max": "79",
+          "name": "W+A/Color change/fade 5/Slow to fast"
+        },
+        {
+          "min": "80",
+          "max": "83",
+          "name": "W+UV/Color change/fade 6/Slow to fast"
+        },
+        {
+          "min": "84",
+          "max": "87",
+          "name": "A+UV/Color change/fade 6/Slow to fast"
+        },
+        {
+          "min": "88",
+          "max": "91",
+          "name": "R+G+B/Color change/fade 6/Slow to fast"
+        },
+        {
+          "min": "92",
+          "max": "95",
+          "name": "R+G+W/Color change/fade 6/Slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "99",
+          "name": "R+G+A/Color change/fade 7/Slow to fast"
+        },
+        {
+          "min": "100",
+          "max": "103",
+          "name": "R+G+UV/Color change/fade 7/Slow to fast"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "R+B+W/Color change/fade 7/Slow to fast"
+        },
+        {
+          "min": "108",
+          "max": "111",
+          "name": "R+B+A/Color change/fade 7/Slow to fast"
+        },
+        {
+          "min": "112",
+          "max": "115",
+          "name": "R+B+UV/Color change/fade 8/Slow to fast"
+        },
+        {
+          "min": "116",
+          "max": "119",
+          "name": "R+W+A/Color change/fade 8/Slow to fast"
+        },
+        {
+          "min": "120",
+          "max": "123",
+          "name": "R+W+UV/Color change/fade 8/Slow to fast"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "R+A+UV/Color change/fade 8/Slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "G+B+W/Color change/fade 9/Slow to fast"
+        },
+        {
+          "min": "132",
+          "max": "135",
+          "name": "G+B+A/Color change/fade 9/Slow to fast"
+        },
+        {
+          "min": "136",
+          "max": "139",
+          "name": "G+B+UV/Color change/fade 9/Slow to fast"
+        },
+        {
+          "min": "140",
+          "max": "143",
+          "name": "G+W+A/Color change/fade 9/Slow to fast"
+        },
+        {
+          "min": "144",
+          "max": "147",
+          "name": "G+W+UV/Color change/fade 10/Slow to fast"
+        },
+        {
+          "min": "148",
+          "max": "151",
+          "name": "G+A+UV/Color change/fade 10/Slow to fast"
+        },
+        {
+          "min": "152",
+          "max": "155",
+          "name": "B+W+A/Color change/fade 10/Slow to fast"
+        },
+        {
+          "min": "156",
+          "max": "159",
+          "name": "B+W+UV/Color change/fade 10/Slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "163",
+          "name": "B+A+UV/Color change/fade 11/Slow to fast"
+        },
+        {
+          "min": "164",
+          "max": "167",
+          "name": "W+A+UV/Color change/fade 11/Slow to fast"
+        },
+        {
+          "min": "168",
+          "max": "171",
+          "name": "R+G+B+W/Color change/fade 11/Slow to fast"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "R+G+B+A/Color change/fade 11/Slow to fast"
+        },
+        {
+          "min": "176",
+          "max": "179",
+          "name": "R+G+B+UV/Color change/fade 12/Slow to fast"
+        },
+        {
+          "min": "180",
+          "max": "183",
+          "name": "R+G+W+A/Color change/fade 12/Slow to fast"
+        },
+        {
+          "min": "184",
+          "max": "187",
+          "name": "R+G+W+UV/Color change/fade 12/Slow to fast"
+        },
+        {
+          "min": "188",
+          "max": "191",
+          "name": "R+G+A+UV/Color change/fade 12/Slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "195",
+          "name": "R+B+W+A/Color change/fade 13/Slow to fast"
+        },
+        {
+          "min": "196",
+          "max": "199",
+          "name": "R+B+W+UV/Color change/fade 13/Slow to fast"
+        },
+        {
+          "min": "200",
+          "max": "203",
+          "name": "R+B+A+UV/Color change/fade 13/Slow to fast"
+        },
+        {
+          "min": "204",
+          "max": "207",
+          "name": "R+W+A+UV/Color change/fade 13/Slow to fast"
+        },
+        {
+          "min": "208",
+          "max": "211",
+          "name": "G+B+W+A/Color change/fade 14/Slow to fast"
+        },
+        {
+          "min": "212",
+          "max": "215",
+          "name": "G+B+W+UV/Color change/fade 14/Slow to fast"
+        },
+        {
+          "min": "216",
+          "max": "219",
+          "name": "G+B+A+UV/Color change/fade 14/Slow to fast"
+        },
+        {
+          "min": "220",
+          "max": "223",
+          "name": "G+W+A+UV/Color change/fade 14/Slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "227",
+          "name": "B+W+A+UV/Color change/fade 15/Slow to fast"
+        },
+        {
+          "min": "228",
+          "max": "231",
+          "name": "R+G+B+W+A/Color change/fade 15/Slow to fast"
+        },
+        {
+          "min": "232",
+          "max": "235",
+          "name": "R+G+B+W+UV/Color change/fade 15/Slow to fast"
+        },
+        {
+          "min": "236",
+          "max": "239",
+          "name": "R+G+B+A+UV/Color change/fade 15/Slow to fast"
+        },
+        {
+          "min": "240",
+          "max": "243",
+          "name": "R+G+W+A+UV/Color change/fade 16/Slow to fast"
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "R+B+W+A+UV/Color change/fade 16/Slow to fast"
+        },
+        {
+          "min": "248",
+          "max": "251",
+          "name": "G+B+W+A+UV/Color change/fade 16/Slow to fast"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "R+G+B+W+A+UV/Color change/fade 16/Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED Off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED on"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED on"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse strobing slow - fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED on"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobing slow - fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED on"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to unit setting"
+        }
+      ]
+    },
+    {
+      "name": "Program Selection Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimming mode"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Color macro mode"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Color change mode"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Color fade mode"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "Auto run mode"
+        }
+      ]
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Program & Auto Run Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master Dimmer",
+        "Strobing"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 11,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master Dimmer",
+        "Strobing",
+        "Program Selection Mode",
+        "Color Macros/Programs/Auto Run",
+        "Program & Auto Run Speed"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 12,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master Dimmer",
+        "Strobing",
+        "Program Selection Mode",
+        "Color Macros/Programs/Auto Run",
+        "Program & Auto Run Speed",
+        "Dimmer Curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1600",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.4",
+      "width": "280",
+      "height": "194",
+      "depth": "310"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "56",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED D-400 RGBAW 3W DMX",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Alexander Grözinger",
+  "channels": [
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Red"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Green"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Blue"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "White"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Amber"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "R+G"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "G+B"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "B+W"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "W+A"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "R+A"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "G+A"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "B+A"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "R+B"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "R+W"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "G+W"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "R+G+B"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "G+B+W"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "B+W+A"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "R+W+A"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "G+W+A"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "R+G+A"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "R+G+W"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "R+B+A"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "R+B+W"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "G+B+A"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "R+G+B+W"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "G+B+W+A"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "R+G+B+A"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "R+G+W+A"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "R+G+B+W+A"
+        },
+        {
+          "min": "155",
+          "max": "200",
+          "name": "Colorchange (increasing speed)"
+        },
+        {
+          "min": "201",
+          "max": "250",
+          "name": "Color fade (increasing speed)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Soundcontrolled (CH2: Sensivity)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Motor speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 3,
+      "channels": [
+        "Color",
+        "Strobe",
+        "Motor speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "245",
+      "height": "385",
+      "depth": "155"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "45",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

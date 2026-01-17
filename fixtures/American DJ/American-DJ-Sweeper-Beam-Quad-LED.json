@@ -1,0 +1,598 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Sweeper Beam Quad LED",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Show macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Show 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Show 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Show 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Show 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Show 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Show 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Show 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Show 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Show 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Show 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Show 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Show 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Show 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Show 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Show 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Show 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Random show"
+        }
+      ]
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt movement macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "43",
+          "name": "Tilt movement macro 60° to 120°"
+        },
+        {
+          "min": "44",
+          "max": "79",
+          "name": "Tilt movement macro 45° to 135°"
+        },
+        {
+          "min": "80",
+          "max": "115",
+          "name": "Tilt movement macro 30° to 150°"
+        },
+        {
+          "min": "116",
+          "max": "151",
+          "name": "Tilt movement macro 0° to 180°"
+        },
+        {
+          "min": "152",
+          "max": "187",
+          "name": "Tilt movement macro -30° to 210°"
+        },
+        {
+          "min": "188",
+          "max": "223",
+          "name": "Tilt movement macro 0° to 90°"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Tilt movement macro 90° to 180°"
+        }
+      ]
+    },
+    {
+      "name": "Tilt movement macro speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Chases",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Chase 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Chase 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Chase 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Chase 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Chase 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Chase 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Chase 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Chase 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Chase 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Chase 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Chase 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Chase 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Chase 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Chase 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Chase 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Chase 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Full on"
+        }
+      ]
+    },
+    {
+      "name": "Chase speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Chase speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobing (slow to fast)"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "No function"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow open - Fast close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Slow close - Fast open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Sound active strobing"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Red (Lens 1)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Lens 1)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Lens 1)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Lens 1)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Lens 2)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Lens 2)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Lens 2)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Lens 2)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Lens 3)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Lens 3)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Lens 3)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Lens 3)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Lens 4)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Lens 4)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Lens 4)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Lens 4)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Lens 5)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Lens 5)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Lens 5)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Lens 5)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Lens 6)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Lens 6)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Lens 6)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Lens 6)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Lens 7)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Lens 7)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Lens 7)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Lens 7)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Lens 8)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Lens 8)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Lens 8)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Lens 8)",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Show macros"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Tilt",
+        "Tilt movement macro",
+        "Tilt movement macro speed",
+        "Chases",
+        "Chase speed",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 35,
+      "channels": [
+        "Tilt",
+        "Master dimmer",
+        "Strobing",
+        "Red (Lens 1)",
+        "Green (Lens 1)",
+        "Blue (Lens 1)",
+        "White (Lens 1)",
+        "Red (Lens 2)",
+        "Green (Lens 2)",
+        "Blue (Lens 2)",
+        "White (Lens 2)",
+        "Red (Lens 3)",
+        "Green (Lens 3)",
+        "Blue (Lens 3)",
+        "White (Lens 3)",
+        "Red (Lens 4)",
+        "Green (Lens 4)",
+        "Blue (Lens 4)",
+        "White (Lens 4)",
+        "Red (Lens 5)",
+        "Green (Lens 5)",
+        "Blue (Lens 5)",
+        "White (Lens 5)",
+        "Red (Lens 6)",
+        "Green (Lens 6)",
+        "Blue (Lens 6)",
+        "White (Lens 6)",
+        "Red (Lens 7)",
+        "Green (Lens 7)",
+        "Blue (Lens 7)",
+        "White (Lens 7)",
+        "Red (Lens 8)",
+        "Green (Lens 8)",
+        "Blue (Lens 8)",
+        "White (Lens 8)"
+      ]
+    },
+    {
+      "name": "39 Channels mode",
+      "totalChannels": 39,
+      "channels": [
+        "Tilt",
+        "Tilt movement macro",
+        "Tilt movement macro speed",
+        "Chases",
+        "Chase speed",
+        "Master dimmer",
+        "Strobing",
+        "Red (Lens 1)",
+        "Green (Lens 1)",
+        "Blue (Lens 1)",
+        "White (Lens 1)",
+        "Red (Lens 2)",
+        "Green (Lens 2)",
+        "Blue (Lens 2)",
+        "White (Lens 2)",
+        "Red (Lens 3)",
+        "Green (Lens 3)",
+        "Blue (Lens 3)",
+        "White (Lens 3)",
+        "Red (Lens 4)",
+        "Green (Lens 4)",
+        "Blue (Lens 4)",
+        "White (Lens 4)",
+        "Red (Lens 5)",
+        "Green (Lens 5)",
+        "Blue (Lens 5)",
+        "White (Lens 5)",
+        "Red (Lens 6)",
+        "Green (Lens 6)",
+        "Blue (Lens 6)",
+        "White (Lens 6)",
+        "Red (Lens 7)",
+        "Green (Lens 7)",
+        "Blue (Lens 7)",
+        "White (Lens 7)",
+        "Red (Lens 8)",
+        "Green (Lens 8)",
+        "Blue (Lens 8)",
+        "White (Lens 8)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.3",
+      "width": "973",
+      "height": "132",
+      "depth": "73"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "240"
+    },
+    "technical": {
+      "powerConsumption": "81",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

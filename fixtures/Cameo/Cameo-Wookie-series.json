@@ -1,0 +1,528 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Wookie series",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Andres Robles, Massimo Callegari",
+  "channels": [
+    {
+      "name": "Mode select",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Laser off"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Auto Mode\n   \n   \n   \n   \n   \n   \n   \n   \n  "
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Sound mode\n   \n   \n   \n   \n   \n   \n   \n   \n  "
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "DMX mode (CH2-CH8)"
+        }
+      ]
+    },
+    {
+      "name": "Colours RGB",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Original colour"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Red"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Green"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Blue"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Yellow"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Magenta"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Cyan"
+        }
+      ]
+    },
+    {
+      "name": "Pattern select",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Pattern 1"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Pattern 2"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Pattern 3"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Pattern 4"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Pattern 5"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Pattern 6"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Pattern 7"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Pattern 8"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Pattern 9"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Pattern 10"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Pattern 11"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Pattern 12"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Pattern 13"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Pattern 14"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Pattern 15"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Pattern 16"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Pattern 17"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Pattern 18"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Pattern 19"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Pattern 20"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Pattern 21"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Pattern 22"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Pattern 23"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Pattern 24"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Pattern 25"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Pattern 26"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Pattern 27"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Pattern 28"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Pattern 29"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Pattern 30"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Pattern 31"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Pattern 32"
+        }
+      ]
+    },
+    {
+      "name": "Zooming",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual zooming"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Loop zooming IN speed"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Loop zooming OUT speed"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Loop zooming IN-OUT speed"
+        }
+      ]
+    },
+    {
+      "name": "X axis rolling",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual X rolling"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "X CCW rolling speed"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "X CW rolling speed"
+        }
+      ]
+    },
+    {
+      "name": "Y axis rolling",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual Y rolling"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Y CCW rolling speed"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Y CW rolling speed"
+        }
+      ]
+    },
+    {
+      "name": "Z axis rolling",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual Z rolling"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Z CCW rolling speed"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Z CW rolling speed"
+        }
+      ]
+    },
+    {
+      "name": "X axis moving",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual position"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Horizontal right moving speed"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Horizontal left moving speed"
+        }
+      ]
+    },
+    {
+      "name": "Y axis moving",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual position"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Vertical UP moving speed"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Vertical DOWN moving speed"
+        }
+      ]
+    },
+    {
+      "name": "No function",
+      "type": "Unknown"
+    },
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "100",
+          "name": "Laser Off"
+        },
+        {
+          "min": "101",
+          "max": "155",
+          "name": "Sound Mode\n   \n  "
+        },
+        {
+          "min": "156",
+          "max": "255",
+          "name": "Auto Mode with rising speed (0-100%)"
+        }
+      ]
+    },
+    {
+      "name": "Colours RGY",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Original colour"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Red"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Green"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Yellow"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 Channel (150G/200R/600B)",
+      "totalChannels": 3,
+      "channels": [
+        "Zooming",
+        "No function",
+        "Mode"
+      ]
+    },
+    {
+      "name": "3 Channel (200RGY)",
+      "totalChannels": 3,
+      "channels": [
+        "Zooming",
+        "Colours RGY",
+        "Mode"
+      ]
+    },
+    {
+      "name": "3 Channel (400RGB)",
+      "totalChannels": 3,
+      "channels": [
+        "Zooming",
+        "Colours RGB",
+        "Mode"
+      ]
+    },
+    {
+      "name": "9 Channel (150G/200R/600B)",
+      "totalChannels": 9,
+      "channels": [
+        "Mode select",
+        "No function",
+        "Pattern select",
+        "Zooming",
+        "X axis rolling",
+        "Y axis rolling",
+        "Z axis rolling",
+        "X axis moving",
+        "Y axis moving"
+      ]
+    },
+    {
+      "name": "9 Channel (200RGY)",
+      "totalChannels": 9,
+      "channels": [
+        "Mode select",
+        "Colours RGY",
+        "Pattern select",
+        "Zooming",
+        "X axis rolling",
+        "Y axis rolling",
+        "Z axis rolling",
+        "X axis moving",
+        "Y axis moving"
+      ]
+    },
+    {
+      "name": "9 Channel (400RGB)",
+      "totalChannels": 9,
+      "channels": [
+        "Mode select",
+        "Colours RGB",
+        "Pattern select",
+        "Zooming",
+        "X axis rolling",
+        "Y axis rolling",
+        "Z axis rolling",
+        "X axis moving",
+        "Y axis moving"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.4",
+      "width": "192",
+      "height": "154",
+      "depth": "83"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "60",
+      "tiltMax": "60"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Fusion FX Bar 2",
+  "type": "Effect",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Mike Morris",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Moon Flower 1 Dimmer/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "190",
+          "name": "Master Dimmer 0 > 100% (Off - On)"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Sound Active"
+        },
+        {
+          "min": "201",
+          "max": "247",
+          "name": "Strobing (Slow - Fast)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Full On"
+        }
+      ]
+    },
+    {
+      "name": "Moon Flower 1 Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Rotation"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Clockwise Rotation (Fast - Slow)"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "No Rotation"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Counter-Clockwise Rotation (Slow - Fast)"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No Rotation"
+        }
+      ]
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Moon Flower 2 Dimmer/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "190",
+          "name": "Master Dimmer 0 > 100% (Off - On)"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Sound Active"
+        },
+        {
+          "min": "201",
+          "max": "247",
+          "name": "Strobing (Slow - Fast)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Full On"
+        }
+      ]
+    },
+    {
+      "name": "Moon Flower 2 Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Rotation"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Clockwise Rotation (Fast - Slow)"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "No Rotation"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Counter-Clockwise Rotation (Slow - Fast)"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No Rotation"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Moon Flower 1 Dimmer/Strobe",
+        "Moon Flower 1 Rotation",
+        "Moon Flower 2 Dimmer/Strobe",
+        "Moon Flower 2 Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.7",
+      "width": "542",
+      "height": "194",
+      "depth": "143"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "33",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

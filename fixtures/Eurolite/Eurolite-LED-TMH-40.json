@@ -1,0 +1,357 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED TMH-40",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "thegasta",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "PanTilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Red (all)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (all)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (all)",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Neutral"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Red out"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Green center"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "Blue in"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Verde out"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Blue center"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Red in"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Blue out"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "Red center"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "Green in"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Yellow out"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Cyan center"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Magenta in"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Cyan out"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Magenta center"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Yellow in"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Magenta out"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Yellow center"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "Cyan in"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Red"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "Green"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "Blue"
+        },
+        {
+          "min": "221",
+          "max": "230",
+          "name": "Yellow"
+        },
+        {
+          "min": "231",
+          "max": "240",
+          "name": "Cyan"
+        },
+        {
+          "min": "241",
+          "max": "250",
+          "name": "Magenta"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Auto sequence"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Neutral"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Reset"
+        },
+        {
+          "min": "31",
+          "max": "250",
+          "name": "Strobe"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Neutral"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red (outer)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (outer)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (outer)",
+      "type": "Blue"
+    },
+    {
+      "name": "Red (middle)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (middle)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (middle)",
+      "type": "Blue"
+    },
+    {
+      "name": "Red (inner)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (inner)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (inner)",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "PanTilt Speed",
+        "Red (all)",
+        "Green (all)",
+        "Blue (all)",
+        "Color Macro",
+        "Strobe",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan fine",
+        "Tilt fine",
+        "PanTilt Speed",
+        "Red (all)",
+        "Green (all)",
+        "Blue (all)",
+        "Color Macro",
+        "Strobe",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 18,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "PanTilt Speed",
+        "Red (all)",
+        "Green (all)",
+        "Blue (all)",
+        "Red (outer)",
+        "Green (outer)",
+        "Blue (outer)",
+        "Red (middle)",
+        "Green (middle)",
+        "Blue (middle)",
+        "Red (inner)",
+        "Green (inner)",
+        "Blue (inner)",
+        "Color Macro",
+        "Strobe",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 20,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan fine",
+        "Tilt fine",
+        "PanTilt Speed",
+        "Red (all)",
+        "Green (all)",
+        "Blue (all)",
+        "Red (outer)",
+        "Green (outer)",
+        "Blue (outer)",
+        "Red (middle)",
+        "Green (middle)",
+        "Blue (middle)",
+        "Red (inner)",
+        "Green (inner)",
+        "Blue (inner)",
+        "Color Macro",
+        "Strobe",
+        "Master dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "245",
+      "height": "310",
+      "depth": "245"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "140",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

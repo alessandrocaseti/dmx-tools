@@ -1,0 +1,187 @@
+{
+  "version": "1.2",
+  "manufacturer": "Equinox",
+  "model": "Fusion 50 MkII",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Dale",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Master Dimmer 0-100% / Strobe/Strobe Speed",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "134",
+          "name": "Master Dimmer (0 - 90%)"
+        },
+        {
+          "min": "135",
+          "max": "239",
+          "name": "Strobe/Strobe Speed"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Master Dimmer (90-100%)"
+        }
+      ]
+    },
+    {
+      "name": "Red 0-100%",
+      "type": "Red"
+    },
+    {
+      "name": "Green 0-100%",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 0-100%",
+      "type": "Blue"
+    },
+    {
+      "name": "White 0-100%",
+      "type": "White"
+    },
+    {
+      "name": "Colour Change",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "231",
+          "name": "Manual Preset Colour Change"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Auto Colour Preset Change"
+        }
+      ]
+    },
+    {
+      "name": "Colour Change Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Colour Change Speed"
+        }
+      ]
+    },
+    {
+      "name": "Auto/Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "155",
+          "name": "Auto"
+        },
+        {
+          "min": "156",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Master Dimmer 0-100% / Strobe/Strobe Speed",
+        "Red 0-100%",
+        "Green 0-100%",
+        "Blue 0-100%",
+        "White 0-100%",
+        "Pan/Tilt Speed",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Master Dimmer 0-100% / Strobe/Strobe Speed",
+        "Red 0-100%",
+        "Green 0-100%",
+        "Blue 0-100%",
+        "White 0-100%",
+        "Colour Change",
+        "Colour Change Speed",
+        "Auto/Sound Active",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.8",
+      "width": "175",
+      "height": "245",
+      "depth": "180"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "85",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

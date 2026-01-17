@@ -1,0 +1,366 @@
+{
+  "version": "1.2",
+  "manufacturer": "Expolite",
+  "model": "TourSpot 50 Mini",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Christian Prison",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "No function"
+        },
+        {
+          "min": "4",
+          "max": "127",
+          "name": "Forward gobo rotation (fast to slow)"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Gobo rotation stop"
+        },
+        {
+          "min": "132",
+          "max": "255",
+          "name": "Backward gobo rotation (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect (slow to fast)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse-effect in sequences (slow to fast)"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect (slow to fast)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Speed pan/tilt",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "speed (min to max)"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "blackout by movement"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "blackout by all wheel changing"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Prism & Rotating",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "OFF"
+        },
+        {
+          "min": "6",
+          "max": "127",
+          "name": "ON"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "rotating (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Special Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "no function"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "reset all motors"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "reset scan motor"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "reset color motor"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "reset gobo motor"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "reset shutter&dimmer motor"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "reset other motors"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "internal program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "internal program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "internal program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "internal program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "internal program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "internal program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "internal program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "internal sound program 1"
+        }
+      ]
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open / white"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Cyan"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Green"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Yellow"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Rose carmine"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Orange"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forward rainbow effect (fast..slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Color rotation stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards rainbow effect (slow..fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "13 Channel 16bit",
+      "totalChannels": 13,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Speed pan/tilt",
+        "Color Wheel",
+        "Gobo wheel",
+        "Gobo rotation",
+        "Shutter",
+        "Dimmer",
+        "Focus",
+        "Prism & Rotating",
+        "Special Function"
+      ]
+    },
+    {
+      "name": "11 Channel 8bit",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Speed pan/tilt",
+        "Color Wheel",
+        "Gobo wheel",
+        "Gobo rotation",
+        "Shutter",
+        "Dimmer",
+        "Focus",
+        "Prism & Rotating",
+        "Special Function"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.6",
+      "width": "270",
+      "height": "366",
+      "depth": "155"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "11.9",
+      "degreesMax": "11.9"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "630",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

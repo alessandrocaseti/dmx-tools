@@ -1,0 +1,291 @@
+{
+  "version": "1.2",
+  "manufacturer": "ETC",
+  "model": "Source Four LED Series 2 Lustr",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Giacomo Gorini",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Lime",
+      "type": "Lime"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Indigo",
+      "type": "Indigo"
+    },
+    {
+      "name": "Intensity",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Hue (coarse)",
+      "type": "Unknown"
+    },
+    {
+      "name": "Hue (fine)",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Color Point (CCT)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color Point 2200K > 6500K"
+        }
+      ]
+    },
+    {
+      "name": "Tint",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Tint"
+        }
+      ]
+    },
+    {
+      "name": "Plus 7 Control",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Plus 7 Control off (individual color control disabled)"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Plus 7 Control on (individual color control enabled)"
+        }
+      ]
+    },
+    {
+      "name": "Fan Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Fan Control Automatic"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Fan Forced Speed Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "No function",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function (Plus 7)",
+      "type": "Unknown"
+    },
+    {
+      "name": "Red Additive XF",
+      "type": "Red"
+    },
+    {
+      "name": "Green Additive XF",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Additive XF",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Direct",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Lime",
+        "Amber",
+        "Green",
+        "Cyan",
+        "Blue",
+        "Indigo",
+        "Intensity",
+        "Strobe",
+        "Fan Control"
+      ]
+    },
+    {
+      "name": "HSI",
+      "totalChannels": 6,
+      "channels": [
+        "Hue (coarse)",
+        "Hue (fine)",
+        "Saturation",
+        "Intensity",
+        "Strobe",
+        "Fan Control"
+      ]
+    },
+    {
+      "name": "HSIC",
+      "totalChannels": 7,
+      "channels": [
+        "Hue (coarse)",
+        "Hue (fine)",
+        "Saturation",
+        "Intensity",
+        "Strobe",
+        "Fan Control",
+        "Color Point (CCT)"
+      ]
+    },
+    {
+      "name": "RGB",
+      "totalChannels": 6,
+      "channels": [
+        "Red Additive XF",
+        "Green Additive XF",
+        "Blue Additive XF",
+        "No function",
+        "Strobe",
+        "Fan Control"
+      ]
+    },
+    {
+      "name": "Studio",
+      "totalChannels": 6,
+      "channels": [
+        "Intensity",
+        "Color Point (CCT)",
+        "Tint",
+        "No function",
+        "Strobe",
+        "Fan Control"
+      ]
+    },
+    {
+      "name": "RGB Plus 7",
+      "totalChannels": 15,
+      "channels": [
+        "Red Additive XF",
+        "Green Additive XF",
+        "Blue Additive XF",
+        "No function",
+        "Strobe",
+        "Fan Control",
+        "No function (Plus 7)",
+        "Plus 7 Control",
+        "Red",
+        "Green",
+        "Blue",
+        "Lime",
+        "Amber",
+        "Cyan",
+        "Indigo"
+      ]
+    },
+    {
+      "name": "HSI Plus 7",
+      "totalChannels": 15,
+      "channels": [
+        "Hue (coarse)",
+        "Hue (fine)",
+        "Saturation",
+        "Intensity",
+        "Strobe",
+        "Fan Control",
+        "No function (Plus 7)",
+        "Plus 7 Control",
+        "Red",
+        "Lime",
+        "Amber",
+        "Green",
+        "Cyan",
+        "Blue",
+        "Indigo"
+      ]
+    },
+    {
+      "name": "HSIC Plus 7",
+      "totalChannels": 15,
+      "channels": [
+        "Hue (coarse)",
+        "Hue (fine)",
+        "Saturation",
+        "Intensity",
+        "Strobe",
+        "Fan Control",
+        "Color Point (CCT)",
+        "Plus 7 Control",
+        "Red",
+        "Lime",
+        "Amber",
+        "Green",
+        "Cyan",
+        "Blue",
+        "Indigo"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "5800",
+      "colourTemperature": "4500"
+    },
+    "dimensions": {
+      "weight": "8.5",
+      "width": "268",
+      "height": "434",
+      "depth": "631"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "5",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "180",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

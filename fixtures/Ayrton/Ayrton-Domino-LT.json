@@ -1,0 +1,1874 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayrton",
+  "model": "Domino LT",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Yestalgia",
+  "channels": [
+    {
+      "name": "PAN Movement 8bit",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine 16bit",
+      "type": "Pan"
+    },
+    {
+      "name": "TILT Movement 8bit",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine 16bit",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed Pan/Tilt movement",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Max to min speed"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Blackout by movement"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Blackout by all wheel changing"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "No function (shutter open)"
+        },
+        {
+          "min": "21",
+          "max": "117",
+          "name": "Strobe effect slow to fast"
+        },
+        {
+          "min": "118",
+          "max": "126",
+          "name": "No function (shutter open)"
+        },
+        {
+          "min": "127",
+          "max": "180",
+          "name": "Pulse-effect in sequences"
+        },
+        {
+          "min": "181",
+          "max": "191",
+          "name": "No function (shutter open)"
+        },
+        {
+          "min": "192",
+          "max": "245",
+          "name": "Random strobe effect slow to fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No function (shutter open)"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Master dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Zoom fine",
+      "type": "Beam"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Focus fine",
+      "type": "Focus"
+    },
+    {
+      "name": "Auto Focus",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "Auto Focus off"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "5m"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "7.5m"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "10m"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "15m"
+        }
+      ]
+    },
+    {
+      "name": "AutoFocus Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Continuous adjustment Fine"
+        }
+      ]
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Open / White"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Color 1"
+        },
+        {
+          "min": "8",
+          "max": "11",
+          "name": "Color 2"
+        },
+        {
+          "min": "12",
+          "max": "15",
+          "name": "Color 3"
+        },
+        {
+          "min": "16",
+          "max": "19",
+          "name": "Color 4"
+        },
+        {
+          "min": "20",
+          "max": "23",
+          "name": "Color 5"
+        },
+        {
+          "min": "24",
+          "max": "27",
+          "name": "Color 6"
+        },
+        {
+          "min": "28",
+          "max": "127",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards rainbow effect from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards rainbow effect from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Color wheel fine",
+      "type": "Color"
+    },
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Cyan fine",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Magenta fine",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "Yellow fine",
+      "type": "Yellow"
+    },
+    {
+      "name": "CTO mixer",
+      "type": "Color"
+    },
+    {
+      "name": "CTO mixer Fine",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "CTO mixer"
+        }
+      ]
+    },
+    {
+      "name": "CTB mixer",
+      "type": "Unknown"
+    },
+    {
+      "name": "CTB mixer fine",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "CTB mixer"
+        }
+      ]
+    },
+    {
+      "name": "CTP mixer",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "CTP mixer"
+        }
+      ]
+    },
+    {
+      "name": "CTP mixer fine",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "CTP mixer"
+        }
+      ]
+    },
+    {
+      "name": "Color macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "2",
+          "name": "No function"
+        },
+        {
+          "min": "3",
+          "max": "3",
+          "name": "LAVENDER TINT"
+        },
+        {
+          "min": "4",
+          "max": "6",
+          "name": "MEDIUM BASTARD AMBER"
+        },
+        {
+          "min": "7",
+          "max": "7",
+          "name": "PALE YELLOW"
+        },
+        {
+          "min": "8",
+          "max": "8",
+          "name": "DARK SALMON"
+        },
+        {
+          "min": "9",
+          "max": "9",
+          "name": "PALE AMBER GOLD"
+        },
+        {
+          "min": "10",
+          "max": "12",
+          "name": "MEDIUM YELLOW"
+        },
+        {
+          "min": "13",
+          "max": "14",
+          "name": "STRAW TINT"
+        },
+        {
+          "min": "15",
+          "max": "16",
+          "name": "DEEP STRAW"
+        },
+        {
+          "min": "17",
+          "max": "19",
+          "name": "SURPRISE PEACH"
+        },
+        {
+          "min": "20",
+          "max": "20",
+          "name": "MEDIUM AMBER"
+        },
+        {
+          "min": "21",
+          "max": "21",
+          "name": "GOLD AMBER"
+        },
+        {
+          "min": "22",
+          "max": "23",
+          "name": "DARK AMBER"
+        },
+        {
+          "min": "24",
+          "max": "24",
+          "name": "SCARLET"
+        },
+        {
+          "min": "25",
+          "max": "25",
+          "name": "SUNSET RED"
+        },
+        {
+          "min": "26",
+          "max": "28",
+          "name": "BRIGHT RED"
+        },
+        {
+          "min": "29",
+          "max": "34",
+          "name": "PALSA RED"
+        },
+        {
+          "min": "35",
+          "max": "35",
+          "name": "LIGHT PINK"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "MEDIUM PINK"
+        },
+        {
+          "min": "46",
+          "max": "47",
+          "name": "DARK MAGENTA"
+        },
+        {
+          "min": "48",
+          "max": "51",
+          "name": "DARK PURPLE"
+        },
+        {
+          "min": "52",
+          "max": "52",
+          "name": "LIGHT LAVENDER"
+        },
+        {
+          "min": "53",
+          "max": "57",
+          "name": "PALE LAVENDER"
+        },
+        {
+          "min": "58",
+          "max": "62",
+          "name": "LAVENDER"
+        },
+        {
+          "min": "63",
+          "max": "67",
+          "name": "PALE BLUE"
+        },
+        {
+          "min": "68",
+          "max": "70",
+          "name": "SKY BLUE"
+        },
+        {
+          "min": "71",
+          "max": "74",
+          "name": "TOKIO BLUE"
+        },
+        {
+          "min": "75",
+          "max": "78",
+          "name": "EVENING BLUE"
+        },
+        {
+          "min": "79",
+          "max": "84",
+          "name": "JUST BLUE"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "DEEPER BLUE"
+        },
+        {
+          "min": "88",
+          "max": "88",
+          "name": "LIME GREEN"
+        },
+        {
+          "min": "89",
+          "max": "89",
+          "name": "MOSS GREEN"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "DARKYELLOW GREEN"
+        },
+        {
+          "min": "100",
+          "max": "100",
+          "name": "SPRING YELLOW"
+        },
+        {
+          "min": "101",
+          "max": "101",
+          "name": "YELLOW"
+        },
+        {
+          "min": "102",
+          "max": "102",
+          "name": "LIGHT AMBER"
+        },
+        {
+          "min": "103",
+          "max": "103",
+          "name": "STRAW"
+        },
+        {
+          "min": "104",
+          "max": "104",
+          "name": "DEEP AMBER"
+        },
+        {
+          "min": "105",
+          "max": "105",
+          "name": "ORANGE"
+        },
+        {
+          "min": "106",
+          "max": "106",
+          "name": "PRIMAY RED"
+        },
+        {
+          "min": "107",
+          "max": "107",
+          "name": "LIGHT ROSE"
+        },
+        {
+          "min": "108",
+          "max": "108",
+          "name": "ENGLISH ROSE"
+        },
+        {
+          "min": "109",
+          "max": "109",
+          "name": "LIGHT SALMON"
+        },
+        {
+          "min": "110",
+          "max": "110",
+          "name": "MIDDLE ROSE"
+        },
+        {
+          "min": "111",
+          "max": "112",
+          "name": "DARK PINK"
+        },
+        {
+          "min": "113",
+          "max": "115",
+          "name": "MAGENTA"
+        },
+        {
+          "min": "116",
+          "max": "117",
+          "name": "MEDIUM BLUE GREEN"
+        },
+        {
+          "min": "118",
+          "max": "118",
+          "name": "LIGHT BLUE"
+        },
+        {
+          "min": "119",
+          "max": "119",
+          "name": "DARK BLUE"
+        },
+        {
+          "min": "120",
+          "max": "123",
+          "name": "DEEP BLUE"
+        },
+        {
+          "min": "124",
+          "max": "125",
+          "name": "DARK GREEN"
+        },
+        {
+          "min": "126",
+          "max": "126",
+          "name": "MAUVE"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "SMOKEY PINK"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "BRIGHT PINK"
+        },
+        {
+          "min": "132",
+          "max": "133",
+          "name": "MEDIUM BLUE"
+        },
+        {
+          "min": "134",
+          "max": "135",
+          "name": "GOLDEN AMBER"
+        },
+        {
+          "min": "136",
+          "max": "136",
+          "name": "PALE LAVENDER"
+        },
+        {
+          "min": "137",
+          "max": "137",
+          "name": "SPECIAL LAVENDER"
+        },
+        {
+          "min": "138",
+          "max": "138",
+          "name": "PALE GREEN"
+        },
+        {
+          "min": "139",
+          "max": "139",
+          "name": "PRIMARY GREEN"
+        },
+        {
+          "min": "140",
+          "max": "140",
+          "name": "SUMMER BLUE"
+        },
+        {
+          "min": "141",
+          "max": "141",
+          "name": "BRIGHT BLUE"
+        },
+        {
+          "min": "142",
+          "max": "142",
+          "name": "PALE VIOLET"
+        },
+        {
+          "min": "143",
+          "max": "146",
+          "name": "PALE NAVY BLUE"
+        },
+        {
+          "min": "147",
+          "max": "147",
+          "name": "APRICOT"
+        },
+        {
+          "min": "148",
+          "max": "150",
+          "name": "BRIGHT ROSE"
+        },
+        {
+          "min": "151",
+          "max": "151",
+          "name": "GOLD TINT"
+        },
+        {
+          "min": "152",
+          "max": "152",
+          "name": "PALE GOLD"
+        },
+        {
+          "min": "153",
+          "max": "153",
+          "name": "PALE SALMON"
+        },
+        {
+          "min": "154",
+          "max": "155",
+          "name": "PALE ROSE"
+        },
+        {
+          "min": "156",
+          "max": "157",
+          "name": "CHOCOLATE"
+        },
+        {
+          "min": "158",
+          "max": "158",
+          "name": "DEEP ORANGE"
+        },
+        {
+          "min": "159",
+          "max": "160",
+          "name": "NO COLOR STRAW"
+        },
+        {
+          "min": "161",
+          "max": "161",
+          "name": "SLATE BLUE"
+        },
+        {
+          "min": "162",
+          "max": "163",
+          "name": "BASTARD AMBER"
+        },
+        {
+          "min": "164",
+          "max": "164",
+          "name": "FLAME RED"
+        },
+        {
+          "min": "165",
+          "max": "168",
+          "name": "DAYLIGHT BLUE"
+        },
+        {
+          "min": "169",
+          "max": "169",
+          "name": "LILAC TINT"
+        },
+        {
+          "min": "170",
+          "max": "171",
+          "name": "DEEP LAVENDER"
+        },
+        {
+          "min": "172",
+          "max": "173",
+          "name": "LAGOON BLUE"
+        },
+        {
+          "min": "174",
+          "max": "175",
+          "name": "DARK STEEL BLUE"
+        },
+        {
+          "min": "176",
+          "max": "178",
+          "name": "LOVING AMBER"
+        },
+        {
+          "min": "179",
+          "max": "179",
+          "name": "CHROME ORANGE"
+        },
+        {
+          "min": "180",
+          "max": "180",
+          "name": "DARK LAVENDER"
+        },
+        {
+          "min": "181",
+          "max": "181",
+          "name": "CONGO BLUE"
+        },
+        {
+          "min": "182",
+          "max": "182",
+          "name": "LIGHT RED"
+        },
+        {
+          "min": "183",
+          "max": "191",
+          "name": "MOONLIGHT BLUE"
+        },
+        {
+          "min": "192",
+          "max": "192",
+          "name": "FLESH PINK"
+        },
+        {
+          "min": "193",
+          "max": "193",
+          "name": "ROSY AMBER"
+        },
+        {
+          "min": "194",
+          "max": "194",
+          "name": "SURPRISE PINK"
+        },
+        {
+          "min": "195",
+          "max": "195",
+          "name": "ZENITH BLUE"
+        },
+        {
+          "min": "196",
+          "max": "196",
+          "name": "TRUE BLUE"
+        },
+        {
+          "min": "197",
+          "max": "197",
+          "name": "ALICE BLUE"
+        },
+        {
+          "min": "198",
+          "max": "255",
+          "name": "PALACE BLUE"
+        }
+      ]
+    },
+    {
+      "name": "Reserved 1",
+      "type": "Nothing"
+    },
+    {
+      "name": "Reserved 2",
+      "type": "Nothing"
+    },
+    {
+      "name": "Reserved 3",
+      "type": "Nothing"
+    },
+    {
+      "name": "Rotating gobos, cont. rotation 1",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Rot. Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Rot. Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Rot. Gobo 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Rot. Gobo 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Rot. Gobo 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Rot. Gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Rot. Gobo 7"
+        },
+        {
+          "min": "78",
+          "max": "93",
+          "name": "Gobo 1 shake slow to fast"
+        },
+        {
+          "min": "94",
+          "max": "109",
+          "name": "Gobo 2 shake slow to fast"
+        },
+        {
+          "min": "110",
+          "max": "125",
+          "name": "Gobo 3 shake slow to fast"
+        },
+        {
+          "min": "126",
+          "max": "141",
+          "name": "Gobo 4 shake slow to fast"
+        },
+        {
+          "min": "142",
+          "max": "157",
+          "name": "Gobo 5 shake slow to fast"
+        },
+        {
+          "min": "158",
+          "max": "173",
+          "name": "Gobo 6 shake slow to fast"
+        },
+        {
+          "min": "174",
+          "max": "189",
+          "name": "Gobo 7 shake slow to fast"
+        },
+        {
+          "min": "190",
+          "max": "221",
+          "name": "Gobo wheel rotation forwards from fast to slow"
+        },
+        {
+          "min": "222",
+          "max": "223",
+          "name": "No rotation"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo wheel rotation backwards from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotating gobo index,rotating gobo rotation 1",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards gobo rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards gobo rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo index fine 1",
+      "type": "Gobo"
+    },
+    {
+      "name": "Rotating gobos, cont. rotation 2",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Rot. Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Rot. Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Rot. Gobo 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Rot. Gobo 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Rot. Gobo 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Rot. Gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Rot. Gobo 7"
+        },
+        {
+          "min": "78",
+          "max": "93",
+          "name": "Gobo 1 shake slow to fast"
+        },
+        {
+          "min": "94",
+          "max": "109",
+          "name": "Gobo 2 shake slow to fast"
+        },
+        {
+          "min": "110",
+          "max": "125",
+          "name": "Gobo 3 shake slow to fast"
+        },
+        {
+          "min": "126",
+          "max": "141",
+          "name": "Gobo 4 shake slow to fast"
+        },
+        {
+          "min": "142",
+          "max": "157",
+          "name": "Gobo 5 shake slow to fast"
+        },
+        {
+          "min": "158",
+          "max": "173",
+          "name": "Gobo 6 shake slow to fast"
+        },
+        {
+          "min": "174",
+          "max": "189",
+          "name": "Gobo 7 shake slow to fast"
+        },
+        {
+          "min": "190",
+          "max": "221",
+          "name": "Gobo wheel rotation forwards from fast to slow"
+        },
+        {
+          "min": "222",
+          "max": "223",
+          "name": "No rotation"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo wheel rotation backwards from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotating gobo index,rotating gobo rotation 2",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards gobo rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards gobo rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo index fine 2",
+      "type": "Gobo"
+    },
+    {
+      "name": "Animation Wheel 1",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No rotation"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Forwards rotation from fast to slow"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "No rotation"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Backwards rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Animation Wheel 2",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Animation Indexing"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Animation wheel 2",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No rotation"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Forwards rotation from fast to slow"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "No rotation"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Backwards rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Iris",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "191",
+          "name": "Max. diameter to Min.diameter"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Pulse closing fast to slow"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Pulse opening slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Iris fine",
+      "type": "Iris"
+    },
+    {
+      "name": "Prism 1",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Prism 1"
+        }
+      ]
+    },
+    {
+      "name": "Prism 1 index rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards prism rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards prism rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Prism 1 index rotation fine",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fine indexing"
+        }
+      ]
+    },
+    {
+      "name": "Prism 2",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Prism 1"
+        }
+      ]
+    },
+    {
+      "name": "Prism 2 index rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards prism rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards prism rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Prism 2 index rotation fine",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fine indexing"
+        }
+      ]
+    },
+    {
+      "name": "Frost 1",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Frost 2",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Blade 1A",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close"
+        }
+      ]
+    },
+    {
+      "name": "Blade 1A Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close Fine"
+        }
+      ]
+    },
+    {
+      "name": "Blade 1B",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close"
+        }
+      ]
+    },
+    {
+      "name": "Blade 1B Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close Fine"
+        }
+      ]
+    },
+    {
+      "name": "Blade 2A",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close"
+        }
+      ]
+    },
+    {
+      "name": "Blade 2A Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close Fine"
+        }
+      ]
+    },
+    {
+      "name": "Blade 2B",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close"
+        }
+      ]
+    },
+    {
+      "name": "Blade 2B Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close Fine"
+        }
+      ]
+    },
+    {
+      "name": "Blade 3A",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close"
+        }
+      ]
+    },
+    {
+      "name": "Blade 3A Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close Fine"
+        }
+      ]
+    },
+    {
+      "name": "Blade 3B",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close"
+        }
+      ]
+    },
+    {
+      "name": "Blade 3B Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close Fine"
+        }
+      ]
+    },
+    {
+      "name": "Blade 4A",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close"
+        }
+      ]
+    },
+    {
+      "name": "Blade 4A Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close Fine"
+        }
+      ]
+    },
+    {
+      "name": "Blade 4B",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close"
+        }
+      ]
+    },
+    {
+      "name": "Blade 4B Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Open to Close Fine"
+        }
+      ]
+    },
+    {
+      "name": "All Blade Rotation",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "All Blade Rotation"
+        }
+      ]
+    },
+    {
+      "name": "All Blade Rotation Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "All Blade Rotation"
+        }
+      ]
+    },
+    {
+      "name": "Control, reset, internal programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "unused"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Display Off"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Display On"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Display Invert Off"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Display Invert On"
+        },
+        {
+          "min": "25",
+          "max": "26",
+          "name": "Auto fan control mode"
+        },
+        {
+          "min": "27",
+          "max": "28",
+          "name": "Stage fan control mode"
+        },
+        {
+          "min": "29",
+          "max": "30",
+          "name": "Silence fan control mode"
+        },
+        {
+          "min": "31",
+          "max": "32",
+          "name": "Super Silence fan control mode"
+        },
+        {
+          "min": "33",
+          "max": "34",
+          "name": "Constant Fans Off"
+        },
+        {
+          "min": "35",
+          "max": "36",
+          "name": "Constant Fans On"
+        },
+        {
+          "min": "37",
+          "max": "44",
+          "name": "unused"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Square Law"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Linear"
+        },
+        {
+          "min": "55",
+          "max": "58",
+          "name": "1.2k"
+        },
+        {
+          "min": "59",
+          "max": "62",
+          "name": "2.4k"
+        },
+        {
+          "min": "63",
+          "max": "66",
+          "name": "16K"
+        },
+        {
+          "min": "67",
+          "max": "69",
+          "name": "25K"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Gobo correction Off"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Gobo correction On"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All motor reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Scan motor reset"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "Colors motor reset"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Gobo motor reset"
+        },
+        {
+          "min": "94",
+          "max": "94",
+          "name": "unused"
+        },
+        {
+          "min": "95",
+          "max": "95",
+          "name": "Reset P/T Fade Off"
+        },
+        {
+          "min": "96",
+          "max": "96",
+          "name": "Reset P/T Fade On"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "Other motor reset"
+        },
+        {
+          "min": "100",
+          "max": "102",
+          "name": "Frost Progressive Off"
+        },
+        {
+          "min": "103",
+          "max": "105",
+          "name": "Frost Progressive On"
+        },
+        {
+          "min": "106",
+          "max": "108",
+          "name": "CMY speed Fast"
+        },
+        {
+          "min": "109",
+          "max": "111",
+          "name": "CMY speed Medium"
+        },
+        {
+          "min": "112",
+          "max": "114",
+          "name": "CMY speed Slow"
+        },
+        {
+          "min": "115",
+          "max": "117",
+          "name": "Pan/Tilt Spd Medium"
+        },
+        {
+          "min": "118",
+          "max": "120",
+          "name": "Pan/Tilt Spd Fast"
+        },
+        {
+          "min": "121",
+          "max": "123",
+          "name": "Pan/Tilt Spd Slow"
+        },
+        {
+          "min": "124",
+          "max": "126",
+          "name": "Pan/Tilt Spd FS Mode"
+        },
+        {
+          "min": "127",
+          "max": "129",
+          "name": "Prerig INIT Off"
+        },
+        {
+          "min": "130",
+          "max": "132",
+          "name": "Prerig INIT On"
+        },
+        {
+          "min": "133",
+          "max": "255",
+          "name": "unused"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 46,
+      "channels": [
+        "PAN Movement 8bit",
+        "Pan Fine 16bit",
+        "TILT Movement 8bit",
+        "Tilt Fine 16bit",
+        "Speed Pan/Tilt movement",
+        "Shutter",
+        "Master dimmer",
+        "Zoom",
+        "Focus",
+        "Auto Focus",
+        "AutoFocus Fine",
+        "Color Wheel",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CTO mixer",
+        "CTB mixer",
+        "CTP mixer",
+        "Color macro",
+        "Reserved 1",
+        "Reserved 2",
+        "Reserved 3",
+        "Rotating gobos, cont. rotation 1",
+        "Rotating gobo index,rotating gobo rotation 1",
+        "Rotating gobos, cont. rotation 2",
+        "Rotating gobo index,rotating gobo rotation 2",
+        "Animation Wheel 1",
+        "Animation Wheel 2",
+        "Rotating Animation wheel 2",
+        "Iris",
+        "Prism 1",
+        "Prism 1 index rotation",
+        "Prism 2 index rotation",
+        "Prism 2",
+        "Frost 1",
+        "Frost 2",
+        "Blade 1A",
+        "Blade 1B",
+        "Blade 2A",
+        "Blade 2B",
+        "Blade 3A",
+        "Blade 3B",
+        "Blade 4A",
+        "Blade 4B",
+        "All Blade Rotation",
+        "Control, reset, internal programs"
+      ]
+    },
+    {
+      "name": "Basic",
+      "totalChannels": 44,
+      "channels": [
+        "PAN Movement 8bit",
+        "TILT Movement 8bit",
+        "Speed Pan/Tilt movement",
+        "Shutter",
+        "Master dimmer",
+        "Zoom",
+        "Focus",
+        "Auto Focus",
+        "AutoFocus Fine",
+        "Color Wheel",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CTO mixer",
+        "CTB mixer",
+        "CTP mixer",
+        "Color macro",
+        "Reserved 1",
+        "Reserved 2",
+        "Reserved 3",
+        "Rotating gobos, cont. rotation 1",
+        "Rotating gobo index,rotating gobo rotation 1",
+        "Rotating gobos, cont. rotation 2",
+        "Rotating gobo index,rotating gobo rotation 2",
+        "Animation Wheel 1",
+        "Animation Wheel 2",
+        "Rotating Animation wheel 2",
+        "Iris",
+        "Prism 1",
+        "Prism 1 index rotation",
+        "Prism 2 index rotation",
+        "Prism 2 index rotation fine",
+        "Frost 1",
+        "Frost 2",
+        "Blade 1A",
+        "Blade 1B",
+        "Blade 2A",
+        "Blade 2B",
+        "Blade 3A",
+        "Blade 3B",
+        "Blade 4A",
+        "Blade 4B",
+        "All Blade Rotation",
+        "Control, reset, internal programs"
+      ]
+    },
+    {
+      "name": "Extended",
+      "totalChannels": 70,
+      "channels": [
+        "PAN Movement 8bit",
+        "Pan Fine 16bit",
+        "TILT Movement 8bit",
+        "Tilt Fine 16bit",
+        "Speed Pan/Tilt movement",
+        "Shutter",
+        "Master dimmer",
+        "Master dimmer fine",
+        "Zoom",
+        "Zoom fine",
+        "Focus",
+        "Focus fine",
+        "Auto Focus",
+        "AutoFocus Fine",
+        "Color Wheel",
+        "Color wheel fine",
+        "Cyan",
+        "Cyan fine",
+        "Magenta",
+        "Magenta fine",
+        "Yellow",
+        "Yellow fine",
+        "CTO mixer",
+        "CTO mixer Fine",
+        "CTB mixer",
+        "CTB mixer fine",
+        "CTP mixer",
+        "CTP mixer fine",
+        "Color macro",
+        "Reserved 1",
+        "Reserved 2",
+        "Reserved 3",
+        "Rotating gobos, cont. rotation 1",
+        "Rotating gobo index,rotating gobo rotation 1",
+        "Gobo index fine 1",
+        "Rotating gobos, cont. rotation 2",
+        "Rotating gobo index,rotating gobo rotation 2",
+        "Gobo index fine 2",
+        "Animation Wheel 1",
+        "Animation Wheel 2",
+        "Rotating Animation wheel 2",
+        "Iris",
+        "Iris fine",
+        "Prism 1",
+        "Prism 1 index rotation",
+        "Prism 1 index rotation fine",
+        "Prism 2",
+        "Prism 2 index rotation",
+        "Prism 2 index rotation fine",
+        "Frost 1",
+        "Frost 2",
+        "Blade 1A",
+        "Blade 1A Fine",
+        "Blade 1B",
+        "Blade 1B Fine",
+        "Blade 2A",
+        "Blade 2A Fine",
+        "Blade 2B",
+        "Blade 2B Fine",
+        "Blade 3A",
+        "Blade 3A Fine",
+        "Blade 3B",
+        "Blade 3B Fine",
+        "Blade 4A",
+        "Blade 4A Fine",
+        "Blade 4B",
+        "Blade 4B Fine",
+        "All Blade Rotation",
+        "All Blade Rotation Fine",
+        "Control, reset, internal programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "51000",
+      "colourTemperature": "8200"
+    },
+    "dimensions": {
+      "weight": "60",
+      "width": "332",
+      "height": "115",
+      "depth": "490"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "6",
+      "degreesMax": "60"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "1600",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "ECO UV BAR DMX",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Rob G.",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Unknown"
+    },
+    {
+      "name": "Dimmer curve",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No dimmer curve"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Dimmer curve 1"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Dimmer curve 2"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Dimmer curve 3"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Dimmer curve 4"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Delay mode control"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobing",
+        "Dimmer curve"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.3",
+      "width": "1000",
+      "height": "115",
+      "depth": "60"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "120",
+      "degreesMax": "120"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "52",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

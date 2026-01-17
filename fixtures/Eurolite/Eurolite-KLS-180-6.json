@@ -1,0 +1,1448 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "KLS-180-6",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fede79",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Spots Strobe Effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Spots Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All on"
+        }
+      ]
+    },
+    {
+      "name": "Bar Strobe Effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Bar",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "149",
+          "name": "Different patterns"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "Different patterns with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Internal programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "39",
+          "name": "Auto program 1,slow > fast"
+        },
+        {
+          "min": "40",
+          "max": "69",
+          "name": "Auto program 2,slow > fast"
+        },
+        {
+          "min": "70",
+          "max": "99",
+          "name": "Auto program 3,slow > fast"
+        },
+        {
+          "min": "100",
+          "max": "129",
+          "name": "Auto program 4,slow > fast"
+        },
+        {
+          "min": "130",
+          "max": "159",
+          "name": "Sound program 1, slow > fast"
+        },
+        {
+          "min": "160",
+          "max": "189",
+          "name": "Sound program 2, slow > fast"
+        },
+        {
+          "min": "190",
+          "max": "219",
+          "name": "Sound program 3, slow > fast"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "Sound program 4, slow > fast"
+        }
+      ]
+    },
+    {
+      "name": "Spot 1 Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All on"
+        }
+      ]
+    },
+    {
+      "name": "Spot 2+3 Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All on"
+        }
+      ]
+    },
+    {
+      "name": "Spot 4+5 Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All on"
+        }
+      ]
+    },
+    {
+      "name": "Spot 6 Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All on"
+        }
+      ]
+    },
+    {
+      "name": "Programs via DMX",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "129",
+          "name": "Auto mode via DMX with increasing speed"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Sound control via DMX with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Spot 2 Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All on"
+        }
+      ]
+    },
+    {
+      "name": "Spot 3 Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All on"
+        }
+      ]
+    },
+    {
+      "name": "Spot 4 Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All on"
+        }
+      ]
+    },
+    {
+      "name": "Spot 5 Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All on"
+        }
+      ]
+    },
+    {
+      "name": "Bar Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Internal program with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Red Spot 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White Spot 1",
+      "type": "White"
+    },
+    {
+      "name": "Red Spot 2+3",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 2+3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 2+3",
+      "type": "Blue"
+    },
+    {
+      "name": "White Spot 2+3",
+      "type": "White"
+    },
+    {
+      "name": "Red Spot 4+5",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 4+5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 4+5",
+      "type": "Blue"
+    },
+    {
+      "name": "White Spot 4+5",
+      "type": "White"
+    },
+    {
+      "name": "Red Spot 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 6",
+      "type": "Blue"
+    },
+    {
+      "name": "White Spot 6",
+      "type": "White"
+    },
+    {
+      "name": "Red Spot 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White Spot 2",
+      "type": "White"
+    },
+    {
+      "name": "Red Spot 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White Spot 3",
+      "type": "White"
+    },
+    {
+      "name": "Red Spot 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White Spot 4",
+      "type": "White"
+    },
+    {
+      "name": "Red Spot 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 5",
+      "type": "Blue"
+    },
+    {
+      "name": "White Spot 5",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 6,
+      "channels": [
+        "Master dimmer",
+        "Spots Strobe Effect",
+        "Spots Preset colors",
+        "Bar Strobe Effect",
+        "Bar",
+        "Internal programs"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 8,
+      "channels": [
+        "Master dimmer",
+        "Spots Strobe Effect",
+        "Spot 1 Preset colors",
+        "Spot 2+3 Preset colors",
+        "Spot 4+5 Preset colors",
+        "Spot 6 Preset colors",
+        "Bar Strobe Effect",
+        "Programs via DMX"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 9,
+      "channels": [
+        "Master dimmer",
+        "Spots Strobe Effect",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Bar Strobe Effect",
+        "Bar",
+        "Internal programs"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 11,
+      "channels": [
+        "Master dimmer",
+        "Spots Strobe Effect",
+        "Spot 1 Preset colors",
+        "Spot 2 Preset colors",
+        "Spot 3 Preset colors",
+        "Spot 4 Preset colors",
+        "Spot 5 Preset colors",
+        "Spot 6 Preset colors",
+        "Bar Strobe Effect",
+        "Bar",
+        "Internal programs"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 21,
+      "channels": [
+        "Master dimmer",
+        "Spots Strobe Effect",
+        "Bar Program",
+        "Bar Strobe Effect",
+        "Red Spot 1",
+        "Green Spot 1",
+        "Blue Spot 1",
+        "White Spot 1",
+        "Red Spot 2+3",
+        "Green Spot 2+3",
+        "Blue Spot 2+3",
+        "White Spot 2+3",
+        "Red Spot 4+5",
+        "Green Spot 4+5",
+        "Blue Spot 4+5",
+        "White Spot 4+5",
+        "Red Spot 6",
+        "Green Spot 6",
+        "Blue Spot 6",
+        "White Spot 6",
+        "Programs via DMX"
+      ]
+    },
+    {
+      "name": "Mode 8",
+      "totalChannels": 24,
+      "channels": [
+        "Red Spot 1",
+        "Green Spot 1",
+        "Blue Spot 1",
+        "White Spot 1",
+        "Red Spot 2",
+        "Green Spot 2",
+        "Blue Spot 2",
+        "White Spot 2",
+        "Red Spot 3",
+        "Green Spot 3",
+        "Blue Spot 3",
+        "White Spot 3",
+        "Red Spot 4",
+        "Green Spot 4",
+        "Blue Spot 4",
+        "White Spot 4",
+        "Red Spot 5",
+        "Green Spot 5",
+        "Blue Spot 5",
+        "White Spot 5",
+        "Red Spot 6",
+        "Green Spot 6",
+        "Blue Spot 6",
+        "White Spot 6"
+      ]
+    },
+    {
+      "name": "Mode 9",
+      "totalChannels": 29,
+      "channels": [
+        "Master dimmer",
+        "Spots Strobe Effect",
+        "Red Spot 1",
+        "Green Spot 1",
+        "Blue Spot 1",
+        "White Spot 1",
+        "Red Spot 2",
+        "Green Spot 2",
+        "Blue Spot 2",
+        "White Spot 2",
+        "Red Spot 3",
+        "Green Spot 3",
+        "Blue Spot 3",
+        "White Spot 3",
+        "Red Spot 4",
+        "Green Spot 4",
+        "Blue Spot 4",
+        "White Spot 4",
+        "Red Spot 5",
+        "Green Spot 5",
+        "Blue Spot 5",
+        "White Spot 5",
+        "Red Spot 6",
+        "Green Spot 6",
+        "Blue Spot 6",
+        "White Spot 6",
+        "Bar Strobe Effect",
+        "Bar",
+        "Internal programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "926",
+      "height": "267",
+      "depth": "146"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "9",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "90",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

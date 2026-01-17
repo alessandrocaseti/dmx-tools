@@ -1,0 +1,275 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Hive",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Vic",
+  "channels": [
+    {
+      "name": "Pod1_R",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod1_G",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod1_B",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod2_R",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod2_G",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod2_B",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod3_R",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod3_G",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod3_B",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod4_R",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod4_G",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod4_B",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod5_R",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod5_G",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod5_B",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod6_R",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod6_G",
+      "type": "Unknown"
+    },
+    {
+      "name": "Pod6_B",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Auto program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No Effect"
+        },
+        {
+          "min": "2",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program (3 Ch)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "20",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "21",
+          "max": "35",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "36",
+          "max": "50",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "51",
+          "max": "65",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "66",
+          "max": "80",
+          "name": "Auto Program 5"
+        },
+        {
+          "min": "81",
+          "max": "95",
+          "name": "Auto Program 6"
+        },
+        {
+          "min": "96",
+          "max": "110",
+          "name": "Auto Program 7"
+        },
+        {
+          "min": "111",
+          "max": "125",
+          "name": "Auto Program 8"
+        },
+        {
+          "min": "126",
+          "max": "140",
+          "name": "Auto Program 9"
+        },
+        {
+          "min": "141",
+          "max": "155",
+          "name": "Auto Program 10"
+        },
+        {
+          "min": "156",
+          "max": "170",
+          "name": "Auto Program 11"
+        },
+        {
+          "min": "171",
+          "max": "185",
+          "name": "Auto Program 12"
+        },
+        {
+          "min": "186",
+          "max": "200",
+          "name": "Auto Program 13"
+        },
+        {
+          "min": "201",
+          "max": "215",
+          "name": "Auto Program 14"
+        },
+        {
+          "min": "216",
+          "max": "230",
+          "name": "Auto Program 15"
+        },
+        {
+          "min": "231",
+          "max": "245",
+          "name": "Auto Program 16"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "20 Channel Mode",
+      "totalChannels": 20,
+      "channels": [
+        "Pod1_R",
+        "Pod1_G",
+        "Pod1_B",
+        "Pod2_R",
+        "Pod2_G",
+        "Pod2_B",
+        "Pod3_R",
+        "Pod3_G",
+        "Pod3_B",
+        "Pod4_R",
+        "Pod4_G",
+        "Pod4_B",
+        "Pod5_R",
+        "Pod5_G",
+        "Pod5_B",
+        "Pod6_R",
+        "Pod6_G",
+        "Pod6_B",
+        "Strobe",
+        "Auto program"
+      ]
+    },
+    {
+      "name": "3 Channel Mode",
+      "totalChannels": 3,
+      "channels": [
+        "Auto Program (3 Ch)",
+        "Strobe",
+        "Auto Program Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.2",
+      "width": "330",
+      "height": "225",
+      "depth": "240"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "174",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TC-200",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Büro",
+  "channels": [
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "White"
+        },
+        {
+          "min": "17",
+          "max": "33",
+          "name": "Red"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Yellow"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Magenta"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "Green"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Orange"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Blue"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Pink"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Rainbow slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter, strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Closed"
+        },
+        {
+          "min": "15",
+          "max": "29",
+          "name": "Open"
+        },
+        {
+          "min": "30",
+          "max": "250",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 3,
+      "channels": [
+        "Colour",
+        "Dimmer",
+        "Shutter, strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HTI 150W",
+      "lumens": "9500",
+      "colourTemperature": "4500"
+    },
+    "dimensions": {
+      "weight": "7",
+      "width": "280",
+      "height": "300",
+      "depth": "290"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "320",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

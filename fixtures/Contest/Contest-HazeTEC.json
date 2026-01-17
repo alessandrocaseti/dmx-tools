@@ -1,0 +1,64 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "HazeTEC",
+  "type": "FX Haze",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ray Console - cd",
+  "channels": [
+    {
+      "name": "Smoke Volume",
+      "type": "Intensity"
+    },
+    {
+      "name": "Fan Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fan Speed (0 - 100%)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Smoke Volume",
+        "Fan Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "11.9",
+      "width": "343",
+      "height": "290",
+      "depth": "364"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "900",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

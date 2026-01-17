@@ -1,0 +1,255 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED SLS-18x3W TCL",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Hans-Juergen Tappe",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Intensity",
+      "type": "Unknown"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter"
+    },
+    {
+      "name": "Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Yellow"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Violet"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "White"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Color Fading 1"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Color Fading 2"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Color Fading 3"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Color Fading 4"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Color Fading 5"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Color Fading 6"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Color Fading 7"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Color Fading 8"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Color Switching 1"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Color Switching 2"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Color Switching 3"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Color Switching 4"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Color Switching 5"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Color Switching 6"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Music Controlled 1"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Music Controlled 2"
+        }
+      ]
+    },
+    {
+      "name": "ColorControl",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Music Control (7 Colors)"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe (Increasing)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Intensity"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Intensity",
+        "ColorControl"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Intensity",
+        "Shutter",
+        "Colors"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "280",
+      "height": "310",
+      "depth": "110"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "26",
+      "degreesMax": "26"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "110",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

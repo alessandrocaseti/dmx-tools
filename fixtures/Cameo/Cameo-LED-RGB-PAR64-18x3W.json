@@ -1,0 +1,99 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "LED RGB PAR64 18x3W",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "VagSag",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "RED",
+      "type": "Red"
+    },
+    {
+      "name": "GREEN",
+      "type": "Green"
+    },
+    {
+      "name": "BLUE",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Change",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "84",
+          "name": "Color micro"
+        },
+        {
+          "min": "85",
+          "max": "169",
+          "name": "Color jump"
+        },
+        {
+          "min": "170",
+          "max": "255",
+          "name": "Color fade"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "6-Channel Mode",
+      "totalChannels": 6,
+      "channels": [
+        "Master Dimmer",
+        "RED",
+        "GREEN",
+        "BLUE",
+        "Color Change",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.3",
+      "width": "270",
+      "height": "263",
+      "depth": "270"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,3834 @@
+{
+  "version": "1.2",
+  "manufacturer": "Astera",
+  "model": "AX3 Lightdrop",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fredje Gallon",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "No function",
+      "type": "Unknown"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Temperature CCT",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No Effect"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "Color Temperature CCT = 2000 + 20*DMX-Value"
+        }
+      ]
+    },
+    {
+      "name": "LEE Color Gel 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No effect"
+        },
+        {
+          "min": "2",
+          "max": "2",
+          "name": "Rose Pink"
+        },
+        {
+          "min": "3",
+          "max": "3",
+          "name": "Lavender Tint"
+        },
+        {
+          "min": "4",
+          "max": "6",
+          "name": "Medium Bastard Amber"
+        },
+        {
+          "min": "7",
+          "max": "7",
+          "name": "Pale Yellow"
+        },
+        {
+          "min": "8",
+          "max": "8",
+          "name": "Dark Salmon"
+        },
+        {
+          "min": "9",
+          "max": "9",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "10",
+          "max": "12",
+          "name": "Medium Yellow"
+        },
+        {
+          "min": "13",
+          "max": "14",
+          "name": "Straw Tint"
+        },
+        {
+          "min": "15",
+          "max": "16",
+          "name": "Deep Straw"
+        },
+        {
+          "min": "17",
+          "max": "18",
+          "name": "Surprise Peach"
+        },
+        {
+          "min": "19",
+          "max": "19",
+          "name": "Fire"
+        },
+        {
+          "min": "20",
+          "max": "20",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "21",
+          "max": "21",
+          "name": "Gold Amber"
+        },
+        {
+          "min": "22",
+          "max": "23",
+          "name": "Dark Amber"
+        },
+        {
+          "min": "24",
+          "max": "24",
+          "name": "Scarlet"
+        },
+        {
+          "min": "25",
+          "max": "25",
+          "name": "Sunset Red"
+        },
+        {
+          "min": "26",
+          "max": "26",
+          "name": "Bright Red"
+        },
+        {
+          "min": "27",
+          "max": "28",
+          "name": "Medium Red"
+        },
+        {
+          "min": "29",
+          "max": "34",
+          "name": "Plasa Red"
+        },
+        {
+          "min": "35",
+          "max": "35",
+          "name": "Light Pink"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "46",
+          "max": "47",
+          "name": "Dark Magenta"
+        },
+        {
+          "min": "48",
+          "max": "48",
+          "name": "Rose Purple"
+        },
+        {
+          "min": "49",
+          "max": "51",
+          "name": "Medium Purple"
+        },
+        {
+          "min": "52",
+          "max": "52",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "53",
+          "max": "57",
+          "name": "Paler Lavender"
+        },
+        {
+          "min": "58",
+          "max": "60",
+          "name": "Lavender"
+        },
+        {
+          "min": "61",
+          "max": "62",
+          "name": "Mist Blue"
+        },
+        {
+          "min": "63",
+          "max": "67",
+          "name": "Pale Blue"
+        },
+        {
+          "min": "68",
+          "max": "70",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "71",
+          "max": "74",
+          "name": "Tokyo Blue"
+        },
+        {
+          "min": "75",
+          "max": "78",
+          "name": "Evening Blue"
+        },
+        {
+          "min": "79",
+          "max": "84",
+          "name": "Just Blue"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Deeper Blue"
+        },
+        {
+          "min": "88",
+          "max": "88",
+          "name": "Lime Green"
+        },
+        {
+          "min": "89",
+          "max": "89",
+          "name": "Moss Green"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Dark Yellow Green"
+        },
+        {
+          "min": "100",
+          "max": "100",
+          "name": "Spring Yellow"
+        },
+        {
+          "min": "101",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "102",
+          "name": "Light Amber"
+        },
+        {
+          "min": "103",
+          "max": "103",
+          "name": "Straw"
+        },
+        {
+          "min": "104",
+          "max": "104",
+          "name": "Deep Amber"
+        },
+        {
+          "min": "105",
+          "max": "105",
+          "name": "Orange"
+        },
+        {
+          "min": "106",
+          "max": "106",
+          "name": "Primary Red"
+        },
+        {
+          "min": "107",
+          "max": "107",
+          "name": "Light Rose"
+        },
+        {
+          "min": "108",
+          "max": "108",
+          "name": "English Rose"
+        },
+        {
+          "min": "109",
+          "max": "109",
+          "name": "Light Salmon"
+        },
+        {
+          "min": "110",
+          "max": "110",
+          "name": "Middle Rose"
+        },
+        {
+          "min": "111",
+          "max": "112",
+          "name": "Dark Pink"
+        },
+        {
+          "min": "113",
+          "max": "114",
+          "name": "Magenta"
+        },
+        {
+          "min": "115",
+          "max": "115",
+          "name": "Peacock Blue"
+        },
+        {
+          "min": "116",
+          "max": "116",
+          "name": "Medium Blue-Green"
+        },
+        {
+          "min": "117",
+          "max": "117",
+          "name": "Steel Blue"
+        },
+        {
+          "min": "118",
+          "max": "118",
+          "name": "Light Blue"
+        },
+        {
+          "min": "119",
+          "max": "119",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "120",
+          "max": "120",
+          "name": "Deep Blue"
+        },
+        {
+          "min": "121",
+          "max": "121",
+          "name": "LEE Green"
+        },
+        {
+          "min": "122",
+          "max": "123",
+          "name": "Fern Green"
+        },
+        {
+          "min": "124",
+          "max": "125",
+          "name": "Dark Green"
+        },
+        {
+          "min": "126",
+          "max": "126",
+          "name": "Mauve"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Smokey Pink"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Bright Pink"
+        },
+        {
+          "min": "129",
+          "max": "129",
+          "name": "Heavy Frost"
+        },
+        {
+          "min": "130",
+          "max": "130",
+          "name": "Clear"
+        },
+        {
+          "min": "131",
+          "max": "131",
+          "name": "Marine Blue"
+        },
+        {
+          "min": "132",
+          "max": "133",
+          "name": "Medium Blue"
+        },
+        {
+          "min": "134",
+          "max": "134",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "135",
+          "max": "135",
+          "name": "Deep Golden Amber"
+        },
+        {
+          "min": "136",
+          "max": "136",
+          "name": "Pale Lavender"
+        },
+        {
+          "min": "137",
+          "max": "137",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "138",
+          "max": "138",
+          "name": "Pale Green"
+        },
+        {
+          "min": "139",
+          "max": "139",
+          "name": "Primary Green"
+        },
+        {
+          "min": "140",
+          "max": "140",
+          "name": "Summer Blue"
+        },
+        {
+          "min": "141",
+          "max": "141",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "142",
+          "max": "142",
+          "name": "Pale Violet"
+        },
+        {
+          "min": "143",
+          "max": "143",
+          "name": "Pale Navy Blue"
+        },
+        {
+          "min": "144",
+          "max": "146",
+          "name": "No Colour Blue"
+        },
+        {
+          "min": "147",
+          "max": "147",
+          "name": "Apricot"
+        },
+        {
+          "min": "148",
+          "max": "150",
+          "name": "Bright Rose"
+        },
+        {
+          "min": "151",
+          "max": "151",
+          "name": "Gold Tint"
+        },
+        {
+          "min": "152",
+          "max": "152",
+          "name": "Pale Gold"
+        },
+        {
+          "min": "153",
+          "max": "153",
+          "name": "Pale Salmon"
+        },
+        {
+          "min": "154",
+          "max": "155",
+          "name": "Pale Rose"
+        },
+        {
+          "min": "156",
+          "max": "156",
+          "name": "Chocolate"
+        },
+        {
+          "min": "157",
+          "max": "157",
+          "name": "Pink"
+        },
+        {
+          "min": "158",
+          "max": "158",
+          "name": "Deep Orange"
+        },
+        {
+          "min": "159",
+          "max": "160",
+          "name": "No Colour Straw"
+        },
+        {
+          "min": "161",
+          "max": "161",
+          "name": "Slate Blue"
+        },
+        {
+          "min": "162",
+          "max": "163",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "164",
+          "max": "164",
+          "name": "Flame Red"
+        },
+        {
+          "min": "165",
+          "max": "168",
+          "name": "Daylight Blue"
+        },
+        {
+          "min": "169",
+          "max": "169",
+          "name": "Lilac Tint"
+        },
+        {
+          "min": "170",
+          "max": "171",
+          "name": "Deep Lavender"
+        },
+        {
+          "min": "172",
+          "max": "173",
+          "name": "Lagoon Blue"
+        },
+        {
+          "min": "174",
+          "max": "175",
+          "name": "Dark Steel Blue"
+        },
+        {
+          "min": "176",
+          "max": "178",
+          "name": "Loving Amber"
+        },
+        {
+          "min": "179",
+          "max": "179",
+          "name": "Chrome Orange"
+        },
+        {
+          "min": "180",
+          "max": "180",
+          "name": "Dark Lavender"
+        },
+        {
+          "min": "181",
+          "max": "181",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "182",
+          "max": "182",
+          "name": "Light Red"
+        },
+        {
+          "min": "183",
+          "max": "183",
+          "name": "Moonlight Blue"
+        },
+        {
+          "min": "184",
+          "max": "185",
+          "name": "Cosmetic Peach"
+        },
+        {
+          "min": "186",
+          "max": "186",
+          "name": "Cosmetic Silver Rose"
+        },
+        {
+          "min": "187",
+          "max": "187",
+          "name": "Cosmetic Rouge"
+        },
+        {
+          "min": "188",
+          "max": "188",
+          "name": "Cosmetic Highlight"
+        },
+        {
+          "min": "189",
+          "max": "190",
+          "name": "Cosmetic Silver Moss"
+        },
+        {
+          "min": "191",
+          "max": "191",
+          "name": "Cosmetic Aqua Blue"
+        },
+        {
+          "min": "192",
+          "max": "193",
+          "name": "Flesh Pink"
+        },
+        {
+          "min": "194",
+          "max": "194",
+          "name": "Surprise Pink"
+        },
+        {
+          "min": "195",
+          "max": "195",
+          "name": "Zenith Blue"
+        },
+        {
+          "min": "196",
+          "max": "196",
+          "name": "True Blue"
+        },
+        {
+          "min": "197",
+          "max": "197",
+          "name": "Alice Blue"
+        },
+        {
+          "min": "198",
+          "max": "198",
+          "name": "Palace Blue"
+        },
+        {
+          "min": "199",
+          "max": "199",
+          "name": "Regal Blue"
+        },
+        {
+          "min": "200",
+          "max": "200",
+          "name": "Double CT Blue"
+        },
+        {
+          "min": "201",
+          "max": "201",
+          "name": "Full CT Blue"
+        },
+        {
+          "min": "202",
+          "max": "202",
+          "name": "1/2 CT Blue"
+        },
+        {
+          "min": "203",
+          "max": "203",
+          "name": "1/4 CT Blue"
+        },
+        {
+          "min": "204",
+          "max": "204",
+          "name": "Full CT Orange"
+        },
+        {
+          "min": "205",
+          "max": "205",
+          "name": "1/2 CT Orange"
+        },
+        {
+          "min": "206",
+          "max": "206",
+          "name": "1/4 CT Orange"
+        },
+        {
+          "min": "207",
+          "max": "207",
+          "name": "Full CT Orange +"
+        },
+        {
+          "min": "208",
+          "max": "208",
+          "name": "Full CT Orange +"
+        },
+        {
+          "min": "209",
+          "max": "209",
+          "name": "0.3 Neutral Density"
+        },
+        {
+          "min": "210",
+          "max": "210",
+          "name": "0.6 Neutral Density"
+        },
+        {
+          "min": "211",
+          "max": "211",
+          "name": "0.9 Neutral Density"
+        },
+        {
+          "min": "212",
+          "max": "212",
+          "name": "LCT Yellow"
+        },
+        {
+          "min": "213",
+          "max": "215",
+          "name": "White Flame Green"
+        },
+        {
+          "min": "216",
+          "max": "216",
+          "name": "White Diffusion"
+        },
+        {
+          "min": "217",
+          "max": "217",
+          "name": "Blue Diffusion"
+        },
+        {
+          "min": "218",
+          "max": "218",
+          "name": "1/8 CT Blue"
+        },
+        {
+          "min": "219",
+          "max": "219",
+          "name": "LEE Fluorescent Green"
+        },
+        {
+          "min": "220",
+          "max": "220",
+          "name": "White Frost"
+        },
+        {
+          "min": "221",
+          "max": "222",
+          "name": "Blue Frost"
+        },
+        {
+          "min": "223",
+          "max": "223",
+          "name": "1/8 CT Orange"
+        },
+        {
+          "min": "224",
+          "max": "224",
+          "name": "Daylight Blue Frost"
+        },
+        {
+          "min": "225",
+          "max": "225",
+          "name": "LEE N.D. Frost"
+        },
+        {
+          "min": "226",
+          "max": "227",
+          "name": "LEE U.V."
+        },
+        {
+          "min": "228",
+          "max": "228",
+          "name": "Brushed Silk"
+        },
+        {
+          "min": "229",
+          "max": "229",
+          "name": "1/4 Tough Spun"
+        },
+        {
+          "min": "230",
+          "max": "231",
+          "name": "Super Correction"
+        },
+        {
+          "min": "232",
+          "max": "235",
+          "name": "Super White Flame Green"
+        },
+        {
+          "min": "236",
+          "max": "236",
+          "name": "H.M.I (To Tungsten)"
+        },
+        {
+          "min": "237",
+          "max": "237",
+          "name": "C.I.D. (To Tungsten)"
+        },
+        {
+          "min": "238",
+          "max": "238",
+          "name": "C.S.I. (To Tungsten)"
+        },
+        {
+          "min": "239",
+          "max": "240",
+          "name": "Polariser"
+        },
+        {
+          "min": "241",
+          "max": "241",
+          "name": "LEE Fluorescent 5700 K"
+        },
+        {
+          "min": "242",
+          "max": "242",
+          "name": "LEE Fluorescent 4300 K"
+        },
+        {
+          "min": "243",
+          "max": "243",
+          "name": "LEE Fluorescent 3600 K"
+        },
+        {
+          "min": "244",
+          "max": "244",
+          "name": "LEE Plus Green"
+        },
+        {
+          "min": "245",
+          "max": "245",
+          "name": "1/2 Plus Green"
+        },
+        {
+          "min": "246",
+          "max": "246",
+          "name": "1/4 Plus Green"
+        },
+        {
+          "min": "247",
+          "max": "247",
+          "name": "LEE Minus Green"
+        },
+        {
+          "min": "248",
+          "max": "248",
+          "name": "1/2 Minus Green"
+        },
+        {
+          "min": "249",
+          "max": "249",
+          "name": "1/4 Minus Green"
+        },
+        {
+          "min": "250",
+          "max": "250",
+          "name": "1/2 White Diffusion"
+        },
+        {
+          "min": "251",
+          "max": "251",
+          "name": "1/4 White Diffusion"
+        },
+        {
+          "min": "252",
+          "max": "252",
+          "name": "1/8 White Diffusion"
+        },
+        {
+          "min": "253",
+          "max": "253",
+          "name": "Hampshire Frost"
+        },
+        {
+          "min": "254",
+          "max": "254",
+          "name": "New Hampshire Frost"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Hollywood Frost"
+        }
+      ]
+    },
+    {
+      "name": "LEE Color Gel 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No effect"
+        },
+        {
+          "min": "2",
+          "max": "2",
+          "name": "Rose Pink"
+        },
+        {
+          "min": "3",
+          "max": "3",
+          "name": "Lavender Tint"
+        },
+        {
+          "min": "4",
+          "max": "6",
+          "name": "Medium Bastard Amber"
+        },
+        {
+          "min": "7",
+          "max": "7",
+          "name": "Pale Yellow"
+        },
+        {
+          "min": "8",
+          "max": "8",
+          "name": "Dark Salmon"
+        },
+        {
+          "min": "9",
+          "max": "9",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "10",
+          "max": "12",
+          "name": "Medium Yellow"
+        },
+        {
+          "min": "13",
+          "max": "14",
+          "name": "Straw Tint"
+        },
+        {
+          "min": "15",
+          "max": "16",
+          "name": "Deep Straw"
+        },
+        {
+          "min": "17",
+          "max": "18",
+          "name": "Surprise Peach"
+        },
+        {
+          "min": "19",
+          "max": "19",
+          "name": "Fire"
+        },
+        {
+          "min": "20",
+          "max": "20",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "21",
+          "max": "21",
+          "name": "Gold Amber"
+        },
+        {
+          "min": "22",
+          "max": "23",
+          "name": "Dark Amber"
+        },
+        {
+          "min": "24",
+          "max": "24",
+          "name": "Scarlet"
+        },
+        {
+          "min": "25",
+          "max": "25",
+          "name": "Sunset Red"
+        },
+        {
+          "min": "26",
+          "max": "26",
+          "name": "Bright Red"
+        },
+        {
+          "min": "27",
+          "max": "28",
+          "name": "Medium Red"
+        },
+        {
+          "min": "29",
+          "max": "34",
+          "name": "Plasa Red"
+        },
+        {
+          "min": "35",
+          "max": "35",
+          "name": "Light Pink"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "46",
+          "max": "47",
+          "name": "Dark Magenta"
+        },
+        {
+          "min": "48",
+          "max": "48",
+          "name": "Rose Purple"
+        },
+        {
+          "min": "49",
+          "max": "51",
+          "name": "Medium Purple"
+        },
+        {
+          "min": "52",
+          "max": "52",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "53",
+          "max": "57",
+          "name": "Paler Lavender"
+        },
+        {
+          "min": "58",
+          "max": "60",
+          "name": "Lavender"
+        },
+        {
+          "min": "61",
+          "max": "62",
+          "name": "Mist Blue"
+        },
+        {
+          "min": "63",
+          "max": "67",
+          "name": "Pale Blue"
+        },
+        {
+          "min": "68",
+          "max": "70",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "71",
+          "max": "74",
+          "name": "Tokyo Blue"
+        },
+        {
+          "min": "75",
+          "max": "78",
+          "name": "Evening Blue"
+        },
+        {
+          "min": "79",
+          "max": "84",
+          "name": "Just Blue"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Deeper Blue"
+        },
+        {
+          "min": "88",
+          "max": "88",
+          "name": "Lime Green"
+        },
+        {
+          "min": "89",
+          "max": "89",
+          "name": "Moss Green"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Dark Yellow Green"
+        },
+        {
+          "min": "100",
+          "max": "100",
+          "name": "Spring Yellow"
+        },
+        {
+          "min": "101",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "102",
+          "name": "Light Amber"
+        },
+        {
+          "min": "103",
+          "max": "103",
+          "name": "Straw"
+        },
+        {
+          "min": "104",
+          "max": "104",
+          "name": "Deep Amber"
+        },
+        {
+          "min": "105",
+          "max": "105",
+          "name": "Orange"
+        },
+        {
+          "min": "106",
+          "max": "106",
+          "name": "Primary Red"
+        },
+        {
+          "min": "107",
+          "max": "107",
+          "name": "Light Rose"
+        },
+        {
+          "min": "108",
+          "max": "108",
+          "name": "English Rose"
+        },
+        {
+          "min": "109",
+          "max": "109",
+          "name": "Light Salmon"
+        },
+        {
+          "min": "110",
+          "max": "110",
+          "name": "Middle Rose"
+        },
+        {
+          "min": "111",
+          "max": "112",
+          "name": "Dark Pink"
+        },
+        {
+          "min": "113",
+          "max": "114",
+          "name": "Magenta"
+        },
+        {
+          "min": "115",
+          "max": "115",
+          "name": "Peacock Blue"
+        },
+        {
+          "min": "116",
+          "max": "116",
+          "name": "Medium Blue-Green"
+        },
+        {
+          "min": "117",
+          "max": "117",
+          "name": "Steel Blue"
+        },
+        {
+          "min": "118",
+          "max": "118",
+          "name": "Light Blue"
+        },
+        {
+          "min": "119",
+          "max": "119",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "120",
+          "max": "120",
+          "name": "Deep Blue"
+        },
+        {
+          "min": "121",
+          "max": "121",
+          "name": "LEE Green"
+        },
+        {
+          "min": "122",
+          "max": "123",
+          "name": "Fern Green"
+        },
+        {
+          "min": "124",
+          "max": "125",
+          "name": "Dark Green"
+        },
+        {
+          "min": "126",
+          "max": "126",
+          "name": "Mauve"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Smokey Pink"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Bright Pink"
+        },
+        {
+          "min": "129",
+          "max": "129",
+          "name": "Heavy Frost"
+        },
+        {
+          "min": "130",
+          "max": "130",
+          "name": "Clear"
+        },
+        {
+          "min": "131",
+          "max": "131",
+          "name": "Marine Blue"
+        },
+        {
+          "min": "132",
+          "max": "133",
+          "name": "Medium Blue"
+        },
+        {
+          "min": "134",
+          "max": "134",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "135",
+          "max": "135",
+          "name": "Deep Golden Amber"
+        },
+        {
+          "min": "136",
+          "max": "136",
+          "name": "Pale Lavender"
+        },
+        {
+          "min": "137",
+          "max": "137",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "138",
+          "max": "138",
+          "name": "Pale Green"
+        },
+        {
+          "min": "139",
+          "max": "139",
+          "name": "Primary Green"
+        },
+        {
+          "min": "140",
+          "max": "140",
+          "name": "Summer Blue"
+        },
+        {
+          "min": "141",
+          "max": "141",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "142",
+          "max": "142",
+          "name": "Pale Violet"
+        },
+        {
+          "min": "143",
+          "max": "143",
+          "name": "Pale Navy Blue"
+        },
+        {
+          "min": "144",
+          "max": "146",
+          "name": "No Colour Blue"
+        },
+        {
+          "min": "147",
+          "max": "147",
+          "name": "Apricot"
+        },
+        {
+          "min": "148",
+          "max": "150",
+          "name": "Bright Rose"
+        },
+        {
+          "min": "151",
+          "max": "151",
+          "name": "Gold Tint"
+        },
+        {
+          "min": "152",
+          "max": "152",
+          "name": "Pale Gold"
+        },
+        {
+          "min": "153",
+          "max": "153",
+          "name": "Pale Salmon"
+        },
+        {
+          "min": "154",
+          "max": "155",
+          "name": "Pale Rose"
+        },
+        {
+          "min": "156",
+          "max": "156",
+          "name": "Chocolate"
+        },
+        {
+          "min": "157",
+          "max": "157",
+          "name": "Pink"
+        },
+        {
+          "min": "158",
+          "max": "158",
+          "name": "Deep Orange"
+        },
+        {
+          "min": "159",
+          "max": "160",
+          "name": "No Colour Straw"
+        },
+        {
+          "min": "161",
+          "max": "161",
+          "name": "Slate Blue"
+        },
+        {
+          "min": "162",
+          "max": "163",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "164",
+          "max": "164",
+          "name": "Flame Red"
+        },
+        {
+          "min": "165",
+          "max": "168",
+          "name": "Daylight Blue"
+        },
+        {
+          "min": "169",
+          "max": "169",
+          "name": "Lilac Tint"
+        },
+        {
+          "min": "170",
+          "max": "171",
+          "name": "Deep Lavender"
+        },
+        {
+          "min": "172",
+          "max": "173",
+          "name": "Lagoon Blue"
+        },
+        {
+          "min": "174",
+          "max": "175",
+          "name": "Dark Steel Blue"
+        },
+        {
+          "min": "176",
+          "max": "178",
+          "name": "Loving Amber"
+        },
+        {
+          "min": "179",
+          "max": "179",
+          "name": "Chrome Orange"
+        },
+        {
+          "min": "180",
+          "max": "180",
+          "name": "Dark Lavender"
+        },
+        {
+          "min": "181",
+          "max": "181",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "182",
+          "max": "182",
+          "name": "Light Red"
+        },
+        {
+          "min": "183",
+          "max": "183",
+          "name": "Moonlight Blue"
+        },
+        {
+          "min": "184",
+          "max": "185",
+          "name": "Cosmetic Peach"
+        },
+        {
+          "min": "186",
+          "max": "186",
+          "name": "Cosmetic Silver Rose"
+        },
+        {
+          "min": "187",
+          "max": "187",
+          "name": "Cosmetic Rouge"
+        },
+        {
+          "min": "188",
+          "max": "188",
+          "name": "Cosmetic Highlight"
+        },
+        {
+          "min": "189",
+          "max": "190",
+          "name": "Cosmetic Silver Moss"
+        },
+        {
+          "min": "191",
+          "max": "191",
+          "name": "Cosmetic Aqua Blue"
+        },
+        {
+          "min": "192",
+          "max": "193",
+          "name": "Flesh Pink"
+        },
+        {
+          "min": "194",
+          "max": "194",
+          "name": "Surprise Pink"
+        },
+        {
+          "min": "195",
+          "max": "195",
+          "name": "Zenith Blue"
+        },
+        {
+          "min": "196",
+          "max": "196",
+          "name": "True Blue"
+        },
+        {
+          "min": "197",
+          "max": "197",
+          "name": "Alice Blue"
+        },
+        {
+          "min": "198",
+          "max": "198",
+          "name": "Palace Blue"
+        },
+        {
+          "min": "199",
+          "max": "199",
+          "name": "Regal Blue"
+        },
+        {
+          "min": "200",
+          "max": "200",
+          "name": "Double CT Blue"
+        },
+        {
+          "min": "201",
+          "max": "201",
+          "name": "Full CT Blue"
+        },
+        {
+          "min": "202",
+          "max": "202",
+          "name": "1/2 CT Blue"
+        },
+        {
+          "min": "203",
+          "max": "203",
+          "name": "1/4 CT Blue"
+        },
+        {
+          "min": "204",
+          "max": "204",
+          "name": "Full CT Orange"
+        },
+        {
+          "min": "205",
+          "max": "205",
+          "name": "1/2 CT Orange"
+        },
+        {
+          "min": "206",
+          "max": "206",
+          "name": "1/4 CT Orange"
+        },
+        {
+          "min": "207",
+          "max": "207",
+          "name": "Full CT Orange +"
+        },
+        {
+          "min": "208",
+          "max": "208",
+          "name": "Full CT Orange +"
+        },
+        {
+          "min": "209",
+          "max": "209",
+          "name": "0.3 Neutral Density"
+        },
+        {
+          "min": "210",
+          "max": "210",
+          "name": "0.6 Neutral Density"
+        },
+        {
+          "min": "211",
+          "max": "211",
+          "name": "0.9 Neutral Density"
+        },
+        {
+          "min": "212",
+          "max": "212",
+          "name": "LCT Yellow"
+        },
+        {
+          "min": "213",
+          "max": "215",
+          "name": "White Flame Green"
+        },
+        {
+          "min": "216",
+          "max": "216",
+          "name": "White Diffusion"
+        },
+        {
+          "min": "217",
+          "max": "217",
+          "name": "Blue Diffusion"
+        },
+        {
+          "min": "218",
+          "max": "218",
+          "name": "1/8 CT Blue"
+        },
+        {
+          "min": "219",
+          "max": "219",
+          "name": "LEE Fluorescent Green"
+        },
+        {
+          "min": "220",
+          "max": "220",
+          "name": "White Frost"
+        },
+        {
+          "min": "221",
+          "max": "222",
+          "name": "Blue Frost"
+        },
+        {
+          "min": "223",
+          "max": "223",
+          "name": "1/8 CT Orange"
+        },
+        {
+          "min": "224",
+          "max": "224",
+          "name": "Daylight Blue Frost"
+        },
+        {
+          "min": "225",
+          "max": "225",
+          "name": "LEE N.D. Frost"
+        },
+        {
+          "min": "226",
+          "max": "227",
+          "name": "LEE U.V."
+        },
+        {
+          "min": "228",
+          "max": "228",
+          "name": "Brushed Silk"
+        },
+        {
+          "min": "229",
+          "max": "229",
+          "name": "1/4 Tough Spun"
+        },
+        {
+          "min": "230",
+          "max": "231",
+          "name": "Super Correction"
+        },
+        {
+          "min": "232",
+          "max": "235",
+          "name": "Super White Flame Green"
+        },
+        {
+          "min": "236",
+          "max": "236",
+          "name": "H.M.I (To Tungsten)"
+        },
+        {
+          "min": "237",
+          "max": "237",
+          "name": "C.I.D. (To Tungsten)"
+        },
+        {
+          "min": "238",
+          "max": "238",
+          "name": "C.S.I. (To Tungsten)"
+        },
+        {
+          "min": "239",
+          "max": "240",
+          "name": "Polariser"
+        },
+        {
+          "min": "241",
+          "max": "241",
+          "name": "LEE Fluorescent 5700 K"
+        },
+        {
+          "min": "242",
+          "max": "242",
+          "name": "LEE Fluorescent 4300 K"
+        },
+        {
+          "min": "243",
+          "max": "243",
+          "name": "LEE Fluorescent 3600 K"
+        },
+        {
+          "min": "244",
+          "max": "244",
+          "name": "LEE Plus Green"
+        },
+        {
+          "min": "245",
+          "max": "245",
+          "name": "1/2 Plus Green"
+        },
+        {
+          "min": "246",
+          "max": "246",
+          "name": "1/4 Plus Green"
+        },
+        {
+          "min": "247",
+          "max": "247",
+          "name": "LEE Minus Green"
+        },
+        {
+          "min": "248",
+          "max": "248",
+          "name": "1/2 Minus Green"
+        },
+        {
+          "min": "249",
+          "max": "249",
+          "name": "1/4 Minus Green"
+        },
+        {
+          "min": "250",
+          "max": "250",
+          "name": "1/2 White Diffusion"
+        },
+        {
+          "min": "251",
+          "max": "251",
+          "name": "1/4 White Diffusion"
+        },
+        {
+          "min": "252",
+          "max": "252",
+          "name": "1/8 White Diffusion"
+        },
+        {
+          "min": "253",
+          "max": "253",
+          "name": "Hampshire Frost"
+        },
+        {
+          "min": "254",
+          "max": "254",
+          "name": "New Hampshire Frost"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Hollywood Frost"
+        }
+      ]
+    },
+    {
+      "name": "LEE Color Gel 3",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No effect"
+        },
+        {
+          "min": "2",
+          "max": "2",
+          "name": "Rose Pink"
+        },
+        {
+          "min": "3",
+          "max": "3",
+          "name": "Lavender Tint"
+        },
+        {
+          "min": "4",
+          "max": "6",
+          "name": "Medium Bastard Amber"
+        },
+        {
+          "min": "7",
+          "max": "7",
+          "name": "Pale Yellow"
+        },
+        {
+          "min": "8",
+          "max": "8",
+          "name": "Dark Salmon"
+        },
+        {
+          "min": "9",
+          "max": "9",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "10",
+          "max": "12",
+          "name": "Medium Yellow"
+        },
+        {
+          "min": "13",
+          "max": "14",
+          "name": "Straw Tint"
+        },
+        {
+          "min": "15",
+          "max": "16",
+          "name": "Deep Straw"
+        },
+        {
+          "min": "17",
+          "max": "18",
+          "name": "Surprise Peach"
+        },
+        {
+          "min": "19",
+          "max": "19",
+          "name": "Fire"
+        },
+        {
+          "min": "20",
+          "max": "20",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "21",
+          "max": "21",
+          "name": "Gold Amber"
+        },
+        {
+          "min": "22",
+          "max": "23",
+          "name": "Dark Amber"
+        },
+        {
+          "min": "24",
+          "max": "24",
+          "name": "Scarlet"
+        },
+        {
+          "min": "25",
+          "max": "25",
+          "name": "Sunset Red"
+        },
+        {
+          "min": "26",
+          "max": "26",
+          "name": "Bright Red"
+        },
+        {
+          "min": "27",
+          "max": "28",
+          "name": "Medium Red"
+        },
+        {
+          "min": "29",
+          "max": "34",
+          "name": "Plasa Red"
+        },
+        {
+          "min": "35",
+          "max": "35",
+          "name": "Light Pink"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "46",
+          "max": "47",
+          "name": "Dark Magenta"
+        },
+        {
+          "min": "48",
+          "max": "48",
+          "name": "Rose Purple"
+        },
+        {
+          "min": "49",
+          "max": "51",
+          "name": "Medium Purple"
+        },
+        {
+          "min": "52",
+          "max": "52",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "53",
+          "max": "57",
+          "name": "Paler Lavender"
+        },
+        {
+          "min": "58",
+          "max": "60",
+          "name": "Lavender"
+        },
+        {
+          "min": "61",
+          "max": "62",
+          "name": "Mist Blue"
+        },
+        {
+          "min": "63",
+          "max": "67",
+          "name": "Pale Blue"
+        },
+        {
+          "min": "68",
+          "max": "70",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "71",
+          "max": "74",
+          "name": "Tokyo Blue"
+        },
+        {
+          "min": "75",
+          "max": "78",
+          "name": "Evening Blue"
+        },
+        {
+          "min": "79",
+          "max": "84",
+          "name": "Just Blue"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Deeper Blue"
+        },
+        {
+          "min": "88",
+          "max": "88",
+          "name": "Lime Green"
+        },
+        {
+          "min": "89",
+          "max": "89",
+          "name": "Moss Green"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Dark Yellow Green"
+        },
+        {
+          "min": "100",
+          "max": "100",
+          "name": "Spring Yellow"
+        },
+        {
+          "min": "101",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "102",
+          "name": "Light Amber"
+        },
+        {
+          "min": "103",
+          "max": "103",
+          "name": "Straw"
+        },
+        {
+          "min": "104",
+          "max": "104",
+          "name": "Deep Amber"
+        },
+        {
+          "min": "105",
+          "max": "105",
+          "name": "Orange"
+        },
+        {
+          "min": "106",
+          "max": "106",
+          "name": "Primary Red"
+        },
+        {
+          "min": "107",
+          "max": "107",
+          "name": "Light Rose"
+        },
+        {
+          "min": "108",
+          "max": "108",
+          "name": "English Rose"
+        },
+        {
+          "min": "109",
+          "max": "109",
+          "name": "Light Salmon"
+        },
+        {
+          "min": "110",
+          "max": "110",
+          "name": "Middle Rose"
+        },
+        {
+          "min": "111",
+          "max": "112",
+          "name": "Dark Pink"
+        },
+        {
+          "min": "113",
+          "max": "114",
+          "name": "Magenta"
+        },
+        {
+          "min": "115",
+          "max": "115",
+          "name": "Peacock Blue"
+        },
+        {
+          "min": "116",
+          "max": "116",
+          "name": "Medium Blue-Green"
+        },
+        {
+          "min": "117",
+          "max": "117",
+          "name": "Steel Blue"
+        },
+        {
+          "min": "118",
+          "max": "118",
+          "name": "Light Blue"
+        },
+        {
+          "min": "119",
+          "max": "119",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "120",
+          "max": "120",
+          "name": "Deep Blue"
+        },
+        {
+          "min": "121",
+          "max": "121",
+          "name": "LEE Green"
+        },
+        {
+          "min": "122",
+          "max": "123",
+          "name": "Fern Green"
+        },
+        {
+          "min": "124",
+          "max": "125",
+          "name": "Dark Green"
+        },
+        {
+          "min": "126",
+          "max": "126",
+          "name": "Mauve"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Smokey Pink"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Bright Pink"
+        },
+        {
+          "min": "129",
+          "max": "129",
+          "name": "Heavy Frost"
+        },
+        {
+          "min": "130",
+          "max": "130",
+          "name": "Clear"
+        },
+        {
+          "min": "131",
+          "max": "131",
+          "name": "Marine Blue"
+        },
+        {
+          "min": "132",
+          "max": "133",
+          "name": "Medium Blue"
+        },
+        {
+          "min": "134",
+          "max": "134",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "135",
+          "max": "135",
+          "name": "Deep Golden Amber"
+        },
+        {
+          "min": "136",
+          "max": "136",
+          "name": "Pale Lavender"
+        },
+        {
+          "min": "137",
+          "max": "137",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "138",
+          "max": "138",
+          "name": "Pale Green"
+        },
+        {
+          "min": "139",
+          "max": "139",
+          "name": "Primary Green"
+        },
+        {
+          "min": "140",
+          "max": "140",
+          "name": "Summer Blue"
+        },
+        {
+          "min": "141",
+          "max": "141",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "142",
+          "max": "142",
+          "name": "Pale Violet"
+        },
+        {
+          "min": "143",
+          "max": "143",
+          "name": "Pale Navy Blue"
+        },
+        {
+          "min": "144",
+          "max": "146",
+          "name": "No Colour Blue"
+        },
+        {
+          "min": "147",
+          "max": "147",
+          "name": "Apricot"
+        },
+        {
+          "min": "148",
+          "max": "150",
+          "name": "Bright Rose"
+        },
+        {
+          "min": "151",
+          "max": "151",
+          "name": "Gold Tint"
+        },
+        {
+          "min": "152",
+          "max": "152",
+          "name": "Pale Gold"
+        },
+        {
+          "min": "153",
+          "max": "153",
+          "name": "Pale Salmon"
+        },
+        {
+          "min": "154",
+          "max": "155",
+          "name": "Pale Rose"
+        },
+        {
+          "min": "156",
+          "max": "156",
+          "name": "Chocolate"
+        },
+        {
+          "min": "157",
+          "max": "157",
+          "name": "Pink"
+        },
+        {
+          "min": "158",
+          "max": "158",
+          "name": "Deep Orange"
+        },
+        {
+          "min": "159",
+          "max": "160",
+          "name": "No Colour Straw"
+        },
+        {
+          "min": "161",
+          "max": "161",
+          "name": "Slate Blue"
+        },
+        {
+          "min": "162",
+          "max": "163",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "164",
+          "max": "164",
+          "name": "Flame Red"
+        },
+        {
+          "min": "165",
+          "max": "168",
+          "name": "Daylight Blue"
+        },
+        {
+          "min": "169",
+          "max": "169",
+          "name": "Lilac Tint"
+        },
+        {
+          "min": "170",
+          "max": "171",
+          "name": "Deep Lavender"
+        },
+        {
+          "min": "172",
+          "max": "173",
+          "name": "Lagoon Blue"
+        },
+        {
+          "min": "174",
+          "max": "175",
+          "name": "Dark Steel Blue"
+        },
+        {
+          "min": "176",
+          "max": "178",
+          "name": "Loving Amber"
+        },
+        {
+          "min": "179",
+          "max": "179",
+          "name": "Chrome Orange"
+        },
+        {
+          "min": "180",
+          "max": "180",
+          "name": "Dark Lavender"
+        },
+        {
+          "min": "181",
+          "max": "181",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "182",
+          "max": "182",
+          "name": "Light Red"
+        },
+        {
+          "min": "183",
+          "max": "183",
+          "name": "Moonlight Blue"
+        },
+        {
+          "min": "184",
+          "max": "185",
+          "name": "Cosmetic Peach"
+        },
+        {
+          "min": "186",
+          "max": "186",
+          "name": "Cosmetic Silver Rose"
+        },
+        {
+          "min": "187",
+          "max": "187",
+          "name": "Cosmetic Rouge"
+        },
+        {
+          "min": "188",
+          "max": "188",
+          "name": "Cosmetic Highlight"
+        },
+        {
+          "min": "189",
+          "max": "190",
+          "name": "Cosmetic Silver Moss"
+        },
+        {
+          "min": "191",
+          "max": "191",
+          "name": "Cosmetic Aqua Blue"
+        },
+        {
+          "min": "192",
+          "max": "193",
+          "name": "Flesh Pink"
+        },
+        {
+          "min": "194",
+          "max": "194",
+          "name": "Surprise Pink"
+        },
+        {
+          "min": "195",
+          "max": "195",
+          "name": "Zenith Blue"
+        },
+        {
+          "min": "196",
+          "max": "196",
+          "name": "True Blue"
+        },
+        {
+          "min": "197",
+          "max": "197",
+          "name": "Alice Blue"
+        },
+        {
+          "min": "198",
+          "max": "198",
+          "name": "Palace Blue"
+        },
+        {
+          "min": "199",
+          "max": "199",
+          "name": "Regal Blue"
+        },
+        {
+          "min": "200",
+          "max": "200",
+          "name": "Double CT Blue"
+        },
+        {
+          "min": "201",
+          "max": "201",
+          "name": "Full CT Blue"
+        },
+        {
+          "min": "202",
+          "max": "202",
+          "name": "1/2 CT Blue"
+        },
+        {
+          "min": "203",
+          "max": "203",
+          "name": "1/4 CT Blue"
+        },
+        {
+          "min": "204",
+          "max": "204",
+          "name": "Full CT Orange"
+        },
+        {
+          "min": "205",
+          "max": "205",
+          "name": "1/2 CT Orange"
+        },
+        {
+          "min": "206",
+          "max": "206",
+          "name": "1/4 CT Orange"
+        },
+        {
+          "min": "207",
+          "max": "207",
+          "name": "Full CT Orange +"
+        },
+        {
+          "min": "208",
+          "max": "208",
+          "name": "Full CT Orange +"
+        },
+        {
+          "min": "209",
+          "max": "209",
+          "name": "0.3 Neutral Density"
+        },
+        {
+          "min": "210",
+          "max": "210",
+          "name": "0.6 Neutral Density"
+        },
+        {
+          "min": "211",
+          "max": "211",
+          "name": "0.9 Neutral Density"
+        },
+        {
+          "min": "212",
+          "max": "212",
+          "name": "LCT Yellow"
+        },
+        {
+          "min": "213",
+          "max": "215",
+          "name": "White Flame Green"
+        },
+        {
+          "min": "216",
+          "max": "216",
+          "name": "White Diffusion"
+        },
+        {
+          "min": "217",
+          "max": "217",
+          "name": "Blue Diffusion"
+        },
+        {
+          "min": "218",
+          "max": "218",
+          "name": "1/8 CT Blue"
+        },
+        {
+          "min": "219",
+          "max": "219",
+          "name": "LEE Fluorescent Green"
+        },
+        {
+          "min": "220",
+          "max": "220",
+          "name": "White Frost"
+        },
+        {
+          "min": "221",
+          "max": "222",
+          "name": "Blue Frost"
+        },
+        {
+          "min": "223",
+          "max": "223",
+          "name": "1/8 CT Orange"
+        },
+        {
+          "min": "224",
+          "max": "224",
+          "name": "Daylight Blue Frost"
+        },
+        {
+          "min": "225",
+          "max": "225",
+          "name": "LEE N.D. Frost"
+        },
+        {
+          "min": "226",
+          "max": "227",
+          "name": "LEE U.V."
+        },
+        {
+          "min": "228",
+          "max": "228",
+          "name": "Brushed Silk"
+        },
+        {
+          "min": "229",
+          "max": "229",
+          "name": "1/4 Tough Spun"
+        },
+        {
+          "min": "230",
+          "max": "231",
+          "name": "Super Correction"
+        },
+        {
+          "min": "232",
+          "max": "235",
+          "name": "Super White Flame Green"
+        },
+        {
+          "min": "236",
+          "max": "236",
+          "name": "H.M.I (To Tungsten)"
+        },
+        {
+          "min": "237",
+          "max": "237",
+          "name": "C.I.D. (To Tungsten)"
+        },
+        {
+          "min": "238",
+          "max": "238",
+          "name": "C.S.I. (To Tungsten)"
+        },
+        {
+          "min": "239",
+          "max": "240",
+          "name": "Polariser"
+        },
+        {
+          "min": "241",
+          "max": "241",
+          "name": "LEE Fluorescent 5700 K"
+        },
+        {
+          "min": "242",
+          "max": "242",
+          "name": "LEE Fluorescent 4300 K"
+        },
+        {
+          "min": "243",
+          "max": "243",
+          "name": "LEE Fluorescent 3600 K"
+        },
+        {
+          "min": "244",
+          "max": "244",
+          "name": "LEE Plus Green"
+        },
+        {
+          "min": "245",
+          "max": "245",
+          "name": "1/2 Plus Green"
+        },
+        {
+          "min": "246",
+          "max": "246",
+          "name": "1/4 Plus Green"
+        },
+        {
+          "min": "247",
+          "max": "247",
+          "name": "LEE Minus Green"
+        },
+        {
+          "min": "248",
+          "max": "248",
+          "name": "1/2 Minus Green"
+        },
+        {
+          "min": "249",
+          "max": "249",
+          "name": "1/4 Minus Green"
+        },
+        {
+          "min": "250",
+          "max": "250",
+          "name": "1/2 White Diffusion"
+        },
+        {
+          "min": "251",
+          "max": "251",
+          "name": "1/4 White Diffusion"
+        },
+        {
+          "min": "252",
+          "max": "252",
+          "name": "1/8 White Diffusion"
+        },
+        {
+          "min": "253",
+          "max": "253",
+          "name": "Hampshire Frost"
+        },
+        {
+          "min": "254",
+          "max": "254",
+          "name": "New Hampshire Frost"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Hollywood Frost"
+        }
+      ]
+    },
+    {
+      "name": "LEE Color Gel 4",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No effect"
+        },
+        {
+          "min": "2",
+          "max": "2",
+          "name": "Rose Pink"
+        },
+        {
+          "min": "3",
+          "max": "3",
+          "name": "Lavender Tint"
+        },
+        {
+          "min": "4",
+          "max": "6",
+          "name": "Medium Bastard Amber"
+        },
+        {
+          "min": "7",
+          "max": "7",
+          "name": "Pale Yellow"
+        },
+        {
+          "min": "8",
+          "max": "8",
+          "name": "Dark Salmon"
+        },
+        {
+          "min": "9",
+          "max": "9",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "10",
+          "max": "12",
+          "name": "Medium Yellow"
+        },
+        {
+          "min": "13",
+          "max": "14",
+          "name": "Straw Tint"
+        },
+        {
+          "min": "15",
+          "max": "16",
+          "name": "Deep Straw"
+        },
+        {
+          "min": "17",
+          "max": "18",
+          "name": "Surprise Peach"
+        },
+        {
+          "min": "19",
+          "max": "19",
+          "name": "Fire"
+        },
+        {
+          "min": "20",
+          "max": "20",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "21",
+          "max": "21",
+          "name": "Gold Amber"
+        },
+        {
+          "min": "22",
+          "max": "23",
+          "name": "Dark Amber"
+        },
+        {
+          "min": "24",
+          "max": "24",
+          "name": "Scarlet"
+        },
+        {
+          "min": "25",
+          "max": "25",
+          "name": "Sunset Red"
+        },
+        {
+          "min": "26",
+          "max": "26",
+          "name": "Bright Red"
+        },
+        {
+          "min": "27",
+          "max": "28",
+          "name": "Medium Red"
+        },
+        {
+          "min": "29",
+          "max": "34",
+          "name": "Plasa Red"
+        },
+        {
+          "min": "35",
+          "max": "35",
+          "name": "Light Pink"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "46",
+          "max": "47",
+          "name": "Dark Magenta"
+        },
+        {
+          "min": "48",
+          "max": "48",
+          "name": "Rose Purple"
+        },
+        {
+          "min": "49",
+          "max": "51",
+          "name": "Medium Purple"
+        },
+        {
+          "min": "52",
+          "max": "52",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "53",
+          "max": "57",
+          "name": "Paler Lavender"
+        },
+        {
+          "min": "58",
+          "max": "60",
+          "name": "Lavender"
+        },
+        {
+          "min": "61",
+          "max": "62",
+          "name": "Mist Blue"
+        },
+        {
+          "min": "63",
+          "max": "67",
+          "name": "Pale Blue"
+        },
+        {
+          "min": "68",
+          "max": "70",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "71",
+          "max": "74",
+          "name": "Tokyo Blue"
+        },
+        {
+          "min": "75",
+          "max": "78",
+          "name": "Evening Blue"
+        },
+        {
+          "min": "79",
+          "max": "84",
+          "name": "Just Blue"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Deeper Blue"
+        },
+        {
+          "min": "88",
+          "max": "88",
+          "name": "Lime Green"
+        },
+        {
+          "min": "89",
+          "max": "89",
+          "name": "Moss Green"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Dark Yellow Green"
+        },
+        {
+          "min": "100",
+          "max": "100",
+          "name": "Spring Yellow"
+        },
+        {
+          "min": "101",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "102",
+          "name": "Light Amber"
+        },
+        {
+          "min": "103",
+          "max": "103",
+          "name": "Straw"
+        },
+        {
+          "min": "104",
+          "max": "104",
+          "name": "Deep Amber"
+        },
+        {
+          "min": "105",
+          "max": "105",
+          "name": "Orange"
+        },
+        {
+          "min": "106",
+          "max": "106",
+          "name": "Primary Red"
+        },
+        {
+          "min": "107",
+          "max": "107",
+          "name": "Light Rose"
+        },
+        {
+          "min": "108",
+          "max": "108",
+          "name": "English Rose"
+        },
+        {
+          "min": "109",
+          "max": "109",
+          "name": "Light Salmon"
+        },
+        {
+          "min": "110",
+          "max": "110",
+          "name": "Middle Rose"
+        },
+        {
+          "min": "111",
+          "max": "112",
+          "name": "Dark Pink"
+        },
+        {
+          "min": "113",
+          "max": "114",
+          "name": "Magenta"
+        },
+        {
+          "min": "115",
+          "max": "115",
+          "name": "Peacock Blue"
+        },
+        {
+          "min": "116",
+          "max": "116",
+          "name": "Medium Blue-Green"
+        },
+        {
+          "min": "117",
+          "max": "117",
+          "name": "Steel Blue"
+        },
+        {
+          "min": "118",
+          "max": "118",
+          "name": "Light Blue"
+        },
+        {
+          "min": "119",
+          "max": "119",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "120",
+          "max": "120",
+          "name": "Deep Blue"
+        },
+        {
+          "min": "121",
+          "max": "121",
+          "name": "LEE Green"
+        },
+        {
+          "min": "122",
+          "max": "123",
+          "name": "Fern Green"
+        },
+        {
+          "min": "124",
+          "max": "125",
+          "name": "Dark Green"
+        },
+        {
+          "min": "126",
+          "max": "126",
+          "name": "Mauve"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Smokey Pink"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Bright Pink"
+        },
+        {
+          "min": "129",
+          "max": "129",
+          "name": "Heavy Frost"
+        },
+        {
+          "min": "130",
+          "max": "130",
+          "name": "Clear"
+        },
+        {
+          "min": "131",
+          "max": "131",
+          "name": "Marine Blue"
+        },
+        {
+          "min": "132",
+          "max": "133",
+          "name": "Medium Blue"
+        },
+        {
+          "min": "134",
+          "max": "134",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "135",
+          "max": "135",
+          "name": "Deep Golden Amber"
+        },
+        {
+          "min": "136",
+          "max": "136",
+          "name": "Pale Lavender"
+        },
+        {
+          "min": "137",
+          "max": "137",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "138",
+          "max": "138",
+          "name": "Pale Green"
+        },
+        {
+          "min": "139",
+          "max": "139",
+          "name": "Primary Green"
+        },
+        {
+          "min": "140",
+          "max": "140",
+          "name": "Summer Blue"
+        },
+        {
+          "min": "141",
+          "max": "141",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "142",
+          "max": "142",
+          "name": "Pale Violet"
+        },
+        {
+          "min": "143",
+          "max": "143",
+          "name": "Pale Navy Blue"
+        },
+        {
+          "min": "144",
+          "max": "146",
+          "name": "No Colour Blue"
+        },
+        {
+          "min": "147",
+          "max": "147",
+          "name": "Apricot"
+        },
+        {
+          "min": "148",
+          "max": "150",
+          "name": "Bright Rose"
+        },
+        {
+          "min": "151",
+          "max": "151",
+          "name": "Gold Tint"
+        },
+        {
+          "min": "152",
+          "max": "152",
+          "name": "Pale Gold"
+        },
+        {
+          "min": "153",
+          "max": "153",
+          "name": "Pale Salmon"
+        },
+        {
+          "min": "154",
+          "max": "155",
+          "name": "Pale Rose"
+        },
+        {
+          "min": "156",
+          "max": "156",
+          "name": "Chocolate"
+        },
+        {
+          "min": "157",
+          "max": "157",
+          "name": "Pink"
+        },
+        {
+          "min": "158",
+          "max": "158",
+          "name": "Deep Orange"
+        },
+        {
+          "min": "159",
+          "max": "160",
+          "name": "No Colour Straw"
+        },
+        {
+          "min": "161",
+          "max": "161",
+          "name": "Slate Blue"
+        },
+        {
+          "min": "162",
+          "max": "163",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "164",
+          "max": "164",
+          "name": "Flame Red"
+        },
+        {
+          "min": "165",
+          "max": "168",
+          "name": "Daylight Blue"
+        },
+        {
+          "min": "169",
+          "max": "169",
+          "name": "Lilac Tint"
+        },
+        {
+          "min": "170",
+          "max": "171",
+          "name": "Deep Lavender"
+        },
+        {
+          "min": "172",
+          "max": "173",
+          "name": "Lagoon Blue"
+        },
+        {
+          "min": "174",
+          "max": "175",
+          "name": "Dark Steel Blue"
+        },
+        {
+          "min": "176",
+          "max": "178",
+          "name": "Loving Amber"
+        },
+        {
+          "min": "179",
+          "max": "179",
+          "name": "Chrome Orange"
+        },
+        {
+          "min": "180",
+          "max": "180",
+          "name": "Dark Lavender"
+        },
+        {
+          "min": "181",
+          "max": "181",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "182",
+          "max": "182",
+          "name": "Light Red"
+        },
+        {
+          "min": "183",
+          "max": "183",
+          "name": "Moonlight Blue"
+        },
+        {
+          "min": "184",
+          "max": "185",
+          "name": "Cosmetic Peach"
+        },
+        {
+          "min": "186",
+          "max": "186",
+          "name": "Cosmetic Silver Rose"
+        },
+        {
+          "min": "187",
+          "max": "187",
+          "name": "Cosmetic Rouge"
+        },
+        {
+          "min": "188",
+          "max": "188",
+          "name": "Cosmetic Highlight"
+        },
+        {
+          "min": "189",
+          "max": "190",
+          "name": "Cosmetic Silver Moss"
+        },
+        {
+          "min": "191",
+          "max": "191",
+          "name": "Cosmetic Aqua Blue"
+        },
+        {
+          "min": "192",
+          "max": "193",
+          "name": "Flesh Pink"
+        },
+        {
+          "min": "194",
+          "max": "194",
+          "name": "Surprise Pink"
+        },
+        {
+          "min": "195",
+          "max": "195",
+          "name": "Zenith Blue"
+        },
+        {
+          "min": "196",
+          "max": "196",
+          "name": "True Blue"
+        },
+        {
+          "min": "197",
+          "max": "197",
+          "name": "Alice Blue"
+        },
+        {
+          "min": "198",
+          "max": "198",
+          "name": "Palace Blue"
+        },
+        {
+          "min": "199",
+          "max": "199",
+          "name": "Regal Blue"
+        },
+        {
+          "min": "200",
+          "max": "200",
+          "name": "Double CT Blue"
+        },
+        {
+          "min": "201",
+          "max": "201",
+          "name": "Full CT Blue"
+        },
+        {
+          "min": "202",
+          "max": "202",
+          "name": "1/2 CT Blue"
+        },
+        {
+          "min": "203",
+          "max": "203",
+          "name": "1/4 CT Blue"
+        },
+        {
+          "min": "204",
+          "max": "204",
+          "name": "Full CT Orange"
+        },
+        {
+          "min": "205",
+          "max": "205",
+          "name": "1/2 CT Orange"
+        },
+        {
+          "min": "206",
+          "max": "206",
+          "name": "1/4 CT Orange"
+        },
+        {
+          "min": "207",
+          "max": "207",
+          "name": "Full CT Orange +"
+        },
+        {
+          "min": "208",
+          "max": "208",
+          "name": "Full CT Orange +"
+        },
+        {
+          "min": "209",
+          "max": "209",
+          "name": "0.3 Neutral Density"
+        },
+        {
+          "min": "210",
+          "max": "210",
+          "name": "0.6 Neutral Density"
+        },
+        {
+          "min": "211",
+          "max": "211",
+          "name": "0.9 Neutral Density"
+        },
+        {
+          "min": "212",
+          "max": "212",
+          "name": "LCT Yellow"
+        },
+        {
+          "min": "213",
+          "max": "215",
+          "name": "White Flame Green"
+        },
+        {
+          "min": "216",
+          "max": "216",
+          "name": "White Diffusion"
+        },
+        {
+          "min": "217",
+          "max": "217",
+          "name": "Blue Diffusion"
+        },
+        {
+          "min": "218",
+          "max": "218",
+          "name": "1/8 CT Blue"
+        },
+        {
+          "min": "219",
+          "max": "219",
+          "name": "LEE Fluorescent Green"
+        },
+        {
+          "min": "220",
+          "max": "220",
+          "name": "White Frost"
+        },
+        {
+          "min": "221",
+          "max": "222",
+          "name": "Blue Frost"
+        },
+        {
+          "min": "223",
+          "max": "223",
+          "name": "1/8 CT Orange"
+        },
+        {
+          "min": "224",
+          "max": "224",
+          "name": "Daylight Blue Frost"
+        },
+        {
+          "min": "225",
+          "max": "225",
+          "name": "LEE N.D. Frost"
+        },
+        {
+          "min": "226",
+          "max": "227",
+          "name": "LEE U.V."
+        },
+        {
+          "min": "228",
+          "max": "228",
+          "name": "Brushed Silk"
+        },
+        {
+          "min": "229",
+          "max": "229",
+          "name": "1/4 Tough Spun"
+        },
+        {
+          "min": "230",
+          "max": "231",
+          "name": "Super Correction"
+        },
+        {
+          "min": "232",
+          "max": "235",
+          "name": "Super White Flame Green"
+        },
+        {
+          "min": "236",
+          "max": "236",
+          "name": "H.M.I (To Tungsten)"
+        },
+        {
+          "min": "237",
+          "max": "237",
+          "name": "C.I.D. (To Tungsten)"
+        },
+        {
+          "min": "238",
+          "max": "238",
+          "name": "C.S.I. (To Tungsten)"
+        },
+        {
+          "min": "239",
+          "max": "240",
+          "name": "Polariser"
+        },
+        {
+          "min": "241",
+          "max": "241",
+          "name": "LEE Fluorescent 5700 K"
+        },
+        {
+          "min": "242",
+          "max": "242",
+          "name": "LEE Fluorescent 4300 K"
+        },
+        {
+          "min": "243",
+          "max": "243",
+          "name": "LEE Fluorescent 3600 K"
+        },
+        {
+          "min": "244",
+          "max": "244",
+          "name": "LEE Plus Green"
+        },
+        {
+          "min": "245",
+          "max": "245",
+          "name": "1/2 Plus Green"
+        },
+        {
+          "min": "246",
+          "max": "246",
+          "name": "1/4 Plus Green"
+        },
+        {
+          "min": "247",
+          "max": "247",
+          "name": "LEE Minus Green"
+        },
+        {
+          "min": "248",
+          "max": "248",
+          "name": "1/2 Minus Green"
+        },
+        {
+          "min": "249",
+          "max": "249",
+          "name": "1/4 Minus Green"
+        },
+        {
+          "min": "250",
+          "max": "250",
+          "name": "1/2 White Diffusion"
+        },
+        {
+          "min": "251",
+          "max": "251",
+          "name": "1/4 White Diffusion"
+        },
+        {
+          "min": "252",
+          "max": "252",
+          "name": "1/8 White Diffusion"
+        },
+        {
+          "min": "253",
+          "max": "253",
+          "name": "Hampshire Frost"
+        },
+        {
+          "min": "254",
+          "max": "254",
+          "name": "New Hampshire Frost"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Hollywood Frost"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Off"
+        },
+        {
+          "min": "4",
+          "max": "4",
+          "name": "Random Fast"
+        },
+        {
+          "min": "5",
+          "max": "5",
+          "name": "Random Medium"
+        },
+        {
+          "min": "6",
+          "max": "6",
+          "name": "Random Slow"
+        },
+        {
+          "min": "7",
+          "max": "255",
+          "name": "Variable Strobe (0.4Hz --> 25Hz)"
+        }
+      ]
+    },
+    {
+      "name": "Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "One Static Color"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Two Static Color"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Three Static Color"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Four Static Color"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "One Color Fade"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Two Color Fade"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Three Color Fade"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Four Color Fade"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Simple Running"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Double Running"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Two Col Running"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Flag Running"
+        },
+        {
+          "min": "96",
+          "max": "101",
+          "name": "Double Flag Running"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Spiral 4 Color"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "Spiral 2 Color"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Rainbow"
+        },
+        {
+          "min": "126",
+          "max": "133",
+          "name": "Fire"
+        },
+        {
+          "min": "134",
+          "max": "141",
+          "name": "Rotor"
+        },
+        {
+          "min": "142",
+          "max": "149",
+          "name": "Rotor Split 2"
+        },
+        {
+          "min": "150",
+          "max": "157",
+          "name": "Rotor Split 4"
+        },
+        {
+          "min": "158",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program Speed S->F"
+        }
+      ]
+    },
+    {
+      "name": "Program Cross Fade",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Crossfade (no ->fast)"
+        }
+      ]
+    },
+    {
+      "name": "Program Direction",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Forward with loop"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Forward one time and stop"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Reverse one time and stop"
+        },
+        {
+          "min": "191",
+          "max": "255",
+          "name": "Reverse with loop"
+        }
+      ]
+    },
+    {
+      "name": "Program Group Size",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "One Group"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Two Groups"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Three Groups"
+        },
+        {
+          "min": "191",
+          "max": "255",
+          "name": "Four Groups"
+        }
+      ]
+    },
+    {
+      "name": "Program user Offset in Groups",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Offset (with groups >1, the unit in the group is offset with)"
+        }
+      ]
+    },
+    {
+      "name": "Program Restart",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program Restart"
+        }
+      ]
+    },
+    {
+      "name": "Intensity Red of Color 1",
+      "type": "Red"
+    },
+    {
+      "name": "Intensity Green of Color 1",
+      "type": "Green"
+    },
+    {
+      "name": "Intensity Blue of Color 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Intensity Red of Color 2",
+      "type": "Red"
+    },
+    {
+      "name": "Intensity Green of Color 2",
+      "type": "Green"
+    },
+    {
+      "name": "Intensity Blue of Color 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Intensity Red of Color 3",
+      "type": "Red"
+    },
+    {
+      "name": "Intensity Green of Color 3",
+      "type": "Green"
+    },
+    {
+      "name": "Intensity Blue of Color 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Intensity Red of Color 4",
+      "type": "Red"
+    },
+    {
+      "name": "Intensity Green of Color 4",
+      "type": "Green"
+    },
+    {
+      "name": "Intensity Blue of Color 4",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "1: RGB",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "2: RGBW",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "3: RGBAW",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "No function",
+        "White"
+      ]
+    },
+    {
+      "name": "4: DIM RGB",
+      "totalChannels": 4,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "5: DIM RGBW",
+      "totalChannels": 5,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "6: DIM RGBAW",
+      "totalChannels": 6,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "No function",
+        "White"
+      ]
+    },
+    {
+      "name": "7: DIM RGB CCT DIM IND",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Temperature CCT",
+        "Master dimmer",
+        "LEE Color Gel 1"
+      ]
+    },
+    {
+      "name": "8: RGBS",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "9: RGBWS",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "10: RGBAWS",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "No function",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "11: DIM RGBS",
+      "totalChannels": 5,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "12: DIM RGBWS",
+      "totalChannels": 6,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "13: DIM RGBAWS",
+      "totalChannels": 7,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "No function",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "14: RGB CCT DIM IND S",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Temperature CCT",
+        "Master dimmer",
+        "LEE Color Gel 1",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "15: EFFECT FIX",
+      "totalChannels": 13,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Program",
+        "Program Speed",
+        "Program Cross Fade",
+        "Program Direction",
+        "Program Group Size",
+        "Program user Offset in Groups",
+        "Program Restart",
+        "LEE Color Gel 1",
+        "LEE Color Gel 2",
+        "LEE Color Gel 3",
+        "LEE Color Gel 4"
+      ]
+    },
+    {
+      "name": "16: EFFECT RGB",
+      "totalChannels": 21,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Program",
+        "Program Speed",
+        "Program Cross Fade",
+        "Program Direction",
+        "Program Group Size",
+        "Program user Offset in Groups",
+        "Program Restart",
+        "Intensity Red of Color 1",
+        "Intensity Green of Color 1",
+        "Intensity Blue of Color 1",
+        "Intensity Red of Color 2",
+        "Intensity Green of Color 2",
+        "Intensity Blue of Color 2",
+        "Intensity Red of Color 3",
+        "Intensity Green of Color 3",
+        "Intensity Blue of Color 3",
+        "Intensity Red of Color 4",
+        "Intensity Green of Color 4",
+        "Intensity Blue of Color 4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "420",
+      "colourTemperature": "4000"
+    },
+    "dimensions": {
+      "weight": "0.4",
+      "width": "96",
+      "height": "96",
+      "depth": "59"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "13"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "15",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "version": "1.2",
+  "manufacturer": "BoomToneDJ",
+  "model": "Moving Wash 5X15 Speed",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "memrex",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Motor speed fast to slow",
+      "type": "Speed"
+    },
+    {
+      "name": "Strobe slow to fast",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "255 kinds of static colors",
+      "type": "Color"
+    },
+    {
+      "name": "Auto program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Nothing"
+        },
+        {
+          "min": "1",
+          "max": "84",
+          "name": "Auto slow"
+        },
+        {
+          "min": "85",
+          "max": "169",
+          "name": "Auto fast"
+        },
+        {
+          "min": "170",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "254",
+          "name": "Nothing"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Motor speed fast to slow",
+        "Strobe slow to fast",
+        "255 kinds of static colors"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Motor speed fast to slow",
+        "Strobe slow to fast",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "255 kinds of static colors",
+        "Auto program",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4",
+      "width": "240",
+      "height": "300",
+      "depth": "230"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "80",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

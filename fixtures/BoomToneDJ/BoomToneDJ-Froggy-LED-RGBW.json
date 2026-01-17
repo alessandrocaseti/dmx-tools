@@ -1,0 +1,143 @@
+{
+  "version": "1.2",
+  "manufacturer": "BoomToneDJ",
+  "model": "Froggy LED RGBW",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Didou",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed - Pan/Tilt",
+      "type": "Speed"
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "RGB"
+        },
+        {
+          "min": "1",
+          "max": "249",
+          "name": "Auto"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "254",
+          "name": "No function"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "6 Ch Mode",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "11 Ch Mode",
+      "totalChannels": 11,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Pan",
+        "Tilt",
+        "Speed - Pan/Tilt",
+        "Mode",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "7600"
+    },
+    "dimensions": {
+      "weight": "1.9",
+      "width": "140",
+      "height": "250",
+      "depth": "110"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

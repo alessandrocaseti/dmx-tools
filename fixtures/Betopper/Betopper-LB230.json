@@ -1,0 +1,633 @@
+{
+  "version": "1.2",
+  "manufacturer": "Betopper",
+  "model": "LB230",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Viktor",
+  "channels": [
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "White"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "White + Red"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Red"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Red + Yellow"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Yellow"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "Yellow + Rose Red"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Rose Red"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Rose Red + Green"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Green"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Blue"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Blue + Gold"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Gold"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Gold Color + Light Blue Purple"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Light Blue Purple"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Light Blue Purple + Brown"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "Brown"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "Brown + Dark Yellow"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "Dark Yellow"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "Dark Yellow + Fluorescence"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "Fluorescence"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "Fluorescence + Blue Green"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "Blue Green"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "Blue Green + Clay Bank"
+        },
+        {
+          "min": "116",
+          "max": "120",
+          "name": "Clay Bank"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "Clay Bank + Light Yellow"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "Light Yellow"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "Light Yellow + Amaranth"
+        },
+        {
+          "min": "136",
+          "max": "140",
+          "name": "Amaranth"
+        },
+        {
+          "min": "141",
+          "max": "145",
+          "name": "Amaranth +White"
+        },
+        {
+          "min": "146",
+          "max": "150",
+          "name": "Slow Rotation"
+        },
+        {
+          "min": "151",
+          "max": "255",
+          "name": "Fast Rotation"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Off"
+        },
+        {
+          "min": "4",
+          "max": "207",
+          "name": "Fast Sequence"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Open Light"
+        },
+        {
+          "min": "213",
+          "max": "251",
+          "name": "Strobe Accidental"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Open Light"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Gobo 14"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Gobo 15"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "Gobo 16"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "Gobo 17"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "Fast Alternation"
+        },
+        {
+          "min": "91",
+          "max": "129",
+          "name": "Slow Alternation"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Stop"
+        },
+        {
+          "min": "135",
+          "max": "135",
+          "name": "Slow Alternation"
+        },
+        {
+          "min": "136",
+          "max": "170",
+          "name": "Fast Alternation"
+        },
+        {
+          "min": "171",
+          "max": "171",
+          "name": "Gobo 1 Slow Swining"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "Gobo 1 Fast Swining"
+        },
+        {
+          "min": "176",
+          "max": "176",
+          "name": "Gobo 2 Slow Swining"
+        },
+        {
+          "min": "177",
+          "max": "180",
+          "name": "Gobo 2 Fast Swining"
+        },
+        {
+          "min": "181",
+          "max": "245",
+          "name": "No Function"
+        },
+        {
+          "min": "246",
+          "max": "249",
+          "name": "Gobo 16 Slow Swining"
+        },
+        {
+          "min": "250",
+          "max": "250",
+          "name": "Gobo 16 Fast Swining"
+        },
+        {
+          "min": "251",
+          "max": "251",
+          "name": "Gobo 17 Slow Swining"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Gobo 17 Fast Swinig"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Prism On"
+        }
+      ]
+    },
+    {
+      "name": "Prism rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Angle Adjustment"
+        },
+        {
+          "min": "64",
+          "max": "129",
+          "name": "Hourly Rotation"
+        },
+        {
+          "min": "130",
+          "max": "190",
+          "name": "Against Rotation"
+        },
+        {
+          "min": "191",
+          "max": "255",
+          "name": "Prism Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "No function",
+      "type": "Unknown"
+    },
+    {
+      "name": "Frost",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Frost Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Frost On"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Macros"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "No Function"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Reset Effect"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Reset Pan/Tilt"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Reset All"
+        }
+      ]
+    },
+    {
+      "name": "Lamp Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "100",
+          "name": "Lamp Off"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Lamp On"
+        }
+      ]
+    },
+    {
+      "name": "Pan speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color Time"
+        }
+      ]
+    },
+    {
+      "name": "Beam Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Beam Speed"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Gobo Time"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 20,
+      "channels": [
+        "Color",
+        "Strobe",
+        "Dimmer",
+        "Gobo",
+        "Prism",
+        "Prism rotation",
+        "No function",
+        "Frost",
+        "Focus",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Macro",
+        "Reset",
+        "Lamp Control",
+        "Pan speed",
+        "Color Time",
+        "Beam Speed",
+        "Gobo Time"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 16,
+      "channels": [
+        "Color",
+        "Strobe",
+        "Dimmer",
+        "Gobo",
+        "Prism",
+        "Prism rotation",
+        "No function",
+        "Frost",
+        "Focus",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Macro",
+        "Reset",
+        "Lamp Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HTI 250W",
+      "lumens": "0",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "17.5",
+      "width": "228",
+      "height": "297",
+      "depth": "170"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "8",
+      "degreesMax": "8"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "400",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

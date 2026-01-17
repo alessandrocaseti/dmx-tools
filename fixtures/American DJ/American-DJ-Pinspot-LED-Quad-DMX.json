@@ -1,0 +1,94 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Pinspot LED Quad DMX",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Christian Polzer",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No strobing"
+        },
+        {
+          "min": "8",
+          "max": "247",
+          "name": "Slow to fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Master Dimmer",
+        "Strobing"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "740",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "0.4",
+      "width": "98",
+      "height": "61",
+      "depth": "205"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "11",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

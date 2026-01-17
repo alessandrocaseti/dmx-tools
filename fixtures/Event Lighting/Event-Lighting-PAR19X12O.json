@@ -1,0 +1,343 @@
+{
+  "version": "1.2",
+  "manufacturer": "Event Lighting",
+  "model": "PAR19x12O",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michael Tosatto",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Shutter on"
+        },
+        {
+          "min": "16",
+          "max": "119",
+          "name": "Strobe slow to fast: (1-25hz)"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Shutter on"
+        },
+        {
+          "min": "128",
+          "max": "183",
+          "name": "Strobe (random) slow to fast"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Shutter on"
+        },
+        {
+          "min": "192",
+          "max": "247",
+          "name": "Strobe (audio) sensitivity low to high"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Shutter on"
+        }
+      ]
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "White Mode",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Shutter on"
+        },
+        {
+          "min": "10",
+          "max": "31",
+          "name": "White 1"
+        },
+        {
+          "min": "32",
+          "max": "54",
+          "name": "White 2"
+        },
+        {
+          "min": "55",
+          "max": "77",
+          "name": "White 3"
+        },
+        {
+          "min": "78",
+          "max": "100",
+          "name": "White 4"
+        },
+        {
+          "min": "101",
+          "max": "123",
+          "name": "White 5"
+        },
+        {
+          "min": "124",
+          "max": "146",
+          "name": "White 6"
+        },
+        {
+          "min": "147",
+          "max": "169",
+          "name": "White 7"
+        },
+        {
+          "min": "170",
+          "max": "192",
+          "name": "White 8"
+        },
+        {
+          "min": "193",
+          "max": "215",
+          "name": "White 9"
+        },
+        {
+          "min": "216",
+          "max": "238",
+          "name": "White 10"
+        },
+        {
+          "min": "239",
+          "max": "255",
+          "name": "White 11"
+        }
+      ]
+    },
+    {
+      "name": "Auto Run",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Shutter on"
+        },
+        {
+          "min": "10",
+          "max": "39",
+          "name": "Auto run 1"
+        },
+        {
+          "min": "40",
+          "max": "70",
+          "name": "Auto run 2"
+        },
+        {
+          "min": "71",
+          "max": "101",
+          "name": "Auto run 3"
+        },
+        {
+          "min": "102",
+          "max": "132",
+          "name": "Auto run 4"
+        },
+        {
+          "min": "133",
+          "max": "163",
+          "name": "Auto run 5"
+        },
+        {
+          "min": "164",
+          "max": "194",
+          "name": "Auto run 6"
+        },
+        {
+          "min": "195",
+          "max": "224",
+          "name": "Auto run 7"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Auto Run Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed of auto programs (slow ~ fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curve",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Dimmer as set in main menu"
+        },
+        {
+          "min": "10",
+          "max": "58",
+          "name": "Dimming mode 1 (Standard)"
+        },
+        {
+          "min": "59",
+          "max": "108",
+          "name": "Dimming mode 2 (Stage)"
+        },
+        {
+          "min": "109",
+          "max": "158",
+          "name": "Dimming mode 3 (TV)"
+        },
+        {
+          "min": "159",
+          "max": "208",
+          "name": "Dimming mode 4 (Architecture)"
+        },
+        {
+          "min": "209",
+          "max": "255",
+          "name": "Dimming mode 5 (Theatre)"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer fine",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master dimmer",
+        "Master dimmer fine",
+        "Strobe",
+        "Dimmer Curve"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 12,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master dimmer",
+        "Strobe",
+        "White Mode",
+        "Auto Run",
+        "Auto Run Speed",
+        "Dimmer Curve"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "7400",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.5",
+      "width": "370",
+      "height": "380",
+      "depth": "165"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin IP65"
+    }
+  }
+}

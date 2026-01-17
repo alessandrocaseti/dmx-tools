@@ -1,0 +1,1103 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED PT-100/32 Pixel DMX Tube",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Torsten Caninenberg",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Sound control"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Strobe effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Yellow"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Magenta"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Cyan"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Dark orange"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Green yellow"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Salmon"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Turquoise"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Light green"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Orange"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Lavender"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Light blue"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Dark blue"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Pink"
+        },
+        {
+          "min": "170",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Internal programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Bo function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Auto program 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Auto program 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Auto program 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Auto program 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Auto program 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Auto program 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Auto program 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Auto program 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Auto program 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Auto program 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Auto program 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Auto program 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Sound program 1"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Sound program 2"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Sound program 3"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Sound program 4"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Sound program 5"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Sound program 6"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Sound program 7"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Sound program 8"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Sound program 9"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Sound program 10"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Sound program 11"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound program 12"
+        }
+      ]
+    },
+    {
+      "name": "Running speed for Auto - and Sound program",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto and Sound program speed slow > fast"
+        }
+      ]
+    },
+    {
+      "name": "Pixel 1-2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 1-2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 1-2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 3-4 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 3-4 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 3-4 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 5-6 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 5-6 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 5-6 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 7-8 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 7-8 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 7-8 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 9-10 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 9-10 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 9-10 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 11-12 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 11-12 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 11-12 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 13-14 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 13-14 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 13-14 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 15-16 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 15-16 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 15-16 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 17-18 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 17-18 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 17-18 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 19-20 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 19-20 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 19-20 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 21-22 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 21-22 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 21-22 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 23-24 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 23-24 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 23-24 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 25-26 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 25-26 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 25-26 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 27-28 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 27-28 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 27-28 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 29-30 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 29-30 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 29-30 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 31-32 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 31-32 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 31-32 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 4 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 4 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 4 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 5 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 5 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 5 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 6 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 6 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 6 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 7 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 7 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 7 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 8 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 8 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 8 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 9 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 9 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 9 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 10 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 10 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 10 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 11 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 11 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 11 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 12 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 12 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 12 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 13 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 13 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 13 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 14 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 14 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 14 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 15 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 15 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 15 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 16 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 16 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 16 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 17 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 17 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 17 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 18 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 18 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 18 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 19 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 19 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 19 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 20 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 20 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 20 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 21 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 21 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 21 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 22 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 22 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 22 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 23 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 23 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 23 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 24 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 24 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 24 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 25 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 25 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 25 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 26 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 26 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 26 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 27 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 27 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 27 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 28 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 28 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 28 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 29 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 29 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 29 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 30 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 30 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 30 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 31 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 31 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 31 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 32 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 32 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 32 Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master dimmer",
+        "Function"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 8,
+      "channels": [
+        "Master dimmer",
+        "Strobe effect",
+        "Red",
+        "Green",
+        "Blue",
+        "Preset colors",
+        "Internal programs",
+        "Running speed for Auto - and Sound program"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 48,
+      "channels": [
+        "Pixel 1-2 Red",
+        "Pixel 1-2 Green",
+        "Pixel 1-2 Blue",
+        "Pixel 3-4 Red",
+        "Pixel 3-4 Green",
+        "Pixel 3-4 Blue",
+        "Pixel 5-6 Red",
+        "Pixel 5-6 Green",
+        "Pixel 5-6 Blue",
+        "Pixel 7-8 Red",
+        "Pixel 7-8 Green",
+        "Pixel 7-8 Blue",
+        "Pixel 9-10 Red",
+        "Pixel 9-10 Green",
+        "Pixel 9-10 Blue",
+        "Pixel 11-12 Red",
+        "Pixel 11-12 Green",
+        "Pixel 11-12 Blue",
+        "Pixel 13-14 Red",
+        "Pixel 13-14 Green",
+        "Pixel 13-14 Blue",
+        "Pixel 15-16 Red",
+        "Pixel 15-16 Green",
+        "Pixel 15-16 Blue",
+        "Pixel 17-18 Red",
+        "Pixel 17-18 Green",
+        "Pixel 17-18 Blue",
+        "Pixel 19-20 Red",
+        "Pixel 19-20 Green",
+        "Pixel 19-20 Blue",
+        "Pixel 21-22 Red",
+        "Pixel 21-22 Green",
+        "Pixel 21-22 Blue",
+        "Pixel 23-24 Red",
+        "Pixel 23-24 Green",
+        "Pixel 23-24 Blue",
+        "Pixel 25-26 Red",
+        "Pixel 25-26 Green",
+        "Pixel 25-26 Blue",
+        "Pixel 27-28 Red",
+        "Pixel 27-28 Green",
+        "Pixel 27-28 Blue",
+        "Pixel 29-30 Red",
+        "Pixel 29-30 Green",
+        "Pixel 29-30 Blue",
+        "Pixel 31-32 Red",
+        "Pixel 31-32 Green",
+        "Pixel 31-32 Blue"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 96,
+      "channels": [
+        "Pixel 1 Red",
+        "Pixel 1 Green",
+        "Pixel 1 Blue",
+        "Pixel 2 Red",
+        "Pixel 2 Green",
+        "Pixel 2 Blue",
+        "Pixel 3 Red",
+        "Pixel 3 Green",
+        "Pixel 3 Blue",
+        "Pixel 4 Red",
+        "Pixel 4 Green",
+        "Pixel 4 Blue",
+        "Pixel 5 Red",
+        "Pixel 5 Green",
+        "Pixel 5 Blue",
+        "Pixel 6 Red",
+        "Pixel 6 Green",
+        "Pixel 6 Blue",
+        "Pixel 7 Red",
+        "Pixel 7 Green",
+        "Pixel 7 Blue",
+        "Pixel 8 Red",
+        "Pixel 8 Green",
+        "Pixel 8 Blue",
+        "Pixel 9 Red",
+        "Pixel 9 Green",
+        "Pixel 9 Blue",
+        "Pixel 10 Red",
+        "Pixel 10 Green",
+        "Pixel 10 Blue",
+        "Pixel 11 Red",
+        "Pixel 11 Green",
+        "Pixel 11 Blue",
+        "Pixel 12 Red",
+        "Pixel 12 Green",
+        "Pixel 12 Blue",
+        "Pixel 13 Red",
+        "Pixel 13 Green",
+        "Pixel 13 Blue",
+        "Pixel 14 Red",
+        "Pixel 14 Green",
+        "Pixel 14 Blue",
+        "Pixel 15 Red",
+        "Pixel 15 Green",
+        "Pixel 15 Blue",
+        "Pixel 16 Red",
+        "Pixel 16 Green",
+        "Pixel 16 Blue",
+        "Pixel 17 Red",
+        "Pixel 17 Green",
+        "Pixel 17 Blue",
+        "Pixel 18 Red",
+        "Pixel 18 Green",
+        "Pixel 18 Blue",
+        "Pixel 19 Red",
+        "Pixel 19 Green",
+        "Pixel 19 Blue",
+        "Pixel 20 Red",
+        "Pixel 20 Green",
+        "Pixel 20 Blue",
+        "Pixel 21 Red",
+        "Pixel 21 Green",
+        "Pixel 21 Blue",
+        "Pixel 22 Red",
+        "Pixel 22 Green",
+        "Pixel 22 Blue",
+        "Pixel 23 Red",
+        "Pixel 23 Green",
+        "Pixel 23 Blue",
+        "Pixel 24 Red",
+        "Pixel 24 Green",
+        "Pixel 24 Blue",
+        "Pixel 25 Red",
+        "Pixel 25 Green",
+        "Pixel 25 Blue",
+        "Pixel 26 Red",
+        "Pixel 26 Green",
+        "Pixel 26 Blue",
+        "Pixel 27 Red",
+        "Pixel 27 Green",
+        "Pixel 27 Blue",
+        "Pixel 28 Red",
+        "Pixel 28 Green",
+        "Pixel 28 Blue",
+        "Pixel 29 Red",
+        "Pixel 29 Green",
+        "Pixel 29 Blue",
+        "Pixel 30 Red",
+        "Pixel 30 Green",
+        "Pixel 30 Blue",
+        "Pixel 31 Red",
+        "Pixel 31 Green",
+        "Pixel 31 Blue",
+        "Pixel 32 Red",
+        "Pixel 32 Green",
+        "Pixel 32 Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.1",
+      "width": "999",
+      "height": "153",
+      "depth": "59"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

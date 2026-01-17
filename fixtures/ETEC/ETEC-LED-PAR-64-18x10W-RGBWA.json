@@ -1,0 +1,165 @@
+{
+  "version": "1.2",
+  "manufacturer": "ETEC",
+  "model": "LED PAR 64 18x10W RGBWA",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Simon Orlob",
+  "channels": [
+    {
+      "name": "Master",
+      "type": "Unknown"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Controlled by CH1 to CH6"
+        },
+        {
+          "min": "32",
+          "max": "95",
+          "name": "Static Color Change CC01-CC31 with 36 colors, controlled by CH8"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Auto Fading Colors, Speed controlled by CH7"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto Increasing Brightness, Speed controlled by CH7"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Auto Decreasing Brightness, Speed controlled by CH7"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Auto Switching Colors, Speed controlled by CH7"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Auto Switching by Sound"
+        }
+      ]
+    },
+    {
+      "name": "Static Colour / Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "CC01-CC31, 31 kinds of static colors, Speed from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "No strobe"
+        },
+        {
+          "min": "64",
+          "max": "223",
+          "name": "AUTO Strobe, Speed from slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound Strobe"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Master",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Colour",
+        "Static Colour / Speed",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Static Colour / Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "270",
+      "height": "270",
+      "depth": "300"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "190",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

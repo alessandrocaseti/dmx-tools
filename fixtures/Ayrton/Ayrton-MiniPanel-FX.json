@@ -1,0 +1,781 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayrton",
+  "model": "MiniPanel FX",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Giacomo Gorini",
+  "channels": [
+    {
+      "name": "Pan Movement",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Movement",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed Pan/Tilt",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "max to min speed"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "blackout by movement"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    },
+    {
+      "name": "Pan Motor continuous rotation",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "no function"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards Pan rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards Pan rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Tilt Motor continuous rotation",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "no function"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards Tilt rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards Tilt rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Red LED - all arrays",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED - all arrays",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED - all arrays",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED - all arrays",
+      "type": "White"
+    },
+    {
+      "name": "Shutter, strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Led turn off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Led turn on"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Led turn on"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse-effect in sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Led turn on"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Led turn on"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "39",
+          "name": "red to yellow"
+        },
+        {
+          "min": "40",
+          "max": "71",
+          "name": "yellow to green"
+        },
+        {
+          "min": "72",
+          "max": "103",
+          "name": "green to cyan"
+        },
+        {
+          "min": "104",
+          "max": "135",
+          "name": "cyan to blue"
+        },
+        {
+          "min": "136",
+          "max": "167",
+          "name": "blue to magenta"
+        },
+        {
+          "min": "168",
+          "max": "199",
+          "name": "magenta to red"
+        },
+        {
+          "min": "200",
+          "max": "231",
+          "name": "red to white"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Crossfading colours from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Presets",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "White 2700k"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "White 3200k"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "White 4200k"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "White 5600k"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "White 6500k"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "White 8000k"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Yellow"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Magenta"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Cyan"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Salmon"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Turquoise"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Light Green"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Steel Blue"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Orange"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Straw"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Pale Lavander"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Pink"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Red"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Green"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Blue"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "White"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Rainbow1"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Rainbow2"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Rainbow3"
+        },
+        {
+          "min": "125",
+          "max": "255",
+          "name": "Reserved"
+        }
+      ]
+    },
+    {
+      "name": "Color Preset Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Chase Patterns",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Led Turn off"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Chase 1"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Chase 2"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Chase 3"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Chase 4"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Chase 5"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Chase 6"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Chase 7"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Chase 8"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Chase 9"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Chase 10"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Chase 11"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Chase 12"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Chase 13"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Chase 14"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Chase 15"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Chase 16"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Chase 17"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Chase 18"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Chase 19"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Chase 20"
+        },
+        {
+          "min": "110",
+          "max": "255",
+          "name": "Reserved"
+        }
+      ]
+    },
+    {
+      "name": "Chase Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "125",
+          "name": "Fast to Slow Backward"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "Stop"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Slow to Fast Forward"
+        }
+      ]
+    },
+    {
+      "name": "Chase Fade",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fade Chase"
+        }
+      ]
+    },
+    {
+      "name": "Reset, Internal programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "Normal"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All motor reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Scan motor reset"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "no function"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "no function"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "no function"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "Others motor reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal Program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal Program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal Program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal Program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal Program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal Program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal Program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Reserved"
+        }
+      ]
+    },
+    {
+      "name": "Red LED-array 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED-array 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED-array 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED-array 1",
+      "type": "White"
+    },
+    {
+      "name": "Red LED-array 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED-array 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED-array 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED-array 2",
+      "type": "White"
+    },
+    {
+      "name": "Red LED-array 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED-array 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED-array 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED-array 3",
+      "type": "White"
+    },
+    {
+      "name": "Red LED-array 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED-array 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED-array 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED-array 4",
+      "type": "White"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Zoom fine",
+      "type": "Beam"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard 22 Channel",
+      "totalChannels": 22,
+      "channels": [
+        "Pan Movement",
+        "Pan Fine",
+        "Tilt Movement",
+        "Tilt Fine",
+        "Speed Pan/Tilt",
+        "Pan Motor continuous rotation",
+        "Tilt Motor continuous rotation",
+        "Red LED - all arrays",
+        "Green LED - all arrays",
+        "Blue LED - all arrays",
+        "White LED - all arrays",
+        "Shutter, strobe",
+        "Dimmer Intensity",
+        "Color Macro",
+        "Color Presets",
+        "Color Preset Dimmer",
+        "Chase Patterns",
+        "Chase Speed",
+        "Chase Fade",
+        "Zoom",
+        "Zoom fine",
+        "Reset, Internal programs"
+      ]
+    },
+    {
+      "name": "Basic 19 Channel",
+      "totalChannels": 19,
+      "channels": [
+        "Pan Movement",
+        "Tilt Movement",
+        "Speed Pan/Tilt",
+        "Pan Motor continuous rotation",
+        "Tilt Motor continuous rotation",
+        "Red LED - all arrays",
+        "Green LED - all arrays",
+        "Blue LED - all arrays",
+        "White LED - all arrays",
+        "Shutter, strobe",
+        "Dimmer Intensity",
+        "Color Macro",
+        "Color Presets",
+        "Color Preset Dimmer",
+        "Chase Patterns",
+        "Chase Speed",
+        "Chase Fade",
+        "Zoom",
+        "Reset, Internal programs"
+      ]
+    },
+    {
+      "name": "Extended 34 Channel",
+      "totalChannels": 34,
+      "channels": [
+        "Pan Movement",
+        "Pan Fine",
+        "Tilt Movement",
+        "Tilt Fine",
+        "Speed Pan/Tilt",
+        "Pan Motor continuous rotation",
+        "Tilt Motor continuous rotation",
+        "Shutter, strobe",
+        "Dimmer Intensity",
+        "Color Macro",
+        "Color Presets",
+        "Color Preset Dimmer",
+        "Chase Patterns",
+        "Chase Speed",
+        "Chase Fade",
+        "Zoom",
+        "Zoom fine",
+        "Reset, Internal programs",
+        "Red LED-array 1",
+        "Green LED-array 1",
+        "Blue LED-array 1",
+        "White LED-array 1",
+        "Red LED-array 2",
+        "Green LED-array 2",
+        "Blue LED-array 2",
+        "White LED-array 2",
+        "Red LED-array 3",
+        "Green LED-array 3",
+        "Blue LED-array 3",
+        "White LED-array 3",
+        "Red LED-array 4",
+        "Green LED-array 4",
+        "Blue LED-array 4",
+        "White LED-array 4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2400",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "8.9",
+      "width": "285",
+      "height": "397",
+      "depth": "220"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "3.6",
+      "degreesMax": "53"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "720",
+      "tiltMax": "360"
+    },
+    "technical": {
+      "powerConsumption": "220",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

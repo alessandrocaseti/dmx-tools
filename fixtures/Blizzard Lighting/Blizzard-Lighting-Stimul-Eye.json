@@ -1,0 +1,680 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "Stimul-Eye",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Fine Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Beam Angle + Lens Rotation",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Beam spread (narrow <--> wide)"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Clockwise rotation (slow <--> fast)"
+        },
+        {
+          "min": "191",
+          "max": "255",
+          "name": "Counterclockwise rotation (fast <--> slow)"
+        }
+      ]
+    },
+    {
+      "name": "Color Wheel Rotation",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow <--> fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "LED 1 Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0% <--> 100%"
+        }
+      ]
+    },
+    {
+      "name": "LED 2 Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0% <--> 100%"
+        }
+      ]
+    },
+    {
+      "name": "LED 3 Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0% <--> 100%"
+        }
+      ]
+    },
+    {
+      "name": "LED 4 Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0% <--> 100%"
+        }
+      ]
+    },
+    {
+      "name": "LED 5 Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0% <--> 100%"
+        }
+      ]
+    },
+    {
+      "name": "LED 6 Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0% <--> 100%"
+        }
+      ]
+    },
+    {
+      "name": "LED 7 (Center) Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0% <--> 100%"
+        }
+      ]
+    },
+    {
+      "name": "Built-in Programs (Static & Dynamic Effects)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "7",
+          "name": "Static 1"
+        },
+        {
+          "min": "8",
+          "max": "10",
+          "name": "Dynamic 1"
+        },
+        {
+          "min": "11",
+          "max": "13",
+          "name": "Static 2"
+        },
+        {
+          "min": "14",
+          "max": "16",
+          "name": "Dynamic 2"
+        },
+        {
+          "min": "17",
+          "max": "19",
+          "name": "Static 3"
+        },
+        {
+          "min": "20",
+          "max": "22",
+          "name": "Dynamic 3"
+        },
+        {
+          "min": "23",
+          "max": "25",
+          "name": "Static 4"
+        },
+        {
+          "min": "26",
+          "max": "28",
+          "name": "Dynamic 4"
+        },
+        {
+          "min": "29",
+          "max": "31",
+          "name": "Static 5"
+        },
+        {
+          "min": "32",
+          "max": "34",
+          "name": "Dynamic 5"
+        },
+        {
+          "min": "35",
+          "max": "37",
+          "name": "Static 6"
+        },
+        {
+          "min": "38",
+          "max": "40",
+          "name": "Dynamic 6"
+        },
+        {
+          "min": "41",
+          "max": "43",
+          "name": "Static 7"
+        },
+        {
+          "min": "44",
+          "max": "46",
+          "name": "Dynamic 7"
+        },
+        {
+          "min": "47",
+          "max": "49",
+          "name": "Static 8"
+        },
+        {
+          "min": "50",
+          "max": "52",
+          "name": "Dynamic 8"
+        },
+        {
+          "min": "53",
+          "max": "55",
+          "name": "Static 9"
+        },
+        {
+          "min": "56",
+          "max": "58",
+          "name": "Dynamic 9"
+        },
+        {
+          "min": "59",
+          "max": "61",
+          "name": "Static 10"
+        },
+        {
+          "min": "62",
+          "max": "64",
+          "name": "Dynamic 10"
+        },
+        {
+          "min": "65",
+          "max": "67",
+          "name": "Static 11"
+        },
+        {
+          "min": "68",
+          "max": "70",
+          "name": "Dynamic 11"
+        },
+        {
+          "min": "71",
+          "max": "73",
+          "name": "Static 12"
+        },
+        {
+          "min": "74",
+          "max": "76",
+          "name": "Dynamic 12"
+        },
+        {
+          "min": "77",
+          "max": "79",
+          "name": "Static 13"
+        },
+        {
+          "min": "80",
+          "max": "82",
+          "name": "Dynamic 13"
+        },
+        {
+          "min": "83",
+          "max": "85",
+          "name": "Static 14"
+        },
+        {
+          "min": "86",
+          "max": "88",
+          "name": "Dynamic 14"
+        },
+        {
+          "min": "89",
+          "max": "91",
+          "name": "Static 15"
+        },
+        {
+          "min": "92",
+          "max": "94",
+          "name": "Dynamic 15"
+        },
+        {
+          "min": "95",
+          "max": "97",
+          "name": "Static 16"
+        },
+        {
+          "min": "98",
+          "max": "100",
+          "name": "Dynamic 16"
+        },
+        {
+          "min": "101",
+          "max": "103",
+          "name": "Static 17"
+        },
+        {
+          "min": "104",
+          "max": "106",
+          "name": "Dynamic 17"
+        },
+        {
+          "min": "107",
+          "max": "109",
+          "name": "Static 18"
+        },
+        {
+          "min": "110",
+          "max": "112",
+          "name": "Dynamic 18"
+        },
+        {
+          "min": "113",
+          "max": "115",
+          "name": "Static 19"
+        },
+        {
+          "min": "116",
+          "max": "118",
+          "name": "Dynamic 19"
+        },
+        {
+          "min": "119",
+          "max": "121",
+          "name": "Static 20"
+        },
+        {
+          "min": "122",
+          "max": "124",
+          "name": "Dynamic 20"
+        },
+        {
+          "min": "125",
+          "max": "127",
+          "name": "Static 21"
+        },
+        {
+          "min": "128",
+          "max": "130",
+          "name": "Dynamic 21"
+        },
+        {
+          "min": "131",
+          "max": "133",
+          "name": "Static 22"
+        },
+        {
+          "min": "134",
+          "max": "136",
+          "name": "Dynamic 22"
+        },
+        {
+          "min": "137",
+          "max": "139",
+          "name": "Static 23"
+        },
+        {
+          "min": "140",
+          "max": "142",
+          "name": "Dynamic 23"
+        },
+        {
+          "min": "143",
+          "max": "145",
+          "name": "Static 24"
+        },
+        {
+          "min": "146",
+          "max": "148",
+          "name": "Dynamic 24"
+        },
+        {
+          "min": "149",
+          "max": "151",
+          "name": "Static 25"
+        },
+        {
+          "min": "152",
+          "max": "154",
+          "name": "Dynamic 25"
+        },
+        {
+          "min": "155",
+          "max": "157",
+          "name": "Static 26"
+        },
+        {
+          "min": "158",
+          "max": "160",
+          "name": "Dynamic 26"
+        },
+        {
+          "min": "161",
+          "max": "163",
+          "name": "Static 27"
+        },
+        {
+          "min": "164",
+          "max": "166",
+          "name": "Dynamic 27"
+        },
+        {
+          "min": "167",
+          "max": "169",
+          "name": "Static 28"
+        },
+        {
+          "min": "170",
+          "max": "172",
+          "name": "Dynamic 28"
+        },
+        {
+          "min": "173",
+          "max": "175",
+          "name": "Static 29"
+        },
+        {
+          "min": "176",
+          "max": "178",
+          "name": "Dynamic 29"
+        },
+        {
+          "min": "179",
+          "max": "181",
+          "name": "Static 30"
+        },
+        {
+          "min": "182",
+          "max": "184",
+          "name": "Dynamic 30"
+        },
+        {
+          "min": "185",
+          "max": "187",
+          "name": "Static 31"
+        },
+        {
+          "min": "188",
+          "max": "190",
+          "name": "Dynamic 31"
+        },
+        {
+          "min": "191",
+          "max": "193",
+          "name": "Static 32"
+        },
+        {
+          "min": "194",
+          "max": "196",
+          "name": "Dynamic 32"
+        },
+        {
+          "min": "197",
+          "max": "199",
+          "name": "Static 33"
+        },
+        {
+          "min": "200",
+          "max": "202",
+          "name": "Dynamic 33"
+        },
+        {
+          "min": "203",
+          "max": "205",
+          "name": "Static 34"
+        },
+        {
+          "min": "206",
+          "max": "208",
+          "name": "Dynamic 34"
+        },
+        {
+          "min": "209",
+          "max": "211",
+          "name": "Static 35"
+        },
+        {
+          "min": "212",
+          "max": "214",
+          "name": "Dynamic 35"
+        },
+        {
+          "min": "215",
+          "max": "217",
+          "name": "Static 36"
+        },
+        {
+          "min": "218",
+          "max": "220",
+          "name": "Dynamic 36"
+        },
+        {
+          "min": "221",
+          "max": "223",
+          "name": "Static 37"
+        },
+        {
+          "min": "224",
+          "max": "226",
+          "name": "Dynamic 37"
+        },
+        {
+          "min": "227",
+          "max": "229",
+          "name": "Static 38"
+        },
+        {
+          "min": "230",
+          "max": "232",
+          "name": "Dynamic 38"
+        },
+        {
+          "min": "233",
+          "max": "235",
+          "name": "Static 39"
+        },
+        {
+          "min": "236",
+          "max": "238",
+          "name": "Dynamic 39"
+        },
+        {
+          "min": "239",
+          "max": "241",
+          "name": "Static 40"
+        },
+        {
+          "min": "242",
+          "max": "244",
+          "name": "Dynamic 40"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Built-in Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fast <--> slow"
+        }
+      ]
+    },
+    {
+      "name": "Auto Run + System Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "128",
+          "name": "No function"
+        },
+        {
+          "min": "129",
+          "max": "249",
+          "name": "Auto run mode"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Reset (after 6 seconds)"
+        }
+      ]
+    },
+    {
+      "name": "LED 1-6 Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Intensity (0% -> 100%)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "19 Channel Mode",
+      "totalChannels": 19,
+      "channels": [
+        "Pan",
+        "Fine Pan",
+        "Tilt",
+        "Fine Tilt",
+        "Pan/Tilt Speed",
+        "Beam Angle + Lens Rotation",
+        "Color Wheel Rotation",
+        "Dimmer",
+        "Strobe",
+        "LED 1 Intensity",
+        "LED 2 Intensity",
+        "LED 3 Intensity",
+        "LED 4 Intensity",
+        "LED 5 Intensity",
+        "LED 6 Intensity",
+        "LED 7 (Center) Intensity",
+        "Built-in Programs (Static & Dynamic Effects)",
+        "Built-in Program Speed",
+        "Auto Run + System Reset"
+      ]
+    },
+    {
+      "name": "12 Channel Mode",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt Speed",
+        "Beam Angle + Lens Rotation",
+        "Color Wheel Rotation",
+        "Dimmer",
+        "Strobe",
+        "LED 7 (Center) Intensity",
+        "LED 1-6 Intensity",
+        "Built-in Programs (Static & Dynamic Effects)",
+        "Built-in Program Speed",
+        "Auto Run + System Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.2",
+      "width": "223",
+      "height": "315",
+      "depth": "168"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "5",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "250"
+    },
+    "technical": {
+      "powerConsumption": "52",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

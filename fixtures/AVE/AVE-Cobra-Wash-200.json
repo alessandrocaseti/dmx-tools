@@ -1,0 +1,258 @@
+{
+  "version": "1.2",
+  "manufacturer": "AVE",
+  "model": "Cobra Wash 200",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Mark Sy",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color-Jump 5ch",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Ch4 effectivity?"
+        },
+        {
+          "min": "1",
+          "max": "223",
+          "name": "Colours"
+        },
+        {
+          "min": "224",
+          "max": "235",
+          "name": "Gradual Change mode"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Jump Change mode"
+        }
+      ]
+    },
+    {
+      "name": "Pan-Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color-Jump 13ch",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Ch7~Ch10 dimmer mode"
+        },
+        {
+          "min": "1",
+          "max": "223",
+          "name": "Colours"
+        },
+        {
+          "min": "224",
+          "max": "235",
+          "name": "Gradual Change mode"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Jump Change mode"
+        }
+      ]
+    },
+    {
+      "name": "Machine Restoration",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Machine Restoration"
+        }
+      ]
+    },
+    {
+      "name": "Auto Modes",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "2",
+          "name": "None"
+        },
+        {
+          "min": "3",
+          "max": "84",
+          "name": "Slow running in Auto"
+        },
+        {
+          "min": "85",
+          "max": "169",
+          "name": "Fast running in Auto"
+        },
+        {
+          "min": "170",
+          "max": "255",
+          "name": "Sound Mode"
+        }
+      ]
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer-Strobe 5ch",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "None"
+        },
+        {
+          "min": "8",
+          "max": "134",
+          "name": "RGB Dimmer"
+        },
+        {
+          "min": "135",
+          "max": "239",
+          "name": "Strobe"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "None"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer-Strobe 13ch",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "RGBW off"
+        },
+        {
+          "min": "8",
+          "max": "8",
+          "name": "RGBW On-Needs to be set here for RGB operation"
+        },
+        {
+          "min": "9",
+          "max": "134",
+          "name": "Adds White Dimmer"
+        },
+        {
+          "min": "135",
+          "max": "239",
+          "name": "Strobe"
+        },
+        {
+          "min": "240",
+          "max": "254",
+          "name": "Ch7~C10 effectivity"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan-Tilt Speed",
+        "Dimmer-Strobe 5ch",
+        "Color-Jump 5ch"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 13,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan-Tilt Speed",
+        "Dimmer-Strobe 13ch",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color-Jump 13ch",
+        "Auto Modes",
+        "Machine Restoration"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.8",
+      "width": "177",
+      "height": "240",
+      "depth": "177"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "45",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "75",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TSL-100",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color-wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Open / White"
+        },
+        {
+          "min": "15",
+          "max": "29",
+          "name": "Orange"
+        },
+        {
+          "min": "30",
+          "max": "44",
+          "name": "Blue"
+        },
+        {
+          "min": "45",
+          "max": "59",
+          "name": "Green"
+        },
+        {
+          "min": "60",
+          "max": "74",
+          "name": "Yellow"
+        },
+        {
+          "min": "75",
+          "max": "89",
+          "name": "Pink"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Light Blue"
+        },
+        {
+          "min": "105",
+          "max": "119",
+          "name": "Light Green"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Light Yellow"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Gobo-wheel, gobo shake",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "64",
+          "max": "70",
+          "name": "Open shake"
+        },
+        {
+          "min": "71",
+          "max": "77",
+          "name": "Gobo 1 shake"
+        },
+        {
+          "min": "78",
+          "max": "84",
+          "name": "Gobo 2 shake"
+        },
+        {
+          "min": "85",
+          "max": "91",
+          "name": "Gobo 3 shake"
+        },
+        {
+          "min": "92",
+          "max": "98",
+          "name": "Gobo 4 shake"
+        },
+        {
+          "min": "99",
+          "max": "105",
+          "name": "Gobo 5 shake"
+        },
+        {
+          "min": "106",
+          "max": "112",
+          "name": "Gobo 6 shake"
+        },
+        {
+          "min": "113",
+          "max": "119",
+          "name": "Gobo 7 shake"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo 8 shake"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Cont. gobo-wheel rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Shutter, strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Shutter open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe-effect with increasing speed"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Shutter open"
+        },
+        {
+          "min": "140",
+          "max": "180",
+          "name": "Pulse closing with increasing speed"
+        },
+        {
+          "min": "181",
+          "max": "189",
+          "name": "Shutter open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Pulse closing with decreasing speed"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Reset after 3-5 seconds"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe-effect"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Motion macros",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "25",
+          "name": "Motion macro 1"
+        },
+        {
+          "min": "26",
+          "max": "43",
+          "name": "Motion macro 2"
+        },
+        {
+          "min": "44",
+          "max": "61",
+          "name": "Motion macro 3"
+        },
+        {
+          "min": "62",
+          "max": "79",
+          "name": "Motion macro 4"
+        },
+        {
+          "min": "80",
+          "max": "97",
+          "name": "Motion macro 5"
+        },
+        {
+          "min": "98",
+          "max": "115",
+          "name": "Motion macro 6"
+        },
+        {
+          "min": "116",
+          "max": "133",
+          "name": "Motion macro 7"
+        },
+        {
+          "min": "134",
+          "max": "151",
+          "name": "Motion macro 8"
+        },
+        {
+          "min": "152",
+          "max": "169",
+          "name": "Motion macro 9"
+        },
+        {
+          "min": "170",
+          "max": "187",
+          "name": "Motion macro 10"
+        },
+        {
+          "min": "188",
+          "max": "205",
+          "name": "Motion macro 11"
+        },
+        {
+          "min": "206",
+          "max": "223",
+          "name": "Motion macro 12"
+        },
+        {
+          "min": "224",
+          "max": "241",
+          "name": "Motion macro 13"
+        },
+        {
+          "min": "242",
+          "max": "255",
+          "name": "Motion macro 14"
+        }
+      ]
+    },
+    {
+      "name": "Speed Motion macros",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Increasing speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color-wheel",
+        "Gobo-wheel, gobo shake",
+        "Shutter, strobe",
+        "Dimmer intensity",
+        "Motion macros",
+        "Speed Motion macros"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "205",
+      "height": "300",
+      "depth": "390"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "13"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "150",
+      "tiltMax": "110"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

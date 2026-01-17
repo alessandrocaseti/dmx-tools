@@ -1,0 +1,169 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "TS 200 WW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Sven Koch",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe slow -> fast < 1 Hz - 20 Hz"
+        }
+      ]
+    },
+    {
+      "name": "Set Dimmer Curve",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "63",
+          "name": "Linear dimmer curve"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Exponential dimmer curve"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Logarithmic dimmer curve"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "S-curve dimmer curve"
+        }
+      ]
+    },
+    {
+      "name": "Device Settings",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "63",
+          "name": "Dimmer response LED (hold 3s)"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Dimmer response halogen (hold 3s)"
+        },
+        {
+          "min": "128",
+          "max": "154",
+          "name": "PWM frequency 650 Hz (hold 3s)"
+        },
+        {
+          "min": "155",
+          "max": "181",
+          "name": "PWM frequency 1530 Hz (hold 3s)"
+        },
+        {
+          "min": "182",
+          "max": "208",
+          "name": "PWM frequency 3600 Hz (hold 3s)"
+        },
+        {
+          "min": "209",
+          "max": "235",
+          "name": "PWM frequency 25 kHz (hold 3s)"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Set Dimmer Curve",
+        "Device Settings"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "6600",
+      "colourTemperature": "3100"
+    },
+    "dimensions": {
+      "weight": "7.5",
+      "width": "320",
+      "height": "370",
+      "depth": "310"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "14",
+      "degreesMax": "38"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

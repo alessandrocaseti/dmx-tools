@@ -1,0 +1,57 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Mega Flash DMX",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "eklynx",
+  "channels": [
+    {
+      "name": "Strobe Speed",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX",
+      "totalChannels": 2,
+      "channels": [
+        "Strobe Speed",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "ZB-800",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.2",
+      "width": "394",
+      "height": "216",
+      "depth": "102"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "800",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

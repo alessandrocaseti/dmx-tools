@@ -1,0 +1,362 @@
+{
+  "version": "1.2",
+  "manufacturer": "Equinox",
+  "model": "Ultra Scan LED",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Chris Moses",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "White"
+        },
+        {
+          "min": "14",
+          "max": "27",
+          "name": "Yellow"
+        },
+        {
+          "min": "28",
+          "max": "42",
+          "name": "Pink"
+        },
+        {
+          "min": "43",
+          "max": "55",
+          "name": "Green"
+        },
+        {
+          "min": "56",
+          "max": "69",
+          "name": "Purple"
+        },
+        {
+          "min": "70",
+          "max": "83",
+          "name": "Blue"
+        },
+        {
+          "min": "84",
+          "max": "97",
+          "name": "Lime"
+        },
+        {
+          "min": "98",
+          "max": "111",
+          "name": "Orange"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red"
+        },
+        {
+          "min": "128",
+          "max": "192",
+          "name": "Colour Cycle CW (Fast to Slow)"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Colour Cycle CCW (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Open"
+        },
+        {
+          "min": "9",
+          "max": "17",
+          "name": "Sparks"
+        },
+        {
+          "min": "18",
+          "max": "26",
+          "name": "Stars"
+        },
+        {
+          "min": "27",
+          "max": "34",
+          "name": "Spider's Web"
+        },
+        {
+          "min": "35",
+          "max": "44",
+          "name": "Star Symbol"
+        },
+        {
+          "min": "45",
+          "max": "53",
+          "name": "Circle of Dots"
+        },
+        {
+          "min": "54",
+          "max": "62",
+          "name": "Torus"
+        },
+        {
+          "min": "63",
+          "max": "71",
+          "name": "Fan Swirl"
+        },
+        {
+          "min": "72",
+          "max": "80",
+          "name": "Quote Marks"
+        },
+        {
+          "min": "81",
+          "max": "89",
+          "name": "Radiation Symbol"
+        },
+        {
+          "min": "90",
+          "max": "98",
+          "name": "Square"
+        },
+        {
+          "min": "99",
+          "max": "107",
+          "name": "Circle"
+        },
+        {
+          "min": "108",
+          "max": "116",
+          "name": "Sparks (Shake - Slow to Fast)"
+        },
+        {
+          "min": "117",
+          "max": "125",
+          "name": "Stars (Shake - Slow to Fast)"
+        },
+        {
+          "min": "126",
+          "max": "134",
+          "name": "Spider's Web (Shake - Slow to Fast)"
+        },
+        {
+          "min": "135",
+          "max": "143",
+          "name": "Star Symbol (Shake - Slow to Fast)"
+        },
+        {
+          "min": "144",
+          "max": "152",
+          "name": "Circle of Dots (Shake - Slow to Fast)"
+        },
+        {
+          "min": "153",
+          "max": "161",
+          "name": "Torus (Shake - Slow to Fast)"
+        },
+        {
+          "min": "162",
+          "max": "170",
+          "name": "Fan Swirl (Shake - Slow to Fast)"
+        },
+        {
+          "min": "171",
+          "max": "179",
+          "name": "Quote Marks (Shake - Slow to Fast)"
+        },
+        {
+          "min": "180",
+          "max": "188",
+          "name": "Radiation Symbol (Shake - Slow to Fast)"
+        },
+        {
+          "min": "189",
+          "max": "197",
+          "name": "Square (Shake - Slow to Fast)"
+        },
+        {
+          "min": "198",
+          "max": "206",
+          "name": "Circle (Shake - Slow to Fast)"
+        },
+        {
+          "min": "207",
+          "max": "255",
+          "name": "Gobo Cycle CW (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Full On"
+        },
+        {
+          "min": "20",
+          "max": "127",
+          "name": "Strobe (Slow to Fast)"
+        },
+        {
+          "min": "128",
+          "max": "137",
+          "name": "Full On"
+        },
+        {
+          "min": "138",
+          "max": "201",
+          "name": "Strobe Random (Slow to Fast)"
+        },
+        {
+          "min": "202",
+          "max": "255",
+          "name": "Full On"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Macros",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "59",
+          "name": "No function"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Colour Wheel Rotation"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Motor Reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Built-in Program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Built-in Program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Built-in Program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Built-in Program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Built-in Program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Built-in Program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Built-in Program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Built-in Program 8"
+        }
+      ]
+    },
+    {
+      "name": "Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fast to Slow"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Gobo",
+        "Shutter",
+        "Master Dimmer",
+        "Macros",
+        "Macro Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.3",
+      "width": "204",
+      "height": "465",
+      "depth": "150"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "11"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

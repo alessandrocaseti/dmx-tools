@@ -1,0 +1,534 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BT-70LS",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Thomas",
+  "channels": [
+    {
+      "name": "Show mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Stand-by"
+        },
+        {
+          "min": "8",
+          "max": "67",
+          "name": "Show 1"
+        },
+        {
+          "min": "68",
+          "max": "127",
+          "name": "Show 2"
+        },
+        {
+          "min": "128",
+          "max": "187",
+          "name": "Show 3"
+        },
+        {
+          "min": "188",
+          "max": "247",
+          "name": "Show 4"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Random show"
+        }
+      ]
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter / Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Shutter Close"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe mode 1 (slow > fast)"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Strobe mode 2 (slowly opening, immediate close, from slow to fast)"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Strobe mode 3 (Open immediate, close slowly from slow to fast)"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Strobe mode 4 (random strobe)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Mixed colours",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "White and Red"
+        },
+        {
+          "min": "15",
+          "max": "22",
+          "name": "Red"
+        },
+        {
+          "min": "23",
+          "max": "29",
+          "name": "Red and Orange"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Orange"
+        },
+        {
+          "min": "38",
+          "max": "44",
+          "name": "Orange and Yellow"
+        },
+        {
+          "min": "45",
+          "max": "52",
+          "name": "Yellow"
+        },
+        {
+          "min": "53",
+          "max": "59",
+          "name": "Yellow and Green"
+        },
+        {
+          "min": "60",
+          "max": "67",
+          "name": "Green"
+        },
+        {
+          "min": "68",
+          "max": "74",
+          "name": "Green and Blue"
+        },
+        {
+          "min": "75",
+          "max": "82",
+          "name": "Blue"
+        },
+        {
+          "min": "83",
+          "max": "89",
+          "name": "Blue and Magenta"
+        },
+        {
+          "min": "90",
+          "max": "97",
+          "name": "Magenta"
+        },
+        {
+          "min": "98",
+          "max": "104",
+          "name": "Magenta and light Blue"
+        },
+        {
+          "min": "105",
+          "max": "112",
+          "name": "Light Blue"
+        },
+        {
+          "min": "113",
+          "max": "119",
+          "name": "Light Blue and Pink"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Pink"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise rotating"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop Rotating"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Non Clockwise rotating"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open (no gobo)"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "64",
+          "max": "73",
+          "name": "Gobo 1 shake"
+        },
+        {
+          "min": "74",
+          "max": "82",
+          "name": "Gobo 2 shake"
+        },
+        {
+          "min": "83",
+          "max": "91",
+          "name": "Gobo 3 shake"
+        },
+        {
+          "min": "92",
+          "max": "100",
+          "name": "Gobo 4 shake"
+        },
+        {
+          "min": "101",
+          "max": "109",
+          "name": "Gobo 5 shake"
+        },
+        {
+          "min": "110",
+          "max": "127",
+          "name": "Gobo 6 shake"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise rotation"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop rotating"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Non Clockwise rotation"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Index position from 0 to 360°"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Gobo rotation clockwise (fast to slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Gobo rotation stopped"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Gobo rotation clockwise (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Prism effect"
+        }
+      ]
+    },
+    {
+      "name": "Prism rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Specific position"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Prism rotation clockwise (fast > slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Prism rotation counterclockwise (slow > fast)"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Special functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Enable Blackout during PAN/TILT"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Disable blackout during PAN/TILT"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Enable blackout during color change"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Disable blackout during color change"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Enable blackout during gobo change"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Disable blackout during gobo change"
+        },
+        {
+          "min": "130",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Automatic sound mode"
+        }
+      ]
+    },
+    {
+      "name": "No function",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Show mode"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Master dimmer",
+        "Shutter / Strobe",
+        "Mixed colours",
+        "Gobo Wheel",
+        "Gobo rotation",
+        "Prism",
+        "Prism rotation",
+        "Focus",
+        "Special functions"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Master dimmer",
+        "Shutter / Strobe",
+        "Mixed colours",
+        "No function",
+        "Gobo Wheel",
+        "Gobo rotation",
+        "Prism",
+        "Prism rotation",
+        "Focus",
+        "Pan fine",
+        "Tilt fine",
+        "Special functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9",
+      "width": "292",
+      "height": "425",
+      "depth": "169"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "138",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

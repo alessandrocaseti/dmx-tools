@@ -1,0 +1,309 @@
+{
+  "version": "1.2",
+  "manufacturer": "Betopper",
+  "model": "LPC-017",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michel Sliepenbeek",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe ",
+      "type": "Shutter"
+    },
+    {
+      "name": "Auto Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto Speed"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Red"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Green"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Blue"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Grass green"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Amber"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Orange"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Yellow"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Cyan"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Lavender"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Pink"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Rosiness"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Magenta"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Pea green"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Orange"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "White"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Ring control color"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Ring control color"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Ring control color"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Ring control color"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Ring control color"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Ring control color"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Colour jumping"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Colour snap"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Colour strobe"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Colour fade"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "Ring control effect 1"
+        },
+        {
+          "min": "210",
+          "max": "229",
+          "name": "Ring control effect 1"
+        },
+        {
+          "min": "230",
+          "max": "249",
+          "name": "color jumping+mutation+strobe+ring control"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Strobe "
+      ]
+    },
+    {
+      "name": "7 Channel ",
+      "totalChannels": 7,
+      "channels": [
+        "Master dimmer",
+        "Strobe ",
+        "Auto Speed",
+        "Macro",
+        "Red 1",
+        "Green 1",
+        "Blue 1"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 16,
+      "channels": [
+        "Master dimmer",
+        "Strobe ",
+        "Auto Speed",
+        "Macro",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.56",
+      "width": "223",
+      "height": "215",
+      "depth": "220"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "15",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayra",
+  "model": "ALO Micro Scan",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Frank Rosquin",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open White"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "SPLC 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "SPLC 2"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Orange"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "SPLC 3"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Yellow"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "SPLC 4"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Green"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "SPLC 5"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "SPLC 6"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Light Blue"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "SPLC 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Magenta"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow effect, slow -> fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Open Shake"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 1 Shake"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 2 Shake"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 3 Shake"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 4 Shake"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 5 Shake"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 6 Shake"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo 7 Shake"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Gobo Scroll, slow -> fast"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Stroboscope mode, slow -> fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Shutter slow open, close fast, slow -> fast"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Shutter slow close, open fast, slow -> fast"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Diverse functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blackout during pan/tilt movement, fast LED switching"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Disable Blackout during pan/tilt movement"
+        },
+        {
+          "min": "90",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset after 3 seconds within these values"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "No Function"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound activated mode"
+        }
+      ]
+    },
+    {
+      "name": "Sound-controlled Shows",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "Show 1"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "Show 2"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "Show 3"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "Show 4"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "Show 5"
+        },
+        {
+          "min": "158",
+          "max": "187",
+          "name": "Show 6"
+        },
+        {
+          "min": "188",
+          "max": "217",
+          "name": "Show 7"
+        },
+        {
+          "min": "218",
+          "max": "247",
+          "name": "Show 8"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Random Show"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color wheel",
+        "Gobo",
+        "Shutter",
+        "Dimmer",
+        "Pan/Tilt speed",
+        "Diverse functions"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Color wheel",
+        "Gobo",
+        "Shutter",
+        "Dimmer",
+        "Pan/Tilt speed",
+        "Diverse functions"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 1,
+      "channels": [
+        "Sound-controlled Shows"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1200",
+      "colourTemperature": "7000"
+    },
+    "dimensions": {
+      "weight": "2.6",
+      "width": "130",
+      "height": "280",
+      "depth": "130"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "13"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "170",
+      "tiltMax": "85"
+    },
+    "technical": {
+      "powerConsumption": "35",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

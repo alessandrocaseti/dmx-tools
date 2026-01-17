@@ -1,0 +1,515 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Zenit B200",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "ikr",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe functions",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe close"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Pulse random slow -> fast"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Ramp up random slow -> fast"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Ramp down random slow -> fast"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random strobe effect slow -> fast"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Strobe break effect, 5s.....1s (short burst with break)"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe break effect, 5s.....1s (short burst with break)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "White fine",
+      "type": "White"
+    },
+    {
+      "name": "Color Macros (override RGBW)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Color off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Color Jumping stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Color Jumping speed slow -> fast / color 1 -> 12"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Color Fading speed slow -> fast / color 1 -> 12"
+        }
+      ]
+    },
+    {
+      "name": "Color Temperature Correction (affects RGBW & Color Macros)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Off"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Cold -> warm"
+        }
+      ]
+    },
+    {
+      "name": "Set dimmer curve",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "63",
+          "name": "Linear dimmer curve"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Exponential dimmer curve"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Exponential dimmer curve"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "S-Curve dimmer curve"
+        }
+      ]
+    },
+    {
+      "name": "Device settings",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "77",
+          "name": "No function"
+        },
+        {
+          "min": "78",
+          "max": "79",
+          "name": "Dimmer response LED (hold 1,5 s)"
+        },
+        {
+          "min": "80",
+          "max": "81",
+          "name": "Dimmer response halogen (hold 1,5s)"
+        },
+        {
+          "min": "82",
+          "max": "101",
+          "name": "No function"
+        },
+        {
+          "min": "102",
+          "max": "103",
+          "name": "Silent fan (hold 3s)"
+        },
+        {
+          "min": "104",
+          "max": "105",
+          "name": "Auto fan (hold 3s)"
+        },
+        {
+          "min": "106",
+          "max": "123",
+          "name": "No function"
+        },
+        {
+          "min": "124",
+          "max": "125",
+          "name": "PWM 1 (800 Hz) (hold 3s)"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "PWM 2 (1200 Hz) (hold 3s)"
+        },
+        {
+          "min": "128",
+          "max": "129",
+          "name": "PWM 3 (2000 Hz) (hold 3s)"
+        },
+        {
+          "min": "130",
+          "max": "131",
+          "name": "PWM 4 (3600 Hz) (hold 3s)"
+        },
+        {
+          "min": "132",
+          "max": "133",
+          "name": "PWM 5 (12 kHz) (hold 3s)"
+        },
+        {
+          "min": "134",
+          "max": "135",
+          "name": "PWM 6 (25 kHz) (hold 3s)"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "No function"
+        },
+        {
+          "min": "144",
+          "max": "145",
+          "name": "Display on (hold 3s)"
+        },
+        {
+          "min": "146",
+          "max": "147",
+          "name": "Display off (hold 3s)"
+        },
+        {
+          "min": "148",
+          "max": "195",
+          "name": "No function"
+        },
+        {
+          "min": "196",
+          "max": "197",
+          "name": "No runtime / full LED power (hold 3s)"
+        },
+        {
+          "min": "198",
+          "max": "199",
+          "name": "Set runtime 8h (hold 3S)"
+        },
+        {
+          "min": "200",
+          "max": "201",
+          "name": "Set runtime 12h (hold 3S)"
+        },
+        {
+          "min": "202",
+          "max": "203",
+          "name": "Set runtime 16h (hold 3S)"
+        },
+        {
+          "min": "204",
+          "max": "205",
+          "name": "Set runtime 20h (hold 3S)"
+        },
+        {
+          "min": "206",
+          "max": "207",
+          "name": "Raw mode (hold 3s)"
+        },
+        {
+          "min": "208",
+          "max": "209",
+          "name": "Factory calibrated mode (hold 3s)"
+        },
+        {
+          "min": "210",
+          "max": "211",
+          "name": "User calibrated mode (hold 3s)"
+        },
+        {
+          "min": "212",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 15,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe functions",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Color Macros (override RGBW)",
+        "Color Temperature Correction (affects RGBW & Color Macros)",
+        "Set dimmer curve",
+        "Device settings"
+      ]
+    },
+    {
+      "name": "10 Channel Full Access 8 Bit",
+      "totalChannels": 10,
+      "channels": [
+        "Dimmer",
+        "Strobe functions",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macros (override RGBW)",
+        "Color Temperature Correction (affects RGBW & Color Macros)",
+        "Set dimmer curve",
+        "Device settings"
+      ]
+    },
+    {
+      "name": "8 Channel User-Calibrated 16 Bit",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine"
+      ]
+    },
+    {
+      "name": "6 Channel Factory-Calibrated 16 Bit",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine"
+      ]
+    },
+    {
+      "name": "4 Channel User-Calibrated 8 Bit",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "3 Channel Factory-Calibrated 8 Bit",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "3 Channel Color Macros",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobe functions",
+        "Color Macros (override RGBW)"
+      ]
+    },
+    {
+      "name": "2 Channel CCT Factory-Calibrated",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Color Temperature Correction (affects RGBW & Color Macros)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "6600",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.2",
+      "width": "377",
+      "height": "256",
+      "depth": "140"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "21",
+      "degreesMax": "100"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "180",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

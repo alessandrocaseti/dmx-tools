@@ -1,0 +1,883 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Intimidator Hybrid 140SR",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "White"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Red"
+        },
+        {
+          "min": "8",
+          "max": "11",
+          "name": "Yellow"
+        },
+        {
+          "min": "12",
+          "max": "15",
+          "name": "Green"
+        },
+        {
+          "min": "16",
+          "max": "19",
+          "name": "Sky blue"
+        },
+        {
+          "min": "20",
+          "max": "23",
+          "name": "Lavender"
+        },
+        {
+          "min": "24",
+          "max": "28",
+          "name": "Canary yellow"
+        },
+        {
+          "min": "29",
+          "max": "33",
+          "name": "Blue"
+        },
+        {
+          "min": "34",
+          "max": "38",
+          "name": "Magenta"
+        },
+        {
+          "min": "39",
+          "max": "43",
+          "name": "Line green"
+        },
+        {
+          "min": "44",
+          "max": "48",
+          "name": "Natural white"
+        },
+        {
+          "min": "49",
+          "max": "53",
+          "name": "Cool white"
+        },
+        {
+          "min": "54",
+          "max": "59",
+          "name": "Ultraviolet"
+        },
+        {
+          "min": "60",
+          "max": "187",
+          "name": "Color indexing"
+        },
+        {
+          "min": "188",
+          "max": "219",
+          "name": "Color cycling rainbow, fast to slow"
+        },
+        {
+          "min": "220",
+          "max": "223",
+          "name": "Stop"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Reverse color cycling rainbow, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Static Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "2",
+          "name": "Open"
+        },
+        {
+          "min": "3",
+          "max": "5",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "6",
+          "max": "8",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "9",
+          "max": "11",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "12",
+          "max": "14",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "15",
+          "max": "17",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "18",
+          "max": "20",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "21",
+          "max": "23",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "24",
+          "max": "26",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "27",
+          "max": "29",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "30",
+          "max": "32",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "33",
+          "max": "35",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "36",
+          "max": "38",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "39",
+          "max": "41",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "42",
+          "max": "44",
+          "name": "Gobo 14"
+        },
+        {
+          "min": "45",
+          "max": "47",
+          "name": "Gobo 15"
+        },
+        {
+          "min": "48",
+          "max": "50",
+          "name": "Gobo 16"
+        },
+        {
+          "min": "51",
+          "max": "54",
+          "name": "Gobo 16 shake, slow to fast"
+        },
+        {
+          "min": "55",
+          "max": "58",
+          "name": "Gobo 15 shake, slow to fast"
+        },
+        {
+          "min": "59",
+          "max": "62",
+          "name": "Gobo 14 shake, slow to fast"
+        },
+        {
+          "min": "63",
+          "max": "66",
+          "name": "Gobo 13 shake, slow to fast"
+        },
+        {
+          "min": "67",
+          "max": "70",
+          "name": "Gobo 12 shake, slow to fast"
+        },
+        {
+          "min": "71",
+          "max": "74",
+          "name": "Gobo 11 shake, slow to fast"
+        },
+        {
+          "min": "75",
+          "max": "78",
+          "name": "Gobo 10 shake, slow to fast"
+        },
+        {
+          "min": "79",
+          "max": "82",
+          "name": "Gobo 9 shake, slow to fast"
+        },
+        {
+          "min": "83",
+          "max": "86",
+          "name": "Gobo 8 shake, slow to fast"
+        },
+        {
+          "min": "87",
+          "max": "90",
+          "name": "Gobo 7 shake, slow to fast"
+        },
+        {
+          "min": "91",
+          "max": "94",
+          "name": "Gobo 6 shake, slow to fast"
+        },
+        {
+          "min": "95",
+          "max": "98",
+          "name": "Gobo 5 shake, slow to fast"
+        },
+        {
+          "min": "99",
+          "max": "102",
+          "name": "Gobo 4 shake, slow to fast"
+        },
+        {
+          "min": "103",
+          "max": "106",
+          "name": "Gobo 3 shake, slow to fast"
+        },
+        {
+          "min": "107",
+          "max": "110",
+          "name": "Gobo 2 shake, slow to fast"
+        },
+        {
+          "min": "111",
+          "max": "114",
+          "name": "Gobo 1 shake, slow to fast"
+        },
+        {
+          "min": "115",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Cycle effect, fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Reverse cycle effect, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "116",
+          "name": "Rotation, fast to slow"
+        },
+        {
+          "min": "117",
+          "max": "120",
+          "name": "Stop"
+        },
+        {
+          "min": "121",
+          "max": "231",
+          "name": "Reverse rotation, slow to fast"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Bounce, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "132",
+          "max": "167",
+          "name": "Slow open, fast close, slow to fast"
+        },
+        {
+          "min": "168",
+          "max": "203",
+          "name": "Fast open, fast close, slow to fast"
+        },
+        {
+          "min": "204",
+          "max": "239",
+          "name": "Pulse strobe, slow to fast"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe, slow to fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Blackout on pan/tilt movement"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Blackout on color wheel movement"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Blackout on gobo wheel movement"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Blackout on pan/tilt/color wheel movement"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Blackout on pan/tilt/gobo wheel movement"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Blackout on pan/tilt/color/gobo wheel movement"
+        },
+        {
+          "min": "56",
+          "max": "87",
+          "name": "No function"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Lamp on"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Pan reset"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Tilt reset"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Color wheel reset"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo wheels reset"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Frost reset"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Prism reset"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Focus and zoom reset"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "All reset"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Shutter reset"
+        },
+        {
+          "min": "168",
+          "max": "231",
+          "name": "No function"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Lamp off"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Movement Macros",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "23",
+          "name": "1"
+        },
+        {
+          "min": "24",
+          "max": "39",
+          "name": "2"
+        },
+        {
+          "min": "40",
+          "max": "55",
+          "name": "3"
+        },
+        {
+          "min": "56",
+          "max": "71",
+          "name": "4"
+        },
+        {
+          "min": "72",
+          "max": "87",
+          "name": "5"
+        },
+        {
+          "min": "88",
+          "max": "103",
+          "name": "6"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "7"
+        },
+        {
+          "min": "120",
+          "max": "135",
+          "name": "8"
+        },
+        {
+          "min": "136",
+          "max": "151",
+          "name": "Sound-active 1"
+        },
+        {
+          "min": "152",
+          "max": "167",
+          "name": "Sound-active 2"
+        },
+        {
+          "min": "168",
+          "max": "183",
+          "name": "Sound-active 3"
+        },
+        {
+          "min": "184",
+          "max": "199",
+          "name": "Sound-active 4"
+        },
+        {
+          "min": "200",
+          "max": "215",
+          "name": "Sound-active 5"
+        },
+        {
+          "min": "216",
+          "max": "231",
+          "name": "Sound-active 6"
+        },
+        {
+          "min": "232",
+          "max": "247",
+          "name": "Sound-active 7"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound-active 8"
+        }
+      ]
+    },
+    {
+      "name": "Prism 1",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "12",
+          "name": "7-facet prism"
+        },
+        {
+          "min": "13",
+          "max": "130",
+          "name": "Rotation, slow to fast"
+        },
+        {
+          "min": "131",
+          "max": "247",
+          "name": "Reverse rotation, slow to fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "7-facet prism"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "11",
+          "name": "Open"
+        },
+        {
+          "min": "12",
+          "max": "17",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "18",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "29",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "30",
+          "max": "35",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "36",
+          "max": "41",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "42",
+          "max": "47",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "48",
+          "max": "53",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "54",
+          "max": "63",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "64",
+          "max": "73",
+          "name": "Gobo 8 shake, slow to fast"
+        },
+        {
+          "min": "74",
+          "max": "79",
+          "name": "Gobo 7 shake, slow to fast"
+        },
+        {
+          "min": "80",
+          "max": "85",
+          "name": "Gobo 6 shake, slow to fast"
+        },
+        {
+          "min": "86",
+          "max": "91",
+          "name": "Gobo 5 shake, slow to fast"
+        },
+        {
+          "min": "92",
+          "max": "97",
+          "name": "Gobo 4 shake, slow to fast"
+        },
+        {
+          "min": "98",
+          "max": "103",
+          "name": "Gobo 3 shake, slow to fast"
+        },
+        {
+          "min": "104",
+          "max": "109",
+          "name": "Gobo 2 shake, slow to fast"
+        },
+        {
+          "min": "110",
+          "max": "115",
+          "name": "Gobo 1 shake, slow to fast"
+        },
+        {
+          "min": "116",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Cycle effect, fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Reverse cycle effect, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Prism 2",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "12",
+          "name": "6-facet prism"
+        },
+        {
+          "min": "13",
+          "max": "130",
+          "name": "Rotation, slow to fast"
+        },
+        {
+          "min": "131",
+          "max": "247",
+          "name": "Reverse rotation, slow to fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "6-facet prism"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Auto Focus",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "127",
+          "name": "Auto focus gobo 1"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Auto focus gobo 2"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Frost",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100%"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 19,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Color Wheel",
+        "Static Gobo Wheel",
+        "Rotating Gobo Wheel",
+        "Gobo Rotation",
+        "Prism 1",
+        "Prism 2",
+        "Focus",
+        "Auto Focus",
+        "Zoom",
+        "Frost",
+        "Dimmer",
+        "Shutter",
+        "Function",
+        "Movement Macros"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 13,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color Wheel",
+        "Static Gobo Wheel",
+        "Rotating Gobo Wheel",
+        "Gobo Rotation",
+        "Prism 1",
+        "Prism 2",
+        "Focus",
+        "Auto Focus",
+        "Zoom",
+        "Frost",
+        "Shutter"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HRI 140W",
+      "lumens": "5414",
+      "colourTemperature": "9200"
+    },
+    "dimensions": {
+      "weight": "15.2",
+      "width": "220",
+      "height": "513",
+      "depth": "322"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "3",
+      "degreesMax": "28"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "260",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

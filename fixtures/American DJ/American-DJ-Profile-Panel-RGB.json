@@ -1,0 +1,539 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Profile Panel RGB",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Samuel Mollner",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "7",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Light Red"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Medium Red"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Boardway Pink"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Lavendar"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Indigo"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Light Green Blue"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Moss Green"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Primary Green"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Double CTB"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "Off"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Program 1"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Program 2"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Program 3"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Program 4"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Program 5"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Program 6"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Program 7"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Program 8"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Program 9"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Program 10"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Program 11"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Program 12"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Program 13"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Program 14"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Program 15"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Program 16"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 8",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Color Macros",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros",
+        "Strobe",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros",
+        "Strobe",
+        "Programs",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 24,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 27,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "Strobe",
+        "Programs",
+        "Master Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.9",
+      "width": "240",
+      "height": "425",
+      "depth": "515"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "37",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

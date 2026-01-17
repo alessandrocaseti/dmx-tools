@@ -1,0 +1,303 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "LED Mini PAR CAN RGBW 7x8W",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Joachim Wiedorn",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Master",
+      "type": "Unknown"
+    },
+    {
+      "name": "Stroboscope",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Stroboscope"
+        }
+      ]
+    },
+    {
+      "name": "Color Mode",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "Red"
+        },
+        {
+          "min": "17",
+          "max": "33",
+          "name": "Green"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Blue"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "White"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "Orange"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Cyan"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Lavender"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Pink"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Bright Green"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Magenta"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Pale Pink"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Amber"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Bright Magenta"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Pale Cyan"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Warm White"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "10",
+          "name": "Red"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Green"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Blue"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "White"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Yellow"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Cyan"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Magenta"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Pink"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Bright Green"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Lavender"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Pale Pink"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Amber"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Bright Magenta"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Pale Cyan"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "Warm White"
+        },
+        {
+          "min": "81",
+          "max": "150",
+          "name": "Color Jumping Speed"
+        },
+        {
+          "min": "151",
+          "max": "220",
+          "name": "Color Fading Speed"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "2-Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Master",
+        "Color Mode"
+      ]
+    },
+    {
+      "name": "3-Channel Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Master",
+        "Stroboscope",
+        "Color Macro"
+      ]
+    },
+    {
+      "name": "3-Channel Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4-Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "7-Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Master",
+        "Stroboscope",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "168",
+      "height": "183",
+      "depth": "186"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Zenit Z120 G2",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "jeremyAMMD",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Temperature",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color Temperature intensity (7200K - 3200K)"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Strobe functions",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe closed"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Pulse Random, slow -> fast"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Ramp up Random, slow -> fast"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Ramp down Random, slow -> fast"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random Strobe Effect, slow -> fast"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Strobe Break Effect, 5s.....1s (Short burst with break)"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe slow -> fast <1Hz - 20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Colour Macro & Colour Jumping & Colour Fading",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Colour off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Colour Jumping Stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Colour Jumping Speed slow -> fast / Colour 1 -> 12"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Colour Fading Speed slow -> fast / Colour 1 -> 12"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Device Settings",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "27",
+          "name": "Dimmer Response LED (Hold 3s)"
+        },
+        {
+          "min": "28",
+          "max": "49",
+          "name": "Dimmer Response Halogen (Hold 3s)"
+        },
+        {
+          "min": "50",
+          "max": "93",
+          "name": "No function"
+        },
+        {
+          "min": "94",
+          "max": "115",
+          "name": "PWM Frequency 800 Hz (Hold 5s)"
+        },
+        {
+          "min": "116",
+          "max": "137",
+          "name": "PWM Frequency 1200 Hz (Hold 5s)"
+        },
+        {
+          "min": "138",
+          "max": "159",
+          "name": "PWM Frequency 2000 Hz (Hold 5s)"
+        },
+        {
+          "min": "160",
+          "max": "181",
+          "name": "PWM Frequency 3600 Hz (Hold 5s)"
+        },
+        {
+          "min": "182",
+          "max": "203",
+          "name": "PWM Frequency 12 kHz (Hold 5s)"
+        },
+        {
+          "min": "204",
+          "max": "225",
+          "name": "PWM Frequency 25 kHz (Hold 5s)"
+        },
+        {
+          "min": "226",
+          "max": "247",
+          "name": "Zoom Reset (Hold 5s)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White fine",
+      "type": "White"
+    },
+    {
+      "name": "Zoom fine",
+      "type": "Beam"
+    },
+    {
+      "name": "Set Dimmer Curve",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "no function"
+        },
+        {
+          "min": "6",
+          "max": "63",
+          "name": "Linear Dimmer Curve"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Exponential Dimmer Curve"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Logarithmic Dimmer Curve"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "S-Curve Dimmer Curve"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour Temperature Correction (affects RGBW and Colour Macros)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Off"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "cold -> warm"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Color Temperature",
+        "Zoom"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Strobe functions",
+        "Colour Macro & Colour Jumping & Colour Fading",
+        "Zoom"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Strobe functions",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Colour Macro & Colour Jumping & Colour Fading",
+        "Zoom",
+        "Device Settings"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Zoom",
+        "Zoom fine"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 11,
+      "channels": [
+        "Dimmer",
+        "Strobe functions",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Colour Macro & Colour Jumping & Colour Fading",
+        "Colour Temperature Correction (affects RGBW and Colour Macros)",
+        "Zoom",
+        "Set Dimmer Curve",
+        "Device Settings"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 17,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe functions",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Colour Macro & Colour Jumping & Colour Fading",
+        "Colour Temperature Correction (affects RGBW and Colour Macros)",
+        "Zoom",
+        "Zoom fine",
+        "Set Dimmer Curve",
+        "Device Settings"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2117",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.3",
+      "width": "230",
+      "height": "230",
+      "depth": "300"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "7",
+      "degreesMax": "55"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "180",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

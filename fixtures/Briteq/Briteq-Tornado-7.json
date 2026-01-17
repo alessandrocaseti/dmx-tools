@@ -1,0 +1,430 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "Tornado 7",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No strobe"
+        },
+        {
+          "min": "1",
+          "max": "129",
+          "name": "Pulse from slow to fast"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Strobe from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "16 Bit Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Temperature",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Linear adjustment from low to high"
+        }
+      ]
+    },
+    {
+      "name": "Animation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Animation effects"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No"
+        },
+        {
+          "min": "1",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Green"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Blue"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Red + green"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Green + blue"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Red + blue"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Red + green + blue"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Rainbow effects (speed from slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Zone Master 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Zone Master 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "Zone Master 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White 4",
+      "type": "White"
+    },
+    {
+      "name": "Zone Master 4",
+      "type": "Intensity"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan 16 Bit",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Rotation",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Speed counterclockwise from slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Speed clockwise from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt 16 Bit",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Rotation",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Speed counterclockwise from slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Speed clockwise from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Control Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "DMX mode"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "Sound mode 1"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "Sound mode 2"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "Sound mode 3"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "Sound mode 4"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "Sound mode 5"
+        },
+        {
+          "min": "158",
+          "max": "187",
+          "name": "Sound mode 6"
+        },
+        {
+          "min": "188",
+          "max": "217",
+          "name": "Sound mode 0"
+        },
+        {
+          "min": "218",
+          "max": "247",
+          "name": "No function"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 17,
+      "channels": [
+        "Strobe",
+        "Dimmer",
+        "Color Temperature",
+        "Animation",
+        "Color Macro",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Pan",
+        "Pan 16 Bit",
+        "Pan Rotation",
+        "Tilt",
+        "Tilt 16 Bit",
+        "Tilt Rotation",
+        "Pan/Tilt Speed",
+        "Control Function"
+      ]
+    },
+    {
+      "name": "Extended",
+      "totalChannels": 34,
+      "channels": [
+        "Strobe",
+        "Dimmer",
+        "16 Bit Dimmer",
+        "Color Temperature",
+        "Animation",
+        "Color Macro",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Zone Master 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Zone Master 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Zone Master 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Zone Master 4",
+        "Pan",
+        "Pan 16 Bit",
+        "Pan Rotation",
+        "Tilt",
+        "Tilt 16 Bit",
+        "Tilt Rotation",
+        "Pan/Tilt Speed",
+        "Control Function"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "5029",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.36",
+      "width": "224",
+      "height": "296",
+      "depth": "224"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "12",
+      "degreesMax": "12"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "720",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "170",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

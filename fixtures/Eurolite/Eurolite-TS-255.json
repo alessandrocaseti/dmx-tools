@@ -1,0 +1,205 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TS-255",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jano Svitok",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "White"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Red"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Yellow"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Violet"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Green"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Orange"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Blue"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Pink"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo 7"
+        }
+      ]
+    },
+    {
+      "name": "Shutter, strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Closed"
+        },
+        {
+          "min": "15",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "250",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Gobo indexing"
+        },
+        {
+          "min": "5",
+          "max": "120",
+          "name": "CW rotation fast to slow"
+        },
+        {
+          "min": "121",
+          "max": "139",
+          "name": "Rotation STOP"
+        },
+        {
+          "min": "140",
+          "max": "255",
+          "name": "CCW rotation slow to fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Gobo",
+        "Shutter, strobe",
+        "Gobo rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "18000",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "8",
+      "width": "285",
+      "height": "555",
+      "depth": "270"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "575",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

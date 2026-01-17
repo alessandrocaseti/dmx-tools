@@ -1,0 +1,716 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Q-Spot 560 LED",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Chris Laurie",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "White"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Yellow"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Blue"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Orange"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Light Blue"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Light Blue / Magenta"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Magenta / Orange"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Orange / Blue"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Blue / Yellow"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Yellow / Green"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Green / Red"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Red / White"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "Rainbow / Linear Effect"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel 1",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Gobo"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "81",
+          "max": "95",
+          "name": "Shaking Gobo 7"
+        },
+        {
+          "min": "96",
+          "max": "110",
+          "name": "Shaking Gobo 6"
+        },
+        {
+          "min": "111",
+          "max": "125",
+          "name": "Shaking Gobo 5"
+        },
+        {
+          "min": "126",
+          "max": "140",
+          "name": "Shaking Gobo 4"
+        },
+        {
+          "min": "141",
+          "max": "155",
+          "name": "Shaking Gobo 3"
+        },
+        {
+          "min": "156",
+          "max": "170",
+          "name": "Shaking Gobo 2"
+        },
+        {
+          "min": "171",
+          "max": "185",
+          "name": "Shaking Gobo 1"
+        },
+        {
+          "min": "186",
+          "max": "255",
+          "name": "Flow effect"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel 2",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Gobo"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "71",
+          "max": "85",
+          "name": "Shaking Gobo 6"
+        },
+        {
+          "min": "86",
+          "max": "100",
+          "name": "Shaking Gobo 5"
+        },
+        {
+          "min": "101",
+          "max": "115",
+          "name": "Shaking Gobo 4"
+        },
+        {
+          "min": "116",
+          "max": "130",
+          "name": "Shaking Gobo 3"
+        },
+        {
+          "min": "131",
+          "max": "145",
+          "name": "Shaking Gobo 2"
+        },
+        {
+          "min": "146",
+          "max": "160",
+          "name": "Shaking Gobo 1"
+        },
+        {
+          "min": "161",
+          "max": "255",
+          "name": "Flow effect"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "60",
+          "name": "360° Indexing"
+        },
+        {
+          "min": "61",
+          "max": "150",
+          "name": "Rotation (slow-fast)"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "No function"
+        },
+        {
+          "min": "166",
+          "max": "255",
+          "name": "Counter Rotation (slow-fast)"
+        }
+      ]
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Prism Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "119",
+          "name": "Rotation (slow-fast)"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "No function"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Counter Rotation (slow-fast)"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Close"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe (slow-fast)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Strobe (slow-fast)"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Dim setting as set in product"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Pan/tilt black activation"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Pan/tilt black deactivation"
+        },
+        {
+          "min": "60",
+          "max": "139",
+          "name": "No function"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Auto program 1 (3s delay)"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Auto program 2 (3s delay)"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Test (3s delay)"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Custom program (3s delay)"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Sound2Light 1"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Sound2Light 2"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Reset (3s delay)"
+        },
+        {
+          "min": "220",
+          "max": "235",
+          "name": "No function"
+        },
+        {
+          "min": "236",
+          "max": "239",
+          "name": "Dim Curve0 (3s delay)"
+        },
+        {
+          "min": "240",
+          "max": "243",
+          "name": "Dim Curve1 (3s delay)"
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "Dim Curve2 (3s delay)"
+        },
+        {
+          "min": "248",
+          "max": "251",
+          "name": "Dim Curve3 (3s delay)"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Dim Curve4 (3s delay)"
+        }
+      ]
+    },
+    {
+      "name": "Prism effects",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "39",
+          "name": "Prism"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Effect1"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Effect2"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Effect3"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Effect4"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Effect5"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Effect6"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Effect7"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Effect8"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Effect9"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Effect10"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Effect11"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Effect12"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Effect13"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Effect14"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Effect15"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Effect16"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Effect17"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Effect18"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Effect19"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Effect20"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Prism"
+        }
+      ]
+    },
+    {
+      "name": "Iris",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "Linear iris"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Iris Effect1"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Iris Effect2"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Iris Effect3"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Iris Effect4"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Random Iris Effect"
+        }
+      ]
+    },
+    {
+      "name": "Focus Fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Focus fine control"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Advanced",
+      "totalChannels": 17,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Color Wheel",
+        "Gobo Wheel 1",
+        "Gobo Wheel 2",
+        "Gobo Rotation",
+        "Prism effects",
+        "Prism Rotation",
+        "Iris",
+        "Focus",
+        "Focus Fine",
+        "Dimmer",
+        "Strobe",
+        "Control"
+      ]
+    },
+    {
+      "name": "Basic",
+      "totalChannels": 13,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color Wheel",
+        "Gobo Wheel 1",
+        "Gobo Wheel 2",
+        "Gobo Rotation",
+        "Prism effects",
+        "Prism Rotation",
+        "Iris",
+        "Focus",
+        "Dimmer",
+        "Strobe",
+        "Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "5400",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "20",
+      "width": "408",
+      "height": "634",
+      "depth": "296"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "19",
+      "degreesMax": "19"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "302",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

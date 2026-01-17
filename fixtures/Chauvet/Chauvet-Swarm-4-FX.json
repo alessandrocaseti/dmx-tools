@@ -1,0 +1,716 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Swarm 4 FX",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Gianforte",
+  "channels": [
+    {
+      "name": "Moonflower 1 Control",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Amber"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Red + green"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Red + blue"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Red + amber"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Green + blue"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green + amber"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Blue + amber"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Red + green + blue"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Red + green + amber"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Red + blue + amber"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Green + blue + amber"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Red + green + blue + amber"
+        },
+        {
+          "min": "160",
+          "max": "224",
+          "name": "Auto single color loop"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "Auto multicolor loop"
+        }
+      ]
+    },
+    {
+      "name": "Moonflower 1 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "159",
+          "name": "Strobe speed, slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "254",
+          "name": "Program speed, slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound-Active"
+        }
+      ]
+    },
+    {
+      "name": "Moonflower 1 Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate clockwise, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate counter-clockwise, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Moonflower 2 Control",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Amber"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Red + green"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Red + blue"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Red + amber"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Green + blue"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green + amber"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Blue + amber"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Red + green + blue"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Red + green + amber"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Red + blue + amber"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Green + blue + amber"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Red + green + blue + amber"
+        },
+        {
+          "min": "160",
+          "max": "224",
+          "name": "Auto single color loop"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "Auto multicolor loop"
+        }
+      ]
+    },
+    {
+      "name": "Moonflower 2 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "159",
+          "name": "Strobe speed, slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "254",
+          "name": "Program speed, slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound-Active"
+        }
+      ]
+    },
+    {
+      "name": "Moonflower 2 Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate clockwise, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate counter-clockwise, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Lasers",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "49",
+          "name": "Red"
+        },
+        {
+          "min": "50",
+          "max": "89",
+          "name": "Green"
+        },
+        {
+          "min": "90",
+          "max": "129",
+          "name": "Red + green"
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "Red + green strobe"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Green + red strobe"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Red + green (alternate strobe)"
+        }
+      ]
+    },
+    {
+      "name": "Laser Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "254",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound-Active"
+        }
+      ]
+    },
+    {
+      "name": "Laser FX Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate clockwise, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate counter-clockwise, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Program",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Solid on"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Program 1"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Program 2"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Program 3"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Program 4"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Program 5"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Program 6"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Program 7"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Program 8"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Program 9"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Program 10"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Program 11"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Program 12"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Program 13"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Program 14"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Program 15"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Program 16"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Program 17"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Program 18"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Program 19"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program speed, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "254",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound-Active"
+        }
+      ]
+    },
+    {
+      "name": "Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "21",
+          "name": "Auto program 0"
+        },
+        {
+          "min": "22",
+          "max": "33",
+          "name": "Auto program 1"
+        },
+        {
+          "min": "34",
+          "max": "45",
+          "name": "Auto program 2"
+        },
+        {
+          "min": "46",
+          "max": "57",
+          "name": "Auto program 3"
+        },
+        {
+          "min": "58",
+          "max": "69",
+          "name": "Auto program 4"
+        },
+        {
+          "min": "70",
+          "max": "81",
+          "name": "Auto program 5"
+        },
+        {
+          "min": "82",
+          "max": "93",
+          "name": "Auto program 6"
+        },
+        {
+          "min": "94",
+          "max": "105",
+          "name": "Auto program 7"
+        },
+        {
+          "min": "106",
+          "max": "117",
+          "name": "Auto program 8"
+        },
+        {
+          "min": "118",
+          "max": "127",
+          "name": "Auto program 9"
+        },
+        {
+          "min": "128",
+          "max": "140",
+          "name": "Sound-Active program 0"
+        },
+        {
+          "min": "141",
+          "max": "153",
+          "name": "Sound-Active program 1"
+        },
+        {
+          "min": "154",
+          "max": "166",
+          "name": "Sound-Active program 2"
+        },
+        {
+          "min": "167",
+          "max": "179",
+          "name": "Sound-Active program 3"
+        },
+        {
+          "min": "180",
+          "max": "192",
+          "name": "Sound-Active program 4"
+        },
+        {
+          "min": "193",
+          "max": "205",
+          "name": "Sound-Active program 5"
+        },
+        {
+          "min": "206",
+          "max": "218",
+          "name": "Sound-Active program 6"
+        },
+        {
+          "min": "219",
+          "max": "231",
+          "name": "Sound-Active program 7"
+        },
+        {
+          "min": "232",
+          "max": "244",
+          "name": "Sound-Active program 8"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Sound-Active program 9"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Moonflower 1 Control",
+        "Moonflower 1 Strobe",
+        "Moonflower 1 Rotation",
+        "Moonflower 2 Control",
+        "Moonflower 2 Strobe",
+        "Moonflower 2 Rotation",
+        "Lasers",
+        "Laser Strobe",
+        "Laser FX Rotation",
+        "Strobe Program",
+        "Strobe Program Speed",
+        "Strobe Rate"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Program",
+        "Program Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "360",
+      "height": "107",
+      "depth": "290"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "54",
+      "degreesMax": "54"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "47",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

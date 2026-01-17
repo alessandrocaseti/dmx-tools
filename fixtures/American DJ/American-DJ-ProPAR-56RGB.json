@@ -1,0 +1,288 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "ProPAR 56RGB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "brian",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Colour Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No Macro"
+        },
+        {
+          "min": "1",
+          "max": "7",
+          "name": "Macro 0"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Macro 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Macro 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Macro 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Macro 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Macro 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Macro 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Macro 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Macro 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Macro 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Macro 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Macro 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Macro 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Macro 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Macro 14"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Macro 15"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Macro 16"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Macro 17"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Macro 18"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Macro 19"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Macro 20"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Macro 21"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Macro 22"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Macro 23"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Macro 24"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Macro 25"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Macro 26"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Macro 27"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Macro 28"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Macro 29"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Macro 30"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 31"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No strobe"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe Speed"
+        }
+      ]
+    },
+    {
+      "name": "Slow - Fast",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Colour Adjustment"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Colour Mixing"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "3 Colour Change"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "7 Colour Change"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "ParPRO 56RGB",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Colour Macros",
+        "Strobe Speed",
+        "Slow - Fast",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.46",
+      "width": "240",
+      "height": "240",
+      "depth": "313"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

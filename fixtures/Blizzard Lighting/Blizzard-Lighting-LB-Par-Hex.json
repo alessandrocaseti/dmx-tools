@@ -1,0 +1,230 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "LB-Par Hex",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber Intensity",
+      "type": "Amber"
+    },
+    {
+      "name": "White Intensity",
+      "type": "White"
+    },
+    {
+      "name": "UV Intensity",
+      "type": "UV"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Programs, Auto and Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Dimmer speed"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Program 1 (R/G/B jump)"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Program 2 (R/G/B fade-in/out)"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Program 3 (R/G/B fade)"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Program 4 (R/G/B/A/W/UV jump)"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Program 5 (R/G/B/A/W/UV fade-in/out)"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Program 6 (R/G/B/A/W/UV fade)"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Program 7 (7-color jump)"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Program 8 (7-color fade-in/out)"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Program 9 (7-color fade)"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Program 10 (multicolor jump)"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Program 11 (multicolor fade-in/out)"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Program 12 (multicolor fade)"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Auto mode (loop all programs)"
+        },
+        {
+          "min": "140",
+          "max": "255",
+          "name": "Sound active mode"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fade speed (slow <--> fast)"
+        }
+      ]
+    },
+    {
+      "name": "32-Bit Dimmer",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "As set in the control menu display"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "Mode 0 = 8-bit, 256 dimming steps"
+        },
+        {
+          "min": "56",
+          "max": "105",
+          "name": "Mode 1 = 32-bit, 0-25% intensity range"
+        },
+        {
+          "min": "106",
+          "max": "155",
+          "name": "Mode 2 = 32-bit, 0-50% intensity range"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "Mode 3 = 32-bit, 0-75% intensity range"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "Mode 4 = 32-bit, full intensity dimming"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "6-Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Red Intensity",
+        "Green Intensity",
+        "Blue Intensity",
+        "Amber Intensity",
+        "White Intensity",
+        "UV Intensity"
+      ]
+    },
+    {
+      "name": "11-Channel",
+      "totalChannels": 11,
+      "channels": [
+        "Dimmer",
+        "Red Intensity",
+        "Green Intensity",
+        "Blue Intensity",
+        "Amber Intensity",
+        "White Intensity",
+        "UV Intensity",
+        "Strobe",
+        "Programs, Auto and Sound Active",
+        "Auto Program Speed",
+        "32-Bit Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1235",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.3",
+      "width": "215",
+      "height": "215",
+      "depth": "116"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "42",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

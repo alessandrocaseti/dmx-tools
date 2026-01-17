@@ -1,0 +1,1636 @@
+{
+  "version": "1.2",
+  "manufacturer": "Acme",
+  "model": "Ginamp",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michael Tosatto",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Color macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Null"
+        },
+        {
+          "min": "10",
+          "max": "17",
+          "name": "Color 1"
+        },
+        {
+          "min": "18",
+          "max": "24",
+          "name": "Color 2"
+        },
+        {
+          "min": "25",
+          "max": "32",
+          "name": "Color 3"
+        },
+        {
+          "min": "33",
+          "max": "39",
+          "name": "Color 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Color 5"
+        },
+        {
+          "min": "48",
+          "max": "54",
+          "name": "Color 6"
+        },
+        {
+          "min": "55",
+          "max": "61",
+          "name": "Color 7"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Color 8"
+        },
+        {
+          "min": "70",
+          "max": "76",
+          "name": "Color 9"
+        },
+        {
+          "min": "77",
+          "max": "84",
+          "name": "Color 10"
+        },
+        {
+          "min": "85",
+          "max": "91",
+          "name": "Color 11"
+        },
+        {
+          "min": "92",
+          "max": "99",
+          "name": "Color 12"
+        },
+        {
+          "min": "100",
+          "max": "106",
+          "name": "Color 13"
+        },
+        {
+          "min": "107",
+          "max": "113",
+          "name": "Color 14"
+        },
+        {
+          "min": "114",
+          "max": "121",
+          "name": "Color 15"
+        },
+        {
+          "min": "122",
+          "max": "128",
+          "name": "Color 16"
+        },
+        {
+          "min": "129",
+          "max": "136",
+          "name": "Color 17"
+        },
+        {
+          "min": "137",
+          "max": "143",
+          "name": "Color 18"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Color 19"
+        },
+        {
+          "min": "152",
+          "max": "158",
+          "name": "Color 20"
+        },
+        {
+          "min": "159",
+          "max": "165",
+          "name": "Color 21"
+        },
+        {
+          "min": "166",
+          "max": "173",
+          "name": "Color 22"
+        },
+        {
+          "min": "174",
+          "max": "180",
+          "name": "Color 23"
+        },
+        {
+          "min": "181",
+          "max": "188",
+          "name": "Color 24"
+        },
+        {
+          "min": "189",
+          "max": "195",
+          "name": "Color 25"
+        },
+        {
+          "min": "196",
+          "max": "203",
+          "name": "Color 26"
+        },
+        {
+          "min": "204",
+          "max": "210",
+          "name": "Color 27"
+        },
+        {
+          "min": "211",
+          "max": "217",
+          "name": "Color 28"
+        },
+        {
+          "min": "218",
+          "max": "225",
+          "name": "Color 29"
+        },
+        {
+          "min": "226",
+          "max": "232",
+          "name": "Color 30"
+        },
+        {
+          "min": "233",
+          "max": "240",
+          "name": "Color 31"
+        },
+        {
+          "min": "241",
+          "max": "247",
+          "name": "Color 32"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Color 33"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe duration",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Duration"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Blackout"
+        },
+        {
+          "min": "7",
+          "max": "255",
+          "name": "Strobe from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Null"
+        },
+        {
+          "min": "6",
+          "max": "50",
+          "name": "Ramp up"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Ramp down"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Ramp up-down"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Lightining"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Random"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer (RGB)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine (RGB)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe duration (RGB)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Duration"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate (RGB)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Blackout"
+        },
+        {
+          "min": "7",
+          "max": "255",
+          "name": "Strobe from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe (RGB)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Null"
+        },
+        {
+          "min": "6",
+          "max": "50",
+          "name": "Ramp up"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Ramp down"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Ramp up-down"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Lightining"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Random"
+        }
+      ]
+    },
+    {
+      "name": "Macro (RGB)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Null"
+        },
+        {
+          "min": "6",
+          "max": "15",
+          "name": "Macro 1"
+        },
+        {
+          "min": "16",
+          "max": "25",
+          "name": "Macro 2"
+        },
+        {
+          "min": "26",
+          "max": "35",
+          "name": "Macro 3"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Macro 4"
+        },
+        {
+          "min": "46",
+          "max": "55",
+          "name": "Macro 5"
+        },
+        {
+          "min": "56",
+          "max": "65",
+          "name": "Macro 6"
+        },
+        {
+          "min": "66",
+          "max": "75",
+          "name": "Macro 7"
+        },
+        {
+          "min": "76",
+          "max": "85",
+          "name": "Macro 8"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "Macro 9"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Macro 10"
+        },
+        {
+          "min": "106",
+          "max": "115",
+          "name": "Macro 11"
+        },
+        {
+          "min": "116",
+          "max": "125",
+          "name": "Macro 12"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Macro 13"
+        },
+        {
+          "min": "136",
+          "max": "145",
+          "name": "Macro 14"
+        },
+        {
+          "min": "146",
+          "max": "155",
+          "name": "Macro 15"
+        },
+        {
+          "min": "156",
+          "max": "165",
+          "name": "Macro 16"
+        },
+        {
+          "min": "166",
+          "max": "175",
+          "name": "Macro 17"
+        },
+        {
+          "min": "176",
+          "max": "185",
+          "name": "Macro 18"
+        },
+        {
+          "min": "186",
+          "max": "195",
+          "name": "Macro 19"
+        },
+        {
+          "min": "196",
+          "max": "205",
+          "name": "Macro 20"
+        },
+        {
+          "min": "206",
+          "max": "215",
+          "name": "Macro 21"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "Macro 22"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Macro 23"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Macro 24"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Macro 25"
+        }
+      ]
+    },
+    {
+      "name": "Macro Speed (RGB)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Normal, Slow to Fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Inversion, Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer (W)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine (W)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe duration (W)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Duration"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate (W)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Blackout"
+        },
+        {
+          "min": "7",
+          "max": "255",
+          "name": "Strobe from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe (W)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Null"
+        },
+        {
+          "min": "6",
+          "max": "50",
+          "name": "Ramp up"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Ramp down"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Ramp up-down"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Lightining"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Random"
+        }
+      ]
+    },
+    {
+      "name": "Macro (W)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Null"
+        },
+        {
+          "min": "6",
+          "max": "15",
+          "name": "Macro 1"
+        },
+        {
+          "min": "16",
+          "max": "25",
+          "name": "Macro 2"
+        },
+        {
+          "min": "26",
+          "max": "35",
+          "name": "Macro 3"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Macro 4"
+        },
+        {
+          "min": "46",
+          "max": "55",
+          "name": "Macro 5"
+        },
+        {
+          "min": "56",
+          "max": "65",
+          "name": "Macro 6"
+        },
+        {
+          "min": "66",
+          "max": "75",
+          "name": "Macro 7"
+        },
+        {
+          "min": "76",
+          "max": "85",
+          "name": "Macro 8"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "Macro 9"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Macro 10"
+        },
+        {
+          "min": "106",
+          "max": "115",
+          "name": "Macro 11"
+        },
+        {
+          "min": "116",
+          "max": "125",
+          "name": "Macro 12"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Macro 13"
+        },
+        {
+          "min": "136",
+          "max": "145",
+          "name": "Macro 14"
+        },
+        {
+          "min": "146",
+          "max": "155",
+          "name": "Macro 15"
+        },
+        {
+          "min": "156",
+          "max": "165",
+          "name": "Macro 16"
+        },
+        {
+          "min": "166",
+          "max": "175",
+          "name": "Macro 17"
+        },
+        {
+          "min": "176",
+          "max": "185",
+          "name": "Macro 18"
+        },
+        {
+          "min": "186",
+          "max": "195",
+          "name": "Macro 19"
+        },
+        {
+          "min": "196",
+          "max": "205",
+          "name": "Macro 20"
+        },
+        {
+          "min": "206",
+          "max": "215",
+          "name": "Macro 21"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "Macro 22"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Macro 23"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Macro 24"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Macro 25"
+        }
+      ]
+    },
+    {
+      "name": "Macro Speed (W)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Normal, Slow to Fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Inversion, Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Normal, Slow to Fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Inversion, Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 8",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 9",
+      "type": "Red"
+    },
+    {
+      "name": "Green 9",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 9",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 10",
+      "type": "Red"
+    },
+    {
+      "name": "Green 10",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 10",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 11",
+      "type": "Red"
+    },
+    {
+      "name": "Green 11",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 11",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 12",
+      "type": "Red"
+    },
+    {
+      "name": "Green 12",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 12",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 13",
+      "type": "Red"
+    },
+    {
+      "name": "Green 13",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 13",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 14",
+      "type": "Red"
+    },
+    {
+      "name": "Green 14",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 14",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 15",
+      "type": "Red"
+    },
+    {
+      "name": "Green 15",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 15",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 16",
+      "type": "Red"
+    },
+    {
+      "name": "Green 16",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 16",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 17",
+      "type": "Red"
+    },
+    {
+      "name": "Green 17",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 17",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 18",
+      "type": "Red"
+    },
+    {
+      "name": "Green 18",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 18",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 19",
+      "type": "Red"
+    },
+    {
+      "name": "Green 19",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 19",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 20",
+      "type": "Red"
+    },
+    {
+      "name": "Green 20",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 20",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 21",
+      "type": "Red"
+    },
+    {
+      "name": "Green 21",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 21",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 22",
+      "type": "Red"
+    },
+    {
+      "name": "Green 22",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 22",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 23",
+      "type": "Red"
+    },
+    {
+      "name": "Green 23",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 23",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 24",
+      "type": "Red"
+    },
+    {
+      "name": "Green 24",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 24",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 25",
+      "type": "Red"
+    },
+    {
+      "name": "Green 25",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 25",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 26",
+      "type": "Red"
+    },
+    {
+      "name": "Green 26",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 26",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 27",
+      "type": "Red"
+    },
+    {
+      "name": "Green 27",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 27",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 28",
+      "type": "Red"
+    },
+    {
+      "name": "Green 28",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 28",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 29",
+      "type": "Red"
+    },
+    {
+      "name": "Green 29",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 29",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 30",
+      "type": "Red"
+    },
+    {
+      "name": "Green 30",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 30",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 31",
+      "type": "Red"
+    },
+    {
+      "name": "Green 31",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 31",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 32",
+      "type": "Red"
+    },
+    {
+      "name": "Green 32",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 32",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 33",
+      "type": "Red"
+    },
+    {
+      "name": "Green 33",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 33",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 34",
+      "type": "Red"
+    },
+    {
+      "name": "Green 34",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 34",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 35",
+      "type": "Red"
+    },
+    {
+      "name": "Green 35",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 35",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 36",
+      "type": "Red"
+    },
+    {
+      "name": "Green 36",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 36",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 37",
+      "type": "Red"
+    },
+    {
+      "name": "Green 37",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 37",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 38",
+      "type": "Red"
+    },
+    {
+      "name": "Green 38",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 38",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 39",
+      "type": "Red"
+    },
+    {
+      "name": "Green 39",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 39",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 40",
+      "type": "Red"
+    },
+    {
+      "name": "Green 40",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 40",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "White 4",
+      "type": "White"
+    },
+    {
+      "name": "White 5",
+      "type": "White"
+    },
+    {
+      "name": "White 6",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer",
+        "Dimmer fine"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 13,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color macro",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe duration",
+        "Strobe Rate",
+        "Strobe",
+        "Macro (RGB)",
+        "Macro (W)",
+        "Macro Speed"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 18,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color macro",
+        "Dimmer (RGB)",
+        "Dimmer fine (RGB)",
+        "Strobe duration (RGB)",
+        "Strobe Rate (RGB)",
+        "Strobe (RGB)",
+        "Macro (RGB)",
+        "Macro Speed (RGB)",
+        "Dimmer (W)",
+        "Dimmer fine (W)",
+        "Strobe duration (W)",
+        "Strobe Rate (W)",
+        "Strobe (W)",
+        "Macro (W)",
+        "Macro Speed (W)"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 36,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "Dimmer (RGB)",
+        "Dimmer fine (RGB)",
+        "Strobe duration (RGB)",
+        "Strobe Rate (RGB)",
+        "Strobe (RGB)",
+        "White 1",
+        "White 2",
+        "Dimmer (W)",
+        "Dimmer fine (W)",
+        "Strobe duration (W)",
+        "Strobe Rate (W)",
+        "Strobe (W)"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 126,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "Red 9",
+        "Green 9",
+        "Blue 9",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "Red 11",
+        "Green 11",
+        "Blue 11",
+        "Red 12",
+        "Green 12",
+        "Blue 12",
+        "Red 13",
+        "Green 13",
+        "Blue 13",
+        "Red 14",
+        "Green 14",
+        "Blue 14",
+        "Red 15",
+        "Green 15",
+        "Blue 15",
+        "Red 16",
+        "Green 16",
+        "Blue 16",
+        "Red 17",
+        "Green 17",
+        "Blue 17",
+        "Red 18",
+        "Green 18",
+        "Blue 18",
+        "Red 19",
+        "Green 19",
+        "Blue 19",
+        "Red 20",
+        "Green 20",
+        "Blue 20",
+        "Red 21",
+        "Green 21",
+        "Blue 21",
+        "Red 22",
+        "Green 22",
+        "Blue 22",
+        "Red 23",
+        "Green 23",
+        "Blue 23",
+        "Red 24",
+        "Green 24",
+        "Blue 24",
+        "Red 25",
+        "Green 25",
+        "Blue 25",
+        "Red 26",
+        "Green 26",
+        "Blue 26",
+        "Red 27",
+        "Green 27",
+        "Blue 27",
+        "Red 28",
+        "Green 28",
+        "Blue 28",
+        "Red 29",
+        "Green 29",
+        "Blue 29",
+        "Red 30",
+        "Green 30",
+        "Blue 30",
+        "Red 31",
+        "Green 31",
+        "Blue 31",
+        "Red 32",
+        "Green 32",
+        "Blue 32",
+        "Red 33",
+        "Green 33",
+        "Blue 33",
+        "Red 34",
+        "Green 34",
+        "Blue 34",
+        "Red 35",
+        "Green 35",
+        "Blue 35",
+        "Red 36",
+        "Green 36",
+        "Blue 36",
+        "Red 37",
+        "Green 37",
+        "Blue 37",
+        "Red 38",
+        "Green 38",
+        "Blue 38",
+        "Red 39",
+        "Green 39",
+        "Blue 39",
+        "Red 40",
+        "Green 40",
+        "Blue 40",
+        "White 1",
+        "White 2",
+        "White 3",
+        "White 4",
+        "White 5",
+        "White 6"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 131,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "Red 9",
+        "Green 9",
+        "Blue 9",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "Red 11",
+        "Green 11",
+        "Blue 11",
+        "Red 12",
+        "Green 12",
+        "Blue 12",
+        "Red 13",
+        "Green 13",
+        "Blue 13",
+        "Red 14",
+        "Green 14",
+        "Blue 14",
+        "Red 15",
+        "Green 15",
+        "Blue 15",
+        "Red 16",
+        "Green 16",
+        "Blue 16",
+        "Red 17",
+        "Green 17",
+        "Blue 17",
+        "Red 18",
+        "Green 18",
+        "Blue 18",
+        "Red 19",
+        "Green 19",
+        "Blue 19",
+        "Red 20",
+        "Green 20",
+        "Blue 20",
+        "Red 21",
+        "Green 21",
+        "Blue 21",
+        "Red 22",
+        "Green 22",
+        "Blue 22",
+        "Red 23",
+        "Green 23",
+        "Blue 23",
+        "Red 24",
+        "Green 24",
+        "Blue 24",
+        "Red 25",
+        "Green 25",
+        "Blue 25",
+        "Red 26",
+        "Green 26",
+        "Blue 26",
+        "Red 27",
+        "Green 27",
+        "Blue 27",
+        "Red 28",
+        "Green 28",
+        "Blue 28",
+        "Red 29",
+        "Green 29",
+        "Blue 29",
+        "Red 30",
+        "Green 30",
+        "Blue 30",
+        "Red 31",
+        "Green 31",
+        "Blue 31",
+        "Red 32",
+        "Green 32",
+        "Blue 32",
+        "Red 33",
+        "Green 33",
+        "Blue 33",
+        "Red 34",
+        "Green 34",
+        "Blue 34",
+        "Red 35",
+        "Green 35",
+        "Blue 35",
+        "Red 36",
+        "Green 36",
+        "Blue 36",
+        "Red 37",
+        "Green 37",
+        "Blue 37",
+        "Red 38",
+        "Green 38",
+        "Blue 38",
+        "Red 39",
+        "Green 39",
+        "Blue 39",
+        "Red 40",
+        "Green 40",
+        "Blue 40",
+        "White 1",
+        "White 2",
+        "White 3",
+        "White 4",
+        "White 5",
+        "White 6",
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe duration",
+        "Strobe Rate",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.2",
+      "width": "505",
+      "height": "285",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "89",
+      "degreesMax": "121"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "320",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

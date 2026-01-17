@@ -1,0 +1,84 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eliminator Lighting",
+  "model": "Electro 86",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "chivey",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Intensity and Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "189",
+          "name": "Intensity"
+        },
+        {
+          "min": "190",
+          "max": "250",
+          "name": "Strobe (Slow->Fast)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Intensity and Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.26",
+      "width": "217",
+      "height": "168",
+      "depth": "182"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "10",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

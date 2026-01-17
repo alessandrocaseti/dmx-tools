@@ -1,0 +1,124 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "200b",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Heikki Junnila",
+  "channels": [
+    {
+      "name": "Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "RGB"
+        },
+        {
+          "min": "30",
+          "max": "59",
+          "name": "Pulse Strobe 0-100%"
+        },
+        {
+          "min": "60",
+          "max": "89",
+          "name": "Pulse Strobe 100-0%"
+        },
+        {
+          "min": "90",
+          "max": "119",
+          "name": "Pulse Strobe 100-0%-100%"
+        },
+        {
+          "min": "120",
+          "max": "149",
+          "name": "Color Macro"
+        },
+        {
+          "min": "150",
+          "max": "179",
+          "name": "RGB Chase"
+        },
+        {
+          "min": "180",
+          "max": "209",
+          "name": "Colour change"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "Colour change with fade"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound activated"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "All",
+      "totalChannels": 6,
+      "channels": [
+        "Function",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "930",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "132",
+      "height": "249",
+      "depth": "236"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "19",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

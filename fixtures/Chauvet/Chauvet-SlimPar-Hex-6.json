@@ -1,0 +1,228 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "SlimPar Hex 6",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Yinon Sahar",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No strobe"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color Macros"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No program"
+        },
+        {
+          "min": "11",
+          "max": "50",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "201",
+          "max": "225",
+          "name": "Sound Active mode (6-colors)"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Sound Active mode (63-colors)"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed/Sound Sensitive",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto Program Speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer mode is manually set in Menue Options"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer Mode 1 (fast speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer Mode 2 (meduim speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer Mode 3 (slow speed)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV",
+        "Strobing"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 12,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV",
+        "Strobing",
+        "Color Macro",
+        "Programs",
+        "Program Speed/Sound Sensitive",
+        "Dimmer Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1184",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.02",
+      "width": "213",
+      "height": "120",
+      "depth": "224"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

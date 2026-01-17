@@ -1,0 +1,581 @@
+{
+  "version": "1.2",
+  "manufacturer": "Expolite",
+  "model": "TourLED MC180",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Luke Bonett",
+  "channels": [
+    {
+      "name": "Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Intensity (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Hue Fine",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "CCT",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "2700K"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "3000K"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "3200K"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "3500K"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "4000K"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "4200K"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "4500K"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "5600K"
+        },
+        {
+          "min": "171",
+          "max": "190",
+          "name": "6000K"
+        },
+        {
+          "min": "191",
+          "max": "210",
+          "name": "6500K"
+        },
+        {
+          "min": "211",
+          "max": "230",
+          "name": "7200K"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "8000K"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "Strobe Slow to Fast 0 - 25Hz"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No function"
+        },
+        {
+          "min": "110",
+          "max": "179",
+          "name": "Lightning Strobe"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Random Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Zoom Control",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "200",
+          "name": "No function"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Zoom Reset"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "Function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Reset Dimmer Speed from Display Menu"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "OFF"
+        },
+        {
+          "min": "30",
+          "max": "69",
+          "name": "DIM1"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "DIM2"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "DIM3"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "DIM4"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "Red 100% / Green Up / Blue 0%"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "Red Down / Green 100% / Blue 0%"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "Red 0% / Green 100% / Blue Up"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "Red 0% / Green Down / Blue 100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "Red Up / Green 0% / Blue 100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "Red 100% / Green 0% / Blue Down"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "Red 100% / Green Up / Blue Up"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "Red Down / Green Down / Blue 100%"
+        },
+        {
+          "min": "171",
+          "max": "195",
+          "name": "All LEDS at Full Output"
+        },
+        {
+          "min": "196",
+          "max": "200",
+          "name": "2700K"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "3000K"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "3200K"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "3500K"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "4000K"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "4200K"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "4500K"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "5600K"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "6000K"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "6500K"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "7200K"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "8000K"
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "No function"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Auto 1"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Auto 2"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Auto 3"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Auto 4"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "Auto 5"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "Auto 6"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Auto 7"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Auto 8"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Auto 9"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Auto 10"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Program 1"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Program 2"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Program 3"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Program 4"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "Program 5"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Program 6"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "Program 7"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "Program 8"
+        },
+        {
+          "min": "221",
+          "max": "230",
+          "name": "Program 9"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Program 10"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed Adjustment",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green Fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White Fine",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "HSIC",
+      "totalChannels": 9,
+      "channels": [
+        "Intensity",
+        "Hue",
+        "Hue Fine",
+        "Saturation",
+        "CCT",
+        "Strobe",
+        "Zoom",
+        "Zoom Control",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "SSP",
+      "totalChannels": 9,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Zoom",
+        "Zoom Control",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "Tour",
+      "totalChannels": 12,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macros",
+        "Strobe",
+        "Auto",
+        "Auto Speed Adjustment",
+        "Zoom",
+        "Zoom Control",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "TR16",
+      "totalChannels": 17,
+      "channels": [
+        "Master Dimmer",
+        "Master Dimmer Fine",
+        "Red",
+        "Red Fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "White",
+        "White Fine",
+        "Color Macros",
+        "Strobe",
+        "Auto",
+        "Auto Speed Adjustment",
+        "Zoom",
+        "Zoom Control",
+        "Dimmer Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.1",
+      "width": "311",
+      "height": "250",
+      "depth": "404"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4.5",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "180",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

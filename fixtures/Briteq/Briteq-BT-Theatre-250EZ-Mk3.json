@@ -1,0 +1,334 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BT Theatre 250EZ Mk3",
+  "type": "Dimmer",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Christoph Müllner",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "WW",
+      "type": "Unknown"
+    },
+    {
+      "name": "WW fine",
+      "type": "Unknown"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber fine",
+      "type": "Amber"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "125",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Open"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Random strobe slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "15",
+          "name": "Redshift On (hold 3s)"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Redshift Off (hold 3s)"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "Curve: linear (hold 3s)"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Curve: square (hold 3s)"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Curve: inv. square (hold 3s)"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Curve: S-curve (hold 3s)"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "No function"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Dim speed: LED (hold 3s)"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Dim speed: menu (hold 3s)"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "No function"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "No DMX: hold (hold 3s)"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "No DMX: blackout (hold 3s)"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "No DMX: manual (hold 3s)"
+        },
+        {
+          "min": "106",
+          "max": "125",
+          "name": "No function"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "Display flash on (hold 3s)"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "Display flash off (hold 3s)"
+        },
+        {
+          "min": "136",
+          "max": "155",
+          "name": "No function"
+        },
+        {
+          "min": "156",
+          "max": "160",
+          "name": "Fan mode: silent (hold 3s)"
+        },
+        {
+          "min": "161",
+          "max": "165",
+          "name": "Fan mode: auto (hold 3s)"
+        },
+        {
+          "min": "166",
+          "max": "170",
+          "name": "Fan mode: high (hold 3s)"
+        },
+        {
+          "min": "171",
+          "max": "190",
+          "name": "No function"
+        },
+        {
+          "min": "191",
+          "max": "195",
+          "name": "PWM 0.6 kHz (hold 3s)"
+        },
+        {
+          "min": "196",
+          "max": "200",
+          "name": "PWM 1.2 kHz (hold 3s)"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "PWM 1.8 kHz (hold 3s)"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "PWM 2.4 kHz (hold 3s)"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "PWM 3.0 kHz (hold 3s)"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "PWM 3.6 kHz (hold 3s)"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "PWM 4.2 kHz (hold 3s)"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "PWM 4.8 kHz (hold 3s)"
+        },
+        {
+          "min": "231",
+          "max": "240",
+          "name": "No function"
+        },
+        {
+          "min": "241",
+          "max": "243",
+          "name": "Zoom reset (hold 3s)"
+        },
+        {
+          "min": "244",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 Channel Dimmer",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "2 Channel Dimmer + Strobe",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "4 Channel Dimmer + Strobe + Focus + Control",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Focus",
+        "Control"
+      ]
+    },
+    {
+      "name": "2 Channel Dimmer 16 bit",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine"
+      ]
+    },
+    {
+      "name": "3 Channel Dimmer 16 bit + Strobe",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "5 Channel Dimmer 16 bit + Strobe + Focus + Control",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Focus",
+        "Control"
+      ]
+    },
+    {
+      "name": "9 Channel Full",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "WW",
+        "WW fine",
+        "Amber",
+        "Amber fine",
+        "Strobe",
+        "Focus",
+        "Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "14000",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "9",
+      "width": "336",
+      "height": "297",
+      "depth": "458"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "10",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "250",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

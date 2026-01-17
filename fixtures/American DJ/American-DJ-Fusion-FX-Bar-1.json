@@ -1,0 +1,121 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Fusion FX Bar 1",
+  "type": "Effect",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Scott",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "190",
+          "name": "Master Dimmer 0 > 100% (Off - On)"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Sound Active"
+        },
+        {
+          "min": "201",
+          "max": "247",
+          "name": "Strobing (Slow - Fast)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Full On"
+        }
+      ]
+    },
+    {
+      "name": "Moon Flower Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Rotation"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Clockwise Rotation (Fast - Slow)"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "No Rotation"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Counter-Clockwise Rotation (Slow - Fast)"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No Rotation"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "5 Channel (Default)",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer/Strobe",
+        "Moon Flower Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.7",
+      "width": "538",
+      "height": "263",
+      "depth": "143"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "25",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

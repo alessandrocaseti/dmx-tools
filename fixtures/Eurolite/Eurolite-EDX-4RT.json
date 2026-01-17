@@ -1,0 +1,67 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "EDX-4RT",
+  "type": "Dimmer",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Frank Rosquin",
+  "channels": [
+    {
+      "name": "CH1",
+      "type": "Intensity"
+    },
+    {
+      "name": "CH2",
+      "type": "Intensity"
+    },
+    {
+      "name": "CH3",
+      "type": "Intensity"
+    },
+    {
+      "name": "CH4",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "CH1",
+        "CH2",
+        "CH3",
+        "CH4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "280",
+      "height": "75",
+      "depth": "195"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "3680",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

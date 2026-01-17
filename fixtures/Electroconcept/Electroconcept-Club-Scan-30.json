@@ -1,0 +1,342 @@
+{
+  "version": "1.2",
+  "manufacturer": "Electroconcept",
+  "model": "Club Scan 30",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Clément Delabroye",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "White"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Yellow"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Purple"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Cyan"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Orange"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Orange + Cyan"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Cyan + Purple"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Purple + Yellow"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Yellow + Blue"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Blue + Green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Green + Red"
+        },
+        {
+          "min": "140",
+          "max": "255",
+          "name": "Rotation (Slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Open"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 1 Shake"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 2 Shake"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 3 Shake"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 4 Shake"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 5 Shake"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 6 Shake"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo 7 Shake"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotation ( Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Closed"
+        },
+        {
+          "min": "10",
+          "max": "249",
+          "name": "Strobe ( Slow to Fast)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Show modes",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "59",
+          "name": "No function"
+        },
+        {
+          "min": "60",
+          "max": "159",
+          "name": "Program"
+        },
+        {
+          "min": "160",
+          "max": "255",
+          "name": "Auto + sound"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No function"
+        },
+        {
+          "min": "21",
+          "max": "100",
+          "name": "Reset Pan"
+        },
+        {
+          "min": "101",
+          "max": "200",
+          "name": "Reset Tilt"
+        },
+        {
+          "min": "201",
+          "max": "249",
+          "name": "Reset Pan/Tilt"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Reset All"
+        }
+      ]
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color",
+        "Gobo",
+        "Shutter",
+        "Dimmer",
+        "Pan/Tilt speed",
+        "Show modes",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Color",
+        "Gobo",
+        "Shutter",
+        "Dimmer",
+        "Pan/Tilt speed",
+        "Show modes",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.55",
+      "width": "165",
+      "height": "330",
+      "depth": "130"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "13.6"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "165",
+      "tiltMax": "70"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

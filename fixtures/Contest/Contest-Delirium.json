@@ -1,0 +1,170 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "Delirium",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Vincent",
+  "channels": [
+    {
+      "name": "Functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "129",
+          "name": "Synchronous show"
+        },
+        {
+          "min": "130",
+          "max": "249",
+          "name": "Asynchronous show"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Musical Mode"
+        }
+      ]
+    },
+    {
+      "name": "Combos",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "21",
+          "name": "Combo 1"
+        },
+        {
+          "min": "22",
+          "max": "42",
+          "name": "Combo 2"
+        },
+        {
+          "min": "43",
+          "max": "63",
+          "name": "Combo 3"
+        },
+        {
+          "min": "64",
+          "max": "85",
+          "name": "Combo 4"
+        },
+        {
+          "min": "86",
+          "max": "106",
+          "name": "Combo 5"
+        },
+        {
+          "min": "107",
+          "max": "127",
+          "name": "Combo 6"
+        },
+        {
+          "min": "128",
+          "max": "149",
+          "name": "Combo 7"
+        },
+        {
+          "min": "150",
+          "max": "170",
+          "name": "Combo 8"
+        },
+        {
+          "min": "171",
+          "max": "191",
+          "name": "Combo 9"
+        },
+        {
+          "min": "192",
+          "max": "213",
+          "name": "Combo 10"
+        },
+        {
+          "min": "214",
+          "max": "234",
+          "name": "Combo 11"
+        },
+        {
+          "min": "235",
+          "max": "255",
+          "name": "Combo 12"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "From slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "On"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "From slow to fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Functions",
+        "Combos",
+        "Speed",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.8",
+      "width": "310",
+      "height": "205",
+      "depth": "310"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

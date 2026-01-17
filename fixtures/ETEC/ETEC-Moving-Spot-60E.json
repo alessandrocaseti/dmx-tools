@@ -1,0 +1,459 @@
+{
+  "version": "1.2",
+  "manufacturer": "ETEC",
+  "model": "Moving Spot 60E",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Freasy",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Strobe closed"
+        },
+        {
+          "min": "5",
+          "max": "250",
+          "name": "Strobe from slow to fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "White (Open)"
+        },
+        {
+          "min": "5",
+          "max": "13",
+          "name": "White/Red"
+        },
+        {
+          "min": "14",
+          "max": "22",
+          "name": "Red"
+        },
+        {
+          "min": "23",
+          "max": "31",
+          "name": "Red/Orange"
+        },
+        {
+          "min": "32",
+          "max": "40",
+          "name": "Orange"
+        },
+        {
+          "min": "41",
+          "max": "49",
+          "name": "Orange/Green"
+        },
+        {
+          "min": "50",
+          "max": "58",
+          "name": "Green"
+        },
+        {
+          "min": "59",
+          "max": "67",
+          "name": "Green/Blue"
+        },
+        {
+          "min": "68",
+          "max": "76",
+          "name": "Blue"
+        },
+        {
+          "min": "77",
+          "max": "85",
+          "name": "Blue/Yellow"
+        },
+        {
+          "min": "86",
+          "max": "94",
+          "name": "Yellow"
+        },
+        {
+          "min": "95",
+          "max": "103",
+          "name": "Yellow/Cyan"
+        },
+        {
+          "min": "104",
+          "max": "112",
+          "name": "Cyan"
+        },
+        {
+          "min": "113",
+          "max": "121",
+          "name": "Cyan/Magenta"
+        },
+        {
+          "min": "122",
+          "max": "130",
+          "name": "Magenta"
+        },
+        {
+          "min": "131",
+          "max": "139",
+          "name": "White (Open)"
+        },
+        {
+          "min": "140",
+          "max": "195",
+          "name": "Clockwise color scroll"
+        },
+        {
+          "min": "196",
+          "max": "199",
+          "name": "Scroll stop"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Counter-clockwise color scroll"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open(White)"
+        },
+        {
+          "min": "8",
+          "max": "28",
+          "name": "Gobo1"
+        },
+        {
+          "min": "29",
+          "max": "49",
+          "name": "Gobo2"
+        },
+        {
+          "min": "50",
+          "max": "70",
+          "name": "Gobo3"
+        },
+        {
+          "min": "71",
+          "max": "91",
+          "name": "Gobo4"
+        },
+        {
+          "min": "92",
+          "max": "112",
+          "name": "Gobo5"
+        },
+        {
+          "min": "113",
+          "max": "133",
+          "name": "Gobo6"
+        },
+        {
+          "min": "134",
+          "max": "194",
+          "name": "Clockwise Gobo scroll"
+        },
+        {
+          "min": "195",
+          "max": "255",
+          "name": "Counter-clockwise Gobo scroll"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "129",
+          "name": "Clockwise Gobo rotating from fast to slow"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Gobo rotating stop"
+        },
+        {
+          "min": "135",
+          "max": "255",
+          "name": "Counter-clockwise Gobo rotating from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "134",
+          "name": "Prism"
+        },
+        {
+          "min": "135",
+          "max": "255",
+          "name": "Prism rotating from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Color & Gobo Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "47",
+          "name": "Color & Gobo macro 1"
+        },
+        {
+          "min": "48",
+          "max": "87",
+          "name": "Color & Gobo macro 2"
+        },
+        {
+          "min": "88",
+          "max": "127",
+          "name": "Color & Gobo macro 3"
+        },
+        {
+          "min": "128",
+          "max": "167",
+          "name": "Color & Gobo macro 4"
+        },
+        {
+          "min": "168",
+          "max": "207",
+          "name": "Color & Gobo macro 5"
+        },
+        {
+          "min": "208",
+          "max": "247",
+          "name": "Color & Gobo macro 6"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Color & Gobo changing to sound"
+        }
+      ]
+    },
+    {
+      "name": "Color / Gobo Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color & Gobo speed from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Movement Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "32",
+          "name": "Movement 1"
+        },
+        {
+          "min": "33",
+          "max": "58",
+          "name": "Movement 2"
+        },
+        {
+          "min": "59",
+          "max": "84",
+          "name": "Movement 3"
+        },
+        {
+          "min": "85",
+          "max": "110",
+          "name": "Movement 4"
+        },
+        {
+          "min": "111",
+          "max": "136",
+          "name": "Movement 5"
+        },
+        {
+          "min": "137",
+          "max": "162",
+          "name": "Movement 6"
+        },
+        {
+          "min": "163",
+          "max": "188",
+          "name": "Movement 7"
+        },
+        {
+          "min": "189",
+          "max": "214",
+          "name": "Movement 8"
+        },
+        {
+          "min": "215",
+          "max": "240",
+          "name": "Movement 9"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Movement to sound"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "6 seconds to reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Dimmer",
+        "Strobe",
+        "Color & Gobo Macros",
+        "Color / Gobo Speed",
+        "Movement Macros",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Color",
+        "Gobo",
+        "Gobo Rotation",
+        "Focus",
+        "Prism",
+        "Color & Gobo Macros",
+        "Color / Gobo Speed",
+        "Movement Macros",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "60W LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.8",
+      "width": "270",
+      "height": "140",
+      "depth": "380"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "13"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "120",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

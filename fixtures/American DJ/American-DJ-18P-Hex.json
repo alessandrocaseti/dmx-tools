@@ -1,0 +1,154 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "18P Hex",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ray Console - cd",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED OFF"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED ON"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobing Slow-Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED ON"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Strobing Slow-Fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED ON"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe Slow-Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED ON"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master Dimmer",
+        "Strobing"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.9",
+      "width": "304",
+      "height": "174",
+      "depth": "330"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "155",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COLORband T3 USB",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ian Nault",
+  "channels": [
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color Macros"
+        }
+      ]
+    },
+    {
+      "name": "Strobe / Auto Speed / Sound Sensitivity",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe Speed"
+        }
+      ]
+    },
+    {
+      "name": "Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Pulse Effect 0-100%"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Pulse Effect 100%-0"
+        },
+        {
+          "min": "96",
+          "max": "114",
+          "name": "Pulse Effect 100%-0-100%"
+        },
+        {
+          "min": "115",
+          "max": "122",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "123",
+          "max": "130",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "131",
+          "max": "138",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "139",
+          "max": "146",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "147",
+          "max": "154",
+          "name": "Auto Program 5"
+        },
+        {
+          "min": "155",
+          "max": "162",
+          "name": "Auto Program 6"
+        },
+        {
+          "min": "163",
+          "max": "170",
+          "name": "Auto Program 7"
+        },
+        {
+          "min": "171",
+          "max": "178",
+          "name": "Auto Program 8"
+        },
+        {
+          "min": "179",
+          "max": "186",
+          "name": "Auto Program 9"
+        },
+        {
+          "min": "187",
+          "max": "194",
+          "name": "Auto Program 10"
+        },
+        {
+          "min": "195",
+          "max": "202",
+          "name": "Auto Program 11"
+        },
+        {
+          "min": "203",
+          "max": "210",
+          "name": "Auto Program 12"
+        },
+        {
+          "min": "211",
+          "max": "218",
+          "name": "Auto Program 13"
+        },
+        {
+          "min": "219",
+          "max": "226",
+          "name": "Auto Program 14"
+        },
+        {
+          "min": "227",
+          "max": "255",
+          "name": "Sound-Activated Program"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Speed Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer Speed Set From Display"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer Speed Mode Off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer Speed Mode 1 Fast"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer Speed Mode 2 Medium"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer Speed Mode 3 Slow"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe (slow to fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 14,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Color Macros",
+        "Strobe / Auto Speed / Sound Sensitivity",
+        "Auto Programs",
+        "Dimmer",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 9,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros",
+        "Strobe / Auto Speed / Sound Sensitivity",
+        "Auto Programs",
+        "Dimmer",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.7",
+      "width": "987",
+      "height": "49",
+      "depth": "157"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "27",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

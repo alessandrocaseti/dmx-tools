@@ -1,0 +1,325 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED PAR-64 QCL12x8W",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Martin Winkler",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe increasng speed"
+        }
+      ]
+    },
+    {
+      "name": "Color Presets",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Cool white"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Warm white"
+        }
+      ]
+    },
+    {
+      "name": "Color temperature",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "49",
+          "name": "White 2700K"
+        },
+        {
+          "min": "50",
+          "max": "89",
+          "name": "White 3200K"
+        },
+        {
+          "min": "90",
+          "max": "129",
+          "name": "White 4300K"
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "White 5600K"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "White 6500K"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "White 8000K"
+        }
+      ]
+    },
+    {
+      "name": "Internal programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "69",
+          "name": "Automatic color fade increasing speed"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "Automatic clor change increasing speedK"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "Sound controlled color fade increasing speed"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Sound controlled color change increasing speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Color Presets"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Color Presets",
+        "Internal programs",
+        "Color temperature"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Presets",
+        "Internal programs",
+        "Color temperature"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.4",
+      "width": "296",
+      "height": "340",
+      "depth": "273"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "14",
+      "degreesMax": "14"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "70",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

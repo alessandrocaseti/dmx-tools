@@ -1,0 +1,485 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "CORE 3x3",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ravi Radhakrishnan",
+  "channels": [
+    {
+      "name": "Section 1 red",
+      "type": "Red"
+    },
+    {
+      "name": "Section 1 green",
+      "type": "Green"
+    },
+    {
+      "name": "Section 1 blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Section 2 red",
+      "type": "Red"
+    },
+    {
+      "name": "Section 2 green",
+      "type": "Green"
+    },
+    {
+      "name": "Section 2 blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Section 3 red",
+      "type": "Red"
+    },
+    {
+      "name": "Section 3 green",
+      "type": "Green"
+    },
+    {
+      "name": "Section 3 blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Section 4 red",
+      "type": "Red"
+    },
+    {
+      "name": "Section 4 green",
+      "type": "Green"
+    },
+    {
+      "name": "Section 4 blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Section 5 red",
+      "type": "Red"
+    },
+    {
+      "name": "Section 5 green",
+      "type": "Green"
+    },
+    {
+      "name": "Section 5 blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Section 6 red",
+      "type": "Red"
+    },
+    {
+      "name": "Section 6 green",
+      "type": "Green"
+    },
+    {
+      "name": "Section 6 blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Section 7 red",
+      "type": "Red"
+    },
+    {
+      "name": "Section 7 green",
+      "type": "Green"
+    },
+    {
+      "name": "Section 7 blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Section 8 red",
+      "type": "Red"
+    },
+    {
+      "name": "Section 8 green",
+      "type": "Green"
+    },
+    {
+      "name": "Section 8 blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Section 9 red",
+      "type": "Red"
+    },
+    {
+      "name": "Section 9 green",
+      "type": "Green"
+    },
+    {
+      "name": "Auto programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "40",
+          "name": "Chase 1"
+        },
+        {
+          "min": "41",
+          "max": "80",
+          "name": "Chase 2"
+        },
+        {
+          "min": "81",
+          "max": "120",
+          "name": "Chase 3"
+        },
+        {
+          "min": "121",
+          "max": "160",
+          "name": "Chase 4"
+        },
+        {
+          "min": "161",
+          "max": "200",
+          "name": "Chase 5"
+        },
+        {
+          "min": "201",
+          "max": "240",
+          "name": "Chase 6 (run chases 1-4)"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound-active mode"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto programs speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Section 9 blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Custom Color and Color Temperature",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "Red 100% + Green 0-100%"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "Red 100%-0 + Green 100%"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "Green 100% + Blue 0-100%"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "Green 100%-0 + Blue 100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "Red 0-100% + Blue 100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "Red 100% + Blue 100%-0"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "Red 100% + Green 0-100% + Blue 0-100%"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "Red 100%-0 + Green 100%-0 + Blue 100%"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "Red 100% + Green 100% + Blue 100%"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "Color temperature 1"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "Color temperature 2"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "Color temperature 3"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "Color temperature 4"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Color temperature 5"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Color temperature 6"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Color temperature 7"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Color temperature 8"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Color temperature 9"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Color temperature 10"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Color temperature 11"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer mode manually set in Menu Options"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer mode 1 (fast speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer mode 2 (middle speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer mode 3 (slow speed)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "31-Channel",
+      "totalChannels": 31,
+      "channels": [
+        "Section 1 red",
+        "Section 1 green",
+        "Section 1 blue",
+        "Section 2 red",
+        "Section 2 green",
+        "Section 2 blue",
+        "Section 3 red",
+        "Section 3 green",
+        "Section 3 blue",
+        "Section 4 red",
+        "Section 4 green",
+        "Section 4 blue",
+        "Section 5 red",
+        "Section 5 green",
+        "Section 5 blue",
+        "Section 6 red",
+        "Section 6 green",
+        "Section 6 blue",
+        "Section 7 red",
+        "Section 7 green",
+        "Section 7 blue",
+        "Section 8 red",
+        "Section 8 green",
+        "Section 8 blue",
+        "Section 9 red",
+        "Section 9 green",
+        "Section 9 blue",
+        "Auto programs",
+        "Speed",
+        "Dimmer",
+        "Shutter"
+      ]
+    },
+    {
+      "name": "27-Channel",
+      "totalChannels": 27,
+      "channels": [
+        "Section 1 red",
+        "Section 1 green",
+        "Section 1 blue",
+        "Section 2 red",
+        "Section 2 green",
+        "Section 2 blue",
+        "Section 3 red",
+        "Section 3 green",
+        "Section 3 blue",
+        "Section 4 red",
+        "Section 4 green",
+        "Section 4 blue",
+        "Section 5 red",
+        "Section 5 green",
+        "Section 5 blue",
+        "Section 6 red",
+        "Section 6 green",
+        "Section 6 blue",
+        "Section 7 red",
+        "Section 7 green",
+        "Section 7 blue",
+        "Section 8 red",
+        "Section 8 green",
+        "Section 8 blue",
+        "Section 9 red",
+        "Section 9 green",
+        "Section 9 blue"
+      ]
+    },
+    {
+      "name": "9-Channel",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Shutter",
+        "Custom Color and Color Temperature",
+        "Auto programs",
+        "Speed",
+        "Dimmer Mode"
+      ]
+    },
+    {
+      "name": "5-Channel",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Shutter"
+      ]
+    },
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.2",
+      "width": "344",
+      "height": "344",
+      "depth": "156"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "226",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

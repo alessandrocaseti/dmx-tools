@@ -1,0 +1,424 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Boom Box Fx2",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Felix Edelmann",
+  "channels": [
+    {
+      "name": "Show mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Show 1"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Show 2"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Show 3"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Show 4"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Show 5"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Show 6"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Show 7"
+        },
+        {
+          "min": "140",
+          "max": "209",
+          "name": "Show 8"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "Show 9"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Show 0"
+        }
+      ]
+    },
+    {
+      "name": "Show speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Special Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "139",
+          "name": "No function"
+        },
+        {
+          "min": "140",
+          "max": "209",
+          "name": "Reset all"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Center LED",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Color Macros"
+        }
+      ]
+    },
+    {
+      "name": "Red Laser",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Closed"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Green Laser",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Closed"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Laser Patterns",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Beam Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe slow-fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast close / Slow open"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast open / Slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Beam Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Rotation indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Rotating CW slow-fast"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Rotating CCW fast-slow"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Closed"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Green Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Closed"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Blue Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Closed"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "White Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Closed"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Rotation indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Rotating CW slow-fast"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Rotating CCW fast-slow"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "3-channel",
+      "totalChannels": 3,
+      "channels": [
+        "Show mode",
+        "Show speed",
+        "Special Functions"
+      ]
+    },
+    {
+      "name": "19-channel",
+      "totalChannels": 19,
+      "channels": [
+        "Center LED",
+        "Red Laser",
+        "Green Laser",
+        "Laser Patterns",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Beam Strobe",
+        "Master dimmer",
+        "Beam Rotation",
+        "Red Gobo",
+        "Green Gobo",
+        "Blue Gobo",
+        "White Gobo",
+        "Gobo Rotation",
+        "Show mode",
+        "Show speed",
+        "Special Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "8x3W LEDs, 8x1W LEDs, 8x10W RGBW LEDs",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8",
+      "width": "634",
+      "height": "319",
+      "depth": "232"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "62",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

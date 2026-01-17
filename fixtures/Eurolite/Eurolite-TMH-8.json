@@ -1,0 +1,449 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TMH-8",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Heiko Fanieng",
+  "channels": [
+    {
+      "name": "Horizontal movement",
+      "type": "Pan"
+    },
+    {
+      "name": "Vertical movement",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer/strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "134",
+          "name": "dimmer intensity from 0 to 100 %"
+        },
+        {
+          "min": "135",
+          "max": "239",
+          "name": "Strobe-effect with increasing speed"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Color macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "31",
+          "name": "RGB White"
+        },
+        {
+          "min": "32",
+          "max": "52",
+          "name": "Red"
+        },
+        {
+          "min": "53",
+          "max": "73",
+          "name": "Green"
+        },
+        {
+          "min": "74",
+          "max": "94",
+          "name": "Blue"
+        },
+        {
+          "min": "95",
+          "max": "115",
+          "name": "White (pure)"
+        },
+        {
+          "min": "116",
+          "max": "136",
+          "name": "Yellow"
+        },
+        {
+          "min": "137",
+          "max": "157",
+          "name": "Cyan"
+        },
+        {
+          "min": "158",
+          "max": "178",
+          "name": "Magenta"
+        },
+        {
+          "min": "179",
+          "max": "199",
+          "name": "Color Change Macro 1"
+        },
+        {
+          "min": "200",
+          "max": "220",
+          "name": "Color Change Macro 2"
+        },
+        {
+          "min": "221",
+          "max": "241",
+          "name": "Color Change Macro 3"
+        },
+        {
+          "min": "242",
+          "max": "252",
+          "name": "Color Change Macro 4"
+        },
+        {
+          "min": "253",
+          "max": "255",
+          "name": "Color Change Macro 5"
+        }
+      ]
+    },
+    {
+      "name": "Gobos/Gobo shake",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "80",
+          "max": "94",
+          "name": "Gobo 1 shake"
+        },
+        {
+          "min": "95",
+          "max": "109",
+          "name": "Gobo 2 shake"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Gobo 3 shake"
+        },
+        {
+          "min": "125",
+          "max": "139",
+          "name": "Gobo 4 shake"
+        },
+        {
+          "min": "140",
+          "max": "154",
+          "name": "Gobo 5 shake"
+        },
+        {
+          "min": "155",
+          "max": "169",
+          "name": "Gobo 6 shake"
+        },
+        {
+          "min": "170",
+          "max": "184",
+          "name": "Gobo 7 shake"
+        },
+        {
+          "min": "185",
+          "max": "199",
+          "name": "Gobo 8 shake"
+        },
+        {
+          "min": "200",
+          "max": "214",
+          "name": "Gobo 9 shake"
+        },
+        {
+          "min": "215",
+          "max": "235",
+          "name": "Forwards rainbow effect"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Backwards rainbow effect"
+        }
+      ]
+    },
+    {
+      "name": "Horizontal movement 16Bit",
+      "type": "Pan"
+    },
+    {
+      "name": "Vertical movement 16Bit",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt-Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer/strobe 16Bit",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "134",
+          "name": "Gradual adjustment of the dimmer intensity from 0 to 100 %"
+        },
+        {
+          "min": "135",
+          "max": "239",
+          "name": "Strobe-effect with increasing speed"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "RGB W-Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Decreasing speed (vector mode)"
+        }
+      ]
+    },
+    {
+      "name": "Motion macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Motion macro 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Motion macro 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Motion macro 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Motion macro 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Motion macro 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Motion macro 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Motion macro 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Motion macro 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Sound-controlled Motion macro 1"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Sound-controlled Motion macro 2"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Sound-controlled Motion macro 3"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Sound-controlled Motion macro 4"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Sound-controlled Motion macro 5"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Sound-controlled Motion macro 6"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Sound-controlled Motion macro 7"
+        },
+        {
+          "min": "233",
+          "max": "255",
+          "name": "Sound-controlled Motion macro 8"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "8bit",
+      "totalChannels": 5,
+      "channels": [
+        "Horizontal movement",
+        "Vertical movement",
+        "Dimmer/strobe",
+        "Color macros",
+        "Gobos/Gobo shake"
+      ]
+    },
+    {
+      "name": "16bit",
+      "totalChannels": 14,
+      "channels": [
+        "Horizontal movement",
+        "Horizontal movement 16Bit",
+        "Vertical movement",
+        "Vertical movement 16Bit",
+        "Pan/Tilt-Speed",
+        "Dimmer/strobe 16Bit",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color macros",
+        "RGB W-Speed",
+        "Motion macros",
+        "Gobos/Gobo shake"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "175",
+      "height": "245",
+      "depth": "170"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "230"
+    },
+    "technical": {
+      "powerConsumption": "35",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

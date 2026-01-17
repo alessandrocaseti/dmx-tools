@@ -1,0 +1,215 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Scorpion Storm RGX",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Francois Blanchette",
+  "channels": [
+    {
+      "name": "Control Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "DMX Mode"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Automatic fast (red)"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Automatic slow (red)"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Automatic fast (green)"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Automatic slow (green)"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Automatic fast (red & green)"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Automatic slow (red & green)"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Sound (red)"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Sound (green)"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Sound (red & green)"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Random"
+        }
+      ]
+    },
+    {
+      "name": "Color selection",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "28",
+          "name": "Red"
+        },
+        {
+          "min": "29",
+          "max": "56",
+          "name": "Green"
+        },
+        {
+          "min": "57",
+          "max": "84",
+          "name": "Red & Green"
+        },
+        {
+          "min": "85",
+          "max": "112",
+          "name": "Green strobing"
+        },
+        {
+          "min": "113",
+          "max": "140",
+          "name": "Red strobing"
+        },
+        {
+          "min": "141",
+          "max": "168",
+          "name": "Red on & Green strobing"
+        },
+        {
+          "min": "169",
+          "max": "197",
+          "name": "Green on & Red strobing"
+        },
+        {
+          "min": "198",
+          "max": "224",
+          "name": "Red & Green strobing"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "Red & green (alternate strobing)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "254",
+          "name": "Strobe (slow <=> fast)"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Strobe to sound"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No Rotation"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Clockwise rotation (slow <=> fast)"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Counterclockwise rotation (slow <=> fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Control Mode",
+        "Color selection",
+        "Strobe",
+        "Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Laser",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.1",
+      "width": "235",
+      "height": "216",
+      "depth": "276"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "11",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

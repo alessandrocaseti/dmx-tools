@@ -1,0 +1,182 @@
+{
+  "version": "1.2",
+  "manufacturer": "Betopper",
+  "model": "LPC-007",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Romil Barticulo",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No Function"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "DMX Dimming"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Color Output (8 type)"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Color Shade"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Color Transform"
+        },
+        {
+          "min": "201",
+          "max": "250",
+          "name": "Color Pulse"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound Trigger"
+        }
+      ]
+    },
+    {
+      "name": "Selector for Channel 6",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Red"
+        },
+        {
+          "min": "31",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "92",
+          "name": "Blue"
+        },
+        {
+          "min": "93",
+          "max": "123",
+          "name": "White"
+        },
+        {
+          "min": "124",
+          "max": "154",
+          "name": "Yellow"
+        },
+        {
+          "min": "155",
+          "max": "185",
+          "name": "Violet"
+        },
+        {
+          "min": "186",
+          "max": "216",
+          "name": "Color Change"
+        },
+        {
+          "min": "217",
+          "max": "247",
+          "name": "White 2"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Color Change 2"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 7,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe",
+        "Color Macro",
+        "Selector for Channel 6"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.1",
+      "width": "235",
+      "height": "235",
+      "depth": "295"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "180",
+      "dmxConnector": "Other"
+    }
+  }
+}

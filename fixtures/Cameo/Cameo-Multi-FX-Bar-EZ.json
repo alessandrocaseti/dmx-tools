@@ -1,0 +1,1541 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Multi FX Bar EZ",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jan Peter Dohle",
+  "channels": [
+    {
+      "name": "PAR 1 - Red",
+      "type": "Red"
+    },
+    {
+      "name": "PAR 1 - Green",
+      "type": "Green"
+    },
+    {
+      "name": "PAR 1 - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "PAR 1 - White",
+      "type": "White"
+    },
+    {
+      "name": "PAR 1 - Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "PAR 1 - UV",
+      "type": "UV"
+    },
+    {
+      "name": "PAR 2 - Red",
+      "type": "Red"
+    },
+    {
+      "name": "PAR 2 - Green",
+      "type": "Green"
+    },
+    {
+      "name": "PAR 2 - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "PAR 2 - White",
+      "type": "White"
+    },
+    {
+      "name": "PAR 2 - Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "PAR 2 - UV",
+      "type": "UV"
+    },
+    {
+      "name": "PAR 3 - Red",
+      "type": "Red"
+    },
+    {
+      "name": "PAR 3 - Green",
+      "type": "Green"
+    },
+    {
+      "name": "PAR 3 - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "PAR 3 - White",
+      "type": "White"
+    },
+    {
+      "name": "PAR 3 - Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "PAR 3 - UV",
+      "type": "UV"
+    },
+    {
+      "name": "PAR 4 - Red",
+      "type": "Red"
+    },
+    {
+      "name": "PAR 4 - Green",
+      "type": "Green"
+    },
+    {
+      "name": "PAR 4 - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "PAR 4 - White",
+      "type": "White"
+    },
+    {
+      "name": "PAR 4 - Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "PAR 4 - UV",
+      "type": "UV"
+    },
+    {
+      "name": "Derby 1 - Red",
+      "type": "Red"
+    },
+    {
+      "name": "Derby 1 - Green",
+      "type": "Green"
+    },
+    {
+      "name": "Derby 1 - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Derby 1 - Rotate",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "no function"
+        },
+        {
+          "min": "6",
+          "max": "126",
+          "name": "clockwise rotation (slow to fast)"
+        },
+        {
+          "min": "127",
+          "max": "128",
+          "name": "no movement"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "counter clockwise rotation (fast to slow)"
+        }
+      ]
+    },
+    {
+      "name": "Derby 2 - Red",
+      "type": "Red"
+    },
+    {
+      "name": "Derby 2 - Green",
+      "type": "Green"
+    },
+    {
+      "name": "Derby 2 - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Derby 2 - Rotate",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "no function"
+        },
+        {
+          "min": "6",
+          "max": "126",
+          "name": "clockwise rotation (slow to fast)"
+        },
+        {
+          "min": "127",
+          "max": "128",
+          "name": "no movement"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "counter clockwise rotation (fast to slow)"
+        }
+      ]
+    },
+    {
+      "name": "Flash 1",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe speed slow-> fast <1Hz-20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Flash 2",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe speed slow-> fast <1Hz-20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Flash 3",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe speed slow-> fast <1Hz-20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Flash 4",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe speed slow-> fast <1Hz-20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Auto Program LED PAR",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "30",
+          "name": "Auto PAR 1"
+        },
+        {
+          "min": "31",
+          "max": "55",
+          "name": "Auto PAR 2"
+        },
+        {
+          "min": "56",
+          "max": "80",
+          "name": "Auto PAR 3"
+        },
+        {
+          "min": "81",
+          "max": "105",
+          "name": "Auto PAR 4"
+        },
+        {
+          "min": "106",
+          "max": "130",
+          "name": "Auto PAR 5"
+        },
+        {
+          "min": "131",
+          "max": "155",
+          "name": "Auto PAR 6"
+        },
+        {
+          "min": "156",
+          "max": "180",
+          "name": "Auto PAR 7"
+        },
+        {
+          "min": "181",
+          "max": "205",
+          "name": "Auto PAR 8"
+        },
+        {
+          "min": "206",
+          "max": "230",
+          "name": "Auto PAR 9"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Auto PAR 10"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Derby",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "30",
+          "name": "Auto Derby 1"
+        },
+        {
+          "min": "31",
+          "max": "55",
+          "name": "Auto Derby 2"
+        },
+        {
+          "min": "56",
+          "max": "80",
+          "name": "Auto Derby 3"
+        },
+        {
+          "min": "81",
+          "max": "105",
+          "name": "Auto Derby 4"
+        },
+        {
+          "min": "106",
+          "max": "130",
+          "name": "Auto Derby 5"
+        },
+        {
+          "min": "131",
+          "max": "155",
+          "name": "Auto Derby 6"
+        },
+        {
+          "min": "156",
+          "max": "180",
+          "name": "Auto Derby 7"
+        },
+        {
+          "min": "181",
+          "max": "205",
+          "name": "Auto Derby 8"
+        },
+        {
+          "min": "206",
+          "max": "230",
+          "name": "Auto Derby 9"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Auto Derby 10"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Flash Lights",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "30",
+          "name": "Auto Flash Lights 1"
+        },
+        {
+          "min": "31",
+          "max": "55",
+          "name": "Auto Flash Lights 2"
+        },
+        {
+          "min": "56",
+          "max": "80",
+          "name": "Auto Flash Lights 3"
+        },
+        {
+          "min": "81",
+          "max": "105",
+          "name": "Auto Flash Lights 4"
+        },
+        {
+          "min": "106",
+          "max": "130",
+          "name": "Auto Flash Lights 5"
+        },
+        {
+          "min": "131",
+          "max": "155",
+          "name": "Auto Flash Lights 6"
+        },
+        {
+          "min": "156",
+          "max": "180",
+          "name": "Auto Flash Lights 7"
+        },
+        {
+          "min": "181",
+          "max": "205",
+          "name": "Auto Flash Lights 8"
+        },
+        {
+          "min": "206",
+          "max": "230",
+          "name": "Auto Flash Lights 9"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Auto Flash Lights 10"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed/Sound",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Program Speed slow -> fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    },
+    {
+      "name": "PAR Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "PAR Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe slow -> fast <1Hz - 20Hz"
+        }
+      ]
+    },
+    {
+      "name": "PAR 1+4 Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Colour off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Colour Jumping Stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Colour Jumping Speed slow -> fast / Colour 1 -> 12"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Colour Fading Speed slow -> fast / Colour 1 -> 12"
+        }
+      ]
+    },
+    {
+      "name": "PAR 2+3 Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Colour off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Colour Jumping Stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Colour Jumping Speed slow -> fast / Colour 1 -> 12"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Colour Fading Speed slow -> fast / Colour 1 -> 12"
+        }
+      ]
+    },
+    {
+      "name": "Flash 1-4",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe speed slow-> fast <1Hz-20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "PAR+Derby Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Chase",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "Off (Colour 1= PAR; Colour2 = Derby)"
+        },
+        {
+          "min": "14",
+          "max": "35",
+          "name": "PAR only 1"
+        },
+        {
+          "min": "36",
+          "max": "57",
+          "name": "PAR only 2"
+        },
+        {
+          "min": "58",
+          "max": "79",
+          "name": "PAR only 3"
+        },
+        {
+          "min": "80",
+          "max": "101",
+          "name": "PAR only 4"
+        },
+        {
+          "min": "102",
+          "max": "123",
+          "name": "Derby only 1"
+        },
+        {
+          "min": "124",
+          "max": "145",
+          "name": "Derby only 2"
+        },
+        {
+          "min": "146",
+          "max": "167",
+          "name": "PAR + Derby 1"
+        },
+        {
+          "min": "168",
+          "max": "189",
+          "name": "PAR + Derby 2"
+        },
+        {
+          "min": "190",
+          "max": "211",
+          "name": "PAR + Derby 3"
+        },
+        {
+          "min": "212",
+          "max": "233",
+          "name": "PAR + Derby 4"
+        },
+        {
+          "min": "234",
+          "max": "255",
+          "name": "PAR + Derby 5"
+        }
+      ]
+    },
+    {
+      "name": "Chase Speed/Sound",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Chase Speed slow -> fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    },
+    {
+      "name": "Colour 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Colour off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Colour Jumping Stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Colour Jumping Speed slow -> fast / Colour 1 -> 12"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Colour Fading Speed slow -> fast / Colour 1 -> 12"
+        }
+      ]
+    },
+    {
+      "name": "Colour 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Colour off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Colour Jumping Stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Colour Jumping Speed slow -> fast / Colour 1 -> 12"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Colour Fading Speed slow -> fast / Colour 1 -> 12"
+        }
+      ]
+    },
+    {
+      "name": "Derby 1-2",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "no function"
+        },
+        {
+          "min": "6",
+          "max": "126",
+          "name": "clockwise rotation (slow to fast)"
+        },
+        {
+          "min": "127",
+          "max": "128",
+          "name": "no movement"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "counter clockwise rotation (fast to slow)"
+        }
+      ]
+    },
+    {
+      "name": "PAR+Derby Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe slow -> fast <1Hz - 20Hz"
+        }
+      ]
+    },
+    {
+      "name": "PAR 1-4 Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Colour off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Colour Jumping Stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Colour Jumping Speed slow -> fast / Colour 1 -> 12"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Colour Fading Speed slow -> fast / Colour 1 -> 12"
+        }
+      ]
+    },
+    {
+      "name": "Derby 1-2 Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Colour off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Colour Jumping Stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Colour Jumping Speed slow -> fast / Colour 1 -> 12"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Colour Fading Speed slow -> fast / Colour 1 -> 12"
+        }
+      ]
+    },
+    {
+      "name": "PAR 1+4 - Red",
+      "type": "Red"
+    },
+    {
+      "name": "PAR 1+4 - Green",
+      "type": "Green"
+    },
+    {
+      "name": "PAR 1+4 - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "PAR 1+4 - White",
+      "type": "White"
+    },
+    {
+      "name": "PAR 1+4 - Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "PAR 1+4 - UV",
+      "type": "UV"
+    },
+    {
+      "name": "PAR 1+4 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe slow -> fast <1Hz - 20Hz"
+        }
+      ]
+    },
+    {
+      "name": "PAR 2+3 - Red",
+      "type": "Red"
+    },
+    {
+      "name": "PAR 2+3 - Green",
+      "type": "Green"
+    },
+    {
+      "name": "PAR 2+3 - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "PAR 2+3 - White",
+      "type": "White"
+    },
+    {
+      "name": "PAR 2+3 - Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "PAR 2+3 - UV",
+      "type": "UV"
+    },
+    {
+      "name": "PAR 2+3 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe slow -> fast <1Hz - 20Hz"
+        }
+      ]
+    },
+    {
+      "name": "Derby 1-2 - Red",
+      "type": "Red"
+    },
+    {
+      "name": "Derby 1-2 - Green",
+      "type": "Green"
+    },
+    {
+      "name": "Derby 1-2 - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Derby 1-2 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe slow -> fast <1Hz - 20Hz"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "5 Channel 1",
+      "totalChannels": 5,
+      "channels": [
+        "Master Dimmer",
+        "Auto Program LED PAR",
+        "Auto Program Derby",
+        "Auto Program Flash Lights",
+        "Program Speed/Sound"
+      ]
+    },
+    {
+      "name": "5 Channel 2",
+      "totalChannels": 5,
+      "channels": [
+        "PAR Dimmer",
+        "PAR Strobe",
+        "PAR 1+4 Colour",
+        "PAR 2+3 Colour",
+        "Flash 1-4"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 7,
+      "channels": [
+        "PAR+Derby Dimmer",
+        "Chase",
+        "Chase Speed/Sound",
+        "Colour 1",
+        "Colour 2",
+        "Derby 1-2",
+        "Flash 1-4"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 10,
+      "channels": [
+        "PAR+Derby Dimmer",
+        "PAR+Derby Strobe",
+        "PAR 1-4 Colour",
+        "Derby 1-2 Colour",
+        "Derby 1-2",
+        "Flash 1-4",
+        "Auto Program LED PAR",
+        "Auto Program Derby",
+        "Auto Program Flash Lights",
+        "Program Speed/Sound"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 25,
+      "channels": [
+        "PAR+Derby Dimmer",
+        "PAR 1+4 - Red",
+        "PAR 1+4 - Green",
+        "PAR 1+4 - Blue",
+        "PAR 1+4 - White",
+        "PAR 1+4 - Amber",
+        "PAR 1+4 - UV",
+        "PAR 1+4 Strobe",
+        "PAR 2+3 - Red",
+        "PAR 2+3 - Green",
+        "PAR 2+3 - Blue",
+        "PAR 2+3 - White",
+        "PAR 2+3 - Amber",
+        "PAR 2+3 - UV",
+        "PAR 2+3 Strobe",
+        "Derby 1-2 - Red",
+        "Derby 1-2 - Green",
+        "Derby 1-2 - Blue",
+        "Derby 1-2 Strobe",
+        "Derby 1-2",
+        "Flash 1-4",
+        "Auto Program LED PAR",
+        "Auto Program Derby",
+        "Auto Program Flash Lights",
+        "Program Speed/Sound"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 28,
+      "channels": [
+        "PAR 1 - Red",
+        "PAR 1 - Green",
+        "PAR 1 - Blue",
+        "PAR 1 - White",
+        "PAR 1 - Amber",
+        "PAR 1 - UV",
+        "PAR 2 - Red",
+        "PAR 2 - Green",
+        "PAR 2 - Blue",
+        "PAR 2 - White",
+        "PAR 2 - Amber",
+        "PAR 2 - UV",
+        "PAR 3 - Red",
+        "PAR 3 - Green",
+        "PAR 3 - Blue",
+        "PAR 3 - White",
+        "PAR 3 - Amber",
+        "PAR 3 - UV",
+        "PAR 4 - Red",
+        "PAR 4 - Green",
+        "PAR 4 - Blue",
+        "PAR 4 - White",
+        "PAR 4 - Amber",
+        "PAR 4 - UV",
+        "Flash 1",
+        "Flash 2",
+        "Flash 3",
+        "Flash 4"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 36,
+      "channels": [
+        "PAR 1 - Red",
+        "PAR 1 - Green",
+        "PAR 1 - Blue",
+        "PAR 1 - White",
+        "PAR 1 - Amber",
+        "PAR 1 - UV",
+        "PAR 2 - Red",
+        "PAR 2 - Green",
+        "PAR 2 - Blue",
+        "PAR 2 - White",
+        "PAR 2 - Amber",
+        "PAR 2 - UV",
+        "PAR 3 - Red",
+        "PAR 3 - Green",
+        "PAR 3 - Blue",
+        "PAR 3 - White",
+        "PAR 3 - Amber",
+        "PAR 3 - UV",
+        "PAR 4 - Red",
+        "PAR 4 - Green",
+        "PAR 4 - Blue",
+        "PAR 4 - White",
+        "PAR 4 - Amber",
+        "PAR 4 - UV",
+        "Derby 1 - Red",
+        "Derby 1 - Green",
+        "Derby 1 - Blue",
+        "Derby 1 - Rotate",
+        "Derby 2 - Red",
+        "Derby 2 - Green",
+        "Derby 2 - Blue",
+        "Derby 2 - Rotate",
+        "Flash 1",
+        "Flash 2",
+        "Flash 3",
+        "Flash 4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.1",
+      "width": "1149",
+      "height": "414",
+      "depth": "80"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "110",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

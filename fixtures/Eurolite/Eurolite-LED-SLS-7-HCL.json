@@ -1,0 +1,277 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED SLS-7 HCL",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "René Schulze",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Presets",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Amber"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "UV"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Yellow"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Magenta"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Cyan"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Dark Orange"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Green Yellow"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Salmon"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Ice Blue"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Light Green"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Orange"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Lavender"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Steel Blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Pink"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Internal Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "69",
+          "name": "Color fade with increasing speed"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "Color change with increasing speed"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "Sound mode color fade with increasing speed"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Sound mode color change with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    }
+  ],
+  "modes": [
+    {
+      "name": "2-channel",
+      "totalChannels": 2,
+      "channels": [
+        "Master Dimmer",
+        "Color Presets"
+      ]
+    },
+    {
+      "name": "3-channel",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4-Cannnel",
+      "totalChannels": 4,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Color Presets",
+        "Internal Programs"
+      ]
+    },
+    {
+      "name": "6-Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "10-Channel",
+      "totalChannels": 10,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Color Presets",
+        "Internal Programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.38",
+      "width": "220",
+      "height": "210",
+      "depth": "110"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

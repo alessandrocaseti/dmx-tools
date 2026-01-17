@@ -1,0 +1,1575 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Tambora Flash",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Gianluca Baggi",
+  "channels": [
+    {
+      "name": "Layer 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Layer 1 Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Layer 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Layer 1 Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Layer 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Layer 1 Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "Layer 1 White",
+      "type": "White"
+    },
+    {
+      "name": "Layere 1 White fine",
+      "type": "White"
+    },
+    {
+      "name": "Layer 1 CTO",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Unused range"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Linear from 8000K to 2700K"
+        }
+      ]
+    },
+    {
+      "name": "Layer 1 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Light Off"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Stobe Frequency from slow (1Hz) to fast (25Hz)"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Light On"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Pulsation from slow (0.5Hz) to fast (25Hz)"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Light On"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random Slow Strobe Effect"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random Medium Strobe Effect"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random Fast Strobe Effect On"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Light On"
+        }
+      ]
+    },
+    {
+      "name": "Layer 1 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Layer 1 Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Layer 1 Color CrossFade",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "From Fast to Slow"
+        }
+      ]
+    },
+    {
+      "name": "Layer 1 Attack Fade",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "From Fast to Slow"
+        }
+      ]
+    },
+    {
+      "name": "Layer 1 Release Fade",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "From Fast to Slow"
+        }
+      ]
+    },
+    {
+      "name": "Layer 1 Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "Unused range"
+        },
+        {
+          "min": "2",
+          "max": "3",
+          "name": "Auto (default)"
+        },
+        {
+          "min": "4",
+          "max": "5",
+          "name": "Sln"
+        },
+        {
+          "min": "6",
+          "max": "7",
+          "name": "Theatre"
+        },
+        {
+          "min": "8",
+          "max": "9",
+          "name": "Constant"
+        },
+        {
+          "min": "10",
+          "max": "37",
+          "name": "Unused range"
+        },
+        {
+          "min": "38",
+          "max": "42",
+          "name": "Dimmer curve 1 (default)"
+        },
+        {
+          "min": "43",
+          "max": "47",
+          "name": "Dimmer curve 2"
+        },
+        {
+          "min": "48",
+          "max": "52",
+          "name": "Dimmer curve 3"
+        },
+        {
+          "min": "53",
+          "max": "55",
+          "name": "Dimmer curve 4"
+        },
+        {
+          "min": "56",
+          "max": "57",
+          "name": "Dimmer curve 5"
+        },
+        {
+          "min": "58",
+          "max": "62",
+          "name": "Raw Colour gamma 1"
+        },
+        {
+          "min": "63",
+          "max": "67",
+          "name": "Raw Colour gamma 1.5"
+        },
+        {
+          "min": "68",
+          "max": "72",
+          "name": "Raw Colour gamma 2.2 (default)"
+        },
+        {
+          "min": "73",
+          "max": "84",
+          "name": "Unused range"
+        },
+        {
+          "min": "85",
+          "max": "86",
+          "name": "Reverse mapping Off (default)"
+        },
+        {
+          "min": "87",
+          "max": "88",
+          "name": "Reverse mapping On"
+        },
+        {
+          "min": "89",
+          "max": "97",
+          "name": "Pixel mapping disabled (default)"
+        },
+        {
+          "min": "98",
+          "max": "102",
+          "name": "Pixel mapping On RGB mode"
+        },
+        {
+          "min": "103",
+          "max": "107",
+          "name": "Pixel mapping On RGBW mode"
+        },
+        {
+          "min": "108",
+          "max": "112",
+          "name": "Red shift On"
+        },
+        {
+          "min": "113",
+          "max": "117",
+          "name": "Red shift Off (default)"
+        },
+        {
+          "min": "118",
+          "max": "120",
+          "name": "CW Engine disable (default)"
+        },
+        {
+          "min": "121",
+          "max": "122",
+          "name": "CW Engine enable"
+        },
+        {
+          "min": "123",
+          "max": "167",
+          "name": "Unused range"
+        },
+        {
+          "min": "168",
+          "max": "188",
+          "name": "PWM frequency=600Hz"
+        },
+        {
+          "min": "189",
+          "max": "199",
+          "name": "PWM frequency=1200Hz"
+        },
+        {
+          "min": "200",
+          "max": "210",
+          "name": "PWM frequency=2000Hz (default)"
+        },
+        {
+          "min": "211",
+          "max": "221",
+          "name": "PWM frequency=4000Hz"
+        },
+        {
+          "min": "222",
+          "max": "232",
+          "name": "PWM frequency=6000Hz"
+        },
+        {
+          "min": "233",
+          "max": "243",
+          "name": "PWM frequency=25000Hz"
+        },
+        {
+          "min": "244",
+          "max": "248",
+          "name": "Display off (default)"
+        },
+        {
+          "min": "249",
+          "max": "253",
+          "name": "Dipaly On"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "Default function recall"
+        }
+      ]
+    },
+    {
+      "name": "Layer 3 Strobe Engine",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No effect"
+        },
+        {
+          "min": "6",
+          "max": "42",
+          "name": "Ramp Up"
+        },
+        {
+          "min": "43",
+          "max": "85",
+          "name": "Ramp down"
+        },
+        {
+          "min": "86",
+          "max": "128",
+          "name": "Ramp Up to Down"
+        },
+        {
+          "min": "129",
+          "max": "171",
+          "name": "Random"
+        },
+        {
+          "min": "172",
+          "max": "214",
+          "name": "Lightning"
+        },
+        {
+          "min": "215",
+          "max": "255",
+          "name": "Spikes (fals over low light)"
+        }
+      ]
+    },
+    {
+      "name": "Layer 3 Strobe Engine Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Layer 3 Strobe Engine Duration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "From fast to slow"
+        }
+      ]
+    },
+    {
+      "name": "Layer 3 Strobe Engine Rate",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No effect"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Pulsation from slow (0.3Hz) to fast (25Hz)"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Shape Selection",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Not Used"
+        },
+        {
+          "min": "6",
+          "max": "130",
+          "name": "Static\n   \n   \n  "
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Dynamic\n   \n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Shape Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Effect 1"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Effect 2"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Effect 3"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Effect 4"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Effect 5"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Effect 6"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Effect 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Effect 8"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Effect 9"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Effect 10"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Effect 11"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Effect 12"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Effect 13"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Effect 14"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Effect 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Effect 16"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Shape Indexing Speed Nothing",
+      "type": "Nothing",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Shape Fade",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Off"
+        },
+        {
+          "min": "6",
+          "max": "130",
+          "name": "Fade change from fast to slow"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Wake change from fast to slow"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Shape Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Light Off"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Stobe Frequency from slow (1Hz) to fast (25Hz)"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Light On"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Pulsation from slow (0.5Hz) to fast (25Hz)"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Light On"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random Slow Strobe Effect"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random Medium Strobe Effect"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random Fast Strobe Effect On"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Light on (Shape master)"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Shape Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Layer 2 Shape Transition",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Shape Transition"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Background Red",
+      "type": "Red"
+    },
+    {
+      "name": "Layer 2 Background Green",
+      "type": "Green"
+    },
+    {
+      "name": "Layer 2 Background Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Layer 2 Background White",
+      "type": "White"
+    },
+    {
+      "name": "Layer 2 Background CTO",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Unused range"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "From 8000K to 2700K"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Background Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Light Off"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Stobe Frequency from slow (1Hz) to fast (25Hz)"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Light On"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Pulsation from slow (0.5Hz) to fast (25Hz)"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Light On"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random Slow Strobe Effect"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random Medium Strobe Effect"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random Fast Strobe Effect On"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Light On"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Background Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Layer 3 Strobe Selection",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "130",
+          "name": "Static\n   \n   \n   \n  "
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Dynamic\n   \n   \n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Layer 3 Strobe Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Effect 1"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Effect 2"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Effect 3"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Effect 4"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Effect 5"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Effect 6"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Effect 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Effect 8"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Effect 9"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Effect 10"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Effect 11"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Effect 12"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Effect 13"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Effect 14"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Effect 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Effect 16"
+        }
+      ]
+    },
+    {
+      "name": "Layer 3 Strobe Indexing Speed Nothing",
+      "type": "Nothing",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Layer 3 Strobe Fade",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Off"
+        },
+        {
+          "min": "6",
+          "max": "130",
+          "name": "Fade change from fast to slow"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Wake change from fast to slow"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Background Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Layer 2 Background Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Layer 2 Background Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "Layer 2 Background White fine",
+      "type": "White"
+    },
+    {
+      "name": "Master Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Light Off"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Strobe frenquency from slow (1Hz) to fast (25Hz)"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Light On"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Pulsation from slow (0.5Hz) to fast (25Hz)"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Light On"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random slow Strobe"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random medium Strobe"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random fast Strobe"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Light On"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Master Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Layer 2 Selection",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "130",
+          "name": "Static\n   \n  "
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Dynamic\n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Effect 1"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Effect 2"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Effect 3"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Effect 4"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Effect 5"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Effect 6"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Effect 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Effect 8"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Effect 9"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Effect 10"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Effect 11"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Effect 12"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Effect 13"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Effect 14"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Effect 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Effect 16"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Indexing Speed Nothing",
+      "type": "Nothing",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Fade",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fade from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Layer 2 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Layer 2 Transition",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Transition"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Layer 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Layer 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Layer 2 White",
+      "type": "White"
+    },
+    {
+      "name": "Layer 2 CTO",
+      "type": "Color"
+    },
+    {
+      "name": "Layer 3 Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Layer 3 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Layer 2 CTO 3",
+      "type": "Color"
+    },
+    {
+      "name": "Layer 2 CTO 4",
+      "type": "Color"
+    },
+    {
+      "name": "Layer 2 CTO 5",
+      "type": "Color"
+    },
+    {
+      "name": "Layer 2 CTO 6",
+      "type": "Color"
+    },
+    {
+      "name": "Red led 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green Led 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Led 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White Led 1",
+      "type": "White"
+    },
+    {
+      "name": "Red led 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red led 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red led 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green Led 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green Led 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green Led 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Led 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Led 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Led 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White Led 2",
+      "type": "White"
+    },
+    {
+      "name": "White Led 3",
+      "type": "White"
+    },
+    {
+      "name": "White Led 4",
+      "type": "White"
+    },
+    {
+      "name": "White Led 5",
+      "type": "White"
+    },
+    {
+      "name": "White Led 6",
+      "type": "White"
+    },
+    {
+      "name": "White Led 7",
+      "type": "White"
+    },
+    {
+      "name": "White Led 8",
+      "type": "White"
+    },
+    {
+      "name": "White Led 9",
+      "type": "White"
+    },
+    {
+      "name": "White Led 10",
+      "type": "White"
+    },
+    {
+      "name": "White Led 11",
+      "type": "White"
+    },
+    {
+      "name": "White Led 12",
+      "type": "White"
+    },
+    {
+      "name": "White Led 13",
+      "type": "White"
+    },
+    {
+      "name": "White Led 14",
+      "type": "White"
+    },
+    {
+      "name": "White Led 15",
+      "type": "White"
+    },
+    {
+      "name": "White Led 16",
+      "type": "White"
+    },
+    {
+      "name": "Layer 2 Shape Indexing speed Static",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Indexing"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Shape Indexing speed Dynamic",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "124",
+          "name": "Speed fast to slow, foeward"
+        },
+        {
+          "min": "125",
+          "max": "130",
+          "name": "Stop"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Speed slow to fast, bachward"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Indexing Speed Staic",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Indexing"
+        }
+      ]
+    },
+    {
+      "name": "Layer 2 Indexing Speed Dynamic",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "124",
+          "name": "Speed from fast to slow, forwadd"
+        },
+        {
+          "min": "125",
+          "max": "130",
+          "name": "Stop"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Speed from slow to fast, backward"
+        }
+      ]
+    },
+    {
+      "name": "Layer 3 Strobe Indexing Speed Static",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Indexing"
+        }
+      ]
+    },
+    {
+      "name": "Layer 3 Strobe Indexing Speed Dynamic",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "124",
+          "name": "Speed fast to slow, forward"
+        },
+        {
+          "min": "125",
+          "max": "130",
+          "name": "Stop"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Speed slow to fast, backward"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard RGBW",
+      "totalChannels": 16,
+      "channels": [
+        "Layer 1 Red",
+        "Layer 1 Green",
+        "Layer 1 Blue",
+        "Layer 1 White",
+        "Layer 1 CTO",
+        "Layer 1 Strobe",
+        "Layer 1 Dimmer",
+        "Layer 1 Dimmer fine",
+        "Layer 1 Color CrossFade",
+        "Layer 1 Attack Fade",
+        "Layer 1 Release Fade",
+        "Layer 1 Function",
+        "Layer 3 Strobe Engine",
+        "Layer 3 Strobe Engine Dimmer",
+        "Layer 3 Strobe Engine Rate",
+        "Layer 3 Strobe Engine Duration"
+      ]
+    },
+    {
+      "name": "Standard RGBW 16bit",
+      "totalChannels": 20,
+      "channels": [
+        "Layer 1 Red",
+        "Layer 1 Red fine",
+        "Layer 1 Green",
+        "Layer 1 Green fine",
+        "Layer 1 Blue",
+        "Layer 1 Blue fine",
+        "Layer 1 White",
+        "Layere 1 White fine",
+        "Layer 1 CTO",
+        "Layer 1 Strobe",
+        "Layer 1 Dimmer",
+        "Layer 1 Dimmer fine",
+        "Layer 1 Color CrossFade",
+        "Layer 1 Attack Fade",
+        "Layer 1 Release Fade",
+        "Layer 1 Function",
+        "Layer 3 Strobe Engine",
+        "Layer 3 Strobe Engine Dimmer",
+        "Layer 3 Strobe Engine Duration",
+        "Layer 3 Strobe Engine Rate"
+      ]
+    },
+    {
+      "name": "Shape RGBW",
+      "totalChannels": 34,
+      "channels": [
+        "Layer 1 Red",
+        "Layer 1 Green",
+        "Layer 1 Blue",
+        "Layer 1 White",
+        "Layer 1 CTO",
+        "Layer 1 Strobe",
+        "Layer 1 Dimmer",
+        "Layer 1 Dimmer fine",
+        "Layer 1 Color CrossFade",
+        "Layer 1 Attack Fade",
+        "Layer 1 Release Fade",
+        "Layer 1 Function",
+        "Layer 2 Shape Selection",
+        "Layer 2 Shape Effect",
+        "Layer 2 Shape Indexing Speed Nothing",
+        "Layer 2 Shape Fade",
+        "Layer 2 Shape Strobe",
+        "Layer 2 Shape Dimmer",
+        "Layer 2 Shape Transition",
+        "Layer 2 Background Red",
+        "Layer 2 Background Green",
+        "Layer 2 Background Blue",
+        "Layer 2 Background White",
+        "Layer 2 Background CTO",
+        "Layer 2 Background Strobe",
+        "Layer 2 Background Dimmer",
+        "Layer 3 Strobe Engine",
+        "Layer 3 Strobe Engine Dimmer",
+        "Layer 3 Strobe Engine Duration",
+        "Layer 3 Strobe Engine Rate",
+        "Layer 3 Strobe Selection",
+        "Layer 3 Strobe Effect",
+        "Layer 3 Strobe Indexing Speed Nothing",
+        "Layer 3 Strobe Fade"
+      ]
+    },
+    {
+      "name": "Shape RGBW 16bit",
+      "totalChannels": 42,
+      "channels": [
+        "Layer 1 Red",
+        "Layer 1 Red fine",
+        "Layer 1 Green",
+        "Layer 1 Green fine",
+        "Layer 1 Blue",
+        "Layer 1 Blue fine",
+        "Layer 1 White",
+        "Layere 1 White fine",
+        "Layer 1 CTO",
+        "Layer 1 Strobe",
+        "Layer 1 Dimmer",
+        "Layer 1 Dimmer fine",
+        "Layer 1 Color CrossFade",
+        "Layer 1 Attack Fade",
+        "Layer 1 Release Fade",
+        "Layer 1 Function",
+        "Layer 2 Shape Selection",
+        "Layer 2 Shape Effect",
+        "Layer 2 Shape Indexing Speed Nothing",
+        "Layer 2 Shape Fade",
+        "Layer 2 Shape Strobe",
+        "Layer 2 Shape Dimmer",
+        "Layer 2 Shape Transition",
+        "Layer 2 Background Red",
+        "Layer 2 Background Red fine",
+        "Layer 2 Background Green",
+        "Layer 2 Background Green fine",
+        "Layer 2 Background Blue",
+        "Layer 2 Background Blue fine",
+        "Layer 2 Background White",
+        "Layer 2 Background White fine",
+        "Layer 2 Background CTO",
+        "Layer 2 Background Strobe",
+        "Layer 2 Background Dimmer",
+        "Layer 3 Strobe Engine",
+        "Layer 3 Strobe Engine Dimmer",
+        "Layer 3 Strobe Engine Duration",
+        "Layer 3 Strobe Engine Rate",
+        "Layer 3 Strobe Selection",
+        "Layer 3 Strobe Effect",
+        "Layer 3 Strobe Indexing Speed Nothing",
+        "Layer 3 Strobe Fade"
+      ]
+    },
+    {
+      "name": "Advance",
+      "totalChannels": 36,
+      "channels": [
+        "Layer 1 Red",
+        "Layer 1 Green",
+        "Layer 1 Blue",
+        "Layer 1 White",
+        "Layer 1 CTO",
+        "Layer 1 Strobe",
+        "Layer 1 Dimmer",
+        "Master Strobe",
+        "Master Dimmer",
+        "Master Dimmer fine",
+        "Layer 1 Color CrossFade",
+        "Layer 1 Attack Fade",
+        "Layer 1 Release Fade",
+        "Layer 1 Function",
+        "Layer 2 Selection",
+        "Layer 2 Effect",
+        "Layer 2 Indexing Speed Nothing",
+        "Layer 2 Fade",
+        "Layer 2 Strobe",
+        "Layer 2 Dimmer",
+        "Layer 2 Transition",
+        "Layer 2 Red",
+        "Layer 2 Green",
+        "Layer 2 Blue",
+        "Layer 2 White",
+        "Layer 2 CTO",
+        "Layer 3 Strobe",
+        "Layer 3 Dimmer",
+        "Layer 3 Strobe Engine",
+        "Layer 3 Strobe Engine Dimmer",
+        "Layer 3 Strobe Engine Duration",
+        "Layer 3 Strobe Engine Rate",
+        "Layer 3 Strobe Selection",
+        "Layer 3 Strobe Effect",
+        "Layer 3 Strobe Indexing Speed Nothing",
+        "Layer 3 Strobe Fade"
+      ]
+    },
+    {
+      "name": "Pixels RGB",
+      "totalChannels": 12,
+      "channels": [
+        "Red led 1",
+        "Green Led 1",
+        "Blue Led 1",
+        "Red led 2",
+        "Green Led 2",
+        "Blue Led 2",
+        "Red led 3",
+        "Green Led 3",
+        "Blue Led 3",
+        "Red led 4",
+        "Green Led 4",
+        "Blue Led 4"
+      ]
+    },
+    {
+      "name": "Pixels RGBW",
+      "totalChannels": 16,
+      "channels": [
+        "Red led 1",
+        "Green Led 1",
+        "Blue Led 1",
+        "White Led 1",
+        "Red led 2",
+        "Green Led 2",
+        "Blue Led 2",
+        "White Led 2",
+        "Red led 3",
+        "Green Led 3",
+        "Blue Led 3",
+        "White Led 3",
+        "Red led 4",
+        "Green Led 4",
+        "Blue Led 4",
+        "White Led 4"
+      ]
+    },
+    {
+      "name": "Pixels Strobe",
+      "totalChannels": 16,
+      "channels": [
+        "White Led 1",
+        "White Led 2",
+        "White Led 3",
+        "White Led 4",
+        "White Led 5",
+        "White Led 6",
+        "White Led 7",
+        "White Led 8",
+        "White Led 9",
+        "White Led 10",
+        "White Led 11",
+        "White Led 12",
+        "White Led 13",
+        "White Led 14",
+        "White Led 15",
+        "White Led 16"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "8458",
+      "colourTemperature": "6000"
+    },
+    "dimensions": {
+      "weight": "5.7",
+      "width": "533",
+      "height": "243",
+      "depth": "180"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "500",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

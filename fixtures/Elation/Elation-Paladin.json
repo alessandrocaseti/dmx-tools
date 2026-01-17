@@ -1,0 +1,775 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elation",
+  "model": "Paladin",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Nicholas Harvey",
+  "channels": [
+    {
+      "name": "Red (All LEDs)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (All LEDs)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (All LEDs)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (All LEDs)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Pixel Set #1)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Pixel Set #1)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Pixel Set #1)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Pixel Set #1)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Pixel Set #2)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Pixel Set #2)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Pixel Set #2)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Pixel Set #2)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Pixel Set #3)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Pixel Set #3)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Pixel Set #3)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Pixel Set #3)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Pixel Set #4)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Pixel Set #4)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Pixel Set #4)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Pixel Set #4)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Pixel Set #5)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Pixel Set #5)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Pixel Set #5)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Pixel Set #5)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Pixel Set #6)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Pixel Set #6)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Pixel Set #6)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Pixel Set #6)",
+      "type": "White"
+    },
+    {
+      "name": "Shutter / Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED Off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED On"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe Effect Slow to Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED On"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Effect in Sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED On"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe Effect Slow to Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED On"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Intensity Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Program Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "LEDs On"
+        },
+        {
+          "min": "1",
+          "max": "14",
+          "name": "LEDs Off"
+        },
+        {
+          "min": "15",
+          "max": "30",
+          "name": "Program Macro 1"
+        },
+        {
+          "min": "31",
+          "max": "46",
+          "name": "Program Macro 2"
+        },
+        {
+          "min": "47",
+          "max": "62",
+          "name": "Program Macro 3"
+        },
+        {
+          "min": "63",
+          "max": "78",
+          "name": "Program Macro 4"
+        },
+        {
+          "min": "79",
+          "max": "94",
+          "name": "Program Macro 5"
+        },
+        {
+          "min": "95",
+          "max": "110",
+          "name": "Program Macro 6"
+        },
+        {
+          "min": "111",
+          "max": "126",
+          "name": "Program Macro 7"
+        },
+        {
+          "min": "127",
+          "max": "142",
+          "name": "Program Macro 8"
+        },
+        {
+          "min": "143",
+          "max": "158",
+          "name": "Program Macro 9"
+        },
+        {
+          "min": "159",
+          "max": "174",
+          "name": "Program Macro 10"
+        },
+        {
+          "min": "175",
+          "max": "190",
+          "name": "Program Macro 11"
+        },
+        {
+          "min": "191",
+          "max": "206",
+          "name": "Program Macro 12"
+        },
+        {
+          "min": "207",
+          "max": "222",
+          "name": "Program Macro 13"
+        },
+        {
+          "min": "223",
+          "max": "238",
+          "name": "Program Macro 14"
+        },
+        {
+          "min": "239",
+          "max": "255",
+          "name": "Program Macro 15"
+        }
+      ]
+    },
+    {
+      "name": "Program Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program Macro Speed Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Program Macro Fade",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program Macro Fade Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Presets",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "4",
+          "name": "Color Preset 1"
+        },
+        {
+          "min": "5",
+          "max": "8",
+          "name": "Color Preset 2"
+        },
+        {
+          "min": "9",
+          "max": "12",
+          "name": "Color Preset 3"
+        },
+        {
+          "min": "13",
+          "max": "16",
+          "name": "Color Preset 4"
+        },
+        {
+          "min": "17",
+          "max": "20",
+          "name": "Color Preset 5"
+        },
+        {
+          "min": "21",
+          "max": "24",
+          "name": "Color Preset 6"
+        },
+        {
+          "min": "25",
+          "max": "28",
+          "name": "Color Preset 7"
+        },
+        {
+          "min": "29",
+          "max": "32",
+          "name": "Color Preset 8"
+        },
+        {
+          "min": "33",
+          "max": "36",
+          "name": "Color Preset 9"
+        },
+        {
+          "min": "37",
+          "max": "40",
+          "name": "Color Preset 10"
+        },
+        {
+          "min": "41",
+          "max": "44",
+          "name": "Color Preset 11"
+        },
+        {
+          "min": "45",
+          "max": "48",
+          "name": "Color Preset 12"
+        },
+        {
+          "min": "49",
+          "max": "52",
+          "name": "Color Preset 13"
+        },
+        {
+          "min": "53",
+          "max": "56",
+          "name": "Color Preset 14"
+        },
+        {
+          "min": "57",
+          "max": "60",
+          "name": "Color Preset 15"
+        },
+        {
+          "min": "61",
+          "max": "64",
+          "name": "Color Preset 16"
+        },
+        {
+          "min": "65",
+          "max": "68",
+          "name": "Color Preset 17"
+        },
+        {
+          "min": "69",
+          "max": "72",
+          "name": "Color Preset 18"
+        },
+        {
+          "min": "73",
+          "max": "76",
+          "name": "Color Preset 19"
+        },
+        {
+          "min": "77",
+          "max": "80",
+          "name": "Color Preset 20"
+        },
+        {
+          "min": "81",
+          "max": "84",
+          "name": "Color Preset 21"
+        },
+        {
+          "min": "85",
+          "max": "88",
+          "name": "Color Preset 22"
+        },
+        {
+          "min": "89",
+          "max": "92",
+          "name": "Color Preset 23"
+        },
+        {
+          "min": "93",
+          "max": "96",
+          "name": "Color Preset 24"
+        },
+        {
+          "min": "97",
+          "max": "100",
+          "name": "Color Preset 25"
+        },
+        {
+          "min": "101",
+          "max": "104",
+          "name": "Color Preset 26"
+        },
+        {
+          "min": "105",
+          "max": "108",
+          "name": "Color Preset 27"
+        },
+        {
+          "min": "109",
+          "max": "112",
+          "name": "Color Preset 28"
+        },
+        {
+          "min": "113",
+          "max": "116",
+          "name": "Color Preset 29"
+        },
+        {
+          "min": "117",
+          "max": "120",
+          "name": "Color Preset 30"
+        },
+        {
+          "min": "121",
+          "max": "124",
+          "name": "Color Preset 31"
+        },
+        {
+          "min": "125",
+          "max": "128",
+          "name": "Color Preset 32"
+        },
+        {
+          "min": "129",
+          "max": "132",
+          "name": "Color Preset 33"
+        },
+        {
+          "min": "133",
+          "max": "136",
+          "name": "Color Preset 34"
+        },
+        {
+          "min": "137",
+          "max": "140",
+          "name": "Color Preset 35"
+        },
+        {
+          "min": "141",
+          "max": "144",
+          "name": "Color Preset 36"
+        },
+        {
+          "min": "145",
+          "max": "148",
+          "name": "Color Preset 37"
+        },
+        {
+          "min": "149",
+          "max": "152",
+          "name": "Color Preset 38"
+        },
+        {
+          "min": "153",
+          "max": "156",
+          "name": "Color Preset 39"
+        },
+        {
+          "min": "157",
+          "max": "160",
+          "name": "Color Preset 40"
+        },
+        {
+          "min": "161",
+          "max": "164",
+          "name": "Color Preset 41"
+        },
+        {
+          "min": "165",
+          "max": "168",
+          "name": "Color Preset 42"
+        },
+        {
+          "min": "169",
+          "max": "172",
+          "name": "Color Preset 43"
+        },
+        {
+          "min": "173",
+          "max": "176",
+          "name": "Color Preset 44"
+        },
+        {
+          "min": "177",
+          "max": "180",
+          "name": "Color Preset 45"
+        },
+        {
+          "min": "181",
+          "max": "184",
+          "name": "Color Preset 46"
+        },
+        {
+          "min": "185",
+          "max": "188",
+          "name": "Color Preset 47"
+        },
+        {
+          "min": "189",
+          "max": "192",
+          "name": "Color Preset 48"
+        },
+        {
+          "min": "193",
+          "max": "196",
+          "name": "Color Preset 49"
+        },
+        {
+          "min": "197",
+          "max": "200",
+          "name": "Color Preset 50"
+        },
+        {
+          "min": "201",
+          "max": "204",
+          "name": "Color Preset 51"
+        },
+        {
+          "min": "205",
+          "max": "208",
+          "name": "Color Preset 52"
+        },
+        {
+          "min": "209",
+          "max": "212",
+          "name": "Color Preset 53"
+        },
+        {
+          "min": "213",
+          "max": "216",
+          "name": "Color Preset 54"
+        },
+        {
+          "min": "217",
+          "max": "220",
+          "name": "Color Preset 55"
+        },
+        {
+          "min": "221",
+          "max": "224",
+          "name": "Color Preset 56"
+        },
+        {
+          "min": "225",
+          "max": "228",
+          "name": "Color Preset 57"
+        },
+        {
+          "min": "229",
+          "max": "232",
+          "name": "Color Preset 58"
+        },
+        {
+          "min": "233",
+          "max": "236",
+          "name": "Color Preset 59"
+        },
+        {
+          "min": "237",
+          "max": "240",
+          "name": "Color Preset 60"
+        },
+        {
+          "min": "241",
+          "max": "244",
+          "name": "Color Preset 61"
+        },
+        {
+          "min": "245",
+          "max": "248",
+          "name": "Color Preset 62"
+        },
+        {
+          "min": "249",
+          "max": "252",
+          "name": "Color Preset 63"
+        },
+        {
+          "min": "253",
+          "max": "255",
+          "name": "Color Preset 64"
+        }
+      ]
+    },
+    {
+      "name": "Dimming Curve Modes",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to Unit Setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Basic",
+      "totalChannels": 12,
+      "channels": [
+        "Red (All LEDs)",
+        "Green (All LEDs)",
+        "Blue (All LEDs)",
+        "White (All LEDs)",
+        "Shutter / Strobe",
+        "Dimmer Intensity",
+        "Zoom",
+        "Program Macros",
+        "Program Macro Speed",
+        "Program Macro Fade",
+        "Color Presets",
+        "Dimming Curve Modes"
+      ]
+    },
+    {
+      "name": "Standard",
+      "totalChannels": 21,
+      "channels": [
+        "Red (Pixel Set #1)",
+        "Green (Pixel Set #1)",
+        "Blue (Pixel Set #1)",
+        "White (Pixel Set #1)",
+        "Red (Pixel Set #2)",
+        "Green (Pixel Set #2)",
+        "Blue (Pixel Set #2)",
+        "White (Pixel Set #2)",
+        "Red (Pixel Set #3)",
+        "Green (Pixel Set #3)",
+        "Blue (Pixel Set #3)",
+        "White (Pixel Set #3)",
+        "Shutter / Strobe",
+        "Dimmer Intensity",
+        "Dimmer Intensity Fine",
+        "Zoom",
+        "Program Macros",
+        "Program Macro Speed",
+        "Program Macro Fade",
+        "Color Presets",
+        "Dimming Curve Modes"
+      ]
+    },
+    {
+      "name": "Extended",
+      "totalChannels": 33,
+      "channels": [
+        "Red (Pixel Set #1)",
+        "Green (Pixel Set #1)",
+        "Blue (Pixel Set #1)",
+        "White (Pixel Set #1)",
+        "Red (Pixel Set #2)",
+        "Green (Pixel Set #2)",
+        "Blue (Pixel Set #2)",
+        "White (Pixel Set #2)",
+        "Red (Pixel Set #3)",
+        "Green (Pixel Set #3)",
+        "Blue (Pixel Set #3)",
+        "White (Pixel Set #3)",
+        "Red (Pixel Set #4)",
+        "Green (Pixel Set #4)",
+        "Blue (Pixel Set #4)",
+        "White (Pixel Set #4)",
+        "Red (Pixel Set #5)",
+        "Green (Pixel Set #5)",
+        "Blue (Pixel Set #5)",
+        "White (Pixel Set #5)",
+        "Red (Pixel Set #6)",
+        "Green (Pixel Set #6)",
+        "Blue (Pixel Set #6)",
+        "White (Pixel Set #6)",
+        "Shutter / Strobe",
+        "Dimmer Intensity",
+        "Dimmer Intensity Fine",
+        "Zoom",
+        "Program Macros",
+        "Program Macro Speed",
+        "Program Macro Fade",
+        "Color Presets",
+        "Dimming Curve Modes"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "20.9",
+      "width": "478",
+      "height": "233",
+      "depth": "407"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "6",
+      "degreesMax": "32"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "900",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

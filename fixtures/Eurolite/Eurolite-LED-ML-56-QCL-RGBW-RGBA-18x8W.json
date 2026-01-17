@@ -1,0 +1,311 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED ML-56 QCL RGBW-RGBA 18x8W",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Matthijs ten Berge",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Secondary Red",
+      "type": "Red"
+    },
+    {
+      "name": "Secondary Green",
+      "type": "Green"
+    },
+    {
+      "name": "Secondary Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Sound Control, Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Sound control (30 colors)"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe (increasing)"
+        }
+      ]
+    },
+    {
+      "name": "Color Selection",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Red"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Green"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Blue"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Cold white"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Amber"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Spring yellow"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Cyan"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Pale blue"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Warm white tone 1"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Pale red"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Pale green"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Medium blue"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Lilac tint"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Salmon"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Medium green"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "White frost"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Cyan tone 1"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Light blue"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Medium pink"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Green tone 2"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Medium yellow"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Light green"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Pink"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Light pink"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Blue mist"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Medium white"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Light cyan"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Steel blue"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Green yellow"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Warm white tone 2"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "8 Channel Mode",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Secondary Red",
+        "Secondary Green",
+        "Secondary Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "7 Channel Mode",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "Dimmer",
+        "Sound Control, Strobe"
+      ]
+    },
+    {
+      "name": "5 Channel Mode",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White"
+      ]
+    },
+    {
+      "name": "3 Channel Mode",
+      "totalChannels": 3,
+      "channels": [
+        "Color Selection",
+        "Dimmer",
+        "Sound Control, Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "300",
+      "height": "310",
+      "depth": "240"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "190",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

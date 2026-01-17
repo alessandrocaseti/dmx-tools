@@ -1,0 +1,633 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COLORado 1 Solo",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "R: 100% G: 0-100% B: 0"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "R: 100%-0 G: 100% B: 0"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "R: 0 G: 100% B: 0-100%"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "R: 0 G: 100%-0 B: 100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "R: 0-100% G: 0 B: 100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "R: 100% G: 0 B: 100%-0"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "R: 100% G: 0-100% B: 0-100%"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "R: 100%-0 G: 100%-0 B: 100%"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "R: 100% G: 100% B: 100% W: 100%"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "White 1"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "White 2"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "White 3"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "White 4"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "White 5"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "White 6"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "White 7"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "White 8"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "White 9"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "White 10"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "White 11"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "0-20 Hz"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No function"
+        },
+        {
+          "min": "110",
+          "max": "179",
+          "name": "Lightning strobe"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Random strobe"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "No function"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Auto 1"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Auto 2"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Auto 3"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Auto 4"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "Auto 5"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "Auto 6"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Auto 7"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Auto 8"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Auto 9"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Auto 10"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Custom 1"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Custom 2"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Custom 3"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Custom 4"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "Custom 5"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Custom 6"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "Custom 7"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "Custom 8"
+        },
+        {
+          "min": "221",
+          "max": "230",
+          "name": "Custom 9"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Custom 10"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Preset dimmer speed from display menu"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Linear dimmer"
+        },
+        {
+          "min": "30",
+          "max": "69",
+          "name": "Nonlinear dimming curve 1 (fastest)"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "Nonlinear dimming curve 2"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "Nonlinear dimming curve 3"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Nonlinear dimming curve 1 (slowest)"
+        }
+      ]
+    },
+    {
+      "name": "ID Address",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "All IDs"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "ID 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "ID 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "ID 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "ID 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "ID 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "ID 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "ID 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "ID 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "ID 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "ID 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "ID 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "ID 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "ID 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "ID 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "ID 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "ID 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "ID 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "ID 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "ID 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "ID 20"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "ID 21 - ID 66"
+        }
+      ]
+    },
+    {
+      "name": "Zoom Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "200",
+          "name": "No function"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Zoom reset"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green Fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White Fine",
+      "type": "White"
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Hue Fine",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Tour",
+      "totalChannels": 12,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro",
+        "Strobe Effect",
+        "Programs",
+        "Auto Speed",
+        "Zoom",
+        "Zoom Control",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "Std.Y",
+      "totalChannels": 17,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine",
+        "Red",
+        "Red Fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "White",
+        "White Fine",
+        "Color Macro",
+        "Strobe Effect",
+        "Programs",
+        "Auto Speed",
+        "Zoom",
+        "Zoom Control",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "Tr16",
+      "totalChannels": 17,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine",
+        "Red",
+        "Red Fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "White",
+        "White Fine",
+        "Color Macro",
+        "Strobe Effect",
+        "Programs",
+        "Auto Speed",
+        "Zoom",
+        "Zoom Control",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "SSP",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe Effect",
+        "Zoom",
+        "Zoom Control",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "HSIC",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Hue",
+        "Hue Fine",
+        "Saturation",
+        "Color Macro",
+        "Strobe Effect",
+        "Zoom",
+        "Zoom Control",
+        "Dimmer Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "780",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.4",
+      "width": "242",
+      "height": "176",
+      "depth": "346"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "65",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

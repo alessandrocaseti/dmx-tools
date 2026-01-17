@@ -1,0 +1,404 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED Theatre COB 200 RGB+WW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Florian Faber",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Sound Control"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Color temperature",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "39",
+          "name": "1800K"
+        },
+        {
+          "min": "40",
+          "max": "69",
+          "name": "2200K"
+        },
+        {
+          "min": "70",
+          "max": "99",
+          "name": "2700K"
+        },
+        {
+          "min": "100",
+          "max": "129",
+          "name": "3200K"
+        },
+        {
+          "min": "130",
+          "max": "159",
+          "name": "4300K"
+        },
+        {
+          "min": "160",
+          "max": "189",
+          "name": "5600K"
+        },
+        {
+          "min": "190",
+          "max": "219",
+          "name": "6500K"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "8000K"
+        }
+      ]
+    },
+    {
+      "name": "Preset Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Warm white"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Full on"
+        }
+      ]
+    },
+    {
+      "name": "Internal programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Auto program 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Auto program 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Auto program 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Auto program 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Auto program 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Auto program 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Auto program 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Auto program 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Auto program 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Sound control program 1"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Sound control program 2"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Sound control program 3"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Sound control program 4"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Sound control program 5"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Sound control program 6"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Sound control program 7"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Sound control program 8"
+        },
+        {
+          "min": "180",
+          "max": "255",
+          "name": "Sound control program 9"
+        }
+      ]
+    },
+    {
+      "name": "Speed Internal programs",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed internal programs, increasing"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Master dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Preset Colors",
+        "Internal programs",
+        "Speed Internal programs",
+        "Color temperature"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 5,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Preset Colors",
+        "Internal programs",
+        "Speed Internal programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.75",
+      "width": "259",
+      "height": "376",
+      "depth": "200"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "17",
+      "degreesMax": "17"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "140",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

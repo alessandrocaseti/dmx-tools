@@ -1,0 +1,218 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "MHL90 Wash 5x18W RGBAW-UV",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "DJ MoreBass (DK)",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimming",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Turn Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "LED Quick Start"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe, Slow to Fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "LED Quick Start"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow Start, Quick Close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "LED Quick Start"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Quick Start, Slow Close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "LED Quick Start"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Flash"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "LED Open Switch"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Static LED Color Select",
+      "type": "Color"
+    },
+    {
+      "name": "Movement functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "X/Y Move, LED Turn Off"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Stop X/Y Move, LED Turn Off"
+        },
+        {
+          "min": "90",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Independent Operation"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Dimming",
+        "LED Effect",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Static LED Color Select",
+        "Movement functions"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "LED Effect",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Dimming",
+        "Movement functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "5 x HEX LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.3",
+      "width": "175",
+      "height": "245",
+      "depth": "178"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "22",
+      "degreesMax": "42"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

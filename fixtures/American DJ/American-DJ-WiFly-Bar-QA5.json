@@ -1,0 +1,893 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "WiFly Bar QA5",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Edgar Aichinger",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobing slow – fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Amber"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red + Green"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red + Amber"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green + Amber"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue + Amber"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Red + Green + Amber"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Red + Blue + Amber"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Green + Blue + Amber"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red + Green + Blue + Amber"
+        }
+      ]
+    },
+    {
+      "name": "Mode selection",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer Mode"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Color Macro Mode\n   \n  "
+        },
+        {
+          "min": "103",
+          "max": "204",
+          "name": "Program Mode\n   \n  "
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "Sound Active Mode\n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Color Change",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Color Change 1"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Color Change 2"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Color Change 3"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Color Change 4"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Color Change 5"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Color Change 6"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Color Change 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Color Change 8"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Color Change 9"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Color Change 10"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Color Change 11"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Color Change 12"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Color Change 13"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Color Change 14"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Color Change 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Color Change 16"
+        }
+      ]
+    },
+    {
+      "name": "Color Fade",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Color Fade 1"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Color Fade 2"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Color Fade 3"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Color Fade 4"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Color Fade 5"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Color Fade 6"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Color Fade 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Color Fade 8"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Color Fade 9"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Color Fade 10"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Color Fade 11"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Color Fade 12"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Color Fade 13"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Color Fade 14"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Color Fade 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Color Fade 16"
+        }
+      ]
+    },
+    {
+      "name": "Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Sound Active 1"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Sound Active 2"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Sound Active 3"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Sound Active 4"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Sound Active 5"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Sound Active 6"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Sound Active 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Sound Active 8"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Sound Active 9"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Sound Active 10"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Sound Active 11"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Sound Active 12"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Sound Active 13"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Sound Active 14"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Sound Active 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active 16"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program Speed slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Sound Sensivity",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "no function"
+        },
+        {
+          "min": "32",
+          "max": "255",
+          "name": "Sound Sensivity low - high"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "Program 1"
+        },
+        {
+          "min": "25",
+          "max": "35",
+          "name": "Program 2"
+        },
+        {
+          "min": "36",
+          "max": "46",
+          "name": "Program 3"
+        },
+        {
+          "min": "47",
+          "max": "57",
+          "name": "Program 4"
+        },
+        {
+          "min": "58",
+          "max": "68",
+          "name": "Program 5"
+        },
+        {
+          "min": "69",
+          "max": "79",
+          "name": "Program 6"
+        },
+        {
+          "min": "80",
+          "max": "90",
+          "name": "Program 7"
+        },
+        {
+          "min": "91",
+          "max": "101",
+          "name": "Program 8"
+        },
+        {
+          "min": "102",
+          "max": "112",
+          "name": "Program 9"
+        },
+        {
+          "min": "113",
+          "max": "123",
+          "name": "Program 10"
+        },
+        {
+          "min": "124",
+          "max": "134",
+          "name": "Program 11"
+        },
+        {
+          "min": "135",
+          "max": "145",
+          "name": "Program 12"
+        },
+        {
+          "min": "146",
+          "max": "156",
+          "name": "Program 13"
+        },
+        {
+          "min": "157",
+          "max": "167",
+          "name": "Program 14"
+        },
+        {
+          "min": "168",
+          "max": "178",
+          "name": "Program 15"
+        },
+        {
+          "min": "179",
+          "max": "189",
+          "name": "Program 16"
+        },
+        {
+          "min": "190",
+          "max": "200",
+          "name": "Program 17"
+        },
+        {
+          "min": "201",
+          "max": "211",
+          "name": "Program 18"
+        },
+        {
+          "min": "212",
+          "max": "222",
+          "name": "Program 19"
+        },
+        {
+          "min": "223",
+          "max": "233",
+          "name": "Program 20"
+        },
+        {
+          "min": "234",
+          "max": "244",
+          "name": "Program 21\n   \n   \n  "
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Program 22\n   \n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Programs 1",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "25",
+          "name": "Program 1"
+        },
+        {
+          "min": "26",
+          "max": "35",
+          "name": "Program 2"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Program 3"
+        },
+        {
+          "min": "46",
+          "max": "55",
+          "name": "Program 4"
+        },
+        {
+          "min": "56",
+          "max": "65",
+          "name": "Program 5"
+        },
+        {
+          "min": "66",
+          "max": "75",
+          "name": "Program 6"
+        },
+        {
+          "min": "76",
+          "max": "85",
+          "name": "Program 7"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "Program 8"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Program 9"
+        },
+        {
+          "min": "106",
+          "max": "115",
+          "name": "Program 10"
+        },
+        {
+          "min": "116",
+          "max": "125",
+          "name": "Program 11"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Program 12"
+        },
+        {
+          "min": "136",
+          "max": "145",
+          "name": "Program 13"
+        },
+        {
+          "min": "146",
+          "max": "155",
+          "name": "Program 14"
+        },
+        {
+          "min": "156",
+          "max": "165",
+          "name": "Program 15"
+        },
+        {
+          "min": "166",
+          "max": "175",
+          "name": "Program 16"
+        },
+        {
+          "min": "176",
+          "max": "185",
+          "name": "Program 17"
+        },
+        {
+          "min": "186",
+          "max": "195",
+          "name": "Program 18"
+        },
+        {
+          "min": "196",
+          "max": "205",
+          "name": "Program 19"
+        },
+        {
+          "min": "206",
+          "max": "215",
+          "name": "Program 20"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "Program 21"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Program 22"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Auto Run"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Sound Active\n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber 1",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber 2",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber 3",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber 4",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber 5",
+      "type": "Amber"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Strobing",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Color Macros",
+        "Strobing",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master dimmer",
+        "Strobing",
+        "Mode selection",
+        "Programs"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Color Macros",
+        "Programs 1",
+        "Program Speed",
+        "Strobing",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 22,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Amber 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Amber 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Amber 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Amber 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Amber 5",
+        "Strobing",
+        "Master dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1",
+      "colourTemperature": "4500"
+    },
+    "dimensions": {
+      "weight": "4.2",
+      "width": "502",
+      "height": "152",
+      "depth": "150"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "58",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

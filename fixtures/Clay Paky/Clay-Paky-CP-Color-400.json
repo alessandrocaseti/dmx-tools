@@ -1,0 +1,127 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "CP Color 400",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Safe"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "4 DMX, CMY",
+      "totalChannels": 4,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "4 DMX, RGB",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "5 DMX, CMY",
+      "totalChannels": 5,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Dimmer",
+        "Control"
+      ]
+    },
+    {
+      "name": "5 DMX, RGB",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSR 400W",
+      "lumens": "32000",
+      "colourTemperature": "5600"
+    },
+    "dimensions": {
+      "weight": "43.9",
+      "width": "237",
+      "height": "314",
+      "depth": "424"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "700",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Eclipse RGB",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "charles.oldham",
+  "channels": [
+    {
+      "name": "Auto Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "49",
+          "name": "DMX Mode"
+        },
+        {
+          "min": "50",
+          "max": "99",
+          "name": "Auto Slow"
+        },
+        {
+          "min": "100",
+          "max": "149",
+          "name": "Auto Fast"
+        },
+        {
+          "min": "150",
+          "max": "199",
+          "name": "Sound Active"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Random"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "28",
+          "name": "Red"
+        },
+        {
+          "min": "29",
+          "max": "56",
+          "name": "Green"
+        },
+        {
+          "min": "57",
+          "max": "84",
+          "name": "Red + Green"
+        },
+        {
+          "min": "85",
+          "max": "112",
+          "name": "Green Strobe"
+        },
+        {
+          "min": "113",
+          "max": "140",
+          "name": "Red Strobe"
+        },
+        {
+          "min": "141",
+          "max": "168",
+          "name": "Red + Green Strobe"
+        },
+        {
+          "min": "169",
+          "max": "197",
+          "name": "Red Strobe + Green"
+        },
+        {
+          "min": "198",
+          "max": "224",
+          "name": "Red Strobe + Green Strobe"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "Alternating Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Strobe (laser)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "249",
+          "name": "Strobe (slow to fast)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Strobe (sound active)"
+        }
+      ]
+    },
+    {
+      "name": "Rotation (laser)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Clockwise rotation (slow to fast)"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "No function"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Counterclockwise rotation (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Vibration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "Vibration (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Flash",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "Flash (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Red"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Fade in (0~100%)"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Fade out (100%~0)"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Alternating fade (100%~0~100%...)"
+        }
+      ]
+    },
+    {
+      "name": "Green",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Green"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Fade in (0~100%)"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Fade out (100%~0%)"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Alternating fade (100%~0~100%...)"
+        }
+      ]
+    },
+    {
+      "name": "Blue",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Blue"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Fade in (0~100%)"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Fade out (100%~0)"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Alternating fade (100%~0~100%...)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe (LED)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "249",
+          "name": "Strobe (slow to fast)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Strobe (sound active)"
+        }
+      ]
+    },
+    {
+      "name": "Rotation (LED)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Clockwise rotation (slow to fast)"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "No function"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Counterclockwise rotation (slow to fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "12 Ch",
+      "totalChannels": 12,
+      "channels": [
+        "Auto Mode",
+        "Color",
+        "Strobe (laser)",
+        "Rotation (laser)",
+        "Vibration",
+        "Flash",
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe (LED)",
+        "Rotation (LED)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.7",
+      "width": "241",
+      "height": "162",
+      "depth": "196"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "43",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

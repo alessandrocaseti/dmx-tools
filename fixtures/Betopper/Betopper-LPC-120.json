@@ -1,0 +1,141 @@
+{
+  "version": "1.2",
+  "manufacturer": "Betopper",
+  "model": "LPC-120",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Loris Mercier",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "DMX dimmer"
+        },
+        {
+          "min": "11",
+          "max": "50",
+          "name": "High CRI output of 7 colors"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Output of 16 colors"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Jump change 16 colors"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Multicoloured gradient color changing"
+        },
+        {
+          "min": "201",
+          "max": "250",
+          "name": "Pulse change of multicoloured"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound control effect of 9 colors"
+        }
+      ]
+    },
+    {
+      "name": "Selector for channel 7",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "CH7 in high CRI mode : 0-36 colour temperature1 37-73 colour temp2 and so on. See manual for other setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Color macro",
+        "Selector for channel 7"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "3500",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.05",
+      "width": "233",
+      "height": "233",
+      "depth": "65"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "120",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

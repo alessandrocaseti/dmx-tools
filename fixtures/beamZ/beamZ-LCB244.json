@@ -1,0 +1,661 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "LCB244",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Bjorn Roesbeke",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Chase and Sound",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Colour effect 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Colour effect 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Colour effect 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Colour effect 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Colour effect 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Colour effect 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Colour effect 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Colour effect 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Colour effect 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Colour effect 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Colour effect 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Colour effect 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Colour effect 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Colour effect 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Colour effect 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Colour effect 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound effect 1-16"
+        }
+      ]
+    },
+    {
+      "name": "Chase speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed intensity (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimming",
+      "type": "Unknown"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Auto program",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Disabled"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "All dimming",
+      "type": "Intensity"
+    },
+    {
+      "name": "All dimming 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "All dimming 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "All dimming 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "All dimming 4",
+      "type": "Intensity"
+    },
+    {
+      "name": "All dimming 5",
+      "type": "Intensity"
+    },
+    {
+      "name": "All dimming 6",
+      "type": "Intensity"
+    },
+    {
+      "name": "All dimming 7",
+      "type": "Intensity"
+    },
+    {
+      "name": "All dimming 8",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe 1",
+      "type": "Shutter"
+    },
+    {
+      "name": "Strobe 2",
+      "type": "Shutter"
+    },
+    {
+      "name": "Strobe 3",
+      "type": "Shutter"
+    },
+    {
+      "name": "Strobe 4",
+      "type": "Shutter"
+    },
+    {
+      "name": "Strobe 5",
+      "type": "Shutter"
+    },
+    {
+      "name": "Strobe 6",
+      "type": "Shutter"
+    },
+    {
+      "name": "Strobe 7",
+      "type": "Shutter"
+    },
+    {
+      "name": "Strobe 8",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 8",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "White 4",
+      "type": "White"
+    },
+    {
+      "name": "White 5",
+      "type": "White"
+    },
+    {
+      "name": "White 6",
+      "type": "White"
+    },
+    {
+      "name": "White 7",
+      "type": "White"
+    },
+    {
+      "name": "White 8",
+      "type": "White"
+    },
+    {
+      "name": "Auto program 1",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Auto program 2",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Auto program 3",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Auto program 4",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Auto program 5",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Auto program 6",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Auto program 7",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Auto program 8",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Chase and Sound",
+        "Chase speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 9,
+      "channels": [
+        "Dimming",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Auto program",
+        "Chase and Sound",
+        "Chase speed"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 16,
+      "channels": [
+        "All dimming 1",
+        "Strobe 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Auto program 1",
+        "All dimming 2",
+        "Strobe 2",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Auto program 2",
+        "Chase and Sound",
+        "Chase speed"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 30,
+      "channels": [
+        "All dimming 1",
+        "Strobe 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Auto program 1",
+        "All dimming 2",
+        "Strobe 2",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Auto program 2",
+        "All dimming 3",
+        "Strobe 3",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Auto program 3",
+        "All dimming 4",
+        "Strobe 4",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Auto program 4",
+        "Chase and Sound",
+        "Chase speed"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 58,
+      "channels": [
+        "All dimming 1",
+        "Strobe 1",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Auto program 1",
+        "All dimming 2",
+        "Strobe 2",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Auto program 2",
+        "All dimming 3",
+        "Strobe 3",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Auto program 3",
+        "All dimming 4",
+        "Strobe 4",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Auto program 4",
+        "All dimming 5",
+        "Strobe 5",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "White 5",
+        "Auto program 5",
+        "All dimming 6",
+        "Strobe 6",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "White 6",
+        "Auto program 6",
+        "All dimming 7",
+        "Strobe 7",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "White 7",
+        "Auto program 7",
+        "All dimming 8",
+        "Strobe 8",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "White 8",
+        "Auto program 8",
+        "Chase and Sound",
+        "Chase speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "430",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.6",
+      "width": "67",
+      "height": "67",
+      "depth": "1020"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "20",
+      "degreesMax": "20"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "160",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

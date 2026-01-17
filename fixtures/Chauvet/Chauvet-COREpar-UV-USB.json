@@ -1,0 +1,155 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COREpar UV USB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Strobe/Speed/Sound Sensivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function/Slow to fast/Off"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "No function/Slow to fast/Control the sound sensitivity level"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow to fast/Slow to fast/Control the sound sensitivity level"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "95",
+          "name": "Pulse effect 0-100%"
+        },
+        {
+          "min": "96",
+          "max": "159",
+          "name": "Pulse effect 100%-0"
+        },
+        {
+          "min": "160",
+          "max": "223",
+          "name": "Pulse effect 100%-0-100%"
+        },
+        {
+          "min": "224",
+          "max": "240",
+          "name": "Sound triggering mode 1"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound triggering mode 2"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Default set from menu"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Mode 1 (fast speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Mode 2 (medium speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Mode 3 (slow speed)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "5-Channel",
+      "totalChannels": 5,
+      "channels": [
+        "UV",
+        "Strobe/Speed/Sound Sensivity",
+        "Programs",
+        "Dimmer",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "1-Channel",
+      "totalChannels": 1,
+      "channels": [
+        "UV"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.1",
+      "width": "200",
+      "height": "253",
+      "depth": "139"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "50",
+      "degreesMax": "100"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "67",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

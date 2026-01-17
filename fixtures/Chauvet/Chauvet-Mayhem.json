@@ -1,0 +1,391 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Mayhem",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jonathan Wilson",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Static color"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Mode 1"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Mode 2"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Mode 3"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Mode 4"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Mode 5"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Mode 6"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Mode 7"
+        },
+        {
+          "min": "161",
+          "max": "180",
+          "name": "Mode 8"
+        },
+        {
+          "min": "181",
+          "max": "200",
+          "name": "Mode 9"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Mode 10"
+        },
+        {
+          "min": "221",
+          "max": "240",
+          "name": "Mode 11"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Slow -> fast"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Slow -> fast"
+        }
+      ]
+    },
+    {
+      "name": "Pod 1 Static Color",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No function"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Red"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Blue"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Red/green"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Red/blue"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Green/blue"
+        },
+        {
+          "min": "141",
+          "max": "255",
+          "name": "Red/green/blue"
+        }
+      ]
+    },
+    {
+      "name": "Pod 2 Static Color",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No function"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Red"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Blue"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Red/green"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Red/blue"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Green/blue"
+        },
+        {
+          "min": "141",
+          "max": "255",
+          "name": "Red/green/blue"
+        }
+      ]
+    },
+    {
+      "name": "Pod 1 Rotation",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Static color"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Clockwise speed 1 (slowest)"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Clockwise speed 2"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Clockwise speed 3"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Clockwise speed 4"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Clockwise speed 5 (fastest)"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "No rotation"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Anti-clockwise speed 1 (slowest)"
+        },
+        {
+          "min": "161",
+          "max": "180",
+          "name": "Anti-clockwise speed 2"
+        },
+        {
+          "min": "181",
+          "max": "200",
+          "name": "Anti-clockwise speed 3"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Anti-clockwise speed 4"
+        },
+        {
+          "min": "221",
+          "max": "240",
+          "name": "Anti-clockwise speed 5 (fastest)"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound"
+        }
+      ]
+    },
+    {
+      "name": "Pod 2 Rotation",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Static color"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Clockwise speed 1 (slowest)"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Clockwise speed 2"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Clockwise speed 3"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Clockwise speed 4"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Clockwise speed 5 (fastest)"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "No rotation"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Anti-clockwise speed 1 (slowest)"
+        },
+        {
+          "min": "161",
+          "max": "180",
+          "name": "Anti-clockwise speed 2"
+        },
+        {
+          "min": "181",
+          "max": "200",
+          "name": "Anti-clockwise speed 3"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Anti-clockwise speed 4"
+        },
+        {
+          "min": "221",
+          "max": "240",
+          "name": "Anti-clockwise speed 5 (fastest)"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 7,
+      "channels": [
+        "Mode",
+        "Strobe",
+        "Speed",
+        "Pod 1 Static Color",
+        "Pod 2 Static Color",
+        "Pod 1 Rotation",
+        "Pod 2 Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.7",
+      "width": "439",
+      "height": "203",
+      "depth": "208"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "79",
+      "degreesMax": "79"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "79",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "31",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

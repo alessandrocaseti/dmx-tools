@@ -1,0 +1,213 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayra",
+  "model": "ERO 406",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "René Knuvers",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color macro",
+      "type": "Color"
+    },
+    {
+      "name": "Diverse Functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "No Function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset After 3s"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "No Function"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Controlled"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Stroboscope slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Shutter slow open, close fast, slow-fast"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Shutter slow closed, open fast, slow-fast"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Shutter",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Dimmer",
+        "Diverse Functions"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Shutter",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Dimmer",
+        "Color macro",
+        "Diverse Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "7800",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.3",
+      "width": "195",
+      "height": "235",
+      "depth": "135"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "26",
+      "degreesMax": "26"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "52",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

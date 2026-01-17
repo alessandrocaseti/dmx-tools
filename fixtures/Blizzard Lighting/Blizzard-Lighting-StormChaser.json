@@ -1,0 +1,498 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "StormChaser",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "killtheoldman",
+  "channels": [
+    {
+      "name": "Mode and 2 Channel Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "42",
+          "name": "7 channel mode"
+        },
+        {
+          "min": "43",
+          "max": "84",
+          "name": "31 channel mode"
+        },
+        {
+          "min": "85",
+          "max": "127",
+          "name": "10 channel mode"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Effect chase #1"
+        },
+        {
+          "min": "132",
+          "max": "135",
+          "name": "Effect chase #2"
+        },
+        {
+          "min": "136",
+          "max": "139",
+          "name": "Effect chase #3"
+        },
+        {
+          "min": "140",
+          "max": "143",
+          "name": "Effect chase #4"
+        },
+        {
+          "min": "144",
+          "max": "147",
+          "name": "Effect chase #5"
+        },
+        {
+          "min": "148",
+          "max": "151",
+          "name": "Effect chase #6"
+        },
+        {
+          "min": "152",
+          "max": "155",
+          "name": "Effect chase #7"
+        },
+        {
+          "min": "156",
+          "max": "159",
+          "name": "Effect chase #8"
+        },
+        {
+          "min": "160",
+          "max": "163",
+          "name": "Effect chase #9"
+        },
+        {
+          "min": "164",
+          "max": "167",
+          "name": "Effect chase #10"
+        },
+        {
+          "min": "168",
+          "max": "171",
+          "name": "Effect chase #11"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "Effect chase #12"
+        },
+        {
+          "min": "176",
+          "max": "179",
+          "name": "Effect chase #13"
+        },
+        {
+          "min": "180",
+          "max": "183",
+          "name": "Effect chase #14"
+        },
+        {
+          "min": "184",
+          "max": "187",
+          "name": "Effect chase #15"
+        },
+        {
+          "min": "188",
+          "max": "191",
+          "name": "Effect chase #16"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Sound active mode"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Channel Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "42",
+          "name": "7 channel mode"
+        },
+        {
+          "min": "43",
+          "max": "84",
+          "name": "31 channel mode"
+        },
+        {
+          "min": "85",
+          "max": "127",
+          "name": "10 channel mode"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "2 channel mode"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Sound active mode"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (slow <-> fast)"
+        }
+      ]
+    },
+    {
+      "name": "Global Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "Global Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "Global Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "Global White Intensity",
+      "type": "White"
+    },
+    {
+      "name": "Pixel 1 Global Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pixel 1 global intensity"
+        }
+      ]
+    },
+    {
+      "name": "Pixel 2 Global Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pixel 2 global intensity"
+        }
+      ]
+    },
+    {
+      "name": "Pixel 3 Global Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pixel 3 global intensity"
+        }
+      ]
+    },
+    {
+      "name": "Pixel 4 Global Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pixel 4 global intensity"
+        }
+      ]
+    },
+    {
+      "name": "Pixel 5 Global Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pixel 5 global intensity"
+        }
+      ]
+    },
+    {
+      "name": "Pixel 6 Global Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pixel 6 global intensity"
+        }
+      ]
+    },
+    {
+      "name": "Pixel 7 Global Intensity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pixel 7 Global intensity"
+        }
+      ]
+    },
+    {
+      "name": "Pixel 1 Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 1 Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 1 Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 1 White Intensity",
+      "type": "White"
+    },
+    {
+      "name": "Pixel 2 Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 2 Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 2 Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 2 White Intensity",
+      "type": "White"
+    },
+    {
+      "name": "Pixel 3 Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 3 Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 3 Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 3 White Intensity",
+      "type": "White"
+    },
+    {
+      "name": "Pixel 4 Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 4 Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 4 Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 4 White Intensity",
+      "type": "White"
+    },
+    {
+      "name": "Pixel 5 Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 5 Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 5 Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 5 White Intensity",
+      "type": "White"
+    },
+    {
+      "name": "Pixel 6 Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 6 Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 6 Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 6 White Intensity",
+      "type": "White"
+    },
+    {
+      "name": "Pixel 7 Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "Pixel 7 Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "Pixel 7 Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "Pixel 7 White Intensity",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Mode and 2 Channel Mode",
+        "Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 7,
+      "channels": [
+        "Channel Mode",
+        "Dimmer",
+        "Strobe",
+        "Global Red Intensity",
+        "Global Green Intensity",
+        "Global Blue Intensity",
+        "Global White Intensity"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Channel Mode",
+        "Dimmer",
+        "Strobe",
+        "Pixel 1 Global Intensity",
+        "Pixel 2 Global Intensity",
+        "Pixel 3 Global Intensity",
+        "Pixel 4 Global Intensity",
+        "Pixel 5 Global Intensity",
+        "Pixel 6 Global Intensity",
+        "Pixel 7 Global Intensity"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 31,
+      "channels": [
+        "Channel Mode",
+        "Dimmer",
+        "Strobe",
+        "Pixel 1 Red Intensity",
+        "Pixel 1 Green Intensity",
+        "Pixel 1 Blue Intensity",
+        "Pixel 1 White Intensity",
+        "Pixel 2 Red Intensity",
+        "Pixel 2 Green Intensity",
+        "Pixel 2 Blue Intensity",
+        "Pixel 2 White Intensity",
+        "Pixel 3 Red Intensity",
+        "Pixel 3 Green Intensity",
+        "Pixel 3 Blue Intensity",
+        "Pixel 3 White Intensity",
+        "Pixel 4 Red Intensity",
+        "Pixel 4 Green Intensity",
+        "Pixel 4 Blue Intensity",
+        "Pixel 4 White Intensity",
+        "Pixel 5 Red Intensity",
+        "Pixel 5 Green Intensity",
+        "Pixel 5 Blue Intensity",
+        "Pixel 5 White Intensity",
+        "Pixel 6 Red Intensity",
+        "Pixel 6 Green Intensity",
+        "Pixel 6 Blue Intensity",
+        "Pixel 6 White Intensity",
+        "Pixel 7 Red Intensity",
+        "Pixel 7 Green Intensity",
+        "Pixel 7 Blue Intensity",
+        "Pixel 7 White Intensity"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "731",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.6",
+      "width": "1074",
+      "height": "64",
+      "depth": "64"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

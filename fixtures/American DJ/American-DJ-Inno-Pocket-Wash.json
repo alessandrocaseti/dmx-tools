@@ -1,0 +1,426 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Inno Pocket Wash",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Shutter/Stobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe slow < fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow open - Fast close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast open - Slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Normal"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "32 Color macros"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Color change"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Color fade"
+        }
+      ]
+    },
+    {
+      "name": "Program speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow < Fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "35",
+          "name": "Macro 1"
+        },
+        {
+          "min": "36",
+          "max": "55",
+          "name": "Macro 2"
+        },
+        {
+          "min": "56",
+          "max": "75",
+          "name": "Macro 3"
+        },
+        {
+          "min": "76",
+          "max": "115",
+          "name": "Macro 4"
+        },
+        {
+          "min": "116",
+          "max": "135",
+          "name": "Macro 5"
+        },
+        {
+          "min": "136",
+          "max": "155",
+          "name": "Macro 6"
+        },
+        {
+          "min": "156",
+          "max": "175",
+          "name": "Macro 7"
+        },
+        {
+          "min": "176",
+          "max": "195",
+          "name": "Macro 8"
+        },
+        {
+          "min": "196",
+          "max": "215",
+          "name": "Macro 9"
+        },
+        {
+          "min": "216",
+          "max": "235",
+          "name": "Macro 10"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Macro 11"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Macros speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Pan/Tilt Movement speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Special Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blackout W/Pan/Tilt movement"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "No function"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Blackout when RGBW values change"
+        },
+        {
+          "min": "100",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset All"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer curves",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "21 Channel Mode",
+      "totalChannels": 21,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Shutter/Stobe",
+        "Dimmer",
+        "Programs",
+        "Program speed",
+        "Pan/Tilt Macros",
+        "Pan/Tilt Macros speed",
+        "Pan/Tilt Movement speed",
+        "Special Functions",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "19 Channel Mode",
+      "totalChannels": 19,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Shutter/Stobe",
+        "Dimmer",
+        "Programs",
+        "Program speed",
+        "Pan/Tilt Macros",
+        "Pan/Tilt Macros speed",
+        "Pan/Tilt Movement speed",
+        "Special Functions",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "11 Channel Mode",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Shutter/Stobe",
+        "Dimmer",
+        "Pan/Tilt Macros speed",
+        "Special Functions",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "9 Channel Mode",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Shutter/Stobe",
+        "Dimmer",
+        "Special Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.2",
+      "width": "171",
+      "height": "214",
+      "depth": "149"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "28",
+      "degreesMax": "28"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "65",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

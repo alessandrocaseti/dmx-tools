@@ -1,0 +1,106 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED Mini Strobe Cluster SMD 48",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Oliver",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Flash Rate",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash Rate"
+        }
+      ]
+    },
+    {
+      "name": "Effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "36",
+          "name": "Strobe"
+        },
+        {
+          "min": "37",
+          "max": "72",
+          "name": "Pulsing"
+        },
+        {
+          "min": "73",
+          "max": "107",
+          "name": "Fast open, slow close"
+        },
+        {
+          "min": "108",
+          "max": "144",
+          "name": "Slow open, fast close"
+        },
+        {
+          "min": "145",
+          "max": "180",
+          "name": "Random strobe"
+        },
+        {
+          "min": "181",
+          "max": "253",
+          "name": "Slow pulsing from 6 to 14 seconds"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Flash Rate",
+        "Effects"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "5000"
+    },
+    "dimensions": {
+      "weight": "1.06",
+      "width": "230",
+      "height": "155",
+      "depth": "95"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

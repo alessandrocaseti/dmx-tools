@@ -1,0 +1,200 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "SlimPAR Q12 USB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ham Sadler",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color macros"
+        }
+      ]
+    },
+    {
+      "name": "Strobe/Speed/Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function/Slow to fast/Off"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "No function/Slow to fast/Control the level"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow to fast/Slow to fast/Control the level"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Pulse effect 0-100%"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Pulse effect 100%-0"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse effect 100%-0-100%"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto fade transition"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Auto snap transition (3 colors)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Auto snap transition (7 colors)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound-active"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Default set from menu"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Mode 1 (fast speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Mode 2 (medium speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Mode 3 (slow speed)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Color Macro",
+        "Strobe/Speed/Sensitivity",
+        "Mode",
+        "Dimmer",
+        "Dimmer Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED 4W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.1",
+      "width": "247",
+      "height": "293",
+      "depth": "92"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "44",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

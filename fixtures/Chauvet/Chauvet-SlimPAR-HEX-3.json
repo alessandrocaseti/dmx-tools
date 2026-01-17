@@ -1,0 +1,228 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "SlimPar HEX 3",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Kevin Zepp",
+  "channels": [
+    {
+      "name": "Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Ultraviolet",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color Macros"
+        }
+      ]
+    },
+    {
+      "name": "Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "50",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "201",
+          "max": "225",
+          "name": "Sound-Active (6-color)"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Sound-Active (63-color)"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto program speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dim Mode",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer mode manual"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer mode 1 (fast speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer mode 2 (medium speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer mode 3 (slow speed)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "6-Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "Ultraviolet"
+      ]
+    },
+    {
+      "name": "8-Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "Ultraviolet",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "12-Channel",
+      "totalChannels": 12,
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "Ultraviolet",
+        "Strobe",
+        "Color",
+        "Auto Programs",
+        "Speed",
+        "Dim Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.7",
+      "width": "187",
+      "height": "108",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "44",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

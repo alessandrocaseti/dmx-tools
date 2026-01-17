@@ -1,0 +1,218 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "DJ Spot 250",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "007ghg7",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "White"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "Red"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "Yellow"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "Blue"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Green"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "Purple"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "Orange"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "Pink"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Rainbow Effect"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "none"
+        },
+        {
+          "min": "17",
+          "max": "33",
+          "name": "Spot"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "187",
+          "max": "199",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Rainbow Effect"
+        }
+      ]
+    },
+    {
+      "name": "Special Functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No Rotation"
+        },
+        {
+          "min": "16",
+          "max": "91",
+          "name": "Gobo Strobe - Fast -> slow"
+        },
+        {
+          "min": "92",
+          "max": "135",
+          "name": "Color Strobe - Fast -> slow"
+        },
+        {
+          "min": "136",
+          "max": "195",
+          "name": "Gobo and Color Strobe - Fast -> slow"
+        },
+        {
+          "min": "196",
+          "max": "255",
+          "name": "Gobo Shake - Fast -> slow"
+        }
+      ]
+    },
+    {
+      "name": "Pan and tilt speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color",
+        "Gobo",
+        "Special Functions",
+        "Pan and tilt speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LL-EHJ 24v/250w",
+      "lumens": "2500",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "18",
+      "width": "356",
+      "height": "495",
+      "depth": "343"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "265"
+    },
+    "technical": {
+      "powerConsumption": "250",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "LED Techno Strobe RGB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Davey D",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "RGB control"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "prog 1"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "prog 2"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "prog 3"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "prog 4"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "prog 5"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "prog 6"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "prog 7"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "prog 8"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "sound activation"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "fast to slow"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Mode",
+        "Red",
+        "Green",
+        "Blue",
+        "Speed",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "192",
+      "colourTemperature": "2000"
+    },
+    "dimensions": {
+      "weight": "2.2",
+      "width": "247",
+      "height": "165",
+      "depth": "20"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "24",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

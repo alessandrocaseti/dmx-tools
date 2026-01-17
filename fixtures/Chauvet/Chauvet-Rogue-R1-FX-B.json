@@ -1,0 +1,1909 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Rogue R1 FX-B",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jean-Daniel Garcia / Barbara Brugger",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Fine Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Continuous Pan",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Conterclockwise rotation, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Clockwise rotation, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Tilt Macro",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "47",
+          "name": "No function"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Tilt Macro 1"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Tilt Macro 2"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Tilt Macro 3"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Tilt Macro 4"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Tilt Macro 5"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Tilt Macro 6"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Tilt Macro 7"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Tilt Macro 8"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Tilt Macro 9"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Tilt Macro 10"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Tilt Macro 11"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Tilt Macro 12"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Tilt Macro 13"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Tilt Macro 14"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Tilt Macro 15"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Tilt Macro 16"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Tilt Macro 17"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Tilt Macro 18"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Tilt Macro 19"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Tilt Macro 20"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Tilt Macro 21"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Tilt Macro 22"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Tilt Macro 23"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Tilt Macro 24"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Tilt Macro 25"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Tilt Macro 26"
+        }
+      ]
+    },
+    {
+      "name": "Tilt Macro Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Manual tilt blackout"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Cancel manual tilt blackout"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "1 fixture macro"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "2 fixture macro 1"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "2 fixture macro 2"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "4 fixture macro 1"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "4 fixture macro 2"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "4 fixture macro 3"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "4 fixture macro 4"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Pan reset"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Tilt reset"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "No function (reserved for future use)"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Reset all"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "No function (reserved for future use)"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Pan/Tilt reverse"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Pan reverse"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Tilt reverse"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Cancel pan reverse"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Cancel tilt reverse"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Cancel pan/tilt reverse"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "No function (reserved for future use)"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Link all heads to head 1"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Unlink all heads from head 1"
+        },
+        {
+          "min": "125",
+          "max": "134",
+          "name": "No function (reserved for future use)"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Dimmer speed mode fast"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Dimmer speed mode smooth"
+        },
+        {
+          "min": "145",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Off"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "On"
+        },
+        {
+          "min": "25",
+          "max": "64",
+          "name": "Strobe 1, fast to slow"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "On"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "Strobe 2 (Fast on, slow off), fast to slow"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "On"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Strobe 3 (Slow on, fast off), fast to slow"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "On"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Strobe 4 (Random), fast to slow"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "On"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "Strobe 5 (Random fast on, slow off), fast to slow"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "On"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Strobe 6 (Random slow on, fast off), fast to slow"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "On"
+        },
+        {
+          "min": "170",
+          "max": "184",
+          "name": "Strobe 7 (Pulse), fast to slow"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "On"
+        },
+        {
+          "min": "190",
+          "max": "204",
+          "name": "Strobe 8 (Random pulse), fast to slow"
+        },
+        {
+          "min": "205",
+          "max": "209",
+          "name": "On"
+        },
+        {
+          "min": "210",
+          "max": "224",
+          "name": "Strobe 9 (Fade in, fade out), fast to slow"
+        },
+        {
+          "min": "225",
+          "max": "229",
+          "name": "On"
+        },
+        {
+          "min": "230",
+          "max": "244",
+          "name": "Strobe 10 (Random pulse), fast to slow"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "No function"
+        },
+        {
+          "min": "14",
+          "max": "20",
+          "name": "Color 1"
+        },
+        {
+          "min": "21",
+          "max": "28",
+          "name": "Color 2"
+        },
+        {
+          "min": "29",
+          "max": "36",
+          "name": "Color 3"
+        },
+        {
+          "min": "37",
+          "max": "44",
+          "name": "Color 4"
+        },
+        {
+          "min": "45",
+          "max": "52",
+          "name": "Color 5"
+        },
+        {
+          "min": "53",
+          "max": "60",
+          "name": "Color 6"
+        },
+        {
+          "min": "61",
+          "max": "68",
+          "name": "Color 7"
+        },
+        {
+          "min": "69",
+          "max": "76",
+          "name": "Color 8"
+        },
+        {
+          "min": "77",
+          "max": "84",
+          "name": "Color 9"
+        },
+        {
+          "min": "85",
+          "max": "92",
+          "name": "Color 10"
+        },
+        {
+          "min": "93",
+          "max": "100",
+          "name": "Color 11"
+        },
+        {
+          "min": "101",
+          "max": "108",
+          "name": "Color 12"
+        },
+        {
+          "min": "109",
+          "max": "116",
+          "name": "Color 13"
+        },
+        {
+          "min": "117",
+          "max": "124",
+          "name": "Color 14"
+        },
+        {
+          "min": "125",
+          "max": "133",
+          "name": "Color 15"
+        },
+        {
+          "min": "134",
+          "max": "185",
+          "name": "No function"
+        },
+        {
+          "min": "186",
+          "max": "207",
+          "name": "Rainbow effect, fast to slow"
+        },
+        {
+          "min": "208",
+          "max": "213",
+          "name": "Stop"
+        },
+        {
+          "min": "214",
+          "max": "235",
+          "name": "Reverse Rainbow effect, fast to slow"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "No function"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Color jump, fast to slow"
+        }
+      ]
+    },
+    {
+      "name": "On/Off Preset (● = on; ○ = off)",
+      "type": "Nothing",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Head 1 ● Head 2 ● Head 3 ● Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "6",
+          "max": "11",
+          "name": "Head 1 ○ Head 2 ● Head 3 ● Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "12",
+          "max": "17",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ● Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "18",
+          "max": "23",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "24",
+          "max": "29",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ●"
+        },
+        {
+          "min": "30",
+          "max": "35",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "36",
+          "max": "41",
+          "name": "Head 1 ● Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "42",
+          "max": "47",
+          "name": "Head 1 ● Head 2 ● Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "48",
+          "max": "53",
+          "name": "Head 1 ● Head 2 ● Head 3 ● Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "54",
+          "max": "59",
+          "name": "Head 1 ● Head 2 ● Head 3 ● Head 4 ● Head 5 ○"
+        },
+        {
+          "min": "60",
+          "max": "65",
+          "name": "Head 1 ● Head 2 ● Head 3 ● Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "66",
+          "max": "71",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "72",
+          "max": "77",
+          "name": "Head 1 ● Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "78",
+          "max": "83",
+          "name": "Head 1 ○ Head 2 ● Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "84",
+          "max": "89",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ● Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "90",
+          "max": "95",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ● Head 5 ○"
+        },
+        {
+          "min": "96",
+          "max": "101",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ●"
+        },
+        {
+          "min": "102",
+          "max": "107",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "108",
+          "max": "113",
+          "name": "Head 1 ● Head 2 ● Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "114",
+          "max": "119",
+          "name": "Head 1 ○ Head 2 ● Head 3 ● Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "120",
+          "max": "125",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ● Head 4 ● Head 5 ○"
+        },
+        {
+          "min": "126",
+          "max": "131",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "132",
+          "max": "137",
+          "name": "Head 1 ● Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ●"
+        },
+        {
+          "min": "138",
+          "max": "143",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "144",
+          "max": "149",
+          "name": "Head 1 ○ Head 2 ● Head 3 ● Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "150",
+          "max": "155",
+          "name": "Head 1 ● Head 2 ○ Head 3 ● Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "156",
+          "max": "161",
+          "name": "Head 1 ● Head 2 ● Head 3 ○ Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "162",
+          "max": "167",
+          "name": "Head 1 ● Head 2 ● Head 3 ● Head 4 ○ Head 5 ●"
+        },
+        {
+          "min": "168",
+          "max": "173",
+          "name": "Head 1 ● Head 2 ● Head 3 ● Head 4 ● Head 5 ○"
+        },
+        {
+          "min": "174",
+          "max": "179",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "180",
+          "max": "185",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ●"
+        },
+        {
+          "min": "186",
+          "max": "191",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "192",
+          "max": "197",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ● Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "198",
+          "max": "203",
+          "name": "Head 1 ○ Head 2 ● Head 3 ● Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "204",
+          "max": "209",
+          "name": "Head 1 ● Head 2 ● Head 3 ● Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "210",
+          "max": "215",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ○ Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "216",
+          "max": "221",
+          "name": "Head 1 ● Head 2 ● Head 3 ● Head 4 ○ Head 5 ○"
+        },
+        {
+          "min": "222",
+          "max": "227",
+          "name": "Head 1 ○ Head 2 ● Head 3 ● Head 4 ● Head 5 ○"
+        },
+        {
+          "min": "228",
+          "max": "233",
+          "name": "Head 1 ○ Head 2 ○ Head 3 ● Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "234",
+          "max": "239",
+          "name": "Head 1 ● Head 2 ○ Head 3 ○ Head 4 ● Head 5 ●"
+        },
+        {
+          "min": "240",
+          "max": "245",
+          "name": "Head 1 ● Head 2 ● Head 3 ○ Head 4 ○ Head 5 ●"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Head 1 ● Head 2 ● Head 3 ● Head 4 ● Head 5 ●"
+        }
+      ]
+    },
+    {
+      "name": "LED Macro/Auto Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "LED Macro 1"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "LED Macro 2"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "LED Macro 3"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "LED Macro 4"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "LED Macro 5"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "LED Macro 6"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "LED Macro 7"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "LED Macro 8"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "LED Macro 9"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "LED Macro 10"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "LED Macro 11"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "LED Macro 12"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "LED Macro 13"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "LED Macro 14"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "LED Macro 15"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "LED Macro 16"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "LED Macro 17"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "LED Macro 18"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "LED Macro 19"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "LED Macro 20"
+        },
+        {
+          "min": "116",
+          "max": "120",
+          "name": "LED Macro 21"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "LED Macro 22"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "LED Macro 23"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "LED Macro 24"
+        },
+        {
+          "min": "136",
+          "max": "140",
+          "name": "Auto program 1"
+        },
+        {
+          "min": "141",
+          "max": "145",
+          "name": "Auto program 2"
+        },
+        {
+          "min": "146",
+          "max": "150",
+          "name": "Auto program 3"
+        },
+        {
+          "min": "151",
+          "max": "155",
+          "name": "Auto program 4"
+        },
+        {
+          "min": "156",
+          "max": "160",
+          "name": "Auto program 5"
+        },
+        {
+          "min": "161",
+          "max": "165",
+          "name": "Auto program 6"
+        },
+        {
+          "min": "166",
+          "max": "170",
+          "name": "Auto program 7"
+        },
+        {
+          "min": "171",
+          "max": "175",
+          "name": "Auto program 8"
+        },
+        {
+          "min": "176",
+          "max": "180",
+          "name": "Auto program 9"
+        },
+        {
+          "min": "181",
+          "max": "185",
+          "name": "Auto program 10"
+        },
+        {
+          "min": "186",
+          "max": "190",
+          "name": "Auto program 11"
+        },
+        {
+          "min": "191",
+          "max": "195",
+          "name": "Auto program 12"
+        },
+        {
+          "min": "196",
+          "max": "200",
+          "name": "Auto program 13"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "Auto program 14"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "Auto program 15"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "Auto program 16"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "Auto program 17"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Auto program 18"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Auto program 19"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Auto program 20"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Auto program 21"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Auto program 22"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Auto program 23"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Auto program 24"
+        }
+      ]
+    },
+    {
+      "name": "LED Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Tilt 1",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Tilt 1",
+      "type": "Tilt"
+    },
+    {
+      "name": "Continuous Tilt 1",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Counterclockwise rotation, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Clockwise rotation, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Head 1 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Head 1 Red",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 1 Green",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 1 Blue",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 1 White",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Tilt 2",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Tilt 2",
+      "type": "Tilt"
+    },
+    {
+      "name": "Continuous Tilt 2",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Counterclockwise rotation, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Clockwise rotation, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Head 2 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Head 2 Red",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 2 Green",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 2 Blue",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 2 White",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Tilt 3",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Tilt 3",
+      "type": "Tilt"
+    },
+    {
+      "name": "Continuous Tilt 3",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Counterclockwise rotation, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Clockwise rotation, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Head 3 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Head 3 Red",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 3 Green",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 3 Blue",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 3 White",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Tilt 4",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Tilt 4",
+      "type": "Tilt"
+    },
+    {
+      "name": "Continuous Tilt 4",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Counterclockwise rotation, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Clockwise rotation, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Head 4 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Head 4 Red",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 4 Green",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 4 Blue",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 4 White",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Tilt 5",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Tilt 5",
+      "type": "Tilt"
+    },
+    {
+      "name": "Continuous Tilt 5",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Counterclockwise rotation, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Clockwise rotation, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Head 5 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Head 5 Red",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 5 Green",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 5 Blue",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Head 5 White",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Green",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Blue",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "White",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "RGBW mode: 0 -100% / CMY mode: 100% - 0"
+        }
+      ]
+    },
+    {
+      "name": "Tilt All",
+      "type": "Tilt"
+    },
+    {
+      "name": "Continuous Tilt All",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Counterclockwise rotation, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Clockwise rotation, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Tilt Offset",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Offset heads from each other, 0 - 360°"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Tour 2",
+      "totalChannels": 52,
+      "channels": [
+        "Pan",
+        "Fine Pan",
+        "Continuous Pan",
+        "Tilt Macro",
+        "Tilt Macro Speed",
+        "Control",
+        "Dimmer",
+        "Shutter",
+        "Color Macro",
+        "On/Off Preset (● = on; ○ = off)",
+        "LED Macro/Auto Program",
+        "LED Macro Speed",
+        "Tilt 1",
+        "Fine Tilt 1",
+        "Continuous Tilt 1",
+        "Head 1 Dimmer",
+        "Head 1 Red",
+        "Head 1 Green",
+        "Head 1 Blue",
+        "Head 1 White",
+        "Tilt 2",
+        "Fine Tilt 2",
+        "Continuous Tilt 2",
+        "Head 2 Dimmer",
+        "Head 2 Red",
+        "Head 2 Green",
+        "Head 2 Blue",
+        "Head 2 White",
+        "Tilt 3",
+        "Fine Tilt 3",
+        "Continuous Tilt 3",
+        "Head 3 Dimmer",
+        "Head 3 Red",
+        "Head 3 Green",
+        "Head 3 Blue",
+        "Head 3 White",
+        "Tilt 4",
+        "Fine Tilt 4",
+        "Continuous Tilt 4",
+        "Head 4 Dimmer",
+        "Head 4 Red",
+        "Head 4 Green",
+        "Head 4 Blue",
+        "Head 4 White",
+        "Tilt 5",
+        "Fine Tilt 5",
+        "Continuous Tilt 5",
+        "Head 5 Dimmer",
+        "Head 5 Red",
+        "Head 5 Green",
+        "Head 5 Blue",
+        "Head 5 White"
+      ]
+    },
+    {
+      "name": "Tour",
+      "totalChannels": 47,
+      "channels": [
+        "Pan",
+        "Fine Pan",
+        "Continuous Pan",
+        "Tilt Macro",
+        "Tilt Macro Speed",
+        "Control",
+        "Dimmer",
+        "Shutter",
+        "Color Macro",
+        "On/Off Preset (● = on; ○ = off)",
+        "LED Macro/Auto Program",
+        "LED Macro Speed",
+        "Tilt 1",
+        "Fine Tilt 1",
+        "Continuous Tilt 1",
+        "Head 1 Red",
+        "Head 1 Green",
+        "Head 1 Blue",
+        "Head 1 White",
+        "Tilt 2",
+        "Fine Tilt 2",
+        "Continuous Tilt 2",
+        "Head 2 Red",
+        "Head 2 Green",
+        "Head 2 Blue",
+        "Head 2 White",
+        "Tilt 3",
+        "Fine Tilt 3",
+        "Continuous Tilt 3",
+        "Head 3 Red",
+        "Head 3 Green",
+        "Head 3 Blue",
+        "Head 3 White",
+        "Tilt 4",
+        "Fine Tilt 4",
+        "Continuous Tilt 4",
+        "Head 4 Red",
+        "Head 4 Green",
+        "Head 4 Blue",
+        "Head 4 White",
+        "Tilt 5",
+        "Fine Tilt 5",
+        "Continuous Tilt 5",
+        "Head 5 Red",
+        "Head 5 Green",
+        "Head 5 Blue",
+        "Head 5 White"
+      ]
+    },
+    {
+      "name": "Advance",
+      "totalChannels": 47,
+      "channels": [
+        "Pan",
+        "Fine Pan",
+        "Continuous Pan",
+        "Tilt 1",
+        "Fine Tilt 1",
+        "Tilt 2",
+        "Fine Tilt 2",
+        "Tilt 3",
+        "Fine Tilt 3",
+        "Tilt 4",
+        "Fine Tilt 4",
+        "Tilt 5",
+        "Fine Tilt 5",
+        "Continuous Tilt 1",
+        "Continuous Tilt 2",
+        "Continuous Tilt 3",
+        "Continuous Tilt 4",
+        "Continuous Tilt 5",
+        "Tilt Macro",
+        "Tilt Macro Speed",
+        "Control",
+        "Dimmer",
+        "Shutter",
+        "Color Macro",
+        "On/Off Preset (● = on; ○ = off)",
+        "LED Macro/Auto Program",
+        "LED Macro Speed",
+        "Head 1 Red",
+        "Head 1 Green",
+        "Head 1 Blue",
+        "Head 1 White",
+        "Head 2 Red",
+        "Head 2 Green",
+        "Head 2 Blue",
+        "Head 2 White",
+        "Head 3 Red",
+        "Head 3 Green",
+        "Head 3 Blue",
+        "Head 3 White",
+        "Head 4 Red",
+        "Head 4 Green",
+        "Head 4 Blue",
+        "Head 4 White",
+        "Head 5 Red",
+        "Head 5 Green",
+        "Head 5 Blue",
+        "Head 5 White"
+      ]
+    },
+    {
+      "name": "Standard",
+      "totalChannels": 25,
+      "channels": [
+        "Pan",
+        "Continuous Pan",
+        "Tilt 1",
+        "Tilt 2",
+        "Tilt 3",
+        "Tilt 4",
+        "Tilt 5",
+        "Continuous Tilt 1",
+        "Continuous Tilt 2",
+        "Continuous Tilt 3",
+        "Continuous Tilt 4",
+        "Continuous Tilt 5",
+        "Tilt Macro",
+        "Tilt Macro Speed",
+        "Control",
+        "Dimmer",
+        "Shutter",
+        "Color Macro",
+        "On/Off Preset (● = on; ○ = off)",
+        "LED Macro/Auto Program",
+        "LED Macro Speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Basic",
+      "totalChannels": 18,
+      "channels": [
+        "Pan",
+        "Continuous Pan",
+        "Tilt All",
+        "Continuous Tilt All",
+        "Tilt Offset",
+        "Tilt Macro",
+        "Tilt Macro Speed",
+        "Control",
+        "Dimmer",
+        "Shutter",
+        "Color Macro",
+        "On/Off Preset (● = on; ○ = off)",
+        "LED Macro/Auto Program",
+        "LED Macro Speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Advance Movement",
+      "totalChannels": 23,
+      "channels": [
+        "Pan",
+        "Fine Pan",
+        "Continuous Pan",
+        "Tilt 1",
+        "Fine Tilt 1",
+        "Tilt 2",
+        "Fine Tilt 2",
+        "Tilt 3",
+        "Fine Tilt 3",
+        "Tilt 4",
+        "Fine Tilt 4",
+        "Tilt 5",
+        "Fine Tilt 5",
+        "Continuous Tilt 1",
+        "Continuous Tilt 2",
+        "Continuous Tilt 3",
+        "Continuous Tilt 4",
+        "Continuous Tilt 5",
+        "Tilt Macro",
+        "Tilt Macro Speed",
+        "Dimmer",
+        "Shutter",
+        "Control"
+      ]
+    },
+    {
+      "name": "Standard Movement",
+      "totalChannels": 17,
+      "channels": [
+        "Pan",
+        "Continuous Pan",
+        "Tilt 1",
+        "Tilt 2",
+        "Tilt 3",
+        "Tilt 4",
+        "Tilt 5",
+        "Continuous Tilt 1",
+        "Continuous Tilt 2",
+        "Continuous Tilt 3",
+        "Continuous Tilt 4",
+        "Continuous Tilt 5",
+        "Tilt Macro",
+        "Tilt Macro Speed",
+        "Dimmer",
+        "Shutter",
+        "Control"
+      ]
+    },
+    {
+      "name": "Basic Movement",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Continuous Pan",
+        "Tilt All",
+        "Continuous Tilt All",
+        "Tilt Offset",
+        "Tilt Macro",
+        "Tilt Macro Speed",
+        "Dimmer",
+        "Shutter",
+        "Control"
+      ]
+    },
+    {
+      "name": "RGBW",
+      "totalChannels": 20,
+      "channels": [
+        "Head 1 Red",
+        "Head 1 Green",
+        "Head 1 Blue",
+        "Head 1 White",
+        "Head 2 Red",
+        "Head 2 Green",
+        "Head 2 Blue",
+        "Head 2 White",
+        "Head 3 Red",
+        "Head 3 Green",
+        "Head 3 Blue",
+        "Head 3 White",
+        "Head 4 Red",
+        "Head 4 Green",
+        "Head 4 Blue",
+        "Head 4 White",
+        "Head 5 Red",
+        "Head 5 Green",
+        "Head 5 Blue",
+        "Head 5 White"
+      ]
+    },
+    {
+      "name": "RGB",
+      "totalChannels": 15,
+      "channels": [
+        "Head 1 Red",
+        "Head 1 Green",
+        "Head 1 Blue",
+        "Head 2 Red",
+        "Head 2 Green",
+        "Head 2 Blue",
+        "Head 3 Red",
+        "Head 3 Green",
+        "Head 3 Blue",
+        "Head 4 Red",
+        "Head 4 Green",
+        "Head 4 Blue",
+        "Head 5 Red",
+        "Head 5 Green",
+        "Head 5 Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "5361",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "11",
+      "width": "179",
+      "height": "247",
+      "depth": "640"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "7",
+      "degreesMax": "7"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "197",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

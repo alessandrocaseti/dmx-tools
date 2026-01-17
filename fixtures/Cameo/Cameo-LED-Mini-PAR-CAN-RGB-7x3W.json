@@ -1,0 +1,99 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "LED Mini PAR CAN RGB 7x3W",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Joachim Wiedorn",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Master",
+      "type": "Unknown"
+    },
+    {
+      "name": "Stroboscope",
+      "type": "Unknown"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "84",
+          "name": "Color Sound Control"
+        },
+        {
+          "min": "85",
+          "max": "169",
+          "name": "Color Jumping Speed"
+        },
+        {
+          "min": "170",
+          "max": "255",
+          "name": "Color Fading Speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "6-Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Master",
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macro",
+        "Stroboscope"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "168",
+      "height": "183",
+      "depth": "186"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

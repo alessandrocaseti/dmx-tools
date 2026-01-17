@@ -1,0 +1,1479 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Rogue R2 Wash",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Bobby",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Closed"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Open"
+        },
+        {
+          "min": "25",
+          "max": "64",
+          "name": "Fast to slow"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Open"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "Fast on/ramp off"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Open"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Ramp off/fast on"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Open"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Random"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Open"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "Random slow on/fast off"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Open"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Random slow on/fast off"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Open"
+        },
+        {
+          "min": "170",
+          "max": "184",
+          "name": "Pulse"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "204",
+          "name": "Random pulse"
+        },
+        {
+          "min": "205",
+          "max": "209",
+          "name": "Open"
+        },
+        {
+          "min": "210",
+          "max": "224",
+          "name": "Fade on/off"
+        },
+        {
+          "min": "225",
+          "max": "229",
+          "name": "Open"
+        },
+        {
+          "min": "230",
+          "max": "244",
+          "name": "Pulse"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "White fine",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "White fine 2",
+      "type": "White"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "White fine 3",
+      "type": "White"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White 4",
+      "type": "White"
+    },
+    {
+      "name": "White fine 4",
+      "type": "White"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine 5",
+      "type": "Blue"
+    },
+    {
+      "name": "White 5",
+      "type": "White"
+    },
+    {
+      "name": "White fine 5",
+      "type": "White"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Open"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Color 1"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Color 2"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Color 3"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Color 4"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Color 5"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Color 6"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Color 7"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Color 8"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Color 9"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Color 10"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Color 11"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Color 12"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Color 13"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Color 14"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Color 15"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Color 16"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Color 17"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Color 18"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Color 19"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Color 20"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Color 21"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Color 22"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Color 23"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Color 24"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Color 25"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Color 26"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Color 27"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Color 28"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Color 29"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "Color 30"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Color 31"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "Color 32"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Color 33"
+        },
+        {
+          "min": "170",
+          "max": "174",
+          "name": "Color 34"
+        },
+        {
+          "min": "175",
+          "max": "179",
+          "name": "Closed"
+        },
+        {
+          "min": "180",
+          "max": "201",
+          "name": "Clockwise color scroll, fast to slow"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "Stop on current color"
+        },
+        {
+          "min": "208",
+          "max": "229",
+          "name": "Counter-clockwise color scroll,fast to slow"
+        },
+        {
+          "min": "230",
+          "max": "234",
+          "name": "Closed"
+        },
+        {
+          "min": "235",
+          "max": "249",
+          "name": "Color scroll"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Closed"
+        }
+      ]
+    },
+    {
+      "name": "Zone selection",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Zone 1, 2, 3, 4, 5"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Zone 2, 3, 4, 5"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Zone 3, 4, 5"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Zone 4, 5"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Zone 5"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "No function"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Zone 1"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Zone 1, 2"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Zone 1, 2, 3"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Zone 1, 2, 3, 4"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Zone 1, 2, 3, 4, 5"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Zone 1"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Zone 2"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Zone 3"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Zone 4"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Zone 5"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Zone 1, 2"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Zone 2, 3"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Zone 3, 4"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Zone 4, 5"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Zone 1, 5"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Zone 1, 2, 3"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Zone 2, 3, 4"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Zone 3, 4, 5"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Zone 1, 4, 5"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Zone 1, 2, 5"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Zone 1, 2, 3, 4"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Zone 2, 3, 4, 5"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Zone 1, 3, 4, 5"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Zone 1, 2, 4, 5"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Zone 1, 2, 3, 5"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Zone 1, 2, 3, 4, 5"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Ring macro 1"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "Ring macro 2"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Ring macro 3"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Ring macro 4"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Ring macro 5"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Ring macro 6"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Ring macro 7"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Ring macro 8"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Ring macro 9"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Ring macro 10"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Ring macro 11"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Ring macro 12"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "Ring macro 13"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "Ring macro 14"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "Ring macro 15"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "Ring macro 16"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "Ring macro 17"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "Ring macro 18"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "Ring macro 19"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "Ring macro 20"
+        },
+        {
+          "min": "116",
+          "max": "120",
+          "name": "Ring macro 21"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "Ring macro 22"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "Ring macro 23"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "Ring macro 24"
+        },
+        {
+          "min": "136",
+          "max": "140",
+          "name": "Color Ring macro 1"
+        },
+        {
+          "min": "141",
+          "max": "145",
+          "name": "Color Ring macro 2"
+        },
+        {
+          "min": "146",
+          "max": "150",
+          "name": "Color Ring macro 3"
+        },
+        {
+          "min": "151",
+          "max": "155",
+          "name": "Color Ring macro 4"
+        },
+        {
+          "min": "156",
+          "max": "160",
+          "name": "Color Ring macro 5"
+        },
+        {
+          "min": "161",
+          "max": "165",
+          "name": "Color Ring macro 6"
+        },
+        {
+          "min": "166",
+          "max": "170",
+          "name": "Color Ring macro 7"
+        },
+        {
+          "min": "171",
+          "max": "175",
+          "name": "Color Ring macro 8"
+        },
+        {
+          "min": "176",
+          "max": "180",
+          "name": "Color Ring macro 9"
+        },
+        {
+          "min": "181",
+          "max": "185",
+          "name": "Color Ring macro 10"
+        },
+        {
+          "min": "186",
+          "max": "190",
+          "name": "Color Ring macro 11"
+        },
+        {
+          "min": "191",
+          "max": "195",
+          "name": "Color Ring macro 12"
+        },
+        {
+          "min": "196",
+          "max": "200",
+          "name": "Color Ring macro 13"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "Color Ring macro 14"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "Color Ring macro 15"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "Color Ring macro 16"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "Color Ring macro 17"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Color Ring macro 18"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Color Ring macro 19"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Color Ring macro 20"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Color Ring macro 21"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Color Ring macro 22"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Color Ring macro 23"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Color Ring macro 24"
+        }
+      ]
+    },
+    {
+      "name": "Auto speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100% (only when unsing Ch.51)"
+        }
+      ]
+    },
+    {
+      "name": "Movements macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "23",
+          "name": "Effect 1"
+        },
+        {
+          "min": "24",
+          "max": "39",
+          "name": "Effect 2"
+        },
+        {
+          "min": "40",
+          "max": "55",
+          "name": "Effect 3"
+        },
+        {
+          "min": "56",
+          "max": "71",
+          "name": "Effect 4"
+        },
+        {
+          "min": "72",
+          "max": "87",
+          "name": "Effect 5"
+        },
+        {
+          "min": "88",
+          "max": "103",
+          "name": "Effect 6"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "Effect 7"
+        },
+        {
+          "min": "120",
+          "max": "135",
+          "name": "Effect 8"
+        },
+        {
+          "min": "136",
+          "max": "151",
+          "name": "Effect 9"
+        },
+        {
+          "min": "152",
+          "max": "167",
+          "name": "Effect 10"
+        },
+        {
+          "min": "168",
+          "max": "183",
+          "name": "Effect 11"
+        },
+        {
+          "min": "184",
+          "max": "199",
+          "name": "Effect 12"
+        },
+        {
+          "min": "200",
+          "max": "215",
+          "name": "Effect 13"
+        },
+        {
+          "min": "216",
+          "max": "231",
+          "name": "Effect 14"
+        },
+        {
+          "min": "232",
+          "max": "247",
+          "name": "Effect 15"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Effect 16"
+        }
+      ]
+    },
+    {
+      "name": "Movements Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Blackout during pan/tilt"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "No function"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "No function"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "No function"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "No function"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "No function"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "No function"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "No function"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Pan reset (5s activation delay)"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Tilt reset (5s activation delay )"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Zoom reset ( 5s activation delay )"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "All reset (5s activation delay )"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "No function"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Pan/tilt movement reverse (5 s activation delay)"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Pan movement reverse (5 s activation delay)"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Tilt movement reverse (5s activation delay)"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Disable pan movement reverse (5s activation delay)"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Disable Tilt movement reverse (5s activation delay)"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Disable Pan/Tilt movement reverse (5s activation delay)"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "No function"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "No function"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Economy fan (5s activation delay)"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Full fan (5s activation delay)"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Auto fan (5 s activation delay)"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Fast dimmer curve (5s acitvation delay)"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Smooth dimmer curve (5s activation delay)"
+        },
+        {
+          "min": "145",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 56,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Red 2",
+        "Red fine 2",
+        "Green 2",
+        "Green fine 2",
+        "Blue 2",
+        "Blue fine 2",
+        "White 2",
+        "White fine 2",
+        "Red 3",
+        "Red fine 3",
+        "Green 3",
+        "Green fine 3",
+        "Blue 3",
+        "Blue fine 3",
+        "White 3",
+        "White fine 3",
+        "Red 4",
+        "Red fine 4",
+        "Green 4",
+        "Green fine 4",
+        "Blue 4",
+        "Blue fine 4",
+        "White 4",
+        "White fine 4",
+        "Red 5",
+        "Red fine 5",
+        "Green 5",
+        "Green fine 5",
+        "Blue 5",
+        "Blue fine 5",
+        "White 5",
+        "White fine 5",
+        "Color",
+        "Zone selection",
+        "Programs",
+        "Auto speed",
+        "Movements macros",
+        "Movements Macro Speed",
+        "Zoom",
+        "Control"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 54,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Red 2",
+        "Red fine 2",
+        "Green 2",
+        "Green fine 2",
+        "Blue 2",
+        "Blue fine 2",
+        "White 2",
+        "White fine 2",
+        "Red 3",
+        "Red fine 3",
+        "Green 3",
+        "Green fine 3",
+        "Blue 3",
+        "Blue fine 3",
+        "White 3",
+        "White fine 3",
+        "Red 4",
+        "Red fine 4",
+        "Green 4",
+        "Green fine 4",
+        "Blue 4",
+        "Blue fine 4",
+        "White 4",
+        "White fine 4",
+        "Red 5",
+        "Red fine 5",
+        "Green 5",
+        "Green fine 5",
+        "Blue 5",
+        "Blue fine 5",
+        "White 5",
+        "White fine 5",
+        "Color",
+        "Zone selection",
+        "Programs",
+        "Auto speed",
+        "Zoom",
+        "Control"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 33,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Shutter",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "White 5",
+        "Color",
+        "Zone selection",
+        "Programs",
+        "Auto speed",
+        "Zoom",
+        "Control"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 22,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Color",
+        "Zone selection",
+        "Programs",
+        "Auto speed",
+        "Zoom",
+        "Control"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 17,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Shutter",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color",
+        "Zone selection",
+        "Programs",
+        "Auto speed",
+        "Zoom",
+        "Control"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Dimmer fine",
+        "Shutter",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color",
+        "Zoom",
+        "Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "5800",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.25",
+      "width": "306",
+      "height": "398",
+      "depth": "218"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "12",
+      "degreesMax": "49"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "230"
+    },
+    "technical": {
+      "powerConsumption": "324",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

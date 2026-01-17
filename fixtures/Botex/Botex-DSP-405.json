@@ -1,0 +1,110 @@
+{
+  "version": "1.2",
+  "manufacturer": "Botex",
+  "model": "DSP-405",
+  "type": "Dimmer",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Steven",
+  "channels": [
+    {
+      "name": "Ch1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Channel 1"
+        }
+      ]
+    },
+    {
+      "name": "Ch2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Channel 2"
+        }
+      ]
+    },
+    {
+      "name": "Ch3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Channel 3"
+        }
+      ]
+    },
+    {
+      "name": "Ch4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Channel 4"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Ch1",
+        "Ch2",
+        "Ch3",
+        "Ch4"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Ch1",
+        "Ch2"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 1,
+      "channels": [
+        "Ch1"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.6",
+      "width": "260",
+      "height": "210",
+      "depth": "53"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1000",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

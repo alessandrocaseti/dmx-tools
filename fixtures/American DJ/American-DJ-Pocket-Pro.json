@@ -1,0 +1,623 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Pocket Pro",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Justin Hornsby",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Red"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Orange"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Yellow"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Green"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "UV"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "Blue"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "Pink"
+        },
+        {
+          "min": "57",
+          "max": "66",
+          "name": "White & Red"
+        },
+        {
+          "min": "67",
+          "max": "76",
+          "name": "Red & Orange"
+        },
+        {
+          "min": "77",
+          "max": "86",
+          "name": "Orange & Yellow"
+        },
+        {
+          "min": "87",
+          "max": "96",
+          "name": "Yellow & Green"
+        },
+        {
+          "min": "97",
+          "max": "106",
+          "name": "Green & UV"
+        },
+        {
+          "min": "107",
+          "max": "116",
+          "name": "UV & Light Blue"
+        },
+        {
+          "min": "117",
+          "max": "127",
+          "name": "Light Blue & Pink"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Colour Scroll Slow To Fast"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Colour Scroll Fast To Slow"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Open Shake"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 1 Shake"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 2 Shake"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 3 Shake"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 4 Shake"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 5 Shake"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 6 Shake"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo 7 Shake"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Gobo Scroll Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Gobo Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Gobo Scroll Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Macro 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Macro 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Macro 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Macro 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Macro 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Macro 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Macro 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Macro 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Macro 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Macro 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Macro 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Macro 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Macro 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Macro 14"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Macro 15"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Macro 16"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Macro 17"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Macro 18"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Macro 19"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Macro 20"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Macro 21"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Macro 22"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Macro 23"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Macro 24"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Macro 25"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Macro 26"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Macro 27"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Macro 28"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Macro 29"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Macro 30"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 31"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobing Slow to Fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Shutter Slow Open - Fast Close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Shutter Fast Open - Slow Close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Macro Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curve",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default To Unit Dimmer Setting"
+        }
+      ]
+    },
+    {
+      "name": "Pan / Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Special Functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Enable Blackout w pan/tilt"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Disable Blackout w pan/tilt"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Target Mode 1 (0-180 deg)"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Target Mode 2 (90 deg - 270 deg)"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Target Mode 3 (180 deg - 360 deg)"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Target Mode 4 (270 deg - 540 deg)"
+        },
+        {
+          "min": "130",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset All"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Gobo",
+        "Shutter",
+        "Dimmer",
+        "Pan/Tilt Macro",
+        "Pan/Tilt Macro Speed",
+        "Dimmer Curve",
+        "Pan / Tilt Speed",
+        "Special Functions"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 13,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Colour",
+        "Gobo",
+        "Shutter",
+        "Dimmer",
+        "Pan/Tilt Macro",
+        "Pan/Tilt Macro Speed",
+        "Dimmer Curve",
+        "Pan / Tilt Speed",
+        "Special Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.6",
+      "width": "163",
+      "height": "287",
+      "depth": "200"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "53",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TC-5",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "",
+  "channels": [
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Closed"
+        },
+        {
+          "min": "10",
+          "max": "20",
+          "name": "White"
+        },
+        {
+          "min": "21",
+          "max": "31",
+          "name": "Green"
+        },
+        {
+          "min": "32",
+          "max": "41",
+          "name": "Red"
+        },
+        {
+          "min": "42",
+          "max": "52",
+          "name": "Cyan"
+        },
+        {
+          "min": "53",
+          "max": "63",
+          "name": "Bright green"
+        },
+        {
+          "min": "64",
+          "max": "73",
+          "name": "Magenta"
+        },
+        {
+          "min": "74",
+          "max": "84",
+          "name": "Bright blue"
+        },
+        {
+          "min": "85",
+          "max": "95",
+          "name": "Yellow"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Green"
+        },
+        {
+          "min": "106",
+          "max": "116",
+          "name": "Deep rose"
+        },
+        {
+          "min": "117",
+          "max": "128",
+          "name": "Blue"
+        },
+        {
+          "min": "129",
+          "max": "190",
+          "name": "Scroll"
+        },
+        {
+          "min": "191",
+          "max": "193",
+          "name": "Sound-controlled"
+        },
+        {
+          "min": "194",
+          "max": "223",
+          "name": "CW rotation fast to slow"
+        },
+        {
+          "min": "224",
+          "max": "225",
+          "name": "Rotation STOP"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "CCW rotation slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 2,
+      "channels": [
+        "Colour",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "ELC 250W",
+      "lumens": "5000",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "9",
+      "width": "280",
+      "height": "280",
+      "depth": "320"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

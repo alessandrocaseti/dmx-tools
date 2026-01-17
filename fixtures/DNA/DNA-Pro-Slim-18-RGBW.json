@@ -1,0 +1,196 @@
+{
+  "version": "1.2",
+  "manufacturer": "DNA",
+  "model": "PRO SLIM 18 RGBW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "Strobe off"
+        },
+        {
+          "min": "2",
+          "max": "196",
+          "name": "Strobe speed"
+        },
+        {
+          "min": "197",
+          "max": "255",
+          "name": "Random strobe"
+        }
+      ]
+    },
+    {
+      "name": "Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No function"
+        },
+        {
+          "min": "2",
+          "max": "19",
+          "name": "RGB Colour Fade"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Colour changing"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Random colour changing"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Yellow"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Purple"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Light green"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Red on/off (10 sec)"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Green on/off (10 sec)"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Blue on/off (10 sec)"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Yellow on/off (10 sec)"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Cyan on/off (10 sec)"
+        },
+        {
+          "min": "230",
+          "max": "249",
+          "name": "White on/off (10 sec)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Full on"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "7 Channels",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.6",
+      "width": "242",
+      "height": "242",
+      "depth": "113"
+    },
+    "lens": {
+      "name": "Led",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "150",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

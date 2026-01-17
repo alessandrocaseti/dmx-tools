@@ -1,0 +1,221 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Comscan LED",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Chris",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobing low - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow open - fast close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast 0pen - slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Open shake"
+        },
+        {
+          "min": "72",
+          "max": "78",
+          "name": "Gobo 1 Shake"
+        },
+        {
+          "min": "79",
+          "max": "85",
+          "name": "Gobo 2 Shake"
+        },
+        {
+          "min": "86",
+          "max": "92",
+          "name": "Gobo 3 Shake"
+        },
+        {
+          "min": "93",
+          "max": "99",
+          "name": "Gobo 4 Shake"
+        },
+        {
+          "min": "100",
+          "max": "106",
+          "name": "Gobo 5 Shake"
+        },
+        {
+          "min": "107",
+          "max": "113",
+          "name": "Gobo 6 Shake"
+        },
+        {
+          "min": "114",
+          "max": "120",
+          "name": "Gobo 7 Shake"
+        },
+        {
+          "min": "121",
+          "max": "127",
+          "name": "Gobo 8 Shake"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Gobo wheel rotation slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Strobe",
+        "Gobo Wheel",
+        "Master Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.6",
+      "width": "160",
+      "height": "200",
+      "depth": "344"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "13"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "166",
+      "tiltMax": "54"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

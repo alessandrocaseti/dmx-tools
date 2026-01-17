@@ -1,0 +1,993 @@
+{
+  "version": "1.2",
+  "manufacturer": "Equinox",
+  "model": "Photon",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Show mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Show mode 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Show mode 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Show mode 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Show mode 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Show mode 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Show mode 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Show mode 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Show mode 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Show mode 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Show mode 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Show mode 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Show mode 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Show mode 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Show mode 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Show mode 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Show mode 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No function"
+        },
+        {
+          "min": "2",
+          "max": "255",
+          "name": "Master dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Show mode speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Show mode speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Colour control",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "1",
+          "name": "Red"
+        },
+        {
+          "min": "2",
+          "max": "2",
+          "name": "Green"
+        },
+        {
+          "min": "3",
+          "max": "3",
+          "name": "Blue"
+        },
+        {
+          "min": "4",
+          "max": "4",
+          "name": "White"
+        },
+        {
+          "min": "5",
+          "max": "5",
+          "name": "Red+Green"
+        },
+        {
+          "min": "6",
+          "max": "6",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "7",
+          "max": "7",
+          "name": "Red+White"
+        },
+        {
+          "min": "8",
+          "max": "8",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "9",
+          "max": "9",
+          "name": "Green+White"
+        },
+        {
+          "min": "10",
+          "max": "10",
+          "name": "Blue+White"
+        },
+        {
+          "min": "11",
+          "max": "11",
+          "name": "R+G+B"
+        },
+        {
+          "min": "12",
+          "max": "12",
+          "name": "R+G+W"
+        },
+        {
+          "min": "13",
+          "max": "13",
+          "name": "R+B+W"
+        },
+        {
+          "min": "14",
+          "max": "14",
+          "name": "G+B+W"
+        },
+        {
+          "min": "15",
+          "max": "15",
+          "name": "R+G+B+W"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Colour chase"
+        }
+      ]
+    },
+    {
+      "name": "Colour chase speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Colour chase speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Head 1 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 1 Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 1 Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour control 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "24",
+          "name": "Red"
+        },
+        {
+          "min": "25",
+          "max": "41",
+          "name": "Green"
+        },
+        {
+          "min": "42",
+          "max": "57",
+          "name": "Blue"
+        },
+        {
+          "min": "58",
+          "max": "74",
+          "name": "White"
+        },
+        {
+          "min": "75",
+          "max": "90",
+          "name": "Red+Green"
+        },
+        {
+          "min": "91",
+          "max": "107",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "108",
+          "max": "123",
+          "name": "Red+White"
+        },
+        {
+          "min": "124",
+          "max": "140",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "141",
+          "max": "156",
+          "name": "Green+White"
+        },
+        {
+          "min": "157",
+          "max": "173",
+          "name": "Blue+White"
+        },
+        {
+          "min": "174",
+          "max": "189",
+          "name": "R+G+B"
+        },
+        {
+          "min": "190",
+          "max": "206",
+          "name": "R+G+W"
+        },
+        {
+          "min": "207",
+          "max": "222",
+          "name": "R+B+W"
+        },
+        {
+          "min": "223",
+          "max": "239",
+          "name": "G+B+W"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "R+G+B+W"
+        }
+      ]
+    },
+    {
+      "name": "Head 2 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 2 Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 2 Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour control 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "24",
+          "name": "Red"
+        },
+        {
+          "min": "25",
+          "max": "41",
+          "name": "Green"
+        },
+        {
+          "min": "42",
+          "max": "57",
+          "name": "Blue"
+        },
+        {
+          "min": "58",
+          "max": "74",
+          "name": "White"
+        },
+        {
+          "min": "75",
+          "max": "90",
+          "name": "Red+Green"
+        },
+        {
+          "min": "91",
+          "max": "107",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "108",
+          "max": "123",
+          "name": "Red+White"
+        },
+        {
+          "min": "124",
+          "max": "140",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "141",
+          "max": "156",
+          "name": "Green+White"
+        },
+        {
+          "min": "157",
+          "max": "173",
+          "name": "Blue+White"
+        },
+        {
+          "min": "174",
+          "max": "189",
+          "name": "R+G+B"
+        },
+        {
+          "min": "190",
+          "max": "206",
+          "name": "R+G+W"
+        },
+        {
+          "min": "207",
+          "max": "222",
+          "name": "R+B+W"
+        },
+        {
+          "min": "223",
+          "max": "239",
+          "name": "G+B+W"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "R+G+B+W"
+        }
+      ]
+    },
+    {
+      "name": "Head 3 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 3 Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 3 Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour control 3",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "24",
+          "name": "Red"
+        },
+        {
+          "min": "25",
+          "max": "41",
+          "name": "Green"
+        },
+        {
+          "min": "42",
+          "max": "57",
+          "name": "Blue"
+        },
+        {
+          "min": "58",
+          "max": "74",
+          "name": "White"
+        },
+        {
+          "min": "75",
+          "max": "90",
+          "name": "Red+Green"
+        },
+        {
+          "min": "91",
+          "max": "107",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "108",
+          "max": "123",
+          "name": "Red+White"
+        },
+        {
+          "min": "124",
+          "max": "140",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "141",
+          "max": "156",
+          "name": "Green+White"
+        },
+        {
+          "min": "157",
+          "max": "173",
+          "name": "Blue+White"
+        },
+        {
+          "min": "174",
+          "max": "189",
+          "name": "R+G+B"
+        },
+        {
+          "min": "190",
+          "max": "206",
+          "name": "R+G+W"
+        },
+        {
+          "min": "207",
+          "max": "222",
+          "name": "R+B+W"
+        },
+        {
+          "min": "223",
+          "max": "239",
+          "name": "G+B+W"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "R+G+B+W"
+        }
+      ]
+    },
+    {
+      "name": "Head 4 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 4 Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 4 Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour control 4",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "24",
+          "name": "Red"
+        },
+        {
+          "min": "25",
+          "max": "41",
+          "name": "Green"
+        },
+        {
+          "min": "42",
+          "max": "57",
+          "name": "Blue"
+        },
+        {
+          "min": "58",
+          "max": "74",
+          "name": "White"
+        },
+        {
+          "min": "75",
+          "max": "90",
+          "name": "Red+Green"
+        },
+        {
+          "min": "91",
+          "max": "107",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "108",
+          "max": "123",
+          "name": "Red+White"
+        },
+        {
+          "min": "124",
+          "max": "140",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "141",
+          "max": "156",
+          "name": "Green+White"
+        },
+        {
+          "min": "157",
+          "max": "173",
+          "name": "Blue+White"
+        },
+        {
+          "min": "174",
+          "max": "189",
+          "name": "R+G+B"
+        },
+        {
+          "min": "190",
+          "max": "206",
+          "name": "R+G+W"
+        },
+        {
+          "min": "207",
+          "max": "222",
+          "name": "R+B+W"
+        },
+        {
+          "min": "223",
+          "max": "239",
+          "name": "G+B+W"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "R+G+B+W"
+        }
+      ]
+    },
+    {
+      "name": "Head 5 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 5 Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 5 Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour control 5",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "24",
+          "name": "Red"
+        },
+        {
+          "min": "25",
+          "max": "41",
+          "name": "Green"
+        },
+        {
+          "min": "42",
+          "max": "57",
+          "name": "Blue"
+        },
+        {
+          "min": "58",
+          "max": "74",
+          "name": "White"
+        },
+        {
+          "min": "75",
+          "max": "90",
+          "name": "Red+Green"
+        },
+        {
+          "min": "91",
+          "max": "107",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "108",
+          "max": "123",
+          "name": "Red+White"
+        },
+        {
+          "min": "124",
+          "max": "140",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "141",
+          "max": "156",
+          "name": "Green+White"
+        },
+        {
+          "min": "157",
+          "max": "173",
+          "name": "Blue+White"
+        },
+        {
+          "min": "174",
+          "max": "189",
+          "name": "R+G+B"
+        },
+        {
+          "min": "190",
+          "max": "206",
+          "name": "R+G+W"
+        },
+        {
+          "min": "207",
+          "max": "222",
+          "name": "R+B+W"
+        },
+        {
+          "min": "223",
+          "max": "239",
+          "name": "G+B+W"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "R+G+B+W"
+        }
+      ]
+    },
+    {
+      "name": "Head 6 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 6 Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 6 Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour control 6",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "24",
+          "name": "Red"
+        },
+        {
+          "min": "25",
+          "max": "41",
+          "name": "Green"
+        },
+        {
+          "min": "42",
+          "max": "57",
+          "name": "Blue"
+        },
+        {
+          "min": "58",
+          "max": "74",
+          "name": "White"
+        },
+        {
+          "min": "75",
+          "max": "90",
+          "name": "Red+Green"
+        },
+        {
+          "min": "91",
+          "max": "107",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "108",
+          "max": "123",
+          "name": "Red+White"
+        },
+        {
+          "min": "124",
+          "max": "140",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "141",
+          "max": "156",
+          "name": "Green+White"
+        },
+        {
+          "min": "157",
+          "max": "173",
+          "name": "Blue+White"
+        },
+        {
+          "min": "174",
+          "max": "189",
+          "name": "R+G+B"
+        },
+        {
+          "min": "190",
+          "max": "206",
+          "name": "R+G+W"
+        },
+        {
+          "min": "207",
+          "max": "222",
+          "name": "R+B+W"
+        },
+        {
+          "min": "223",
+          "max": "239",
+          "name": "G+B+W"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "R+G+B+W"
+        }
+      ]
+    },
+    {
+      "name": "Reset / Sound Active",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset"
+        },
+        {
+          "min": "210",
+          "max": "240",
+          "name": "No function"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Show mode"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Show mode",
+        "Show mode speed",
+        "Colour control",
+        "Colour chase speed"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan speed",
+        "Head 1 Tilt",
+        "Colour control 1",
+        "Head 2 Tilt",
+        "Colour control 2",
+        "Head 3 Tilt",
+        "Colour control 3",
+        "Head 4 Tilt",
+        "Colour control 4",
+        "Head 5 Tilt",
+        "Colour control 5",
+        "Head 6 Tilt",
+        "Colour control 6"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 16,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Pan",
+        "Pan speed",
+        "Head 1 Tilt",
+        "Colour control 1",
+        "Head 2 Tilt",
+        "Colour control 2",
+        "Head 3 Tilt",
+        "Colour control 3",
+        "Head 4 Tilt",
+        "Colour control 4",
+        "Head 5 Tilt",
+        "Colour control 5",
+        "Head 6 Tilt",
+        "Colour control 6"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 30,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Pan",
+        "Pan Fine",
+        "Pan speed",
+        "Head 1 Tilt",
+        "Head 1 Tilt Fine",
+        "Head 1 Tilt Speed",
+        "Colour control 1",
+        "Head 2 Tilt",
+        "Head 2 Tilt Fine",
+        "Head 2 Tilt Speed",
+        "Colour control 2",
+        "Head 3 Tilt",
+        "Head 3 Tilt Fine",
+        "Head 3 Tilt Speed",
+        "Colour control 3",
+        "Head 4 Tilt",
+        "Head 4 Tilt Fine",
+        "Head 4 Tilt Speed",
+        "Colour control 4",
+        "Head 5 Tilt",
+        "Head 5 Tilt Fine",
+        "Head 5 Tilt Speed",
+        "Colour control 5",
+        "Head 6 Tilt",
+        "Head 6 Tilt Fine",
+        "Head 6 Tilt Speed",
+        "Colour control 6",
+        "Reset / Sound Active"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.9",
+      "width": "400",
+      "height": "270",
+      "depth": "260"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "360",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "125",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,885 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elation",
+  "model": "Cuepix Batten",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Saul Vielmetti",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Flash/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "95",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LEDs ON"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LEDs ON"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LEDs ON"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "OFF"
+        },
+        {
+          "min": "1",
+          "max": "7",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Light Red"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Medium Red"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Lavender"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Indigo"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Light Green Blue"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Moss Green"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Primary Green"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Double CTB"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Full Red"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Full Green"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Full Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Full White"
+        }
+      ]
+    },
+    {
+      "name": "Dimming Curve Modes",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to Unit Setting"
+        }
+      ]
+    },
+    {
+      "name": "Chase Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "20",
+          "name": "Dream Macro"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Meteor Macro"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Fade Macro"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Change Macro"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Flow Macro 1"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Flow Macro 2"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Flow Macro 3"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Flow Macro 4"
+        },
+        {
+          "min": "161",
+          "max": "180",
+          "name": "Flow Macro 5"
+        },
+        {
+          "min": "181",
+          "max": "200",
+          "name": "Flow Macro 6"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Flow Macro 7"
+        },
+        {
+          "min": "221",
+          "max": "240",
+          "name": "Flow Macro 8"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Flow Macro 9"
+        }
+      ]
+    },
+    {
+      "name": "Chase Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Chase Macro Speed slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Red - COB Module 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green - COB Module 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - COB Module 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Fine - COB Module 1",
+      "type": "Red"
+    },
+    {
+      "name": "Blue Fine - COB Module 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Green Fine - COB Module 1",
+      "type": "Green"
+    },
+    {
+      "name": "Red - COB Module 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine - COB Module 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green - COB Module 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine - COB Module 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - COB Module 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine - COB Module 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red - COB Module 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine - COB Module 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green - COB Module 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine - COB Module 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - COB Module 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine - COB Module 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red - COB Module 4",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine - COB Module 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green - COB Module 4",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine - COB Module 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - COB Module 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine - COB Module 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Red - COB Module 5",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine - COB Module 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green - COB Module 5",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine - COB Module 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - COB Module 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine - COB Module 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Red - COB Module 6",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine - COB Module 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green - COB Module 6",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine - COB Module 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - COB Module 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine - COB Module 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Red - COB Module 7",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine - COB Module 7",
+      "type": "Red"
+    },
+    {
+      "name": "Green - COB Module 7",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine - COB Module 7",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - COB Module 7",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine - COB Module 7",
+      "type": "Blue"
+    },
+    {
+      "name": "Red - COB Module 8",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine - COB Module 8",
+      "type": "Red"
+    },
+    {
+      "name": "Green - COB Module 8",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine - COB Module 8",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - COB Module 8",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine - COB Module 8",
+      "type": "Blue"
+    },
+    {
+      "name": "Red - COB Module 9",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine - COB Module 9",
+      "type": "Red"
+    },
+    {
+      "name": "Green - COB Module 9",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine - COB Module 9",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - COB Module 9",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine - COB Module 9",
+      "type": "Blue"
+    },
+    {
+      "name": "Red - COB Module 10",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine - COB Module 10",
+      "type": "Red"
+    },
+    {
+      "name": "Green - COB Module 10",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine - COB Module 10",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - COB Module 10",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine - COB Module 10",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 CH",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4 CH",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "6 CH",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Flash/Strobe",
+        "Master Dimmer",
+        "Dimming Curve Modes"
+      ]
+    },
+    {
+      "name": "6H CH",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine"
+      ]
+    },
+    {
+      "name": "9 CH",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master Dimmer",
+        "Flash/Strobe",
+        "Color Macros",
+        "Chase Macros",
+        "Chase Macro Speed",
+        "Dimming Curve Modes"
+      ]
+    },
+    {
+      "name": "30 CH",
+      "totalChannels": 30,
+      "channels": [
+        "Red - COB Module 1",
+        "Green - COB Module 1",
+        "Blue - COB Module 1",
+        "Red - COB Module 2",
+        "Green - COB Module 2",
+        "Blue - COB Module 2",
+        "Red - COB Module 3",
+        "Green - COB Module 3",
+        "Blue - COB Module 3",
+        "Red - COB Module 4",
+        "Green - COB Module 4",
+        "Blue - COB Module 4",
+        "Red - COB Module 5",
+        "Green - COB Module 5",
+        "Blue - COB Module 5",
+        "Red - COB Module 6",
+        "Green - COB Module 6",
+        "Blue - COB Module 6",
+        "Red - COB Module 7",
+        "Green - COB Module 7",
+        "Blue - COB Module 7",
+        "Red - COB Module 8",
+        "Green - COB Module 8",
+        "Blue - COB Module 8",
+        "Red - COB Module 9",
+        "Green - COB Module 9",
+        "Blue - COB Module 9",
+        "Red - COB Module 10",
+        "Green - COB Module 10",
+        "Blue - COB Module 10"
+      ]
+    },
+    {
+      "name": "33 CH",
+      "totalChannels": 33,
+      "channels": [
+        "Red - COB Module 1",
+        "Green - COB Module 1",
+        "Blue - COB Module 1",
+        "Red - COB Module 2",
+        "Green - COB Module 2",
+        "Blue - COB Module 2",
+        "Red - COB Module 3",
+        "Green - COB Module 3",
+        "Blue - COB Module 3",
+        "Red - COB Module 4",
+        "Green - COB Module 4",
+        "Blue - COB Module 4",
+        "Red - COB Module 5",
+        "Green - COB Module 5",
+        "Blue - COB Module 5",
+        "Red - COB Module 6",
+        "Green - COB Module 6",
+        "Blue - COB Module 6",
+        "Red - COB Module 7",
+        "Green - COB Module 7",
+        "Blue - COB Module 7",
+        "Red - COB Module 8",
+        "Green - COB Module 8",
+        "Blue - COB Module 8",
+        "Red - COB Module 9",
+        "Green - COB Module 9",
+        "Blue - COB Module 9",
+        "Red - COB Module 10",
+        "Green - COB Module 10",
+        "Blue - COB Module 10",
+        "Flash/Strobe",
+        "Master Dimmer",
+        "Dimming Curve Modes"
+      ]
+    },
+    {
+      "name": "36 CH",
+      "totalChannels": 36,
+      "channels": [
+        "Red - COB Module 1",
+        "Green - COB Module 1",
+        "Blue - COB Module 1",
+        "Red - COB Module 2",
+        "Green - COB Module 2",
+        "Blue - COB Module 2",
+        "Red - COB Module 3",
+        "Green - COB Module 3",
+        "Blue - COB Module 3",
+        "Red - COB Module 4",
+        "Green - COB Module 4",
+        "Blue - COB Module 4",
+        "Red - COB Module 5",
+        "Green - COB Module 5",
+        "Blue - COB Module 5",
+        "Red - COB Module 6",
+        "Green - COB Module 6",
+        "Blue - COB Module 6",
+        "Red - COB Module 7",
+        "Green - COB Module 7",
+        "Blue - COB Module 7",
+        "Red - COB Module 8",
+        "Green - COB Module 8",
+        "Blue - COB Module 8",
+        "Red - COB Module 9",
+        "Green - COB Module 9",
+        "Blue - COB Module 9",
+        "Red - COB Module 10",
+        "Green - COB Module 10",
+        "Blue - COB Module 10",
+        "Color Macros",
+        "Flash/Strobe",
+        "Master Dimmer",
+        "Chase Macros",
+        "Chase Macro Speed",
+        "Dimming Curve Modes"
+      ]
+    },
+    {
+      "name": "60 CH",
+      "totalChannels": 60,
+      "channels": [
+        "Red - COB Module 1",
+        "Red Fine - COB Module 1",
+        "Green - COB Module 1",
+        "Green Fine - COB Module 1",
+        "Blue - COB Module 1",
+        "Blue Fine - COB Module 1",
+        "Red - COB Module 2",
+        "Red Fine - COB Module 2",
+        "Green - COB Module 2",
+        "Green Fine - COB Module 2",
+        "Blue - COB Module 2",
+        "Blue Fine - COB Module 2",
+        "Red - COB Module 3",
+        "Red Fine - COB Module 3",
+        "Green - COB Module 3",
+        "Green Fine - COB Module 3",
+        "Blue - COB Module 3",
+        "Blue Fine - COB Module 3",
+        "Red - COB Module 4",
+        "Red Fine - COB Module 4",
+        "Green - COB Module 4",
+        "Green Fine - COB Module 4",
+        "Blue - COB Module 4",
+        "Blue Fine - COB Module 4",
+        "Red - COB Module 5",
+        "Red Fine - COB Module 5",
+        "Green - COB Module 5",
+        "Green Fine - COB Module 5",
+        "Blue - COB Module 5",
+        "Blue Fine - COB Module 5",
+        "Red - COB Module 6",
+        "Red Fine - COB Module 6",
+        "Green - COB Module 6",
+        "Green Fine - COB Module 6",
+        "Blue - COB Module 6",
+        "Blue Fine - COB Module 6",
+        "Red - COB Module 7",
+        "Red Fine - COB Module 7",
+        "Green - COB Module 7",
+        "Green Fine - COB Module 7",
+        "Blue - COB Module 7",
+        "Blue Fine - COB Module 7",
+        "Red - COB Module 8",
+        "Red Fine - COB Module 8",
+        "Green - COB Module 8",
+        "Green Fine - COB Module 8",
+        "Blue - COB Module 8",
+        "Blue Fine - COB Module 8",
+        "Red - COB Module 9",
+        "Red Fine - COB Module 9",
+        "Green - COB Module 9",
+        "Green Fine - COB Module 9",
+        "Blue - COB Module 9",
+        "Blue Fine - COB Module 9",
+        "Red - COB Module 10",
+        "Red Fine - COB Module 10",
+        "Green - COB Module 10",
+        "Green Fine - COB Module 10",
+        "Blue - COB Module 10",
+        "Blue Fine - COB Module 10"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "4500",
+      "colourTemperature": "6000"
+    },
+    "dimensions": {
+      "weight": "9.5",
+      "width": "1100",
+      "height": "172",
+      "depth": "121"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "82",
+      "degreesMax": "82"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "312",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

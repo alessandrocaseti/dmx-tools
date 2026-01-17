@@ -1,0 +1,280 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TMH-X4",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Piotr Nowik",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "No function"
+        },
+        {
+          "min": "4",
+          "max": "95",
+          "name": "Strobe effect with increasing speed"
+        },
+        {
+          "min": "96",
+          "max": "176",
+          "name": "Random strobe effect"
+        },
+        {
+          "min": "177",
+          "max": "255",
+          "name": "Pulse-effect in sequences (Thunder strobe)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Preset colors and color macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Preset colors and color macros"
+        }
+      ]
+    },
+    {
+      "name": "Color macros speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fast to slow"
+        }
+      ]
+    },
+    {
+      "name": "Function control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "49",
+          "name": "Channels 1 to 12"
+        },
+        {
+          "min": "50",
+          "max": "99",
+          "name": "Preset colors and color macros"
+        },
+        {
+          "min": "100",
+          "max": "149",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "150",
+          "max": "199",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Music control"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "No function"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom",
+        "Preset colors and color macros",
+        "Color macros speed",
+        "Function control",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 24,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Zoom",
+        "Dimmer",
+        "Strobe",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Preset colors and color macros",
+        "Color macros speed",
+        "Function control",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.8",
+      "width": "305",
+      "height": "400",
+      "depth": "200"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "1",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "630",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "225",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

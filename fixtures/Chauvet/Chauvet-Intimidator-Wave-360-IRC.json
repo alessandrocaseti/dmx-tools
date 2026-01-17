@@ -1,0 +1,1181 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Intimidator Wave 360 IRC",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Habefaro",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan 16-bit",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Continuous Pan Rotating",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Continuous counter-clockwise pan rotating with increasing speed"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Continuous clockwise pan rotating with decreasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Head 1 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 2 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 3 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 4 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Built-In Auto Tilt",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "47",
+          "name": "No function"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Built-In Auto 1"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Built-In Auto 2"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Built-In Auto 3"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Built-In Auto 4"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Built-In Auto 5"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Built-In Auto 6"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Built-In Auto 7"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Built-In Auto 8"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Built-In Auto 9"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Built-In Auto 10"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Built-In Auto 11"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Built-In Auto 12"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Built-In Auto 13"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Built-In Auto 14"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Built-In Auto 15"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Built-In Auto 16"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Built-In Auto 17"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Built-In Auto 18"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Built-In Auto 19"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Built-In Auto 20"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Built-In Auto 21"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Built-In Auto 22"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Built-In Auto 23"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Built-In Auto 24"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Built-In Auto 25 (Built-In Auto 1-24)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Built-In Sound Control mode"
+        }
+      ]
+    },
+    {
+      "name": "Tilt Built-In Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Head 1 Red Dimmer",
+      "type": "Red"
+    },
+    {
+      "name": "Head 1 Green Dimmer",
+      "type": "Green"
+    },
+    {
+      "name": "Head 1 Blue Dimmer",
+      "type": "Blue"
+    },
+    {
+      "name": "Head 1 White Dimmer",
+      "type": "White"
+    },
+    {
+      "name": "Head 2 Red Dimmer",
+      "type": "Red"
+    },
+    {
+      "name": "Head 2 Green Dimmer",
+      "type": "Green"
+    },
+    {
+      "name": "Head 2 Blue Dimmer",
+      "type": "Blue"
+    },
+    {
+      "name": "Head 2 White Dimmer",
+      "type": "White"
+    },
+    {
+      "name": "Head 3 Red Dimmer",
+      "type": "Red"
+    },
+    {
+      "name": "Head 3 Green Dimmer",
+      "type": "Green"
+    },
+    {
+      "name": "Head 3 Blue Dimmer",
+      "type": "Blue"
+    },
+    {
+      "name": "Head 3 White Dimmer",
+      "type": "White"
+    },
+    {
+      "name": "Head 4 Red Dimmer",
+      "type": "Red"
+    },
+    {
+      "name": "Head 4 Green Dimmer",
+      "type": "Green"
+    },
+    {
+      "name": "Head 4 Blue Dimmer",
+      "type": "Blue"
+    },
+    {
+      "name": "Head 4 White Dimmer",
+      "type": "White"
+    },
+    {
+      "name": "Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Color 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Color 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Color 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Color 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Color 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Color 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Color 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Color 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Color 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Color 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Color 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Color 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Color 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Color 14"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Color 15"
+        },
+        {
+          "min": "128",
+          "max": "179",
+          "name": "No function"
+        },
+        {
+          "min": "180",
+          "max": "201",
+          "name": "Fade rainbow clockwise (speed fast to slow)"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "Stop"
+        },
+        {
+          "min": "208",
+          "max": "229",
+          "name": "Fade rainbow counter-clockwise (speed fast to slow)"
+        },
+        {
+          "min": "230",
+          "max": "234",
+          "name": "No function"
+        },
+        {
+          "min": "235",
+          "max": "249",
+          "name": "Snap change (speed fast to slow)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound color"
+        }
+      ]
+    },
+    {
+      "name": "Heads On/Off",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "●●●●"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "○●●●"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "○○●●"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "○○○●"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "○○○○"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "●○○○"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "●●○○"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "●●●○"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "●●●●"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "○○○○"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "●○○○"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "○●○○"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "○○●○"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "○○○●"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "○○○○"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "●●○○"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "○●●○"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "○○●●"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "●○○●"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "○○○○"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "○●●●"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "●○●●"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "●●○●"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "●●●○"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "○○○○"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "●●●●"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "●●●●"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "●●●●"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "●●●●"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "●●●●"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "●●●●"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "●●●●"
+        }
+      ]
+    },
+    {
+      "name": "Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Program 1"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "Program 2"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Program 3"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Program 4"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Program 5"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Program 6"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Program 7"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Program 8"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Program 9"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Program 10"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Program 11"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Program 12"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "Program 13"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "Program 14"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "Program 15"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "Program 16"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "Program 17"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "Program 18"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "Program 19"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "Program 20"
+        },
+        {
+          "min": "116",
+          "max": "120",
+          "name": "Program 21"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "Program 22"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "Program 23"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "Program 24 (built-in for all)"
+        },
+        {
+          "min": "136",
+          "max": "140",
+          "name": "Program 25"
+        },
+        {
+          "min": "141",
+          "max": "145",
+          "name": "Program 26"
+        },
+        {
+          "min": "146",
+          "max": "150",
+          "name": "Program 27"
+        },
+        {
+          "min": "151",
+          "max": "155",
+          "name": "Program 28"
+        },
+        {
+          "min": "156",
+          "max": "160",
+          "name": "Program 29"
+        },
+        {
+          "min": "161",
+          "max": "165",
+          "name": "Program 30"
+        },
+        {
+          "min": "166",
+          "max": "170",
+          "name": "Program 31"
+        },
+        {
+          "min": "171",
+          "max": "175",
+          "name": "Program 32"
+        },
+        {
+          "min": "176",
+          "max": "180",
+          "name": "Program 33"
+        },
+        {
+          "min": "181",
+          "max": "185",
+          "name": "Program 34"
+        },
+        {
+          "min": "186",
+          "max": "190",
+          "name": "Program 35"
+        },
+        {
+          "min": "191",
+          "max": "195",
+          "name": "Program 35"
+        },
+        {
+          "min": "196",
+          "max": "200",
+          "name": "Program 37"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "Program 38"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "Program 39"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "Program 40"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "Program 41"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Program 42"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Program 43"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Program 44"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Program 45"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Program 46"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Program 47"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Program 48 (built-in for all)"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer All Heads",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Off"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "On"
+        },
+        {
+          "min": "25",
+          "max": "64",
+          "name": "Shutter 1 even on/even off (fast to slow)"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "On"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "Shutter 2 fast on/slow off (fast to slow)"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "On"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Shutter 3 slow on/fast off (fast to slow)"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "On"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Shutter 4 random shutter (fast to slow)"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "On"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "Shutter 5 random shutter fast on/slow off (fast to slow)"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "On"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Shutter 6 random shutter slow on/fast off (fast to slow)"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "On"
+        },
+        {
+          "min": "170",
+          "max": "184",
+          "name": "Shutter 7 pulse shutter (fast to slow)"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "On"
+        },
+        {
+          "min": "190",
+          "max": "204",
+          "name": "Shutter 8 random pulse shutter (fast to slow)"
+        },
+        {
+          "min": "205",
+          "max": "209",
+          "name": "On"
+        },
+        {
+          "min": "210",
+          "max": "224",
+          "name": "Shutter 9 on and off gradually (fast to slow)"
+        },
+        {
+          "min": "225",
+          "max": "229",
+          "name": "On"
+        },
+        {
+          "min": "230",
+          "max": "244",
+          "name": "Shutter 10 pulse shutter (fast to slow)"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Move-in-black"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Cancel move-in-black"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Independent macros – cancels macro product combinations below"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Macros used when linking 2 heads: This is the value for first head"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Macros used when linking 2 heads together: This is the value for second head"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Macros used when linking 4 heads together: This is the value for first head"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Macros used when linking 4 heads together: This is the value for second head"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Macros used when linking 4 heads together: This is the value for third head"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Macros used when linking 4 heads together: This is the value for fourth head"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Pan Reset"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Tilt Reset"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Reserved for future use"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Reset all"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Reserved for future use"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Pan/ tilt reverse"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Pan reverse"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Tilt Reverse"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Cancel reverse pan"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Cancel reverse tilt"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Cancel reverse pan/tilt"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Reserved for future use"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Controls all heads with head 1 channels"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Cancels control of all heads with head 1 channels"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Reserved for future use"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Reserved for future use"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Reserved for future use"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Reserved for future use"
+        },
+        {
+          "min": "145",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "33 ch.",
+      "totalChannels": 33,
+      "channels": [
+        "Pan",
+        "Pan 16-bit",
+        "Pan Speed",
+        "Continuous Pan Rotating",
+        "Head 1 Tilt",
+        "Head 2 Tilt",
+        "Head 3 Tilt",
+        "Head 4 Tilt",
+        "Built-In Auto Tilt",
+        "Tilt Built-In Speed",
+        "Head 1 Red Dimmer",
+        "Head 1 Green Dimmer",
+        "Head 1 Blue Dimmer",
+        "Head 1 White Dimmer",
+        "Head 2 Red Dimmer",
+        "Head 2 Green Dimmer",
+        "Head 2 Blue Dimmer",
+        "Head 2 White Dimmer",
+        "Head 3 Red Dimmer",
+        "Head 3 Green Dimmer",
+        "Head 3 Blue Dimmer",
+        "Head 3 White Dimmer",
+        "Head 4 Red Dimmer",
+        "Head 4 Green Dimmer",
+        "Head 4 Blue Dimmer",
+        "Head 4 White Dimmer",
+        "Colors",
+        "Heads On/Off",
+        "Auto Programs",
+        "Program Speed",
+        "Dimmer All Heads",
+        "Shutter Programs",
+        "Settings"
+      ]
+    },
+    {
+      "name": "17 ch.",
+      "totalChannels": 17,
+      "channels": [
+        "Pan",
+        "Pan 16-bit",
+        "Pan Speed",
+        "Continuous Pan Rotating",
+        "Head 1 Tilt",
+        "Head 2 Tilt",
+        "Head 3 Tilt",
+        "Head 4 Tilt",
+        "Built-In Auto Tilt",
+        "Tilt Built-In Speed",
+        "Colors",
+        "Heads On/Off",
+        "Auto Programs",
+        "Program Speed",
+        "Dimmer All Heads",
+        "Shutter Programs",
+        "Settings"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "400",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.8",
+      "width": "559",
+      "height": "297",
+      "depth": "189"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "5",
+      "degreesMax": "5"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "177",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

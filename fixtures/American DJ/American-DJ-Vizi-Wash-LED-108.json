@@ -1,0 +1,244 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Vizi Wash LED 108",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Henrik Bauer, Jannis Achstetter",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED OFF"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED ON"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Stobing Slow-Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED ON"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Effect in Sequence"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED ON"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "RandomeStrobe Slow-Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED ON"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Rainbow effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "231",
+          "name": "Rainbow colors"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Crossfade colors slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan Tilt Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Speed Max to Min"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Blackout while moving"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Resets & Internal programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "Color change normal"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Reset all motors"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Reset scan motor"
+        },
+        {
+          "min": "88",
+          "max": "99",
+          "name": "No function"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Music controlled program"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "MODE1",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Red",
+        "Green",
+        "Blue",
+        "Shutter",
+        "Dimmer",
+        "Rainbow effect",
+        "Pan Tilt Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9",
+      "width": "228",
+      "height": "369",
+      "depth": "310"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "265"
+    },
+    "technical": {
+      "powerConsumption": "120",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

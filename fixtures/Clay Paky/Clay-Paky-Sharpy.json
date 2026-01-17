@@ -1,0 +1,732 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Sharpy",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Colour Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "White"
+        },
+        {
+          "min": "5",
+          "max": "8",
+          "name": "White + Red"
+        },
+        {
+          "min": "9",
+          "max": "12",
+          "name": "Red"
+        },
+        {
+          "min": "13",
+          "max": "17",
+          "name": "Red + Orange"
+        },
+        {
+          "min": "18",
+          "max": "21",
+          "name": "Orange"
+        },
+        {
+          "min": "22",
+          "max": "25",
+          "name": "Orange + Aquamarine"
+        },
+        {
+          "min": "26",
+          "max": "29",
+          "name": "Aquamarine"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Aquamarine + Green"
+        },
+        {
+          "min": "35",
+          "max": "38",
+          "name": "Green"
+        },
+        {
+          "min": "39",
+          "max": "42",
+          "name": "Green + Light Green"
+        },
+        {
+          "min": "43",
+          "max": "46",
+          "name": "Light Green"
+        },
+        {
+          "min": "47",
+          "max": "51",
+          "name": "Light Green + Lavender"
+        },
+        {
+          "min": "52",
+          "max": "55",
+          "name": "Lavender"
+        },
+        {
+          "min": "56",
+          "max": "59",
+          "name": "Lavender + Pink"
+        },
+        {
+          "min": "60",
+          "max": "63",
+          "name": "Pink"
+        },
+        {
+          "min": "64",
+          "max": "68",
+          "name": "Pink + Yellow"
+        },
+        {
+          "min": "69",
+          "max": "72",
+          "name": "Yellow"
+        },
+        {
+          "min": "73",
+          "max": "76",
+          "name": "Yellow + Magenta"
+        },
+        {
+          "min": "77",
+          "max": "81",
+          "name": "Magenta"
+        },
+        {
+          "min": "82",
+          "max": "85",
+          "name": "Magenta + Cyan"
+        },
+        {
+          "min": "86",
+          "max": "89",
+          "name": "Cyan"
+        },
+        {
+          "min": "90",
+          "max": "93",
+          "name": "Cyan + CTO 260"
+        },
+        {
+          "min": "94",
+          "max": "98",
+          "name": "CTO 260"
+        },
+        {
+          "min": "99",
+          "max": "102",
+          "name": "CTO 260 + CTO 190"
+        },
+        {
+          "min": "103",
+          "max": "106",
+          "name": "CTO 190"
+        },
+        {
+          "min": "107",
+          "max": "110",
+          "name": "CTO 190 + CTB 8000"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "CTB 8000"
+        },
+        {
+          "min": "116",
+          "max": "119",
+          "name": "CTB 8000 + Blue"
+        },
+        {
+          "min": "120",
+          "max": "123",
+          "name": "Blue"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "Blue + White"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotation (Slow 0.2 rpm to Fast 160 rpm)"
+        }
+      ]
+    },
+    {
+      "name": "Stop / Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Closed"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Strobe (slow 1 flash/sec to fast 12 flashes/sec)"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Open"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Pulsation (Slow 30rpm to fast 360rpm)"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Open"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random slow strobe"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random medium strobe"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random fast strobe"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Static Gobo Change",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "White"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "8",
+          "max": "11",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "12",
+          "max": "15",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "16",
+          "max": "19",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "20",
+          "max": "23",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "24",
+          "max": "27",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "28",
+          "max": "31",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "32",
+          "max": "35",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "36",
+          "max": "39",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "40",
+          "max": "43",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "44",
+          "max": "47",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "48",
+          "max": "51",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "52",
+          "max": "55",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "56",
+          "max": "59",
+          "name": "Gobo 14"
+        },
+        {
+          "min": "60",
+          "max": "63",
+          "name": "Gobo 15"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "Gobo 16"
+        },
+        {
+          "min": "68",
+          "max": "71",
+          "name": "Gobo 17"
+        },
+        {
+          "min": "72",
+          "max": "113",
+          "name": "Rotation (Fast 60rpm to slow 5rpm)"
+        },
+        {
+          "min": "114",
+          "max": "117",
+          "name": "Stop"
+        },
+        {
+          "min": "118",
+          "max": "159",
+          "name": "Rotation (Slow 5rpm to fast 60rpm)"
+        },
+        {
+          "min": "160",
+          "max": "166",
+          "name": "Gobo 2 Shake (Slow to Fast)"
+        },
+        {
+          "min": "167",
+          "max": "172",
+          "name": "Gobo 3 Shake (Slow to Fast)"
+        },
+        {
+          "min": "173",
+          "max": "179",
+          "name": "Gobo 4 Shake (Slow to Fast)"
+        },
+        {
+          "min": "180",
+          "max": "185",
+          "name": "Gobo 5 Shake (Slow to Fast)"
+        },
+        {
+          "min": "186",
+          "max": "191",
+          "name": "Gobo 6 Shake (Slow to Fast)"
+        },
+        {
+          "min": "192",
+          "max": "198",
+          "name": "Gobo 7 Shake (Slow to Fast)"
+        },
+        {
+          "min": "199",
+          "max": "204",
+          "name": "Gobo 8 Shake (Slow to Fast)"
+        },
+        {
+          "min": "205",
+          "max": "211",
+          "name": "Gobo 9 Shake (Slow to Fast)"
+        },
+        {
+          "min": "212",
+          "max": "217",
+          "name": "Gobo 10 Shake (Slow to Fast)"
+        },
+        {
+          "min": "218",
+          "max": "223",
+          "name": "Gobo 11 Shake (Slow to Fast)"
+        },
+        {
+          "min": "224",
+          "max": "230",
+          "name": "Gobo 12 Shake (Slow to Fast)"
+        },
+        {
+          "min": "231",
+          "max": "236",
+          "name": "Gobo 13 Shake (Slow to Fast)"
+        },
+        {
+          "min": "237",
+          "max": "243",
+          "name": "Gobo 14 Shake (Slow to Fast)"
+        },
+        {
+          "min": "244",
+          "max": "249",
+          "name": "Gobo 15 Shake (Slow to Fast)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Gobo 16 Shake (Slow 24bpm to Fast 600bpm)"
+        }
+      ]
+    },
+    {
+      "name": "Prism Insertion",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism excluded"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Prism inserted (0%-100%: 0.36 sec)"
+        }
+      ]
+    },
+    {
+      "name": "Prism Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Position 0°"
+        },
+        {
+          "min": "21",
+          "max": "41",
+          "name": "Position 90°"
+        },
+        {
+          "min": "42",
+          "max": "62",
+          "name": "Position 180°"
+        },
+        {
+          "min": "63",
+          "max": "83",
+          "name": "Position 270°"
+        },
+        {
+          "min": "84",
+          "max": "104",
+          "name": "Position 360°"
+        },
+        {
+          "min": "105",
+          "max": "126",
+          "name": "Position 450°"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Position 540°"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Rotation (Fast 43rpm to slow 1.1rph)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Rotation (Slow 1.1rph to fast 43rpm)"
+        }
+      ]
+    },
+    {
+      "name": "Effects Movement",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Movement (0%-100%: 0.33 sec)"
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Frost insertion (excluded to inserted)"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "11",
+          "name": "Unused"
+        },
+        {
+          "min": "12",
+          "max": "24",
+          "name": "Pan-Tilt Function (Fast - Default)"
+        },
+        {
+          "min": "25",
+          "max": "37",
+          "name": "Pan-Tilt Function (Normal)"
+        },
+        {
+          "min": "38",
+          "max": "50",
+          "name": "Dimmer Curve Function (Conventional)"
+        },
+        {
+          "min": "51",
+          "max": "62",
+          "name": "Dimmer Curve Function (Linear - Default)"
+        },
+        {
+          "min": "63",
+          "max": "255",
+          "name": "Unused"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Effects Reset"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Pan/Tilt Reset"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Complete Reset"
+        }
+      ]
+    },
+    {
+      "name": "Lamp Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused"
+        },
+        {
+          "min": "26",
+          "max": "100",
+          "name": "Lamp OFF"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Lamp ON"
+        }
+      ]
+    },
+    {
+      "name": "Pan - Tilt Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pan - Tilt (0 to 310s)"
+        }
+      ]
+    },
+    {
+      "name": "Colour Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Colour Wheel (0 to 310s)"
+        }
+      ]
+    },
+    {
+      "name": "Beam Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimmer - Frost - Prism (0 to 310s)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Static Gobo (0 to 310s)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 16,
+      "channels": [
+        "Colour Wheel",
+        "Stop / Strobe",
+        "Dimmer",
+        "Static Gobo Change",
+        "Prism Insertion",
+        "Prism Rotation",
+        "Effects Movement",
+        "Frost",
+        "Focus",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Function",
+        "Reset",
+        "Lamp Control"
+      ]
+    },
+    {
+      "name": "Vector",
+      "totalChannels": 20,
+      "channels": [
+        "Colour Wheel",
+        "Stop / Strobe",
+        "Dimmer",
+        "Static Gobo Change",
+        "Prism Insertion",
+        "Prism Rotation",
+        "Effects Movement",
+        "Frost",
+        "Focus",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Function",
+        "Reset",
+        "Lamp Control",
+        "Pan - Tilt Time",
+        "Colour Time",
+        "Beam Time",
+        "Gobo Time"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 200W",
+      "lumens": "7950",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "19",
+      "width": "405",
+      "height": "450",
+      "depth": "330"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "3.8"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "250"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

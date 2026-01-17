@@ -1,0 +1,136 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Hypnotic RGB",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "James Elliott",
+  "channels": [
+    {
+      "name": "Colors",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "Red"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "Red+Green"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "Green"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "Blue"
+        },
+        {
+          "min": "158",
+          "max": "187",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "188",
+          "max": "217",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "218",
+          "max": "247",
+          "name": "All Random"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No rotation"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Counter-Clockwise Fast -> Slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "No rotation"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Clockwise Slow -> Fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No rotation"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX",
+      "totalChannels": 2,
+      "channels": [
+        "Colors",
+        "Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.4",
+      "width": "235",
+      "height": "121",
+      "depth": "268"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "13",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

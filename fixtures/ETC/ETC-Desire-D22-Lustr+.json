@@ -1,0 +1,190 @@
+{
+  "version": "1.2",
+  "manufacturer": "ETC",
+  "model": "Desire D22 Lustr+",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Tavon Markov",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Indigo",
+      "type": "Indigo"
+    },
+    {
+      "name": "Intensity",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Full on"
+        },
+        {
+          "min": "1",
+          "max": "254",
+          "name": "Variable rate from slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Full on"
+        }
+      ]
+    },
+    {
+      "name": "Hue (coarse)",
+      "type": "Unknown"
+    },
+    {
+      "name": "Hue (fine)",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Color Point",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color Point"
+        }
+      ]
+    },
+    {
+      "name": "Tint",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Tint"
+        }
+      ]
+    },
+    {
+      "name": "Not Used (RGB Mode)",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Direct",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "White",
+        "Amber",
+        "Green",
+        "Cyan",
+        "Blue",
+        "Indigo",
+        "Intensity",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "HSI",
+      "totalChannels": 5,
+      "channels": [
+        "Hue (coarse)",
+        "Hue (fine)",
+        "Saturation",
+        "Intensity",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "HSIC",
+      "totalChannels": 6,
+      "channels": [
+        "Hue (coarse)",
+        "Hue (fine)",
+        "Saturation",
+        "Intensity",
+        "Strobe",
+        "Color Point"
+      ]
+    },
+    {
+      "name": "RGB",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Not Used (RGB Mode)",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Studio",
+      "totalChannels": 3,
+      "channels": [
+        "Intensity",
+        "Color Point",
+        "Tint"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "6.8",
+      "width": "270",
+      "height": "338",
+      "depth": "305"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "115",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

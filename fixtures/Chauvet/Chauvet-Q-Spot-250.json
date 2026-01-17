@@ -1,0 +1,309 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Q-Spot 250",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Lamp on/off & Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No function"
+        },
+        {
+          "min": "128",
+          "max": "139",
+          "name": "Lamp on after 3 seconds when lamp is off"
+        },
+        {
+          "min": "140",
+          "max": "229",
+          "name": "No function"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Lamp off after 3 seconds"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "White Open"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Cyan"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Yellow"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Magenta"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Pink"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Orange"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow effect: Fast > Slow (clockwise)"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No rotation"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Clockwise rotation: Fast > Slow"
+        },
+        {
+          "min": "128",
+          "max": "132",
+          "name": "No rotation"
+        },
+        {
+          "min": "133",
+          "max": "255",
+          "name": "Counter-clockwise rotation: Slow > Fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "160",
+          "max": "223",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo Spin: Slow > Fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation & Index",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "Gobo Incremental rotation"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Constant rotation"
+        },
+        {
+          "min": "61",
+          "max": "158",
+          "name": "Clockwise rotation: Slow > Fast"
+        },
+        {
+          "min": "159",
+          "max": "255",
+          "name": "Counter-clockwise rotation: Slow > Fast"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Shutter/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe: Slow > Fast (max 10fps)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Strobe: Slow > Fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe: Slow > Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 13,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan Fine",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Lamp on/off & Reset",
+        "Color Wheel",
+        "Prism",
+        "Rotating Gobo Wheel",
+        "Gobo Rotation & Index",
+        "Focus",
+        "Shutter/Strobe",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "25",
+      "width": "400",
+      "height": "476",
+      "depth": "400"
+    },
+    "lens": {
+      "name": "Not specified",
+      "degreesMin": "21",
+      "degreesMax": "21"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "530",
+      "tiltMax": "280"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COLORdash Accent RGBW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ray Mercer",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Color Macro + White Balance",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "35",
+          "name": "R: 100% G: 0-100% B: 0"
+        },
+        {
+          "min": "36",
+          "max": "60",
+          "name": "R: 100%-0 G: 100% B: 0"
+        },
+        {
+          "min": "61",
+          "max": "85",
+          "name": "R: 0 G: 100% B: 0-100%"
+        },
+        {
+          "min": "86",
+          "max": "110",
+          "name": "R: 0 G: 100%-0 B: 100%"
+        },
+        {
+          "min": "111",
+          "max": "135",
+          "name": "R: 0-100% G: 0 B: 100%"
+        },
+        {
+          "min": "136",
+          "max": "160",
+          "name": "R: 100% G: 0 B: 100%-0"
+        },
+        {
+          "min": "161",
+          "max": "185",
+          "name": "R: 100% G: 0-100% B: 0-100%"
+        },
+        {
+          "min": "186",
+          "max": "210",
+          "name": "R: 100%-0 G: 100%-0 B: 100%"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "White 1"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "White 2"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "White 3"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "White 4"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "White 5"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "White 6"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "White 7"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "White 8"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "White 9"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "0-20 Hz"
+        }
+      ]
+    },
+    {
+      "name": "Program Selection",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No function"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Auto 0"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "Auto 1"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Auto 2"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Auto 3"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Auto 4"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Auto 5"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "Auto 6"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "Auto 7"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Auto 8"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Auto 9"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Auto 10"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Auto 11"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Auto 12"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Auto 13"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Auto 14"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Auto 15"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "Auto 16"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Auto 17"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "Auto 18"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "Auto 19"
+        },
+        {
+          "min": "221",
+          "max": "223",
+          "name": "Auto 20 (Red)"
+        },
+        {
+          "min": "224",
+          "max": "226",
+          "name": "Auto 21 (Red & Green)"
+        },
+        {
+          "min": "227",
+          "max": "229",
+          "name": "Auto 22 (Red & Blue)"
+        },
+        {
+          "min": "230",
+          "max": "232",
+          "name": "Auto 23 (Red & White)"
+        },
+        {
+          "min": "233",
+          "max": "235",
+          "name": "Auto 24 (Green)"
+        },
+        {
+          "min": "236",
+          "max": "238",
+          "name": "Auto 25 (Green & Blue)"
+        },
+        {
+          "min": "239",
+          "max": "241",
+          "name": "Auto 26 (Green & White)"
+        },
+        {
+          "min": "242",
+          "max": "244",
+          "name": "Auto 27 (Blue)"
+        },
+        {
+          "min": "245",
+          "max": "247",
+          "name": "Auto 28 (Blue & White)"
+        },
+        {
+          "min": "248",
+          "max": "250",
+          "name": "Auto 29 (White)"
+        },
+        {
+          "min": "251",
+          "max": "253",
+          "name": "Auto 30 (Red & Green & Blue)"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "Auto 31 (Red & Green & Blue & White)"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Only when Auto 0–19 in Ch. 8 is activated"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "STAGE 1",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro + White Balance",
+        "Strobe",
+        "Program Selection",
+        "Program Speed"
+      ]
+    },
+    {
+      "name": "ARC 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "ARC 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "153",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "0.6",
+      "width": "108",
+      "height": "65",
+      "depth": "174"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "10",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

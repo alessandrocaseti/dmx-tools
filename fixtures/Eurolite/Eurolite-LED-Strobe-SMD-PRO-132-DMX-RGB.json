@@ -1,0 +1,350 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED Strobe SMD PRO 132 DMX RGB",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fede79",
+  "channels": [
+    {
+      "name": "Strobe effect white 1",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "LED Off"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Preset colors, color change",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "LED Off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Warm yellow"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "192",
+          "name": "Switching colors with increasing speed"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Fading colors with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Strobe effect white 2",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "LED On"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "LED Off"
+        },
+        {
+          "min": "11",
+          "max": "250",
+          "name": "Strobe effect with increasing speed"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "LED On"
+        }
+      ]
+    },
+    {
+      "name": "Flash duration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Strobe effect with increasing flash duration (0 - 510 ms)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "LED On"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "LED Off"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Random pulse effect with increasing speed"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Random fade in with increasing speed"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Random fade out with increasing speed"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random strobe effect with increasing speed"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Lightning 5 s to 1 s"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe effect with increasing speed"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "LED On"
+        }
+      ]
+    },
+    {
+      "name": "Sound controlled strobe effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Sound controlled strobe effect with increasing microphone sensitivity"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Strobe effect white 1"
+      ]
+    },
+    {
+      "name": "2 Channel 1",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Preset colors, color change"
+      ]
+    },
+    {
+      "name": "2 Channel 2",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Strobe effect white 2"
+      ]
+    },
+    {
+      "name": "3 Channel 1",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobe effect white 2",
+        "Flash duration"
+      ]
+    },
+    {
+      "name": "3 Channel 2",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobe effect white 2",
+        "Preset colors, color change"
+      ]
+    },
+    {
+      "name": "3 Channel 3",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Strobe effect",
+        "Preset colors, color change",
+        "Sound controlled strobe effect"
+      ]
+    },
+    {
+      "name": "Mode 8",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Strobe effect",
+        "Red",
+        "Green",
+        "Blue",
+        "Sound controlled strobe effect"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.3",
+      "width": "350",
+      "height": "71",
+      "depth": "70"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "70",
+      "degreesMax": "70"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

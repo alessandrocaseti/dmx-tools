@@ -1,0 +1,319 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "Flurry 5",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Closed"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "0 - 100%"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "18",
+          "name": "Color Macro 1"
+        },
+        {
+          "min": "19",
+          "max": "26",
+          "name": "Color Macro 2"
+        },
+        {
+          "min": "27",
+          "max": "34",
+          "name": "Color Macro 3"
+        },
+        {
+          "min": "35",
+          "max": "42",
+          "name": "Color Macro 4"
+        },
+        {
+          "min": "43",
+          "max": "50",
+          "name": "Color Macro 5"
+        },
+        {
+          "min": "51",
+          "max": "58",
+          "name": "Color Macro 6"
+        },
+        {
+          "min": "59",
+          "max": "66",
+          "name": "Color Macro 7"
+        },
+        {
+          "min": "67",
+          "max": "74",
+          "name": "Color Macro 8"
+        },
+        {
+          "min": "75",
+          "max": "82",
+          "name": "Color Macro 9"
+        },
+        {
+          "min": "83",
+          "max": "90",
+          "name": "Color Macro 10"
+        },
+        {
+          "min": "91",
+          "max": "98",
+          "name": "Color Macro 11"
+        },
+        {
+          "min": "99",
+          "max": "106",
+          "name": "Color Macro 12"
+        },
+        {
+          "min": "107",
+          "max": "114",
+          "name": "Color Macro 13"
+        },
+        {
+          "min": "115",
+          "max": "122",
+          "name": "Color Macro 14"
+        },
+        {
+          "min": "123",
+          "max": "130",
+          "name": "Color Macro 15"
+        },
+        {
+          "min": "131",
+          "max": "138",
+          "name": "Color Macro 16"
+        },
+        {
+          "min": "139",
+          "max": "146",
+          "name": "Color Macro 17"
+        },
+        {
+          "min": "147",
+          "max": "154",
+          "name": "Color Macro 18"
+        },
+        {
+          "min": "155",
+          "max": "162",
+          "name": "Color Macro 19"
+        },
+        {
+          "min": "163",
+          "max": "170",
+          "name": "Color Macro 20"
+        },
+        {
+          "min": "171",
+          "max": "178",
+          "name": "Color Macro 21"
+        },
+        {
+          "min": "179",
+          "max": "186",
+          "name": "Color Macro 22"
+        },
+        {
+          "min": "187",
+          "max": "194",
+          "name": "Color Macro 23"
+        },
+        {
+          "min": "195",
+          "max": "202",
+          "name": "Color Macro 24"
+        },
+        {
+          "min": "203",
+          "max": "210",
+          "name": "Color Macro 25"
+        },
+        {
+          "min": "211",
+          "max": "218",
+          "name": "Color Macro 26"
+        },
+        {
+          "min": "219",
+          "max": "226",
+          "name": "Color Macro 27"
+        },
+        {
+          "min": "227",
+          "max": "234",
+          "name": "Color Macro 28"
+        },
+        {
+          "min": "235",
+          "max": "242",
+          "name": "Color Macro 29"
+        },
+        {
+          "min": "243",
+          "max": "255",
+          "name": "Color Macro 30"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Sound Active",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No function"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 13,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "Color Macros",
+        "Strobe",
+        "Sound Active"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Dimmer",
+        "White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.8",
+      "width": "173",
+      "height": "249",
+      "depth": "173"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "110",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

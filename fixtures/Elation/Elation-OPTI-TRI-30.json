@@ -1,0 +1,186 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elation",
+  "model": "OPTI TRI 30",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ray Console - cd",
+  "channels": [
+    {
+      "name": "Dimming",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red ",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Nothing"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobing/macro Speed"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "RGB using channels 1,2,3"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Dim - bright"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Bright -dim"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Dim - bright - dim"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "color mixing"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "3 color change"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "7 color change"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Color Macro"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Color Macro",
+        "Dimming"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Red ",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 4,
+      "channels": [
+        "Red ",
+        "Green",
+        "Blue",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 6,
+      "channels": [
+        "Red ",
+        "Green",
+        "Blue",
+        "Color Macro",
+        "Shutter",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 7,
+      "channels": [
+        "Red ",
+        "Green",
+        "Blue",
+        "Color Macro",
+        "Shutter",
+        "Mode",
+        "Master Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "325",
+      "colourTemperature": "2800"
+    },
+    "dimensions": {
+      "weight": "2.4",
+      "width": "191",
+      "height": "140",
+      "depth": "254"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "10",
+      "degreesMax": "10"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

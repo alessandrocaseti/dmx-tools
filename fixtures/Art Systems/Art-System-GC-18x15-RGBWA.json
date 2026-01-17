@@ -1,0 +1,126 @@
+{
+  "version": "1.2",
+  "manufacturer": "Art System",
+  "model": "GC 18x15W RGBWA",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Daniel Carretas",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "Strobe and linear dimming"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Color shade"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Color transition"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Color Pulse"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    },
+    {
+      "name": "Effect speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "CH3 speed from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Effect",
+        "Effect speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "226",
+      "height": "226",
+      "depth": "137"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

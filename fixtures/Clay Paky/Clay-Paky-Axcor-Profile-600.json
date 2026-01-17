@@ -1,0 +1,1152 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Axcor Profile 600",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "CTO",
+      "type": "Color"
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Empty position"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Empty + Dark red"
+        },
+        {
+          "min": "21",
+          "max": "31",
+          "name": "Dark red"
+        },
+        {
+          "min": "32",
+          "max": "41",
+          "name": "Dark red + Green"
+        },
+        {
+          "min": "42",
+          "max": "52",
+          "name": "Green"
+        },
+        {
+          "min": "53",
+          "max": "62",
+          "name": "Green + CRI"
+        },
+        {
+          "min": "63",
+          "max": "73",
+          "name": "CRI"
+        },
+        {
+          "min": "74",
+          "max": "83",
+          "name": "CRI + Gold amber"
+        },
+        {
+          "min": "84",
+          "max": "94",
+          "name": "Gold amber"
+        },
+        {
+          "min": "95",
+          "max": "105",
+          "name": "Gold amber - Navy blue"
+        },
+        {
+          "min": "106",
+          "max": "117",
+          "name": "Navy blue"
+        },
+        {
+          "min": "118",
+          "max": "127",
+          "name": "Navy blue + Empty position"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Continuous CCW Colour Wheel rotation (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Light OFF"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Strobe 1 flash/sec to 25 flash/sec"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Light ON"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Pulsation slow to fast"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Light ON"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random low strobe"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random medium strobe"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random high strobe"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Light ON"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Iris",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "131",
+          "name": "Iris linearly open from minimum to maximum aperture"
+        },
+        {
+          "min": "132",
+          "max": "171",
+          "name": "Iris pulsation from slow to fast speed"
+        },
+        {
+          "min": "172",
+          "max": "211",
+          "name": "Iris pulsation from slow to fast speed with fast opening"
+        },
+        {
+          "min": "212",
+          "max": "251",
+          "name": "Iris pulsation from slow to fast speed with fast closing"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Maximum aperture"
+        }
+      ]
+    },
+    {
+      "name": "Animation Disc/Static Gobo Insertion",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "Animation Disc / Static Gobo out"
+        },
+        {
+          "min": "2",
+          "max": "255",
+          "name": "Animation Disc / Static Gobo linear insertion"
+        }
+      ]
+    },
+    {
+      "name": "Animation Disc Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "124",
+          "name": "Continuous animation disc CW rotation (fast 180rpm to slow 4.4rph)"
+        },
+        {
+          "min": "125",
+          "max": "130",
+          "name": "Slow CW Rotation (4.4rph)"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Continuous animation disc CCW rotation (slow 4.4rph to fast 180 rpm)"
+        }
+      ]
+    },
+    {
+      "name": "Static Gobo Change",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "125",
+          "name": "Linear gobo rotation"
+        },
+        {
+          "min": "126",
+          "max": "128",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "129",
+          "max": "131",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "132",
+          "max": "134",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "135",
+          "max": "137",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "138",
+          "max": "140",
+          "name": "gobo 5"
+        },
+        {
+          "min": "141",
+          "max": "143",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "144",
+          "max": "145",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "146",
+          "max": "146",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "147",
+          "max": "188",
+          "name": "Rot. < fast to slow"
+        },
+        {
+          "min": "189",
+          "max": "191",
+          "name": "Stop"
+        },
+        {
+          "min": "192",
+          "max": "233",
+          "name": "Rot. > slow to fast"
+        },
+        {
+          "min": "234",
+          "max": "255",
+          "name": "Gobo shakes"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Gobo Change",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "Empty position"
+        },
+        {
+          "min": "17",
+          "max": "32",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "33",
+          "max": "48",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "49",
+          "max": "54",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "55",
+          "max": "81",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "82",
+          "max": "97",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "98",
+          "max": "113",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "114",
+          "max": "129",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "130",
+          "max": "147",
+          "name": "Gobo 1 Shakes"
+        },
+        {
+          "min": "148",
+          "max": "165",
+          "name": "Gobo 2 Shakes"
+        },
+        {
+          "min": "166",
+          "max": "183",
+          "name": "Gobo 3 Shakes"
+        },
+        {
+          "min": "184",
+          "max": "201",
+          "name": "Gobo 4 Shakes"
+        },
+        {
+          "min": "202",
+          "max": "219",
+          "name": "Gobo 5 Shakes"
+        },
+        {
+          "min": "220",
+          "max": "237",
+          "name": "Gobo 6 Shakes"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Gobo 7 Shakes"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "21",
+          "name": "Gobo indexing: 0° to 90° range"
+        },
+        {
+          "min": "22",
+          "max": "42",
+          "name": "Gobo indexing: 90° to 180° range"
+        },
+        {
+          "min": "43",
+          "max": "63",
+          "name": "Gobo indexing: 180° to 270° range"
+        },
+        {
+          "min": "64",
+          "max": "84",
+          "name": "Gobo indexing: 270° to 360° range"
+        },
+        {
+          "min": "85",
+          "max": "105",
+          "name": "Gobo indexing: 360° to 450° range"
+        },
+        {
+          "min": "106",
+          "max": "127",
+          "name": "Gobo indexing: 450° to 540° range"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Continuous CW gobo rotation (fast 180rpm to slow 2.2rph)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop rotation"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Continuous CCW gobo rotation (slow 2.2rph to fast 180rpm)"
+        }
+      ]
+    },
+    {
+      "name": "Fine Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fine CCW Gobo Indexing"
+        }
+      ]
+    },
+    {
+      "name": "Prism Insertion",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism out"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "4-Facet prism into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Prism Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "21",
+          "name": "Prism indexing: 0° to 90° range"
+        },
+        {
+          "min": "22",
+          "max": "42",
+          "name": "Prism indexing: 90° to 180° range"
+        },
+        {
+          "min": "43",
+          "max": "63",
+          "name": "Prism indexing: 180° to 270° range"
+        },
+        {
+          "min": "64",
+          "max": "84",
+          "name": "Prism indexing: 270° to 360° range"
+        },
+        {
+          "min": "85",
+          "max": "105",
+          "name": "Prism indexing: 360° to 450° range"
+        },
+        {
+          "min": "106",
+          "max": "127",
+          "name": "Prism indexing: 450° to 540° range"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Continuous CW prism rotation (fast to slow)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop rotation"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Continuous CCW prism rotation (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Frost moves linearly into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Blade Up 1",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blade moves linearly into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Blade Up 2",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blade moves linearly into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Blade Down 1",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blade moves linearly into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Blade Down 2",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blade moves linearly into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Blade Right 1",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blade moves linearly into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Blade Right 2",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blade moves linearly into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Blade Left 1",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blade moves linearly into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Blade Left 2",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blade moves linearly into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Frame Rotation",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Frame CCW linearly rotate"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Focus Fine",
+      "type": "Focus"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Autofocus distance",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Autofocus disabled"
+        },
+        {
+          "min": "7",
+          "max": "255",
+          "name": "Autofocus from 4mt. (bit 7) to 100mt (bit 255)"
+        }
+      ]
+    },
+    {
+      "name": "Autofocus adjustment",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Focus fine"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Focus fine"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "11",
+          "name": "Not use"
+        },
+        {
+          "min": "12",
+          "max": "24",
+          "name": "Fast pan/tilt speed"
+        },
+        {
+          "min": "25",
+          "max": "37",
+          "name": "Normal pan/tilt speed"
+        },
+        {
+          "min": "38",
+          "max": "50",
+          "name": "Conventional dimmer curve"
+        },
+        {
+          "min": "51",
+          "max": "62",
+          "name": "Standard dimmer curve"
+        },
+        {
+          "min": "63",
+          "max": "75",
+          "name": "Cmy shortcut On"
+        },
+        {
+          "min": "76",
+          "max": "88",
+          "name": "Cmy shortcut Off"
+        },
+        {
+          "min": "89",
+          "max": "101",
+          "name": "Slow blades speed"
+        },
+        {
+          "min": "102",
+          "max": "113",
+          "name": "Fast blades speed"
+        },
+        {
+          "min": "114",
+          "max": "126",
+          "name": "Fast rotating gobo change"
+        },
+        {
+          "min": "127",
+          "max": "139",
+          "name": "Normal rotating gobo change"
+        },
+        {
+          "min": "140",
+          "max": "152",
+          "name": "Quadratic dimmer curve"
+        },
+        {
+          "min": "153",
+          "max": "164",
+          "name": "400W LED Power"
+        },
+        {
+          "min": "165",
+          "max": "177",
+          "name": "500W LED Power"
+        },
+        {
+          "min": "178",
+          "max": "215",
+          "name": "Free"
+        },
+        {
+          "min": "216",
+          "max": "228",
+          "name": "Linear dimmer curve"
+        },
+        {
+          "min": "229",
+          "max": "255",
+          "name": "Free"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused range"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Effect reset"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Pan/tilt reset"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Complete reset"
+        }
+      ]
+    },
+    {
+      "name": "Boost",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Boost linearly inserted from normal to boost"
+        }
+      ]
+    },
+    {
+      "name": "Function 2",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "11",
+          "name": "Unused range"
+        },
+        {
+          "min": "12",
+          "max": "12",
+          "name": "Base Frequency = 4700Hz"
+        },
+        {
+          "min": "13",
+          "max": "13",
+          "name": "Base Frequency = 6000Hz"
+        },
+        {
+          "min": "14",
+          "max": "14",
+          "name": "Base Frequency = 7300Hz"
+        },
+        {
+          "min": "15",
+          "max": "15",
+          "name": "Base Frequency = 8600Hz"
+        },
+        {
+          "min": "16",
+          "max": "16",
+          "name": "Base Frequency = 10000Hz"
+        },
+        {
+          "min": "17",
+          "max": "17",
+          "name": "Base Frequency = 12000Hz"
+        },
+        {
+          "min": "18",
+          "max": "18",
+          "name": "Base Frequency = 15000Hz"
+        },
+        {
+          "min": "19",
+          "max": "19",
+          "name": "Base Frequency = 17578Hz"
+        },
+        {
+          "min": "20",
+          "max": "20",
+          "name": "Base Frequency = 20000Hz"
+        },
+        {
+          "min": "21",
+          "max": "21",
+          "name": "Base Frequency = 22000Hz"
+        },
+        {
+          "min": "22",
+          "max": "255",
+          "name": "Unused range"
+        }
+      ]
+    },
+    {
+      "name": "Frequency",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Frequency"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pan - Fine Pan - Tilt - Fine Tilt"
+        }
+      ]
+    },
+    {
+      "name": "Colour Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Cyan - Magenta – Yellow – CTO – Color wheel"
+        }
+      ]
+    },
+    {
+      "name": "Beam Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimmer - Frost - Prism – Focus – Zoom"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Gobo Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Rotating Gobo"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard (Animation Disc)",
+      "totalChannels": 40,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CTO",
+        "Color Wheel",
+        "Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Iris",
+        "Animation Disc/Static Gobo Insertion",
+        "Animation Disc Rotation",
+        "Rotating Gobo Change",
+        "Gobo Rotation",
+        "Fine Gobo Rotation",
+        "Prism Insertion",
+        "Prism Rotation",
+        "Frost",
+        "Blade Up 1",
+        "Blade Up 2",
+        "Blade Down 1",
+        "Blade Down 2",
+        "Blade Right 1",
+        "Blade Right 2",
+        "Blade Left 1",
+        "Blade Left 2",
+        "Frame Rotation",
+        "Focus",
+        "Focus Fine",
+        "Zoom",
+        "Autofocus distance",
+        "Autofocus adjustment",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Function",
+        "Reset",
+        "Boost",
+        "Function 2",
+        "Frequency"
+      ]
+    },
+    {
+      "name": "Standard (Static Gobo)",
+      "totalChannels": 40,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CTO",
+        "Color Wheel",
+        "Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Iris",
+        "Animation Disc/Static Gobo Insertion",
+        "Static Gobo Change",
+        "Rotating Gobo Change",
+        "Gobo Rotation",
+        "Fine Gobo Rotation",
+        "Prism Insertion",
+        "Prism Rotation",
+        "Frost",
+        "Blade Up 1",
+        "Blade Up 2",
+        "Blade Down 1",
+        "Blade Down 2",
+        "Blade Right 1",
+        "Blade Right 2",
+        "Blade Left 1",
+        "Blade Left 2",
+        "Frame Rotation",
+        "Focus",
+        "Focus Fine",
+        "Zoom",
+        "Autofocus distance",
+        "Autofocus adjustment",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Function",
+        "Reset",
+        "Boost",
+        "Function 2",
+        "Frequency"
+      ]
+    },
+    {
+      "name": "Vector (Animation Disc)",
+      "totalChannels": 44,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CTO",
+        "Color Wheel",
+        "Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Iris",
+        "Animation Disc/Static Gobo Insertion",
+        "Animation Disc Rotation",
+        "Rotating Gobo Change",
+        "Gobo Rotation",
+        "Fine Gobo Rotation",
+        "Prism Insertion",
+        "Prism Rotation",
+        "Frost",
+        "Blade Up 1",
+        "Blade Up 2",
+        "Blade Down 1",
+        "Blade Down 2",
+        "Blade Right 1",
+        "Blade Right 2",
+        "Blade Left 1",
+        "Blade Left 2",
+        "Frame Rotation",
+        "Focus",
+        "Focus Fine",
+        "Zoom",
+        "Autofocus distance",
+        "Autofocus adjustment",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Function",
+        "Reset",
+        "Boost",
+        "Function 2",
+        "Frequency",
+        "Pan/Tilt Time",
+        "Colour Time",
+        "Beam Time",
+        "Rotating Gobo Time"
+      ]
+    },
+    {
+      "name": "Vector (Static Gobo)",
+      "totalChannels": 44,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CTO",
+        "Color Wheel",
+        "Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Iris",
+        "Animation Disc/Static Gobo Insertion",
+        "Static Gobo Change",
+        "Rotating Gobo Change",
+        "Gobo Rotation",
+        "Fine Gobo Rotation",
+        "Prism Insertion",
+        "Prism Rotation",
+        "Frost",
+        "Blade Up 1",
+        "Blade Up 2",
+        "Blade Down 1",
+        "Blade Down 2",
+        "Blade Right 1",
+        "Blade Right 2",
+        "Blade Left 1",
+        "Blade Left 2",
+        "Frame Rotation",
+        "Focus",
+        "Focus Fine",
+        "Zoom",
+        "Autofocus distance",
+        "Autofocus adjustment",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Function",
+        "Reset",
+        "Boost",
+        "Function 2",
+        "Frequency",
+        "Pan/Tilt Time",
+        "Colour Time",
+        "Beam Time",
+        "Rotating Gobo Time"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "33",
+      "width": "388",
+      "height": "785",
+      "depth": "329"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "5.3",
+      "degreesMax": "47.2"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "288"
+    },
+    "technical": {
+      "powerConsumption": "700",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

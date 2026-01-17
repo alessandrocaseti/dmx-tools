@@ -1,0 +1,271 @@
+{
+  "version": "1.2",
+  "manufacturer": "BoomToneDJ",
+  "model": "KUB 500 RGB",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fede79",
+  "channels": [
+    {
+      "name": "Pattern controlling mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "41",
+          "name": "Laser light off"
+        },
+        {
+          "min": "42",
+          "max": "83",
+          "name": "DMX control mode"
+        },
+        {
+          "min": "84",
+          "max": "125",
+          "name": "Automatic control mode"
+        },
+        {
+          "min": "126",
+          "max": "167",
+          "name": "Line effect automatic control mode"
+        },
+        {
+          "min": "168",
+          "max": "209",
+          "name": "Animation effect sound control mode"
+        },
+        {
+          "min": "210",
+          "max": "251",
+          "name": "Automatic effect sound control mode"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Manual control sound mode"
+        }
+      ]
+    },
+    {
+      "name": "Pattern selection A",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pattern group A"
+        }
+      ]
+    },
+    {
+      "name": "Pattern selection B",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pattern group B"
+        }
+      ]
+    },
+    {
+      "name": "Pattern rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Rotation angle adjustment"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Rotation clockwise rotation(from slow to fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Rotation anti-clockwise rotation(from slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pattern left and right reverse rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Left and right rotation angle selection"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Left and right reverse rotation speed (from slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pattern up and down reverse rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Up and down rotation angle selection"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Up and down reverse rotation speed adjustment(from slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pattern left and right movement",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Left and right moving angle selection"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Left and right moving speed (from slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pattern up and down movement",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Up and down moving angle selection"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Up and down moving speed(from slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pattern size",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Size adjustment"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Size zooming speed (from big to small)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Size zooming speed (from small to big)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Zooming (from slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pattern gradual drawing",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Running gradual drawing effect(from slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pattern controlling",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Scanning speed adjustment"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Running dot effect"
+        }
+      ]
+    },
+    {
+      "name": "Color selection",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Laser color selection"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Pattern controlling mode",
+        "Pattern selection A",
+        "Pattern selection B",
+        "Pattern rotation",
+        "Pattern left and right reverse rotation",
+        "Pattern up and down reverse rotation",
+        "Pattern left and right movement",
+        "Pattern up and down movement",
+        "Pattern size",
+        "Pattern gradual drawing",
+        "Pattern controlling",
+        "Color selection"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Laser",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "193",
+      "height": "136",
+      "depth": "215"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

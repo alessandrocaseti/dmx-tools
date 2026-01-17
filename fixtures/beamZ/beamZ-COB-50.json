@@ -1,0 +1,143 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "COB 50",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Yestalgia",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Auto/Sound",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "Manual mode, the first 7 channel are effective"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Jump variable, The last two figure more big, the colour change"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Gradual variable, The last two figure more big, the colour change"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Pulse variable, The last two figure more big, the colour change"
+        },
+        {
+          "min": "201",
+          "max": "250",
+          "name": "Auto mode, The last two figure more big, the colour change speed"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound mode, The last two figure more big, the colour change"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Adjust speed, only have effective to CH8"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Strobe",
+        "Auto/Sound",
+        "Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "400",
+      "colourTemperature": "4000"
+    },
+    "dimensions": {
+      "weight": "1.1",
+      "width": "200",
+      "height": "191",
+      "depth": "170"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "60",
+      "degreesMax": "60"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "65",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "VBar",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing/Program Speed/Sound Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off/Slow - fast/Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Slow - fast/Slow - fast/Off"
+        },
+        {
+          "min": "32",
+          "max": "255",
+          "name": "Slow - fast/Slow - fast/Least - most"
+        }
+      ]
+    },
+    {
+      "name": "Dimming/Static Color Select/Color Change Select/Color Fade Select",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer mode"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Color macro mode"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Color change mode"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Color fade mode"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "Sound active mode"
+        }
+      ]
+    },
+    {
+      "name": "Color Change",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Color change 1"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Color change 2"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Color change 3"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Color change 4"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Color change 5"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Color change 6"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Color change 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Color change 8"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Color change 9"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Color change 10"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Color change 11"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Color change 12"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Color change 13"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Color change 14"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Color change 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Color change 16"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Amber"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red & green"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red & blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red & amber"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green & blue"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green & amber"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue & amber"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Red & green & blue"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Red & green & amber"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Red & blue & amber"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Green & blue & amber"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red & green & blue & amber"
+        }
+      ]
+    },
+    {
+      "name": "Strobing",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "8 Channel Mode",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer",
+        "Strobing/Program Speed/Sound Sensitivity",
+        "Dimming/Static Color Select/Color Change Select/Color Fade Select",
+        "Color Change"
+      ]
+    },
+    {
+      "name": "7 Channel Mode",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer",
+        "Strobing",
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "6 Channel Mode",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer",
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "5 Channel Mode",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "4 Channel Mode",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "3 Channel Mode",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Color Macros",
+        "Strobing"
+      ]
+    },
+    {
+      "name": "2 Channel Mode",
+      "totalChannels": 2,
+      "channels": [
+        "Color Macros",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "1 Channel Mode",
+      "totalChannels": 1,
+      "channels": [
+        "Color Macros"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "8000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.7",
+      "width": "560",
+      "height": "90",
+      "depth": "63"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "21",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

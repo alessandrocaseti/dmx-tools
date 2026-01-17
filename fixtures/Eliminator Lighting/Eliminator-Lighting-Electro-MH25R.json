@@ -1,0 +1,383 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eliminator Lighting",
+  "model": "Electro MH25R",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "LightOp",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "16bit Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "16bit Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "White"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Yellow"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Pink"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Green"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Rose"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Light Blue"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Yellow Green"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Orange Red"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Navy Blue"
+        },
+        {
+          "min": "45",
+          "max": "127",
+          "name": "Color Continue"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Rainbow Counter-Clockwise"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Rainbow Clockwise Rotation"
+        }
+      ]
+    },
+    {
+      "name": "Strobing",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "39",
+          "name": "ON"
+        },
+        {
+          "min": "40",
+          "max": "249",
+          "name": "Strobing Slow > Fast"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "ON"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Spot"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Gobo 1 (Purple w/ Dots)"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Gobo 2 (Ice)"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Gobo 3 (Swirl)"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Gobo 4 (Viral)"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Gobo 5 (Rose)"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Gobo 6 (Tri Hatch)"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Gobo 7 (Dot Swirl)"
+        },
+        {
+          "min": "40",
+          "max": "54",
+          "name": "Spot"
+        },
+        {
+          "min": "55",
+          "max": "69",
+          "name": "Gobo 1 Shake"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "Gobo 2 Shake"
+        },
+        {
+          "min": "85",
+          "max": "99",
+          "name": "Gobo 3 Shake"
+        },
+        {
+          "min": "100",
+          "max": "114",
+          "name": "Gobo 4 Shake"
+        },
+        {
+          "min": "115",
+          "max": "129",
+          "name": "Gobo 5 Shake"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "Gobo 6 Shake"
+        },
+        {
+          "min": "145",
+          "max": "159",
+          "name": "Gobo 7 Shake"
+        },
+        {
+          "min": "160",
+          "max": "207",
+          "name": "Gobo Wheel Clockwise Slow > Fast"
+        },
+        {
+          "min": "208",
+          "max": "255",
+          "name": "Gobo Wheel Counter-Clockwise Slow > Fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo Manual Rotation"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Counter-Clockwise Rotation"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Clockwise Rotation"
+        }
+      ]
+    },
+    {
+      "name": "Moving Blackout and Reposition Function",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "Moving Blackout Closed"
+        },
+        {
+          "min": "30",
+          "max": "59",
+          "name": "XY Moving Blackout"
+        },
+        {
+          "min": "60",
+          "max": "89",
+          "name": "Color Moving Blackout"
+        },
+        {
+          "min": "90",
+          "max": "119",
+          "name": "Gobo Moving Blackout"
+        },
+        {
+          "min": "120",
+          "max": "149",
+          "name": "XY Color Moving Blackout"
+        },
+        {
+          "min": "150",
+          "max": "179",
+          "name": "XY Gobo Moving Blackout"
+        },
+        {
+          "min": "180",
+          "max": "209",
+          "name": "Color/Gobo Moving Blackout"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "XY/Color/Gobo Moving Blackout"
+        },
+        {
+          "min": "240",
+          "max": "244",
+          "name": "Moving Blackout Closed"
+        },
+        {
+          "min": "245",
+          "max": "250",
+          "name": "Moving Blackout Closed, Delay Repositioning"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Moving Blackout Closed"
+        }
+      ]
+    },
+    {
+      "name": "Program function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Controller"
+        },
+        {
+          "min": "11",
+          "max": "250",
+          "name": "Program Auto Run Slow > Fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Program Runs By Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "16bit Pan",
+        "16bit Tilt",
+        "Pan/Tilt Speed",
+        "Color wheel",
+        "Strobing",
+        "Master dimmer",
+        "Gobo wheel",
+        "Gobo rotation",
+        "Moving Blackout and Reposition Function",
+        "Program function"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt Speed",
+        "Color wheel",
+        "Gobo wheel",
+        "Gobo rotation",
+        "Strobing",
+        "Master dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "18.6",
+      "width": "266",
+      "height": "304",
+      "depth": "254"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "250",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

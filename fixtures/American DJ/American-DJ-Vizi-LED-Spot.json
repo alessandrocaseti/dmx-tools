@@ -1,0 +1,576 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Vizi LED Spot",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Heikki Junnila",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Open"
+        },
+        {
+          "min": "15",
+          "max": "29",
+          "name": "Color 1"
+        },
+        {
+          "min": "30",
+          "max": "44",
+          "name": "Color 2"
+        },
+        {
+          "min": "45",
+          "max": "59",
+          "name": "Color 3"
+        },
+        {
+          "min": "60",
+          "max": "74",
+          "name": "Color 4"
+        },
+        {
+          "min": "75",
+          "max": "89",
+          "name": "Color 5"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Color 6"
+        },
+        {
+          "min": "105",
+          "max": "119",
+          "name": "Color 7"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Color 8"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forward Rainbow Effect (Fast - Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards Rainbow Effect (Slow - Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Rotating Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Rotating Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Rotating Gobo 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Rotating Gobo 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Rotating Gobo 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Rotating Gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Rotating Gobo 7"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Rotating Gobo 1 Shake"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Rotating Gobo 2 Shake"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Rotating Gobo 3 Shake"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Rotating Gobo 4 Shake"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Rotating Gobo 5 Shake"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Rotating Gobo 6 Shake"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Rotating Gobo 7 Shake"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Continious Rotation of Gobo Wheel (Slow - Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards Gobo Rotation (Fast - Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards Gobo Rotation (Slow - Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Prism/Gobo Macros",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "3 Facet Prism"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "5 Facet Prism"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Trapezoid Prism"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Macro 1"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Macro 2"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Macro 3"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Macro 4"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Macro 5"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Macro 6"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Macro 7"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Macro 8"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Macro 9"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Macro 10"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Macro 11"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Macro 12"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Macro 13"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Macro 14"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Macro 15"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 16"
+        }
+      ]
+    },
+    {
+      "name": "Shutter & Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED Off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED on"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobing (Slow - Fast)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED on"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Effect in Sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED on"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe (Slow - Fast)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED on"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan/Tilt Movement Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Max to Min Speed"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Blackout by Movement"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Blackout by Wheel Changing"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Reset & Internal Programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Color Change Normal"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Color Change to any Position"
+        },
+        {
+          "min": "40",
+          "max": "79",
+          "name": "No function"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All Motor Reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Scan Motor Reset"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "Color Motor Reset"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Gobo Motor Reset"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "No function"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "Other Motor Reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal Program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal Program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal Program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal Program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal Program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal Program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal Program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active Program"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Extended",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Color Wheel",
+        "Gobos",
+        "Gobo Rotation",
+        "Rotating Prism/Gobo Macros",
+        "Shutter & Strobe",
+        "Dimmer",
+        "Pan/Tilt Movement Speed",
+        "Reset & Internal Programs"
+      ]
+    },
+    {
+      "name": "Standard",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color Wheel",
+        "Gobos",
+        "Gobo Rotation",
+        "Rotating Prism/Gobo Macros",
+        "Shutter & Strobe",
+        "Dimmer",
+        "Pan/Tilt Movement Speed",
+        "Reset & Internal Programs"
+      ]
+    },
+    {
+      "name": "Extended (630 degree Pan)",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Color Wheel",
+        "Gobos",
+        "Gobo Rotation",
+        "Rotating Prism/Gobo Macros",
+        "Shutter & Strobe",
+        "Dimmer",
+        "Pan/Tilt Movement Speed",
+        "Reset & Internal Programs"
+      ]
+    },
+    {
+      "name": "Standard (630 degree Pan)",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color Wheel",
+        "Gobos",
+        "Gobo Rotation",
+        "Rotating Prism/Gobo Macros",
+        "Shutter & Strobe",
+        "Dimmer",
+        "Pan/Tilt Movement Speed",
+        "Reset & Internal Programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9",
+      "width": "419",
+      "height": "214",
+      "depth": "303"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "14",
+      "degreesMax": "14"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "630",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "88",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

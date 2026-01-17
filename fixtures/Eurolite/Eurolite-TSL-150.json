@@ -1,0 +1,337 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TSL-150",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Samuel Mueller",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "White"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Yellow"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Magenta"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Light blue"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Orange"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Orange + light blue"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Light blue + magenta"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Magenta + yellow"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Yellow + blue"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Blue + green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Green + red"
+        },
+        {
+          "min": "140",
+          "max": "255",
+          "name": "Rainbow effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Static gobo wheel, gobo shake",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Open"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 1 shake"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 2 shake"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 3 shake"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 4 shake"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 5 shake"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 6 shake"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo 7 shake"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Gobo wheel rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Shutter, Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "249",
+          "name": "Strobe-effect with increasing speed"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Internal programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "59",
+          "name": "No function"
+        },
+        {
+          "min": "60",
+          "max": "84",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "85",
+          "max": "109",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "110",
+          "max": "159",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "Sound controlled program 1"
+        },
+        {
+          "min": "185",
+          "max": "209",
+          "name": "Sound controlled program 2"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Sound controlled program 3"
+        }
+      ]
+    },
+    {
+      "name": "PAN/TILT movement/Reset",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No function"
+        },
+        {
+          "min": "21",
+          "max": "100",
+          "name": "PAN-sway; Prior setting of the TILT value via CH 2 (then deflection for PAN-sway via CH 1, speed via CH 7)"
+        },
+        {
+          "min": "101",
+          "max": "200",
+          "name": "TILT-sway; Prior setting of the PAN value via CH 1 (then deflection for TILT-sway via CH 2, speed via CH 7)"
+        },
+        {
+          "min": "201",
+          "max": "249",
+          "name": "PAN / TILT movement (deflection via CH 1 and CH 2, Speed via CH 7)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Reset PAN/TILT"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color wheel",
+        "Static gobo wheel, gobo shake",
+        "Shutter, Strobe",
+        "Dimmer",
+        "Pan/Tilt speed",
+        "Internal programs",
+        "PAN/TILT movement/Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "330",
+      "height": "195",
+      "depth": "165"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

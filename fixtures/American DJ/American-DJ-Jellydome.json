@@ -1,0 +1,193 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Jellydome",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Dimmer/Strobe",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "199",
+          "name": "0 to 100 %"
+        },
+        {
+          "min": "200",
+          "max": "247",
+          "name": "Strobe fast to slow"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "Color 1"
+        },
+        {
+          "min": "17",
+          "max": "33",
+          "name": "Color 2"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Color 3"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Color 4"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "Color 5"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Color 6"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Color 7"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Color 8"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Color 9"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Color 10"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Color 11"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Color 12"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Color 13"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Color 14"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Color 15"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Fast to slow CW"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "Stop"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Slow to fast CCW"
+        },
+        {
+          "min": "246",
+          "max": "249",
+          "name": "Stop"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer/Strobe",
+        "Color",
+        "Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "210",
+      "height": "179",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "138",
+      "degreesMax": "138"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "13",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

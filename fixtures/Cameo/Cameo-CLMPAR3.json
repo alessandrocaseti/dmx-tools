@@ -1,0 +1,988 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "CLMPAR3",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Eric Lachery",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color Macro (Mode 9)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Color Mixing channel 4-7"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Green"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "White"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Red Green"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Green Blue"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Blue White"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Red White"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Green White"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Red Blue"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Red green Blue"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Green Blue whie"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Red Green White"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Red Blue white"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Red Green Blue White"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Dream Effect"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Meteor Effect"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Color Fade Effect"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Color Change Effect"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Flow1 Effect"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Flow2 Effect"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Flow3 Effect"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Flow4 Effect"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Flow5 Effect"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Flow6 Effect"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Flow7 Effect"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Flow8 Effect"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Flow9 Effect"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Music control"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Light1 external",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Light1 Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Light1 On"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Light2 external",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Light2 Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Light2 On"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro (Mode 21)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Color Mixing channel 4-19"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Green"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "White"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Red Green"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Green Blue"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Blue White"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Red White"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Green White"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Red Blue"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Red green Blue"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Green Blue whie"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Red Green White"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Red Blue white"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Red Green Blue White"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Dream Effect"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Meteor Effect"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Color Fade Effect"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Color Change Effect"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Flow1 Effect"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Flow2 Effect"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Flow3 Effect"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Flow4 Effect"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Flow5 Effect"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Flow6 Effect"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Flow7 Effect"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Flow8 Effect"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Flow9 Effect"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Music control"
+        }
+      ]
+    },
+    {
+      "name": "Function channel 6 mode 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Pres-set colour In channel 1-4"
+        },
+        {
+          "min": "1",
+          "max": "128",
+          "name": "Music control (microphone sensivity 0-100%)"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Strob"
+        }
+      ]
+    },
+    {
+      "name": "Red Light 1+2",
+      "type": "Red"
+    },
+    {
+      "name": "Red Light 3+4",
+      "type": "Red"
+    },
+    {
+      "name": "Green Light 1+2",
+      "type": "Green"
+    },
+    {
+      "name": "Green Light 3+4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Light 1+2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Light 3+4",
+      "type": "Blue"
+    },
+    {
+      "name": "White Light 1+2",
+      "type": "White"
+    },
+    {
+      "name": "White Light 3+4",
+      "type": "White"
+    },
+    {
+      "name": "Master dimmer Mode 9",
+      "type": "Intensity"
+    },
+    {
+      "name": "Master dimmer Mode 21",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Light 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red Light 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red Light 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red Light 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green Light 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green Light 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green Light 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green Light 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Light 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Light 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Light 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Light 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White Light 1",
+      "type": "White"
+    },
+    {
+      "name": "White Light 2",
+      "type": "White"
+    },
+    {
+      "name": "White Light 3",
+      "type": "White"
+    },
+    {
+      "name": "White Light 4",
+      "type": "White"
+    },
+    {
+      "name": "Color Macro 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Blackout"
+        },
+        {
+          "min": "18",
+          "max": "33",
+          "name": "Red"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Green"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Blue"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "White"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Cyan bright"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Violet bright"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Pink bright"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Bright green"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Magenta"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Warm white"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Cold white"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Yellow bright"
+        },
+        {
+          "min": "238",
+          "max": "254",
+          "name": "Magenta bright"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Blackout"
+        },
+        {
+          "min": "18",
+          "max": "33",
+          "name": "Red"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Green"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Blue"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "White"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Cyan bright"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Violet bright"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Pink bright"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Bright green"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Magenta"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Warm white"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Cold white"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Yellow bright"
+        },
+        {
+          "min": "238",
+          "max": "254",
+          "name": "Magenta bright"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro 3",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Blackout"
+        },
+        {
+          "min": "18",
+          "max": "33",
+          "name": "Red"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Green"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Blue"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "White"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Cyan bright"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Violet bright"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Pink bright"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Bright green"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Magenta"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Warm white"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Cold white"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Yellow bright"
+        },
+        {
+          "min": "238",
+          "max": "254",
+          "name": "Magenta bright"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro 4",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Blackout"
+        },
+        {
+          "min": "18",
+          "max": "33",
+          "name": "Red"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Green"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Blue"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "White"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Cyan bright"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Violet bright"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Pink bright"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Bright green"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Magenta"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Warm white"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Cold white"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Yellow bright"
+        },
+        {
+          "min": "238",
+          "max": "254",
+          "name": "Magenta bright"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Master dimmer",
+        "Function channel 6 mode 6"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 8,
+      "channels": [
+        "Red Light 1+2",
+        "Green Light 1+2",
+        "Blue Light 1+2",
+        "White Light 1+2",
+        "Red Light 3+4",
+        "Green Light 3+4",
+        "Blue Light 3+4",
+        "White Light 3+4"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 9,
+      "channels": [
+        "Color Macro (Mode 9)",
+        "Master dimmer Mode 9",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer Light1 external",
+        "Dimmer Light2 external"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 21,
+      "channels": [
+        "Color Macro (Mode 21)",
+        "Master dimmer Mode 21",
+        "Strobe",
+        "Red Light 1",
+        "Green Light 1",
+        "Blue Light 1",
+        "White Light 1",
+        "Red Light 2",
+        "Green Light 2",
+        "Blue Light 2",
+        "White Light 2",
+        "Red Light 3",
+        "Green Light 3",
+        "Blue Light 3",
+        "White Light 3",
+        "Red Light 4",
+        "Green Light 4",
+        "Blue Light 4",
+        "White Light 4",
+        "Dimmer Light1 external",
+        "Dimmer Light2 external"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 16,
+      "channels": [
+        "Red Light 1",
+        "Green Light 1",
+        "Blue Light 1",
+        "White Light 1",
+        "Red Light 2",
+        "Green Light 2",
+        "Blue Light 2",
+        "White Light 2",
+        "Red Light 3",
+        "Green Light 3",
+        "Blue Light 3",
+        "White Light 3",
+        "Red Light 4",
+        "Green Light 4",
+        "Blue Light 4",
+        "White Light 4"
+      ]
+    },
+    {
+      "name": "4 Channel 2",
+      "totalChannels": 4,
+      "channels": [
+        "Color Macro 1",
+        "Color Macro 2",
+        "Color Macro 3",
+        "Color Macro 4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.7",
+      "width": "1030",
+      "height": "290",
+      "depth": "100"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "210",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

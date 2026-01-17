@@ -1,0 +1,337 @@
+{
+  "version": "1.2",
+  "manufacturer": "Equinox",
+  "model": "Fusion Orbit MKII",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Wilbur",
+  "channels": [
+    {
+      "name": "Show Selection",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Show Selection"
+        }
+      ]
+    },
+    {
+      "name": "Sound Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sound Sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pan/Tilt Programs"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer (Beam)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color macro (Beam)",
+      "type": "Color"
+    },
+    {
+      "name": "Master dimmer (Ring)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color macro (Ring)",
+      "type": "Color"
+    },
+    {
+      "name": "Macro Programs (Ring)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Macro Programs (Ring)"
+        }
+      ]
+    },
+    {
+      "name": "Macro Programs (Beam)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Macro Programs (Beam)"
+        }
+      ]
+    },
+    {
+      "name": "Macro Programs Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Macro Programs Speed"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Strobe Beam",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red Beam",
+      "type": "Red"
+    },
+    {
+      "name": "Green Beam",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Beam",
+      "type": "Blue"
+    },
+    {
+      "name": "White Beam",
+      "type": "White"
+    },
+    {
+      "name": "Strobe Ring",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red Ring",
+      "type": "Red"
+    },
+    {
+      "name": "Green Ring",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Ring",
+      "type": "Blue"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red Dimmer 1 (Ring)",
+      "type": "Red"
+    },
+    {
+      "name": "Red Dimmer 2 (Ring)",
+      "type": "Red"
+    },
+    {
+      "name": "Red Dimmer 3 (Ring)",
+      "type": "Red"
+    },
+    {
+      "name": "Red Dimmer 4 (Ring)",
+      "type": "Red"
+    },
+    {
+      "name": "Red Dimmer 5 (Ring)",
+      "type": "Red"
+    },
+    {
+      "name": "Red Dimmer 6 (Ring)",
+      "type": "Red"
+    },
+    {
+      "name": "Green Dimmer 1 Ring",
+      "type": "Green"
+    },
+    {
+      "name": "Green Dimmer 2 Ring",
+      "type": "Green"
+    },
+    {
+      "name": "Green Dimmer 3 Ring",
+      "type": "Green"
+    },
+    {
+      "name": "Green Dimmer 4 Ring",
+      "type": "Green"
+    },
+    {
+      "name": "Green Dimmer 5 Ring",
+      "type": "Green"
+    },
+    {
+      "name": "Green Dimmer 6 Ring",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Dimmer 1 Ring",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Dimmer 2 Ring",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Dimmer 3 Ring",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Dimmer 4 Ring",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Dimmer 5 Ring",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Dimmer 6 ring",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Show Selection",
+        "Sound Sensitivity"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 7,
+      "channels": [
+        "Pan/Tilt Programs",
+        "Master dimmer (Beam)",
+        "Color macro (Beam)",
+        "Master dimmer (Ring)",
+        "Color macro (Ring)",
+        "Macro Programs (Ring)",
+        "Macro Programs Speed"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Master dimmer (Beam)",
+        "Strobe Beam",
+        "Red Beam",
+        "Green Beam",
+        "Blue Beam",
+        "White Beam",
+        "Master dimmer (Ring)",
+        "Strobe Ring",
+        "Red Ring",
+        "Green Ring",
+        "Blue Ring",
+        "Show Selection",
+        "Sound Sensitivity"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 37,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Master dimmer (Beam)",
+        "Strobe Beam",
+        "Color macro (Beam)",
+        "Red Beam",
+        "Green Beam",
+        "Blue Beam",
+        "White Beam",
+        "Master dimmer (Ring)",
+        "Strobe Ring",
+        "Color macro (Ring)",
+        "Macro Programs (Ring)",
+        "Macro Programs Speed",
+        "Red Dimmer 1 (Ring)",
+        "Green Dimmer 1 Ring",
+        "Blue Dimmer 1 Ring",
+        "Red Dimmer 2 (Ring)",
+        "Green Dimmer 2 Ring",
+        "Blue Dimmer 2 Ring",
+        "Red Dimmer 3 (Ring)",
+        "Green Dimmer 3 Ring",
+        "Blue Dimmer 3 Ring",
+        "Red Dimmer 4 (Ring)",
+        "Green Dimmer 4 Ring",
+        "Blue Dimmer 4 Ring",
+        "Red Dimmer 5 (Ring)",
+        "Green Dimmer 5 Ring",
+        "Blue Dimmer 5 Ring",
+        "Red Dimmer 6 (Ring)",
+        "Green Dimmer 6 Ring",
+        "Blue Dimmer 6 ring",
+        "Show Selection",
+        "Sound Sensitivity"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "172",
+      "height": "238",
+      "depth": "146"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4",
+      "degreesMax": "4"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "210"
+    },
+    "technical": {
+      "powerConsumption": "75",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

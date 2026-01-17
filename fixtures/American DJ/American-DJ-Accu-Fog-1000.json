@@ -1,0 +1,325 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Accu Fog 1000",
+  "type": "FX Fog",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "István Király",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed of Pan/Tilt Movement",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Fast to slow"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Pump Duration (Fog) Time",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Off"
+        },
+        {
+          "min": "21",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Auto program - 5 Channel",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "39",
+          "name": "No function"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Heater on"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Heater switch off"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Motor reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Auto program - 7 Channel",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "39",
+          "name": "Normal control"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Heater on"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Heater switch off"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All motor reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Scan motor reset"
+        },
+        {
+          "min": "88",
+          "max": "99",
+          "name": "No function"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Pump Interval (Pause) Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Normal"
+        },
+        {
+          "min": "4",
+          "max": "10",
+          "name": "10 seconds"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "11 seconds to 255 seconds"
+        }
+      ]
+    },
+    {
+      "name": "Fog Duration Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "0 seconds"
+        },
+        {
+          "min": "4",
+          "max": "59",
+          "name": "1 seconds"
+        },
+        {
+          "min": "60",
+          "max": "119",
+          "name": "5 seconds"
+        },
+        {
+          "min": "120",
+          "max": "179",
+          "name": "10 seconds"
+        },
+        {
+          "min": "180",
+          "max": "239",
+          "name": "15 seconds"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "20 seconds"
+        }
+      ]
+    },
+    {
+      "name": "Pump On/Off",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Off"
+        },
+        {
+          "min": "21",
+          "max": "254",
+          "name": "On"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Smoke continuously"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "5 Channel DMX Traits",
+      "totalChannels": 5,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Speed of Pan/Tilt Movement",
+        "Pump Duration (Fog) Time",
+        "Auto program - 5 Channel"
+      ]
+    },
+    {
+      "name": "7 Channel DMX Traits",
+      "totalChannels": 7,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Speed of Pan/Tilt Movement",
+        "Pump On/Off",
+        "Auto program - 7 Channel",
+        "Pump Interval (Pause) Time",
+        "Fog Duration Time"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "13",
+      "width": "442",
+      "height": "345",
+      "depth": "295"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "360",
+      "tiltMax": "265"
+    },
+    "technical": {
+      "powerConsumption": "1000",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

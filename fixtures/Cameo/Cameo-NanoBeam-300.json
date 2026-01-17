@@ -1,0 +1,346 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "NanoBeam 300",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Martin",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe closed"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Pulse random, slow -> fast"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Ramp up Random, slow -> fast"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Ramp down Random, slow -> fast"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random Strobe Effect, slow -> fast"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Strobe Break Effect, 5s.....1s ( Very Short Flash)"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe slow -> fast <1Hz - 20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Manual Control"
+        },
+        {
+          "min": "6",
+          "max": "21",
+          "name": "Red"
+        },
+        {
+          "min": "22",
+          "max": "37",
+          "name": "Green"
+        },
+        {
+          "min": "38",
+          "max": "53",
+          "name": "Blue"
+        },
+        {
+          "min": "54",
+          "max": "69",
+          "name": "White"
+        },
+        {
+          "min": "70",
+          "max": "85",
+          "name": "RG"
+        },
+        {
+          "min": "86",
+          "max": "101",
+          "name": "RW"
+        },
+        {
+          "min": "102",
+          "max": "117",
+          "name": "RB"
+        },
+        {
+          "min": "118",
+          "max": "133",
+          "name": "GB"
+        },
+        {
+          "min": "134",
+          "max": "149",
+          "name": "GW"
+        },
+        {
+          "min": "150",
+          "max": "165",
+          "name": "BW"
+        },
+        {
+          "min": "166",
+          "max": "181",
+          "name": "RGB"
+        },
+        {
+          "min": "182",
+          "max": "197",
+          "name": "RGW"
+        },
+        {
+          "min": "198",
+          "max": "213",
+          "name": "RBW"
+        },
+        {
+          "min": "214",
+          "max": "229",
+          "name": "GBW"
+        },
+        {
+          "min": "230",
+          "max": "255",
+          "name": "RGBW"
+        }
+      ]
+    },
+    {
+      "name": "Mode Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Manual Control"
+        },
+        {
+          "min": "6",
+          "max": "29",
+          "name": "Show mode 1"
+        },
+        {
+          "min": "30",
+          "max": "53",
+          "name": "Show mode 2"
+        },
+        {
+          "min": "54",
+          "max": "77",
+          "name": "Show mode 3"
+        },
+        {
+          "min": "78",
+          "max": "101",
+          "name": "Show mode 4"
+        },
+        {
+          "min": "102",
+          "max": "125",
+          "name": "Show mode 5"
+        },
+        {
+          "min": "126",
+          "max": "149",
+          "name": "Show mode 6"
+        },
+        {
+          "min": "150",
+          "max": "173",
+          "name": "Show mode 7"
+        },
+        {
+          "min": "174",
+          "max": "197",
+          "name": "Show mode 8"
+        },
+        {
+          "min": "198",
+          "max": "221",
+          "name": "Sound Control Mode"
+        },
+        {
+          "min": "222",
+          "max": "245",
+          "name": "Reset"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Sync (head goes to mid position and blackout)"
+        }
+      ]
+    },
+    {
+      "name": "Sensitivity / Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Microphone Sensitivity / Auto Mode Speed"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Color Macro",
+        "Mode Control",
+        "Sensitivity / Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Color Macro",
+        "Mode Control",
+        "Sensitivity / Speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "175",
+      "height": "275",
+      "depth": "145"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "3",
+      "degreesMax": "3"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "360",
+      "tiltMax": "230"
+    },
+    "technical": {
+      "powerConsumption": "70",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

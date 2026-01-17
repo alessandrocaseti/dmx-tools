@@ -1,0 +1,2260 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Quad Gem DMX",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Heikki Junnila",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "119",
+          "name": "Pattern"
+        },
+        {
+          "min": "120",
+          "max": "239",
+          "name": "Chase"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Stand-alone"
+        }
+      ]
+    },
+    {
+      "name": "Mode Pattern",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "119",
+          "name": "Pattern"
+        },
+        {
+          "min": "120",
+          "max": "239",
+          "name": "Chase"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Stand-alone"
+        }
+      ]
+    },
+    {
+      "name": "Mode Chase",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "119",
+          "name": "No function"
+        },
+        {
+          "min": "120",
+          "max": "239",
+          "name": "Pattern"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Stand-alone"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout (Pattern only)"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pattern",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Pattern 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Pattern 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Pattern 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Pattern 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Pattern 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pattern 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pattern 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pattern 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pattern 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pattern 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pattern 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pattern 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pattern 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pattern 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Pattern 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Pattern 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Pattern 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pattern 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Pattern 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Pattern 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Pattern 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Pattern 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Pattern 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Pattern 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Pattern 25"
+        }
+      ]
+    },
+    {
+      "name": "Chase",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Slow to Fast Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Chase Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to Fast Speed"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Lens 1",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red Big"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Red Small"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Red Big + Green"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Red Big + Blue"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Red Big + White"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Red Big + Red Small"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Green + White"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Green + Red Small"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Blue + White"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Red Big + Red Small + Blue"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Red Big + Red Small + White"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Red Big + Green + Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Red Big + Green + White"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Red Big + Green + Red Small"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Green + Blue + White"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Green + Blue + Red Small"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Blue + White + Red Small"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Red Big + Green + Blue + White"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Red Big + Green + Blue + Red Small"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Green + Blue + White + Red Small"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "All colors"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Lens 2",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red Big"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Red Small"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Red Big + Green"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Red Big + Blue"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Red Big + White"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Red Big + Red Small"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Green + White"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Green + Red Small"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Blue + White"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Red Big + Red Small + Blue"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Red Big + Red Small + White"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Red Big + Green + Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Red Big + Green + White"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Red Big + Green + Red Small"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Green + Blue + White"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Green + Blue + Red Small"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Blue + White + Red Small"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Red Big + Green + Blue + White"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Red Big + Green + Blue + Red Small"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Green + Blue + White + Red Small"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "All colors"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Lens 3",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red Big"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Red Small"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Red Big + Green"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Red Big + Blue"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Red Big + White"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Red Big + Red Small"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Green + White"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Green + Red Small"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Blue + White"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Red Big + Red Small + Blue"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Red Big + Red Small + White"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Red Big + Green + Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Red Big + Green + White"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Red Big + Green + Red Small"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Green + Blue + White"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Green + Blue + Red Small"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Blue + White + Red Small"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Red Big + Green + Blue + White"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Red Big + Green + Blue + Red Small"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Green + Blue + White + Red Small"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "All colors"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Lens 4",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red Big"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Red Small"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Red Big + Green"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Red Big + Blue"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Red Big + White"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Red Big + Red Small"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Green + White"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Green + Red Small"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Blue + White"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Red Big + Red Small + Blue"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Red Big + Red Small + White"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Red Big + Green + Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Red Big + Green + White"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Red Big + Green + Red Small"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Green + Blue + White"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Green + Blue + Red Small"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Blue + White + Red Small"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Red Big + Green + Blue + White"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Red Big + Green + Blue + Red Small"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Green + Blue + White + Red Small"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "All colors"
+        }
+      ]
+    },
+    {
+      "name": "Chase Lens 1",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Chase Lens 2",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Chase Lens 3",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Chase Lens 4",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Pattern/Chase",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Pattern/Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Pattern/Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Pattern/Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Pattern/Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Pattern/Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pattern/Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pattern/Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pattern/Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pattern/Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pattern/Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pattern/Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pattern/Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pattern/Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pattern/Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Pattern/Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Pattern/Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Pattern/Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pattern/Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Pattern/Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Pattern/Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Pattern/Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Pattern/Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Pattern/Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Pattern/Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Pattern/Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Pattern/Chase Lens 1",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Pattern/Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Pattern/Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Pattern/Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Pattern/Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Pattern/Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pattern/Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pattern/Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pattern/Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pattern/Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pattern/Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pattern/Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pattern/Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pattern/Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pattern/Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Pattern/Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Pattern/Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Pattern/Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pattern/Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Pattern/Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Pattern/Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Pattern/Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Pattern/Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Pattern/Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Pattern/Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Pattern/Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Pattern/Chase Lens 2",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Pattern/Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Pattern/Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Pattern/Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Pattern/Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Pattern/Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pattern/Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pattern/Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pattern/Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pattern/Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pattern/Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pattern/Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pattern/Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pattern/Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pattern/Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Pattern/Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Pattern/Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Pattern/Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pattern/Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Pattern/Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Pattern/Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Pattern/Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Pattern/Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Pattern/Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Pattern/Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Pattern/Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Pattern/Chase Lens 3",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Pattern/Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Pattern/Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Pattern/Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Pattern/Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Pattern/Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pattern/Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pattern/Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pattern/Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pattern/Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pattern/Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pattern/Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pattern/Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pattern/Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pattern/Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Pattern/Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Pattern/Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Pattern/Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pattern/Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Pattern/Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Pattern/Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Pattern/Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Pattern/Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Pattern/Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Pattern/Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Pattern/Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Pattern/Chase Lens 4",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Pattern/Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Pattern/Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Pattern/Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Pattern/Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Pattern/Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pattern/Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pattern/Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pattern/Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pattern/Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pattern/Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pattern/Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pattern/Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pattern/Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pattern/Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Pattern/Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Pattern/Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Pattern/Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pattern/Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Pattern/Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Pattern/Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Pattern/Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Pattern/Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Pattern/Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Pattern/Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Pattern/Chase 25"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 4,
+      "channels": [
+        "Mode",
+        "Pattern/Chase",
+        "Speed",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Extended",
+      "totalChannels": 7,
+      "channels": [
+        "Mode",
+        "Pattern/Chase Lens 1",
+        "Pattern/Chase Lens 2",
+        "Pattern/Chase Lens 3",
+        "Pattern/Chase Lens 4",
+        "Speed",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Standard Pattern",
+      "totalChannels": 4,
+      "channels": [
+        "Mode",
+        "Pattern",
+        "Pattern Strobe",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Standard Chase",
+      "totalChannels": 4,
+      "channels": [
+        "Mode",
+        "Chase",
+        "Chase Speed",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Extended Pattern",
+      "totalChannels": 7,
+      "channels": [
+        "Mode Pattern",
+        "Pattern Lens 1",
+        "Pattern Lens 2",
+        "Pattern Lens 3",
+        "Pattern Lens 4",
+        "Pattern Strobe",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Extended Chase",
+      "totalChannels": 7,
+      "channels": [
+        "Mode Chase",
+        "Chase Lens 1",
+        "Chase Lens 2",
+        "Chase Lens 3",
+        "Chase Lens 4",
+        "Chase Speed",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "304",
+      "height": "165",
+      "depth": "491"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "34",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

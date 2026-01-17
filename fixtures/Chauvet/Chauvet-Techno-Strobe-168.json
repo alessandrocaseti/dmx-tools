@@ -1,0 +1,79 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Techno Strobe 168",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jack Logue",
+  "channels": [
+    {
+      "name": "Control Functions",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "240",
+          "name": "Strobe speed, slow to fast"
+        },
+        {
+          "min": "241",
+          "max": "250",
+          "name": "Full On (all LEDs on)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-Active mode"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "2-Channel Mode",
+      "totalChannels": 2,
+      "channels": [
+        "Control Functions",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "500",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1",
+      "width": "238",
+      "height": "220",
+      "depth": "140"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "28",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

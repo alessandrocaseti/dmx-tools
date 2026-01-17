@@ -1,0 +1,307 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Stinger",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Piotr Nowik",
+  "channels": [
+    {
+      "name": "Auto Run/Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "39",
+          "name": "Six colors LED auto run"
+        },
+        {
+          "min": "40",
+          "max": "69",
+          "name": "White LEDs auto run"
+        },
+        {
+          "min": "70",
+          "max": "99",
+          "name": "Laser auto run"
+        },
+        {
+          "min": "100",
+          "max": "129",
+          "name": "Auto run mixing"
+        },
+        {
+          "min": "130",
+          "max": "159",
+          "name": "Six colors & strobing"
+        },
+        {
+          "min": "160",
+          "max": "189",
+          "name": "Laser & strobing"
+        },
+        {
+          "min": "190",
+          "max": "219",
+          "name": "LEDs, laser & strobing"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "DMX mode"
+        }
+      ]
+    },
+    {
+      "name": "Flower",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "198",
+          "name": "Color macros"
+        },
+        {
+          "min": "199",
+          "max": "225",
+          "name": "Color chase 1"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Color chase 2"
+        }
+      ]
+    },
+    {
+      "name": "Auto Run Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "LED Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No strobe"
+        },
+        {
+          "min": "10",
+          "max": "244",
+          "name": "Slow - fast"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Sound active strobing"
+        }
+      ]
+    },
+    {
+      "name": "White LEDs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "135",
+          "name": "White output position"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "White output chase"
+        }
+      ]
+    },
+    {
+      "name": "White LED Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Chase slow - fast (no strobe)"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Chase slow - fast (strobing)"
+        }
+      ]
+    },
+    {
+      "name": "Lasers",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "49",
+          "name": "Red laser"
+        },
+        {
+          "min": "50",
+          "max": "89",
+          "name": "Green laser"
+        },
+        {
+          "min": "90",
+          "max": "129",
+          "name": "Red & green lasers"
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "Red & green lasers flicker"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Green & red lasers flicker"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "Red & green lasers flicker sync"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Red & green lasers alternate flicker"
+        }
+      ]
+    },
+    {
+      "name": "Laser Strobe Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No strobe"
+        },
+        {
+          "min": "10",
+          "max": "244",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Sound active strobing"
+        }
+      ]
+    },
+    {
+      "name": "LED Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "No rotation"
+        },
+        {
+          "min": "9",
+          "max": "127",
+          "name": "Clockwise rotation slow - fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Counter-clockwise rotation slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Laser rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Laser patterns"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Pattern chase slow - fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 10,
+      "channels": [
+        "Auto Run/Sound Active",
+        "Flower",
+        "Auto Run Speed",
+        "LED Strobe",
+        "White LEDs",
+        "White LED Strobe",
+        "Lasers",
+        "Laser Strobe Control",
+        "LED Rotation",
+        "Laser rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "229",
+      "height": "248",
+      "depth": "305"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "70",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

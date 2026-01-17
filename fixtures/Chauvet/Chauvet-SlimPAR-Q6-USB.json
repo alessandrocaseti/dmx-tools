@@ -1,0 +1,222 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "SlimPAR Q6 USB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Andrew",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Colour Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Colour macros"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Pulse effect 0-100%\n   \n  "
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Pulse effect 100%-0\n   \n  "
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse effect 100%-0-100%\n   \n  "
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto fade transition\n   \n  "
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Auto snap transition (4 colours)\n   \n  "
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Auto snap transition (19 colours)\n   \n  "
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound triggering mode\n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer speed set from display"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer speed mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer speed mode 1 fast"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer speed mode 2 medium"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer speed mode 3 slow"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Program speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast speed"
+        }
+      ]
+    },
+    {
+      "name": "Sound sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Low to high sensitivity"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Colour Macros",
+        "Strobe",
+        "Mode",
+        "Dimmer",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.6",
+      "width": "212",
+      "height": "244",
+      "depth": "92"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "19",
+      "degreesMax": "19"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "27",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

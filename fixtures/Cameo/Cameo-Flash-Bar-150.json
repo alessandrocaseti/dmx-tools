@@ -1,0 +1,261 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Flash Bar 150",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Kevin Wimmer",
+  "channels": [
+    {
+      "name": "Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Auto Programs off"
+        },
+        {
+          "min": "6",
+          "max": "54",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "55",
+          "max": "103",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "104",
+          "max": "152",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "153",
+          "max": "201",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "202",
+          "max": "255",
+          "name": "Auto Program 5"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe off"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe Speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Duration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash Duration (0ms to 510ms)"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed / Sound Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto Speed (slow to fast) / Sound Sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Light Control LED 1",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 2",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 3",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 4",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 5",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 6",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 7",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 8",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 9",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 10",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 11",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 12",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 13",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 14",
+      "type": "Unknown"
+    },
+    {
+      "name": "Light Control LED 15",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Auto Programs"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Master Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Duration"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 5,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Duration",
+        "Auto Programs",
+        "Auto Speed / Sound Sensitivity"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 15,
+      "channels": [
+        "Light Control LED 1",
+        "Light Control LED 2",
+        "Light Control LED 3",
+        "Light Control LED 4",
+        "Light Control LED 5",
+        "Light Control LED 6",
+        "Light Control LED 7",
+        "Light Control LED 8",
+        "Light Control LED 9",
+        "Light Control LED 10",
+        "Light Control LED 11",
+        "Light Control LED 12",
+        "Light Control LED 13",
+        "Light Control LED 14",
+        "Light Control LED 15"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 20,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Duration",
+        "Auto Programs",
+        "Auto Speed / Sound Sensitivity",
+        "Light Control LED 1",
+        "Light Control LED 2",
+        "Light Control LED 3",
+        "Light Control LED 4",
+        "Light Control LED 5",
+        "Light Control LED 6",
+        "Light Control LED 7",
+        "Light Control LED 8",
+        "Light Control LED 9",
+        "Light Control LED 10",
+        "Light Control LED 11",
+        "Light Control LED 12",
+        "Light Control LED 13",
+        "Light Control LED 14",
+        "Light Control LED 15"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.3",
+      "width": "906",
+      "height": "73",
+      "depth": "115"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "90",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

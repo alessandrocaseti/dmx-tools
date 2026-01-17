@@ -1,0 +1,613 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Ovation F-415FC",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Matt Fiscus",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Lime",
+      "type": "Lime"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Virtual Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Black out"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "C3050 - Medium Yellow"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "C3040 - Lt Yellow"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "C3240 - Amb Yellow"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "C2340 - VLt Amber"
+        },
+        {
+          "min": "36",
+          "max": "43",
+          "name": "C2040 - Lt Amber"
+        },
+        {
+          "min": "44",
+          "max": "51",
+          "name": "C2050 - Md Amber"
+        },
+        {
+          "min": "52",
+          "max": "59",
+          "name": "C2060 - Dk Amber"
+        },
+        {
+          "min": "60",
+          "max": "67",
+          "name": "C1050 - Lt Red"
+        },
+        {
+          "min": "68",
+          "max": "75",
+          "name": "C1080 - Md Red"
+        },
+        {
+          "min": "76",
+          "max": "83",
+          "name": "C1020 - NC Pink"
+        },
+        {
+          "min": "84",
+          "max": "91",
+          "name": "C1030 - Md Pink"
+        },
+        {
+          "min": "92",
+          "max": "99",
+          "name": "C1630 - Dk Pink"
+        },
+        {
+          "min": "100",
+          "max": "107",
+          "name": "C1250 - Md Red Amber"
+        },
+        {
+          "min": "108",
+          "max": "115",
+          "name": "C1060 - Dk Red Amber"
+        },
+        {
+          "min": "116",
+          "max": "121",
+          "name": "C1650 - Magenta"
+        },
+        {
+          "min": "122",
+          "max": "130",
+          "name": "C6170 - Dk Magenta"
+        },
+        {
+          "min": "131",
+          "max": "138",
+          "name": "C6020 - Lt Lavender"
+        },
+        {
+          "min": "139",
+          "max": "146",
+          "name": "C5030 - Lt Blue"
+        },
+        {
+          "min": "147",
+          "max": "154",
+          "name": "C5020 - VLt Blue"
+        },
+        {
+          "min": "155",
+          "max": "162",
+          "name": "C5430 - Lt Blue 2"
+        },
+        {
+          "min": "163",
+          "max": "170",
+          "name": "C5070 - Blue"
+        },
+        {
+          "min": "171",
+          "max": "178",
+          "name": "C5050 - Md Blue"
+        },
+        {
+          "min": "179",
+          "max": "186",
+          "name": "C5060 - Dk Blue"
+        },
+        {
+          "min": "187",
+          "max": "194",
+          "name": "C5690 - Indigo"
+        },
+        {
+          "min": "195",
+          "max": "202",
+          "name": "C5080 - VDk Blue"
+        },
+        {
+          "min": "203",
+          "max": "210",
+          "name": "C5081 - VDk Blue2"
+        },
+        {
+          "min": "211",
+          "max": "218",
+          "name": "C4370 - Yel Green"
+        },
+        {
+          "min": "219",
+          "max": "226",
+          "name": "C4070 - Green"
+        },
+        {
+          "min": "227",
+          "max": "234",
+          "name": "C4550 - Turquoise"
+        },
+        {
+          "min": "235",
+          "max": "242",
+          "name": "C4560 - Aqua"
+        },
+        {
+          "min": "243",
+          "max": "250",
+          "name": "C4570 - Blue Green"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Black out"
+        }
+      ]
+    },
+    {
+      "name": "Color Temperature",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Black out"
+        },
+        {
+          "min": "6",
+          "max": "25",
+          "name": "2800K"
+        },
+        {
+          "min": "26",
+          "max": "50",
+          "name": "3000K"
+        },
+        {
+          "min": "51",
+          "max": "75",
+          "name": "3200K"
+        },
+        {
+          "min": "76",
+          "max": "100",
+          "name": "3500K"
+        },
+        {
+          "min": "101",
+          "max": "125",
+          "name": "4000K"
+        },
+        {
+          "min": "126",
+          "max": "150",
+          "name": "4500K"
+        },
+        {
+          "min": "151",
+          "max": "175",
+          "name": "5000K"
+        },
+        {
+          "min": "176",
+          "max": "200",
+          "name": "5600K"
+        },
+        {
+          "min": "201",
+          "max": "225",
+          "name": "6000K"
+        },
+        {
+          "min": "226",
+          "max": "250",
+          "name": "6500K"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Black out"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "60",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "61",
+          "max": "110",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "111",
+          "max": "160",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "161",
+          "max": "210",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "211",
+          "max": "255",
+          "name": "Auto Program 5"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto Speed, Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Dimmer Reset"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red Shift: On"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Red shift off"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Dimmer: S-Curve"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Dimmer: linear"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Dimmer: square"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Dimmer: inverse square"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Dimmer speed mode off"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Dimmer speed mode 1"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Dimmer speed mode 2"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Dimmer speed mode 3"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Fan auto"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Fan on"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Fan off"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Fan silent"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Motor Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "200",
+          "name": "No function"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Motor reset"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green Fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Fine",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber Fine",
+      "type": "Amber"
+    },
+    {
+      "name": "Lime Fine",
+      "type": "Lime"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 14,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime",
+        "Strobe",
+        "Virtual Color Wheel",
+        "Color Temperature",
+        "Auto Program",
+        "Auto Program speed",
+        "Control",
+        "Zoom",
+        "Motor Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 18,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "Amber",
+        "Amber Fine",
+        "Lime",
+        "Lime Fine",
+        "Strobe",
+        "Virtual Color Wheel",
+        "Color Temperature",
+        "Zoom",
+        "Motor Reset",
+        "Control"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 13,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "Amber",
+        "Amber Fine",
+        "Lime",
+        "Lime Fine",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 11,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime",
+        "Strobe",
+        "Virtual Color Wheel",
+        "Color Temperature",
+        "Zoom"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Blue",
+        "Green",
+        "Amber",
+        "Lime"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Virtual Color Wheel",
+        "Color Temperature"
+      ]
+    },
+    {
+      "name": "Mode 8",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2815",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "5.6",
+      "width": "159",
+      "height": "242",
+      "depth": "353"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "14",
+      "degreesMax": "43"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "126",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

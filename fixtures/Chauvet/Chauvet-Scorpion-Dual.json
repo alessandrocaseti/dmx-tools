@@ -1,0 +1,422 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Scorpion Dual",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Alan Chavis",
+  "channels": [
+    {
+      "name": "Control Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "85",
+          "name": "DMX mode"
+        },
+        {
+          "min": "86",
+          "max": "170",
+          "name": "Auto program"
+        },
+        {
+          "min": "171",
+          "max": "255",
+          "name": "Sound-Active"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "249",
+          "name": "Slow to fast"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Selection",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Circle"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Circle w/ Accents"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Triangle"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Square"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Dashed Square"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Square within Square"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Cross"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Star"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Reverse L"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Bowtie"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Spiral"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Opposing C"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Curl"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Curves"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Triangles"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Sawtooth"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "V"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "M"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Square Wave"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Horizontal Line"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Dashed Line"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Thicker Dashed Line"
+        },
+        {
+          "min": "176",
+          "max": "181",
+          "name": "Horizontal Lines"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Crossed Lines"
+        },
+        {
+          "min": "190",
+          "max": "197",
+          "name": "Offset Horizontal Lines"
+        },
+        {
+          "min": "198",
+          "max": "205",
+          "name": "Four Lines"
+        },
+        {
+          "min": "206",
+          "max": "213",
+          "name": "Two Small Squares"
+        },
+        {
+          "min": "214",
+          "max": "221",
+          "name": "Four Small Squares"
+        },
+        {
+          "min": "222",
+          "max": "229",
+          "name": "Small Circle"
+        },
+        {
+          "min": "230",
+          "max": "237",
+          "name": "Dashed Line"
+        },
+        {
+          "min": "238",
+          "max": "245",
+          "name": "Curved Dashed Line"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Scattered Dashes"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "100%-5%"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Zoom in"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Zoom out"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Zoom in and out"
+        }
+      ]
+    },
+    {
+      "name": "Y-Axis Rolling",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position on y-axis (0 to 359)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise rolling, slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-clockwise rolling, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "X-Axis Rolling 1",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position on y-axis (0 to 359)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise rolling, slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-clockwise rolling, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Z-Axis Rolling 1",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position on y-axis (0 to 359)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise rolling, slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-clockwise rolling, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position (128 horizontal points)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise movement, slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-clockwise movement, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position (128 horizontal points)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise movement, slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-clockwise movement, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Scan Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fast to slow (manual)"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Slow to fast (automatic)"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Fast to slow (automatic)"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Fast to slow, then slow to fast (automatic repeat)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "10-Channel",
+      "totalChannels": 10,
+      "channels": [
+        "Control Functions",
+        "Strobe",
+        "Pattern Selection",
+        "Zoom",
+        "Y-Axis Rolling",
+        "X-Axis Rolling 1",
+        "Z-Axis Rolling 1",
+        "Pan",
+        "Tilt",
+        "Scan Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.4",
+      "width": "226",
+      "height": "205",
+      "depth": "194"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "360",
+      "tiltMax": "360"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

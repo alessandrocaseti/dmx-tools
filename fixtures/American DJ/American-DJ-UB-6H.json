@@ -1,0 +1,439 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "UB 6H",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Tom Costers",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Colour macros",
+      "type": "Color"
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "25",
+          "name": "P1"
+        },
+        {
+          "min": "26",
+          "max": "35",
+          "name": "P2"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "P3"
+        },
+        {
+          "min": "46",
+          "max": "55",
+          "name": "P4"
+        },
+        {
+          "min": "56",
+          "max": "65",
+          "name": "P5"
+        },
+        {
+          "min": "66",
+          "max": "75",
+          "name": "P6"
+        },
+        {
+          "min": "76",
+          "max": "85",
+          "name": "P7"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "P8"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "P9"
+        },
+        {
+          "min": "106",
+          "max": "115",
+          "name": "P10"
+        },
+        {
+          "min": "116",
+          "max": "125",
+          "name": "P11"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "P12"
+        },
+        {
+          "min": "136",
+          "max": "145",
+          "name": "P13"
+        },
+        {
+          "min": "146",
+          "max": "155",
+          "name": "P14"
+        },
+        {
+          "min": "156",
+          "max": "165",
+          "name": "P15"
+        },
+        {
+          "min": "166",
+          "max": "175",
+          "name": "P16"
+        },
+        {
+          "min": "176",
+          "max": "185",
+          "name": "P17"
+        },
+        {
+          "min": "186",
+          "max": "195",
+          "name": "P18"
+        },
+        {
+          "min": "196",
+          "max": "205",
+          "name": "P19"
+        },
+        {
+          "min": "206",
+          "max": "215",
+          "name": "P20"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "P21"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "P22"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Auto Run"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program Speed intensity (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED Off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED on"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe slow-fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED ON"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse strobe (slow-fast)"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED ON"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe (slow-fast)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED ON"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Factory Setting"
+        }
+      ]
+    },
+    {
+      "name": "Red Head 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red Head 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red Head 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green Head 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green Head 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green Head 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Head 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Head 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Head 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White Head 1",
+      "type": "White"
+    },
+    {
+      "name": "White Head 2",
+      "type": "White"
+    },
+    {
+      "name": "White Head 3",
+      "type": "White"
+    },
+    {
+      "name": "Amber Head 1",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber Head 2",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber Head 3",
+      "type": "Amber"
+    },
+    {
+      "name": "UV Head 1",
+      "type": "UV"
+    },
+    {
+      "name": "UV Head 2",
+      "type": "UV"
+    },
+    {
+      "name": "UV Head 3",
+      "type": "UV"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Colour macros",
+        "Strobe",
+        "Master Dimmer",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 18,
+      "channels": [
+        "Red Head 1",
+        "Green Head 1",
+        "Blue Head 1",
+        "White Head 1",
+        "Amber Head 1",
+        "UV Head 1",
+        "Red Head 2",
+        "Green Head 2",
+        "Blue Head 2",
+        "White Head 2",
+        "Amber Head 2",
+        "UV Head 2",
+        "Red Head 3",
+        "Green Head 3",
+        "Blue Head 3",
+        "White Head 3",
+        "Amber Head 3",
+        "UV Head 3"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 12,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Colour macros",
+        "Programs",
+        "Program Speed",
+        "Strobe",
+        "Master Dimmer",
+        "Dimmer curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.6",
+      "width": "560",
+      "height": "63",
+      "depth": "90"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

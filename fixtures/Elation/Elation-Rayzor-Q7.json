@@ -1,0 +1,538 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elation",
+  "model": "Rayzor Q7",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed Pan/Tilt movement",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Max To Min Speed"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Blackout By Movement"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White 4",
+      "type": "White"
+    },
+    {
+      "name": "Shutter / Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter Closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe Slow to Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse effect in sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe Effect Slow to Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Color Macro Slow To Fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Presets",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "White 2700K"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "White 3200K"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "White 4300K"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "White 5600K"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "White 6500K"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "White 8000K"
+        },
+        {
+          "min": "71",
+          "max": "100",
+          "name": "Blue [Group 1], Red [Groups 2,3,4]"
+        },
+        {
+          "min": "101",
+          "max": "130",
+          "name": "Blue [Group 1], Green [Groups 2,3,4]"
+        },
+        {
+          "min": "131",
+          "max": "160",
+          "name": "Green [Group 1], Red [Groups 2,3,4]"
+        },
+        {
+          "min": "161",
+          "max": "190",
+          "name": "Red [Group 1], Blue [Groups 2,3,4]"
+        },
+        {
+          "min": "191",
+          "max": "220",
+          "name": "Green [Group 1], Blue [Groups 2,3,4]"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "Red [Group 1], Green [Groups 2,3,4]"
+        }
+      ]
+    },
+    {
+      "name": "Color Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "254",
+          "name": "Edit A New White Balance"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Store A New White Balance"
+        }
+      ]
+    },
+    {
+      "name": "Chase Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "LED OFF"
+        },
+        {
+          "min": "11",
+          "max": "46",
+          "name": "Chase Macro 1"
+        },
+        {
+          "min": "47",
+          "max": "70",
+          "name": "Chase Macro 2"
+        },
+        {
+          "min": "71",
+          "max": "100",
+          "name": "Chase Macro 3"
+        },
+        {
+          "min": "101",
+          "max": "130",
+          "name": "Chase Macro 4"
+        },
+        {
+          "min": "131",
+          "max": "160",
+          "name": "Chase Macro 5"
+        },
+        {
+          "min": "161",
+          "max": "190",
+          "name": "Chase Macro 6"
+        },
+        {
+          "min": "191",
+          "max": "223",
+          "name": "Chase Macro 7"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Chase Macro 8"
+        }
+      ]
+    },
+    {
+      "name": "Chase Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fast To Slow"
+        }
+      ]
+    },
+    {
+      "name": "Reset internal programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "Normal"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All Motor Reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "No function"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "No function"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Store White Balance Enabled"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "No function"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "No function"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal Program 1 (Scene 1 - 8)"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal Program 2 (Scene 9 - 16)"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal Program 3 (Scene 17 - 24)"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal Program 4 (Scene 25 - 32)"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal Program 5 (Scene 33 - 40)"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal Program 6 (Scene 41 - 48)"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal Program 7 (Scene 49 - 56)"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Music Control (Scene Of Program 1)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Extended",
+      "totalChannels": 29,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Speed Pan/Tilt movement",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Shutter / Strobe",
+        "Dimmer",
+        "Color Macro",
+        "Color Presets",
+        "Color Mode",
+        "Chase Macros",
+        "Chase Speed",
+        "Reset internal programs"
+      ]
+    },
+    {
+      "name": "Basic",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Speed Pan/Tilt movement",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Shutter / Strobe",
+        "Dimmer",
+        "Color Macro",
+        "Color Presets",
+        "Color Mode",
+        "Chase Macros",
+        "Chase Speed",
+        "Reset internal programs"
+      ]
+    },
+    {
+      "name": "Standard",
+      "totalChannels": 17,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Speed Pan/Tilt movement",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Shutter / Strobe",
+        "Dimmer",
+        "Color Macro",
+        "Color Presets",
+        "Color Mode",
+        "Chase Macros",
+        "Chase Speed",
+        "Reset internal programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.9",
+      "width": "235",
+      "height": "317",
+      "depth": "140"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "7",
+      "degreesMax": "13"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "265"
+    },
+    "technical": {
+      "powerConsumption": "140",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

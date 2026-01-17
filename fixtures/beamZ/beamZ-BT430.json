@@ -1,0 +1,336 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "BT430 PAR",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Pascal Fleury",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "no function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Full on"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "strobe effect slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "full on"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "pulse effect slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "full on"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "randon strobe effect slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "full on"
+        }
+      ]
+    },
+    {
+      "name": "Warm white",
+      "type": "White"
+    },
+    {
+      "name": "Cold white",
+      "type": "White"
+    },
+    {
+      "name": "Color Temperature",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "45",
+          "name": "Below 3200K"
+        },
+        {
+          "min": "46",
+          "max": "75",
+          "name": "3200K-3500K"
+        },
+        {
+          "min": "76",
+          "max": "105",
+          "name": "3500K-5000K"
+        },
+        {
+          "min": "106",
+          "max": "135",
+          "name": "5000K-5500K"
+        },
+        {
+          "min": "136",
+          "max": "165",
+          "name": "5500K-6000K"
+        },
+        {
+          "min": "166",
+          "max": "195",
+          "name": "6000K-6500K"
+        },
+        {
+          "min": "196",
+          "max": "225",
+          "name": "6500K-7000K"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "7000K-8000K"
+        }
+      ]
+    },
+    {
+      "name": "Macro Run",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "no function"
+        },
+        {
+          "min": "16",
+          "max": "26",
+          "name": "Macro Run 1"
+        },
+        {
+          "min": "27",
+          "max": "38",
+          "name": "Macro Run 2"
+        },
+        {
+          "min": "39",
+          "max": "50",
+          "name": "Macro Run 3"
+        },
+        {
+          "min": "51",
+          "max": "62",
+          "name": "Macro Run 4"
+        },
+        {
+          "min": "63",
+          "max": "74",
+          "name": "Macro Run 5"
+        },
+        {
+          "min": "75",
+          "max": "86",
+          "name": "Macro Run 6"
+        },
+        {
+          "min": "87",
+          "max": "98",
+          "name": "Macro Run 7"
+        },
+        {
+          "min": "99",
+          "max": "110",
+          "name": "Macro Run 8"
+        },
+        {
+          "min": "111",
+          "max": "122",
+          "name": "Macro Run 9"
+        },
+        {
+          "min": "123",
+          "max": "134",
+          "name": "Macro Run 10"
+        },
+        {
+          "min": "135",
+          "max": "146",
+          "name": "Macro Run 11"
+        },
+        {
+          "min": "147",
+          "max": "158",
+          "name": "Macro Run 12"
+        },
+        {
+          "min": "159",
+          "max": "170",
+          "name": "Macro Run 13"
+        },
+        {
+          "min": "171",
+          "max": "182",
+          "name": "Macro Run 14"
+        },
+        {
+          "min": "183",
+          "max": "194",
+          "name": "Macro Run 15"
+        },
+        {
+          "min": "195",
+          "max": "206",
+          "name": "Macro Sound 1"
+        },
+        {
+          "min": "207",
+          "max": "218",
+          "name": "Macro Sound 2"
+        },
+        {
+          "min": "219",
+          "max": "230",
+          "name": "Macro Sound 3"
+        },
+        {
+          "min": "231",
+          "max": "242",
+          "name": "Macro Sound 4"
+        },
+        {
+          "min": "243",
+          "max": "255",
+          "name": "Macro Sound 5"
+        }
+      ]
+    },
+    {
+      "name": "Macro Run Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer Warm White - Ring 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Warm White - Ring 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Warm White - Ring 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Warm White - Ring 4",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Warm White - Ring 5",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Warm White - Ring 6",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Warm White - Ring 7",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Warm White - Ring 8",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Warm White - Ring 9",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 7,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Warm white",
+        "Cold white",
+        "Color Temperature",
+        "Macro Run",
+        "Macro Run Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 16,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Warm white",
+        "Cold white",
+        "Color Temperature",
+        "Macro Run",
+        "Macro Run Speed",
+        "Dimmer Warm White - Ring 1",
+        "Dimmer Warm White - Ring 2",
+        "Dimmer Warm White - Ring 3",
+        "Dimmer Warm White - Ring 4",
+        "Dimmer Warm White - Ring 5",
+        "Dimmer Warm White - Ring 6",
+        "Dimmer Warm White - Ring 7",
+        "Dimmer Warm White - Ring 8",
+        "Dimmer Warm White - Ring 9"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2617",
+      "colourTemperature": "5000"
+    },
+    "dimensions": {
+      "weight": "1.85",
+      "width": "285",
+      "height": "214",
+      "depth": "118"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "64",
+      "degreesMax": "64"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "72",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Pearl LED WH",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "CodehunterWorks",
+  "channels": [
+    {
+      "name": "Dimmer/Strobe",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "199",
+          "name": "Dimmer dark to bright"
+        },
+        {
+          "min": "200",
+          "max": "247",
+          "name": "Strobe fast to slow"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Counter clockwise fast to slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "Stop"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Clockwise slow to fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Stop"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer/Strobe",
+        "Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.4",
+      "width": "292",
+      "height": "203",
+      "depth": "229"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "3",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

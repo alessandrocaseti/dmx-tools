@@ -1,0 +1,237 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TMH-155",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Heikki Junnila",
+  "channels": [
+    {
+      "name": "Pan coarse",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt coarse",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "White"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Pink"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Blue"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Orange"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Green"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Violet"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Yellow"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "CW rotation slow to fast"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "CCW rotation slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo 8"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "39",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "40",
+          "max": "128",
+          "name": "Dimmer intensity"
+        },
+        {
+          "min": "129",
+          "max": "139",
+          "name": "Shutter open"
+        },
+        {
+          "min": "140",
+          "max": "243",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "244",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "8bit",
+      "totalChannels": 6,
+      "channels": [
+        "Pan coarse",
+        "Tilt coarse",
+        "Colour",
+        "Gobo rotation",
+        "Gobo",
+        "Shutter"
+      ]
+    },
+    {
+      "name": "16bit",
+      "totalChannels": 8,
+      "channels": [
+        "Pan coarse",
+        "Tilt coarse",
+        "Colour",
+        "Gobo rotation",
+        "Gobo",
+        "Shutter",
+        "Pan fine",
+        "Tilt fine"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HTI 150W",
+      "lumens": "9500",
+      "colourTemperature": "5000"
+    },
+    "dimensions": {
+      "weight": "12",
+      "width": "335",
+      "height": "360",
+      "depth": "330"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "360",
+      "tiltMax": "250"
+    },
+    "technical": {
+      "powerConsumption": "265",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

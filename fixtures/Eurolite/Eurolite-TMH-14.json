@@ -1,0 +1,236 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TMH-14",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Chris de Rock",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "127",
+          "name": "Static Colors"
+        },
+        {
+          "min": "128",
+          "max": "200",
+          "name": "Colorchange 1"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Colorchange 2"
+        }
+      ]
+    },
+    {
+      "name": "Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "120",
+          "name": "Macro 1"
+        },
+        {
+          "min": "121",
+          "max": "244",
+          "name": "Macro 2"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Movement Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colorchange Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed decreasing"
+        }
+      ]
+    },
+    {
+      "name": "Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed decreasing"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "149",
+          "name": "No function"
+        },
+        {
+          "min": "150",
+          "max": "200",
+          "name": "Reset"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Movement Speed",
+        "Strobe",
+        "Dimmer",
+        "Zoom",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 17,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Movement Speed",
+        "Strobe",
+        "Dimmer",
+        "Zoom",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color",
+        "Colorchange Speed",
+        "Macros",
+        "Macro Speed",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.25",
+      "width": "200",
+      "height": "280",
+      "depth": "180"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4",
+      "degreesMax": "32"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "190"
+    },
+    "technical": {
+      "powerConsumption": "65",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

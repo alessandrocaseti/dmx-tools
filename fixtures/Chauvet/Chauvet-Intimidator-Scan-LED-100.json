@@ -1,0 +1,153 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Intimidator Scan LED 100",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michel Sliepenbeek",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe (slow ~ fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Operating Mode",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "Open (White)"
+        },
+        {
+          "min": "30",
+          "max": "59",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "60",
+          "max": "89",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "90",
+          "max": "119",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "120",
+          "max": "149",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "150",
+          "max": "179",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "180",
+          "max": "209",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Gobo Wheel rotate (use CH.6 to control the speed)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel Rotate",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Pan",
+        "Tilt",
+        "Operating Mode",
+        "Gobo Wheel Rotate"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "9000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "172",
+      "height": "300",
+      "depth": "145"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "25",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

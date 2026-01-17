@@ -1,0 +1,212 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Octafly XS",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Scox",
+  "channels": [
+    {
+      "name": "Tilt 1",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt 2",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Slow to fast (1 - 20 Hz)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Auto / Sound Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Auto Programs"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Sound Programs"
+        }
+      ]
+    },
+    {
+      "name": "Sound sensitivity / Auto-Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Low - High"
+        }
+      ]
+    },
+    {
+      "name": "Tilt fine 1",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine 2",
+      "type": "Tilt"
+    },
+    {
+      "name": "Duration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash Duration (0 to 510 ms)"
+        }
+      ]
+    },
+    {
+      "name": "Red (Pixel 1)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Pixel 2)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Pixel 3)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Pixel 4)",
+      "type": "White"
+    },
+    {
+      "name": "Red (Pixel 5)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Pixel 6)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Pixel 7)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Pixel 8)",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 10,
+      "channels": [
+        "Tilt 1",
+        "Tilt 2",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Auto / Sound Program",
+        "Sound sensitivity / Auto-Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Auto / Sound Program",
+        "Sound sensitivity / Auto-Speed"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 17,
+      "channels": [
+        "Tilt 1",
+        "Tilt fine 1",
+        "Tilt 2",
+        "Tilt fine 2",
+        "Dimmer",
+        "Strobe",
+        "Duration",
+        "Red (Pixel 1)",
+        "Green (Pixel 2)",
+        "Blue (Pixel 3)",
+        "White (Pixel 4)",
+        "Red (Pixel 5)",
+        "Green (Pixel 6)",
+        "Blue (Pixel 7)",
+        "White (Pixel 8)",
+        "Auto / Sound Program",
+        "Sound sensitivity / Auto-Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "30",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "280",
+      "height": "145",
+      "depth": "150"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Barrel",
+      "panMax": "0",
+      "tiltMax": "170"
+    },
+    "technical": {
+      "powerConsumption": "35",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

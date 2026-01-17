@@ -1,0 +1,473 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "ColorBand Pix-M USB",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Mike Morris",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 8",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 9",
+      "type": "Red"
+    },
+    {
+      "name": "Green 9",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 9",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 10",
+      "type": "Red"
+    },
+    {
+      "name": "Green 10",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 10",
+      "type": "Blue"
+    },
+    {
+      "name": "Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "45",
+          "name": "Chase 1"
+        },
+        {
+          "min": "46",
+          "max": "59",
+          "name": "Chase 2"
+        },
+        {
+          "min": "60",
+          "max": "72",
+          "name": "Chase 3"
+        },
+        {
+          "min": "73",
+          "max": "86",
+          "name": "Chase 4"
+        },
+        {
+          "min": "87",
+          "max": "100",
+          "name": "Chase 5"
+        },
+        {
+          "min": "101",
+          "max": "113",
+          "name": "Chase 6"
+        },
+        {
+          "min": "114",
+          "max": "127",
+          "name": "Chase 7"
+        },
+        {
+          "min": "128",
+          "max": "141",
+          "name": "Chase 8"
+        },
+        {
+          "min": "142",
+          "max": "154",
+          "name": "Chase 9"
+        },
+        {
+          "min": "155",
+          "max": "168",
+          "name": "Chase 10"
+        },
+        {
+          "min": "169",
+          "max": "182",
+          "name": "Chase 11"
+        },
+        {
+          "min": "183",
+          "max": "195",
+          "name": "Chase 12"
+        },
+        {
+          "min": "196",
+          "max": "209",
+          "name": "Chase 13"
+        },
+        {
+          "min": "210",
+          "max": "223",
+          "name": "Chase 14 (random Chases 1-13)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound-Active mode"
+        }
+      ]
+    },
+    {
+      "name": "Speed / Strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Strobe, slow to fast (when Ch 32 is 000 - 031)"
+        }
+      ]
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer mode manually set in Menu Options"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer mode 1 (fast speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer mode 2 (middle speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer mode 3 (slow speed)"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color Macros"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Tilt",
+        "Tilt Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Tilt",
+        "Tilt Speed"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Tilt",
+        "Tilt Speed"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros",
+        "Speed / Strobe",
+        "Auto Programs",
+        "Dimmer",
+        "Tilt",
+        "Tilt Speed",
+        "Dimmer Mode"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 17,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Tilt",
+        "Tilt Speed"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 32,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "Red 9",
+        "Green 9",
+        "Blue 9",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "Tilt",
+        "Tilt Speed"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 36,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "Red 9",
+        "Green 9",
+        "Blue 9",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "Speed / Strobe",
+        "Auto Programs",
+        "Dimmer",
+        "Tilt",
+        "Tilt Speed",
+        "Dimmer Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.4",
+      "width": "785",
+      "height": "123",
+      "depth": "67"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "34"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "0",
+      "tiltMax": "245"
+    },
+    "technical": {
+      "powerConsumption": "108",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

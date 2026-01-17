@@ -1,0 +1,441 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Glow Up",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Stop / Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Open"
+        },
+        {
+          "min": "4",
+          "max": "69",
+          "name": "Strobe Slow to Fast"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Open"
+        },
+        {
+          "min": "75",
+          "max": "140",
+          "name": "Open Pulse Slow to Fast"
+        },
+        {
+          "min": "141",
+          "max": "206",
+          "name": "Close Pulse Fast to Slow"
+        },
+        {
+          "min": "207",
+          "max": "211",
+          "name": "Open"
+        },
+        {
+          "min": "212",
+          "max": "224",
+          "name": "Random Strobe Slow"
+        },
+        {
+          "min": "225",
+          "max": "237",
+          "name": "Random Strobe Medium"
+        },
+        {
+          "min": "238",
+          "max": "250",
+          "name": "Random Strobe Fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Macro Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Open"
+        },
+        {
+          "min": "20",
+          "max": "23",
+          "name": "Red"
+        },
+        {
+          "min": "24",
+          "max": "27",
+          "name": "Green"
+        },
+        {
+          "min": "28",
+          "max": "31",
+          "name": "Blue"
+        },
+        {
+          "min": "32",
+          "max": "35",
+          "name": "Yellow"
+        },
+        {
+          "min": "36",
+          "max": "39",
+          "name": "Cyan"
+        },
+        {
+          "min": "40",
+          "max": "43",
+          "name": "Magenta"
+        },
+        {
+          "min": "44",
+          "max": "47",
+          "name": "White"
+        },
+        {
+          "min": "48",
+          "max": "51",
+          "name": "Orange"
+        },
+        {
+          "min": "52",
+          "max": "55",
+          "name": "Pink"
+        },
+        {
+          "min": "56",
+          "max": "59",
+          "name": "Violet"
+        },
+        {
+          "min": "60",
+          "max": "63",
+          "name": "Aqua Marine"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "68",
+          "max": "71",
+          "name": "Full White"
+        },
+        {
+          "min": "72",
+          "max": "75",
+          "name": "Cool White"
+        },
+        {
+          "min": "76",
+          "max": "79",
+          "name": "Warm White"
+        },
+        {
+          "min": "80",
+          "max": "83",
+          "name": "3200K"
+        },
+        {
+          "min": "84",
+          "max": "87",
+          "name": "2500K"
+        },
+        {
+          "min": "88",
+          "max": "91",
+          "name": "Yellow2"
+        },
+        {
+          "min": "92",
+          "max": "95",
+          "name": "Straw"
+        },
+        {
+          "min": "96",
+          "max": "99",
+          "name": "Orange2"
+        },
+        {
+          "min": "100",
+          "max": "103",
+          "name": "Light Rose"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Dark Pink"
+        },
+        {
+          "min": "108",
+          "max": "111",
+          "name": "Magenta2"
+        },
+        {
+          "min": "112",
+          "max": "115",
+          "name": "Blue2"
+        },
+        {
+          "min": "116",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "123",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "Bright Pink"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Medium Blue"
+        },
+        {
+          "min": "132",
+          "max": "135",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "136",
+          "max": "139",
+          "name": "Deep Amber"
+        },
+        {
+          "min": "140",
+          "max": "143",
+          "name": "Pale Lavender"
+        },
+        {
+          "min": "144",
+          "max": "147",
+          "name": "Apricot"
+        },
+        {
+          "min": "148",
+          "max": "151",
+          "name": "Dark Lavender"
+        },
+        {
+          "min": "152",
+          "max": "155",
+          "name": "Chocolate"
+        },
+        {
+          "min": "156",
+          "max": "159",
+          "name": "Just Blue"
+        },
+        {
+          "min": "160",
+          "max": "163",
+          "name": "Surprise Pink"
+        },
+        {
+          "min": "164",
+          "max": "167",
+          "name": "Scarlet"
+        },
+        {
+          "min": "168",
+          "max": "171",
+          "name": "Surprise Peach"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "Fire"
+        },
+        {
+          "min": "176",
+          "max": "179",
+          "name": "English Rose"
+        },
+        {
+          "min": "180",
+          "max": "183",
+          "name": "Mauve"
+        },
+        {
+          "min": "184",
+          "max": "187",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "188",
+          "max": "191",
+          "name": "Alice Blue"
+        },
+        {
+          "min": "192",
+          "max": "195",
+          "name": "Rose Indigo"
+        },
+        {
+          "min": "196",
+          "max": "199",
+          "name": "Urban Blue"
+        },
+        {
+          "min": "200",
+          "max": "203",
+          "name": "Cool Blue"
+        },
+        {
+          "min": "204",
+          "max": "207",
+          "name": "Light Salmon"
+        },
+        {
+          "min": "208",
+          "max": "211",
+          "name": "Mayan Sun"
+        },
+        {
+          "min": "212",
+          "max": "215",
+          "name": "Cherry Rose"
+        },
+        {
+          "min": "216",
+          "max": "219",
+          "name": "Flesh Pink"
+        },
+        {
+          "min": "220",
+          "max": "223",
+          "name": "Skelton Exotic Sangria"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Seq 1"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Pastel Tone"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Warm Tone"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Cold Tone"
+        }
+      ]
+    },
+    {
+      "name": "Cool White 6200K",
+      "type": "White"
+    },
+    {
+      "name": "Warm White 2700K",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Glow Up C",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer",
+        "Stop / Strobe",
+        "Macro Color"
+      ]
+    },
+    {
+      "name": "Glow Up TW",
+      "totalChannels": 3,
+      "channels": [
+        "Cool White 6200K",
+        "Warm White 2700K",
+        "Stop / Strobe"
+      ]
+    },
+    {
+      "name": "Glow Up W",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Stop / Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1200",
+      "colourTemperature": "5500"
+    },
+    "dimensions": {
+      "weight": "7.5",
+      "width": "226",
+      "height": "365",
+      "depth": "226"
+    },
+    "lens": {
+      "name": "Not specified",
+      "degreesMin": "15",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

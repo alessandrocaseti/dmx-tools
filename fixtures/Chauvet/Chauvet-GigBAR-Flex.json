@@ -1,0 +1,435 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "GigBAR Flex",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "bigredthelogger",
+  "channels": [
+    {
+      "name": "Right Par: Red",
+      "type": "Red"
+    },
+    {
+      "name": "Right Par: Green",
+      "type": "Green"
+    },
+    {
+      "name": "Right Par: Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Right Par: UV",
+      "type": "UV"
+    },
+    {
+      "name": "Right Par: Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Dimmer"
+        },
+        {
+          "min": "128",
+          "max": "239",
+          "name": "Strobe speed, slow to fast"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Strobe to sound"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "RGB 100%"
+        }
+      ]
+    },
+    {
+      "name": "Left Par: Red",
+      "type": "Red"
+    },
+    {
+      "name": "Left Par: Green",
+      "type": "Green"
+    },
+    {
+      "name": "Left Par: Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Left Par: UV",
+      "type": "UV"
+    },
+    {
+      "name": "Left Par: Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Dimmer"
+        },
+        {
+          "min": "128",
+          "max": "239",
+          "name": "Strobe speed, slow to fast"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Strobe to sound"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "RGB 100%"
+        }
+      ]
+    },
+    {
+      "name": "Right Derby Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "Blackout"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "Red"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "Green"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "Blue"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Red + Green"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Automatic (single colors only)"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "Automatic (two colors at a time)"
+        }
+      ]
+    },
+    {
+      "name": "Right Derby Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "239",
+          "name": "Strobe, 0-30 Hz"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Strobe to sound"
+        }
+      ]
+    },
+    {
+      "name": "Right Derby Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate clockwise, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate counter-clockwise, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Left Derby Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "Blackout"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "Red"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "Green"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "Blue"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Red + Green"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Automatic (single colors only)"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "Automatic (two colors at a time)"
+        }
+      ]
+    },
+    {
+      "name": "Left Derby Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "239",
+          "name": "Strobe, 0-30 Hz"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Strobe to sound"
+        }
+      ]
+    },
+    {
+      "name": "Left Derby Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate clockwise, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate counter-clockwise, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Patterns",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackoout"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Auto 1"
+        },
+        {
+          "min": "30",
+          "max": "50",
+          "name": "Auto 2"
+        },
+        {
+          "min": "51",
+          "max": "69",
+          "name": "Auto 3"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Auto 4"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Auto 5"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Auto 6"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Auto 7"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Auto 8"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Auto 9"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "All Strobing"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Strobe to sound mode"
+        }
+      ]
+    },
+    {
+      "name": "White Strobe Dimmer",
+      "type": "Shutter"
+    },
+    {
+      "name": "UV Strobe Dimmer",
+      "type": "Shutter"
+    },
+    {
+      "name": "Strobe Speed",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 20,
+      "channels": [
+        "Right Par: Red",
+        "Right Par: Green",
+        "Right Par: Blue",
+        "Right Par: UV",
+        "Right Par: Control",
+        "Left Par: Red",
+        "Left Par: Green",
+        "Left Par: Blue",
+        "Left Par: UV",
+        "Left Par: Control",
+        "Right Derby Control",
+        "Right Derby Strobe",
+        "Right Derby Rotation",
+        "Left Derby Control",
+        "Left Derby Strobe",
+        "Left Derby Rotation",
+        "Strobe Patterns",
+        "White Strobe Dimmer",
+        "UV Strobe Dimmer",
+        "Strobe Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.6",
+      "width": "1185",
+      "height": "387",
+      "depth": "110"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "44",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

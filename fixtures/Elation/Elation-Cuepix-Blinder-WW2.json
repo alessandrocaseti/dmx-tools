@@ -1,0 +1,127 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elation",
+  "model": "Cuepix Blinder WW2",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Dávid Czirók",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Left COB module dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Right COB module dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Flash/strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimming curve modes",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "41",
+          "name": "stamdard"
+        },
+        {
+          "min": "42",
+          "max": "84",
+          "name": "stage"
+        },
+        {
+          "min": "85",
+          "max": "127",
+          "name": "tv"
+        },
+        {
+          "min": "128",
+          "max": "170",
+          "name": "architectural"
+        },
+        {
+          "min": "171",
+          "max": "213",
+          "name": "theatre"
+        },
+        {
+          "min": "214",
+          "max": "255",
+          "name": "Default to unit setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Master Dimmer",
+        "Dimming curve modes"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Flash/strobe",
+        "Dimming curve modes"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 4,
+      "channels": [
+        "Left COB module dimmer",
+        "Right COB module dimmer",
+        "Flash/strobe",
+        "Dimming curve modes"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "5.1",
+      "width": "260",
+      "height": "182",
+      "depth": "478"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "229",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

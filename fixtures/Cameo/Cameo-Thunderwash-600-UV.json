@@ -1,0 +1,108 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Thunderwash 600 UV",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Torsten Caninenberg",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Duration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash duration (1ms to 510ms)"
+        }
+      ]
+    },
+    {
+      "name": "Sound",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Sound control OFF (Mic Sensitivity)"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Sound control ON Low -> High (Mic Sensitivity)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 Channel 1",
+      "totalChannels": 1,
+      "channels": [
+        "Strobe"
+      ]
+    },
+    {
+      "name": "1 Channel 2",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Duration",
+        "Sound"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.1",
+      "width": "335",
+      "height": "93",
+      "depth": "197"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "75",
+      "degreesMax": "75"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "160",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

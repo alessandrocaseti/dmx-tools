@@ -1,0 +1,113 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "Lo-Pro CSI",
+  "type": "Effect",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Alton Olson",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Section 1 UV Intensity",
+      "type": "UV"
+    },
+    {
+      "name": "Section 2 UV Intensity",
+      "type": "UV"
+    },
+    {
+      "name": "Color Temperature",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Colour temperature"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Section 1 UV Intensity",
+        "Section 2 UV Intensity",
+        "Color Temperature"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Section 1 UV Intensity",
+        "Section 2 UV Intensity"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Section 1 UV Intensity",
+        "Section 2 UV Intensity"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 2,
+      "channels": [
+        "Section 1 UV Intensity",
+        "Section 2 UV Intensity"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "36 x 3W LED ~365nm",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.45",
+      "width": "227",
+      "height": "292",
+      "depth": "120"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "34",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

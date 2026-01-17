@@ -1,0 +1,130 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Entour Venue",
+  "type": "FX Fog",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Output volume",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "0% Output Volume, 5% Fan speed"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "5% - 100% Output volume, 100% Fan speed"
+        }
+      ]
+    },
+    {
+      "name": "Fan speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "5% Fan speed"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "6% - 100% Fan speed"
+        }
+      ]
+    },
+    {
+      "name": "Duration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "3 Seconds"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "3 - 250 Seconds"
+        }
+      ]
+    },
+    {
+      "name": "Interval",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "0 Seconds"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "5 - 250 Seconds"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Output volume"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Output volume",
+        "Fan speed"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Output volume",
+        "Fan speed",
+        "Duration",
+        "Interval"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "10.6",
+      "width": "394",
+      "height": "434",
+      "depth": "253"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1500",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

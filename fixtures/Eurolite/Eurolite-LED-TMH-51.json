@@ -1,0 +1,465 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED TMH-51",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Sebastian Moeckel",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "No function"
+        },
+        {
+          "min": "9",
+          "max": "255",
+          "name": "LED Strobe with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Red LED",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED",
+      "type": "White"
+    },
+    {
+      "name": "SMD Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "SMD Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "No function"
+        },
+        {
+          "min": "9",
+          "max": "255",
+          "name": "SMD Strobe with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "SMD Red",
+      "type": "Red"
+    },
+    {
+      "name": "SMD Green",
+      "type": "Green"
+    },
+    {
+      "name": "SMD Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD Section 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "44",
+          "name": "Red"
+        },
+        {
+          "min": "45",
+          "max": "79",
+          "name": "Green"
+        },
+        {
+          "min": "80",
+          "max": "114",
+          "name": "Blue"
+        },
+        {
+          "min": "115",
+          "max": "149",
+          "name": "Red and Green"
+        },
+        {
+          "min": "150",
+          "max": "184",
+          "name": "Red and Blue"
+        },
+        {
+          "min": "185",
+          "max": "219",
+          "name": "Green and Blue"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "RGB"
+        }
+      ]
+    },
+    {
+      "name": "SMD Section 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "44",
+          "name": "Red"
+        },
+        {
+          "min": "45",
+          "max": "79",
+          "name": "Green"
+        },
+        {
+          "min": "80",
+          "max": "114",
+          "name": "Blue"
+        },
+        {
+          "min": "115",
+          "max": "149",
+          "name": "Red and Green"
+        },
+        {
+          "min": "150",
+          "max": "184",
+          "name": "Red and Blue"
+        },
+        {
+          "min": "185",
+          "max": "219",
+          "name": "Green and Blue"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "RGB"
+        }
+      ]
+    },
+    {
+      "name": "SMD Section 3",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "44",
+          "name": "Red"
+        },
+        {
+          "min": "45",
+          "max": "79",
+          "name": "Green"
+        },
+        {
+          "min": "80",
+          "max": "114",
+          "name": "Blue"
+        },
+        {
+          "min": "115",
+          "max": "149",
+          "name": "Red and Green"
+        },
+        {
+          "min": "150",
+          "max": "184",
+          "name": "Red and Blue"
+        },
+        {
+          "min": "185",
+          "max": "219",
+          "name": "Green and Blue"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "RGB"
+        }
+      ]
+    },
+    {
+      "name": "SMD Section 4",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "44",
+          "name": "Red"
+        },
+        {
+          "min": "45",
+          "max": "79",
+          "name": "Green"
+        },
+        {
+          "min": "80",
+          "max": "114",
+          "name": "Blue"
+        },
+        {
+          "min": "115",
+          "max": "149",
+          "name": "Red and Green"
+        },
+        {
+          "min": "150",
+          "max": "184",
+          "name": "Red and Blue"
+        },
+        {
+          "min": "185",
+          "max": "219",
+          "name": "Green and Blue"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "RGB"
+        }
+      ]
+    },
+    {
+      "name": "Functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "SMD section 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "SMD section 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "SMD section 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD section 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "SMD section 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "SMD section 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD section 3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "SMD section 3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "SMD section 3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD section 4 Red",
+      "type": "Red"
+    },
+    {
+      "name": "SMD section 4 Green",
+      "type": "Green"
+    },
+    {
+      "name": "SMD section 4 Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Master dimmer",
+        "LED Strobe",
+        "Red LED",
+        "Green LED",
+        "Blue LED",
+        "White LED",
+        "SMD Dimmer",
+        "SMD Strobe",
+        "SMD Section 1",
+        "SMD Section 2",
+        "SMD Section 3",
+        "SMD Section 4",
+        "Functions"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 21,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Master dimmer",
+        "LED Strobe",
+        "Red LED",
+        "Green LED",
+        "Blue LED",
+        "White LED",
+        "SMD Dimmer",
+        "SMD Strobe",
+        "SMD Red",
+        "SMD Green",
+        "SMD Blue",
+        "SMD Section 1",
+        "SMD Section 2",
+        "SMD Section 3",
+        "SMD Section 4",
+        "Functions"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 23,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Master dimmer",
+        "LED Strobe",
+        "Red LED",
+        "Green LED",
+        "Blue LED",
+        "White LED",
+        "SMD section 1 Red",
+        "SMD section 1 Green",
+        "SMD section 1 Blue",
+        "SMD section 2 Red",
+        "SMD section 2 Green",
+        "SMD section 2 Blue",
+        "SMD section 3 Red",
+        "SMD section 3 Green",
+        "SMD section 3 Blue",
+        "SMD section 4 Red",
+        "SMD section 4 Green",
+        "SMD section 4 Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.92",
+      "width": "170",
+      "height": "250",
+      "depth": "160"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "8",
+      "degreesMax": "8"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "210"
+    },
+    "technical": {
+      "powerConsumption": "70",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

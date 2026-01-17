@@ -1,0 +1,397 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayra",
+  "model": "ERO Micro Spot",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Bob",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Stroboscope SlowFast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Shutter slow open close fast"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Shutter slow close open fast"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Various functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset after 3 sec"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open white"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "SPL C1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "SPL C2"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Orange"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "SPL C3"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Yellow"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "SPL C4"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Green"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "SPL C5"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "SPL C6"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Light Blue"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "SPL C7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Magenta"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow"
+        }
+      ]
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Open shake"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 1 shake"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 2 shake"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 3 shake"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 4 shake"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 5 shake"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 6 shake"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo 7 shake"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Gobo scroll sklow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Sound-controlled show modes",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function (blackout)"
+        },
+        {
+          "min": "8",
+          "max": "67",
+          "name": "Show 1"
+        },
+        {
+          "min": "68",
+          "max": "127",
+          "name": "Show 2"
+        },
+        {
+          "min": "128",
+          "max": "187",
+          "name": "Show 3"
+        },
+        {
+          "min": "188",
+          "max": "247",
+          "name": "Show 4"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Random show"
+        }
+      ]
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour wheel",
+        "Gobo wheel",
+        "Shutter",
+        "Dimmer",
+        "Pan/Tilt speed",
+        "Various functions"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 1,
+      "channels": [
+        "Sound-controlled show modes"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Colour wheel",
+        "Gobo wheel",
+        "Shutter",
+        "Dimmer",
+        "Pan/Tilt speed",
+        "Various functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "6500",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.1",
+      "width": "170",
+      "height": "150",
+      "depth": "270"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "45",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "24",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

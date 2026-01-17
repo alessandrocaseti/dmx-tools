@@ -1,0 +1,164 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "Lucid 1.2",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Owen Ling",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe (with Sound Active)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "119",
+          "name": "Slow to Fast"
+        },
+        {
+          "min": "120",
+          "max": "255",
+          "name": "Strobe sound program"
+        }
+      ]
+    },
+    {
+      "name": "LED 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "119",
+          "name": "Auto program"
+        },
+        {
+          "min": "120",
+          "max": "255",
+          "name": "Sound program"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed for sound program, From slow to fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Master dimmer",
+        "Strobe (with Sound Active)",
+        "LED 1 Red",
+        "LED 1 Green",
+        "LED 1 Blue",
+        "LED 2 Red",
+        "LED 2 Green",
+        "LED 2 Blue",
+        "Mode",
+        "Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "COB LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.2",
+      "width": "240",
+      "height": "108",
+      "depth": "150"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "42",
+      "degreesMax": "42"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "24",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

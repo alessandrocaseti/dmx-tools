@@ -1,0 +1,791 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "ROOT PAR 6",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Florian Faber, Jakob Frank",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Master dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Presets & Color Jumping & Color Fading & User Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Color off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Color Jumping stop"
+        },
+        {
+          "min": "128",
+          "max": "164",
+          "name": "Color Jumping speed slow -> fast / Color 1 -> 12"
+        },
+        {
+          "min": "165",
+          "max": "201",
+          "name": "Color Fading speed slow -> fast / Color 1 -> 12"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "User Color_1"
+        },
+        {
+          "min": "208",
+          "max": "213",
+          "name": "User Color_2"
+        },
+        {
+          "min": "214",
+          "max": "219",
+          "name": "User Color_3"
+        },
+        {
+          "min": "220",
+          "max": "225",
+          "name": "User Color_4"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "DMX Delay",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No Delay"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "0,1s -> 2,0s"
+        }
+      ]
+    },
+    {
+      "name": "Strobe functions",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe closed"
+        },
+        {
+          "min": "11",
+          "max": "22",
+          "name": "Ramp up/down, slow -> fast"
+        },
+        {
+          "min": "23",
+          "max": "33",
+          "name": "Ramp up/down random, slow->fast"
+        },
+        {
+          "min": "34",
+          "max": "45",
+          "name": "Ramp up, slow -> fast"
+        },
+        {
+          "min": "46",
+          "max": "56",
+          "name": "Ramp up random, slow -> fast"
+        },
+        {
+          "min": "57",
+          "max": "68",
+          "name": "Ramp down, slow -> fast"
+        },
+        {
+          "min": "69",
+          "max": "79",
+          "name": "Ramp down random, slow -> fast"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random Strobe effect, slow -> fast"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Strobe Break effect, 5s.....1s (short burst with break)"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe slow -> fast <1Hz - 20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Sound (triggers Strobe, Color Jumping & Fading)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Sound Control off"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Sound Control on, mic sensitivity low -> high"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe slow -> fast <1Hz - 20Hz"
+        }
+      ]
+    },
+    {
+      "name": "Chase of Ch 4 and Ch 5",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No Chase, Color Preset 1 is on"
+        },
+        {
+          "min": "6",
+          "max": "26",
+          "name": "Jump 10,0s -> 4,0s"
+        },
+        {
+          "min": "27",
+          "max": "127",
+          "name": "Jump 4,0s -> 0,1s"
+        },
+        {
+          "min": "128",
+          "max": "148",
+          "name": "Fade 10,0s -> 4,0s"
+        },
+        {
+          "min": "149",
+          "max": "255",
+          "name": "Fade 4,0s -> 0,1s"
+        }
+      ]
+    },
+    {
+      "name": "Color Presets 1 & Color Jumping & Color Fading & User Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Color off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "201",
+          "name": "no function"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "User Color_1"
+        },
+        {
+          "min": "208",
+          "max": "213",
+          "name": "User Color_2"
+        },
+        {
+          "min": "214",
+          "max": "219",
+          "name": "User Color_3"
+        },
+        {
+          "min": "220",
+          "max": "225",
+          "name": "User Color_4"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "Color Presets 2 & Color Jumping & Color Fading & User Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Color off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "201",
+          "name": "no function"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "User Color_1"
+        },
+        {
+          "min": "208",
+          "max": "213",
+          "name": "User Color_2"
+        },
+        {
+          "min": "214",
+          "max": "219",
+          "name": "User Color_3"
+        },
+        {
+          "min": "220",
+          "max": "225",
+          "name": "User Color_4"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "Color Presets & Color Jumping & Color Fading & User Colors (override RGBWA+UV)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Color off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Color Jumping stop"
+        },
+        {
+          "min": "128",
+          "max": "164",
+          "name": "Color Jumping speed slow -> fast / Color 1 -> 12"
+        },
+        {
+          "min": "165",
+          "max": "201",
+          "name": "Color Fading speed slow -> fast / Color 1 -> 12"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "User Color_1"
+        },
+        {
+          "min": "208",
+          "max": "213",
+          "name": "User Color_2"
+        },
+        {
+          "min": "214",
+          "max": "219",
+          "name": "User Color_3"
+        },
+        {
+          "min": "220",
+          "max": "225",
+          "name": "User Color_4"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Color Presets & Color Jumping & Color Fading & User Colors",
+        "DMX Delay"
+      ]
+    },
+    {
+      "name": "5-Channel 1",
+      "totalChannels": 5,
+      "channels": [
+        "Master Dimmer",
+        "Strobe functions",
+        "Color Presets & Color Jumping & Color Fading & User Colors",
+        "Sound (triggers Strobe, Color Jumping & Fading)",
+        "DMX Delay"
+      ]
+    },
+    {
+      "name": "5-Channel 2 (compatibility for ROOT PAR 4)",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "DMX Delay"
+      ]
+    },
+    {
+      "name": "6-Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Chase of Ch 4 and Ch 5",
+        "Color Presets 1 & Color Jumping & Color Fading & User Colors",
+        "Color Presets 2 & Color Jumping & Color Fading & User Colors",
+        "DMX Delay"
+      ]
+    },
+    {
+      "name": "7-Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "DMX Delay"
+      ]
+    },
+    {
+      "name": "9-Channel",
+      "totalChannels": 9,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "DMX Delay"
+      ]
+    },
+    {
+      "name": "12-Channel",
+      "totalChannels": 12,
+      "channels": [
+        "Master Dimmer",
+        "Master dimmer fine",
+        "Strobe functions",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Color Presets & Color Jumping & Color Fading & User Colors (override RGBWA+UV)",
+        "Sound (triggers Strobe, Color Jumping & Fading)",
+        "DMX Delay"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1800",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.2",
+      "width": "195",
+      "height": "133",
+      "depth": "195"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "36",
+      "degreesMax": "36"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "58",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

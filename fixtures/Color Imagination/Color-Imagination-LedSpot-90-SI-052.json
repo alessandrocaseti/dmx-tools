@@ -1,0 +1,538 @@
+{
+  "version": "1.2",
+  "manufacturer": "Color Imagination",
+  "model": "LedSpot 90 (SI-052)",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "DJ Ladonin",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open/White"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Color 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Color 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Color 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Color 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Color 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Color 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Color 7"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards rainbow effect from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Color rotation stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards rainbow effect from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo 1",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Gobo 1 shake from slow to fast"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Gobo 2 shake from slow to fast"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Gobo 7 shake from slow to fast"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Gobo 4 shake from slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Gobo 4 shake from slow to fast"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Gobo 4 shake from slow to fast"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Gobo 4 shake from slow to fast"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "Continuous wheel rotation slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo 1 Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Stop"
+        },
+        {
+          "min": "4",
+          "max": "127",
+          "name": "Forwards from fast to slow"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Stop"
+        },
+        {
+          "min": "132",
+          "max": "255",
+          "name": "Backwards from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo 2",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open/hole"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "100",
+          "max": "111",
+          "name": "Gobo 1 shake from slow to fast"
+        },
+        {
+          "min": "112",
+          "max": "123",
+          "name": "Gobo 2 shake from slow to fast"
+        },
+        {
+          "min": "124",
+          "max": "135",
+          "name": "Gobo 3 shake from slow to fast"
+        },
+        {
+          "min": "136",
+          "max": "147",
+          "name": "Gobo 4 shake from slow to fast"
+        },
+        {
+          "min": "148",
+          "max": "159",
+          "name": "Gobo 5 shake from slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "171",
+          "name": "Gobo 6 shake from slow to fast"
+        },
+        {
+          "min": "172",
+          "max": "183",
+          "name": "Gobo 7 shake from slow to fast"
+        },
+        {
+          "min": "184",
+          "max": "195",
+          "name": "Gobo 8 shake from slow to fast"
+        },
+        {
+          "min": "196",
+          "max": "207",
+          "name": "Gobo 9 shake from slow to fast"
+        },
+        {
+          "min": "208",
+          "max": "255",
+          "name": "Wheel rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse effect in sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Swing out"
+        },
+        {
+          "min": "6",
+          "max": "127",
+          "name": "Swing in"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forward rotation fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Rotation stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Iris",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "191",
+          "name": "Max. diameter to min. diameter"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Pulse opening fast to slow"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Pulse closing slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Special",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Color change normal"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Color change to any position"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Color & gobo change to any position"
+        },
+        {
+          "min": "40",
+          "max": "79",
+          "name": "No function"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Motor reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Internal program 8"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Color",
+        "Gobo 1",
+        "Gobo 1 Rotation",
+        "Gobo 2",
+        "Shutter",
+        "Dimmer",
+        "Focus",
+        "Prism",
+        "Iris",
+        "Speed",
+        "Special"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2700",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "12",
+      "width": "301",
+      "height": "471",
+      "depth": "291"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "630",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "170",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

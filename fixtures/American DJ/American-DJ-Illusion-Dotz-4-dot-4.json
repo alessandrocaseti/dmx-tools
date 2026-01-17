@@ -1,0 +1,684 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Illusion Dotz 4.4",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Dávid Czirók",
+  "channels": [
+    {
+      "name": "Pan Movement 8bit",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine 16 bit",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Movement 8 bit",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine 16 bit",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 8",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 9",
+      "type": "Red"
+    },
+    {
+      "name": "Green 9",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 9",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 10",
+      "type": "Red"
+    },
+    {
+      "name": "Green 10",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 10",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 11",
+      "type": "Red"
+    },
+    {
+      "name": "Green 11",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 11",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 12",
+      "type": "Red"
+    },
+    {
+      "name": "Green 12",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 12",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 13",
+      "type": "Red"
+    },
+    {
+      "name": "Green 13",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 13",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 14",
+      "type": "Red"
+    },
+    {
+      "name": "Green 14",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 14",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 15",
+      "type": "Red"
+    },
+    {
+      "name": "Green 15",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 15",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 16",
+      "type": "Red"
+    },
+    {
+      "name": "Green 16",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 16",
+      "type": "Blue"
+    },
+    {
+      "name": "Shutter & Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LEDs OFF"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LEDs ON"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe (slow to fast)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LEDs ON"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse effect"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LEDs ON"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Strobe random"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LEDs ON"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Deffult To Unit Settings"
+        }
+      ]
+    },
+    {
+      "name": "Auto Programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "P1"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "P2"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "P3"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "P4"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "P5"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "P6"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "P7"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "P8"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "P9"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "P10"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "P11"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "P12"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "P13"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "P14"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "P15"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "P16"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "P17"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "P18"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "P19"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "P20"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "P21"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "P22"
+        },
+        {
+          "min": "221",
+          "max": "230",
+          "name": "P23"
+        },
+        {
+          "min": "231",
+          "max": "240",
+          "name": "P24"
+        },
+        {
+          "min": "241",
+          "max": "250",
+          "name": "P25"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Gardient effect"
+        }
+      ]
+    },
+    {
+      "name": "Program speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow- fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Movment Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Max to min speed"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "blackout by movement"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    },
+    {
+      "name": "Lamp on/off,reset & programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "Normal"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "all motor reset"
+        },
+        {
+          "min": "85",
+          "max": "96",
+          "name": "no function"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "other motor reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "internal program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "internal program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "internal program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "internal program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "internal program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "internal program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "internal program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "sound active program"
+        }
+      ]
+    },
+    {
+      "name": "All Red",
+      "type": "Red"
+    },
+    {
+      "name": "All Green",
+      "type": "Green"
+    },
+    {
+      "name": "All Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 59,
+      "channels": [
+        "Pan Movement 8bit",
+        "Pan Fine 16 bit",
+        "Tilt Movement 8 bit",
+        "Tilt Fine 16 bit",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "Red 9",
+        "Green 9",
+        "Blue 9",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "Red 11",
+        "Green 11",
+        "Blue 11",
+        "Red 12",
+        "Green 12",
+        "Blue 12",
+        "Red 13",
+        "Green 13",
+        "Blue 13",
+        "Red 14",
+        "Green 14",
+        "Blue 14",
+        "Red 15",
+        "Green 15",
+        "Blue 15",
+        "Red 16",
+        "Green 16",
+        "Blue 16",
+        "Shutter & Strobe",
+        "Dimmer",
+        "Dimmer Curves",
+        "Auto Programs",
+        "Program speed",
+        "Pan/Tilt Movment Speed",
+        "Lamp on/off,reset & programs"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 14,
+      "channels": [
+        "Pan Movement 8bit",
+        "Pan Fine 16 bit",
+        "Tilt Movement 8 bit",
+        "Tilt Fine 16 bit",
+        "All Red",
+        "All Green",
+        "All Blue",
+        "Shutter & Strobe",
+        "Dimmer",
+        "Dimmer Curves",
+        "Auto Programs",
+        "Program speed",
+        "Pan/Tilt Movment Speed",
+        "Lamp on/off,reset & programs"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 12,
+      "channels": [
+        "Pan Movement 8bit",
+        "Tilt Movement 8 bit",
+        "All Red",
+        "All Green",
+        "All Blue",
+        "Shutter & Strobe",
+        "Dimmer",
+        "Dimmer Curves",
+        "Auto Programs",
+        "Program speed",
+        "Pan/Tilt Movment Speed",
+        "Lamp on/off,reset & programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "16.5",
+      "width": "492",
+      "height": "467",
+      "depth": "393"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "360",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "468",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

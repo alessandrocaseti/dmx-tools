@@ -1,0 +1,619 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Legend 412Z",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jean-Daniel Garcia",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Quadrant 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green Quadrant 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Quadrant 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White Quadrant 1",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer Quadrant 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe Quadrant 1",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "No function"
+        },
+        {
+          "min": "20",
+          "max": "249",
+          "name": "0-20hz"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Red Quadrant 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green Quadrant 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Quadrant 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White Quadrant 2",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer Quadrant 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe Quadrant 2",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "No function"
+        },
+        {
+          "min": "20",
+          "max": "249",
+          "name": "0-20hz"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Red Quadrant 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green Quadrant 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Quadrant 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White Quadrant 3",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer Quadrant 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe Quadrant 3",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "No function"
+        },
+        {
+          "min": "20",
+          "max": "249",
+          "name": "0-20hz"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Red Quadrant 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green Quadrant 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Quadrant 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White Quadrant 4",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer Quadrant 4",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe Quadrant 4",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "No function"
+        },
+        {
+          "min": "20",
+          "max": "249",
+          "name": "0-20hz"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "No function"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Macro 1"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Macro 2"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Macro 3"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Macro 4"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Macro 5"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Macro 6"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Macro 7"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Macro 8"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Macro 9"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Macro 10"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Macro 11"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Macro 12"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Macro 13"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Macro 14"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Macro 15"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Macro 16"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Macro 17"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Macro 18"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Macro 19"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Macro 20"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Macro 21"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Macro 22"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Macro 23"
+        }
+      ]
+    },
+    {
+      "name": "Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "69",
+          "name": "Pan/Tilt"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "All"
+        },
+        {
+          "min": "130",
+          "max": "190",
+          "name": "Pan/Tilt/Mov/Blackout"
+        },
+        {
+          "min": "191",
+          "max": "205",
+          "name": "Zoom preset"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "No function"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "0-20Hz"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Strobe Macro 1"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Strobe Macro 2"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Strobe Macro 3"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Strobe Macro 4"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Strobe Macro 5"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Strobe Macro 6"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Strobe Macro 7"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Strobe Macro 8"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Strobe Macro 9"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "15-channel",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro",
+        "Macro Speed",
+        "Zoom",
+        "Reset"
+      ]
+    },
+    {
+      "name": "27-channel",
+      "totalChannels": 27,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Red Quadrant 1",
+        "Green Quadrant 1",
+        "Blue Quadrant 1",
+        "White Quadrant 1",
+        "Red Quadrant 2",
+        "Green Quadrant 2",
+        "Blue Quadrant 2",
+        "White Quadrant 2",
+        "Red Quadrant 3",
+        "Green Quadrant 3",
+        "Blue Quadrant 3",
+        "White Quadrant 3",
+        "Red Quadrant 4",
+        "Green Quadrant 4",
+        "Blue Quadrant 4",
+        "White Quadrant 4",
+        "Color Macro",
+        "Macro Speed",
+        "Zoom",
+        "Reset"
+      ]
+    },
+    {
+      "name": "31-channel",
+      "totalChannels": 31,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Red Quadrant 1",
+        "Green Quadrant 1",
+        "Blue Quadrant 1",
+        "White Quadrant 1",
+        "Dimmer Quadrant 1",
+        "Red Quadrant 2",
+        "Green Quadrant 2",
+        "Blue Quadrant 2",
+        "White Quadrant 2",
+        "Dimmer Quadrant 2",
+        "Red Quadrant 3",
+        "Green Quadrant 3",
+        "Blue Quadrant 3",
+        "White Quadrant 3",
+        "Dimmer Quadrant 3",
+        "Red Quadrant 4",
+        "Green Quadrant 4",
+        "Blue Quadrant 4",
+        "White Quadrant 4",
+        "Dimmer Quadrant 4",
+        "Color Macro",
+        "Macro Speed",
+        "Zoom",
+        "Reset"
+      ]
+    },
+    {
+      "name": "34-channel",
+      "totalChannels": 34,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Red Quadrant 1",
+        "Green Quadrant 1",
+        "Blue Quadrant 1",
+        "White Quadrant 1",
+        "Dimmer Quadrant 1",
+        "Strobe Quadrant 1",
+        "Red Quadrant 2",
+        "Green Quadrant 2",
+        "Blue Quadrant 2",
+        "White Quadrant 2",
+        "Dimmer Quadrant 2",
+        "Strobe Quadrant 2",
+        "Red Quadrant 3",
+        "Green Quadrant 3",
+        "Blue Quadrant 3",
+        "White Quadrant 3",
+        "Dimmer Quadrant 3",
+        "Strobe Quadrant 3",
+        "Red Quadrant 4",
+        "Green Quadrant 4",
+        "Blue Quadrant 4",
+        "White Quadrant 4",
+        "Dimmer Quadrant 4",
+        "Strobe Quadrant 4",
+        "Color Macro",
+        "Macro Speed",
+        "Zoom",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "330",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.5",
+      "width": "271",
+      "height": "355",
+      "depth": "183"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "8",
+      "degreesMax": "33"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "188",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

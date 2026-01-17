@@ -1,0 +1,473 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Intimidator Scan LED 200",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Scott",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open (White)"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Yellow"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Pink"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Green"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Red"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Blue"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Salmon Pink"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "White/Dark Blue"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Dark Blue/Yellow"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Yellow/Pink"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Pink/Green"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Green/Red"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Red/Blue"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Blue/Salmon Pink"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Salmon Pink/White"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Rotate clockwise (slow ~ fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": ">Rotate Counterclockwise (slow ~ fast)"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Closed"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "215",
+          "name": "Strobe (slow ~ fast)"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo, Gobo Shake, & Gobo Scroll",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Gobo 7 shake, fast to slow"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 6 shake, fast to slow"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 5 shake, fast to slow"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 4 shake, fast to slow"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 3 shake, fast to slow"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 2 Shake shake, fast to slow"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 1 Shake shake, fast to slow"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Gobo scroll: clockwise rotation"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Gobo scroll: Counterclockwise rotation"
+        }
+      ]
+    },
+    {
+      "name": "Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Pan/tilt move-in-black"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Pan/tilt move-in-black (disabled)"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Colour wheel move-in-black"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Colour wheel move-in-black (disabled)"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo wheel move-in-black"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo wheel move-in-black (disabled)"
+        },
+        {
+          "min": "56",
+          "max": "87",
+          "name": "No function"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "All movement move-in-black (disabled)"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Reset pan/tilt"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "No function"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Reset color wheel"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Reset gobo wheel"
+        },
+        {
+          "min": "128",
+          "max": "151",
+          "name": "No function"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Reset all"
+        },
+        {
+          "min": "160",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Movement Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "23",
+          "name": "Automatic 1"
+        },
+        {
+          "min": "24",
+          "max": "39",
+          "name": "Automatic 2"
+        },
+        {
+          "min": "40",
+          "max": "55",
+          "name": "Automatic 3"
+        },
+        {
+          "min": "56",
+          "max": "71",
+          "name": "Automatic 4"
+        },
+        {
+          "min": "72",
+          "max": "87",
+          "name": "Automatic 5"
+        },
+        {
+          "min": "88",
+          "max": "103",
+          "name": "Automatic 6"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "Automatic 7"
+        },
+        {
+          "min": "120",
+          "max": "135",
+          "name": "Automatic 8"
+        },
+        {
+          "min": "136",
+          "max": "151",
+          "name": "Sound 1"
+        },
+        {
+          "min": "152",
+          "max": "167",
+          "name": "Sound 2"
+        },
+        {
+          "min": "168",
+          "max": "183",
+          "name": "Sound 3"
+        },
+        {
+          "min": "184",
+          "max": "199",
+          "name": "Sound 4"
+        },
+        {
+          "min": "200",
+          "max": "215",
+          "name": "Sound 5"
+        },
+        {
+          "min": "216",
+          "max": "231",
+          "name": "Sound 6"
+        },
+        {
+          "min": "232",
+          "max": "247",
+          "name": "Sound 7"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound 8"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "8-Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color",
+        "Shutter",
+        "Dimmer",
+        "Gobo, Gobo Shake, & Gobo Scroll",
+        "Function",
+        "Movement Macros"
+      ]
+    },
+    {
+      "name": "5-Channel",
+      "totalChannels": 5,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color",
+        "Shutter",
+        "Gobo, Gobo Shake, & Gobo Scroll"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "9000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.4",
+      "width": "355",
+      "height": "368",
+      "depth": "168"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "86",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

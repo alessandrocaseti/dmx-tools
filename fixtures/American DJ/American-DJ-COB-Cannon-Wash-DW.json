@@ -1,0 +1,208 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "COB Cannon Wash DW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Florian Gerstenlauer",
+  "channels": [
+    {
+      "name": "Cool White",
+      "type": "White"
+    },
+    {
+      "name": "Warm White",
+      "type": "White"
+    },
+    {
+      "name": "Colour Temperature",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "OFF"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "3200 K - 6400 K"
+        }
+      ]
+    },
+    {
+      "name": "Shutter/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "OFF"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "ON"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe Slow - Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "ON"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Strobe-Pulse Slow - Fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "ON"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random-Strobe Slow - Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "ON"
+        }
+      ]
+    },
+    {
+      "name": "Master-Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architecture"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to unit setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Colour Temperature"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Cool White",
+        "Warm White"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Cool White",
+        "Warm White",
+        "Master-Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 4,
+      "channels": [
+        "Cool White",
+        "Warm White",
+        "Colour Temperature",
+        "Master-Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 5,
+      "channels": [
+        "Cool White",
+        "Warm White",
+        "Colour Temperature",
+        "Shutter/Strobe",
+        "Master-Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 6,
+      "channels": [
+        "Cool White",
+        "Warm White",
+        "Colour Temperature",
+        "Shutter/Strobe",
+        "Master-Dimmer",
+        "Dimmer Curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "8000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.1",
+      "width": "245",
+      "height": "192",
+      "depth": "415"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "80"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "135",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

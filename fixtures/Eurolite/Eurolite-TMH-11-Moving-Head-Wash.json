@@ -1,0 +1,181 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TMH-11 Moving-Head Wash",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Simeon08 & ReComplexed",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "Neutral"
+        },
+        {
+          "min": "41",
+          "max": "80",
+          "name": "Macro 1"
+        },
+        {
+          "min": "81",
+          "max": "120",
+          "name": "Macro 2"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Macro 3"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Macro 4"
+        },
+        {
+          "min": "161",
+          "max": "200",
+          "name": "Macro 5"
+        },
+        {
+          "min": "201",
+          "max": "240",
+          "name": "Macro 6"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Neutral"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "LED OFF"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "NEUTRAL"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Reset"
+        },
+        {
+          "min": "31",
+          "max": "200",
+          "name": "Strobe-effect with increasing speed"
+        },
+        {
+          "min": "201",
+          "max": "251",
+          "name": "Random strobe-effect with increasing speed"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "NEUTRAL"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Red",
+        "Green",
+        "Blue",
+        "Color macro",
+        "Strobe",
+        "Master dimmer",
+        "Zoom",
+        "Pan fine",
+        "Tilt fine"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "260",
+      "height": "330",
+      "depth": "280"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "38"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "75",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

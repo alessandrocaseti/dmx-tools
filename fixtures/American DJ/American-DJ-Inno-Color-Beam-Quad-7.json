@@ -1,0 +1,318 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Inno Color Beam Quad 7",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Shows",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "67",
+          "name": "Show 1"
+        },
+        {
+          "min": "68",
+          "max": "127",
+          "name": "Show 2"
+        },
+        {
+          "min": "128",
+          "max": "187",
+          "name": "Show 3"
+        },
+        {
+          "min": "188",
+          "max": "247",
+          "name": "Show 4"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Random show"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Shutter/Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobing (slow to fast)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Slow open - Fast close"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe (slow to fast)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Rainbow",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "39",
+          "name": "Rainbow colors 1"
+        },
+        {
+          "min": "40",
+          "max": "71",
+          "name": "Rainbow colors 2"
+        },
+        {
+          "min": "72",
+          "max": "103",
+          "name": "Rainbow colors 3"
+        },
+        {
+          "min": "104",
+          "max": "135",
+          "name": "Rainbow colors 4"
+        },
+        {
+          "min": "136",
+          "max": "167",
+          "name": "Rainbow colors 5"
+        },
+        {
+          "min": "168",
+          "max": "199",
+          "name": "Rainbow colors 6"
+        },
+        {
+          "min": "200",
+          "max": "231",
+          "name": "Rainbow colors 7"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Crossfading colors (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Max. - Min. movement speed"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Blackout by movement"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Open/Reset/Internal programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "Normal"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All motor reset"
+        },
+        {
+          "min": "85",
+          "max": "99",
+          "name": "No function"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound active program"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 channel mode",
+      "totalChannels": 1,
+      "channels": [
+        "Shows"
+      ]
+    },
+    {
+      "name": "13 Channels mode",
+      "totalChannels": 13,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Shutter/Strobing",
+        "Master Dimmer",
+        "Rainbow",
+        "Pan/Tilt speed",
+        "Open/Reset/Internal programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "260",
+      "height": "304",
+      "depth": "168"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "10"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "570",
+      "tiltMax": "240"
+    },
+    "technical": {
+      "powerConsumption": "130",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

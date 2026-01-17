@@ -1,0 +1,573 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Revo Sweep",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Felix Edelmann",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "119",
+          "name": "Color"
+        },
+        {
+          "min": "120",
+          "max": "239",
+          "name": "Chase"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Color / Chase",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Color 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Color 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Color 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Color 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Color 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Color 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Color 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Color 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Color 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Color 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Color 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Color 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Color 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Color 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Color 15"
+        }
+      ]
+    },
+    {
+      "name": "Strobe / Chase Speed",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Color 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Color 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Color 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Color 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Color 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Color 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Color 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Color 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Color 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Color 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Color 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Color 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Color 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Color 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Color 15"
+        }
+      ]
+    },
+    {
+      "name": "Chase",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Chase Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Chase speed slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White 4",
+      "type": "White"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "White 5",
+      "type": "White"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "White 6",
+      "type": "White"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "White 7",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3-channel",
+      "totalChannels": 3,
+      "channels": [
+        "Mode",
+        "Color / Chase",
+        "Strobe / Chase Speed"
+      ]
+    },
+    {
+      "name": "28-channel",
+      "totalChannels": 28,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "White 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "White 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "White 7"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "317",
+      "height": "182",
+      "depth": "250"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "116",
+      "degreesMax": "116"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "13",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

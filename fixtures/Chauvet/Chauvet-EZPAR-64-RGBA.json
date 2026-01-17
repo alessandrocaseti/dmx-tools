@@ -1,0 +1,163 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "EZPar 64 RGBA",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ronnie Ross",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No funciton"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color macros"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Pulse effect 0-100%"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Pulse effect 100%-0"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse effect 100%-0-100%"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto fade transition"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Auto snap transition (4 colors)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Auto snap transition (15 colors)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound-Active mode"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Color Macros",
+        "Speed",
+        "Mode",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1325",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.9",
+      "width": "276",
+      "height": "275",
+      "depth": "66"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "33",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

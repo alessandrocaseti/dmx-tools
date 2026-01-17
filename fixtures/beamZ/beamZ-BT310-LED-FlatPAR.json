@@ -1,0 +1,219 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "BT310 LED FlatPAR 12x8W 4-1 DMX IR",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Mark",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Dimming",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "199",
+          "name": "Auto"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Sound"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto/Sound Speed from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Red"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Green"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Amber"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Red + Green"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Red + Amber"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Green + Amber"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "Blue + Amber"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Red + Green + Amber"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Red + Blue + Amber"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Green + Blue + Amber"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Red + Green + Blue + Amber"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Dimming",
+        "Strobe",
+        "Mode",
+        "Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Colour",
+        "Strobe",
+        "Mode",
+        "Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.85",
+      "width": "215",
+      "height": "275",
+      "depth": "100"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "72",
+      "degreesMax": "72"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "72",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

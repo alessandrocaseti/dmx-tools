@@ -1,0 +1,196 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Omega I DMX-155",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Tom Moeller",
+  "channels": [
+    {
+      "name": "Color/Gobo Combo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "closed"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "open"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "combo 01"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Combo 02"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Combo 03"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Combo 04"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Combo 05"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Combo 06"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Combo 07"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Combo 08"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Combo 09"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Combo 10"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Combo 11"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Combo 12"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Combo 13"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Combo 14"
+        },
+        {
+          "min": "160",
+          "max": "249",
+          "name": "Combo wheel scroll"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound activated mode"
+        }
+      ]
+    },
+    {
+      "name": "Strobe/Gobo Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "45",
+          "name": "Strobe speed 1"
+        },
+        {
+          "min": "46",
+          "max": "115",
+          "name": "Strobe speed 2"
+        },
+        {
+          "min": "116",
+          "max": "150",
+          "name": "Strobe speed 3"
+        },
+        {
+          "min": "151",
+          "max": "185",
+          "name": "Strobe speed 4"
+        },
+        {
+          "min": "186",
+          "max": "220",
+          "name": "Strobe speed 5"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "Strobe speed 6"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 4,
+      "channels": [
+        "Color/Gobo Combo",
+        "Strobe/Gobo Strobe",
+        "Pan",
+        "Tilt"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "EFR 150W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.72",
+      "width": "356",
+      "height": "279",
+      "depth": "279"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Barrel",
+      "panMax": "180",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "250",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

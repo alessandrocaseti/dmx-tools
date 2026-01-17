@@ -1,0 +1,241 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TR-5",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "",
+  "channels": [
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "39",
+          "name": "Strobe"
+        },
+        {
+          "min": "40",
+          "max": "45",
+          "name": "Open"
+        },
+        {
+          "min": "46",
+          "max": "51",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "52",
+          "max": "57",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "58",
+          "max": "63",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "64",
+          "max": "69",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "70",
+          "max": "75",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "76",
+          "max": "81",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "82",
+          "max": "87",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "88",
+          "max": "93",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "94",
+          "max": "99",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "100",
+          "max": "105",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "106",
+          "max": "111",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "112",
+          "max": "117",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "118",
+          "max": "123",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "124",
+          "max": "129",
+          "name": "Open"
+        },
+        {
+          "min": "130",
+          "max": "135",
+          "name": "Gobo 1 shake slow to fast"
+        },
+        {
+          "min": "136",
+          "max": "141",
+          "name": "Gobo 2 shake slow to fast"
+        },
+        {
+          "min": "142",
+          "max": "147",
+          "name": "Gobo 3 shake slow to fast"
+        },
+        {
+          "min": "148",
+          "max": "153",
+          "name": "Gobo 4 shake slow to fast"
+        },
+        {
+          "min": "154",
+          "max": "159",
+          "name": "Gobo 5 shake slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "165",
+          "name": "Gobo 6 shake slow to fast"
+        },
+        {
+          "min": "166",
+          "max": "171",
+          "name": "Gobo 7 shake slow to fast"
+        },
+        {
+          "min": "172",
+          "max": "177",
+          "name": "Gobo 8 shake slow to fast"
+        },
+        {
+          "min": "178",
+          "max": "183",
+          "name": "Gobo 9 shake slow to fast"
+        },
+        {
+          "min": "184",
+          "max": "189",
+          "name": "Gobo 10 shake slow to fast"
+        },
+        {
+          "min": "190",
+          "max": "195",
+          "name": "Gobo 11 shake slow to fast"
+        },
+        {
+          "min": "196",
+          "max": "201",
+          "name": "Gobo 12 shake slow to fast"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "Gobo 13 shake slow to fast"
+        },
+        {
+          "min": "208",
+          "max": "225",
+          "name": "Stop"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Rotation slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "26",
+          "name": "STOP"
+        },
+        {
+          "min": "27",
+          "max": "130",
+          "name": "CW rotation slow to fast"
+        },
+        {
+          "min": "131",
+          "max": "149",
+          "name": "STOP"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "CCW rotation fast to slow"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 2,
+      "channels": [
+        "Gobo",
+        "Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "ELC 250W",
+      "lumens": "5000",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "8",
+      "width": "280",
+      "height": "250",
+      "depth": "360"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

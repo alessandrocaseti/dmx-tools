@@ -1,0 +1,318 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Event Bar LED",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV",
+  "channels": [
+    {
+      "name": "Pan 1",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt 1",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Reset"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe (Slow -> Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pan 1 (Fine)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt 1 (Fine)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Movement",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Stop"
+        },
+        {
+          "min": "8",
+          "max": "26",
+          "name": "Movement 1"
+        },
+        {
+          "min": "27",
+          "max": "46",
+          "name": "Movement 2"
+        },
+        {
+          "min": "47",
+          "max": "66",
+          "name": "Movement 3"
+        },
+        {
+          "min": "67",
+          "max": "86",
+          "name": "Movement 4"
+        },
+        {
+          "min": "87",
+          "max": "106",
+          "name": "Movement 5"
+        },
+        {
+          "min": "107",
+          "max": "125",
+          "name": "Movement 6"
+        },
+        {
+          "min": "126",
+          "max": "145",
+          "name": "Movement 7"
+        },
+        {
+          "min": "146",
+          "max": "165",
+          "name": "Movement 8"
+        },
+        {
+          "min": "166",
+          "max": "185",
+          "name": "Movement 9"
+        },
+        {
+          "min": "186",
+          "max": "205",
+          "name": "Movement 10"
+        },
+        {
+          "min": "206",
+          "max": "225",
+          "name": "Movement 11"
+        },
+        {
+          "min": "226",
+          "max": "244",
+          "name": "Movement 12"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Stand Alone"
+        }
+      ]
+    },
+    {
+      "name": "Movement Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Movement (Fine)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Horizontal Movement"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Vertical Movement"
+        }
+      ]
+    },
+    {
+      "name": "Pan 2",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan 3",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan 4",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt 2",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt 3",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt 4",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan 2 (Fine)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan 3 (Fine)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan 4 (Fine)",
+      "type": "Pan"
+    },
+    {
+      "name": "Dimmer 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer 4",
+      "type": "Intensity"
+    },
+    {
+      "name": "Tilt 2 (Fine)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt 3 (Fine)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt 4 (Fine)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "12 Channel Mode",
+      "totalChannels": 12,
+      "channels": [
+        "Pan 1",
+        "Tilt 1",
+        "Dimmer 1",
+        "Pan 2",
+        "Tilt 2",
+        "Dimmer 2",
+        "Pan 3",
+        "Tilt 3",
+        "Dimmer 3",
+        "Pan 4",
+        "Tilt 4",
+        "Dimmer 4"
+      ]
+    },
+    {
+      "name": "14 Channel Mode",
+      "totalChannels": 14,
+      "channels": [
+        "Pan 1",
+        "Tilt 1",
+        "Dimmer 1",
+        "Pan 2",
+        "Tilt 2",
+        "Dimmer 2",
+        "Pan 3",
+        "Tilt 3",
+        "Pan 4",
+        "Dimmer 3",
+        "Tilt 4",
+        "Dimmer 4",
+        "Strobe",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "25 Channel Mode",
+      "totalChannels": 25,
+      "channels": [
+        "Pan 1",
+        "Pan 1 (Fine)",
+        "Tilt 1",
+        "Tilt 1 (Fine)",
+        "Dimmer 1",
+        "Pan 2",
+        "Pan 2 (Fine)",
+        "Tilt 2",
+        "Tilt 2 (Fine)",
+        "Dimmer 2",
+        "Pan 3",
+        "Pan 3 (Fine)",
+        "Tilt 3",
+        "Tilt 3 (Fine)",
+        "Dimmer 3",
+        "Pan 4",
+        "Pan 4 (Fine)",
+        "Tilt 4",
+        "Tilt 4 (Fine)",
+        "Dimmer 4",
+        "Movement",
+        "Movement Speed",
+        "Movement (Fine)",
+        "Strobe",
+        "Master Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.6",
+      "width": "80",
+      "height": "202",
+      "depth": "1000"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "6",
+      "degreesMax": "12"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "360",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "54",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

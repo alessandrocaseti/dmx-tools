@@ -1,0 +1,201 @@
+{
+  "version": "1.2",
+  "manufacturer": "ETC",
+  "model": "ColorSource Fresnel V",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Edgar Aichinger",
+  "channels": [
+    {
+      "name": "Intensity",
+      "type": "Unknown"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Indigo",
+      "type": "Indigo"
+    },
+    {
+      "name": "Lime",
+      "type": "Lime"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Shutter open"
+        },
+        {
+          "min": "1",
+          "max": "40",
+          "name": "Dark Strobe"
+        },
+        {
+          "min": "41",
+          "max": "80",
+          "name": "Bright Strobe"
+        },
+        {
+          "min": "81",
+          "max": "120",
+          "name": "Pulse Strobe"
+        },
+        {
+          "min": "121",
+          "max": "160",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "161",
+          "max": "200",
+          "name": "Flicker Effect"
+        },
+        {
+          "min": "201",
+          "max": "240",
+          "name": "No Strobe"
+        },
+        {
+          "min": "241",
+          "max": "254",
+          "name": "LEDs Off"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "No Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Fan",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Auto"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Off"
+        },
+        {
+          "min": "20",
+          "max": "20",
+          "name": "Slow"
+        },
+        {
+          "min": "21",
+          "max": "248",
+          "name": "Linear Increase of Speed"
+        },
+        {
+          "min": "249",
+          "max": "249",
+          "name": "Fast"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Auto"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 7,
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe",
+        "Zoom",
+        "Fan"
+      ]
+    },
+    {
+      "name": "Direct",
+      "totalChannels": 9,
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Indigo",
+        "Lime",
+        "Strobe",
+        "Zoom",
+        "Fan"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 1,
+      "channels": [
+        "Intensity"
+      ]
+    },
+    {
+      "name": "RGB",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Zoom"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "5330",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.24",
+      "width": "321",
+      "height": "339",
+      "depth": "311"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "44"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "147",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

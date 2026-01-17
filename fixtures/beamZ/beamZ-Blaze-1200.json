@@ -1,0 +1,123 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "Blaze 1200",
+  "type": "FX Haze",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fede79",
+  "channels": [
+    {
+      "name": "Fog",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No Fucntion"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Adjust Fog Output"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe %"
+        }
+      ]
+    },
+    {
+      "name": "Macro mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No Function"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Macro function channel"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "8 ch",
+      "totalChannels": 8,
+      "channels": [
+        "Fog",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Shutter",
+        "Macro mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.7",
+      "width": "410",
+      "height": "210",
+      "depth": "270"
+    },
+    "lens": {
+      "name": "Not specified",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1200",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

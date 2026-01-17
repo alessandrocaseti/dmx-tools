@@ -1,0 +1,607 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Mini-B Spot",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Empty posistion"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "White + Dark red"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Dark Red"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Dark Red + Brilliant Blue"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Brilliant Blue + Green"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Green"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Green + CTO"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "CTO"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "CTO + Light Orange"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Light Orange"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Light Orange + Dark Orange"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Dark Orange"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Dark Orange + Navy Blue"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Navy Blue"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Navy Blue + White"
+        },
+        {
+          "min": "80",
+          "max": "127",
+          "name": "CW rotation from slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Linear color insertion"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Closed"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Linear Strobe slow (1 flash/sec) to fast (25 flashes/sec)"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Open"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Linear Pulse slow to fast"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Open"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random Strobe low frequency"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random Strobe medium frequency"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random Strobe high frequency"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo Insertion",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Empty position"
+        },
+        {
+          "min": "9",
+          "max": "17",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "18",
+          "max": "26",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "27",
+          "max": "35",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "36",
+          "max": "44",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "45",
+          "max": "53",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "54",
+          "max": "62",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "63",
+          "max": "71",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "72",
+          "max": "113",
+          "name": "Linear CCW fast to slow"
+        },
+        {
+          "min": "114",
+          "max": "117",
+          "name": "Stop"
+        },
+        {
+          "min": "118",
+          "max": "159",
+          "name": "Linear CW slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "173",
+          "name": "Gobo 1 shakes slow to fast"
+        },
+        {
+          "min": "174",
+          "max": "187",
+          "name": "Gobo 2 shakes slow to fast"
+        },
+        {
+          "min": "188",
+          "max": "200",
+          "name": "Gobo 3 shakes slow to fast"
+        },
+        {
+          "min": "201",
+          "max": "214",
+          "name": "Gobo 4 shakes slow to fast"
+        },
+        {
+          "min": "215",
+          "max": "227",
+          "name": "Gobo 5 shakes slow to fast"
+        },
+        {
+          "min": "228",
+          "max": "241",
+          "name": "Gobo 6 shakes slow to fast"
+        },
+        {
+          "min": "242",
+          "max": "255",
+          "name": "Gobo 7 shakes slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo indexing: 0° to 540° range"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Linear CW fast to slow"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Linear CCW slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Fine Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fine CCW Gobo Indexing"
+        }
+      ]
+    },
+    {
+      "name": "4 Facet Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism out"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "4 facet prism in"
+        }
+      ]
+    },
+    {
+      "name": "4 Facet Prism Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism indexing: 0° to 540° range"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "CW linearly fast to slow"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "CCW linearly slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Linear frost"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused range"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Effects reset"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Pan / Tilt reset"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Complete fixture reset"
+        }
+      ]
+    },
+    {
+      "name": "Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "Unused range"
+        },
+        {
+          "min": "2",
+          "max": "3",
+          "name": "Fan mode auto (Default)"
+        },
+        {
+          "min": "4",
+          "max": "5",
+          "name": "Fan mode SLN"
+        },
+        {
+          "min": "6",
+          "max": "7",
+          "name": "Fan mode constant"
+        },
+        {
+          "min": "8",
+          "max": "9",
+          "name": "Fan mode theatre"
+        },
+        {
+          "min": "10",
+          "max": "17",
+          "name": "Unused range"
+        },
+        {
+          "min": "18",
+          "max": "24",
+          "name": "Pan/Tilt Fast speed (Default)"
+        },
+        {
+          "min": "25",
+          "max": "37",
+          "name": "Pan/Tilt Normal speed"
+        },
+        {
+          "min": "38",
+          "max": "42",
+          "name": "Dimmer curve 1 (Default)"
+        },
+        {
+          "min": "43",
+          "max": "47",
+          "name": "Dimmer curve 2"
+        },
+        {
+          "min": "48",
+          "max": "52",
+          "name": "Dimmer curve 3"
+        },
+        {
+          "min": "53",
+          "max": "55",
+          "name": "Dimmer curve 4"
+        },
+        {
+          "min": "56",
+          "max": "58",
+          "name": "Standard colour mode (Default)"
+        },
+        {
+          "min": "59",
+          "max": "61",
+          "name": "Boost colour mode"
+        },
+        {
+          "min": "62",
+          "max": "64",
+          "name": "Dimmer Fade Off (Default)"
+        },
+        {
+          "min": "65",
+          "max": "67",
+          "name": "Dimmer Fade On"
+        },
+        {
+          "min": "68",
+          "max": "167",
+          "name": "Unused range"
+        },
+        {
+          "min": "168",
+          "max": "188",
+          "name": "PWM Frequency 600Hz"
+        },
+        {
+          "min": "189",
+          "max": "199",
+          "name": "PWM Frequency 1200Hz"
+        },
+        {
+          "min": "200",
+          "max": "210",
+          "name": "PWM Frequency 2000Hz (Default)"
+        },
+        {
+          "min": "211",
+          "max": "221",
+          "name": "PWM Frequency 4000Hz"
+        },
+        {
+          "min": "222",
+          "max": "232",
+          "name": "PWM Frequency 6000Hz"
+        },
+        {
+          "min": "233",
+          "max": "241",
+          "name": "PWM Frequency 25000Hz"
+        },
+        {
+          "min": "242",
+          "max": "243",
+          "name": "Display Off (Default)"
+        },
+        {
+          "min": "244",
+          "max": "245",
+          "name": "Display On"
+        },
+        {
+          "min": "246",
+          "max": "247",
+          "name": "Gobo Standard (Default)"
+        },
+        {
+          "min": "248",
+          "max": "249",
+          "name": "Gobo MIB"
+        },
+        {
+          "min": "250",
+          "max": "253",
+          "name": "Unused range"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "Recall Default function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 18,
+      "channels": [
+        "Color Wheel",
+        "Strobe",
+        "Dimmer",
+        "Dimmer Fine",
+        "Gobo Insertion",
+        "Gobo Rotation",
+        "Fine Gobo Rotation",
+        "4 Facet Prism",
+        "4 Facet Prism Rotation",
+        "Frost",
+        "Focus",
+        "Zoom",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Reset",
+        "Function"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "3450",
+      "colourTemperature": "7000"
+    },
+    "dimensions": {
+      "weight": "8.5",
+      "width": "220",
+      "height": "401",
+      "depth": "186"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "43"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "140",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

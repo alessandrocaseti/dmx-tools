@@ -1,0 +1,871 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Event Bar Q4",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Maxime Bissonnette-Théorêt",
+  "channels": [
+    {
+      "name": "Pan (Head 1)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine (Head 1)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt (Head 1)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine (Head 1)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red (Head 1)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Head 1)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Head 1)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Head 1)",
+      "type": "White"
+    },
+    {
+      "name": "Pan (Head 2)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine (Head 2)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt (Head 2)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine (Head 2)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red (Head 2)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Head 2)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Head 2)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Head 2)",
+      "type": "White"
+    },
+    {
+      "name": "Pan (Head 3)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine (Head 3)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt (Head 3)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine (Head 3)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red (Head 3)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Head 3)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Head 3)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Head 3)",
+      "type": "White"
+    },
+    {
+      "name": "Pan (Head 4)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine (Head 4)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt (Head 4)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine (Head 4)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red (Head 4)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Head 4)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Head 4)",
+      "type": "Blue"
+    },
+    {
+      "name": "White (Head 4)",
+      "type": "White"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Reset"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Shows",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "1"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "2"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "3"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "4"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "5"
+        },
+        {
+          "min": "158",
+          "max": "187",
+          "name": "6"
+        },
+        {
+          "min": "188",
+          "max": "217",
+          "name": "7"
+        },
+        {
+          "min": "218",
+          "max": "247",
+          "name": "8"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Random"
+        }
+      ]
+    },
+    {
+      "name": "Show Speed/Sound Sensitivity (v2.0)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - fast/least - most"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to unit curve setting"
+        }
+      ]
+    },
+    {
+      "name": "Color (Head 1)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "White"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red/green"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red/blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red/white"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green/blue"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green/white"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue/white"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Red/green/blue"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Red/green/white"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Red/blue/white"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Green/blue/white"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red/green/blue/white"
+        }
+      ]
+    },
+    {
+      "name": "Color (Head 2)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "White"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red/green"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red/blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red/white"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green/blue"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green/white"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue/white"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Red/green/blue"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Red/green/white"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Red/blue/white"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Green/blue/white"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red/green/blue/white"
+        }
+      ]
+    },
+    {
+      "name": "Color (Head 3)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "White"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red/green"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red/blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red/white"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green/blue"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green/white"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue/white"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Red/green/blue"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Red/green/white"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Red/blue/white"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Green/blue/white"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red/green/blue/white"
+        }
+      ]
+    },
+    {
+      "name": "Color (Head 4)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "White"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red/green"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red/blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red/white"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green/blue"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green/white"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue/white"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Red/green/blue"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Red/green/white"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Red/blue/white"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Green/blue/white"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red/green/blue/white"
+        }
+      ]
+    },
+    {
+      "name": "Shows (v2.0)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "1"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "2"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "3"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "4"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "5"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "6"
+        },
+        {
+          "min": "158",
+          "max": "187",
+          "name": "7"
+        },
+        {
+          "min": "188",
+          "max": "217",
+          "name": "8"
+        },
+        {
+          "min": "218",
+          "max": "247",
+          "name": "Random"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "37 Channel Mode (v2.0)",
+      "totalChannels": 37,
+      "channels": [
+        "Pan (Head 1)",
+        "Pan Fine (Head 1)",
+        "Tilt (Head 1)",
+        "Tilt Fine (Head 1)",
+        "Red (Head 1)",
+        "Green (Head 1)",
+        "Blue (Head 1)",
+        "White (Head 1)",
+        "Pan (Head 2)",
+        "Pan Fine (Head 2)",
+        "Tilt (Head 2)",
+        "Tilt Fine (Head 2)",
+        "Red (Head 2)",
+        "Green (Head 2)",
+        "Blue (Head 2)",
+        "White (Head 2)",
+        "Pan (Head 3)",
+        "Pan Fine (Head 3)",
+        "Tilt (Head 3)",
+        "Tilt Fine (Head 3)",
+        "Red (Head 3)",
+        "Green (Head 3)",
+        "Blue (Head 3)",
+        "White (Head 3)",
+        "Pan (Head 4)",
+        "Pan Fine (Head 4)",
+        "Tilt (Head 4)",
+        "Tilt Fine (Head 4)",
+        "Red (Head 4)",
+        "Green (Head 4)",
+        "Blue (Head 4)",
+        "White (Head 4)",
+        "Master Dimmer",
+        "Strobe",
+        "Shows",
+        "Show Speed/Sound Sensitivity (v2.0)",
+        "Dimmer Curves"
+      ]
+    },
+    {
+      "name": "12 Channel Mode",
+      "totalChannels": 12,
+      "channels": [
+        "Pan (Head 1)",
+        "Tilt (Head 1)",
+        "Color (Head 1)",
+        "Pan (Head 2)",
+        "Tilt (Head 2)",
+        "Color (Head 2)",
+        "Pan (Head 3)",
+        "Tilt (Head 3)",
+        "Color (Head 3)",
+        "Pan (Head 4)",
+        "Tilt (Head 4)",
+        "Color (Head 4)"
+      ]
+    },
+    {
+      "name": "14 Channel Mode",
+      "totalChannels": 14,
+      "channels": [
+        "Pan (Head 1)",
+        "Tilt (Head 1)",
+        "Color (Head 1)",
+        "Pan (Head 2)",
+        "Tilt (Head 2)",
+        "Color (Head 2)",
+        "Pan (Head 3)",
+        "Tilt (Head 3)",
+        "Color (Head 3)",
+        "Pan (Head 4)",
+        "Tilt (Head 4)",
+        "Color (Head 4)",
+        "Strobe",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "32 Channel Mode (v2.0)",
+      "totalChannels": 32,
+      "channels": [
+        "Pan (Head 1)",
+        "Pan Fine (Head 1)",
+        "Tilt (Head 1)",
+        "Tilt Fine (Head 1)",
+        "Red (Head 1)",
+        "Green (Head 1)",
+        "Blue (Head 1)",
+        "White (Head 1)",
+        "Pan (Head 2)",
+        "Pan Fine (Head 2)",
+        "Tilt (Head 2)",
+        "Tilt Fine (Head 2)",
+        "Red (Head 2)",
+        "Green (Head 2)",
+        "Blue (Head 2)",
+        "White (Head 2)",
+        "Pan (Head 3)",
+        "Pan Fine (Head 3)",
+        "Tilt (Head 3)",
+        "Tilt Fine (Head 3)",
+        "Red (Head 3)",
+        "Green (Head 3)",
+        "Blue (Head 3)",
+        "White (Head 3)",
+        "Pan (Head 4)",
+        "Pan Fine (Head 4)",
+        "Tilt (Head 4)",
+        "Tilt Fine (Head 4)",
+        "Red (Head 4)",
+        "Green (Head 4)",
+        "Blue (Head 4)",
+        "White (Head 4)"
+      ]
+    },
+    {
+      "name": "34 Channel Mode (v2.0)",
+      "totalChannels": 34,
+      "channels": [
+        "Pan (Head 1)",
+        "Pan Fine (Head 1)",
+        "Tilt (Head 1)",
+        "Tilt Fine (Head 1)",
+        "Red (Head 1)",
+        "Green (Head 1)",
+        "Blue (Head 1)",
+        "White (Head 1)",
+        "Pan (Head 2)",
+        "Pan Fine (Head 2)",
+        "Tilt (Head 2)",
+        "Tilt Fine (Head 2)",
+        "Red (Head 2)",
+        "Green (Head 2)",
+        "Blue (Head 2)",
+        "White (Head 2)",
+        "Pan (Head 3)",
+        "Pan Fine (Head 3)",
+        "Tilt (Head 3)",
+        "Tilt Fine (Head 3)",
+        "Red (Head 3)",
+        "Green (Head 3)",
+        "Blue (Head 3)",
+        "White (Head 3)",
+        "Pan (Head 4)",
+        "Pan Fine (Head 4)",
+        "Tilt (Head 4)",
+        "Tilt Fine (Head 4)",
+        "Red (Head 4)",
+        "Green (Head 4)",
+        "Blue (Head 4)",
+        "White (Head 4)",
+        "Strobe",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 1,
+      "channels": [
+        "Shows"
+      ]
+    },
+    {
+      "name": "2 Channel (v2.0)",
+      "totalChannels": 2,
+      "channels": [
+        "Shows (v2.0)",
+        "Show Speed/Sound Sensitivity (v2.0)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "11",
+      "width": "1040",
+      "height": "270",
+      "depth": "103"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "5",
+      "degreesMax": "5"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "360",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "89",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

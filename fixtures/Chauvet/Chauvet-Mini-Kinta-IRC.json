@@ -1,0 +1,200 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Mini Kinta IRC",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jason Willett",
+  "channels": [
+    {
+      "name": "Control/Operating Mode",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "20",
+          "name": "Red"
+        },
+        {
+          "min": "21",
+          "max": "35",
+          "name": "Green"
+        },
+        {
+          "min": "36",
+          "max": "50",
+          "name": "Blue"
+        },
+        {
+          "min": "51",
+          "max": "65",
+          "name": "White"
+        },
+        {
+          "min": "66",
+          "max": "80",
+          "name": "Red/Green"
+        },
+        {
+          "min": "81",
+          "max": "95",
+          "name": "Red/Blue"
+        },
+        {
+          "min": "96",
+          "max": "110",
+          "name": "Red/White"
+        },
+        {
+          "min": "111",
+          "max": "125",
+          "name": "Green/Blue"
+        },
+        {
+          "min": "126",
+          "max": "140",
+          "name": "Green/White"
+        },
+        {
+          "min": "141",
+          "max": "155",
+          "name": "Blue/White"
+        },
+        {
+          "min": "156",
+          "max": "170",
+          "name": "Red/Green/Blue"
+        },
+        {
+          "min": "171",
+          "max": "185",
+          "name": "Red/Green/White"
+        },
+        {
+          "min": "186",
+          "max": "200",
+          "name": "Green/Blue/White"
+        },
+        {
+          "min": "201",
+          "max": "215",
+          "name": "Red/Green/Blue/White"
+        },
+        {
+          "min": "216",
+          "max": "230",
+          "name": "Automatic (4 color chase)"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Automatic (7 color chase)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No strobe"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Slow -> fast"
+        }
+      ]
+    },
+    {
+      "name": "Motor Rotation",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Motor indexing"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Motor speed (bi-directional)"
+        }
+      ]
+    },
+    {
+      "name": "Auto/Sound Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "200",
+          "name": "Auto mode (slow to fast)"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Sound mode"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "4-Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Control/Operating Mode",
+        "Strobe",
+        "Motor Rotation",
+        "Auto/Sound Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "258",
+      "height": "182",
+      "depth": "190"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "135",
+      "degreesMax": "135"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "35",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

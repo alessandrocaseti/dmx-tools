@@ -1,0 +1,247 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "SlimPar Tri 7 IRC",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Tavon Markov",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No Funtion"
+        },
+        {
+          "min": "16",
+          "max": "25",
+          "name": "Color 1"
+        },
+        {
+          "min": "26",
+          "max": "38",
+          "name": "Color 2"
+        },
+        {
+          "min": "39",
+          "max": "51",
+          "name": "Color 3"
+        },
+        {
+          "min": "52",
+          "max": "63",
+          "name": "Color 4"
+        },
+        {
+          "min": "64",
+          "max": "76",
+          "name": "Color 5"
+        },
+        {
+          "min": "77",
+          "max": "89",
+          "name": "Color 6"
+        },
+        {
+          "min": "90",
+          "max": "102",
+          "name": "Color 7"
+        },
+        {
+          "min": "103",
+          "max": "115",
+          "name": "Color 8"
+        },
+        {
+          "min": "116",
+          "max": "127",
+          "name": "Color 9"
+        },
+        {
+          "min": "128",
+          "max": "140",
+          "name": "Color 10"
+        },
+        {
+          "min": "141",
+          "max": "153",
+          "name": "Color 11"
+        },
+        {
+          "min": "154",
+          "max": "166",
+          "name": "Color 12"
+        },
+        {
+          "min": "167",
+          "max": "179",
+          "name": "Color 13"
+        },
+        {
+          "min": "180",
+          "max": "191",
+          "name": "Color 14"
+        },
+        {
+          "min": "192",
+          "max": "204",
+          "name": "Color 15"
+        },
+        {
+          "min": "205",
+          "max": "217",
+          "name": "Color 16"
+        },
+        {
+          "min": "218",
+          "max": "230",
+          "name": "Color 17"
+        },
+        {
+          "min": "231",
+          "max": "243",
+          "name": "Color 18"
+        },
+        {
+          "min": "244",
+          "max": "255",
+          "name": "Color 19"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "RGB Mode"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Pulse effect 0~100%"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Pulse effect 100%~0"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse effect 100%~0~100%"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto fade transition"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Auto snap transition (3 colors)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Auto snap transition (7 colors)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound Active Mode"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Speed (Ch 6 [032-223]/Strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Speed - Slow -> Fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macro",
+        "Speed (Ch 6 [032-223]/Strobe",
+        "Mode",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.7",
+      "width": "195",
+      "height": "215",
+      "depth": "118"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "42",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

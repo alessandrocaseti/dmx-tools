@@ -1,0 +1,291 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Circus",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "chivey",
+  "channels": [
+    {
+      "name": "Program Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Auto 1"
+        },
+        {
+          "min": "6",
+          "max": "11",
+          "name": "Auto 2"
+        },
+        {
+          "min": "12",
+          "max": "17",
+          "name": "Auto 3"
+        },
+        {
+          "min": "18",
+          "max": "23",
+          "name": "Auto 4"
+        },
+        {
+          "min": "24",
+          "max": "29",
+          "name": "Auto 5"
+        },
+        {
+          "min": "30",
+          "max": "35",
+          "name": "Auto 6"
+        },
+        {
+          "min": "36",
+          "max": "41",
+          "name": "Auto 7"
+        },
+        {
+          "min": "42",
+          "max": "47",
+          "name": "Auto 8"
+        },
+        {
+          "min": "48",
+          "max": "53",
+          "name": "Auto 9"
+        },
+        {
+          "min": "54",
+          "max": "59",
+          "name": "Auto 10"
+        },
+        {
+          "min": "60",
+          "max": "65",
+          "name": "Auto 11"
+        },
+        {
+          "min": "66",
+          "max": "71",
+          "name": "Auto 12"
+        },
+        {
+          "min": "72",
+          "max": "77",
+          "name": "Auto 13"
+        },
+        {
+          "min": "78",
+          "max": "83",
+          "name": "Auto 14"
+        },
+        {
+          "min": "84",
+          "max": "89",
+          "name": "Auto 15"
+        },
+        {
+          "min": "90",
+          "max": "95",
+          "name": "Auto 16"
+        },
+        {
+          "min": "96",
+          "max": "101",
+          "name": "Auto 17"
+        },
+        {
+          "min": "102",
+          "max": "107",
+          "name": "Auto 18"
+        },
+        {
+          "min": "108",
+          "max": "113",
+          "name": "Auto 19"
+        },
+        {
+          "min": "114",
+          "max": "119",
+          "name": "Auto 20"
+        },
+        {
+          "min": "120",
+          "max": "125",
+          "name": "Auto 21"
+        },
+        {
+          "min": "126",
+          "max": "131",
+          "name": "Auto 22"
+        },
+        {
+          "min": "132",
+          "max": "137",
+          "name": "Auto 23"
+        },
+        {
+          "min": "138",
+          "max": "143",
+          "name": "Auto 24"
+        },
+        {
+          "min": "144",
+          "max": "149",
+          "name": "Auto 25"
+        },
+        {
+          "min": "150",
+          "max": "155",
+          "name": "Auto 26"
+        },
+        {
+          "min": "156",
+          "max": "161",
+          "name": "Auto 27"
+        },
+        {
+          "min": "162",
+          "max": "167",
+          "name": "Auto 28"
+        },
+        {
+          "min": "168",
+          "max": "173",
+          "name": "Auto 29"
+        },
+        {
+          "min": "174",
+          "max": "179",
+          "name": "Auto 30"
+        },
+        {
+          "min": "180",
+          "max": "185",
+          "name": "Auto 31"
+        },
+        {
+          "min": "186",
+          "max": "191",
+          "name": "Auto 32"
+        },
+        {
+          "min": "192",
+          "max": "197",
+          "name": "Auto 33"
+        },
+        {
+          "min": "198",
+          "max": "203",
+          "name": "Auto 34"
+        },
+        {
+          "min": "204",
+          "max": "209",
+          "name": "Auto 35"
+        },
+        {
+          "min": "210",
+          "max": "215",
+          "name": "Auto 36"
+        },
+        {
+          "min": "216",
+          "max": "221",
+          "name": "Auto 37"
+        },
+        {
+          "min": "222",
+          "max": "227",
+          "name": "Auto 38"
+        },
+        {
+          "min": "228",
+          "max": "233",
+          "name": "Auto 39"
+        },
+        {
+          "min": "234",
+          "max": "239",
+          "name": "Auto 40"
+        },
+        {
+          "min": "240",
+          "max": "245",
+          "name": "Auto 41"
+        },
+        {
+          "min": "246",
+          "max": "251",
+          "name": "Auto 42"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Run Speed / Sound Sensitivity (0-100%)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Speed",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Program Mode",
+        "Speed",
+        "Strobe Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.7",
+      "width": "231",
+      "height": "330",
+      "depth": "300"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "27",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

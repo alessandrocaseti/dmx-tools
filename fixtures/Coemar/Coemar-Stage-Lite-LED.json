@@ -1,0 +1,618 @@
+{
+  "version": "1.2",
+  "manufacturer": "Coemar",
+  "model": "Stage Lite LED",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Huw Evans",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No effect"
+        },
+        {
+          "min": "10",
+          "max": "57",
+          "name": "Variable speed strobe, from slow to fast"
+        },
+        {
+          "min": "58",
+          "max": "59",
+          "name": "Stop strobe"
+        },
+        {
+          "min": "60",
+          "max": "108",
+          "name": "Sequenced pulse effect, slow closing, fast opening, from slow to fast"
+        },
+        {
+          "min": "109",
+          "max": "110",
+          "name": "Stop strobe"
+        },
+        {
+          "min": "111",
+          "max": "159",
+          "name": "Sequenced pulse effect, fast closing, slow opening, from slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "161",
+          "name": "Stop strobe"
+        },
+        {
+          "min": "162",
+          "max": "207",
+          "name": "Random strobe effect with variable speed from slow to fast and synchronised colours"
+        },
+        {
+          "min": "208",
+          "max": "209",
+          "name": "Stop strobe"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Random strobe effect with variable speed from slow to fast and non-synchronised colours"
+        }
+      ]
+    },
+    {
+      "name": "LED line 1",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Proportional movement of lower LED line in 180º"
+        }
+      ]
+    },
+    {
+      "name": "LED line 2",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Proportional movement of central LED line in 180º"
+        }
+      ]
+    },
+    {
+      "name": "LED line 3",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Proportional movement of upper LED line in 180º"
+        }
+      ]
+    },
+    {
+      "name": "Automated Functions and Fade Speed",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No effect"
+        },
+        {
+          "min": "10",
+          "max": "40",
+          "name": "Automated colours program 1: fade speed between colours from fast to slow"
+        },
+        {
+          "min": "41",
+          "max": "71",
+          "name": "Automated colours program 2: fade speed between colours from fast to slow"
+        },
+        {
+          "min": "72",
+          "max": "102",
+          "name": "Automated colours program 3: fade speed between colours from fast to slow"
+        },
+        {
+          "min": "103",
+          "max": "133",
+          "name": "Automated colours program 4: fade speed between colours from fast to slow (colours selected from channels 2 to 5)"
+        },
+        {
+          "min": "134",
+          "max": "164",
+          "name": "Automated colours program 5: fade speed between colours from fast to slow (colours selected from channels 2 to 5)"
+        },
+        {
+          "min": "165",
+          "max": "195",
+          "name": "Automated colours program 6: fade speed between colours from fast to slow (colours selected from channels 2 to 5)"
+        },
+        {
+          "min": "196",
+          "max": "225",
+          "name": "Automated colours program 7: fade speed between colours from fast to slow (colours selected from channels 2 to 5)"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Automated colours program 8: fade speed between colours from fast to slow (colours selected from channels 2 to 5)"
+        }
+      ]
+    },
+    {
+      "name": "Effects movement",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No effect"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Position 1"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Position 2"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Position 3"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Position 4"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Position 5"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Position 6"
+        },
+        {
+          "min": "120",
+          "max": "146",
+          "name": "Automated movement program 1 with proportional control over increasing speed"
+        },
+        {
+          "min": "147",
+          "max": "173",
+          "name": "Automated movement program 2 with proportional control over increasing speed"
+        },
+        {
+          "min": "174",
+          "max": "200",
+          "name": "Automated movement program 3 with proportional control over increasing speed"
+        },
+        {
+          "min": "201",
+          "max": "227",
+          "name": "Automated movement program 4 with proportional control over increasing speed"
+        },
+        {
+          "min": "228",
+          "max": "255",
+          "name": "Automated movement program 5 with proportional control over increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Motors reset / special functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No effect"
+        },
+        {
+          "min": "10",
+          "max": "135",
+          "name": "Control of the pause time between colours of the program selected from channel 10"
+        },
+        {
+          "min": "136",
+          "max": "170",
+          "name": "Motors reset"
+        },
+        {
+          "min": "171",
+          "max": "179",
+          "name": "Park, no functions"
+        },
+        {
+          "min": "180",
+          "max": "188",
+          "name": "LED control frequency tuning 1000 Hz"
+        },
+        {
+          "min": "189",
+          "max": "197",
+          "name": "LED control frequency tuning 1500 Hz"
+        },
+        {
+          "min": "198",
+          "max": "206",
+          "name": "LED control frequency tuning 2000 Hz"
+        },
+        {
+          "min": "207",
+          "max": "215",
+          "name": "LED control frequency tuning 2500 Hz"
+        },
+        {
+          "min": "216",
+          "max": "224",
+          "name": "LED control frequency tuning 3000 Hz"
+        },
+        {
+          "min": "225",
+          "max": "233",
+          "name": "LED control frequency tuning 3500 Hz"
+        },
+        {
+          "min": "234",
+          "max": "242",
+          "name": "LED control frequency tuning 4000 Hz"
+        },
+        {
+          "min": "243",
+          "max": "251",
+          "name": "LED control frequency tuning 4500 Hz"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "LED control frequency tuning 5000 Hz"
+        }
+      ]
+    },
+    {
+      "name": "Zone 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Zone 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Zone 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Zone 1 White",
+      "type": "White"
+    },
+    {
+      "name": "Zone 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Zone 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Zone 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Zone 2 White",
+      "type": "White"
+    },
+    {
+      "name": "Line 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Line 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Line 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Line 1 White",
+      "type": "White"
+    },
+    {
+      "name": "Line 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Line 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Line 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Line 2 White",
+      "type": "White"
+    },
+    {
+      "name": "Line 3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Line 3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Line 3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Line 3 White",
+      "type": "White"
+    },
+    {
+      "name": "Frame 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Frame 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Frame 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Frame 1 White",
+      "type": "White"
+    },
+    {
+      "name": "Frame 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Frame 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Frame 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Frame 2 White",
+      "type": "White"
+    },
+    {
+      "name": "Frame 3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Frame 3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Frame 3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Frame 3 White",
+      "type": "White"
+    },
+    {
+      "name": "Frame 4 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Frame 4 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Frame 4 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Frame 4 White",
+      "type": "White"
+    },
+    {
+      "name": "Frame 5 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Frame 5 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Frame 5 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Frame 5 White",
+      "type": "White"
+    },
+    {
+      "name": "Frame 6 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Frame 6 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Frame 6 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Frame 6 White",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Global",
+      "totalChannels": 12,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe Effect",
+        "LED line 1",
+        "LED line 2",
+        "LED line 3",
+        "Automated Functions and Fade Speed",
+        "Effects movement",
+        "Motors reset / special functions"
+      ]
+    },
+    {
+      "name": "Zone",
+      "totalChannels": 16,
+      "channels": [
+        "Master Dimmer",
+        "Zone 1 Red",
+        "Zone 1 Green",
+        "Zone 1 Blue",
+        "Zone 1 White",
+        "Zone 2 Red",
+        "Zone 2 Green",
+        "Zone 2 Blue",
+        "Zone 2 White",
+        "Strobe Effect",
+        "LED line 1",
+        "LED line 2",
+        "LED line 3",
+        "Automated Functions and Fade Speed",
+        "Effects movement",
+        "Motors reset / special functions"
+      ]
+    },
+    {
+      "name": "Line",
+      "totalChannels": 20,
+      "channels": [
+        "Master Dimmer",
+        "Line 1 Red",
+        "Line 1 Green",
+        "Line 1 Blue",
+        "Line 1 White",
+        "Line 2 Red",
+        "Line 2 Green",
+        "Line 2 Blue",
+        "Line 2 White",
+        "Line 3 Red",
+        "Line 3 Green",
+        "Line 3 Blue",
+        "Line 3 White",
+        "Strobe Effect",
+        "LED line 1",
+        "LED line 2",
+        "LED line 3",
+        "Automated Functions and Fade Speed",
+        "Effects movement",
+        "Motors reset / special functions"
+      ]
+    },
+    {
+      "name": "Frames",
+      "totalChannels": 32,
+      "channels": [
+        "Master Dimmer",
+        "Frame 1 Red",
+        "Frame 1 Green",
+        "Frame 1 Blue",
+        "Frame 1 White",
+        "Frame 2 Red",
+        "Frame 2 Green",
+        "Frame 2 Blue",
+        "Frame 2 White",
+        "Frame 3 Red",
+        "Frame 3 Green",
+        "Frame 3 Blue",
+        "Frame 3 White",
+        "Frame 4 Red",
+        "Frame 4 Green",
+        "Frame 4 Blue",
+        "Frame 4 White",
+        "Frame 5 Red",
+        "Frame 5 Green",
+        "Frame 5 Blue",
+        "Frame 5 White",
+        "Frame 6 Red",
+        "Frame 6 Green",
+        "Frame 6 Blue",
+        "Frame 6 White",
+        "Strobe Effect",
+        "LED line 1",
+        "LED line 2",
+        "LED line 3",
+        "Automated Functions and Fade Speed",
+        "Effects movement",
+        "Motors reset / special functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "12",
+      "width": "609",
+      "height": "211",
+      "depth": "182"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "230",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

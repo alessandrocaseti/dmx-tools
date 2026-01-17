@@ -1,0 +1,226 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "VPar",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Eric Eskam",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow - Fast Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Amber"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red & Green (Light Yellow)"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red & Blue (Deep Purple)"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red & Amber (Dark Orange)"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green & Blue (Teal)"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green & Amber (Yellow Green)"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue & Amber (Light Purple)"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Red & Green & Blue (Purple-White)"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Red & Green & Amber (Orange - Yellow)"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Red & Blue & Amber (Purple)"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Green & Blue & Amber (Light Teal)"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red & Green & Blue & Amber (Off White)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer",
+        "Strobing",
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer",
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 3,
+      "channels": [
+        "Color Macros",
+        "Master Dimmer",
+        "Strobing"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 2,
+      "channels": [
+        "Color Macros",
+        "Master Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.2",
+      "width": "220",
+      "height": "85",
+      "depth": "225"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "21",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

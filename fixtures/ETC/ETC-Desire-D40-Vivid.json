@@ -1,0 +1,225 @@
+{
+  "version": "1.2",
+  "manufacturer": "ETC",
+  "model": "Desire D40 Vivid",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Richard",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Orange",
+      "type": "Unknown"
+    },
+    {
+      "name": "Amber",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Amber"
+        }
+      ]
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Indigo",
+      "type": "Indigo"
+    },
+    {
+      "name": "Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Full on"
+        },
+        {
+          "min": "1",
+          "max": "254",
+          "name": "Variable rate from slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Full on"
+        }
+      ]
+    },
+    {
+      "name": "Hue (coarse)",
+      "type": "Unknown"
+    },
+    {
+      "name": "Hue (fine)",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Color Point",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color Point"
+        }
+      ]
+    },
+    {
+      "name": "Plus 7 Control on/off",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "130",
+          "name": "Plus 7 off"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Plus 7 on"
+        }
+      ]
+    },
+    {
+      "name": "Tint",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Tint"
+        }
+      ]
+    },
+    {
+      "name": "Not Used (RGB Mode)",
+      "type": "Unknown"
+    },
+    {
+      "name": "Not Used 6 (plus 7 mode)",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1 Direct",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Orange",
+        "Amber",
+        "Green",
+        "Cyan",
+        "Blue",
+        "Indigo",
+        "Intensity",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 2 Stage",
+      "totalChannels": 14,
+      "channels": [
+        "Hue (coarse)",
+        "Hue (fine)",
+        "Saturation",
+        "Intensity",
+        "Strobe",
+        "Not Used 6 (plus 7 mode)",
+        "Plus 7 Control on/off",
+        "Red",
+        "Orange",
+        "Amber",
+        "Green",
+        "Cyan",
+        "Blue",
+        "Indigo"
+      ]
+    },
+    {
+      "name": "Mode 3 XT Arch",
+      "totalChannels": 5,
+      "channels": [
+        "Intensity",
+        "Strobe",
+        "Hue (coarse)",
+        "Hue (fine)",
+        "Saturation"
+      ]
+    },
+    {
+      "name": "Mode 4 RGB",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Not Used (RGB Mode)",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 5 Studio",
+      "totalChannels": 3,
+      "channels": [
+        "Intensity",
+        "Color Point",
+        "Tint"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "6.8",
+      "width": "270",
+      "height": "338",
+      "depth": "305"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "115",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

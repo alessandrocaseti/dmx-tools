@@ -1,0 +1,646 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Hepikos",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "Colour Wheel 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Empty position"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Empty + CTO 3200K"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "CTO 3200K"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "CTO 3200K + CTO 2500K"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "CTO 2500K"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "CTO 2500K + Light Orange"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Light Orange"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Light Orange + Half Minus Green"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Half Minus Green"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Half Minus Green + CTB"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "CTB"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "CTB + Brilliant Blue"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Brilliant Blue + Green"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Green"
+        },
+        {
+          "min": "120",
+          "max": "126",
+          "name": "Green + Blue Wood"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Blue Wood"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Continuous CW colour wheel rotation (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Colour Wheel 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Empty position"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Empty + Red"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Red + Dark Green"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Dark Green"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Dark Green + Orange"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Orange"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Orange + Light Pink"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Light Pink"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Light Pink + Lavender"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Lavender"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Lavender + Aquamarine"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Aquamarine"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Aquamarine + Dark Red"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Dark Red"
+        },
+        {
+          "min": "120",
+          "max": "126",
+          "name": "Dark Red + Dark Blue"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Continuous CW colour wheel rotation (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Stopper / Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Light Off"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Strobe at linearly variable frequency from low to high"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Light On"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Pulsation at linearly variable speed from slow to fast"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Light On"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random strobe, low frequency"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random strobe, medium frequency"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random strobe, high frequency"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Light On"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Iris",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "131",
+          "name": "Iris linearly open from minimum to maximum aperture"
+        },
+        {
+          "min": "132",
+          "max": "171",
+          "name": "Iris pulsation from slow to fast speed"
+        },
+        {
+          "min": "172",
+          "max": "211",
+          "name": "Iris pulsation from slow to fast speed with fast opening"
+        },
+        {
+          "min": "212",
+          "max": "251",
+          "name": "Iris pulsation from slow to fast speed with fast closing"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Maximum aperture"
+        }
+      ]
+    },
+    {
+      "name": "Prism Insertion",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism out"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "4-Facet prism into the light beam"
+        }
+      ]
+    },
+    {
+      "name": "Prism Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "21",
+          "name": "Prism indexing: 0° to 90° range"
+        },
+        {
+          "min": "22",
+          "max": "42",
+          "name": "Prism indexing: 90° to 180° range"
+        },
+        {
+          "min": "43",
+          "max": "63",
+          "name": "Prism indexing: 180° to 270° range"
+        },
+        {
+          "min": "64",
+          "max": "84",
+          "name": "Prism indexing: 270° to 360° range"
+        },
+        {
+          "min": "85",
+          "max": "105",
+          "name": "Prism indexing: 360° to 450° range"
+        },
+        {
+          "min": "106",
+          "max": "127",
+          "name": "Prism indexing: 450° to 540° range"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Continuous CW prism rotation (fast to slow)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop rotation"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Continuous CCW prism rotation (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Frost moves linearly into the light beam, from no frost to wide diffusion"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "74",
+          "name": "Frost insertion"
+        },
+        {
+          "min": "75",
+          "max": "255",
+          "name": "Zoom (narrow to wide)"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "11",
+          "name": "Unused range"
+        },
+        {
+          "min": "12",
+          "max": "24",
+          "name": "Pan/Tilt speed -> FAST (Default setting)"
+        },
+        {
+          "min": "25",
+          "max": "37",
+          "name": "Pan/Tilt speed -> NORMAL"
+        },
+        {
+          "min": "38",
+          "max": "50",
+          "name": "Dimmer curve -> CONVENTIONAL"
+        },
+        {
+          "min": "51",
+          "max": "62",
+          "name": "Dimmer curve -> LINEAR (Default setting)"
+        },
+        {
+          "min": "63",
+          "max": "75",
+          "name": "CMY FULL RANGE (Default setting)"
+        },
+        {
+          "min": "76",
+          "max": "88",
+          "name": "CMY LIMITED RANGE"
+        },
+        {
+          "min": "89",
+          "max": "101",
+          "name": "CMY SHORTCUT ON (Default setting)"
+        },
+        {
+          "min": "102",
+          "max": "113",
+          "name": "CMY SHORTCUT OFF"
+        },
+        {
+          "min": "114",
+          "max": "126",
+          "name": "Zoom Linear (Default setting)"
+        },
+        {
+          "min": "127",
+          "max": "139",
+          "name": "Zoom Snap"
+        },
+        {
+          "min": "140",
+          "max": "255",
+          "name": "Unused range"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused range"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Effect reset"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Pan/Tilt reset"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Complete reset"
+        }
+      ]
+    },
+    {
+      "name": "Lamp Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused range"
+        },
+        {
+          "min": "26",
+          "max": "100",
+          "name": "Lamp OFF"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Lamp ON"
+        }
+      ]
+    },
+    {
+      "name": "Pan-Tilt Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pan – Fine pan – Tilt – Fine tilt"
+        }
+      ]
+    },
+    {
+      "name": "Colour Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Cyan – Magenta – Yellow – Colour wheel 1 – Colour wheel 2"
+        }
+      ]
+    },
+    {
+      "name": "Beam Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimmer – Frost – Prism – Zoom"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 20,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Colour Wheel 1",
+        "Colour Wheel 2",
+        "Stopper / Strobe",
+        "Dimmer",
+        "Dimmer Fine",
+        "Iris",
+        "Prism Insertion",
+        "Prism Rotation",
+        "Frost",
+        "Zoom",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Function",
+        "Reset",
+        "Lamp Control"
+      ]
+    },
+    {
+      "name": "Vector",
+      "totalChannels": 23,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Colour Wheel 1",
+        "Colour Wheel 2",
+        "Stopper / Strobe",
+        "Dimmer",
+        "Dimmer Fine",
+        "Iris",
+        "Prism Insertion",
+        "Prism Rotation",
+        "Frost",
+        "Zoom",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Function",
+        "Reset",
+        "Lamp Control",
+        "Pan-Tilt Time",
+        "Colour Time",
+        "Beam Time"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "OSRAM Sirius HRI 440W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "28.9",
+      "width": "420",
+      "height": "628",
+      "depth": "380"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "5",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "244"
+    },
+    "technical": {
+      "powerConsumption": "550",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

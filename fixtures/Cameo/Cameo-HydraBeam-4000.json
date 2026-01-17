@@ -1,0 +1,1715 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "HydraBeam 4000",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Luke Bonett",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Strobe"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Show Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No Movement"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Show 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Show 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Show 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Show 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Show 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Show 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Show 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Show 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Show 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Show 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Show 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Show 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Show 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Show 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Show 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Show 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound Control Mode"
+        }
+      ]
+    },
+    {
+      "name": "Show Mode Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Show Mode Speed (Slow to Fast) / Sound Sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Automatic Colour Change"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red+Green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red+White"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green+White"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue+White"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red+Green+Blue+White"
+        }
+      ]
+    },
+    {
+      "name": "Automatic Colour Change Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Automatic Colour Change Speed"
+        }
+      ]
+    },
+    {
+      "name": "Pan All",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt All",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan Fine All",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine All",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Pan 1",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt 1",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan 2",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt 2",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan 3",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt 3",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan 4",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt 4",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer 4",
+      "type": "Intensity"
+    },
+    {
+      "name": "Head Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Pan Fine 1",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine 2",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine 3",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine 4",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine 1",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine 2",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine 3",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine 4",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head Speed 1 32-CH",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Fastest"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Fast to Slow"
+        }
+      ]
+    },
+    {
+      "name": "Head Speed 2 32-CH",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Same as Channel 7"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Fast to Slow"
+        }
+      ]
+    },
+    {
+      "name": "Head Speed 3 32-CH",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Same as Channel 7"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Fast to Slow"
+        }
+      ]
+    },
+    {
+      "name": "Head Speed 4 32-CH",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Same as Channel 7"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Fast to Slow"
+        }
+      ]
+    },
+    {
+      "name": "Head Colour 1 32-CH",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Channel 29-32"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red+Green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red+White"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green+White"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue+White"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red+Green+Blue+White"
+        }
+      ]
+    },
+    {
+      "name": "Head Colour 2 32-CH",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Channel 29-32"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red+Green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red+White"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green+White"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue+White"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red+Green+Blue+White"
+        }
+      ]
+    },
+    {
+      "name": "Head Colour 3 32-CH",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Channel 29-32"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red+Green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red+White"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green+White"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue+White"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red+Green+Blue+White"
+        }
+      ]
+    },
+    {
+      "name": "Head Colour 4 32-CH",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Channel 29-32"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red+Green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red+White"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green+White"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue+White"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red+Green+Blue+White"
+        }
+      ]
+    },
+    {
+      "name": "Sound Mode / Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset"
+        },
+        {
+          "min": "210",
+          "max": "240",
+          "name": "No function"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound Control Mode"
+        }
+      ]
+    },
+    {
+      "name": "Sound Sensitivity",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sound Sensitivity in Sound Mode"
+        }
+      ]
+    },
+    {
+      "name": "Head Speed 1 56-CH",
+      "type": "Speed"
+    },
+    {
+      "name": "Head Speed 2 56-CH",
+      "type": "Speed"
+    },
+    {
+      "name": "Head Speed 3 56-CH",
+      "type": "Speed"
+    },
+    {
+      "name": "Head Speed 4 56-CH",
+      "type": "Speed"
+    },
+    {
+      "name": "Strobe 1 56-CH",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Strobe"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe 2 56-CH",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Strobe"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe 3 56-CH",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Strobe"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe 4 56-CH",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Strobe"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Head Colour 1 56-CH",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Channel 11-14"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red+Green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red+White"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green+White"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue+White"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red+Green+Blue+White"
+        }
+      ]
+    },
+    {
+      "name": "Head Colour 2 56-CH",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Channel 25-28"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red+Green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red+White"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green+White"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue+White"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red+Green+Blue+White"
+        }
+      ]
+    },
+    {
+      "name": "Head Colour 3 56-CH",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Channel 39-42"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red+Green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red+White"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green+White"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue+White"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red+Green+Blue+White"
+        }
+      ]
+    },
+    {
+      "name": "Head Colour 4 56-CH",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Channel 53-56"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red+Green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red+White"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green+White"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue+White"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red+Green+Blue+White"
+        }
+      ]
+    },
+    {
+      "name": "Red 1 56-CH",
+      "type": "Red"
+    },
+    {
+      "name": "Red 2 56-CH",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3 56-CH",
+      "type": "Red"
+    },
+    {
+      "name": "Red 4 56-CH",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1 56-CH",
+      "type": "Green"
+    },
+    {
+      "name": "Green 2 56-CH",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3 56-CH",
+      "type": "Green"
+    },
+    {
+      "name": "Green 4 56-CH",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1 56-CH",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 2 56-CH",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3 56-CH",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 4 56-CH",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1 56-CH",
+      "type": "White"
+    },
+    {
+      "name": "White 2 56-CH",
+      "type": "White"
+    },
+    {
+      "name": "White 3 56-CH",
+      "type": "White"
+    },
+    {
+      "name": "White 4 56-CH",
+      "type": "White"
+    },
+    {
+      "name": "Auto Mode / Sound Mode / Reset Head 1 56-CH",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "30",
+          "name": "Show 1"
+        },
+        {
+          "min": "31",
+          "max": "53",
+          "name": "Show 2"
+        },
+        {
+          "min": "54",
+          "max": "76",
+          "name": "Show 3"
+        },
+        {
+          "min": "77",
+          "max": "99",
+          "name": "Show 4"
+        },
+        {
+          "min": "100",
+          "max": "122",
+          "name": "Sound Mode"
+        },
+        {
+          "min": "123",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Reset"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Auto Mode / Sound Mode / Reset Head 2 56-CH",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "30",
+          "name": "Show 1"
+        },
+        {
+          "min": "31",
+          "max": "53",
+          "name": "Show 2"
+        },
+        {
+          "min": "54",
+          "max": "76",
+          "name": "Show 3"
+        },
+        {
+          "min": "77",
+          "max": "99",
+          "name": "Show 4"
+        },
+        {
+          "min": "100",
+          "max": "122",
+          "name": "Sound Mode"
+        },
+        {
+          "min": "123",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Reset"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Auto Mode / Sound Mode / Reset Head 3 56-CH",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "30",
+          "name": "Show 1"
+        },
+        {
+          "min": "31",
+          "max": "53",
+          "name": "Show 2"
+        },
+        {
+          "min": "54",
+          "max": "76",
+          "name": "Show 3"
+        },
+        {
+          "min": "77",
+          "max": "99",
+          "name": "Show 4"
+        },
+        {
+          "min": "100",
+          "max": "122",
+          "name": "Sound Mode"
+        },
+        {
+          "min": "123",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Reset"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Auto Mode / Sound Mode / Reset Head 4 56-CH",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "30",
+          "name": "Show 1"
+        },
+        {
+          "min": "31",
+          "max": "53",
+          "name": "Show 2"
+        },
+        {
+          "min": "54",
+          "max": "76",
+          "name": "Show 3"
+        },
+        {
+          "min": "77",
+          "max": "99",
+          "name": "Show 4"
+        },
+        {
+          "min": "100",
+          "max": "122",
+          "name": "Sound Mode"
+        },
+        {
+          "min": "123",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Reset"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Sound Sensitivity / Auto Mode Speed 1 56-CH",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Sound Sensitivity / Auto Mode Speed 2 56-CH",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Sound Sensitivity / Auto Mode Speed 3 56-CH",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Sound Sensitivity / Auto Mode Speed 4 56-CH",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sensitivity"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Show Mode",
+        "Show Mode Speed",
+        "Colour",
+        "Automatic Colour Change Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Pan All",
+        "Tilt All",
+        "Master dimmer",
+        "Strobe",
+        "Show Mode",
+        "Show Mode Speed",
+        "Colour",
+        "Automatic Colour Change Speed",
+        "Pan Fine All",
+        "Tilt Fine All"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 19,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Pan 1",
+        "Tilt 1",
+        "Dimmer 1",
+        "Pan 2",
+        "Tilt 2",
+        "Dimmer 2",
+        "Pan 3",
+        "Tilt 3",
+        "Dimmer 3",
+        "Pan 4",
+        "Tilt 4",
+        "Dimmer 4",
+        "Head Speed"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 32,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Pan 1",
+        "Pan Fine 1",
+        "Tilt 1",
+        "Tilt Fine 1",
+        "Head Speed 1 32-CH",
+        "Head Colour 1 32-CH",
+        "Pan 2",
+        "Pan Fine 2",
+        "Tilt 2",
+        "Tilt Fine 2",
+        "Head Speed 2 32-CH",
+        "Head Colour 2 32-CH",
+        "Pan 3",
+        "Pan Fine 3",
+        "Tilt 3",
+        "Tilt Fine 3",
+        "Head Speed 3 32-CH",
+        "Head Colour 3 32-CH",
+        "Pan 4",
+        "Pan Fine 4",
+        "Tilt 4",
+        "Tilt Fine 4",
+        "Head Speed 4 32-CH",
+        "Head Colour 4 32-CH",
+        "Sound Mode / Reset",
+        "Sound Sensitivity",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 56,
+      "channels": [
+        "Pan 1",
+        "Pan Fine 1",
+        "Tilt 1",
+        "Tilt Fine 1",
+        "Head Speed 1 56-CH",
+        "Dimmer 1",
+        "Strobe 1 56-CH",
+        "Head Colour 1 56-CH",
+        "Auto Mode / Sound Mode / Reset Head 1 56-CH",
+        "Sound Sensitivity / Auto Mode Speed 1 56-CH",
+        "Red 1 56-CH",
+        "Green 1 56-CH",
+        "Blue 1 56-CH",
+        "White 1 56-CH",
+        "Pan 2",
+        "Pan Fine 2",
+        "Tilt 2",
+        "Tilt Fine 2",
+        "Head Speed 2 56-CH",
+        "Dimmer 2",
+        "Strobe 2 56-CH",
+        "Head Colour 2 56-CH",
+        "Auto Mode / Sound Mode / Reset Head 2 56-CH",
+        "Sound Sensitivity / Auto Mode Speed 2 56-CH",
+        "Red 2 56-CH",
+        "Green 2 56-CH",
+        "Blue 2 56-CH",
+        "White 2 56-CH",
+        "Pan 3",
+        "Pan Fine 3",
+        "Tilt 3",
+        "Tilt Fine 3",
+        "Head Speed 3 56-CH",
+        "Dimmer 3",
+        "Strobe 3 56-CH",
+        "Head Colour 3 56-CH",
+        "Auto Mode / Sound Mode / Reset Head 3 56-CH",
+        "Sound Sensitivity / Auto Mode Speed 3 56-CH",
+        "Red 3 56-CH",
+        "Green 3 56-CH",
+        "Blue 3 56-CH",
+        "White 3 56-CH",
+        "Pan 4",
+        "Pan Fine 4",
+        "Tilt 4",
+        "Tilt Fine 4",
+        "Head Speed 4 56-CH",
+        "Dimmer 4",
+        "Strobe 4 56-CH",
+        "Head Colour 4 56-CH",
+        "Auto Mode / Sound Mode / Reset Head 4 56-CH",
+        "Sound Sensitivity / Auto Mode Speed 4 56-CH",
+        "Red 4 56-CH",
+        "Green 4 56-CH",
+        "Blue 4 56-CH",
+        "White 4 56-CH"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "67200",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "12",
+      "width": "1000",
+      "height": "270",
+      "depth": "90"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "220",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

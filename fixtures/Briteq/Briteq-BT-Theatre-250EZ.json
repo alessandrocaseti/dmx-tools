@@ -1,0 +1,130 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BT Theatre 250EZ (and 250EZ Mk2)",
+  "type": "Dimmer",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Christoph Müllner",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "125",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Open"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Random strobe slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 Channel Dimmer",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "2 Channel Dimmer + Strobe",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "3 Channel Dimmer + Strobe + Focus",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Focus"
+      ]
+    },
+    {
+      "name": "2 Channel Dimmer 16 bit",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine"
+      ]
+    },
+    {
+      "name": "3 Channel Dimmer 16 bit + Strobe",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "4 Channel Dimmer 16 bit + Strobe + Focus",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe",
+        "Focus"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "14000",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "9",
+      "width": "336",
+      "height": "297",
+      "depth": "458"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "10",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "250",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "PSC-930",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Noel Utter",
+  "channels": [
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "White"
+        },
+        {
+          "min": "14",
+          "max": "27",
+          "name": "Red"
+        },
+        {
+          "min": "28",
+          "max": "41",
+          "name": "Blue"
+        },
+        {
+          "min": "42",
+          "max": "55",
+          "name": "Green"
+        },
+        {
+          "min": "56",
+          "max": "69",
+          "name": "Yellow"
+        },
+        {
+          "min": "70",
+          "max": "83",
+          "name": "Magenta"
+        },
+        {
+          "min": "84",
+          "max": "97",
+          "name": "Orange"
+        },
+        {
+          "min": "98",
+          "max": "111",
+          "name": "Purple"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Pink"
+        },
+        {
+          "min": "128",
+          "max": "187",
+          "name": "Rainbow CW"
+        },
+        {
+          "min": "188",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Rainbow CCW"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Dot"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Dots"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Turbine"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Lines"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Triangle"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Cross"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Dot Shake"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Dots Shake"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Turbine Shake"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Lines Shake"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Triangle Shake"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Cross Shake"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Gobo rainbow"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Index"
+        },
+        {
+          "min": "128",
+          "max": "187",
+          "name": "Clockwise"
+        },
+        {
+          "min": "188",
+          "max": "193",
+          "name": "Stationary"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter Clockwise"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Dimmer"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Movement Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Max"
+        },
+        {
+          "min": "15",
+          "max": "225",
+          "name": "Speed index"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Black Out / Movement"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Black Out / Gobo & Color"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "UV Filter"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "3200 °K Filter"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "5600 °K Filter"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Frost Filter"
+        },
+        {
+          "min": "50",
+          "max": "127",
+          "name": "3 sides Prism"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Macro 1"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Macro 2"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Macro 3"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Macro 4"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Macro 5"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Macro 6"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Macro 7"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Macro 8"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Macro 9"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Macro 10"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Macro 11"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Macro 12"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Macro 13"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Macro 14"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Macro 15"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 16"
+        }
+      ]
+    },
+    {
+      "name": "Prism Rotation Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Stationary"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Clockwise"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Stationary"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Counter Clockwise"
+        }
+      ]
+    },
+    {
+      "name": "Prog",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Std Color"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Near Color"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Lamp Power ON"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Lamp Power OFF"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Prog 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Prog 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Prog 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Prog 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Prog 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Prog 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Prog 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Prog 8"
+        }
+      ]
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Movement 8 bits",
+      "totalChannels": 10,
+      "channels": [
+        "Color",
+        "Gobo",
+        "Gobo rotation",
+        "Shutter",
+        "Pan",
+        "Tilt",
+        "Movement Speed",
+        "Effects",
+        "Prism Rotation Speed",
+        "Prog"
+      ]
+    },
+    {
+      "name": "Movement 16 bits",
+      "totalChannels": 12,
+      "channels": [
+        "Color",
+        "Gobo",
+        "Gobo rotation",
+        "Shutter",
+        "Pan",
+        "Tilt",
+        "Movement Speed",
+        "Effects",
+        "Prism Rotation Speed",
+        "Prog",
+        "Pan Fine",
+        "Tilt Fine"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "23",
+      "width": "677",
+      "height": "242",
+      "depth": "212"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "156",
+      "tiltMax": "45"
+    },
+    "technical": {
+      "powerConsumption": "400",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

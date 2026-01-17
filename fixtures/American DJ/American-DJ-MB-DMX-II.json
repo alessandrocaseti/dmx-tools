@@ -1,0 +1,91 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "MB DMX II",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Peter Chave",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Lamp Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Lamp On"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Stop"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "CW Speed 5rpm (1) - 0.5rpm (127)"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "CCW Speed 0.5rpm (129) - 5rpm (255)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.81",
+      "width": "286",
+      "height": "318",
+      "depth": "216"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "10",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

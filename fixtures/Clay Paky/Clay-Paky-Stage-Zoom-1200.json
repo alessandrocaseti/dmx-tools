@@ -1,0 +1,450 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Stage Zoom 1200",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Frank Albert",
+  "channels": [
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Prism Change",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Open"
+        },
+        {
+          "min": "52",
+          "max": "103",
+          "name": "4 Face"
+        },
+        {
+          "min": "104",
+          "max": "155",
+          "name": "5 Face"
+        },
+        {
+          "min": "156",
+          "max": "207",
+          "name": "2 Face"
+        },
+        {
+          "min": "208",
+          "max": "255",
+          "name": "5 Face"
+        }
+      ]
+    },
+    {
+      "name": "Prism Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "0°"
+        },
+        {
+          "min": "21",
+          "max": "41",
+          "name": "90°"
+        },
+        {
+          "min": "42",
+          "max": "62",
+          "name": "270°"
+        },
+        {
+          "min": "63",
+          "max": "84",
+          "name": "360°"
+        },
+        {
+          "min": "85",
+          "max": "105",
+          "name": "450°"
+        },
+        {
+          "min": "106",
+          "max": "126",
+          "name": "540°"
+        },
+        {
+          "min": "127",
+          "max": "190",
+          "name": "Fast to Slow"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Fixed Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "47",
+          "name": "Open"
+        },
+        {
+          "min": "48",
+          "max": "99",
+          "name": "Gobo1"
+        },
+        {
+          "min": "100",
+          "max": "151",
+          "name": "Gobo2"
+        },
+        {
+          "min": "152",
+          "max": "203",
+          "name": "Gobo3"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Gobo4"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Open"
+        },
+        {
+          "min": "52",
+          "max": "103",
+          "name": "Gobo1"
+        },
+        {
+          "min": "104",
+          "max": "156",
+          "name": "Gobo2"
+        },
+        {
+          "min": "157",
+          "max": "207",
+          "name": "Gobo3"
+        },
+        {
+          "min": "208",
+          "max": "255",
+          "name": "Gobo4"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "0°"
+        },
+        {
+          "min": "21",
+          "max": "41",
+          "name": "90°"
+        },
+        {
+          "min": "42",
+          "max": "62",
+          "name": "180°"
+        },
+        {
+          "min": "63",
+          "max": "83",
+          "name": "270°"
+        },
+        {
+          "min": "84",
+          "max": "104",
+          "name": "360°"
+        },
+        {
+          "min": "105",
+          "max": "125",
+          "name": "450°"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "540°"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Fast to Slow"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Iris",
+      "type": "Iris"
+    },
+    {
+      "name": "Color Effects",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "White+Warm"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Warm"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Warm+Cold"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Cold"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Cold+Blue Hole"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Blue+White Hole"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Blue Hole + Yellow Hole"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Yellow Hole"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Yellow Hole + Red"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Red"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Red + 4 Colours"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "4 Colours"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "4 Colours + UV"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "UV"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "UV + White"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotation (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 to 100%"
+        }
+      ]
+    },
+    {
+      "name": "Dim+Strb",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Dimmer"
+        },
+        {
+          "min": "128",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "243",
+          "name": "Strobe (Slow -> Fast)"
+        },
+        {
+          "min": "244",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Lamp Cntl",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Lamp Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Lamp On"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 19,
+      "channels": [
+        "Iris",
+        "Color Effects",
+        "Frost",
+        "Dim+Strb",
+        "Pan",
+        "Tilt",
+        "Zoom",
+        "Focus",
+        "Prism Change",
+        "Prism Rotation",
+        "Fixed Gobo",
+        "Rotating Gobo",
+        "Gobo Rotation",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Lamp Cntl",
+        "Pan fine",
+        "Tilt fine"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HMI 1200W",
+      "lumens": "110000",
+      "colourTemperature": "6000"
+    },
+    "dimensions": {
+      "weight": "41.5",
+      "width": "590",
+      "height": "710",
+      "depth": "390"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "15.9",
+      "degreesMax": "23.7"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "450",
+      "tiltMax": "252"
+    },
+    "technical": {
+      "powerConsumption": "2200",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

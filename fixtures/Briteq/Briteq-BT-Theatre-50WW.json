@@ -1,0 +1,97 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BT-Theatre 50WW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fredje Gallon",
+  "channels": [
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Master dimmer fine",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "1CH 8b",
+      "totalChannels": 1,
+      "channels": [
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "2CH 8b",
+      "totalChannels": 2,
+      "channels": [
+        "Master dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "2CH 16b",
+      "totalChannels": 2,
+      "channels": [
+        "Master dimmer",
+        "Master dimmer fine"
+      ]
+    },
+    {
+      "name": "3CH 16b",
+      "totalChannels": 3,
+      "channels": [
+        "Master dimmer",
+        "Master dimmer fine",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "36",
+      "width": "195",
+      "height": "173",
+      "depth": "241"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "10",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

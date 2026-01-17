@@ -1,0 +1,905 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Midi-B",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Red ring 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine ring 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red ring 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine ring 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red central",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine central",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Green ring 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine ring 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green ring 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine ring 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green central",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine central",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue ring 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine ring 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue ring 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine ring 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue central",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine central",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "White fine",
+      "type": "White"
+    },
+    {
+      "name": "White ring 1",
+      "type": "White"
+    },
+    {
+      "name": "White fine ring 1",
+      "type": "White"
+    },
+    {
+      "name": "White ring 2",
+      "type": "White"
+    },
+    {
+      "name": "White fine ring 2",
+      "type": "White"
+    },
+    {
+      "name": "White central",
+      "type": "White"
+    },
+    {
+      "name": "White fine central",
+      "type": "White"
+    },
+    {
+      "name": "CTO",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Unused range"
+        },
+        {
+          "min": "10",
+          "max": "10",
+          "name": "8000K"
+        },
+        {
+          "min": "11",
+          "max": "54",
+          "name": "7000K"
+        },
+        {
+          "min": "55",
+          "max": "99",
+          "name": "6000K"
+        },
+        {
+          "min": "100",
+          "max": "117",
+          "name": "5600K"
+        },
+        {
+          "min": "118",
+          "max": "144",
+          "name": "5000K"
+        },
+        {
+          "min": "145",
+          "max": "188",
+          "name": "4000K"
+        },
+        {
+          "min": "189",
+          "max": "224",
+          "name": "3200K"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "2700K"
+        }
+      ]
+    },
+    {
+      "name": "Color macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Macro Color OFF"
+        },
+        {
+          "min": "10",
+          "max": "10",
+          "name": "Red"
+        },
+        {
+          "min": "11",
+          "max": "11",
+          "name": "Green"
+        },
+        {
+          "min": "12",
+          "max": "12",
+          "name": "Blue"
+        },
+        {
+          "min": "13",
+          "max": "13",
+          "name": "Cyan"
+        },
+        {
+          "min": "14",
+          "max": "14",
+          "name": "Yellow"
+        },
+        {
+          "min": "15",
+          "max": "15",
+          "name": "Magenta"
+        },
+        {
+          "min": "16",
+          "max": "16",
+          "name": "White 7000 K"
+        },
+        {
+          "min": "17",
+          "max": "17",
+          "name": "White 3700 K"
+        },
+        {
+          "min": "18",
+          "max": "18",
+          "name": "White 5000 K"
+        },
+        {
+          "min": "19",
+          "max": "19",
+          "name": "Black"
+        },
+        {
+          "min": "20",
+          "max": "22",
+          "name": "Medium Yellow"
+        },
+        {
+          "min": "23",
+          "max": "26",
+          "name": "Straw Tint"
+        },
+        {
+          "min": "27",
+          "max": "28",
+          "name": "Surprise Peach"
+        },
+        {
+          "min": "29",
+          "max": "29",
+          "name": "Fire"
+        },
+        {
+          "min": "30",
+          "max": "30",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "31",
+          "max": "31",
+          "name": "Gold Amber"
+        },
+        {
+          "min": "32",
+          "max": "34",
+          "name": "Dark Amber"
+        },
+        {
+          "min": "35",
+          "max": "44",
+          "name": "Sunrise Red"
+        },
+        {
+          "min": "45",
+          "max": "45",
+          "name": "Light Pink"
+        },
+        {
+          "min": "46",
+          "max": "48",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "49",
+          "max": "61",
+          "name": "Pink Carnation"
+        },
+        {
+          "min": "62",
+          "max": "67",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "68",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "88",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "89",
+          "max": "99",
+          "name": "Just Blue"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Dark Yellow Green"
+        },
+        {
+          "min": "110",
+          "max": "111",
+          "name": "Spring Yellow"
+        },
+        {
+          "min": "112",
+          "max": "112",
+          "name": "Light Amber"
+        },
+        {
+          "min": "113",
+          "max": "113",
+          "name": "Straw"
+        },
+        {
+          "min": "114",
+          "max": "114",
+          "name": "Deep Amber"
+        },
+        {
+          "min": "115",
+          "max": "116",
+          "name": "Orange"
+        },
+        {
+          "min": "117",
+          "max": "117",
+          "name": "Light Rose"
+        },
+        {
+          "min": "118",
+          "max": "118",
+          "name": "English Rose"
+        },
+        {
+          "min": "119",
+          "max": "119",
+          "name": "Light Salmon"
+        },
+        {
+          "min": "120",
+          "max": "120",
+          "name": "Middle Rose"
+        },
+        {
+          "min": "121",
+          "max": "122",
+          "name": "Dark Pink"
+        },
+        {
+          "min": "123",
+          "max": "124",
+          "name": "Magenta2"
+        },
+        {
+          "min": "125",
+          "max": "125",
+          "name": "Peacock Blue"
+        },
+        {
+          "min": "126",
+          "max": "126",
+          "name": "Med Blue Green"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Steel Blue"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Light Blue"
+        },
+        {
+          "min": "129",
+          "max": "130",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "131",
+          "max": "133",
+          "name": "Leaf Green"
+        },
+        {
+          "min": "134",
+          "max": "135",
+          "name": "Dark Green"
+        },
+        {
+          "min": "136",
+          "max": "137",
+          "name": "Mauve"
+        },
+        {
+          "min": "138",
+          "max": "141",
+          "name": "Bright Pink"
+        },
+        {
+          "min": "142",
+          "max": "144",
+          "name": "Medium Blue"
+        },
+        {
+          "min": "145",
+          "max": "145",
+          "name": "Deep Golden Amber"
+        },
+        {
+          "min": "146",
+          "max": "146",
+          "name": "Pale Lavender"
+        },
+        {
+          "min": "147",
+          "max": "148",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "149",
+          "max": "150",
+          "name": "Primary Green"
+        },
+        {
+          "min": "151",
+          "max": "156",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "157",
+          "max": "161",
+          "name": "Apricot"
+        },
+        {
+          "min": "162",
+          "max": "167",
+          "name": "Pale Gold"
+        },
+        {
+          "min": "168",
+          "max": "171",
+          "name": "Deep Orange"
+        },
+        {
+          "min": "172",
+          "max": "173",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "174",
+          "max": "174",
+          "name": "Flame Red"
+        },
+        {
+          "min": "175",
+          "max": "178",
+          "name": "Daylight Blue"
+        },
+        {
+          "min": "179",
+          "max": "179",
+          "name": "Lilac Tint"
+        },
+        {
+          "min": "180",
+          "max": "183",
+          "name": "Deep Lavender"
+        },
+        {
+          "min": "184",
+          "max": "190",
+          "name": "Dark Steel Blue"
+        },
+        {
+          "min": "191",
+          "max": "206",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "207",
+          "max": "207",
+          "name": "Alice Blue"
+        },
+        {
+          "min": "208",
+          "max": "208",
+          "name": "Dirty White"
+        },
+        {
+          "min": "209",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Strobe effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Light Off"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Strobe effect linearly variable frequency from low (1Hz) to fast (25Hz)"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Light On"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Pulsation at linearly variable speed from slow (0.5Hz) to fast (25Hz)"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Light On"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random slow strobe effect"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random medium strobe effect"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random fast strobe effect"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Light On"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Color crossfade",
+      "type": "Color"
+    },
+    {
+      "name": "Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "11",
+          "name": "Unused range"
+        },
+        {
+          "min": "12",
+          "max": "24",
+          "name": "Fast pan-tilt speed (default)"
+        },
+        {
+          "min": "25",
+          "max": "37",
+          "name": "Standard pan-tilt speed"
+        },
+        {
+          "min": "38",
+          "max": "42",
+          "name": "Dimmer curve 1 (default)"
+        },
+        {
+          "min": "43",
+          "max": "47",
+          "name": "Dimmer curve 2"
+        },
+        {
+          "min": "48",
+          "max": "52",
+          "name": "Dimmer curve 3"
+        },
+        {
+          "min": "53",
+          "max": "57",
+          "name": "Dimmer curve 4"
+        },
+        {
+          "min": "58",
+          "max": "62",
+          "name": "Raw color channels gamma 1"
+        },
+        {
+          "min": "63",
+          "max": "67",
+          "name": "Raw color channels gamma 1.5"
+        },
+        {
+          "min": "68",
+          "max": "72",
+          "name": "Raw color channels gamma 2.2 (default)"
+        },
+        {
+          "min": "73",
+          "max": "77",
+          "name": "Color calibration Off (default)"
+        },
+        {
+          "min": "78",
+          "max": "82",
+          "name": "Color calibration adjustment"
+        },
+        {
+          "min": "83",
+          "max": "167",
+          "name": "Not used"
+        },
+        {
+          "min": "168",
+          "max": "188",
+          "name": "Pwm frequency=600Hz"
+        },
+        {
+          "min": "189",
+          "max": "199",
+          "name": "PWM frequency=1200Hz"
+        },
+        {
+          "min": "200",
+          "max": "210",
+          "name": "PWM frequency=2000Hz"
+        },
+        {
+          "min": "211",
+          "max": "221",
+          "name": "PWM frequency=4000Hz"
+        },
+        {
+          "min": "222",
+          "max": "232",
+          "name": "Not used"
+        },
+        {
+          "min": "233",
+          "max": "243",
+          "name": "PWM frequency=25000Hz"
+        },
+        {
+          "min": "244",
+          "max": "248",
+          "name": "Display Off (default)"
+        },
+        {
+          "min": "249",
+          "max": "253",
+          "name": "Display On"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "Default function recall"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused range"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Zoom reset"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Pan/Tilt reset"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Complete reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Extended RGBW",
+      "totalChannels": 25,
+      "channels": [
+        "Red ring 1",
+        "Green ring 1",
+        "Blue ring 1",
+        "White ring 1",
+        "Red ring 2",
+        "Green ring 2",
+        "Blue ring 2",
+        "White ring 2",
+        "Red central",
+        "Green central",
+        "Blue central",
+        "White central",
+        "CTO",
+        "Color macro",
+        "Strobe effect",
+        "Dimmer",
+        "Dimmer fine",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Color crossfade",
+        "Function",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Basic RGBW",
+      "totalChannels": 17,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "CTO",
+        "Color macro",
+        "Strobe effect",
+        "Dimmer",
+        "Dimmer fine",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Color crossfade",
+        "Function",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Basic RGBW 16bit",
+      "totalChannels": 21,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "CTO",
+        "Color macro",
+        "Strobe effect",
+        "Dimmer",
+        "Dimmer fine",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Color crossfade",
+        "Function",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Extended RGBW 16bit",
+      "totalChannels": 37,
+      "channels": [
+        "Red ring 1",
+        "Red fine ring 1",
+        "Green ring 1",
+        "Green fine ring 1",
+        "Blue ring 1",
+        "Blue fine ring 1",
+        "White ring 1",
+        "White fine ring 1",
+        "Red ring 2",
+        "Red fine ring 2",
+        "Green ring 2",
+        "Green fine ring 2",
+        "Blue ring 2",
+        "Blue fine ring 2",
+        "White ring 2",
+        "White fine ring 2",
+        "Red central",
+        "Red fine central",
+        "Green central",
+        "Green fine central",
+        "Blue central",
+        "Blue fine central",
+        "White central",
+        "White fine central",
+        "CTO",
+        "Color macro",
+        "Strobe effect",
+        "Dimmer",
+        "Dimmer fine",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Zoom",
+        "Color crossfade",
+        "Function",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1900",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "17",
+      "width": "390",
+      "height": "400",
+      "depth": "252"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "700",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

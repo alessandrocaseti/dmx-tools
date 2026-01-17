@@ -1,0 +1,357 @@
+{
+  "version": "1.2",
+  "manufacturer": "Coemar",
+  "model": "ProWash 250 LX",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Goran",
+  "channels": [
+    {
+      "name": "Pan Coarse",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Coarse",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Movement Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Standard (fast)"
+        },
+        {
+          "min": "11",
+          "max": "25",
+          "name": "Ultra fast (best for programming position)"
+        },
+        {
+          "min": "26",
+          "max": "127",
+          "name": "Vector mode from fast to slow"
+        },
+        {
+          "min": "128",
+          "max": "247",
+          "name": "Tracking mode (fast to slow)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Tracking mode (slow)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Dimmer"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Closed"
+        },
+        {
+          "min": "10",
+          "max": "66",
+          "name": "Strobe (slow to fast)"
+        },
+        {
+          "min": "67",
+          "max": "68",
+          "name": "Open"
+        },
+        {
+          "min": "69",
+          "max": "125",
+          "name": "Pulse out (slow to fast)"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "184",
+          "name": "Pulse in (fast to slow)"
+        },
+        {
+          "min": "185",
+          "max": "187",
+          "name": "Open"
+        },
+        {
+          "min": "188",
+          "max": "244",
+          "name": "Random strobe (slow to fast)"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Black-out while moving",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "249",
+          "name": "No effect"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Blackout while moving or color changes"
+        }
+      ]
+    },
+    {
+      "name": "Beam",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Zoom"
+        },
+        {
+          "min": "10",
+          "max": "230",
+          "name": "Shaped beam angle (0° - 180°)"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Wide angle"
+        }
+      ]
+    },
+    {
+      "name": "Colour wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "White"
+        },
+        {
+          "min": "6",
+          "max": "14",
+          "name": "CTO"
+        },
+        {
+          "min": "15",
+          "max": "23",
+          "name": "Green"
+        },
+        {
+          "min": "24",
+          "max": "32",
+          "name": "Magenta"
+        },
+        {
+          "min": "33",
+          "max": "41",
+          "name": "Orange"
+        },
+        {
+          "min": "42",
+          "max": "50",
+          "name": "Red"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Blue"
+        },
+        {
+          "min": "61",
+          "max": "127",
+          "name": "Colour wheel angle (0° - 360°)"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Forwards rotation (fast to slow)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "No rotation"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Backwards rotation (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Cyan",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "White/clear"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Cyan"
+        }
+      ]
+    },
+    {
+      "name": "Magenta",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "White/clear"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Magenta"
+        }
+      ]
+    },
+    {
+      "name": "Yellow",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "White/clear"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "Lamp/Reset (at DMX change hold for 6 sec)",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Lamp OFF"
+        },
+        {
+          "min": "20",
+          "max": "100",
+          "name": "No function"
+        },
+        {
+          "min": "101",
+          "max": "170",
+          "name": "Effects reset (only once)"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "All motor reset"
+        },
+        {
+          "min": "201",
+          "max": "240",
+          "name": "Silent fans"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Lamp ON"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 14,
+      "channels": [
+        "Pan Coarse",
+        "Pan Fine",
+        "Tilt Coarse",
+        "Tilt Fine",
+        "Movement Speed",
+        "Dimmer",
+        "Shutter",
+        "Black-out while moving",
+        "Beam",
+        "Colour wheel",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Lamp/Reset (at DMX change hold for 6 sec)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "0",
+      "colourTemperature": "8500"
+    },
+    "dimensions": {
+      "weight": "23.5",
+      "width": "377",
+      "height": "535",
+      "depth": "350"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "6",
+      "degreesMax": "31"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "530",
+      "tiltMax": "284"
+    },
+    "technical": {
+      "powerConsumption": "460",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

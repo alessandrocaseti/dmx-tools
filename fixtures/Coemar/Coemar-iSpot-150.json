@@ -1,0 +1,353 @@
+{
+  "version": "1.2",
+  "manufacturer": "Coemar",
+  "model": "iSpot 150",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ray Console - cd",
+  "channels": [
+    {
+      "name": "Base (pan) coarse",
+      "type": "Pan"
+    },
+    {
+      "name": "Base (pan) fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Yoke (tilt) coarse",
+      "type": "Tilt"
+    },
+    {
+      "name": "Yoke (tilt) fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Movement Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Standard (fast)"
+        },
+        {
+          "min": "11",
+          "max": "25",
+          "name": "Ultra fast movement (best programming position)"
+        },
+        {
+          "min": "26",
+          "max": "127",
+          "name": "Vector mode from fast to slow"
+        },
+        {
+          "min": "128",
+          "max": "247",
+          "name": "Tracking mode (fast to slow)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Tracking mode (slow)"
+        }
+      ]
+    },
+    {
+      "name": "Shutter, Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "10",
+          "max": "127",
+          "name": "Synchro strobe-effect from slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "130",
+          "name": "Shutter open"
+        },
+        {
+          "min": "131",
+          "max": "248",
+          "name": "Random strobe-effect from slow to fast"
+        },
+        {
+          "min": "249",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Rotating gobos, selection",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Open"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "Rot. gobo 1"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "Rot. gobo 2"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "Rot. gobo 3"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "Rot. gobo 4"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "Rot. gobo 5"
+        },
+        {
+          "min": "111",
+          "max": "127",
+          "name": "Rot. gobo 6"
+        },
+        {
+          "min": "128",
+          "max": "192",
+          "name": "From no gobo to gobo 6, 360° gobo positioning"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Gobo wheel rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo 360° positiong",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "no effect"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "proportional indexable gobo positioning 360°"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No effect"
+        },
+        {
+          "min": "11",
+          "max": "131",
+          "name": "continuous gobo rotation clockwise with proportional speed from fast to slow"
+        },
+        {
+          "min": "132",
+          "max": "134",
+          "name": "Gobo stop"
+        },
+        {
+          "min": "135",
+          "max": "255",
+          "name": "continuous gobo rotation counter-clockwise with proportional speed from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Colours",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open/white"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Colour 1"
+        },
+        {
+          "min": "14",
+          "max": "20",
+          "name": "Colour 2"
+        },
+        {
+          "min": "21",
+          "max": "27",
+          "name": "Colour 3"
+        },
+        {
+          "min": "28",
+          "max": "34",
+          "name": "Colour 4"
+        },
+        {
+          "min": "35",
+          "max": "41",
+          "name": "Colour 5"
+        },
+        {
+          "min": "42",
+          "max": "48",
+          "name": "Colour 6"
+        },
+        {
+          "min": "49",
+          "max": "59",
+          "name": "Colour 7"
+        },
+        {
+          "min": "60",
+          "max": "127",
+          "name": "From white to colour 7, 360° color positioning"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Forwards rainbow effect from fast to slow"
+        },
+        {
+          "min": "191",
+          "max": "255",
+          "name": "Backwards rainbow effect from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo shake and black-out effect",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No effect"
+        },
+        {
+          "min": "10",
+          "max": "249",
+          "name": "Gobo shake slow to fast 3 different amplitudes"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Black-out while PAN, TILT moving, color or gobo changing"
+        }
+      ]
+    },
+    {
+      "name": "Lamp ON, motor reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Lamp off"
+        },
+        {
+          "min": "20",
+          "max": "100",
+          "name": "No effects (idle)"
+        },
+        {
+          "min": "101",
+          "max": "170",
+          "name": "Effects reset (once only), pan/tilt does not move"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "All motors reset (once only)"
+        },
+        {
+          "min": "201",
+          "max": "240",
+          "name": "silent fans (if external temperature allows)"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Lamp ON"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 13,
+      "channels": [
+        "Base (pan) coarse",
+        "Base (pan) fine",
+        "Yoke (tilt) coarse",
+        "Yoke (tilt) fine",
+        "Movement Speed",
+        "Shutter, Strobe",
+        "Focus",
+        "Rotating gobos, selection",
+        "Gobo 360° positiong",
+        "Gobo rotation",
+        "Colours",
+        "Gobo shake and black-out effect",
+        "Lamp ON, motor reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "12900",
+      "colourTemperature": "4200"
+    },
+    "dimensions": {
+      "weight": "17.5",
+      "width": "350",
+      "height": "470",
+      "depth": "335"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "538",
+      "tiltMax": "252"
+    },
+    "technical": {
+      "powerConsumption": "150",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

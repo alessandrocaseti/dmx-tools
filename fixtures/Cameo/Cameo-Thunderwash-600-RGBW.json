@@ -1,0 +1,369 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Thunderwash 600 RGBW",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Torsten Caninenberg",
+  "channels": [
+    {
+      "name": "Strobe (RGBW Full On)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Strobe Closed"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe slow -> fast 1Hz - 30Hz"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Colour off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "128",
+          "name": "Colour Jumping Stop"
+        },
+        {
+          "min": "129",
+          "max": "192",
+          "name": "Colour Jumping Speed slow -> Fast / Colour 1 -> 12"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Colour Fading Speed slow -> Fast / Colour 1 -> 12"
+        }
+      ]
+    },
+    {
+      "name": "Strobe (RGBW)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe closed"
+        },
+        {
+          "min": "11",
+          "max": "250",
+          "name": "Strobe slow -> fast 1Hz - 30 Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Duration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash Duration (1ms to 510ms)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe Mode",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe closed"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Pulse Random, slow -> fast"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Ramp up Random, slow -> fast"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Ramp down Random, slow -> fast"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random Strobe Effect slow -> fast"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Strobe Break Effect, 5s, .... 1s (Very Slow Flash) Random"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe slow -> fast 1Hz - 30 Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Sound (Colour CH3, set CH2 value 000)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Sound Control Off"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Sound Control On Low -> High (Mic Sensitivity)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Strobe (RGBW Full On)"
+      ]
+    },
+    {
+      "name": "2 Channels 1",
+      "totalChannels": 2,
+      "channels": [
+        "Master Dimmer",
+        "Colour Macro"
+      ]
+    },
+    {
+      "name": "2 Channels 2",
+      "totalChannels": 2,
+      "channels": [
+        "Master Dimmer",
+        "Strobe (RGBW)"
+      ]
+    },
+    {
+      "name": "3 Channels 1",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Strobe (RGBW)",
+        "Duration"
+      ]
+    },
+    {
+      "name": "3 Channels 2",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Strobe (RGBW)",
+        "Colour Macro"
+      ]
+    },
+    {
+      "name": "4 Channels 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "4 Channels 2",
+      "totalChannels": 4,
+      "channels": [
+        "Master Dimmer",
+        "Strobe Mode",
+        "Colour Macro",
+        "Sound (Colour CH3, set CH2 value 000)"
+      ]
+    },
+    {
+      "name": "7 Channels 1",
+      "totalChannels": 7,
+      "channels": [
+        "Master Dimmer",
+        "Strobe Mode",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Sound (Colour CH3, set CH2 value 000)"
+      ]
+    },
+    {
+      "name": "7 Channels 2",
+      "totalChannels": 7,
+      "channels": [
+        "Master Dimmer",
+        "Strobe Mode",
+        "Duration",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.1",
+      "width": "338",
+      "height": "197",
+      "depth": "87"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "75",
+      "degreesMax": "75"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "160",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

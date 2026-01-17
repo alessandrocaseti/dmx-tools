@@ -1,0 +1,138 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Trident",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Francois Blanchette",
+  "channels": [
+    {
+      "name": "Color Selection (no dimming)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "28",
+          "name": "Red"
+        },
+        {
+          "min": "29",
+          "max": "56",
+          "name": "Green"
+        },
+        {
+          "min": "57",
+          "max": "84",
+          "name": "Blue"
+        },
+        {
+          "min": "85",
+          "max": "112",
+          "name": "Green/Blue"
+        },
+        {
+          "min": "113",
+          "max": "140",
+          "name": "Red/Blue"
+        },
+        {
+          "min": "141",
+          "max": "168",
+          "name": "Red/Green"
+        },
+        {
+          "min": "169",
+          "max": "197",
+          "name": "Red/Green/Blue"
+        },
+        {
+          "min": "198",
+          "max": "224",
+          "name": "3-color chase"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "7-color chase"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "Strobe (slow <=> fast)"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Indexing"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotate (fast to slow)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Color Selection (no dimming)",
+        "Strobe",
+        "Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.6",
+      "width": "308",
+      "height": "348",
+      "depth": "269"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "155",
+      "degreesMax": "155"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "16",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Pin Scan",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Dimmer/ Strobe",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Close"
+        },
+        {
+          "min": "128",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "243",
+          "name": "Strobe Slow < Fast"
+        },
+        {
+          "min": "244",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer/ Strobe",
+        "Pan",
+        "Tilt"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "EFR 100W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.8",
+      "width": "230",
+      "height": "230",
+      "depth": "325"
+    },
+    "lens": {
+      "name": "Not specified",
+      "degreesMin": "2.5",
+      "degreesMax": "2.5"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "360",
+      "tiltMax": "227"
+    },
+    "technical": {
+      "powerConsumption": "150",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

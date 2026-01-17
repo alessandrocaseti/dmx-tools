@@ -1,0 +1,223 @@
+{
+  "version": "1.2",
+  "manufacturer": "Event Lighting",
+  "model": "PAR6x12OB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michael Tosatto",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color macro/Auto Run Speed",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "R"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "G"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "R+G"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "B"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "B+R+UV"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "G+B"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "R+G+B+A+UV"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "W"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "R+W"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "G+W"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "R+A"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "B+W+UV"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "R+B+W+UV"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "G+B+W"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "R+G+B+W+A+UV"
+        }
+      ]
+    },
+    {
+      "name": "Auto Run Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "No function"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Select 15 Static colour mode (CL), colour have been controlled by ch10"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Select Auto colour switching modes (CC), program speed have been controlled by ch10"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Select Auto colour fade mode (dE), program speed have been controlled by ch10"
+        },
+        {
+          "min": "201",
+          "max": "250",
+          "name": "Select Auto colour pulse mode (CP), program speed have been controlled by ch10"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Select Sound active mode (SU), sound sensitivity level have been controlled by ch10"
+        }
+      ]
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Strobe",
+        "Auto Run Mode",
+        "Color macro/Auto Run Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1600",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "240",
+      "height": "165",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "72",
+      "dmxConnector": "3-pin IP65"
+    }
+  }
+}

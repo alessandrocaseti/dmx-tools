@@ -1,0 +1,429 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Zenit B60",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Henrik Bauer, Jannis Achstetter",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "White Fine",
+      "type": "White"
+    },
+    {
+      "name": "Strobe functions",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe closed"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Pulse random, slow -> fast"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Ramp up random, slow -> fast"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Ramp down random, slow -> fast"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random strobe effect, slow -> fast"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Strobe break effect, 5s ... 1s (Short burst with break)"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe slow -> fast <1Hz - 20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Color off"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Amber"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Yellow Warm"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Yellow"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Turquoise"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Cyan"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Mauve"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Magenta"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pink"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Warm White"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "White"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Cold White"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Color Jumping Stop"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Color Jumping Speed slow -> fast / Color 1 -> 12"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Color Fading Speed slow -> fast / Color 1 -> 12"
+        }
+      ]
+    },
+    {
+      "name": "Color Temperature 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "7200K - 3200K @ Full on"
+        }
+      ]
+    },
+    {
+      "name": "Color Temperature 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Off"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "7200K - 3200K @ Full on, Affects colors too"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curve",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "63",
+          "name": "Linear dimmer curve"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Exponentiall dimmer curve"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Logarithmic dimmer curve"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "S-Curve dimmer curve"
+        }
+      ]
+    },
+    {
+      "name": "Device Settings",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "127",
+          "name": "Dimmer Response LED (hold 5s)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Dimmer Response Halogen (hold 5s)"
+        },
+        {
+          "min": "192",
+          "max": "211",
+          "name": "No Runtime / Full LED Power (hold 5s)"
+        },
+        {
+          "min": "212",
+          "max": "221",
+          "name": "Set Runtime 8h (hold 5s)"
+        },
+        {
+          "min": "222",
+          "max": "231",
+          "name": "Set Runtime 12h (hold 5s)"
+        },
+        {
+          "min": "232",
+          "max": "241",
+          "name": "Set Runtime 16h (hold 5s)"
+        },
+        {
+          "min": "242",
+          "max": "255",
+          "name": "Set Runtime 20h (hold 5s)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Color Temperature 1"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobe functions",
+        "Color Macro"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "8 Channel Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Red Fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "White",
+        "White Fine"
+      ]
+    },
+    {
+      "name": "8 Channel Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Dimmer",
+        "Strobe functions",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro",
+        "Device Settings"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 10,
+      "channels": [
+        "Dimmer",
+        "Strobe functions",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro",
+        "Color Temperature 2",
+        "Dimmer Curve",
+        "Device Settings"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 15,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine",
+        "Strobe functions",
+        "Red",
+        "Red Fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "White",
+        "White Fine",
+        "Color Macro",
+        "Color Temperature 2",
+        "Dimmer Curve",
+        "Device Settings"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1900",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.4",
+      "width": "187",
+      "height": "187",
+      "depth": "164"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "11",
+      "degreesMax": "11"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "100",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

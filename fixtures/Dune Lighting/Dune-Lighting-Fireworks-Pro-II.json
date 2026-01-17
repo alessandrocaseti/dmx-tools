@@ -1,0 +1,248 @@
+{
+  "version": "1.2",
+  "manufacturer": "Dune Lighting",
+  "model": "Fireworks PRO II (LAS-160/FW)",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Frédéric Combe",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Laser Black out"
+        },
+        {
+          "min": "10",
+          "max": "60",
+          "name": "ARA, Automatic Aleatory"
+        },
+        {
+          "min": "61",
+          "max": "110",
+          "name": "ASR, Effect Slow Moving"
+        },
+        {
+          "min": "111",
+          "max": "160",
+          "name": "SRA, Musical Aleatory"
+        },
+        {
+          "min": "161",
+          "max": "255",
+          "name": "DMX Mode (other channel active)"
+        }
+      ]
+    },
+    {
+      "name": "Effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Effect 1"
+        },
+        {
+          "min": "26",
+          "max": "50",
+          "name": "Effect 2"
+        },
+        {
+          "min": "51",
+          "max": "75",
+          "name": "Effect 3"
+        },
+        {
+          "min": "76",
+          "max": "100",
+          "name": "Effect 4"
+        },
+        {
+          "min": "101",
+          "max": "125",
+          "name": "Effect 5"
+        },
+        {
+          "min": "126",
+          "max": "150",
+          "name": "Effect 6"
+        },
+        {
+          "min": "151",
+          "max": "175",
+          "name": "Effect 7"
+        },
+        {
+          "min": "176",
+          "max": "200",
+          "name": "Effect 8"
+        },
+        {
+          "min": "201",
+          "max": "225",
+          "name": "Effect 9"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Effect 10"
+        }
+      ]
+    },
+    {
+      "name": "Vibration",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Multiple Effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "OFF"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "ON"
+        }
+      ]
+    },
+    {
+      "name": "Vibration 2",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Timer",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Short to Long"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "36",
+          "name": "Laser Black Out"
+        },
+        {
+          "min": "37",
+          "max": "72",
+          "name": "Red"
+        },
+        {
+          "min": "73",
+          "max": "108",
+          "name": "Green"
+        },
+        {
+          "min": "109",
+          "max": "144",
+          "name": "Alternately Strobe Red and Green"
+        },
+        {
+          "min": "145",
+          "max": "180",
+          "name": "Red on, Strobe Green"
+        },
+        {
+          "min": "181",
+          "max": "216",
+          "name": "Green On, Strobe Red"
+        },
+        {
+          "min": "217",
+          "max": "255",
+          "name": "Strobe Red and Green"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Strobe OFF"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Mode",
+        "Effects",
+        "Vibration",
+        "Multiple Effects",
+        "Vibration 2",
+        "Timer",
+        "Color",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "256",
+      "height": "102",
+      "depth": "202"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "120",
+      "tiltMax": "120"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

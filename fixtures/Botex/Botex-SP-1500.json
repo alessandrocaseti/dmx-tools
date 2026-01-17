@@ -1,0 +1,161 @@
+{
+  "version": "1.2",
+  "manufacturer": "Botex",
+  "model": "SP-1500",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Gabse",
+  "channels": [
+    {
+      "name": "Brightness",
+      "type": "Intensity"
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Strobe (Slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "49",
+          "name": "Normal"
+        },
+        {
+          "min": "50",
+          "max": "99",
+          "name": "Blinder\n   \n  "
+        },
+        {
+          "min": "100",
+          "max": "149",
+          "name": "Random"
+        },
+        {
+          "min": "150",
+          "max": "199",
+          "name": "Single Flash\n   \n  "
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "SYNC"
+        }
+      ]
+    },
+    {
+      "name": "Single Flash",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No Flash"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Flash"
+        }
+      ]
+    },
+    {
+      "name": "Blind Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "OFF"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "14Hz"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "15Hz"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "16,6Hz"
+        },
+        {
+          "min": "160",
+          "max": "192",
+          "name": "20Hz"
+        },
+        {
+          "min": "193",
+          "max": "223",
+          "name": "25Hz"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "50Hz"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 2,
+      "channels": [
+        "Speed",
+        "Brightness"
+      ]
+    },
+    {
+      "name": "Henne's Mod",
+      "totalChannels": 3,
+      "channels": [
+        "Speed",
+        "Brightness",
+        "Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": " XOP-15",
+      "lumens": "7500",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "5.65",
+      "width": "480",
+      "height": "220",
+      "depth": "124"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1600",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

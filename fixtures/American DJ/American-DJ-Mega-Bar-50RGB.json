@@ -1,0 +1,345 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Mega Bar 50RGB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "7",
+          "name": "Color 1"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Color 2"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Color 3"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Color 4"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Color 5"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Color 6"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Color 7"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Color 8"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Color 9"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Color 10"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Color 11"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Color 12"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Color 13"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Color 14"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Color 15"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Color 16"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Color 17"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Color 18"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Color 19"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Color 20"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Color 21"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Color 22"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Color 23"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Color 24"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Color 25"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Color 26"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Color 27"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Color 28"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Color 29"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Color 30"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Color 31"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Color 32"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing/Program Speed",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Color Mixing"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "3 Color Change"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "7 Color Change"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Color Macros",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master Dimmer",
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros",
+        "Strobing/Program Speed",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros",
+        "Strobing/Program Speed",
+        "Programs",
+        "Master Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.53",
+      "width": "560",
+      "height": "102",
+      "depth": "63"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "18",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

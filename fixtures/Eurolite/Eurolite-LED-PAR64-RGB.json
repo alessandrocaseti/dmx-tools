@@ -1,0 +1,84 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED PAR64 RGB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Kevin Deldycke",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe slow to fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "396",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.4",
+      "width": "265",
+      "height": "240",
+      "depth": "340"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "36",
+      "degreesMax": "36"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "32",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

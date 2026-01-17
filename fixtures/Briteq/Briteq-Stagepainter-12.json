@@ -1,0 +1,293 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "Stagepainter 12",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fredje Gallon",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Color 1"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color 2 - 32"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe S>F"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow open fast close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast open slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Red (6chan L1+L2)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (6chan L1+L2)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (6chan L1+L2)",
+      "type": "Blue"
+    },
+    {
+      "name": "Red (6chan L3+L4)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (6chan L3+L4)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (6chan L3+L4)",
+      "type": "Blue"
+    },
+    {
+      "name": "Red L1",
+      "type": "Red"
+    },
+    {
+      "name": "Green L1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue L1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red L2",
+      "type": "Red"
+    },
+    {
+      "name": "Green L2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue L2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red L3",
+      "type": "Red"
+    },
+    {
+      "name": "Green L3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue L3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red L4",
+      "type": "Red"
+    },
+    {
+      "name": "Green L4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue L4",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "6 Channel 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "6 Channel 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red (6chan L1+L2)",
+        "Green (6chan L1+L2)",
+        "Blue (6chan L1+L2)",
+        "Red (6chan L3+L4)",
+        "Green (6chan L3+L4)",
+        "Blue (6chan L3+L4)"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 9,
+      "channels": [
+        "Red (6chan L1+L2)",
+        "Green (6chan L1+L2)",
+        "Blue (6chan L1+L2)",
+        "Red (6chan L3+L4)",
+        "Green (6chan L3+L4)",
+        "Blue (6chan L3+L4)",
+        "Color",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 12,
+      "channels": [
+        "Red L1",
+        "Green L1",
+        "Blue L1",
+        "Red L2",
+        "Green L2",
+        "Blue L2",
+        "Red L3",
+        "Green L3",
+        "Blue L3",
+        "Red L4",
+        "Green L4",
+        "Blue L4"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 15,
+      "channels": [
+        "Red L1",
+        "Green L1",
+        "Blue L1",
+        "Red L2",
+        "Green L2",
+        "Blue L2",
+        "Red L3",
+        "Green L3",
+        "Blue L3",
+        "Red L4",
+        "Green L4",
+        "Blue L4",
+        "Color",
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.9",
+      "width": "387",
+      "height": "95",
+      "depth": "207"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "45",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

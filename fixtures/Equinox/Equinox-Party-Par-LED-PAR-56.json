@@ -1,0 +1,143 @@
+{
+  "version": "1.2",
+  "manufacturer": "Equinox",
+  "model": "Party Par LED PAR 56",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Colour Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Colour macro"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer/Program Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Blackout"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Dimming (32: dim, 63: bright)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Dimming (64: bright, 96: dim)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Dimming (96: dim, 112: bright, 127: dim)"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Colour mixing"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "3 colour change"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "7 colour change"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound active (sensitivity adjustment knob)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Colour Macros",
+        "Strobe",
+        "Dimmer/Program Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.1",
+      "width": "205",
+      "height": "195",
+      "depth": "240"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

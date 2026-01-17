@@ -1,0 +1,375 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Dotz Par",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Zeph",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "7",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Light Red"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Medium Red"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Lavender"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Indigo"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Light Green Blue"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Moss Green"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Primary Green"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Double CTB"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "20",
+          "name": "Color fade/change"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "7 color change"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "7 color fade"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "3 color change"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "3 color fade"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Sound active color fade"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Sound active color change"
+        },
+        {
+          "min": "141",
+          "max": "255",
+          "name": "Nothing"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed/Sound Sense",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program Speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobing",
+      "type": "Unknown"
+    },
+    {
+      "name": "Dimmer curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "41",
+          "name": "Standard"
+        },
+        {
+          "min": "42",
+          "max": "84",
+          "name": "Stage"
+        },
+        {
+          "min": "85",
+          "max": "127",
+          "name": "TV"
+        },
+        {
+          "min": "128",
+          "max": "170",
+          "name": "Architectural"
+        },
+        {
+          "min": "171",
+          "max": "213",
+          "name": "Theater"
+        },
+        {
+          "min": "214",
+          "max": "255",
+          "name": "Default to curve setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master dimmer",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master dimmer",
+        "Color Macros",
+        "Programs",
+        "Program Speed/Sound Sense",
+        "Strobing",
+        "Dimmer curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "165",
+      "height": "114",
+      "depth": "116"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "60",
+      "degreesMax": "60"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "36",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

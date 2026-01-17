@@ -1,0 +1,239 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "4Bar",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Shikhir Arora, fixed by Jack Logue",
+  "channels": [
+    {
+      "name": "Control/Operating Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "RGB Mode (CH2-15)"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Auto Program 5"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Auto Program 6"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Auto Program 7"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Auto Program 8"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Auto Program 9"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "Auto Program 10"
+        },
+        {
+          "min": "210",
+          "max": "229",
+          "name": "Auto Program 11"
+        },
+        {
+          "min": "230",
+          "max": "249",
+          "name": "Auto Program 12"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound Active Mode"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Dimmer 0-100"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "15 Channels Mode",
+      "totalChannels": 15,
+      "channels": [
+        "Control/Operating Mode",
+        "Master Dimmer",
+        "Strobe",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4"
+      ]
+    },
+    {
+      "name": "3 Channels Mode",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "11.2",
+      "width": "55",
+      "height": "285",
+      "depth": "1129"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "48",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

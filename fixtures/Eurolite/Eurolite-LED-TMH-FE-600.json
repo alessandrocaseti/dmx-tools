@@ -1,0 +1,294 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED TMH FE-600",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Klaus Muth",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Decreasing Speed"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe - Increasing Speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "49",
+          "name": "Speed 1"
+        },
+        {
+          "min": "50",
+          "max": "99",
+          "name": "Speed 2"
+        },
+        {
+          "min": "100",
+          "max": "149",
+          "name": "Speed 3"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "Speed 4"
+        }
+      ]
+    },
+    {
+      "name": "Lens Rotation",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "0° to 60°"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Rotate Reverse decreasing Speed"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Rotate increasing Speed"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Colour Preset",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "29",
+          "name": "Red"
+        },
+        {
+          "min": "30",
+          "max": "54",
+          "name": "Green"
+        },
+        {
+          "min": "55",
+          "max": "79",
+          "name": "Blue"
+        },
+        {
+          "min": "80",
+          "max": "104",
+          "name": "White"
+        },
+        {
+          "min": "105",
+          "max": "129",
+          "name": "Preset 1"
+        },
+        {
+          "min": "130",
+          "max": "154",
+          "name": "Preset 2"
+        },
+        {
+          "min": "155",
+          "max": "174",
+          "name": "Preset 3"
+        },
+        {
+          "min": "175",
+          "max": "179",
+          "name": "Preset 4"
+        },
+        {
+          "min": "180",
+          "max": "184",
+          "name": "Preset 5"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Preset 6"
+        },
+        {
+          "min": "190",
+          "max": "194",
+          "name": "Preset 7"
+        },
+        {
+          "min": "195",
+          "max": "199",
+          "name": "Preset 8"
+        },
+        {
+          "min": "200",
+          "max": "204",
+          "name": "Preset 9"
+        },
+        {
+          "min": "205",
+          "max": "209",
+          "name": "Preset 10"
+        },
+        {
+          "min": "210",
+          "max": "210",
+          "name": "No function"
+        },
+        {
+          "min": "211",
+          "max": "255",
+          "name": "Color Fade"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "No function"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Reset All"
+        },
+        {
+          "min": "100",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "15-Channel",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt Speed",
+        "Strobe",
+        "Dimmer",
+        "Dimmer Speed",
+        "Lens Rotation",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Colour Preset",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "8300"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "190",
+      "height": "330",
+      "depth": "245"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "190"
+    },
+    "technical": {
+      "powerConsumption": "90",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

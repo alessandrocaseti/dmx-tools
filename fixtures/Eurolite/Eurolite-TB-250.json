@@ -1,0 +1,277 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TB-250",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ovidijus Cepukas",
+  "channels": [
+    {
+      "name": "Mirrored cylinder movement",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Gradual adjustment of the mirrored cylinder position from left to right"
+        }
+      ]
+    },
+    {
+      "name": "Mirrored cylinder rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No rotation"
+        },
+        {
+          "min": "5",
+          "max": "120",
+          "name": "Forwards rotation with increasing speed"
+        },
+        {
+          "min": "121",
+          "max": "139",
+          "name": "No rotation"
+        },
+        {
+          "min": "140",
+          "max": "255",
+          "name": "Backwards rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Colour-wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Open / white"
+        },
+        {
+          "min": "18",
+          "max": "35",
+          "name": "Red"
+        },
+        {
+          "min": "36",
+          "max": "53",
+          "name": "Yellow"
+        },
+        {
+          "min": "54",
+          "max": "71",
+          "name": "Violet"
+        },
+        {
+          "min": "72",
+          "max": "89",
+          "name": "Green"
+        },
+        {
+          "min": "90",
+          "max": "107",
+          "name": "Orange"
+        },
+        {
+          "min": "108",
+          "max": "125",
+          "name": "Blue"
+        },
+        {
+          "min": "126",
+          "max": "143",
+          "name": "Pink"
+        },
+        {
+          "min": "144",
+          "max": "161",
+          "name": "Light green"
+        },
+        {
+          "min": "162",
+          "max": "179",
+          "name": "Light blue"
+        },
+        {
+          "min": "180",
+          "max": "197",
+          "name": "Orange"
+        },
+        {
+          "min": "198",
+          "max": "215",
+          "name": "Light yellow"
+        },
+        {
+          "min": "216",
+          "max": "233",
+          "name": "Magenta"
+        },
+        {
+          "min": "234",
+          "max": "251",
+          "name": "Red/blue"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Yellow/green"
+        }
+      ]
+    },
+    {
+      "name": "Gobo-wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Open"
+        },
+        {
+          "min": "18",
+          "max": "35",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "36",
+          "max": "53",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "54",
+          "max": "71",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "72",
+          "max": "89",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "90",
+          "max": "107",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "108",
+          "max": "125",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "126",
+          "max": "143",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "144",
+          "max": "161",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "162",
+          "max": "179",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "180",
+          "max": "197",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "198",
+          "max": "215",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "216",
+          "max": "233",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "234",
+          "max": "251",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Gobo 14"
+        }
+      ]
+    },
+    {
+      "name": "Shutter, strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "15",
+          "max": "29",
+          "name": "No function (shutter open)"
+        },
+        {
+          "min": "30",
+          "max": "250",
+          "name": "Strobe-effect with increasing speed (max. 7 flashes/sec.)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "No function (shutter open)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Protocol",
+      "totalChannels": 5,
+      "channels": [
+        "Mirrored cylinder movement",
+        "Mirrored cylinder rotation",
+        "Colour-wheel",
+        "Gobo-wheel",
+        "Shutter, strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.5",
+      "width": "270",
+      "height": "555",
+      "depth": "285"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "120",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "450",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

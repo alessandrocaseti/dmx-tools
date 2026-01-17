@@ -1,0 +1,501 @@
+{
+  "version": "1.2",
+  "manufacturer": "Coemar",
+  "model": "LEDko FullSpectrum 6",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michał Kluska",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Lime",
+      "type": "Lime"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Strobe effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No effect"
+        },
+        {
+          "min": "10",
+          "max": "57",
+          "name": "Variable speed strobing effect, from slow to fast"
+        },
+        {
+          "min": "58",
+          "max": "59",
+          "name": "Stop strobe"
+        },
+        {
+          "min": "60",
+          "max": "108",
+          "name": "Sequenced pulsed strobe, slow closing, fast operating (variable speed pulsing, from slow to fast)"
+        },
+        {
+          "min": "109",
+          "max": "110",
+          "name": "Stop strobe"
+        },
+        {
+          "min": "111",
+          "max": "159",
+          "name": "sequenced pulsed strobe, fast closing, slow operating (variable speed pulsing, from slow to fast)"
+        },
+        {
+          "min": "160",
+          "max": "161",
+          "name": "Stop strobe"
+        },
+        {
+          "min": "162",
+          "max": "207",
+          "name": "Random strobe effect with variable speed from slow to fast and synchronized colors"
+        },
+        {
+          "min": "208",
+          "max": "209",
+          "name": "Stop strobe"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Random strobe effect with variable speed from slow to fast and non-synchronized colors"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Special functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "84",
+          "name": "No effect"
+        },
+        {
+          "min": "85",
+          "max": "96",
+          "name": "Fan at low-noise speed"
+        },
+        {
+          "min": "97",
+          "max": "108",
+          "name": "fan at auto-speed"
+        },
+        {
+          "min": "109",
+          "max": "121",
+          "name": "fan at auto-speed"
+        },
+        {
+          "min": "122",
+          "max": "134",
+          "name": "fan speed control from minimum to maximum"
+        },
+        {
+          "min": "135",
+          "max": "185",
+          "name": "enables the automatic display blackout"
+        },
+        {
+          "min": "186",
+          "max": "199",
+          "name": "disables the automatic display blackout"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "No effect"
+        }
+      ]
+    },
+    {
+      "name": "Red Tone",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No effect"
+        },
+        {
+          "min": "10",
+          "max": "34",
+          "name": "R24 - scarlet red"
+        },
+        {
+          "min": "35",
+          "max": "59",
+          "name": "R02 - bastard amber"
+        },
+        {
+          "min": "60",
+          "max": "84",
+          "name": "R313 - Light relief yellow"
+        },
+        {
+          "min": "85",
+          "max": "109",
+          "name": "R18 - Flame"
+        },
+        {
+          "min": "110",
+          "max": "134",
+          "name": "R331 - Shell pink"
+        },
+        {
+          "min": "135",
+          "max": "159",
+          "name": "R25 - Orange Red"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "R46 - Magenta"
+        },
+        {
+          "min": "185",
+          "max": "209",
+          "name": "R08 - Pale gold"
+        },
+        {
+          "min": "210",
+          "max": "234",
+          "name": "R27 - Medium red"
+        },
+        {
+          "min": "235",
+          "max": "255",
+          "name": "R318 - Mayan sun"
+        }
+      ]
+    },
+    {
+      "name": "Green tone",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "no effect"
+        },
+        {
+          "min": "10",
+          "max": "34",
+          "name": "R4460 - calcolor 60 green"
+        },
+        {
+          "min": "35",
+          "max": "59",
+          "name": "R2004 - storaro green"
+        },
+        {
+          "min": "60",
+          "max": "84",
+          "name": "E730 - liberty green"
+        },
+        {
+          "min": "85",
+          "max": "109",
+          "name": "E088 - lime green"
+        },
+        {
+          "min": "110",
+          "max": "134",
+          "name": "R90 - kelly green"
+        },
+        {
+          "min": "135",
+          "max": "159",
+          "name": "R395 - teal green"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "R91 - primary green"
+        },
+        {
+          "min": "185",
+          "max": "209",
+          "name": "R393 - emerald green"
+        },
+        {
+          "min": "210",
+          "max": "234",
+          "name": "R393 - leaf green"
+        },
+        {
+          "min": "235",
+          "max": "255",
+          "name": "R86 - pea green"
+        }
+      ]
+    },
+    {
+      "name": "Blue Tone",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "no effect"
+        },
+        {
+          "min": "10",
+          "max": "34",
+          "name": "R2008 - storaro indigo"
+        },
+        {
+          "min": "35",
+          "max": "59",
+          "name": "E5058 - french lilac"
+        },
+        {
+          "min": "60",
+          "max": "84",
+          "name": "R369 - tahitian blue"
+        },
+        {
+          "min": "85",
+          "max": "109",
+          "name": "R347 - belladonna rose"
+        },
+        {
+          "min": "110",
+          "max": "134",
+          "name": "R381 - baldassari blue"
+        },
+        {
+          "min": "135",
+          "max": "159",
+          "name": "R57 - Lavander"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "R55 - lilac"
+        },
+        {
+          "min": "185",
+          "max": "209",
+          "name": "R4790 - calcolor 90 magenta"
+        },
+        {
+          "min": "210",
+          "max": "234",
+          "name": "R92 - turquise"
+        },
+        {
+          "min": "235",
+          "max": "255",
+          "name": "R370 - italian blue"
+        }
+      ]
+    },
+    {
+      "name": "White Tone",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "no effect"
+        },
+        {
+          "min": "10",
+          "max": "30",
+          "name": "2700K"
+        },
+        {
+          "min": "31",
+          "max": "52",
+          "name": "proportional value from 2700K to 3200K"
+        },
+        {
+          "min": "53",
+          "max": "74",
+          "name": "3200K"
+        },
+        {
+          "min": "75",
+          "max": "96",
+          "name": "proportional value from 3200K to 4000K"
+        },
+        {
+          "min": "97",
+          "max": "118",
+          "name": "4000K"
+        },
+        {
+          "min": "119",
+          "max": "140",
+          "name": "proportional value from 4000K to 5000K"
+        },
+        {
+          "min": "141",
+          "max": "162",
+          "name": "5000K"
+        },
+        {
+          "min": "163",
+          "max": "184",
+          "name": "proportional value from 5000K to 5600K"
+        },
+        {
+          "min": "185",
+          "max": "206",
+          "name": "5600K"
+        },
+        {
+          "min": "207",
+          "max": "228",
+          "name": "proportional value from 5600K to 6500K"
+        },
+        {
+          "min": "229",
+          "max": "255",
+          "name": "6500K"
+        }
+      ]
+    },
+    {
+      "name": "Green Saturation",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "no effect"
+        },
+        {
+          "min": "10",
+          "max": "123",
+          "name": "exalts the green color in the mixing and diminishes the presence of magenta"
+        },
+        {
+          "min": "124",
+          "max": "132",
+          "name": "no effect"
+        },
+        {
+          "min": "133",
+          "max": "246",
+          "name": "diminishes the presence of green in the mixing and exalts the magenta color"
+        },
+        {
+          "min": "247",
+          "max": "255",
+          "name": "no effect"
+        }
+      ]
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Lime",
+        "Amber",
+        "Strobe effect",
+        "Dimmer Fine",
+        "Special functions",
+        "Red Tone",
+        "Green tone",
+        "Blue Tone",
+        "White Tone",
+        "Green Saturation",
+        "Saturation"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 7,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Lime",
+        "Amber"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 1,
+      "channels": [
+        "Master Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "212",
+      "height": "189",
+      "depth": "362"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "220",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

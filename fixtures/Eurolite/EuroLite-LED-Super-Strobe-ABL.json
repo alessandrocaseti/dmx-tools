@@ -1,0 +1,1197 @@
+{
+  "version": "1.2",
+  "manufacturer": "EuroLite",
+  "model": "LED Super Strobe ABL",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Don Sebastiano",
+  "channels": [
+    {
+      "name": "Dimmer SMD 5730",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe SMD 5730",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "No function"
+        },
+        {
+          "min": "9",
+          "max": "255",
+          "name": "Strobe effect with increasing speed 0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer SMD 5050",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe SMD 5050",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "No function"
+        },
+        {
+          "min": "9",
+          "max": "255",
+          "name": "Strobe effect with increasing speed 0-100%"
+        }
+      ]
+    },
+    {
+      "name": "SMD 5050 Red",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5730 Flash duration",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash duration"
+        }
+      ]
+    },
+    {
+      "name": "Automatic programs 16 effects SMD 5050",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "program 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "program 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "program 3"
+        },
+        {
+          "min": "53",
+          "max": "82",
+          "name": "program 4"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "program 5"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "program 6"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "program 7"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "program 8"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "program 9"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "program 10"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "program 11"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "program 12"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "program 13"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "program 14"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "program 15"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "program 16"
+        }
+      ]
+    },
+    {
+      "name": "SMD 5050 automatic programs",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Automatic programs with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "SMD 5050 Background color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Automatic program"
+        },
+        {
+          "min": "16",
+          "max": "50",
+          "name": "R"
+        },
+        {
+          "min": "51",
+          "max": "84",
+          "name": "G"
+        },
+        {
+          "min": "85",
+          "max": "118",
+          "name": "B"
+        },
+        {
+          "min": "119",
+          "max": "152",
+          "name": "RG"
+        },
+        {
+          "min": "153",
+          "max": "186",
+          "name": "RB"
+        },
+        {
+          "min": "187",
+          "max": "220",
+          "name": "GB"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "RGB"
+        }
+      ]
+    },
+    {
+      "name": "SMD 5050 Direction",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Change of direction (down to up)"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Change of direction (up to down)"
+        }
+      ]
+    },
+    {
+      "name": "Color presets SMD 5050 16 automatic programs",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "program 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "program 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "program 3"
+        },
+        {
+          "min": "53",
+          "max": "82",
+          "name": "program 4"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "program 5"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "program 6"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "program 7"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "program 8"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "program 9"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "program 10"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "program 11"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "program 12"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "program 13"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "program 14"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "program 15"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "program 16"
+        }
+      ]
+    },
+    {
+      "name": "SMD 5050 Red Segment 1",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Segment 1",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Segment 1",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Segment 2",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Segment 2",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Segment 2",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Segment 3",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Segment 3",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Segment 3",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Segment 4",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Segment 4",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Segment 4",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 1",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 1",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 1",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 2",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 2",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 2",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 3",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 3",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 3",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 4",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 4",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 4",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 5",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 5",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 5",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 6",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 6",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 6",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 7",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 7",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 7",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 8",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 8",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 8",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 9",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 9",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 9",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 10",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 10",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 10",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 11",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 11",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 11",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 12",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 12",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 12",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 13",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 13",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 13",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 14",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 14",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 14",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 15",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 15",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 15",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 16",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 16",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 16",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 17",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 17",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 17",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 18",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 18",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 18",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 19",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 19",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 19",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 20",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 20",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 20",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 21",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 21",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 21",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 22",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 22",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 22",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 23",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 23",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 23",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 24",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 24",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 24",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 25",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 25",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 25",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 26",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 26",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 26",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 27",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 27",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 27",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 28",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 28",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 28",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 29",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 29",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 29",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 30",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 30",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 30",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 31",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 31",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 31",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 32",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 32",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 32",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 33",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 33",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 33",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 34",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 34",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 34",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 35",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 35",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 35",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 36",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 36",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 36",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 37",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 37",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 37",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 38",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 38",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 38",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 39",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 39",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 39",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 40",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 40",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 40",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 41",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 41",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 41",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 42",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 42",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 42",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 43",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 43",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 43",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 44",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 44",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 44",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 45",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 45",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 45",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 46",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 46",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 46",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 47",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 47",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 47",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD 5050 Red Group 48",
+      "type": "Red"
+    },
+    {
+      "name": "SMD 5050 Green Group 48",
+      "type": "Green"
+    },
+    {
+      "name": "SMD 5050 Blue Group 48",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer SMD 5730",
+        "Strobe SMD 5730",
+        "Dimmer SMD 5050",
+        "Strobe SMD 5050",
+        "SMD 5050 Red",
+        "SMD 5050 Green",
+        "SMD 5050 Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 13,
+      "channels": [
+        "Dimmer SMD 5730",
+        "Strobe SMD 5730",
+        "SMD 5730 Flash duration",
+        "Dimmer SMD 5050",
+        "Strobe SMD 5050",
+        "SMD 5050 Red",
+        "SMD 5050 Green",
+        "SMD 5050 Blue",
+        "Automatic programs 16 effects SMD 5050",
+        "SMD 5050 automatic programs",
+        "Color presets SMD 5050 16 automatic programs",
+        "SMD 5050 Background color",
+        "SMD 5050 Direction"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 22,
+      "channels": [
+        "Dimmer SMD 5730",
+        "Strobe SMD 5730",
+        "SMD 5730 Flash duration",
+        "Dimmer SMD 5050",
+        "Strobe SMD 5050",
+        "SMD 5050 Red Segment 1",
+        "SMD 5050 Green Segment 1",
+        "SMD 5050 Blue Segment 1",
+        "SMD 5050 Red Segment 2",
+        "SMD 5050 Green Segment 2",
+        "SMD 5050 Blue Segment 2",
+        "SMD 5050 Red Segment 3",
+        "SMD 5050 Green Segment 3",
+        "SMD 5050 Blue Segment 3",
+        "SMD 5050 Red Segment 4",
+        "SMD 5050 Green Segment 4",
+        "SMD 5050 Blue Segment 4",
+        "Automatic programs 16 effects SMD 5050",
+        "SMD 5050 automatic programs",
+        "Color presets SMD 5050 16 automatic programs",
+        "SMD 5050 Background color",
+        "SMD 5050 Direction"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 148,
+      "channels": [
+        "Dimmer SMD 5730",
+        "Strobe SMD 5730",
+        "Dimmer SMD 5050",
+        "Strobe SMD 5050",
+        "SMD 5050 Red Group 1",
+        "SMD 5050 Green Group 1",
+        "SMD 5050 Blue Group 1",
+        "SMD 5050 Red Group 2",
+        "SMD 5050 Green Group 2",
+        "SMD 5050 Blue Group 2",
+        "SMD 5050 Red Group 3",
+        "SMD 5050 Green Group 3",
+        "SMD 5050 Blue Group 3",
+        "SMD 5050 Red Group 4",
+        "SMD 5050 Green Group 4",
+        "SMD 5050 Blue Group 4",
+        "SMD 5050 Red Group 5",
+        "SMD 5050 Green Group 5",
+        "SMD 5050 Blue Group 5",
+        "SMD 5050 Red Group 6",
+        "SMD 5050 Green Group 6",
+        "SMD 5050 Blue Group 6",
+        "SMD 5050 Red Group 7",
+        "SMD 5050 Green Group 7",
+        "SMD 5050 Blue Group 7",
+        "SMD 5050 Red Group 8",
+        "SMD 5050 Green Group 8",
+        "SMD 5050 Blue Group 8",
+        "SMD 5050 Red Group 9",
+        "SMD 5050 Green Group 9",
+        "SMD 5050 Blue Group 9",
+        "SMD 5050 Red Group 10",
+        "SMD 5050 Green Group 10",
+        "SMD 5050 Blue Group 10",
+        "SMD 5050 Red Group 11",
+        "SMD 5050 Green Group 11",
+        "SMD 5050 Blue Group 11",
+        "SMD 5050 Red Group 12",
+        "SMD 5050 Green Group 12",
+        "SMD 5050 Blue Group 12",
+        "SMD 5050 Red Group 13",
+        "SMD 5050 Green Group 13",
+        "SMD 5050 Blue Group 13",
+        "SMD 5050 Red Group 14",
+        "SMD 5050 Green Group 14",
+        "SMD 5050 Blue Group 14",
+        "SMD 5050 Red Group 15",
+        "SMD 5050 Green Group 15",
+        "SMD 5050 Blue Group 15",
+        "SMD 5050 Red Group 16",
+        "SMD 5050 Green Group 16",
+        "SMD 5050 Blue Group 16",
+        "SMD 5050 Red Group 17",
+        "SMD 5050 Green Group 17",
+        "SMD 5050 Blue Group 17",
+        "SMD 5050 Red Group 18",
+        "SMD 5050 Green Group 18",
+        "SMD 5050 Blue Group 18",
+        "SMD 5050 Red Group 19",
+        "SMD 5050 Green Group 19",
+        "SMD 5050 Blue Group 19",
+        "SMD 5050 Red Group 20",
+        "SMD 5050 Green Group 20",
+        "SMD 5050 Blue Group 20",
+        "SMD 5050 Red Group 21",
+        "SMD 5050 Green Group 21",
+        "SMD 5050 Blue Group 21",
+        "SMD 5050 Red Group 22",
+        "SMD 5050 Green Group 22",
+        "SMD 5050 Blue Group 22",
+        "SMD 5050 Red Group 23",
+        "SMD 5050 Green Group 23",
+        "SMD 5050 Blue Group 23",
+        "SMD 5050 Red Group 24",
+        "SMD 5050 Green Group 24",
+        "SMD 5050 Blue Group 24",
+        "SMD 5050 Red Group 25",
+        "SMD 5050 Green Group 25",
+        "SMD 5050 Blue Group 25",
+        "SMD 5050 Red Group 26",
+        "SMD 5050 Green Group 26",
+        "SMD 5050 Blue Group 26",
+        "SMD 5050 Red Group 27",
+        "SMD 5050 Green Group 27",
+        "SMD 5050 Blue Group 27",
+        "SMD 5050 Red Group 28",
+        "SMD 5050 Green Group 28",
+        "SMD 5050 Blue Group 28",
+        "SMD 5050 Red Group 29",
+        "SMD 5050 Green Group 29",
+        "SMD 5050 Blue Group 29",
+        "SMD 5050 Red Group 30",
+        "SMD 5050 Green Group 30",
+        "SMD 5050 Blue Group 30",
+        "SMD 5050 Red Group 31",
+        "SMD 5050 Green Group 31",
+        "SMD 5050 Blue Group 31",
+        "SMD 5050 Red Group 32",
+        "SMD 5050 Green Group 32",
+        "SMD 5050 Blue Group 32",
+        "SMD 5050 Red Group 33",
+        "SMD 5050 Green Group 33",
+        "SMD 5050 Blue Group 33",
+        "SMD 5050 Red Group 34",
+        "SMD 5050 Green Group 34",
+        "SMD 5050 Blue Group 34",
+        "SMD 5050 Red Group 35",
+        "SMD 5050 Green Group 35",
+        "SMD 5050 Blue Group 35",
+        "SMD 5050 Red Group 36",
+        "SMD 5050 Green Group 36",
+        "SMD 5050 Blue Group 36",
+        "SMD 5050 Red Group 37",
+        "SMD 5050 Green Group 37",
+        "SMD 5050 Blue Group 37",
+        "SMD 5050 Red Group 38",
+        "SMD 5050 Green Group 38",
+        "SMD 5050 Blue Group 38",
+        "SMD 5050 Red Group 39",
+        "SMD 5050 Green Group 39",
+        "SMD 5050 Blue Group 39",
+        "SMD 5050 Red Group 40",
+        "SMD 5050 Green Group 40",
+        "SMD 5050 Blue Group 40",
+        "SMD 5050 Red Group 41",
+        "SMD 5050 Green Group 41",
+        "SMD 5050 Blue Group 41",
+        "SMD 5050 Red Group 42",
+        "SMD 5050 Green Group 42",
+        "SMD 5050 Blue Group 42",
+        "SMD 5050 Red Group 43",
+        "SMD 5050 Green Group 43",
+        "SMD 5050 Blue Group 43",
+        "SMD 5050 Red Group 44",
+        "SMD 5050 Green Group 44",
+        "SMD 5050 Blue Group 44",
+        "SMD 5050 Red Group 45",
+        "SMD 5050 Green Group 45",
+        "SMD 5050 Blue Group 45",
+        "SMD 5050 Red Group 46",
+        "SMD 5050 Green Group 46",
+        "SMD 5050 Blue Group 46",
+        "SMD 5050 Red Group 47",
+        "SMD 5050 Green Group 47",
+        "SMD 5050 Blue Group 47",
+        "SMD 5050 Red Group 48",
+        "SMD 5050 Green Group 48",
+        "SMD 5050 Blue Group 48"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "455",
+      "height": "255",
+      "depth": "80"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "130",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

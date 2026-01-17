@@ -1,0 +1,295 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "CL Superfly HP",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Stuart Brown+Kevin Wimmer",
+  "channels": [
+    {
+      "name": "Mode Selection",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Music control"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Auto mode"
+        }
+      ]
+    },
+    {
+      "name": "Mode Options",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sensitivity/Speed"
+        }
+      ]
+    },
+    {
+      "name": "Colour Selection",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Red"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Green"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Blue"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "White"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Amber"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Red/Green"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Red/Blue"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Red/White"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Red/Amber"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Green/Blue"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Green/White"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Green/Amber"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Blue/White"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Blue/Amber"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Red/Green/Blue"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Red/Green/White"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Red/Green/Amber"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Red/Blue/White"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Red/Blue/Amber"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Red/White/Amber"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Blue/White/Amber"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Green/Blue/White"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Green/Blue/Amber"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Green/White/Amber"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Red/Green/Blue/White"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Red/Blue/White/Amber"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Red/Green/White/Amber"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Red/Green/Blue/Amber"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Green/Blue/White/Amber"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Red/Green/White/Amber"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Automatic colour change"
+        }
+      ]
+    },
+    {
+      "name": "Mirror Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No movement"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Stroboscope",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No strobe"
+        },
+        {
+          "min": "2",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour Change Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Mode Selection",
+        "Mode Options"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "Colour Selection",
+        "Mirror Rotation",
+        "Stroboscope",
+        "Dimmer",
+        "Colour Change Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.1",
+      "width": "360",
+      "height": "225",
+      "depth": "300"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "145"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

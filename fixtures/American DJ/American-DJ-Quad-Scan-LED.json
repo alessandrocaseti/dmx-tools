@@ -1,0 +1,810 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Quad Scan LED",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jannis Achstetter",
+  "channels": [
+    {
+      "name": "Shows",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Show 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Show 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Show 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Show 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Show 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Show 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Show 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Show 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Show 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Show 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Show 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Show 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Show 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Show 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Show 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Show 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound controlled shows 1-16"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Movements",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No movement"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Movement 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Movement 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Movement 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Movement 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Movement 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Movement 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Movement 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Movement 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Movement 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Movement 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Movement 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Movement 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Movement 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Movement 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Movement 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Movement 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound controlled active"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Speed Movement",
+      "type": "Speed"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Open"
+        },
+        {
+          "min": "9",
+          "max": "131",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow open - fast close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast open - slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Sound active strobing"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Static Color Sequence",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Color sequence 1"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Color sequence 2"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Color sequence 3"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Color sequence 4"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Color sequence 5"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Color sequence 6"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Color sequence 7"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Color sequence 8"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Color sequence 9"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Color sequence 10"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Color sequence 11"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Color sequence 12"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Color sequence 13"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Color sequence 14"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Color sequence 15"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Color sequence 16"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Color sequence 17"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Color sequence 18"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Color sequence 19"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Color sequence 20"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Color sequence 21"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Color sequence 22"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Color sequence 23"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Color sequence 24"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Color sequence 25"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Color sequence 26"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Color sequence 27"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Color sequence 28"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Color sequence 29"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Color sequence 30"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Color sequence 31"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Color sequence 32"
+        }
+      ]
+    },
+    {
+      "name": "Mirror 1 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror 1 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red (Mirror 1)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Mirror 1)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Mirror 1)",
+      "type": "Blue"
+    },
+    {
+      "name": "Master Dimmer (Mirror 1)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing (Mirror 1)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Open"
+        },
+        {
+          "min": "9",
+          "max": "131",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast close - slow open"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Slow close - fast open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Sound active strobing"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Mirror 2 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror 2 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red (Mirror 2)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Mirror 2)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Mirror 2)",
+      "type": "Blue"
+    },
+    {
+      "name": "Master Dimmer (Mirror 2)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing (Mirror 2)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Open"
+        },
+        {
+          "min": "9",
+          "max": "131",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast close - slow open"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Slow close - fast open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Sound active strobing"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Mirror 3 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror 3 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red (Mirror 3)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Mirror 3)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Mirror 3)",
+      "type": "Blue"
+    },
+    {
+      "name": "Master Dimmer (Mirror 3)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing (Mirror 3)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Open"
+        },
+        {
+          "min": "9",
+          "max": "131",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast close - slow open"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Slow close - fast open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Sound active strobing"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Mirror 4 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror 4 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red (Mirror 4)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Mirror 4)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Mirror 4)",
+      "type": "Blue"
+    },
+    {
+      "name": "Master Dimmer (Mirror 4)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing (Mirror 4)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Open"
+        },
+        {
+          "min": "9",
+          "max": "131",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast close - slow open"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Slow close - fast open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Sound active strobing"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 Channel mode",
+      "totalChannels": 1,
+      "channels": [
+        "Shows"
+      ]
+    },
+    {
+      "name": "5 Channels mode",
+      "totalChannels": 5,
+      "channels": [
+        "Pan/Tilt Movements",
+        "Pan/Tilt Speed Movement",
+        "Master Dimmer",
+        "Strobing",
+        "Static Color Sequence"
+      ]
+    },
+    {
+      "name": "28 Channels mode",
+      "totalChannels": 28,
+      "channels": [
+        "Mirror 1 Pan",
+        "Mirror 1 Tilt",
+        "Red (Mirror 1)",
+        "Green (Mirror 1)",
+        "Blue (Mirror 1)",
+        "Master Dimmer (Mirror 1)",
+        "Strobing (Mirror 1)",
+        "Mirror 2 Pan",
+        "Mirror 2 Tilt",
+        "Red (Mirror 2)",
+        "Green (Mirror 2)",
+        "Blue (Mirror 2)",
+        "Master Dimmer (Mirror 2)",
+        "Strobing (Mirror 2)",
+        "Mirror 3 Pan",
+        "Mirror 3 Tilt",
+        "Red (Mirror 3)",
+        "Green (Mirror 3)",
+        "Blue (Mirror 3)",
+        "Master Dimmer (Mirror 3)",
+        "Strobing (Mirror 3)",
+        "Mirror 4 Pan",
+        "Mirror 4 Tilt",
+        "Red (Mirror 4)",
+        "Green (Mirror 4)",
+        "Blue (Mirror 4)",
+        "Master Dimmer (Mirror 4)",
+        "Strobing (Mirror 4)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "438",
+      "height": "338",
+      "depth": "126"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "60"
+    },
+    "technical": {
+      "powerConsumption": "65",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

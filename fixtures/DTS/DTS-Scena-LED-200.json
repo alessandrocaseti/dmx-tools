@@ -1,0 +1,391 @@
+{
+  "version": "1.2",
+  "manufacturer": "DTS",
+  "model": "Scena LED 200",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Freddy Hoogstoel",
+  "channels": [
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Black-out"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Open"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Black-out"
+        },
+        {
+          "min": "30",
+          "max": "119",
+          "name": "Strobe (from 3,27 s to 30 ms)"
+        },
+        {
+          "min": "120",
+          "max": "149",
+          "name": "Pulse up (from 42,6 to 120 ms)"
+        },
+        {
+          "min": "150",
+          "max": "179",
+          "name": "Pulse down (from 42,6 to 120 ms)"
+        },
+        {
+          "min": "180",
+          "max": "229",
+          "name": "Random strobe"
+        },
+        {
+          "min": "230",
+          "max": "235",
+          "name": "Single flash 30 ms"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "No function"
+        },
+        {
+          "min": "15",
+          "max": "24",
+          "name": "SMOOTH OFF"
+        },
+        {
+          "min": "25",
+          "max": "26",
+          "name": "SMOOTH 1 (25 ms)"
+        },
+        {
+          "min": "27",
+          "max": "28",
+          "name": "SMOOTH 2 (50 ms)"
+        },
+        {
+          "min": "29",
+          "max": "30",
+          "name": "SMOOTH 3 (75 ms)"
+        },
+        {
+          "min": "31",
+          "max": "32",
+          "name": "SMOOTH 4 (100 ms) - DEFAULT"
+        },
+        {
+          "min": "33",
+          "max": "34",
+          "name": "SMOOTH 5 (125 ms)"
+        },
+        {
+          "min": "35",
+          "max": "36",
+          "name": "SMOOTH 6 (150 ms)"
+        },
+        {
+          "min": "37",
+          "max": "38",
+          "name": "SMOOTH 7 (175 ms)"
+        },
+        {
+          "min": "39",
+          "max": "40",
+          "name": "SMOOTH 8 (200 ms)"
+        },
+        {
+          "min": "41",
+          "max": "42",
+          "name": "SMOOTH 9 (225 ms)"
+        },
+        {
+          "min": "43",
+          "max": "44",
+          "name": "SMOOTH 10 (250 ms)"
+        },
+        {
+          "min": "45",
+          "max": "46",
+          "name": "SMOOTH 11 (275 ms)"
+        },
+        {
+          "min": "47",
+          "max": "48",
+          "name": "SMOOTH 12 (300 ms)"
+        },
+        {
+          "min": "49",
+          "max": "50",
+          "name": "SMOOTH 13 (325 ms)"
+        },
+        {
+          "min": "51",
+          "max": "52",
+          "name": "SMOOTH 14 (350 ms)"
+        },
+        {
+          "min": "53",
+          "max": "54",
+          "name": "SMOOTH 15 (375 ms)"
+        },
+        {
+          "min": "55",
+          "max": "56",
+          "name": "SMOOTH 16 (400 ms)"
+        },
+        {
+          "min": "57",
+          "max": "58",
+          "name": "SMOOTH 17 (425 ms)"
+        },
+        {
+          "min": "59",
+          "max": "60",
+          "name": "SMOOTH 18 (450 ms)"
+        },
+        {
+          "min": "61",
+          "max": "62",
+          "name": "SMOOTH 19 (475 ms)"
+        },
+        {
+          "min": "63",
+          "max": "64",
+          "name": "SMOOTH 20 (500 ms)"
+        },
+        {
+          "min": "65",
+          "max": "74",
+          "name": "GAMMA CORRECTION QUADRATIC - DEFAULT"
+        },
+        {
+          "min": "75",
+          "max": "84",
+          "name": "GAMMA CORRECTION LINEAR"
+        },
+        {
+          "min": "85",
+          "max": "104",
+          "name": "OUTPUT FREQUENCY 610 Hz - DEFAULT"
+        },
+        {
+          "min": "105",
+          "max": "105",
+          "name": "OUTPUT FREQUENCY 800 Hz"
+        },
+        {
+          "min": "106",
+          "max": "106",
+          "name": "OUTPUT FREQUENCY 1000 Hz"
+        },
+        {
+          "min": "107",
+          "max": "107",
+          "name": "OUTPUT FREQUENCY 1500 Hz"
+        },
+        {
+          "min": "108",
+          "max": "108",
+          "name": "OUTPUT FREQUENCY 2000 Hz"
+        },
+        {
+          "min": "109",
+          "max": "109",
+          "name": "OUTPUT FREQUENCY 2500 Hz"
+        },
+        {
+          "min": "110",
+          "max": "110",
+          "name": "OUTPUT FREQUENCY 3000 Hz"
+        },
+        {
+          "min": "111",
+          "max": "111",
+          "name": "OUTPUT FREQUENCY 3500 Hz"
+        },
+        {
+          "min": "112",
+          "max": "112",
+          "name": "OUTPUT FREQUENCY 4000 Hz"
+        },
+        {
+          "min": "113",
+          "max": "113",
+          "name": "OUTPUT FREQUENCY 4500 Hz"
+        },
+        {
+          "min": "114",
+          "max": "114",
+          "name": "OUTPUT FREQUENCY 5000 Hz"
+        },
+        {
+          "min": "115",
+          "max": "134",
+          "name": "RESERVED"
+        },
+        {
+          "min": "135",
+          "max": "144",
+          "name": "BOOST ON - DEFAULT"
+        },
+        {
+          "min": "145",
+          "max": "154",
+          "name": "BOOST OFF"
+        },
+        {
+          "min": "155",
+          "max": "164",
+          "name": "DISPLAY STAND-BY OFF - DEFAULT"
+        },
+        {
+          "min": "165",
+          "max": "174",
+          "name": "DISPLAY STAND-BY ON"
+        },
+        {
+          "min": "175",
+          "max": "176",
+          "name": "NO DMX ACTION - KEEP LAST DEMX - DEFAULT"
+        },
+        {
+          "min": "177",
+          "max": "178",
+          "name": "NO DMX ACTION - Black-out"
+        },
+        {
+          "min": "179",
+          "max": "180",
+          "name": "NO DMX ACTION - LED ON @ 100%"
+        },
+        {
+          "min": "181",
+          "max": "182",
+          "name": "NO DMX ACTION - LED ON @ 60%"
+        },
+        {
+          "min": "183",
+          "max": "184",
+          "name": "NO DMX ACTION - CUSTOM"
+        },
+        {
+          "min": "185",
+          "max": "194",
+          "name": "RESERVED"
+        },
+        {
+          "min": "195",
+          "max": "204",
+          "name": "RESERVED"
+        },
+        {
+          "min": "205",
+          "max": "214",
+          "name": "RESERVED"
+        },
+        {
+          "min": "215",
+          "max": "224",
+          "name": "RESERVED"
+        },
+        {
+          "min": "225",
+          "max": "234",
+          "name": "RESERVED"
+        },
+        {
+          "min": "235",
+          "max": "244",
+          "name": "FAN STANDARD MODE"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "FAN SILENT MODE - DEFAULT"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Shutter",
+        "Dimmer",
+        "Dimmer Fine",
+        "Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "8.5",
+      "width": "237",
+      "height": "221",
+      "depth": "397"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

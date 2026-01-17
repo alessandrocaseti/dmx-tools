@@ -1,0 +1,571 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elation",
+  "model": "SIXPAR 200IP",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Oscar Cervesato",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "U.V.",
+      "type": "Unknown"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED OFF (NO STROE)"
+        },
+        {
+          "min": "32",
+          "max": "95",
+          "name": "Strobe Effect SLOW to FAST"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED ON (NO STROBE)"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Strobe Pulse Effect In Sequences SLOW to FAST"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED ON (NO STROBE)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe Effect SLOW to FAST"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED ON (NO STROBE)"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "OFF"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "RED"
+        },
+        {
+          "min": "8",
+          "max": "11",
+          "name": "GREEN"
+        },
+        {
+          "min": "12",
+          "max": "15",
+          "name": "BLUE"
+        },
+        {
+          "min": "16",
+          "max": "19",
+          "name": "WHITE"
+        },
+        {
+          "min": "20",
+          "max": "23",
+          "name": "AMBER"
+        },
+        {
+          "min": "24",
+          "max": "27",
+          "name": "U.V."
+        },
+        {
+          "min": "28",
+          "max": "31",
+          "name": "RED+GREEN"
+        },
+        {
+          "min": "32",
+          "max": "35",
+          "name": "RED+BLUE"
+        },
+        {
+          "min": "36",
+          "max": "39",
+          "name": "RED+WHITE"
+        },
+        {
+          "min": "40",
+          "max": "43",
+          "name": "RED+AMBER"
+        },
+        {
+          "min": "44",
+          "max": "47",
+          "name": "RED+U.V."
+        },
+        {
+          "min": "48",
+          "max": "51",
+          "name": "GREEN+BLUE"
+        },
+        {
+          "min": "52",
+          "max": "55",
+          "name": "GREEN+WHITE"
+        },
+        {
+          "min": "56",
+          "max": "59",
+          "name": "GREEN+AMBER"
+        },
+        {
+          "min": "60",
+          "max": "63",
+          "name": "GREEN+U.V."
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "BLUE+WHITE"
+        },
+        {
+          "min": "68",
+          "max": "71",
+          "name": "BLUE+AMBER"
+        },
+        {
+          "min": "72",
+          "max": "75",
+          "name": "BLUE+U.V."
+        },
+        {
+          "min": "76",
+          "max": "79",
+          "name": "WHITE+AMBER"
+        },
+        {
+          "min": "80",
+          "max": "83",
+          "name": "WHITE+U.V."
+        },
+        {
+          "min": "84",
+          "max": "87",
+          "name": "AMBER+U.V."
+        },
+        {
+          "min": "88",
+          "max": "91",
+          "name": "RED+GREEN+BLUE"
+        },
+        {
+          "min": "92",
+          "max": "95",
+          "name": "RED+GREEN+WHITE"
+        },
+        {
+          "min": "96",
+          "max": "99",
+          "name": "RED+GREEN+AMBER"
+        },
+        {
+          "min": "100",
+          "max": "103",
+          "name": "RED+GREEN+U.V."
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "RED+BLUE+WHITE"
+        },
+        {
+          "min": "108",
+          "max": "111",
+          "name": "RED+BLUE+AMBER"
+        },
+        {
+          "min": "112",
+          "max": "115",
+          "name": "RED+BLUE+U.V."
+        },
+        {
+          "min": "116",
+          "max": "119",
+          "name": "RED+WHITE+AMBER"
+        },
+        {
+          "min": "120",
+          "max": "123",
+          "name": "RED+WHITE+U.V."
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "RED+AMBER+U.V."
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "GREEN+BLUE+WHITE"
+        },
+        {
+          "min": "132",
+          "max": "135",
+          "name": "GREEN+BLUE+AMBER"
+        },
+        {
+          "min": "136",
+          "max": "139",
+          "name": "GREEN+BLUE+U.V."
+        },
+        {
+          "min": "140",
+          "max": "143",
+          "name": "GREEN+WHITE+AMBER"
+        },
+        {
+          "min": "144",
+          "max": "147",
+          "name": "GREEN+WHITE+U.V."
+        },
+        {
+          "min": "148",
+          "max": "151",
+          "name": "GREEN+AMBER+U.V."
+        },
+        {
+          "min": "152",
+          "max": "155",
+          "name": "BLUE+WHITE+AMBER"
+        },
+        {
+          "min": "156",
+          "max": "159",
+          "name": "BLUE+WHITE+U.V."
+        },
+        {
+          "min": "160",
+          "max": "163",
+          "name": "BLUE+AMBER+U.V."
+        },
+        {
+          "min": "164",
+          "max": "167",
+          "name": "WHITE+AMBER+U.V."
+        },
+        {
+          "min": "168",
+          "max": "171",
+          "name": "RED+GREEN+BLUE+WHITE"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "RED+GREEN+BLUE+AMBER"
+        },
+        {
+          "min": "176",
+          "max": "179",
+          "name": "RED+GREEN+BLUE+U.V."
+        },
+        {
+          "min": "180",
+          "max": "183",
+          "name": "RED+GREEN+WHITE+AMBER"
+        },
+        {
+          "min": "184",
+          "max": "187",
+          "name": "RED+GREEN+WHITE+U.V."
+        },
+        {
+          "min": "188",
+          "max": "191",
+          "name": "RED+GREEN+AMBER+U.V."
+        },
+        {
+          "min": "192",
+          "max": "195",
+          "name": "RED+BLUE+WHITE+AMBER"
+        },
+        {
+          "min": "196",
+          "max": "199",
+          "name": "RED+GREEN+WHITE+U.V."
+        },
+        {
+          "min": "200",
+          "max": "203",
+          "name": "RED+GREEN+AMBER+U.V."
+        },
+        {
+          "min": "204",
+          "max": "207",
+          "name": "RED+WHITE+AMBE+U.V."
+        },
+        {
+          "min": "208",
+          "max": "211",
+          "name": "GREEN+BLUE+WHITE+AMBER"
+        },
+        {
+          "min": "212",
+          "max": "215",
+          "name": "GREEN+BLUE+WHITE+U.V."
+        },
+        {
+          "min": "216",
+          "max": "219",
+          "name": "GREEN+BLUE+AMBER+U.V."
+        },
+        {
+          "min": "220",
+          "max": "223",
+          "name": "GREEN+WHITE+AMBER+U.V."
+        },
+        {
+          "min": "224",
+          "max": "227",
+          "name": "BLUE+WHITE+AMBER+U.V."
+        },
+        {
+          "min": "228",
+          "max": "231",
+          "name": "RED+GREEN+BLUE+WHITE+AMBER"
+        },
+        {
+          "min": "232",
+          "max": "235",
+          "name": "RED+GREEN+BLUE+WHITE+U.V."
+        },
+        {
+          "min": "236",
+          "max": "239",
+          "name": "RED+GREEN+BLUE+AMBER+U.V."
+        },
+        {
+          "min": "240",
+          "max": "243",
+          "name": "RED+GREEN+WHITE+AMBER+U.V."
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "RED+BLUE+WHITE+AMBER+U.V."
+        },
+        {
+          "min": "248",
+          "max": "251",
+          "name": "GREEN+BLUE+WHITE+AMBER+U.V."
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "RED+GREEN+BLUE+WHITE+AMBER+U.V."
+        }
+      ]
+    },
+    {
+      "name": "Colour Chase Macros",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "NO Function"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "30 Colour Chase"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "6 Colour Chase"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Colour Fade Chase"
+        },
+        {
+          "min": "81",
+          "max": "255",
+          "name": "NO Function"
+        }
+      ]
+    },
+    {
+      "name": "Colour Chase Macros Speed",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Chase Speed of CHANNEL 10 - SLOW to FAST"
+        }
+      ]
+    },
+    {
+      "name": "Dimming Modes",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Archictural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theater"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "NO Function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "U.V.",
+        "Dimmer",
+        "Strobe",
+        "Color Macros",
+        "Colour Chase Macros",
+        "Colour Chase Macros Speed",
+        "Dimming Modes"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "U.V.",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "U.V.",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "U.V."
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2100",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.7",
+      "width": "157",
+      "height": "300",
+      "depth": "313"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "150",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

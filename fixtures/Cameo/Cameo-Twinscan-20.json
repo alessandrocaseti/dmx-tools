@@ -1,0 +1,425 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Twinscan 20",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "István Király",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Stroboscope speed 1 - 20Hz"
+        }
+      ]
+    },
+    {
+      "name": "Tilt 1",
+      "type": "Tilt"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Gobo 1",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Open"
+        },
+        {
+          "min": "7",
+          "max": "12",
+          "name": "Gobo 1 Yellow"
+        },
+        {
+          "min": "13",
+          "max": "18",
+          "name": "Gobo 2 Green"
+        },
+        {
+          "min": "19",
+          "max": "25",
+          "name": "Gobo 3 Four color"
+        },
+        {
+          "min": "26",
+          "max": "31",
+          "name": "Gobo 4 Magenta"
+        },
+        {
+          "min": "32",
+          "max": "37",
+          "name": "Gobo 5 White"
+        },
+        {
+          "min": "38",
+          "max": "44",
+          "name": "Gobo 6 Blue"
+        },
+        {
+          "min": "45",
+          "max": "50",
+          "name": "Gobo 7 Orange"
+        },
+        {
+          "min": "51",
+          "max": "56",
+          "name": "Gobo 8 GreenYellow"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Gobo 9 Blue Green"
+        },
+        {
+          "min": "64",
+          "max": "70",
+          "name": "Spot Shake effect"
+        },
+        {
+          "min": "71",
+          "max": "127",
+          "name": "Shake effects gobo 1..9"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise slow-fast"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counterclockwise slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Tilt 2",
+      "type": "Tilt"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Gobo 2",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Open"
+        },
+        {
+          "min": "7",
+          "max": "12",
+          "name": "Gobo 1 Yellow"
+        },
+        {
+          "min": "13",
+          "max": "18",
+          "name": "Gobo 2 Green"
+        },
+        {
+          "min": "19",
+          "max": "25",
+          "name": "Gobo 3 Four color"
+        },
+        {
+          "min": "26",
+          "max": "31",
+          "name": "Gobo 4 Magenta"
+        },
+        {
+          "min": "32",
+          "max": "37",
+          "name": "Gobo 5 White"
+        },
+        {
+          "min": "38",
+          "max": "44",
+          "name": "Gobo 6 Blue"
+        },
+        {
+          "min": "45",
+          "max": "50",
+          "name": "Gobo 7 Orange"
+        },
+        {
+          "min": "51",
+          "max": "56",
+          "name": "Gobo 8 GreenYellow"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Gobo 9 Blue Green"
+        },
+        {
+          "min": "64",
+          "max": "70",
+          "name": "Spot Shake effect"
+        },
+        {
+          "min": "71",
+          "max": "127",
+          "name": "Shake effects gobo 1..9"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise slow-fast"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counterclockwise slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Tilt-both",
+      "type": "Tilt"
+    },
+    {
+      "name": "Gobo-both",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Open"
+        },
+        {
+          "min": "7",
+          "max": "12",
+          "name": "Gobo 1 Yellow"
+        },
+        {
+          "min": "13",
+          "max": "18",
+          "name": "Gobo 2 Green"
+        },
+        {
+          "min": "19",
+          "max": "25",
+          "name": "Gobo 3 Four color"
+        },
+        {
+          "min": "26",
+          "max": "31",
+          "name": "Gobo 4 Magenta"
+        },
+        {
+          "min": "32",
+          "max": "37",
+          "name": "Gobo 5 White"
+        },
+        {
+          "min": "38",
+          "max": "44",
+          "name": "Gobo 6 Blue"
+        },
+        {
+          "min": "45",
+          "max": "50",
+          "name": "Gobo 7 Orange"
+        },
+        {
+          "min": "51",
+          "max": "56",
+          "name": "Gobo 8 GreenYellow"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Gobo 9 Blue Green"
+        },
+        {
+          "min": "64",
+          "max": "70",
+          "name": "Spot Shake effect"
+        },
+        {
+          "min": "71",
+          "max": "127",
+          "name": "Shake effects gobo 1..9"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise slow-fast"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counterclockwise slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "33",
+          "name": "AUTO 1"
+        },
+        {
+          "min": "34",
+          "max": "57",
+          "name": "AUTO 2"
+        },
+        {
+          "min": "58",
+          "max": "81",
+          "name": "AUTO 3"
+        },
+        {
+          "min": "82",
+          "max": "105",
+          "name": "AUTO 4"
+        },
+        {
+          "min": "106",
+          "max": "129",
+          "name": "AUTO 5"
+        },
+        {
+          "min": "130",
+          "max": "153",
+          "name": "AUTO 6"
+        },
+        {
+          "min": "154",
+          "max": "177",
+          "name": "AUTO 7"
+        },
+        {
+          "min": "178",
+          "max": "201",
+          "name": "AUTO 8"
+        },
+        {
+          "min": "202",
+          "max": "225",
+          "name": "AUTO 9"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Sound control - sensitivity 0-100%"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Auto"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Auto"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Tilt-both",
+        "Gobo-both"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 8,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Tilt 1",
+        "White 1",
+        "Gobo 1",
+        "Tilt 2",
+        "White 2",
+        "Gobo 2"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "545",
+      "height": "151",
+      "depth": "180"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "55"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "0",
+      "tiltMax": "55"
+    },
+    "technical": {
+      "powerConsumption": "35",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

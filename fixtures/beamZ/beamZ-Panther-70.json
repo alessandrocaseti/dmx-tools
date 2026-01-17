@@ -1,0 +1,390 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "Panther 70",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Patrick",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Fine Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Yellow"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Red"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Blue"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Green"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "Magenta"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "Deep Blue"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "Orange"
+        },
+        {
+          "min": "57",
+          "max": "66",
+          "name": "Open + Yellow"
+        },
+        {
+          "min": "67",
+          "max": "76",
+          "name": "Yellow + Red"
+        },
+        {
+          "min": "77",
+          "max": "86",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "87",
+          "max": "96",
+          "name": "Blue + Green"
+        },
+        {
+          "min": "97",
+          "max": "106",
+          "name": "Green + Magenta"
+        },
+        {
+          "min": "107",
+          "max": "116",
+          "name": "Magenta + Deep Blue"
+        },
+        {
+          "min": "117",
+          "max": "127",
+          "name": "Deep Blue + Orange"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Colour Wheel rotation slow to fast CW"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Colour Wheel rotation stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Colour Wheel rotation slow to fast CCW"
+        }
+      ]
+    },
+    {
+      "name": "Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Open"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo Shake 1"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo Shake 2"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo Shake 3"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo Shake 4"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo Shake 5"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo Shake 6"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo Shake 7"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Gobo Whell Rotation Slow to Fast CW"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Gobo Whell Rotation Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Gobo Whell Rotation Slow to Fast CCW"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan-Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No Function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Black Out While Pan Tilt Move"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "No Function"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Blackout While Colour Change"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No Function"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Blackout When Gobo Change"
+        },
+        {
+          "min": "120",
+          "max": "199",
+          "name": "No Function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset All"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "No Function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Dim Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Théatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Standard"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "16 Bits",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Fine Pan",
+        "Tilt",
+        "Fine Tilt",
+        "Colour",
+        "Gobos",
+        "Shutter",
+        "Dimmer",
+        "Pan-Tilt Speed",
+        "Functions",
+        "Dim Mode"
+      ]
+    },
+    {
+      "name": "8 Bits",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Gobos",
+        "Shutter",
+        "Dimmer",
+        "Pan-Tilt Speed",
+        "Functions",
+        "Dim Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "31700",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.2",
+      "width": "160",
+      "height": "200",
+      "depth": "190"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "10",
+      "degreesMax": "10"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "70",
+      "dmxConnector": "3-pin IP65"
+    }
+  }
+}

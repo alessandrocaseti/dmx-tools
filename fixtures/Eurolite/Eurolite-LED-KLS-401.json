@@ -1,0 +1,220 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED KLS-401",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Preset programs, automatic mode, sound control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Program 1"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Program 2"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "Program 3"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Program 4"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Program 5"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Program 6"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Program 7"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Program 8"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Program 9"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "Program 10"
+        },
+        {
+          "min": "210",
+          "max": "229",
+          "name": "Program 11"
+        },
+        {
+          "min": "230",
+          "max": "249",
+          "name": "Automatic mode"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
+    },
+    {
+      "name": "Master control",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobe control",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe slow -> fast"
+        }
+      ]
+    },
+    {
+      "name": "Spot 1: Brightness red or running speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimming from 0 - 100%/running speed slow -> fast"
+        }
+      ]
+    },
+    {
+      "name": "Spot 1: Brightness green or fade time",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimming from 0 - 100%/fade time fast -> slow"
+        }
+      ]
+    },
+    {
+      "name": "Spot 1: Brightness blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Spot 2: Brightness red",
+      "type": "Red"
+    },
+    {
+      "name": "Spot 2: Brightness green",
+      "type": "Green"
+    },
+    {
+      "name": "Spot 2: Brightness blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Spot 3: Brightness red",
+      "type": "Red"
+    },
+    {
+      "name": "Spot 3: Brightness green",
+      "type": "Green"
+    },
+    {
+      "name": "Spot 3: Brightness blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Spot 4: Brightness red",
+      "type": "Red"
+    },
+    {
+      "name": "Spot 4: Brightness green",
+      "type": "Green"
+    },
+    {
+      "name": "Spot 4: Brightness blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX protocol",
+      "totalChannels": 15,
+      "channels": [
+        "Preset programs, automatic mode, sound control",
+        "Master control",
+        "Strobe control",
+        "Spot 1: Brightness red or running speed",
+        "Spot 1: Brightness green or fade time",
+        "Spot 1: Brightness blue",
+        "Spot 2: Brightness red",
+        "Spot 2: Brightness green",
+        "Spot 2: Brightness blue",
+        "Spot 3: Brightness red",
+        "Spot 3: Brightness green",
+        "Spot 3: Brightness blue",
+        "Spot 4: Brightness red",
+        "Spot 4: Brightness green",
+        "Spot 4: Brightness blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.5",
+      "width": "1200",
+      "height": "310",
+      "depth": "55"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "100",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

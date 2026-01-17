@@ -1,0 +1,273 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "LEDrain64",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Public",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Macro Colors (By LED Levels)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Red: 100% green: 20% blue: "
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red: 100% green: 40% blue: "
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Red: 100% green: 60% blue: "
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Red: 100% green: 80% blue: "
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Red: 100% green: 100% blue: "
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Red:  green: 100% blue: "
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Red:  green: 100% blue: 20%"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Red:  green: 100% blue: 40%"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Red:  green: 100% blue: 60%"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Red:  green: 100% blue: 80%"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Red:  green: 100% blue: 100%"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Red:  green:  blue: 100%"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Red: 20% green:  blue: 100%"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Red: 40% green:  blue: 100%"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Red: 60% green:  blue: 100%"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Red: 80% green:  blue: 100%"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Red: 100% green:  blue: 100%"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Red: 100% green: 25% blue: 100%"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Red: 100% green: 50% blue: 100%"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Red: 100% green: 75% blue: 100%"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Red: 100% green: 100% blue: 100%"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Red: 100% green: 100% blue: 25%"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Red: 100% green: 100% blue: 50%"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Red: 100% green: 100% blue: 75%"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Red: 100% green: 100% blue: 100%"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Red: 20% green: 100% blue: 100%"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Red: 40% green: 100% blue: 100%"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Red: 60% green: 100% blue: 100%"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Red: 80% green: 100% blue: 100%"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Red: 100% green: 100% blue: 100%"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Red: 50% green: 50% blue: 50%"
+        }
+      ]
+    },
+    {
+      "name": "Strobe or Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0% ~ 100%"
+        }
+      ]
+    },
+    {
+      "name": "Preset Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No function"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Fade program: Use ch 5 to adjust speed"
+        },
+        {
+          "min": "160",
+          "max": "223",
+          "name": "Colour chase: Use ch 5 to adjust speed"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Colour chase: Use rotary knob to adjust speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Macro Colors (By LED Levels)",
+        "Strobe or Speed",
+        "Preset Programs",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.8",
+      "width": "254",
+      "height": "279",
+      "depth": "216"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "16",
+      "degreesMax": "16"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "18",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

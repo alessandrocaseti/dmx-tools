@@ -1,0 +1,260 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "Radical II",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Matt Muller",
+  "channels": [
+    {
+      "name": "Laser",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "59",
+          "name": "Laser motor clockwise rotation（From slow to fast）"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Stop"
+        },
+        {
+          "min": "70",
+          "max": "119",
+          "name": "Laser motor counter clockwise rotation（From slow to fast）"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Stop"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "back and forward movement with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Motor rotation",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Motor location"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "back and forward movement with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Colours macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Fuction"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Red + Green"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blue + White"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Red + White"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Green + White"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Blue + Green + White"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Red + Blue + White"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Red + Green + White"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "All LED on"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Rainbow Group effect 1"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Rainbow Group effect 2"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Rainbow Group effect 3"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Rainbow Group effect 4"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Rainbow Group effect 5"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Rainbow Group effect with strobe 1"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Rainbow Group effect with strobe 2"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Rainbow Group effect with strobe 3"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Rainbow Group effect with strobe 4"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Rainbow Group effect with strobe 5"
+        }
+      ]
+    },
+    {
+      "name": "Auto/Sound",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "119",
+          "name": "Auto DMX ( From slow to fast )"
+        },
+        {
+          "min": "120",
+          "max": "255",
+          "name": "Sound DMX ( From slow to fast )"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 4,
+      "channels": [
+        "Laser",
+        "Motor rotation",
+        "Colours macro",
+        "Auto/Sound"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.18",
+      "width": "260",
+      "height": "235",
+      "depth": "180"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

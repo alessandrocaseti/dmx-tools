@@ -1,0 +1,1417 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COLORado Batten 72x",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Greg Perrone",
+  "channels": [
+    {
+      "name": "Dimmer 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "Hue 1",
+      "type": "Unknown"
+    },
+    {
+      "name": "Fine Hue 1",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation 1",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobe 1",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No Function"
+        },
+        {
+          "min": "110",
+          "max": "179",
+          "name": "Pulse Strobe, slow to fast"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "No Function"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Random strobe, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "35",
+          "name": "R:100%, G:0-100%, B:0, A:0%, W:0%"
+        },
+        {
+          "min": "36",
+          "max": "59",
+          "name": "R:100-0%, G:100%, B:0%, A:0%, W:0%"
+        },
+        {
+          "min": "60",
+          "max": "84",
+          "name": "R:0%, G:100%, B:0-100%, A:0%, W:0%"
+        },
+        {
+          "min": "85",
+          "max": "109",
+          "name": "R:0%, G:100-0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "110",
+          "max": "134",
+          "name": "R:0-100%, G:0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "135",
+          "max": "159",
+          "name": "R:100%, G:0%, B:100-0%, A:0%, W:0%"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "R:100%, G:100-0%, B:0-100%, A:0%, W:0%"
+        },
+        {
+          "min": "185",
+          "max": "209",
+          "name": "R:100-0%, G:100-0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "R:100%, G:100%, B:100%, A:100%, W:100%"
+        }
+      ]
+    },
+    {
+      "name": "Color Temperature 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "28",
+          "name": "White 1"
+        },
+        {
+          "min": "29",
+          "max": "46",
+          "name": "White 2"
+        },
+        {
+          "min": "47",
+          "max": "64",
+          "name": "White 3"
+        },
+        {
+          "min": "65",
+          "max": "82",
+          "name": "White 4"
+        },
+        {
+          "min": "83",
+          "max": "100",
+          "name": "White 5"
+        },
+        {
+          "min": "101",
+          "max": "118",
+          "name": "White 6"
+        },
+        {
+          "min": "119",
+          "max": "136",
+          "name": "White 7"
+        },
+        {
+          "min": "137",
+          "max": "154",
+          "name": "White 8"
+        },
+        {
+          "min": "155",
+          "max": "172",
+          "name": "White 9"
+        },
+        {
+          "min": "173",
+          "max": "190",
+          "name": "White 10"
+        },
+        {
+          "min": "191",
+          "max": "208",
+          "name": "White 11"
+        },
+        {
+          "min": "209",
+          "max": "226",
+          "name": "White 12"
+        },
+        {
+          "min": "227",
+          "max": "244",
+          "name": "White 13"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "White 14"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "Hue 2",
+      "type": "Unknown"
+    },
+    {
+      "name": "Fine Hue 2",
+      "type": "Unknown"
+    },
+    {
+      "name": "Fine Hue 3",
+      "type": "Unknown"
+    },
+    {
+      "name": "Hue 3",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation 2",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation 3",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobe 2",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No Function"
+        },
+        {
+          "min": "110",
+          "max": "179",
+          "name": "Pulse Strobe, slow to fast"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "No Function"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Random strobe, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe 3",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No Function"
+        },
+        {
+          "min": "110",
+          "max": "179",
+          "name": "Pulse Strobe, slow to fast"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "No Function"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Random strobe, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "35",
+          "name": "R:100%, G:0-100%, B:0, A:0%, W:0%"
+        },
+        {
+          "min": "36",
+          "max": "59",
+          "name": "R:100-0%, G:100%, B:0%, A:0%, W:0%"
+        },
+        {
+          "min": "60",
+          "max": "84",
+          "name": "R:0%, G:100%, B:0-100%, A:0%, W:0%"
+        },
+        {
+          "min": "85",
+          "max": "109",
+          "name": "R:0%, G:100-0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "110",
+          "max": "134",
+          "name": "R:0-100%, G:0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "135",
+          "max": "159",
+          "name": "R:100%, G:0%, B:100-0%, A:0%, W:0%"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "R:100%, G:100-0%, B:0-100%, A:0%, W:0%"
+        },
+        {
+          "min": "185",
+          "max": "209",
+          "name": "R:100-0%, G:100-0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "R:100%, G:100%, B:100%, A:100%, W:100%"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros 3",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "35",
+          "name": "R:100%, G:0-100%, B:0, A:0%, W:0%"
+        },
+        {
+          "min": "36",
+          "max": "59",
+          "name": "R:100-0%, G:100%, B:0%, A:0%, W:0%"
+        },
+        {
+          "min": "60",
+          "max": "84",
+          "name": "R:0%, G:100%, B:0-100%, A:0%, W:0%"
+        },
+        {
+          "min": "85",
+          "max": "109",
+          "name": "R:0%, G:100-0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "110",
+          "max": "134",
+          "name": "R:0-100%, G:0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "135",
+          "max": "159",
+          "name": "R:100%, G:0%, B:100-0%, A:0%, W:0%"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "R:100%, G:100-0%, B:0-100%, A:0%, W:0%"
+        },
+        {
+          "min": "185",
+          "max": "209",
+          "name": "R:100-0%, G:100-0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "R:100%, G:100%, B:100%, A:100%, W:100%"
+        }
+      ]
+    },
+    {
+      "name": "Color Temperature 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "28",
+          "name": "White 1"
+        },
+        {
+          "min": "29",
+          "max": "46",
+          "name": "White 2"
+        },
+        {
+          "min": "47",
+          "max": "64",
+          "name": "White 3"
+        },
+        {
+          "min": "65",
+          "max": "82",
+          "name": "White 4"
+        },
+        {
+          "min": "83",
+          "max": "100",
+          "name": "White 5"
+        },
+        {
+          "min": "101",
+          "max": "118",
+          "name": "White 6"
+        },
+        {
+          "min": "119",
+          "max": "136",
+          "name": "White 7"
+        },
+        {
+          "min": "137",
+          "max": "154",
+          "name": "White 8"
+        },
+        {
+          "min": "155",
+          "max": "172",
+          "name": "White 9"
+        },
+        {
+          "min": "173",
+          "max": "190",
+          "name": "White 10"
+        },
+        {
+          "min": "191",
+          "max": "208",
+          "name": "White 11"
+        },
+        {
+          "min": "209",
+          "max": "226",
+          "name": "White 12"
+        },
+        {
+          "min": "227",
+          "max": "244",
+          "name": "White 13"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "White 14"
+        }
+      ]
+    },
+    {
+      "name": "Color Temperature 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "28",
+          "name": "White 1"
+        },
+        {
+          "min": "29",
+          "max": "46",
+          "name": "White 2"
+        },
+        {
+          "min": "47",
+          "max": "64",
+          "name": "White 3"
+        },
+        {
+          "min": "65",
+          "max": "82",
+          "name": "White 4"
+        },
+        {
+          "min": "83",
+          "max": "100",
+          "name": "White 5"
+        },
+        {
+          "min": "101",
+          "max": "118",
+          "name": "White 6"
+        },
+        {
+          "min": "119",
+          "max": "136",
+          "name": "White 7"
+        },
+        {
+          "min": "137",
+          "max": "154",
+          "name": "White 8"
+        },
+        {
+          "min": "155",
+          "max": "172",
+          "name": "White 9"
+        },
+        {
+          "min": "173",
+          "max": "190",
+          "name": "White 10"
+        },
+        {
+          "min": "191",
+          "max": "208",
+          "name": "White 11"
+        },
+        {
+          "min": "209",
+          "max": "226",
+          "name": "White 12"
+        },
+        {
+          "min": "227",
+          "max": "244",
+          "name": "White 13"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "White 14"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Preset dimmer speed from display menu"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Dimmer speed mode off"
+        },
+        {
+          "min": "30",
+          "max": "69",
+          "name": "Dimmer speed mode 1 (fastest)"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "Dimmer speed mode 2"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "Dimmer speed mode 3"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Dimmer speed mode 4 (slowest)"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Fine Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Fine Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Fine Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Amber 1",
+      "type": "Amber"
+    },
+    {
+      "name": "Fine Amber 1",
+      "type": "Amber"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Fine White 1",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Fine Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Fine Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Amber 2",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber 3",
+      "type": "Amber"
+    },
+    {
+      "name": "Fine Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Fine Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Fine Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Fine Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Fine Amber 2",
+      "type": "Amber"
+    },
+    {
+      "name": "Fine Amber 3",
+      "type": "Amber"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "Fine White 2",
+      "type": "White"
+    },
+    {
+      "name": "Fine White 3",
+      "type": "White"
+    },
+    {
+      "name": "Strobe All",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No Function"
+        },
+        {
+          "min": "110",
+          "max": "179",
+          "name": "Pulse Strobe, slow to fast"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "No Function"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Random strobe, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Fine Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Fine Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No Function"
+        },
+        {
+          "min": "110",
+          "max": "179",
+          "name": "Pulse Strobe, slow to fast"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "No Function"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Random strobe, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "35",
+          "name": "R:100%, G:0-100%, B:0, A:0%, W:0%"
+        },
+        {
+          "min": "36",
+          "max": "59",
+          "name": "R:100-0%, G:100%, B:0%, A:0%, W:0%"
+        },
+        {
+          "min": "60",
+          "max": "84",
+          "name": "R:0%, G:100%, B:0-100%, A:0%, W:0%"
+        },
+        {
+          "min": "85",
+          "max": "109",
+          "name": "R:0%, G:100-0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "110",
+          "max": "134",
+          "name": "R:0-100%, G:0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "135",
+          "max": "159",
+          "name": "R:100%, G:0%, B:100-0%, A:0%, W:0%"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "R:100%, G:100-0%, B:0-100%, A:0%, W:0%"
+        },
+        {
+          "min": "185",
+          "max": "209",
+          "name": "R:100-0%, G:100-0%, B:100%, A:0%, W:0%"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "R:100%, G:100%, B:100%, A:100%, W:100%"
+        }
+      ]
+    },
+    {
+      "name": "Color Temperature",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "28",
+          "name": "White 1"
+        },
+        {
+          "min": "29",
+          "max": "46",
+          "name": "White 2"
+        },
+        {
+          "min": "47",
+          "max": "64",
+          "name": "White 3"
+        },
+        {
+          "min": "65",
+          "max": "82",
+          "name": "White 4"
+        },
+        {
+          "min": "83",
+          "max": "100",
+          "name": "White 5"
+        },
+        {
+          "min": "101",
+          "max": "118",
+          "name": "White 6"
+        },
+        {
+          "min": "119",
+          "max": "136",
+          "name": "White 7"
+        },
+        {
+          "min": "137",
+          "max": "154",
+          "name": "White 8"
+        },
+        {
+          "min": "155",
+          "max": "172",
+          "name": "White 9"
+        },
+        {
+          "min": "173",
+          "max": "190",
+          "name": "White 10"
+        },
+        {
+          "min": "191",
+          "max": "208",
+          "name": "White 11"
+        },
+        {
+          "min": "209",
+          "max": "226",
+          "name": "White 12"
+        },
+        {
+          "min": "227",
+          "max": "244",
+          "name": "White 13"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "White 14"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Fine Red",
+      "type": "Red"
+    },
+    {
+      "name": "Fine Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Fine Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Fine Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Fine White",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 HSIC",
+      "totalChannels": 22,
+      "channels": [
+        "Dimmer 1",
+        "Hue 1",
+        "Fine Hue 1",
+        "Saturation 1",
+        "Strobe 1",
+        "Color Macros 1",
+        "Color Temperature 1",
+        "Dimmer 2",
+        "Hue 2",
+        "Fine Hue 2",
+        "Saturation 2",
+        "Strobe 2",
+        "Color Macros 2",
+        "Color Temperature 2",
+        "Dimmer 3",
+        "Hue 3",
+        "Fine Hue 3",
+        "Saturation 3",
+        "Strobe 3",
+        "Color Macros 3",
+        "Color Temperature 3",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "3 RGBAW FUL",
+      "totalChannels": 43,
+      "channels": [
+        "Dimmer",
+        "Fine Dimmer",
+        "Red 1",
+        "Fine Red 1",
+        "Green 1",
+        "Fine Green 1",
+        "Blue 1",
+        "Fine Blue 1",
+        "Amber 1",
+        "Fine Amber 1",
+        "White 1",
+        "Fine White 1",
+        "Color Macros 1",
+        "Color Temperature 1",
+        "Strobe 1",
+        "Red 2",
+        "Fine Red 2",
+        "Green 2",
+        "Fine Green 2",
+        "Blue 2",
+        "Fine Blue 2",
+        "Amber 2",
+        "Fine Amber 2",
+        "White 2",
+        "Fine White 2",
+        "Color Macros 2",
+        "Color Temperature 2",
+        "Strobe 2",
+        "Red 3",
+        "Fine Red 3",
+        "Green 3",
+        "Fine Green 3",
+        "Blue 3",
+        "Fine Blue 3",
+        "Amber 3",
+        "Fine Amber 3",
+        "White 3",
+        "Fine White 3",
+        "Color Macros 3",
+        "Color Temperature 3",
+        "Strobe 3",
+        "Strobe All",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "3 RGBAW FIN",
+      "totalChannels": 30,
+      "channels": [
+        "Red 1",
+        "Fine Red 1",
+        "Green 1",
+        "Fine Green 1",
+        "Blue 1",
+        "Fine Blue 1",
+        "Amber 1",
+        "Fine Amber 1",
+        "White 1",
+        "Fine White 1",
+        "Red 2",
+        "Fine Red 2",
+        "Green 2",
+        "Fine Green 2",
+        "Blue 2",
+        "Fine Blue 2",
+        "Amber 2",
+        "Fine Amber 2",
+        "White 2",
+        "Fine White 2",
+        "Red 3",
+        "Fine Red 3",
+        "Green 3",
+        "Fine Green 3",
+        "Blue 3",
+        "Fine Blue 3",
+        "Amber 3",
+        "Fine Amber 3",
+        "White 3",
+        "Fine White 3"
+      ]
+    },
+    {
+      "name": "3 RGBAW EXT",
+      "totalChannels": 27,
+      "channels": [
+        "Dimmer",
+        "Fine Dimmer",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Amber 1",
+        "White 1",
+        "Color Macros 1",
+        "Color Temperature 1",
+        "Strobe 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Amber 2",
+        "White 2",
+        "Color Macros 2",
+        "Color Temperature 2",
+        "Strobe 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Amber 3",
+        "White 3",
+        "Color Macros 3",
+        "Color Temperature 3",
+        "Strobe 3",
+        "Strobe All"
+      ]
+    },
+    {
+      "name": "3 RGBAW",
+      "totalChannels": 15,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Amber 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Amber 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Amber 3",
+        "White 3"
+      ]
+    },
+    {
+      "name": "3 RGBA EXT",
+      "totalChannels": 24,
+      "channels": [
+        "Dimmer",
+        "Fine Dimmer",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Amber 1",
+        "Color Macros 1",
+        "Color Temperature 1",
+        "Strobe 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Amber 2",
+        "Color Macros 2",
+        "Color Temperature 2",
+        "Strobe 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Amber 3",
+        "Color Macros 3",
+        "Color Temperature 3",
+        "Strobe 3",
+        "Strobe All"
+      ]
+    },
+    {
+      "name": "3 RGBA",
+      "totalChannels": 12,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Amber 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Amber 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Amber 3"
+      ]
+    },
+    {
+      "name": "3 RGB EXT",
+      "totalChannels": 21,
+      "channels": [
+        "Dimmer",
+        "Fine Dimmer",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Color Macros 1",
+        "Color Temperature 1",
+        "Strobe 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Color Macros 2",
+        "Color Temperature 2",
+        "Strobe 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Color Macros 3",
+        "Color Temperature 3",
+        "Strobe 3",
+        "Strobe All"
+      ]
+    },
+    {
+      "name": "3 RGB",
+      "totalChannels": 9,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3"
+      ]
+    },
+    {
+      "name": "1 HSIC",
+      "totalChannels": 8,
+      "channels": [
+        "Dimmer",
+        "Hue",
+        "Fine Hue",
+        "Saturation",
+        "Strobe",
+        "Color Macros",
+        "Color Temperature",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "1 RGBAW FUL",
+      "totalChannels": 16,
+      "channels": [
+        "Dimmer",
+        "Fine Dimmer",
+        "Red",
+        "Fine Red",
+        "Green",
+        "Fine Green",
+        "Blue",
+        "Fine Blue",
+        "Amber",
+        "Fine Amber",
+        "White",
+        "Fine White",
+        "Color Macros",
+        "Color Temperature",
+        "Strobe",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "1 RGBAW FIN",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Fine Red",
+        "Green",
+        "Fine Green",
+        "Blue",
+        "Fine Blue",
+        "Amber",
+        "Fine Amber",
+        "White",
+        "Fine White"
+      ]
+    },
+    {
+      "name": "1 RGBAW EXT",
+      "totalChannels": 10,
+      "channels": [
+        "Dimmer",
+        "Fine Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "Color Macros",
+        "Color Temperature",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "1 RGBAW",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White"
+      ]
+    },
+    {
+      "name": "1 RGBA EXT",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Fine Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Color Macros",
+        "Color Temperature",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "1 RGBA",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "1 RGB EXT",
+      "totalChannels": 8,
+      "channels": [
+        "Dimmer",
+        "Fine Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros",
+        "Color Temperature",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "1 RGB",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "3631",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.4",
+      "width": "1000",
+      "height": "156",
+      "depth": "75"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "24",
+      "degreesMax": "24"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "161",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

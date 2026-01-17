@@ -1,0 +1,851 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "UB 12H",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jason R Johnston",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Color macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Off"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Red"
+        },
+        {
+          "min": "8",
+          "max": "11",
+          "name": "Green"
+        },
+        {
+          "min": "12",
+          "max": "15",
+          "name": "Blue"
+        },
+        {
+          "min": "16",
+          "max": "19",
+          "name": "White"
+        },
+        {
+          "min": "20",
+          "max": "23",
+          "name": "Amber"
+        },
+        {
+          "min": "24",
+          "max": "27",
+          "name": "UV"
+        },
+        {
+          "min": "28",
+          "max": "31",
+          "name": "R+G"
+        },
+        {
+          "min": "32",
+          "max": "35",
+          "name": "R+B"
+        },
+        {
+          "min": "36",
+          "max": "39",
+          "name": "R+W"
+        },
+        {
+          "min": "40",
+          "max": "43",
+          "name": "R+A"
+        },
+        {
+          "min": "44",
+          "max": "47",
+          "name": "R+UV"
+        },
+        {
+          "min": "48",
+          "max": "51",
+          "name": "G+B"
+        },
+        {
+          "min": "52",
+          "max": "55",
+          "name": "G+W"
+        },
+        {
+          "min": "56",
+          "max": "59",
+          "name": "G+A"
+        },
+        {
+          "min": "60",
+          "max": "63",
+          "name": "G+UV"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "B+W"
+        },
+        {
+          "min": "68",
+          "max": "71",
+          "name": "B+A"
+        },
+        {
+          "min": "72",
+          "max": "75",
+          "name": "B+UV"
+        },
+        {
+          "min": "76",
+          "max": "79",
+          "name": "W+A"
+        },
+        {
+          "min": "80",
+          "max": "83",
+          "name": "W+UV"
+        },
+        {
+          "min": "84",
+          "max": "87",
+          "name": "A+UV"
+        },
+        {
+          "min": "88",
+          "max": "91",
+          "name": "R+G+B"
+        },
+        {
+          "min": "92",
+          "max": "95",
+          "name": "R+G+W"
+        },
+        {
+          "min": "96",
+          "max": "99",
+          "name": "R+G+A"
+        },
+        {
+          "min": "100",
+          "max": "103",
+          "name": "R+G+UV"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "R+B+W"
+        },
+        {
+          "min": "108",
+          "max": "111",
+          "name": "R+B+A"
+        },
+        {
+          "min": "112",
+          "max": "115",
+          "name": "R+B+UV"
+        },
+        {
+          "min": "116",
+          "max": "119",
+          "name": "R+W+A"
+        },
+        {
+          "min": "120",
+          "max": "123",
+          "name": "R+W+UV"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "R+A+UV"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "G+B+W"
+        },
+        {
+          "min": "132",
+          "max": "135",
+          "name": "G+B+A"
+        },
+        {
+          "min": "136",
+          "max": "139",
+          "name": "G+B+UV"
+        },
+        {
+          "min": "140",
+          "max": "143",
+          "name": "G+W+A"
+        },
+        {
+          "min": "144",
+          "max": "147",
+          "name": "G+W+UV"
+        },
+        {
+          "min": "148",
+          "max": "151",
+          "name": "G+A+UV"
+        },
+        {
+          "min": "152",
+          "max": "155",
+          "name": "B+W+A"
+        },
+        {
+          "min": "156",
+          "max": "159",
+          "name": "B+W+UV"
+        },
+        {
+          "min": "160",
+          "max": "163",
+          "name": "B+A+UV"
+        },
+        {
+          "min": "164",
+          "max": "167",
+          "name": "W+A+UV"
+        },
+        {
+          "min": "168",
+          "max": "171",
+          "name": "R+G+B+W"
+        },
+        {
+          "min": "172",
+          "max": "175",
+          "name": "R+G+B+A"
+        },
+        {
+          "min": "176",
+          "max": "179",
+          "name": "R+G+B+UV"
+        },
+        {
+          "min": "180",
+          "max": "183",
+          "name": "R+G+W+A"
+        },
+        {
+          "min": "184",
+          "max": "187",
+          "name": "R+G+W+UV"
+        },
+        {
+          "min": "188",
+          "max": "191",
+          "name": "R+G+A+UV"
+        },
+        {
+          "min": "192",
+          "max": "195",
+          "name": "R+B+W+A"
+        },
+        {
+          "min": "196",
+          "max": "199",
+          "name": "R+B+W+UV"
+        },
+        {
+          "min": "200",
+          "max": "203",
+          "name": "R+B+A+UV"
+        },
+        {
+          "min": "204",
+          "max": "207",
+          "name": "R+W+A+UV"
+        },
+        {
+          "min": "208",
+          "max": "211",
+          "name": "G+B+W+A"
+        },
+        {
+          "min": "212",
+          "max": "215",
+          "name": "G+B+W+UV"
+        },
+        {
+          "min": "216",
+          "max": "219",
+          "name": "G+B+A+UV"
+        },
+        {
+          "min": "220",
+          "max": "223",
+          "name": "G+W+A+UV"
+        },
+        {
+          "min": "224",
+          "max": "227",
+          "name": "B+W+A+UV"
+        },
+        {
+          "min": "228",
+          "max": "231",
+          "name": "R+G+B+W+A"
+        },
+        {
+          "min": "232",
+          "max": "235",
+          "name": "R+G+B+W+UV"
+        },
+        {
+          "min": "236",
+          "max": "239",
+          "name": "R+G+B+A+UV"
+        },
+        {
+          "min": "240",
+          "max": "243",
+          "name": "R+G+W+A+UV"
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "R+B+W+A+UV"
+        },
+        {
+          "min": "248",
+          "max": "251",
+          "name": "G+B+W+A+UV"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "R+G+B+W+A+UV"
+        }
+      ]
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED Off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED on"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobing Slow - Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED on"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Strobing Slow-Fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED on"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobing Slow-Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED on"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to Unit Settings"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No Fuction"
+        },
+        {
+          "min": "16",
+          "max": "25",
+          "name": "Program 1"
+        },
+        {
+          "min": "26",
+          "max": "35",
+          "name": "Program 2"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Program 3"
+        },
+        {
+          "min": "46",
+          "max": "55",
+          "name": "Program 4"
+        },
+        {
+          "min": "56",
+          "max": "65",
+          "name": "Program 5"
+        },
+        {
+          "min": "66",
+          "max": "75",
+          "name": "Program 6"
+        },
+        {
+          "min": "76",
+          "max": "85",
+          "name": "Program 7"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "Program 8"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Program 9"
+        },
+        {
+          "min": "106",
+          "max": "115",
+          "name": "Program 10"
+        },
+        {
+          "min": "116",
+          "max": "125",
+          "name": "Program 11"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Program 12"
+        },
+        {
+          "min": "136",
+          "max": "145",
+          "name": "Program 13"
+        },
+        {
+          "min": "146",
+          "max": "155",
+          "name": "Program 14"
+        },
+        {
+          "min": "156",
+          "max": "165",
+          "name": "Program 15"
+        },
+        {
+          "min": "166",
+          "max": "175",
+          "name": "Program 16"
+        },
+        {
+          "min": "176",
+          "max": "185",
+          "name": "Program 17"
+        },
+        {
+          "min": "186",
+          "max": "195",
+          "name": "Program 18"
+        },
+        {
+          "min": "196",
+          "max": "205",
+          "name": "Program 19"
+        },
+        {
+          "min": "206",
+          "max": "215",
+          "name": "Program 20"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "Program 21"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Program 22"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Autorun"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed/Sound Sense",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed/Sound Sence"
+        }
+      ]
+    },
+    {
+      "name": "Red Section 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red Section 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red Section 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red Section 4",
+      "type": "Red"
+    },
+    {
+      "name": "Red Section 5",
+      "type": "Red"
+    },
+    {
+      "name": "Red Section 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green Section 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green Section 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green Section 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green Section 4",
+      "type": "Green"
+    },
+    {
+      "name": "Green Section 5",
+      "type": "Green"
+    },
+    {
+      "name": "Green Section 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Section 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Section 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Section 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Section 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Section 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Section 6",
+      "type": "Blue"
+    },
+    {
+      "name": "White Section 1",
+      "type": "White"
+    },
+    {
+      "name": "White Section 2",
+      "type": "White"
+    },
+    {
+      "name": "White Section 3",
+      "type": "White"
+    },
+    {
+      "name": "White Section 4",
+      "type": "White"
+    },
+    {
+      "name": "White Section 5",
+      "type": "White"
+    },
+    {
+      "name": "White Section 6",
+      "type": "White"
+    },
+    {
+      "name": "Amber Section 1",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber Section 2",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber Section 3",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber Section 4",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber Section 5",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber Section 6",
+      "type": "Amber"
+    },
+    {
+      "name": "UV Section 1",
+      "type": "UV"
+    },
+    {
+      "name": "UV Section 2",
+      "type": "UV"
+    },
+    {
+      "name": "UV Section 3",
+      "type": "UV"
+    },
+    {
+      "name": "UV Section 4",
+      "type": "UV"
+    },
+    {
+      "name": "UV Section 5",
+      "type": "UV"
+    },
+    {
+      "name": "UV Section 6",
+      "type": "UV"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Color macros",
+        "Strobing",
+        "Master Dimmer",
+        "Dimmer Curves"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 12,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Color macros",
+        "Programs",
+        "Program Speed/Sound Sense",
+        "Strobing",
+        "Master Dimmer",
+        "Dimmer Curves"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 36,
+      "channels": [
+        "Red Section 1",
+        "Green Section 1",
+        "Blue Section 1",
+        "White Section 1",
+        "Amber Section 1",
+        "UV Section 1",
+        "Red Section 2",
+        "Green Section 2",
+        "Blue Section 2",
+        "White Section 2",
+        "Amber Section 2",
+        "UV Section 2",
+        "Red Section 3",
+        "Green Section 3",
+        "Blue Section 3",
+        "White Section 3",
+        "Amber Section 3",
+        "UV Section 3",
+        "Red Section 4",
+        "Green Section 4",
+        "Blue Section 4",
+        "White Section 4",
+        "Amber Section 4",
+        "UV Section 4",
+        "Red Section 5",
+        "Green Section 5",
+        "Blue Section 5",
+        "White Section 5",
+        "Amber Section 5",
+        "UV Section 5",
+        "Red Section 6",
+        "Green Section 6",
+        "Blue Section 6",
+        "White Section 6",
+        "Amber Section 6",
+        "UV Section 6"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "311",
+      "colourTemperature": "2800"
+    },
+    "dimensions": {
+      "weight": "2.7",
+      "width": "1060",
+      "height": "90",
+      "depth": "63"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "1",
+      "tiltMax": "1"
+    },
+    "technical": {
+      "powerConsumption": "85",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

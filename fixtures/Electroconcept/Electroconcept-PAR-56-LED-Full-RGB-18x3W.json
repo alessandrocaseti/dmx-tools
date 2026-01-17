@@ -1,0 +1,84 @@
+{
+  "version": "1.2",
+  "manufacturer": "Electroconcept",
+  "model": "PAR 56 LED Full RGB 18x3W",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Kevin Deldycke",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "126",
+          "name": "Intensity"
+        },
+        {
+          "min": "127",
+          "max": "249",
+          "name": "Strobe"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Light ON"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default mode",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.8",
+      "width": "240",
+      "height": "192",
+      "depth": "260"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

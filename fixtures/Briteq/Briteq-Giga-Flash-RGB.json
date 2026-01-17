@@ -1,0 +1,346 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "Giga Flash RGB",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fredje",
+  "channels": [
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "247",
+          "name": "Strobe Rate 0-30Hz"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Blinder Effect"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Dimmer 0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Flash Duration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Strobe rate",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No Flash"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe Rate 0-30Hz"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Normal Flashes"
+        },
+        {
+          "min": "6",
+          "max": "42",
+          "name": "Ramp up S>F"
+        },
+        {
+          "min": "43",
+          "max": "85",
+          "name": "Ramp Down S>F"
+        },
+        {
+          "min": "86",
+          "max": "128",
+          "name": "Ramp Up-Down S>F"
+        },
+        {
+          "min": "129",
+          "max": "171",
+          "name": "Random Effect S>F"
+        },
+        {
+          "min": "172",
+          "max": "214",
+          "name": "Lightning effect S>F"
+        },
+        {
+          "min": "215",
+          "max": "255",
+          "name": "Spike Effect"
+        }
+      ]
+    },
+    {
+      "name": "Color Pixel Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No Pixel Fx (other channels active)"
+        },
+        {
+          "min": "6",
+          "max": "41",
+          "name": "Color Pixel Fx 1 S>F"
+        },
+        {
+          "min": "42",
+          "max": "83",
+          "name": "Color Pixel Fx 2 S>F"
+        },
+        {
+          "min": "84",
+          "max": "125",
+          "name": "Color Pixel Fx 3 S>F"
+        },
+        {
+          "min": "126",
+          "max": "167",
+          "name": "Color Pixel Fx 4 S>F"
+        },
+        {
+          "min": "168",
+          "max": "209",
+          "name": "Color Pixel Fx 5 S>F"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Color Pixel FX 6 S>F"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 Channel (White color)",
+      "totalChannels": 1,
+      "channels": [
+        "Strobe"
+      ]
+    },
+    {
+      "name": "3 Channel (White color)",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Flash Duration",
+        "Strobe rate"
+      ]
+    },
+    {
+      "name": "4 Channel (White color)",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Flash Duration",
+        "Strobe rate",
+        "Strobe Effect"
+      ]
+    },
+    {
+      "name": "4 Channel (Multi color)",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Flash Duration",
+        "Strobe rate",
+        "Color Pixel Effect"
+      ]
+    },
+    {
+      "name": "6 Channel (Multi color)",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Flash Duration",
+        "Strobe rate"
+      ]
+    },
+    {
+      "name": "7 Channel (Multi color)",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Flash Duration",
+        "Strobe rate",
+        "Color Pixel Effect"
+      ]
+    },
+    {
+      "name": "13 Channel (Multi color)",
+      "totalChannels": 13,
+      "channels": [
+        "Dimmer",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Flash Duration",
+        "Strobe rate",
+        "Color Pixel Effect"
+      ]
+    },
+    {
+      "name": "1 Channel Pixel (White color)",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "3 Channel Pixel (Multi color)",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "9 Channel Pixel (Multi color)",
+      "totalChannels": 9,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "100000",
+      "colourTemperature": "4500"
+    },
+    "dimensions": {
+      "weight": "8.54",
+      "width": "471",
+      "height": "195",
+      "depth": "274"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "140"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "800",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

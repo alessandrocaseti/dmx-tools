@@ -1,0 +1,223 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "Panther 60 LED Beam RGBW",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jan Fries",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan / Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "43",
+          "name": "Red full bright, Green gradually bright"
+        },
+        {
+          "min": "44",
+          "max": "85",
+          "name": "Red gradually dark, Green full bright"
+        },
+        {
+          "min": "86",
+          "max": "127",
+          "name": "Green gradually dark, Blue gradually bright"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Red gradually bright, Blue full bright"
+        },
+        {
+          "min": "170",
+          "max": "211",
+          "name": "Red full bright, Green gradually bright, Blue full bright"
+        },
+        {
+          "min": "212",
+          "max": "253",
+          "name": "Red / Green / Blue full bright, White gradually bright"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "All full bright"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "40",
+          "name": "Auto 1: Pan/Tilt auto run + color chasing + strobe"
+        },
+        {
+          "min": "41",
+          "max": "70",
+          "name": "Auto 2: Pan/Tilt auto run + color chasing, slow speed"
+        },
+        {
+          "min": "71",
+          "max": "100",
+          "name": "Auto 3: Pan/Tilt auto run + color chasing, fast speed"
+        },
+        {
+          "min": "101",
+          "max": "130",
+          "name": "Auto 4: Pan/Tilt auto run + color fading, slow speed"
+        },
+        {
+          "min": "131",
+          "max": "160",
+          "name": "Auto 5: Pan/Tilt auto run + color fading, fast speed"
+        },
+        {
+          "min": "161",
+          "max": "190",
+          "name": "Auto 6: Color chasing"
+        },
+        {
+          "min": "191",
+          "max": "220",
+          "name": "Auto 7: Color fading"
+        },
+        {
+          "min": "221",
+          "max": "240",
+          "name": "Sound mode 1, slow speed"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound mode 2, fast speed"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "254",
+          "name": "No function"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Reset after 3 seconds"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan Fine",
+        "Tilt Fine",
+        "Pan / Tilt Speed",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Color Macro",
+        "Mode",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.2",
+      "width": "205",
+      "height": "190",
+      "depth": "290"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4",
+      "degreesMax": "4"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "220"
+    },
+    "technical": {
+      "powerConsumption": "85",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

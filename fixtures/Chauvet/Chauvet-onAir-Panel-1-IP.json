@@ -1,0 +1,513 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet Professional",
+  "model": "onAir Panel 1 IP",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Giacomo Gorini",
+  "channels": [
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red 1 fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green 1 fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 1 fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "White 1 fine",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 2 fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 2 fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 2 fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "White 2 fine",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe slow > fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Temperature",
+      "type": "Color"
+    },
+    {
+      "name": "Hue",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No Hue shift"
+        },
+        {
+          "min": "2",
+          "max": "255",
+          "name": "Hue shift -25 > +25"
+        }
+      ]
+    },
+    {
+      "name": "Effect macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "39",
+          "name": "Color chase"
+        },
+        {
+          "min": "40",
+          "max": "68",
+          "name": "Police car"
+        },
+        {
+          "min": "69",
+          "max": "96",
+          "name": "Firetruck"
+        },
+        {
+          "min": "97",
+          "max": "125",
+          "name": "Fire"
+        },
+        {
+          "min": "126",
+          "max": "154",
+          "name": "Clouds"
+        },
+        {
+          "min": "155",
+          "max": "182",
+          "name": "Fireworks"
+        },
+        {
+          "min": "183",
+          "max": "211",
+          "name": "Paparazzi"
+        },
+        {
+          "min": "212",
+          "max": "240",
+          "name": "Lighting"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Effect macro speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed slow > fast"
+        }
+      ]
+    },
+    {
+      "name": "Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Reset dimmer"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red shift on"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Red shift off"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "S-curve dimmer"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Linear dimmer"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Square dimmer"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Inverse square dimmer"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Dimmer mode off"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Dimmer mode 1 (fast)"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Dimmer mode 2"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Dimmer mode 3 (slow)"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Fan mode auto"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Fan mode on"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Fan mode off"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Fan mode silent"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Reserved"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "White fine",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Red 1",
+        "Red 1 fine",
+        "Green 1",
+        "Green 1 fine",
+        "Blue 1",
+        "Blue 1 fine",
+        "White 1",
+        "White 1 fine",
+        "Red 2",
+        "Red 2 fine",
+        "Green 2",
+        "Green 2 fine",
+        "Blue 2",
+        "Blue 2 fine",
+        "White 2",
+        "White 2 fine"
+      ]
+    },
+    {
+      "name": "15 Channel 2",
+      "totalChannels": 15,
+      "channels": [
+        "Dimmer",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Strobe",
+        "Color Temperature",
+        "Hue",
+        "Effect macros",
+        "Effect macro speed",
+        "Control"
+      ]
+    },
+    {
+      "name": "15 Channel 1",
+      "totalChannels": 15,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Strobe",
+        "Color Temperature",
+        "Hue",
+        "Effect macros",
+        "Effect macro speed"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 11,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Color Temperature",
+        "Hue",
+        "Effect macros",
+        "Effect macro speed",
+        "Control"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 10,
+      "channels": [
+        "Dimmer",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "8 Channel 2",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine"
+      ]
+    },
+    {
+      "name": "8 Channel 1",
+      "totalChannels": 8,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2"
+      ]
+    },
+    {
+      "name": "Mode 8",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 9",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Color Temperature",
+        "Hue",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 10",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 11",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Color Temperature",
+        "Hue"
+      ]
+    },
+    {
+      "name": "Mode 12",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "10000",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "12.7",
+      "width": "559",
+      "height": "554",
+      "depth": "146"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "99",
+      "degreesMax": "99"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "180",
+      "dmxConnector": "5-pin IP65"
+    }
+  }
+}

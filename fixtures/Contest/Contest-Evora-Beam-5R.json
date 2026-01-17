@@ -1,0 +1,648 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "Evora Beam 5R",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jan Lachman",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Open"
+        },
+        {
+          "min": "11",
+          "max": "21",
+          "name": "Color 1"
+        },
+        {
+          "min": "22",
+          "max": "32",
+          "name": "Color 2"
+        },
+        {
+          "min": "33",
+          "max": "43",
+          "name": "Color 3"
+        },
+        {
+          "min": "44",
+          "max": "54",
+          "name": "Color 4"
+        },
+        {
+          "min": "55",
+          "max": "65",
+          "name": "Color 5"
+        },
+        {
+          "min": "66",
+          "max": "76",
+          "name": "Color 6"
+        },
+        {
+          "min": "77",
+          "max": "87",
+          "name": "Color 7"
+        },
+        {
+          "min": "88",
+          "max": "98",
+          "name": "Color 8"
+        },
+        {
+          "min": "99",
+          "max": "109",
+          "name": "Color 9"
+        },
+        {
+          "min": "110",
+          "max": "120",
+          "name": "Color 10"
+        },
+        {
+          "min": "121",
+          "max": "127",
+          "name": "Color 11"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards rainbow effect from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards rainbow effect from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Color wheel Fine",
+      "type": "Color"
+    },
+    {
+      "name": "Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Gobo 1 Shake"
+        },
+        {
+          "min": "105",
+          "max": "119",
+          "name": "Gobo 2 Shake"
+        },
+        {
+          "min": "120",
+          "max": "134",
+          "name": "Gobo 3 Shake"
+        },
+        {
+          "min": "135",
+          "max": "149",
+          "name": "Gobo 4 Shake"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Gobo 5 Shake"
+        },
+        {
+          "min": "165",
+          "max": "179",
+          "name": "Gobo 6 Shake"
+        },
+        {
+          "min": "180",
+          "max": "194",
+          "name": "Gobo 7 Shake"
+        },
+        {
+          "min": "195",
+          "max": "209",
+          "name": "Gobo 8 Shake"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Gobo wheel cont. rotation slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotating gobo index",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards gobo rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards gobo rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotating gobo indexing Fine",
+      "type": "Gobo"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Open"
+        },
+        {
+          "min": "4",
+          "max": "63",
+          "name": "Forwards rotation from fast to slow"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "No rotation"
+        },
+        {
+          "min": "68",
+          "max": "127",
+          "name": "Backwards rotation from slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Macro 1"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Macro 2"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Macro 3"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Macro 4"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Macro 5"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Macro 6"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Macro 7"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Macro 8"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Macro 9"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Macro 10"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Macro 11"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Macro 12"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Macro 13"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Macro 14"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Macro 15"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 16"
+        }
+      ]
+    },
+    {
+      "name": "Shutter, strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "No function (shutter open)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "No function (shutter open)"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse-effect in sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "No function (shutter open)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "No function (shutter open)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Frost",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Disable frost"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Enable frost"
+        }
+      ]
+    },
+    {
+      "name": "Speed Pan/Tilt movement",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "max to min speed"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "blackout by movement"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "blackout by all wheel changing"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Lamp on/off, reset, internal programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "colour change normal"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "colour change to any position"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "colour & gobo change to any position"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Lamp On"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Lamp Off"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All motor reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Scan motor reset"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "Colors motor reset"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Gobo motor reset"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "Shutter & Dimmer motor reset"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "Other motor reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Auto program by music"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Focus fine",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Very precise focus settings"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Basic",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Speed Pan/Tilt movement",
+        "Shutter, strobe",
+        "Dimmer",
+        "Color wheel",
+        "Gobos",
+        "Rotating gobo index",
+        "Prism",
+        "Focus",
+        "Frost",
+        "Lamp on/off, reset, internal programs"
+      ]
+    },
+    {
+      "name": "Standard",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Speed Pan/Tilt movement",
+        "Shutter, strobe",
+        "Dimmer",
+        "Color wheel",
+        "Gobos",
+        "Rotating gobo index",
+        "Prism",
+        "Focus",
+        "Frost",
+        "Lamp on/off, reset, internal programs"
+      ]
+    },
+    {
+      "name": "Extended",
+      "totalChannels": 18,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Speed Pan/Tilt movement",
+        "Shutter, strobe",
+        "Dimmer",
+        "Dimmer Fine",
+        "Color wheel",
+        "Color wheel Fine",
+        "Gobos",
+        "Rotating gobo index",
+        "Rotating gobo indexing Fine",
+        "Prism",
+        "Focus",
+        "Focus fine",
+        "Frost",
+        "Lamp on/off, reset, internal programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 200W",
+      "lumens": "10000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "20",
+      "width": "329",
+      "height": "509",
+      "depth": "352"
+    },
+    "lens": {
+      "name": "Not specified",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "350",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

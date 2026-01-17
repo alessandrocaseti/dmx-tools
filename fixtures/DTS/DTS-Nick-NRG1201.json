@@ -1,0 +1,441 @@
+{
+  "version": "1.2",
+  "manufacturer": "DTS",
+  "model": "Nick NRG1201",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Vassily Leushin",
+  "channels": [
+    {
+      "name": "Pan Coarse",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Coarse",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed Move",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Standard"
+        },
+        {
+          "min": "11",
+          "max": "25",
+          "name": "Fast Move"
+        },
+        {
+          "min": "26",
+          "max": "127",
+          "name": "Vector Mode Fast to Slow"
+        },
+        {
+          "min": "128",
+          "max": "247",
+          "name": "Variable Reaction"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Slow Reaction"
+        }
+      ]
+    },
+    {
+      "name": "Pan FPR",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Standard"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "1 turn"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "2 turn"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "3 turn"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "4 turn"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "5 turn"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "6 turn"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "7 turn"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "8 turn"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "9 turn"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "10 turn"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Smart path"
+        },
+        {
+          "min": "121",
+          "max": "182",
+          "name": "Forward Spin"
+        },
+        {
+          "min": "183",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Reverse Spin"
+        }
+      ]
+    },
+    {
+      "name": "No function",
+      "type": "Unknown"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Open"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Blackout"
+        },
+        {
+          "min": "30",
+          "max": "119",
+          "name": "Strobe"
+        },
+        {
+          "min": "120",
+          "max": "149",
+          "name": "Pulse up"
+        },
+        {
+          "min": "150",
+          "max": "179",
+          "name": "Pulse down"
+        },
+        {
+          "min": "180",
+          "max": "204",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "205",
+          "max": "229",
+          "name": "Full Random Strobe"
+        },
+        {
+          "min": "230",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "White Preprogrammed",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "55",
+          "name": "No function"
+        },
+        {
+          "min": "56",
+          "max": "105",
+          "name": "Full RGB"
+        },
+        {
+          "min": "106",
+          "max": "155",
+          "name": "White DTS"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "Custom White Create"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "White CTC"
+        }
+      ]
+    },
+    {
+      "name": "CTC",
+      "type": "Unknown"
+    },
+    {
+      "name": "Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "No function"
+        },
+        {
+          "min": "15",
+          "max": "29",
+          "name": "Macro 1"
+        },
+        {
+          "min": "30",
+          "max": "44",
+          "name": "Macro 2"
+        },
+        {
+          "min": "45",
+          "max": "59",
+          "name": "Macro 3"
+        },
+        {
+          "min": "60",
+          "max": "74",
+          "name": "Macro 4"
+        },
+        {
+          "min": "75",
+          "max": "89",
+          "name": "Macro 5"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Macro 6"
+        },
+        {
+          "min": "105",
+          "max": "119",
+          "name": "Macro 7"
+        },
+        {
+          "min": "120",
+          "max": "134",
+          "name": "Macro 8"
+        },
+        {
+          "min": "135",
+          "max": "149",
+          "name": "Macro 9"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Macro 10"
+        },
+        {
+          "min": "165",
+          "max": "179",
+          "name": "Macro 11"
+        },
+        {
+          "min": "180",
+          "max": "194",
+          "name": "Macro 12"
+        },
+        {
+          "min": "195",
+          "max": "209",
+          "name": "Macro 13"
+        },
+        {
+          "min": "210",
+          "max": "225",
+          "name": "Macro 14"
+        },
+        {
+          "min": "226",
+          "max": "239",
+          "name": "Macro 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Macro 16"
+        }
+      ]
+    },
+    {
+      "name": "Custom White",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "CW Recall"
+        },
+        {
+          "min": "80",
+          "max": "160",
+          "name": "CW Create"
+        },
+        {
+          "min": "161",
+          "max": "255",
+          "name": "CW Store"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "No function2",
+      "type": "Unknown"
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Total Reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "20ch",
+      "totalChannels": 20,
+      "channels": [
+        "Pan Coarse",
+        "Pan Fine",
+        "Tilt Coarse",
+        "Tilt Fine",
+        "Speed Move",
+        "Pan FPR",
+        "No function",
+        "Shutter",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "White Preprogrammed",
+        "CTC",
+        "Macros",
+        "Custom White",
+        "Zoom",
+        "No function2",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "10.5",
+      "width": "369",
+      "height": "497",
+      "depth": "218"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "8",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "360",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "340",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

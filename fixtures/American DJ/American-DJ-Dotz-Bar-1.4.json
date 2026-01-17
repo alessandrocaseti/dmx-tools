@@ -1,0 +1,387 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Dotz Bar 1.4",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Unknown"
+    },
+    {
+      "name": "Dimmer curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "41",
+          "name": "Standard"
+        },
+        {
+          "min": "42",
+          "max": "84",
+          "name": "Stage"
+        },
+        {
+          "min": "85",
+          "max": "127",
+          "name": "TV"
+        },
+        {
+          "min": "128",
+          "max": "170",
+          "name": "Architectural"
+        },
+        {
+          "min": "171",
+          "max": "213",
+          "name": "Theater"
+        },
+        {
+          "min": "214",
+          "max": "255",
+          "name": "Default to curve setting"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros and Programs",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Green"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Red & Green"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Green & Blue"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Red & Blue"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Red, Green & Blue"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Color 1"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Color 2"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Color 3"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Color 4"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Color 5"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Color 6"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Color 7"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Color 8"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Color Fade 1"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Color Snake"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Color Fade 2"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Color Change"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Color Flow 1"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Color Flow 2"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Color Flow 3"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Color Flow 4"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Color Flow 5"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Color Flow 6"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Color Flow 7"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Color Flow 8"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Color Flow 9"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed/Sound Sense",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program Speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master dimmer",
+        "Strobing",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros and Programs",
+        "Program Speed/Sound Sense",
+        "Master dimmer",
+        "Strobing",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 12,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 16,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Color Macros and Programs",
+        "Program Speed/Sound Sense",
+        "Strobing",
+        "Dimmer curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.8",
+      "width": "340",
+      "height": "140",
+      "depth": "140"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "48",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "LED Gobo Scanner 80",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jan Fries",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Flash Duration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash duration (0ms - 510ms)"
+        }
+      ]
+    },
+    {
+      "name": "Colour Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "18",
+          "name": "Warm Yellow"
+        },
+        {
+          "min": "19",
+          "max": "31",
+          "name": "Lavender"
+        },
+        {
+          "min": "32",
+          "max": "44",
+          "name": "Lime"
+        },
+        {
+          "min": "45",
+          "max": "57",
+          "name": "Cyan"
+        },
+        {
+          "min": "58",
+          "max": "70",
+          "name": "Amber"
+        },
+        {
+          "min": "71",
+          "max": "83",
+          "name": "Yellow"
+        },
+        {
+          "min": "84",
+          "max": "96",
+          "name": "Blue"
+        },
+        {
+          "min": "97",
+          "max": "109",
+          "name": "Green"
+        },
+        {
+          "min": "110",
+          "max": "122",
+          "name": "Red"
+        },
+        {
+          "min": "123",
+          "max": "128",
+          "name": "Colour Run Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Colour Run (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "17",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "18",
+          "max": "29",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "41",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "42",
+          "max": "53",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "54",
+          "max": "65",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "66",
+          "max": "77",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "78",
+          "max": "89",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "90",
+          "max": "101",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "102",
+          "max": "113",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "114",
+          "max": "125",
+          "name": "Gobo Shake 1 (Slow to Fast)"
+        },
+        {
+          "min": "126",
+          "max": "137",
+          "name": "Gobo Shake 2 (Slow to Fast)"
+        },
+        {
+          "min": "138",
+          "max": "149",
+          "name": "Gobo Shake 3 (Slow to Fast)"
+        },
+        {
+          "min": "150",
+          "max": "161",
+          "name": "Gobo Shake 4 (Slow to Fast)"
+        },
+        {
+          "min": "162",
+          "max": "173",
+          "name": "Gobo Shake 5 (Slow to Fast)"
+        },
+        {
+          "min": "174",
+          "max": "185",
+          "name": "Gobo Shake 6 (Slow to Fast)"
+        },
+        {
+          "min": "186",
+          "max": "197",
+          "name": "Gobo Shake 7 (Slow to Fast)"
+        },
+        {
+          "min": "198",
+          "max": "209",
+          "name": "Gobo Shake 8 (Slow to Fast)"
+        },
+        {
+          "min": "210",
+          "max": "221",
+          "name": "Gobo Shake 9 (Slow to Fast)"
+        },
+        {
+          "min": "222",
+          "max": "231",
+          "name": "Gobo Wheel rotation Stop"
+        },
+        {
+          "min": "232",
+          "max": "243",
+          "name": "Gobo Wheel Rotation CW (Slow to Fast)"
+        },
+        {
+          "min": "244",
+          "max": "255",
+          "name": "Gobo Wheel Rotation CCW (Fast to Slow)"
+        }
+      ]
+    },
+    {
+      "name": "Auto Movement",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "40",
+          "name": "Pan (Small to Big)"
+        },
+        {
+          "min": "41",
+          "max": "75",
+          "name": "Tilt (Small to Big)"
+        },
+        {
+          "min": "76",
+          "max": "110",
+          "name": "Pan / Tilt (Small to Big)"
+        },
+        {
+          "min": "111",
+          "max": "145",
+          "name": "Pan / Tilt Invers (Small to Big)"
+        },
+        {
+          "min": "146",
+          "max": "180",
+          "name": "Circle (Small to Big)"
+        },
+        {
+          "min": "181",
+          "max": "215",
+          "name": "Circle Invers (Small to Big)"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Random (Small to Big)"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Device Settings",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "Invert Pan on (Hold 3s)"
+        },
+        {
+          "min": "56",
+          "max": "105",
+          "name": "Invert Pan off (Hold 5s)"
+        },
+        {
+          "min": "106",
+          "max": "155",
+          "name": "Invert Tilt on (Hold 3s)"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "Invert Tilt off (Hold 5s)"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "Reset All Functions (Hold 3s)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Master dimmer",
+        "Strobe",
+        "Flash Duration",
+        "Colour Wheel",
+        "Gobo Wheel",
+        "Auto Movement",
+        "Pan/Tilt speed",
+        "Device Settings"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Master dimmer",
+        "Strobe",
+        "Flash Duration",
+        "Colour Wheel",
+        "Gobo Wheel",
+        "Auto Movement",
+        "Device Settings"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1354",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.9",
+      "width": "190",
+      "height": "450",
+      "depth": "150"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "12",
+      "degreesMax": "12"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "130",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

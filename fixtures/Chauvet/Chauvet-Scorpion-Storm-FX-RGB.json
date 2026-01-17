@@ -1,0 +1,400 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Scorpion Storm FX RGB",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Frédéric Combe",
+  "channels": [
+    {
+      "name": "Control Functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "DMX Mode"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Auto program, fast"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Auto program, slow"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Sound-Active program"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Random program"
+        }
+      ]
+    },
+    {
+      "name": "Color (Ch. 1 = 000-050)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "15",
+          "name": "Red"
+        },
+        {
+          "min": "16",
+          "max": "25",
+          "name": "Green"
+        },
+        {
+          "min": "26",
+          "max": "35",
+          "name": "Blue"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Red + Green"
+        },
+        {
+          "min": "46",
+          "max": "55",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "56",
+          "max": "65",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "66",
+          "max": "75",
+          "name": "Red + Green, Blue"
+        },
+        {
+          "min": "76",
+          "max": "85",
+          "name": "Red on, Green Strobing"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "Green on, Blue strobing"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Blue on, Red strobing"
+        },
+        {
+          "min": "106",
+          "max": "115",
+          "name": "Red + Green, alternate strobing"
+        },
+        {
+          "min": "116",
+          "max": "125",
+          "name": "Green + Blue, alternate strobing"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Blue + Red, alternate strobing"
+        },
+        {
+          "min": "136",
+          "max": "145",
+          "name": "Red + Green on, Blue strobing"
+        },
+        {
+          "min": "146",
+          "max": "155",
+          "name": "Blue + Green on, Red strobing"
+        },
+        {
+          "min": "156",
+          "max": "165",
+          "name": "Red + Blue on, Green strobing"
+        },
+        {
+          "min": "166",
+          "max": "175",
+          "name": "Blue on, Green + Red strobing"
+        },
+        {
+          "min": "176",
+          "max": "185",
+          "name": "Red on, Green + Blue strobing"
+        },
+        {
+          "min": "186",
+          "max": "195",
+          "name": "Green on, Red + Blue strobing"
+        },
+        {
+          "min": "196",
+          "max": "205",
+          "name": "Blue on, Red + Green alternate strobing"
+        },
+        {
+          "min": "206",
+          "max": "215",
+          "name": "Red on, Green + Blue alternate strobing"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "Green on, Red + Blue alternate strobing"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Red + Green + Blue alternate strobing"
+        }
+      ]
+    },
+    {
+      "name": "Color selection (Ch. 1 = 051-200)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "36",
+          "name": "Red"
+        },
+        {
+          "min": "37",
+          "max": "72",
+          "name": "Green"
+        },
+        {
+          "min": "73",
+          "max": "108",
+          "name": "Blue"
+        },
+        {
+          "min": "109",
+          "max": "144",
+          "name": "Red + Green"
+        },
+        {
+          "min": "145",
+          "max": "180",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "181",
+          "max": "216",
+          "name": "Blue + Red"
+        },
+        {
+          "min": "217",
+          "max": "255",
+          "name": "Red + Green + Blue"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "254",
+          "name": "Strobe, Slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound-Active Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Rotation (motor 1)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No rotation"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Clockwise rotation, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Counter-clockwise rotation, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Stutter (motor 1)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "56",
+          "name": "Mode 1, slow to fast (when ch. 4 is on)"
+        },
+        {
+          "min": "57",
+          "max": "112",
+          "name": "Mode 2, Slow to fast (when Ch. 4 is on)"
+        },
+        {
+          "min": "113",
+          "max": "168",
+          "name": "Mode 3, slow to fast"
+        },
+        {
+          "min": "169",
+          "max": "255",
+          "name": "Mode 4, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotation (motor 2)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No rotation"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Clockwise rotation, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Counter clockwise rotation, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Stutter (motor 2)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "56",
+          "name": "Mode 1, slow to fast (when Ch. 6 is on)"
+        },
+        {
+          "min": "57",
+          "max": "112",
+          "name": "Mode 2, slow to fast (when Ch. 6 is on)"
+        },
+        {
+          "min": "113",
+          "max": "168",
+          "name": "Mode 3, slow to fast"
+        },
+        {
+          "min": "169",
+          "max": "255",
+          "name": "Mode 4, slow to fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "7 Channel (Ch. 1 = 000-050)",
+      "totalChannels": 7,
+      "channels": [
+        "Control Functions",
+        "Color (Ch. 1 = 000-050)",
+        "Strobe",
+        "Rotation (motor 1)",
+        "Stutter (motor 1)",
+        "Rotation (motor 2)",
+        "Stutter (motor 2)"
+      ]
+    },
+    {
+      "name": "7 Channel (Ch. 1 = 051-200)",
+      "totalChannels": 7,
+      "channels": [
+        "Control Functions",
+        "Color selection (Ch. 1 = 051-200)",
+        "Strobe",
+        "Rotation (motor 1)",
+        "Stutter (motor 1)",
+        "Rotation (motor 2)",
+        "Stutter (motor 2)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.7",
+      "width": "232",
+      "height": "191",
+      "depth": "194"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "100",
+      "tiltMax": "100"
+    },
+    "technical": {
+      "powerConsumption": "31",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

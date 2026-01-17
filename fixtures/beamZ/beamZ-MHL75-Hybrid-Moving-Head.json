@@ -1,0 +1,268 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "MHL75 Hybrid Moving Head",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Mikko Wuokko",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "RGBW Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "White Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Colourwheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "White"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "White / Red"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Red / Green"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Green / Blue"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Blue / Yellow"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Yellow"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Yellow / Magenta"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Magenta"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Magenta / Orange"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Orange"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Orange / White"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Colour rotation slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotation slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Wash Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Special",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "XY Auto"
+        },
+        {
+          "min": "200",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Auto program"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Speed",
+        "RGBW Dimmer",
+        "White Dimmer",
+        "Strobe",
+        "Colourwheel",
+        "Gobo",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Wash Strobe",
+        "Special"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2500",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.25",
+      "width": "160",
+      "height": "230",
+      "depth": "150"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "13",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

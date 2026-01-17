@@ -1,0 +1,542 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Ovation E-910FC",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Hay",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Lime",
+      "type": "Lime"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "uDimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "uRed",
+      "type": "Red"
+    },
+    {
+      "name": "uGreen",
+      "type": "Green"
+    },
+    {
+      "name": "uBlue",
+      "type": "Blue"
+    },
+    {
+      "name": "uAmber",
+      "type": "Amber"
+    },
+    {
+      "name": "uLime",
+      "type": "Lime"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "no function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Virtual Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "no function"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Cal Color Yellow"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Light Straw"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Canary"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Dark Bamber"
+        },
+        {
+          "min": "36",
+          "max": "43",
+          "name": "Flame"
+        },
+        {
+          "min": "44",
+          "max": "51",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "52",
+          "max": "59",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "60",
+          "max": "67",
+          "name": "Light Red"
+        },
+        {
+          "min": "68",
+          "max": "75",
+          "name": "Medium Red"
+        },
+        {
+          "min": "76",
+          "max": "85",
+          "name": "No Color Pink"
+        },
+        {
+          "min": "86",
+          "max": "91",
+          "name": "True Pink"
+        },
+        {
+          "min": "92",
+          "max": "99",
+          "name": "Light Rose"
+        },
+        {
+          "min": "100",
+          "max": "107",
+          "name": "Salmon"
+        },
+        {
+          "min": "108",
+          "max": "115",
+          "name": "Deep Salmon"
+        },
+        {
+          "min": "116",
+          "max": "121",
+          "name": "Middle Rose"
+        },
+        {
+          "min": "122",
+          "max": "130",
+          "name": "Fisher Fuschia"
+        },
+        {
+          "min": "131",
+          "max": "138",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "139",
+          "max": "146",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "147",
+          "max": "154",
+          "name": "Blue Bell"
+        },
+        {
+          "min": "155",
+          "max": "162",
+          "name": "Daylight Blue"
+        },
+        {
+          "min": "163",
+          "max": "170",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "171",
+          "max": "178",
+          "name": "Urband Blue"
+        },
+        {
+          "min": "179",
+          "max": "186",
+          "name": "Surprise Blue"
+        },
+        {
+          "min": "187",
+          "max": "194",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "195",
+          "max": "202",
+          "name": "Medium Blue"
+        },
+        {
+          "min": "203",
+          "max": "210",
+          "name": "Sapphire Blue"
+        },
+        {
+          "min": "211",
+          "max": "218",
+          "name": "Dark Yellow Green"
+        },
+        {
+          "min": "219",
+          "max": "226",
+          "name": "Primary Green"
+        },
+        {
+          "min": "227",
+          "max": "234",
+          "name": "Turquoise"
+        },
+        {
+          "min": "235",
+          "max": "242",
+          "name": "Blue Green"
+        },
+        {
+          "min": "243",
+          "max": "250",
+          "name": "Emerald Green"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    },
+    {
+      "name": "Color Temp Presets",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "no function"
+        },
+        {
+          "min": "6",
+          "max": "25",
+          "name": "2800K"
+        },
+        {
+          "min": "26",
+          "max": "50",
+          "name": "3200K"
+        },
+        {
+          "min": "51",
+          "max": "75",
+          "name": "3500K"
+        },
+        {
+          "min": "76",
+          "max": "100",
+          "name": "4000k"
+        },
+        {
+          "min": "101",
+          "max": "125",
+          "name": "4500K"
+        },
+        {
+          "min": "126",
+          "max": "150",
+          "name": "5000K"
+        },
+        {
+          "min": "151",
+          "max": "175",
+          "name": "5600K"
+        },
+        {
+          "min": "176",
+          "max": "200",
+          "name": "6000K"
+        },
+        {
+          "min": "201",
+          "max": "225",
+          "name": "6500K"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "uWhite",
+      "type": "White"
+    },
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "no function"
+        },
+        {
+          "min": "11",
+          "max": "60",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "61",
+          "max": "110",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "111",
+          "max": "160",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "161",
+          "max": "210",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "211",
+          "max": "255",
+          "name": "Auto Program 5 (auto 1-4)"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Preset dimmmer speed from display"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer speed mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer speed mode 1 (fast)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer Speed mode 2"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer speed mode 3 (slow)"
+        }
+      ]
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Value",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "uRed",
+        "Green",
+        "uGreen",
+        "Blue",
+        "uBlue",
+        "Amber",
+        "uAmber",
+        "White",
+        "uWhite"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 12,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "Strobe",
+        "Virtual Color Wheel",
+        "Color Temp Presets",
+        "Macro",
+        "Speed",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 13,
+      "channels": [
+        "Dimmer",
+        "uDimmer",
+        "Red",
+        "uRed",
+        "Green",
+        "uGreen",
+        "Blue",
+        "uBlue",
+        "Amber",
+        "uAmber",
+        "White",
+        "uWhite",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 15,
+      "channels": [
+        "Dimmer",
+        "uDimmer",
+        "Red",
+        "uRed",
+        "Green",
+        "uGreen",
+        "Blue",
+        "uBlue",
+        "Amber",
+        "uAmber",
+        "White",
+        "uWhite",
+        "Strobe",
+        "Virtual Color Wheel",
+        "Color Temp Presets"
+      ]
+    },
+    {
+      "name": "HSV",
+      "totalChannels": 3,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Value"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "12.2",
+      "width": "371",
+      "height": "371",
+      "depth": "690"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "234",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

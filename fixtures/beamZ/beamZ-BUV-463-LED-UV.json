@@ -1,0 +1,121 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "BUV 463 LED UV",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michel Sliepenbeek",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Auto",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "No Function"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Sound Controlled"
+        }
+      ]
+    },
+    {
+      "name": "Change Color Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "UV 1",
+      "type": "UV"
+    },
+    {
+      "name": "UV 2",
+      "type": "UV"
+    },
+    {
+      "name": "UV 3",
+      "type": "UV"
+    },
+    {
+      "name": "UV 4",
+      "type": "UV"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 8,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Auto",
+        "Change Color Speed",
+        "UV 1",
+        "UV 2",
+        "UV 3",
+        "UV 4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.2",
+      "width": "330",
+      "height": "185",
+      "depth": "130"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "80",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

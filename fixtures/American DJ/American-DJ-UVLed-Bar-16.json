@@ -1,0 +1,116 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "UVLed Bar 16",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Frédéric Combe",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Dimming"
+        },
+        {
+          "min": "31",
+          "max": "61",
+          "name": "Strobe"
+        },
+        {
+          "min": "62",
+          "max": "92",
+          "name": "Increasing Intensity"
+        },
+        {
+          "min": "93",
+          "max": "123",
+          "name": "Decreasing Intensity"
+        },
+        {
+          "min": "124",
+          "max": "154",
+          "name": "increase - Decrease intensity"
+        },
+        {
+          "min": "155",
+          "max": "185",
+          "name": "Three Flash"
+        },
+        {
+          "min": "186",
+          "max": "216",
+          "name": "One and 2 Flash"
+        },
+        {
+          "min": "217",
+          "max": "247",
+          "name": "Flash"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Program Speed",
+        "Programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.2",
+      "width": "320",
+      "height": "61",
+      "depth": "175"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

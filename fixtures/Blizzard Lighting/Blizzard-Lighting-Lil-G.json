@@ -1,0 +1,295 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "Lil G",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Alton Olson",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Fine Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "White"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Pink"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Green"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Blue"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Yellow"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Purple"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Teal"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Orange"
+        },
+        {
+          "min": "160",
+          "max": "207",
+          "name": "Clockwise rainbow effect"
+        },
+        {
+          "min": "208",
+          "max": "255",
+          "name": "Counterclockwise rainbow effect"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "100",
+          "max": "108",
+          "name": "Gobo 1 shake (slow <-> fast)"
+        },
+        {
+          "min": "109",
+          "max": "117",
+          "name": "Gobo 2 shake (slow <-> fast)"
+        },
+        {
+          "min": "118",
+          "max": "126",
+          "name": "Gobo 3 shake (slow <-> fast)"
+        },
+        {
+          "min": "127",
+          "max": "135",
+          "name": "Gobo 4 shake (slow <-> fast)"
+        },
+        {
+          "min": "136",
+          "max": "144",
+          "name": "Gobo 5 shake (slow <-> fast)"
+        },
+        {
+          "min": "145",
+          "max": "153",
+          "name": "Gobo 6 shake (slow <-> fast)"
+        },
+        {
+          "min": "154",
+          "max": "162",
+          "name": "Gobo 7 shake (slow <-> fast)"
+        },
+        {
+          "min": "163",
+          "max": "171",
+          "name": "Gobo 8 shake (slow <-> fast)"
+        },
+        {
+          "min": "172",
+          "max": "180",
+          "name": "Gobo 9 shake (slow <-> fast)"
+        },
+        {
+          "min": "181",
+          "max": "189",
+          "name": "Gobo 10 shake (slow <-> fast)"
+        },
+        {
+          "min": "190",
+          "max": "222",
+          "name": "Flow clockwise (slow <-> fast)"
+        },
+        {
+          "min": "223",
+          "max": "255",
+          "name": "Flow counterclockwise (slow <-> fast)"
+        }
+      ]
+    },
+    {
+      "name": "Auto/Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "128",
+          "name": "Auto mode"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "254",
+          "name": "No function"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Fixture reset in 3 seconds"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "11 Channel Mode",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Fine Pan",
+        "Fine Tilt",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Color Wheel",
+        "Gobo",
+        "Auto/Sound Active",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "40W white LED",
+      "lumens": "7730",
+      "colourTemperature": "5500"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "201",
+      "height": "317",
+      "depth": "196"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "9",
+      "degreesMax": "9"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "220"
+    },
+    "technical": {
+      "powerConsumption": "59",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

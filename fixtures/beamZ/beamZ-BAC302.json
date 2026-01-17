@@ -1,0 +1,317 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "BAC302",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Matej Lazar",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "69",
+          "name": "Colour blending (rate)"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "Colour change (rate)"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "Sound colour blending (rate)"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Sound colour change (rate)"
+        }
+      ]
+    },
+    {
+      "name": "Colour temperature",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "49",
+          "name": "White 2700K"
+        },
+        {
+          "min": "50",
+          "max": "89",
+          "name": "White 3200K"
+        },
+        {
+          "min": "90",
+          "max": "129",
+          "name": "White 4300K"
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "White 5600K"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "White 6500K"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "White 8000K"
+        }
+      ]
+    },
+    {
+      "name": "Preset colours",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Amber"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "UV"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Yellow"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Magenta"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Cyan"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Dark orange"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Green yellow"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Salmon"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Turquoise"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Light Green"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Orange"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Straw"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Lavender"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Light blue"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Dark blue"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Pink"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 11,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Preset colours",
+        "Mode",
+        "Colour temperature"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Preset colours",
+        "Mode",
+        "Colour temperature"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.3",
+      "width": "200",
+      "height": "200",
+      "depth": "83"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "72",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

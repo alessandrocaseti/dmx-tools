@@ -1,0 +1,157 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "LED PAR 64 Tri-B",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color macros"
+        }
+      ]
+    },
+    {
+      "name": "Speed/Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Slow~fast/No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow~fast/Slow~fast (6Hz ~ 18Hz)"
+        }
+      ]
+    },
+    {
+      "name": "Operating Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "RGB"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Pulse effect 0%~100% (using RGB faders)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Pulse effect 100%~0% (using RGB faders)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse effect 100%~0%~100% (using RGB faders)"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto fade transition"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Auto snap transition (3 colors)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Auto snap transition (7 colors)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound triggering"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "7-Channel Personality",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros",
+        "Speed/Strobe",
+        "Operating Mode",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "3-Channel Personality",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.9",
+      "width": "251",
+      "height": "302",
+      "depth": "383"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "22",
+      "degreesMax": "22"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

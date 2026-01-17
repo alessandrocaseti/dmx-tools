@@ -1,0 +1,389 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Mega QA Par38",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Nathan Durnan",
+  "channels": [
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Amber"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red & green"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red & blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red & amber"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green & blue"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green & amber"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue & amber"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Red & green & blue"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Red & green & amber"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Red & blue & amber"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Green & blue & amber"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red & green & blue & amber"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing/Program Speed/Sound Sensitivity",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off/Slow - fast/Off"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Slow - fast/Slow - fast/Off"
+        },
+        {
+          "min": "32",
+          "max": "255",
+          "name": "Slow - fast/Slow - fast/Least - most"
+        }
+      ]
+    },
+    {
+      "name": "Dimming/Static Color/Color Change/Color Fade Select",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer mode"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Color macro mode"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Color change mode"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Color fade mode"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "Sound active mode"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros & Modes",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off/Color change/Color fade/Sound active 1"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red/Color change/Color fade/Sound active 2"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green/Color change/Color fade/Sound active 3"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue/Color change/Color fade/Sound active 4"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Amber/Color change/Color fade/Sound active 5"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red & green/Color change/Color fade/Sound active 6"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red & blue/Color change/Color fade/Sound active 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red & amber/Color change/Color fade/Sound active 8"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green & blue/Color change/Color fade/Sound active 9"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green & amber/Color change/Color fade/Sound active 10"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue & amber/Color change/Color fade/Sound active 11"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Red & green & blue/Color change/Color fade/Sound active 12"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Red & green & amber/Color change/Color fade/Sound active 13"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Red & bue & amber/Color change/Color fade/Sound active 14"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Green & blue & amber/Color change/Color fade/Sound active 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red & green & blue & amber/Color change/Color fade/Sound active 16"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Color Macros",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Color Macros",
+        "Dimmer",
+        "Strobing"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer",
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer",
+        "Strobing",
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "Mode 8",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master Dimmer",
+        "Strobing/Program Speed/Sound Sensitivity",
+        "Dimming/Static Color/Color Change/Color Fade Select",
+        "Color Macros & Modes"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "221",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.1",
+      "width": "195",
+      "height": "92",
+      "depth": "202"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

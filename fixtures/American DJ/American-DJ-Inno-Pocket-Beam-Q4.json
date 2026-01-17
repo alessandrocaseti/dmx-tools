@@ -1,0 +1,271 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Inno Pocket Beam Q4",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV",
+  "channels": [
+    {
+      "name": "Pan Movement",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Movement",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fiine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red LED",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED",
+      "type": "White"
+    },
+    {
+      "name": "Shutter/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Shutter open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Shutter open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Shutter slow open - fast close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Shutter open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Shutter fast open - slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Shutter open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Blackout/Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "Nothing"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blackout w/pan/tilt movement"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Nothing"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Blackout w/Color Change"
+        },
+        {
+          "min": "100",
+          "max": "199",
+          "name": "Nothing"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset all"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "Nothing"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theater"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to unit curve setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 13,
+      "channels": [
+        "Pan Movement",
+        "Pan Fine",
+        "Tilt Movement",
+        "Tilt Fiine",
+        "Red LED",
+        "Green LED",
+        "Blue LED",
+        "White LED",
+        "Shutter/Strobe",
+        "Master Dimmer",
+        "Pan/Tilt Speed",
+        "Blackout/Reset",
+        "Dimmer Curves"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 11,
+      "channels": [
+        "Pan Movement",
+        "Tilt Movement",
+        "Red LED",
+        "Green LED",
+        "Blue LED",
+        "White LED",
+        "Shutter/Strobe",
+        "Master Dimmer",
+        "Pan/Tilt Speed",
+        "Blackout/Reset",
+        "Dimmer Curves"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Pan Movement",
+        "Tilt Movement",
+        "Green LED",
+        "Red LED",
+        "Blue LED",
+        "White LED",
+        "Shutter/Strobe",
+        "Master Dimmer",
+        "Pan/Tilt Speed",
+        "Blackout/Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1231",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "147",
+      "height": "265",
+      "depth": "159"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4",
+      "degreesMax": "4"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "210"
+    },
+    "technical": {
+      "powerConsumption": "46",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

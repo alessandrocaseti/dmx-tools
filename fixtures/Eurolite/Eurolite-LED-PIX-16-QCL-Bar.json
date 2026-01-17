@@ -1,0 +1,1097 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED PIX-16 QCL Bar",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Cédric Monféfoul",
+  "channels": [
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "No Function"
+        },
+        {
+          "min": "9",
+          "max": "255",
+          "name": "Strobe (Slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Color Effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No Function"
+        },
+        {
+          "min": "8",
+          "max": "19",
+          "name": "Effect 1"
+        },
+        {
+          "min": "20",
+          "max": "31",
+          "name": "Effect 2"
+        },
+        {
+          "min": "32",
+          "max": "43",
+          "name": "Effect 3"
+        },
+        {
+          "min": "44",
+          "max": "55",
+          "name": "Effect 4"
+        },
+        {
+          "min": "56",
+          "max": "67",
+          "name": "Effect 5"
+        },
+        {
+          "min": "68",
+          "max": "79",
+          "name": "Effect 6"
+        },
+        {
+          "min": "80",
+          "max": "91",
+          "name": "Effect 7"
+        },
+        {
+          "min": "92",
+          "max": "103",
+          "name": "Effect 8"
+        },
+        {
+          "min": "104",
+          "max": "115",
+          "name": "Effect 9"
+        },
+        {
+          "min": "116",
+          "max": "127",
+          "name": "Effect 10"
+        },
+        {
+          "min": "128",
+          "max": "139",
+          "name": "Effect 11"
+        },
+        {
+          "min": "140",
+          "max": "151",
+          "name": "Effect 12"
+        },
+        {
+          "min": "152",
+          "max": "163",
+          "name": "Effect 13"
+        },
+        {
+          "min": "164",
+          "max": "175",
+          "name": "Effect 14"
+        },
+        {
+          "min": "176",
+          "max": "187",
+          "name": "Effect 15"
+        },
+        {
+          "min": "188",
+          "max": "199",
+          "name": "Effect 16"
+        },
+        {
+          "min": "200",
+          "max": "211",
+          "name": "Effect 17"
+        },
+        {
+          "min": "212",
+          "max": "223",
+          "name": "Effect 18"
+        },
+        {
+          "min": "224",
+          "max": "235",
+          "name": "Effect 19"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Effect 20"
+        }
+      ]
+    },
+    {
+      "name": "Color Effects Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed of the color effects, increasing"
+        }
+      ]
+    },
+    {
+      "name": "Background Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No Function"
+        },
+        {
+          "min": "8",
+          "max": "26",
+          "name": "Red"
+        },
+        {
+          "min": "27",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "64",
+          "name": "Blue"
+        },
+        {
+          "min": "65",
+          "max": "83",
+          "name": "White"
+        },
+        {
+          "min": "84",
+          "max": "102",
+          "name": "Red + Green"
+        },
+        {
+          "min": "103",
+          "max": "121",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "122",
+          "max": "140",
+          "name": "Red + White"
+        },
+        {
+          "min": "141",
+          "max": "159",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "160",
+          "max": "178",
+          "name": "Green + White"
+        },
+        {
+          "min": "179",
+          "max": "197",
+          "name": "Blue + White"
+        },
+        {
+          "min": "198",
+          "max": "216",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "217",
+          "max": "235",
+          "name": "Red + Green + White"
+        },
+        {
+          "min": "236",
+          "max": "254",
+          "name": "Red + Blue + White"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Green + Blue + white"
+        }
+      ]
+    },
+    {
+      "name": "Background Effect Color",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Background Effect Color from Bright to Dark"
+        }
+      ]
+    },
+    {
+      "name": "Direction Forwards",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Run Direction Forwards"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Run Direction Backards"
+        }
+      ]
+    },
+    {
+      "name": "R1/R2/R3/R4 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R1/R2/R3/R4 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "G1/G2/G3/G4 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G1/G2/G3/G4 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "B1/B2/B3/B4 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "B1/B2/B3/B4 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "W1/W2/W3/W4 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "W1/W2/W3/W4 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "R5/R6/R7/R8 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R5/R6/R7/R6 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "G5/G6/G7/G8 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G5/G6/G7/G8 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "B5/B6/B7/B8 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "B5/B6/B7/B8 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "W5/W6/W7/W8 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "W5/W6/W7/W8 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "R9/R10/R11/R12 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R9/R10/R11/R12 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "G9/G10/G11/G12 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G9/G10/G11/G12 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "B9/B10/B11/B12 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "B9/B10/B11/B12 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "W9/W10/W11/W12 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "W9/W10/W11/W12 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "R13/R14/R15/R16 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R13/R14/R15/R16 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "G13/G14/G15/G16 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G13/G14/G15/G16 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "B13/B14/B15/B16 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "B13/B14/B15/B16 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "W13/W14/W15/W16 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "W13/W14/W15/W16 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "Internals Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Internal programs (See 11CH mode, Channel 7 for overview)"
+        }
+      ]
+    },
+    {
+      "name": "Micro Sensitivity and Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed and microphone sensitivity for internal programs"
+        }
+      ]
+    },
+    {
+      "name": "Auto / Sound",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Auto Program"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Sound Controlled Program"
+        }
+      ]
+    },
+    {
+      "name": "R1/R5/R9/R13 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R1/R5/R9/R13 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "G1/G5/G9/G13 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G1/G5/G9/G13 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "B1/B5/B9/B13 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "B1/B5/B9/B13 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "W1/W5/W9/W13 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "W1/W5/W9/W13 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "R2/R6/R10/R14 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R2/R6/R10/R14 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "G2/G6/G10/G14 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G2/G6/G10/G14 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "B2/B6/B10/B14 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "B2/B6/B10/B14 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "W2/W6/W10/W14 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "W2/W6/W10/W14 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "R3/R7/R11/R15 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R3/R7/R11/R15 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "G3/G7/G11/G15 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G3/G7/G11/G15 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "B3/B7/B11/B15 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "B3/B7/B11/B15 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "W3/W7/W11/W15 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "W3/W7/W11/W15 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "R4/R8/R12/R16 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R4/R8/R12/R16 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "G4/G8/G12/G16 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G4/G8/G12/G16 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "B4/B8/B12/B16 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "B4/B8/B12/B16 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "W4/W8/W12/W16 Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "W4/W8/W12/W16 Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White 4",
+      "type": "White"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "White 5",
+      "type": "White"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "White 6",
+      "type": "White"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "White 7",
+      "type": "White"
+    },
+    {
+      "name": "Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 8",
+      "type": "Blue"
+    },
+    {
+      "name": "White 8",
+      "type": "White"
+    },
+    {
+      "name": "Red 9",
+      "type": "Red"
+    },
+    {
+      "name": "Green 9",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 9",
+      "type": "Blue"
+    },
+    {
+      "name": "White 9",
+      "type": "White"
+    },
+    {
+      "name": "Red 10",
+      "type": "Red"
+    },
+    {
+      "name": "Green 10",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 10",
+      "type": "Blue"
+    },
+    {
+      "name": "White 10",
+      "type": "White"
+    },
+    {
+      "name": "Red 11",
+      "type": "Red"
+    },
+    {
+      "name": "Green 11",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 11",
+      "type": "Blue"
+    },
+    {
+      "name": "White 11",
+      "type": "White"
+    },
+    {
+      "name": "Red 12",
+      "type": "Red"
+    },
+    {
+      "name": "Green 12",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 12",
+      "type": "Blue"
+    },
+    {
+      "name": "White 12",
+      "type": "White"
+    },
+    {
+      "name": "Red 13",
+      "type": "Red"
+    },
+    {
+      "name": "Green 13",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 13",
+      "type": "Blue"
+    },
+    {
+      "name": "White 13",
+      "type": "White"
+    },
+    {
+      "name": "Red 14",
+      "type": "Red"
+    },
+    {
+      "name": "Green 14",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 14",
+      "type": "Blue"
+    },
+    {
+      "name": "White 14",
+      "type": "White"
+    },
+    {
+      "name": "Red 15",
+      "type": "Red"
+    },
+    {
+      "name": "Green 15",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 15",
+      "type": "Blue"
+    },
+    {
+      "name": "White 15",
+      "type": "White"
+    },
+    {
+      "name": "Red 16",
+      "type": "Red"
+    },
+    {
+      "name": "Green 16",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 16",
+      "type": "Blue"
+    },
+    {
+      "name": "White 16",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 11,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Color Effects",
+        "Color Effects Speed",
+        "Background Colors",
+        "Background Effect Color",
+        "Direction Forwards"
+      ]
+    },
+    {
+      "name": "21-1 Channel",
+      "totalChannels": 21,
+      "channels": [
+        "R1/R2/R3/R4 Dimmer",
+        "G1/G2/G3/G4 Dimmer",
+        "B1/B2/B3/B4 Dimmer",
+        "W1/W2/W3/W4 Dimmer",
+        "R5/R6/R7/R8 Dimmer",
+        "G5/G6/G7/G8 Dimmer",
+        "B5/B6/B7/B8 Dimmer",
+        "W5/W6/W7/W8 Dimmer",
+        "R9/R10/R11/R12 Dimmer",
+        "G9/G10/G11/G12 Dimmer",
+        "B9/B10/B11/B12 Dimmer",
+        "W9/W10/W11/W12 Dimmer",
+        "R13/R14/R15/R16 Dimmer",
+        "G13/G14/G15/G16 Dimmer",
+        "B13/B14/B15/B16 Dimmer",
+        "W13/W14/W15/W16 Dimmer",
+        "Master dimmer",
+        "Strobe",
+        "Internals Programs",
+        "Micro Sensitivity and Speed",
+        "Auto / Sound"
+      ]
+    },
+    {
+      "name": "21-2 Channel",
+      "totalChannels": 21,
+      "channels": [
+        "R1/R5/R9/R13 Dimmer",
+        "G1/G5/G9/G13 Dimmer",
+        "B1/B5/B9/B13 Dimmer",
+        "W1/W5/W9/W13 Dimmer",
+        "R2/R6/R10/R14 Dimmer",
+        "G2/G6/G10/G14 Dimmer",
+        "B2/B6/B10/B14 Dimmer",
+        "W2/W6/W10/W14 Dimmer",
+        "R3/R7/R11/R15 Dimmer",
+        "G3/G7/G11/G15 Dimmer",
+        "B3/B7/B11/B15 Dimmer",
+        "W3/W7/W11/W15 Dimmer",
+        "R4/R8/R12/R16 Dimmer",
+        "G4/G8/G12/G16 Dimmer",
+        "B4/B8/B12/B16 Dimmer",
+        "W4/W8/W12/W16 Dimmer",
+        "Master dimmer",
+        "Strobe",
+        "Internals Programs",
+        "Micro Sensitivity and Speed",
+        "Auto / Sound"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 64,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "White 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "White 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "White 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "White 8",
+        "Red 9",
+        "Green 9",
+        "Blue 9",
+        "White 9",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "White 10",
+        "Red 11",
+        "Green 11",
+        "Blue 11",
+        "White 11",
+        "Red 12",
+        "Green 12",
+        "Blue 12",
+        "White 12",
+        "Red 13",
+        "Green 13",
+        "Blue 13",
+        "White 13",
+        "Red 14",
+        "Green 14",
+        "Blue 14",
+        "White 14",
+        "Red 15",
+        "Green 15",
+        "Blue 15",
+        "White 15",
+        "Red 16",
+        "Green 16",
+        "Blue 16",
+        "White 16"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "640",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.39",
+      "width": "108",
+      "height": "9",
+      "depth": "7"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "70",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

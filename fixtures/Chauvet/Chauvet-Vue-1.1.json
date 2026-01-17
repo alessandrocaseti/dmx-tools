@@ -1,0 +1,146 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Vue 1.1",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Control/Operating Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "Red, green, blue mode"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "Standalone mode 1 (automatic)"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "Standalone mode 2 (automatic)"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "Standalone mode 3 (automatic)"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Standalone mode 4 (automatic)"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "Standalone mode 5 (automatic)"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "Standalone mode 6 (automatic)"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "Standalone mode 7 (automatic)"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Standalone mode 8 (automatic)"
+        },
+        {
+          "min": "225",
+          "max": "249",
+          "name": "Standalone mode 9 (automatic)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Standalone (sound active)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Standalone Speed/Strobing Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Slow <-> fast/No strobe"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Slow <-> fast/Slow <-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 6,
+      "channels": [
+        "Control/Operating Mode",
+        "Red",
+        "Green",
+        "Blue",
+        "Standalone Speed/Strobing Speed",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.3",
+      "width": "216",
+      "height": "190",
+      "depth": "254"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "34",
+      "degreesMax": "34"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "19",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

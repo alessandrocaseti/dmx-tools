@@ -1,0 +1,835 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Intimidator Wash Zoom 350 IRC",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Fine Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Red - Zone 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red - Zone 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red - Zone 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red - Zone 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green - Zone 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green - Zone 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green - Zone 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green - Zone 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue - Zone 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue - Zone 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue - Zone 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue - Zone 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White - Zone 1",
+      "type": "White"
+    },
+    {
+      "name": "White - Zone 2",
+      "type": "White"
+    },
+    {
+      "name": "White - Zone 3",
+      "type": "White"
+    },
+    {
+      "name": "White - Zone 4",
+      "type": "White"
+    },
+    {
+      "name": "Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Color 1"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Color 2"
+        },
+        {
+          "min": "15",
+          "max": "24",
+          "name": "Color 3"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Color 4"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Color 6"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Color 7"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Color 8"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Color 9"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Color 10"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Color 11"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Color 12"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Color 13"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Color 14"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Color 15"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Color 16"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Color 17"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Color 18"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Color 19"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Color 20"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Color 21"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Color 22"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Color 23"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Color 24"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Color 25"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Color 26"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Color 27"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Color 28"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Color 29"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "Color 30"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Color 31"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "Color 32"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Color 33"
+        },
+        {
+          "min": "170",
+          "max": "174",
+          "name": "Color 34"
+        },
+        {
+          "min": "175",
+          "max": "179",
+          "name": "No function"
+        },
+        {
+          "min": "180",
+          "max": "201",
+          "name": "Clockwise color change (fast to slow)"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "Stop (color stays in the current color)"
+        },
+        {
+          "min": "208",
+          "max": "229",
+          "name": "Counter-clockwise color change (slow to fast)"
+        },
+        {
+          "min": "230",
+          "max": "234",
+          "name": "No function"
+        },
+        {
+          "min": "235",
+          "max": "249",
+          "name": "Color jump (fast to slow)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound colors"
+        }
+      ]
+    },
+    {
+      "name": "Built-in Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Zone macro 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Zone macro 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Zone macro 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Zone macro 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Zone macro 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Zone macro 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Built-in 7 (zone macros 1-6)"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Built-in 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Built-in 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Built-in 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Built-in 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Built-in 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Built-in 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Built-in 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Built-in 15 (built-in 8-14)"
+        }
+      ]
+    },
+    {
+      "name": "Buil-in Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Zones and built-in speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Closed"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Open"
+        },
+        {
+          "min": "25",
+          "max": "64",
+          "name": "Strobe effect (decreasing speed)"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Open"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "Fast on, slow off (decreasing speed)"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Open"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Slow on, fast off (decreasing speed)"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Open"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Random shutter (decreasing speed)"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Open"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "Random fast on, slow off (decreasing speed)"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Open"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Random slow on, fast off (decreasing speed)"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Open"
+        },
+        {
+          "min": "170",
+          "max": "184",
+          "name": "Pulse effect 1 (decreasing speed)"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "204",
+          "name": "Pulse effect 2 (decreasing speed)"
+        },
+        {
+          "min": "205",
+          "max": "209",
+          "name": "Open"
+        },
+        {
+          "min": "210",
+          "max": "224",
+          "name": "Gradually on and off (decreasing speed)"
+        },
+        {
+          "min": "225",
+          "max": "229",
+          "name": "Open"
+        },
+        {
+          "min": "230",
+          "max": "244",
+          "name": "Pulse effect 3 (decreasing speed)"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Control functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Blackout while panning/tilting"
+        },
+        {
+          "min": "15",
+          "max": "49",
+          "name": "No function"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Reset pan"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Reset tilt"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Reset zoom"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Reset all"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "No function"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Reverse pan/tilt"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Reverse pan"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Reverse tilt"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Cancel reverse pan"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Cancel reverse tilt"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Cancel reverse pan/tilt"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Pan/tilt normal speed"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Pan/tilt fast speed"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Pan/tilt slow speed"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Fan (full speed)"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Fan (auto)"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Dimmer, fast"
+        },
+        {
+          "min": "140",
+          "max": "255",
+          "name": "No function/reserved"
+        }
+      ]
+    },
+    {
+      "name": "Movement macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "23",
+          "name": "Automatic 1"
+        },
+        {
+          "min": "24",
+          "max": "39",
+          "name": "Automatic 2"
+        },
+        {
+          "min": "40",
+          "max": "55",
+          "name": "Automatic 3"
+        },
+        {
+          "min": "56",
+          "max": "71",
+          "name": "Automatic 4"
+        },
+        {
+          "min": "72",
+          "max": "87",
+          "name": "Automatic 5"
+        },
+        {
+          "min": "88",
+          "max": "103",
+          "name": "Automatic 6"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "Automatic 7"
+        },
+        {
+          "min": "120",
+          "max": "135",
+          "name": "Automatic 8"
+        },
+        {
+          "min": "136",
+          "max": "151",
+          "name": "Sound-active 1"
+        },
+        {
+          "min": "152",
+          "max": "167",
+          "name": "Sound-active 2"
+        },
+        {
+          "min": "168",
+          "max": "183",
+          "name": "Sound-active 3"
+        },
+        {
+          "min": "184",
+          "max": "199",
+          "name": "Sound-active 4"
+        },
+        {
+          "min": "200",
+          "max": "215",
+          "name": "Sound-active 5"
+        },
+        {
+          "min": "216",
+          "max": "231",
+          "name": "Sound-active 6"
+        },
+        {
+          "min": "232",
+          "max": "247",
+          "name": "Sound-active 7"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound-active 8"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "29-Ch",
+      "totalChannels": 29,
+      "channels": [
+        "Pan",
+        "Fine Pan",
+        "Tilt",
+        "Fine Tilt",
+        "Speed",
+        "Red - Zone 1",
+        "Green - Zone 1",
+        "Blue - Zone 1",
+        "White - Zone 1",
+        "Red - Zone 2",
+        "Green - Zone 2",
+        "Blue - Zone 2",
+        "White - Zone 2",
+        "Red - Zone 3",
+        "Green - Zone 3",
+        "Blue - Zone 3",
+        "White - Zone 3",
+        "Red - Zone 4",
+        "Green - Zone 4",
+        "Blue - Zone 4",
+        "White - Zone 4",
+        "Colors",
+        "Built-in Control",
+        "Buil-in Speed",
+        "Dimmer",
+        "Shutter",
+        "Zoom",
+        "Control functions",
+        "Movement macros"
+      ]
+    },
+    {
+      "name": "14-Ch",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Built-in Control",
+        "Buil-in Speed",
+        "Dimmer",
+        "Shutter",
+        "Zoom",
+        "Control functions",
+        "Movement macros"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.3",
+      "width": "194",
+      "height": "363",
+      "depth": "270"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "14",
+      "degreesMax": "58"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "240",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

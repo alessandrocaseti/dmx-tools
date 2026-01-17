@@ -1,0 +1,128 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "THA-100F COB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Morgenschweis",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe-effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curve",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Inverse square dimmer curve, response characteristics of LED"
+        },
+        {
+          "min": "16",
+          "max": "45",
+          "name": "Linear dimmer curve, response characteristics of halogen lamp"
+        },
+        {
+          "min": "46",
+          "max": "75",
+          "name": "Square dimmer curve, response characteristics of halogen lamp"
+        },
+        {
+          "min": "76",
+          "max": "105",
+          "name": "Inverse square dimmer curve, response characteristics of halogen lamp"
+        },
+        {
+          "min": "106",
+          "max": "135",
+          "name": "S-shaped dimmer curve, response characteristics of halogen lamp"
+        },
+        {
+          "min": "136",
+          "max": "165",
+          "name": "Linear dimmer curve, response characteristics of LED"
+        },
+        {
+          "min": "166",
+          "max": "195",
+          "name": "Square dimmer curve, response characteristics of LED"
+        },
+        {
+          "min": "196",
+          "max": "225",
+          "name": "Inverse square dimmer curve, response characteristics of LED"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "S-shaped dimmer curve, response characteristics of LED"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "1-Channel",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Dimmer Curve"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "5.5",
+      "width": "305",
+      "height": "370",
+      "depth": "387"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "10",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "120",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Circus 2.0",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Anthony King",
+  "channels": [
+    {
+      "name": "Program Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "21",
+          "name": "Auto 1"
+        },
+        {
+          "min": "22",
+          "max": "27",
+          "name": "Auto 2"
+        },
+        {
+          "min": "28",
+          "max": "33",
+          "name": "Auto 3"
+        },
+        {
+          "min": "34",
+          "max": "39",
+          "name": "Auto 4"
+        },
+        {
+          "min": "40",
+          "max": "45",
+          "name": "Auto 5"
+        },
+        {
+          "min": "46",
+          "max": "51",
+          "name": "Auto 6"
+        },
+        {
+          "min": "52",
+          "max": "57",
+          "name": "Auto 7"
+        },
+        {
+          "min": "58",
+          "max": "63",
+          "name": "Auto 8"
+        },
+        {
+          "min": "64",
+          "max": "69",
+          "name": "Auto 9"
+        },
+        {
+          "min": "70",
+          "max": "75",
+          "name": "Auto 10"
+        },
+        {
+          "min": "76",
+          "max": "81",
+          "name": "Auto 11"
+        },
+        {
+          "min": "82",
+          "max": "87",
+          "name": "Auto 12"
+        },
+        {
+          "min": "88",
+          "max": "93",
+          "name": "Auto 13"
+        },
+        {
+          "min": "94",
+          "max": "99",
+          "name": "Auto 14"
+        },
+        {
+          "min": "100",
+          "max": "105",
+          "name": "Auto 15"
+        },
+        {
+          "min": "106",
+          "max": "111",
+          "name": "Auto 16"
+        },
+        {
+          "min": "112",
+          "max": "117",
+          "name": "Auto 17"
+        },
+        {
+          "min": "118",
+          "max": "123",
+          "name": "Auto 18"
+        },
+        {
+          "min": "124",
+          "max": "129",
+          "name": "Auto 19"
+        },
+        {
+          "min": "130",
+          "max": "135",
+          "name": "Auto 20"
+        },
+        {
+          "min": "136",
+          "max": "141",
+          "name": "Auto 21"
+        },
+        {
+          "min": "142",
+          "max": "147",
+          "name": "Auto 22"
+        },
+        {
+          "min": "148",
+          "max": "153",
+          "name": "Auto 23"
+        },
+        {
+          "min": "154",
+          "max": "159",
+          "name": "Auto 24"
+        },
+        {
+          "min": "160",
+          "max": "165",
+          "name": "Auto 25"
+        },
+        {
+          "min": "166",
+          "max": "171",
+          "name": "Auto 26"
+        },
+        {
+          "min": "172",
+          "max": "177",
+          "name": "Auto 27"
+        },
+        {
+          "min": "178",
+          "max": "183",
+          "name": "Auto 28"
+        },
+        {
+          "min": "184",
+          "max": "189",
+          "name": "Auto 29"
+        },
+        {
+          "min": "190",
+          "max": "195",
+          "name": "Auto 30"
+        },
+        {
+          "min": "196",
+          "max": "201",
+          "name": "Auto 31"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "Auto 32"
+        },
+        {
+          "min": "208",
+          "max": "213",
+          "name": "Auto 33"
+        },
+        {
+          "min": "214",
+          "max": "219",
+          "name": "Auto 34"
+        },
+        {
+          "min": "220",
+          "max": "225",
+          "name": "Auto 35"
+        },
+        {
+          "min": "226",
+          "max": "231",
+          "name": "Auto 36"
+        },
+        {
+          "min": "232",
+          "max": "237",
+          "name": "Auto 37"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Sound Active Mode"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto Program Speed (Slow - Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Pods Strobe Speed",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Pods automatic strobe speed (Slow - Fast)"
+        }
+      ]
+    },
+    {
+      "name": "SMD Strobe Speed",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "SMD Strobe Speed (Slow - Fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Program Mode",
+        "Speed",
+        "Pods Strobe Speed",
+        "SMD Strobe Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.8",
+      "width": "200",
+      "height": "330",
+      "depth": "373"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "25",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

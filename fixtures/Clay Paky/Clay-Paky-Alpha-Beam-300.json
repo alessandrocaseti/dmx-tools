@@ -1,0 +1,802 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Alpha Beam 300",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "Colour Wheel 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "White"
+        },
+        {
+          "min": "7",
+          "max": "13",
+          "name": "White+Red"
+        },
+        {
+          "min": "14",
+          "max": "20",
+          "name": "Red"
+        },
+        {
+          "min": "21",
+          "max": "27",
+          "name": "Red+CTB"
+        },
+        {
+          "min": "28",
+          "max": "34",
+          "name": "CTB"
+        },
+        {
+          "min": "35",
+          "max": "41",
+          "name": "CTB+CTO 3200"
+        },
+        {
+          "min": "42",
+          "max": "48",
+          "name": "CTO 3200"
+        },
+        {
+          "min": "49",
+          "max": "55",
+          "name": "CTO 3200 + CTO 2500"
+        },
+        {
+          "min": "56",
+          "max": "62",
+          "name": "CTO 2500"
+        },
+        {
+          "min": "63",
+          "max": "69",
+          "name": "CTO 2500 + Green"
+        },
+        {
+          "min": "70",
+          "max": "76",
+          "name": "Green"
+        },
+        {
+          "min": "77",
+          "max": "83",
+          "name": "Green + Aquamarine"
+        },
+        {
+          "min": "84",
+          "max": "90",
+          "name": "Aquamarine"
+        },
+        {
+          "min": "91",
+          "max": "97",
+          "name": "Aquamarine + Orange"
+        },
+        {
+          "min": "98",
+          "max": "104",
+          "name": "Orange"
+        },
+        {
+          "min": "105",
+          "max": "111",
+          "name": "Orange + Blue"
+        },
+        {
+          "min": "112",
+          "max": "118",
+          "name": "Blue"
+        },
+        {
+          "min": "119",
+          "max": "127",
+          "name": "Blue + White"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotation (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Colour Wheel 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "White"
+        },
+        {
+          "min": "14",
+          "max": "27",
+          "name": "Red"
+        },
+        {
+          "min": "28",
+          "max": "41",
+          "name": "CTB"
+        },
+        {
+          "min": "42",
+          "max": "55",
+          "name": "CTO 3200"
+        },
+        {
+          "min": "56",
+          "max": "69",
+          "name": "CTO 2500"
+        },
+        {
+          "min": "70",
+          "max": "83",
+          "name": "Green"
+        },
+        {
+          "min": "84",
+          "max": "97",
+          "name": "Aquamarine"
+        },
+        {
+          "min": "98",
+          "max": "111",
+          "name": "Orange"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Blue"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotation (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Colour Wheel 3",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "White to Blue+White"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotation (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Colour Wheel 4",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "White"
+        },
+        {
+          "min": "14",
+          "max": "27",
+          "name": "White+Red"
+        },
+        {
+          "min": "28",
+          "max": "41",
+          "name": "Red"
+        },
+        {
+          "min": "42",
+          "max": "55",
+          "name": "Red+CTB"
+        },
+        {
+          "min": "56",
+          "max": "69",
+          "name": "CTB"
+        },
+        {
+          "min": "70",
+          "max": "83",
+          "name": "CTB+CTO 3200"
+        },
+        {
+          "min": "84",
+          "max": "97",
+          "name": "CTO 3200"
+        },
+        {
+          "min": "98",
+          "max": "111",
+          "name": "CTO 3200 + CTO 2500"
+        },
+        {
+          "min": "112",
+          "max": "125",
+          "name": "CTO 2500"
+        },
+        {
+          "min": "126",
+          "max": "139",
+          "name": "CTO 2500 + Green"
+        },
+        {
+          "min": "140",
+          "max": "153",
+          "name": "Green"
+        },
+        {
+          "min": "154",
+          "max": "167",
+          "name": "Green + Aquamarine"
+        },
+        {
+          "min": "168",
+          "max": "181",
+          "name": "Aquamarine"
+        },
+        {
+          "min": "182",
+          "max": "195",
+          "name": "Aquamarine + Orange"
+        },
+        {
+          "min": "196",
+          "max": "209",
+          "name": "Orange"
+        },
+        {
+          "min": "210",
+          "max": "223",
+          "name": "Orange + Blue"
+        },
+        {
+          "min": "224",
+          "max": "237",
+          "name": "Blue"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Blue + White"
+        }
+      ]
+    },
+    {
+      "name": "Colour Wheel 5",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "27",
+          "name": "White"
+        },
+        {
+          "min": "28",
+          "max": "55",
+          "name": "Red"
+        },
+        {
+          "min": "56",
+          "max": "83",
+          "name": "CTB"
+        },
+        {
+          "min": "84",
+          "max": "111",
+          "name": "CTO 3200"
+        },
+        {
+          "min": "112",
+          "max": "139",
+          "name": "CTO 2500"
+        },
+        {
+          "min": "140",
+          "max": "167",
+          "name": "Green"
+        },
+        {
+          "min": "168",
+          "max": "195",
+          "name": "Aquamarine"
+        },
+        {
+          "min": "196",
+          "max": "223",
+          "name": "Orange"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Blue"
+        }
+      ]
+    },
+    {
+      "name": "Colour Wheel 6",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "White to Blue+White"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Closed"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Strobe (Slow to Fast)"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Open"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Pulsation (Slow to Fast)"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Open"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random slow strobe"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random medium strobe"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random fast strobe"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Fixed Gobo Change",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "72",
+          "max": "113",
+          "name": "Rotation (Fast to Slow)"
+        },
+        {
+          "min": "114",
+          "max": "117",
+          "name": "Stop"
+        },
+        {
+          "min": "118",
+          "max": "159",
+          "name": "Rotation (Slow to Fast)"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Gobo 2 Shake (Slow to Fast)"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Gobo 3 Shake (Slow to Fast)"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Gobo 4 Shake (Slow to Fast)"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Gobo 5 Shake (Slow to Fast)"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Gobo 6 Shake (Slow to Fast)"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Gobo 7 Shake (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Frost"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Effects reset"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Pan / Tilt reset"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Complete reset"
+        }
+      ]
+    },
+    {
+      "name": "Lamp Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused"
+        },
+        {
+          "min": "26",
+          "max": "100",
+          "name": "Lamp OFF"
+        },
+        {
+          "min": "101",
+          "max": "179",
+          "name": "Unused"
+        },
+        {
+          "min": "180",
+          "max": "255",
+          "name": "Lamp ON"
+        }
+      ]
+    },
+    {
+      "name": "Pan - Tilt Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pan - Tilt (0 to 310s)"
+        }
+      ]
+    },
+    {
+      "name": "Colour Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "CMY - Colour Wheel (0 to 310s)"
+        }
+      ]
+    },
+    {
+      "name": "Beam Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimmer - Frost (0 to 310s)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Time",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fixed Gobo wheel (0 to 310s)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Option Stnd 1 - LinC Off, FulC Off, Rain On",
+      "totalChannels": 14,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Colour Wheel 1",
+        "Strobe",
+        "Dimmer",
+        "Fixed Gobo Change",
+        "Frost",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Reset",
+        "Lamp Control"
+      ]
+    },
+    {
+      "name": "Option Stnd 2 - LinC Off, FulC On, Rain On",
+      "totalChannels": 14,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Colour Wheel 2",
+        "Strobe",
+        "Dimmer",
+        "Fixed Gobo Change",
+        "Frost",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Reset",
+        "Lamp Control"
+      ]
+    },
+    {
+      "name": "Option Stnd 3 - LinC On, Rain On",
+      "totalChannels": 14,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Colour Wheel 3",
+        "Strobe",
+        "Dimmer",
+        "Fixed Gobo Change",
+        "Frost",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Reset",
+        "Lamp Control"
+      ]
+    },
+    {
+      "name": "Option Stnd 4 - LinC Off, FulC Off, Rain Off",
+      "totalChannels": 14,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Colour Wheel 4",
+        "Strobe",
+        "Dimmer",
+        "Fixed Gobo Change",
+        "Frost",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Reset",
+        "Lamp Control"
+      ]
+    },
+    {
+      "name": "Option Stnd 5 - LinC Off, FulC On, Rain Off",
+      "totalChannels": 14,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Colour Wheel 5",
+        "Strobe",
+        "Dimmer",
+        "Fixed Gobo Change",
+        "Frost",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Reset",
+        "Lamp Control"
+      ]
+    },
+    {
+      "name": "Option Stnd 6 - LinC On, Rain Off",
+      "totalChannels": 14,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Colour Wheel 6",
+        "Strobe",
+        "Dimmer",
+        "Fixed Gobo Change",
+        "Frost",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Reset",
+        "Lamp Control"
+      ]
+    },
+    {
+      "name": "Option Vect",
+      "totalChannels": 18,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Colour Wheel 1",
+        "Strobe",
+        "Dimmer",
+        "Fixed Gobo Change",
+        "Frost",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Reset",
+        "Lamp Control",
+        "Pan - Tilt Time",
+        "Colour Time",
+        "Beam Time",
+        "Gobo Time"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HTI 300W",
+      "lumens": "23000",
+      "colourTemperature": "9300"
+    },
+    "dimensions": {
+      "weight": "19.1",
+      "width": "385",
+      "height": "630",
+      "depth": "405"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "8",
+      "degreesMax": "8"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "250"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

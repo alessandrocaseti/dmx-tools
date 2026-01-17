@@ -1,0 +1,166 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Emerald Scan",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Skye Peterson",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pattern",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Circle CW"
+        },
+        {
+          "min": "15",
+          "max": "29",
+          "name": "Rings/Target"
+        },
+        {
+          "min": "30",
+          "max": "44",
+          "name": "3 Rolling Rings CW"
+        },
+        {
+          "min": "45",
+          "max": "59",
+          "name": "Rolling Ring CCW"
+        },
+        {
+          "min": "60",
+          "max": "74",
+          "name": "Barrel"
+        },
+        {
+          "min": "75",
+          "max": "89",
+          "name": "Tri-Ring CW"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Tri-Ring CCW"
+        },
+        {
+          "min": "105",
+          "max": "119",
+          "name": "Intersecting Rings 1"
+        },
+        {
+          "min": "120",
+          "max": "134",
+          "name": "Intersecting Rings 2"
+        },
+        {
+          "min": "135",
+          "max": "149",
+          "name": "Intersecting Rings 3"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Line CCW Slow"
+        },
+        {
+          "min": "165",
+          "max": "179",
+          "name": "Tri-Blade"
+        },
+        {
+          "min": "180",
+          "max": "194",
+          "name": "Tri-Blade CW"
+        },
+        {
+          "min": "195",
+          "max": "209",
+          "name": "Tri-Blade CCW"
+        },
+        {
+          "min": "210",
+          "max": "224",
+          "name": "Line CW Fast"
+        },
+        {
+          "min": "225",
+          "max": "239",
+          "name": "Line CCW Fast"
+        },
+        {
+          "min": "240",
+          "max": "254",
+          "name": "Quad-Blade"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Circle CCW"
+        }
+      ]
+    },
+    {
+      "name": "Lazer Glitter",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "This increases and decreases the lazer line size and the gap size in the patterns"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pattern",
+        "Lazer Glitter"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Green Lazer Diode",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "203",
+      "height": "407",
+      "depth": "140"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "150",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "240",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

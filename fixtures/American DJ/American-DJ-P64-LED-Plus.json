@@ -1,0 +1,140 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "P64 LED Plus",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Steven",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Colour Macro",
+      "type": "Color"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Nothing"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobing"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Nothing"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Dim -> Bright"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Bright -> Dim"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Dim -> Bright -> Dim"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Color Mixing"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "3 Color Change"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "7 Color Change"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Full",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Colour Macro",
+        "Strobe",
+        "Mode"
+      ]
+    },
+    {
+      "name": "Simple",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.2",
+      "width": "292",
+      "height": "267",
+      "depth": "343"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

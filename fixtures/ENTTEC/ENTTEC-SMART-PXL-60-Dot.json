@@ -1,0 +1,118 @@
+{
+  "version": "1.2",
+  "manufacturer": "ENTTEC",
+  "model": "SMART PXL 60 Dot",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Yestalgia",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "White fine",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "8-bit - RGB",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "8-bit - RGBW",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "16-bit - RGB",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine"
+      ]
+    },
+    {
+      "name": "16-bit - RGBW",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "39",
+      "colourTemperature": "3000"
+    },
+    "dimensions": {
+      "weight": "0.07",
+      "width": "76",
+      "height": "58",
+      "depth": "45"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "180",
+      "degreesMax": "180"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "3",
+      "dmxConnector": "Other"
+    }
+  }
+}

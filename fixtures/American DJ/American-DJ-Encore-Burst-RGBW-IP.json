@@ -1,0 +1,516 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Encore Burst RGBW IP",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Andrew Hallmark",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed (LEDs off)"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter open (LEDs on)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect, slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter open (LEDs on)"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse effect in sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter open (LEDs on)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect, slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter open (LEDs on)"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No effect"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Moroccan pink"
+        },
+        {
+          "min": "16",
+          "max": "22",
+          "name": "Pink"
+        },
+        {
+          "min": "23",
+          "max": "30",
+          "name": "Special rose pink"
+        },
+        {
+          "min": "31",
+          "max": "37",
+          "name": "Fillies pink"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Fuschia pink"
+        },
+        {
+          "min": "46",
+          "max": "52",
+          "name": "Surprise pink"
+        },
+        {
+          "min": "53",
+          "max": "60",
+          "name": "Congo blue"
+        },
+        {
+          "min": "61",
+          "max": "67",
+          "name": "Tokyo blue"
+        },
+        {
+          "min": "68",
+          "max": "75",
+          "name": "Deep blue"
+        },
+        {
+          "min": "76",
+          "max": "82",
+          "name": "Just blue"
+        },
+        {
+          "min": "83",
+          "max": "90",
+          "name": "Medium blue"
+        },
+        {
+          "min": "91",
+          "max": "97",
+          "name": "Double CT blue"
+        },
+        {
+          "min": "98",
+          "max": "105",
+          "name": "State blue"
+        },
+        {
+          "min": "106",
+          "max": "112",
+          "name": "Full CT blue"
+        },
+        {
+          "min": "113",
+          "max": "120",
+          "name": "Half CT blue"
+        },
+        {
+          "min": "121",
+          "max": "127",
+          "name": "Steel blue"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Lighter blue"
+        },
+        {
+          "min": "136",
+          "max": "142",
+          "name": "Light blue"
+        },
+        {
+          "min": "143",
+          "max": "150",
+          "name": "Medium blue green"
+        },
+        {
+          "min": "151",
+          "max": "157",
+          "name": "Dark green"
+        },
+        {
+          "min": "158",
+          "max": "165",
+          "name": "Primary green"
+        },
+        {
+          "min": "166",
+          "max": "172",
+          "name": "Moss green"
+        },
+        {
+          "min": "173",
+          "max": "180",
+          "name": "Fern green"
+        },
+        {
+          "min": "181",
+          "max": "187",
+          "name": "JAS green"
+        },
+        {
+          "min": "188",
+          "max": "195",
+          "name": "Lime green"
+        },
+        {
+          "min": "196",
+          "max": "202",
+          "name": "Spring yellow"
+        },
+        {
+          "min": "203",
+          "max": "210",
+          "name": "Deep amber"
+        },
+        {
+          "min": "211",
+          "max": "217",
+          "name": "Chrome orange"
+        },
+        {
+          "min": "218",
+          "max": "225",
+          "name": "Orange"
+        },
+        {
+          "min": "226",
+          "max": "232",
+          "name": "Gold amber"
+        },
+        {
+          "min": "233",
+          "max": "240",
+          "name": "Millenium gold"
+        },
+        {
+          "min": "241",
+          "max": "247",
+          "name": "Deep gold amber"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Flame red"
+        }
+      ]
+    },
+    {
+      "name": "Dim Modes",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Stage 2"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Dim speed, fast to slow (0.1s-10.0s)"
+        },
+        {
+          "min": "141",
+          "max": "255",
+          "name": "Default"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Refresh Rates",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Default"
+        },
+        {
+          "min": "16",
+          "max": "30",
+          "name": "900 Hz"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "1000 Hz"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "1100 Hz"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "1200 Hz"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "1300 Hz"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "1400 Hz"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "1500 Hz"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "2500 Hz"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "4000 Hz"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "5000 Hz"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "6000 Hz"
+        },
+        {
+          "min": "181",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Gamma",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Default"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "1.0"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "2.0"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "2.2"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "2.4"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "2.6"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "2.8"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Master Dimmer",
+        "Master Dimmer Fine"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Shutter",
+        "Master Dimmer",
+        "Master Dimmer Fine"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Shutter",
+        "Master Dimmer",
+        "Master Dimmer Fine",
+        "Dim Modes"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 11,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro",
+        "Shutter",
+        "Master Dimmer",
+        "Master Dimmer Fine",
+        "Dim Modes",
+        "Refresh Rates",
+        "Gamma"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2027",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.6",
+      "width": "249",
+      "height": "308",
+      "depth": "234"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "50",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "118",
+      "dmxConnector": "5-pin IP65"
+    }
+  }
+}

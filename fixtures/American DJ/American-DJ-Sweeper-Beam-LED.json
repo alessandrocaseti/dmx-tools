@@ -1,0 +1,454 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Sweeper Beam LED",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV",
+  "channels": [
+    {
+      "name": "Shows",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Show 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Show 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Show 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Show 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Show 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Show 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Show 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Show 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Show 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Show 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Show 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Show 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Show 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Show 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Show 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Show 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Random Show"
+        }
+      ]
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Movement Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "43",
+          "name": "60º - 120º"
+        },
+        {
+          "min": "44",
+          "max": "79",
+          "name": "45º - 135º"
+        },
+        {
+          "min": "80",
+          "max": "115",
+          "name": "30º - 150º"
+        },
+        {
+          "min": "116",
+          "max": "151",
+          "name": "0º - 180º"
+        },
+        {
+          "min": "152",
+          "max": "187",
+          "name": "-30º - 210º"
+        },
+        {
+          "min": "188",
+          "max": "223",
+          "name": "0º - 90º"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "90º - 180º"
+        }
+      ]
+    },
+    {
+      "name": "Tilt Movement Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Chases",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Chase 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Chase 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Chase 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Chase 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Chase 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Chase 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Chase 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Chase 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Chase 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Chase 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Chase 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Chase 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Chase 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Chase 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Chase 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Chase 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Full On"
+        }
+      ]
+    },
+    {
+      "name": "Chase Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobing (Slow -> Fast)"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "No function"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow Open - Fast Close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Slow Close - Fast Open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobing"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer (Lens 1)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer (Lens 2)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer (Lens 3)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer (Lens 4)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer (Lens 5)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer (Lens 6)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer (Lens 7)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer (Lens 8)",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 Channel Mode",
+      "totalChannels": 1,
+      "channels": [
+        "Shows"
+      ]
+    },
+    {
+      "name": "6 Channel Mode",
+      "totalChannels": 6,
+      "channels": [
+        "Tilt",
+        "Tilt Movement Macro",
+        "Tilt Movement Macro Speed",
+        "Chases",
+        "Chase Speed",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "11 Channel Mode",
+      "totalChannels": 11,
+      "channels": [
+        "Tilt",
+        "Master Dimmer",
+        "Strobing",
+        "Dimmer (Lens 1)",
+        "Dimmer (Lens 2)",
+        "Dimmer (Lens 3)",
+        "Dimmer (Lens 4)",
+        "Dimmer (Lens 5)",
+        "Dimmer (Lens 6)",
+        "Dimmer (Lens 7)",
+        "Dimmer (Lens 8)"
+      ]
+    },
+    {
+      "name": "15 Channel Mode",
+      "totalChannels": 15,
+      "channels": [
+        "Tilt",
+        "Tilt Movement Macro",
+        "Tilt Movement Macro Speed",
+        "Chases",
+        "Chase Speed",
+        "Master Dimmer",
+        "Strobing",
+        "Dimmer (Lens 1)",
+        "Dimmer (Lens 2)",
+        "Dimmer (Lens 3)",
+        "Dimmer (Lens 4)",
+        "Dimmer (Lens 5)",
+        "Dimmer (Lens 6)",
+        "Dimmer (Lens 7)",
+        "Dimmer (Lens 8)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.3",
+      "width": "973",
+      "height": "132",
+      "depth": "73"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "3.5",
+      "degreesMax": "3.5"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "0",
+      "tiltMax": "210"
+    },
+    "technical": {
+      "powerConsumption": "47",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

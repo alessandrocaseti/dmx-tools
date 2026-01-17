@@ -1,0 +1,1675 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayrton",
+  "model": "MagicPanel 602",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Baptiste Moinereau",
+  "channels": [
+    {
+      "name": "Pan Movement",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Movement",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed PAN / TILT",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "max to min"
+        },
+        {
+          "min": "226",
+          "max": "236",
+          "name": "Blackout by movement"
+        },
+        {
+          "min": "237",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    },
+    {
+      "name": "PAN Motor continuous rotation",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "no function"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards Pan rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "no function"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards Pan rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "TILT Motor continuous rotation",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "no function"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards Tilt rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "no function"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards Tilt rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Red LED -all arrays",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -all arrays",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -all arrays",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -all arrays",
+      "type": "White"
+    },
+    {
+      "name": "Shutter, strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Led turn off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Led turn on"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Led turn on"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse-effect in sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Led turn on"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Led turn on"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "39",
+          "name": "red to yellow"
+        },
+        {
+          "min": "40",
+          "max": "71",
+          "name": "yellow to green"
+        },
+        {
+          "min": "72",
+          "max": "103",
+          "name": "green to cyan"
+        },
+        {
+          "min": "104",
+          "max": "135",
+          "name": "cyan to blue"
+        },
+        {
+          "min": "136",
+          "max": "167",
+          "name": "blue to magenta"
+        },
+        {
+          "min": "168",
+          "max": "199",
+          "name": "magenta to red"
+        },
+        {
+          "min": "200",
+          "max": "231",
+          "name": "red to white"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Crossfading colours from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Presets",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "White 2700k"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "White 3200k"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "White 4200k"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "White 5600k"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "White 6500k"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "White 8000k"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Yellow"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Magenta"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Cyan"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Salmon"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Turquoise"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Light Green"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Steel Blue"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Orange"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Straw"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Pale Lavander"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Pink"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Red"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Green"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Blue"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Rainbow1"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Rainbow2"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Rainbow3"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Rainbow4"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Rainbow5"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Rainbow6"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Rainbow7"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Rainbow8"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Rainbow9"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "Rainbow10"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Rainbow11"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "Rainbow12"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Rainbow13"
+        },
+        {
+          "min": "170",
+          "max": "174",
+          "name": "Rainbow14"
+        },
+        {
+          "min": "175",
+          "max": "179",
+          "name": "Rainbow15"
+        },
+        {
+          "min": "180",
+          "max": "184",
+          "name": "Rainbow16"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Rainbow17"
+        },
+        {
+          "min": "190",
+          "max": "194",
+          "name": "Rainbow18"
+        },
+        {
+          "min": "195",
+          "max": "199",
+          "name": "Rainbow19"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Reserved"
+        }
+      ]
+    },
+    {
+      "name": "Color Preset Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimmer 100 to 0%"
+        }
+      ]
+    },
+    {
+      "name": "Chase Patterns",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Led Turn off"
+        },
+        {
+          "min": "10",
+          "max": "13",
+          "name": "Chase 1"
+        },
+        {
+          "min": "14",
+          "max": "17",
+          "name": "Chase 2"
+        },
+        {
+          "min": "18",
+          "max": "21",
+          "name": "Chase 3"
+        },
+        {
+          "min": "22",
+          "max": "25",
+          "name": "Chase 4"
+        },
+        {
+          "min": "26",
+          "max": "29",
+          "name": "Chase 5"
+        },
+        {
+          "min": "30",
+          "max": "33",
+          "name": "Chase 6"
+        },
+        {
+          "min": "34",
+          "max": "37",
+          "name": "Chase 7"
+        },
+        {
+          "min": "38",
+          "max": "41",
+          "name": "Chase 8"
+        },
+        {
+          "min": "42",
+          "max": "45",
+          "name": "Chase 9"
+        },
+        {
+          "min": "46",
+          "max": "49",
+          "name": "Chase 10"
+        },
+        {
+          "min": "50",
+          "max": "53",
+          "name": "Chase 11"
+        },
+        {
+          "min": "54",
+          "max": "57",
+          "name": "Chase 12"
+        },
+        {
+          "min": "58",
+          "max": "61",
+          "name": "Chase 13"
+        },
+        {
+          "min": "62",
+          "max": "65",
+          "name": "Chase 14"
+        },
+        {
+          "min": "66",
+          "max": "69",
+          "name": "Chase 15"
+        },
+        {
+          "min": "70",
+          "max": "73",
+          "name": "Chase 16"
+        },
+        {
+          "min": "74",
+          "max": "77",
+          "name": "Chase 17"
+        },
+        {
+          "min": "78",
+          "max": "81",
+          "name": "Chase 18"
+        },
+        {
+          "min": "82",
+          "max": "85",
+          "name": "Chase 19"
+        },
+        {
+          "min": "86",
+          "max": "89",
+          "name": "Chase 20"
+        },
+        {
+          "min": "90",
+          "max": "93",
+          "name": "Chase 21"
+        },
+        {
+          "min": "94",
+          "max": "97",
+          "name": "Chase 22"
+        },
+        {
+          "min": "98",
+          "max": "101",
+          "name": "Chase 23"
+        },
+        {
+          "min": "102",
+          "max": "105",
+          "name": "Chase 24"
+        },
+        {
+          "min": "106",
+          "max": "109",
+          "name": "Chase 25"
+        },
+        {
+          "min": "110",
+          "max": "113",
+          "name": "Chase 26"
+        },
+        {
+          "min": "114",
+          "max": "117",
+          "name": "Chase 27"
+        },
+        {
+          "min": "118",
+          "max": "121",
+          "name": "Chase 28"
+        },
+        {
+          "min": "122",
+          "max": "125",
+          "name": "Chase 29"
+        },
+        {
+          "min": "126",
+          "max": "129",
+          "name": "Chase 30"
+        },
+        {
+          "min": "130",
+          "max": "133",
+          "name": "Chase 31"
+        },
+        {
+          "min": "134",
+          "max": "137",
+          "name": "Chase 32"
+        },
+        {
+          "min": "138",
+          "max": "141",
+          "name": "Chase 33"
+        },
+        {
+          "min": "142",
+          "max": "145",
+          "name": "Chase 34"
+        },
+        {
+          "min": "146",
+          "max": "149",
+          "name": "Chase 35"
+        },
+        {
+          "min": "150",
+          "max": "153",
+          "name": "Chase 36"
+        },
+        {
+          "min": "154",
+          "max": "157",
+          "name": "Chase 37"
+        },
+        {
+          "min": "158",
+          "max": "161",
+          "name": "Chase 38"
+        },
+        {
+          "min": "162",
+          "max": "165",
+          "name": "Chase 39"
+        },
+        {
+          "min": "166",
+          "max": "169",
+          "name": "Chase 40"
+        },
+        {
+          "min": "170",
+          "max": "173",
+          "name": "Chase 41"
+        },
+        {
+          "min": "174",
+          "max": "177",
+          "name": "Chase 42"
+        },
+        {
+          "min": "178",
+          "max": "181",
+          "name": "Chase 43"
+        },
+        {
+          "min": "182",
+          "max": "185",
+          "name": "Chase 44"
+        },
+        {
+          "min": "186",
+          "max": "189",
+          "name": "Chase 45"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Chase 46"
+        },
+        {
+          "min": "194",
+          "max": "197",
+          "name": "Chase 47"
+        },
+        {
+          "min": "198",
+          "max": "201",
+          "name": "Chase 48"
+        },
+        {
+          "min": "202",
+          "max": "205",
+          "name": "Chase 49"
+        },
+        {
+          "min": "206",
+          "max": "209",
+          "name": "Chase 50"
+        },
+        {
+          "min": "210",
+          "max": "213",
+          "name": "Chase 51"
+        },
+        {
+          "min": "214",
+          "max": "217",
+          "name": "Chase 52"
+        },
+        {
+          "min": "218",
+          "max": "221",
+          "name": "Chase 53"
+        },
+        {
+          "min": "222",
+          "max": "225",
+          "name": "Chase 54"
+        },
+        {
+          "min": "226",
+          "max": "229",
+          "name": "Chase 55"
+        },
+        {
+          "min": "230",
+          "max": "233",
+          "name": "Chase 56"
+        },
+        {
+          "min": "234",
+          "max": "237",
+          "name": "Chase 57"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Reserved"
+        }
+      ]
+    },
+    {
+      "name": "Chase Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "125",
+          "name": "Fast to Slow Backward"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "Stop"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "Slow to Fast Forward"
+        }
+      ]
+    },
+    {
+      "name": "Chase Fade",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fade Chase"
+        }
+      ]
+    },
+    {
+      "name": "Reset, Internal programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "Normal"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All motor reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Scan motor reset"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "no function"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "no function"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "no function"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "Others motor reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal Program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal Program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal Program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal Program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal Program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal Program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal Program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Music Control"
+        }
+      ]
+    },
+    {
+      "name": "Red LED -array 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 1",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 2",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 3",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 4",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 5",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 5",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 6",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 6",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 7",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 7",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 7",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 7",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 8",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 8",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 8",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 8",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 9",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 9",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 9",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 9",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 10",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 10",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 10",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 10",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 11",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 11",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 11",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 11",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 12",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 12",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 12",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 12",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 13",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 13",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 13",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 13",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 14",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 14",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 14",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 14",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 15",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 15",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 15",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 15",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 16",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 16",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 16",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 16",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 17",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 17",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 17",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 17",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 18",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 18",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 18",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 18",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 19",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 19",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 19",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 19",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 20",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 20",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 20",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 20",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 21",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 21",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 21",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 21",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 22",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 22",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 22",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 22",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 23",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 23",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 23",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 23",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 24",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 24",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 24",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 24",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 25",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 25",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 25",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 25",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 26",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 26",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 26",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 26",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 27",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 27",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 27",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 27",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 28",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 28",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 28",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 28",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 29",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 29",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 29",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 29",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 30",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 30",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 30",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 30",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 31",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 31",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 31",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 31",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 32",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 32",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 32",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 32",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 33",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 33",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 33",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 33",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 34",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 34",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 34",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 34",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 35",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 35",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 35",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 35",
+      "type": "White"
+    },
+    {
+      "name": "Red LED -array 36",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED -array 36",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED -array 36",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED -array 36",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "20ch",
+      "totalChannels": 20,
+      "channels": [
+        "Pan Movement",
+        "Pan Fine",
+        "Tilt Movement",
+        "Tilt Fine",
+        "Speed PAN / TILT",
+        "PAN Motor continuous rotation",
+        "TILT Motor continuous rotation",
+        "Red LED -all arrays",
+        "Green LED -all arrays",
+        "Blue LED -all arrays",
+        "White LED -all arrays",
+        "Shutter, strobe",
+        "Dimmer Intensity",
+        "Color Macro",
+        "Color Presets",
+        "Chase Patterns",
+        "Chase Speed",
+        "Chase Fade",
+        "Color Preset Dimmer",
+        "Reset, Internal programs"
+      ]
+    },
+    {
+      "name": "18ch",
+      "totalChannels": 18,
+      "channels": [
+        "Pan Movement",
+        "Tilt Movement",
+        "Speed PAN / TILT",
+        "PAN Motor continuous rotation",
+        "TILT Motor continuous rotation",
+        "Red LED -all arrays",
+        "Green LED -all arrays",
+        "Blue LED -all arrays",
+        "White LED -all arrays",
+        "Shutter, strobe",
+        "Dimmer Intensity",
+        "Color Macro",
+        "Color Presets",
+        "Chase Patterns",
+        "Chase Speed",
+        "Chase Fade",
+        "Color Preset Dimmer",
+        "Reset, Internal programs"
+      ]
+    },
+    {
+      "name": "160ch",
+      "totalChannels": 160,
+      "channels": [
+        "Pan Movement",
+        "Tilt Movement",
+        "Pan Fine",
+        "Tilt Fine",
+        "Speed PAN / TILT",
+        "PAN Motor continuous rotation",
+        "TILT Motor continuous rotation",
+        "Shutter, strobe",
+        "Dimmer Intensity",
+        "Color Macro",
+        "Color Presets",
+        "Color Preset Dimmer",
+        "Chase Patterns",
+        "Chase Speed",
+        "Chase Fade",
+        "Reset, Internal programs",
+        "Red LED -array 1",
+        "Green LED -array 1",
+        "Blue LED -array 1",
+        "White LED -array 1",
+        "Red LED -array 2",
+        "Green LED -array 2",
+        "Blue LED -array 2",
+        "White LED -array 2",
+        "Red LED -array 3",
+        "Green LED -array 3",
+        "Blue LED -array 3",
+        "White LED -array 3",
+        "Red LED -array 4",
+        "Green LED -array 4",
+        "Blue LED -array 4",
+        "White LED -array 4",
+        "Red LED -array 5",
+        "Green LED -array 5",
+        "Blue LED -array 5",
+        "White LED -array 5",
+        "Red LED -array 6",
+        "Green LED -array 6",
+        "Blue LED -array 6",
+        "White LED -array 6",
+        "Red LED -array 7",
+        "Green LED -array 7",
+        "Blue LED -array 7",
+        "White LED -array 7",
+        "Red LED -array 8",
+        "Green LED -array 8",
+        "Blue LED -array 8",
+        "White LED -array 8",
+        "Red LED -array 9",
+        "Green LED -array 9",
+        "Blue LED -array 9",
+        "White LED -array 9",
+        "Red LED -array 10",
+        "Green LED -array 10",
+        "Blue LED -array 10",
+        "White LED -array 10",
+        "Red LED -array 11",
+        "Green LED -array 11",
+        "Blue LED -array 11",
+        "White LED -array 11",
+        "Red LED -array 12",
+        "Green LED -array 12",
+        "Blue LED -array 12",
+        "White LED -array 12",
+        "Red LED -array 13",
+        "Green LED -array 13",
+        "Blue LED -array 13",
+        "White LED -array 13",
+        "Red LED -array 14",
+        "Green LED -array 14",
+        "Blue LED -array 14",
+        "White LED -array 14",
+        "Red LED -array 15",
+        "Green LED -array 15",
+        "Blue LED -array 15",
+        "White LED -array 15",
+        "Red LED -array 16",
+        "Green LED -array 16",
+        "Blue LED -array 16",
+        "White LED -array 16",
+        "Red LED -array 17",
+        "Green LED -array 17",
+        "Blue LED -array 17",
+        "White LED -array 17",
+        "Red LED -array 18",
+        "Green LED -array 18",
+        "Blue LED -array 18",
+        "White LED -array 18",
+        "Red LED -array 19",
+        "Green LED -array 19",
+        "Blue LED -array 19",
+        "White LED -array 19",
+        "Red LED -array 20",
+        "Green LED -array 20",
+        "Blue LED -array 20",
+        "White LED -array 20",
+        "Red LED -array 21",
+        "Green LED -array 21",
+        "Blue LED -array 21",
+        "White LED -array 21",
+        "Red LED -array 22",
+        "Green LED -array 22",
+        "Blue LED -array 22",
+        "White LED -array 22",
+        "Red LED -array 23",
+        "Green LED -array 23",
+        "Blue LED -array 23",
+        "White LED -array 23",
+        "Red LED -array 24",
+        "Green LED -array 24",
+        "Blue LED -array 24",
+        "White LED -array 24",
+        "Red LED -array 25",
+        "Green LED -array 25",
+        "Blue LED -array 25",
+        "White LED -array 25",
+        "Red LED -array 26",
+        "Green LED -array 26",
+        "Blue LED -array 26",
+        "White LED -array 26",
+        "Red LED -array 27",
+        "Green LED -array 27",
+        "Blue LED -array 27",
+        "White LED -array 27",
+        "Red LED -array 28",
+        "Green LED -array 28",
+        "Blue LED -array 28",
+        "White LED -array 28",
+        "Red LED -array 29",
+        "Green LED -array 29",
+        "Blue LED -array 29",
+        "White LED -array 29",
+        "Red LED -array 30",
+        "Green LED -array 30",
+        "Blue LED -array 30",
+        "White LED -array 30",
+        "Red LED -array 31",
+        "Green LED -array 31",
+        "Blue LED -array 31",
+        "White LED -array 31",
+        "Red LED -array 32",
+        "Green LED -array 32",
+        "Blue LED -array 32",
+        "White LED -array 32",
+        "Red LED -array 33",
+        "Green LED -array 33",
+        "Blue LED -array 33",
+        "White LED -array 33",
+        "Red LED -array 34",
+        "Green LED -array 34",
+        "Blue LED -array 34",
+        "White LED -array 34",
+        "Red LED -array 35",
+        "Green LED -array 35",
+        "Blue LED -array 35",
+        "White LED -array 35",
+        "Red LED -array 36",
+        "Green LED -array 36",
+        "Blue LED -array 36",
+        "White LED -array 36"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "15000",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "18.2",
+      "width": "420",
+      "height": "545",
+      "depth": "370"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "7.5",
+      "degreesMax": "7.5"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "630",
+      "tiltMax": "540"
+    },
+    "technical": {
+      "powerConsumption": "600",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

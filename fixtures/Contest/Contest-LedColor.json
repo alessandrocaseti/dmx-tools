@@ -1,0 +1,171 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "LedColor",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "jacques",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "RGB & B & F (ch2=Red, ch3=green, ch4=blue, ch5=strobe)"
+        },
+        {
+          "min": "30",
+          "max": "94",
+          "name": "Auto"
+        },
+        {
+          "min": "95",
+          "max": "159",
+          "name": "Sound impulsions"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "Snake"
+        },
+        {
+          "min": "185",
+          "max": "209",
+          "name": "Sequencer"
+        },
+        {
+          "min": "210",
+          "max": "234",
+          "name": "Automatic sequencer (40 colours)"
+        },
+        {
+          "min": "235",
+          "max": "255",
+          "name": "Automatic sequencer time synchronized (40 colours)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Colour"
+        }
+      ]
+    },
+    {
+      "name": "Flash",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash speed"
+        }
+      ]
+    },
+    {
+      "name": "Fade",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fade"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Strobe speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "C & B",
+      "totalChannels": 2,
+      "channels": [
+        "Colour",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "RGB & B",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "RGB & B & F",
+      "totalChannels": 5,
+      "channels": [
+        "Mode",
+        "Dimmer",
+        "Fade",
+        "Flash",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.7",
+      "width": "420",
+      "height": "366",
+      "depth": "255"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "63",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Double Phase",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Kuder",
+  "channels": [
+    {
+      "name": "Dimmer / Strobe (Mirror 1)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "199",
+          "name": "Master Dimmer 0% - 100%"
+        },
+        {
+          "min": "200",
+          "max": "247",
+          "name": "Strobing Slow - Fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Full On"
+        }
+      ]
+    },
+    {
+      "name": "Colors (Mirror 1)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Black"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Color 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Color 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Color 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Color 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Color 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Color 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Color 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Color 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Color 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Color 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Color 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Color 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Color 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Color 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Color 15"
+        }
+      ]
+    },
+    {
+      "name": "Barrel Rotation (Mirror 1)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "STOP"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Rotation Fast - Slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "STOP"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Rotation Slow - Fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "STOP"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer / Strobe (Mirror 2)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "199",
+          "name": "Master Dimmer 0% - 100%"
+        },
+        {
+          "min": "200",
+          "max": "247",
+          "name": "Strobing Slow - Fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Full On"
+        }
+      ]
+    },
+    {
+      "name": "Colors (Mirror 2)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Black"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Color 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Color 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Color 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Color 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Color 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Color 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Color 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Color 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Color 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Color 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Color 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Color 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Color 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Color 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Color 15"
+        }
+      ]
+    },
+    {
+      "name": "Barrel Rotation (Mirror 2)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "STOP"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Rotation Fast - Slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "STOP"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Rotation Slow - Fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "STOP"
+        }
+      ]
+    },
+    {
+      "name": "Show Modes",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "Show 1"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "Show 2"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "Show 3"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "Show 4"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "Show 5"
+        },
+        {
+          "min": "158",
+          "max": "187",
+          "name": "Show 6"
+        },
+        {
+          "min": "188",
+          "max": "217",
+          "name": "Show 7"
+        },
+        {
+          "min": "218",
+          "max": "247",
+          "name": "Show 8"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Random Shows 1 - 8"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "1-CH Mode",
+      "totalChannels": 1,
+      "channels": [
+        "Show Modes"
+      ]
+    },
+    {
+      "name": "6-CH Mode",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer / Strobe (Mirror 1)",
+        "Colors (Mirror 1)",
+        "Barrel Rotation (Mirror 1)",
+        "Dimmer / Strobe (Mirror 2)",
+        "Colors (Mirror 2)",
+        "Barrel Rotation (Mirror 2)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.5",
+      "width": "478",
+      "height": "195",
+      "depth": "134"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "150",
+      "degreesMax": "150"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

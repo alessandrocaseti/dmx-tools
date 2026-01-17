@@ -1,0 +1,96 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "LED Shadow",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Louis Gutenschwager",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "39",
+          "name": "Dimmer Mode"
+        },
+        {
+          "min": "40",
+          "max": "159",
+          "name": "Auto Mode 1"
+        },
+        {
+          "min": "160",
+          "max": "199",
+          "name": "Auto Mode 2"
+        },
+        {
+          "min": "200",
+          "max": "239",
+          "name": "Auto Mode 3"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Mode"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 3,
+      "channels": [
+        "Mode",
+        "Speed",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.2",
+      "width": "248",
+      "height": "356",
+      "depth": "165"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "12",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

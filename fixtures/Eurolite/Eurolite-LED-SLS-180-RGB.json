@@ -1,0 +1,133 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED SLS-180 RGB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Peter",
+  "channels": [
+    {
+      "name": "Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No strobe effect"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Strobe effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "60",
+          "name": "Static colours (colour selection CH 7)"
+        },
+        {
+          "min": "61",
+          "max": "110",
+          "name": "Colour change 1 - fading, 7 colours (speed CH 7)"
+        },
+        {
+          "min": "111",
+          "max": "160",
+          "name": "Colour change 2 - fading, 7 colours (speed CH 7)"
+        },
+        {
+          "min": "161",
+          "max": "210",
+          "name": "Colour change 3 - switching, 7 colours (speed CH 7)"
+        },
+        {
+          "min": "211",
+          "max": "255",
+          "name": "Sound controlled mode"
+        }
+      ]
+    },
+    {
+      "name": "Colours",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Select static colour / increasing speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 7,
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe",
+        "Functions",
+        "Colours"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.2",
+      "width": "100",
+      "height": "200",
+      "depth": "225"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "35",
+      "degreesMax": "35"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "13",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "version": "1.2",
+  "manufacturer": "BoomToneDJ",
+  "model": "SilentPAR 12x10w 6in1",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "John Yiannikakis",
+  "channels": [
+    {
+      "name": "Red dimmer",
+      "type": "Red"
+    },
+    {
+      "name": "Green dimmer",
+      "type": "Green"
+    },
+    {
+      "name": "Blue dimmer",
+      "type": "Blue"
+    },
+    {
+      "name": "White dimmer",
+      "type": "White"
+    },
+    {
+      "name": "Amber dimmer",
+      "type": "Amber"
+    },
+    {
+      "name": "UV dimmer",
+      "type": "UV"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe speed",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Strobe off"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe speed"
+        }
+      ]
+    },
+    {
+      "name": "Program scrolling speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program scrolling speed"
+        }
+      ]
+    },
+    {
+      "name": "Automatic modes",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "59",
+          "name": "DMX operated mode"
+        },
+        {
+          "min": "60",
+          "max": "119",
+          "name": "color static mode"
+        },
+        {
+          "min": "120",
+          "max": "179",
+          "name": "color changing mode"
+        },
+        {
+          "min": "180",
+          "max": "239",
+          "name": "fading color mode"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Music Detection Mode"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red dimmer",
+        "Green dimmer",
+        "Blue dimmer",
+        "White dimmer",
+        "Amber dimmer",
+        "UV dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Master Dimmer",
+        "Red dimmer",
+        "Green dimmer",
+        "Blue dimmer",
+        "White dimmer",
+        "Amber dimmer",
+        "UV dimmer",
+        "Strobe speed",
+        "Program scrolling speed",
+        "Automatic modes"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "270",
+      "height": "252",
+      "depth": "90"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "45",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Saber Spot RGBW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Marksym",
+  "channels": [
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer curves",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default Dimmer Setting"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED On"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobing Slow - Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED On"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Strobe Slow - Fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED On"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe Slow - Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED On"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White fine",
+      "type": "White"
+    },
+    {
+      "name": "Color Macro (RGBWmix)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "4",
+          "name": "80,255,234,80"
+        },
+        {
+          "min": "5",
+          "max": "8",
+          "name": "80,255,164,80"
+        },
+        {
+          "min": "9",
+          "max": "12",
+          "name": "77,255,112,77"
+        },
+        {
+          "min": "13",
+          "max": "16",
+          "name": "117,255,83,83"
+        },
+        {
+          "min": "17",
+          "max": "20",
+          "name": "160,255,77,77"
+        },
+        {
+          "min": "21",
+          "max": "24",
+          "name": "223,255,83,83"
+        },
+        {
+          "min": "25",
+          "max": "28",
+          "name": "255,243,77,77"
+        },
+        {
+          "min": "29",
+          "max": "32",
+          "name": "255,200,74,74"
+        },
+        {
+          "min": "33",
+          "max": "36",
+          "name": "255,166,77,77"
+        },
+        {
+          "min": "37",
+          "max": "40",
+          "name": "255,125,74,74"
+        },
+        {
+          "min": "41",
+          "max": "44",
+          "name": "255,97,77,74"
+        },
+        {
+          "min": "45",
+          "max": "48",
+          "name": "255,71,77,71"
+        },
+        {
+          "min": "49",
+          "max": "52",
+          "name": "255,83,134,83"
+        },
+        {
+          "min": "53",
+          "max": "56",
+          "name": "255,93,182,93"
+        },
+        {
+          "min": "57",
+          "max": "60",
+          "name": "255,96,236,96"
+        },
+        {
+          "min": "61",
+          "max": "64",
+          "name": "238,93,255,93"
+        },
+        {
+          "min": "65",
+          "max": "68",
+          "name": "196,87,255,87"
+        },
+        {
+          "min": "69",
+          "max": "72",
+          "name": "150,90,255,90"
+        },
+        {
+          "min": "73",
+          "max": "76",
+          "name": "100,77,255,77"
+        },
+        {
+          "min": "77",
+          "max": "80",
+          "name": "77,100,255,77"
+        },
+        {
+          "min": "81",
+          "max": "84",
+          "name": "67,148,255,67"
+        },
+        {
+          "min": "85",
+          "max": "88",
+          "name": "77,195,255,77"
+        },
+        {
+          "min": "89",
+          "max": "92",
+          "name": "77,234,255,77"
+        },
+        {
+          "min": "93",
+          "max": "96",
+          "name": "158,255,144,144"
+        },
+        {
+          "min": "97",
+          "max": "100",
+          "name": "255,251,153,153"
+        },
+        {
+          "min": "101",
+          "max": "104",
+          "name": "255,175,147,147"
+        },
+        {
+          "min": "105",
+          "max": "108",
+          "name": "255,138,186,138"
+        },
+        {
+          "min": "109",
+          "max": "112",
+          "name": "255,147,251,147"
+        },
+        {
+          "min": "113",
+          "max": "116",
+          "name": "151,138,255,138"
+        },
+        {
+          "min": "117",
+          "max": "120",
+          "name": "99,0,255,100"
+        },
+        {
+          "min": "121",
+          "max": "124",
+          "name": "138,169,255,138"
+        },
+        {
+          "min": "125",
+          "max": "128",
+          "name": "255,255,255,255"
+        },
+        {
+          "min": "129",
+          "max": "132",
+          "name": "255,206,143,0"
+        },
+        {
+          "min": "133",
+          "max": "136",
+          "name": "254,177,153,0"
+        },
+        {
+          "min": "137",
+          "max": "140",
+          "name": "254,192,138,0"
+        },
+        {
+          "min": "141",
+          "max": "144",
+          "name": "254,165,98,0"
+        },
+        {
+          "min": "145",
+          "max": "148",
+          "name": "254,121,0,0"
+        },
+        {
+          "min": "149",
+          "max": "152",
+          "name": "176,17,0,0"
+        },
+        {
+          "min": "153",
+          "max": "156",
+          "name": "96,0,11,0"
+        },
+        {
+          "min": "157",
+          "max": "160",
+          "name": "234,139,171,0"
+        },
+        {
+          "min": "161",
+          "max": "164",
+          "name": "224,5,97,0"
+        },
+        {
+          "min": "165",
+          "max": "168",
+          "name": "175,77,173,0"
+        },
+        {
+          "min": "169",
+          "max": "172",
+          "name": "119,130,199,0"
+        },
+        {
+          "min": "173",
+          "max": "176",
+          "name": "147,164,212,0"
+        },
+        {
+          "min": "177",
+          "max": "180",
+          "name": "88,2,163,0"
+        },
+        {
+          "min": "181",
+          "max": "184",
+          "name": "0,38,86,0"
+        },
+        {
+          "min": "185",
+          "max": "188",
+          "name": "0,142,208,0"
+        },
+        {
+          "min": "189",
+          "max": "192",
+          "name": "52,148,209,0"
+        },
+        {
+          "min": "193",
+          "max": "196",
+          "name": "1,134,201,0"
+        },
+        {
+          "min": "197",
+          "max": "200",
+          "name": "0,145,212,0"
+        },
+        {
+          "min": "201",
+          "max": "204",
+          "name": "0,121,192,0"
+        },
+        {
+          "min": "205",
+          "max": "208",
+          "name": "0,129,184,0"
+        },
+        {
+          "min": "209",
+          "max": "212",
+          "name": "0,83,115,0"
+        },
+        {
+          "min": "213",
+          "max": "216",
+          "name": "0,97,166,0"
+        },
+        {
+          "min": "217",
+          "max": "220",
+          "name": "1,100,167,0"
+        },
+        {
+          "min": "221",
+          "max": "224",
+          "name": "0,40,86,0"
+        },
+        {
+          "min": "225",
+          "max": "228",
+          "name": "209,219,182,0"
+        },
+        {
+          "min": "229",
+          "max": "232",
+          "name": "42,165,85,0"
+        },
+        {
+          "min": "233",
+          "max": "236",
+          "name": "0,46,35,0"
+        },
+        {
+          "min": "237",
+          "max": "240",
+          "name": "8,107,222,0"
+        },
+        {
+          "min": "241",
+          "max": "244",
+          "name": "107,156,231,0"
+        },
+        {
+          "min": "245",
+          "max": "248",
+          "name": "165,198,247,0"
+        },
+        {
+          "min": "249",
+          "max": "252",
+          "name": "0,0,189,0"
+        },
+        {
+          "min": "253",
+          "max": "255",
+          "name": "255,255,255,0"
+        }
+      ]
+    },
+    {
+      "name": "Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "20",
+          "name": "Program 1"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Program 2"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Program 3"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Program 4"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Program 5"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Program 6"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Program 7"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Program 8"
+        },
+        {
+          "min": "161",
+          "max": "180",
+          "name": "Program 9"
+        },
+        {
+          "min": "181",
+          "max": "200",
+          "name": "Program 10"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Program 11"
+        },
+        {
+          "min": "221",
+          "max": "240",
+          "name": "Program 12"
+        },
+        {
+          "min": "241",
+          "max": "250",
+          "name": "Program 13"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Gradient Effect"
+        }
+      ]
+    },
+    {
+      "name": "Program speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Program Fade",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "fast-slow"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Intensity"
+      ]
+    },
+    {
+      "name": "4 Channel (1)",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "4 Channel (2)",
+      "totalChannels": 4,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Intensity",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "6 Channel (1)",
+      "totalChannels": 6,
+      "channels": [
+        "Shutter Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Intensity"
+      ]
+    },
+    {
+      "name": "6 Channel (2)",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Master dimmer",
+        "Master dimmer fine"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Shutter Strobe",
+        "Master dimmer",
+        "Master dimmer fine"
+      ]
+    },
+    {
+      "name": "8 Channel (1)",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Shutter Strobe",
+        "Master dimmer",
+        "Master dimmer fine",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "8 Channel (2)",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine"
+      ]
+    },
+    {
+      "name": "Mode 10",
+      "totalChannels": 9,
+      "channels": [
+        "Shutter Strobe",
+        "Hue",
+        "Saturation",
+        "Intensity",
+        "Color Macro (RGBWmix)",
+        "Auto Programs",
+        "Program speed",
+        "Program Fade",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "Mode 11",
+      "totalChannels": 11,
+      "channels": [
+        "Shutter Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Intensity",
+        "Color Macro (RGBWmix)",
+        "Auto Programs",
+        "Program speed",
+        "Program Fade",
+        "Dimmer curves"
+      ]
+    },
+    {
+      "name": "Mode 12",
+      "totalChannels": 12,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro (RGBWmix)",
+        "Shutter Strobe",
+        "Master dimmer",
+        "Master dimmer fine",
+        "Auto Programs",
+        "Program speed",
+        "Program Fade",
+        "Dimmer curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.2",
+      "width": "135",
+      "height": "215",
+      "depth": "170"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "14",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED B-40 Beam",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Henrik Bauer",
+  "channels": [
+    {
+      "name": "Pan/Rotation",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No rotation"
+        },
+        {
+          "min": "10",
+          "max": "127",
+          "name": "Backwards PAN-rotation with decreasing speed"
+        },
+        {
+          "min": "128",
+          "max": "137",
+          "name": "No rotation"
+        },
+        {
+          "min": "138",
+          "max": "255",
+          "name": "Forwards PAN-rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "LED colours",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Red"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Green"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Blue"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Red + Green"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Red + Green + Blue"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe-effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Internal program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "249",
+          "name": "Internal program"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound mode"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Pan/Rotation",
+        "LED colours",
+        "Strobe",
+        "Internal program"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "320",
+      "height": "380",
+      "depth": "320"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "360",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "Puck Fab5",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "James Elliott",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "On, Dim -> Bright"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Strobe off (open)"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe speed Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Red"
+        },
+        {
+          "min": "5",
+          "max": "8",
+          "name": "Green"
+        },
+        {
+          "min": "9",
+          "max": "12",
+          "name": "Blue"
+        },
+        {
+          "min": "13",
+          "max": "16",
+          "name": "Amber"
+        },
+        {
+          "min": "17",
+          "max": "20",
+          "name": "White"
+        },
+        {
+          "min": "21",
+          "max": "24",
+          "name": "Red+Green"
+        },
+        {
+          "min": "25",
+          "max": "28",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "29",
+          "max": "31",
+          "name": "Red+Amber"
+        },
+        {
+          "min": "32",
+          "max": "35",
+          "name": "Red+White"
+        },
+        {
+          "min": "36",
+          "max": "39",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "40",
+          "max": "43",
+          "name": "Green+Amber"
+        },
+        {
+          "min": "44",
+          "max": "47",
+          "name": "Green+White"
+        },
+        {
+          "min": "48",
+          "max": "51",
+          "name": "Blue+Amber"
+        },
+        {
+          "min": "52",
+          "max": "55",
+          "name": "Blue+White"
+        },
+        {
+          "min": "56",
+          "max": "59",
+          "name": "Amber+White"
+        },
+        {
+          "min": "60",
+          "max": "62",
+          "name": "Blue+Amber+White"
+        },
+        {
+          "min": "63",
+          "max": "66",
+          "name": "Green+Amber+White"
+        },
+        {
+          "min": "67",
+          "max": "70",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "71",
+          "max": "74",
+          "name": "Green+Blue+Amber"
+        },
+        {
+          "min": "75",
+          "max": "78",
+          "name": "Red+Amber+White"
+        },
+        {
+          "min": "79",
+          "max": "82",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "83",
+          "max": "86",
+          "name": "Red+Blue+Amber"
+        },
+        {
+          "min": "87",
+          "max": "90",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Red+Green+Amber"
+        },
+        {
+          "min": "94",
+          "max": "97",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "98",
+          "max": "101",
+          "name": "Red+Green+Blue+Amber"
+        },
+        {
+          "min": "102",
+          "max": "105",
+          "name": "Red+Green+Blue+White"
+        },
+        {
+          "min": "106",
+          "max": "109",
+          "name": "Red+Green+Amber+White"
+        },
+        {
+          "min": "110",
+          "max": "113",
+          "name": "Red+Blue+Amber+White"
+        },
+        {
+          "min": "114",
+          "max": "117",
+          "name": "Green+Blue+Amber+White"
+        },
+        {
+          "min": "118",
+          "max": "120",
+          "name": "Red+Green+Blue+Amber+White"
+        },
+        {
+          "min": "121",
+          "max": "255",
+          "name": "Chase Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Color Snap",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "Off"
+        },
+        {
+          "min": "2",
+          "max": "253",
+          "name": "No function"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Snap Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Snap Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Fade",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "Off"
+        },
+        {
+          "min": "2",
+          "max": "253",
+          "name": "No function"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Fade Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fade Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Color"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 12,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "Color Snap",
+        "Snap Speed",
+        "Color Fade",
+        "Fade Speed",
+        "Sound Active"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.92",
+      "width": "210",
+      "height": "216",
+      "depth": "99"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "55",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

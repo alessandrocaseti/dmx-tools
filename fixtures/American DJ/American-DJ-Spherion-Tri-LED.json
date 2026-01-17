@@ -1,0 +1,206 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Spherion Tri LED",
+  "type": "Effect",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "JL Griffin",
+  "channels": [
+    {
+      "name": "Shows",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "47",
+          "name": "Show 1"
+        },
+        {
+          "min": "48",
+          "max": "87",
+          "name": "Show 2"
+        },
+        {
+          "min": "88",
+          "max": "127",
+          "name": "Show 3"
+        },
+        {
+          "min": "128",
+          "max": "167",
+          "name": "Show 4"
+        },
+        {
+          "min": "168",
+          "max": "207",
+          "name": "Show 5"
+        },
+        {
+          "min": "208",
+          "max": "247",
+          "name": "Show 6"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "113",
+          "name": "Clockwise [Fast > Slow]"
+        },
+        {
+          "min": "114",
+          "max": "141",
+          "name": "Stop"
+        },
+        {
+          "min": "142",
+          "max": "245",
+          "name": "Counter Clockwise [Fast > Slow]"
+        },
+        {
+          "min": "246",
+          "max": "247",
+          "name": "Stop"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "199",
+          "name": "Dimmer [0% > 100%]"
+        },
+        {
+          "min": "200",
+          "max": "247",
+          "name": "Strobe [Fast > Slow]"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "46",
+          "name": "Color 1"
+        },
+        {
+          "min": "47",
+          "max": "85",
+          "name": "Color 2"
+        },
+        {
+          "min": "86",
+          "max": "124",
+          "name": "Color 3"
+        },
+        {
+          "min": "125",
+          "max": "163",
+          "name": "Color 4"
+        },
+        {
+          "min": "164",
+          "max": "202",
+          "name": "Color 5"
+        },
+        {
+          "min": "203",
+          "max": "240",
+          "name": "Color 6"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Color 7"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "1 Ch. [Default]",
+      "totalChannels": 1,
+      "channels": [
+        "Shows"
+      ]
+    },
+    {
+      "name": "3 Ch",
+      "totalChannels": 3,
+      "channels": [
+        "Rotation",
+        "Shutter",
+        "Color Macros"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "190",
+      "height": "422",
+      "depth": "320"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "27",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

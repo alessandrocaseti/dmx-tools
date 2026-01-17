@@ -1,0 +1,631 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED Multi FX Laser Bar",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "e-shock",
+  "channels": [
+    {
+      "name": "Mix Show",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "22",
+          "name": "Program 1"
+        },
+        {
+          "min": "23",
+          "max": "40",
+          "name": "Program 2"
+        },
+        {
+          "min": "41",
+          "max": "58",
+          "name": "Program 3"
+        },
+        {
+          "min": "59",
+          "max": "76",
+          "name": "Program 4"
+        },
+        {
+          "min": "77",
+          "max": "94",
+          "name": "Program 5"
+        },
+        {
+          "min": "95",
+          "max": "112",
+          "name": "Program 6"
+        },
+        {
+          "min": "113",
+          "max": "129",
+          "name": "Program 7"
+        },
+        {
+          "min": "130",
+          "max": "147",
+          "name": "Program 8"
+        },
+        {
+          "min": "148",
+          "max": "165",
+          "name": "Program 9"
+        },
+        {
+          "min": "166",
+          "max": "183",
+          "name": "Program 10"
+        },
+        {
+          "min": "184",
+          "max": "201",
+          "name": "Program 11"
+        },
+        {
+          "min": "202",
+          "max": "219",
+          "name": "Program 12"
+        },
+        {
+          "min": "220",
+          "max": "237",
+          "name": "Program 13"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Program 14"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Increasing"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
+    },
+    {
+      "name": "UV",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "Program 1"
+        },
+        {
+          "min": "56",
+          "max": "105",
+          "name": "Program 2"
+        },
+        {
+          "min": "106",
+          "max": "155",
+          "name": "Program 3"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "Program 4"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "Program 5"
+        }
+      ]
+    },
+    {
+      "name": "Matrix",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "no function"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Program 1"
+        },
+        {
+          "min": "14",
+          "max": "21",
+          "name": "Program 2"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Program 3"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Program 4"
+        },
+        {
+          "min": "38",
+          "max": "45",
+          "name": "Program 5"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Program 6"
+        },
+        {
+          "min": "54",
+          "max": "61",
+          "name": "Program 7"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Program 8"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Program 9"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Program 10"
+        },
+        {
+          "min": "86",
+          "max": "93",
+          "name": "Program 11"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Program 12"
+        },
+        {
+          "min": "102",
+          "max": "109",
+          "name": "Program 13"
+        },
+        {
+          "min": "110",
+          "max": "117",
+          "name": "Program 14"
+        },
+        {
+          "min": "118",
+          "max": "125",
+          "name": "Program 15"
+        },
+        {
+          "min": "126",
+          "max": "133",
+          "name": "Program 16"
+        },
+        {
+          "min": "134",
+          "max": "141",
+          "name": "Program 17"
+        },
+        {
+          "min": "142",
+          "max": "149",
+          "name": "Program 18"
+        },
+        {
+          "min": "150",
+          "max": "157",
+          "name": "Program 19"
+        },
+        {
+          "min": "158",
+          "max": "165",
+          "name": "Program 20"
+        },
+        {
+          "min": "166",
+          "max": "173",
+          "name": "Program 21"
+        },
+        {
+          "min": "174",
+          "max": "181",
+          "name": "Program 22"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Program 23"
+        },
+        {
+          "min": "190",
+          "max": "197",
+          "name": "Program 24"
+        },
+        {
+          "min": "198",
+          "max": "205",
+          "name": "Program 25"
+        },
+        {
+          "min": "206",
+          "max": "213",
+          "name": "Program 26"
+        },
+        {
+          "min": "214",
+          "max": "221",
+          "name": "Program 27"
+        },
+        {
+          "min": "222",
+          "max": "229",
+          "name": "Program 28"
+        },
+        {
+          "min": "230",
+          "max": "237",
+          "name": "Program 29"
+        },
+        {
+          "min": "238",
+          "max": "245",
+          "name": "Program 30"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Program 31"
+        }
+      ]
+    },
+    {
+      "name": "Laser",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "40",
+          "name": "Program 1"
+        },
+        {
+          "min": "41",
+          "max": "76",
+          "name": "Program 2"
+        },
+        {
+          "min": "77",
+          "max": "112",
+          "name": "Program 3"
+        },
+        {
+          "min": "113",
+          "max": "147",
+          "name": "Program 4"
+        },
+        {
+          "min": "148",
+          "max": "183",
+          "name": "Program 5"
+        },
+        {
+          "min": "184",
+          "max": "219",
+          "name": "Program 6"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "Program 7"
+        }
+      ]
+    },
+    {
+      "name": "White SMDs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "27",
+          "name": "Program 1"
+        },
+        {
+          "min": "28",
+          "max": "50",
+          "name": "Program 2"
+        },
+        {
+          "min": "51",
+          "max": "73",
+          "name": "Program 3"
+        },
+        {
+          "min": "74",
+          "max": "95",
+          "name": "Program 4"
+        },
+        {
+          "min": "96",
+          "max": "118",
+          "name": "Program 5"
+        },
+        {
+          "min": "119",
+          "max": "141",
+          "name": "Program 6"
+        },
+        {
+          "min": "142",
+          "max": "163",
+          "name": "Program 7"
+        },
+        {
+          "min": "164",
+          "max": "186",
+          "name": "Program 8"
+        },
+        {
+          "min": "187",
+          "max": "209",
+          "name": "Program 9"
+        },
+        {
+          "min": "210",
+          "max": "232",
+          "name": "Program 10"
+        },
+        {
+          "min": "233",
+          "max": "255",
+          "name": "Program 11"
+        }
+      ]
+    },
+    {
+      "name": "UV1 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "UV2 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe Effekt UV",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Strobe with increasing speed"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound control strobe"
+        }
+      ]
+    },
+    {
+      "name": "Speed (Matrix)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Increasing speed of the programs from CH4"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
+    },
+    {
+      "name": "Laser (10CH)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "48",
+          "name": "Red"
+        },
+        {
+          "min": "49",
+          "max": "89",
+          "name": "Green"
+        },
+        {
+          "min": "90",
+          "max": "131",
+          "name": "Red + green"
+        },
+        {
+          "min": "132",
+          "max": "173",
+          "name": "Red strobe + green"
+        },
+        {
+          "min": "174",
+          "max": "215",
+          "name": "Red + green strobe"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Red strobe + green strobe alternating"
+        }
+      ]
+    },
+    {
+      "name": "Laser Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Increasing speed of the programs from CH6"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound control strobe"
+        }
+      ]
+    },
+    {
+      "name": "Laser Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Stop"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Clockwise with increasing speed"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Counterclockwise with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Speed (White SMDs)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Increasing speed of the programs from CH9"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Mix Show",
+        "Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "UV",
+        "Matrix",
+        "Laser",
+        "White SMDs",
+        "Speed"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "UV1 Dimmer",
+        "UV2 Dimmer",
+        "Strobe Effekt UV",
+        "Matrix",
+        "Speed (Matrix)",
+        "Laser (10CH)",
+        "Laser Strobe",
+        "Laser Rotation",
+        "White SMDs",
+        "Speed (White SMDs)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.25",
+      "width": "760",
+      "height": "245",
+      "depth": "180"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "35",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

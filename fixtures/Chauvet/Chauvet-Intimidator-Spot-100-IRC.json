@@ -1,0 +1,439 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Intimidator Spot 100 IRC",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Fine Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "White"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Blue"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Yellow"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Pink"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Green"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Orange"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Light blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Orange red"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Color cycling rainbow with increasing speed"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Reverse color cycling rainbow with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Closed"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "215",
+          "name": "Stobe effect with increasing speed (0 to 20Hz)"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Gobo 7 shake, slow to fast"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 6 shake, slow to fast"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 5 shake, slow to fast"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 4 shake, slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 3 shake, slow to fast"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 2 shake, slow to fast"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 1 shake, slow to fast"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Cycle effect with increasing speed"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Reverse cycle effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Control Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "27",
+          "name": "Blackout while moving panning/tilting"
+        },
+        {
+          "min": "28",
+          "max": "47",
+          "name": "Blackout while moving gobo wheel"
+        },
+        {
+          "min": "48",
+          "max": "67",
+          "name": "Disable blackout while panning/tilting/moving gobo wheel"
+        },
+        {
+          "min": "68",
+          "max": "87",
+          "name": "Blackout while moving color wheel"
+        },
+        {
+          "min": "88",
+          "max": "107",
+          "name": "Disable blackout while panning/tilting/moving color wheel"
+        },
+        {
+          "min": "108",
+          "max": "127",
+          "name": "Disable blackout while moving gobo/color wheel"
+        },
+        {
+          "min": "128",
+          "max": "147",
+          "name": "Diable blackout while moving all options"
+        },
+        {
+          "min": "148",
+          "max": "167",
+          "name": "Reset pan"
+        },
+        {
+          "min": "168",
+          "max": "187",
+          "name": "Reset tilt"
+        },
+        {
+          "min": "188",
+          "max": "207",
+          "name": "Reset color wheel"
+        },
+        {
+          "min": "208",
+          "max": "227",
+          "name": "Reset gobo wheel"
+        },
+        {
+          "min": "228",
+          "max": "247",
+          "name": "Reset all channels"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "23",
+          "name": "Auto program 1"
+        },
+        {
+          "min": "24",
+          "max": "39",
+          "name": "Auto program 2"
+        },
+        {
+          "min": "40",
+          "max": "55",
+          "name": "Auto program 3"
+        },
+        {
+          "min": "56",
+          "max": "71",
+          "name": "Auto program 4"
+        },
+        {
+          "min": "72",
+          "max": "87",
+          "name": "Auto program 5"
+        },
+        {
+          "min": "88",
+          "max": "103",
+          "name": "Auto program 6"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "Auto program 7"
+        },
+        {
+          "min": "120",
+          "max": "135",
+          "name": "Auto program 8"
+        },
+        {
+          "min": "136",
+          "max": "151",
+          "name": "Sound-active program 1"
+        },
+        {
+          "min": "152",
+          "max": "167",
+          "name": "Sound-active program 2"
+        },
+        {
+          "min": "168",
+          "max": "183",
+          "name": "Sound-active program 3"
+        },
+        {
+          "min": "184",
+          "max": "199",
+          "name": "Sound-active program 4"
+        },
+        {
+          "min": "200",
+          "max": "215",
+          "name": "Sound-active program 5"
+        },
+        {
+          "min": "216",
+          "max": "231",
+          "name": "Sound-active program 6"
+        },
+        {
+          "min": "232",
+          "max": "247",
+          "name": "Sound-active program 7"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound-active program 8"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Fine Pan",
+        "Fine Tilt",
+        "Speed",
+        "Color Wheel",
+        "Shutter",
+        "Dimmer",
+        "Gobo Wheel",
+        "Control Function",
+        "Auto Programs"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color Wheel",
+        "Shutter",
+        "Dimmer",
+        "Gobo Wheel"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "535",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "148",
+      "height": "295",
+      "depth": "198"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "13"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "51",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

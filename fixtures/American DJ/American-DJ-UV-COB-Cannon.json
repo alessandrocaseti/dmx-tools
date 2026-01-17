@@ -1,0 +1,109 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "UV COB Cannon",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Frédéric Combe",
+  "channels": [
+    {
+      "name": "Dimming",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobing",
+      "type": "Unknown"
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Delay Mode Control"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Dimming"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Dimming",
+        "Strobing"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Dimming",
+        "Strobing",
+        "Dimmer Curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.98",
+      "width": "320",
+      "height": "200",
+      "depth": "278"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "33",
+      "degreesMax": "33"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "120",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

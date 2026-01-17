@@ -1,0 +1,237 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED Party Panel RGB+UV",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Stefan Krumm",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Preset colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "UV"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Lavender"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Light blue"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Dark blue"
+        },
+        {
+          "min": "170",
+          "max": "255",
+          "name": "Pink"
+        }
+      ]
+    },
+    {
+      "name": "Internal programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "69",
+          "name": "Auto program 1 color blending slow > fast"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "Auto program 2 color change slow > fast"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "Sound program 1 color blending slow > fast"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Sound program 2 color change slow > fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "UV",
+        "Preset colors",
+        "Internal programs"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Preset colors",
+        "Internal programs"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "0.7",
+      "width": "150",
+      "height": "150",
+      "depth": "51"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "36",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

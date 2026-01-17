@@ -1,0 +1,323 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "BAC500",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Olivier Michel",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Warm white",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Warm white intensity (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Preset colours",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Warm white"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Amber"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "UV"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Yellow"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Magenta"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Cyan"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Dark orange"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Green yellow"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Salmon"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Turquoise"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Light green"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Orange"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Straw"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Lavender"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Light blue"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Dark blue"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Pink"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "69",
+          "name": "Colour blending (rate)"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "Colour change (rate)"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "Sound colour blending (rate)"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Sound color change (rate)"
+        }
+      ]
+    },
+    {
+      "name": "Colour temperature",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "49",
+          "name": "White 2700K"
+        },
+        {
+          "min": "50",
+          "max": "89",
+          "name": "White 3200K"
+        },
+        {
+          "min": "90",
+          "max": "129",
+          "name": "White 4300K"
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "White 5600K"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "White 6500K"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "White 8000K"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Preset colours",
+        "Mode",
+        "Colour temperature"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Warm white",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 12,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Warm white",
+        "Amber",
+        "UV",
+        "Preset colours",
+        "Mode",
+        "Colour temperature"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.4",
+      "width": "223",
+      "height": "257",
+      "depth": "112"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "37"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "98",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

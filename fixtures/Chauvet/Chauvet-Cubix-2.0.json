@@ -1,0 +1,406 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Cubix 2.0",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jungle Jim",
+  "channels": [
+    {
+      "name": "Side Lens Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "28",
+          "name": "Red"
+        },
+        {
+          "min": "29",
+          "max": "56",
+          "name": "Green"
+        },
+        {
+          "min": "57",
+          "max": "84",
+          "name": "Blue"
+        },
+        {
+          "min": "85",
+          "max": "112",
+          "name": "Cyan"
+        },
+        {
+          "min": "113",
+          "max": "140",
+          "name": "Magenta"
+        },
+        {
+          "min": "141",
+          "max": "168",
+          "name": "Yellow"
+        },
+        {
+          "min": "169",
+          "max": "197",
+          "name": "White"
+        },
+        {
+          "min": "198",
+          "max": "224",
+          "name": "3-Color switching"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "7-Color switching"
+        }
+      ]
+    },
+    {
+      "name": "Side Lens Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "0 to 30 Hz"
+        }
+      ]
+    },
+    {
+      "name": "Side Lens Motor Rotation",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Rotation with indexing"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Back and forth with increasing distance"
+        }
+      ]
+    },
+    {
+      "name": "Middle Lens Auto Programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Blackout"
+        },
+        {
+          "min": "15",
+          "max": "20",
+          "name": "Auto program 1"
+        },
+        {
+          "min": "21",
+          "max": "26",
+          "name": "Auto program 2"
+        },
+        {
+          "min": "27",
+          "max": "32",
+          "name": "Auto program 3"
+        },
+        {
+          "min": "33",
+          "max": "38",
+          "name": "Auto program 4"
+        },
+        {
+          "min": "39",
+          "max": "44",
+          "name": "Auto program 5"
+        },
+        {
+          "min": "45",
+          "max": "50",
+          "name": "Auto program 6"
+        },
+        {
+          "min": "51",
+          "max": "56",
+          "name": "Auto program 7"
+        },
+        {
+          "min": "57",
+          "max": "62",
+          "name": "Auto program 8"
+        },
+        {
+          "min": "63",
+          "max": "68",
+          "name": "Auto program 9"
+        },
+        {
+          "min": "69",
+          "max": "74",
+          "name": "Auto program 10"
+        },
+        {
+          "min": "75",
+          "max": "80",
+          "name": "Auto program 11"
+        },
+        {
+          "min": "81",
+          "max": "86",
+          "name": "Auto program 12"
+        },
+        {
+          "min": "87",
+          "max": "92",
+          "name": "Auto program 13"
+        },
+        {
+          "min": "93",
+          "max": "98",
+          "name": "Auto program 14"
+        },
+        {
+          "min": "99",
+          "max": "104",
+          "name": "Auto program 15"
+        },
+        {
+          "min": "105",
+          "max": "110",
+          "name": "Auto program 16"
+        },
+        {
+          "min": "111",
+          "max": "116",
+          "name": "Auto program 17"
+        },
+        {
+          "min": "117",
+          "max": "122",
+          "name": "Auto program 18"
+        },
+        {
+          "min": "123",
+          "max": "128",
+          "name": "Auto program 19"
+        },
+        {
+          "min": "129",
+          "max": "134",
+          "name": "Auto program 20"
+        },
+        {
+          "min": "135",
+          "max": "140",
+          "name": "Auto program 21"
+        },
+        {
+          "min": "141",
+          "max": "146",
+          "name": "Auto program 22"
+        },
+        {
+          "min": "147",
+          "max": "152",
+          "name": "Auto program 23"
+        },
+        {
+          "min": "153",
+          "max": "158",
+          "name": "Auto program 24"
+        },
+        {
+          "min": "159",
+          "max": "164",
+          "name": "Auto program 25"
+        },
+        {
+          "min": "165",
+          "max": "170",
+          "name": "Auto program 26"
+        },
+        {
+          "min": "171",
+          "max": "176",
+          "name": "Auto program 27"
+        },
+        {
+          "min": "177",
+          "max": "182",
+          "name": "Auto program 28"
+        },
+        {
+          "min": "183",
+          "max": "188",
+          "name": "Auto program 29"
+        },
+        {
+          "min": "189",
+          "max": "194",
+          "name": "Auto program 30"
+        },
+        {
+          "min": "195",
+          "max": "200",
+          "name": "Auto program 31"
+        },
+        {
+          "min": "201",
+          "max": "206",
+          "name": "Auto program 32"
+        },
+        {
+          "min": "207",
+          "max": "212",
+          "name": "Auto program 33"
+        },
+        {
+          "min": "213",
+          "max": "218",
+          "name": "Auto program 34"
+        },
+        {
+          "min": "219",
+          "max": "224",
+          "name": "Auto program 35"
+        },
+        {
+          "min": "225",
+          "max": "230",
+          "name": "Auto program 36"
+        },
+        {
+          "min": "231",
+          "max": "236",
+          "name": "Auto program 37"
+        },
+        {
+          "min": "237",
+          "max": "242",
+          "name": "Auto program 38"
+        },
+        {
+          "min": "243",
+          "max": "248",
+          "name": "Auto program 39"
+        },
+        {
+          "min": "249",
+          "max": "255",
+          "name": "Auto program 40"
+        }
+      ]
+    },
+    {
+      "name": "Middle Lens Auto Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "0 to 100% (when Ch.4 is 015 to 255)"
+        }
+      ]
+    },
+    {
+      "name": "Middle Lens Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "0 to 30 Hz"
+        }
+      ]
+    },
+    {
+      "name": "All lenses Auto Programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "250",
+          "name": "Auto Programs (slow-fast)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "0-30 Hz"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 7,
+      "channels": [
+        "Side Lens Colors",
+        "Side Lens Strobe",
+        "Side Lens Motor Rotation",
+        "Middle Lens Auto Programs",
+        "Middle Lens Auto Program Speed",
+        "Middle Lens Strobe",
+        "All lenses Auto Programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.7",
+      "width": "305",
+      "height": "267",
+      "depth": "296"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "30",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

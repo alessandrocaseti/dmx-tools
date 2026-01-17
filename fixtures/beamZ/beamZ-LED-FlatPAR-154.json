@@ -1,0 +1,200 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "LED FlatPAR-154",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jászberényi Szabolcs",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "No function"
+        },
+        {
+          "min": "15",
+          "max": "44",
+          "name": "Single colour strobe"
+        },
+        {
+          "min": "45",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Color / Sound control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "19",
+          "name": "Blue color"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "White color"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Red+White color"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Blue+Green+White color"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Color change 1"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Color change 2"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "All bright"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Multicolor auto 1"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Multicolor auto 2"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Sound 1"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Sound 2"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Sound 3"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound 4"
+        }
+      ]
+    },
+    {
+      "name": "Color control",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "209",
+          "name": "No function"
+        },
+        {
+          "min": "210",
+          "max": "223",
+          "name": "Red color"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Green color"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Color control",
+        "Color / Sound control",
+        "Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1",
+      "width": "200",
+      "height": "180",
+      "depth": "105"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

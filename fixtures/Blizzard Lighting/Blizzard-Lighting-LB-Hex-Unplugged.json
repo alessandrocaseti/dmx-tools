@@ -1,0 +1,418 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "LB Hex Unplugged",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Sparks",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "Random"
+        },
+        {
+          "min": "56",
+          "max": "105",
+          "name": "Pulse"
+        },
+        {
+          "min": "106",
+          "max": "155",
+          "name": "Average"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "Thunder"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "Standard"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No function"
+        },
+        {
+          "min": "2",
+          "max": "43",
+          "name": "Red fade in"
+        },
+        {
+          "min": "44",
+          "max": "85",
+          "name": "Red fade out <--> Green fade in"
+        },
+        {
+          "min": "86",
+          "max": "127",
+          "name": "Green fade out <--> Blue fade in"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Red fade in <--> Blue"
+        },
+        {
+          "min": "170",
+          "max": "211",
+          "name": "Red <--> Green Fade in <--> Blue"
+        },
+        {
+          "min": "212",
+          "max": "254",
+          "name": "White fade in"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "White (RGBW)"
+        }
+      ]
+    },
+    {
+      "name": "Color Presets",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "15",
+          "name": "Red"
+        },
+        {
+          "min": "16",
+          "max": "25",
+          "name": "Green"
+        },
+        {
+          "min": "26",
+          "max": "35",
+          "name": "Blue"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Lime Green"
+        },
+        {
+          "min": "46",
+          "max": "55",
+          "name": "Yellow Green"
+        },
+        {
+          "min": "56",
+          "max": "65",
+          "name": "Yellow"
+        },
+        {
+          "min": "66",
+          "max": "75",
+          "name": "Congo Red"
+        },
+        {
+          "min": "76",
+          "max": "85",
+          "name": "Light Orange"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "Wine Red"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Pink"
+        },
+        {
+          "min": "106",
+          "max": "115",
+          "name": "Pink Purple"
+        },
+        {
+          "min": "116",
+          "max": "125",
+          "name": "Light Purple"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Pink Blue"
+        },
+        {
+          "min": "136",
+          "max": "145",
+          "name": "Light Blue"
+        },
+        {
+          "min": "146",
+          "max": "155",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "156",
+          "max": "165",
+          "name": "Light Cyan"
+        },
+        {
+          "min": "166",
+          "max": "175",
+          "name": "Cyan Green"
+        },
+        {
+          "min": "176",
+          "max": "185",
+          "name": "Water Green"
+        },
+        {
+          "min": "186",
+          "max": "195",
+          "name": "Light Green"
+        },
+        {
+          "min": "196",
+          "max": "205",
+          "name": "Cold White"
+        },
+        {
+          "min": "206",
+          "max": "215",
+          "name": "Light Cold White"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "Pure White"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Purple White"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Cream White"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Warm White"
+        }
+      ]
+    },
+    {
+      "name": "Auto / Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "40",
+          "name": "7-color fade"
+        },
+        {
+          "min": "41",
+          "max": "70",
+          "name": "RGB fade"
+        },
+        {
+          "min": "71",
+          "max": "100",
+          "name": "RGB fade 2 (low temp)"
+        },
+        {
+          "min": "101",
+          "max": "130",
+          "name": "7-color jump"
+        },
+        {
+          "min": "131",
+          "max": "160",
+          "name": "RGB jump"
+        },
+        {
+          "min": "161",
+          "max": "190",
+          "name": "Yellow/Cyan/Magenta jump"
+        },
+        {
+          "min": "191",
+          "max": "220",
+          "name": "Sound active strobe"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "Sound active jump"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto speed (slow <--> fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimming Curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard Curve"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Dimming 1"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Dimming 2"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Dimming 3"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Dimming 4"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "UV",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 13,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "UV",
+        "White",
+        "Strobe",
+        "Color Macros",
+        "Color Presets",
+        "Auto / Sound Active",
+        "Auto Speed",
+        "Dimming Curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "4319",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.2",
+      "width": "141",
+      "height": "211",
+      "depth": "177"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "21",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

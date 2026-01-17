@@ -1,0 +1,361 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "On-X",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Shows",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Show 0"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Show 1"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Show 2"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Sound active"
+        },
+        {
+          "min": "40",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Show Speed/Sound Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - fast/Least sensitive - most sensitive"
+        }
+      ]
+    },
+    {
+      "name": "Head 1 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head 2 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow open - fast close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast open - slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Sound active"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Special Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "Nothing"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blackout with tilt movement"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Nothing"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Blackout with RGBW value"
+        },
+        {
+          "min": "100",
+          "max": "199",
+          "name": "Nothing"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset all"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Nothing"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default dimmer setting"
+        }
+      ]
+    },
+    {
+      "name": "Red LED 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red LED 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green LED 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue LED 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED 1",
+      "type": "White"
+    },
+    {
+      "name": "White LED 2",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Shows",
+        "Show Speed/Sound Sensitivity"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 9,
+      "channels": [
+        "Head 1 Tilt",
+        "Head 2 Tilt",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Master Dimmer",
+        "Special Functions"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 11,
+      "channels": [
+        "Head 1 Tilt",
+        "Head 2 Tilt",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Shows",
+        "Show Speed/Sound Sensitivity",
+        "Strobe",
+        "Master Dimmer",
+        "Special Functions"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 12,
+      "channels": [
+        "Head 1 Tilt",
+        "Head 2 Tilt",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Shows",
+        "Show Speed/Sound Sensitivity",
+        "Strobe",
+        "Master Dimmer",
+        "Dimmer Mode",
+        "Special Functions"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 16,
+      "channels": [
+        "Head 1 Tilt",
+        "Head 2 Tilt",
+        "Red LED 1",
+        "Green LED 1",
+        "Blue LED 1",
+        "White LED 1",
+        "Red LED 2",
+        "Green LED 2",
+        "Blue LED 2",
+        "White LED 2",
+        "Shows",
+        "Show Speed/Sound Sensitivity",
+        "Strobe",
+        "Master Dimmer",
+        "Dimmer Mode",
+        "Special Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "185",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "151",
+      "height": "147",
+      "depth": "283"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4",
+      "degreesMax": "4"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "46",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

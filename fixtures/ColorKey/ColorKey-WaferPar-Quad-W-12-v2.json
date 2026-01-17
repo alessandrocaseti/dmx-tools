@@ -1,0 +1,223 @@
+{
+  "version": "1.2",
+  "manufacturer": "ColorKey",
+  "model": "WaferPar Quad-W 12",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Taylor",
+  "channels": [
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "50",
+          "name": "Macro 1"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Macro 2"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Macro 3 "
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Macro 4"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Macro 5"
+        }
+      ]
+    },
+    {
+      "name": "Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "39",
+          "name": "All Colors"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Red"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Green"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Yellow"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Cyan"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Purple"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "White"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Red + Green"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Red + White"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Green + White"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Blue + White"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Red + Green + White"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Red + Blue + White"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Green + Blue + White"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Red + Green + Blue + White"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Dimming",
+      "type": "Red"
+    },
+    {
+      "name": "Green Dimming",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Dimming",
+      "type": "Blue"
+    },
+    {
+      "name": "White Dimming",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "8-Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Macro",
+        "Colors",
+        "Speed",
+        "Master Dimmer",
+        "Red Dimming",
+        "Green Dimming",
+        "Blue Dimming",
+        "White Dimming"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.62",
+      "width": "203",
+      "height": "203",
+      "depth": "89"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "35",
+      "degreesMax": "35"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "120",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

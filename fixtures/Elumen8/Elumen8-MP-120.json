@@ -1,0 +1,62 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elumen8",
+  "model": "MP 120",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Keith Baker",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Fine Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Fine Dimmer",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "5100",
+      "colourTemperature": "3000"
+    },
+    "dimensions": {
+      "weight": "8.6",
+      "width": "301",
+      "height": "371",
+      "depth": "318"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "19",
+      "degreesMax": "37"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "136",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

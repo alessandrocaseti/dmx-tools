@@ -1,0 +1,213 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "SlimPAR Pro Q USB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Lance Moore",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Color Macros"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe, Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Automatic/Sound-Active Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "69",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "70",
+          "max": "106",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "107",
+          "max": "143",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "144",
+          "max": "180",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "181",
+          "max": "217",
+          "name": "Sound-Active Program 1"
+        },
+        {
+          "min": "218",
+          "max": "255",
+          "name": "Sound-Active Program 2"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed/Sound Sensivitity (Ch 8 Value Dependent)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "See User Manual"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed Mode",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer speed set from display"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer speed mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer speed mode 1 (fast)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer speed mode 2 (medium)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer speed mode 3 (slow)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 10,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Color Macro",
+        "Strobe",
+        "Automatic/Sound-Active Programs",
+        "Auto Speed/Sound Sensivitity (Ch 8 Value Dependent)",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.3",
+      "width": "98",
+      "height": "290",
+      "depth": "253"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "31",
+      "degreesMax": "31"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "82",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

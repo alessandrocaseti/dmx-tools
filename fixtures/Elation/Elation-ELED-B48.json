@@ -1,0 +1,204 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elation",
+  "model": "ELED B48",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Xoneoo",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimming",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobing/Speed Control",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Static"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobing slow --> fast"
+        }
+      ]
+    },
+    {
+      "name": "Auto Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No effect"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Auto color mix"
+        },
+        {
+          "min": "16",
+          "max": "47",
+          "name": "Auto mix using channel 1, 2, & 3"
+        },
+        {
+          "min": "48",
+          "max": "245",
+          "name": "24 Auto mode programs"
+        },
+        {
+          "min": "246",
+          "max": "251",
+          "name": "Suond active flash"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "Nothing"
+        },
+        {
+          "min": "14",
+          "max": "255",
+          "name": "Color macro"
+        }
+      ]
+    },
+    {
+      "name": "RED 1",
+      "type": "Red"
+    },
+    {
+      "name": "RED 2",
+      "type": "Red"
+    },
+    {
+      "name": "RED 3",
+      "type": "Red"
+    },
+    {
+      "name": "RED 4",
+      "type": "Red"
+    },
+    {
+      "name": "GREEN 1",
+      "type": "Green"
+    },
+    {
+      "name": "GREEN 2",
+      "type": "Green"
+    },
+    {
+      "name": "GREEN 3",
+      "type": "Green"
+    },
+    {
+      "name": "GREEN 4",
+      "type": "Green"
+    },
+    {
+      "name": "BLUE 1",
+      "type": "Blue"
+    },
+    {
+      "name": "BLUE 2",
+      "type": "Blue"
+    },
+    {
+      "name": "BLUE 3",
+      "type": "Blue"
+    },
+    {
+      "name": "BLUE 4",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Macro",
+        "Strobing/Speed Control",
+        "Auto Mode",
+        "Dimming"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 12,
+      "channels": [
+        "RED 1",
+        "GREEN 1",
+        "BLUE 1",
+        "RED 2",
+        "GREEN 2",
+        "BLUE 2",
+        "RED 3",
+        "GREEN 3",
+        "BLUE 3",
+        "RED 4",
+        "GREEN 4",
+        "BLUE 4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "852",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "10",
+      "width": "540",
+      "height": "578",
+      "depth": "197"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

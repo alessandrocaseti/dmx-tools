@@ -1,0 +1,394 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Inno Spot LED",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "FX-8320",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colours",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "White"
+        },
+        {
+          "min": "15",
+          "max": "28",
+          "name": "Red"
+        },
+        {
+          "min": "29",
+          "max": "42",
+          "name": "Blue"
+        },
+        {
+          "min": "43",
+          "max": "56",
+          "name": "Green"
+        },
+        {
+          "min": "57",
+          "max": "70",
+          "name": "Yellow"
+        },
+        {
+          "min": "71",
+          "max": "84",
+          "name": "Pink"
+        },
+        {
+          "min": "85",
+          "max": "98",
+          "name": "Light blue"
+        },
+        {
+          "min": "99",
+          "max": "112",
+          "name": "Light green"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Light yellow"
+        },
+        {
+          "min": "128",
+          "max": "254",
+          "name": "Rainbow effect slow - fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "18",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "19",
+          "max": "27",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "28",
+          "max": "36",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "37",
+          "max": "46",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "47",
+          "max": "55",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "64",
+          "max": "73",
+          "name": "Open shake"
+        },
+        {
+          "min": "74",
+          "max": "82",
+          "name": "Gobo 1 shake"
+        },
+        {
+          "min": "83",
+          "max": "91",
+          "name": "Gobo 2 shake"
+        },
+        {
+          "min": "92",
+          "max": "100",
+          "name": "Gobo 3 shake"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Gobo 4 shake"
+        },
+        {
+          "min": "111",
+          "max": "119",
+          "name": "Gobo 5 shake"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo 6 shake"
+        },
+        {
+          "min": "128",
+          "max": "254",
+          "name": "Gobo wheel rotation slow - fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Clockwise fast - slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "Stop"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Counter-clockwise slow - fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Stop"
+        }
+      ]
+    },
+    {
+      "name": "Shutter/strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Shutter open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Shutter open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Shutter slow open - fast close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Shutter open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Shutter fast open - slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Shutter open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Moving head movement",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "28",
+          "name": "Movement 1"
+        },
+        {
+          "min": "29",
+          "max": "49",
+          "name": "Movement 2"
+        },
+        {
+          "min": "50",
+          "max": "70",
+          "name": "Movement 3"
+        },
+        {
+          "min": "71",
+          "max": "91",
+          "name": "Movement 4"
+        },
+        {
+          "min": "92",
+          "max": "112",
+          "name": "Movement 5"
+        },
+        {
+          "min": "113",
+          "max": "133",
+          "name": "Movement 6"
+        },
+        {
+          "min": "134",
+          "max": "154",
+          "name": "Movement 7"
+        },
+        {
+          "min": "155",
+          "max": "175",
+          "name": "Movement 8"
+        },
+        {
+          "min": "176",
+          "max": "196",
+          "name": "Movement 9"
+        },
+        {
+          "min": "197",
+          "max": "217",
+          "name": "Movement 10"
+        },
+        {
+          "min": "218",
+          "max": "238",
+          "name": "Movement 11"
+        },
+        {
+          "min": "239",
+          "max": "255",
+          "name": "Movement 12"
+        }
+      ]
+    },
+    {
+      "name": "Movement speed fast - slow",
+      "type": "Speed"
+    },
+    {
+      "name": "Prism effect",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "No effect"
+        },
+        {
+          "min": "7",
+          "max": "255",
+          "name": "3 facet prism"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "10 channel mode",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colours",
+        "Gobo wheel",
+        "Gobo rotation",
+        "Shutter/strobe",
+        "Dimmer",
+        "Moving head movement",
+        "Movement speed fast - slow",
+        "Prism effect"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "22300",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.5",
+      "width": "206",
+      "height": "285",
+      "depth": "242"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "17",
+      "degreesMax": "17"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "93",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

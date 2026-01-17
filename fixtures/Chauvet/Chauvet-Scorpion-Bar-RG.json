@@ -1,0 +1,535 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Scorpion Bar RG",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Pete Mueller",
+  "channels": [
+    {
+      "name": "Auto Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "35",
+          "name": "Auto show 1"
+        },
+        {
+          "min": "36",
+          "max": "55",
+          "name": "Auto show 2"
+        },
+        {
+          "min": "56",
+          "max": "75",
+          "name": "Auto show 3"
+        },
+        {
+          "min": "76",
+          "max": "95",
+          "name": "Auto show 4"
+        },
+        {
+          "min": "96",
+          "max": "115",
+          "name": "Auto show 5"
+        },
+        {
+          "min": "116",
+          "max": "135",
+          "name": "Auto show 6"
+        },
+        {
+          "min": "136",
+          "max": "155",
+          "name": "Auto show 7"
+        },
+        {
+          "min": "156",
+          "max": "175",
+          "name": "Auto show 8"
+        },
+        {
+          "min": "176",
+          "max": "195",
+          "name": "Auto show 9"
+        },
+        {
+          "min": "196",
+          "max": "215",
+          "name": "Auto show 10"
+        },
+        {
+          "min": "216",
+          "max": "235",
+          "name": "Auto show 11"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Auto show 12"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "200",
+          "name": "Slow to fast"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Sound-active sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Laser Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "R - - -"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "- G - -"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "R G - -"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "- - R -"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "R - R -"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "- G R -"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "R G R -"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "- - - G"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "R - - G"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "- G - G"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "R G - G"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "- - R G"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "R - R G"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "- G R G"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "R G R G"
+        }
+      ]
+    },
+    {
+      "name": "Pattern",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Circle"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Dashed Circle"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Triangle"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Square"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Dashed Square"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Pulse Square"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Cross"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Star"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "\"L\""
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Hourglass"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Spiral"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Half Circles"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Comma"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Parens"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Bjarken Rune"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Zig Zag"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Angle"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Double Angle (M)"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Square Wave"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Line"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Dashed Line"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Line #2"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "2 Lines"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Crossed Lines"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Offset Lines (Pong)"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Four Corners"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Offeset Boxes"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Four Boxes"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Small Circle"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Dotted Line"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dotted Half Circle"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "2 Dots (Top/Bottom)"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Indexing (100%-5%)"
+        },
+        {
+          "min": "128",
+          "max": "169",
+          "name": "Zoom out (slow to fast)"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Zoom in (slow-to fast)"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "In and out (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Rolling X-axis",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position (0-359°)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise rolling (slow to fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-clockwise rolling (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Rolling Y-axis",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position (0-359°)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise rolling (slow to fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-clockwise rolling (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Rolling Z-axis",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position (0-359°)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise rolling (slow to fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-clockwise rolling (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Moving X-axis",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position (128 horizontal points)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise movement (slow to fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-clockwise movement (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Moving Y-axis",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Fixed position (128 vertical points)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise movement (slow to fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-clockwise movement (slow to fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Auto Program",
+        "Program Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Auto Program",
+        "Program Speed",
+        "Laser Mode",
+        "Pattern",
+        "Zoom",
+        "Rolling X-axis",
+        "Rolling Y-axis",
+        "Rolling Z-axis",
+        "Moving X-axis",
+        "Moving Y-axis"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Laser",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.4",
+      "width": "537",
+      "height": "268",
+      "depth": "170"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "26",
+      "tiltMax": "26"
+    },
+    "technical": {
+      "powerConsumption": "53",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

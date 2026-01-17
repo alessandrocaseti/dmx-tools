@@ -1,0 +1,310 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Wash FX",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Auto Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "20",
+          "name": "Pattern 1"
+        },
+        {
+          "min": "21",
+          "max": "35",
+          "name": "Pattern 2"
+        },
+        {
+          "min": "36",
+          "max": "50",
+          "name": "Pattern 3"
+        },
+        {
+          "min": "51",
+          "max": "65",
+          "name": "Pattern 4"
+        },
+        {
+          "min": "66",
+          "max": "80",
+          "name": "Pattern 5"
+        },
+        {
+          "min": "81",
+          "max": "95",
+          "name": "Pattern 6"
+        },
+        {
+          "min": "96",
+          "max": "110",
+          "name": "Pattern 7"
+        },
+        {
+          "min": "111",
+          "max": "125",
+          "name": "Pattern 8"
+        },
+        {
+          "min": "126",
+          "max": "140",
+          "name": "Pattern 9"
+        },
+        {
+          "min": "141",
+          "max": "155",
+          "name": "Pattern 10"
+        },
+        {
+          "min": "156",
+          "max": "170",
+          "name": "Pattern 11"
+        },
+        {
+          "min": "171",
+          "max": "185",
+          "name": "Pattern 12"
+        },
+        {
+          "min": "186",
+          "max": "200",
+          "name": "Pattern 13"
+        },
+        {
+          "min": "201",
+          "max": "215",
+          "name": "Pattern 14"
+        },
+        {
+          "min": "216",
+          "max": "230",
+          "name": "Pattern 15"
+        },
+        {
+          "min": "231",
+          "max": "245",
+          "name": "Pattern 14"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Sound-Active"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-20 Hz, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Auto or Sound Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "127",
+          "name": "Auto"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Sound-Active"
+        }
+      ]
+    },
+    {
+      "name": "Red Zone 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red Zone 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red Zone 3",
+      "type": "Red"
+    },
+    {
+      "name": "Red Zone 4",
+      "type": "Red"
+    },
+    {
+      "name": "Red Zone 5",
+      "type": "Red"
+    },
+    {
+      "name": "Red Zone 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green Zone 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green Zone 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green Zone 3",
+      "type": "Green"
+    },
+    {
+      "name": "Green Zone 4",
+      "type": "Green"
+    },
+    {
+      "name": "Green Zone 5",
+      "type": "Green"
+    },
+    {
+      "name": "Green Zone 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Zone 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Zone 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Zone 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Zone 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Zone 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Zone 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "23CH",
+      "totalChannels": 23,
+      "channels": [
+        "Master Dimmer",
+        "Auto Program",
+        "Auto Program Speed",
+        "Strobe",
+        "Auto or Sound Program",
+        "Red Zone 1",
+        "Green Zone 1",
+        "Blue Zone 1",
+        "Red Zone 2",
+        "Green Zone 2",
+        "Blue Zone 2",
+        "Red Zone 3",
+        "Green Zone 3",
+        "Blue Zone 3",
+        "Red Zone 4",
+        "Green Zone 4",
+        "Blue Zone 4",
+        "Red Zone 5",
+        "Green Zone 5",
+        "Blue Zone 5",
+        "Red Zone 6",
+        "Green Zone 6",
+        "Blue Zone 6"
+      ]
+    },
+    {
+      "name": "7CH",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe",
+        "Auto Program",
+        "Auto Program Speed",
+        "Auto or Sound Program"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.2",
+      "width": "180",
+      "height": "255",
+      "depth": "215"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "75",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

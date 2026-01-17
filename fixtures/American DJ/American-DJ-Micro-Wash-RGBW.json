@@ -1,0 +1,362 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Micro Wash RGBW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV",
+  "channels": [
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Light Red"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Medium Red"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Lavender"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Indigo"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Light Green Blue"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Moss Green"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Primary Green"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Double CTB"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Nothing"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe (Slow -> Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "27",
+          "name": "Color Adjustment"
+        },
+        {
+          "min": "28",
+          "max": "55",
+          "name": "Dim-Bright"
+        },
+        {
+          "min": "56",
+          "max": "83",
+          "name": "Bright-Dim"
+        },
+        {
+          "min": "84",
+          "max": "111",
+          "name": "Dim-Bright-Dim"
+        },
+        {
+          "min": "112",
+          "max": "139",
+          "name": "3 Color Change"
+        },
+        {
+          "min": "140",
+          "max": "167",
+          "name": "7 Color Change"
+        },
+        {
+          "min": "168",
+          "max": "195",
+          "name": "3 Color Automix"
+        },
+        {
+          "min": "196",
+          "max": "223",
+          "name": "4 Color Dimmer"
+        },
+        {
+          "min": "224",
+          "max": "251",
+          "name": "4 Color Automix"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Color Macros"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Color Macros",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macros",
+        "Shutter",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macros",
+        "Shutter",
+        "Programs",
+        "Master Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "0.74",
+      "width": "66",
+      "height": "101",
+      "depth": "175"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "6"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "15",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

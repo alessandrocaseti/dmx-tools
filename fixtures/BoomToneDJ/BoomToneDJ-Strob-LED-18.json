@@ -1,0 +1,69 @@
+{
+  "version": "1.2",
+  "manufacturer": "BoomToneDJ",
+  "model": "Strob LED 18",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Didou",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "254",
+          "name": "Strobe from slow to fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "No strobe"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.65",
+      "width": "383",
+      "height": "95",
+      "depth": "170"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "120",
+      "degreesMax": "120"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "54",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

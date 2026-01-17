@@ -1,0 +1,157 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "SlimPAR 56",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Troy",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color macros"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow ~ fast"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "RGB"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Pulse effect 0%~100%"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Pulse effect 100%~0%"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse effect 100%~0%~100%"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto fade transition"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Auto snap transition (3 color)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Auto snap transition (7 color)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound triggering mode"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "7-Ch",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros",
+        "Strobe",
+        "Mode",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "3-Ch",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.2",
+      "width": "224",
+      "height": "241",
+      "depth": "56"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "14",
+      "degreesMax": "14"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "27",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

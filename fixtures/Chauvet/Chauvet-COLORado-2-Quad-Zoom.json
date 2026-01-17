@@ -1,0 +1,541 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COLORado 2 Quad Zoom",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Neil Queripel",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "White fine",
+      "type": "White"
+    },
+    {
+      "name": "Color Macro + White Balance",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "R: 100% G: 0-100% B: 0%"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "R: 100-0% G: 100% B: 0%"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "R: 0% G: 100% B: 0-100%"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "R: 0% G: 100-0% B: 100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "R: 0-100% G: 0% B: 100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "R: 100% G: 0% B:100- 0%"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "R: 100% G: 0-100% B: 0-100%"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "R: 100% G: 100-0% B:100%"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "RGBW~ 100%"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "White 1"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "White 2"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "White 3"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "White 4"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "White 5"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "White 6"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "White 7"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "White 8"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "White 9"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "White 10"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "White 11"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "0 - 20 Hz"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "No function"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Auto 1"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Auto 2"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Auto 3"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Auto 4"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "Auto 5"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "Auto 6"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Auto 7"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Auto 8"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Auto 9"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Auto 10"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Custom 1"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Custom 2"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Custom 3"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Custom 4"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "Custom 5"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Custom 6"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "Custom 7"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "Custom 8"
+        },
+        {
+          "min": "221",
+          "max": "230",
+          "name": "Custom 9"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Custom 10"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 - 100% (only when using Auto 1 - 10 in CH.13)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Preset dimmer speed from display menu"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Linear dimmer"
+        },
+        {
+          "min": "30",
+          "max": "69",
+          "name": "Nonlinear dimming curve 1 (fastest)"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "Nonlinear dimming curve 2"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "Nonlinear dimming curve 3"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Nonlinear dimming curve 4 (slowest)"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Zoom Control",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "200",
+          "name": "No function"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Zoom reset"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Value",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "TR 16",
+      "totalChannels": 17,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Color Macro + White Balance",
+        "Strobe",
+        "Programs",
+        "Auto Speed",
+        "Dimmer Speed",
+        "Zoom",
+        "Zoom Control"
+      ]
+    },
+    {
+      "name": "STD.Y",
+      "totalChannels": 17,
+      "channels": [
+        "Color Macro + White Balance",
+        "Dimmer",
+        "Dimmer fine",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Strobe",
+        "Programs",
+        "Auto Speed",
+        "Dimmer Speed",
+        "Zoom",
+        "Zoom Control"
+      ]
+    },
+    {
+      "name": "TOUR",
+      "totalChannels": 12,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro + White Balance",
+        "Strobe",
+        "Programs",
+        "Auto Speed",
+        "Dimmer Speed",
+        "Zoom",
+        "Zoom Control"
+      ]
+    },
+    {
+      "name": "AR2.Z",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom",
+        "Zoom Control"
+      ]
+    },
+    {
+      "name": "AR2.S",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "AR2.D",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "ARC.2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "AR1.D",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "ARC.1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "HSV",
+      "totalChannels": 3,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Value"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "7180",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.6",
+      "width": "284",
+      "height": "236",
+      "depth": "330"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "7",
+      "degreesMax": "29"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "228",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

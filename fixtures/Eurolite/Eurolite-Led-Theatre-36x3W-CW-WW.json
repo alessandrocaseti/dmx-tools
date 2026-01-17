@@ -1,0 +1,164 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED Theatre 36x3W CW/WW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Cold White",
+      "type": "White"
+    },
+    {
+      "name": "Warm White",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter / Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color temperature",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Nothing"
+        },
+        {
+          "min": "1",
+          "max": "15",
+          "name": "Color temperature 1"
+        },
+        {
+          "min": "16",
+          "max": "30",
+          "name": "Color temperature 2"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Color temperature 3"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Color temperature 4"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Color temperature 5"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "Color temperature 6"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Color temperature 7"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Color temperature 8"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Color temperature 9"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Color temperature 10"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Color temperature 11"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Color temperature 12"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Color temperature 13"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Color temperature 14"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Color temperature 15"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Color temperature 16"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Color temperature 17"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 5,
+      "channels": [
+        "Cold White",
+        "Warm White",
+        "Dimmer",
+        "Shutter / Strobe",
+        "Color temperature"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "180",
+      "height": "340",
+      "depth": "305"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "20"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "130",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

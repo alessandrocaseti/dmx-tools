@@ -1,0 +1,423 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "WiFly EXR Dotz Par",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "7",
+          "name": "1"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "2"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "3"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "4"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "5"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "6"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "7"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "8"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "9"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "10"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "11"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "12"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "13"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "14"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "15"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "16"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "17"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "18"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "19"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "20"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "21"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "22"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "23"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "24"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "25"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "26"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "27"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "28"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "29"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "30"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "31"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "32"
+        }
+      ]
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED on"
+        },
+        {
+          "min": "32",
+          "max": "95",
+          "name": "Slow - fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED on"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse strobe"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED on"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED on"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to unit setting"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "20",
+          "name": "Color fade/change"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "7 color change"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "7 color fade"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "3 color change"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "3 color fade"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Sound active color fade"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Sound active color change"
+        },
+        {
+          "min": "141",
+          "max": "255",
+          "name": "Nothing"
+        }
+      ]
+    },
+    {
+      "name": "Program speed/Sound Sensitive",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - fast/Least sensitive - most sensitive"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "5(d) Channel",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master Dimmer",
+        "Dimmer Curves"
+      ]
+    },
+    {
+      "name": "5(s) Channel",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Strobing",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master Dimmer",
+        "Color Macros",
+        "Programs",
+        "Program speed/Sound Sensitive",
+        "Strobing",
+        "Dimmer Curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1093",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.5",
+      "width": "200",
+      "height": "250",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "66"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "38",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

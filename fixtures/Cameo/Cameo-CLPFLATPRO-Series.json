@@ -1,0 +1,393 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "CLPFLATPRO Series",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Antonio Nó Rodríguez",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "Red"
+        },
+        {
+          "min": "17",
+          "max": "33",
+          "name": "Green"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Blue"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "White"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "Amber"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Cyan"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Lavender"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Pink"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Light Green"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Magenta"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Turquoise"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Orange"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Cool White"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Warm White"
+        }
+      ]
+    },
+    {
+      "name": "Stroboscope rate",
+      "type": "Unknown"
+    },
+    {
+      "name": "Colour Macros 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "10",
+          "name": "Red"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Green"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Blue"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "White"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Amber"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Yellow"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Cyan"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Lavender"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Pink"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Light Green"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Magenta"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Turquoise"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Orange"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Cool White"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "Warm White"
+        },
+        {
+          "min": "81",
+          "max": "150",
+          "name": "Colour Change (rate)"
+        },
+        {
+          "min": "151",
+          "max": "255",
+          "name": "Colour Blending (rate)"
+        }
+      ]
+    },
+    {
+      "name": "Colour Macros 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout / Colour Mixing CH3-CH7"
+        },
+        {
+          "min": "5",
+          "max": "10",
+          "name": "Red"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Green"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Blue"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "White"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Amber"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Yellow"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Cyan"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Lavender"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Pink"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Light Green"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Magenta"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Turquoise"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Orange"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Cool White"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "Warm White"
+        },
+        {
+          "min": "81",
+          "max": "150",
+          "name": "Colour Change (rate)"
+        },
+        {
+          "min": "151",
+          "max": "255",
+          "name": "Colour Blending (rate)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    }
+  ],
+  "modes": [
+    {
+      "name": "2-Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Master Dimmer",
+        "Colour Macros"
+      ]
+    },
+    {
+      "name": "3-Channel M1",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Stroboscope rate",
+        "Colour Macros 1"
+      ]
+    },
+    {
+      "name": "3-Channel M2",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "5-Channel",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber"
+      ]
+    },
+    {
+      "name": "8-Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Master Dimmer",
+        "Stroboscope rate",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Colour Macros 2"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "28000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.4",
+      "width": "280",
+      "height": "280",
+      "depth": "130"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

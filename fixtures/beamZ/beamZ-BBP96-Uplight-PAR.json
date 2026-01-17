@@ -1,0 +1,188 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "BBP96 Uplight PAR",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jan Fries",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Color mixing selection"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Color auto run"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "Color gradient"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Color mutation"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Strobe + Red color"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Strobe + Green color"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Strobe + Blue color"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Strobe + Amber color"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Strobe + UV color"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "No function"
+        },
+        {
+          "min": "210",
+          "max": "229",
+          "name": "Sound 1"
+        },
+        {
+          "min": "230",
+          "max": "249",
+          "name": "Sound 2"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound 3"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Function speed (Slow to Fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 10,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Program",
+        "Program Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.87",
+      "width": "135",
+      "height": "135",
+      "depth": "200"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "22",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "72",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

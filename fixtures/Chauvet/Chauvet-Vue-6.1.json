@@ -1,0 +1,689 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Vue 6.1",
+  "type": "Effect",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "eklynx",
+  "channels": [
+    {
+      "name": "Control/Operating Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "Dimmer mode"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "Stand-alone mode 1 (automatic)"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "Stand-alone mode 2 (automatic)"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "Stand-alone mode 3 (automatic)"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Stand-alone mode 4 (automatic)"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "Stand-alone mode 5 (automatic)"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "Stand-alone mode 6 (automatic)"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "Stand-alone mode 7 (automatic)"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Stand-alone mode 8 (automatic)"
+        },
+        {
+          "min": "225",
+          "max": "249",
+          "name": "Stand-alone mode 9 (automatic)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Stand-alone (sound active)"
+        }
+      ]
+    },
+    {
+      "name": "Pod 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Red"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Yellow"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Green"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Blue"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Purple"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Cyan"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "White"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Auto 1"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Auto 2"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Auto 3"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Auto 4"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Auto 5"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Auto 6"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Auto 7"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Auto 8"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Auto 9"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Auto 10"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Auto 11"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Auto 12"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Auto 13"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Auto 14"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Auto 15"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Auto 16"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Auto 17"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Auto 18"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Auto 19"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Auto 20"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Auto 21"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Auto 22"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "Auto 23"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Auto 24"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "Auto 25"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Auto 26"
+        },
+        {
+          "min": "170",
+          "max": "255",
+          "name": "Auto 27"
+        }
+      ]
+    },
+    {
+      "name": "Pod 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Red"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Yellow"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Green"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Blue"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Purple"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Cyan"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "White"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Auto 1"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Auto 2"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Auto 3"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Auto 4"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Auto 5"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Auto 6"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Auto 7"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Auto 8"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Auto 9"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Auto 10"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Auto 11"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Auto 12"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Auto 13"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Auto 14"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Auto 15"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Auto 16"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Auto 17"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Auto 18"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Auto 19"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Auto 20"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Auto 21"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Auto 22"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "Auto 23"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Auto 24"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "Auto 25"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Auto 26"
+        },
+        {
+          "min": "170",
+          "max": "255",
+          "name": "Auto 27"
+        }
+      ]
+    },
+    {
+      "name": "Pod 3",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Red"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Yellow"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Green"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Blue"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Purple"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Cyan"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "White"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Auto 1"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Auto 2"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Auto 3"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Auto 4"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Auto 5"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Auto 6"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Auto 7"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Auto 8"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Auto 9"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Auto 10"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Auto 11"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Auto 12"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Auto 13"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Auto 14"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Auto 15"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Auto 16"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Auto 17"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Auto 18"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Auto 19"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Auto 20"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Auto 21"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Auto 22"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "Auto 23"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Auto 24"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "Auto 25"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Auto 26"
+        },
+        {
+          "min": "170",
+          "max": "255",
+          "name": "Auto 27"
+        }
+      ]
+    },
+    {
+      "name": "Strobing Speed (Dimmer Mode)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Motor Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Stop"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Slow -> Fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "6 Channel Mode",
+      "totalChannels": 6,
+      "channels": [
+        "Control/Operating Mode",
+        "Pod 1",
+        "Pod 2",
+        "Pod 3",
+        "Strobing Speed (Dimmer Mode)",
+        "Motor Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4",
+      "width": "330",
+      "height": "330",
+      "depth": "330"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

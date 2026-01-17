@@ -1,0 +1,402 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "SlimBANK TRI-18",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "28",
+          "name": "Chase 1"
+        },
+        {
+          "min": "29",
+          "max": "45",
+          "name": "Chase 2"
+        },
+        {
+          "min": "46",
+          "max": "62",
+          "name": "Chase 3"
+        },
+        {
+          "min": "63",
+          "max": "79",
+          "name": "Chase 4"
+        },
+        {
+          "min": "80",
+          "max": "96",
+          "name": "Chase 5"
+        },
+        {
+          "min": "97",
+          "max": "113",
+          "name": "Chase 6"
+        },
+        {
+          "min": "114",
+          "max": "130",
+          "name": "Chase 7"
+        },
+        {
+          "min": "131",
+          "max": "147",
+          "name": "Chase 8"
+        },
+        {
+          "min": "148",
+          "max": "164",
+          "name": "Chase 9"
+        },
+        {
+          "min": "165",
+          "max": "181",
+          "name": "Chase 10"
+        },
+        {
+          "min": "182",
+          "max": "198",
+          "name": "Chase 11"
+        },
+        {
+          "min": "199",
+          "max": "215",
+          "name": "Chase 12"
+        },
+        {
+          "min": "216",
+          "max": "232",
+          "name": "Chase 13"
+        },
+        {
+          "min": "233",
+          "max": "250",
+          "name": "Chase 14 (random chases 1-13)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-active mode"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto programs speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Manually set in menu options"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "1 (fast speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "2 (middle speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "3 (slow speed)"
+        }
+      ]
+    },
+    {
+      "name": "Custom Color and Color Temperature",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "Red 100% + green 0 to 100%"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "Red 100% to 0 + green 100%"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "Green 100% + blue 0 to 100%"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "Green 100% to 0 + blue 100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "Red 0 to 100% + blue 100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "Red 100% + blue 100% to 0"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "Red 100% + green 0 to 100% + blue 0 to 100%"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "Red 100% to 0 + green 100% to 0 + blue 100%"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "Red 100% + green 100% + blue 100%"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "Color temperature 1"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "Color temperature 2"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "Color temperature 3"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "Color temperature 4"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Color temperature 5"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Color temperature 6"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Color temperature 7"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Color temperature 8"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Color temperature 9"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Color temperature 10"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Color temperature 11"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "5-Channel",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Shutter"
+      ]
+    },
+    {
+      "name": "9-Channel",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Shutter",
+        "Custom Color and Color Temperature",
+        "Auto Programs",
+        "Speed",
+        "Dimmer Mode"
+      ]
+    },
+    {
+      "name": "13-Channel",
+      "totalChannels": 13,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Auto Programs",
+        "Speed",
+        "Dimmer",
+        "Shutter"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1530",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.2",
+      "width": "197",
+      "height": "187",
+      "depth": "389"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "17",
+      "degreesMax": "17"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "109",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

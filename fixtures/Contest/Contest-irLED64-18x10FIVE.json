@@ -1,0 +1,339 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "irLED64-18x10FIVE",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jonathan Pain-Chammings",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "189",
+          "name": "Dimmer"
+        },
+        {
+          "min": "190",
+          "max": "250",
+          "name": "Strobe (slow>fast)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Full"
+        }
+      ]
+    },
+    {
+      "name": "Colours Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "OFF"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Red"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Orange"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Yellow"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "Green"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Cyan"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Blue"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Pink"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Magenta"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Cold White"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Warm White"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Full"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Pale Pink"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Pastel Apricot"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Pastel Ocre"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "Pearl Green"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "Pearl Grey"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "Pearl"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "Pearl Blue"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "Pastel Verona Green"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "Pastel Lagoon"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "Clear Blue"
+        },
+        {
+          "min": "116",
+          "max": "120",
+          "name": "Pastel Blue"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "Fluo"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "Candy"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "Amber"
+        },
+        {
+          "min": "136",
+          "max": "140",
+          "name": "Sunset"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Macro 1 : All colours (Step)"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Macro 2 : All colours (Fade)"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Macro 3 : Orange to Red Fade"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Macro 4 : Magenta to Cyan Fade"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "Macro 5 : Amber to Cold White Fade"
+        },
+        {
+          "min": "191",
+          "max": "255",
+          "name": "Colours and macros to music change"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer/Speed/Mic sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimmer/Speed/Mic sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "5 Channel (CHA5)",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber"
+      ]
+    },
+    {
+      "name": "6 Channel (CHB6)",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "2 Channel (CHC2)",
+      "totalChannels": 2,
+      "channels": [
+        "Colours Macros",
+        "Dimmer/Speed/Mic sensitivity"
+      ]
+    },
+    {
+      "name": "8 Channel (CHD8)",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Dimmer/Speed/Mic sensitivity",
+        "Strobe",
+        "Colours Macros"
+      ]
+    },
+    {
+      "name": "4 Channel (CHE4)",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "5 Channel (CHF5)",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "9525",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.6",
+      "width": "430",
+      "height": "270",
+      "depth": "220"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "165",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

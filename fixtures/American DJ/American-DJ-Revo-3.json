@@ -1,0 +1,374 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Revo 3",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "webdb22",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "119",
+          "name": "Pattern"
+        },
+        {
+          "min": "120",
+          "max": "239",
+          "name": "Chase"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Stand-alone"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout (Pattern only)"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pattern/Chase",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Pattern/Chase 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Pattern/Chase 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Pattern/Chase 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Pattern/Chase 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Pattern/Chase 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pattern/Chase 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pattern/Chase 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pattern/Chase 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pattern/Chase 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pattern/Chase 10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pattern/Chase 11"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pattern/Chase 12"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pattern/Chase 13"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pattern/Chase 14"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Pattern/Chase 15"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Pattern/Chase 16"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Pattern/Chase 17"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pattern/Chase 18"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Pattern/Chase 19"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Pattern/Chase 20"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Pattern/Chase 21"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Pattern/Chase 22"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Pattern/Chase 23"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Pattern/Chase 24"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Pattern/Chase 25"
+        }
+      ]
+    },
+    {
+      "name": "Pattern",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red Big"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Red Small"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Red Big + Green"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Red Big + Blue"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Red Big + White"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Red Big + Red Small"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Green + White"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Green + Red Small"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Blue + White"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Red Big + Red Small + Blue"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Red Big + Red Small + White"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Red Big + Green + Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Red Big + Green + White"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Red Big + Green + Red Small"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Green + Blue + White"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Green + Blue + Red Small"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Blue + White + Red Small"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Red Big + Green + Blue + White"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Red Big + Green + Blue + Red Small"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Green + Blue + White + Red Small"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "All colors"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 4,
+      "channels": [
+        "Mode",
+        "Pattern/Chase",
+        "Speed",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Pattern",
+      "totalChannels": 4,
+      "channels": [
+        "Mode",
+        "Pattern",
+        "Speed",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.04",
+      "width": "306",
+      "height": "334",
+      "depth": "312"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

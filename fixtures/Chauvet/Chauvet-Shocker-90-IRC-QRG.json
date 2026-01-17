@@ -1,0 +1,406 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Shocker 90 IRC\nQRG",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Frédéric Combe - Joshua",
+  "channels": [
+    {
+      "name": "Zone 1",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "249",
+          "name": "Strobe rate (slow to fast)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Continuous on (blinder effect)"
+        }
+      ]
+    },
+    {
+      "name": "Zone 2",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "249",
+          "name": "Strobe rate (slow to fast)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Continuous on (blinder effect)"
+        }
+      ]
+    },
+    {
+      "name": "Zone 3",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "249",
+          "name": "Strobe rate (slow to fast)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Continuous on (blinder effect)"
+        }
+      ]
+    },
+    {
+      "name": "Zone 4",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "249",
+          "name": "Strobe rate (slow to fast)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Continuous on (blinder effect)"
+        }
+      ]
+    },
+    {
+      "name": "Auto/Sound-Active Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No function"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Auto program 0"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Auto program 1"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Auto program 2"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Auto program 3"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Auto program 4"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Auto program 5"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Auto program 6"
+        },
+        {
+          "min": "161",
+          "max": "180",
+          "name": "Auto program 7"
+        },
+        {
+          "min": "181",
+          "max": "225",
+          "name": "Sound-active mode 1"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Sound-active mode 2"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed / Sound Sensitivity",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Auto program speed (Slow to fast) - No function when ch5 >> 181-255"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Auto program speed (Slow to fast) - Sound Sensitivity when ch5 >> 181-255"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe All Zones",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe Rate (Slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer (5ch mode)",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Speed (5ch mode)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe Speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Shutter (5ch mode) - When ch2 >> 006-255",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Pulse speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Effects (5ch mode) - When ch2 >> 006-255",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "42",
+          "name": "Ramp up"
+        },
+        {
+          "min": "43",
+          "max": "85",
+          "name": "Ramp down"
+        },
+        {
+          "min": "86",
+          "max": "128",
+          "name": "Ramp up - ramp down"
+        },
+        {
+          "min": "129",
+          "max": "171",
+          "name": "Random"
+        },
+        {
+          "min": "172",
+          "max": "214",
+          "name": "Lightning"
+        },
+        {
+          "min": "215",
+          "max": "255",
+          "name": "Spikes"
+        }
+      ]
+    },
+    {
+      "name": "Zone Strobe Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "42",
+          "name": "Macro 1 (slow to fast)"
+        },
+        {
+          "min": "43",
+          "max": "85",
+          "name": "Macro 2 (slow to fast)"
+        },
+        {
+          "min": "86",
+          "max": "128",
+          "name": "Macro 3 (slow to fast)"
+        },
+        {
+          "min": "129",
+          "max": "171",
+          "name": "Macro 4 (slow to fast)"
+        },
+        {
+          "min": "172",
+          "max": "214",
+          "name": "Macro 5 (slow to fast)"
+        },
+        {
+          "min": "215",
+          "max": "255",
+          "name": "Macro 6 (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Speed (2ch mode)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No function"
+        },
+        {
+          "min": "2",
+          "max": "249",
+          "name": "Strobe speed (slow to fast)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Continuous on (blinder effect)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "8 Channel mode",
+      "totalChannels": 8,
+      "channels": [
+        "Zone 1",
+        "Zone 2",
+        "Zone 3",
+        "Zone 4",
+        "Auto/Sound-Active Programs",
+        "Auto Speed / Sound Sensitivity",
+        "Dimmer",
+        "Strobe All Zones"
+      ]
+    },
+    {
+      "name": "5 Channel mode",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer (5ch mode)",
+        "Strobe Speed (5ch mode)",
+        "Shutter (5ch mode) - When ch2 >> 006-255",
+        "Strobe Effects (5ch mode) - When ch2 >> 006-255",
+        "Zone Strobe Macros"
+      ]
+    },
+    {
+      "name": "2 Channel mode",
+      "totalChannels": 2,
+      "channels": [
+        "Strobe Speed (2ch mode)",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.5",
+      "width": "194",
+      "height": "170",
+      "depth": "84"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "44",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

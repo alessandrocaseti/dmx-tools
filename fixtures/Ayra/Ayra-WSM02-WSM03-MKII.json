@@ -1,0 +1,66 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayra",
+  "model": "WSM02/WSM03 MKII",
+  "type": "FX Fog",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jászberényi Szabolcs",
+  "channels": [
+    {
+      "name": "Smoke",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Smoke"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "WSM02",
+      "totalChannels": 1,
+      "channels": [
+        "Smoke"
+      ]
+    },
+    {
+      "name": "WSM03",
+      "totalChannels": 1,
+      "channels": [
+        "Smoke"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7",
+      "width": "250",
+      "height": "190",
+      "depth": "470"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1500",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

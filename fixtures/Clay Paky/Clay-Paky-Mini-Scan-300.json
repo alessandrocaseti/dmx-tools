@@ -1,0 +1,141 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Mini Scan 300",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jászberényi Szabolcs",
+  "channels": [
+    {
+      "name": "Color wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "White"
+        },
+        {
+          "min": "9",
+          "max": "25",
+          "name": "Red"
+        },
+        {
+          "min": "26",
+          "max": "42",
+          "name": "Yellow"
+        },
+        {
+          "min": "43",
+          "max": "59",
+          "name": "Violet"
+        },
+        {
+          "min": "60",
+          "max": "76",
+          "name": "Green"
+        },
+        {
+          "min": "77",
+          "max": "93",
+          "name": "Orange"
+        },
+        {
+          "min": "94",
+          "max": "110",
+          "name": "Blue"
+        },
+        {
+          "min": "111",
+          "max": "127",
+          "name": "Pink"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow (color rotation)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo change / dimmer / stopper / strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "75",
+          "name": "Dimmer"
+        },
+        {
+          "min": "76",
+          "max": "126",
+          "name": "Strobe"
+        },
+        {
+          "min": "127",
+          "max": "128",
+          "name": "Aperture fixed"
+        },
+        {
+          "min": "129",
+          "max": "215",
+          "name": "Gobo sequence"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Aperture fixed"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 4,
+      "channels": [
+        "Color wheel",
+        "Gobo change / dimmer / stopper / strobe",
+        "Pan",
+        "Tilt"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HTI 300W",
+      "lumens": "22000",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "10.5",
+      "width": "238",
+      "height": "582",
+      "depth": "280"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "9",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "150",
+      "tiltMax": "110"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

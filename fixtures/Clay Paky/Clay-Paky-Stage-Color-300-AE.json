@@ -1,0 +1,151 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Stage Color 300 AE",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "Stopper/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Closed"
+        },
+        {
+          "min": "26",
+          "max": "230",
+          "name": "Strobe (Slow to fast)"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Frost",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Frost (0 - 100%)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Option Stnd",
+      "totalChannels": 8,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Stopper/Strobe",
+        "Pan",
+        "Tilt",
+        "Dimmer",
+        "Frost"
+      ]
+    },
+    {
+      "name": "Option 16 b",
+      "totalChannels": 10,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Stopper/Strobe",
+        "Pan",
+        "Tilt",
+        "Dimmer",
+        "Frost",
+        "Pan Fine",
+        "Tilt Fine"
+      ]
+    },
+    {
+      "name": " Option Extn",
+      "totalChannels": 10,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Stopper/Strobe",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Dimmer",
+        "Frost"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HTI 300W",
+      "lumens": "22000",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "22.4",
+      "width": "434",
+      "height": "225",
+      "depth": "1229"
+    },
+    "lens": {
+      "name": "Not specified",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "360",
+      "tiltMax": "252"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

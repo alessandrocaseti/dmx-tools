@@ -1,0 +1,300 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED FE-700",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Flox Garden",
+  "channels": [
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Amber"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Red & Green"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Green & Blue"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Blue & White"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "White & Amber"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Amber & Magenta"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Red & Magenta"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Green & Amber"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Red & Green & Blue"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Red & Green & Amber"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Red & Green & Magenta"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Red & Blue & Magenta"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Blue & White & Magenta"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Blue & White & Amber"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Green & Blue & White"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Green & Blue & Amber"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Red & Blue & White"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Red & Blue & Amber"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Red & White & Amber"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Green & White & Magenta"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe Slow->Fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "127",
+          "name": "Rotation Clockwise Slow->Fast"
+        },
+        {
+          "min": "128",
+          "max": "138",
+          "name": "Stop"
+        },
+        {
+          "min": "139",
+          "max": "255",
+          "name": "Rotation Counter-Clockwise Slow->Fast"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Pink",
+      "type": "Unknown"
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "200",
+          "name": "Auto Program"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Sound Program"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto Program Speed Slow->Fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Colour",
+        "Strobe",
+        "Rotation"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Pink",
+        "Strobe",
+        "Rotation",
+        "Programs",
+        "Program Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.2",
+      "width": "300",
+      "height": "310",
+      "depth": "200"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "60",
+      "degreesMax": "60"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "24",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

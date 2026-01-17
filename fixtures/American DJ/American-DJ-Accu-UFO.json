@@ -1,0 +1,357 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Accu UFO",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Kuder",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Lens Indexing & Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Lens Indexing"
+        },
+        {
+          "min": "4",
+          "max": "127",
+          "name": "Forward Lens Rotation Fast - Slow"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "No Rotation"
+        },
+        {
+          "min": "132",
+          "max": "255",
+          "name": "Backward Lens Rotation Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "LED Effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Blackout"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Red"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Green"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "Blue"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "White"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Red + Green"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Red + White"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "Green + White"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Blue + White"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Red + Green + White"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Red + Blue + White"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Green + Blue + White"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Red + Green + Blue + White"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "Auto Program 5"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "Auto Program 6"
+        },
+        {
+          "min": "221",
+          "max": "230",
+          "name": "Auto Program 7"
+        },
+        {
+          "min": "231",
+          "max": "240",
+          "name": "Auto Program 8"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Auto Program 9"
+        }
+      ]
+    },
+    {
+      "name": "LED Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "SLOW - FAST"
+        }
+      ]
+    },
+    {
+      "name": "Strobing",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "95",
+          "name": "Strobing Slow - Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "No function"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Effect in Sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "No function"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobing Slow - Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Reset & Internal Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Normal Color Change"
+        },
+        {
+          "min": "20",
+          "max": "79",
+          "name": "No function"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All Motor Reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Scanner Motor Reset"
+        },
+        {
+          "min": "88",
+          "max": "99",
+          "name": "No function"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal Program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal Program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal Program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal Program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal Program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal Program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal Program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "10-CH Mode",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Lens Indexing & Rotation",
+        "LED Effects",
+        "LED Speed",
+        "Strobing",
+        "Reset & Internal Programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "12.2",
+      "width": "452",
+      "height": "354",
+      "depth": "415"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "24",
+      "degreesMax": "24"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "360",
+      "tiltMax": "265"
+    },
+    "technical": {
+      "powerConsumption": "240",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

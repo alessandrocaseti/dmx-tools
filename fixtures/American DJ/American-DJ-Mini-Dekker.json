@@ -1,0 +1,145 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Mini Dekker",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Chris Davis",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "Motor Function Control",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Select Postion"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotation Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Selection",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "84",
+          "name": "Color Mixing"
+        },
+        {
+          "min": "85",
+          "max": "255",
+          "name": "Color Fading Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "DMX Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "DMX Control ON"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Show Mode"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Master Dimmer",
+        "Motor Function Control",
+        "Color Selection",
+        "DMX Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.7",
+      "width": "200",
+      "height": "218",
+      "depth": "198"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "120",
+      "degreesMax": "120"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "25",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

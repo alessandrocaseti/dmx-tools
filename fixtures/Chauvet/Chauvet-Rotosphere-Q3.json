@@ -1,0 +1,483 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Rotosphere Q3",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Eric Sherlock, Massimo Callegari",
+  "channels": [
+    {
+      "name": "LED Zone 1 Manual Color Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED Zone 1 Manual Color Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED Zone 1 Manual Color Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED Zone 1 Strobe/Sound",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe Slow-Fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-active Strobe"
+        }
+      ]
+    },
+    {
+      "name": "LED Zone 2 Manual Color Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED Zone 2 Manual Color Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED Zone 2 Manual Color Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED Zone 2 Strobe/Sound",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe Slow-Fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-active Strobe"
+        }
+      ]
+    },
+    {
+      "name": "LED Zone 3 Manual Color Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED Zone 3 Manual Color Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED Zone 3 Manual Color Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED Zone 3 Strobe/Sound",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe Slow-Fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-active Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Motor (Zones 1, 2 and 3)",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Stop"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Rotate Left, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Rotate Right, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros and Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "22",
+          "name": "Green"
+        },
+        {
+          "min": "23",
+          "max": "31",
+          "name": "Blue"
+        },
+        {
+          "min": "32",
+          "max": "40",
+          "name": "White"
+        },
+        {
+          "min": "41",
+          "max": "49",
+          "name": "Red/Green/Blue"
+        },
+        {
+          "min": "50",
+          "max": "58",
+          "name": "Red/Green/White"
+        },
+        {
+          "min": "59",
+          "max": "67",
+          "name": "Red/Blue/White"
+        },
+        {
+          "min": "68",
+          "max": "76",
+          "name": "Green/Blue/White"
+        },
+        {
+          "min": "77",
+          "max": "85",
+          "name": "Red Green/Red Blue/Red White"
+        },
+        {
+          "min": "86",
+          "max": "94",
+          "name": "Green Red/Green Blue/Green White"
+        },
+        {
+          "min": "95",
+          "max": "103",
+          "name": "Blue Red/Blue Green/Blue White"
+        },
+        {
+          "min": "104",
+          "max": "112",
+          "name": "White Red/White Green/Blue White"
+        },
+        {
+          "min": "113",
+          "max": "121",
+          "name": "Red Green"
+        },
+        {
+          "min": "122",
+          "max": "130",
+          "name": "Red Blue"
+        },
+        {
+          "min": "131",
+          "max": "139",
+          "name": "Red White"
+        },
+        {
+          "min": "140",
+          "max": "148",
+          "name": "Green Blue"
+        },
+        {
+          "min": "149",
+          "max": "157",
+          "name": "Green White"
+        },
+        {
+          "min": "158",
+          "max": "166",
+          "name": "Blue White"
+        },
+        {
+          "min": "167",
+          "max": "175",
+          "name": "Red Green Blue"
+        },
+        {
+          "min": "176",
+          "max": "184",
+          "name": "Red Green White"
+        },
+        {
+          "min": "185",
+          "max": "193",
+          "name": "Green Blue White"
+        },
+        {
+          "min": "194",
+          "max": "202",
+          "name": "Red Green Blue/Green Blue White/Red Green White"
+        },
+        {
+          "min": "203",
+          "max": "211",
+          "name": "RGBW"
+        },
+        {
+          "min": "212",
+          "max": "220",
+          "name": "Program 1/Sound 1"
+        },
+        {
+          "min": "221",
+          "max": "229",
+          "name": "Program 2/Sound 2"
+        },
+        {
+          "min": "230",
+          "max": "238",
+          "name": "Program 3/Sound 3"
+        },
+        {
+          "min": "239",
+          "max": "247",
+          "name": "Program 4/Sound 3"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Program 5/Sound 3"
+        }
+      ]
+    },
+    {
+      "name": "Progam Speed / Sound Sensitivity (macro ch. 212-255)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Program speed, slow to fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-active program sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Motor Control (Color Macros Channel)",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Stop"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Rotate left, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Rotate right, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "LED Zone 1 Manual Color White",
+      "type": "White"
+    },
+    {
+      "name": "LED Zone 2 Manual Color White",
+      "type": "White"
+    },
+    {
+      "name": "LED Zone 3 Manual Color White",
+      "type": "White"
+    },
+    {
+      "name": "All Manual Color Red",
+      "type": "Red"
+    },
+    {
+      "name": "All Manual Color Green",
+      "type": "Green"
+    },
+    {
+      "name": "All Manual Color Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "All Manual Color White",
+      "type": "White"
+    },
+    {
+      "name": "All Strobe/Sound",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "250",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sount-active strobe"
+        }
+      ]
+    },
+    {
+      "name": "Motor",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Stop"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Rotate left, slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Stop"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Rotate right, slow to fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 19,
+      "channels": [
+        "LED Zone 1 Manual Color Red",
+        "LED Zone 1 Manual Color Green",
+        "LED Zone 1 Manual Color Blue",
+        "LED Zone 1 Manual Color White",
+        "LED Zone 1 Strobe/Sound",
+        "LED Zone 2 Manual Color Red",
+        "LED Zone 2 Manual Color Green",
+        "LED Zone 2 Manual Color Blue",
+        "LED Zone 2 Manual Color White",
+        "LED Zone 2 Strobe/Sound",
+        "LED Zone 3 Manual Color Red",
+        "LED Zone 3 Manual Color Green",
+        "LED Zone 3 Manual Color Blue",
+        "LED Zone 3 Manual Color White",
+        "LED Zone 3 Strobe/Sound",
+        "Motor (Zones 1, 2 and 3)",
+        "Color Macros and Auto Programs",
+        "Progam Speed / Sound Sensitivity (macro ch. 212-255)",
+        "Motor Control (Color Macros Channel)"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 9,
+      "channels": [
+        "All Manual Color Red",
+        "All Manual Color Green",
+        "All Manual Color Blue",
+        "All Manual Color White",
+        "All Strobe/Sound",
+        "Motor",
+        "Color Macros and Auto Programs",
+        "Progam Speed / Sound Sensitivity (macro ch. 212-255)",
+        "Motor Control (Color Macros Channel)"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Color Macros and Auto Programs",
+        "Progam Speed / Sound Sensitivity (macro ch. 212-255)",
+        "Motor"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.9",
+      "width": "319",
+      "height": "419",
+      "depth": "266"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Barrel",
+      "panMax": "360",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "46",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

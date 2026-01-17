@@ -1,0 +1,280 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Multi Par 1",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Santiago Benejam Torres",
+  "channels": [
+    {
+      "name": "Blackout/Dimmer/Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "blackout"
+        },
+        {
+          "min": "11",
+          "max": "21",
+          "name": "Dimmer"
+        },
+        {
+          "min": "22",
+          "max": "32",
+          "name": "Red"
+        },
+        {
+          "min": "33",
+          "max": "43",
+          "name": "Yellow"
+        },
+        {
+          "min": "44",
+          "max": "54",
+          "name": "Green"
+        },
+        {
+          "min": "55",
+          "max": "65",
+          "name": "Cyan"
+        },
+        {
+          "min": "66",
+          "max": "76",
+          "name": "Blue"
+        },
+        {
+          "min": "77",
+          "max": "87",
+          "name": "Purple"
+        },
+        {
+          "min": "88",
+          "max": "98",
+          "name": "White"
+        },
+        {
+          "min": "99",
+          "max": "109",
+          "name": "Dream"
+        },
+        {
+          "min": "110",
+          "max": "120",
+          "name": "Meteor"
+        },
+        {
+          "min": "121",
+          "max": "131",
+          "name": "Fade"
+        },
+        {
+          "min": "132",
+          "max": "142",
+          "name": "Change"
+        },
+        {
+          "min": "143",
+          "max": "153",
+          "name": "Flow 1"
+        },
+        {
+          "min": "154",
+          "max": "164",
+          "name": "Flow 2"
+        },
+        {
+          "min": "165",
+          "max": "175",
+          "name": "Flow 3"
+        },
+        {
+          "min": "176",
+          "max": "186",
+          "name": "Flow 4"
+        },
+        {
+          "min": "187",
+          "max": "197",
+          "name": "Flow 5"
+        },
+        {
+          "min": "198",
+          "max": "208",
+          "name": "Flow 6"
+        },
+        {
+          "min": "209",
+          "max": "219",
+          "name": "Flow 7"
+        },
+        {
+          "min": "220",
+          "max": "230",
+          "name": "Flow 8"
+        },
+        {
+          "min": "231",
+          "max": "241",
+          "name": "Flow 9"
+        },
+        {
+          "min": "242",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    },
+    {
+      "name": "Master",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Master dimmer(0-255)/Speed(0-255)"
+        }
+      ]
+    },
+    {
+      "name": "Flash",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash"
+        }
+      ]
+    },
+    {
+      "name": "R1",
+      "type": "Unknown"
+    },
+    {
+      "name": "G1",
+      "type": "Unknown"
+    },
+    {
+      "name": "B1",
+      "type": "Unknown"
+    },
+    {
+      "name": "R2",
+      "type": "Unknown"
+    },
+    {
+      "name": "G2",
+      "type": "Unknown"
+    },
+    {
+      "name": "B2",
+      "type": "Unknown"
+    },
+    {
+      "name": "R3",
+      "type": "Unknown"
+    },
+    {
+      "name": "G3",
+      "type": "Unknown"
+    },
+    {
+      "name": "B3",
+      "type": "Unknown"
+    },
+    {
+      "name": "R4",
+      "type": "Unknown"
+    },
+    {
+      "name": "G4",
+      "type": "Unknown"
+    },
+    {
+      "name": "B4",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "6 CH - Mode",
+      "totalChannels": 6,
+      "channels": [
+        "Blackout/Dimmer/Programs",
+        "Master",
+        "Flash",
+        "R1",
+        "G1",
+        "B1"
+      ]
+    },
+    {
+      "name": "9 CH - Mode ",
+      "totalChannels": 9,
+      "channels": [
+        "Blackout/Dimmer/Programs",
+        "Master",
+        "Flash",
+        "R1",
+        "G1",
+        "B1",
+        "R2",
+        "G2",
+        "B2"
+      ]
+    },
+    {
+      "name": "15 CH - Mode",
+      "totalChannels": 15,
+      "channels": [
+        "Blackout/Dimmer/Programs",
+        "Master",
+        "Flash",
+        "R1",
+        "G1",
+        "B1",
+        "R2",
+        "G2",
+        "B2",
+        "R3",
+        "G3",
+        "B3",
+        "R4",
+        "G4",
+        "B4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "1030",
+      "height": "290",
+      "depth": "100"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

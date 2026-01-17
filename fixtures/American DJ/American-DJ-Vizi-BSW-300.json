@@ -1,0 +1,854 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Vizi BSW 300",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan (Fine)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt (Fine)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color Wheel 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Red"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Blue"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Light Green"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Yellow"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Orange"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Magenta"
+        },
+        {
+          "min": "56",
+          "max": "64",
+          "name": "Light Blue"
+        },
+        {
+          "min": "65",
+          "max": "67",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "68",
+          "max": "68",
+          "name": "Red/White"
+        },
+        {
+          "min": "69",
+          "max": "75",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "76",
+          "max": "76",
+          "name": "Red/Blue"
+        },
+        {
+          "min": "77",
+          "max": "83",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "84",
+          "max": "84",
+          "name": "Blue/Green"
+        },
+        {
+          "min": "85",
+          "max": "91",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "92",
+          "max": "92",
+          "name": "Green/Yellow"
+        },
+        {
+          "min": "93",
+          "max": "99",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "100",
+          "max": "100",
+          "name": "Yellow/Orange"
+        },
+        {
+          "min": "101",
+          "max": "107",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "108",
+          "max": "108",
+          "name": "Orange/Magenta"
+        },
+        {
+          "min": "109",
+          "max": "114",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "115",
+          "max": "115",
+          "name": "Magenta/Light Blue"
+        },
+        {
+          "min": "116",
+          "max": "122",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "123",
+          "max": "123",
+          "name": "Light Blue/White"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation (Fast -> Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation (Slow -> Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Color Wheel 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Pink"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "CTO 3200K"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "UV Purple"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Yellow"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "CTO 5600K"
+        },
+        {
+          "min": "56",
+          "max": "64",
+          "name": "Cyan"
+        },
+        {
+          "min": "65",
+          "max": "67",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "68",
+          "max": "68",
+          "name": "White/Pink"
+        },
+        {
+          "min": "69",
+          "max": "75",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "76",
+          "max": "76",
+          "name": "Pink/CTO 3200"
+        },
+        {
+          "min": "77",
+          "max": "82",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "83",
+          "max": "83",
+          "name": "CTO 3200/UV"
+        },
+        {
+          "min": "84",
+          "max": "90",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "91",
+          "max": "91",
+          "name": "UV/Yellow"
+        },
+        {
+          "min": "92",
+          "max": "98",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "99",
+          "max": "99",
+          "name": "Yellow/Green"
+        },
+        {
+          "min": "100",
+          "max": "105",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "106",
+          "max": "106",
+          "name": "Green/CTO 5600"
+        },
+        {
+          "min": "107",
+          "max": "114",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "115",
+          "max": "115",
+          "name": "CTO 5600/Cyan"
+        },
+        {
+          "min": "116",
+          "max": "127",
+          "name": "Color Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation (Fast -> Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation (Fast -> Slow)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel 1 (Glass Gobos)",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Open"
+        },
+        {
+          "min": "11",
+          "max": "21",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "22",
+          "max": "32",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "33",
+          "max": "43",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "44",
+          "max": "54",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "55",
+          "max": "65",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "66",
+          "max": "76",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "77",
+          "max": "87",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "88",
+          "max": "127",
+          "name": "Gobo Shake (Gobos 1-7)"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Counter-Clockwise Rotation (Fast -> Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Clockwise Rotation (Slow -> Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel 2",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Open"
+        },
+        {
+          "min": "7",
+          "max": "13",
+          "name": "Aperture 1"
+        },
+        {
+          "min": "14",
+          "max": "20",
+          "name": "Aperture 2"
+        },
+        {
+          "min": "21",
+          "max": "27",
+          "name": "Aperture 3"
+        },
+        {
+          "min": "28",
+          "max": "34",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "35",
+          "max": "41",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "42",
+          "max": "48",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "49",
+          "max": "55",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "56",
+          "max": "62",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "63",
+          "max": "69",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "83",
+          "name": "Open"
+        },
+        {
+          "min": "84",
+          "max": "127",
+          "name": "Gobo Shake"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation (Fast -> Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation (Slow -> Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobing (Slow -> Fast)"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow Open / Fast Close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Slow Close / Fast Open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Prism (6 Facet)",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No Prism"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Linear Prism"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Circular Prism"
+        }
+      ]
+    },
+    {
+      "name": "Prism Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation (Fast -> Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation (Slow -> Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Aperture"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Wash"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Shows",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "21",
+          "name": "Show 1"
+        },
+        {
+          "min": "22",
+          "max": "41",
+          "name": "Show 2"
+        },
+        {
+          "min": "42",
+          "max": "61",
+          "name": "Show 3"
+        },
+        {
+          "min": "62",
+          "max": "81",
+          "name": "Show 4"
+        },
+        {
+          "min": "82",
+          "max": "255",
+          "name": "Show 0"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curve",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to Unit Setting"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Special Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Enable Blackout w/ Pan/Tilt Movement"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Disable Blackout w/ Pan/Tilt Movement"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Enable Blackout w/ Color Change"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Disable Blackout w/ Color Change"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Enable Blackout w/ Color Change"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Disable Blackout w/ Gobo Change"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pan/Tilt Reset"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Color Wheel Reset"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Gobo Wheel Reset"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Effect Reset (Prism, Focus, Frost)"
+        },
+        {
+          "min": "170",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset All Motors"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel 1 Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation (Fast -> Slow)"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation (Slow -> Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer (Fine)",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 17,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color Wheel 1",
+        "Color Wheel 2",
+        "Gobo Wheel 1 (Glass Gobos)",
+        "Gobo Wheel 1 Rotation",
+        "Gobo Wheel 2",
+        "Shutter",
+        "Master Dimmer",
+        "Prism (6 Facet)",
+        "Prism Rotation",
+        "Frost",
+        "Focus",
+        "Shows",
+        "Dimmer Curve",
+        "Pan/Tilt Speed",
+        "Special Functions"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 20,
+      "channels": [
+        "Pan",
+        "Pan (Fine)",
+        "Tilt",
+        "Tilt (Fine)",
+        "Color Wheel 1",
+        "Color Wheel 2",
+        "Gobo Wheel 1 (Glass Gobos)",
+        "Gobo Wheel 1 Rotation",
+        "Gobo Wheel 2",
+        "Shutter",
+        "Master Dimmer",
+        "Dimmer (Fine)",
+        "Prism (6 Facet)",
+        "Prism Rotation",
+        "Frost",
+        "Focus",
+        "Shows",
+        "Dimmer Curve",
+        "Pan/Tilt Speed",
+        "Special Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "22",
+      "width": "376",
+      "height": "545",
+      "depth": "325"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "1",
+      "degreesMax": "26"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "240"
+    },
+    "technical": {
+      "powerConsumption": "345",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

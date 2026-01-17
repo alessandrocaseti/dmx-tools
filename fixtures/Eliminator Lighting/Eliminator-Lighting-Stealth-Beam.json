@@ -1,0 +1,377 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eliminator Lighting",
+  "model": "Stealth Beam",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Paul Schuh",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color Effect",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Nothing"
+        },
+        {
+          "min": "8",
+          "max": "17",
+          "name": "Red"
+        },
+        {
+          "min": "18",
+          "max": "27",
+          "name": "Green"
+        },
+        {
+          "min": "28",
+          "max": "37",
+          "name": "Blue"
+        },
+        {
+          "min": "38",
+          "max": "47",
+          "name": "White"
+        },
+        {
+          "min": "48",
+          "max": "57",
+          "name": "Red/Green"
+        },
+        {
+          "min": "58",
+          "max": "67",
+          "name": "Green/Blue"
+        },
+        {
+          "min": "68",
+          "max": "77",
+          "name": "Blue/White"
+        },
+        {
+          "min": "78",
+          "max": "87",
+          "name": "Red/White"
+        },
+        {
+          "min": "88",
+          "max": "97",
+          "name": "Red/Green/Blue"
+        },
+        {
+          "min": "98",
+          "max": "107",
+          "name": "Green/Blue/White"
+        },
+        {
+          "min": "108",
+          "max": "117",
+          "name": "Red/Blue/White"
+        },
+        {
+          "min": "118",
+          "max": "127",
+          "name": "Red/Green/White"
+        },
+        {
+          "min": "128",
+          "max": "137",
+          "name": "Red/Green/Blue/White"
+        },
+        {
+          "min": "138",
+          "max": "188",
+          "name": "Macro Color Change"
+        },
+        {
+          "min": "189",
+          "max": "239",
+          "name": "Macro Color Line"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active Change"
+        }
+      ]
+    },
+    {
+      "name": "Color change/Fade Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Nothing"
+        },
+        {
+          "min": "8",
+          "max": "32",
+          "name": "Program 1"
+        },
+        {
+          "min": "33",
+          "max": "58",
+          "name": "Program 2"
+        },
+        {
+          "min": "59",
+          "max": "84",
+          "name": "Program 3"
+        },
+        {
+          "min": "85",
+          "max": "110",
+          "name": "Program 4"
+        },
+        {
+          "min": "111",
+          "max": "136",
+          "name": "Program 5"
+        },
+        {
+          "min": "137",
+          "max": "162",
+          "name": "Program 6"
+        },
+        {
+          "min": "163",
+          "max": "188",
+          "name": "Program 7"
+        },
+        {
+          "min": "189",
+          "max": "214",
+          "name": "Program 8"
+        },
+        {
+          "min": "215",
+          "max": "240",
+          "name": "Program 9"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sond active"
+        }
+      ]
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Shutter Closed"
+        },
+        {
+          "min": "5",
+          "max": "250",
+          "name": "Strobing Slow-Fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Pan Movement",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Nothing"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Pan moves clockwise (slow to fast)"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Pan moves counter-clockwise (fast to slow)"
+        }
+      ]
+    },
+    {
+      "name": "Tilt Movement",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Nothing"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Tilt moves clockwise (slow to fast)"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Tilt moves counter-clockwise (fast to slow)"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "Nothing"
+        },
+        {
+          "min": "51",
+          "max": "100",
+          "name": "Speed mode to high (10s)"
+        },
+        {
+          "min": "101",
+          "max": "150",
+          "name": "Nothing"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Speed mode to low (10s)"
+        },
+        {
+          "min": "201",
+          "max": "250",
+          "name": "Nothing"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Reset (will take 10s to reset)"
+        }
+      ]
+    },
+    {
+      "name": "Pan Movement Speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color Effect",
+        "Color change/Fade Speed",
+        "Pan/Tilt Programs"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 17,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Effect",
+        "Master Dimmer",
+        "Shutter/Strobe",
+        "Pan Movement",
+        "Pan Movement Speed",
+        "Tilt Movement",
+        "Color change/Fade Speed",
+        "Pan/Tilt Programs",
+        "Pan/Tilt Program Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "786",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.8",
+      "width": "158",
+      "height": "239",
+      "depth": "285"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "11",
+      "degreesMax": "11"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "75",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

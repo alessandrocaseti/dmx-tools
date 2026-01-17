@@ -1,0 +1,339 @@
+{
+  "version": "1.2",
+  "manufacturer": "BoomToneDJ",
+  "model": "Maxi Spot 60",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Cédric Monféfoul",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan / Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "White"
+        },
+        {
+          "min": "9",
+          "max": "17",
+          "name": "White + Red"
+        },
+        {
+          "min": "18",
+          "max": "26",
+          "name": "Red"
+        },
+        {
+          "min": "27",
+          "max": "35",
+          "name": "Red + Green"
+        },
+        {
+          "min": "36",
+          "max": "44",
+          "name": "Green"
+        },
+        {
+          "min": "45",
+          "max": "53",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "54",
+          "max": "62",
+          "name": "Blue"
+        },
+        {
+          "min": "63",
+          "max": "71",
+          "name": "Blue + Yellow"
+        },
+        {
+          "min": "72",
+          "max": "80",
+          "name": "Yellow"
+        },
+        {
+          "min": "81",
+          "max": "89",
+          "name": "Yellow + Magenta"
+        },
+        {
+          "min": "90",
+          "max": "98",
+          "name": "Magenta"
+        },
+        {
+          "min": "99",
+          "max": "107",
+          "name": "Magenta + Cyan"
+        },
+        {
+          "min": "108",
+          "max": "116",
+          "name": "Cyan"
+        },
+        {
+          "min": "117",
+          "max": "125",
+          "name": "Cyan + Orange"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "Orange"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rotating rainbow effect From slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Gobo Wheel auto rotate from slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Open"
+        },
+        {
+          "min": "144",
+          "max": "156",
+          "name": "White Shake"
+        },
+        {
+          "min": "157",
+          "max": "169",
+          "name": "Gobo 1 Shake"
+        },
+        {
+          "min": "170",
+          "max": "182",
+          "name": "Gobo 2 Shake"
+        },
+        {
+          "min": "183",
+          "max": "195",
+          "name": "Gobo 3 Shake"
+        },
+        {
+          "min": "196",
+          "max": "208",
+          "name": "Gobo 4 Shake"
+        },
+        {
+          "min": "209",
+          "max": "221",
+          "name": "Gobo 5 Shake"
+        },
+        {
+          "min": "222",
+          "max": "234",
+          "name": "Gobo 6 Shake"
+        },
+        {
+          "min": "235",
+          "max": "255",
+          "name": "Gobo 7 Shake"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Strobe from slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Random mode and pulse"
+        }
+      ]
+    },
+    {
+      "name": "Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Blackout while Pan/Tilt Move"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Blackout while Color Change"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blackout while Gobo change"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Blackout while Pan/Tilt, Color, Gobo move"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Reset"
+        },
+        {
+          "min": "96",
+          "max": "255",
+          "name": "Sound Mode"
+        }
+      ]
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan / Tilt Speed",
+        "Colors",
+        "Gobos",
+        "Dimmer",
+        "Shutter",
+        "Function"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan / Tilt Speed",
+        "Colors",
+        "Gobos",
+        "Dimmer",
+        "Shutter",
+        "Function"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "4800",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.8",
+      "width": "159",
+      "height": "280",
+      "depth": "147"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "13"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "540"
+    },
+    "technical": {
+      "powerConsumption": "90",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "LEDSplash Jr",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Heikki Junnila",
+  "channels": [
+    {
+      "name": "Reserved",
+      "type": "Nothing"
+    },
+    {
+      "name": "Shutter/Strobe/Dimmer",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "Blackout"
+        },
+        {
+          "min": "2",
+          "max": "127",
+          "name": "Strobe"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Intensity"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "All",
+      "totalChannels": 5,
+      "channels": [
+        "Reserved",
+        "Shutter/Strobe/Dimmer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "538",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1",
+      "width": "121",
+      "height": "168",
+      "depth": "102"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "24",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

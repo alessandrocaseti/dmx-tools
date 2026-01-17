@@ -1,0 +1,106 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED PLL-480 CW/WW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Benjamin Drung",
+  "channels": [
+    {
+      "name": "Warm White",
+      "type": "White"
+    },
+    {
+      "name": "Cold White",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe (Slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed (step response)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Response characteristics of LEDs"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Response characteristics of halogen lamps, fast"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Response characteristics of halogen lamps, middle"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Response characteristics of halogen lamps, slow"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 5,
+      "channels": [
+        "Warm White",
+        "Cold White",
+        "Dimmer",
+        "Strobe",
+        "Dimmer Speed (step response)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "17470",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "12.6",
+      "width": "640",
+      "height": "330",
+      "depth": "125"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "120",
+      "degreesMax": "120"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "205",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

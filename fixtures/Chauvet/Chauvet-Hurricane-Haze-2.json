@@ -1,0 +1,71 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Hurricane Haze 2",
+  "type": "FX Haze",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Christopher Enoch",
+  "channels": [
+    {
+      "name": "Blower Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blower Speed"
+        }
+      ]
+    },
+    {
+      "name": "Haze Volume",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Haze Volume"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Generic",
+      "totalChannels": 2,
+      "channels": [
+        "Blower Speed",
+        "Haze Volume"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.5",
+      "width": "267",
+      "height": "350",
+      "depth": "285"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "533",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

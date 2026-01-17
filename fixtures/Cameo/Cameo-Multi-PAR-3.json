@@ -1,0 +1,910 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Multi Par 3",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Colour Macro (Light 1)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Blackout"
+        },
+        {
+          "min": "18",
+          "max": "33",
+          "name": "Red"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Green"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Blue"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "White"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Cyan bright"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Violet bright"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Pink bright"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Bright green"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Magenta"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Warm white"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Cold white"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Yellow bright"
+        },
+        {
+          "min": "238",
+          "max": "254",
+          "name": "Magenta bright"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Flash",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Preset Colours/Music Control/Stroboscope",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Preset colour in channels 1 - 4"
+        },
+        {
+          "min": "1",
+          "max": "128",
+          "name": "Music control (microphone sensitivity 0 - 100%)"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Stroboscope (rate 0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "Red Lights 1 + 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green Lights 1 + 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Lights 1 + 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Lights 3 + 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green Lights 3 + 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Lights 3 + 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White Lights 1 + 2",
+      "type": "White"
+    },
+    {
+      "name": "White Lights 3 + 4",
+      "type": "White"
+    },
+    {
+      "name": "Colour Macro (Light 2)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Blackout"
+        },
+        {
+          "min": "18",
+          "max": "33",
+          "name": "Red"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Green"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Blue"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "White"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Cyan bright"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Violet bright"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Pink bright"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Bright green"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Magenta"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Warm white"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Cold white"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Yellow bright"
+        },
+        {
+          "min": "238",
+          "max": "254",
+          "name": "Magenta bright"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Colour Macro (Light 3)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Blackout"
+        },
+        {
+          "min": "18",
+          "max": "33",
+          "name": "Red"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Green"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Blue"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "White"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Cyan bright"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Violet bright"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Pink bright"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Bright green"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Magenta"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Warm white"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Cold white"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Yellow bright"
+        },
+        {
+          "min": "238",
+          "max": "254",
+          "name": "Magenta bright"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Colour Macro (Light 4)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Blackout"
+        },
+        {
+          "min": "18",
+          "max": "33",
+          "name": "Red"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Green"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Blue"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "White"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Yellow"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Cyan bright"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Violet bright"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Pink bright"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Bright green"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Magenta"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Warm white"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Cold white"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Yellow bright"
+        },
+        {
+          "min": "238",
+          "max": "254",
+          "name": "Magenta bright"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Colour Mixing/Colours/Programs/Music Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Colour mixing channel 4 - 7"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Red"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Green"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "White"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "RG"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "GB"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "BW"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "RW"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "GW"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "RB"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "RGB"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "GBW"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "RGW"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "RBW"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "RGBW"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Dream"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Meteor"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Colour fade"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Colour Change"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Flow 1"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Flow 2"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Flow 3"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Flow 4"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Flow 5"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Flow 6"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Flow 7"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Flow 8"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Flow 9"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Music control"
+        }
+      ]
+    },
+    {
+      "name": "Red Light 4",
+      "type": "Red"
+    },
+    {
+      "name": "Red Light 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red Light 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red Light 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green Light 4",
+      "type": "Green"
+    },
+    {
+      "name": "Green Light 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green Light 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green Light 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Light 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Light 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Light 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Light 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White Light 4",
+      "type": "White"
+    },
+    {
+      "name": "White Light 1",
+      "type": "White"
+    },
+    {
+      "name": "White Light 2",
+      "type": "White"
+    },
+    {
+      "name": "White Light 3",
+      "type": "White"
+    },
+    {
+      "name": "Master Dimmer/Speed/Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 - 100%/Slow to fast/Music sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Stroboscope",
+      "type": "Unknown"
+    },
+    {
+      "name": "Red/Colour Macro1 (Flow 8/9)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "254",
+          "name": "0 - 100%/15 colour macro 1"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "0 - 100%/Blackout"
+        }
+      ]
+    },
+    {
+      "name": "Green/Colour Macro 2 (flow 8/9)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "0 - 100%/Blackout"
+        },
+        {
+          "min": "17",
+          "max": "255",
+          "name": "0 - 100%/15 colour macro 2"
+        }
+      ]
+    },
+    {
+      "name": "Light 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Light 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red Light 1/Colour Macro1 (Flow 8/9)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "254",
+          "name": "0 - 100%/15 colour macro 1"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "0 - 100%/Blackout"
+        }
+      ]
+    },
+    {
+      "name": "Green Light 1/Colour Macro 2 (flow 8/9)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "0 - 100%/Blackout"
+        },
+        {
+          "min": "17",
+          "max": "255",
+          "name": "0 - 100%/15 colour macro 2"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "6-Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Master Dimmer",
+        "Preset Colours/Music Control/Stroboscope"
+      ]
+    },
+    {
+      "name": "8-Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Red Lights 1 + 2",
+        "Green Lights 1 + 2",
+        "Blue Lights 1 + 2",
+        "White Lights 1 + 2",
+        "Red Lights 3 + 4",
+        "Green Lights 3 + 4",
+        "Blue Lights 3 + 4",
+        "White Lights 3 + 4"
+      ]
+    },
+    {
+      "name": "4*-Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Colour Macro (Light 1)",
+        "Colour Macro (Light 2)",
+        "Colour Macro (Light 3)",
+        "Colour Macro (Light 4)"
+      ]
+    },
+    {
+      "name": "4-Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "16-Channel",
+      "totalChannels": 16,
+      "channels": [
+        "Red Light 1",
+        "Green Light 1",
+        "Blue Light 1",
+        "White Light 1",
+        "Red Light 2",
+        "Green Light 2",
+        "Blue Light 2",
+        "White Light 2",
+        "Red Light 3",
+        "Green Light 3",
+        "Blue Light 3",
+        "White Light 3",
+        "Red Light 4",
+        "Green Light 4",
+        "Blue Light 4",
+        "White Light 4"
+      ]
+    },
+    {
+      "name": "9-Channel",
+      "totalChannels": 9,
+      "channels": [
+        "Colour Mixing/Colours/Programs/Music Control",
+        "Master Dimmer/Speed/Sensitivity",
+        "Stroboscope",
+        "Red/Colour Macro1 (Flow 8/9)",
+        "Green/Colour Macro 2 (flow 8/9)",
+        "Blue",
+        "White",
+        "Light 1",
+        "Light 2"
+      ]
+    },
+    {
+      "name": "21-Channel",
+      "totalChannels": 21,
+      "channels": [
+        "Colour Mixing/Colours/Programs/Music Control",
+        "Master Dimmer/Speed/Sensitivity",
+        "Stroboscope",
+        "Red Light 1/Colour Macro1 (Flow 8/9)",
+        "Green Light 1/Colour Macro 2 (flow 8/9)",
+        "Blue Light 1",
+        "White Light 1",
+        "Red Light 2",
+        "Green Light 2",
+        "Blue Light 2",
+        "White Light 2",
+        "Red Light 3",
+        "Green Light 3",
+        "Blue Light 3",
+        "White Light 3",
+        "Red Light 4",
+        "Green Light 4",
+        "Blue Light 4",
+        "White Light 4",
+        "Light 1",
+        "Light 2"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.7",
+      "width": "1030",
+      "height": "290",
+      "depth": "100"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "210",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

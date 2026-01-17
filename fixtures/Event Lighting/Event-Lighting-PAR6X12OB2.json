@@ -1,0 +1,212 @@
+{
+  "version": "1.2",
+  "manufacturer": "Event Lighting",
+  "model": "PAR6x12OB2",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michael Tosatto",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "No function"
+        },
+        {
+          "min": "9",
+          "max": "127",
+          "name": "40 preset colours"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "63 factory colours"
+        }
+      ]
+    },
+    {
+      "name": "Chases",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "No function"
+        },
+        {
+          "min": "20",
+          "max": "89",
+          "name": "18 chases"
+        },
+        {
+          "min": "90",
+          "max": "127",
+          "name": "Custom chases"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "63 colour fade"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "63 colour jump"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "63 colour pulse"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound active mode"
+        }
+      ]
+    },
+    {
+      "name": "Auto Run Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto run speed, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimming Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "Dimming speed 1"
+        },
+        {
+          "min": "56",
+          "max": "105",
+          "name": "Dimming speed 2"
+        },
+        {
+          "min": "106",
+          "max": "155",
+          "name": "Dimming speed 3"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "Dimming speed 4"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "Dimming speed 5"
+        }
+      ]
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal 12 Channel",
+      "totalChannels": 12,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Strobe",
+        "Color macro",
+        "Chases",
+        "Auto Run Speed",
+        "Dimming Speed"
+      ]
+    },
+    {
+      "name": "Simple 6 Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1600",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "240",
+      "height": "165",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "72",
+      "dmxConnector": "3-pin IP65"
+    }
+  }
+}

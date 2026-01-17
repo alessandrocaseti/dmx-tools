@@ -1,0 +1,272 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elation",
+  "model": "DW Fresnel",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Niklas Larsson",
+  "channels": [
+    {
+      "name": "Cool White LED",
+      "type": "White"
+    },
+    {
+      "name": "Warm White LED",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color temperature 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Color temperature (3200K to 6000K)"
+        }
+      ]
+    },
+    {
+      "name": "Color temperature 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "16",
+          "name": "Color temperature 3200K"
+        },
+        {
+          "min": "17",
+          "max": "33",
+          "name": "Color temperature 3400K"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Color temperature 3600K"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Color temperature 3800K"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "Color temperature 4000K"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Color temperature 4200K"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Color temperature 4400K"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Color temperature 4600K"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Color temperature 4800K"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Color temperature 5000K"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Color temperature 5200K"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Color temperature 5400K"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Color temperature 5600K"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Color temperature 5800K"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Color temperature 6000K"
+        }
+      ]
+    },
+    {
+      "name": "Shutter / Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED on"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect (slow to fast)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED on"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse effect in sequences (slow to fast)"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED on"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect (slow to fast)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED on"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimming curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "41",
+          "name": "Standard"
+        },
+        {
+          "min": "42",
+          "max": "84",
+          "name": "Stage"
+        },
+        {
+          "min": "85",
+          "max": "127",
+          "name": "TV"
+        },
+        {
+          "min": "128",
+          "max": "170",
+          "name": "Architectural"
+        },
+        {
+          "min": "171",
+          "max": "213",
+          "name": "Theatre"
+        },
+        {
+          "min": "214",
+          "max": "255",
+          "name": "Default to unit dimming curve setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Cool White LED",
+        "Warm White LED"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Cool White LED",
+        "Warm White LED",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 8,
+      "channels": [
+        "Cool White LED",
+        "Warm White LED",
+        "Color temperature 1",
+        "Color temperature 2",
+        "Shutter / Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Dimming curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "4800"
+    },
+    "dimensions": {
+      "weight": "10.9",
+      "width": "264",
+      "height": "453",
+      "depth": "595"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "13",
+      "degreesMax": "41"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "320",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

@@ -1,0 +1,908 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BT-W12L10",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Joep Admiraal",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "20",
+          "max": "49",
+          "name": "Shutter open"
+        },
+        {
+          "min": "50",
+          "max": "64",
+          "name": "Strobe 1 (fast -> slow)"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Shutter open"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "Strobe 2: opening pulse (fast -> slow)"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Shutter open"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Strobe 3: closing pulse (fast -> slow)"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Shutter open"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Strobe 4: random strobe (fast -> slow)"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Shutter open"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "Strobe 5: random opening pulse (fast -> slow)"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Shutter open"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Strobe 6: random closing pulse (fast -> slow)"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Shutter open"
+        },
+        {
+          "min": "170",
+          "max": "184",
+          "name": "Strobe 7: burst pulse (fast -> slow)"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Shutter open"
+        },
+        {
+          "min": "190",
+          "max": "204",
+          "name": "Strobe 8: random burst pulse (fast -> slow)"
+        },
+        {
+          "min": "205",
+          "max": "209",
+          "name": "Shutter open"
+        },
+        {
+          "min": "210",
+          "max": "224",
+          "name": "Strobe 9: sine wave (fast -> slow)"
+        },
+        {
+          "min": "225",
+          "max": "229",
+          "name": "Shutter open"
+        },
+        {
+          "min": "230",
+          "max": "244",
+          "name": "Strobe 10: burst (fast -> slow)"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Fixture Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Reset entire fixture"
+        },
+        {
+          "min": "15",
+          "max": "39",
+          "name": "No function"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "PTSP = NORM"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "PTSP = FAST"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "PTSP = SLOW"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "No function"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Fan mode FULL"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Fan mode Regulated"
+        },
+        {
+          "min": "75",
+          "max": "89",
+          "name": "No function"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "RGB control mode (calibrated RGB)"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "No function"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "RAW control mode (uncalibrated RGB)"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "No function"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Fast dimming, speed of changes unrestricted"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "No function"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Smooth dimming, speed of changes restricted slightly"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "No function"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Enable Blackout while Pan tilt"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "No function"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Disable Blackout while Pan tilt"
+        },
+        {
+          "min": "145",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Illuminate display"
+        }
+      ]
+    },
+    {
+      "name": "Color Wheel Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open, RGB Colour Mixing Enabled if the fixture is set to RAW or RGB modes"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Moroccan pink"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Pink"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Special rose pink"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Follies pink"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Fuchsia pink"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Surprise pink"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Congo blue"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Tokyo blue"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Deep blue"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Just blue"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Medium blue"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Double CT blue"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Slate blue"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Full CT blue"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Half CT blue"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Steel blue"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Lighter blue"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Light blue"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Medium blue green"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Dark green"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Primary green"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Moss green"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Fern green"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "JAS green"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Lime green"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Spring yellow"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Deep amber"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Chrome orange"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "Orange"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Gold amber"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "Millennium gold"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Deep golden amber"
+        },
+        {
+          "min": "170",
+          "max": "174",
+          "name": "Flame red"
+        },
+        {
+          "min": "175",
+          "max": "179",
+          "name": "Open"
+        },
+        {
+          "min": "180",
+          "max": "201",
+          "name": "Rotation clockwise (Fast -> Slow)"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "Rotation stop"
+        },
+        {
+          "min": "208",
+          "max": "229",
+          "name": "Rotation counter-clockwise (Slow -> Fast)"
+        },
+        {
+          "min": "230",
+          "max": "234",
+          "name": "Open"
+        },
+        {
+          "min": "235",
+          "max": "239",
+          "name": "Random color fast"
+        },
+        {
+          "min": "240",
+          "max": "244",
+          "name": "Random color medium"
+        },
+        {
+          "min": "245",
+          "max": "249",
+          "name": "Random color slow"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Pan/Tilt Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No effect"
+        },
+        {
+          "min": "16",
+          "max": "35",
+          "name": "Macro 1"
+        },
+        {
+          "min": "36",
+          "max": "55",
+          "name": "Macro 2"
+        },
+        {
+          "min": "56",
+          "max": "75",
+          "name": "Macro 3"
+        },
+        {
+          "min": "76",
+          "max": "95",
+          "name": "Macro 4"
+        },
+        {
+          "min": "96",
+          "max": "115",
+          "name": "Macro 5"
+        },
+        {
+          "min": "116",
+          "max": "135",
+          "name": "Macro 6"
+        },
+        {
+          "min": "136",
+          "max": "155",
+          "name": "Macro 7"
+        },
+        {
+          "min": "156",
+          "max": "175",
+          "name": "Macro 8"
+        },
+        {
+          "min": "176",
+          "max": "195",
+          "name": "Macro 9"
+        },
+        {
+          "min": "196",
+          "max": "215",
+          "name": "Macro 10"
+        },
+        {
+          "min": "216",
+          "max": "235",
+          "name": "Macro 11"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Macro 12"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color Macro Speed"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pan/Tilt Macro Speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Normal"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Color 1-32"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Color macro 1-16"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Color fade 1-16"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Shutter open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe (fast -> slow)"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Shutter open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Shutter fast close slow open"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Shutter open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Shutter slow close fast open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Shutter open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Enable blackout while pan/tilt move"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Disable blackout while pan/tilt move"
+        },
+        {
+          "min": "90",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset all"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Stand alone"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Red1",
+      "type": "Red"
+    },
+    {
+      "name": "Red2",
+      "type": "Red"
+    },
+    {
+      "name": "Red3",
+      "type": "Red"
+    },
+    {
+      "name": "Red4",
+      "type": "Red"
+    },
+    {
+      "name": "Green1",
+      "type": "Green"
+    },
+    {
+      "name": "Green2",
+      "type": "Green"
+    },
+    {
+      "name": "Green3",
+      "type": "Green"
+    },
+    {
+      "name": "Green4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue3",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue4",
+      "type": "Blue"
+    },
+    {
+      "name": "White1",
+      "type": "White"
+    },
+    {
+      "name": "White2",
+      "type": "White"
+    },
+    {
+      "name": "White3",
+      "type": "White"
+    },
+    {
+      "name": "White4",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "16 channel mode",
+      "totalChannels": 16,
+      "channels": [
+        "Shutter",
+        "Dimmer",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Fixture Control",
+        "Color Wheel Effect",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro",
+        "Color Macro Speed",
+        "Pan/Tilt Macro",
+        "Pan/Tilt Macro Speed"
+      ]
+    },
+    {
+      "name": "12 channel mode",
+      "totalChannels": 12,
+      "channels": [
+        "Shutter",
+        "Dimmer",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Fixture Control",
+        "Color Wheel Effect",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "9 channel mode",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer",
+        "Function"
+      ]
+    },
+    {
+      "name": "28 channel mode",
+      "totalChannels": 28,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Pan/Tilt Macro",
+        "Pan/Tilt Macro Speed",
+        "Function",
+        "Dimmer",
+        "Strobe",
+        "Red1",
+        "Green1",
+        "Blue1",
+        "White1",
+        "Red2",
+        "Green2",
+        "Blue2",
+        "White2",
+        "Red3",
+        "Green3",
+        "Blue3",
+        "White3",
+        "Red4",
+        "Green4",
+        "Blue4",
+        "White4",
+        "Color Macro",
+        "Color Macro Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "4200",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.5",
+      "width": "267",
+      "height": "322",
+      "depth": "167"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "20"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "630",
+      "tiltMax": "200"
+    },
+    "technical": {
+      "powerConsumption": "150",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

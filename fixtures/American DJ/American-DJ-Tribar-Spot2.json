@@ -1,0 +1,621 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Tribar Spot",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Rob Goudriaan",
+  "channels": [
+    {
+      "name": "Red (All)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (All)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (All)",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Strobing slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "7",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Light Red"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Medium Red"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Lavender"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Indigo"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Light Green Blue"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Moss Green"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Primary Green"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Double CTB"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "25",
+          "name": "Program 1 (Ch.6:Speed)"
+        },
+        {
+          "min": "26",
+          "max": "35",
+          "name": "Program 2 (Ch.6:Speed)"
+        },
+        {
+          "min": "36",
+          "max": "45",
+          "name": "Program 3 (Ch.6:Speed)"
+        },
+        {
+          "min": "46",
+          "max": "55",
+          "name": "Program 4 (Ch.6:Speed)"
+        },
+        {
+          "min": "56",
+          "max": "65",
+          "name": "Program 5 (Ch.6:Speed)"
+        },
+        {
+          "min": "66",
+          "max": "75",
+          "name": "Program 6 (Ch.6:Speed)"
+        },
+        {
+          "min": "76",
+          "max": "85",
+          "name": "Program 7 (Ch.6:Speed)"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "Program 8 (Ch.6:Speed)"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Program 9 (Ch.6:Speed)"
+        },
+        {
+          "min": "106",
+          "max": "115",
+          "name": "Program 10 (Ch.6:Speed)"
+        },
+        {
+          "min": "116",
+          "max": "125",
+          "name": "Program 11 (Ch.6:Speed)"
+        },
+        {
+          "min": "126",
+          "max": "135",
+          "name": "Program 12 (Ch.6:Speed)"
+        },
+        {
+          "min": "136",
+          "max": "145",
+          "name": "Program 13 (Ch.6:Speed)"
+        },
+        {
+          "min": "146",
+          "max": "155",
+          "name": "Program 14 (Ch.6:Speed)"
+        },
+        {
+          "min": "156",
+          "max": "165",
+          "name": "Program 15 (Ch.6:Speed)"
+        },
+        {
+          "min": "166",
+          "max": "175",
+          "name": "Program 16 (Ch.6:Speed)"
+        },
+        {
+          "min": "176",
+          "max": "185",
+          "name": "Program 17 (Ch.6:Speed)"
+        },
+        {
+          "min": "186",
+          "max": "195",
+          "name": "Program 18 (Ch.6:Speed)"
+        },
+        {
+          "min": "196",
+          "max": "205",
+          "name": "Program 19 (Ch.6:Speed)"
+        },
+        {
+          "min": "206",
+          "max": "215",
+          "name": "Program 20 (Ch.6:Speed)"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "Program 21 (Ch.3:flow color Ch.4 base color Ch.6 speed)"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Program 22 (Ch.3:flow color Ch.4 base color Ch.6 speed)"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Auto Run"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Sound Active (Ch.6:Sensitivitity)"
+        }
+      ]
+    },
+    {
+      "name": "Red (Pinspots 1- 3)",
+      "type": "Red"
+    },
+    {
+      "name": "Red (Pinspots 4 - 6)",
+      "type": "Red"
+    },
+    {
+      "name": "Red (Pinspots 1 & 2)",
+      "type": "Red"
+    },
+    {
+      "name": "Red (Pinspots 3 & 4)",
+      "type": "Red"
+    },
+    {
+      "name": "Red (Pinspots 5 & 6)",
+      "type": "Red"
+    },
+    {
+      "name": "Red (Pinspot 1)",
+      "type": "Red"
+    },
+    {
+      "name": "Red (Pinspot 2)",
+      "type": "Red"
+    },
+    {
+      "name": "Red (Pinspot 3)",
+      "type": "Red"
+    },
+    {
+      "name": "Red (Pinspot 4)",
+      "type": "Red"
+    },
+    {
+      "name": "Red (Pinspot 5)",
+      "type": "Red"
+    },
+    {
+      "name": "Red (Pinspot 6)",
+      "type": "Red"
+    },
+    {
+      "name": "Green (Pinspots 1 - 3)",
+      "type": "Green"
+    },
+    {
+      "name": "Green (Pinspots 4 - 6)",
+      "type": "Green"
+    },
+    {
+      "name": "Green (Pinspots 1 & 2)",
+      "type": "Green"
+    },
+    {
+      "name": "Green (Pinspots 3 & 4)",
+      "type": "Green"
+    },
+    {
+      "name": "Green (Pinspots 5 & 6)",
+      "type": "Green"
+    },
+    {
+      "name": "Green (Pinspot 1)",
+      "type": "Green"
+    },
+    {
+      "name": "Green (Pinspot 2)",
+      "type": "Green"
+    },
+    {
+      "name": "Green (Pinspot 3)",
+      "type": "Green"
+    },
+    {
+      "name": "Green (Pinspot 4)",
+      "type": "Green"
+    },
+    {
+      "name": "Green (Pinspot 5)",
+      "type": "Green"
+    },
+    {
+      "name": "Green (Pinspot 6)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue (Pinspots 1- 3)",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue (Pinspots 4- 6)",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue (Pinspots 1 & 2)",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue (Pinspots 3 & 4)",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue (Pinspots 5 & 6)",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue (Pinspot 1)",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue (Pinspot 2)",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue (Pinspot 3)",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue (Pinspot 4)",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue (Pinspot 5)",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue (Pinspot 6)",
+      "type": "Blue"
+    },
+    {
+      "name": "Program Speed / Sound Sensitivity",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - Fast or Least Sensitive - Most Sensitive"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 Channel DMX Mode",
+      "totalChannels": 3,
+      "channels": [
+        "Red (All)",
+        "Green (All)",
+        "Blue (All)"
+      ]
+    },
+    {
+      "name": "5 Channel DMX Mode",
+      "totalChannels": 5,
+      "channels": [
+        "Red (All)",
+        "Green (All)",
+        "Blue (All)",
+        "Strobing",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "6 Channel DMX Mode",
+      "totalChannels": 6,
+      "channels": [
+        "Red (All)",
+        "Green (All)",
+        "Blue (All)",
+        "Color macros",
+        "Strobing",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "8 Channel DMX Mode",
+      "totalChannels": 8,
+      "channels": [
+        "Red (All)",
+        "Green (All)",
+        "Blue (All)",
+        "Color macros",
+        "Programs",
+        "Program Speed / Sound Sensitivity",
+        "Strobing",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "8 Channek DMX Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Red (Pinspots 1- 3)",
+        "Green (Pinspots 1 - 3)",
+        "Blue (Pinspots 1- 3)",
+        "Red (Pinspots 4 - 6)",
+        "Green (Pinspots 4 - 6)",
+        "Blue (Pinspots 4- 6)",
+        "Strobing",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "11 Channel DMX Mode",
+      "totalChannels": 11,
+      "channels": [
+        "Red (Pinspots 1 & 2)",
+        "Green (Pinspots 1 & 2)",
+        "Blue (Pinspots 1 & 2)",
+        "Red (Pinspots 3 & 4)",
+        "Green (Pinspots 3 & 4)",
+        "Blue (Pinspots 3 & 4)",
+        "Red (Pinspots 5 & 6)",
+        "Green (Pinspots 5 & 6)",
+        "Blue (Pinspots 5 & 6)",
+        "Strobing",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "20 Channel DMX Mode",
+      "totalChannels": 20,
+      "channels": [
+        "Red (Pinspot 1)",
+        "Green (Pinspot 1)",
+        "Blue (Pinspot 1)",
+        "Red (Pinspot 2)",
+        "Green (Pinspot 2)",
+        "Blue (Pinspot 2)",
+        "Red (Pinspot 3)",
+        "Green (Pinspot 3)",
+        "Blue (Pinspot 3)",
+        "Red (Pinspot 4)",
+        "Green (Pinspot 4)",
+        "Blue (Pinspot 4)",
+        "Red (Pinspot 5)",
+        "Green (Pinspot 5)",
+        "Blue (Pinspot 5)",
+        "Red (Pinspot 6)",
+        "Green (Pinspot 6)",
+        "Blue (Pinspot 6)",
+        "Strobing",
+        "Master dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.9",
+      "width": "800",
+      "height": "230",
+      "depth": "90"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "12",
+      "degreesMax": "12"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

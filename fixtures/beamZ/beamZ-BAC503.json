@@ -1,0 +1,328 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "BAC503",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "archlinette",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Amber"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark Orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green Yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Light Green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Straw"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Light Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Full On"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Auto Program 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Auto Program 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Auto Program 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Auto Program 8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Auto Program 9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Sound Program 1"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Sound Program 2"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Sound Program 3"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Sound Program 4"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Sound Program 5"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Sound Program 6"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Sound Program 7"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Sound Program 8"
+        },
+        {
+          "min": "180",
+          "max": "255",
+          "name": "Sound Program 9"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto or Sound program speed (Slow-fast)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Macro",
+        "Mode",
+        "Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Macro",
+        "Mode",
+        "Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.3",
+      "width": "175",
+      "height": "235",
+      "depth": "90"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "80",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Warlock",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Justin Hornsby",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Clockwise Fast - Slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "Stop"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Counter Clockwise Fast-Slow"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Stop"
+        }
+      ]
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "White"
+        },
+        {
+          "min": "9",
+          "max": "17",
+          "name": "Colour 1"
+        },
+        {
+          "min": "18",
+          "max": "26",
+          "name": "Colour 2"
+        },
+        {
+          "min": "27",
+          "max": "35",
+          "name": "Colour 3"
+        },
+        {
+          "min": "36",
+          "max": "44",
+          "name": "Colour 4"
+        },
+        {
+          "min": "45",
+          "max": "53",
+          "name": "Colour 5"
+        },
+        {
+          "min": "54",
+          "max": "62",
+          "name": "Colour 6"
+        },
+        {
+          "min": "63",
+          "max": "71",
+          "name": "Colour 7"
+        },
+        {
+          "min": "72",
+          "max": "80",
+          "name": "Colour 8"
+        },
+        {
+          "min": "81",
+          "max": "89",
+          "name": "Colour 9"
+        },
+        {
+          "min": "90",
+          "max": "98",
+          "name": "Colour 10"
+        },
+        {
+          "min": "99",
+          "max": "107",
+          "name": "Colour 11"
+        },
+        {
+          "min": "108",
+          "max": "127",
+          "name": "Colour 12"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow Effect Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Open"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "65",
+          "max": "127",
+          "name": "Gobo Animation"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Gobo Wheel Rotation Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Reflector Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Clockwise Rotation Fast-Slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "Stop"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Counterclockwise Rotation Fast-Slow"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Stop"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobing Slow-Fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast open - slow close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast close - slow open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Special Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "No function"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Enable Colour Wheel To Any Position"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Lamp On"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Lamp Off"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All Motors Reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Pan/Tilt Motors Reset"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "Colour Wheel Motor Reset"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Gobo Wheel Motor Reset"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "Shutter/ Dimmer Motor Reset"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "Other Motors Reset"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Enable Blackout With Pan/Tilt Movement"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Enable Blackout With Colour Change"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Enable Blackout With Gobo Change"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Enable Blackout With Any Change"
+        },
+        {
+          "min": "140",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "8 Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Gobos",
+        "Reflector Rotation",
+        "Shutter",
+        "Special Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 2R 132W",
+      "lumens": "18650",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "10",
+      "width": "512",
+      "height": "354",
+      "depth": "516"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "28",
+      "degreesMax": "28"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "180",
+      "tiltMax": "360"
+    },
+    "technical": {
+      "powerConsumption": "202",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

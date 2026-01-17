@@ -1,0 +1,535 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Storm",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Henrik Bauer, Jannis Achstetter",
+  "channels": [
+    {
+      "name": "Dimmer (Derby)",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color (Derby)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Red"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Green"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Blue"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Amber"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "White"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "White Red"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Red Green"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Green Blue"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Blue Amber"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Amber White"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "White Green"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Green Amber"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Amber Red"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Red Blue"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Bliue White"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Red Green Blue"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Red Green Amber"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Red Green White"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Red Amber Blue"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Red White Blue"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Red Amber White"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Amber Green Blue"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Blue Green White"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Amber Green White"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Amber White Blue"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Red Green Blue Amber"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Red Green Blue White"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Blue Green White Amber"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "Red Green Amber White"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "White Red Blue Amber"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "Red Green Blue Amber White"
+        },
+        {
+          "min": "165",
+          "max": "209",
+          "name": "Automatic colours (individually)"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Automatic colours (two colours)"
+        }
+      ]
+    },
+    {
+      "name": "Color change Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color Speed, Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Function (Derby)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No strobe"
+        },
+        {
+          "min": "5",
+          "max": "249",
+          "name": "Strobe function, increasing speed"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Music controlled strobe"
+        }
+      ]
+    },
+    {
+      "name": "Rotation (Derby)",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No movement"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotation forward (fast - slow)"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "No movement"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotation reverse (slow - fast)"
+        }
+      ]
+    },
+    {
+      "name": "White LEDs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "LEDs Off"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Program 1 with increasing speed"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Program 2 with increasing speed"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "Program 3 with increasing speed"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Program 4 with increasing speed"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Program 5 with increasing speed"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Program 6 with increasing speed"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Program 7 with increasing speed"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Program 8 with increasing speed"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Program 9 with increasing speed"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "Program 10 with increasing speed"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "All LEDs on"
+        }
+      ]
+    },
+    {
+      "name": "Laser colours and functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Laser off"
+        },
+        {
+          "min": "10",
+          "max": "49",
+          "name": "Red Laser"
+        },
+        {
+          "min": "50",
+          "max": "89",
+          "name": "Green Laser"
+        },
+        {
+          "min": "90",
+          "max": "129",
+          "name": "Green and Red alternately flashing"
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "Red on, Green flashing"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Green on, Red Flashing"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Red and Green Flashing"
+        }
+      ]
+    },
+    {
+      "name": "Laser Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No Strobe"
+        },
+        {
+          "min": "5",
+          "max": "249",
+          "name": "Strobe function with increasing speed"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Music Controlled stobe for laser"
+        }
+      ]
+    },
+    {
+      "name": "Laser pattern and rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No movement"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotation forward fast-slow"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "No movement"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotation reverse slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Auto Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "DMX mode (control via channels 1-9)"
+        },
+        {
+          "min": "25",
+          "max": "39",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "40",
+          "max": "54",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "55",
+          "max": "69",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "85",
+          "max": "99",
+          "name": "Auto Program 5"
+        },
+        {
+          "min": "100",
+          "max": "114",
+          "name": "Auto Program 6"
+        },
+        {
+          "min": "115",
+          "max": "129",
+          "name": "Auto Program 7"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "Music Program 1"
+        },
+        {
+          "min": "145",
+          "max": "159",
+          "name": "Music Program 2"
+        },
+        {
+          "min": "160",
+          "max": "174",
+          "name": "Music Program 3"
+        },
+        {
+          "min": "175",
+          "max": "189",
+          "name": "Music Program 4"
+        },
+        {
+          "min": "190",
+          "max": "204",
+          "name": "Music Program 5"
+        },
+        {
+          "min": "205",
+          "max": "219",
+          "name": "Music Program 6"
+        },
+        {
+          "min": "220",
+          "max": "234",
+          "name": "Music Program 7"
+        },
+        {
+          "min": "235",
+          "max": "255",
+          "name": "Blackout"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 10,
+      "channels": [
+        "Dimmer (Derby)",
+        "Color (Derby)",
+        "Color change Speed",
+        "Strobe Function (Derby)",
+        "Rotation (Derby)",
+        "White LEDs",
+        "Laser colours and functions",
+        "Laser Strobe",
+        "Laser pattern and rotation",
+        "Auto Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4",
+      "width": "250",
+      "height": "250",
+      "depth": "170"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "68",
+      "degreesMax": "68"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

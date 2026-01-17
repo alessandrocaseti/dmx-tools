@@ -1,0 +1,106 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Starball LED DMX",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Dimmer/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "199",
+          "name": "Dimmer 0 to 100%"
+        },
+        {
+          "min": "200",
+          "max": "247",
+          "name": "Strobing Slow to Fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dome Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Rotation"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "CW Fast to Slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "No Rotation"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "CCW Slow to Fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No Rotation"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer/Strobe",
+        "Dome Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.8",
+      "width": "210",
+      "height": "179",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "10",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

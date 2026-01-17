@@ -1,0 +1,103 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED PAR 56 RGB DMX",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Janosch Frank",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "ON"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Sound control (7 colors)"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "ON"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe (increasing)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Effects"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.5",
+      "width": "205",
+      "height": "240",
+      "depth": "165"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "21",
+      "degreesMax": "21"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "23",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

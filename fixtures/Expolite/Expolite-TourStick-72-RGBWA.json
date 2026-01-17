@@ -1,0 +1,253 @@
+{
+  "version": "1.2",
+  "manufacturer": "Expolite",
+  "model": "TourStick 72 RGBWA",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Dirk J",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "1 to 20 Hz"
+        }
+      ]
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Value",
+      "type": "Unknown"
+    },
+    {
+      "name": "Block 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Block 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Block 3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Block 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Block 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Block 3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Block 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Block 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Block 3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Block 1 White",
+      "type": "White"
+    },
+    {
+      "name": "Block 2 White",
+      "type": "White"
+    },
+    {
+      "name": "Block 3 White",
+      "type": "White"
+    },
+    {
+      "name": "Block 1 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Block 2 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Block 3 Amber",
+      "type": "Amber"
+    }
+  ],
+  "modes": [
+    {
+      "name": "ARC2+S",
+      "totalChannels": 7,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "ARC1+D",
+      "totalChannels": 4,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "ARC2",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber"
+      ]
+    },
+    {
+      "name": "ARC2+D",
+      "totalChannels": 6,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber"
+      ]
+    },
+    {
+      "name": "HSV",
+      "totalChannels": 3,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Value"
+      ]
+    },
+    {
+      "name": "ARC1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Block1",
+      "totalChannels": 9,
+      "channels": [
+        "Block 1 Red",
+        "Block 1 Green",
+        "Block 1 Blue",
+        "Block 2 Red",
+        "Block 2 Green",
+        "Block 2 Blue",
+        "Block 3 Red",
+        "Block 3 Green",
+        "Block 3 Blue"
+      ]
+    },
+    {
+      "name": "Block2",
+      "totalChannels": 15,
+      "channels": [
+        "Block 1 Red",
+        "Block 1 Green",
+        "Block 1 Blue",
+        "Block 1 White",
+        "Block 1 Amber",
+        "Block 2 Red",
+        "Block 2 Green",
+        "Block 2 Blue",
+        "Block 2 White",
+        "Block 2 Amber",
+        "Block 3 Red",
+        "Block 3 Green",
+        "Block 3 Blue",
+        "Block 3 White",
+        "Block 3 Amber"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "990",
+      "height": "175",
+      "depth": "75"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "87",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

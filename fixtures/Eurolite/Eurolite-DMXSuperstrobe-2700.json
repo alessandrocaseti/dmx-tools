@@ -1,0 +1,57 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "DMX Superstrobe 2700",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Massimo Callegari",
+  "channels": [
+    {
+      "name": "Flash rate",
+      "type": "Unknown"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 2,
+      "channels": [
+        "Flash rate",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "XOP 1500W",
+      "lumens": "645",
+      "colourTemperature": "5600"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "460",
+      "height": "130",
+      "depth": "210"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "3600",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

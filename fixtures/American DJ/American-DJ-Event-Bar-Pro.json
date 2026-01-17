@@ -1,0 +1,344 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Event Bar Pro",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "MaBonzo",
+  "channels": [
+    {
+      "name": "Pan (Head 1)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine (Head 1)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt (Head 1)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine (Head 1)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan (Head 2)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine (Head 2)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt (Head 2)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine (Head 2)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan (Head 3)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine (Head 3)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt (Head 3)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine (Head 3)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan (Head 4)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine (Head 4)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt (Head 4)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine (Head 4)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Reset"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Head 1 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Head 2 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Head 3 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Head 4 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shows",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "Show 1"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "Show 2"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "Show 3"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "Show 4"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "Show 5"
+        },
+        {
+          "min": "158",
+          "max": "187",
+          "name": "Show 6"
+        },
+        {
+          "min": "188",
+          "max": "217",
+          "name": "Show 7"
+        },
+        {
+          "min": "218",
+          "max": "247",
+          "name": "Show 8"
+        },
+        {
+          "min": "248",
+          "max": "254",
+          "name": "Random show"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Show Speed/Sound Sensitivity",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed slow - fast/Sensitivity least - most"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theater"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to unit curve setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 22,
+      "channels": [
+        "Pan (Head 1)",
+        "Pan Fine (Head 1)",
+        "Tilt (Head 1)",
+        "Tilt Fine (Head 1)",
+        "Head 1 Dimmer",
+        "Pan (Head 2)",
+        "Pan Fine (Head 2)",
+        "Tilt (Head 2)",
+        "Tilt Fine (Head 2)",
+        "Head 2 Dimmer",
+        "Pan (Head 3)",
+        "Pan Fine (Head 3)",
+        "Tilt (Head 3)",
+        "Tilt Fine (Head 3)",
+        "Head 3 Dimmer",
+        "Pan (Head 4)",
+        "Pan Fine (Head 4)",
+        "Tilt (Head 4)",
+        "Tilt Fine (Head 4)",
+        "Head 4 Dimmer",
+        "Master Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 25,
+      "channels": [
+        "Pan (Head 1)",
+        "Pan Fine (Head 1)",
+        "Tilt (Head 1)",
+        "Tilt Fine (Head 1)",
+        "Head 1 Dimmer",
+        "Pan (Head 2)",
+        "Pan Fine (Head 2)",
+        "Tilt (Head 2)",
+        "Tilt Fine (Head 2)",
+        "Head 2 Dimmer",
+        "Pan (Head 3)",
+        "Pan Fine (Head 3)",
+        "Tilt (Head 3)",
+        "Tilt Fine (Head 3)",
+        "Head 3 Dimmer",
+        "Pan (Head 4)",
+        "Pan Fine (Head 4)",
+        "Tilt (Head 4)",
+        "Tilt Fine (Head 4)",
+        "Head 4 Dimmer",
+        "Master Dimmer",
+        "Strobe",
+        "Shows",
+        "Show Speed/Sound Sensitivity",
+        "Dimmer Curves"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 2,
+      "channels": [
+        "Shows",
+        "Show Speed/Sound Sensitivity"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 17,
+      "channels": [
+        "Pan (Head 1)",
+        "Pan Fine (Head 1)",
+        "Tilt (Head 1)",
+        "Tilt Fine (Head 1)",
+        "Pan (Head 2)",
+        "Pan Fine (Head 2)",
+        "Tilt (Head 2)",
+        "Tilt Fine (Head 2)",
+        "Pan (Head 3)",
+        "Pan Fine (Head 3)",
+        "Tilt (Head 3)",
+        "Tilt Fine (Head 3)",
+        "Pan (Head 4)",
+        "Pan Fine (Head 4)",
+        "Tilt (Head 4)",
+        "Tilt Fine (Head 4)",
+        "Master Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "10000"
+    },
+    "dimensions": {
+      "weight": "11",
+      "width": "1033",
+      "height": "270",
+      "depth": "83"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "3",
+      "degreesMax": "3"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "85",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

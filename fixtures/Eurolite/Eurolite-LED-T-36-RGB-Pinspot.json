@@ -1,0 +1,138 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED T-36 RGB Pinspot",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Herbie",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Macro off"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Macro on"
+        }
+      ]
+    },
+    {
+      "name": "Speed/strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Dimmer"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Decreasing brightness"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Increasing brightness"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse fade"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto color mix"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "3-color flash"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "7-color flash"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Macro",
+        "Speed/strobe",
+        "Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "2000"
+    },
+    "dimensions": {
+      "weight": "1",
+      "width": "155",
+      "height": "130",
+      "depth": "180"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "12",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

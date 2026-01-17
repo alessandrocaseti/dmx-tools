@@ -1,0 +1,819 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Swarm Wash FX",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Stephen Olah",
+  "channels": [
+    {
+      "name": "Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "30",
+          "name": "Wash only"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Lasers only"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Derby only"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Strobes only"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "Wash, laser and derby"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Wash, laser and strobes"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Wash, derby and strobes"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Laser, derby and strobes"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Wash and laser"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Wash and derby"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Wash and strobes"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Laser and derby"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Laser and strobes"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Derby and strobes"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "All effects"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Speed/Sound Active Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "200",
+          "name": "Selects speed (slow to fast)"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Sound active mode - all effects"
+        }
+      ]
+    },
+    {
+      "name": "Wash Group 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Blackout"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Red"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Green"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Blue"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "Wash Group 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Blackout"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Red"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Green"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Blue"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "Wash Group 3",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Blackout"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Red"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Green"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Blue"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "Wash Group 4",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Blackout"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Red"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Green"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Blue"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "Wash Group 5",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Blackout"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Red"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Green"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Blue"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "Wash Group 6",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Blackout"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Red"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Green"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Blue"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "Wash Group 7",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Blackout"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Red"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Green"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Blue"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "Wash Group 8",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Blackout"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Red"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Green"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Blue"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "UV"
+        }
+      ]
+    },
+    {
+      "name": "Wash Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Derby",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Red"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Green"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Blue"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Amber"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "White"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "White + Red"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Red + Green"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Blue + Amber"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Amber + White"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "White + Green"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Green + Amber"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Amber + Red"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Blue + White"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Red + Green + Amber"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Red + Green + White"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Red + Amber + Blue"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Red + White + Blue"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Red + Amber + White"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Amber + Green + Blue"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Blue + Green + White"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Amber + Green + White"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Amber + White + Blue"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Red + Green + Blue + Amber"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Red + Green + Blue + White"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Green + Blue + Amber + White"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "Red + Green + Amber + White"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Red + Blue + Amber + White"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "Red + Green + Blue + Amber + White"
+        },
+        {
+          "min": "165",
+          "max": "209",
+          "name": "Automatic (single colors only)"
+        },
+        {
+          "min": "210",
+          "max": "222",
+          "name": "Automatic (two colors at a time)"
+        },
+        {
+          "min": "223",
+          "max": "255",
+          "name": "Automatic Sound"
+        }
+      ]
+    },
+    {
+      "name": "Derby Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "200",
+          "name": "Strobe speed (fast to slow)"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Sound active mode"
+        }
+      ]
+    },
+    {
+      "name": "Derby Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate right (slow to fast)"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate left (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "SMD Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Auto program 1 (slow to fast)"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Auto program 2 (slow to fast)"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Auto program 3 (slow to fast)"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Auto program 4 (slow to fast)"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Auto program 5 (slow to fast)"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Auto program 6 (slow to fast)"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Auto programs 7 (slow to fast)"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Auto programs 8 (slow to fast)"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Auto programs 9 (slow to fast)"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Auto programs 10 (slow to fast)"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Auto programs 11 (slow to fast)"
+        },
+        {
+          "min": "120",
+          "max": "200",
+          "name": "Full on"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Sound active strobe"
+        }
+      ]
+    },
+    {
+      "name": "Lasers",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "49",
+          "name": "Red on"
+        },
+        {
+          "min": "50",
+          "max": "89",
+          "name": "Green on"
+        },
+        {
+          "min": "90",
+          "max": "129",
+          "name": "Green and red, alternating strobe"
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "Red on and green strobe"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Green on and red strobe"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Red and green strobe"
+        }
+      ]
+    },
+    {
+      "name": "Laser Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "254",
+          "name": "Strobe (fast to slow)"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound active strobe"
+        }
+      ]
+    },
+    {
+      "name": "Motor LED",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate right (slow to fast)"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate left (slow to fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 18,
+      "channels": [
+        "Auto Programs",
+        "Auto Program Speed/Sound Active Mode",
+        "Wash Group 1",
+        "Wash Group 2",
+        "Wash Group 3",
+        "Wash Group 4",
+        "Wash Group 5",
+        "Wash Group 6",
+        "Wash Group 7",
+        "Wash Group 8",
+        "Wash Strobe",
+        "Derby",
+        "Derby Strobe",
+        "Derby Speed",
+        "SMD Strobe",
+        "Lasers",
+        "Laser Strobe",
+        "Motor LED"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Auto Programs",
+        "Auto Program Speed/Sound Active Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "5262",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.2",
+      "width": "332",
+      "height": "334",
+      "depth": "241"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "82"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

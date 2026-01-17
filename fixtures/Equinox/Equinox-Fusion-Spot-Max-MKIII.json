@@ -1,0 +1,374 @@
+{
+  "version": "1.2",
+  "manufacturer": "Equinox",
+  "model": "Fusion Spot Max MKIII",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michel Sliepenbeek",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Light Blue"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Pink"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Orange"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Green"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "Blue"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "Yellow"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "Red"
+        },
+        {
+          "min": "57",
+          "max": "127",
+          "name": "Split Colors"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Color Scroll Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Color Scroll Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Gobo 1 Shake"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 2 Shake"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 3 Shake"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 4 Shake"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 5 Shake"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 6 Shake"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 7 Shake"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo 8 Shake"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Gobo Scroll, Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Gobo Scroll, Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Close"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe Slow ->Fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast Close Slow Open"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast Open Slow Close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Pan / Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "Null"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blackout while Pan/Tilt Move"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Null"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Blackout when Color Changes"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Null"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Blackout when Gobo Changes"
+        },
+        {
+          "min": "120",
+          "max": "199",
+          "name": "Null"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset All"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "Null"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Gobo",
+        "Shutter",
+        "Pan / Tilt Speed",
+        "Function",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Colour",
+        "Gobo",
+        "Shutter",
+        "Pan / Tilt Speed",
+        "Function",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "30 W LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.6",
+      "width": "159",
+      "height": "265",
+      "depth": "147"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "12",
+      "degreesMax": "12"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "190"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

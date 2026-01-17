@@ -1,0 +1,239 @@
+{
+  "version": "1.2",
+  "manufacturer": "ColorKey",
+  "model": "Scorpius",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Himes",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Z Axis",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "0-360 Static Position"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise Rotate Fast to Slow"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counter-Clockwise Rotate Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "1",
+          "name": "No strobe"
+        },
+        {
+          "min": "2",
+          "max": "255",
+          "name": "1-20hz Strobe from Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "LED Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No Function"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Color Gradual Change"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Color Pulse Change"
+        },
+        {
+          "min": "21",
+          "max": "212",
+          "name": "Static Color Presets 63 Available Colors"
+        },
+        {
+          "min": "213",
+          "max": "255",
+          "name": "Color Jump Change"
+        }
+      ]
+    },
+    {
+      "name": "LED Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed from Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No Function"
+        },
+        {
+          "min": "16",
+          "max": "127",
+          "name": "Auto Running"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "249",
+          "name": "No Function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "All Reset After 5 Seconds"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan Tilt Speed",
+        "Z Axis",
+        "Master Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "LED Macro",
+        "LED Macro Speed",
+        "Macro",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan Tilt Speed",
+        "Z Axis",
+        "Master Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "LED Macro",
+        "LED Macro Speed",
+        "Macro",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.8",
+      "width": "265",
+      "height": "338",
+      "depth": "207"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "320"
+    },
+    "technical": {
+      "powerConsumption": "240",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

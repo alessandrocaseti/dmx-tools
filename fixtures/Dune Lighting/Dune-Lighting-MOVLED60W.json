@@ -1,0 +1,296 @@
+{
+  "version": "1.2",
+  "manufacturer": "Dune Lighting",
+  "model": "MOV-LED/60W",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "jacques",
+  "channels": [
+    {
+      "name": "Obturator",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Closed obturator"
+        },
+        {
+          "min": "11",
+          "max": "39",
+          "name": "Opened obturator"
+        },
+        {
+          "min": "40",
+          "max": "240",
+          "name": "Strobe (Slow to Fast)"
+        },
+        {
+          "min": "241",
+          "max": "250",
+          "name": "Reset (after ~ 10 sec)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Opened obturator"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "18",
+          "name": "White"
+        },
+        {
+          "min": "19",
+          "max": "37",
+          "name": "Red"
+        },
+        {
+          "min": "38",
+          "max": "56",
+          "name": "Blue"
+        },
+        {
+          "min": "57",
+          "max": "75",
+          "name": "Yellow"
+        },
+        {
+          "min": "76",
+          "max": "94",
+          "name": "Green"
+        },
+        {
+          "min": "95",
+          "max": "113",
+          "name": "Orange"
+        },
+        {
+          "min": "114",
+          "max": "127",
+          "name": "Violet"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Colour change (Fast to Slow speed)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Reverse colour change (Slow to Fast speed)"
+        }
+      ]
+    },
+    {
+      "name": "Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open (No gobo)"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Gobo change (Fast to Slow speed)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Reverse gobo change (Slow to Fast speed)"
+        }
+      ]
+    },
+    {
+      "name": "Gobos rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Angular gobo position"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Gobo rotation (Slow to Fast speed)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Reverse gobo rotation (Slow to Fast speed)"
+        }
+      ]
+    },
+    {
+      "name": "Focal",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Focal (110 cm > inf)"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No prism"
+        },
+        {
+          "min": "5",
+          "max": "19",
+          "name": "Prism"
+        },
+        {
+          "min": "20",
+          "max": "139",
+          "name": "Prism angular position"
+        },
+        {
+          "min": "140",
+          "max": "197",
+          "name": "Prism rotation (Fast to Slow speed)"
+        },
+        {
+          "min": "198",
+          "max": "255",
+          "name": "Reverse prism rotation (Slow to Fast speed)"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan & Tilt speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "251",
+          "name": "Fast to Slow speed"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Vector mode (light off during move)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Obturator",
+        "Dimmer",
+        "Colour",
+        "Gobos",
+        "Gobos rotation",
+        "Focal",
+        "Prism",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan & Tilt speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "18000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "8.5",
+      "width": "325",
+      "height": "401",
+      "depth": "250"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "150",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

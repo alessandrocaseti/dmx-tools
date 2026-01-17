@@ -1,0 +1,326 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayra",
+  "model": "IntenZ CB-150 ",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Edgar Aichinger",
+  "channels": [
+    {
+      "name": "Show",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Show 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Show 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Show 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Show 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Show 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Show 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Show 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Show 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Show 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Show 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Show 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Show 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Show 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Show 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Show 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Show 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound active running show 1 - 16"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "The 1st head Color",
+      "type": "Color"
+    },
+    {
+      "name": "The 2nd head Color",
+      "type": "Color"
+    },
+    {
+      "name": "The 3rd head Color",
+      "type": "Color"
+    },
+    {
+      "name": "The 4th head Color",
+      "type": "Color"
+    },
+    {
+      "name": "The 5th head Color",
+      "type": "Color"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Color",
+      "type": "Color"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Show"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 5,
+      "channels": [
+        "The 1st head Color",
+        "The 2nd head Color",
+        "The 3rd head Color",
+        "The 4th head Color",
+        "The 5th head Color"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 7,
+      "channels": [
+        "The 1st head Color",
+        "The 2nd head Color",
+        "The 3rd head Color",
+        "The 4th head Color",
+        "The 5th head Color",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 15,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 18,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Color",
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "620",
+      "height": "150",
+      "depth": "160"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "150",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

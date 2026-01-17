@@ -1,0 +1,145 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED D-1000",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Mark Baar",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Indigo",
+      "type": "Indigo"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Step Motor Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "180",
+          "name": "Manual Motor Positioning"
+        },
+        {
+          "min": "181",
+          "max": "255",
+          "name": "Set Rotation Speed S>F"
+        }
+      ]
+    },
+    {
+      "name": "Mode Auto / Sound",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "200",
+          "name": "Auto DMX"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Sound DMX"
+        }
+      ]
+    },
+    {
+      "name": "Speed Auto / Sound",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed Auto / Sound"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Indigo",
+        "Strobe",
+        "Step Motor Rotation",
+        "Mode Auto / Sound",
+        "Speed Auto / Sound"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "305",
+      "height": "290",
+      "depth": "265"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "115",
+      "degreesMax": "115"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "23",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

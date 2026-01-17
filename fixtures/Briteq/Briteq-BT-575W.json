@@ -1,0 +1,303 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BT-575W",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Carlitos AntiCrispis",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "BlackOut"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Shutter (Slow > Fast)"
+        },
+        {
+          "min": "132",
+          "max": "247",
+          "name": "Free Shutter"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "18",
+          "name": "White"
+        },
+        {
+          "min": "19",
+          "max": "36",
+          "name": "Red"
+        },
+        {
+          "min": "37",
+          "max": "54",
+          "name": "Yellow"
+        },
+        {
+          "min": "55",
+          "max": "72",
+          "name": "Orange"
+        },
+        {
+          "min": "73",
+          "max": "90",
+          "name": "Green"
+        },
+        {
+          "min": "91",
+          "max": "108",
+          "name": "Cyan"
+        },
+        {
+          "min": "109",
+          "max": "127",
+          "name": "Purple"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Color wheel clockwise"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Color wheel anti-clockwise"
+        }
+      ]
+    },
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "CMY Mix Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "11",
+          "name": "White"
+        },
+        {
+          "min": "12",
+          "max": "127",
+          "name": "32 Colors"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Macro"
+        }
+      ]
+    },
+    {
+      "name": "CMY Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "CMY Speed (Fast > Slow)"
+        }
+      ]
+    },
+    {
+      "name": "Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "32",
+          "name": "Beam Shape"
+        },
+        {
+          "min": "33",
+          "max": "239",
+          "name": "Beam Shape Rotation"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Frost"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Lamp On/Off/Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "129",
+          "name": "Normal"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Lamp On (Keep 5 seconds to activate)"
+        },
+        {
+          "min": "140",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "DMX Reset (Keep 5 seconds to activate)"
+        },
+        {
+          "min": "210",
+          "max": "229",
+          "name": "No function"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Lamp Off (Keep 5 seconds to activate)"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Shutter",
+        "Color",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CMY Mix Macro",
+        "CMY Speed",
+        "Effect",
+        "Zoom",
+        "Pan Fine",
+        "Tilt Fine",
+        "Lamp On/Off/Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Shutter",
+        "Effect",
+        "Color",
+        "CMY Mix Macro",
+        "Dimmer",
+        "Zoom"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSR 575W",
+      "lumens": "28000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "30.5",
+      "width": "428",
+      "height": "387",
+      "depth": "491"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "11",
+      "degreesMax": "28"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "800",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

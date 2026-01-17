@@ -1,0 +1,256 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Thunder Wash 600 W",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "JP",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe C",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Shutter open (react to dimmer CH1)"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Pulse random slow…fast"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Ramp up random slow…fast"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Ramp down random slow…fast"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random strobe slow…fast"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Strobe break effect 5…1s (very short flash)"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe 0…30Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Sound",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Sound Control OFF (Mic Sensitivity)"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Sound Control ON Low -> High (Mic Sensitivity)"
+        }
+      ]
+    },
+    {
+      "name": "Duration",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash duration (0ms to 510ms)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe B",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Shutter open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "11",
+          "max": "250",
+          "name": "Strobe 0…30Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Strobe A",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe 0…30Hz"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe Programs (alternating segments)"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program Speed (if sound-channel is higher than DMX-Value 5 the Programs shall react to sound instead of speed channel)"
+        }
+      ]
+    },
+    {
+      "name": "LED1 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED2 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED3 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED4 Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "1-CH",
+      "totalChannels": 1,
+      "channels": [
+        "Strobe A"
+      ]
+    },
+    {
+      "name": "2-CH",
+      "totalChannels": 2,
+      "channels": [
+        "Master Dimmer",
+        "Strobe B"
+      ]
+    },
+    {
+      "name": "3-CH",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Strobe B",
+        "Duration"
+      ]
+    },
+    {
+      "name": "5-CH",
+      "totalChannels": 5,
+      "channels": [
+        "Master Dimmer",
+        "Strobe C",
+        "Programs",
+        "Speed",
+        "Sound"
+      ]
+    },
+    {
+      "name": "7-CH",
+      "totalChannels": 7,
+      "channels": [
+        "Master Dimmer",
+        "Strobe B",
+        "Duration",
+        "LED1 Dimmer",
+        "LED2 Dimmer",
+        "LED3 Dimmer",
+        "LED4 Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.25",
+      "width": "335",
+      "height": "182",
+      "depth": "93"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "75",
+      "degreesMax": "75"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "135",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

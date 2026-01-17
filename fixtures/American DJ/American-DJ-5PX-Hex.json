@@ -1,0 +1,274 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "5PX Hex",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Hayley",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED OFF"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED ON"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED ON"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse strobe fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED ON"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe, Slow to Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED ON"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color"
+    },
+    {
+      "name": "Program Speed/Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No Function"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Speed Adjustment, slow to fast (when channel 10 is set to 021-080) Sound sensitivity, least to most (when ch 10 is set form 081 - 140)"
+        }
+      ]
+    },
+    {
+      "name": "Dim Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Dimming Default to Display"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No function"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "30 Color change"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "6 Color change"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Color Fade"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Sound Active 30 Color Change"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Sound Active 6 Color Change"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Sound Active 6 Color Fade"
+        },
+        {
+          "min": "141",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 12,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master dimmer",
+        "Strobe",
+        "Color Macro",
+        "Programs",
+        "Program Speed/Sensitivity",
+        "Dim Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.6",
+      "width": "208",
+      "height": "222",
+      "depth": "114"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

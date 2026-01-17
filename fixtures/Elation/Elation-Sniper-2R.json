@@ -1,0 +1,950 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elation",
+  "model": "Sniper 2R",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Rodolfo Thierry",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "2",
+          "name": "White"
+        },
+        {
+          "min": "3",
+          "max": "4",
+          "name": "Spilt White / Light Red"
+        },
+        {
+          "min": "5",
+          "max": "6",
+          "name": "Light Red"
+        },
+        {
+          "min": "7",
+          "max": "8",
+          "name": "Split Light Red / Blue"
+        },
+        {
+          "min": "9",
+          "max": "11",
+          "name": "Blue"
+        },
+        {
+          "min": "12",
+          "max": "13",
+          "name": "Split Blue / Green"
+        },
+        {
+          "min": "14",
+          "max": "15",
+          "name": "Green"
+        },
+        {
+          "min": "16",
+          "max": "17",
+          "name": "Split Green / Yellow"
+        },
+        {
+          "min": "18",
+          "max": "20",
+          "name": "Yellow"
+        },
+        {
+          "min": "21",
+          "max": "22",
+          "name": "Split Yellow / Orange"
+        },
+        {
+          "min": "23",
+          "max": "24",
+          "name": "Orange"
+        },
+        {
+          "min": "25",
+          "max": "26",
+          "name": "Split Orange / Magenta"
+        },
+        {
+          "min": "27",
+          "max": "29",
+          "name": "Magenta"
+        },
+        {
+          "min": "30",
+          "max": "31",
+          "name": "Split Magenta / Lavendar"
+        },
+        {
+          "min": "32",
+          "max": "33",
+          "name": "Lavendar"
+        },
+        {
+          "min": "34",
+          "max": "35",
+          "name": "Split Lavendar / Light Pink"
+        },
+        {
+          "min": "36",
+          "max": "38",
+          "name": "Light Pink"
+        },
+        {
+          "min": "39",
+          "max": "40",
+          "name": "Split Light Pink / Yellow Green"
+        },
+        {
+          "min": "41",
+          "max": "42",
+          "name": "Yellow Green"
+        },
+        {
+          "min": "43",
+          "max": "44",
+          "name": "Split Yellow Green / Peacock Blue"
+        },
+        {
+          "min": "45",
+          "max": "47",
+          "name": "Peacock Blue"
+        },
+        {
+          "min": "48",
+          "max": "49",
+          "name": "Split Peacock Blue / Medium Pink"
+        },
+        {
+          "min": "50",
+          "max": "51",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "52",
+          "max": "53",
+          "name": "Split Medium Pink / Medium Purple"
+        },
+        {
+          "min": "54",
+          "max": "56",
+          "name": "Medium Purple"
+        },
+        {
+          "min": "57",
+          "max": "58",
+          "name": "Split Medium Purple / Pineapple Yellow"
+        },
+        {
+          "min": "59",
+          "max": "60",
+          "name": "Pineapple Yellow"
+        },
+        {
+          "min": "61",
+          "max": "62",
+          "name": "Split Pineapple Yellow / Congo Blue"
+        },
+        {
+          "min": "63",
+          "max": "65",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "66",
+          "max": "67",
+          "name": "White"
+        },
+        {
+          "min": "68",
+          "max": "128",
+          "name": "Color Wheel Index - White to Congo Blue"
+        },
+        {
+          "min": "129",
+          "max": "190",
+          "name": "Clockwise Color Rotation from FAST to SLOW"
+        },
+        {
+          "min": "191",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counterclockwise Color Rotation from SLOW to FAST"
+        }
+      ]
+    },
+    {
+      "name": "Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "15",
+          "max": "22",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "23",
+          "max": "29",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "30",
+          "max": "37",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "38",
+          "max": "44",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "45",
+          "max": "52",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "53",
+          "max": "59",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "60",
+          "max": "67",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "68",
+          "max": "74",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "75",
+          "max": "82",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "83",
+          "max": "89",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "90",
+          "max": "97",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "98",
+          "max": "104",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "105",
+          "max": "112",
+          "name": "Gobo 14"
+        },
+        {
+          "min": "113",
+          "max": "119",
+          "name": "Gobo 15"
+        },
+        {
+          "min": "120",
+          "max": "126",
+          "name": "Gobo 16"
+        },
+        {
+          "min": "127",
+          "max": "133",
+          "name": "Gobo 17"
+        },
+        {
+          "min": "134",
+          "max": "194",
+          "name": "Clockwise Gobo Wheel Rotation From FAST to SLOW"
+        },
+        {
+          "min": "195",
+          "max": "255",
+          "name": "Counterclockwise Gobo Wheel Rotation From SLOW to FAST"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Open"
+        },
+        {
+          "min": "9",
+          "max": "16",
+          "name": "Pattern Macro 1"
+        },
+        {
+          "min": "17",
+          "max": "25",
+          "name": "Pattern Macro 2"
+        },
+        {
+          "min": "26",
+          "max": "33",
+          "name": "Pattern Macro 3"
+        },
+        {
+          "min": "34",
+          "max": "42",
+          "name": "Pattern Macro 4"
+        },
+        {
+          "min": "43",
+          "max": "50",
+          "name": "Pattern Macro 5"
+        },
+        {
+          "min": "51",
+          "max": "59",
+          "name": "Pattern Macro 6"
+        },
+        {
+          "min": "60",
+          "max": "67",
+          "name": "Pattern Macro 7"
+        },
+        {
+          "min": "68",
+          "max": "76",
+          "name": "Pattern Macro 8"
+        },
+        {
+          "min": "77",
+          "max": "84",
+          "name": "Pattern Macro 9"
+        },
+        {
+          "min": "85",
+          "max": "93",
+          "name": "Pattern Macro 10"
+        },
+        {
+          "min": "94",
+          "max": "101",
+          "name": "Pattern Macro 11"
+        },
+        {
+          "min": "102",
+          "max": "110",
+          "name": "Pattern Macro 12"
+        },
+        {
+          "min": "111",
+          "max": "118",
+          "name": "Pattern Macro 13"
+        },
+        {
+          "min": "119",
+          "max": "127",
+          "name": "Pattern Macro 14"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Pattern Macro 15"
+        },
+        {
+          "min": "136",
+          "max": "144",
+          "name": "Pattern Macro 16"
+        },
+        {
+          "min": "145",
+          "max": "152",
+          "name": "Pattern Macro 17"
+        },
+        {
+          "min": "153",
+          "max": "161",
+          "name": "Pattern Macro 18"
+        },
+        {
+          "min": "162",
+          "max": "169",
+          "name": "Pattern Macro 19"
+        },
+        {
+          "min": "170",
+          "max": "178",
+          "name": "Pattern Macro 20"
+        },
+        {
+          "min": "179",
+          "max": "186",
+          "name": "Pattern Macro 21"
+        },
+        {
+          "min": "187",
+          "max": "195",
+          "name": "Pattern Macro 22"
+        },
+        {
+          "min": "196",
+          "max": "203",
+          "name": "Pattern Macro 23"
+        },
+        {
+          "min": "204",
+          "max": "212",
+          "name": "Pattern Macro 24"
+        },
+        {
+          "min": "213",
+          "max": "220",
+          "name": "Pattern Macro 25"
+        },
+        {
+          "min": "221",
+          "max": "229",
+          "name": "Pattern Macro 26"
+        },
+        {
+          "min": "230",
+          "max": "237",
+          "name": "Pattern Macro 27"
+        },
+        {
+          "min": "238",
+          "max": "246",
+          "name": "Pattern Macro 28"
+        },
+        {
+          "min": "247",
+          "max": "255",
+          "name": "Pattern Macro 29"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Rotation - Clockwise / Counterclockwise",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Clockwise Pattern Rotation from FAST to SLOW"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "No function"
+        },
+        {
+          "min": "126",
+          "max": "141",
+          "name": "Stop"
+        },
+        {
+          "min": "142",
+          "max": "245",
+          "name": "Counterclockwise Pattern Rotation from SLOW to FAST"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Stop"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Rotation - Horizontal / Vertical",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Horizontal Pattern Rotation from FAST to SLOW"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "Stop"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Vertical Pattern Rotation from SLOW to FAST"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Stop"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Zoom",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Pattern ZOOM Manual"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Pattern ZOOM SLOW to FAST"
+        }
+      ]
+    },
+    {
+      "name": "Beam Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "0° to 360°"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Shaking"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation FAST to SLOW"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counterclockwise Rotation SLOW to FAST"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Prism Off"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Prism On"
+        }
+      ]
+    },
+    {
+      "name": "Prism Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise PRISM Rotation FAST to SLOW"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counterclockwise PRISM Rotation SLOW to FAST"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "39",
+          "name": "No function"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Lamp On"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Lamp Off"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All Motors Reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Pan / Tilt Motors Reset"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "Color Motor Reset"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Gobo Motor Reset"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "Shutter & Dimmer Motors Reset"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "Other Motors Reset"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Enable blackout while Pan / Tilt movement"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Enable blackout while color change"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Enable blackout while gobo change"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Pan Shaking Movement Range",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Pan Shaking Movement Range Adjustement"
+        }
+      ]
+    },
+    {
+      "name": "Tilt Shaking Movement Range",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Tilt Shaking Movement Range Adjustement"
+        }
+      ]
+    },
+    {
+      "name": "Pan 1",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "PAN Movement"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "PAN Shaking Movement SLOW to FAST"
+        }
+      ]
+    },
+    {
+      "name": "Tilt 1",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "TILT Movement"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "TILT Shaking Movement SLOW to FAST"
+        }
+      ]
+    },
+    {
+      "name": "Pan shaking movement speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "PAN Shaking Movement SLOW to FAST"
+        }
+      ]
+    },
+    {
+      "name": "Tilt shaking movement speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "TILT Shaking Movement SLOW to FAST"
+        }
+      ]
+    },
+    {
+      "name": "Shutter - Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast Open to Slow Close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast Close to Slow Open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Randum Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 14 chanels",
+      "totalChannels": 14,
+      "channels": [
+        "Pan 1",
+        "Tilt 1",
+        "Colors",
+        "Gobos",
+        "Pattern Macros",
+        "Pattern Rotation - Clockwise / Counterclockwise",
+        "Pattern Rotation - Horizontal / Vertical",
+        "Pattern Zoom",
+        "Beam Rotation",
+        "Prism",
+        "Prism Rotation",
+        "Shutter - Strobe",
+        "Dimmer",
+        "Functions"
+      ]
+    },
+    {
+      "name": "Mode 16 chanels",
+      "totalChannels": 16,
+      "channels": [
+        "Pan 1",
+        "Pan Fine",
+        "Tilt 1",
+        "Tilt Fine",
+        "Colors",
+        "Gobos",
+        "Pattern Macros",
+        "Pattern Rotation - Clockwise / Counterclockwise",
+        "Pattern Rotation - Horizontal / Vertical",
+        "Pattern Zoom",
+        "Beam Rotation",
+        "Prism",
+        "Prism Rotation",
+        "Shutter - Strobe",
+        "Dimmer",
+        "Functions"
+      ]
+    },
+    {
+      "name": "Mode 18 chanels",
+      "totalChannels": 18,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan shaking movement speed",
+        "Tilt shaking movement speed",
+        "Colors",
+        "Gobos",
+        "Pattern Macros",
+        "Pattern Rotation - Clockwise / Counterclockwise",
+        "Pattern Rotation - Horizontal / Vertical",
+        "Pattern Zoom",
+        "Beam Rotation",
+        "Prism",
+        "Prism Rotation",
+        "Dimmer",
+        "Functions",
+        "Shutter - Strobe"
+      ]
+    },
+    {
+      "name": "Mode 20 chanels",
+      "totalChannels": 20,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan shaking movement speed",
+        "Tilt shaking movement speed",
+        "Colors",
+        "Gobos",
+        "Pattern Macros",
+        "Pattern Rotation - Clockwise / Counterclockwise",
+        "Pattern Rotation - Horizontal / Vertical",
+        "Pattern Zoom",
+        "Beam Rotation",
+        "Prism",
+        "Prism Rotation",
+        "Shutter - Strobe",
+        "Dimmer",
+        "Functions",
+        "Pan Shaking Movement Range",
+        "Tilt Shaking Movement Range"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "132W Platinum 2R",
+      "lumens": "45000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.5",
+      "width": "305",
+      "height": "295",
+      "depth": "361"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "3"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "220",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

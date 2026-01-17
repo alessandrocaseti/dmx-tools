@@ -1,0 +1,518 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COLORdash Batten",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Kurt Malkames",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 - 100% (or STEP TIME when Custom 1-10 is activated)"
+        }
+      ]
+    },
+    {
+      "name": "Green",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 - 100% (or FADE TIME when Custom 1-10 is activated)"
+        }
+      ]
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macro + White Balance",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "35",
+          "name": "Red 100% - Green Up - Blue 0%"
+        },
+        {
+          "min": "36",
+          "max": "60",
+          "name": "Red Down - Green 100% - Blue 0%"
+        },
+        {
+          "min": "61",
+          "max": "85",
+          "name": "Red 0% - Green 100% - Blue Up"
+        },
+        {
+          "min": "86",
+          "max": "110",
+          "name": "Red 0% - Green Down - Blue 100%"
+        },
+        {
+          "min": "111",
+          "max": "135",
+          "name": "Red Up - Green 0% - Blue 100%"
+        },
+        {
+          "min": "136",
+          "max": "160",
+          "name": "Red 100% - Green 0% - Blue Down"
+        },
+        {
+          "min": "161",
+          "max": "185",
+          "name": "Red 100% - Green Up - Blue Up"
+        },
+        {
+          "min": "186",
+          "max": "210",
+          "name": "Red Down - Green Down - Blue 100%"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "White 1: 3200K"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "White 2: 3400K"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "White 3: 4200K"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "White 4: 4900K"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "White 5: 5600K"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "White 6: 5900K"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "White 7: 6500K"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "White 8: 7200K"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "White 9: 8500K"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "255",
+          "name": "0 - 20Hz"
+        }
+      ]
+    },
+    {
+      "name": "Auto + Custom Programs + Fan Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Reset to display fan setting"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Fans Off (Hold for 3sec)"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Fans Low (Hold for 3sec)"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "Fans Normal (Hold for 3sec)"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Fans High (Hold for 3sec)"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Fans Auto (Hold for 3sec)"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Auto 1"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Auto 2"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "Auto 3"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "Auto 4"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Auto 5"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Auto 6"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Auto 7"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Auto 8"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Auto 9"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Auto 10"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Custom 1"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Custom 2"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "Custom 3"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Custom 4"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "Custom 5"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "Custom 6"
+        },
+        {
+          "min": "221",
+          "max": "230",
+          "name": "Custom 7"
+        },
+        {
+          "min": "231",
+          "max": "240",
+          "name": "Custom 8"
+        },
+        {
+          "min": "241",
+          "max": "250",
+          "name": "Custom 9"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Custom 10"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 - 100% (only when CH 7 is between 61-255)"
+        }
+      ]
+    },
+    {
+      "name": "Block",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Block 1,2,3,4"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Block 1"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Block 2"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "Block 3"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Block 4"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Block 1,2"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Block 3,4"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Block 1,4"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Block 2,3"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Block 1,2,3"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "Block 2,3,4"
+        },
+        {
+          "min": "210",
+          "max": "229",
+          "name": "Block 1,3,4"
+        },
+        {
+          "min": "230",
+          "max": "255",
+          "name": "Block 1,2,4"
+        }
+      ]
+    },
+    {
+      "name": "ID Addressing",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "All IDs"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "ID 1 - 66"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "STAGE 1",
+      "totalChannels": 10,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macro + White Balance",
+        "Strobe",
+        "Auto + Custom Programs + Fan Control",
+        "Auto Speed",
+        "ID Addressing",
+        "Block"
+      ]
+    },
+    {
+      "name": "ARC 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "ARC 1 + D",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "BLOCK",
+      "totalChannels": 12,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.6",
+      "width": "470",
+      "height": "191",
+      "depth": "84"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "58",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayra",
+  "model": "ERO Micro Beam FX",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "gianni",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red Beam",
+      "type": "Red"
+    },
+    {
+      "name": "Green Beam",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Beam",
+      "type": "Blue"
+    },
+    {
+      "name": "Red Ring",
+      "type": "Red"
+    },
+    {
+      "name": "Green Ring",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Ring",
+      "type": "Blue"
+    },
+    {
+      "name": "DMX Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Normal DMX control"
+        },
+        {
+          "min": "11",
+          "max": "95",
+          "name": "Auto run mode 1 (colour fade mode)"
+        },
+        {
+          "min": "96",
+          "max": "180",
+          "name": "Auto run mode 2 (colour jump mode)"
+        },
+        {
+          "min": "181",
+          "max": "255",
+          "name": "Sound controller mode"
+        }
+      ]
+    },
+    {
+      "name": "Auto Show Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed slow to fast, only when channel 15 is running auto show mode values (095 - 180)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 16,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Red Beam",
+        "Green Beam",
+        "Blue Beam",
+        "White",
+        "Red Ring",
+        "Green Ring",
+        "Blue Ring",
+        "DMX Mode",
+        "Auto Show Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.6",
+      "width": "200",
+      "height": "140",
+      "depth": "240"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "35",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

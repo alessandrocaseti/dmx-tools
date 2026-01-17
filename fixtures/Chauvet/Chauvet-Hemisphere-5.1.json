@@ -1,0 +1,225 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Hemisphere 5.1",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Francois Blanchette",
+  "channels": [
+    {
+      "name": "Auto Programs",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Amber"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Red/Green"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Red/Blue"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Red/White"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Red/Amber"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Green/Blue"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Green/White"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Green/Amber"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Blue/White"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Blue/Amber"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "White/Amber"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Red/Green/Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Red/Green/Blue/White"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Red/Green/Blue/Amber"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Red/Green/Blue/White/Amber"
+        },
+        {
+          "min": "200",
+          "max": "229",
+          "name": "Auto Program"
+        },
+        {
+          "min": "230",
+          "max": "255",
+          "name": "Sound-Active Mode"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe (0-13 Hz)"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0~100% (Ch. 1: 200~229)"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "119",
+          "name": "Rotate left (slow to fast)"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Stop"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Rotate right (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Auto Programs",
+        "Strobe",
+        "Auto Program Speed",
+        "Rotation",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.9",
+      "width": "272",
+      "height": "254",
+      "depth": "272"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "360",
+      "degreesMax": "360"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "38",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

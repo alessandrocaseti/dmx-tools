@@ -1,0 +1,257 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Galaxian 3D",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "eklynx",
+  "channels": [
+    {
+      "name": "Red Laser",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "On"
+        },
+        {
+          "min": "16",
+          "max": "239",
+          "name": "Strobe Slow->Fast"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Sound Active"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green Laser",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "On"
+        },
+        {
+          "min": "16",
+          "max": "239",
+          "name": "Strobe Slow->Fast"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Sound Active"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Laser Rotation 1",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Location"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Counter-Clockwise Fast -> Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Clockiwse Slow-> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Laser Rotation 2",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Location"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Counter-Clockwise Fast -> Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Clockiwse Slow-> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "23",
+          "name": "Macro 1"
+        },
+        {
+          "min": "24",
+          "max": "39",
+          "name": "Macro 2"
+        },
+        {
+          "min": "40",
+          "max": "55",
+          "name": "Macro 3"
+        },
+        {
+          "min": "56",
+          "max": "71",
+          "name": "Macro 4"
+        },
+        {
+          "min": "72",
+          "max": "87",
+          "name": "Macro 5"
+        },
+        {
+          "min": "88",
+          "max": "103",
+          "name": "Macro 6"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "Macro 7"
+        },
+        {
+          "min": "120",
+          "max": "135",
+          "name": "Macro 8"
+        },
+        {
+          "min": "136",
+          "max": "151",
+          "name": "Macro 9"
+        },
+        {
+          "min": "152",
+          "max": "167",
+          "name": "Macro 10"
+        },
+        {
+          "min": "168",
+          "max": "183",
+          "name": "Macro 11"
+        },
+        {
+          "min": "184",
+          "max": "199",
+          "name": "Macro 12"
+        },
+        {
+          "min": "200",
+          "max": "215",
+          "name": "Macro 13"
+        },
+        {
+          "min": "216",
+          "max": "231",
+          "name": "Macro 14"
+        },
+        {
+          "min": "232",
+          "max": "247",
+          "name": "Macro 15"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX Mode",
+      "totalChannels": 5,
+      "channels": [
+        "Red Laser",
+        "Green Laser",
+        "Laser Rotation 1",
+        "Laser Rotation 2",
+        "Macros"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Diode Lasers",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "247",
+      "height": "71",
+      "depth": "242"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "23",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

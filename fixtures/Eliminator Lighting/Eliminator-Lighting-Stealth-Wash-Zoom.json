@@ -1,0 +1,328 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eliminator Lighting",
+  "model": "Stealth Wash Zoom",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Paul Schuh",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Nothing"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Red"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Green"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Blue"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "White"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Red + Green"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Blue + White"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Green + White"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Red + White"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Red + Green + White"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Green + Blue + White"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Red + Green + Blue + White"
+        },
+        {
+          "min": "76",
+          "max": "127",
+          "name": "Color Change - Slow to Fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Nothing"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Color fade - Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Internal Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Nothing"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Program 1"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Program 2"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Program 3"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Program 4"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Program 5"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Program 6"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Program 7"
+        },
+        {
+          "min": "161",
+          "max": "180",
+          "name": "Program 8"
+        },
+        {
+          "min": "181",
+          "max": "200",
+          "name": "Nothing"
+        },
+        {
+          "min": "201",
+          "max": "225",
+          "name": "Motor Reset"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Nothing"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Beam"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter/Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Shutter Closed"
+        },
+        {
+          "min": "10",
+          "max": "245",
+          "name": "Strobing - Slow to Fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Color Temperatures",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color Temperatures"
+        }
+      ]
+    },
+    {
+      "name": "Color Fade",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Nothing"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Color fade - slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colors",
+        "Internal Programs",
+        "Focus"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Master Dimmer",
+        "Shutter/Strobing",
+        "Focus",
+        "Color Temperatures",
+        "Colors",
+        "Color Fade",
+        "Pan/Tilt Speed",
+        "Internal Programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "786",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.6",
+      "width": "239",
+      "height": "321",
+      "depth": "170"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "190"
+    },
+    "technical": {
+      "powerConsumption": "95",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

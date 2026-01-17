@@ -1,0 +1,219 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Par Z4",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Dmitry Kolesnikov",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Shutter/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "LED OFF"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "LED ON"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "STROBING SLOW - FAST"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "LED ON"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "SLOW OPEN - FAST CLOSE"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "LED ON"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "SLOW CLOSE - FAST OPEN"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "LED ON"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "RANDOM STROBE SLOW - FAST"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "LED ON"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "STANDARD"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "STAGE"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "ARCHITECTURAL"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "THEATRE"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "DEFAULT DIMMER SETTING"
+        }
+      ]
+    },
+    {
+      "name": "Color macro",
+      "type": "Color"
+    },
+    {
+      "name": "Color Temp",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "7200K - 3200K"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Shutter/Strobe",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color macro",
+        "Shutter/Strobe",
+        "Master dimmer",
+        "Dimmer Curves"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color macro",
+        "Shutter/Strobe",
+        "Master dimmer",
+        "Dimmer Curves",
+        "Color Temp"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "185",
+      "height": "118",
+      "depth": "263"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "10",
+      "degreesMax": "60"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "52",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

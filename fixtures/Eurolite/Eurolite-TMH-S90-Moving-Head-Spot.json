@@ -1,0 +1,483 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TMH-S90 Moving-Head Spot",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Nils Hitschke",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Open/White"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "White + Red"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Red"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Red + Green"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Green"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Blue"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Blue + Yellow"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Yellow"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Yellow + Orange"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Orange"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Orange + Light Blue"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Light Blue"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Light Blue + Magenta"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Magenta"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Magenta + White"
+        },
+        {
+          "min": "80",
+          "max": "167",
+          "name": "Rainbow Forwards"
+        },
+        {
+          "min": "168",
+          "max": "255",
+          "name": "Rainbow Backwards"
+        }
+      ]
+    },
+    {
+      "name": "Static gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Gobo 1 shake with increasing speed"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Gobo 2 shake with increasing speed"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Gobo 3 shake with increasing speed"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Gobo 4 shake with increasing speed"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Gobo 5 shake with increasing speed"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Gobo 6 shake with increasing speed"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Gobo 7 shake with increasing speed"
+        },
+        {
+          "min": "150",
+          "max": "202",
+          "name": "Cont. gobo-wheel forwards rotation with decreasing speed"
+        },
+        {
+          "min": "203",
+          "max": "255",
+          "name": "Cont. gobo-wheel backwards rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Rotating gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Rotating gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Rotating gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Rotating gobo 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Rotating gobo 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Rotating gobo 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Rotating gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Gobo 1 shake with increasing speed"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Gobo 2 shake with increasing speed"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Gobo 3 shake with increasing speed"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Gobo 4 shake with increasing speed"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Gobo 5 shake with increasing speed"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Gobo 6 shake with increasing speed"
+        },
+        {
+          "min": "130",
+          "max": "192",
+          "name": "Cont. gobo-wheel forwards rotation with decreasing speed"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Cont. gobo-wheel backwards rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No rotation"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Gobo rotation forwards with decreasing speed"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Gobo rotation backwards with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "136",
+          "name": "Prism (no rotation)"
+        },
+        {
+          "min": "137",
+          "max": "255",
+          "name": "Prism rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Internal programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Neutral"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "56",
+          "max": "105",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "106",
+          "max": "155",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "Internal program 4"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "Internal program rando,"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Neutral"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Reset others"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Reset Pan/Tilt"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Reset all"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter, Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Neutral"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe-effect with increasing speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Shutter, Strobe",
+        "Color",
+        "Static gobo",
+        "Rotating gobo",
+        "Gobo rotation",
+        "Focus",
+        "Prism",
+        "Internal programs",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.2",
+      "width": "250",
+      "height": "350",
+      "depth": "205"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "12",
+      "degreesMax": "12"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "200"
+    },
+    "technical": {
+      "powerConsumption": "140",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

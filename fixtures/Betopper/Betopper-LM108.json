@@ -1,0 +1,202 @@
+{
+  "version": "1.2",
+  "manufacturer": "Betopper",
+  "model": "LM108 Wash Moving Head",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Luca Giovannesi",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color presets",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Other channels work"
+        },
+        {
+          "min": "11",
+          "max": "127",
+          "name": "Color combination change"
+        },
+        {
+          "min": "128",
+          "max": "160",
+          "name": "Color indexed step"
+        },
+        {
+          "min": "161",
+          "max": "200",
+          "name": "Color gradual change 1"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Color gradual change 2"
+        }
+      ]
+    },
+    {
+      "name": "Color change speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "From slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Built-in Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Built-in Effect"
+        }
+      ]
+    },
+    {
+      "name": "Built-in effect speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "From slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Reset",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "149",
+          "name": "No action"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Pan/Tilt speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Pan/Tilt speed",
+        "Color presets",
+        "Color change speed",
+        "Built-in Effect",
+        "Built-in effect speed",
+        "Pan fine",
+        "Tilt fine",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.8",
+      "width": "252",
+      "height": "315",
+      "depth": "165"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "150",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

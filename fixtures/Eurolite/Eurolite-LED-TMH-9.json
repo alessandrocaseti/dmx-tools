@@ -1,0 +1,226 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED TMH-9",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "arnardospippoli",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Colour macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "White"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red/Green"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red/Blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red/White"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green/Blue"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green/White"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue/White"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Red/Green/Blue"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Red/Green/White"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Green/Blue/White"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Blue/Red/White"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red/Blue/Green/White"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Neutral"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Reset"
+        },
+        {
+          "min": "31",
+          "max": "200",
+          "name": "Strobe effect with increasing speed"
+        },
+        {
+          "min": "201",
+          "max": "250",
+          "name": "Random strobe effect with increasing speed"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan 16 bit",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt 16 bit",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour macros",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt Speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Colour macros",
+        "Strobe",
+        "Dimmer Intensity",
+        "Pan 16 bit",
+        "Tilt 16 bit"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "175",
+      "height": "245",
+      "depth": "175"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "80",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

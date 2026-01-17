@@ -1,0 +1,184 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Wedge Tri",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "jefm",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color macros"
+        }
+      ]
+    },
+    {
+      "name": "Shutter / Speed",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Strobe (slow -> fast) or Auto programs speed (slow -> fast)"
+        }
+      ]
+    },
+    {
+      "name": "Auto programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "0 - 100%"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "100% - 0"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "100% - 0 - 100%"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Color fade"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "3-color snap"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "7-color snap"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer mode manually set in Menu Options"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer mode 1, (fast speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer mode 2, (medium speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer mode 3, (slow speed)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX 3 Channels",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "DMX 7 Channels",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color",
+        "Shutter / Speed",
+        "Auto programs",
+        "Dimmer",
+        "Dimmer mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "0.6",
+      "width": "108",
+      "height": "108",
+      "depth": "104"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "23",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

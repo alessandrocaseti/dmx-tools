@@ -1,0 +1,426 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Inno Scan LED",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobing Slow to Fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Fast Open - Slow Close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast Close - Slow Open"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "18",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "19",
+          "max": "27",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "28",
+          "max": "36",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "37",
+          "max": "45",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "46",
+          "max": "54",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "55",
+          "max": "63",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "64",
+          "max": "74",
+          "name": "Gobo 1 Shake"
+        },
+        {
+          "min": "75",
+          "max": "85",
+          "name": "Gobo 2 Shake"
+        },
+        {
+          "min": "86",
+          "max": "95",
+          "name": "Gobo 3 Shake"
+        },
+        {
+          "min": "96",
+          "max": "106",
+          "name": "Gobo 4 Shake"
+        },
+        {
+          "min": "107",
+          "max": "116",
+          "name": "Gobo 5 Shake"
+        },
+        {
+          "min": "117",
+          "max": "127",
+          "name": "Gobo 6 Shake"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise rotation Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter - Clockwise rotation Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "White"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "White/Red"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Red"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Red/Orange"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "Orange"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "Orange/Yellow"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "Yellow"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Yellow/Green"
+        },
+        {
+          "min": "64",
+          "max": "70",
+          "name": "Green"
+        },
+        {
+          "min": "71",
+          "max": "77",
+          "name": "Green/Cyan"
+        },
+        {
+          "min": "78",
+          "max": "84",
+          "name": "Cyan"
+        },
+        {
+          "min": "85",
+          "max": "91",
+          "name": "Cyan/Magenta"
+        },
+        {
+          "min": "92",
+          "max": "98",
+          "name": "Magenta"
+        },
+        {
+          "min": "99",
+          "max": "105",
+          "name": "Magenta/Light Blue"
+        },
+        {
+          "min": "106",
+          "max": "112",
+          "name": "Light Blue"
+        },
+        {
+          "min": "113",
+          "max": "119",
+          "name": "Light Blue/Purple"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Purple"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise rotation Fast to Slow"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "CCW rotation Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Reset / Blackout",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Enable blackout while Pan/Tilt move"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Disable blackout while Pan/Tilt move"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Enable blackout while Color Change"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Disable blackout while Color Change"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Enable blackout while Gobo Change"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Disable blackout while Gobo Change"
+        },
+        {
+          "min": "130",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset All"
+        },
+        {
+          "min": "210",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise rotation Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter - Clockwise rotation Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan / Tilt Speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "8 Channel Mode",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Strobe",
+        "Color Wheel",
+        "Gobo Wheel",
+        "Gobo Rotation",
+        "Dimmer",
+        "Reset / Blackout"
+      ]
+    },
+    {
+      "name": "11 Channel Mode",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan / Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Color Wheel",
+        "Gobo Wheel",
+        "Gobo Rotation",
+        "Reset / Blackout"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.3",
+      "width": "208",
+      "height": "555",
+      "depth": "274"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "9",
+      "degreesMax": "9"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "70"
+    },
+    "technical": {
+      "powerConsumption": "103",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

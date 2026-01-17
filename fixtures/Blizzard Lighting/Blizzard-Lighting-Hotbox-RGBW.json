@@ -1,0 +1,241 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "Hotbox RGBW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Doug",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Dimming"
+        },
+        {
+          "min": "15",
+          "max": "255",
+          "name": "Strobe (Slow-Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Build-In Programs Fade, Color Change, Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Fade In (CH 8 Speed)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Fade Out (CH 8 Speed)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Fade In / Fade Out"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Multicolor Fade (CH 8 Speed)"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Fade In / Fade Out, Auto Run"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Color Jump (CH 8 Speed)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound Active, MultiColor (CH 8 Speed)"
+        }
+      ]
+    },
+    {
+      "name": "Program (Fade) Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fade Speed (Slow-Fast)"
+        }
+      ]
+    },
+    {
+      "name": "32-Bit Dimmer",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "As Set in Control Menu"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "Mode 0 = 8 bit, 256 Dimmer Settings"
+        },
+        {
+          "min": "56",
+          "max": "105",
+          "name": "Mode 1 = 32-bit, 0-25% Intensity Range"
+        },
+        {
+          "min": "106",
+          "max": "155",
+          "name": "Mode 2 = 32 bit, 0-50% intensity range"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "Mode 3 = 32 bit, 0-75% intensity range"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "Mode 4 = 32 bit, Full Intensity Dimming"
+        }
+      ]
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Value",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "9 Channel Mode",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Build-In Programs Fade, Color Change, Sound Active",
+        "Program (Fade) Speed",
+        "32-Bit Dimmer"
+      ]
+    },
+    {
+      "name": "8 Channel Mode",
+      "totalChannels": 8,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Build-In Programs Fade, Color Change, Sound Active",
+        "Program (Fade) Speed"
+      ]
+    },
+    {
+      "name": "5 Channel Mode",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "4 Channel Mode",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "HVS 3 Channel Mode",
+      "totalChannels": 3,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Value"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.6",
+      "width": "127",
+      "height": "127",
+      "depth": "102"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "47",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

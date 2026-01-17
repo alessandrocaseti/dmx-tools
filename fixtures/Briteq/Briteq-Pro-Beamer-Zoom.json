@@ -1,0 +1,581 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "Pro Beamer Zoom",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Giacomo",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "no function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "red 100 / green up / blue 0"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "red down / green 100 / blue 0"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "red 0 / green 100 / blue up"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "red 0 / green down / blue 100"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "red up / green 0 / blue 100"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "red 100 / green 0 / blue down"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "red 100 / green up / blue up"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "red down / green down / blue 100"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "red 100 / green 100 / blue 100 / white 100"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "white 1 - 3200 K"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "white 2 - 3400 K"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "white 3 - 4200 K"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "white 4 - 4900 K"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "white 5 - 5600 K"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "white 6 - 5900 K"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "white 7 - 6500 K"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "white 8 - 7200 K"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "white 9 - 8000 K"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "white 10 - 8500 K"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "white 11 - 9000 K"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "1-20 Hz"
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "no function"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "auto 1"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "auto 2"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "auto 3"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "auto 4"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "auto 5"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "auto 6"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "auto 7"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "auto 8"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "auto 9"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "auto 10"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "PR.1"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "PR.2"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "PR.3"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "PR.4"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "PR.5"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "PR.6"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "PR.7"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "PR.8"
+        },
+        {
+          "min": "221",
+          "max": "230",
+          "name": "PR.9"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "PR.10"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed Adjustment",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "speed adjustment"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "preset dimmer speed from display menu"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "linear dimmer"
+        },
+        {
+          "min": "30",
+          "max": "69",
+          "name": "non linear dimmer 1 (fastest)"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "non linear dimmer 2"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "non linear dimmer 3"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "non linear dimmer 4 (slowest)"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Zoom Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "200",
+          "name": "no function"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "zoom reset"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green Fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White Fine",
+      "type": "White"
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Value",
+      "type": "Unknown"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red Fine 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green Fine 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue Fine 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "White Fine 2",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Tour",
+      "totalChannels": 12,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro",
+        "Strobe",
+        "Auto",
+        "Auto Speed Adjustment",
+        "Dimmer Speed",
+        "Zoom",
+        "Zoom Reset"
+      ]
+    },
+    {
+      "name": "AR2.Z",
+      "totalChannels": 7,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom",
+        "Zoom Reset"
+      ]
+    },
+    {
+      "name": "AR2.S",
+      "totalChannels": 6,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "TR16",
+      "totalChannels": 17,
+      "channels": [
+        "Master Dimmer",
+        "Master Dimmer Fine",
+        "Red",
+        "Red Fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "White",
+        "White Fine",
+        "Color Macro",
+        "Strobe",
+        "Auto",
+        "Auto Speed Adjustment",
+        "Dimmer Speed",
+        "Zoom",
+        "Zoom Reset"
+      ]
+    },
+    {
+      "name": "ARC.1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "AR1.D",
+      "totalChannels": 4,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "ARC.2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "AR2.D",
+      "totalChannels": 5,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "HSV",
+      "totalChannels": 3,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Value"
+      ]
+    },
+    {
+      "name": "Full",
+      "totalChannels": 25,
+      "channels": [
+        "Master Dimmer",
+        "Master Dimmer Fine",
+        "Red",
+        "Red Fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "White",
+        "White Fine",
+        "Red 2",
+        "Red Fine 2",
+        "Green 2",
+        "Green Fine 2",
+        "Blue 2",
+        "Blue Fine 2",
+        "White 2",
+        "White Fine 2",
+        "Color Macro",
+        "Strobe",
+        "Auto",
+        "Auto Speed Adjustment",
+        "Dimmer Speed",
+        "Zoom",
+        "Zoom Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.8",
+      "width": "290",
+      "height": "190",
+      "depth": "240"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "85",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Gobo Zoom LED 2.0",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "jefm",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo Rotation (clockwise only)",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Gobo Rotation"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX 2-Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Gobo Rotation (clockwise only)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "229",
+      "height": "185",
+      "depth": "183"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "34",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

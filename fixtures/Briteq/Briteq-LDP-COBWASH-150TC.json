@@ -1,0 +1,151 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "LDP-COBWASH 150TC",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fredje Gallon",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Master dimmer/Strobe",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "200",
+          "name": "Master dimmer"
+        },
+        {
+          "min": "201",
+          "max": "247",
+          "name": "Strobe (Slow to fast)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Master dimmer 100%"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Strobe (Slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Color changer",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Color fade effect (Slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "RGB",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "RGB + Dim/Strobe",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master dimmer/Strobe"
+      ]
+    },
+    {
+      "name": "RGB + Dim",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "RGB + Dim + Strobe",
+      "totalChannels": 6,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Color changer",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.5",
+      "width": "344",
+      "height": "326",
+      "depth": "220"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "60",
+      "degreesMax": "60"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "170",
+      "dmxConnector": "3-pin IP65"
+    }
+  }
+}

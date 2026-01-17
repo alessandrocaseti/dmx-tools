@@ -1,0 +1,64 @@
+{
+  "version": "1.2",
+  "manufacturer": "Antari",
+  "model": "Z-1000 MKII",
+  "type": "FX Fog",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jérôme",
+  "channels": [
+    {
+      "name": "Fog",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "128",
+          "name": "Off"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Volume output"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Fog"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.6",
+      "width": "198",
+      "height": "214",
+      "depth": "433"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1000",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

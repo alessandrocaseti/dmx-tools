@@ -1,0 +1,463 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED TMH-X10",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michał Kluska",
+  "channels": [
+    {
+      "name": "Horizontal Movement (Pan)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan-Movement with 16-bit resolution",
+      "type": "Pan"
+    },
+    {
+      "name": "Vertical Movement (Tilt)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt-Movement with 16-bit resolution",
+      "type": "Tilt"
+    },
+    {
+      "name": "PAN/TILT Movement",
+      "type": "Tilt"
+    },
+    {
+      "name": "Shutter, Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "4",
+          "max": "251",
+          "name": "Strobe effect with increasing spreed"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "white"
+        },
+        {
+          "min": "1",
+          "max": "9",
+          "name": "white and red"
+        },
+        {
+          "min": "10",
+          "max": "11",
+          "name": "red"
+        },
+        {
+          "min": "12",
+          "max": "19",
+          "name": "red and orange"
+        },
+        {
+          "min": "20",
+          "max": "21",
+          "name": "Orange"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Orange and green"
+        },
+        {
+          "min": "30",
+          "max": "31",
+          "name": "Green"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Green and light blue"
+        },
+        {
+          "min": "40",
+          "max": "41",
+          "name": "Light blue"
+        },
+        {
+          "min": "42",
+          "max": "49",
+          "name": "Light blue and purple"
+        },
+        {
+          "min": "50",
+          "max": "51",
+          "name": "Purple"
+        },
+        {
+          "min": "52",
+          "max": "59",
+          "name": "Purple and yellow"
+        },
+        {
+          "min": "60",
+          "max": "61",
+          "name": "Yellow"
+        },
+        {
+          "min": "62",
+          "max": "69",
+          "name": "Yellow and blue"
+        },
+        {
+          "min": "70",
+          "max": "71",
+          "name": "Blue"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Blue and pink"
+        },
+        {
+          "min": "80",
+          "max": "81",
+          "name": "Pink"
+        },
+        {
+          "min": "82",
+          "max": "89",
+          "name": "Pink and white"
+        },
+        {
+          "min": "90",
+          "max": "90",
+          "name": "Stop"
+        },
+        {
+          "min": "91",
+          "max": "255",
+          "name": "Rainbow effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Gobo-wheel, Gobo-Shake",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Open"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "45",
+          "max": "129",
+          "name": "Gobo-wheel rotation backwards with decreasing speed"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Open"
+        },
+        {
+          "min": "135",
+          "max": "215",
+          "name": "Gobo-wheel rotation forwards with increasing speed"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "Gobo 1 shake with increasing speed"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Gobo 2 shake with increasing speed"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Gobo 3 shake with increasing speed"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Gobo 4 shake with increasing speed"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Gobo 5 shake with increasing speed"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Gobo 6 shake with increasing speed"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Gobo 7 shake with increasing speed"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Gobo 8 shake with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "open"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "8-facet-Prism"
+        }
+      ]
+    },
+    {
+      "name": "Rotating prism index, prism rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Prism positioning"
+        },
+        {
+          "min": "64",
+          "max": "126",
+          "name": "rotating prism shake in both directions with decreasing speed"
+        },
+        {
+          "min": "127",
+          "max": "191",
+          "name": "backwards prism rotation with decreasing speed"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "forwards prism rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No function"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Frost Effect"
+        }
+      ]
+    },
+    {
+      "name": "Macros / step response",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Fade delay On"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Fade delay Off"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Macro 1"
+        },
+        {
+          "min": "16",
+          "max": "75",
+          "name": "Macro 2"
+        },
+        {
+          "min": "76",
+          "max": "135",
+          "name": "Macro 3"
+        },
+        {
+          "min": "136",
+          "max": "195",
+          "name": "Macro 4"
+        },
+        {
+          "min": "196",
+          "max": "255",
+          "name": "Macro 5"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "No function"
+        },
+        {
+          "min": "26",
+          "max": "45",
+          "name": "Reset others"
+        },
+        {
+          "min": "46",
+          "max": "103",
+          "name": "No function"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "Reset Pan/Tilt"
+        },
+        {
+          "min": "120",
+          "max": "190",
+          "name": "No function"
+        },
+        {
+          "min": "191",
+          "max": "205",
+          "name": "Reset all"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 15,
+      "channels": [
+        "Horizontal Movement (Pan)",
+        "Pan-Movement with 16-bit resolution",
+        "Vertical Movement (Tilt)",
+        "Tilt-Movement with 16-bit resolution",
+        "PAN/TILT Movement",
+        "Shutter, Strobe",
+        "Dimmer intensity",
+        "Colour Wheel",
+        "Gobo-wheel, Gobo-Shake",
+        "Focus",
+        "Prism",
+        "Rotating prism index, prism rotation",
+        "Frost",
+        "Macros / step response",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "10.4",
+      "width": "235",
+      "height": "400",
+      "depth": "325"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "45",
+      "degreesMax": "55"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "280"
+    },
+    "technical": {
+      "powerConsumption": "175",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

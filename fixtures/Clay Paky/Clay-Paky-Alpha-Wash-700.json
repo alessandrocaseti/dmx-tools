@@ -1,0 +1,549 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Alpha Wash 700",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "boxr",
+  "channels": [
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "CTO",
+      "type": "Color"
+    },
+    {
+      "name": "Colour wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "White + red"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Red"
+        },
+        {
+          "min": "22",
+          "max": "29",
+          "name": "Red + CTB"
+        },
+        {
+          "min": "30",
+          "max": "36",
+          "name": "CTB"
+        },
+        {
+          "min": "37",
+          "max": "44",
+          "name": "CTB + green"
+        },
+        {
+          "min": "45",
+          "max": "51",
+          "name": "Green"
+        },
+        {
+          "min": "52",
+          "max": "59",
+          "name": "Green + light green"
+        },
+        {
+          "min": "60",
+          "max": "66",
+          "name": "Light green"
+        },
+        {
+          "min": "67",
+          "max": "74",
+          "name": "Light green + lavender"
+        },
+        {
+          "min": "75",
+          "max": "81",
+          "name": "Lavender"
+        },
+        {
+          "min": "82",
+          "max": "89",
+          "name": "Lavender + aquamarine"
+        },
+        {
+          "min": "90",
+          "max": "96",
+          "name": "Aquamarine"
+        },
+        {
+          "min": "97",
+          "max": "104",
+          "name": "Aquamarine + orange"
+        },
+        {
+          "min": "105",
+          "max": "111",
+          "name": "Orange"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Orange + blue"
+        },
+        {
+          "min": "120",
+          "max": "126",
+          "name": "Blue"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Blue + white"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Slow rotation (0.2 rpm) - Fast rotation (160 rpm)"
+        }
+      ]
+    },
+    {
+      "name": "Stop/strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Closed"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Slow strobe (1 flash/s) - fast strobe (12 flash/s)"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Open"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Slow pulsation - fast pulsation"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Open"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random slow strobe"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random medium strobe"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random fast strobe"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Beam shaper insertion",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "84",
+          "name": "White"
+        },
+        {
+          "min": "85",
+          "max": "169",
+          "name": "Shaper 1"
+        },
+        {
+          "min": "170",
+          "max": "255",
+          "name": "Shaper 2"
+        }
+      ]
+    },
+    {
+      "name": "Beam shaper rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Position (0 - 540°)"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Fast rotation (120 rpm) - slow rotation (3 rph)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Slow rotation (3 rph) - fast rotation (120 rpm)"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "12",
+          "name": "Unused range"
+        },
+        {
+          "min": "13",
+          "max": "25",
+          "name": "Fast speed (default) pan-tilt function"
+        },
+        {
+          "min": "26",
+          "max": "38",
+          "name": "Normal speed pan-tilt function"
+        },
+        {
+          "min": "39",
+          "max": "50",
+          "name": "Conventional dimmer curve function"
+        },
+        {
+          "min": "51",
+          "max": "51",
+          "name": "Linear (default) dimmer curve function"
+        },
+        {
+          "min": "52",
+          "max": "255",
+          "name": "Unused range"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused range"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Effects reset"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Pan/tilt reset"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Complete reset"
+        }
+      ]
+    },
+    {
+      "name": "Lamp control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused range"
+        },
+        {
+          "min": "26",
+          "max": "100",
+          "name": "Lamp off"
+        },
+        {
+          "min": "101",
+          "max": "179",
+          "name": "Lamp on (half power)"
+        },
+        {
+          "min": "180",
+          "max": "255",
+          "name": "Lamp on (full power)"
+        }
+      ]
+    },
+    {
+      "name": "Pan - tilt time",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Full"
+        },
+        {
+          "min": "1",
+          "max": "254",
+          "name": "0.2s - 310s"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Follow data cue"
+        }
+      ]
+    },
+    {
+      "name": "Colour time",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Full"
+        },
+        {
+          "min": "1",
+          "max": "254",
+          "name": "0.2s - 310s"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Follow cue data"
+        }
+      ]
+    },
+    {
+      "name": "Beam time",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Full"
+        },
+        {
+          "min": "1",
+          "max": "254",
+          "name": "0.2s - 310s"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Follow cue data"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard - CMY",
+      "totalChannels": 18,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CTO",
+        "Colour wheel",
+        "Stop/strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Beam shaper insertion",
+        "Beam shaper rotation",
+        "Zoom",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Function",
+        "Reset",
+        "Lamp control"
+      ]
+    },
+    {
+      "name": "Vector - CMY",
+      "totalChannels": 21,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CTO",
+        "Colour wheel",
+        "Stop/strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Beam shaper insertion",
+        "Beam shaper rotation",
+        "Zoom",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Function",
+        "Reset",
+        "Lamp control",
+        "Pan - tilt time",
+        "Colour time",
+        "Beam time"
+      ]
+    },
+    {
+      "name": "Standard - RGB",
+      "totalChannels": 18,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "CTO",
+        "Colour wheel",
+        "Stop/strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Beam shaper insertion",
+        "Beam shaper rotation",
+        "Zoom",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Function",
+        "Reset",
+        "Lamp control"
+      ]
+    },
+    {
+      "name": "Vector - RGB",
+      "totalChannels": 21,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "CTO",
+        "Colour wheel",
+        "Stop/strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Beam shaper insertion",
+        "Beam shaper rotation",
+        "Zoom",
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Function",
+        "Reset",
+        "Lamp control",
+        "Pan - tilt time",
+        "Colour time",
+        "Beam time"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSR 700W",
+      "lumens": "50000",
+      "colourTemperature": "7200"
+    },
+    "dimensions": {
+      "weight": "20.6",
+      "width": "385",
+      "height": "575",
+      "depth": "405"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "250"
+    },
+    "technical": {
+      "powerConsumption": "800",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

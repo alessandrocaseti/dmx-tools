@@ -1,0 +1,147 @@
+{
+  "version": "1.2",
+  "manufacturer": "Altman",
+  "model": "Spectra CYC 100",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ray Console - cd",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "White fine",
+      "type": "White"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Master dimmer fine",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "4 Channels (601, 602)",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "5 Channels (603, 604)",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "8 Channels (605, 606)",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine"
+      ]
+    },
+    {
+      "name": "10 Channel (607, 608)",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "White",
+        "White fine",
+        "Master dimmer",
+        "Master dimmer fine"
+      ]
+    },
+    {
+      "name": "1 Channel (601, 602)",
+      "totalChannels": 1,
+      "channels": [
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "2 Channel (603, 604)",
+      "totalChannels": 2,
+      "channels": [
+        "Master dimmer",
+        "Master dimmer fine"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "4856",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "365",
+      "height": "295",
+      "depth": "190"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "100",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

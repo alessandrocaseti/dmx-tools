@@ -1,0 +1,297 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED TMH-X4",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Tolmino Muccitelli",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan-Movement with 16-bit resolution",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt-Movement with 16-bit resolution",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "no function"
+        },
+        {
+          "min": "1",
+          "max": "212",
+          "name": "decreasing speed"
+        },
+        {
+          "min": "213",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "no function"
+        },
+        {
+          "min": "4",
+          "max": "95",
+          "name": "strobe with increasing speed"
+        },
+        {
+          "min": "96",
+          "max": "176",
+          "name": "random strobe effect"
+        },
+        {
+          "min": "177",
+          "max": "255",
+          "name": "pulse effect in sequence (Thunder strobe)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Preset colors and macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Preset colors and color macros"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Decreasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Function Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "49",
+          "name": "channel 1 to 12"
+        },
+        {
+          "min": "50",
+          "max": "99",
+          "name": "preset colors and colors macros"
+        },
+        {
+          "min": "100",
+          "max": "149",
+          "name": "internal program 1"
+        },
+        {
+          "min": "150",
+          "max": "199",
+          "name": "internal program 2"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "music control"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "no function"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "reset"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan-Movement with 16-bit resolution",
+        "Tilt",
+        "Tilt-Movement with 16-bit resolution",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom",
+        "Preset colors and macros",
+        "Color Macros Speed",
+        "Function Control",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 24,
+      "channels": [
+        "Pan",
+        "Pan-Movement with 16-bit resolution",
+        "Tilt",
+        "Tilt-Movement with 16-bit resolution",
+        "Pan/Tilt Speed",
+        "Zoom",
+        "Dimmer",
+        "Strobe",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Preset colors and macros",
+        "Color Macros Speed",
+        "Function Control",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.8",
+      "width": "305",
+      "height": "400",
+      "depth": "200"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "1",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "630",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "225",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

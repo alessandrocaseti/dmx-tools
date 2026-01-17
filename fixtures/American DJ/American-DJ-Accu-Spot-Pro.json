@@ -1,0 +1,608 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "ACCU Spot Pro",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "laserandi",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "Open / White"
+        },
+        {
+          "min": "14",
+          "max": "27",
+          "name": "Red"
+        },
+        {
+          "min": "28",
+          "max": "41",
+          "name": "Blue"
+        },
+        {
+          "min": "42",
+          "max": "55",
+          "name": "Green"
+        },
+        {
+          "min": "56",
+          "max": "69",
+          "name": "Yellow"
+        },
+        {
+          "min": "70",
+          "max": "83",
+          "name": "Magenta"
+        },
+        {
+          "min": "84",
+          "max": "97",
+          "name": "Orange"
+        },
+        {
+          "min": "98",
+          "max": "111",
+          "name": "Purple"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Pink"
+        },
+        {
+          "min": "128",
+          "max": "187",
+          "name": "Clockwise rainbow Fast to Slow"
+        },
+        {
+          "min": "188",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counterclockwise Rainbow Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Rotating Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Rotating Gobo 2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Rotating Gobo 3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Rotating Gobo 4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Rotating Gobo 5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Rotating Gobo 6"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Gobo 1 Shake Slow - Fast"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Gobo 2 Shake Slow - Fast"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Gobo 3 Shake Slow - Fast"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Gobo 4 Shake Slow - Fast"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Gobo 5 Shake Slow - Fast"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Gobo 6 Shake Slow - Fast"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Rot. Gobo Scroll Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Gobo Index",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo Indexing"
+        },
+        {
+          "min": "128",
+          "max": "187",
+          "name": "Forward Gobo Rot. Fast - Slow"
+        },
+        {
+          "min": "188",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backward Gobo Rot. Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "Fixed Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "Open"
+        },
+        {
+          "min": "14",
+          "max": "27",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "28",
+          "max": "41",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "42",
+          "max": "55",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "56",
+          "max": "69",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "70",
+          "max": "83",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "84",
+          "max": "97",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "98",
+          "max": "111",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Gobo 1 Shake Slow - Fast"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Gobo 2 Shake Slow - Fast"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Gobo 3 Shake Slow - Fast"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Gobo 4 Shake Slow - Fast"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Gobo 5 Shake Slow - Fast"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Gobo 6 Shake Slow - Fast"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Gobo 7 Shake Slow - Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo Wheel Rot. Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Open"
+        },
+        {
+          "min": "4",
+          "max": "63",
+          "name": "Forward Prism Rot. Fast - Slow"
+        },
+        {
+          "min": "64",
+          "max": "67",
+          "name": "No Rotation"
+        },
+        {
+          "min": "68",
+          "max": "127",
+          "name": "Backward Prism Rot. Slow - Fast"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Macro 1"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Macro 2"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Macro 3"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Macro 4"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Macro 5"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Macro 6"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Macro 7"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Macro 8"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Macro 9"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Macro 10"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Macro 11"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Macro 12"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Macro 13"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Macro 14"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Macro 15"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 16"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Shutter & Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe Effect Slow - Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Effect"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe Effect Slow - Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Speed Pan Tilt",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Speed Max - Min"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Blackout by Movement"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Blackout by all Wheel Change"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Lamp on/off, Reset, internal Programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Color Change Normal"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Color Change to Position"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Lamp on"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Lamp off"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "All Motor Reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal Program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal Program 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal Program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal Program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal Program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal Program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal Program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Colour",
+        "Rotating Gobos",
+        "Rotating Gobo Index",
+        "Fixed Gobos",
+        "Rotating Prism",
+        "Focus",
+        "Shutter & Strobe",
+        "Dimmer",
+        "Speed Pan Tilt",
+        "Lamp on/off, Reset, internal Programs"
+      ]
+    },
+    {
+      "name": "14 Channel 540 deg",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Colour",
+        "Rotating Gobos",
+        "Rotating Gobo Index",
+        "Fixed Gobos",
+        "Rotating Prism",
+        "Focus",
+        "Shutter & Strobe",
+        "Dimmer",
+        "Speed Pan Tilt",
+        "Lamp on/off, Reset, internal Programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "23",
+      "width": "450",
+      "height": "560",
+      "depth": "380"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "265"
+    },
+    "technical": {
+      "powerConsumption": "350",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

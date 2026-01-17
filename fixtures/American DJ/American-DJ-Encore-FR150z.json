@@ -1,0 +1,182 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Encore FR150z",
+  "type": "Dimmer",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Bram Janssen",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "OFF"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "ON"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Variable Strobe slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "ON"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Effect slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "ON"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "ON"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dim Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to Unit Setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "1-Channel",
+      "totalChannels": 1,
+      "channels": [
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "2-Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Master Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Dim Mode"
+      ]
+    },
+    {
+      "name": "4-Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Master Dimmer",
+        "Dimmer Fine",
+        "Strobe",
+        "Dim Mode"
+      ]
+    },
+    {
+      "name": "2-2-Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Master Dimmer",
+        "Dimmer Fine"
+      ]
+    },
+    {
+      "name": "3-2-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Dimmer Fine",
+        "Dim Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "15000",
+      "colourTemperature": "3000"
+    },
+    "dimensions": {
+      "weight": "6.8",
+      "width": "276",
+      "height": "298",
+      "depth": "416"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "15",
+      "degreesMax": "38"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "130",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

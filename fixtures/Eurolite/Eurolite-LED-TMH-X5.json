@@ -1,0 +1,709 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED TMH-X5",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Sebastian Moeckel",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer speed (step response)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "49",
+          "name": "Dimmer speed 1"
+        },
+        {
+          "min": "50",
+          "max": "99",
+          "name": "Dimmer speed 2"
+        },
+        {
+          "min": "100",
+          "max": "149",
+          "name": "Dimmer speed 3"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "Dimmer speed 4"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Red segment A",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Red 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "Green segment A",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Green 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "Blue segment A",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blue 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "White segment A",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "White 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "Red segment B",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Red 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "Green segment B",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Green 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "Blue segment B",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blue 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "White segment B",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "White 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "Red segment C",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Red 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "Green segment C",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Green 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "Blue segment C",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Blue 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "White segment C",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "White 0-100% increasing"
+        }
+      ]
+    },
+    {
+      "name": "Color presets 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "29",
+          "name": "Red"
+        },
+        {
+          "min": "30",
+          "max": "54",
+          "name": "Green"
+        },
+        {
+          "min": "55",
+          "max": "79",
+          "name": "Blue"
+        },
+        {
+          "min": "80",
+          "max": "104",
+          "name": "White"
+        },
+        {
+          "min": "105",
+          "max": "129",
+          "name": "Color preset 1"
+        },
+        {
+          "min": "130",
+          "max": "154",
+          "name": "Color preset 2"
+        },
+        {
+          "min": "155",
+          "max": "174",
+          "name": "Color preset 3"
+        },
+        {
+          "min": "175",
+          "max": "179",
+          "name": "Color preset 4"
+        },
+        {
+          "min": "180",
+          "max": "184",
+          "name": "Color preset 5"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Color preset 6"
+        },
+        {
+          "min": "190",
+          "max": "194",
+          "name": "Color preset 7"
+        },
+        {
+          "min": "195",
+          "max": "199",
+          "name": "Color preset 8"
+        },
+        {
+          "min": "200",
+          "max": "204",
+          "name": "Color preset 9"
+        },
+        {
+          "min": "205",
+          "max": "209",
+          "name": "Color preset 10"
+        },
+        {
+          "min": "210",
+          "max": "210",
+          "name": "No function"
+        },
+        {
+          "min": "211",
+          "max": "255",
+          "name": "Color fade"
+        }
+      ]
+    },
+    {
+      "name": "Color presets 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No function"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "White 1"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "White 2"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "White 3"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "White 4"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "White 5"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "White 6"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Red"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Green"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Blue"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Natural white"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Full white"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Yellow"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Cyan"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Salmon"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Turquoise"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Light green"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Steel blue"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Orange"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Straw"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Pale lavander"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Pink"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "Red/white"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "Green/red"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Blue/green"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "White/red"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "Green/pink"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "Red/turquoise"
+        },
+        {
+          "min": "145",
+          "max": "255",
+          "name": "Red/white/blue"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer intensity color presets",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Gradual adjustment of th dimmer intensity from 100 to 0%"
+        }
+      ]
+    },
+    {
+      "name": "Chaser, LED patterns",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "14",
+          "name": "LEDs off"
+        },
+        {
+          "min": "15",
+          "max": "30",
+          "name": "Pattern 1"
+        },
+        {
+          "min": "31",
+          "max": "46",
+          "name": "Pattern 2"
+        },
+        {
+          "min": "47",
+          "max": "62",
+          "name": "Pattern 3"
+        },
+        {
+          "min": "63",
+          "max": "78",
+          "name": "Pattern 4"
+        },
+        {
+          "min": "79",
+          "max": "94",
+          "name": "Pattern 5"
+        },
+        {
+          "min": "95",
+          "max": "110",
+          "name": "Pattern 6"
+        },
+        {
+          "min": "111",
+          "max": "126",
+          "name": "Chaser 1"
+        },
+        {
+          "min": "127",
+          "max": "142",
+          "name": "Chaser 2"
+        },
+        {
+          "min": "143",
+          "max": "158",
+          "name": "Chaser 3"
+        },
+        {
+          "min": "159",
+          "max": "174",
+          "name": "Chaser 4"
+        },
+        {
+          "min": "175",
+          "max": "190",
+          "name": "Chaser 5"
+        },
+        {
+          "min": "191",
+          "max": "206",
+          "name": "Chaser 6"
+        },
+        {
+          "min": "207",
+          "max": "222",
+          "name": "Chaser 7"
+        },
+        {
+          "min": "223",
+          "max": "238",
+          "name": "Chaser 8"
+        },
+        {
+          "min": "239",
+          "max": "255",
+          "name": "Chaser 9"
+        }
+      ]
+    },
+    {
+      "name": "Chaser speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "125",
+          "name": "With decreasing speed backwards"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "No function"
+        },
+        {
+          "min": "131",
+          "max": "255",
+          "name": "With increasing speed forwards"
+        }
+      ]
+    },
+    {
+      "name": "Chaser fade",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fading"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "79",
+          "name": "No function"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Reset all motors"
+        },
+        {
+          "min": "100",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 20,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Strobe",
+        "Dimmer",
+        "Dimmer speed (step response)",
+        "Zoom",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color presets 1",
+        "Color presets 2",
+        "Dimmer intensity color presets",
+        "Chaser, LED patterns",
+        "Chaser speed",
+        "Chaser fade",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 28,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Strobe",
+        "Dimmer",
+        "Dimmer speed (step response)",
+        "Zoom",
+        "Red segment A",
+        "Green segment A",
+        "Blue segment A",
+        "White segment A",
+        "Red segment B",
+        "Green segment B",
+        "Blue segment B",
+        "White segment B",
+        "Red segment C",
+        "Green segment C",
+        "Blue segment C",
+        "White segment C",
+        "Color presets 1",
+        "Color presets 2",
+        "Dimmer intensity color presets",
+        "Chaser, LED patterns",
+        "Chaser speed",
+        "Chaser fade",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "11.1",
+      "width": "320",
+      "height": "440",
+      "depth": "220"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "1",
+      "degreesMax": "55"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "220",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Followspot 120ST",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Scott Yarbrough",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Cool White"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Warm White"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Yellow"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Purple"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Green"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Red"
+        },
+        {
+          "min": "192",
+          "max": "233",
+          "name": "Light Blue"
+        },
+        {
+          "min": "234",
+          "max": "255",
+          "name": "Orange"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "No Function"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "215",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Color",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "279",
+      "height": "341",
+      "depth": "582"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "14",
+      "degreesMax": "20"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "185",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,693 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Mega Tri Bar",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Nathanael",
+  "channels": [
+    {
+      "name": "Macros/Programs",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Off"
+        },
+        {
+          "min": "11",
+          "max": "21",
+          "name": "Red"
+        },
+        {
+          "min": "22",
+          "max": "32",
+          "name": "Yellow"
+        },
+        {
+          "min": "33",
+          "max": "43",
+          "name": "Green"
+        },
+        {
+          "min": "44",
+          "max": "54",
+          "name": "Cyan"
+        },
+        {
+          "min": "55",
+          "max": "65",
+          "name": "Blue"
+        },
+        {
+          "min": "66",
+          "max": "76",
+          "name": "Purple"
+        },
+        {
+          "min": "77",
+          "max": "87",
+          "name": "White"
+        },
+        {
+          "min": "88",
+          "max": "98",
+          "name": "Slow Dream"
+        },
+        {
+          "min": "99",
+          "max": "109",
+          "name": "Fast Dream"
+        },
+        {
+          "min": "110",
+          "max": "120",
+          "name": "Color Fade"
+        },
+        {
+          "min": "121",
+          "max": "131",
+          "name": "Color Change"
+        },
+        {
+          "min": "132",
+          "max": "142",
+          "name": "Flow 1"
+        },
+        {
+          "min": "143",
+          "max": "153",
+          "name": "Flow 2"
+        },
+        {
+          "min": "154",
+          "max": "164",
+          "name": "Flow 3"
+        },
+        {
+          "min": "165",
+          "max": "175",
+          "name": "Flow 4"
+        },
+        {
+          "min": "176",
+          "max": "186",
+          "name": "Double Flow 1"
+        },
+        {
+          "min": "187",
+          "max": "197",
+          "name": "Double Flow 2"
+        },
+        {
+          "min": "198",
+          "max": "208",
+          "name": "Multi Color"
+        },
+        {
+          "min": "209",
+          "max": "219",
+          "name": "2 Color Flow 1"
+        },
+        {
+          "min": "220",
+          "max": "230",
+          "name": "2 Color Flow 2"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Sensitivity Control",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "7",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Light Red"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Medium Red"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Lavender"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Indigo"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Light Green Blue"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Moss Green"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Primary Green"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Double CTB"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Strobing",
+      "type": "Unknown"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "Red 9",
+      "type": "Red"
+    },
+    {
+      "name": "Red 10",
+      "type": "Red"
+    },
+    {
+      "name": "Red 11",
+      "type": "Red"
+    },
+    {
+      "name": "Red 12",
+      "type": "Red"
+    },
+    {
+      "name": "Red 13",
+      "type": "Red"
+    },
+    {
+      "name": "Red 14",
+      "type": "Red"
+    },
+    {
+      "name": "Red 15",
+      "type": "Red"
+    },
+    {
+      "name": "Red 16",
+      "type": "Red"
+    },
+    {
+      "name": "Red 17",
+      "type": "Red"
+    },
+    {
+      "name": "Red 18",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "Green 9",
+      "type": "Green"
+    },
+    {
+      "name": "Green 10",
+      "type": "Green"
+    },
+    {
+      "name": "Green 11",
+      "type": "Green"
+    },
+    {
+      "name": "Green 12",
+      "type": "Green"
+    },
+    {
+      "name": "Green 13",
+      "type": "Green"
+    },
+    {
+      "name": "Green 14",
+      "type": "Green"
+    },
+    {
+      "name": "Green 15",
+      "type": "Green"
+    },
+    {
+      "name": "Green 16",
+      "type": "Green"
+    },
+    {
+      "name": "Green 17",
+      "type": "Green"
+    },
+    {
+      "name": "Green 18",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 8",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 9",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 10",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 11",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 12",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 13",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 14",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 15",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 16",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 17",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 18",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "2 Channel Mode",
+      "totalChannels": 2,
+      "channels": [
+        "Macros/Programs",
+        "Sensitivity Control"
+      ]
+    },
+    {
+      "name": "6 Channel Mode",
+      "totalChannels": 6,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Color Macros",
+        "Strobing",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "3 Channel Mode",
+      "totalChannels": 3,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1"
+      ]
+    },
+    {
+      "name": "4 Channel Mode",
+      "totalChannels": 4,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "7 Channel Mode",
+      "totalChannels": 7,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Macros/Programs",
+        "Sensitivity Control",
+        "Strobing",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "12 Channel Mode",
+      "totalChannels": 12,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Macros/Programs",
+        "Sensitivity Control",
+        "Master Dimmer"
+      ]
+    },
+    {
+      "name": "54 Channel Mode",
+      "totalChannels": 54,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "Red 9",
+        "Green 9",
+        "Blue 9",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "Red 11",
+        "Green 11",
+        "Blue 11",
+        "Red 12",
+        "Green 12",
+        "Blue 12",
+        "Red 13",
+        "Green 13",
+        "Blue 13",
+        "Red 14",
+        "Green 14",
+        "Blue 14",
+        "Red 15",
+        "Green 15",
+        "Blue 15",
+        "Red 16",
+        "Green 16",
+        "Blue 16",
+        "Red 17",
+        "Green 17",
+        "Blue 17",
+        "Red 18",
+        "Green 18",
+        "Blue 18"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "1100",
+      "height": "116",
+      "depth": "80"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "80",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

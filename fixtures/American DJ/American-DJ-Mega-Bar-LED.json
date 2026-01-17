@@ -1,0 +1,351 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Mega Bar LED",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "eklynx",
+  "channels": [
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer Control",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe Speed",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Macros / Progams",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Off"
+        },
+        {
+          "min": "15",
+          "max": "28",
+          "name": "Red"
+        },
+        {
+          "min": "29",
+          "max": "42",
+          "name": "Yellow"
+        },
+        {
+          "min": "43",
+          "max": "56",
+          "name": "Green"
+        },
+        {
+          "min": "57",
+          "max": "70",
+          "name": "Cyan"
+        },
+        {
+          "min": "71",
+          "max": "84",
+          "name": "Blue"
+        },
+        {
+          "min": "85",
+          "max": "98",
+          "name": "Purple"
+        },
+        {
+          "min": "99",
+          "max": "112",
+          "name": "White"
+        },
+        {
+          "min": "113",
+          "max": "126",
+          "name": "Color Change"
+        },
+        {
+          "min": "127",
+          "max": "140",
+          "name": "Color Flow"
+        },
+        {
+          "min": "141",
+          "max": "154",
+          "name": "Color Dream"
+        },
+        {
+          "min": "155",
+          "max": "168",
+          "name": "Multi Color"
+        },
+        {
+          "min": "169",
+          "max": "182",
+          "name": "Dream Flow"
+        },
+        {
+          "min": "183",
+          "max": "196",
+          "name": "2 Color Flow"
+        },
+        {
+          "min": "197",
+          "max": "210",
+          "name": "Color Change Fade"
+        },
+        {
+          "min": "211",
+          "max": "224",
+          "name": "Color Flow Fade"
+        },
+        {
+          "min": "225",
+          "max": "238",
+          "name": "2 Color Flow Fade"
+        },
+        {
+          "min": "239",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Speed/Sound Sensitivity Control",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe (6Ch)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Off"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow -> Fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer (6Ch)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Dim -> Bright"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Bright -> Dim"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Dim -> Bright -> Dim"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Color Mixing"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "3 Color Changing"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "7 Color Changing"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "0% -> 100%"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Dimmer Control"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 11,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Strobe Speed",
+        "Dimmer Control"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 2,
+      "channels": [
+        "Macros / Progams",
+        "Speed/Sound Sensitivity Control"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 6,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Macros / Progams",
+        "Strobe (6Ch)",
+        "Dimmer (6Ch)"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 7,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Macros / Progams",
+        "Speed/Sound Sensitivity Control",
+        "Strobe Speed",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "1025",
+      "height": "65",
+      "depth": "88"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

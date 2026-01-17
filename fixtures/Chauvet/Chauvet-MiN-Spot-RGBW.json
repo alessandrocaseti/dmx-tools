@@ -1,0 +1,399 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "MiN Spot RGBW",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jungle Jim",
+  "channels": [
+    {
+      "name": "Pan (coarse)",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan (fine)",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt (coarse)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt (fine)",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Closed"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Dimmer (100%-1%)"
+        },
+        {
+          "min": "16",
+          "max": "239",
+          "name": "Strobe (slow-fast)"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "21",
+          "name": "RGBW@full"
+        },
+        {
+          "min": "22",
+          "max": "35",
+          "name": "Red"
+        },
+        {
+          "min": "36",
+          "max": "49",
+          "name": "Green"
+        },
+        {
+          "min": "50",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "77",
+          "name": "White"
+        },
+        {
+          "min": "78",
+          "max": "91",
+          "name": "Cyan"
+        },
+        {
+          "min": "92",
+          "max": "105",
+          "name": "Magenta"
+        },
+        {
+          "min": "106",
+          "max": "119",
+          "name": "Yellow"
+        },
+        {
+          "min": "120",
+          "max": "133",
+          "name": "Yellow-Green"
+        },
+        {
+          "min": "134",
+          "max": "147",
+          "name": "Light Blue"
+        },
+        {
+          "min": "148",
+          "max": "161",
+          "name": "Midnight Blue"
+        },
+        {
+          "min": "162",
+          "max": "175",
+          "name": "Purple"
+        },
+        {
+          "min": "176",
+          "max": "189",
+          "name": "Light Purple"
+        },
+        {
+          "min": "190",
+          "max": "203",
+          "name": "Pink"
+        },
+        {
+          "min": "204",
+          "max": "217",
+          "name": "Light Red"
+        },
+        {
+          "min": "218",
+          "max": "231",
+          "name": "Orange"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Color Chase (adjust the speed with CH.12)"
+        }
+      ]
+    },
+    {
+      "name": "Color Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fast-slow"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Auto Program #1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Auto Program #2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Auto Program #3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Auto Program #4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Auto Program #5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Auto Program #6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Auto Program #7"
+        },
+        {
+          "min": "113",
+          "max": "135",
+          "name": "Auto Program #8"
+        },
+        {
+          "min": "136",
+          "max": "142",
+          "name": "Sound Program #1"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Sound Program #2"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Sound Program #3"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Sound Program #4"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Sound Program #5"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Sound Program #6"
+        },
+        {
+          "min": "218",
+          "max": "240",
+          "name": "Sound Program #7"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound Program #8"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "12",
+          "name": "Round"
+        },
+        {
+          "min": "13",
+          "max": "25",
+          "name": "Lighning"
+        },
+        {
+          "min": "26",
+          "max": "38",
+          "name": "Ring (approx)"
+        },
+        {
+          "min": "39",
+          "max": "51",
+          "name": "Rose (approx)"
+        },
+        {
+          "min": "52",
+          "max": "64",
+          "name": "Lace"
+        },
+        {
+          "min": "65",
+          "max": "77",
+          "name": "Dots"
+        },
+        {
+          "min": "78",
+          "max": "90",
+          "name": "Flower (approx)"
+        },
+        {
+          "min": "91",
+          "max": "103",
+          "name": "Celtic"
+        },
+        {
+          "min": "104",
+          "max": "116",
+          "name": "Spinner (approx)"
+        },
+        {
+          "min": "117",
+          "max": "127",
+          "name": "Shards (approx)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "CW Gobo wheel rotate (slow-fast)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "CCW Gobo wheel rotate (slow-fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 14,
+      "channels": [
+        "Pan (coarse)",
+        "Pan (fine)",
+        "Tilt (coarse)",
+        "Tilt (fine)",
+        "Pan/Tilt Speed",
+        "Shutter",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Color Macro",
+        "Color Speed",
+        "Auto Program",
+        "Gobo"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Pan (coarse)",
+        "Tilt (coarse)",
+        "Shutter",
+        "White",
+        "Color Macro",
+        "Gobo"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.8",
+      "width": "173",
+      "height": "249",
+      "depth": "173"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "66",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,969 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "P2 FC",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Christoph Müllner, Massimo Callegari",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour Temperature",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Warm white"
+        },
+        {
+          "min": "7",
+          "max": "46",
+          "name": "Warm white -> 2700K"
+        },
+        {
+          "min": "47",
+          "max": "47",
+          "name": "Bulb white (2700K)"
+        },
+        {
+          "min": "48",
+          "max": "87",
+          "name": "2700K -> 3200K"
+        },
+        {
+          "min": "88",
+          "max": "88",
+          "name": "Halogen white (3200K)"
+        },
+        {
+          "min": "89",
+          "max": "128",
+          "name": "3200K -> 4000K"
+        },
+        {
+          "min": "129",
+          "max": "129",
+          "name": "Neutral white (4000K)"
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "4000K -> 5600K"
+        },
+        {
+          "min": "170",
+          "max": "170",
+          "name": "Studio white (5600K)"
+        },
+        {
+          "min": "171",
+          "max": "210",
+          "name": "5600K -> 6500K"
+        },
+        {
+          "min": "211",
+          "max": "211",
+          "name": "Daylight white (6500K)"
+        },
+        {
+          "min": "212",
+          "max": "251",
+          "name": "6500K -> cold daylight"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Cold daylight"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber fine",
+      "type": "Amber"
+    },
+    {
+      "name": "Lime",
+      "type": "Lime"
+    },
+    {
+      "name": "Lime fine",
+      "type": "Lime"
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Tint",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Magenta -> neutral"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Neutral"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Neutral -> green"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Functions",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe closed"
+        },
+        {
+          "min": "11",
+          "max": "22",
+          "name": "Ramp up/down slow to fast"
+        },
+        {
+          "min": "23",
+          "max": "33",
+          "name": "Ramp up/down random, slow to fast"
+        },
+        {
+          "min": "34",
+          "max": "45",
+          "name": "Ramp up, slow to fast"
+        },
+        {
+          "min": "46",
+          "max": "56",
+          "name": "Ramp up random, slow to fast"
+        },
+        {
+          "min": "57",
+          "max": "68",
+          "name": "Ramp down, slow to fast"
+        },
+        {
+          "min": "69",
+          "max": "79",
+          "name": "Ramp down random, slow to fast"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random strobe effect, slow to fast"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Strobe break effect, 5s...1s (short burst with break)"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe slow to fast < 1Hz - 20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Colour Presets",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "9",
+          "name": "46 Dark Magenta"
+        },
+        {
+          "min": "10",
+          "max": "13",
+          "name": "29 Plasa Red"
+        },
+        {
+          "min": "14",
+          "max": "17",
+          "name": "26 Bright Red"
+        },
+        {
+          "min": "18",
+          "max": "21",
+          "name": "127 Smokey Pink"
+        },
+        {
+          "min": "22",
+          "max": "25",
+          "name": "36 Medium Pink"
+        },
+        {
+          "min": "26",
+          "max": "29",
+          "name": "19 Fire"
+        },
+        {
+          "min": "30",
+          "max": "33",
+          "name": "135 Deep Golden Amber"
+        },
+        {
+          "min": "34",
+          "max": "37",
+          "name": "778 Millennium Gold"
+        },
+        {
+          "min": "38",
+          "max": "41",
+          "name": "21 Gold Amber"
+        },
+        {
+          "min": "42",
+          "max": "45",
+          "name": "157 Pink"
+        },
+        {
+          "min": "46",
+          "max": "49",
+          "name": "110 Middle Rose"
+        },
+        {
+          "min": "50",
+          "max": "53",
+          "name": "109 Light Salmon"
+        },
+        {
+          "min": "54",
+          "max": "57",
+          "name": "35 Light Pink"
+        },
+        {
+          "min": "58",
+          "max": "61",
+          "name": "134 Golden Amber"
+        },
+        {
+          "min": "62",
+          "max": "65",
+          "name": "17 Surprise Peach"
+        },
+        {
+          "min": "66",
+          "max": "69",
+          "name": "746 Brown"
+        },
+        {
+          "min": "70",
+          "max": "73",
+          "name": "105 Orange"
+        },
+        {
+          "min": "74",
+          "max": "77",
+          "name": "20 Medium Amber"
+        },
+        {
+          "min": "78",
+          "max": "81",
+          "name": "768 Egg Yolk Yellow"
+        },
+        {
+          "min": "82",
+          "max": "85",
+          "name": "15 Deep Straw"
+        },
+        {
+          "min": "86",
+          "max": "89",
+          "name": "767 Oklahoma Yellow"
+        },
+        {
+          "min": "90",
+          "max": "93",
+          "name": "101 Yellow"
+        },
+        {
+          "min": "94",
+          "max": "97",
+          "name": "100 Spring Yellow"
+        },
+        {
+          "min": "98",
+          "max": "101",
+          "name": "88 Lime Green"
+        },
+        {
+          "min": "102",
+          "max": "105",
+          "name": "121 LEE Green"
+        },
+        {
+          "min": "106",
+          "max": "109",
+          "name": "738 Jas Green"
+        },
+        {
+          "min": "110",
+          "max": "113",
+          "name": "89 Moss Green"
+        },
+        {
+          "min": "114",
+          "max": "117",
+          "name": "139 Primary Green"
+        },
+        {
+          "min": "118",
+          "max": "121",
+          "name": "124 Dark Green"
+        },
+        {
+          "min": "122",
+          "max": "125",
+          "name": "323 Jade"
+        },
+        {
+          "min": "126",
+          "max": "129",
+          "name": "354 Special Steel Blue"
+        },
+        {
+          "min": "130",
+          "max": "133",
+          "name": "116 Medium Blue-Green"
+        },
+        {
+          "min": "134",
+          "max": "137",
+          "name": "183 Moonlight Blue"
+        },
+        {
+          "min": "138",
+          "max": "141",
+          "name": "132 Medium Blue"
+        },
+        {
+          "min": "142",
+          "max": "145",
+          "name": "119 Dark Blue"
+        },
+        {
+          "min": "146",
+          "max": "149",
+          "name": "716 Mikkel Blue"
+        },
+        {
+          "min": "150",
+          "max": "153",
+          "name": "71 Tokyo Blue"
+        },
+        {
+          "min": "154",
+          "max": "157",
+          "name": "181 Congo Blue"
+        },
+        {
+          "min": "158",
+          "max": "161",
+          "name": "799 Special KH Lavender"
+        },
+        {
+          "min": "162",
+          "max": "165",
+          "name": "707 Ultimate Violet"
+        },
+        {
+          "min": "166",
+          "max": "169",
+          "name": "343 Special Medium Lavender"
+        },
+        {
+          "min": "170",
+          "max": "173",
+          "name": "798 Chrysalis Pink"
+        },
+        {
+          "min": "174",
+          "max": "177",
+          "name": "701 Provence"
+        },
+        {
+          "min": "178",
+          "max": "181",
+          "name": "797 Deep Purple"
+        },
+        {
+          "min": "182",
+          "max": "185",
+          "name": "48 Rose Purple"
+        },
+        {
+          "min": "186",
+          "max": "189",
+          "name": "345 Fuchsia Pink"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "795 Magical Magenta"
+        },
+        {
+          "min": "194",
+          "max": "197",
+          "name": "128 Bright Pink"
+        },
+        {
+          "min": "198",
+          "max": "201",
+          "name": "2 Rose Pink"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "User Colour_1"
+        },
+        {
+          "min": "208",
+          "max": "213",
+          "name": "User Colour_2"
+        },
+        {
+          "min": "214",
+          "max": "219",
+          "name": "User Colour_3"
+        },
+        {
+          "min": "220",
+          "max": "225",
+          "name": "User Colour_4"
+        },
+        {
+          "min": "226",
+          "max": "231",
+          "name": "User Colour_5"
+        },
+        {
+          "min": "232",
+          "max": "237",
+          "name": "User Colour_6"
+        },
+        {
+          "min": "238",
+          "max": "243",
+          "name": "User Colour_7"
+        },
+        {
+          "min": "244",
+          "max": "249",
+          "name": "User Colour_8"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Device Settings",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "No function"
+        },
+        {
+          "min": "25",
+          "max": "25",
+          "name": "Record User Colour 1 (hold 3s)"
+        },
+        {
+          "min": "26",
+          "max": "26",
+          "name": "Record User Colour 2 (hold 3s)"
+        },
+        {
+          "min": "27",
+          "max": "27",
+          "name": "Record User Colour 3 (hold 3s)"
+        },
+        {
+          "min": "28",
+          "max": "28",
+          "name": "Record User Colour 4 (hold 3s)"
+        },
+        {
+          "min": "29",
+          "max": "29",
+          "name": "Record User Colour 5 (hold 3s)"
+        },
+        {
+          "min": "30",
+          "max": "30",
+          "name": "Record User Colour 6 (hold 3s)"
+        },
+        {
+          "min": "31",
+          "max": "31",
+          "name": "Record User Colour 7 (hold 3s)"
+        },
+        {
+          "min": "32",
+          "max": "32",
+          "name": "Record User Colour 8 (hold 3s)"
+        },
+        {
+          "min": "33",
+          "max": "73",
+          "name": "No function"
+        },
+        {
+          "min": "74",
+          "max": "75",
+          "name": "Dimmer Response LED (hold 3s)"
+        },
+        {
+          "min": "76",
+          "max": "77",
+          "name": "Dimmer Response Halogen (hold 3s)"
+        },
+        {
+          "min": "78",
+          "max": "81",
+          "name": "No function"
+        },
+        {
+          "min": "82",
+          "max": "83",
+          "name": "DTW (Redshift) on (hold 1,5s)"
+        },
+        {
+          "min": "84",
+          "max": "85",
+          "name": "DTW (Redshift) off (hold 1,5s)"
+        },
+        {
+          "min": "86",
+          "max": "97",
+          "name": "No function"
+        },
+        {
+          "min": "98",
+          "max": "99",
+          "name": "Auto Fan (hold 3s)"
+        },
+        {
+          "min": "100",
+          "max": "101",
+          "name": "Fan Off (hold 3s)"
+        },
+        {
+          "min": "102",
+          "max": "103",
+          "name": "Constant Low Fan (hold 3s)"
+        },
+        {
+          "min": "104",
+          "max": "105",
+          "name": "Constant Mid Fan (hold 3s)"
+        },
+        {
+          "min": "106",
+          "max": "107",
+          "name": "Constant High Fan (hold 3s)"
+        },
+        {
+          "min": "108",
+          "max": "119",
+          "name": "No function"
+        },
+        {
+          "min": "120",
+          "max": "121",
+          "name": "LED Frequency 600Hz (hold 3s)"
+        },
+        {
+          "min": "122",
+          "max": "123",
+          "name": "LED Frequency 1200Hz (hold 3s)"
+        },
+        {
+          "min": "124",
+          "max": "125",
+          "name": "LED Frequency 2000Hz (hold 3s)"
+        },
+        {
+          "min": "126",
+          "max": "127",
+          "name": "LED Frequency 4000Hz (hold 3s)"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "LED Frequency 6000Hz (hold 3s)"
+        },
+        {
+          "min": "129",
+          "max": "129",
+          "name": "LED Frequency 18.9kHz (hold 3s)"
+        },
+        {
+          "min": "130",
+          "max": "131",
+          "name": "LED Frequency 25kHz (hold 3s)"
+        },
+        {
+          "min": "132",
+          "max": "133",
+          "name": "RAW (hold 3s)"
+        },
+        {
+          "min": "134",
+          "max": "135",
+          "name": "Calibrated (hold 3s)"
+        },
+        {
+          "min": "136",
+          "max": "137",
+          "name": "User Calibrated (hold 3s)"
+        },
+        {
+          "min": "138",
+          "max": "139",
+          "name": "Smart Calibration (hold 3s)"
+        },
+        {
+          "min": "140",
+          "max": "141",
+          "name": "Display on (hold 3s)"
+        },
+        {
+          "min": "142",
+          "max": "143",
+          "name": "Display off (hold 3s)"
+        },
+        {
+          "min": "144",
+          "max": "163",
+          "name": "No function"
+        },
+        {
+          "min": "164",
+          "max": "165",
+          "name": "Dimmer Curve Linear (hold 3s)"
+        },
+        {
+          "min": "166",
+          "max": "167",
+          "name": "Dimmer Curve Exponential (hold 3s)"
+        },
+        {
+          "min": "168",
+          "max": "169",
+          "name": "Dimmer Curve Logarithmic (hold 3s)"
+        },
+        {
+          "min": "170",
+          "max": "171",
+          "name": "Dimmer Curve S-Curve (hold 3s)"
+        },
+        {
+          "min": "172",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "241",
+          "name": "Default set (except DMX-Address, DMX-Mode) (hold 3s)"
+        },
+        {
+          "min": "242",
+          "max": "243",
+          "name": "Default set (except DMX-Address, DMX-Mode and User\nColour/Loops) (hold 3s)"
+        },
+        {
+          "min": "244",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Colour Preset Crossfade",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "0s"
+        },
+        {
+          "min": "6",
+          "max": "105",
+          "name": "0,1s - 10s (0,1s Steps)"
+        },
+        {
+          "min": "106",
+          "max": "214",
+          "name": "11s - 119s (1s Steps)"
+        },
+        {
+          "min": "215",
+          "max": "244",
+          "name": "2m - 4m50s (10s Steps)"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "5m - 15m (1m Steps)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "2 Channel CCT",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Colour Temperature"
+      ]
+    },
+    {
+      "name": "3 Channel RGB (calibrated)",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "5 Channel RGBAL",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime"
+      ]
+    },
+    {
+      "name": "10 Channel RGBAL 16-bit",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "Amber",
+        "Amber fine",
+        "Lime",
+        "Lime fine"
+      ]
+    },
+    {
+      "name": "4 Channel CCT",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Colour Temperature",
+        "Tint"
+      ]
+    },
+    {
+      "name": "6 Channel HSI CCT",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Hue",
+        "Saturation",
+        "Colour Temperature",
+        "Tint"
+      ]
+    },
+    {
+      "name": "7 Channel RGB CCT (calibrated)",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Red",
+        "Green",
+        "Blue",
+        "Colour Temperature",
+        "Tint"
+      ]
+    },
+    {
+      "name": "1 Channel Dim",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "2 Channel Dim 16bit",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine"
+      ]
+    },
+    {
+      "name": "11 Channel Direct CCT",
+      "totalChannels": 11,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe Functions",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime",
+        "Colour Temperature",
+        "Tint",
+        "Device Settings"
+      ]
+    },
+    {
+      "name": "10 Channel HSI CCT",
+      "totalChannels": 10,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe Functions",
+        "Hue",
+        "Saturation",
+        "Colour Temperature",
+        "Tint",
+        "Colour Presets",
+        "Colour Preset Crossfade",
+        "Device Settings"
+      ]
+    },
+    {
+      "name": "18 Channel Full Access",
+      "totalChannels": 18,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe Functions",
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "Amber",
+        "Amber fine",
+        "Lime",
+        "Lime fine",
+        "Colour Temperature",
+        "Tint",
+        "Colour Presets",
+        "Colour Preset Crossfade",
+        "Device Settings"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "17000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "10.5",
+      "width": "245",
+      "height": "202",
+      "depth": "462"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "230",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

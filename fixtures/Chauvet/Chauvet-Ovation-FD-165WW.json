@@ -1,0 +1,136 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Ovation FD-165WW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "Slow to fast"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No function"
+        },
+        {
+          "min": "110",
+          "max": "179",
+          "name": "Lightning effect"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Random"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Motor Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "200",
+          "name": "No function"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Motor reset"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Uno",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Dos",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine"
+      ]
+    },
+    {
+      "name": "Std.P",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Dimmer Fine",
+        "Strobe",
+        "Zoom",
+        "Motor Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "6481",
+      "colourTemperature": "3184"
+    },
+    "dimensions": {
+      "weight": "6.6",
+      "width": "417",
+      "height": "261",
+      "depth": "284"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "14",
+      "degreesMax": "55"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "170",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

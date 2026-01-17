@@ -1,0 +1,194 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COREpar 80 USB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Chris Gill",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color macros"
+        }
+      ]
+    },
+    {
+      "name": "Strobe/Speed/Sound Sensivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function/Slow to fast/Off"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "No function/Slow to fast/Control the sound sensitivity level"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Slow to fast/Slow to fast/Control the sound sensitivity level"
+        }
+      ]
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Pulse effect 0-100%"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Pulse effect 100%-0"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse effect 100%-0-100%"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto fade transition"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Auto snap transition (7 colors)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Auto snap transition (18 colors)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound-active mode"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Default set from menu"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Mode 1 (fast speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Mode 2 (medium speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Mode 3 (slow speed)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "8-Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color Macros",
+        "Strobe/Speed/Sound Sensivity",
+        "Programs",
+        "Dimmer",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1324",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "143",
+      "height": "253",
+      "depth": "200"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "70"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "75",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

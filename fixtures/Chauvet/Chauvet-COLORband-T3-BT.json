@@ -1,0 +1,203 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COLORband T3 BT",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "William Todd",
+  "channels": [
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Auto Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No Function"
+        },
+        {
+          "min": "6",
+          "max": "36",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "37",
+          "max": "68",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "69",
+          "max": "100",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "101",
+          "max": "132",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "133",
+          "max": "164",
+          "name": "Auto Program 5"
+        },
+        {
+          "min": "165",
+          "max": "196",
+          "name": "Auto Program 6"
+        },
+        {
+          "min": "197",
+          "max": "228",
+          "name": "Auto Program 7"
+        },
+        {
+          "min": "229",
+          "max": "255",
+          "name": "Auto Program 8"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed / Sound-Active",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Pre-programmed Speed, Slow - Fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound Activated mode"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 13,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Strobe",
+        "Auto Programs",
+        "Auto Speed / Sound-Active",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "548",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "1000",
+      "height": "140",
+      "depth": "98"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "37",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "Cobra 720",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Paul Wilton",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "P/T Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Color Auto Running",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No Function"
+        },
+        {
+          "min": "6",
+          "max": "20",
+          "name": "Color gradual change effect"
+        },
+        {
+          "min": "21",
+          "max": "189",
+          "name": "Color macro function"
+        },
+        {
+          "min": "190",
+          "max": "240",
+          "name": "Color auto running"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Color sound control"
+        }
+      ]
+    },
+    {
+      "name": "Motor Auto Running",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No Function"
+        },
+        {
+          "min": "16",
+          "max": "128",
+          "name": "Auto running effect 0-3"
+        },
+        {
+          "min": "129",
+          "max": "255",
+          "name": "Sound control effect 0-3"
+        }
+      ]
+    },
+    {
+      "name": "Auto/Sound",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto running speed / sound sensitive"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Reset after 5 seconds"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "P/T Speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom",
+        "Color Auto Running",
+        "Motor Auto Running",
+        "Auto/Sound",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "P/T Speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Zoom",
+        "Color Auto Running",
+        "Motor Auto Running",
+        "Auto/Sound",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.5",
+      "width": "145",
+      "height": "298",
+      "depth": "240"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "8",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "190"
+    },
+    "technical": {
+      "powerConsumption": "245",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

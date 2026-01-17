@@ -1,0 +1,458 @@
+{
+  "version": "1.2",
+  "manufacturer": "AFX",
+  "model": "CLUB-MIX3 19x10W RGBW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Florian Faber",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse-effect in sequences slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect slow to fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Macro Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "White"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Red + Green"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Red + White"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Green + White"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Blue + White"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "R + G + B"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "R + G + B + W"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "2700K"
+        },
+        {
+          "min": "213",
+          "max": "217",
+          "name": "3200K"
+        },
+        {
+          "min": "218",
+          "max": "222",
+          "name": "3500K"
+        },
+        {
+          "min": "223",
+          "max": "227",
+          "name": "5000K"
+        },
+        {
+          "min": "228",
+          "max": "232",
+          "name": "5500K"
+        },
+        {
+          "min": "233",
+          "max": "237",
+          "name": "6000K"
+        },
+        {
+          "min": "238",
+          "max": "242",
+          "name": "6500K"
+        },
+        {
+          "min": "243",
+          "max": "247",
+          "name": "7000K"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "8000K"
+        }
+      ]
+    },
+    {
+      "name": "Color Temp",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No Function"
+        },
+        {
+          "min": "16",
+          "max": "45",
+          "name": "Below 3200K"
+        },
+        {
+          "min": "46",
+          "max": "75",
+          "name": "3200K-3500K"
+        },
+        {
+          "min": "76",
+          "max": "105",
+          "name": "3500K-5000K"
+        },
+        {
+          "min": "106",
+          "max": "135",
+          "name": "5000K-5500K"
+        },
+        {
+          "min": "136",
+          "max": "165",
+          "name": "5500K-6000K"
+        },
+        {
+          "min": "166",
+          "max": "195",
+          "name": "6000K-6500K"
+        },
+        {
+          "min": "196",
+          "max": "225",
+          "name": "6500K-7000K"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "7000K-8000K"
+        }
+      ]
+    },
+    {
+      "name": "Macro Run",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No Function"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Macro Run 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Macro Run 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Macro Run 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Macro Run 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Macro Run 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Macro Run 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Macro Run 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Macro Run 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Macro Sound 1"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Macro Sound 2"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Macro Sound 3"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Macro Sound 4"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Macro Sound 5"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Macro Sound 7"
+        }
+      ]
+    },
+    {
+      "name": "Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Macro Speed from Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 10,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Macro Color",
+        "Color Temp",
+        "Macro Run",
+        "Macro Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 22,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Macro Color",
+        "Color Temp",
+        "Macro Run",
+        "Macro Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.18",
+      "width": "265",
+      "height": "214",
+      "depth": "113"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "26",
+      "degreesMax": "26"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "Illusion II",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Yestalgia",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Open"
+        },
+        {
+          "min": "31",
+          "max": "55",
+          "name": "Red"
+        },
+        {
+          "min": "56",
+          "max": "80",
+          "name": "Green"
+        },
+        {
+          "min": "81",
+          "max": "105",
+          "name": "Blue"
+        },
+        {
+          "min": "106",
+          "max": "130",
+          "name": "Yellow"
+        },
+        {
+          "min": "131",
+          "max": "155",
+          "name": "Orange"
+        },
+        {
+          "min": "156",
+          "max": "180",
+          "name": "Magenta"
+        },
+        {
+          "min": "181",
+          "max": "205",
+          "name": "Light Green"
+        },
+        {
+          "min": "206",
+          "max": "230",
+          "name": "Purple"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Cyan"
+        }
+      ]
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "21",
+          "name": "Open"
+        },
+        {
+          "min": "22",
+          "max": "34",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "35",
+          "max": "47",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "48",
+          "max": "60",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "61",
+          "max": "73",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "74",
+          "max": "86",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "87",
+          "max": "99",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "100",
+          "max": "112",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "113",
+          "max": "125",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "126",
+          "max": "138",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "139",
+          "max": "151",
+          "name": "Gobo 1 Shake from slow to fast"
+        },
+        {
+          "min": "152",
+          "max": "164",
+          "name": "Gobo 2 Shake from slow to fast"
+        },
+        {
+          "min": "165",
+          "max": "177",
+          "name": "Gobo 3 Shake from slow to fast"
+        },
+        {
+          "min": "178",
+          "max": "190",
+          "name": "Gobo 4 Shake from slow to fast"
+        },
+        {
+          "min": "191",
+          "max": "203",
+          "name": "Gobo 5 Shake from slow to fast"
+        },
+        {
+          "min": "204",
+          "max": "216",
+          "name": "Gobo 6 Shake from slow to fast"
+        },
+        {
+          "min": "217",
+          "max": "229",
+          "name": "Gobo 7 Shake from slow to fast"
+        },
+        {
+          "min": "230",
+          "max": "242",
+          "name": "Gobo 8 Shake from slow to fast"
+        },
+        {
+          "min": "243",
+          "max": "255",
+          "name": "Gobo 9 Shake from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Strobe off"
+        },
+        {
+          "min": "16",
+          "max": "96",
+          "name": "Strobe slow - Fast 1Hz to 25Hz"
+        },
+        {
+          "min": "97",
+          "max": "175",
+          "name": "Strobe slow - Fast 1Hz"
+        },
+        {
+          "min": "176",
+          "max": "255",
+          "name": "Random strobe"
+        }
+      ]
+    },
+    {
+      "name": "SMD ring Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "SMD ring Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "SMD ring Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "SMD ring Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "SMD ring Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "SMD ring Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "SMD ring Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD ring Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD ring Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "SMD Ring strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "No function"
+        },
+        {
+          "min": "30",
+          "max": "225",
+          "name": "Strobe (Slow to fast)"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "SMD ring strobe off"
+        }
+      ]
+    },
+    {
+      "name": "SMD ring dimming",
+      "type": "Intensity"
+    },
+    {
+      "name": "SMD Ring auto program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "35",
+          "name": "No function"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Red"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Green"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Blue"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Yellow"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Magenta"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Cyan"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "White"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "RGB Fading"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "RED-chase"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "Green-chase"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "Blue-chase"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "R/G chase"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "R/B chase"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "G/B chase"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "R/G/B chase"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "Red ring zoom out"
+        },
+        {
+          "min": "116",
+          "max": "120",
+          "name": "Green ring zoom out"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "Blue ring zoom out"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "R/G/B/W ring zoom out"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "Red ring zoom in"
+        },
+        {
+          "min": "136",
+          "max": "140",
+          "name": "Green ring zoom in"
+        },
+        {
+          "min": "141",
+          "max": "145",
+          "name": "Blue ring zoom in"
+        },
+        {
+          "min": "146",
+          "max": "150",
+          "name": "R/G/B/W ring zoom in"
+        },
+        {
+          "min": "151",
+          "max": "155",
+          "name": "Effect switch between R/G/B/W"
+        },
+        {
+          "min": "156",
+          "max": "160",
+          "name": "Effect switch between Yellow/Purple/Cyan/White"
+        },
+        {
+          "min": "161",
+          "max": "165",
+          "name": "Colour flowing in ring 1-4, 9 effects in total, each 10 digits"
+        },
+        {
+          "min": "166",
+          "max": "255",
+          "name": "Capability 27"
+        }
+      ]
+    },
+    {
+      "name": "SMD ring Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Auto program",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "49",
+          "name": "No function"
+        },
+        {
+          "min": "50",
+          "max": "99",
+          "name": "Auto program 1"
+        },
+        {
+          "min": "100",
+          "max": "149",
+          "name": "Auto program 2"
+        },
+        {
+          "min": "150",
+          "max": "199",
+          "name": "Auto program 3"
+        },
+        {
+          "min": "200",
+          "max": "249",
+          "name": "Sound activated program"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "All Reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Master dimmer",
+        "Strobe",
+        "Color wheel",
+        "Gobo wheel",
+        "SMD Ring strobe",
+        "SMD ring dimming",
+        "SMD Ring auto program",
+        "SMD ring Speed",
+        "Auto program"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 23,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Master dimmer",
+        "Strobe",
+        "Color wheel",
+        "Gobo wheel",
+        "SMD ring Red 1",
+        "SMD ring Green 1",
+        "SMD ring Blue 1",
+        "SMD ring Red 2",
+        "SMD ring Green 2",
+        "SMD ring Blue 2",
+        "SMD ring Red 3",
+        "SMD ring Green 3",
+        "SMD ring Blue 3",
+        "SMD Ring strobe",
+        "SMD ring dimming",
+        "SMD Ring auto program",
+        "SMD ring Speed",
+        "Auto program"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.45",
+      "width": "265",
+      "height": "170",
+      "depth": "370"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "630",
+      "tiltMax": "200"
+    },
+    "technical": {
+      "powerConsumption": "80",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

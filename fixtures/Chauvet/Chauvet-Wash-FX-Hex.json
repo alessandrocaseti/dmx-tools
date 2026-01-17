@@ -1,0 +1,676 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Wash FX Hex",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Clément Delabroye",
+  "channels": [
+    {
+      "name": "Auto programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "20",
+          "name": "Auto program 1"
+        },
+        {
+          "min": "21",
+          "max": "35",
+          "name": "Auto program 2"
+        },
+        {
+          "min": "36",
+          "max": "50",
+          "name": "Auto program 3"
+        },
+        {
+          "min": "51",
+          "max": "65",
+          "name": "Auto program 4"
+        },
+        {
+          "min": "66",
+          "max": "80",
+          "name": "Auto program 5"
+        },
+        {
+          "min": "81",
+          "max": "95",
+          "name": "Auto program 6"
+        },
+        {
+          "min": "96",
+          "max": "110",
+          "name": "Auto program 7"
+        },
+        {
+          "min": "111",
+          "max": "125",
+          "name": "Auto program 8"
+        },
+        {
+          "min": "126",
+          "max": "140",
+          "name": "Auto program 9"
+        },
+        {
+          "min": "141",
+          "max": "155",
+          "name": "Auto program 10"
+        },
+        {
+          "min": "156",
+          "max": "170",
+          "name": "Auto program 11"
+        },
+        {
+          "min": "171",
+          "max": "185",
+          "name": "Auto program 12"
+        },
+        {
+          "min": "186",
+          "max": "200",
+          "name": "Auto program 13"
+        },
+        {
+          "min": "201",
+          "max": "215",
+          "name": "Auto program 14"
+        },
+        {
+          "min": "216",
+          "max": "230",
+          "name": "Auto program 15"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Auto program 16"
+        }
+      ]
+    },
+    {
+      "name": "Auto program speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Speed, slow to fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound-active Mode"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Zone macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Zone macro"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Red zone 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Red zone 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Red zone 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Red zone 4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Red zone 5",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Red zone 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Green zone 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Green zone 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Green zone 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Green zone 4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Green zone 5",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Green zone 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Blue zone 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Blue zone 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Blue zone 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Blue zone 4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Blue zone 5",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Blue zone 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Amber zone 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Amber zone 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Amber zone 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Amber zone 4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Amber zone 5",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "Amber zone 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "White zone 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "White zone 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "White zone 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "White zone 4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "White zone 5",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "White zone 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "UV zone 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "UV zone 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "UV zone 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "UV zone 4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "UV zone 5",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    },
+    {
+      "name": "UV zone 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 -100 %"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Auto programs",
+        "Auto program speed",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 11,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV",
+        "Strobe",
+        "Auto programs",
+        "Zone macro",
+        "Auto program speed",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 40,
+      "channels": [
+        "Auto programs",
+        "Auto program speed",
+        "Dimmer",
+        "Strobe",
+        "Red zone 1",
+        "Green zone 1",
+        "Blue zone 1",
+        "Amber zone 1",
+        "White zone 1",
+        "UV zone 1",
+        "Red zone 2",
+        "Green zone 2",
+        "Blue zone 2",
+        "Amber zone 2",
+        "White zone 2",
+        "UV zone 2",
+        "Red zone 3",
+        "Green zone 3",
+        "Blue zone 3",
+        "Amber zone 3",
+        "White zone 3",
+        "UV zone 3",
+        "Red zone 4",
+        "Green zone 4",
+        "Blue zone 4",
+        "Amber zone 4",
+        "White zone 4",
+        "UV zone 4",
+        "Red zone 5",
+        "Green zone 5",
+        "Blue zone 5",
+        "Amber zone 5",
+        "White zone 5",
+        "UV zone 5",
+        "Red zone 6",
+        "Green zone 6",
+        "Blue zone 6",
+        "Amber zone 6",
+        "White zone 6",
+        "UV zone 6"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "30000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.2",
+      "width": "285",
+      "height": "330",
+      "depth": "160"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

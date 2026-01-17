@@ -1,0 +1,4533 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Hyper Gem LED",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "85",
+          "name": "Sync. show"
+        },
+        {
+          "min": "86",
+          "max": "160",
+          "name": "2-light show"
+        },
+        {
+          "min": "161",
+          "max": "239",
+          "name": "4-light show"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound atcive"
+        }
+      ]
+    },
+    {
+      "name": "Chase",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "1"
+        },
+        {
+          "min": "21",
+          "max": "43",
+          "name": "2"
+        },
+        {
+          "min": "44",
+          "max": "65",
+          "name": "3"
+        },
+        {
+          "min": "66",
+          "max": "87",
+          "name": "4"
+        },
+        {
+          "min": "88",
+          "max": "108",
+          "name": "5"
+        },
+        {
+          "min": "109",
+          "max": "129",
+          "name": "6"
+        },
+        {
+          "min": "130",
+          "max": "151",
+          "name": "7"
+        },
+        {
+          "min": "152",
+          "max": "172",
+          "name": "8"
+        },
+        {
+          "min": "173",
+          "max": "193",
+          "name": "9"
+        },
+        {
+          "min": "194",
+          "max": "214",
+          "name": "10"
+        },
+        {
+          "min": "215",
+          "max": "235",
+          "name": "11"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "12"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "On"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 5",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 7",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 8",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 9",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 10",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 11",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 12",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 13",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 14",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 15",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 16",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 17",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 18",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 19",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 20",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 21",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 22",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 23",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 24",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 25",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 26",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 27",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 28",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 29",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 30",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 31",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 32",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 33",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 34",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 35",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 36",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 37",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 38",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 39",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 40",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 41",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 42",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 43",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 44",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 45",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 46",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 47",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 48",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 49",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 50",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 51",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 52",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 53",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 54",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 55",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 56",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 57",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 58",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 59",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 60",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 61",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 62",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 63",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Red 64",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 5",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 7",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 8",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 9",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 10",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 11",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 12",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 13",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 14",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 15",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 16",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 17",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 18",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 19",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 20",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 21",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 22",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 23",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 24",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 25",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 26",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 27",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 28",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 29",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 30",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 31",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 32",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 33",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 34",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 35",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 36",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 37",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 38",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 39",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 40",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 41",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 42",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 43",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 44",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 45",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 46",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 47",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 48",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 49",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 50",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 51",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 52",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 53",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 54",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 55",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 56",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 57",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 58",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 59",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 60",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 61",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 62",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 63",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Green 64",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 5",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 7",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 8",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 9",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 10",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 11",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 12",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 13",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 14",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 15",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 16",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 17",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 18",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 19",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 20",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 21",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 22",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 23",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 24",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 25",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 26",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 27",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 28",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 29",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 30",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 31",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 32",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 33",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 34",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 35",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 36",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 37",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 38",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 39",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 40",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 41",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 42",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 43",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 44",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 45",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 46",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 47",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 48",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 49",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 50",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 51",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 52",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 53",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 54",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 55",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 56",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 57",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 58",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 59",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 60",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 61",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 62",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 63",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Blue 64",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 1",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 4",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 5",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 6",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 7",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 8",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 9",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 10",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 11",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 12",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 13",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 14",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 15",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 16",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 17",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 18",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 19",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 20",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 21",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 22",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 23",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 24",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 25",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 26",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 27",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 28",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 29",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 30",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 31",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 32",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 33",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 34",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 35",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 36",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 37",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 38",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 39",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 40",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 41",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 42",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 43",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 44",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 45",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 46",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 47",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 48",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 49",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 50",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 51",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 52",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 53",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 54",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 55",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 56",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 57",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 58",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 59",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 60",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 61",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 62",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 63",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "White 64",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Off"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Function",
+        "Chase",
+        "Speed",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 256,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "White 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "White 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "White 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "White 8",
+        "Red 9",
+        "Green 9",
+        "Blue 9",
+        "White 9",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "White 10",
+        "Red 11",
+        "Green 11",
+        "Blue 11",
+        "White 11",
+        "Red 12",
+        "Green 12",
+        "Blue 12",
+        "White 12",
+        "Red 13",
+        "Green 13",
+        "Blue 13",
+        "White 13",
+        "Red 14",
+        "Green 14",
+        "Blue 14",
+        "White 14",
+        "Red 15",
+        "Green 15",
+        "Blue 15",
+        "White 15",
+        "Red 16",
+        "Green 16",
+        "Blue 16",
+        "White 16",
+        "Red 17",
+        "Green 17",
+        "Blue 17",
+        "White 17",
+        "Red 18",
+        "Green 18",
+        "Blue 18",
+        "White 18",
+        "Red 19",
+        "Green 19",
+        "Blue 19",
+        "White 19",
+        "Red 20",
+        "Green 20",
+        "Blue 20",
+        "White 20",
+        "Red 21",
+        "Green 21",
+        "Blue 21",
+        "White 21",
+        "Red 22",
+        "Green 22",
+        "Blue 22",
+        "White 22",
+        "Red 23",
+        "Green 23",
+        "Blue 23",
+        "White 23",
+        "Red 24",
+        "Green 24",
+        "Blue 24",
+        "White 24",
+        "Red 25",
+        "Green 25",
+        "Blue 25",
+        "White 25",
+        "Red 26",
+        "Green 26",
+        "Blue 26",
+        "White 26",
+        "Red 27",
+        "Green 27",
+        "Blue 27",
+        "White 27",
+        "Red 28",
+        "Green 28",
+        "Blue 28",
+        "White 28",
+        "Red 29",
+        "Green 29",
+        "Blue 29",
+        "White 29",
+        "Red 30",
+        "Green 30",
+        "Blue 30",
+        "White 30",
+        "Red 31",
+        "Green 31",
+        "Blue 31",
+        "White 31",
+        "Red 32",
+        "Green 32",
+        "Blue 32",
+        "White 32",
+        "Red 33",
+        "Green 33",
+        "Blue 33",
+        "White 33",
+        "Red 34",
+        "Green 34",
+        "Blue 34",
+        "White 34",
+        "Red 35",
+        "Green 35",
+        "Blue 35",
+        "White 35",
+        "Red 36",
+        "Green 36",
+        "Blue 36",
+        "White 36",
+        "Red 37",
+        "Green 37",
+        "Blue 37",
+        "White 37",
+        "Red 38",
+        "Green 38",
+        "Blue 38",
+        "White 38",
+        "Red 39",
+        "Green 39",
+        "Blue 39",
+        "White 39",
+        "Red 40",
+        "Green 40",
+        "Blue 40",
+        "White 40",
+        "Red 41",
+        "Green 41",
+        "Blue 41",
+        "White 41",
+        "Red 42",
+        "Green 42",
+        "Blue 42",
+        "White 42",
+        "Red 43",
+        "Green 43",
+        "Blue 43",
+        "White 43",
+        "Red 44",
+        "Green 44",
+        "Blue 44",
+        "White 44",
+        "Red 45",
+        "Green 45",
+        "Blue 45",
+        "White 45",
+        "Red 46",
+        "Green 46",
+        "Blue 46",
+        "White 46",
+        "Red 47",
+        "Green 47",
+        "Blue 47",
+        "White 47",
+        "Red 48",
+        "Green 48",
+        "Blue 48",
+        "White 48",
+        "Red 49",
+        "Green 49",
+        "Blue 49",
+        "White 49",
+        "Red 50",
+        "Green 50",
+        "Blue 50",
+        "White 50",
+        "Red 51",
+        "Green 51",
+        "Blue 51",
+        "White 51",
+        "Red 52",
+        "Green 52",
+        "Blue 52",
+        "White 52",
+        "Red 53",
+        "Green 53",
+        "Blue 53",
+        "White 53",
+        "Red 54",
+        "Green 54",
+        "Blue 54",
+        "White 54",
+        "Red 55",
+        "Green 55",
+        "Blue 55",
+        "White 55",
+        "Red 56",
+        "Green 56",
+        "Blue 56",
+        "White 56",
+        "Red 57",
+        "Green 57",
+        "Blue 57",
+        "White 57",
+        "Red 58",
+        "Green 58",
+        "Blue 58",
+        "White 58",
+        "Red 59",
+        "Green 59",
+        "Blue 59",
+        "White 59",
+        "Red 60",
+        "Green 60",
+        "Blue 60",
+        "White 60",
+        "Red 61",
+        "Green 61",
+        "Blue 61",
+        "White 61",
+        "Red 62",
+        "Green 62",
+        "Blue 62",
+        "White 62",
+        "Red 63",
+        "Green 63",
+        "Blue 63",
+        "White 63",
+        "Red 64",
+        "Green 64",
+        "Blue 64",
+        "White 64"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5",
+      "width": "526",
+      "height": "243",
+      "depth": "319"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "32",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

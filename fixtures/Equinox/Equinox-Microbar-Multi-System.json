@@ -1,0 +1,583 @@
+{
+  "version": "1.2",
+  "manufacturer": "Equinox",
+  "model": "Microbar Multi System",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fede79",
+  "channels": [
+    {
+      "name": "Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "49",
+          "name": "Par auto\n   \n  "
+        },
+        {
+          "min": "50",
+          "max": "89",
+          "name": "Effect auto\n   \n  "
+        },
+        {
+          "min": "90",
+          "max": "129",
+          "name": "Par & Effect auto\n   \n  "
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "Par sound active\n   \n  "
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Effect sound active\n   \n  "
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Par & Effect sound active\n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Par auto",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "AP01"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "AP02"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "AP03"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "AP04"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "AP05"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "AP06"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "AP07"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "AP08"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "AP09"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "AP10"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "AP11"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "AP12"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "AP13"
+        }
+      ]
+    },
+    {
+      "name": "Effect auto",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "AF01"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "AF02"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "AF03"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "AF04"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "AF05"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "AF06"
+        },
+        {
+          "min": "120",
+          "max": "255",
+          "name": "AF07"
+        }
+      ]
+    },
+    {
+      "name": "Par & Effect auto",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "AN01"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "AN02"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "AN03"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "AN04"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "AN05"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "AN06"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "AN07"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "AN08"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "AN09"
+        },
+        {
+          "min": "180",
+          "max": "255",
+          "name": "AN10"
+        }
+      ]
+    },
+    {
+      "name": "Par sound active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "SP01"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "SP02"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "SP03"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "SP04"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "SP05"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "SP06"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "SP07"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "SP08"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "SP09"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "SP10"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "SP11"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "SP12"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "SP13"
+        }
+      ]
+    },
+    {
+      "name": "Effect sound active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "SF01"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "SF02"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "SF03"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "SF04"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "SF05"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "SF06"
+        },
+        {
+          "min": "120",
+          "max": "255",
+          "name": "SF07"
+        }
+      ]
+    },
+    {
+      "name": "Par & Effect sound active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "SN01"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "SN02"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "SN03"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "SN04"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "SN05"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "SN06"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "SN07"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "SN08"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "SN09"
+        },
+        {
+          "min": "180",
+          "max": "255",
+          "name": "SN10"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed adjustment"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Motor speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Motor speed"
+        }
+      ]
+    },
+    {
+      "name": "Red Derby",
+      "type": "Red"
+    },
+    {
+      "name": "Green Derby",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Derby",
+      "type": "Blue"
+    },
+    {
+      "name": "White Derby",
+      "type": "White"
+    },
+    {
+      "name": "Motor speed Derby",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Motor speed"
+        }
+      ]
+    },
+    {
+      "name": "Red Pars 1 & 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green Pars 1 & 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Pars 1 & 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White Pars 1 & 2",
+      "type": "White"
+    },
+    {
+      "name": "Red Moonflower",
+      "type": "Red"
+    },
+    {
+      "name": "Green Moonflower",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Moonflower",
+      "type": "Blue"
+    },
+    {
+      "name": "White Moonflower",
+      "type": "White"
+    },
+    {
+      "name": "Motor speed Moonflower",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Motor speed"
+        }
+      ]
+    },
+    {
+      "name": "No Function",
+      "type": "Nothing",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "No Function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Function",
+        "No Function",
+        "Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Motor speed"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 15,
+      "channels": [
+        "Red Derby",
+        "Green Derby",
+        "Blue Derby",
+        "White Derby",
+        "Motor speed Derby",
+        "Red Pars 1 & 2",
+        "Green Pars 1 & 2",
+        "Blue Pars 1 & 2",
+        "White Pars 1 & 2",
+        "Red Moonflower",
+        "Green Moonflower",
+        "Blue Moonflower",
+        "White Moonflower",
+        "Motor speed Moonflower",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.7",
+      "width": "750",
+      "height": "200",
+      "depth": "165"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "55",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

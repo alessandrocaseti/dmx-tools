@@ -1,0 +1,1224 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "GigBAR Move",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Morgan McNeely",
+  "channels": [
+    {
+      "name": "Par 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Par 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Par 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Par 1 UV",
+      "type": "UV"
+    },
+    {
+      "name": "Par 1 Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Dimmer 0-100%"
+        },
+        {
+          "min": "128",
+          "max": "239",
+          "name": "Strobe Slow-Fast"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Strobe to Sound"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "RGB 100%"
+        }
+      ]
+    },
+    {
+      "name": "Par 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Par 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Par 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Par 2 UV",
+      "type": "UV"
+    },
+    {
+      "name": "Par 2 Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Dimmer 0-100%"
+        },
+        {
+          "min": "128",
+          "max": "239",
+          "name": "Strobe Slow-Fast"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Strobe to Sound"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "RGB 100%"
+        }
+      ]
+    },
+    {
+      "name": "Derby 1 Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "Blackout"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "Red"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "Green"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "Blue"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Red + Green"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Automatic (single colors only)"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "Automatic (two colors at a time)"
+        }
+      ]
+    },
+    {
+      "name": "Derby 1 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Strobe"
+        },
+        {
+          "min": "10",
+          "max": "239",
+          "name": "Strobe 0-30Hz"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Strobe to Sound"
+        }
+      ]
+    },
+    {
+      "name": "Derby 1 Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate CW Slow-Fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate CCW Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Derby 2 Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "24",
+          "name": "Blackout"
+        },
+        {
+          "min": "25",
+          "max": "49",
+          "name": "Red"
+        },
+        {
+          "min": "50",
+          "max": "74",
+          "name": "Green"
+        },
+        {
+          "min": "75",
+          "max": "99",
+          "name": "Blue"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Red + Green"
+        },
+        {
+          "min": "125",
+          "max": "149",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "150",
+          "max": "174",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "175",
+          "max": "199",
+          "name": "Red + Green + Blue"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "Automatic (single colors only)"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "Automatic (two colors at a time)"
+        }
+      ]
+    },
+    {
+      "name": "Derby 2 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Strobe"
+        },
+        {
+          "min": "10",
+          "max": "239",
+          "name": "Strobe 0-30Hz"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Strobe to Sound"
+        }
+      ]
+    },
+    {
+      "name": "Derby 2 Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate CW Slow-Fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate CCW Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Laser Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "39",
+          "name": "Blackout"
+        },
+        {
+          "min": "40",
+          "max": "79",
+          "name": "Red"
+        },
+        {
+          "min": "80",
+          "max": "119",
+          "name": "Green"
+        },
+        {
+          "min": "120",
+          "max": "159",
+          "name": "Red + Green"
+        },
+        {
+          "min": "160",
+          "max": "199",
+          "name": "Red 100%, Green Strobe"
+        },
+        {
+          "min": "200",
+          "max": "239",
+          "name": "Green 100%, Red Strobe"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Red + Green Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Laser Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Strobe"
+        },
+        {
+          "min": "10",
+          "max": "239",
+          "name": "Strobe Slow-Fast"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Strobe to Sound"
+        }
+      ]
+    },
+    {
+      "name": "Laser Movement Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate CW Slow-Fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate CCW Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Patterns",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Auto Strobe Program 1"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Auto Strobe Program 2"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "Auto Strobe Program 3"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Auto Strobe Program 4"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Auto Strobe Program 5"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Auto Strobe Program 6"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Auto Strobe Program 7"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Auto Strobe Program 8"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Auto Strobe Program 9"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "All"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Strobe to Sound"
+        }
+      ]
+    },
+    {
+      "name": "White Strobe Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "UV Strobe Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "White / UV Strobe Speed",
+      "type": "Shutter"
+    },
+    {
+      "name": "Pars / Derby Red",
+      "type": "Red"
+    },
+    {
+      "name": "Pars / Derby Green",
+      "type": "Green"
+    },
+    {
+      "name": "Pars / Derby Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Pars / Derby UV",
+      "type": "UV"
+    },
+    {
+      "name": "Pars / Derby Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "All 0-100%"
+        },
+        {
+          "min": "128",
+          "max": "239",
+          "name": "Strobe Slow-Fast"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Strobe to Sound"
+        }
+      ]
+    },
+    {
+      "name": "Derby Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate CW Slow-Fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate CCW Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Red Laser",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "54",
+          "name": "On"
+        },
+        {
+          "min": "55",
+          "max": "255",
+          "name": "Strobe Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Green Laser",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Blackout"
+        },
+        {
+          "min": "5",
+          "max": "54",
+          "name": "On"
+        },
+        {
+          "min": "55",
+          "max": "255",
+          "name": "Strobe Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "White Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "54",
+          "name": "Dimmer 0-100%"
+        },
+        {
+          "min": "55",
+          "max": "255",
+          "name": "Strobe Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "UV Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "54",
+          "name": "Dimmer 0-100%"
+        },
+        {
+          "min": "55",
+          "max": "255",
+          "name": "Strobe Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "LED Operation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "119",
+          "name": "Auto Mode 1 Slow-Fast"
+        },
+        {
+          "min": "120",
+          "max": "229",
+          "name": "Auto Mode 2 Slow-Fast"
+        },
+        {
+          "min": "230",
+          "max": "234",
+          "name": "Sound Mode 1"
+        },
+        {
+          "min": "235",
+          "max": "239",
+          "name": "Sound Mode 2"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Chase"
+        }
+      ]
+    },
+    {
+      "name": "Show setting",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "All Except Movers"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "All Except Strobes"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "All Except Lasers"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "All Except Derbies"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "All Except Pars"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pars, Derbies, and Laser"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pars, Derbies, and Strobe"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pars, Derbies, and Movers"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pars, Laser, and Strobe"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pars, Laser, and Movers"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pars, Strobe, and Movers"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pars and Derbies"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pars and Laser"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pars and Strobe"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Pars and Movers"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Derbies and Laser"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Derbies and Strobe"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Derbies and Movers"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Laser and Strobe"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Laser and Movers"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Strobe and Movers"
+        },
+        {
+          "min": "220",
+          "max": "226",
+          "name": "Pars Only"
+        },
+        {
+          "min": "227",
+          "max": "233",
+          "name": "Derbies Only"
+        },
+        {
+          "min": "234",
+          "max": "240",
+          "name": "Laser Only"
+        },
+        {
+          "min": "241",
+          "max": "247",
+          "name": "Strobe Only"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Movers Only"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "249",
+          "name": "Slow-Fast"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound"
+        }
+      ]
+    },
+    {
+      "name": "Mover 1 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mover 1 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Mover 1 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Mover 1 Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Mover 1 Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Color 1"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Color 2"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Color 3"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Color 4"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Color 5"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Color 6"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Color 7"
+        }
+      ]
+    },
+    {
+      "name": "Mover 1 Pattern",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo 7"
+        }
+      ]
+    },
+    {
+      "name": "Mover 2 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mover 2 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Mover 2 Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Mover 2 Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Mover 2 Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Color 1"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Color 2"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Color 3"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Color 4"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Color 5"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Color 6"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Color 7"
+        }
+      ]
+    },
+    {
+      "name": "Mover 2 Pattern",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo 7"
+        }
+      ]
+    },
+    {
+      "name": "Movers Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Movers Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Movers Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Movers Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Movers Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Color 1"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Color 2"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Color 3"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Color 4"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Color 5"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Color 6"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Color 7"
+        }
+      ]
+    },
+    {
+      "name": "Movers Pattern",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo 7"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "35-channel",
+      "totalChannels": 35,
+      "channels": [
+        "Par 1 Red",
+        "Par 1 Green",
+        "Par 1 Blue",
+        "Par 1 UV",
+        "Par 1 Shutter",
+        "Par 2 Red",
+        "Par 2 Green",
+        "Par 2 Blue",
+        "Par 2 UV",
+        "Par 2 Shutter",
+        "Derby 1 Color",
+        "Derby 1 Strobe",
+        "Derby 1 Rotation",
+        "Derby 2 Color",
+        "Derby 2 Strobe",
+        "Derby 2 Rotation",
+        "Laser Color",
+        "Laser Strobe",
+        "Laser Movement Speed",
+        "Strobe Patterns",
+        "White Strobe Dimmer",
+        "UV Strobe Dimmer",
+        "White / UV Strobe Speed",
+        "Mover 1 Pan",
+        "Mover 1 Tilt",
+        "Mover 1 Dimmer",
+        "Mover 1 Strobe",
+        "Mover 1 Color",
+        "Mover 1 Pattern",
+        "Mover 2 Pan",
+        "Mover 2 Tilt",
+        "Mover 2 Dimmer",
+        "Mover 2 Strobe",
+        "Mover 2 Color",
+        "Mover 2 Pattern"
+      ]
+    },
+    {
+      "name": "17-channel",
+      "totalChannels": 17,
+      "channels": [
+        "Pars / Derby Red",
+        "Pars / Derby Green",
+        "Pars / Derby Blue",
+        "Pars / Derby UV",
+        "Pars / Derby Shutter",
+        "Derby Rotation",
+        "Red Laser",
+        "Green Laser",
+        "Laser Movement Speed",
+        "White Strobe",
+        "UV Strobe",
+        "Movers Pan",
+        "Movers Tilt",
+        "Movers Dimmer",
+        "Movers Strobe",
+        "Movers Color",
+        "Movers Pattern"
+      ]
+    },
+    {
+      "name": "3-channel",
+      "totalChannels": 3,
+      "channels": [
+        "LED Operation",
+        "Show setting",
+        "Auto Program Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "10.7",
+      "width": "1100",
+      "height": "144",
+      "depth": "449"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "81",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

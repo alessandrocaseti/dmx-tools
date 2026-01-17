@@ -1,0 +1,522 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED TSL-1000 Scan MK2",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Christoph Wieser",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "White (open)"
+        },
+        {
+          "min": "5",
+          "max": "12",
+          "name": "White / Yellow"
+        },
+        {
+          "min": "13",
+          "max": "20",
+          "name": "Yellow"
+        },
+        {
+          "min": "21",
+          "max": "28",
+          "name": "Yellow / Magenta"
+        },
+        {
+          "min": "29",
+          "max": "36",
+          "name": "Magenta"
+        },
+        {
+          "min": "37",
+          "max": "44",
+          "name": "Magenta / Kelly-green"
+        },
+        {
+          "min": "45",
+          "max": "52",
+          "name": "Kelly-green"
+        },
+        {
+          "min": "53",
+          "max": "60",
+          "name": "Kelly-green / Red"
+        },
+        {
+          "min": "61",
+          "max": "68",
+          "name": "Red"
+        },
+        {
+          "min": "69",
+          "max": "76",
+          "name": "Red / Blue"
+        },
+        {
+          "min": "77",
+          "max": "84",
+          "name": "Blue"
+        },
+        {
+          "min": "85",
+          "max": "92",
+          "name": "Blue / Green"
+        },
+        {
+          "min": "93",
+          "max": "100",
+          "name": "Green"
+        },
+        {
+          "min": "101",
+          "max": "108",
+          "name": "Green / Orange"
+        },
+        {
+          "min": "109",
+          "max": "116",
+          "name": "Orange"
+        },
+        {
+          "min": "117",
+          "max": "124",
+          "name": "Orange / Dark blue"
+        },
+        {
+          "min": "125",
+          "max": "132",
+          "name": "Dark blue"
+        },
+        {
+          "min": "133",
+          "max": "139",
+          "name": "White (open)"
+        },
+        {
+          "min": "140",
+          "max": "195",
+          "name": "Forward rainbow effect with decreasing speed"
+        },
+        {
+          "min": "196",
+          "max": "199",
+          "name": "Stop"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Backward rainbow effict with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Rotating gobo-wheel, gobo shake",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White (open)"
+        },
+        {
+          "min": "8",
+          "max": "19",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "31",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "32",
+          "max": "43",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "44",
+          "max": "55",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "56",
+          "max": "67",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "68",
+          "max": "71",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "80",
+          "max": "88",
+          "name": "Gobo 1 shake with increasing speed"
+        },
+        {
+          "min": "89",
+          "max": "97",
+          "name": "Gobo 2 shake with increasing speed"
+        },
+        {
+          "min": "98",
+          "max": "106",
+          "name": "Gobo 3 shake with increasing speed"
+        },
+        {
+          "min": "107",
+          "max": "115",
+          "name": "Gobo 4 shake with increasing speed"
+        },
+        {
+          "min": "116",
+          "max": "124",
+          "name": "Gobo 5 shake with increasing speed"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Gobo 6 shake with increasing speed"
+        },
+        {
+          "min": "130",
+          "max": "133",
+          "name": "Gobo 7 shake with increasing speed"
+        },
+        {
+          "min": "134",
+          "max": "194",
+          "name": "Forwards gobo rotation with decreasing speed"
+        },
+        {
+          "min": "195",
+          "max": "255",
+          "name": "Backwards gobo rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "no rotation"
+        },
+        {
+          "min": "10",
+          "max": "129",
+          "name": "Forward rotation with decreasing speed"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Stop"
+        },
+        {
+          "min": "135",
+          "max": "255",
+          "name": "Backward rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "3-facet Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Open"
+        },
+        {
+          "min": "9",
+          "max": "255",
+          "name": "3-facet prism"
+        }
+      ]
+    },
+    {
+      "name": "LED Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Empty"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Auto 1"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Auto 2"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Auto 3"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "Auto 4"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Auto 5"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Auto 6"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Auto 7"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "Auto 8"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "Auto 9"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Auto 10"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Auto 11"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Auto 12"
+        },
+        {
+          "min": "181",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    },
+    {
+      "name": "XY Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No function"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "X/Y Auto 1"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "X/Y Auto 2"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "X/Y Auto 3"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "X/Y Auto 4"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "X/Y Auto 5"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "X/Y Auto 6"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "X/Y Auto 7"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "X/Y Auto 8"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "X/Y Auto 9"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "X/Y Auto 10"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "X/Y Auto 11"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "X/Y Auto 12"
+        },
+        {
+          "min": "141",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Reset (6S)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Dimmer",
+        "Strobe",
+        "Color Wheel",
+        "Rotating gobo-wheel, gobo shake",
+        "Gobo rotation",
+        "Focus",
+        "3-facet Prism",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt Speed",
+        "Dimmer",
+        "Strobe",
+        "Color Wheel",
+        "Rotating gobo-wheel, gobo shake",
+        "Gobo rotation",
+        "Focus",
+        "3-facet Prism",
+        "LED Macros",
+        "XY Macros",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1000",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "5.8",
+      "width": "251",
+      "height": "377",
+      "depth": "141"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "160",
+      "tiltMax": "50"
+    },
+    "technical": {
+      "powerConsumption": "110",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

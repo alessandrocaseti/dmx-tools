@@ -1,0 +1,76 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BT Theatre 100EC",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Giacomo",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "strobe speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Dimmer+Strobe",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "6800",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "230",
+      "height": "280",
+      "depth": "305"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "10",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "120",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

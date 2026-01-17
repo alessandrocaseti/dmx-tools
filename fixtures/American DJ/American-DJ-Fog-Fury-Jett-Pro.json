@@ -1,0 +1,345 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Fog Fury Jett Pro",
+  "type": "FX Fog",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Dávid Czirók",
+  "channels": [
+    {
+      "name": "Fog",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Fog off"
+        },
+        {
+          "min": "32",
+          "max": "255",
+          "name": "Max fog"
+        }
+      ]
+    },
+    {
+      "name": "Color macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "color 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "color 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "color 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "color 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "color 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "color 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "color 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "color 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "color 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "color 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "color 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "color 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "color 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "color 14"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "color 15"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "color 16"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "color 17"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "color 18"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "color 19"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "color 20"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "color 21"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "color 22"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "color 23"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "color 24"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "color 25"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "color 26"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "color 27"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "color 28"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "color 29"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "random_1"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "random_2"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1 (outer leds)",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Green 2 (inner leds)",
+      "type": "Green"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Off"
+        },
+        {
+          "min": "32",
+          "max": "95",
+          "name": "Strobing slow-fast"
+        },
+        {
+          "min": "96",
+          "max": "159",
+          "name": "Pulse effect"
+        },
+        {
+          "min": "160",
+          "max": "255",
+          "name": "Random strobe slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Fog and random color change",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "off"
+        },
+        {
+          "min": "32",
+          "max": "255",
+          "name": "max fog and color change"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Fog and random color change"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Fog",
+        "Color macros"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 3,
+      "channels": [
+        "Fog",
+        "Color macros",
+        "Strobing"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 7,
+      "channels": [
+        "Fog",
+        "Red",
+        "Green 1 (outer leds)",
+        "Blue",
+        "Amber",
+        "Green 2 (inner leds)",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 9,
+      "channels": [
+        "Fog",
+        "Red",
+        "Green 1 (outer leds)",
+        "Blue",
+        "Amber",
+        "Green 2 (inner leds)",
+        "UV",
+        "Strobing",
+        "Master dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.5",
+      "width": "315",
+      "height": "206",
+      "depth": "419"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1550",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

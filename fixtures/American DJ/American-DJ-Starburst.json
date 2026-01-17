@@ -1,0 +1,297 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Starburst",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "Purple",
+      "type": "Unknown"
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "LED on"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "LED on"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow open - fast close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "LED on"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast open - slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "LED on"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "LED on"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "No"
+        },
+        {
+          "min": "31",
+          "max": "140",
+          "name": "Clockwise fast - slow"
+        },
+        {
+          "min": "141",
+          "max": "145",
+          "name": "Stop"
+        },
+        {
+          "min": "146",
+          "max": "255",
+          "name": "Counterclockwise slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "No function"
+        },
+        {
+          "min": "26",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "65",
+          "name": "Green"
+        },
+        {
+          "min": "66",
+          "max": "85",
+          "name": "Blue"
+        },
+        {
+          "min": "86",
+          "max": "105",
+          "name": "White"
+        },
+        {
+          "min": "106",
+          "max": "125",
+          "name": "Yellow"
+        },
+        {
+          "min": "126",
+          "max": "145",
+          "name": "Green"
+        },
+        {
+          "min": "146",
+          "max": "165",
+          "name": "White"
+        },
+        {
+          "min": "166",
+          "max": "185",
+          "name": "Yellow (Red/Green)"
+        },
+        {
+          "min": "186",
+          "max": "205",
+          "name": "Purple (Red/Blue)"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "Color changing fast - slow"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Color Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "55",
+          "name": "No function"
+        },
+        {
+          "min": "56",
+          "max": "75",
+          "name": "Sound active"
+        },
+        {
+          "min": "76",
+          "max": "105",
+          "name": "Red clockwise rotation"
+        },
+        {
+          "min": "106",
+          "max": "135",
+          "name": "Blue counterclockwise"
+        },
+        {
+          "min": "136",
+          "max": "165",
+          "name": "7 color change clockwise rotation"
+        },
+        {
+          "min": "166",
+          "max": "195",
+          "name": "7 color change counterclockwise rotation"
+        },
+        {
+          "min": "196",
+          "max": "225",
+          "name": "7 color change with strobe clockwise rotation"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "7 color change with strobe counterclockwise rotation"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "85",
+          "name": "Reset"
+        },
+        {
+          "min": "86",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX Values & Traits",
+      "totalChannels": 12,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Yellow",
+        "Purple",
+        "Strobing",
+        "Master Dimmer",
+        "Rotation",
+        "Color Macros",
+        "Pan/Color Macros",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.65",
+      "width": "318",
+      "height": "4125",
+      "depth": "318"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "1",
+      "degreesMax": "1"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "55",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

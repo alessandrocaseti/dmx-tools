@@ -1,0 +1,309 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "MHL108 Wash MKII",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Mike S",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Intensity",
+      "type": "Unknown"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Black"
+        },
+        {
+          "min": "10",
+          "max": "17",
+          "name": "Red"
+        },
+        {
+          "min": "18",
+          "max": "25",
+          "name": "Candy"
+        },
+        {
+          "min": "26",
+          "max": "33",
+          "name": "Straw"
+        },
+        {
+          "min": "34",
+          "max": "41",
+          "name": "Orange"
+        },
+        {
+          "min": "42",
+          "max": "48",
+          "name": "Amber"
+        },
+        {
+          "min": "49",
+          "max": "56",
+          "name": "Yellow"
+        },
+        {
+          "min": "57",
+          "max": "64",
+          "name": "Lemon"
+        },
+        {
+          "min": "65",
+          "max": "72",
+          "name": "Chart Green"
+        },
+        {
+          "min": "73",
+          "max": "80",
+          "name": "Limerick Green"
+        },
+        {
+          "min": "81",
+          "max": "87",
+          "name": "Apple Green"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Green"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Emerald Green"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Shamrock"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Spring Green"
+        },
+        {
+          "min": "120",
+          "max": "126",
+          "name": "Medium Turquoise"
+        },
+        {
+          "min": "127",
+          "max": "134",
+          "name": "Cyan"
+        },
+        {
+          "min": "135",
+          "max": "142",
+          "name": "Sea Green"
+        },
+        {
+          "min": "143",
+          "max": "150",
+          "name": "Azure"
+        },
+        {
+          "min": "151",
+          "max": "158",
+          "name": "Pacific Blue"
+        },
+        {
+          "min": "159",
+          "max": "165",
+          "name": "Navy Blue"
+        },
+        {
+          "min": "166",
+          "max": "173",
+          "name": "Blue"
+        },
+        {
+          "min": "174",
+          "max": "181",
+          "name": "Free Speech Blue"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Slate Blue"
+        },
+        {
+          "min": "190",
+          "max": "197",
+          "name": "Violet"
+        },
+        {
+          "min": "198",
+          "max": "204",
+          "name": "Medium Orchid"
+        },
+        {
+          "min": "205",
+          "max": "211",
+          "name": "Magenta"
+        },
+        {
+          "min": "212",
+          "max": "218",
+          "name": "Fuchcia"
+        },
+        {
+          "min": "219",
+          "max": "225",
+          "name": "Rose"
+        },
+        {
+          "min": "226",
+          "max": "232",
+          "name": "Mulberry"
+        },
+        {
+          "min": "233",
+          "max": "240",
+          "name": "Amaranth"
+        },
+        {
+          "min": "241",
+          "max": "248",
+          "name": "Red"
+        },
+        {
+          "min": "249",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Sound",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Close sound active"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Open sound active"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer & Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Close"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Dimmer & Strobe"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Dimmer & Strobe",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Colour",
+        "Strobe",
+        "Sound"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "3000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.1",
+      "width": "180",
+      "height": "240",
+      "depth": "165"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

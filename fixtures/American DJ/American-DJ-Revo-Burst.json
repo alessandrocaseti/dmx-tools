@@ -1,0 +1,823 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Revo Burst",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Flo Edelmann",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "119",
+          "name": "Pattern"
+        },
+        {
+          "min": "120",
+          "max": "239",
+          "name": "Chase"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Strobe / Chase Speed",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Strobe off"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Strobe off"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Chase Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Chase slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pattern / Chase All Beams",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Pattern / Chase 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Pattern / Chase 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Pattern / Chase 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Pattern / Chase 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Pattern / Chase 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Pattern / Chase 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Pattern / Chase 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Pattern / Chase 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Pattern / Chase 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Pattern / Chase 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Pattern / Chase 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Pattern / Chase 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Pattern / Chase 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Pattern / Chase 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Pattern / Chase 15"
+        }
+      ]
+    },
+    {
+      "name": "Pattern / Chase Beam 1",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Pattern / Chase 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Pattern / Chase 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Pattern / Chase 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Pattern / Chase 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Pattern / Chase 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Pattern / Chase 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Pattern / Chase 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Pattern / Chase 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Pattern / Chase 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Pattern / Chase 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Pattern / Chase 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Pattern / Chase 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Pattern / Chase 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Pattern / Chase 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Pattern / Chase 15"
+        }
+      ]
+    },
+    {
+      "name": "Pattern / Chase Beam 2",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Pattern / Chase 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Pattern / Chase 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Pattern / Chase 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Pattern / Chase 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Pattern / Chase 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Pattern / Chase 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Pattern / Chase 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Pattern / Chase 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Pattern / Chase 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Pattern / Chase 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Pattern / Chase 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Pattern / Chase 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Pattern / Chase 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Pattern / Chase 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Pattern / Chase 15"
+        }
+      ]
+    },
+    {
+      "name": "Pattern / Chase Beam 3",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Pattern / Chase 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Pattern / Chase 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Pattern / Chase 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Pattern / Chase 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Pattern / Chase 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Pattern / Chase 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Pattern / Chase 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Pattern / Chase 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Pattern / Chase 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Pattern / Chase 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Pattern / Chase 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Pattern / Chase 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Pattern / Chase 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Pattern / Chase 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Pattern / Chase 15"
+        }
+      ]
+    },
+    {
+      "name": "Pattern / Chase Beam 4",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Pattern / Chase 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Pattern / Chase 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Pattern / Chase 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Pattern / Chase 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Pattern / Chase 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Pattern / Chase 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Pattern / Chase 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Pattern / Chase 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Pattern / Chase 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Pattern / Chase 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Pattern / Chase 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Pattern / Chase 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Pattern / Chase 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Pattern / Chase 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Pattern / Chase 15"
+        }
+      ]
+    },
+    {
+      "name": "Pattern / Chase Beam 5",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Pattern / Chase 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Pattern / Chase 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Pattern / Chase 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Pattern / Chase 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Pattern / Chase 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Pattern / Chase 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Pattern / Chase 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Pattern / Chase 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Pattern / Chase 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Pattern / Chase 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Pattern / Chase 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Pattern / Chase 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Pattern / Chase 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Pattern / Chase 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Pattern / Chase 15"
+        }
+      ]
+    },
+    {
+      "name": "Pattern / Chase Beam 6",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Pattern / Chase 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Pattern / Chase 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Pattern / Chase 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Pattern / Chase 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Pattern / Chase 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Pattern / Chase 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Pattern / Chase 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Pattern / Chase 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Pattern / Chase 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Pattern / Chase 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Pattern / Chase 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Pattern / Chase 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Pattern / Chase 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Pattern / Chase 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Pattern / Chase 15"
+        }
+      ]
+    },
+    {
+      "name": "Pattern / Chase Beam 7",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Blackout"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Pattern / Chase 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Pattern / Chase 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Pattern / Chase 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Pattern / Chase 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Pattern / Chase 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Pattern / Chase 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Pattern / Chase 7"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Pattern / Chase 8"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Pattern / Chase 9"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Pattern / Chase 10"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Pattern / Chase 11"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Pattern / Chase 12"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Pattern / Chase 13"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Pattern / Chase 14"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Pattern / Chase 15"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "4-channel",
+      "totalChannels": 4,
+      "channels": [
+        "Mode",
+        "Pattern / Chase All Beams",
+        "Strobe / Chase Speed",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "10-channel",
+      "totalChannels": 10,
+      "channels": [
+        "Mode",
+        "Pattern / Chase Beam 1",
+        "Pattern / Chase Beam 2",
+        "Pattern / Chase Beam 3",
+        "Pattern / Chase Beam 4",
+        "Pattern / Chase Beam 5",
+        "Pattern / Chase Beam 6",
+        "Pattern / Chase Beam 7",
+        "Strobe / Chase Speed",
+        "Master dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "RGBW LEDs",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.2",
+      "width": "216",
+      "height": "239",
+      "depth": "312"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

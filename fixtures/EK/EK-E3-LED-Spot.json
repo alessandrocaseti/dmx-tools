@@ -1,0 +1,681 @@
+{
+  "version": "1.2",
+  "manufacturer": "EK",
+  "model": "E3 LED Spot",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Luke Jackson",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Reset All",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "Nothing"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset All (Hold 3 second)"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Nothing"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Nothing"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "RED"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "YELLOW"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "GREEN"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "CYAN"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "BLUE"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "MAGENTA"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "WHITE"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "FULL"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Left Run Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop Run"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Right Run Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "WHITE"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "73",
+          "name": "Gobo 1 Shaking"
+        },
+        {
+          "min": "74",
+          "max": "82",
+          "name": "Gobo 2 Shaking"
+        },
+        {
+          "min": "83",
+          "max": "91",
+          "name": "Gobo 3 Shaking"
+        },
+        {
+          "min": "92",
+          "max": "100",
+          "name": "Gobo 4 Shaking"
+        },
+        {
+          "min": "101",
+          "max": "109",
+          "name": "Gobo 5 Shaking"
+        },
+        {
+          "min": "110",
+          "max": "118",
+          "name": "Gobo 6 Shaking"
+        },
+        {
+          "min": "119",
+          "max": "127",
+          "name": "Gobo 7 Shaking"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Left Rotation Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Right Rotation Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Stop Rotation"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Left Rotation Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Right Rotation Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Prism Off"
+        },
+        {
+          "min": "11",
+          "max": "127",
+          "name": "Prism On"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Left Rotation Fast to Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Right Rotation Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe (Shutter)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter Closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "No function (Open)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe Effect Slow to Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "No function (Open)"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse-Effect in sequences"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "No function (Open)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe Effect Slow to Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "No function (Open)"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "R100 G0-100 B0 W0"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "R100-0 G100 B0 W0"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "R0 G100 B100-0 W0"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "R0 G100-0 B100 W0"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "R0-100 G0 B100 W0"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "R100 G0 B0-100 W0"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "R100 G0-100 B0-100 W0"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "R100-0 G100-0 B100 W0"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "R100 G100 B100 W100"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "Colour 1"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "Colour 2"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "Colour 3"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "Colour 4"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Colour 5"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Colour 6"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Colour 7"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Colour 8"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Colour 9"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Colour 10"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Colour 11"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "70",
+          "name": "4 Colours Snap"
+        },
+        {
+          "min": "71",
+          "max": "130",
+          "name": "4 Colours Fade"
+        },
+        {
+          "min": "131",
+          "max": "190",
+          "name": "15 Colours Snap"
+        },
+        {
+          "min": "191",
+          "max": "255",
+          "name": "15 Colours Fade"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Motor Show",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "58",
+          "name": "Motor Show 1"
+        },
+        {
+          "min": "59",
+          "max": "106",
+          "name": "Motor Show 2"
+        },
+        {
+          "min": "107",
+          "max": "154",
+          "name": "Motor Show 3"
+        },
+        {
+          "min": "155",
+          "max": "202",
+          "name": "Motor Show 4"
+        },
+        {
+          "min": "203",
+          "max": "250",
+          "name": "Motor Show 5 (Motor Show 1-4)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound Show"
+        }
+      ]
+    },
+    {
+      "name": "Motor Show Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed Mode",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Preset Dimmer Speed from Display Menu"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer Speed Mode OFF"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer Speed Mode 1 (Fast Speed)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer Speed Mode 2 (Middle Speed)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer Speed Mode 3 (Slow Speed)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 23,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Reset All",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Colour",
+        "Gobo wheel",
+        "Gobo Rotation",
+        "Prism",
+        "Strobe (Shutter)",
+        "Focus",
+        "Dimmer",
+        "Colour Macro",
+        "Auto Program",
+        "Auto Program Speed",
+        "Motor Show",
+        "Motor Show Speed",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 18,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Reset All",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Colour",
+        "Gobo wheel",
+        "Gobo Rotation",
+        "Prism",
+        "Strobe (Shutter)",
+        "Focus",
+        "Dimmer",
+        "Dimmer Speed Mode"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Reset All",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Gobo wheel",
+        "Gobo Rotation",
+        "Prism",
+        "Strobe (Shutter)",
+        "Focus"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1069",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.87",
+      "width": "250",
+      "height": "332",
+      "depth": "208"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "118",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

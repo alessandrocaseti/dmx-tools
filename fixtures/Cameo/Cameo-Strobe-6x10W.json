@@ -1,0 +1,64 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Strobe 6x10W",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Janosch Frank",
+  "channels": [
+    {
+      "name": "Flash Frequency",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Flash frequency (0-20Hz)"
+        }
+      ]
+    },
+    {
+      "name": "Brightness",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "2-Channel Mode",
+      "totalChannels": 2,
+      "channels": [
+        "Flash Frequency",
+        "Brightness"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.4",
+      "width": "380",
+      "height": "130",
+      "depth": "105"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "80",
+      "degreesMax": "80"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "DJ Spot 300",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "raymorris",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Red"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Red/yellow"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Yellow"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Yellow/blue"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "Blue"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "Blue/green"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "Green"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Green/purple"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Purple"
+        },
+        {
+          "min": "72",
+          "max": "77",
+          "name": "Purple/orange"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Orange"
+        },
+        {
+          "min": "86",
+          "max": "92",
+          "name": "Orange/pink"
+        },
+        {
+          "min": "93",
+          "max": "99",
+          "name": "Pink"
+        },
+        {
+          "min": "100",
+          "max": "106",
+          "name": "Pink/light blue"
+        },
+        {
+          "min": "107",
+          "max": "113",
+          "name": "Light blue"
+        },
+        {
+          "min": "114",
+          "max": "120",
+          "name": "Lightblue/light green"
+        },
+        {
+          "min": "121",
+          "max": "127",
+          "name": "Light green"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Rainbow effect"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Spot"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Gobo scroll"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "85",
+          "name": "Fast -> slow"
+        },
+        {
+          "min": "86",
+          "max": "170",
+          "name": "Slow -> fast"
+        },
+        {
+          "min": "171",
+          "max": "178",
+          "name": "No rotation"
+        },
+        {
+          "min": "179",
+          "max": "255",
+          "name": "Random rotation"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "130",
+          "name": "Shutter open"
+        },
+        {
+          "min": "131",
+          "max": "253",
+          "name": "Strobe"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Gobo shake / reset",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "190",
+          "name": "Gobo shake"
+        },
+        {
+          "min": "191",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    },
+    {
+      "name": "Pan / tilt speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "normal",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color",
+        "Gobo",
+        "Gobo Rotation",
+        "Shutter",
+        "Gobo shake / reset",
+        "Pan / tilt speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "0",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "8.8",
+      "width": "368",
+      "height": "305",
+      "depth": "457"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "265"
+    },
+    "technical": {
+      "powerConsumption": "350",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

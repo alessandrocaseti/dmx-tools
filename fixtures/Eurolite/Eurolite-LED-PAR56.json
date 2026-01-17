@@ -1,0 +1,288 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED PAR56",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Heikki Junnila",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Colour macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Manual Mix"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Orange 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Orange 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Orange 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Yellow 1"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Yellow 2"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Green"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Cyan 1"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Cyan 2"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Cyan 3"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Blue 1"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Blue 2"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Blue 3"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Magenta 1"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Magenta 2"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Magenta 3"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Pink 1"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Pink 2"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Pink 3"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "White 1"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "White 2"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "White 3"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Macro 1"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Macro 2"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Macro 3"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Macro 4"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Macro 5"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Macro 6"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Macro 7"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Macro 8"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Macro 9"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 10"
+        }
+      ]
+    },
+    {
+      "name": "Speed/strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Dimmer"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Decreasing brightness"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Increasing brightness"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse fade"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto color mix"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "3-color flash"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "7-color flash"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Colour macro",
+        "Speed/strobe",
+        "Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "4500"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "40",
+      "height": "40",
+      "depth": "30"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "100",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

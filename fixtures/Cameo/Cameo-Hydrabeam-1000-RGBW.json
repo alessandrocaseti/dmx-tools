@@ -1,0 +1,319 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Hydrabeam 1000 RGBW",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "AxlOtl",
+  "channels": [
+    {
+      "name": "Auto / Sound / Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "no function"
+        },
+        {
+          "min": "8",
+          "max": "30",
+          "name": "show 1"
+        },
+        {
+          "min": "31",
+          "max": "53",
+          "name": "show 2"
+        },
+        {
+          "min": "54",
+          "max": "76",
+          "name": "show 3"
+        },
+        {
+          "min": "77",
+          "max": "99",
+          "name": "show 4"
+        },
+        {
+          "min": "100",
+          "max": "122",
+          "name": "sound control"
+        },
+        {
+          "min": "123",
+          "max": "199",
+          "name": "no function"
+        },
+        {
+          "min": "200",
+          "max": "224",
+          "name": "reset"
+        },
+        {
+          "min": "225",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    },
+    {
+      "name": "Sound sensitivity / Auto speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "sound sensitivity / auto speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "no function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Colour macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "blackout"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "R (Red)"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "G (Green)"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "B (Blue)"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "W (White)"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "RG"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "RB"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "RW"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "GB"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "GW"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "BW"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "RGB"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "RGW"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "RBW"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "GBW"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "RGBW"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3-CH",
+      "totalChannels": 3,
+      "channels": [
+        "Auto / Sound / Reset",
+        "Sound sensitivity / Auto speed",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "6-CH",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Colour macro"
+      ]
+    },
+    {
+      "name": "9-CH",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "12-CH",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Colour macro",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "14-CH",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Colour macro",
+        "Auto / Sound / Reset",
+        "Sound sensitivity / Auto speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "100",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.6",
+      "width": "146",
+      "height": "255",
+      "depth": "156"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "2.5",
+      "degreesMax": "2.5"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "65",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

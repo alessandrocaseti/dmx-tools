@@ -1,0 +1,304 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TMH-10",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ex",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt-speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Colour wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open/white"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "White/Purple"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Purple"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Purple/green"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Green"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Green/light blue"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Light blue"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Light blue/yellow"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Yellow"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Yellow/dark green"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Dark green"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Dark green/dark blue"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Dark blue"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Dark blue/orange"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Orange"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Orange/white"
+        },
+        {
+          "min": "128",
+          "max": "192",
+          "name": "Forwards rainbow effect with decreasing speed"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Backwards rainbow effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Rotating gobo wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Open"
+        },
+        {
+          "min": "18",
+          "max": "36",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "37",
+          "max": "55",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "56",
+          "max": "74",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "75",
+          "max": "93",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "94",
+          "max": "112",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "128",
+          "max": "192",
+          "name": "Forwards gobo-wheel rotation with decreasing speed"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Backwards gobo-wheel rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No rotation"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Forwards gobo rotation with decreasing speed"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Backwards gobo rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe-effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "3-facet prism"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "149",
+          "name": "No function"
+        },
+        {
+          "min": "150",
+          "max": "200",
+          "name": "Reset"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Pan 16 bit",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt 16 bit",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "default",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt-speed",
+        "Colour wheel",
+        "Rotating gobo wheel",
+        "Gobo rotation",
+        "Strobe",
+        "Dimmer intensity",
+        "Prism",
+        "Reset",
+        "Pan 16 bit",
+        "Tilt 16 bit"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.5",
+      "width": "250",
+      "height": "320",
+      "depth": "280"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "585",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "170",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

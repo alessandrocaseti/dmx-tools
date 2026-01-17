@@ -1,0 +1,548 @@
+{
+  "version": "1.2",
+  "manufacturer": "Electroconcept",
+  "model": "Micro Spot 60 LED",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Clément Delabroye",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Closed"
+        },
+        {
+          "min": "4",
+          "max": "251",
+          "name": "Strobe (Slow to Fast)"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "White"
+        },
+        {
+          "min": "5",
+          "max": "14",
+          "name": "Red"
+        },
+        {
+          "min": "15",
+          "max": "20",
+          "name": "Green"
+        },
+        {
+          "min": "21",
+          "max": "27",
+          "name": "Blue"
+        },
+        {
+          "min": "28",
+          "max": "34",
+          "name": "Yellow"
+        },
+        {
+          "min": "35",
+          "max": "41",
+          "name": "Magenta"
+        },
+        {
+          "min": "42",
+          "max": "48",
+          "name": "Cyan"
+        },
+        {
+          "min": "49",
+          "max": "55",
+          "name": "Orange"
+        },
+        {
+          "min": "56",
+          "max": "62",
+          "name": "Pink"
+        },
+        {
+          "min": "63",
+          "max": "69",
+          "name": "Pink + White"
+        },
+        {
+          "min": "70",
+          "max": "76",
+          "name": "White + Red"
+        },
+        {
+          "min": "77",
+          "max": "83",
+          "name": "Red + Green"
+        },
+        {
+          "min": "84",
+          "max": "90",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "91",
+          "max": "97",
+          "name": "Blue + Yellow"
+        },
+        {
+          "min": "98",
+          "max": "104",
+          "name": "Yellow + Magenta"
+        },
+        {
+          "min": "105",
+          "max": "111",
+          "name": "Magenta + Cyan"
+        },
+        {
+          "min": "112",
+          "max": "118",
+          "name": "Cyan + Orange"
+        },
+        {
+          "min": "119",
+          "max": "125",
+          "name": "Orange + Pink"
+        },
+        {
+          "min": "126",
+          "max": "190",
+          "name": "Counterclockwise rotation ( Fast to Slow)"
+        },
+        {
+          "min": "191",
+          "max": "255",
+          "name": "Clockwise rotation (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Open"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "40",
+          "max": "129",
+          "name": "Clockwise rotation ( Slow to Fast )"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "Stop"
+        },
+        {
+          "min": "135",
+          "max": "220",
+          "name": "Counterclockwise rotation( Slow to Fast )"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Gobo 1 Shake"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Gobo 2 Shake"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Gobo 3 Shake"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Gobo 4 Shake"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Gobo 5 Shake"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Gobo 6 Shake"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Gobo 7 Shake"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Angle adjustment"
+        },
+        {
+          "min": "7",
+          "max": "129",
+          "name": "Clockwise Gobo Rotation (Fast to Slow)"
+        },
+        {
+          "min": "130",
+          "max": "135",
+          "name": "Stop"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Counterclockwise Rotation (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No effect"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Prism Effect"
+        }
+      ]
+    },
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Effect"
+        },
+        {
+          "min": "11",
+          "max": "80",
+          "name": "Program 1"
+        },
+        {
+          "min": "81",
+          "max": "190",
+          "name": "Program 2"
+        },
+        {
+          "min": "191",
+          "max": "255",
+          "name": "Program 3 Sound"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "No function"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Reset Wheel"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Reset Pan / Tilt"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Reset All"
+        }
+      ]
+    },
+    {
+      "name": "Color Effect",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "White"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "White + Red"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Red"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Red + Green"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Green"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Blue"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Blue + Yellow"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Yellow"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Yellow + Magenta"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Magenta"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Magenta + Cyan"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Cyan"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Cyan + Orange"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Orange"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Orange + Pink"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Pink"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Pink + White"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "White"
+        },
+        {
+          "min": "95",
+          "max": "114",
+          "name": "Red"
+        },
+        {
+          "min": "115",
+          "max": "134",
+          "name": "Green"
+        },
+        {
+          "min": "135",
+          "max": "154",
+          "name": "Blue"
+        },
+        {
+          "min": "155",
+          "max": "174",
+          "name": "Yellow"
+        },
+        {
+          "min": "175",
+          "max": "194",
+          "name": "Magenta"
+        },
+        {
+          "min": "195",
+          "max": "214",
+          "name": "Cyan"
+        },
+        {
+          "min": "215",
+          "max": "234",
+          "name": "Orange"
+        },
+        {
+          "min": "235",
+          "max": "254",
+          "name": "Pink"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "15 Channel",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Shutter",
+        "Dimmer",
+        "Color",
+        "Gobo",
+        "Gobo Rotation",
+        "Prism",
+        "Color Effect",
+        "Macro",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.6",
+      "width": "240",
+      "height": "340",
+      "depth": "240"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "17",
+      "degreesMax": "17"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "100",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

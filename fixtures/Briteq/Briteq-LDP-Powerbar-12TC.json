@@ -1,0 +1,424 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "LDP Powerbar 12TC",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color & Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Color 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Color 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Color 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Color 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Color 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Color 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Color 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Color 8"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Color 9"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Color 10"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Color 11"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Color 12"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Color 13"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Color 14"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Color 15"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Color 16"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Color 17"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Color 18"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Color 19"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Color 20"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Color 21"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Color 22"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Color 23"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Color 24"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Color 25"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Color 26"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Color 27"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Color 28"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Color 29"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Macro 1\n   \n   \n  "
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 2\n   \n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Dimmer/Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "200",
+          "name": "Dimmer 0% to 100 %"
+        },
+        {
+          "min": "201",
+          "max": "248",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "249",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Slow to fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow open fast close"
+        },
+        {
+          "min": "182",
+          "max": "190",
+          "name": "Open"
+        },
+        {
+          "min": "191",
+          "max": "231",
+          "name": "Fast open slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Macro speed (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "On/Off",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "On"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Off"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "On"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Off"
+        },
+        {
+          "min": "182",
+          "max": "190",
+          "name": "On"
+        },
+        {
+          "min": "191",
+          "max": "231",
+          "name": "Off"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "On"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Off"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 3",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Color & Macro",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer/Strobe"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.8",
+      "width": "1238",
+      "height": "140",
+      "depth": "79"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "39",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

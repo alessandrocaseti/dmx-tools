@@ -1,0 +1,354 @@
+{
+  "version": "1.2",
+  "manufacturer": "AFX",
+  "model": "Spot 60 LED",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "erdnaxe",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Colour Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "Red"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Green"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "Blue"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Yellow"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Magenta"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Simple green"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Simple blue"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "Rainbow"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Rotation Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Gobo Rotate CW slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Gobo Rotate CCW slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Gobo self-rotation CW from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Static Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Open"
+        },
+        {
+          "min": "7",
+          "max": "13",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "14",
+          "max": "20",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "21",
+          "max": "27",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "28",
+          "max": "34",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "35",
+          "max": "41",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "42",
+          "max": "48",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "49",
+          "max": "55",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "64",
+          "max": "70",
+          "name": "Gobo 8 Shake speed from slow to fast"
+        },
+        {
+          "min": "71",
+          "max": "77",
+          "name": "Gobo 7 Shake speed from slow to fast"
+        },
+        {
+          "min": "78",
+          "max": "84",
+          "name": "Gobo 6 Shake speed from slow to fast"
+        },
+        {
+          "min": "85",
+          "max": "91",
+          "name": "Gobo 5 Shake speed from slow to fast"
+        },
+        {
+          "min": "92",
+          "max": "98",
+          "name": "Gobo 4 Shake speed from slow to fast"
+        },
+        {
+          "min": "99",
+          "max": "105",
+          "name": "Gobo 3 Shake speed from slow to fast"
+        },
+        {
+          "min": "106",
+          "max": "112",
+          "name": "Gobo 2 Shake speed from slow to fast"
+        },
+        {
+          "min": "113",
+          "max": "119",
+          "name": "Gobo 1 Shake speed from slow to fast"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Gobo Rotate CW slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Gobo Rotate CCW slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open"
+        },
+        {
+          "min": "10",
+          "max": "63",
+          "name": "Prism In"
+        },
+        {
+          "min": "64",
+          "max": "159",
+          "name": "CW rotation"
+        },
+        {
+          "min": "160",
+          "max": "255",
+          "name": "CCW rotation"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "200",
+          "name": "Reset"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Colour Wheel",
+        "Focus",
+        "Rotation Gobos",
+        "Gobo Rotation",
+        "Static Gobos",
+        "Prism",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED 60W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.5",
+      "width": "246",
+      "height": "384",
+      "depth": "250"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "17",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "90",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

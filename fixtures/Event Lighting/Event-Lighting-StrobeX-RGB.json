@@ -1,0 +1,570 @@
+{
+  "version": "1.2",
+  "manufacturer": "Event Lighting",
+  "model": "StrobeX RGB",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michael Tosatto",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Master Dimmer (0 - 100%)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No Function"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe speed (Slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe On Duration",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Strobe On Duration Short to Long"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Random Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Random Strobe (Slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Special Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Special Effect"
+        }
+      ]
+    },
+    {
+      "name": "Speed of Special Effect",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed of Special Effect"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Red",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Green",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Blue",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Red"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Red + Green"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Green"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Green + Blue"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Blue"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Red + Blue"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Red + Green + Blue"
+        }
+      ]
+    },
+    {
+      "name": "Block 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Block 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Block 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Block 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Block 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Block 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Block 3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Block 3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Block 3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Block 4 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Block 4 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Block 4 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe Rate for Red 1",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Green 1",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Blue 1",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Red 2",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Green 2",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Blue 2",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Red 3",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Green 3",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Blue 3",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Red 4",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Green 4",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Rate for Blue 4",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Open"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Master Dimmer",
+        "Strobe On Duration",
+        "Strobe Rate",
+        "Random Strobe",
+        "Special Effect",
+        "Speed of Special Effect"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 9,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe On Duration",
+        "Strobe Rate",
+        "Random Strobe",
+        "Special Effect",
+        "Speed of Special Effect"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 10,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Strobe Rate for Red",
+        "Green",
+        "Strobe Rate for Green",
+        "Blue",
+        "Strobe Rate for Blue",
+        "Color Macro",
+        "Special Effect",
+        "Speed of Special Effect"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 18,
+      "channels": [
+        "Master Dimmer",
+        "Block 1 Red",
+        "Block 1 Green",
+        "Block 1 Blue",
+        "Block 2 Red",
+        "Block 2 Green",
+        "Block 2 Blue",
+        "Block 3 Red",
+        "Block 3 Green",
+        "Block 3 Blue",
+        "Block 4 Red",
+        "Block 4 Green",
+        "Block 4 Blue",
+        "Strobe On Duration",
+        "Strobe Rate",
+        "Random Strobe",
+        "Special Effect",
+        "Speed of Special Effect"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 25,
+      "channels": [
+        "Master Dimmer",
+        "Block 1 Red",
+        "Strobe Rate for Red 1",
+        "Block 1 Green",
+        "Strobe Rate for Green 1",
+        "Block 1 Blue",
+        "Strobe Rate for Blue 1",
+        "Block 2 Red",
+        "Strobe Rate for Red 2",
+        "Block 2 Green",
+        "Strobe Rate for Green 2",
+        "Block 2 Blue",
+        "Strobe Rate for Blue 2",
+        "Block 3 Red",
+        "Strobe Rate for Red 3",
+        "Block 3 Green",
+        "Strobe Rate for Green 3",
+        "Block 3 Blue",
+        "Strobe Rate for Blue 3",
+        "Block 4 Red",
+        "Strobe Rate for Red 4",
+        "Block 4 Green",
+        "Strobe Rate for Green 4",
+        "Block 4 Blue",
+        "Strobe Rate for Blue 4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "18380",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.5",
+      "width": "500",
+      "height": "270",
+      "depth": "135"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "120",
+      "degreesMax": "120"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "480",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,934 @@
+{
+  "version": "1.2",
+  "manufacturer": "Event Lighting",
+  "model": "Pixbar 12x12W",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michael Tosatto",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "White Colour Temperature",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "31",
+          "name": "White colour temperature 01"
+        },
+        {
+          "min": "32",
+          "max": "54",
+          "name": "White colour temperature 02"
+        },
+        {
+          "min": "55",
+          "max": "77",
+          "name": "White colour temperature 03"
+        },
+        {
+          "min": "78",
+          "max": "100",
+          "name": "White colour temperature 04"
+        },
+        {
+          "min": "101",
+          "max": "123",
+          "name": "White colour temperature 05"
+        },
+        {
+          "min": "124",
+          "max": "146",
+          "name": "White colour temperature 06"
+        },
+        {
+          "min": "147",
+          "max": "169",
+          "name": "White colour temperature 07"
+        },
+        {
+          "min": "170",
+          "max": "192",
+          "name": "White colour temperature 08"
+        },
+        {
+          "min": "193",
+          "max": "215",
+          "name": "White colour temperature 09"
+        },
+        {
+          "min": "216",
+          "max": "238",
+          "name": "White colour temperature 10"
+        },
+        {
+          "min": "239",
+          "max": "255",
+          "name": "White colour temperature 11"
+        }
+      ]
+    },
+    {
+      "name": "Auto Run Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "21",
+          "name": "4 colors switching"
+        },
+        {
+          "min": "22",
+          "max": "34",
+          "name": "36 colors switching"
+        },
+        {
+          "min": "35",
+          "max": "47",
+          "name": "6 colors fading (slow in slow out)"
+        },
+        {
+          "min": "48",
+          "max": "60",
+          "name": "36 colors fading (slow in slow out)"
+        },
+        {
+          "min": "61",
+          "max": "73",
+          "name": "6 colors fading (slow in fast out)"
+        },
+        {
+          "min": "74",
+          "max": "86",
+          "name": "36 colors fading (slow in fast out)"
+        },
+        {
+          "min": "87",
+          "max": "99",
+          "name": "6 colors fading (fast in slow out)"
+        },
+        {
+          "min": "100",
+          "max": "112",
+          "name": "36 colors fading (fast in slow out)"
+        },
+        {
+          "min": "113",
+          "max": "125",
+          "name": "Color Macros"
+        },
+        {
+          "min": "126",
+          "max": "138",
+          "name": "Auto chasing 1"
+        },
+        {
+          "min": "139",
+          "max": "151",
+          "name": "Auto chasing 2"
+        },
+        {
+          "min": "152",
+          "max": "164",
+          "name": "Auto chasing 3"
+        },
+        {
+          "min": "165",
+          "max": "177",
+          "name": "Auto chasing 4"
+        },
+        {
+          "min": "178",
+          "max": "190",
+          "name": "Auto chasing 5"
+        },
+        {
+          "min": "191",
+          "max": "203",
+          "name": "Auto chasing 6"
+        },
+        {
+          "min": "204",
+          "max": "216",
+          "name": "Auto chasing 7"
+        },
+        {
+          "min": "217",
+          "max": "229",
+          "name": "Auto chasing 8"
+        },
+        {
+          "min": "230",
+          "max": "242",
+          "name": "Auto chasing 9"
+        },
+        {
+          "min": "243",
+          "max": "255",
+          "name": "Sound active mode"
+        }
+      ]
+    },
+    {
+      "name": "Auto Run Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto Run Speed"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curve",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Use preset dimming curve"
+        },
+        {
+          "min": "10",
+          "max": "70",
+          "name": "Dimmer curve 1"
+        },
+        {
+          "min": "71",
+          "max": "132",
+          "name": "Dimmer curve 2"
+        },
+        {
+          "min": "133",
+          "max": "194",
+          "name": "Dimmer curve 3"
+        },
+        {
+          "min": "195",
+          "max": "255",
+          "name": "Dimmer curve 4"
+        }
+      ]
+    },
+    {
+      "name": "LED1-LED3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED1-LED3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED1-LED3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED1-LED3 White",
+      "type": "White"
+    },
+    {
+      "name": "LED1-LED3 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED1-LED3 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED4-LED6 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED4-LED6 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED4-LED6 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED4-LED6 White",
+      "type": "White"
+    },
+    {
+      "name": "LED4-LED6 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED4-LED6 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED7-LED9 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED7-LED9 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED7-LED9 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED7-LED9 White",
+      "type": "White"
+    },
+    {
+      "name": "LED7-LED9 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED7-LED9 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED10-LED12 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED10-LED12 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED10-LED12 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED10-LED12 White",
+      "type": "White"
+    },
+    {
+      "name": "LED10-LED12 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED10-LED12 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED1 White",
+      "type": "White"
+    },
+    {
+      "name": "LED1 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED1 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED2 White",
+      "type": "White"
+    },
+    {
+      "name": "LED2 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED2 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED3 White",
+      "type": "White"
+    },
+    {
+      "name": "LED3 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED3 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED4 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED4 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED4 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED4 White",
+      "type": "White"
+    },
+    {
+      "name": "LED4 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED4 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED5 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED5 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED5 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED5 White",
+      "type": "White"
+    },
+    {
+      "name": "LED5 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED5 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED6 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED6 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED6 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED6 White",
+      "type": "White"
+    },
+    {
+      "name": "LED6 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED6 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED7 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED7 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED7 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED7 White",
+      "type": "White"
+    },
+    {
+      "name": "LED7 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED7 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED8 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED8 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED8 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED8 White",
+      "type": "White"
+    },
+    {
+      "name": "LED8 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED8 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED9 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED9 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED9 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED9 White",
+      "type": "White"
+    },
+    {
+      "name": "LED9 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED9 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED10 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED10 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED10 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED10 White",
+      "type": "White"
+    },
+    {
+      "name": "LED10 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED10 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED11 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED11 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED11 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED11 White",
+      "type": "White"
+    },
+    {
+      "name": "LED11 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED11 UV",
+      "type": "UV"
+    },
+    {
+      "name": "LED12 Red",
+      "type": "Red"
+    },
+    {
+      "name": "LED12 Green",
+      "type": "Green"
+    },
+    {
+      "name": "LED12 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "LED12 White",
+      "type": "White"
+    },
+    {
+      "name": "LED12 Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "LED12 UV",
+      "type": "UV"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 12,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master Dimmer",
+        "Strobe",
+        "White Colour Temperature",
+        "Auto Run Mode",
+        "Auto Run Speed",
+        "Dimmer Curve"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 24,
+      "channels": [
+        "LED1-LED3 Red",
+        "LED1-LED3 Green",
+        "LED1-LED3 Blue",
+        "LED1-LED3 White",
+        "LED1-LED3 Amber",
+        "LED1-LED3 UV",
+        "LED4-LED6 Red",
+        "LED4-LED6 Green",
+        "LED4-LED6 Blue",
+        "LED4-LED6 White",
+        "LED4-LED6 Amber",
+        "LED4-LED6 UV",
+        "LED7-LED9 Red",
+        "LED7-LED9 Green",
+        "LED7-LED9 Blue",
+        "LED7-LED9 White",
+        "LED7-LED9 Amber",
+        "LED7-LED9 UV",
+        "LED10-LED12 Red",
+        "LED10-LED12 Green",
+        "LED10-LED12 Blue",
+        "LED10-LED12 White",
+        "LED10-LED12 Amber",
+        "LED10-LED12 UV"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 72,
+      "channels": [
+        "LED1 Red",
+        "LED1 Green",
+        "LED1 Blue",
+        "LED1 White",
+        "LED1 Amber",
+        "LED1 UV",
+        "LED2 Red",
+        "LED2 Green",
+        "LED2 Blue",
+        "LED2 White",
+        "LED2 Amber",
+        "LED2 UV",
+        "LED3 Red",
+        "LED3 Green",
+        "LED3 Blue",
+        "LED3 White",
+        "LED3 Amber",
+        "LED3 UV",
+        "LED4 Red",
+        "LED4 Green",
+        "LED4 Blue",
+        "LED4 White",
+        "LED4 Amber",
+        "LED4 UV",
+        "LED5 Red",
+        "LED5 Green",
+        "LED5 Blue",
+        "LED5 White",
+        "LED5 Amber",
+        "LED5 UV",
+        "LED6 Red",
+        "LED6 Green",
+        "LED6 Blue",
+        "LED6 White",
+        "LED6 Amber",
+        "LED6 UV",
+        "LED7 Red",
+        "LED7 Green",
+        "LED7 Blue",
+        "LED7 White",
+        "LED7 Amber",
+        "LED7 UV",
+        "LED8 Red",
+        "LED8 Green",
+        "LED8 Blue",
+        "LED8 White",
+        "LED8 Amber",
+        "LED8 UV",
+        "LED9 Red",
+        "LED9 Green",
+        "LED9 Blue",
+        "LED9 White",
+        "LED9 Amber",
+        "LED9 UV",
+        "LED10 Red",
+        "LED10 Green",
+        "LED10 Blue",
+        "LED10 White",
+        "LED10 Amber",
+        "LED10 UV",
+        "LED11 Red",
+        "LED11 Green",
+        "LED11 Blue",
+        "LED11 White",
+        "LED11 Amber",
+        "LED11 UV",
+        "LED12 Red",
+        "LED12 Green",
+        "LED12 Blue",
+        "LED12 White",
+        "LED12 Amber",
+        "LED12 UV"
+      ]
+    },
+    {
+      "name": "Mode 8",
+      "totalChannels": 74,
+      "channels": [
+        "LED1 Red",
+        "LED1 Green",
+        "LED1 Blue",
+        "LED1 White",
+        "LED1 Amber",
+        "LED1 UV",
+        "LED2 Red",
+        "LED2 Green",
+        "LED2 Blue",
+        "LED2 White",
+        "LED2 Amber",
+        "LED2 UV",
+        "LED3 Red",
+        "LED3 Green",
+        "LED3 Blue",
+        "LED3 White",
+        "LED3 Amber",
+        "LED3 UV",
+        "LED4 Red",
+        "LED4 Green",
+        "LED4 Blue",
+        "LED4 White",
+        "LED4 Amber",
+        "LED4 UV",
+        "LED5 Red",
+        "LED5 Green",
+        "LED5 Blue",
+        "LED5 White",
+        "LED5 Amber",
+        "LED5 UV",
+        "LED6 Red",
+        "LED6 Green",
+        "LED6 Blue",
+        "LED6 White",
+        "LED6 Amber",
+        "LED6 UV",
+        "LED7 Red",
+        "LED7 Green",
+        "LED7 Blue",
+        "LED7 White",
+        "LED7 Amber",
+        "LED7 UV",
+        "LED8 Red",
+        "LED8 Green",
+        "LED8 Blue",
+        "LED8 White",
+        "LED8 Amber",
+        "LED8 UV",
+        "LED9 Red",
+        "LED9 Green",
+        "LED9 Blue",
+        "LED9 White",
+        "LED9 Amber",
+        "LED9 UV",
+        "LED10 Red",
+        "LED10 Green",
+        "LED10 Blue",
+        "LED10 White",
+        "LED10 Amber",
+        "LED10 UV",
+        "LED11 Red",
+        "LED11 Green",
+        "LED11 Blue",
+        "LED11 White",
+        "LED11 Amber",
+        "LED11 UV",
+        "LED12 Red",
+        "LED12 Green",
+        "LED12 Blue",
+        "LED12 White",
+        "LED12 Amber",
+        "LED12 UV",
+        "Master Dimmer",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1756",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.5",
+      "width": "1050",
+      "height": "165",
+      "depth": "80"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "150",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

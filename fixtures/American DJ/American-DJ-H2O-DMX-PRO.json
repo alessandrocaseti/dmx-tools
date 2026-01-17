@@ -1,0 +1,166 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "H2O DMX PRO",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Marty Badger",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Rotation"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Clockwise Fast-Slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "No Rotation"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Counter-Clockwise Slow-Fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No Rotation"
+        }
+      ]
+    },
+    {
+      "name": "Colour Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "White"
+        },
+        {
+          "min": "11",
+          "max": "21",
+          "name": "White & Orange"
+        },
+        {
+          "min": "22",
+          "max": "32",
+          "name": "Orange"
+        },
+        {
+          "min": "33",
+          "max": "43",
+          "name": "Orange & Green"
+        },
+        {
+          "min": "44",
+          "max": "54",
+          "name": "Green"
+        },
+        {
+          "min": "55",
+          "max": "65",
+          "name": "Green & Blue"
+        },
+        {
+          "min": "66",
+          "max": "76",
+          "name": "Blue"
+        },
+        {
+          "min": "77",
+          "max": "87",
+          "name": "Blue & Yellow"
+        },
+        {
+          "min": "88",
+          "max": "98",
+          "name": "Yellow"
+        },
+        {
+          "min": "99",
+          "max": "109",
+          "name": "Yellow & Purple"
+        },
+        {
+          "min": "110",
+          "max": "120",
+          "name": "Purple"
+        },
+        {
+          "min": "121",
+          "max": "127",
+          "name": "Purple & White"
+        },
+        {
+          "min": "128",
+          "max": "186",
+          "name": "Clockwise Colour Fast-Slow"
+        },
+        {
+          "min": "187",
+          "max": "196",
+          "name": "Stop"
+        },
+        {
+          "min": "197",
+          "max": "255",
+          "name": "Counter-Clockwise Slow-Fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Master Dimmer",
+        "Rotation",
+        "Colour Wheel"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "45 Watt LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4",
+      "width": "236",
+      "height": "121",
+      "depth": "292"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "34",
+      "degreesMax": "52"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "69",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

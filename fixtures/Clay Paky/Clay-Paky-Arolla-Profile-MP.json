@@ -1,0 +1,1245 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Arolla Profile MP",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Gianluca Baggi, Giordano Fassi",
+  "channels": [
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "CTO",
+      "type": "Color"
+    },
+    {
+      "name": "Color Function",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "85",
+          "name": "Full Color\n   \n  "
+        },
+        {
+          "min": "86",
+          "max": "170",
+          "name": "Half Color\n   \n  "
+        },
+        {
+          "min": "171",
+          "max": "255",
+          "name": "Linear Path\n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "White"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Dark Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Deep Green"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "CRI-4"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Dark Orange"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Navy Blue"
+        },
+        {
+          "min": "80",
+          "max": "127",
+          "name": "CW rotation from slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Linear color insertion"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Closed"
+        },
+        {
+          "min": "4",
+          "max": "103",
+          "name": "Linear Strobe slow (1 flash/sec) to fast ( 25 flashes/sec)"
+        },
+        {
+          "min": "104",
+          "max": "107",
+          "name": "Open"
+        },
+        {
+          "min": "108",
+          "max": "207",
+          "name": "Linear Pulse slow to fast"
+        },
+        {
+          "min": "208",
+          "max": "212",
+          "name": "Open"
+        },
+        {
+          "min": "213",
+          "max": "225",
+          "name": "Random Strobe at low frequency"
+        },
+        {
+          "min": "226",
+          "max": "238",
+          "name": "Random Strobe at medium frequency"
+        },
+        {
+          "min": "239",
+          "max": "251",
+          "name": "Random Strobe at high frequency"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Iris",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Linear Open Min to Max"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Open"
+        },
+        {
+          "min": "132",
+          "max": "171",
+          "name": "Pulse slow to fast"
+        },
+        {
+          "min": "172",
+          "max": "211",
+          "name": "Pulse slow to fast - instant opening"
+        },
+        {
+          "min": "212",
+          "max": "251",
+          "name": "Pulse slow to fast - instant closing"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Rotating Gobo Change",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "Empty position"
+        },
+        {
+          "min": "9",
+          "max": "17",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "18",
+          "max": "26",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "27",
+          "max": "35",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "36",
+          "max": "44",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "45",
+          "max": "53",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "54",
+          "max": "62",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "63",
+          "max": "71",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "72",
+          "max": "113",
+          "name": "Linear CCW wheel rotation from fast to slow"
+        },
+        {
+          "min": "114",
+          "max": "117",
+          "name": "Stop"
+        },
+        {
+          "min": "118",
+          "max": "159",
+          "name": "Linear CW wheel rotation from slow to fast"
+        },
+        {
+          "min": "160",
+          "max": "173",
+          "name": "Gobo 1 shakes low to fast"
+        },
+        {
+          "min": "174",
+          "max": "187",
+          "name": "Gobo 2 shakes low to fast"
+        },
+        {
+          "min": "188",
+          "max": "200",
+          "name": "Gobo 3 shakes low to fast"
+        },
+        {
+          "min": "201",
+          "max": "214",
+          "name": "Gobo 4 shakes low to fast"
+        },
+        {
+          "min": "215",
+          "max": "227",
+          "name": "Gobo 5 shakes low to fast"
+        },
+        {
+          "min": "228",
+          "max": "241",
+          "name": "Gobo 6 shakes low to fast"
+        },
+        {
+          "min": "242",
+          "max": "255",
+          "name": "Gobo 7 shakes low to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo indexing: 0° to 540° range"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Linear CW fast to slow"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Linear CCW slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Fine Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fine CCW gobo indexing"
+        }
+      ]
+    },
+    {
+      "name": "4 Facet Prism Insertion",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism OUT"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Prism IN"
+        }
+      ]
+    },
+    {
+      "name": "Prism rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism indexing: 0° to 540° range"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Continuous CW fast to slow"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Continuous CCW slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Effect Wheel Insertion",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Effect wheel OUT"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Effect wheel IN"
+        }
+      ]
+    },
+    {
+      "name": "Effect Wheel Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "CW linear slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Stop"
+        },
+        {
+          "min": "132",
+          "max": "255",
+          "name": "CCW linear slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Linear Frost"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Blade 1",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Linear Insertion"
+        }
+      ]
+    },
+    {
+      "name": "Blade 1 Swivelling",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Swivelling from -25° to 0°"
+        },
+        {
+          "min": "128",
+          "max": "129",
+          "name": "0 degress"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Swivelling from 0° to +25°"
+        }
+      ]
+    },
+    {
+      "name": "Blade 2",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Linear Insertion"
+        }
+      ]
+    },
+    {
+      "name": "Blade 2 Swivelling",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Swivelling from -25° to 0°"
+        },
+        {
+          "min": "128",
+          "max": "129",
+          "name": "0 degress"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Swivelling from 0° to +25°"
+        }
+      ]
+    },
+    {
+      "name": "Blade 3",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Linear Insertion"
+        }
+      ]
+    },
+    {
+      "name": "Blade 3 Swivelling",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Swivelling from -25° to 0°"
+        },
+        {
+          "min": "128",
+          "max": "129",
+          "name": "0 degress"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Swivelling from 0° to +25°"
+        }
+      ]
+    },
+    {
+      "name": "Blade 4",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Linear Insertion"
+        }
+      ]
+    },
+    {
+      "name": "Blade 4 Swivelling",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Swivelling from -25° to 0°"
+        },
+        {
+          "min": "128",
+          "max": "129",
+          "name": "0 degress"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Swivelling from 0° to +25°"
+        }
+      ]
+    },
+    {
+      "name": "Framing Rotation",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Linear Rotation CCW"
+        },
+        {
+          "min": "128",
+          "max": "129",
+          "name": "Middle"
+        },
+        {
+          "min": "130",
+          "max": "255",
+          "name": "Linear Rotation CW"
+        }
+      ]
+    },
+    {
+      "name": "Framing Macro Effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Macro OFF"
+        },
+        {
+          "min": "4",
+          "max": "11",
+          "name": "Macro 1"
+        },
+        {
+          "min": "12",
+          "max": "18",
+          "name": "Macro 2"
+        },
+        {
+          "min": "19",
+          "max": "25",
+          "name": "Macro 3"
+        },
+        {
+          "min": "26",
+          "max": "32",
+          "name": "Macro 4"
+        },
+        {
+          "min": "33",
+          "max": "39",
+          "name": "Macro 5"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Macro 6"
+        },
+        {
+          "min": "48",
+          "max": "54",
+          "name": "Macro 7"
+        },
+        {
+          "min": "55",
+          "max": "61",
+          "name": "Macro 8"
+        },
+        {
+          "min": "62",
+          "max": "68",
+          "name": "Macro 9"
+        },
+        {
+          "min": "69",
+          "max": "75",
+          "name": "Macro 10"
+        },
+        {
+          "min": "76",
+          "max": "82",
+          "name": "Macro 11"
+        },
+        {
+          "min": "83",
+          "max": "90",
+          "name": "Macro 12"
+        },
+        {
+          "min": "91",
+          "max": "97",
+          "name": "Macro 13"
+        },
+        {
+          "min": "98",
+          "max": "104",
+          "name": "Macro 14"
+        },
+        {
+          "min": "105",
+          "max": "111",
+          "name": "Macro 15"
+        },
+        {
+          "min": "112",
+          "max": "118",
+          "name": "Macro 16"
+        },
+        {
+          "min": "119",
+          "max": "125",
+          "name": "Macro 17"
+        },
+        {
+          "min": "126",
+          "max": "133",
+          "name": "Macro 18"
+        },
+        {
+          "min": "134",
+          "max": "140",
+          "name": "Macro 19"
+        },
+        {
+          "min": "141",
+          "max": "147",
+          "name": "Macro 20"
+        },
+        {
+          "min": "148",
+          "max": "154",
+          "name": "Macro 21"
+        },
+        {
+          "min": "155",
+          "max": "161",
+          "name": "Macro 22"
+        },
+        {
+          "min": "162",
+          "max": "168",
+          "name": "Macro 23"
+        },
+        {
+          "min": "169",
+          "max": "176",
+          "name": "Macro 24"
+        },
+        {
+          "min": "177",
+          "max": "183",
+          "name": "Macro 25"
+        },
+        {
+          "min": "184",
+          "max": "190",
+          "name": "Macro 26"
+        },
+        {
+          "min": "191",
+          "max": "197",
+          "name": "Macro 27"
+        },
+        {
+          "min": "198",
+          "max": "204",
+          "name": "Macro 28"
+        },
+        {
+          "min": "205",
+          "max": "211",
+          "name": "Macro 29"
+        },
+        {
+          "min": "212",
+          "max": "219",
+          "name": "Macro 30"
+        },
+        {
+          "min": "220",
+          "max": "226",
+          "name": "Macro 31"
+        },
+        {
+          "min": "227",
+          "max": "233",
+          "name": "Macro 32"
+        },
+        {
+          "min": "234",
+          "max": "240",
+          "name": "Macro 33"
+        },
+        {
+          "min": "241",
+          "max": "247",
+          "name": "Macro 34"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 35"
+        }
+      ]
+    },
+    {
+      "name": "Framing Macro Effects Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Macro Speed slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "Unused range"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "Effects Reset"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "Pan/Tilt Reset"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Complete Fixture Reset"
+        }
+      ]
+    },
+    {
+      "name": "Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Unused range"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "P/T Smooth OFF"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "P/T Smooth ON"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Dimmer Curve 1"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Dimmer Curve 2"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Dimmer Curve 3"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Dimmer Curve 4"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "Fan Mode Auto"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "Fan Mode SLN"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "Fan Mode Theatre"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "Fan Mode RNR"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "Fan Mode Standard"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Pan/Tilt Slow speed"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Pan/Tilt Medium speed"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Pan/Tilt Fast speed"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "CMY Normal speed"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "CMY Fast speed"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Display OFF"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Display ON"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "PWM Frequency 600 Hz"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "PWM Frequency 1200 Hz"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "PWM Frequency 2000 Hz"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "PWM Frequency 4000 Hz"
+        },
+        {
+          "min": "221",
+          "max": "230",
+          "name": "PWM Frequency 6000 Hz"
+        },
+        {
+          "min": "231",
+          "max": "240",
+          "name": "PWM Frequency 20000 Hz"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Unused range"
+        }
+      ]
+    },
+    {
+      "name": "Linear Path mode",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "White"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Dark Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "brilliant Blue"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Deep Green"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Cri-4"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Dark Orange"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Navy Blue"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "White"
+        },
+        {
+          "min": "90",
+          "max": "127",
+          "name": "Cw rotation from slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Linear Color insertion"
+        }
+      ]
+    },
+    {
+      "name": "Half Color Mode",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "White"
+        },
+        {
+          "min": "5",
+          "max": "9",
+          "name": "White +Dark Red"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Dark Red"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Dark Red + Brilliant Blue"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Brilliant blue"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Brilliant Blue + Deep Green"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Deep Green"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Deep Green + Golden Amber"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Golden Amber + Cri-4"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Cri-4"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Cri-4 + Dark Orange"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Dark Orange"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Dark Orange + Navy Blue"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Navy Blue"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Navy blue + White"
+        },
+        {
+          "min": "80",
+          "max": "127",
+          "name": "CW rotation from slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Linear color insertion"
+        }
+      ]
+    },
+    {
+      "name": "Full Color mode",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "White"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Dark Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Deep Green"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "CRI-4"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Dark orange"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Navy Blue"
+        },
+        {
+          "min": "80",
+          "max": "127",
+          "name": "CW rotation from slow to fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Linear color insertion"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 37,
+      "channels": [
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "CTO",
+        "Color Function",
+        "Color Wheel",
+        "Strobe",
+        "Dimmer",
+        "Dimmer Fine",
+        "Iris",
+        "Rotating Gobo Change",
+        "Gobo Rotation",
+        "Fine Gobo Rotation",
+        "4 Facet Prism Insertion",
+        "Prism rotation",
+        "Effect Wheel Insertion",
+        "Effect Wheel Rotation",
+        "Frost",
+        "Focus",
+        "Zoom",
+        "Blade 1",
+        "Blade 1 Swivelling",
+        "Blade 2",
+        "Blade 2 Swivelling",
+        "Blade 3",
+        "Blade 3 Swivelling",
+        "Blade 4",
+        "Blade 4 Swivelling",
+        "Framing Rotation",
+        "Framing Macro Effects",
+        "Framing Macro Effects Speed",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Reset",
+        "Function"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "22000",
+      "colourTemperature": "6000"
+    },
+    "dimensions": {
+      "weight": "25",
+      "width": "360",
+      "height": "593",
+      "depth": "250"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "6.2",
+      "degreesMax": "48.8"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "740",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

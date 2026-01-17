@@ -1,0 +1,965 @@
+{
+  "version": "1.2",
+  "manufacturer": "DTS",
+  "model": "XR5 Wash",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Johannes Felber",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Movement Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Standard"
+        },
+        {
+          "min": "11",
+          "max": "25",
+          "name": "Fast movement"
+        },
+        {
+          "min": "26",
+          "max": "127",
+          "name": "Vector mode from fast to slow"
+        },
+        {
+          "min": "128",
+          "max": "247",
+          "name": "Variable time reaction to DMX signal (fast to slow)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Slow reaction time to DMX signal"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Black-out"
+        },
+        {
+          "min": "10",
+          "max": "23",
+          "name": "Strobe speed 1 min."
+        },
+        {
+          "min": "24",
+          "max": "37",
+          "name": "Strobe speed 2"
+        },
+        {
+          "min": "38",
+          "max": "51",
+          "name": "Strobe speed 3"
+        },
+        {
+          "min": "52",
+          "max": "65",
+          "name": "Strobe speed 4"
+        },
+        {
+          "min": "66",
+          "max": "79",
+          "name": "Strobe speed 5"
+        },
+        {
+          "min": "80",
+          "max": "93",
+          "name": "Strobe speed 6 max."
+        },
+        {
+          "min": "94",
+          "max": "107",
+          "name": "Flash open speed 1 min."
+        },
+        {
+          "min": "108",
+          "max": "121",
+          "name": "Flash open speed 2"
+        },
+        {
+          "min": "122",
+          "max": "135",
+          "name": "Flash open speed 3"
+        },
+        {
+          "min": "136",
+          "max": "149",
+          "name": "Flash open speed 4 max."
+        },
+        {
+          "min": "150",
+          "max": "163",
+          "name": "Flash closed speed 1 min."
+        },
+        {
+          "min": "164",
+          "max": "177",
+          "name": "Flash closed speed 2"
+        },
+        {
+          "min": "178",
+          "max": "191",
+          "name": "Flash closed speed 3"
+        },
+        {
+          "min": "192",
+          "max": "205",
+          "name": "Flash closed speed 4 max."
+        },
+        {
+          "min": "206",
+          "max": "219",
+          "name": "Colours / Macros in black-out"
+        },
+        {
+          "min": "220",
+          "max": "233",
+          "name": "Pan / Tilt in black-out"
+        },
+        {
+          "min": "234",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "12",
+          "name": "White"
+        },
+        {
+          "min": "13",
+          "max": "25",
+          "name": "Colour 1 (3200 K)"
+        },
+        {
+          "min": "26",
+          "max": "38",
+          "name": "Colour 2 (5600 K)"
+        },
+        {
+          "min": "39",
+          "max": "51",
+          "name": "Colour 3"
+        },
+        {
+          "min": "52",
+          "max": "64",
+          "name": "Bicolour 3/4"
+        },
+        {
+          "min": "65",
+          "max": "77",
+          "name": "Colour 4"
+        },
+        {
+          "min": "78",
+          "max": "90",
+          "name": "Bicolour 4/5"
+        },
+        {
+          "min": "91",
+          "max": "103",
+          "name": "Colour 5"
+        },
+        {
+          "min": "104",
+          "max": "116",
+          "name": "Bicolour 5/6"
+        },
+        {
+          "min": "117",
+          "max": "129",
+          "name": "Colour 6"
+        },
+        {
+          "min": "130",
+          "max": "142",
+          "name": "Bicolour 6/7"
+        },
+        {
+          "min": "143",
+          "max": "155",
+          "name": "Colour 7"
+        },
+        {
+          "min": "156",
+          "max": "168",
+          "name": "Bicolour 7/8"
+        },
+        {
+          "min": "169",
+          "max": "181",
+          "name": "Colour 8"
+        },
+        {
+          "min": "182",
+          "max": "197",
+          "name": "Bicolour 8/white"
+        },
+        {
+          "min": "198",
+          "max": "200",
+          "name": "Right rotation speed 1 max."
+        },
+        {
+          "min": "201",
+          "max": "203",
+          "name": "Right rotation speed 2"
+        },
+        {
+          "min": "204",
+          "max": "206",
+          "name": "Right rotation speed 3"
+        },
+        {
+          "min": "207",
+          "max": "209",
+          "name": "Right rotation speed 4"
+        },
+        {
+          "min": "210",
+          "max": "212",
+          "name": "Right rotation speed 5"
+        },
+        {
+          "min": "213",
+          "max": "215",
+          "name": "Right rotation speed 6"
+        },
+        {
+          "min": "216",
+          "max": "218",
+          "name": "Right rotation speed 7"
+        },
+        {
+          "min": "219",
+          "max": "221",
+          "name": "Right rotation speed 8"
+        },
+        {
+          "min": "222",
+          "max": "224",
+          "name": "Right rotation speed 9 min."
+        },
+        {
+          "min": "225",
+          "max": "228",
+          "name": "Stop"
+        },
+        {
+          "min": "229",
+          "max": "231",
+          "name": "Left rotation speed 1 min."
+        },
+        {
+          "min": "232",
+          "max": "234",
+          "name": "Left rotation speed 2"
+        },
+        {
+          "min": "235",
+          "max": "237",
+          "name": "Left rotation speed 3"
+        },
+        {
+          "min": "238",
+          "max": "240",
+          "name": "Left rotation speed 4"
+        },
+        {
+          "min": "241",
+          "max": "243",
+          "name": "Left rotation speed 5"
+        },
+        {
+          "min": "244",
+          "max": "246",
+          "name": "Left rotation speed 6"
+        },
+        {
+          "min": "247",
+          "max": "249",
+          "name": "Left rotation speed 7"
+        },
+        {
+          "min": "250",
+          "max": "252",
+          "name": "Left rotation speed 8"
+        },
+        {
+          "min": "253",
+          "max": "255",
+          "name": "Left rotation speed 9 max."
+        }
+      ]
+    },
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "Speed CMY/Dimmer",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Variable speed from max to min"
+        }
+      ]
+    },
+    {
+      "name": "Macro CMY/Colour",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Macro 1"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Macro 2"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Macro 3"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Macro 4"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Macro 5"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Macro 6"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Macro 7"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Macro 8"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Macro 9"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Macro 10"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Macro 11"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Macro 12"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Macro 13"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Macro 14"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Macro 15"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Macro 16"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Macro 17"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Macro 18"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Macro 19"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Macro 20"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Macro 21"
+        },
+        {
+          "min": "115",
+          "max": "121",
+          "name": "Macros rainbow wait = 1"
+        },
+        {
+          "min": "122",
+          "max": "128",
+          "name": "Macros rainbow wait = 2"
+        },
+        {
+          "min": "129",
+          "max": "135",
+          "name": "Macros rainbow wait = 3"
+        },
+        {
+          "min": "136",
+          "max": "142",
+          "name": "Macros rainbow wait = 4"
+        },
+        {
+          "min": "143",
+          "max": "149",
+          "name": "Macros rainbow wait = 5"
+        },
+        {
+          "min": "150",
+          "max": "156",
+          "name": "Macros rainbow wait = 6"
+        },
+        {
+          "min": "157",
+          "max": "163",
+          "name": "Macros rainbow wait = 7"
+        },
+        {
+          "min": "164",
+          "max": "170",
+          "name": "Macros rainbow wait = 8"
+        },
+        {
+          "min": "171",
+          "max": "177",
+          "name": "Macros rainbow wait = 9"
+        },
+        {
+          "min": "178",
+          "max": "184",
+          "name": "Macros rainbow wait = 10"
+        },
+        {
+          "min": "185",
+          "max": "191",
+          "name": "Full colours rainbow wait = 1"
+        },
+        {
+          "min": "192",
+          "max": "198",
+          "name": "Full colours rainbow wait = 2"
+        },
+        {
+          "min": "199",
+          "max": "205",
+          "name": "Full colours rainbow wait = 3"
+        },
+        {
+          "min": "206",
+          "max": "212",
+          "name": "Full colours rainbow wait = 4"
+        },
+        {
+          "min": "213",
+          "max": "219",
+          "name": "Full colours rainbow wait = 5"
+        },
+        {
+          "min": "220",
+          "max": "226",
+          "name": "Full colours rainbow wait = 6"
+        },
+        {
+          "min": "227",
+          "max": "233",
+          "name": "Full colours rainbow wait = 7"
+        },
+        {
+          "min": "234",
+          "max": "240",
+          "name": "Full colours rainbow wait = 8"
+        },
+        {
+          "min": "241",
+          "max": "247",
+          "name": "Full colours rainbow wait = 9"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Full colours rainbow wait = 10"
+        }
+      ]
+    },
+    {
+      "name": "Effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "No effect"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Frost"
+        },
+        {
+          "min": "40",
+          "max": "255",
+          "name": "Beam Shape"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Lamp/Reset XR 5",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Effect"
+        },
+        {
+          "min": "10",
+          "max": "60",
+          "name": "Lamp OFF (Active after 3 seconds)"
+        },
+        {
+          "min": "61",
+          "max": "129",
+          "name": "No Effect"
+        },
+        {
+          "min": "130",
+          "max": "179",
+          "name": "Lamp ON (Active after 3 seconds)"
+        },
+        {
+          "min": "180",
+          "max": "200",
+          "name": "No Effect"
+        },
+        {
+          "min": "201",
+          "max": "239",
+          "name": "Internal Motors Reset"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Total Reset"
+        }
+      ]
+    },
+    {
+      "name": "Lamp/Reset XR 250 Wash",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "29",
+          "name": "No Effect"
+        },
+        {
+          "min": "30",
+          "max": "85",
+          "name": "Lamp OFF (active after 3 seconds)"
+        },
+        {
+          "min": "86",
+          "max": "170",
+          "name": "Internal motor Reset"
+        },
+        {
+          "min": "171",
+          "max": "235",
+          "name": "Total Reset"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Lamp ON (active after 3 seconds)"
+        }
+      ]
+    },
+    {
+      "name": "Macro CMY/Colour 2",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "Macro 1"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "Macro 2"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Macro 3"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "Macro 4"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "Macro 5"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "Macro 6"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "Macro 7"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "Macro 8"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "Macro 9"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "Macro 10"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "Macro 11"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Macro 12"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Macro 13"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "Macro 14"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Macro 15"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Macro 16"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "Macro 17"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "Macro 18"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "Macro 19"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Macro 20"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "Macro 21"
+        },
+        {
+          "min": "115",
+          "max": "121",
+          "name": "Macros rainbow wait = 1"
+        },
+        {
+          "min": "122",
+          "max": "128",
+          "name": "Macros rainbow wait = 2"
+        },
+        {
+          "min": "129",
+          "max": "135",
+          "name": "Macros rainbow wait = 3"
+        },
+        {
+          "min": "136",
+          "max": "142",
+          "name": "Macros rainbow wait = 4"
+        },
+        {
+          "min": "143",
+          "max": "149",
+          "name": "Macros rainbow wait = 5"
+        },
+        {
+          "min": "150",
+          "max": "156",
+          "name": "Macros rainbow wait = 6"
+        },
+        {
+          "min": "157",
+          "max": "163",
+          "name": "Macros rainbow wait = 7"
+        },
+        {
+          "min": "164",
+          "max": "170",
+          "name": "Macros rainbow wait = 8"
+        },
+        {
+          "min": "171",
+          "max": "177",
+          "name": "Macros rainbow wait = 9"
+        },
+        {
+          "min": "178",
+          "max": "184",
+          "name": "Macros rainbow wait = 10"
+        },
+        {
+          "min": "185",
+          "max": "191",
+          "name": "Full colours rainbow wait = 1"
+        },
+        {
+          "min": "192",
+          "max": "198",
+          "name": "Full colours rainbow wait = 2"
+        },
+        {
+          "min": "199",
+          "max": "205",
+          "name": "Full colours rainbow wait = 3"
+        },
+        {
+          "min": "206",
+          "max": "212",
+          "name": "Full colours rainbow wait = 4"
+        },
+        {
+          "min": "213",
+          "max": "219",
+          "name": "Full colours rainbow wait = 5"
+        },
+        {
+          "min": "220",
+          "max": "226",
+          "name": "Full colours rainbow wait = 6"
+        },
+        {
+          "min": "227",
+          "max": "233",
+          "name": "Full colours rainbow wait = 7"
+        },
+        {
+          "min": "234",
+          "max": "240",
+          "name": "Full colours rainbow wait = 8"
+        },
+        {
+          "min": "241",
+          "max": "247",
+          "name": "Full colours rainbow wait = 9"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Full colours rainbow wait = 10"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Movement Speed",
+        "Dimmer",
+        "Shutter",
+        "Colour",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Speed CMY/Dimmer",
+        "Macro CMY/Colour",
+        "Effects",
+        "Zoom",
+        "Lamp/Reset XR 5"
+      ]
+    },
+    {
+      "name": "Same as XR 250 Wash",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Movement Speed",
+        "Dimmer",
+        "Shutter",
+        "Colour",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Speed CMY/Dimmer",
+        "Macro CMY/Colour",
+        "Effects",
+        "Zoom",
+        "Lamp/Reset XR 250 Wash"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "18000",
+      "colourTemperature": "8500"
+    },
+    "dimensions": {
+      "weight": "20",
+      "width": "480",
+      "height": "550",
+      "depth": "415"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "13",
+      "degreesMax": "23"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "350",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Revo 4",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "mac",
+  "channels": [
+    {
+      "name": "Function",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "Pattern"
+        },
+        {
+          "min": "100",
+          "max": "239",
+          "name": "Chase"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Pattern (Chase)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Pattern (Chase) 1 "
+        },
+        {
+          "min": "21",
+          "max": "41",
+          "name": "Pattern (Chase) 2"
+        },
+        {
+          "min": "42",
+          "max": "65",
+          "name": "Pattern (Chase) 3"
+        },
+        {
+          "min": "66",
+          "max": "87",
+          "name": "Pattern (Chase) 4"
+        },
+        {
+          "min": "88",
+          "max": "108",
+          "name": "Pattern (Chase) 5"
+        },
+        {
+          "min": "109",
+          "max": "129",
+          "name": "Pattern (Chase) 6"
+        },
+        {
+          "min": "130",
+          "max": "150",
+          "name": "Pattern (Chase) 7"
+        },
+        {
+          "min": "151",
+          "max": "172",
+          "name": "Pattern (Chase) 8"
+        },
+        {
+          "min": "173",
+          "max": "193",
+          "name": "Pattern (Chase) 9"
+        },
+        {
+          "min": "194",
+          "max": "214",
+          "name": "Pattern (Chase) 10"
+        },
+        {
+          "min": "215",
+          "max": "235",
+          "name": "Pattern (Chase) 11"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Pattern (Chase) 12"
+        }
+      ]
+    },
+    {
+      "name": "Colour (Chase Speed)",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "R (Slow)"
+        },
+        {
+          "min": "18",
+          "max": "34",
+          "name": "G"
+        },
+        {
+          "min": "35",
+          "max": "51",
+          "name": "B"
+        },
+        {
+          "min": "52",
+          "max": "68",
+          "name": "W"
+        },
+        {
+          "min": "69",
+          "max": "85",
+          "name": "RG"
+        },
+        {
+          "min": "86",
+          "max": "102",
+          "name": "RB"
+        },
+        {
+          "min": "103",
+          "max": "119",
+          "name": "RW"
+        },
+        {
+          "min": "120",
+          "max": "136",
+          "name": "GB"
+        },
+        {
+          "min": "137",
+          "max": "153",
+          "name": "GW"
+        },
+        {
+          "min": "154",
+          "max": "170",
+          "name": "BW"
+        },
+        {
+          "min": "171",
+          "max": "187",
+          "name": "RGB"
+        },
+        {
+          "min": "188",
+          "max": "204",
+          "name": "RGW"
+        },
+        {
+          "min": "205",
+          "max": "221",
+          "name": "RBW"
+        },
+        {
+          "min": "222",
+          "max": "238",
+          "name": "GBW"
+        },
+        {
+          "min": "239",
+          "max": "255",
+          "name": "RGBW (Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "4-CH",
+      "totalChannels": 4,
+      "channels": [
+        "Function",
+        "Pattern (Chase)",
+        "Colour (Chase Speed)",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4",
+      "width": "306",
+      "height": "334",
+      "depth": "312"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "50",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "29",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

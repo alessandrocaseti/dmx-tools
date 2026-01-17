@@ -1,0 +1,222 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Galaxian Gem IR",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "MaBonzo",
+  "channels": [
+    {
+      "name": "Laser 1",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Laser Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Laser On"
+        },
+        {
+          "min": "16",
+          "max": "150",
+          "name": "Laser Strobing Slow"
+        },
+        {
+          "min": "151",
+          "max": "247",
+          "name": "Laser Strobing Fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Laser On"
+        }
+      ]
+    },
+    {
+      "name": "Laser Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Rotation"
+        },
+        {
+          "min": "10",
+          "max": "65",
+          "name": "Clockwise Slow"
+        },
+        {
+          "min": "66",
+          "max": "120",
+          "name": "Clockwise Fast"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "No Rotation"
+        },
+        {
+          "min": "135",
+          "max": "190",
+          "name": "Count-Clockwise Slow"
+        },
+        {
+          "min": "191",
+          "max": "245",
+          "name": "Count-Clockwise Fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No Rotation"
+        }
+      ]
+    },
+    {
+      "name": "Led Chase",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "Chase 1"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "Chase 2"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "Chase 3"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "Chase 4"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "Chase 5"
+        },
+        {
+          "min": "158",
+          "max": "187",
+          "name": "Chase 6"
+        },
+        {
+          "min": "188",
+          "max": "217",
+          "name": "Chase 7"
+        },
+        {
+          "min": "218",
+          "max": "247",
+          "name": "Chase 8"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "LED Chase Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "85",
+          "name": "Slow"
+        },
+        {
+          "min": "86",
+          "max": "170",
+          "name": "Medium"
+        },
+        {
+          "min": "171",
+          "max": "255",
+          "name": "Fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "247",
+          "name": "Stobing Slow - Fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound Active Strobing"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 5,
+      "channels": [
+        "Laser 1",
+        "Laser Rotation",
+        "Led Chase",
+        "LED Chase Speed",
+        "Strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "324",
+      "height": "201",
+      "depth": "808"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "19",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Intimidator Spot 375Z IRC",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Andrew Pavlin",
+  "channels": [
+    {
+      "name": "Pan coarse",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt coarse",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed (fast to slow)",
+      "type": "Speed"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Orange"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Lime green"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Cyan"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Red"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Magenta"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Yellow"
+        },
+        {
+          "min": "64",
+          "max": "64",
+          "name": "White"
+        },
+        {
+          "min": "65",
+          "max": "189",
+          "name": "Color indexing"
+        },
+        {
+          "min": "190",
+          "max": "221",
+          "name": "Color cycling rainbox, fast to slow"
+        },
+        {
+          "min": "222",
+          "max": "223",
+          "name": "Stop"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Color cycling rainbox, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Gobo 7 shake, slow to fast"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 6 shake, slow to fast"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 5 shake, slow to fast"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 4 shake, slow to fast"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 3 shake, slow to fast"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 2 shake, slow to fast"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 1 shake, slow to fast"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Cycle gobos, slow to fast"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Reverse cycle gobos, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "63",
+          "name": "Index"
+        },
+        {
+          "min": "64",
+          "max": "145",
+          "name": "Rotate, slow to fast"
+        },
+        {
+          "min": "146",
+          "max": "149",
+          "name": "Stop"
+        },
+        {
+          "min": "150",
+          "max": "231",
+          "name": "Reverse rotate, slow to fast"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Gobo bounce, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Shutter Closed"
+        },
+        {
+          "min": "4",
+          "max": "7",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "8",
+          "max": "76",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "77",
+          "max": "145",
+          "name": "Pulse"
+        },
+        {
+          "min": "146",
+          "max": "215",
+          "name": "Random open and close"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Control Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Blackout pan/tilt movement"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Blackout colour wheel movement"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Blackout gobo wheel movement"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Disable pan/tilt/colour wheel movement blackout"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Disable pan/tilt/gobo wheel movement blackout"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Disable all movement blackout"
+        },
+        {
+          "min": "56",
+          "max": "95",
+          "name": "No function"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Reset pan"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Reset tilt"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Reset colour wheel"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Reset gobo rotation"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "No function"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Reset prism"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Reset focus and zoom"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Reset all"
+        },
+        {
+          "min": "160",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Movement Macros",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No Function"
+        },
+        {
+          "min": "8",
+          "max": "23",
+          "name": "Automatic program 1"
+        },
+        {
+          "min": "24",
+          "max": "39",
+          "name": "Automatic program 2"
+        },
+        {
+          "min": "40",
+          "max": "55",
+          "name": "Automatic program 3"
+        },
+        {
+          "min": "56",
+          "max": "71",
+          "name": "Automatic program 4"
+        },
+        {
+          "min": "72",
+          "max": "87",
+          "name": "Automatic program 5"
+        },
+        {
+          "min": "88",
+          "max": "103",
+          "name": "Automatic program 6"
+        },
+        {
+          "min": "104",
+          "max": "119",
+          "name": "Automatic program 8"
+        },
+        {
+          "min": "120",
+          "max": "135",
+          "name": "Automatic program 7"
+        },
+        {
+          "min": "136",
+          "max": "151",
+          "name": "Sound-Active program 1"
+        },
+        {
+          "min": "152",
+          "max": "167",
+          "name": "Sound-Active program 2"
+        },
+        {
+          "min": "168",
+          "max": "183",
+          "name": "Sound-Active program 3"
+        },
+        {
+          "min": "184",
+          "max": "199",
+          "name": "Sound-Active program 4"
+        },
+        {
+          "min": "200",
+          "max": "215",
+          "name": "Sound-Active program 5"
+        },
+        {
+          "min": "216",
+          "max": "231",
+          "name": "Sound-Active program 6"
+        },
+        {
+          "min": "232",
+          "max": "247",
+          "name": "Sound-Active program 7"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound-Active program 8"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "No function"
+        },
+        {
+          "min": "4",
+          "max": "6",
+          "name": "6-facet prism"
+        },
+        {
+          "min": "7",
+          "max": "65",
+          "name": "6-facet prism rotate, slow to fast"
+        },
+        {
+          "min": "66",
+          "max": "123",
+          "name": "6-facet prism, reverse rotate, slow to fast"
+        },
+        {
+          "min": "124",
+          "max": "127",
+          "name": "6-facet prism"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "No function"
+        },
+        {
+          "min": "132",
+          "max": "134",
+          "name": "5-facet prism"
+        },
+        {
+          "min": "135",
+          "max": "193",
+          "name": "5-facet prism rotate, slow to fast"
+        },
+        {
+          "min": "194",
+          "max": "251",
+          "name": "5-facet prism reverse rotate, slow to fast"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "5-facet Prism"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 15,
+      "channels": [
+        "Pan coarse",
+        "Pan fine",
+        "Tilt coarse",
+        "Tilt fine",
+        "Pan/Tilt Speed (fast to slow)",
+        "Color",
+        "Gobo",
+        "Gobo Rotation",
+        "Prism",
+        "Focus",
+        "Dimmer",
+        "Shutter",
+        "Control Functions",
+        "Movement Macros",
+        "Zoom"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 9,
+      "channels": [
+        "Pan coarse",
+        "Tilt coarse",
+        "Color",
+        "Gobo",
+        "Gobo Rotation",
+        "Prism",
+        "Focus",
+        "Shutter",
+        "Zoom"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "12.4",
+      "width": "322",
+      "height": "466",
+      "depth": "220"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "10",
+      "degreesMax": "23"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "270",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

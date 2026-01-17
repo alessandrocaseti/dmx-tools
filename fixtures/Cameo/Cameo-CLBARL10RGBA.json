@@ -1,0 +1,706 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "LED Colour Bar RGBA (CLBAR10RGBA)",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "René Brixel",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour-Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "16",
+          "name": "Red"
+        },
+        {
+          "min": "17",
+          "max": "33",
+          "name": "Green"
+        },
+        {
+          "min": "34",
+          "max": "50",
+          "name": "Blue"
+        },
+        {
+          "min": "51",
+          "max": "67",
+          "name": "Amber"
+        },
+        {
+          "min": "68",
+          "max": "84",
+          "name": "Yellow"
+        },
+        {
+          "min": "85",
+          "max": "101",
+          "name": "Cyan"
+        },
+        {
+          "min": "102",
+          "max": "118",
+          "name": "Lavender"
+        },
+        {
+          "min": "119",
+          "max": "135",
+          "name": "Pink"
+        },
+        {
+          "min": "136",
+          "max": "152",
+          "name": "Light Green"
+        },
+        {
+          "min": "153",
+          "max": "169",
+          "name": "Magenta"
+        },
+        {
+          "min": "170",
+          "max": "186",
+          "name": "Turquoise"
+        },
+        {
+          "min": "187",
+          "max": "203",
+          "name": "Orange"
+        },
+        {
+          "min": "204",
+          "max": "220",
+          "name": "Bright Magenta"
+        },
+        {
+          "min": "221",
+          "max": "237",
+          "name": "Cold White"
+        },
+        {
+          "min": "238",
+          "max": "255",
+          "name": "Warm White"
+        }
+      ]
+    },
+    {
+      "name": "Strobe speed",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Strobe Speed (1Hz - 20Hz)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "ON (refers to CH1 - CH5)"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Sound (refers to Sound Control Mode)"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "ON (refers to CH1 - CH5)"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe (refers to CH1 - CH5)"
+        }
+      ]
+    },
+    {
+      "name": "Colour Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "R"
+        },
+        {
+          "min": "6",
+          "max": "11",
+          "name": "G"
+        },
+        {
+          "min": "12",
+          "max": "17",
+          "name": "B"
+        },
+        {
+          "min": "18",
+          "max": "23",
+          "name": "A"
+        },
+        {
+          "min": "24",
+          "max": "29",
+          "name": "RA"
+        },
+        {
+          "min": "30",
+          "max": "35",
+          "name": "RG"
+        },
+        {
+          "min": "36",
+          "max": "41",
+          "name": "RB"
+        },
+        {
+          "min": "42",
+          "max": "47",
+          "name": "GB"
+        },
+        {
+          "min": "48",
+          "max": "53",
+          "name": "AB"
+        },
+        {
+          "min": "54",
+          "max": "59",
+          "name": "AG"
+        },
+        {
+          "min": "60",
+          "max": "65",
+          "name": "RGB"
+        },
+        {
+          "min": "66",
+          "max": "71",
+          "name": "RGA"
+        },
+        {
+          "min": "72",
+          "max": "77",
+          "name": "RBA"
+        },
+        {
+          "min": "78",
+          "max": "83",
+          "name": "GBA"
+        },
+        {
+          "min": "84",
+          "max": "89",
+          "name": "RGBA"
+        },
+        {
+          "min": "90",
+          "max": "100",
+          "name": "Colour jumping"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Colour fading"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Dreaming"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Colour flow"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Overlap flow"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Colour chase"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Multi colour"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Fade flow"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Two flow"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "One way"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Two way"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "Two colour"
+        },
+        {
+          "min": "211",
+          "max": "255",
+          "name": "Sound control"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer/Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimmer/Speed"
+        }
+      ]
+    },
+    {
+      "name": "Color Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Dimmer RGBA"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Dimmer RGBA 1-4"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "R"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "G"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "B"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "A"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "RA"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "RG"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "RB"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "GB"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "AB"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "AG"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "RGB"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "RGA"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "RBA"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "GBA"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "RGBA"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "Color Jump"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Color Fade"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Dreaming"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Color Flow"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Overlap Flow"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Color Chase"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Multi Color"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "Fade Flow"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "Two Flow"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "One Way"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Two Way"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "Two Color"
+        },
+        {
+          "min": "211",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer/Speed/Sens",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimmer/Speed/Sens"
+        }
+      ]
+    },
+    {
+      "name": "R1/R/Color select",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R/R1/Color select"
+        }
+      ]
+    },
+    {
+      "name": "G1/G/Color select",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G/G1/Color select"
+        }
+      ]
+    },
+    {
+      "name": "B1/B",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "B/B1"
+        }
+      ]
+    },
+    {
+      "name": "A1/A",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "A/A1"
+        }
+      ]
+    },
+    {
+      "name": "R2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R2"
+        }
+      ]
+    },
+    {
+      "name": "G2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G2"
+        }
+      ]
+    },
+    {
+      "name": "B2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "B2"
+        }
+      ]
+    },
+    {
+      "name": "A2",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "A2"
+        }
+      ]
+    },
+    {
+      "name": "R3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "R3"
+        }
+      ]
+    },
+    {
+      "name": "G3",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "G3"
+        }
+      ]
+    },
+    {
+      "name": "B3",
+      "type": "Unknown"
+    },
+    {
+      "name": "A3",
+      "type": "Unknown"
+    },
+    {
+      "name": "R4",
+      "type": "Unknown"
+    },
+    {
+      "name": "G4",
+      "type": "Unknown"
+    },
+    {
+      "name": "B4",
+      "type": "Unknown"
+    },
+    {
+      "name": "A4",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "2-Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Colour-Macro"
+      ]
+    },
+    {
+      "name": "4-Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "6-Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Dimmer",
+        "Mode"
+      ]
+    },
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Colour Macros",
+        "Dimmer/Speed",
+        "Strobe speed"
+      ]
+    },
+    {
+      "name": "19-Channel",
+      "totalChannels": 19,
+      "channels": [
+        "Color Mode",
+        "Dimmer/Speed/Sens",
+        "Strobe speed",
+        "R1/R/Color select",
+        "G1/G/Color select",
+        "B1/B",
+        "A1/A",
+        "R2",
+        "G2",
+        "B2",
+        "A2",
+        "R3",
+        "G3",
+        "B3",
+        "A3",
+        "R4",
+        "G4",
+        "B4",
+        "A4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "1018",
+      "height": "63",
+      "depth": "87"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

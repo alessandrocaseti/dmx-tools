@@ -1,0 +1,177 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Slim Par Pro VW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "JL Griffin",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Warm White",
+      "type": "White"
+    },
+    {
+      "name": "Cool White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "0-20Hz, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "No function"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "1"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "2"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "3"
+        },
+        {
+          "min": "204",
+          "max": "254",
+          "name": "4"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "5"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100%, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimming Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Default"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Linear"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Non-linear 1"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Non-linear 2"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Non-linear 3"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "2-Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Warm White",
+        "Cool White"
+      ]
+    },
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Warm White",
+        "Cool White"
+      ]
+    },
+    {
+      "name": "7-Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Warm White",
+        "Cool White",
+        "Strobe",
+        "Auto Program",
+        "Auto Program Speed",
+        "Dimming Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.8",
+      "width": "256",
+      "height": "285",
+      "depth": "87"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "21",
+      "degreesMax": "21"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "83",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

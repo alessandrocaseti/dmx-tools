@@ -1,0 +1,709 @@
+{
+  "version": "1.2",
+  "manufacturer": "Clay Paky",
+  "model": "Show Batten 100",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Thierry Rodolfo",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "CTO",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Unused range"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "CTO Min< Max"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Light on"
+        },
+        {
+          "min": "4",
+          "max": "69",
+          "name": "Strobe Min < Max"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "Light on"
+        },
+        {
+          "min": "75",
+          "max": "140",
+          "name": "Pulse Min < Max"
+        },
+        {
+          "min": "141",
+          "max": "206",
+          "name": "Pulse Max > Min"
+        },
+        {
+          "min": "207",
+          "max": "211",
+          "name": "Light on"
+        },
+        {
+          "min": "212",
+          "max": "224",
+          "name": "Random Strobe Low"
+        },
+        {
+          "min": "225",
+          "max": "237",
+          "name": "Random Strobe Medium"
+        },
+        {
+          "min": "238",
+          "max": "250",
+          "name": "Random Strobe Fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Light on"
+        }
+      ]
+    },
+    {
+      "name": "Macro Color",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Unused range"
+        },
+        {
+          "min": "10",
+          "max": "10",
+          "name": "Red"
+        },
+        {
+          "min": "11",
+          "max": "11",
+          "name": "Green"
+        },
+        {
+          "min": "12",
+          "max": "12",
+          "name": "Blue"
+        },
+        {
+          "min": "13",
+          "max": "13",
+          "name": "Cyan"
+        },
+        {
+          "min": "14",
+          "max": "14",
+          "name": "Yellow"
+        },
+        {
+          "min": "15",
+          "max": "15",
+          "name": "Magenta"
+        },
+        {
+          "min": "16",
+          "max": "16",
+          "name": "White 7000K"
+        },
+        {
+          "min": "17",
+          "max": "17",
+          "name": "White 3700K"
+        },
+        {
+          "min": "18",
+          "max": "18",
+          "name": "White 5000K"
+        },
+        {
+          "min": "19",
+          "max": "19",
+          "name": "Black"
+        },
+        {
+          "min": "20",
+          "max": "22",
+          "name": "Medium Yellow"
+        },
+        {
+          "min": "23",
+          "max": "26",
+          "name": "Straw Tint"
+        },
+        {
+          "min": "27",
+          "max": "28",
+          "name": "Surprise Peach"
+        },
+        {
+          "min": "29",
+          "max": "29",
+          "name": "Fire"
+        },
+        {
+          "min": "30",
+          "max": "30",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "31",
+          "max": "31",
+          "name": "Gold Amber"
+        },
+        {
+          "min": "32",
+          "max": "34",
+          "name": "Dark Amber"
+        },
+        {
+          "min": "35",
+          "max": "44",
+          "name": "Sunrise Red"
+        },
+        {
+          "min": "45",
+          "max": "45",
+          "name": "Light Pink"
+        },
+        {
+          "min": "46",
+          "max": "48",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "49",
+          "max": "61",
+          "name": "Pink Camation"
+        },
+        {
+          "min": "62",
+          "max": "67",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "68",
+          "max": "77",
+          "name": "Lavender"
+        },
+        {
+          "min": "78",
+          "max": "88",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "89",
+          "max": "99",
+          "name": "Just Blue"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Dark Yellow Green"
+        },
+        {
+          "min": "110",
+          "max": "111",
+          "name": "Spring Yellow"
+        },
+        {
+          "min": "112",
+          "max": "112",
+          "name": "Light Amber"
+        },
+        {
+          "min": "113",
+          "max": "113",
+          "name": "Straw"
+        },
+        {
+          "min": "114",
+          "max": "114",
+          "name": "Deep Amber"
+        },
+        {
+          "min": "115",
+          "max": "116",
+          "name": "Orange"
+        },
+        {
+          "min": "117",
+          "max": "117",
+          "name": "Light Rose"
+        },
+        {
+          "min": "118",
+          "max": "118",
+          "name": "English Rose"
+        },
+        {
+          "min": "119",
+          "max": "119",
+          "name": "Light Salmon"
+        },
+        {
+          "min": "120",
+          "max": "120",
+          "name": "Middle Rose"
+        },
+        {
+          "min": "121",
+          "max": "122",
+          "name": "Dark Pink"
+        },
+        {
+          "min": "123",
+          "max": "124",
+          "name": "Magenta"
+        },
+        {
+          "min": "125",
+          "max": "125",
+          "name": "Peacock Blue"
+        },
+        {
+          "min": "126",
+          "max": "126",
+          "name": "Med Blue Green"
+        },
+        {
+          "min": "127",
+          "max": "127",
+          "name": "Steel Blue"
+        },
+        {
+          "min": "128",
+          "max": "128",
+          "name": "Light Blue"
+        },
+        {
+          "min": "129",
+          "max": "130",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "131",
+          "max": "133",
+          "name": "Leaf Green"
+        },
+        {
+          "min": "134",
+          "max": "135",
+          "name": "Dark Green"
+        },
+        {
+          "min": "136",
+          "max": "137",
+          "name": "Mauve"
+        },
+        {
+          "min": "138",
+          "max": "141",
+          "name": "Bright Pink"
+        },
+        {
+          "min": "142",
+          "max": "144",
+          "name": "Medium Blue"
+        },
+        {
+          "min": "145",
+          "max": "145",
+          "name": "Deep Golden Amber"
+        },
+        {
+          "min": "146",
+          "max": "146",
+          "name": "Pale Lavender"
+        },
+        {
+          "min": "147",
+          "max": "148",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "149",
+          "max": "150",
+          "name": "Primary Green"
+        },
+        {
+          "min": "151",
+          "max": "156",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "157",
+          "max": "161",
+          "name": "Apricot"
+        },
+        {
+          "min": "162",
+          "max": "167",
+          "name": "Pale Gold"
+        },
+        {
+          "min": "168",
+          "max": "171",
+          "name": "Deep Orange"
+        },
+        {
+          "min": "172",
+          "max": "173",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "174",
+          "max": "174",
+          "name": "Flame Red"
+        },
+        {
+          "min": "175",
+          "max": "178",
+          "name": "Daylight Blue"
+        },
+        {
+          "min": "179",
+          "max": "179",
+          "name": "Lilac Tint"
+        },
+        {
+          "min": "180",
+          "max": "183",
+          "name": "Deep Lavender"
+        },
+        {
+          "min": "184",
+          "max": "190",
+          "name": "Dark Steel Blue"
+        },
+        {
+          "min": "191",
+          "max": "206",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "207",
+          "max": "207",
+          "name": "Alice Blue"
+        },
+        {
+          "min": "208",
+          "max": "208",
+          "name": "Dirty White"
+        },
+        {
+          "min": "209",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White 4",
+      "type": "White"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "White 5",
+      "type": "White"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "White 6",
+      "type": "White"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "White 7",
+      "type": "White"
+    },
+    {
+      "name": "Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 8",
+      "type": "Blue"
+    },
+    {
+      "name": "White 8",
+      "type": "White"
+    },
+    {
+      "name": "Red 9",
+      "type": "Red"
+    },
+    {
+      "name": "Green 9",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 9",
+      "type": "Blue"
+    },
+    {
+      "name": "White 9",
+      "type": "White"
+    },
+    {
+      "name": "Red 10",
+      "type": "Red"
+    },
+    {
+      "name": "Green 10",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 10",
+      "type": "Blue"
+    },
+    {
+      "name": "White 10",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Extended",
+      "totalChannels": 50,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "CTO",
+        "Dimmer",
+        "Strobe",
+        "Macro Color",
+        "Zoom",
+        "Tilt",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "White 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "White 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "White 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "White 8",
+        "Red 9",
+        "Green 9",
+        "Blue 9",
+        "White 9",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "White 10"
+      ]
+    },
+    {
+      "name": "Standard",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "CTO",
+        "Dimmer",
+        "Strobe",
+        "Macro Color",
+        "Zoom",
+        "Tilt"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2800",
+      "colourTemperature": "6000"
+    },
+    "dimensions": {
+      "weight": "10",
+      "width": "1000",
+      "height": "100",
+      "depth": "186"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "10",
+      "degreesMax": "48"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "0",
+      "tiltMax": "240"
+    },
+    "technical": {
+      "powerConsumption": "170",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

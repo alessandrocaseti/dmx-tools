@@ -1,0 +1,617 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Focus Spot 4Z",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Rico Hansen",
+  "channels": [
+    {
+      "name": "Pan Movement",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Movement",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "White"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Red"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Orange"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Yellow"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Green"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "Blue"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "Pink"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "Cyan"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Magenta"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Color Mixing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Color Wheel Clockwise Rotation Fast-Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Nothing"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Color Wheel Counter Clockwise Rotation Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Open"
+        },
+        {
+          "min": "5",
+          "max": "19",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "20",
+          "max": "34",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "35",
+          "max": "49",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "50",
+          "max": "64",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "65",
+          "max": "79",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "80",
+          "max": "94",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "95",
+          "max": "109",
+          "name": "Gobo 1 Shake Slow-Fast"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Gobo 2 Shake Slow-Fast"
+        },
+        {
+          "min": "125",
+          "max": "139",
+          "name": "Gobo 3 Shake Slow-Fast"
+        },
+        {
+          "min": "140",
+          "max": "154",
+          "name": "Gobo 4 Shake Slow-Fast"
+        },
+        {
+          "min": "155",
+          "max": "169",
+          "name": "Gobo 5 Shake Slow-Fast"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Gobo 6 Shake Slow-Fast"
+        },
+        {
+          "min": "190",
+          "max": "221",
+          "name": "Gobo Wheel Clockwise Rotation Fast-Slow"
+        },
+        {
+          "min": "222",
+          "max": "223",
+          "name": "Nothing"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo Wheel Counter-Clockwise Rotation Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo Rotation Indexing"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Gobo Rotation Clockwise Fast-Slow"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Gobo Rotation Counter-Clockwise Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Shutter & Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter Closed (Not Function)"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobing Fast-Slow"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Strobing Slow-Fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobing Slow-Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Prism 1",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "255",
+          "name": "6 Facet Circular Prism"
+        }
+      ]
+    },
+    {
+      "name": "Prism 1 Indexing & Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism 1 Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation Fast-Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Prism 2",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "255",
+          "name": "5 Facet Linear Prism"
+        }
+      ]
+    },
+    {
+      "name": "Prism 2 Indexing & Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism 2 Indexing"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Clockwise Rotation Fast-Slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No Rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Counter-Clockwise Rotation Slow-Fast"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Dim curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Achitectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Stage 2"
+        },
+        {
+          "min": "121",
+          "max": "255",
+          "name": "Default tu Unit Setting"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Function, reset, internal programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Blackout with Pan/Tilt Movement"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Blackout with Color Wheel Movement"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blackout with Gobo Wheel Movement"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Color and Gobo Motor Reset"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Prism Motor Reset"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pan & Tilt Motor Reset"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Focus Motor Reset"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "All Motors Reset"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal Program 1 (Scene 1-8 of EEPRO)"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal Program 2 (Scene 9-16 of EEPRO)"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal Program 3 (Scene 17-24 of EEPRO)"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal Program 4 (Scene 25-32 of EEPRO)"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal Program 5 (Scene 33-40 of EEPRO)"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal Program 6 (Scene 41-48 of EEPRO)"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal Program 7 (Scene 49-56 of EEPRO)"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Pan Fine 16-bit",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine 16-bit",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer Fine 16-bit",
+      "type": "Intensity"
+    },
+    {
+      "name": "Prism 1 Indexing Fine 16-bit",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Prism 1 Indexing Fine 16-bit"
+        }
+      ]
+    },
+    {
+      "name": "Prism 2 Indexing Fine 16-bit",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Prism 2 Indexing Fine 16-bit"
+        }
+      ]
+    },
+    {
+      "name": "Zoom Fine 16-bit",
+      "type": "Beam"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan Movement",
+        "Tilt Movement",
+        "Color Wheel",
+        "Gobo Wheel",
+        "Gobo Rotation",
+        "Shutter & Strobing",
+        "Master Dimmer",
+        "Prism 1",
+        "Prism 1 Indexing & Rotation",
+        "Prism 2",
+        "Prism 2 Indexing & Rotation",
+        "Focus",
+        "Zoom",
+        "Dim curves",
+        "Pan/Tilt Speed",
+        "Function, reset, internal programs"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 18,
+      "channels": [
+        "Pan Movement",
+        "Pan Fine 16-bit",
+        "Tilt Movement",
+        "Tilt Fine 16-bit",
+        "Color Wheel",
+        "Gobo Wheel",
+        "Gobo Rotation",
+        "Shutter & Strobing",
+        "Master Dimmer",
+        "Prism 1",
+        "Prism 1 Indexing & Rotation",
+        "Prism 2",
+        "Prism 2 Indexing & Rotation",
+        "Focus",
+        "Zoom",
+        "Dim curves",
+        "Pan/Tilt Speed",
+        "Function, reset, internal programs"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 22,
+      "channels": [
+        "Pan Movement",
+        "Pan Fine 16-bit",
+        "Tilt Movement",
+        "Tilt Fine 16-bit",
+        "Color Wheel",
+        "Gobo Wheel",
+        "Gobo Rotation",
+        "Shutter & Strobing",
+        "Master Dimmer",
+        "Dimmer Fine 16-bit",
+        "Prism 1",
+        "Prism 1 Indexing & Rotation",
+        "Prism 1 Indexing Fine 16-bit",
+        "Prism 2",
+        "Prism 2 Indexing & Rotation",
+        "Prism 2 Indexing Fine 16-bit",
+        "Focus",
+        "Zoom",
+        "Zoom Fine 16-bit",
+        "Dim curves",
+        "Pan/Tilt Speed",
+        "Function, reset, internal programs"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "10",
+      "width": "279",
+      "height": "457",
+      "depth": "182"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "11",
+      "degreesMax": "22"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "630",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "240",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

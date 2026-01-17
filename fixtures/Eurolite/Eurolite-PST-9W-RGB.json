@@ -1,0 +1,94 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED PST-9W RGB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Joa Palmer",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "On"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Off"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "On"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "5 ch",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Intensity",
+        "Shutter"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "0.5",
+      "width": "135",
+      "height": "165",
+      "depth": "170"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "6",
+      "degreesMax": "6"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "26",
+      "dmxConnector": "3.5 mm stereo jack"
+    }
+  }
+}

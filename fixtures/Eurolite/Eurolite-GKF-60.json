@@ -1,0 +1,193 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "GKF-60",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Flox Garden",
+  "channels": [
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Home"
+        },
+        {
+          "min": "8",
+          "max": "8",
+          "name": "Index-Position 1"
+        },
+        {
+          "min": "9",
+          "max": "9",
+          "name": "Index-Position 2"
+        },
+        {
+          "min": "10",
+          "max": "10",
+          "name": "Index-Position 3"
+        },
+        {
+          "min": "11",
+          "max": "11",
+          "name": "Index-Position 4"
+        },
+        {
+          "min": "12",
+          "max": "12",
+          "name": "Index-Position 5"
+        },
+        {
+          "min": "13",
+          "max": "13",
+          "name": "Index-Position 6"
+        },
+        {
+          "min": "14",
+          "max": "14",
+          "name": "Index-Position 7"
+        },
+        {
+          "min": "15",
+          "max": "15",
+          "name": "Index-Position 8"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Rainbow effect, increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Effect Wheel",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Stop"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Forward rotation with increasing speed"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Stop"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Backward rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Shutter/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe-Effect with increasing speed"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "140",
+          "max": "180",
+          "name": "Pulse opening with decreasing speed"
+        },
+        {
+          "min": "181",
+          "max": "189",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Pulse closing with decreasing speed"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Reset after 3-5 seconds"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe-effect"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Gobo",
+        "Effect Wheel",
+        "Shutter/Strobe",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4",
+      "width": "235",
+      "height": "210",
+      "depth": "370"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "82",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

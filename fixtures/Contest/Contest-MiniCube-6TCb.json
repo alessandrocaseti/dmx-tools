@@ -1,0 +1,291 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "MiniCube-6TCb",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Colour macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Off"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Red: R255 - G000 - B000"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Orange: R255 - G070 - B000"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "Yellow: R255 - G255 - B000"
+        },
+        {
+          "min": "41",
+          "max": "51",
+          "name": "Green: R000 - G255 - B000"
+        },
+        {
+          "min": "52",
+          "max": "61",
+          "name": "Cyan: R000 - G255 - B255"
+        },
+        {
+          "min": "62",
+          "max": "71",
+          "name": "Blue: R000 - G000 - B255"
+        },
+        {
+          "min": "72",
+          "max": "81",
+          "name": "Pink: R255 - G000 - B100"
+        },
+        {
+          "min": "82",
+          "max": "92",
+          "name": "Magenta: R255 - G000 - B255"
+        },
+        {
+          "min": "93",
+          "max": "102",
+          "name": "Cool white: R255 - G255 - B255"
+        },
+        {
+          "min": "103",
+          "max": "112",
+          "name": "Warm white: R255 - G255 - B200"
+        },
+        {
+          "min": "113",
+          "max": "122",
+          "name": "Colour macro 1"
+        },
+        {
+          "min": "123",
+          "max": "133",
+          "name": "Colour macro 2"
+        },
+        {
+          "min": "134",
+          "max": "143",
+          "name": "Colour macro 3"
+        },
+        {
+          "min": "144",
+          "max": "153",
+          "name": "Colour macro 4"
+        },
+        {
+          "min": "154",
+          "max": "163",
+          "name": "Colour macro 5"
+        },
+        {
+          "min": "164",
+          "max": "174",
+          "name": "Colour macro 6"
+        },
+        {
+          "min": "175",
+          "max": "184",
+          "name": "Colour macro 7"
+        },
+        {
+          "min": "185",
+          "max": "194",
+          "name": "Colour macro 8"
+        },
+        {
+          "min": "195",
+          "max": "204",
+          "name": "Colour macro 9"
+        },
+        {
+          "min": "205",
+          "max": "215",
+          "name": "Colour macro 10"
+        },
+        {
+          "min": "216",
+          "max": "225",
+          "name": "Colour macro 11"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Colour macro 12"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Colour macro 13"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Auto mode: 4 times each macro"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer/Speed/Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "000 - 255 Dimmer/speed (music-sensitive mode when channel 1 Auto)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer/Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Blackout"
+        },
+        {
+          "min": "1",
+          "max": "189",
+          "name": "Dimmer"
+        },
+        {
+          "min": "190",
+          "max": "250",
+          "name": "Strobe at increasing speed"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Full on"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No strobe"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe at increasing speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "2-channel mode",
+      "totalChannels": 2,
+      "channels": [
+        "Colour macros",
+        "Dimmer/Speed/Mode"
+      ]
+    },
+    {
+      "name": "3-channel mode",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4-channel mode",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer/Strobe"
+      ]
+    },
+    {
+      "name": "5-channel mode",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "6-channel mode (channel 6 overrides 1-4)",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe",
+        "Colour macros"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.35",
+      "width": "166",
+      "height": "180",
+      "depth": "110"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

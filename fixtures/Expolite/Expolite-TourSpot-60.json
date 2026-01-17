@@ -1,0 +1,294 @@
+{
+  "version": "1.2",
+  "manufacturer": "Expolite",
+  "model": "TourSpot 60",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Dirk J",
+  "channels": [
+    {
+      "name": "Iris",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Shutter off"
+        },
+        {
+          "min": "11",
+          "max": "39",
+          "name": "Shutter on"
+        },
+        {
+          "min": "40",
+          "max": "240",
+          "name": "Stobe, slow to fast"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Shutter on"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "Reset"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Shutter on"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "18",
+          "name": "Open / White"
+        },
+        {
+          "min": "19",
+          "max": "37",
+          "name": "Red"
+        },
+        {
+          "min": "38",
+          "max": "56",
+          "name": "Blue"
+        },
+        {
+          "min": "57",
+          "max": "75",
+          "name": "Yellow"
+        },
+        {
+          "min": "76",
+          "max": "94",
+          "name": "Green"
+        },
+        {
+          "min": "95",
+          "max": "113",
+          "name": "Orange"
+        },
+        {
+          "min": "114",
+          "max": "127",
+          "name": "Violet"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Rainbow Effect, CW, fast to slow"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Rainbow Effect, counter CW, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Pattern",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Rainbow effect, CW, fast to slow"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Rainbow effect, counter CW, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Rotating Angle"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Clockwise Rotating, slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Counterclockwise Rotating, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Prism + Rotating",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "No prism"
+        },
+        {
+          "min": "5",
+          "max": "19",
+          "name": "Prism"
+        },
+        {
+          "min": "20",
+          "max": "139",
+          "name": "Prism angle adjustment"
+        },
+        {
+          "min": "140",
+          "max": "197",
+          "name": "Clockwise rotating, fast to slow"
+        },
+        {
+          "min": "198",
+          "max": "255",
+          "name": "Counterclockwise rotating, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan & Tilt Speed + Vector Mode",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "251",
+          "name": "Fast to Slow"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Vector Mode"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Iris",
+        "Dimmer",
+        "Color",
+        "Gobo Pattern",
+        "Gobo Rotation",
+        "Focus",
+        "Prism + Rotating",
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan & Tilt Speed + Vector Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2000",
+      "colourTemperature": "6500"
+    },
+    "dimensions": {
+      "weight": "8.5",
+      "width": "250",
+      "height": "401",
+      "depth": "325"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

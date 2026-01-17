@@ -1,0 +1,285 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Inno Pocket Roll",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Stop"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Clockwise roll fast - slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "Stop"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Counterclockwise slow - fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Stop"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Slow - fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow open - fast close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast open - slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Color + Gobo",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "14",
+          "name": "Gobo 1 yellow"
+        },
+        {
+          "min": "15",
+          "max": "21",
+          "name": "Gobo 2 red"
+        },
+        {
+          "min": "22",
+          "max": "28",
+          "name": "Gobo 3 green"
+        },
+        {
+          "min": "29",
+          "max": "35",
+          "name": "Gobo 4 blue"
+        },
+        {
+          "min": "36",
+          "max": "42",
+          "name": "Gobo 5 RGB"
+        },
+        {
+          "min": "43",
+          "max": "49",
+          "name": "Gobo 6 UV"
+        },
+        {
+          "min": "50",
+          "max": "56",
+          "name": "Gobo 7 light blue"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Gobo 8 UV & light blue"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Open Shake"
+        },
+        {
+          "min": "72",
+          "max": "78",
+          "name": "Gobo 1 yellow shake"
+        },
+        {
+          "min": "79",
+          "max": "85",
+          "name": "Gobo 2 red shake"
+        },
+        {
+          "min": "86",
+          "max": "92",
+          "name": "Gobo 3 green shake"
+        },
+        {
+          "min": "93",
+          "max": "99",
+          "name": "Gobo 4 blue shake"
+        },
+        {
+          "min": "100",
+          "max": "106",
+          "name": "Gobo 5 RGB shake"
+        },
+        {
+          "min": "107",
+          "max": "113",
+          "name": "Gobo 6 UV shake"
+        },
+        {
+          "min": "114",
+          "max": "120",
+          "name": "Gobo 7 light blue shake"
+        },
+        {
+          "min": "121",
+          "max": "127",
+          "name": "Gobo 8 UV & light blue shake"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Gobo wheel rotation slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default dimmer setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "6 Channel Mode",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Strobe",
+        "Color + Gobo",
+        "Master Dimmer",
+        "Dimmer Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.6",
+      "width": "132",
+      "height": "165",
+      "depth": "329"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "14",
+      "degreesMax": "14"
+    },
+    "focus": {
+      "type": "Barrel",
+      "panMax": "180",
+      "tiltMax": "360"
+    },
+    "technical": {
+      "powerConsumption": "36",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayra",
+  "model": "TDC Triple Burst",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Flo Edelmann",
+  "channels": [
+    {
+      "name": "Show",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "37",
+          "name": "Show 1"
+        },
+        {
+          "min": "38",
+          "max": "67",
+          "name": "Show 2"
+        },
+        {
+          "min": "68",
+          "max": "97",
+          "name": "Show 3"
+        },
+        {
+          "min": "98",
+          "max": "127",
+          "name": "Show 4"
+        },
+        {
+          "min": "128",
+          "max": "157",
+          "name": "Show 5"
+        },
+        {
+          "min": "158",
+          "max": "187",
+          "name": "Show 6"
+        },
+        {
+          "min": "188",
+          "max": "217",
+          "name": "Show 7"
+        },
+        {
+          "min": "218",
+          "max": "247",
+          "name": "Show 8"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Random Show 1 - 8"
+        }
+      ]
+    },
+    {
+      "name": "Color chase",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Manual control"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Color chase 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Color chase 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Color chase 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Color chase 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Color chase 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Color chase 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Color chase 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Color chase 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Color chase 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Color chase 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Color chase 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Color chase 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Color chase 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Color chase 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Color chase 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Color chase 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Stand alone show"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "247",
+          "name": "Strobe slow - fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound strobe"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Stop"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Speed slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Amber 1",
+      "type": "Amber"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "Amber 2",
+      "type": "Amber"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "Amber 3",
+      "type": "Amber"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Show"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "Color chase",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Dimmer",
+        "Strobe",
+        "Color chase",
+        "Speed"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 15,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Amber 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Amber 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Amber 3"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 19,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Amber 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Amber 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Amber 3",
+        "Dimmer",
+        "Strobe",
+        "Color chase",
+        "Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "15x 3W LED (R/G/B/W/A)",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "375",
+      "height": "260",
+      "depth": "100"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "60",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COLORstrip Mini FX",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "John Thomas",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Laser Color",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Blackout"
+        },
+        {
+          "min": "11",
+          "max": "63",
+          "name": "Auto programs with strobe"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Red laser"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Green laser"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Red + Green laser"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Blackout"
+        },
+        {
+          "min": "7",
+          "max": "13",
+          "name": "Red"
+        },
+        {
+          "min": "14",
+          "max": "20",
+          "name": "Green"
+        },
+        {
+          "min": "21",
+          "max": "27",
+          "name": "Blue"
+        },
+        {
+          "min": "28",
+          "max": "34",
+          "name": "Yellow"
+        },
+        {
+          "min": "35",
+          "max": "41",
+          "name": "Purple"
+        },
+        {
+          "min": "42",
+          "max": "48",
+          "name": "Cyan"
+        },
+        {
+          "min": "49",
+          "max": "55",
+          "name": "White"
+        },
+        {
+          "min": "56",
+          "max": "62",
+          "name": "Red (Laser)"
+        },
+        {
+          "min": "63",
+          "max": "69",
+          "name": "Green (Laser)"
+        },
+        {
+          "min": "70",
+          "max": "76",
+          "name": "Red + Green (Laser)"
+        },
+        {
+          "min": "77",
+          "max": "82",
+          "name": "Color Change 1"
+        },
+        {
+          "min": "83",
+          "max": "90",
+          "name": "Color Change 2"
+        },
+        {
+          "min": "91",
+          "max": "97",
+          "name": "Color Change 3"
+        },
+        {
+          "min": "98",
+          "max": "104",
+          "name": "Color Change 4"
+        },
+        {
+          "min": "105",
+          "max": "111",
+          "name": "Color Change 5"
+        },
+        {
+          "min": "112",
+          "max": "118",
+          "name": "Color Change 6"
+        },
+        {
+          "min": "119",
+          "max": "125",
+          "name": "Color Change 1 (Laser + LED)"
+        },
+        {
+          "min": "126",
+          "max": "132",
+          "name": "Color Change 2 (Laser + LED)"
+        },
+        {
+          "min": "133",
+          "max": "139",
+          "name": "Color Change 3 (Laser + LED)"
+        },
+        {
+          "min": "140",
+          "max": "146",
+          "name": "Color Change 4 (Laser + LED)"
+        },
+        {
+          "min": "147",
+          "max": "153",
+          "name": "Color Change 5 (Laser + LED)"
+        },
+        {
+          "min": "154",
+          "max": "160",
+          "name": "Color Chase 1"
+        },
+        {
+          "min": "161",
+          "max": "167",
+          "name": "Color Chase 2"
+        },
+        {
+          "min": "168",
+          "max": "174",
+          "name": "Color Chase 3"
+        },
+        {
+          "min": "175",
+          "max": "181",
+          "name": "Color Chase 4"
+        },
+        {
+          "min": "182",
+          "max": "188",
+          "name": "Color Chase 5"
+        },
+        {
+          "min": "189",
+          "max": "195",
+          "name": "Color Chase 6"
+        },
+        {
+          "min": "196",
+          "max": "202",
+          "name": "Color Chase 7"
+        },
+        {
+          "min": "203",
+          "max": "209",
+          "name": "Color Chase 1 (Laser + LED)"
+        },
+        {
+          "min": "210",
+          "max": "216",
+          "name": "Color Chase 2 (Laser + LED)"
+        },
+        {
+          "min": "217",
+          "max": "223",
+          "name": "Color Chase 3 (Laser + LED)"
+        },
+        {
+          "min": "224",
+          "max": "230",
+          "name": "Color Chase 4 (Laser + LED)"
+        },
+        {
+          "min": "231",
+          "max": "237",
+          "name": "Color Chase 5 (Laser + LED)"
+        },
+        {
+          "min": "238",
+          "max": "244",
+          "name": "RGB Color Mix"
+        },
+        {
+          "min": "245",
+          "max": "251",
+          "name": "Color Fade"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Sound-Active (Auto Run)"
+        }
+      ]
+    },
+    {
+      "name": "Effect Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Run speed Auto"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "SOUND active"
+        }
+      ]
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "249",
+          "name": "Strobe"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "SOUND active"
+        }
+      ]
+    },
+    {
+      "name": "Laser (7ch)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "39",
+          "name": "NULL"
+        },
+        {
+          "min": "40",
+          "max": "79",
+          "name": "RED"
+        },
+        {
+          "min": "80",
+          "max": "119",
+          "name": "GRN"
+        },
+        {
+          "min": "120",
+          "max": "159",
+          "name": "R + GRN"
+        },
+        {
+          "min": "160",
+          "max": "199",
+          "name": "R + G Strobe"
+        },
+        {
+          "min": "200",
+          "max": "239",
+          "name": "G + R Strobe"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Alternating strobe"
+        }
+      ]
+    },
+    {
+      "name": "LASER Strobe Speed",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "NULL"
+        },
+        {
+          "min": "5",
+          "max": "249",
+          "name": "Slo to Fast"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "SOUND active"
+        }
+      ]
+    },
+    {
+      "name": "Laser Pattern",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Pattern 1"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Pattern 2"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Pattern 3"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Pattern 4"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Pattern 5"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Pattern 6"
+        },
+        {
+          "min": "120",
+          "max": "255",
+          "name": "Rotation Speed"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Laser Color"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 7,
+      "channels": [
+        "Color",
+        "Effect Speed",
+        "Shutter",
+        "Blue",
+        "Laser (7ch)",
+        "LASER Strobe Speed",
+        "Laser Pattern"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "444",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "482",
+      "height": "60",
+      "depth": "169"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "100",
+      "degreesMax": "100"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

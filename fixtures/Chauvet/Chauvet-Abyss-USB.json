@@ -1,0 +1,131 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Abyss USB",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "21",
+          "name": "White"
+        },
+        {
+          "min": "22",
+          "max": "42",
+          "name": "Purple"
+        },
+        {
+          "min": "43",
+          "max": "63",
+          "name": "Yellow"
+        },
+        {
+          "min": "64",
+          "max": "84",
+          "name": "Blue"
+        },
+        {
+          "min": "85",
+          "max": "105",
+          "name": "Green"
+        },
+        {
+          "min": "106",
+          "max": "127",
+          "name": "Orange"
+        },
+        {
+          "min": "128",
+          "max": "188",
+          "name": "Left rotation (fast to slow)"
+        },
+        {
+          "min": "189",
+          "max": "194",
+          "name": "Stop"
+        },
+        {
+          "min": "195",
+          "max": "255",
+          "name": "Right rotation (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Wave Effect Wheel",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Stop"
+        },
+        {
+          "min": "1",
+          "max": "122",
+          "name": "Left rotation (slow to fast)"
+        },
+        {
+          "min": "123",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Right rotation (fast to slow)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Color Wheel",
+        "Wave Effect Wheel"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2876",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.7",
+      "width": "228",
+      "height": "246",
+      "depth": "195"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "59",
+      "degreesMax": "59"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "38",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "version": "1.2",
+  "manufacturer": "Elation",
+  "model": "Color Spot 150",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Heikki Junnila",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed of pan/tilt movement",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Max. speed (tracking mode)"
+        },
+        {
+          "min": "1",
+          "max": "249",
+          "name": "From max. speed to min speed (vector mode)"
+        },
+        {
+          "min": "250",
+          "max": "252",
+          "name": "Max. speed, blackout while color or gobo change"
+        },
+        {
+          "min": "253",
+          "max": "255",
+          "name": "Max speed, vector mode, black-out while any change"
+        }
+      ]
+    },
+    {
+      "name": "Colours",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open, white"
+        },
+        {
+          "min": "10",
+          "max": "20",
+          "name": "Turquoise"
+        },
+        {
+          "min": "21",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "41",
+          "name": "Cyan"
+        },
+        {
+          "min": "42",
+          "max": "52",
+          "name": "Light green"
+        },
+        {
+          "min": "53",
+          "max": "63",
+          "name": "Magenta"
+        },
+        {
+          "min": "64",
+          "max": "73",
+          "name": "Light blue"
+        },
+        {
+          "min": "74",
+          "max": "84",
+          "name": "Yellow"
+        },
+        {
+          "min": "85",
+          "max": "95",
+          "name": "Green"
+        },
+        {
+          "min": "96",
+          "max": "105",
+          "name": "Pink"
+        },
+        {
+          "min": "106",
+          "max": "116",
+          "name": "Blue"
+        },
+        {
+          "min": "117",
+          "max": "127",
+          "name": "Orange"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards rainbow effect from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards rainbow effect from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotating gobos; shaking gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "11",
+          "name": "Open position (hole)"
+        },
+        {
+          "min": "12",
+          "max": "23",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "24",
+          "max": "35",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "36",
+          "max": "47",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "48",
+          "max": "59",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "60",
+          "max": "71",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "72",
+          "max": "83",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "84",
+          "max": "95",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "96",
+          "max": "115",
+          "name": "Gobo 1shaking"
+        },
+        {
+          "min": "116",
+          "max": "135",
+          "name": "Gobo 2 shaking"
+        },
+        {
+          "min": "136",
+          "max": "155",
+          "name": "Gobo 3 shaking"
+        },
+        {
+          "min": "156",
+          "max": "175",
+          "name": "Gobo 4 shaking"
+        },
+        {
+          "min": "176",
+          "max": "195",
+          "name": "Gobo 5 shaking"
+        },
+        {
+          "min": "196",
+          "max": "215",
+          "name": "Gobo 6 shaking"
+        },
+        {
+          "min": "216",
+          "max": "235",
+          "name": "Gobo 7 shaking"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Gobo wheel rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotating gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo rotation"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Forwards gobo rotation from fast to slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "No rotation"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Backwards gobo rotation from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Shutter, strobe, reset",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "1",
+          "max": "63",
+          "name": "Light intensity from 0% to 100%"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Shutter open"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Strobe-effect from slow to fast (max 8 flashes/sec)"
+        },
+        {
+          "min": "128",
+          "max": "139",
+          "name": "Reset, shutter closed"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Pulse effect in sequences with increasing speed"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Pulse effect in sequences with decreasing speed"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect with increasing speed"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan fine",
+        "Tilt fine",
+        "Speed of pan/tilt movement",
+        "Colours",
+        "Rotating gobos; shaking gobos",
+        "Rotating gobo rotation",
+        "Shutter, strobe, reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "CDM 150W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "12.5",
+      "width": "292",
+      "height": "415",
+      "depth": "378"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "19"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "530",
+      "tiltMax": "280"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

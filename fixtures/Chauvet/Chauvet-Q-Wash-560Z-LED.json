@@ -1,0 +1,361 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Q-Wash 560Z-LED",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Connor Faulder",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Power/Colour Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "High Power"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "Red:100% Green:Up Blue:0%"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "Red:Down Green:100% Blue:0%"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "Red:0% Green:100% Blue:Up"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "Red:0% Green:Down Blue:100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "Red:Up Green:0% Blue:100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "Red:100% Green:0% Blue:Down"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "Red:100% Green:Up Blue:Up"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "Red:Down Green:Down Blue:100%"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "Red:100% Green:100% Blue:100%"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "White 1: 3200 K"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "White 2: 3400 K"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "White 3: 4200 K"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "White 4: 4900 K"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "White 5: 5600 K"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "White 6: 5900 K"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "White 7: 6500 K"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "White 8: 7200 K"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "White 9: 8000 K"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "White 10: 8500 K"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "White 11: 10,000 K"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "1 - 20 Hz"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "No function"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Pan/Tilt Black Activation"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Pan/Tilt Black Deactivation"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Automatic Fan Speed"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Slow Fan Speed"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Normal Fan Speed"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "High Fan Speed"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Test"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Custom Program"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Reset"
+        },
+        {
+          "min": "220",
+          "max": "235",
+          "name": "No function"
+        },
+        {
+          "min": "236",
+          "max": "239",
+          "name": "DIM0"
+        },
+        {
+          "min": "240",
+          "max": "243",
+          "name": "DIM1"
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "DIM2"
+        },
+        {
+          "min": "248",
+          "max": "251",
+          "name": "DIM3"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "DIM4"
+        }
+      ]
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Basic (12 channel)",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Power/Colour Macro",
+        "Dimmer",
+        "Strobe",
+        "Zoom",
+        "Control"
+      ]
+    },
+    {
+      "name": "Advanced (15 channel)",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt Speed",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Power/Colour Macro",
+        "Dimmer",
+        "Strobe",
+        "Zoom",
+        "Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "13100",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9.62",
+      "width": "339",
+      "height": "361",
+      "depth": "232"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "6",
+      "degreesMax": "32"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "300",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

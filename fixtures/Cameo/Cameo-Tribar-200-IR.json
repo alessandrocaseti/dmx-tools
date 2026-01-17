@@ -1,0 +1,166 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Tribar 200 IR",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Morgenschweis",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "36",
+          "name": "Red"
+        },
+        {
+          "min": "37",
+          "max": "73",
+          "name": "Green"
+        },
+        {
+          "min": "74",
+          "max": "110",
+          "name": "Blue"
+        },
+        {
+          "min": "111",
+          "max": "147",
+          "name": "Yellow"
+        },
+        {
+          "min": "148",
+          "max": "184",
+          "name": "Magenta"
+        },
+        {
+          "min": "185",
+          "max": "221",
+          "name": "Cyan"
+        },
+        {
+          "min": "222",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    }
+  ],
+  "modes": [
+    {
+      "name": "9-Channel",
+      "totalChannels": 9,
+      "channels": [
+        "Red 1",
+        "Red 2",
+        "Red 3",
+        "Green 1",
+        "Green 2",
+        "Green 3",
+        "Blue 1",
+        "Blue 2",
+        "Blue 3"
+      ]
+    },
+    {
+      "name": "2-Channel",
+      "totalChannels": 2,
+      "channels": [
+        "Master Dimmer",
+        "Colour Macro"
+      ]
+    },
+    {
+      "name": "3-Channel 2",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Blue",
+        "Green"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2340",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.8",
+      "width": "1022",
+      "height": "66",
+      "depth": "65"
+    },
+    "lens": {
+      "name": "PC",
+      "degreesMin": "20",
+      "degreesMax": "20"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "Rocklite RGBAW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Larry Wall",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber Intensity",
+      "type": "Amber"
+    },
+    {
+      "name": "White Intensity",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Dimming"
+        },
+        {
+          "min": "15",
+          "max": "255",
+          "name": "Strobe (slow <--> fast)"
+        }
+      ]
+    },
+    {
+      "name": "Fade, Color Change, Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Fade in (ch. 9 controls speed)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Fade out (ch. 9 controls speed)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Fade in / fade out (ch. 9 controls speed)"
+        },
+        {
+          "min": "128",
+          "max": "164",
+          "name": "Multicolor fade (ch. 9 controls speed)"
+        },
+        {
+          "min": "165",
+          "max": "191",
+          "name": "Fade in / fade out, auto run"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Color jump (ch. 9 controls speed)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound active, multicolor (ch. 9 controls speed)"
+        }
+      ]
+    },
+    {
+      "name": "Fade Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow <--> fast"
+        }
+      ]
+    },
+    {
+      "name": "32-Bit Dimmer",
+      "type": "Nothing",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "As set in the control menu display"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "Mode 0 = 8-bit, 256 dimming steps"
+        },
+        {
+          "min": "56",
+          "max": "105",
+          "name": "Mode 1 = 32-bit, 0-25% intensity range"
+        },
+        {
+          "min": "106",
+          "max": "155",
+          "name": "Mode 2 = 32-bit, 0-50% intensity range"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "Mode 3 = 32-bit, 0-75% intensity range"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "Mode 4 = 32-bit, full intensity dimming"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "10-Channel",
+      "totalChannels": 10,
+      "channels": [
+        "Dimmer",
+        "Red Intensity",
+        "Green Intensity",
+        "Blue Intensity",
+        "Amber Intensity",
+        "White Intensity",
+        "Strobe",
+        "Fade, Color Change, Sound Active",
+        "Fade Speed",
+        "32-Bit Dimmer"
+      ]
+    },
+    {
+      "name": "9-Channel",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Red Intensity",
+        "Green Intensity",
+        "Blue Intensity",
+        "Amber Intensity",
+        "White Intensity",
+        "Strobe",
+        "Fade, Color Change, Sound Active",
+        "Fade Speed"
+      ]
+    },
+    {
+      "name": "5-Channel",
+      "totalChannels": 5,
+      "channels": [
+        "Red Intensity",
+        "Green Intensity",
+        "Blue Intensity",
+        "Amber Intensity",
+        "White Intensity"
+      ]
+    },
+    {
+      "name": "4-Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Red Intensity",
+        "Amber Intensity",
+        "White Intensity",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1090",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.4",
+      "width": "197",
+      "height": "197",
+      "depth": "254"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "160",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

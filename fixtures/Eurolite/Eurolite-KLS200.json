@@ -1,0 +1,206 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "KLS200",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Heikki Junnila",
+  "channels": [
+    {
+      "name": "Internal Programs, Auto Mode, Sound Countrolled Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Program 1"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Program 2"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "Program 3"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Program 4"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Program 5"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Program 6"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Program 7"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Program 8"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Program 9"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "Program 10"
+        },
+        {
+          "min": "210",
+          "max": "229",
+          "name": "Program 11"
+        },
+        {
+          "min": "230",
+          "max": "249",
+          "name": "Automatic control"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Music control"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Flash, with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Spot 1: Red",
+      "type": "Red"
+    },
+    {
+      "name": "Spot 1: Green",
+      "type": "Green"
+    },
+    {
+      "name": "Spot 1: Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Spot 2: Red",
+      "type": "Red"
+    },
+    {
+      "name": "Spot 2: Green",
+      "type": "Green"
+    },
+    {
+      "name": "Spot 2: Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Spot 3: Red",
+      "type": "Red"
+    },
+    {
+      "name": "Spot 3: Green",
+      "type": "Green"
+    },
+    {
+      "name": "Spot 3: Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Spot 4: Red",
+      "type": "Red"
+    },
+    {
+      "name": "Spot 4: Green",
+      "type": "Green"
+    },
+    {
+      "name": "Spot 4: Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 15,
+      "channels": [
+        "Internal Programs, Auto Mode, Sound Countrolled Mode",
+        "Master Dimmer",
+        "Strobe",
+        "Spot 1: Red",
+        "Spot 1: Green",
+        "Spot 1: Blue",
+        "Spot 2: Red",
+        "Spot 2: Green",
+        "Spot 2: Blue",
+        "Spot 3: Red",
+        "Spot 3: Green",
+        "Spot 3: Blue",
+        "Spot 4: Red",
+        "Spot 4: Green",
+        "Spot 4: Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "1110",
+      "height": "295",
+      "depth": "59"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "55",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED Z-200 TCL",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Heiko Fanieng",
+  "channels": [
+    {
+      "name": "Motor Rotation",
+      "type": "Nothing",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No rotation"
+        },
+        {
+          "min": "21",
+          "max": "170",
+          "name": "Step by step counter clockwise rotation"
+        },
+        {
+          "min": "171",
+          "max": "255",
+          "name": "Clockwise and counter clockwise rotation"
+        }
+      ]
+    },
+    {
+      "name": "LED effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "35",
+          "name": "All LEDs on"
+        },
+        {
+          "min": "36",
+          "max": "70",
+          "name": "Strobe-effect"
+        },
+        {
+          "min": "71",
+          "max": "105",
+          "name": "Fade"
+        },
+        {
+          "min": "106",
+          "max": "140",
+          "name": "Color-change"
+        },
+        {
+          "min": "141",
+          "max": "175",
+          "name": "Color-change + strobe"
+        },
+        {
+          "min": "176",
+          "max": "210",
+          "name": "Cross-fade"
+        },
+        {
+          "min": "211",
+          "max": "255",
+          "name": "Cross-fade + strobe"
+        }
+      ]
+    },
+    {
+      "name": "Speed settings for control channel 2",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "6-channel",
+      "totalChannels": 6,
+      "channels": [
+        "Motor Rotation",
+        "LED effects",
+        "Speed settings for control channel 2",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "280",
+      "height": "300",
+      "depth": "360"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

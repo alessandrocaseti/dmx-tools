@@ -1,0 +1,248 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Ultra Hex Par3",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "boxr",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobing",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Off"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Strobing slow - fast"
+        }
+      ]
+    },
+    {
+      "name": "Program selection mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimming mode"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Color macro mode"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Color change mode"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Color fade mode"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "Sound active mode"
+        }
+      ]
+    },
+    {
+      "name": "Color macros/programs/sound activity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Color macros/programs/sound activivty"
+        }
+      ]
+    },
+    {
+      "name": "Program speed/sound sensitive",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - fast/least sensitive - most sensitive"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default dimmer setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "6 channel mode",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV"
+      ]
+    },
+    {
+      "name": "7 channel mode",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "8 channel mode",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master dimmer",
+        "Strobing"
+      ]
+    },
+    {
+      "name": "11 channel mode",
+      "totalChannels": 11,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master dimmer",
+        "Strobing",
+        "Program selection mode",
+        "Color macros/programs/sound activity",
+        "Program speed/sound sensitive"
+      ]
+    },
+    {
+      "name": "12 channel mode",
+      "totalChannels": 12,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master dimmer",
+        "Strobing",
+        "Program selection mode",
+        "Color macros/programs/sound activity",
+        "Program speed/sound sensitive",
+        "Dimmer mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.02",
+      "width": "213",
+      "height": "120",
+      "depth": "224"
+    },
+    "lens": {
+      "name": "LED",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "26",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

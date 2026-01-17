@@ -1,0 +1,769 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BT Theatre HD2",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fede79",
+  "channels": [
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Hue Fine",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "CCT",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "24",
+          "name": "1800K"
+        },
+        {
+          "min": "25",
+          "max": "39",
+          "name": "2200K"
+        },
+        {
+          "min": "40",
+          "max": "54",
+          "name": "2700K"
+        },
+        {
+          "min": "55",
+          "max": "69",
+          "name": "3000K"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "3200K"
+        },
+        {
+          "min": "85",
+          "max": "99",
+          "name": "4000K"
+        },
+        {
+          "min": "100",
+          "max": "114",
+          "name": "4500K"
+        },
+        {
+          "min": "115",
+          "max": "129",
+          "name": "5000K"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "5600K"
+        },
+        {
+          "min": "145",
+          "max": "159",
+          "name": "6000K"
+        },
+        {
+          "min": "160",
+          "max": "174",
+          "name": "6500K"
+        },
+        {
+          "min": "175",
+          "max": "189",
+          "name": "7000K"
+        },
+        {
+          "min": "190",
+          "max": "204",
+          "name": "8000K"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "10000K"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "Strobe from slow to fast 0-25Hz"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No function"
+        },
+        {
+          "min": "110",
+          "max": "179",
+          "name": "Thunder Strobe"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Random Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Lime",
+      "type": "Lime"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Preset Color",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "L176 Loving Amber"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "R40 Light Salmon"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "L024 Scarlet"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "L164 Flame Red"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "L747 Easy White"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "R303 Warm Peach"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "L008 Dark Salmon"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "L025 Sunset Red"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "L004 Medium Bastard Amber"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "L237 C.I.D. (To Tungsten)"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "R321 Soft Golden Amber"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "L652 Urban Sodium"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "L212 L.C.T. Yellow (Y1)"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "L765 LEE Yellow"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "L513 Ice and a Slice"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "L100 Spring Yellow"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "L244 LEE Plus Green"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "R4430 Cal Color 30 Green"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "L122 Fern Green"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "L090 Dark Yellow Green"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "L243 LEE Fluorescent 3600K"
+        },
+        {
+          "min": "116",
+          "max": "120",
+          "name": "R92 Turquoise"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "R94 Kelly Green"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "L327 Forest Green"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "L191 Cosmetic Aqua Blue"
+        },
+        {
+          "min": "136",
+          "max": "140",
+          "name": "L728 Steel Green"
+        },
+        {
+          "min": "141",
+          "max": "145",
+          "name": "L117 Steel Blue"
+        },
+        {
+          "min": "146",
+          "max": "150",
+          "name": "L354 Special Steel Blue"
+        },
+        {
+          "min": "151",
+          "max": "155",
+          "name": "L053 Paler Lavender"
+        },
+        {
+          "min": "156",
+          "max": "160",
+          "name": "L501 New Color Blue"
+        },
+        {
+          "min": "161",
+          "max": "165",
+          "name": "L174 Dark Steel Blue"
+        },
+        {
+          "min": "166",
+          "max": "170",
+          "name": "L165 Daylight Blue"
+        },
+        {
+          "min": "171",
+          "max": "175",
+          "name": "L136 Pale Lavender"
+        },
+        {
+          "min": "176",
+          "max": "180",
+          "name": "L194 Surprise Pink"
+        },
+        {
+          "min": "181",
+          "max": "185",
+          "name": "L142 Pale Violet"
+        },
+        {
+          "min": "186",
+          "max": "190",
+          "name": "L700 Perfect Lavender"
+        },
+        {
+          "min": "191",
+          "max": "195",
+          "name": "L035 Light Pink"
+        },
+        {
+          "min": "196",
+          "max": "200",
+          "name": "L794 Pretty n Pink"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "L328 Follies Pink"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "L795 Magical Magenta"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "L154 Pale Rose"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "L127 Smokey Pink"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "L192 Flesh Pink"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "L332 Special Rose Pink"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "L790 Moroccan Pink"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "L157 Pink"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "R332 Cherry Rose"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "L128 Bright Pink"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "No Function"
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "No function"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Auto 1"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Auto 2"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Auto3"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Auto4"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "Auto5"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "Auto6"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Auto7"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Auto8"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Auto9"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Auto10"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Program 1"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "Program 2"
+        },
+        {
+          "min": "161",
+          "max": "255",
+          "name": "No Function"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed Adjustment",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto Speed Adjustement"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green Fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Fine",
+      "type": "Blue"
+    },
+    {
+      "name": "Lime Fine",
+      "type": "Lime"
+    },
+    {
+      "name": "Amber Fine",
+      "type": "Amber"
+    },
+    {
+      "name": "Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Function"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Reserved"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Reserved"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "Reserved"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Reserved"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Reserved"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Fan Mode = Live"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Fan Mode = Studio"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "Fan Mode = Power"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "Reserved"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "Dimmer Mode = Off"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "Dimmer Mode = Dim4"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "Reserved"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "Reserved"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "Reserved"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "LED PWM = 1200Hz"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "LED PWM = 2400Hz"
+        },
+        {
+          "min": "171",
+          "max": "180",
+          "name": "LED PWM = 4000Hz"
+        },
+        {
+          "min": "181",
+          "max": "190",
+          "name": "LED PWM = 6000Hz"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "LED PWM = 25000Hz"
+        },
+        {
+          "min": "201",
+          "max": "210",
+          "name": "All Reset"
+        },
+        {
+          "min": "211",
+          "max": "220",
+          "name": "Zoom Reset"
+        },
+        {
+          "min": "221",
+          "max": "230",
+          "name": "Reserved"
+        },
+        {
+          "min": "231",
+          "max": "240",
+          "name": "Reserved"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Reserved"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "HSIC",
+      "totalChannels": 8,
+      "channels": [
+        "Master Dimmer",
+        "Hue",
+        "Hue Fine",
+        "Saturation",
+        "CCT",
+        "Strobe",
+        "Zoom",
+        "Control"
+      ]
+    },
+    {
+      "name": "SSP",
+      "totalChannels": 9,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime",
+        "Strobe",
+        "Zoom",
+        "Control"
+      ]
+    },
+    {
+      "name": "TOUR",
+      "totalChannels": 13,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Lime",
+        "Preset Color",
+        "CCT",
+        "Strobe",
+        "Zoom",
+        "Auto",
+        "Auto Speed Adjustment",
+        "Control"
+      ]
+    },
+    {
+      "name": "TR16",
+      "totalChannels": 19,
+      "channels": [
+        "Master Dimmer",
+        "Master Dimmer Fine",
+        "Red",
+        "Red Fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "Amber",
+        "Amber Fine",
+        "Lime",
+        "Lime Fine",
+        "Preset Color",
+        "CCT",
+        "Strobe",
+        "Zoom",
+        "Auto",
+        "Auto Speed Adjustment",
+        "Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "7.6",
+      "width": "442",
+      "height": "260",
+      "depth": "285"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "14",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "240",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

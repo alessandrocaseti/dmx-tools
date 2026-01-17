@@ -1,0 +1,379 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED SLS-* QCL",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michael Krebs / Jannis Achstetter",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Function / Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Default"
+        },
+        {
+          "min": "1",
+          "max": "10",
+          "name": "Sound controlled"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe (Slow -> Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Mode select",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Default"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Color 1"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Color 2"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Color 3"
+        },
+        {
+          "min": "21",
+          "max": "26",
+          "name": "Color 4"
+        },
+        {
+          "min": "27",
+          "max": "31",
+          "name": "Color 5"
+        },
+        {
+          "min": "32",
+          "max": "36",
+          "name": "Color 6"
+        },
+        {
+          "min": "37",
+          "max": "41",
+          "name": "Color 7"
+        },
+        {
+          "min": "42",
+          "max": "46",
+          "name": "Color 8"
+        },
+        {
+          "min": "47",
+          "max": "51",
+          "name": "Color 9"
+        },
+        {
+          "min": "52",
+          "max": "56",
+          "name": "Color 10"
+        },
+        {
+          "min": "57",
+          "max": "61",
+          "name": "Color 11"
+        },
+        {
+          "min": "62",
+          "max": "66",
+          "name": "Color 12"
+        },
+        {
+          "min": "67",
+          "max": "71",
+          "name": "Color 13"
+        },
+        {
+          "min": "72",
+          "max": "77",
+          "name": "Color 14"
+        },
+        {
+          "min": "78",
+          "max": "82",
+          "name": "Color 15"
+        },
+        {
+          "min": "83",
+          "max": "87",
+          "name": "Color fade 1"
+        },
+        {
+          "min": "88",
+          "max": "92",
+          "name": "Color fade 2"
+        },
+        {
+          "min": "93",
+          "max": "97",
+          "name": "Color fade 3"
+        },
+        {
+          "min": "98",
+          "max": "102",
+          "name": "Color fade 4"
+        },
+        {
+          "min": "103",
+          "max": "107",
+          "name": "Color fade 5"
+        },
+        {
+          "min": "108",
+          "max": "112",
+          "name": "Color fade 6"
+        },
+        {
+          "min": "113",
+          "max": "117",
+          "name": "Color fade 7"
+        },
+        {
+          "min": "118",
+          "max": "122",
+          "name": "Color fade 8"
+        },
+        {
+          "min": "123",
+          "max": "127",
+          "name": "Color fade 9"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Color fade 10"
+        },
+        {
+          "min": "134",
+          "max": "138",
+          "name": "Color fade 11"
+        },
+        {
+          "min": "139",
+          "max": "143",
+          "name": "Color fade 12"
+        },
+        {
+          "min": "144",
+          "max": "148",
+          "name": "Color fade 13"
+        },
+        {
+          "min": "149",
+          "max": "153",
+          "name": "Color fade 14"
+        },
+        {
+          "min": "154",
+          "max": "158",
+          "name": "Color fade 15"
+        },
+        {
+          "min": "159",
+          "max": "163",
+          "name": "Color fade 16"
+        },
+        {
+          "min": "164",
+          "max": "168",
+          "name": "Color change 1"
+        },
+        {
+          "min": "169",
+          "max": "173",
+          "name": "Color change 2"
+        },
+        {
+          "min": "174",
+          "max": "179",
+          "name": "Color change 3"
+        },
+        {
+          "min": "180",
+          "max": "184",
+          "name": "Color change 4"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Color change 5"
+        },
+        {
+          "min": "190",
+          "max": "194",
+          "name": "Color change 6"
+        },
+        {
+          "min": "195",
+          "max": "200",
+          "name": "Color change 7"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "Color change 8"
+        },
+        {
+          "min": "206",
+          "max": "209",
+          "name": "Color change 9"
+        },
+        {
+          "min": "210",
+          "max": "214",
+          "name": "Color change 10"
+        },
+        {
+          "min": "215",
+          "max": "219",
+          "name": "Color change 11"
+        },
+        {
+          "min": "220",
+          "max": "224",
+          "name": "Color change 12"
+        },
+        {
+          "min": "225",
+          "max": "230",
+          "name": "Color change 13"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "Color change 14"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "Color change 15"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "Color change 16"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Sound controlled"
+        }
+      ]
+    },
+    {
+      "name": "Shutter / Speed / Sensitivity",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Shutter / Speed / Sensitivity (increasing)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "4-channel mode",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "6-channel mode",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer",
+        "Function / Shutter"
+      ]
+    },
+    {
+      "name": "7-channel mode",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer",
+        "Shutter / Speed / Sensitivity",
+        "Mode select"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "270",
+      "height": "310",
+      "depth": "110"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "20"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "75",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

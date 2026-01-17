@@ -1,0 +1,371 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayra",
+  "model": "ERO 075",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jan van Rumph",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Pulse strobe, slow-fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Gradually open strobe, slow-fast"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Gradually close strobe, slow-fast"
+        },
+        {
+          "min": "232",
+          "max": "247",
+          "name": "Random Strobe, slow-fast"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Colour 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Colour 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Colour 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Colour 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Colour 5"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Colour 6"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Colour 7"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Rainbow effect clockwise fast-slow"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Rainbow effect counter-clockwise slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "32",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "33",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "64",
+          "max": "73",
+          "name": "Gobo 1 shake, slow-fast"
+        },
+        {
+          "min": "74",
+          "max": "82",
+          "name": "Gobo 2 shake, slow-fast"
+        },
+        {
+          "min": "83",
+          "max": "91",
+          "name": "Gobo 3 shake, slow-fast"
+        },
+        {
+          "min": "92",
+          "max": "100",
+          "name": "Gobo 4 shake, slow-fast"
+        },
+        {
+          "min": "101",
+          "max": "109",
+          "name": "Gobo 5 shake, slow-fast"
+        },
+        {
+          "min": "110",
+          "max": "127",
+          "name": "Gobo 6 shake, slow-fast"
+        },
+        {
+          "min": "128",
+          "max": "129",
+          "name": "Gobo scroll effect, clockwise, fast-slow"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Gobo scroll effect, anti-clockwise, slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Gobo index"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Rotation clockwise, fast-slow"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Rotation anti-clockwise, slow-fast"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "No function"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Prism on"
+        }
+      ]
+    },
+    {
+      "name": "Auto mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Auto mode"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "25",
+          "name": "No function"
+        },
+        {
+          "min": "26",
+          "max": "76",
+          "name": "hold 3 seconds for effect motor reset"
+        },
+        {
+          "min": "77",
+          "max": "127",
+          "name": "hold 4 seconds for pan/tilt reset"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "hold 5 seconds for all reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 14,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/tilt speed",
+        "Dimmer",
+        "Shutter/Strobe",
+        "Colour",
+        "Gobo",
+        "Gobo rotation",
+        "Focus",
+        "Prism",
+        "Auto mode",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "7",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.65",
+      "width": "217",
+      "height": "340",
+      "depth": "148"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "11",
+      "degreesMax": "11"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "105",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

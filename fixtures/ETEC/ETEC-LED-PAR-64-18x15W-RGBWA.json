@@ -1,0 +1,303 @@
+{
+  "version": "1.2",
+  "manufacturer": "ETEC",
+  "model": "LED PAR 64 18x15W RGBWA Zoom",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Simon Orlob",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Colour Macros"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe Speed"
+        }
+      ]
+    },
+    {
+      "name": "HSV",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "HSV Effect"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "3 colors, pure color"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "7 colors, pure color"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "7 colors, diffuse color"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "DMX control, vanishing strobe colors"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "7 color strobe"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "7 additional color strobe"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "7 water course colors"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound to light mode"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "adjusting speed for AUTO programs"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "increasing speed of dimmer"
+        }
+      ]
+    },
+    {
+      "name": "ID",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Whole ID address controlled"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Same ID address controlled"
+        }
+      ]
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Brightness",
+      "type": "Unknown"
+    }
+  ],
+  "modes": [
+    {
+      "name": "STAGE",
+      "totalChannels": 13,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Zoom",
+        "Colour",
+        "Strobe Speed",
+        "HSV",
+        "Auto Speed",
+        "Dimmer Speed",
+        "ID"
+      ]
+    },
+    {
+      "name": "ARC.1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Zoom"
+      ]
+    },
+    {
+      "name": "ARC1.D",
+      "totalChannels": 7,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Zoom"
+      ]
+    },
+    {
+      "name": "ARC.2",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Dimmer Speed",
+        "Zoom"
+      ]
+    },
+    {
+      "name": "ARC2.D",
+      "totalChannels": 8,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Dimmer Speed",
+        "Zoom"
+      ]
+    },
+    {
+      "name": "ARC2.S",
+      "totalChannels": 8,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "Strobe Speed",
+        "Zoom"
+      ]
+    },
+    {
+      "name": "HSV",
+      "totalChannels": 5,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Brightness",
+        "Dimmer Speed",
+        "Zoom"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.3",
+      "width": "270",
+      "height": "270",
+      "depth": "300"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "10"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "280",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

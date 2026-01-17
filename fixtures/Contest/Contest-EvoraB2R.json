@@ -1,0 +1,687 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "Evora B2R",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fredje Gallon",
+  "channels": [
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "8",
+          "name": "White"
+        },
+        {
+          "min": "9",
+          "max": "17",
+          "name": "Red"
+        },
+        {
+          "min": "18",
+          "max": "26",
+          "name": "Blue"
+        },
+        {
+          "min": "27",
+          "max": "35",
+          "name": "Green"
+        },
+        {
+          "min": "36",
+          "max": "44",
+          "name": "Yellow"
+        },
+        {
+          "min": "45",
+          "max": "53",
+          "name": "Pink"
+        },
+        {
+          "min": "54",
+          "max": "62",
+          "name": "Bright blue"
+        },
+        {
+          "min": "63",
+          "max": "71",
+          "name": "Orange"
+        },
+        {
+          "min": "72",
+          "max": "80",
+          "name": "Light pink"
+        },
+        {
+          "min": "81",
+          "max": "89",
+          "name": "Vale yellow"
+        },
+        {
+          "min": "90",
+          "max": "98",
+          "name": "Dark blue"
+        },
+        {
+          "min": "99",
+          "max": "107",
+          "name": "Purple"
+        },
+        {
+          "min": "108",
+          "max": "116",
+          "name": "Vale orange"
+        },
+        {
+          "min": "117",
+          "max": "127",
+          "name": "Vale white"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Color Scroll CW"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Color Scroll stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Color Scroll CCW"
+        }
+      ]
+    },
+    {
+      "name": "Color Fine",
+      "type": "Color"
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open gobo"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "XS dot"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "S dot"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "M dot"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "L dot"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "XL dot"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "XXL dot"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Triangle"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Star"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Spiral"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Circular dots"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Flower"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Vent"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Vent inv."
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Star"
+        },
+        {
+          "min": "120",
+          "max": "126",
+          "name": "XS dot shake"
+        },
+        {
+          "min": "127",
+          "max": "133",
+          "name": "S dot shake"
+        },
+        {
+          "min": "134",
+          "max": "140",
+          "name": "M dot shake"
+        },
+        {
+          "min": "141",
+          "max": "147",
+          "name": "L dot shake"
+        },
+        {
+          "min": "148",
+          "max": "154",
+          "name": "XL dot shake"
+        },
+        {
+          "min": "155",
+          "max": "161",
+          "name": "XXL dot shake"
+        },
+        {
+          "min": "162",
+          "max": "168",
+          "name": "Triangle shake"
+        },
+        {
+          "min": "169",
+          "max": "175",
+          "name": "Star shake"
+        },
+        {
+          "min": "176",
+          "max": "182",
+          "name": "Spiral shake"
+        },
+        {
+          "min": "183",
+          "max": "189",
+          "name": "Circular dots shake"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Flower shake"
+        },
+        {
+          "min": "194",
+          "max": "203",
+          "name": "Vent shake"
+        },
+        {
+          "min": "204",
+          "max": "210",
+          "name": "Vent inv. shake"
+        },
+        {
+          "min": "211",
+          "max": "217",
+          "name": "Star shake"
+        },
+        {
+          "min": "218",
+          "max": "255",
+          "name": "Gobo scrol F>S"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Index",
+      "type": "Gobo"
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan / Tilt speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Maximum speed to minimum"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Black-out on move"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Black-out on disc-rotations"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "no function"
+        }
+      ]
+    },
+    {
+      "name": "Prism Frost macro",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "79",
+          "name": "Frost"
+        },
+        {
+          "min": "80",
+          "max": "127",
+          "name": "Prism 8 faces"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Macro 1"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Macro 2"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Macro 3"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Macro 3"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Macro 4"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Macro 5"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Macro 6"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Macro 7"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Macro 8"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Macro 9"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Macro 10"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Macro 11"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Macro 12"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Macro 13"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Macro 14"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 15"
+        }
+      ]
+    },
+    {
+      "name": "Prism rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Prism index"
+        },
+        {
+          "min": "128",
+          "max": "189",
+          "name": "Rotation CW F>S"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Rotation stop"
+        },
+        {
+          "min": "194",
+          "max": "255",
+          "name": "Rotation CCW F>S"
+        }
+      ]
+    },
+    {
+      "name": "Prism rotation fine",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Prism rotation fine"
+        }
+      ]
+    },
+    {
+      "name": "Shutter Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "no function (shutter open)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobo S>F"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "no function"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse effect S>F"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "no function"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe S>F"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "no function (shutter open)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Lamp control / resets / programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Colorchange normal"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Colorwheel in linear mode (double colors possible)"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Gobo and colorwheel in linear mode"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Fire lamp"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Lamp extinction"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "Reset all motors"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Reset movement motors"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "Reset colorwheel motor"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Reset gobowheel motor"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "Reset dimmer/shutter motor"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "Reset other motors"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Programm 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Programm 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Programm 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Programm 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Programm 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Programm 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Programm 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Programm 8"
+        }
+      ]
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 12,
+      "channels": [
+        "Color",
+        "Gobo",
+        "Prism Frost macro",
+        "Prism rotation",
+        "Pan",
+        "Tilt",
+        "Pan / Tilt speed",
+        "Shutter Strobe",
+        "Dimmer",
+        "Lamp control / resets / programs",
+        "Pan fine",
+        "Tilt fine"
+      ]
+    },
+    {
+      "name": "Basic",
+      "totalChannels": 10,
+      "channels": [
+        "Color",
+        "Gobo",
+        "Prism Frost macro",
+        "Prism rotation",
+        "Pan",
+        "Tilt",
+        "Pan / Tilt speed",
+        "Shutter Strobe",
+        "Dimmer",
+        "Lamp control / resets / programs"
+      ]
+    },
+    {
+      "name": "Extended",
+      "totalChannels": 16,
+      "channels": [
+        "Color",
+        "Color Fine",
+        "Gobo",
+        "Gobo Index",
+        "Pan",
+        "Tilt",
+        "Pan / Tilt speed",
+        "Prism Frost macro",
+        "Prism rotation",
+        "Prism rotation fine",
+        "Shutter Strobe",
+        "Dimmer",
+        "Dimmer fine",
+        "Lamp control / resets / programs",
+        "Pan fine",
+        "Tilt fine"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD Platinum 2R",
+      "lumens": "5150",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "11",
+      "width": "300",
+      "height": "438",
+      "depth": "211"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4",
+      "degreesMax": "4"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "630",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "210",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

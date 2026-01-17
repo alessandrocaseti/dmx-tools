@@ -1,0 +1,445 @@
+{
+  "version": "1.2",
+  "manufacturer": "AFX",
+  "model": "Spot 180 LED",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Aurelien",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "250",
+          "name": "Strobe from slow to fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Colour Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "White"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Yellow"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Blue"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Pink"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Orange"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Turquoise"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "CW from slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "CCW from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Static Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Open"
+        },
+        {
+          "min": "7",
+          "max": "13",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "14",
+          "max": "20",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "21",
+          "max": "27",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "28",
+          "max": "34",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "35",
+          "max": "41",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "42",
+          "max": "48",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "49",
+          "max": "55",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "64",
+          "max": "70",
+          "name": "Gobo 8 Shake speed from slow to fast"
+        },
+        {
+          "min": "71",
+          "max": "77",
+          "name": "Gobo 7 Shake speed from slow to fast"
+        },
+        {
+          "min": "78",
+          "max": "84",
+          "name": "Gobo 6 Shake speed from slow to fast"
+        },
+        {
+          "min": "85",
+          "max": "91",
+          "name": "Gobo 5 Shake speed from slow to fast"
+        },
+        {
+          "min": "92",
+          "max": "98",
+          "name": "Gobo 4 Shake speed from slow to fast"
+        },
+        {
+          "min": "99",
+          "max": "105",
+          "name": "Gobo 3 Shake speed from slow to fast"
+        },
+        {
+          "min": "106",
+          "max": "112",
+          "name": "Gobo 2 Shake speed from slow to fast"
+        },
+        {
+          "min": "113",
+          "max": "119",
+          "name": "Gobo 1 Shake speed from slow to fast"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Gobo Rotate CW slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Gobo Rotate CCW slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Rotation Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Gobo Rotate CW slow to fast"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Gobo Rotate CCW slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Gobo Rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "95",
+          "name": "Gobo Fine 0-360"
+        },
+        {
+          "min": "96",
+          "max": "135",
+          "name": "Gobo Rotating 0-90"
+        },
+        {
+          "min": "136",
+          "max": "155",
+          "name": "Gobo Rotating 0-180"
+        },
+        {
+          "min": "156",
+          "max": "175",
+          "name": "Gobo Rotating 0-720"
+        },
+        {
+          "min": "176",
+          "max": "215",
+          "name": "Gobo self-rotating CW from slow to fast"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Gobo self-rotating CCW rotating from slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "63",
+          "name": "Open"
+        },
+        {
+          "min": "64",
+          "max": "255",
+          "name": "Prism In"
+        }
+      ]
+    },
+    {
+      "name": "Prism Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Stop"
+        },
+        {
+          "min": "16",
+          "max": "135",
+          "name": "Rotate CW slow > fast"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Rotate CCW slow > fast"
+        }
+      ]
+    },
+    {
+      "name": "Self-setting Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No action"
+        },
+        {
+          "min": "8",
+          "max": "131",
+          "name": "Auto mode"
+        },
+        {
+          "min": "132",
+          "max": "255",
+          "name": "Sound Mode"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "253",
+          "name": "Reset"
+        },
+        {
+          "min": "254",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Colour Wheel",
+        "Static Gobos",
+        "Rotation Gobos",
+        "Gobo Rotation",
+        "Focus",
+        "Prism",
+        "Prism Rotation",
+        "Self-setting Program",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED 180W",
+      "lumens": "60000",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "11.5",
+      "width": "470",
+      "height": "270",
+      "depth": "270"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "250",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,438 @@
+{
+  "version": "1.2",
+  "manufacturer": "CLF",
+  "model": "JUNO",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Bram Janssen",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Closed"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Open"
+        },
+        {
+          "min": "25",
+          "max": "64",
+          "name": "Strobe(Fast -> Slow)"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Open"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "Opening Pulse(Fast -> Slow)"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Open"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Closing Pulse(Fast -> Slow)"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Open"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Open"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "Random Opening Pulse(Fast -> Slow)"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Open"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Random Closing Pulse(Fast -> Slow)"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Open"
+        },
+        {
+          "min": "170",
+          "max": "184",
+          "name": "Burst pulse"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "204",
+          "name": "Random burst pulse"
+        },
+        {
+          "min": "205",
+          "max": "209",
+          "name": "Open"
+        },
+        {
+          "min": "210",
+          "max": "224",
+          "name": "Sine wave(Fast -> Slow)"
+        },
+        {
+          "min": "225",
+          "max": "229",
+          "name": "Open"
+        },
+        {
+          "min": "230",
+          "max": "244",
+          "name": "Burst"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro+ White Balance",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "R 100% G 0~100% B 0"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "R 100%~0 G 100% B 0"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "R 0 G 100% B 0~100%"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "R 0 G 100%~0 B 100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "R 0~100% G 0 B 100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "R 0~100% G 0 B 100%~0"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "R 100% G 0~100% B 0~100%"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "R 100%~0 G 100%~0 B 100%"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "R 100% G 100% B 100% W 100%"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "White 1"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "White 2"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "White 3"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "White 4"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "White 5"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "White 6"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "White 7"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "White 8"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "White 9"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "White 10"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "White 11"
+        }
+      ]
+    },
+    {
+      "name": "Auto programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "No Function"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Auto Program 1"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Auto Program 2"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Auto Program 3"
+        },
+        {
+          "min": "204",
+          "max": "254",
+          "name": "Auto Program 4"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Auto Program 5"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Menu Setting dimmer mode"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer mode 1"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer mode 2"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer mode 3"
+        }
+      ]
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Value",
+      "type": "Unknown"
+    },
+    {
+      "name": "Lightness",
+      "type": "Unknown"
+    },
+    {
+      "name": "Auto speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto speed slow to fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Color Macro+ White Balance",
+        "Auto programs",
+        "Auto speed",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "HSV",
+      "totalChannels": 3,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Value"
+      ]
+    },
+    {
+      "name": "HSI",
+      "totalChannels": 3,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Lightness"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "721",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.5",
+      "width": "312",
+      "height": "250",
+      "depth": "108"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

@@ -1,0 +1,1227 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BTX-Saturn",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michał Kluska",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan / Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Special Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Null"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "BlackOut Pan/Tilt Move Enable"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "BlackOut Pan/Tilt Move Disable"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "BlackOut Color Move Enable"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "BlackOut Color Move Disable"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "BlackOut Color Move Enable"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "BlackOut Color Move Disable"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Linear dimmer curve"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Square law dimmer curve"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Inverse Square law dimmer curve"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "S dimmer curve"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Fast dimmer mode"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Slow dimmer mode"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Silent Mode Enable"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Silent Mode Disable"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Focus Compensate Disable"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Focus Compensate Near"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Focus Compensate Medium"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Focus Compensate Far"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Null"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Reset All"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Reset Effect"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Reset Pan/Tilt"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Null"
+        }
+      ]
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Open"
+        },
+        {
+          "min": "7",
+          "max": "12",
+          "name": "Red"
+        },
+        {
+          "min": "13",
+          "max": "18",
+          "name": "Aqua Marine"
+        },
+        {
+          "min": "19",
+          "max": "25",
+          "name": "Orange"
+        },
+        {
+          "min": "26",
+          "max": "31",
+          "name": "Green"
+        },
+        {
+          "min": "32",
+          "max": "37",
+          "name": "CTO 8000K"
+        },
+        {
+          "min": "38",
+          "max": "44",
+          "name": "CTO 5600K"
+        },
+        {
+          "min": "45",
+          "max": "50",
+          "name": "CTO 3200K"
+        },
+        {
+          "min": "51",
+          "max": "56",
+          "name": "Lime Green"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "UV"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Color Index"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Clockwise color wheel rotation (fast->slow)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Counter-clockwise color wheel rotation (slow->fast)"
+        }
+      ]
+    },
+    {
+      "name": "Cyan",
+      "type": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "type": "Magenta"
+    },
+    {
+      "name": "Yellow",
+      "type": "Yellow"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "CMY color mixing usind channels 8 to 10"
+        },
+        {
+          "min": "10",
+          "max": "14",
+          "name": "LEE 790 - Moroccan pink"
+        },
+        {
+          "min": "15",
+          "max": "19",
+          "name": "LEE 157 - Pink"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "LEE 332 - Special rose pink"
+        },
+        {
+          "min": "25",
+          "max": "29",
+          "name": "LEE 328 - Follies pink"
+        },
+        {
+          "min": "30",
+          "max": "34",
+          "name": "LEE 345 - Fuchsia pink"
+        },
+        {
+          "min": "35",
+          "max": "39",
+          "name": "LEE 194 - Surprise pink"
+        },
+        {
+          "min": "40",
+          "max": "44",
+          "name": "LEE 181 - Congo Blue"
+        },
+        {
+          "min": "45",
+          "max": "49",
+          "name": "LEE 071 - Tokyo Blue"
+        },
+        {
+          "min": "50",
+          "max": "54",
+          "name": "LEE 120 - Deep Blue"
+        },
+        {
+          "min": "55",
+          "max": "59",
+          "name": "LEE 079 - Just Blue"
+        },
+        {
+          "min": "60",
+          "max": "64",
+          "name": "LEE 132 - Medium Blue"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "LEE 200 - Double CT Blue"
+        },
+        {
+          "min": "70",
+          "max": "74",
+          "name": "LEE 161 - Slate Blue"
+        },
+        {
+          "min": "75",
+          "max": "79",
+          "name": "LEE 201 - Full CT Blue"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "LEE 202 - Half CT Blue"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "LEE 117 - Steel Blue"
+        },
+        {
+          "min": "90",
+          "max": "94",
+          "name": "LEE 353 - Lighter Blue"
+        },
+        {
+          "min": "95",
+          "max": "99",
+          "name": "LEE 118 - Light Blue"
+        },
+        {
+          "min": "100",
+          "max": "104",
+          "name": "LEE 116 - Medium Blue Green"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "LEE 124 - Dark Green"
+        },
+        {
+          "min": "110",
+          "max": "114",
+          "name": "LEE 139 - Primary Green"
+        },
+        {
+          "min": "115",
+          "max": "119",
+          "name": "LEE 089 - Moss Green"
+        },
+        {
+          "min": "120",
+          "max": "124",
+          "name": "LEE 122 - Fern Green"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "LEE 738 - JAS Green"
+        },
+        {
+          "min": "130",
+          "max": "134",
+          "name": "LEE 088 - Lime Green"
+        },
+        {
+          "min": "135",
+          "max": "139",
+          "name": "LEE 100 - Spring Yellow"
+        },
+        {
+          "min": "140",
+          "max": "144",
+          "name": "LEE 104 - Deep Amber"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "LEE 179 - Chrome Orange"
+        },
+        {
+          "min": "150",
+          "max": "154",
+          "name": "LEE 105 - Orange"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "LEE 021 - Gold Amber"
+        },
+        {
+          "min": "160",
+          "max": "164",
+          "name": "LEE 778 - Millennium Gold"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "LEE 135 - Deep Golden Amber"
+        },
+        {
+          "min": "170",
+          "max": "174",
+          "name": "LEE 164 - Flame Red"
+        },
+        {
+          "min": "175",
+          "max": "179",
+          "name": "Open"
+        },
+        {
+          "min": "180",
+          "max": "201",
+          "name": "Clockwise color macro rotation (fast -> slow)"
+        },
+        {
+          "min": "202",
+          "max": "207",
+          "name": "Stop (this will stop wherever the color is at the time)"
+        },
+        {
+          "min": "208",
+          "max": "229",
+          "name": "Counter-clockwise color macro rotation (slow -> fast)"
+        },
+        {
+          "min": "230",
+          "max": "234",
+          "name": "Open"
+        },
+        {
+          "min": "235",
+          "max": "249",
+          "name": "Random color macro (fast -> slow)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Gobo wheel 1 - select (rotating gobos)",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "72",
+          "name": "Gobo 1 Shaking (slow->fast)"
+        },
+        {
+          "min": "73",
+          "max": "81",
+          "name": "Gobo 2 Shaking (slow->fast)"
+        },
+        {
+          "min": "82",
+          "max": "90",
+          "name": "Gobo 3 Shaking (slow->fast)"
+        },
+        {
+          "min": "91",
+          "max": "99",
+          "name": "Gobo 4 Shaking (slow->fast)"
+        },
+        {
+          "min": "100",
+          "max": "108",
+          "name": "Gobo 5 Shaking (slow->fast)"
+        },
+        {
+          "min": "109",
+          "max": "117",
+          "name": "Gobo 6 Shaking (slow->fast)"
+        },
+        {
+          "min": "118",
+          "max": "127",
+          "name": "Gobo 7 Shaking (slow->fast)"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Clockwise gobo wheel rotation (fast->slow)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop rotation"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Counter-clockwise gobo wheel rotation (slow->fast)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo wheel 1 - rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Indexed positioning : 0 - 360"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Clockwise gobo rotation (fast->slow)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop rotation"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Counter-clockwise gobo rotation (slow ->fast)"
+        }
+      ]
+    },
+    {
+      "name": "Gobo wheel 1 - rotation fine",
+      "type": "Gobo"
+    },
+    {
+      "name": "Gobo wheel 2 - select (static gobos)",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "open"
+        },
+        {
+          "min": "7",
+          "max": "12",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "13",
+          "max": "18",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "19",
+          "max": "25",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "26",
+          "max": "31",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "32",
+          "max": "37",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "38",
+          "max": "44",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "45",
+          "max": "50",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "51",
+          "max": "56",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "57",
+          "max": "63",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "64",
+          "max": "70",
+          "name": "Gobo 1 Shaking (slow->fast)"
+        },
+        {
+          "min": "71",
+          "max": "77",
+          "name": "Gobo 2 Shaking (slow->fast)"
+        },
+        {
+          "min": "78",
+          "max": "84",
+          "name": "Gobo 3 Shaking (slow->fast)"
+        },
+        {
+          "min": "85",
+          "max": "91",
+          "name": "Gobo 4 Shaking (slow->fast)"
+        },
+        {
+          "min": "92",
+          "max": "98",
+          "name": "Gobo 5 Shaking (slow->fast)"
+        },
+        {
+          "min": "99",
+          "max": "105",
+          "name": "Gobo 6 Shaking (slow->fast)"
+        },
+        {
+          "min": "106",
+          "max": "112",
+          "name": "Gobo 7 Shaking (slow->fast)"
+        },
+        {
+          "min": "113",
+          "max": "119",
+          "name": "Gobo 8 Shaking (slow->fast)"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Gobo 9 Shaking (slow->fast)"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Clockwise gobo wheel rotation (fast->slow)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop rotation"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Counter-clockwise gobo rotation (slow->fast)"
+        }
+      ]
+    },
+    {
+      "name": "Prism",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "no Effect"
+        },
+        {
+          "min": "11",
+          "max": "127",
+          "name": "Prism"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Macro 1"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Macro 2"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Macro 3"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Macro 4"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Macro 5"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Macro 6"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Macro 7"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Macro 8"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Macro 9"
+        },
+        {
+          "min": "200",
+          "max": "207",
+          "name": "Macro 10"
+        },
+        {
+          "min": "208",
+          "max": "215",
+          "name": "Macro 11"
+        },
+        {
+          "min": "216",
+          "max": "223",
+          "name": "Macro 12"
+        },
+        {
+          "min": "224",
+          "max": "231",
+          "name": "Macro 13"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Macro 14"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Macro 15"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Macro 16"
+        }
+      ]
+    },
+    {
+      "name": "Prism - rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Indexed positiong : 0 - 360"
+        },
+        {
+          "min": "128",
+          "max": "190",
+          "name": "Clockwise prism rotation (fast->slow)"
+        },
+        {
+          "min": "191",
+          "max": "192",
+          "name": "Stop rotation"
+        },
+        {
+          "min": "193",
+          "max": "255",
+          "name": "Counter-clockwise prism rotation (slow->fast)"
+        }
+      ]
+    },
+    {
+      "name": "Zoom (manual control + effects)",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "129",
+          "name": "Narrow -> Wide (manual)"
+        },
+        {
+          "min": "130",
+          "max": "154",
+          "name": "Pulse opening effect (fast->slow)"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Wide"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "Pulse closing effect (fast->slow)"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Wide"
+        },
+        {
+          "min": "190",
+          "max": "214",
+          "name": "Ramp effect (fast->slow)"
+        },
+        {
+          "min": "215",
+          "max": "219",
+          "name": "Wide"
+        },
+        {
+          "min": "220",
+          "max": "244",
+          "name": "Random effect (fast->slow)"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Wide"
+        }
+      ]
+    },
+    {
+      "name": "Zoom Narrow->Wide (manual)",
+      "type": "Beam"
+    },
+    {
+      "name": "Zoom fine Narrow->Wide (manual)",
+      "type": "Beam"
+    },
+    {
+      "name": "Focus",
+      "type": "Focus"
+    },
+    {
+      "name": "Focus Fine",
+      "type": "Focus"
+    },
+    {
+      "name": "Frost",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "99",
+          "name": "No frost->frost (linear)"
+        },
+        {
+          "min": "100",
+          "max": "124",
+          "name": "Pulse opening effect (fast->slow)"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "No frost"
+        },
+        {
+          "min": "130",
+          "max": "154",
+          "name": "Pulse closing effect (fast->slow)"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "No frost"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "Ramp effect (fast->slow)"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "No frost"
+        },
+        {
+          "min": "190",
+          "max": "214",
+          "name": "Random effect (fast->slow)"
+        },
+        {
+          "min": "215",
+          "max": "219",
+          "name": "No frost"
+        },
+        {
+          "min": "220",
+          "max": "244",
+          "name": "depth of field enable"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "depth of field disable"
+        }
+      ]
+    },
+    {
+      "name": "Iris (manual control+ effects)",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "129",
+          "name": "Open -> Closed"
+        },
+        {
+          "min": "130",
+          "max": "154",
+          "name": "Pulse opening effect (fast->slow)"
+        },
+        {
+          "min": "155",
+          "max": "159",
+          "name": "Big"
+        },
+        {
+          "min": "160",
+          "max": "184",
+          "name": "Pulse closing effect (fast->slow)"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Big"
+        },
+        {
+          "min": "190",
+          "max": "214",
+          "name": "Ramp effect (fast->slow)"
+        },
+        {
+          "min": "215",
+          "max": "219",
+          "name": "Big"
+        },
+        {
+          "min": "220",
+          "max": "244",
+          "name": "Random effect (fast->slow)"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Big"
+        }
+      ]
+    },
+    {
+      "name": "Iris",
+      "type": "Iris"
+    },
+    {
+      "name": "Iris fine",
+      "type": "Iris"
+    },
+    {
+      "name": "Strobe/Shutter effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Shutter closed (no output)"
+        },
+        {
+          "min": "20",
+          "max": "24",
+          "name": "Shutter open"
+        },
+        {
+          "min": "25",
+          "max": "64",
+          "name": "Strobe1: fast->slow"
+        },
+        {
+          "min": "65",
+          "max": "69",
+          "name": "Open"
+        },
+        {
+          "min": "70",
+          "max": "84",
+          "name": "Strobe 2: opening pulse, fast->slow"
+        },
+        {
+          "min": "85",
+          "max": "89",
+          "name": "Open"
+        },
+        {
+          "min": "90",
+          "max": "104",
+          "name": "Strobe 3: closing pulse, fast->slow"
+        },
+        {
+          "min": "105",
+          "max": "109",
+          "name": "Open"
+        },
+        {
+          "min": "110",
+          "max": "124",
+          "name": "Strobe 4: random strobe, fast->slow"
+        },
+        {
+          "min": "125",
+          "max": "129",
+          "name": "Open"
+        },
+        {
+          "min": "130",
+          "max": "144",
+          "name": "Strobe 5: random opening pulse, fast->slow"
+        },
+        {
+          "min": "145",
+          "max": "149",
+          "name": "Open"
+        },
+        {
+          "min": "150",
+          "max": "164",
+          "name": "Strobe 6: random closing pulse, fast->slow"
+        },
+        {
+          "min": "165",
+          "max": "169",
+          "name": "Open"
+        },
+        {
+          "min": "170",
+          "max": "184",
+          "name": "Strobe 7: burst pulse, fast->slow"
+        },
+        {
+          "min": "185",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "204",
+          "name": "Strobe 8: random burst pulse, fast->slow"
+        },
+        {
+          "min": "205",
+          "max": "209",
+          "name": "Open"
+        },
+        {
+          "min": "210",
+          "max": "224",
+          "name": "Strobe 9: sine wave, fast->slow"
+        },
+        {
+          "min": "225",
+          "max": "229",
+          "name": "Open"
+        },
+        {
+          "min": "230",
+          "max": "244",
+          "name": "Strobe 10: burst, fast->slow"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 25,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan / Tilt Speed",
+        "Special Functions",
+        "Color Wheel",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Color Macro",
+        "Gobo wheel 1 - select (rotating gobos)",
+        "Gobo wheel 1 - rotation",
+        "Gobo wheel 1 - rotation fine",
+        "Gobo wheel 2 - select (static gobos)",
+        "Prism",
+        "Prism - rotation",
+        "Zoom (manual control + effects)",
+        "Focus",
+        "Focus Fine",
+        "Frost",
+        "Iris (manual control+ effects)",
+        "Strobe/Shutter effect",
+        "Dimmer",
+        "Dimmer fine"
+      ]
+    },
+    {
+      "name": "27 Channels",
+      "totalChannels": 29,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan / Tilt Speed",
+        "Special Functions",
+        "Color Wheel",
+        "Cyan",
+        "Magenta",
+        "Yellow",
+        "Color Macro",
+        "Gobo wheel 1 - select (rotating gobos)",
+        "Gobo wheel 1 - rotation",
+        "Gobo wheel 1 - rotation fine",
+        "Gobo wheel 2 - select (static gobos)",
+        "Prism",
+        "Prism - rotation",
+        "Zoom (manual control + effects)",
+        "Zoom Narrow->Wide (manual)",
+        "Zoom fine Narrow->Wide (manual)",
+        "Focus",
+        "Focus Fine",
+        "Frost",
+        "Iris (manual control+ effects)",
+        "Iris",
+        "Iris fine",
+        "Strobe/Shutter effect",
+        "Dimmer",
+        "Dimmer fine"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "22.7",
+      "width": "350",
+      "height": "625",
+      "depth": "250"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "8",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "392",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

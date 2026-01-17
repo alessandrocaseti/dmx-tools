@@ -1,0 +1,635 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BT Theatre HD1",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ray Console - cd",
+  "channels": [
+    {
+      "name": "Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Hue Fine",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "CCT",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "28",
+          "name": "1800K"
+        },
+        {
+          "min": "29",
+          "max": "46",
+          "name": "2200K"
+        },
+        {
+          "min": "47",
+          "max": "64",
+          "name": "2700K"
+        },
+        {
+          "min": "65",
+          "max": "82",
+          "name": "3000K"
+        },
+        {
+          "min": "83",
+          "max": "100",
+          "name": "3200K"
+        },
+        {
+          "min": "101",
+          "max": "118",
+          "name": "3500K"
+        },
+        {
+          "min": "119",
+          "max": "136",
+          "name": "4000K"
+        },
+        {
+          "min": "137",
+          "max": "154",
+          "name": "4200K"
+        },
+        {
+          "min": "155",
+          "max": "172",
+          "name": "4500K"
+        },
+        {
+          "min": "173",
+          "max": "190",
+          "name": "5600K"
+        },
+        {
+          "min": "191",
+          "max": "208",
+          "name": "6000K"
+        },
+        {
+          "min": "209",
+          "max": "226",
+          "name": "6500K"
+        },
+        {
+          "min": "227",
+          "max": "244",
+          "name": "7200K"
+        },
+        {
+          "min": "245",
+          "max": "255",
+          "name": "8000K"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "99",
+          "name": "Strobe from slow to fast 0-25Hz"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "No function"
+        },
+        {
+          "min": "110",
+          "max": "179",
+          "name": "Lighting Strobe"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "No function"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Random Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Beam"
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Preset Dimmer Speed from Display Menu"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Off"
+        },
+        {
+          "min": "30",
+          "max": "69",
+          "name": "Dim1"
+        },
+        {
+          "min": "70",
+          "max": "129",
+          "name": "Dim2"
+        },
+        {
+          "min": "130",
+          "max": "189",
+          "name": "Dim3"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "Dim4"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Lime",
+      "type": "Lime"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Preset Color",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "L106"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "R05"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "L194"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "R54"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "L019"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "R08"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "R89"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "R86"
+        },
+        {
+          "min": "91",
+          "max": "100",
+          "name": "L213"
+        },
+        {
+          "min": "101",
+          "max": "110",
+          "name": "R377"
+        },
+        {
+          "min": "111",
+          "max": "120",
+          "name": "R80"
+        },
+        {
+          "min": "121",
+          "max": "130",
+          "name": "L202"
+        },
+        {
+          "min": "131",
+          "max": "140",
+          "name": "L328"
+        },
+        {
+          "min": "141",
+          "max": "150",
+          "name": "R3314"
+        },
+        {
+          "min": "151",
+          "max": "160",
+          "name": "L101"
+        },
+        {
+          "min": "161",
+          "max": "170",
+          "name": "L768"
+        },
+        {
+          "min": "171",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "Red 100% / Green Up / Blue 0%"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "Red Down / Green 100% / Blue 0%"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "Red 0% / Green 100% / Blue 100%"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "Red 0% / Green Down / Blue 100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "Red Up / Green 0% / Blue 100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "Red 100% / Green 0% / Blue Down"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "Red 100% / Green Up / Blue Up"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "Red Down / Green Down / Blue 100%"
+        },
+        {
+          "min": "171",
+          "max": "195",
+          "name": "All Led At Full Output"
+        },
+        {
+          "min": "196",
+          "max": "199",
+          "name": "1800K"
+        },
+        {
+          "min": "200",
+          "max": "203",
+          "name": "2200K"
+        },
+        {
+          "min": "204",
+          "max": "207",
+          "name": "2700K"
+        },
+        {
+          "min": "208",
+          "max": "211",
+          "name": "3000K"
+        },
+        {
+          "min": "212",
+          "max": "215",
+          "name": "3200K"
+        },
+        {
+          "min": "216",
+          "max": "219",
+          "name": "3500K"
+        },
+        {
+          "min": "220",
+          "max": "223",
+          "name": "4000K"
+        },
+        {
+          "min": "224",
+          "max": "227",
+          "name": "4200K"
+        },
+        {
+          "min": "228",
+          "max": "231",
+          "name": "4500K"
+        },
+        {
+          "min": "232",
+          "max": "235",
+          "name": "5600K"
+        },
+        {
+          "min": "236",
+          "max": "239",
+          "name": "6000K"
+        },
+        {
+          "min": "240",
+          "max": "243",
+          "name": "6500K"
+        },
+        {
+          "min": "244",
+          "max": "247",
+          "name": "7200K"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "8000K"
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "40",
+          "name": "No function"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "Auto 1"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Auto 2"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Auto3"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Auto4"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Auto5"
+        },
+        {
+          "min": "141",
+          "max": "160",
+          "name": "Auto6"
+        },
+        {
+          "min": "161",
+          "max": "180",
+          "name": "Auto7"
+        },
+        {
+          "min": "181",
+          "max": "200",
+          "name": "Auto8"
+        },
+        {
+          "min": "201",
+          "max": "220",
+          "name": "Auto9"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "Auto10"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed Adjustment",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "220",
+          "name": "No function"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "Auto Speed Adjustement"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer Fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green Fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Fine",
+      "type": "Blue"
+    },
+    {
+      "name": "Lime Fine",
+      "type": "Lime"
+    },
+    {
+      "name": "Amber Fine",
+      "type": "Amber"
+    }
+  ],
+  "modes": [
+    {
+      "name": "HSIC",
+      "totalChannels": 8,
+      "channels": [
+        "Intensity",
+        "Hue",
+        "Hue Fine",
+        "Saturation",
+        "CCT",
+        "Strobe",
+        "Zoom",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "SSP",
+      "totalChannels": 10,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Lime",
+        "Amber",
+        "Preset Color",
+        "Strobe",
+        "Zoom",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "TOUR",
+      "totalChannels": 13,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Lime",
+        "Amber",
+        "Preset Color",
+        "Color Macro",
+        "Strobe",
+        "Zoom",
+        "Auto",
+        "Auto Speed Adjustment",
+        "Dimmer Speed"
+      ]
+    },
+    {
+      "name": "TR16",
+      "totalChannels": 19,
+      "channels": [
+        "Master Dimmer",
+        "Master Dimmer Fine",
+        "Red",
+        "Red Fine",
+        "Green",
+        "Green Fine",
+        "Blue",
+        "Blue Fine",
+        "Lime",
+        "Lime Fine",
+        "Amber",
+        "Amber Fine",
+        "Preset Color",
+        "Color Macro",
+        "Strobe",
+        "Zoom",
+        "Auto",
+        "Auto Speed Adjustment",
+        "Dimmer Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "8000"
+    },
+    "dimensions": {
+      "weight": "7.6",
+      "width": "442",
+      "height": "260",
+      "depth": "285"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "14",
+      "degreesMax": "55"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "240",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

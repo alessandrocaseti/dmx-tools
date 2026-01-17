@@ -1,0 +1,618 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED KLS-120 FX",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ralf Martin",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Auto/Music Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "49",
+          "name": "Automatic Program 1 (accelerating speed)"
+        },
+        {
+          "min": "50",
+          "max": "89",
+          "name": "Automatic Program 2 (accelerating speed)"
+        },
+        {
+          "min": "90",
+          "max": "129",
+          "name": "Automatic Program 3 (accelerating speed)"
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "Music Controlled Program 1 (accelerating speed)"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Music Controlled Program 2 (accelerating speed)"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Music Controlled Program 3 (accelerating speed)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Effect PAR-Spot",
+      "type": "Shutter"
+    },
+    {
+      "name": "Color Spot 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark Orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green Yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Bright Green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Bright Yellow"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All lights on"
+        }
+      ]
+    },
+    {
+      "name": "Strobe Effect Derby",
+      "type": "Shutter"
+    },
+    {
+      "name": "Derby Color 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Red+Green"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blue+White"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Red+White"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green+White"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "All Lights On"
+        }
+      ]
+    },
+    {
+      "name": "Derby Wheel Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Slow Speed"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Medium Speed"
+        },
+        {
+          "min": "50",
+          "max": "255",
+          "name": "Fast Speed"
+        }
+      ]
+    },
+    {
+      "name": "Red Spot 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White Spot 1",
+      "type": "White"
+    },
+    {
+      "name": "Color Spot 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Magenta"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Cyan"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Dark Orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green Yellow"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Salmon"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Turquoise"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Bright Green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Bright Yellow"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Lavender"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Pink"
+        },
+        {
+          "min": "190",
+          "max": "255",
+          "name": "All lights on"
+        }
+      ]
+    },
+    {
+      "name": "Derby Color 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "White"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Red+Green"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blue+White"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Red+White"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Green+White"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Red+Green+Blue"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Red+Green+White"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Red+Blue+White"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Green+Blue+White"
+        },
+        {
+          "min": "150",
+          "max": "255",
+          "name": "All Lights On"
+        }
+      ]
+    },
+    {
+      "name": "Red Spot 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green Spot 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Spot 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White Spot 2",
+      "type": "White"
+    },
+    {
+      "name": "Red Derby 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green Derby 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Derby 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White Derby 1",
+      "type": "White"
+    },
+    {
+      "name": "Red Derby 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green Derby 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Derby 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White Derby 2",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Auto/Music Program"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 9,
+      "channels": [
+        "Dimmer",
+        "Strobe Effect PAR-Spot",
+        "Color Spot 1",
+        "Color Spot 2",
+        "Strobe Effect Derby",
+        "Derby Color 1",
+        "Derby Color 2",
+        "Derby Wheel Speed",
+        "Auto/Music Program"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 21,
+      "channels": [
+        "Dimmer",
+        "Strobe Effect PAR-Spot",
+        "Red Spot 1",
+        "Green Spot 1",
+        "Blue Spot 1",
+        "White Spot 1",
+        "Red Spot 2",
+        "Green Spot 2",
+        "Blue Spot 2",
+        "White Spot 2",
+        "Strobe Effect Derby",
+        "Red Derby 1",
+        "Green Derby 1",
+        "Blue Derby 1",
+        "White Derby 1",
+        "Red Derby 2",
+        "Green Derby 2",
+        "Blue Derby 2",
+        "White Derby 2",
+        "Derby Wheel Speed",
+        "Auto/Music Program"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.7",
+      "width": "625",
+      "height": "224",
+      "depth": "155"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "45",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

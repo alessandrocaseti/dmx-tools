@@ -1,0 +1,111 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "SB400",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Dmitry Kolesnikov",
+  "channels": [
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "50",
+          "name": "No function"
+        },
+        {
+          "min": "51",
+          "max": "200",
+          "name": "Macro function"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Macro function speed adjustable"
+        }
+      ]
+    },
+    {
+      "name": "LED 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED 4",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Macro",
+        "Macro Speed",
+        "LED 1",
+        "LED 2",
+        "LED 3",
+        "LED 4"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.85",
+      "width": "275",
+      "height": "275",
+      "depth": "125"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "200",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

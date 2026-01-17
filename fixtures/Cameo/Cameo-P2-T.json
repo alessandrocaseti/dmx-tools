@@ -1,0 +1,296 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "P2 T",
+  "type": "Dimmer",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Christoph Müllner",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe Functions",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe closed"
+        },
+        {
+          "min": "11",
+          "max": "33",
+          "name": "Pulse random, slow to fast"
+        },
+        {
+          "min": "34",
+          "max": "56",
+          "name": "Ramp up random, slow to fast"
+        },
+        {
+          "min": "57",
+          "max": "79",
+          "name": "Ramp down random, slow to fast"
+        },
+        {
+          "min": "80",
+          "max": "102",
+          "name": "Random strobe effect, slow to fast"
+        },
+        {
+          "min": "103",
+          "max": "127",
+          "name": "Strobe break effect, 5s...1s (short burst with break)"
+        },
+        {
+          "min": "128",
+          "max": "250",
+          "name": "Strobe slow to fast < 1Hz - 20Hz"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Strobe open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Response",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "127",
+          "name": "Dimmer response LED (hold 5s)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Dimmer response Halogen (hold 5s)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Curve",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "63",
+          "name": "Linear dimmer curve"
+        },
+        {
+          "min": "64",
+          "max": "127",
+          "name": "Exponential dimmer curve"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Logarithmic dimmer curve"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "S-Curve dimmer curve"
+        }
+      ]
+    },
+    {
+      "name": "Device Settings",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "127",
+          "name": "Dimmer response LED (hold 5s)"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Dimmer response Halogen (hold 5s)"
+        },
+        {
+          "min": "192",
+          "max": "196",
+          "name": "Fan auto (hold 5s)"
+        },
+        {
+          "min": "197",
+          "max": "201",
+          "name": "Fan off (hold 5s)"
+        },
+        {
+          "min": "202",
+          "max": "206",
+          "name": "Fan constant low (hold 5s)"
+        },
+        {
+          "min": "207",
+          "max": "211",
+          "name": "Fan constant medium (hold 5s)"
+        },
+        {
+          "min": "212",
+          "max": "218",
+          "name": "Fan constant high (hold 5s)"
+        },
+        {
+          "min": "219",
+          "max": "223",
+          "name": "PWM Frequency 800 Hz (hold 5s)"
+        },
+        {
+          "min": "224",
+          "max": "228",
+          "name": "PWM Frequency 1200 Hz (hold 5s)"
+        },
+        {
+          "min": "229",
+          "max": "233",
+          "name": "PWM Frequency 2000 Hz (hold 5s)"
+        },
+        {
+          "min": "234",
+          "max": "238",
+          "name": "PWM Frequency 3600 Hz (hold 5s)"
+        },
+        {
+          "min": "239",
+          "max": "242",
+          "name": "PWM Frequency 12 kHz (hold 5s)"
+        },
+        {
+          "min": "243",
+          "max": "245",
+          "name": "PWM Frequency 18.9 kHz (hold 5s)"
+        },
+        {
+          "min": "246",
+          "max": "249",
+          "name": "PWM Frequency 25 kHz (hold 5s)"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "2 Channel 16-bit",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine"
+      ]
+    },
+    {
+      "name": "2 Channel Strobe",
+      "totalChannels": 2,
+      "channels": [
+        "Dimmer",
+        "Strobe Functions"
+      ]
+    },
+    {
+      "name": "3 Channel Device",
+      "totalChannels": 3,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe Functions"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 4,
+      "channels": [
+        "Dimmer",
+        "Strobe Functions",
+        "Dimmer Curve",
+        "Device Settings"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 5,
+      "channels": [
+        "Dimmer",
+        "Dimmer fine",
+        "Strobe Functions",
+        "Dimmer Curve",
+        "Device Settings"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "14000",
+      "colourTemperature": "3200"
+    },
+    "dimensions": {
+      "weight": "10.5",
+      "width": "245",
+      "height": "202",
+      "depth": "462"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "50"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "220",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

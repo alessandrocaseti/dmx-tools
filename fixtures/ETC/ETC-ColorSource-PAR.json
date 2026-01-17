@@ -1,0 +1,108 @@
+{
+  "version": "1.2",
+  "manufacturer": "ETC",
+  "model": "ColorSource PAR",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jon Rosen",
+  "channels": [
+    {
+      "name": "Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Lime",
+      "type": "Lime"
+    },
+    {
+      "name": "Intensity of preset 1",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "5-channel",
+      "totalChannels": 5,
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "6-channel (direct)",
+      "totalChannels": 6,
+      "channels": [
+        "Intensity",
+        "Red",
+        "Green",
+        "Blue",
+        "Lime",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "1-channel",
+      "totalChannels": 1,
+      "channels": [
+        "Intensity of preset 1"
+      ]
+    },
+    {
+      "name": "3-channel (RGB)",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.77",
+      "width": "203",
+      "height": "310",
+      "depth": "240"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "120",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

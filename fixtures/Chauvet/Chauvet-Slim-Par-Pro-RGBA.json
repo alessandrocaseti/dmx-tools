@@ -1,0 +1,303 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Slim Par Pro RGBA",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "JL Griffin",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "Red 100%, green (0~100%), blue 0%"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "Red (100~0%), green 100%, blue 0%"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "Red 0%, green 100%, blue (0~100%)"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "Red 0%, green (100~0%), blue 100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "Red (0~100%), green 0%, blue 100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "Red 100%, green 0%, blue (100~0%)"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "Red 100%, green (100~0%), blue (0~100%)"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "Red (100~0%), green (100~0%), blue 100%"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "Red 100%, green 100%, blue 100%, amber 100%"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "White 1: 3,200 K"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "White 2: 3,400 K"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "White 3: 4,200 K"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "White 4: 4,900 K"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "White 5: 5,600 K"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "White 6: 5,900 K"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "White 7: 6,500 K"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "White 8: 7,200 K"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "White 9: 8,000 K"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "White 10: 8,500 K"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "White 11: 10,000 K"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "1~20 Hz (slow~fast)"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "No function"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "1"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "2"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "3"
+        },
+        {
+          "min": "204",
+          "max": "254",
+          "name": "4"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "5"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0%~100% (slow~fast)"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Default"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Linear"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Non-linear 1"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Non-linear 2"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Non-linear 3"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "4-Ch",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "5-Ch",
+      "totalChannels": 5,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "10-Ch",
+      "totalChannels": 10,
+      "channels": [
+        "Master Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Color Macro",
+        "Strobe",
+        "Auto Program",
+        "Auto Program speed",
+        "Dimmer Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.8",
+      "width": "256",
+      "height": "290",
+      "depth": "87"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "15",
+      "degreesMax": "15"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "90",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

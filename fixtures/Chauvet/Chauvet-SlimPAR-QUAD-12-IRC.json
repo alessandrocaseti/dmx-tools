@@ -1,0 +1,228 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "SlimPAR QUAD 12 IRC",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color Macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Red"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Green"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Blue"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Amber"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Cyan"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Purple"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Yellow"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Light Blue"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Orange"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Light Green"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Violet"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Yellow"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Pink"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Light Blue"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Speed/Strobe",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow~fast"
+        }
+      ]
+    },
+    {
+      "name": "Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "RGBA Mode"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Pulse effect 0~100%"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Pulse effect 100%~0"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Pulse effect 100%~0~100%"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Auto fade transition"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Auto snap transition (4 colors)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Auto snap transition (15 colors)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound-active mode"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    }
+  ],
+  "modes": [
+    {
+      "name": "8-Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Color Macros",
+        "Speed/Strobe",
+        "Mode",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "4-Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.4",
+      "width": "270",
+      "height": "272",
+      "depth": "107"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "34"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "123",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "version": "1.2",
+  "manufacturer": "Botex",
+  "model": "DPX 620 III",
+  "type": "Dimmer",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Yateri",
+  "channels": [
+    {
+      "name": "Channel 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "Channel 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "Channel 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "Channel 4",
+      "type": "Intensity"
+    },
+    {
+      "name": "Channel 5",
+      "type": "Intensity"
+    },
+    {
+      "name": "Channel 6",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 6,
+      "channels": [
+        "Channel 1",
+        "Channel 2",
+        "Channel 3",
+        "Channel 4",
+        "Channel 5",
+        "Channel 6"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "9",
+      "width": "482",
+      "height": "90",
+      "depth": "390"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "1000",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

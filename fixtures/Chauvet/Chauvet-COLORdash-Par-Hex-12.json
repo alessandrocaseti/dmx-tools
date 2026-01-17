@@ -1,0 +1,395 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COLORdash Par-Hex 12",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro + White Balance",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "R: 100% G: 0–100% B: 0"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "R: 100%–0 G: 100% B: 0"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "R: 0 G: 100% B: 0–100%"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "R: 0 G: 100%–0 B: 100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "R: 0–100% G: 0 B: 100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "R: 100% G: 0 B: 100%–0"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "R: 100% G: 0–100% B: 0–100%"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "R: 100%–0 G: 100%–0 B: 100%"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "R: 100% G: 100% B: 100% A: 100%"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "White 1"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "White 2"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "White 3"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "White 4"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "White 5"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "White 6"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "White 7"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "White 8"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "White 9"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "White 10"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "White 11"
+        }
+      ]
+    },
+    {
+      "name": "Auto programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "60",
+          "name": "Auto program 1"
+        },
+        {
+          "min": "61",
+          "max": "120",
+          "name": "Auto program 2"
+        },
+        {
+          "min": "121",
+          "max": "180",
+          "name": "Auto program 3"
+        },
+        {
+          "min": "181",
+          "max": "240",
+          "name": "Auto program 4"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Auto program 0 (auto 1-4)"
+        }
+      ]
+    },
+    {
+      "name": "Auto speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Preset dimmer speed from display menu"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimming curve off (linear dimmer)"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Nonlinear dimming curve 1 (fastest)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Nonlinear dimming curve 2"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Nonlinear dimming curve 3 (slowest)"
+        }
+      ]
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Hue",
+      "type": "Unknown"
+    },
+    {
+      "name": "Saturation",
+      "type": "Unknown"
+    },
+    {
+      "name": "Value",
+      "type": "Unknown"
+    },
+    {
+      "name": "Intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Fine Red",
+      "type": "Red"
+    },
+    {
+      "name": "Fine Green",
+      "type": "Green"
+    },
+    {
+      "name": "Fine Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Fine Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Fine White",
+      "type": "White"
+    },
+    {
+      "name": "Fine UV",
+      "type": "UV"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 13,
+      "channels": [
+        "Red",
+        "Fine Red",
+        "Green",
+        "Fine Green",
+        "Blue",
+        "Fine Blue",
+        "Amber",
+        "Fine Amber",
+        "White",
+        "Fine White",
+        "UV",
+        "Fine UV",
+        "Dimmer speed"
+      ]
+    },
+    {
+      "name": "HSV",
+      "totalChannels": 3,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Value"
+      ]
+    },
+    {
+      "name": "HSI",
+      "totalChannels": 3,
+      "channels": [
+        "Hue",
+        "Saturation",
+        "Intensity"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 12,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "White",
+        "UV",
+        "Strobe",
+        "Color Macro + White Balance",
+        "Auto programs",
+        "Auto speed",
+        "Dimmer speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2264",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.54",
+      "width": "298",
+      "height": "323",
+      "depth": "112"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "20"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "96",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

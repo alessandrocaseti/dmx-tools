@@ -1,0 +1,937 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "CLHB400RGBW",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Mihai",
+  "channels": [
+    {
+      "name": "Master Control - Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Fine Control - Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Master Control - Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fine Control - Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "First Head - Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Sound Mode/Reset",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset"
+        },
+        {
+          "min": "210",
+          "max": "240",
+          "name": "No function"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Sound control mode"
+        }
+      ]
+    },
+    {
+      "name": "Second Head - Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Second Head - Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Second Head - Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Second Head - Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Third Head - Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Third Head - Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Third Head - Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Third Head - Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Head Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Third Head - Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Fourth Head - Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Fourth Head - Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Fourth Head - Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Fourth Head - Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Light Control - Automatic Colour Change Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Fourth Head - Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Light Control - Automatic Colour Change/Colour Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Automatic colour change"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red white"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green white"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue white"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red green blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red green white"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red blue white"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green blue white"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red green blue white"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No strobe"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Show Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No movement"
+        },
+        {
+          "min": "8",
+          "max": "22",
+          "name": "Show mode 1"
+        },
+        {
+          "min": "23",
+          "max": "37",
+          "name": "Show mode 2"
+        },
+        {
+          "min": "38",
+          "max": "52",
+          "name": "Show mode 3"
+        },
+        {
+          "min": "53",
+          "max": "67",
+          "name": "Show mode 4"
+        },
+        {
+          "min": "68",
+          "max": "82",
+          "name": "Show mode 5"
+        },
+        {
+          "min": "83",
+          "max": "97",
+          "name": "Show mode 6"
+        },
+        {
+          "min": "98",
+          "max": "112",
+          "name": "Show mode 7"
+        },
+        {
+          "min": "113",
+          "max": "127",
+          "name": "Show mode 8"
+        },
+        {
+          "min": "128",
+          "max": "142",
+          "name": "Show mode 9"
+        },
+        {
+          "min": "143",
+          "max": "157",
+          "name": "Show mode 10"
+        },
+        {
+          "min": "158",
+          "max": "172",
+          "name": "Show mode 11"
+        },
+        {
+          "min": "173",
+          "max": "187",
+          "name": "Show mode 12"
+        },
+        {
+          "min": "188",
+          "max": "202",
+          "name": "Show mode 13"
+        },
+        {
+          "min": "203",
+          "max": "217",
+          "name": "Show mode 14"
+        },
+        {
+          "min": "218",
+          "max": "232",
+          "name": "Show mode 15"
+        },
+        {
+          "min": "233",
+          "max": "247",
+          "name": "Show mode 16"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Sound control mode"
+        }
+      ]
+    },
+    {
+      "name": "Show Mode Speed/Sound Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to fast/Low to high"
+        }
+      ]
+    },
+    {
+      "name": "Master Control - Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Colour Control - Red",
+      "type": "Red"
+    },
+    {
+      "name": "Colour Control - Green",
+      "type": "Green"
+    },
+    {
+      "name": "Colour Control - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Colour Control - White",
+      "type": "White"
+    },
+    {
+      "name": "First Head - Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "First Head - Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "First Head - Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "First Head - Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "First Head - Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Fastest"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Second Head - Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Fastest"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Third Head - Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Fastest"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Fourth Head - Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Fastest"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "First Head - Light Control",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Use channels 29-32 to control colour"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red white"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green white"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue white"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red green blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red green white"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red blue white"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green blue white"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red green blue white"
+        }
+      ]
+    },
+    {
+      "name": "Second Head - Light Control",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Use channels 29-32 to control colour"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red white"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green white"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue white"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red green blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red green white"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red blue white"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green blue white"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red green blue white"
+        }
+      ]
+    },
+    {
+      "name": "Third Head - Light Control",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Use channels 29-32 to control colour"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red white"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green white"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue white"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red green blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red green white"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red blue white"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green blue white"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red green blue white"
+        }
+      ]
+    },
+    {
+      "name": "Fourth Head - Light Control",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "30",
+          "name": "Use channels 29-32 to control colour"
+        },
+        {
+          "min": "31",
+          "max": "45",
+          "name": "Red"
+        },
+        {
+          "min": "46",
+          "max": "60",
+          "name": "Green"
+        },
+        {
+          "min": "61",
+          "max": "75",
+          "name": "Blue"
+        },
+        {
+          "min": "76",
+          "max": "90",
+          "name": "White"
+        },
+        {
+          "min": "91",
+          "max": "105",
+          "name": "Red green"
+        },
+        {
+          "min": "106",
+          "max": "120",
+          "name": "Red blue"
+        },
+        {
+          "min": "121",
+          "max": "135",
+          "name": "Red white"
+        },
+        {
+          "min": "136",
+          "max": "150",
+          "name": "Green blue"
+        },
+        {
+          "min": "151",
+          "max": "165",
+          "name": "Green white"
+        },
+        {
+          "min": "166",
+          "max": "180",
+          "name": "Blue white"
+        },
+        {
+          "min": "181",
+          "max": "195",
+          "name": "Red green blue"
+        },
+        {
+          "min": "196",
+          "max": "210",
+          "name": "Red green white"
+        },
+        {
+          "min": "211",
+          "max": "225",
+          "name": "Red blue white"
+        },
+        {
+          "min": "226",
+          "max": "240",
+          "name": "Green blue white"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Red green blue white"
+        }
+      ]
+    },
+    {
+      "name": "Second Head - Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Master Colour Selection - Red",
+      "type": "Red"
+    },
+    {
+      "name": "Master Colour Selection - Green",
+      "type": "Green"
+    },
+    {
+      "name": "Master Colour Selection - Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Master Colour Selection - White",
+      "type": "White"
+    },
+    {
+      "name": "Sound Sensitivity in Sound Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sound sensitivity"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "6-Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Show Mode",
+        "Show Mode Speed/Sound Sensitivity",
+        "Light Control - Automatic Colour Change/Colour Macro",
+        "Light Control - Automatic Colour Change Speed"
+      ]
+    },
+    {
+      "name": "10-Channel",
+      "totalChannels": 10,
+      "channels": [
+        "Master Control - Pan",
+        "Master Control - Tilt",
+        "Master Control - Master Dimmer",
+        "Strobe",
+        "Show Mode",
+        "Show Mode Speed/Sound Sensitivity",
+        "Light Control - Automatic Colour Change/Colour Macro",
+        "Light Control - Automatic Colour Change Speed",
+        "Fine Control - Pan",
+        "Fine Control - Tilt"
+      ]
+    },
+    {
+      "name": "19-Channel",
+      "totalChannels": 19,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Colour Control - Red",
+        "Colour Control - Green",
+        "Colour Control - Blue",
+        "Colour Control - White",
+        "First Head - Pan",
+        "First Head - Tilt",
+        "First Head - Dimmer",
+        "Second Head - Pan",
+        "Second Head - Tilt",
+        "Second Head - Dimmer",
+        "Third Head - Pan",
+        "Third Head - Tilt",
+        "Third Head - Dimmer",
+        "Fourth Head - Pan",
+        "Fourth Head - Tilt",
+        "Fourth Head - Dimmer",
+        "Head Speed"
+      ]
+    },
+    {
+      "name": "32-Channel",
+      "totalChannels": 32,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "First Head - Pan",
+        "First Head - Pan Fine",
+        "First Head - Tilt",
+        "First Head - Tilt Fine",
+        "First Head - Speed",
+        "First Head - Light Control",
+        "Second Head - Pan",
+        "Second Head - Pan Fine",
+        "Second Head - Tilt",
+        "Second Head - Tilt Fine",
+        "Second Head - Speed",
+        "Second Head - Light Control",
+        "Third Head - Pan",
+        "Third Head - Pan Fine",
+        "Third Head - Tilt",
+        "Third Head - Tilt Fine",
+        "Third Head - Speed",
+        "Third Head - Light Control",
+        "Fourth Head - Pan",
+        "Fourth Head - Pan Fine",
+        "Fourth Head - Tilt",
+        "Fourth Head - Tilt Fine",
+        "Fourth Head - Speed",
+        "Fourth Head - Light Control",
+        "Sound Mode/Reset",
+        "Sound Sensitivity in Sound Mode",
+        "Master Colour Selection - Red",
+        "Master Colour Selection - Green",
+        "Master Colour Selection - Blue",
+        "Master Colour Selection - White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "1182",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "7.6",
+      "width": "810",
+      "height": "250",
+      "depth": "130"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "4.5",
+      "degreesMax": "4.5"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "100",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

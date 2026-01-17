@@ -1,0 +1,267 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Galaxian Sky",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "johnnyappleseed",
+  "channels": [
+    {
+      "name": "Laser On/Off",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "On"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Dotted Line"
+        },
+        {
+          "min": "132",
+          "max": "247",
+          "name": "Solid Line"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Patterns",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "12",
+          "name": "Pattern 1"
+        },
+        {
+          "min": "13",
+          "max": "25",
+          "name": "Pattern 2"
+        },
+        {
+          "min": "26",
+          "max": "38",
+          "name": "Pattern 3"
+        },
+        {
+          "min": "39",
+          "max": "51",
+          "name": "Pattern 4"
+        },
+        {
+          "min": "52",
+          "max": "63",
+          "name": "Pattern 5"
+        },
+        {
+          "min": "64",
+          "max": "76",
+          "name": "Pattern 6"
+        },
+        {
+          "min": "77",
+          "max": "89",
+          "name": "Pattern 7"
+        },
+        {
+          "min": "90",
+          "max": "102",
+          "name": "Pattern 8"
+        },
+        {
+          "min": "103",
+          "max": "115",
+          "name": "Pattern 9"
+        },
+        {
+          "min": "116",
+          "max": "127",
+          "name": "Pattern 10"
+        },
+        {
+          "min": "128",
+          "max": "140",
+          "name": "Pattern 11"
+        },
+        {
+          "min": "141",
+          "max": "153",
+          "name": "Pattern 12"
+        },
+        {
+          "min": "154",
+          "max": "166",
+          "name": "Pattern 13"
+        },
+        {
+          "min": "167",
+          "max": "179",
+          "name": "Pattern 14"
+        },
+        {
+          "min": "180",
+          "max": "191",
+          "name": "Pattern 15"
+        },
+        {
+          "min": "192",
+          "max": "204",
+          "name": "Pattern 16"
+        },
+        {
+          "min": "205",
+          "max": "217",
+          "name": "Pattern 17"
+        },
+        {
+          "min": "218",
+          "max": "230",
+          "name": "Pattern 18"
+        },
+        {
+          "min": "231",
+          "max": "243",
+          "name": "Pattern 19"
+        },
+        {
+          "min": "244",
+          "max": "255",
+          "name": "Pattern 20"
+        }
+      ]
+    },
+    {
+      "name": "Movement",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Movement"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Left to Right |  Fast to Slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "No Movement"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Up & Down | Slow to Fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No Movement"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Rotation"
+        },
+        {
+          "min": "10",
+          "max": "120",
+          "name": "Counter-Clockwise Fast to Slow"
+        },
+        {
+          "min": "121",
+          "max": "134",
+          "name": "No Rotation"
+        },
+        {
+          "min": "135",
+          "max": "245",
+          "name": "Clockwise Slow to Fast"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No Rotation"
+        }
+      ]
+    },
+    {
+      "name": "Zoom",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Zoom Maximum to Minimum"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Zoom Speed Slow to Fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX Mode",
+      "totalChannels": 5,
+      "channels": [
+        "Laser On/Off",
+        "Patterns",
+        "Movement",
+        "Rotation",
+        "Zoom"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "194",
+      "height": "206",
+      "depth": "299"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "17",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

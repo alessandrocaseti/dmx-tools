@@ -1,0 +1,139 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "COB PAR56 RGB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Giacomo",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Effect-5CH",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "ON"
+        },
+        {
+          "min": "5",
+          "max": "24",
+          "name": "Sound Control (7 colors)"
+        },
+        {
+          "min": "25",
+          "max": "34",
+          "name": "ON"
+        },
+        {
+          "min": "35",
+          "max": "255",
+          "name": "Strobe (increasing)"
+        }
+      ]
+    },
+    {
+      "name": "Effect-4CH",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "190",
+          "name": "Master Dimmer"
+        },
+        {
+          "min": "191",
+          "max": "200",
+          "name": "Sound Control (7 colors)"
+        },
+        {
+          "min": "201",
+          "max": "247",
+          "name": "Strobe (increasing)"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Master Dimmer"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "5-Channel",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Effect-5CH"
+      ]
+    },
+    {
+      "name": "3-Channel",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4-Channel",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Effect-4CH"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.9",
+      "width": "240",
+      "height": "2400",
+      "depth": "400"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "120",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

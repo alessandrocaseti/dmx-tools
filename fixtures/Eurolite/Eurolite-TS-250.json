@@ -1,0 +1,248 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "TS-250",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Büro",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "White"
+        },
+        {
+          "min": "18",
+          "max": "35",
+          "name": "Red"
+        },
+        {
+          "min": "36",
+          "max": "53",
+          "name": "Yellow"
+        },
+        {
+          "min": "54",
+          "max": "71",
+          "name": "Violet"
+        },
+        {
+          "min": "72",
+          "max": "89",
+          "name": "Green"
+        },
+        {
+          "min": "90",
+          "max": "107",
+          "name": "Orange"
+        },
+        {
+          "min": "108",
+          "max": "125",
+          "name": "Blue"
+        },
+        {
+          "min": "126",
+          "max": "143",
+          "name": "Pink"
+        },
+        {
+          "min": "144",
+          "max": "161",
+          "name": "Light green"
+        },
+        {
+          "min": "162",
+          "max": "179",
+          "name": "Light blue"
+        },
+        {
+          "min": "180",
+          "max": "197",
+          "name": "Orange"
+        },
+        {
+          "min": "198",
+          "max": "215",
+          "name": "Light yellow"
+        },
+        {
+          "min": "216",
+          "max": "233",
+          "name": "Magenta"
+        },
+        {
+          "min": "234",
+          "max": "251",
+          "name": "Red/blue"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Yellow/green"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "17",
+          "name": "Open"
+        },
+        {
+          "min": "18",
+          "max": "35",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "36",
+          "max": "53",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "54",
+          "max": "71",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "72",
+          "max": "89",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "90",
+          "max": "107",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "108",
+          "max": "125",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "126",
+          "max": "143",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "144",
+          "max": "161",
+          "name": "Gobo 8"
+        },
+        {
+          "min": "162",
+          "max": "179",
+          "name": "Gobo 9"
+        },
+        {
+          "min": "180",
+          "max": "197",
+          "name": "Gobo 10"
+        },
+        {
+          "min": "198",
+          "max": "215",
+          "name": "Gobo 11"
+        },
+        {
+          "min": "216",
+          "max": "233",
+          "name": "Gobo 12"
+        },
+        {
+          "min": "234",
+          "max": "251",
+          "name": "Gobo 13"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Gobo 14"
+        }
+      ]
+    },
+    {
+      "name": "Shutter, strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Closed"
+        },
+        {
+          "min": "15",
+          "max": "29",
+          "name": "Open"
+        },
+        {
+          "min": "30",
+          "max": "250",
+          "name": "Strobe slow to fast"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Normal",
+      "totalChannels": 5,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Colour",
+        "Gobo",
+        "Shutter, strobe"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "18000",
+      "colourTemperature": "7200"
+    },
+    "dimensions": {
+      "weight": "8",
+      "width": "285",
+      "height": "555",
+      "depth": "270"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "180",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "460",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

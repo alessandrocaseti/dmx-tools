@@ -1,0 +1,81 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "DMX Mega Strobe III",
+  "type": "Strobe",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "eklynx",
+  "channels": [
+    {
+      "name": "Speed/Mode/Blinder Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "42",
+          "name": "Slow <-> fast/No function"
+        },
+        {
+          "min": "43",
+          "max": "211",
+          "name": "Slow <-> fast/Blinder (requires ch. 2 to be at DMX value 000)"
+        },
+        {
+          "min": "212",
+          "max": "255",
+          "name": "Sound triggered/No function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Low <-> high (0 for Blinder effect)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Standard",
+      "totalChannels": 2,
+      "channels": [
+        "Speed/Mode/Blinder Function",
+        "Dimmer"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "CH-750B",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.2",
+      "width": "330",
+      "height": "211",
+      "depth": "147"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "75",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

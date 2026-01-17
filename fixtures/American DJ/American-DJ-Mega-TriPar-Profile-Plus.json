@@ -1,0 +1,335 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Mega TriPar Profile Plus",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Color macros/programs/sound activity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Mode 1"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Mode 2"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Mode 3"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Mode 4"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Mode 5"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Mode 6"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Mode 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Mode 8"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Mode 9"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Mode 10"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Mode 11"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Mode 12"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Mode 13"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Mode 14"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Mode 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Mode 16"
+        }
+      ]
+    },
+    {
+      "name": "Program selection mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimming mode"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Color macro mode"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Color change mode"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Color fade mode"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "Sound active mode"
+        }
+      ]
+    },
+    {
+      "name": "Shutter/strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED Off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED on"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobing slow - fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED on"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Strobe pulse slow - fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED on"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe slow - fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED on"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Program speed/sound sensitive",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - fast/least sensitive - most sensitive"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer curves",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default to unit setting"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "5 channel mode",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "UV",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "4 channel mode",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "UV"
+      ]
+    },
+    {
+      "name": "6 channel mode",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "UV",
+        "Shutter/strobe",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "9 channel mode",
+      "totalChannels": 9,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "UV",
+        "Shutter/strobe",
+        "Master dimmer",
+        "Program selection mode",
+        "Color macros/programs/sound activity",
+        "Program speed/sound sensitive"
+      ]
+    },
+    {
+      "name": "10 channel mode",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "UV",
+        "Shutter/strobe",
+        "Master dimmer",
+        "Program selection mode",
+        "Color macros/programs/sound activity",
+        "Program speed/sound sensitive",
+        "Dimmer curves"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.23",
+      "width": "220",
+      "height": "225",
+      "depth": "85"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "21",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

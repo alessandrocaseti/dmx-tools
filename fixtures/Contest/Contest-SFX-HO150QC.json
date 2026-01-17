@@ -1,0 +1,342 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "SFX-HO150QC",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Ray Console - ju",
+  "channels": [
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED Off"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED On"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe effect at increasing speed"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED On"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse effects sequence"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED On"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe effect at increasing speed"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED On"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Colours and macros",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "LED off"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Red"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Orange"
+        },
+        {
+          "min": "24",
+          "max": "30",
+          "name": "Yellow"
+        },
+        {
+          "min": "31",
+          "max": "38",
+          "name": "Green"
+        },
+        {
+          "min": "39",
+          "max": "45",
+          "name": "Cyan"
+        },
+        {
+          "min": "46",
+          "max": "53",
+          "name": "Blue"
+        },
+        {
+          "min": "54",
+          "max": "60",
+          "name": "Pink"
+        },
+        {
+          "min": "61",
+          "max": "68",
+          "name": "Magenta"
+        },
+        {
+          "min": "69",
+          "max": "75",
+          "name": "Cold white"
+        },
+        {
+          "min": "76",
+          "max": "83",
+          "name": "Warm white"
+        },
+        {
+          "min": "84",
+          "max": "90",
+          "name": "White at full power"
+        },
+        {
+          "min": "91",
+          "max": "98",
+          "name": "Pastel pink"
+        },
+        {
+          "min": "99",
+          "max": "105",
+          "name": "Pastel apricot"
+        },
+        {
+          "min": "106",
+          "max": "113",
+          "name": "Very pastel ochre"
+        },
+        {
+          "min": "114",
+          "max": "120",
+          "name": "Pastel Green / Yellow"
+        },
+        {
+          "min": "121",
+          "max": "128",
+          "name": "Pastel Pearl / Green"
+        },
+        {
+          "min": "129",
+          "max": "135",
+          "name": "Pastel Pearl / Grey"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Pastel Perl"
+        },
+        {
+          "min": "144",
+          "max": "150",
+          "name": "Pastel Perl / Blue"
+        },
+        {
+          "min": "151",
+          "max": "158",
+          "name": "Pastel Veronese Green"
+        },
+        {
+          "min": "159",
+          "max": "165",
+          "name": "Very pastel Lagoon"
+        },
+        {
+          "min": "166",
+          "max": "173",
+          "name": "Pastel sky blue"
+        },
+        {
+          "min": "174",
+          "max": "180",
+          "name": "Sky blue"
+        },
+        {
+          "min": "181",
+          "max": "188",
+          "name": "Pastel blue"
+        },
+        {
+          "min": "189",
+          "max": "195",
+          "name": "Macro 1"
+        },
+        {
+          "min": "196",
+          "max": "203",
+          "name": "Macro 2"
+        },
+        {
+          "min": "204",
+          "max": "210",
+          "name": "Macro 3"
+        },
+        {
+          "min": "211",
+          "max": "218",
+          "name": "Macro 4"
+        },
+        {
+          "min": "219",
+          "max": "225",
+          "name": "Macro 5"
+        },
+        {
+          "min": "226",
+          "max": "233",
+          "name": "Macro 6"
+        },
+        {
+          "min": "234",
+          "max": "240",
+          "name": "Macro 7"
+        },
+        {
+          "min": "241",
+          "max": "248",
+          "name": "Music-sensitive colour macro 1:RGB"
+        },
+        {
+          "min": "249",
+          "max": "255",
+          "name": "Music-sensitive colour macro 1:RGBW"
+        }
+      ]
+    },
+    {
+      "name": "Speed and music sensitivity",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Slow to fast speed"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Increasing music sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "White",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Colours and macros"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Dimmer",
+        "Strobe",
+        "Colours and macros",
+        "Speed and music sensitivity"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "6000"
+    },
+    "dimensions": {
+      "weight": "6.2",
+      "width": "295",
+      "height": "315",
+      "depth": "377"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "90",
+      "degreesMax": "113"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "155",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

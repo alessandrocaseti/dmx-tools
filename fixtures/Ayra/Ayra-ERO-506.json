@@ -1,0 +1,218 @@
+{
+  "version": "1.2",
+  "manufacturer": "Ayra",
+  "model": "ERO 506",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Bert Heikamp",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "X/Y Speed (slow-fast)",
+      "type": "Speed"
+    },
+    {
+      "name": "Shutter / Strobe mode",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Not active"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "LED quick start"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe, slow to fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "No function"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Slow start, quick close"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "LED quick start"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Quick start, slow close"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "LED quick start"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Colour Led Macro",
+      "type": "Color"
+    },
+    {
+      "name": "FX Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "X/Y move, but LED turned off"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "X/Y move stop, LED turned off"
+        },
+        {
+          "min": "90",
+          "max": "239",
+          "name": "No function"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Independent operation mode (sound controlled)"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 15,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "X/Y Speed (slow-fast)",
+        "Master Dimmer",
+        "Shutter / Strobe mode",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Colour Led Macro",
+        "FX Mode"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Shutter / Strobe mode",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Master Dimmer",
+        "FX Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "5390",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "178",
+      "height": "175",
+      "depth": "240"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "45",
+      "degreesMax": "45"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "540",
+      "tiltMax": "180"
+    },
+    "technical": {
+      "powerConsumption": "57",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,1339 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Nucleus PRO",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "George Qualley IV (PRO version by: chivey)",
+  "channels": [
+    {
+      "name": "Pan & Tilt Movement",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No movement"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Movement 1"
+        },
+        {
+          "min": "30",
+          "max": "49",
+          "name": "Movement 2"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "Movement 3"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Movement 4"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Movement 5"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Movement 6"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Movement 7"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Movement 8"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Movement 9"
+        },
+        {
+          "min": "190",
+          "max": "209",
+          "name": "Movement 10"
+        },
+        {
+          "min": "210",
+          "max": "229",
+          "name": "Movement 11"
+        },
+        {
+          "min": "230",
+          "max": "249",
+          "name": "Movement 12"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Pan & Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color Macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "Macro 1"
+        },
+        {
+          "min": "30",
+          "max": "50",
+          "name": "Macro 2"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "Macro 3"
+        },
+        {
+          "min": "71",
+          "max": "91",
+          "name": "Macro 4"
+        },
+        {
+          "min": "92",
+          "max": "111",
+          "name": "Macro 5"
+        },
+        {
+          "min": "112",
+          "max": "132",
+          "name": "Macro 6"
+        },
+        {
+          "min": "133",
+          "max": "153",
+          "name": "Macro 7"
+        },
+        {
+          "min": "154",
+          "max": "173",
+          "name": "Macro 8"
+        },
+        {
+          "min": "174",
+          "max": "194",
+          "name": "Macro 9"
+        },
+        {
+          "min": "195",
+          "max": "214",
+          "name": "Macro 10"
+        },
+        {
+          "min": "215",
+          "max": "235",
+          "name": "Macro 11"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Macro 12"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Fast - slow"
+        }
+      ]
+    },
+    {
+      "name": "Mirror 1 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror 1 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color Macros LED 1",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "32",
+          "max": "38",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "39",
+          "max": "46",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "47",
+          "max": "54",
+          "name": "Light Red"
+        },
+        {
+          "min": "55",
+          "max": "62",
+          "name": "Medium Red"
+        },
+        {
+          "min": "63",
+          "max": "69",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "86",
+          "max": "92",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "93",
+          "max": "100",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "101",
+          "max": "108",
+          "name": "Lavender"
+        },
+        {
+          "min": "109",
+          "max": "116",
+          "name": "Indigo"
+        },
+        {
+          "min": "117",
+          "max": "123",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "124",
+          "max": "131",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "140",
+          "max": "147",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "148",
+          "max": "154",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "155",
+          "max": "162",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "163",
+          "max": "170",
+          "name": "Light Breen Blue"
+        },
+        {
+          "min": "171",
+          "max": "177",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "178",
+          "max": "185",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "186",
+          "max": "193",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "194",
+          "max": "201",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "202",
+          "max": "208",
+          "name": "Moss Green"
+        },
+        {
+          "min": "209",
+          "max": "216",
+          "name": "Primary Green"
+        },
+        {
+          "min": "217",
+          "max": "224",
+          "name": "Double CTB"
+        },
+        {
+          "min": "225",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Mirror 2 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror 2 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Mirror 3 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror 3 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Mirror 4 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror 4 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Mirror 5 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror 5 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Mirror 6 Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Mirror 6 Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color Macros LED 2",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "32",
+          "max": "38",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "39",
+          "max": "46",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "47",
+          "max": "54",
+          "name": "Light Red"
+        },
+        {
+          "min": "55",
+          "max": "62",
+          "name": "Medium Red"
+        },
+        {
+          "min": "63",
+          "max": "69",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "86",
+          "max": "92",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "93",
+          "max": "100",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "101",
+          "max": "108",
+          "name": "Lavender"
+        },
+        {
+          "min": "109",
+          "max": "116",
+          "name": "Indigo"
+        },
+        {
+          "min": "117",
+          "max": "123",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "124",
+          "max": "131",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "140",
+          "max": "147",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "148",
+          "max": "154",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "155",
+          "max": "162",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "163",
+          "max": "170",
+          "name": "Light Breen Blue"
+        },
+        {
+          "min": "171",
+          "max": "177",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "178",
+          "max": "185",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "186",
+          "max": "193",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "194",
+          "max": "201",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "202",
+          "max": "208",
+          "name": "Moss Green"
+        },
+        {
+          "min": "209",
+          "max": "216",
+          "name": "Primary Green"
+        },
+        {
+          "min": "217",
+          "max": "224",
+          "name": "Double CTB"
+        },
+        {
+          "min": "225",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros LED 3",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "32",
+          "max": "38",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "39",
+          "max": "46",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "47",
+          "max": "54",
+          "name": "Light Red"
+        },
+        {
+          "min": "55",
+          "max": "62",
+          "name": "Medium Red"
+        },
+        {
+          "min": "63",
+          "max": "69",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "86",
+          "max": "92",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "93",
+          "max": "100",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "101",
+          "max": "108",
+          "name": "Lavender"
+        },
+        {
+          "min": "109",
+          "max": "116",
+          "name": "Indigo"
+        },
+        {
+          "min": "117",
+          "max": "123",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "124",
+          "max": "131",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "140",
+          "max": "147",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "148",
+          "max": "154",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "155",
+          "max": "162",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "163",
+          "max": "170",
+          "name": "Light Breen Blue"
+        },
+        {
+          "min": "171",
+          "max": "177",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "178",
+          "max": "185",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "186",
+          "max": "193",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "194",
+          "max": "201",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "202",
+          "max": "208",
+          "name": "Moss Green"
+        },
+        {
+          "min": "209",
+          "max": "216",
+          "name": "Primary Green"
+        },
+        {
+          "min": "217",
+          "max": "224",
+          "name": "Double CTB"
+        },
+        {
+          "min": "225",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros LED 4",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "32",
+          "max": "38",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "39",
+          "max": "46",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "47",
+          "max": "54",
+          "name": "Light Red"
+        },
+        {
+          "min": "55",
+          "max": "62",
+          "name": "Medium Red"
+        },
+        {
+          "min": "63",
+          "max": "69",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "86",
+          "max": "92",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "93",
+          "max": "100",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "101",
+          "max": "108",
+          "name": "Lavender"
+        },
+        {
+          "min": "109",
+          "max": "116",
+          "name": "Indigo"
+        },
+        {
+          "min": "117",
+          "max": "123",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "124",
+          "max": "131",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "140",
+          "max": "147",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "148",
+          "max": "154",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "155",
+          "max": "162",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "163",
+          "max": "170",
+          "name": "Light Breen Blue"
+        },
+        {
+          "min": "171",
+          "max": "177",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "178",
+          "max": "185",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "186",
+          "max": "193",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "194",
+          "max": "201",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "202",
+          "max": "208",
+          "name": "Moss Green"
+        },
+        {
+          "min": "209",
+          "max": "216",
+          "name": "Primary Green"
+        },
+        {
+          "min": "217",
+          "max": "224",
+          "name": "Double CTB"
+        },
+        {
+          "min": "225",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros LED 5",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "32",
+          "max": "38",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "39",
+          "max": "46",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "47",
+          "max": "54",
+          "name": "Light Red"
+        },
+        {
+          "min": "55",
+          "max": "62",
+          "name": "Medium Red"
+        },
+        {
+          "min": "63",
+          "max": "69",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "86",
+          "max": "92",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "93",
+          "max": "100",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "101",
+          "max": "108",
+          "name": "Lavender"
+        },
+        {
+          "min": "109",
+          "max": "116",
+          "name": "Indigo"
+        },
+        {
+          "min": "117",
+          "max": "123",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "124",
+          "max": "131",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "140",
+          "max": "147",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "148",
+          "max": "154",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "155",
+          "max": "162",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "163",
+          "max": "170",
+          "name": "Light Breen Blue"
+        },
+        {
+          "min": "171",
+          "max": "177",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "178",
+          "max": "185",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "186",
+          "max": "193",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "194",
+          "max": "201",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "202",
+          "max": "208",
+          "name": "Moss Green"
+        },
+        {
+          "min": "209",
+          "max": "216",
+          "name": "Primary Green"
+        },
+        {
+          "min": "217",
+          "max": "224",
+          "name": "Double CTB"
+        },
+        {
+          "min": "225",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros LED 6",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Bastard Amber"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Medium Amber"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Pale Amber Gold"
+        },
+        {
+          "min": "32",
+          "max": "38",
+          "name": "Gallo Gold"
+        },
+        {
+          "min": "39",
+          "max": "46",
+          "name": "Golden Amber"
+        },
+        {
+          "min": "47",
+          "max": "54",
+          "name": "Light Red"
+        },
+        {
+          "min": "55",
+          "max": "62",
+          "name": "Medium Red"
+        },
+        {
+          "min": "63",
+          "max": "69",
+          "name": "Medium Pink"
+        },
+        {
+          "min": "70",
+          "max": "77",
+          "name": "Broadway Pink"
+        },
+        {
+          "min": "78",
+          "max": "85",
+          "name": "Follies Pink"
+        },
+        {
+          "min": "86",
+          "max": "92",
+          "name": "Light Lavender"
+        },
+        {
+          "min": "93",
+          "max": "100",
+          "name": "Special Lavender"
+        },
+        {
+          "min": "101",
+          "max": "108",
+          "name": "Lavender"
+        },
+        {
+          "min": "109",
+          "max": "116",
+          "name": "Indigo"
+        },
+        {
+          "min": "117",
+          "max": "123",
+          "name": "Hemsley Blue"
+        },
+        {
+          "min": "124",
+          "max": "131",
+          "name": "Tipton Blue"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Light Steel Blue"
+        },
+        {
+          "min": "140",
+          "max": "147",
+          "name": "Light Sky Blue"
+        },
+        {
+          "min": "148",
+          "max": "154",
+          "name": "Sky Blue"
+        },
+        {
+          "min": "155",
+          "max": "162",
+          "name": "Brilliant Blue"
+        },
+        {
+          "min": "163",
+          "max": "170",
+          "name": "Light Breen Blue"
+        },
+        {
+          "min": "171",
+          "max": "177",
+          "name": "Bright Blue"
+        },
+        {
+          "min": "178",
+          "max": "185",
+          "name": "Primary Blue"
+        },
+        {
+          "min": "186",
+          "max": "193",
+          "name": "Congo Blue"
+        },
+        {
+          "min": "194",
+          "max": "201",
+          "name": "Pale Yellow Green"
+        },
+        {
+          "min": "202",
+          "max": "208",
+          "name": "Moss Green"
+        },
+        {
+          "min": "209",
+          "max": "216",
+          "name": "Primary Green"
+        },
+        {
+          "min": "217",
+          "max": "224",
+          "name": "Double CTB"
+        },
+        {
+          "min": "225",
+          "max": "231",
+          "name": "Full CTB"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Half CTB"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Dark Blue"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "White"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "4 Channel Mode",
+      "totalChannels": 4,
+      "channels": [
+        "Pan & Tilt Movement",
+        "Pan & Tilt Speed",
+        "Color Macro",
+        "Color Macro Speed"
+      ]
+    },
+    {
+      "name": "18 Channel Mode",
+      "totalChannels": 18,
+      "channels": [
+        "Mirror 1 Pan",
+        "Mirror 1 Tilt",
+        "Color Macros LED 1",
+        "Mirror 2 Pan",
+        "Mirror 2 Tilt",
+        "Color Macros LED 2",
+        "Mirror 3 Pan",
+        "Mirror 3 Tilt",
+        "Color Macros LED 3",
+        "Mirror 4 Pan",
+        "Mirror 4 Tilt",
+        "Color Macros LED 4",
+        "Mirror 5 Pan",
+        "Mirror 5 Tilt",
+        "Color Macros LED 5",
+        "Mirror 6 Pan",
+        "Mirror 6 Tilt",
+        "Color Macros LED 6"
+      ]
+    },
+    {
+      "name": "22 Channel Mode",
+      "totalChannels": 22,
+      "channels": [
+        "Mirror 1 Pan",
+        "Mirror 1 Tilt",
+        "Color Macros LED 1",
+        "Mirror 2 Pan",
+        "Mirror 2 Tilt",
+        "Color Macros LED 2",
+        "Mirror 3 Pan",
+        "Mirror 3 Tilt",
+        "Color Macros LED 3",
+        "Mirror 4 Pan",
+        "Mirror 4 Tilt",
+        "Color Macros LED 4",
+        "Mirror 5 Pan",
+        "Mirror 5 Tilt",
+        "Color Macros LED 5",
+        "Mirror 6 Pan",
+        "Mirror 6 Tilt",
+        "Color Macros LED 6",
+        "Pan & Tilt Movement",
+        "Pan & Tilt Speed",
+        "Color Macro",
+        "Color Macro Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "12.7",
+      "width": "577",
+      "height": "670",
+      "depth": "263"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Mirror",
+      "panMax": "120",
+      "tiltMax": "60"
+    },
+    "technical": {
+      "powerConsumption": "155",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

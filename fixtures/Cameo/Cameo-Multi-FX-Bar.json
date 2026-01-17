@@ -1,0 +1,845 @@
+{
+  "version": "1.2",
+  "manufacturer": "Cameo",
+  "model": "Multi FX Bar",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Aurelien",
+  "channels": [
+    {
+      "name": "Derby 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Derby 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Derby 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Derby 1 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe speed slow-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Derby 1 Rotate",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate clockwise slow -> fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate anticlockwise slow -> fast"
+        }
+      ]
+    },
+    {
+      "name": "Derby 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Derby 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Derby 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Derby 2 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe speed slow-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Derby 2 Rotate",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate clockwise slow -> fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate anticlockwise slow -> fast"
+        }
+      ]
+    },
+    {
+      "name": "Par 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Par 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Par 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Par 1 UV",
+      "type": "UV"
+    },
+    {
+      "name": "Par 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Par 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Par 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Par 2 UV",
+      "type": "UV"
+    },
+    {
+      "name": "Laser Red Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe open"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe speed slow-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Laser Green Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe open"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe speed slow-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Laser Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate clockwise slow -> fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate anticlockwise slow -> fast"
+        }
+      ]
+    },
+    {
+      "name": "Flash Light 1",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe open"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe speed slow-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Flash Light 2",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe open"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe speed slow-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Flash Light 3",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe open"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe speed slow-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Flash Light 4",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Strobe open"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe speed slow-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Auto Mix 1"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Auto Mix 2"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "Auto Mix 3"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "Auto Mix 4"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "Auto Mix 5"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "Auto Mix 6"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "Auto Mix 7"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "Auto Mix 8"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "Auto Mix 9"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "Auto Mix 10"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "Auto Par 1"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "Auto Par 2"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "Auto Par 3"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "Auto Par 4"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "Auto Par 5"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "Auto Derby 1"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "Auto Derby 2"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "Auto Derby 3"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "Auto Derby 4"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "Auto Derby 5"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "Auto Par & Derby 1"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "Auto Par & Derby 2"
+        },
+        {
+          "min": "116",
+          "max": "120",
+          "name": "Auto Par & Derby 3"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "Auto Par & Derby 4"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "Auto Par & Derby 5"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "Auto Par & Derby 6"
+        },
+        {
+          "min": "136",
+          "max": "140",
+          "name": "Auto Par & Derby 7"
+        },
+        {
+          "min": "141",
+          "max": "145",
+          "name": "Auto Par & Derby 8"
+        },
+        {
+          "min": "146",
+          "max": "150",
+          "name": "Auto Par & Derby 9"
+        },
+        {
+          "min": "151",
+          "max": "155",
+          "name": "Auto Par & Derby 10"
+        },
+        {
+          "min": "156",
+          "max": "160",
+          "name": "Auto Flash Lights 1"
+        },
+        {
+          "min": "161",
+          "max": "165",
+          "name": "Auto Flash Lights 2"
+        },
+        {
+          "min": "166",
+          "max": "170",
+          "name": "Auto Flash Lights 3"
+        },
+        {
+          "min": "171",
+          "max": "175",
+          "name": "Auto Flash Lights 4"
+        },
+        {
+          "min": "176",
+          "max": "180",
+          "name": "Auto Flash Lights 5"
+        },
+        {
+          "min": "181",
+          "max": "185",
+          "name": "Auto Flash Lights 6"
+        },
+        {
+          "min": "186",
+          "max": "190",
+          "name": "Auto Flash Lights 7"
+        },
+        {
+          "min": "191",
+          "max": "195",
+          "name": "Auto Flash Lights 8"
+        },
+        {
+          "min": "196",
+          "max": "200",
+          "name": "Auto Flash Lights 9"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "Auto Flash Lights 10"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "Auto Laser 1"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "Auto Laser 2"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "Auto Laser 3"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "Auto Laser 4"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "Auto Laser 5"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Auto Laser 6"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Speed/Sound",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Program Speed slow -> fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    },
+    {
+      "name": "Par 1 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe speed slow-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Par 2 Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Strobe open"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Strobe speed slow-> fast"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program LED Par",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "56",
+          "name": "Auto Par 1"
+        },
+        {
+          "min": "57",
+          "max": "107",
+          "name": "Auto Par 2"
+        },
+        {
+          "min": "108",
+          "max": "158",
+          "name": "Auto Par 3"
+        },
+        {
+          "min": "159",
+          "max": "209",
+          "name": "Auto Par 4"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Auto Par 5"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Derby",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "56",
+          "name": "Auto Derby 1"
+        },
+        {
+          "min": "57",
+          "max": "107",
+          "name": "Auto Derby 2"
+        },
+        {
+          "min": "108",
+          "max": "158",
+          "name": "Auto Derby 3"
+        },
+        {
+          "min": "159",
+          "max": "209",
+          "name": "Auto Derby 4"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Auto Derby 5"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Flash Lights",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "25",
+          "name": "Auto Flash Lights 1"
+        },
+        {
+          "min": "26",
+          "max": "50",
+          "name": "Auto Flash Lights 2"
+        },
+        {
+          "min": "51",
+          "max": "75",
+          "name": "Auto Flash Lights 3"
+        },
+        {
+          "min": "76",
+          "max": "100",
+          "name": "Auto Flash Lights 4"
+        },
+        {
+          "min": "101",
+          "max": "125",
+          "name": "Auto Flash Lights 5"
+        },
+        {
+          "min": "126",
+          "max": "175",
+          "name": "Auto Flash Lights 7"
+        },
+        {
+          "min": "176",
+          "max": "200",
+          "name": "Auto Flash Lights 8"
+        },
+        {
+          "min": "201",
+          "max": "225",
+          "name": "Auto Flash Lights 9"
+        },
+        {
+          "min": "226",
+          "max": "255",
+          "name": "Auto Flash Lights 10"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program Laser",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "46",
+          "name": "Auto Laser 1"
+        },
+        {
+          "min": "47",
+          "max": "80",
+          "name": "Auto Laser 2"
+        },
+        {
+          "min": "81",
+          "max": "120",
+          "name": "Auto Laser 3"
+        },
+        {
+          "min": "121",
+          "max": "140",
+          "name": "Auto Laser 4"
+        },
+        {
+          "min": "141",
+          "max": "180",
+          "name": "Auto Laser 5"
+        },
+        {
+          "min": "181",
+          "max": "255",
+          "name": "Auto Laser 6"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 29,
+      "channels": [
+        "Derby 1 Red",
+        "Derby 1 Green",
+        "Derby 1 Blue",
+        "Derby 1 Strobe",
+        "Derby 1 Rotate",
+        "Derby 2 Red",
+        "Derby 2 Green",
+        "Derby 2 Blue",
+        "Derby 2 Strobe",
+        "Derby 2 Rotate",
+        "Par 1 Red",
+        "Par 1 Green",
+        "Par 1 Blue",
+        "Par 1 UV",
+        "Par 1 Strobe",
+        "Par 2 Red",
+        "Par 2 Green",
+        "Par 2 Blue",
+        "Par 2 UV",
+        "Par 2 Strobe",
+        "Laser Red Strobe",
+        "Laser Green Strobe",
+        "Laser Rotation",
+        "Flash Light 1",
+        "Flash Light 2",
+        "Flash Light 3",
+        "Flash Light 4",
+        "Auto Program",
+        "Auto Program Speed/Sound"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 5,
+      "channels": [
+        "Auto Program LED Par",
+        "Auto Program Derby",
+        "Auto Program Flash Lights",
+        "Auto Program Laser",
+        "Auto Program Speed/Sound"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 2,
+      "channels": [
+        "Auto Program",
+        "Auto Program Speed/Sound"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED RGB+UV + Laser",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6.6",
+      "width": "1111",
+      "height": "270",
+      "depth": "60"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "130",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

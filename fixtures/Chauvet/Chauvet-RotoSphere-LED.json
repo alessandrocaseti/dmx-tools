@@ -1,0 +1,160 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "RotoSphere LED",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Carl Eisenbeis",
+  "channels": [
+    {
+      "name": "Motor Rotation",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "127",
+          "name": "Counter clockwise rotation (slow to fast)."
+        },
+        {
+          "min": "128",
+          "max": "137",
+          "name": "No function"
+        },
+        {
+          "min": "138",
+          "max": "255",
+          "name": "Clockwise rotation (slow to fast)."
+        }
+      ]
+    },
+    {
+      "name": "Colors",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Red"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Green"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Blue"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Red + green"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Red + blue"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Green + blue"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Red + green + blue"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Strobe effect (slow to fast)."
+        }
+      ]
+    },
+    {
+      "name": "Modes",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "249",
+          "name": "Automatic programs"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound-activated mode"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Motor Rotation",
+        "Colors",
+        "Strobe",
+        "Modes"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.2",
+      "width": "307",
+      "height": "441",
+      "depth": "307"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "360",
+      "degreesMax": "360"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "35",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

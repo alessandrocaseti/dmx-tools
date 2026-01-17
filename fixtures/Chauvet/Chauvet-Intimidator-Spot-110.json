@@ -1,0 +1,381 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Intimidator Spot 110",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Lance Moore",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Color Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Color 1 (Red)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Color 2 (Green)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Color 3 (Blue)"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Color 4 (Yellow)"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Color 5 (Purple)"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Color 6 (Orange)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Color 7 (Light Blue)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "On"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe, Slow to Fast"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "On"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "0-100%, Slow to Fast"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "On"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "100-0%, Slow to Fast"
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "On"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Random Strobe"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "On"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Gobo Wheel",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Open"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Gobo 7"
+        }
+      ]
+    },
+    {
+      "name": "Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "89",
+          "name": "Blackout on pan/tilt on"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "Blackout on pan/tilt off"
+        },
+        {
+          "min": "110",
+          "max": "129",
+          "name": "Blackout on color wheel move on"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "Blackout on color wheel move off"
+        },
+        {
+          "min": "150",
+          "max": "169",
+          "name": "Blackout on gobo wheel move on"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "Blackout on gobo wheel move off"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset all"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound-active program"
+        }
+      ]
+    },
+    {
+      "name": "Movement Macro",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "35",
+          "name": "Movement macro 1"
+        },
+        {
+          "min": "36",
+          "max": "55",
+          "name": "Movement macro 2"
+        },
+        {
+          "min": "56",
+          "max": "75",
+          "name": "Movement macro 3"
+        },
+        {
+          "min": "76",
+          "max": "95",
+          "name": "Movement macro 4"
+        },
+        {
+          "min": "96",
+          "max": "115",
+          "name": "Movement macro 5"
+        },
+        {
+          "min": "116",
+          "max": "135",
+          "name": "Movement macro 6"
+        },
+        {
+          "min": "136",
+          "max": "155",
+          "name": "Movement macro 7"
+        },
+        {
+          "min": "156",
+          "max": "175",
+          "name": "Movement macro 8"
+        },
+        {
+          "min": "176",
+          "max": "195",
+          "name": "Movement macro 9"
+        },
+        {
+          "min": "196",
+          "max": "215",
+          "name": "Movement macro 10"
+        },
+        {
+          "min": "216",
+          "max": "235",
+          "name": "Movement macro 11"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Movement macro 12"
+        }
+      ]
+    },
+    {
+      "name": "Movement Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "movement macro speed, fast to slow"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Pan/Tilt speed",
+        "Color Wheel",
+        "Strobe",
+        "Dimmer",
+        "Gobo Wheel",
+        "Function",
+        "Movement Macro",
+        "Movement Macro Speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color Wheel",
+        "Strobe",
+        "Dimmer",
+        "Gobo Wheel"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.3",
+      "width": "127",
+      "height": "279",
+      "depth": "190"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "13",
+      "degreesMax": "13"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "270"
+    },
+    "technical": {
+      "powerConsumption": "41",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

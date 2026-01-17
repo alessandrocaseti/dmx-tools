@@ -1,0 +1,224 @@
+{
+  "version": "1.2",
+  "manufacturer": "BoomToneDJ",
+  "model": "Slim PAR 7x3W LED RGB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Lorenzo Andreani",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Dimmer Mode"
+        },
+        {
+          "min": "7",
+          "max": "65",
+          "name": "Strobe (Slow > Fast)"
+        },
+        {
+          "min": "66",
+          "max": "69",
+          "name": "None"
+        },
+        {
+          "min": "70",
+          "max": "128",
+          "name": "Pulse Strobe (Slow > Fast)"
+        },
+        {
+          "min": "129",
+          "max": "132",
+          "name": "None"
+        },
+        {
+          "min": "133",
+          "max": "191",
+          "name": "Strobe Fadding In (Slow > Fast)"
+        },
+        {
+          "min": "192",
+          "max": "195",
+          "name": "None"
+        },
+        {
+          "min": "196",
+          "max": "255",
+          "name": "Strobe Fadding Out (Slow > Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Strobe (7 Ch Mode)",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "6",
+          "name": "Dimmer Mode (If Ch7>=60 Program Running Speed from Slow to Fast)"
+        },
+        {
+          "min": "7",
+          "max": "65",
+          "name": "Strobe (Slow > Fast)"
+        },
+        {
+          "min": "66",
+          "max": "69",
+          "name": "None"
+        },
+        {
+          "min": "70",
+          "max": "128",
+          "name": "Pulse Strobe (Slow > Fast)"
+        },
+        {
+          "min": "129",
+          "max": "132",
+          "name": "None"
+        },
+        {
+          "min": "133",
+          "max": "191",
+          "name": "Strobe Fadding In (Slow > Fast)"
+        },
+        {
+          "min": "192",
+          "max": "195",
+          "name": "None"
+        },
+        {
+          "min": "196",
+          "max": "255",
+          "name": "Strobe Fadding Out (Slow > Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Static Color Select (if Ch7 60-119) or Strobe Slow to Fast (if Ch7 120-179)",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Static Color Select (if Ch7 60-119) or Strobe Slow to Fast (if Ch7 120-179)"
+        }
+      ]
+    },
+    {
+      "name": "Function Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "59",
+          "name": "Dimmer Mode"
+        },
+        {
+          "min": "60",
+          "max": "119",
+          "name": "Static Color Mode"
+        },
+        {
+          "min": "120",
+          "max": "179",
+          "name": "Hop Change Mode"
+        },
+        {
+          "min": "180",
+          "max": "239",
+          "name": "Gradual Change Mode"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound Active Mode"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 Ch Mode",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "5 Ch Mode",
+      "totalChannels": 5,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "7 Ch Mode",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Dimmer",
+        "Strobe (7 Ch Mode)",
+        "Static Color Select (if Ch7 60-119) or Strobe Slow to Fast (if Ch7 120-179)",
+        "Function Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2.2",
+      "width": "241",
+      "height": "247",
+      "depth": "92"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "30",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

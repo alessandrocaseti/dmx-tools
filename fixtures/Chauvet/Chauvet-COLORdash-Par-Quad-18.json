@@ -1,0 +1,304 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "COLORdash Par-Quad 18",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michael Tosatto",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe (Slow to Fast)"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro + White Balance",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Function"
+        },
+        {
+          "min": "11",
+          "max": "30",
+          "name": "R: 100% G: 0-100% B: 0"
+        },
+        {
+          "min": "31",
+          "max": "50",
+          "name": "R: 100%-0 G:100% B: 0"
+        },
+        {
+          "min": "51",
+          "max": "70",
+          "name": "R: 0 G: 100% B: 0-100%"
+        },
+        {
+          "min": "71",
+          "max": "90",
+          "name": "R: 0 G: 100%-0 B: 100%"
+        },
+        {
+          "min": "91",
+          "max": "110",
+          "name": "R: 0-100% G: 0 B: 100%"
+        },
+        {
+          "min": "111",
+          "max": "130",
+          "name": "R: 100% G: 0 B: 100%-0"
+        },
+        {
+          "min": "131",
+          "max": "150",
+          "name": "R: 100% G: 0-100% B: 0-100%"
+        },
+        {
+          "min": "151",
+          "max": "170",
+          "name": "R: 100%-0 G: 100%-0 B: 100%"
+        },
+        {
+          "min": "171",
+          "max": "200",
+          "name": "R: 100% G: 100% B: 100% A: 100%"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "White 1"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "White 2"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "White 3"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "White 4"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "White 5"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "White 6"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "White 7"
+        },
+        {
+          "min": "236",
+          "max": "240",
+          "name": "White 8"
+        },
+        {
+          "min": "241",
+          "max": "245",
+          "name": "White 9"
+        },
+        {
+          "min": "246",
+          "max": "250",
+          "name": "White 10"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "White 11"
+        }
+      ]
+    },
+    {
+      "name": "Auto Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "No Function"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Auto 1"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Auto 2"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Auto 3"
+        },
+        {
+          "min": "204",
+          "max": "254",
+          "name": "Auto 4"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Auto 5"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Preset Dimmer"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Linear Dimmer"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Nonlinear Dimming Curve 1 (Fastest)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Nonlinear Dimming Curve 2"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Nonlinear Dimming Curve 3 (Slowest)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Strobe",
+        "Color Macro + White Balance",
+        "Auto Program",
+        "Auto Speed",
+        "Dimmer Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "2340",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.6",
+      "width": "323",
+      "height": "298",
+      "depth": "106"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "18",
+      "degreesMax": "18"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "118",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

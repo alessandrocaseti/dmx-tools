@@ -1,0 +1,184 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED SLS 5 BCL",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Christian Hollbjär",
+  "channels": [
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Sound / Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "5",
+          "name": "Sound control"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Strobe (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "CH5 Modes",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "28",
+          "name": "No function"
+        },
+        {
+          "min": "29",
+          "max": "57",
+          "name": "White"
+        },
+        {
+          "min": "58",
+          "max": "82",
+          "name": "Amber"
+        },
+        {
+          "min": "83",
+          "max": "87",
+          "name": "Color Dreaming 1"
+        },
+        {
+          "min": "88",
+          "max": "92",
+          "name": "Color Dreaming 2"
+        },
+        {
+          "min": "93",
+          "max": "97",
+          "name": "Color Dreaming 3"
+        },
+        {
+          "min": "98",
+          "max": "163",
+          "name": "No function"
+        },
+        {
+          "min": "164",
+          "max": "168",
+          "name": "Color Change"
+        },
+        {
+          "min": "169",
+          "max": "245",
+          "name": "No function"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Strobe/Speed/Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Strobe, Color speed, Sound sensitivity (depends on CH5)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 2,
+      "channels": [
+        "White",
+        "Amber"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 3,
+      "channels": [
+        "White",
+        "Amber",
+        "Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "White",
+        "Amber",
+        "Dimmer",
+        "Sound / Strobe"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 5,
+      "channels": [
+        "White",
+        "Amber",
+        "Dimmer",
+        "Strobe/Speed/Sensitivity",
+        "CH5 Modes"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3",
+      "width": "230",
+      "height": "270",
+      "depth": "110"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "20"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "24",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

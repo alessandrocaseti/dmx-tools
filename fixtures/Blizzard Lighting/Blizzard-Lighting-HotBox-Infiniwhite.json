@@ -1,0 +1,304 @@
+{
+  "version": "1.2",
+  "manufacturer": "Blizzard Lighting",
+  "model": "HotBox Infiniwhite",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Chris Gill",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Warm White",
+      "type": "White"
+    },
+    {
+      "name": "Cool White",
+      "type": "White"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Dimming"
+        },
+        {
+          "min": "15",
+          "max": "255",
+          "name": "Slow <--> fast"
+        }
+      ]
+    },
+    {
+      "name": "Fade, Color Change, Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Fade in (Ch. 5 controls speed)"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Fade out (Ch. 5 controls speed)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Fade in / fade out (Ch. 5 controls speed)"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "ACW gradual change (Ch. 5 controls speed)"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Fade in / fade out, auto run"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Color jump (Ch. 5 Controls speed)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Color Saturation",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Invalid"
+        },
+        {
+          "min": "10",
+          "max": "29",
+          "name": "A 100%"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "A85%+(A+C)15%"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "A60%+(A+C)40%"
+        },
+        {
+          "min": "50",
+          "max": "69",
+          "name": "(A+C)100%"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "(A+C)85%+C15%"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "(A+C)60%+C40%"
+        },
+        {
+          "min": "90",
+          "max": "109",
+          "name": "C 100%"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "C85%+W15%"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "C60%+W40%"
+        },
+        {
+          "min": "130",
+          "max": "149",
+          "name": "W 100%"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "W85%+(C+W)15%"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "W60%+(C+W)40%"
+        },
+        {
+          "min": "170",
+          "max": "189",
+          "name": "(C+W)100%"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "(C+W)50%+(A+W)50%"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "(A+W)100%"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "(A+W)50%+(A+C+W)50%"
+        },
+        {
+          "min": "230",
+          "max": "249",
+          "name": "(A+C+W)95%+(A+C)5%"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "All Colors 100%"
+        }
+      ]
+    },
+    {
+      "name": "32-Bit Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "As set in the control menu display"
+        },
+        {
+          "min": "6",
+          "max": "55",
+          "name": "Mode 0 = 8-bit, 256 dimming steps"
+        },
+        {
+          "min": "56",
+          "max": "105",
+          "name": "Mode 1 = 32-bit, 0-25% intensity range"
+        },
+        {
+          "min": "106",
+          "max": "155",
+          "name": "Mode 2 = 32-bit, 0-50% intensity range"
+        },
+        {
+          "min": "156",
+          "max": "205",
+          "name": "Mode 3 = 32-bit, 0-75% intensity range"
+        },
+        {
+          "min": "206",
+          "max": "255",
+          "name": "Mode 4 = 32-bit, full intensity dimming"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "8-Channel",
+      "totalChannels": 8,
+      "channels": [
+        "Dimmer",
+        "Amber",
+        "Warm White",
+        "Cool White",
+        "Strobe",
+        "Fade, Color Change, Sound Active",
+        "Color Saturation",
+        "32-Bit Dimmer"
+      ]
+    },
+    {
+      "name": "7-Channel",
+      "totalChannels": 7,
+      "channels": [
+        "Dimmer",
+        "Amber",
+        "Warm White",
+        "Cool White",
+        "Strobe",
+        "Fade, Color Change, Sound Active",
+        "Color Saturation"
+      ]
+    },
+    {
+      "name": "6-Channel",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Amber",
+        "Warm White",
+        "Cool White",
+        "Strobe",
+        "Fade, Color Change, Sound Active"
+      ]
+    },
+    {
+      "name": "3-Channel (ACW)",
+      "totalChannels": 3,
+      "channels": [
+        "Amber",
+        "Warm White",
+        "Cool White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.6",
+      "width": "127",
+      "height": "127",
+      "depth": "102"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "28"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "47",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

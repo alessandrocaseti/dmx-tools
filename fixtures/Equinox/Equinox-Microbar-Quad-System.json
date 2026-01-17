@@ -1,0 +1,272 @@
+{
+  "version": "1.2",
+  "manufacturer": "Equinox",
+  "model": "Microbar Quad System",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Peter Crowther",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Par 1 & 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Par 1 & 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Par 1 & 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Par 1 & 2 White",
+      "type": "White"
+    },
+    {
+      "name": "Par 3 & 4 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Par 3 & 4 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Par 3 & 4 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Par 3 & 4 White",
+      "type": "White"
+    },
+    {
+      "name": "Auto & Sound modes",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "239",
+          "name": "Auto modes"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound modes"
+        }
+      ]
+    },
+    {
+      "name": "Auto/sound mode speed (when using CH1) Strobe (slow-fast) (when using CH3-CH6)",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto/sound mode speed (when using CH1) Strobe (slow-fast) (when using CH3-CH6)"
+        }
+      ]
+    },
+    {
+      "name": "Par 1 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Par 1 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Par 1 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Par 1 White",
+      "type": "White"
+    },
+    {
+      "name": "Par 2 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Par 2 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Par 2 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Par 2 White",
+      "type": "White"
+    },
+    {
+      "name": "Par 3 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Par 3 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Par 3 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Par 3 White",
+      "type": "White"
+    },
+    {
+      "name": "Par 4 Red",
+      "type": "Red"
+    },
+    {
+      "name": "Par 4 Green",
+      "type": "Green"
+    },
+    {
+      "name": "Par 4 Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Par 4 White",
+      "type": "White"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Auto & Sound modes",
+        "Auto/sound mode speed (when using CH1) Strobe (slow-fast) (when using CH3-CH6)",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Auto & Sound modes",
+        "Auto/sound mode speed (when using CH1) Strobe (slow-fast) (when using CH3-CH6)",
+        "Par 1 & 2 Red",
+        "Par 1 & 2 Green",
+        "Par 1 & 2 Blue",
+        "Par 1 & 2 White",
+        "Par 3 & 4 Red",
+        "Par 3 & 4 Green",
+        "Par 3 & 4 Blue",
+        "Par 3 & 4 White"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 16,
+      "channels": [
+        "Par 1 Red",
+        "Par 1 Green",
+        "Par 1 Blue",
+        "Par 1 White",
+        "Par 2 Red",
+        "Par 2 Green",
+        "Par 2 Blue",
+        "Par 2 White",
+        "Par 3 Red",
+        "Par 3 Green",
+        "Par 3 Blue",
+        "Par 3 White",
+        "Par 4 Red",
+        "Par 4 Green",
+        "Par 4 Blue",
+        "Par 4 White"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 18,
+      "channels": [
+        "Master dimmer",
+        "Strobe",
+        "Par 1 Red",
+        "Par 1 Green",
+        "Par 1 Blue",
+        "Par 1 White",
+        "Par 2 Red",
+        "Par 2 Green",
+        "Par 2 Blue",
+        "Par 2 White",
+        "Par 3 Red",
+        "Par 3 Green",
+        "Par 3 Blue",
+        "Par 3 White",
+        "Par 4 Red",
+        "Par 4 Green",
+        "Par 4 Blue",
+        "Par 4 White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "10.2",
+      "width": "975",
+      "height": "230",
+      "depth": "80"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "360",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "108",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

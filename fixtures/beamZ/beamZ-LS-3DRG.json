@@ -1,0 +1,300 @@
+{
+  "version": "1.2",
+  "manufacturer": "beamZ",
+  "model": "LS-3DRG",
+  "type": "Laser",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "julbre",
+  "channels": [
+    {
+      "name": "Mode Select",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "103",
+          "name": "Sound Active Mode"
+        },
+        {
+          "min": "104",
+          "max": "155",
+          "name": "Auto-Animation Mode"
+        },
+        {
+          "min": "156",
+          "max": "255",
+          "name": "Static Patterns (selection with CH3)"
+        }
+      ]
+    },
+    {
+      "name": "Color Select",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Laser OFF"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "Color selection"
+        }
+      ]
+    },
+    {
+      "name": "Pattern select",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Selecting patters"
+        }
+      ]
+    },
+    {
+      "name": "Y axis moving",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual up to down moving"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Auto down moving (under dunamic pattern)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Auto up moving (under dynamic pattern)"
+        }
+      ]
+    },
+    {
+      "name": "X axis moving",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual left to right moving"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Auto right moving (under dynamic pattern)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Auto left moving (under dynamic pattern)"
+        }
+      ]
+    },
+    {
+      "name": "X axis rolling",
+      "type": "Pan",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual rolling"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Auto rolling (under dynamic pattern)"
+        }
+      ]
+    },
+    {
+      "name": "Y axis rolling",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual rolling"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Auto rolling (under dynamic pattern)"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Prism",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "127",
+          "name": "Manual rotation"
+        },
+        {
+          "min": "128",
+          "max": "191",
+          "name": "Auto clockwise rotation (under dynamic pattern)"
+        },
+        {
+          "min": "192",
+          "max": "255",
+          "name": "Auto counter-clockwise rotation (under dynamic pattern)"
+        }
+      ]
+    },
+    {
+      "name": "Zooming",
+      "type": "Beam",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "85",
+          "name": "Auto zooming (+)"
+        },
+        {
+          "min": "86",
+          "max": "170",
+          "name": "Auto zooming (-)"
+        },
+        {
+          "min": "171",
+          "max": "255",
+          "name": "Manual zooming (+/-)"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Size",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Normal size"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "1 is smallest, 255 is biggest"
+        }
+      ]
+    },
+    {
+      "name": "Display dot",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Normal display"
+        },
+        {
+          "min": "1",
+          "max": "255",
+          "name": "display dot, 255 is best brightness"
+        }
+      ]
+    },
+    {
+      "name": "Drawing",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No drawing"
+        },
+        {
+          "min": "6",
+          "max": "127",
+          "name": "Auto drawing mode 1 (under dynamic pattern)"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Auto drawing mode 2 (under dynamic pattern)"
+        }
+      ]
+    },
+    {
+      "name": "Stretch",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "X/Y/Z stretch"
+        }
+      ]
+    },
+    {
+      "name": "Shake Effect",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Combination with channel 13"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 14,
+      "channels": [
+        "Mode Select",
+        "Color Select",
+        "Pattern select",
+        "Y axis moving",
+        "X axis moving",
+        "X axis rolling",
+        "Y axis rolling",
+        "Rotation",
+        "Zooming",
+        "Pattern Size",
+        "Display dot",
+        "Drawing",
+        "Stretch",
+        "Shake Effect"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4",
+      "width": "290",
+      "height": "200",
+      "depth": "370"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "90",
+      "tiltMax": "90"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "version": "1.2",
+  "manufacturer": "Briteq",
+  "model": "BT-Vintage",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Thomas",
+  "channels": [
+    {
+      "name": "Halogen Lamp Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "LED Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No strobe (open)"
+        },
+        {
+          "min": "8",
+          "max": "67",
+          "name": "Random strobe (slow > fast)"
+        },
+        {
+          "min": "68",
+          "max": "255",
+          "name": "Strobe (slow > fast)"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "Color effects",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No function"
+        },
+        {
+          "min": "8",
+          "max": "27",
+          "name": "Red"
+        },
+        {
+          "min": "28",
+          "max": "47",
+          "name": "Orange"
+        },
+        {
+          "min": "48",
+          "max": "67",
+          "name": "Yellow"
+        },
+        {
+          "min": "68",
+          "max": "87",
+          "name": "Green"
+        },
+        {
+          "min": "88",
+          "max": "97",
+          "name": "Cyan"
+        },
+        {
+          "min": "98",
+          "max": "107",
+          "name": "Blue"
+        },
+        {
+          "min": "108",
+          "max": "117",
+          "name": "Magenta"
+        },
+        {
+          "min": "118",
+          "max": "255",
+          "name": "Fade colour change (very slow > fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 5,
+      "channels": [
+        "Halogen Lamp Dimmer",
+        "LED Dimmer",
+        "Red",
+        "Green",
+        "Blue fine"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Halogen Lamp Dimmer",
+        "LED Dimmer",
+        "LED Strobe",
+        "Red",
+        "Green",
+        "Blue fine"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 7,
+      "channels": [
+        "Halogen Lamp Dimmer",
+        "LED Dimmer",
+        "LED Strobe",
+        "Red",
+        "Green",
+        "Blue fine",
+        "Color effects"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "HTI 575W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "16",
+      "width": "696",
+      "height": "650",
+      "depth": "370"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "980",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

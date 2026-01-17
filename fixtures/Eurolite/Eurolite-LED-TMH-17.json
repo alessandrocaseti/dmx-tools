@@ -1,0 +1,342 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED TMH-17",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "René Schulze",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Color-Wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Open/White"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Green"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Blue"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Yellow"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Light Blue"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Orange"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Magenta"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Magenta/Orange"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Orange/Light Blue"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Light Blue/ Yellow"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Yellow/Blue"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Blue/Green"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Green/Red"
+        },
+        {
+          "min": "140",
+          "max": "255",
+          "name": "Rainbow effect with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Static gobo-wheel, gobo shake",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Open"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Gobo 1"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Gobo 2"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Gobo 3"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Gobo 4"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Gobo 5"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Gobo 6"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Gobo 7"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Gobo 7 Shake with increasing speed"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Gobo 6 Shake with increasing speed"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Gobo 5 Shake with increasing speed"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Gobo 4 Shake with increasing speed"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Gobo 3 Shake with increasing speed"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Gobo 2 Shake with increasing speed"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Gobo 1 Shake with increasing speed"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Gobo-wheel rotation with increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "249",
+          "name": "Strobe-effect with increasing speed"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer intensity",
+      "type": "Intensity"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Internal program, sound control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "59",
+          "name": "No function"
+        },
+        {
+          "min": "60",
+          "max": "159",
+          "name": "Internal Program"
+        },
+        {
+          "min": "160",
+          "max": "255",
+          "name": "Sound Control"
+        }
+      ]
+    },
+    {
+      "name": "Special functions, reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "No function"
+        },
+        {
+          "min": "21",
+          "max": "100",
+          "name": "PAN movement"
+        },
+        {
+          "min": "101",
+          "max": "200",
+          "name": "TILT movement"
+        },
+        {
+          "min": "201",
+          "max": "249",
+          "name": "PAN/TILT movement"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "9-Channel",
+      "totalChannels": 9,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Color-Wheel",
+        "Static gobo-wheel, gobo shake",
+        "Strobe",
+        "Dimmer intensity",
+        "Pan/Tilt speed",
+        "Internal program, sound control",
+        "Special functions, reset"
+      ]
+    },
+    {
+      "name": "11-Channel",
+      "totalChannels": 11,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Color-Wheel",
+        "Static gobo-wheel, gobo shake",
+        "Strobe",
+        "Dimmer intensity",
+        "Pan/Tilt speed",
+        "Internal program, sound control",
+        "Special functions, reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "520",
+      "colourTemperature": "8600"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "170",
+      "height": "240",
+      "depth": "145"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "200"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

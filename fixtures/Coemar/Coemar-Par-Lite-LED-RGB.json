@@ -1,0 +1,180 @@
+{
+  "version": "1.2",
+  "manufacturer": "Coemar",
+  "model": "Par Lite LED RGB",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Robert Box",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red/Fade Speed",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 to 100%/1 second to 1 minute"
+        }
+      ]
+    },
+    {
+      "name": "Green/Pause Time",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0 to 100%/1 second to 3.30 minutes"
+        }
+      ]
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Strobe Effect",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No effect"
+        },
+        {
+          "min": "10",
+          "max": "57",
+          "name": "Variable speed, from slow to fast"
+        },
+        {
+          "min": "58",
+          "max": "59",
+          "name": "Stop"
+        },
+        {
+          "min": "60",
+          "max": "108",
+          "name": "Sequenced pulse effect, slow closing, fast opening"
+        },
+        {
+          "min": "109",
+          "max": "110",
+          "name": "Stop"
+        },
+        {
+          "min": "111",
+          "max": "159",
+          "name": "Sequenced pulse effect, fast closing, slow opening"
+        },
+        {
+          "min": "160",
+          "max": "161",
+          "name": "Stop"
+        },
+        {
+          "min": "162",
+          "max": "207",
+          "name": "Random effect from slow to fast with synchronised colours"
+        },
+        {
+          "min": "208",
+          "max": "209",
+          "name": "Stop"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Random effect from slow to fast with non-synchronised colours"
+        }
+      ]
+    },
+    {
+      "name": "Automated Functions",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No effect"
+        },
+        {
+          "min": "10",
+          "max": "50",
+          "name": "Automated program 1"
+        },
+        {
+          "min": "51",
+          "max": "91",
+          "name": "Automated program 2"
+        },
+        {
+          "min": "92",
+          "max": "132",
+          "name": "Automated program 3"
+        },
+        {
+          "min": "133",
+          "max": "173",
+          "name": "Automated program 4"
+        },
+        {
+          "min": "174",
+          "max": "214",
+          "name": "Random program repeat"
+        },
+        {
+          "min": "215",
+          "max": "255",
+          "name": "Repeat programs in sequence"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Default",
+      "totalChannels": 6,
+      "channels": [
+        "Master Dimmer",
+        "Red/Fade Speed",
+        "Green/Pause Time",
+        "Blue",
+        "Strobe Effect",
+        "Automated Functions"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.6",
+      "width": "212",
+      "height": "268",
+      "depth": "184"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "12",
+      "degreesMax": "12"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "46",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,866 @@
+{
+  "version": "1.2",
+  "manufacturer": "Equinox",
+  "model": "SpectraPix Batten",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Michel Sliepenbeek",
+  "channels": [
+    {
+      "name": "Red 01",
+      "type": "Red"
+    },
+    {
+      "name": "Green 01",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 01",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 02",
+      "type": "Red"
+    },
+    {
+      "name": "Green 02",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 02",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 03",
+      "type": "Red"
+    },
+    {
+      "name": "Green 03",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 03",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 04",
+      "type": "Red"
+    },
+    {
+      "name": "Green 04",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 04",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 05",
+      "type": "Red"
+    },
+    {
+      "name": "Green 05",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 05",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 06",
+      "type": "Red"
+    },
+    {
+      "name": "Green 06",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 06",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 07",
+      "type": "Red"
+    },
+    {
+      "name": "Green 07",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 07",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 08",
+      "type": "Red"
+    },
+    {
+      "name": "Green 08",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 08",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 09",
+      "type": "Red"
+    },
+    {
+      "name": "Green 09",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 09",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 10",
+      "type": "Red"
+    },
+    {
+      "name": "Green 10",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 10",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 11",
+      "type": "Red"
+    },
+    {
+      "name": "Green 11",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 11",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 12",
+      "type": "Red"
+    },
+    {
+      "name": "Green 12",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 12",
+      "type": "Blue"
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "13",
+          "name": "Static Color (use channnel 2 for Color Setection)"
+        },
+        {
+          "min": "14",
+          "max": "17",
+          "name": "Buit-in Program 1"
+        },
+        {
+          "min": "18",
+          "max": "21",
+          "name": "Buit-in Program 2"
+        },
+        {
+          "min": "22",
+          "max": "25",
+          "name": "Buit-in Program 3"
+        },
+        {
+          "min": "26",
+          "max": "29",
+          "name": "Buit-in Program 4"
+        },
+        {
+          "min": "30",
+          "max": "33",
+          "name": "Buit-in Program 5"
+        },
+        {
+          "min": "34",
+          "max": "37",
+          "name": "Buit-in Program 6"
+        },
+        {
+          "min": "38",
+          "max": "41",
+          "name": "Buit-in Program 7"
+        },
+        {
+          "min": "42",
+          "max": "45",
+          "name": "Buit-in Program 8"
+        },
+        {
+          "min": "46",
+          "max": "49",
+          "name": "Buit-in Program 9"
+        },
+        {
+          "min": "50",
+          "max": "53",
+          "name": "Buit-in Program 10"
+        },
+        {
+          "min": "54",
+          "max": "57",
+          "name": "Buit-in Program 11"
+        },
+        {
+          "min": "58",
+          "max": "61",
+          "name": "Buit-in Program 12"
+        },
+        {
+          "min": "62",
+          "max": "65",
+          "name": "Buit-in Program 13"
+        },
+        {
+          "min": "66",
+          "max": "69",
+          "name": "Buit-in Program 14"
+        },
+        {
+          "min": "70",
+          "max": "73",
+          "name": "Buit-in Program 15"
+        },
+        {
+          "min": "74",
+          "max": "77",
+          "name": "Buit-in Program 16"
+        },
+        {
+          "min": "78",
+          "max": "81",
+          "name": "Buit-in Program 17"
+        },
+        {
+          "min": "82",
+          "max": "85",
+          "name": "Buit-in Program 18"
+        },
+        {
+          "min": "86",
+          "max": "89",
+          "name": "Buit-in Program 19"
+        },
+        {
+          "min": "90",
+          "max": "93",
+          "name": "Buit-in Program 20"
+        },
+        {
+          "min": "94",
+          "max": "97",
+          "name": "Buit-in Program 21"
+        },
+        {
+          "min": "98",
+          "max": "101",
+          "name": "Buit-in Program 22"
+        },
+        {
+          "min": "102",
+          "max": "105",
+          "name": "Buit-in Program 23"
+        },
+        {
+          "min": "106",
+          "max": "109",
+          "name": "Buit-in Program 24"
+        },
+        {
+          "min": "110",
+          "max": "113",
+          "name": "Buit-in Program 25"
+        },
+        {
+          "min": "114",
+          "max": "117",
+          "name": "Buit-in Program 26"
+        },
+        {
+          "min": "118",
+          "max": "121",
+          "name": "Buit-in Program 27"
+        },
+        {
+          "min": "122",
+          "max": "125",
+          "name": "Buit-in Program 28"
+        },
+        {
+          "min": "126",
+          "max": "129",
+          "name": "Buit-in Program 29"
+        },
+        {
+          "min": "130",
+          "max": "133",
+          "name": "Buit-in Program 30"
+        },
+        {
+          "min": "134",
+          "max": "137",
+          "name": "Buit-in Program 31"
+        },
+        {
+          "min": "138",
+          "max": "141",
+          "name": "Buit-in Program 32"
+        },
+        {
+          "min": "142",
+          "max": "145",
+          "name": "Buit-in Program 33"
+        },
+        {
+          "min": "146",
+          "max": "149",
+          "name": "Buit-in Program 34"
+        },
+        {
+          "min": "150",
+          "max": "153",
+          "name": "Buit-in Program 35"
+        },
+        {
+          "min": "154",
+          "max": "157",
+          "name": "Buit-in Program 36"
+        },
+        {
+          "min": "158",
+          "max": "161",
+          "name": "Buit-in Program 37"
+        },
+        {
+          "min": "162",
+          "max": "165",
+          "name": "Buit-in Program 38"
+        },
+        {
+          "min": "166",
+          "max": "169",
+          "name": "Buit-in Program 39"
+        },
+        {
+          "min": "170",
+          "max": "173",
+          "name": "Buit-in Program 40"
+        },
+        {
+          "min": "174",
+          "max": "177",
+          "name": "Buit-in Program 41"
+        },
+        {
+          "min": "178",
+          "max": "181",
+          "name": "Buit-in Program 42"
+        },
+        {
+          "min": "182",
+          "max": "185",
+          "name": "Buit-in Program 43"
+        },
+        {
+          "min": "186",
+          "max": "189",
+          "name": "Buit-in Program 44"
+        },
+        {
+          "min": "190",
+          "max": "193",
+          "name": "Buit-in Program 45"
+        },
+        {
+          "min": "194",
+          "max": "197",
+          "name": "Buit-in Program 46"
+        },
+        {
+          "min": "198",
+          "max": "201",
+          "name": "Buit-in Program 47"
+        },
+        {
+          "min": "202",
+          "max": "205",
+          "name": "Buit-in Program 48"
+        },
+        {
+          "min": "206",
+          "max": "209",
+          "name": "Buit-in Program 49"
+        },
+        {
+          "min": "210",
+          "max": "213",
+          "name": "Buit-in Program 50"
+        },
+        {
+          "min": "214",
+          "max": "217",
+          "name": "Buit-in Program 51"
+        },
+        {
+          "min": "218",
+          "max": "221",
+          "name": "Buit-in Program 52"
+        },
+        {
+          "min": "222",
+          "max": "225",
+          "name": "Buit-in Program 53"
+        },
+        {
+          "min": "226",
+          "max": "229",
+          "name": "Buit-in Program 54"
+        },
+        {
+          "min": "230",
+          "max": "233",
+          "name": "Auto Mode"
+        },
+        {
+          "min": "234",
+          "max": "237",
+          "name": "Sound Mode 1"
+        },
+        {
+          "min": "238",
+          "max": "241",
+          "name": "Sound Mode 2"
+        },
+        {
+          "min": "242",
+          "max": "255",
+          "name": "Sound Mode 3"
+        }
+      ]
+    },
+    {
+      "name": "Static Color Selection",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No Function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Color 1 Red"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Color 2 Dark Orange"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Color 3 Orange"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Color 4 Amber"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Color 5 Yellow"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Color 6 Yellow Green"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Color 7 Lime Green"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Color 8 Medium Green"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Color 9 Green"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Color 10 Vibrant Green"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Color 11 Mint Green"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Color 12 Turquoise"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Color 13 Cyan"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Color 14 Light Blue"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Color 15 Medium Blue"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Color 16 Congo Blue"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Color 17 Blue"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "Color 18 Purple Blue"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "Color 19 Purple"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Color 20 Violet"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "Color 21 Pink"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "Color 22Magenta"
+        },
+        {
+          "min": "230",
+          "max": "239",
+          "name": "Color 23 Hot Pink"
+        },
+        {
+          "min": "240",
+          "max": "249",
+          "name": "Color 24 Fuchsia"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Color 25 White (RGB)"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed (Slow to Fast)/ Sound Sensitivity (Low to High)",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed/Sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Red 13",
+      "type": "Red"
+    },
+    {
+      "name": "Green 13",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 13",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 14",
+      "type": "Red"
+    },
+    {
+      "name": "Green 14",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 14",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 15",
+      "type": "Red"
+    },
+    {
+      "name": "Green 15",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 15",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 16",
+      "type": "Red"
+    },
+    {
+      "name": "Green 16",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 16",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 Channel 1",
+      "totalChannels": 3,
+      "channels": [
+        "Program",
+        "Static Color Selection",
+        "Program Speed (Slow to Fast)/ Sound Sensitivity (Low to High)"
+      ]
+    },
+    {
+      "name": "3 Channel 2",
+      "totalChannels": 3,
+      "channels": [
+        "Red 01",
+        "Green 01",
+        "Blue 01"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 5,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Red 01",
+        "Green 01",
+        "Blue 01"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 24,
+      "channels": [
+        "Red 01",
+        "Green 01",
+        "Blue 01",
+        "Red 02",
+        "Green 02",
+        "Blue 02",
+        "Red 03",
+        "Green 03",
+        "Blue 03",
+        "Red 04",
+        "Green 04",
+        "Blue 04",
+        "Red 05",
+        "Green 05",
+        "Blue 05",
+        "Red 06",
+        "Green 06",
+        "Blue 06",
+        "Red 07",
+        "Green 07",
+        "Blue 07",
+        "Red 08",
+        "Green 08",
+        "Blue 08"
+      ]
+    },
+    {
+      "name": "48 Channelù",
+      "totalChannels": 48,
+      "channels": [
+        "Red 01",
+        "Green 01",
+        "Blue 01",
+        "Red 02",
+        "Green 02",
+        "Blue 02",
+        "Red 03",
+        "Green 03",
+        "Blue 03",
+        "Red 04",
+        "Green 04",
+        "Blue 04",
+        "Red 05",
+        "Green 05",
+        "Blue 05",
+        "Red 06",
+        "Green 06",
+        "Blue 06",
+        "Red 07",
+        "Green 07",
+        "Blue 07",
+        "Red 08",
+        "Green 08",
+        "Blue 08",
+        "Red 09",
+        "Green 09",
+        "Blue 09",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "Red 11",
+        "Green 11",
+        "Blue 11",
+        "Red 12",
+        "Green 12",
+        "Blue 12",
+        "Red 13",
+        "Green 13",
+        "Blue 13",
+        "Red 14",
+        "Green 14",
+        "Blue 14",
+        "Red 15",
+        "Green 15",
+        "Blue 15",
+        "Red 16",
+        "Green 16",
+        "Blue 16"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 53,
+      "channels": [
+        "Master Dimmer",
+        "Strobe",
+        "Red 01",
+        "Green 01",
+        "Blue 01",
+        "Red 02",
+        "Green 02",
+        "Blue 02",
+        "Red 03",
+        "Green 03",
+        "Blue 03",
+        "Red 04",
+        "Green 04",
+        "Blue 04",
+        "Red 05",
+        "Green 05",
+        "Blue 05",
+        "Red 06",
+        "Green 06",
+        "Blue 06",
+        "Red 07",
+        "Green 07",
+        "Blue 07",
+        "Red 08",
+        "Green 08",
+        "Blue 08",
+        "Red 09",
+        "Green 09",
+        "Blue 09",
+        "Red 10",
+        "Green 10",
+        "Blue 10",
+        "Red 11",
+        "Green 11",
+        "Blue 11",
+        "Red 12",
+        "Green 12",
+        "Blue 12",
+        "Red 13",
+        "Green 13",
+        "Blue 13",
+        "Red 14",
+        "Green 14",
+        "Blue 14",
+        "Red 15",
+        "Green 15",
+        "Blue 15",
+        "Red 16",
+        "Green 16",
+        "Blue 16",
+        "Program",
+        "Static Color Selection",
+        "Program Speed (Slow to Fast)/ Sound Sensitivity (Low to High)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.5",
+      "width": "85",
+      "height": "1035",
+      "depth": "80"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "30",
+      "degreesMax": "30"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

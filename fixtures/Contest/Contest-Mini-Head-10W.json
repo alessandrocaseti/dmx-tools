@@ -1,0 +1,345 @@
+{
+  "version": "1.2",
+  "manufacturer": "Contest",
+  "model": "Mini-Head 10W",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Fredje Gallon",
+  "channels": [
+    {
+      "name": "Shows",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Show 0 (audio off)"
+        },
+        {
+          "min": "16",
+          "max": "63",
+          "name": "Show 1"
+        },
+        {
+          "min": "64",
+          "max": "111",
+          "name": "Show 2"
+        },
+        {
+          "min": "112",
+          "max": "159",
+          "name": "Show 3"
+        },
+        {
+          "min": "160",
+          "max": "207",
+          "name": "Show 4"
+        },
+        {
+          "min": "208",
+          "max": "255",
+          "name": "Show 0 (audio on)"
+        }
+      ]
+    },
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Black out"
+        },
+        {
+          "min": "8",
+          "max": "255",
+          "name": "Dim 0-100%"
+        }
+      ]
+    },
+    {
+      "name": "Color wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "50",
+          "name": "Red"
+        },
+        {
+          "min": "51",
+          "max": "85",
+          "name": "Orange"
+        },
+        {
+          "min": "86",
+          "max": "115",
+          "name": "Purple"
+        },
+        {
+          "min": "116",
+          "max": "150",
+          "name": "Blue sky"
+        },
+        {
+          "min": "151",
+          "max": "185",
+          "name": "Violet"
+        },
+        {
+          "min": "186",
+          "max": "215",
+          "name": "Green"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "Gobos",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "14",
+          "name": "Open"
+        },
+        {
+          "min": "15",
+          "max": "50",
+          "name": "Circle small"
+        },
+        {
+          "min": "51",
+          "max": "85",
+          "name": "Twist"
+        },
+        {
+          "min": "86",
+          "max": "115",
+          "name": "Scratch"
+        },
+        {
+          "min": "116",
+          "max": "150",
+          "name": "Line"
+        },
+        {
+          "min": "151",
+          "max": "185",
+          "name": "Triangle"
+        },
+        {
+          "min": "186",
+          "max": "215",
+          "name": "Circle open"
+        },
+        {
+          "min": "216",
+          "max": "255",
+          "name": "Star open"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Open"
+        },
+        {
+          "min": "16",
+          "max": "131",
+          "name": "Strobe 0-100%"
+        },
+        {
+          "min": "132",
+          "max": "139",
+          "name": "Open"
+        },
+        {
+          "min": "140",
+          "max": "181",
+          "name": "Pulse"
+        },
+        {
+          "min": "182",
+          "max": "189",
+          "name": "Open"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Pulse inv."
+        },
+        {
+          "min": "232",
+          "max": "239",
+          "name": "Open"
+        },
+        {
+          "min": "240",
+          "max": "247",
+          "name": "Strobe random"
+        },
+        {
+          "min": "248",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Special functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "Noop"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blackout during pan/tilt"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Noop"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Blackout during colorchange"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Noop"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Blackout during gobo-change"
+        },
+        {
+          "min": "120",
+          "max": "199",
+          "name": "Noop"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "General reset"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Noop"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Shows"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Dimmer",
+        "Strobe",
+        "Color wheel",
+        "Gobos",
+        "Special functions",
+        "Shows"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Dimmer",
+        "Strobe",
+        "Color wheel",
+        "Gobos",
+        "Special functions",
+        "Shows"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "625",
+      "colourTemperature": "6000"
+    },
+    "dimensions": {
+      "weight": "2.7",
+      "width": "175",
+      "height": "258",
+      "depth": "141"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "14",
+      "degreesMax": "14"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "610",
+      "tiltMax": "220"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,858 @@
+{
+  "version": "1.2",
+  "manufacturer": "Expolite",
+  "model": "TourBar 32PIX RGBW",
+  "type": "Led Bar",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Wim Van Laer",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No Strobe"
+        },
+        {
+          "min": "6",
+          "max": "20",
+          "name": "Asynchronous Strobe (Slow to fast)"
+        },
+        {
+          "min": "21",
+          "max": "60",
+          "name": "Synchronous Strobe (Slow to fast)"
+        },
+        {
+          "min": "61",
+          "max": "100",
+          "name": "Electronic Sine Wave (Slow to fast)"
+        },
+        {
+          "min": "101",
+          "max": "140",
+          "name": "Random Strobe (Slow to fast)"
+        },
+        {
+          "min": "141",
+          "max": "180",
+          "name": "Opening Pulse (Slow to fast)"
+        },
+        {
+          "min": "181",
+          "max": "220",
+          "name": "Closing Pulse (Slow to fast)"
+        },
+        {
+          "min": "221",
+          "max": "255",
+          "name": "Electronic Square Wave (Slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Effect",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No Effect"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "CT01"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "CT02"
+        },
+        {
+          "min": "16",
+          "max": "20",
+          "name": "CT03"
+        },
+        {
+          "min": "21",
+          "max": "25",
+          "name": "CT04"
+        },
+        {
+          "min": "26",
+          "max": "30",
+          "name": "CT05"
+        },
+        {
+          "min": "31",
+          "max": "35",
+          "name": "CT06"
+        },
+        {
+          "min": "36",
+          "max": "40",
+          "name": "CT07"
+        },
+        {
+          "min": "41",
+          "max": "45",
+          "name": "CT08"
+        },
+        {
+          "min": "46",
+          "max": "50",
+          "name": "CT09"
+        },
+        {
+          "min": "51",
+          "max": "55",
+          "name": "CT10"
+        },
+        {
+          "min": "56",
+          "max": "60",
+          "name": "AT01"
+        },
+        {
+          "min": "61",
+          "max": "65",
+          "name": "AT02"
+        },
+        {
+          "min": "66",
+          "max": "70",
+          "name": "AT03"
+        },
+        {
+          "min": "71",
+          "max": "75",
+          "name": "AT04"
+        },
+        {
+          "min": "76",
+          "max": "80",
+          "name": "AT05"
+        },
+        {
+          "min": "81",
+          "max": "85",
+          "name": "AT06"
+        },
+        {
+          "min": "86",
+          "max": "90",
+          "name": "AT07"
+        },
+        {
+          "min": "91",
+          "max": "95",
+          "name": "AT08"
+        },
+        {
+          "min": "96",
+          "max": "100",
+          "name": "AT09"
+        },
+        {
+          "min": "101",
+          "max": "105",
+          "name": "AT10"
+        },
+        {
+          "min": "106",
+          "max": "110",
+          "name": "AT11"
+        },
+        {
+          "min": "111",
+          "max": "115",
+          "name": "AT12"
+        },
+        {
+          "min": "116",
+          "max": "120",
+          "name": "AT13"
+        },
+        {
+          "min": "121",
+          "max": "125",
+          "name": "AT14"
+        },
+        {
+          "min": "126",
+          "max": "130",
+          "name": "AT15"
+        },
+        {
+          "min": "131",
+          "max": "135",
+          "name": "AT16"
+        },
+        {
+          "min": "136",
+          "max": "140",
+          "name": "AT17"
+        },
+        {
+          "min": "141",
+          "max": "145",
+          "name": "AT18"
+        },
+        {
+          "min": "146",
+          "max": "150",
+          "name": "AT19"
+        },
+        {
+          "min": "151",
+          "max": "155",
+          "name": "AT20"
+        },
+        {
+          "min": "156",
+          "max": "160",
+          "name": "AT21"
+        },
+        {
+          "min": "161",
+          "max": "165",
+          "name": "AT22"
+        },
+        {
+          "min": "166",
+          "max": "170",
+          "name": "AT23"
+        },
+        {
+          "min": "171",
+          "max": "175",
+          "name": "AT24"
+        },
+        {
+          "min": "176",
+          "max": "180",
+          "name": "AT25"
+        },
+        {
+          "min": "181",
+          "max": "185",
+          "name": "AT26"
+        },
+        {
+          "min": "186",
+          "max": "190",
+          "name": "AT27"
+        },
+        {
+          "min": "191",
+          "max": "195",
+          "name": "AT28"
+        },
+        {
+          "min": "196",
+          "max": "200",
+          "name": "AT29"
+        },
+        {
+          "min": "201",
+          "max": "205",
+          "name": "AT30"
+        },
+        {
+          "min": "206",
+          "max": "210",
+          "name": "AT31"
+        },
+        {
+          "min": "211",
+          "max": "215",
+          "name": "AT32"
+        },
+        {
+          "min": "216",
+          "max": "220",
+          "name": "AT33"
+        },
+        {
+          "min": "221",
+          "max": "225",
+          "name": "CHS1"
+        },
+        {
+          "min": "226",
+          "max": "230",
+          "name": "CHS2"
+        },
+        {
+          "min": "231",
+          "max": "235",
+          "name": "CHS3"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Reserved"
+        }
+      ]
+    },
+    {
+      "name": "Auto Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto Speed"
+        }
+      ]
+    },
+    {
+      "name": "Virtual Color wheel",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No Function"
+        },
+        {
+          "min": "11",
+          "max": "11",
+          "name": "Blue"
+        },
+        {
+          "min": "12",
+          "max": "50",
+          "name": "Blue 100% + Green Up"
+        },
+        {
+          "min": "51",
+          "max": "51",
+          "name": "Cyan"
+        },
+        {
+          "min": "52",
+          "max": "90",
+          "name": "Green 100% + Blue Down"
+        },
+        {
+          "min": "91",
+          "max": "91",
+          "name": "Green"
+        },
+        {
+          "min": "92",
+          "max": "130",
+          "name": "Green 100% + Red Up"
+        },
+        {
+          "min": "131",
+          "max": "131",
+          "name": "Yellow"
+        },
+        {
+          "min": "132",
+          "max": "170",
+          "name": "Red 100% + Green Down"
+        },
+        {
+          "min": "171",
+          "max": "171",
+          "name": "Red"
+        },
+        {
+          "min": "172",
+          "max": "210",
+          "name": "Red 100% + Blue Up"
+        },
+        {
+          "min": "211",
+          "max": "211",
+          "name": "Magenta"
+        },
+        {
+          "min": "212",
+          "max": "250",
+          "name": "Blue 100% + Red Down"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Blue"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Dimmer Mode set in the Fixture menu is used"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Linear Curve without Delay"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Square Law Curve without Delay"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "Inverse Square Law Curve without Delay"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "S-Curve without Delay"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Linear Curve with Delay"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Square Law Curve with Delay"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Inverse Square Law Curve with Delay"
+        },
+        {
+          "min": "81",
+          "max": "90",
+          "name": "S-Curve with Delay"
+        },
+        {
+          "min": "91",
+          "max": "255",
+          "name": "Dimmer Mode set in the Fixture menu is used"
+        }
+      ]
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "White 1",
+      "type": "White"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "White 2",
+      "type": "White"
+    },
+    {
+      "name": "ID Function",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "ID Function"
+        }
+      ]
+    },
+    {
+      "name": "ID Address",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "ID Address"
+        }
+      ]
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "White 3",
+      "type": "White"
+    },
+    {
+      "name": "Red 4",
+      "type": "Red"
+    },
+    {
+      "name": "Green 4",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 4",
+      "type": "Blue"
+    },
+    {
+      "name": "White 4",
+      "type": "White"
+    },
+    {
+      "name": "Red 5",
+      "type": "Red"
+    },
+    {
+      "name": "Red 6",
+      "type": "Red"
+    },
+    {
+      "name": "Red 7",
+      "type": "Red"
+    },
+    {
+      "name": "Red 8",
+      "type": "Red"
+    },
+    {
+      "name": "Green 5",
+      "type": "Green"
+    },
+    {
+      "name": "Green 6",
+      "type": "Green"
+    },
+    {
+      "name": "Green 7",
+      "type": "Green"
+    },
+    {
+      "name": "Green 8",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 5",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 6",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 7",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue 8",
+      "type": "Blue"
+    },
+    {
+      "name": "White 5",
+      "type": "White"
+    },
+    {
+      "name": "White 6",
+      "type": "White"
+    },
+    {
+      "name": "White 7",
+      "type": "White"
+    },
+    {
+      "name": "White 8",
+      "type": "White"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 Channel (RGB)",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "4 Channel (RGBW)",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "5 Channel (Dim RGBW)",
+      "totalChannels": 5,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 10,
+      "channels": [
+        "Master dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe",
+        "Effect",
+        "Auto Speed",
+        "Virtual Color wheel",
+        "Dimmer Mode"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 16,
+      "channels": [
+        "Master dimmer",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Strobe",
+        "Effect",
+        "Auto Speed",
+        "Virtual Color wheel",
+        "Dimmer Mode",
+        "ID Function",
+        "ID Address"
+      ]
+    },
+    {
+      "name": "Mode 6",
+      "totalChannels": 24,
+      "channels": [
+        "Master dimmer",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Strobe",
+        "Effect",
+        "Auto Speed",
+        "Virtual Color wheel",
+        "Dimmer Mode",
+        "ID Function",
+        "ID Address"
+      ]
+    },
+    {
+      "name": "24 Channel RGB",
+      "totalChannels": 24,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8"
+      ]
+    },
+    {
+      "name": "Mode 8",
+      "totalChannels": 32,
+      "channels": [
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "White 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "White 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "White 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "White 8"
+      ]
+    },
+    {
+      "name": "Mode 9",
+      "totalChannels": 40,
+      "channels": [
+        "Master dimmer",
+        "Red 1",
+        "Green 1",
+        "Blue 1",
+        "White 1",
+        "Red 2",
+        "Green 2",
+        "Blue 2",
+        "White 2",
+        "Red 3",
+        "Green 3",
+        "Blue 3",
+        "White 3",
+        "Red 4",
+        "Green 4",
+        "Blue 4",
+        "White 4",
+        "Red 5",
+        "Green 5",
+        "Blue 5",
+        "White 5",
+        "Red 6",
+        "Green 6",
+        "Blue 6",
+        "White 6",
+        "Red 7",
+        "Green 7",
+        "Blue 7",
+        "White 7",
+        "Red 8",
+        "Green 8",
+        "Blue 8",
+        "White 8",
+        "Strobe",
+        "Effect",
+        "Auto Speed",
+        "Virtual Color wheel",
+        "Dimmer Mode",
+        "ID Function",
+        "ID Address"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.2",
+      "width": "524",
+      "height": "184",
+      "depth": "108"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "100",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

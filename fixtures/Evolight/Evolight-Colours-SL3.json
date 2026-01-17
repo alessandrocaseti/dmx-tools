@@ -1,0 +1,133 @@
+{
+  "version": "1.2",
+  "manufacturer": "Evolight",
+  "model": "Colours SL3",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Lorenzo Andreani",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed: Fast > Slow"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Shutter",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Shutter Closed"
+        },
+        {
+          "min": "11",
+          "max": "128",
+          "name": "Strobe"
+        },
+        {
+          "min": "129",
+          "max": "150",
+          "name": "Shutter Open"
+        },
+        {
+          "min": "151",
+          "max": "200",
+          "name": "Strobe Random"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "Shutter Open"
+        }
+      ]
+    },
+    {
+      "name": "Special Function (Reset / DMX Record)",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "119",
+          "name": "No function"
+        },
+        {
+          "min": "120",
+          "max": "130",
+          "name": "RESET (After 6 sec.)"
+        },
+        {
+          "min": "131",
+          "max": "250",
+          "name": "No function"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "DMX Record (After 6 sec.)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Speed",
+        "Dimmer",
+        "Shutter",
+        "Special Function (Reset / DMX Record)"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "5500"
+    },
+    "dimensions": {
+      "weight": "2.1",
+      "width": "190",
+      "height": "230",
+      "depth": "145"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "7",
+      "degreesMax": "12"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "350",
+      "tiltMax": "105"
+    },
+    "technical": {
+      "powerConsumption": "20",
+      "dmxConnector": "5-pin"
+    }
+  }
+}

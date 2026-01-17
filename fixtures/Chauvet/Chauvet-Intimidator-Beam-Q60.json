@@ -1,0 +1,521 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Intimidator Beam Q60",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Nathan",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Continuous Pan",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Off"
+        },
+        {
+          "min": "4",
+          "max": "127",
+          "name": "Pan Rotation, Fast to Slow"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Stop"
+        },
+        {
+          "min": "132",
+          "max": "255",
+          "name": "Reverse Pan Rotation, Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Continuous Tilt",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "3",
+          "name": "Off"
+        },
+        {
+          "min": "4",
+          "max": "127",
+          "name": "Tilt Rotation, Fast to Slow"
+        },
+        {
+          "min": "128",
+          "max": "131",
+          "name": "Stop"
+        },
+        {
+          "min": "132",
+          "max": "255",
+          "name": "Reverse Tilt Rotation, Slow to Fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Shutter Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Closed"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Open"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe, Slow to Fast"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse Strobe, Slow to Fast"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe, Slow to Fast"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Open"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Virtual Color Wheel Control",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "CTC\n   \n   \n  "
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Rainbow effect\n   \n   \n  "
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Reverse rainbow effect\n   \n   \n  "
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Continuous\n   \n   \n  "
+        },
+        {
+          "min": "80",
+          "max": "111",
+          "name": "Color bounce"
+        },
+        {
+          "min": "112",
+          "max": "255",
+          "name": "Reserved for future use"
+        }
+      ]
+    },
+    {
+      "name": "Virtual Color Wheel CTC",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "47",
+          "name": "CTC 2000K-2700K"
+        },
+        {
+          "min": "48",
+          "max": "98",
+          "name": "3200K white"
+        },
+        {
+          "min": "99",
+          "max": "149",
+          "name": "4200K white"
+        },
+        {
+          "min": "150",
+          "max": "200",
+          "name": "5600K white"
+        },
+        {
+          "min": "201",
+          "max": "255",
+          "name": "8000K white"
+        }
+      ]
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Control",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No Function"
+        },
+        {
+          "min": "8",
+          "max": "15",
+          "name": "Reset All"
+        },
+        {
+          "min": "16",
+          "max": "23",
+          "name": "Blackout While Pan/Tilt ON (5sec delay)"
+        },
+        {
+          "min": "24",
+          "max": "31",
+          "name": "Blackout While Pan/Tilt OFF (5sec delay)"
+        },
+        {
+          "min": "32",
+          "max": "39",
+          "name": "Sound Active Pan/Tilt ON (5sec delay)"
+        },
+        {
+          "min": "40",
+          "max": "47",
+          "name": "Sound Active Pan/Tilt OFF (5sec delay)"
+        },
+        {
+          "min": "48",
+          "max": "55",
+          "name": "Sound Active Color ON (5sec delay)"
+        },
+        {
+          "min": "56",
+          "max": "63",
+          "name": "Sound Active Color OFF (5sec delay)"
+        },
+        {
+          "min": "64",
+          "max": "71",
+          "name": "Display OFF"
+        },
+        {
+          "min": "72",
+          "max": "79",
+          "name": "Display ON"
+        },
+        {
+          "min": "80",
+          "max": "87",
+          "name": "Fan Speed Auto"
+        },
+        {
+          "min": "88",
+          "max": "95",
+          "name": "Fan Speed Full"
+        },
+        {
+          "min": "96",
+          "max": "103",
+          "name": "Dimmer Speed Linear"
+        },
+        {
+          "min": "104",
+          "max": "111",
+          "name": "Dimmer Speed Slow"
+        },
+        {
+          "min": "112",
+          "max": "119",
+          "name": "Dimmer Speed Medium"
+        },
+        {
+          "min": "120",
+          "max": "127",
+          "name": "Dimmer Speed Fast"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "Blackout on movement"
+        },
+        {
+          "min": "136",
+          "max": "143",
+          "name": "Pan Forward Spin"
+        },
+        {
+          "min": "144",
+          "max": "151",
+          "name": "Pan reverse spin"
+        },
+        {
+          "min": "152",
+          "max": "159",
+          "name": "Tilt forward spin"
+        },
+        {
+          "min": "160",
+          "max": "167",
+          "name": "Tilt reverse spin"
+        },
+        {
+          "min": "168",
+          "max": "175",
+          "name": "Pan & Tilt forward spin"
+        },
+        {
+          "min": "176",
+          "max": "183",
+          "name": "Pan & Tilt reverse spin"
+        },
+        {
+          "min": "184",
+          "max": "191",
+          "name": "Pan forward spin and Tilt reverse spin"
+        },
+        {
+          "min": "192",
+          "max": "199",
+          "name": "Pan reverse spin and Tolt forward spin"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "None"
+        }
+      ]
+    },
+    {
+      "name": "Virtual Color Wheel",
+      "type": "Nothing",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Not active"
+        }
+      ]
+    },
+    {
+      "name": "Virtual Color Wheel CW Rainbow",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Rainbow effect, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Virtual Color Wheel CCW Rainbow",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Reverse rainbow effect, slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Virtual Color Wheel Bounce",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Blackout"
+        },
+        {
+          "min": "1",
+          "max": "1",
+          "name": "Red"
+        },
+        {
+          "min": "2",
+          "max": "2",
+          "name": "Green"
+        },
+        {
+          "min": "3",
+          "max": "3",
+          "name": "Blue"
+        },
+        {
+          "min": "4",
+          "max": "4",
+          "name": "White"
+        },
+        {
+          "min": "5",
+          "max": "46",
+          "name": "R: 0%, G: 0-100%, B: 100%, W: 0%"
+        },
+        {
+          "min": "47",
+          "max": "88",
+          "name": "R: 0%, G: 100%, B: 100%-0%, W: 0%"
+        },
+        {
+          "min": "89",
+          "max": "130",
+          "name": "R: 0-100%, G: 100%, B: 0%, W: 0%"
+        },
+        {
+          "min": "131",
+          "max": "172",
+          "name": "R: 100%, G: 100%-0%, B: 0%, W: 0%"
+        },
+        {
+          "min": "173",
+          "max": "214",
+          "name": "R: 100%, G: 0%, B: 0-100%, W: 0%"
+        },
+        {
+          "min": "215",
+          "max": "255",
+          "name": "R: 100%-0%, G: 0-100%, B: 100%, W: 0%"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Pan fine",
+        "Tilt",
+        "Tilt fine",
+        "Continuous Pan",
+        "Continuous Tilt",
+        "Pan/Tilt Speed",
+        "Shutter Strobe",
+        "Dimmer",
+        "Virtual Color Wheel Control",
+        "Virtual Color Wheel",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Control"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 12,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt Speed",
+        "Shutter Strobe",
+        "Dimmer",
+        "Virtual Color Wheel Control",
+        "Virtual Color Wheel",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Control"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "5.1",
+      "width": "149",
+      "height": "320",
+      "depth": "224"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "3",
+      "degreesMax": "3"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "260"
+    },
+    "technical": {
+      "powerConsumption": "89",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

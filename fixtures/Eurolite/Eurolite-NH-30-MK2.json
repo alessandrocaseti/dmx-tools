@@ -1,0 +1,64 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "NH-30 MK2",
+  "type": "FX Haze",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Peter Goderie",
+  "channels": [
+    {
+      "name": "Fog Output",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No fog output"
+        },
+        {
+          "min": "6",
+          "max": "255",
+          "name": "Fog output volume (0 - 100%)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 1,
+      "channels": [
+        "Fog Output"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "Not specified",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.8",
+      "width": "200",
+      "height": "230",
+      "depth": "370"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "720",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

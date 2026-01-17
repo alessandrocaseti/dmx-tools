@@ -1,0 +1,416 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Accu Roller 250",
+  "type": "Scanner",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Anders Thomsen",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Barrel rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No rotation"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Forward (fast to slow)"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "No rotation"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Backwards rotation (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "White"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Red"
+        },
+        {
+          "min": "40",
+          "max": "59",
+          "name": "Blue"
+        },
+        {
+          "min": "60",
+          "max": "79",
+          "name": "Green"
+        },
+        {
+          "min": "80",
+          "max": "99",
+          "name": "Yellow"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Magenta"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Orange"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Purple"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Pink"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Light blue"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "Rainbow effect"
+        }
+      ]
+    },
+    {
+      "name": "Gobo",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "13",
+          "name": "Spot"
+        },
+        {
+          "min": "14",
+          "max": "27",
+          "name": "Rotating 1"
+        },
+        {
+          "min": "28",
+          "max": "41",
+          "name": "Rotating 2"
+        },
+        {
+          "min": "42",
+          "max": "55",
+          "name": "Rotating 3"
+        },
+        {
+          "min": "56",
+          "max": "69",
+          "name": "Rotating 4"
+        },
+        {
+          "min": "70",
+          "max": "83",
+          "name": "Rotating 5"
+        },
+        {
+          "min": "84",
+          "max": "97",
+          "name": "Rotating 6"
+        },
+        {
+          "min": "98",
+          "max": "115",
+          "name": "Rotating 7"
+        },
+        {
+          "min": "116",
+          "max": "135",
+          "name": "Shake 1"
+        },
+        {
+          "min": "136",
+          "max": "155",
+          "name": "Shake 2"
+        },
+        {
+          "min": "156",
+          "max": "175",
+          "name": "Shake 3"
+        },
+        {
+          "min": "176",
+          "max": "195",
+          "name": "Shake 4"
+        },
+        {
+          "min": "196",
+          "max": "215",
+          "name": "Shake 5"
+        },
+        {
+          "min": "216",
+          "max": "235",
+          "name": "Shake 6"
+        },
+        {
+          "min": "236",
+          "max": "255",
+          "name": "Shake 7"
+        }
+      ]
+    },
+    {
+      "name": "Gobo rotation",
+      "type": "Gobo",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "No rotation"
+        },
+        {
+          "min": "8",
+          "max": "127",
+          "name": "Forwards (fast to slow)"
+        },
+        {
+          "min": "128",
+          "max": "135",
+          "name": "No rotation"
+        },
+        {
+          "min": "136",
+          "max": "255",
+          "name": "Backwards (slow to fast)"
+        }
+      ]
+    },
+    {
+      "name": "Shutter/Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Shutter close"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "Dimmer"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe (slow to fast)"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "Shutter open"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Pulse effect"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "Shutter open"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random strobe (slow to fast)"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "Shutter open"
+        }
+      ]
+    },
+    {
+      "name": "Reset/Internal programs",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "19",
+          "name": "Color change normal"
+        },
+        {
+          "min": "20",
+          "max": "39",
+          "name": "Color change to any position"
+        },
+        {
+          "min": "40",
+          "max": "79",
+          "name": "No rotation"
+        },
+        {
+          "min": "80",
+          "max": "84",
+          "name": "All motor reset"
+        },
+        {
+          "min": "85",
+          "max": "87",
+          "name": "Scan motor reset"
+        },
+        {
+          "min": "88",
+          "max": "90",
+          "name": "Color motor reset"
+        },
+        {
+          "min": "91",
+          "max": "93",
+          "name": "Gobo motor reset"
+        },
+        {
+          "min": "94",
+          "max": "96",
+          "name": "Shutter/dimmer motor reset"
+        },
+        {
+          "min": "97",
+          "max": "99",
+          "name": "No rotation"
+        },
+        {
+          "min": "100",
+          "max": "119",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "120",
+          "max": "139",
+          "name": "Internal progarm 2"
+        },
+        {
+          "min": "140",
+          "max": "159",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "160",
+          "max": "179",
+          "name": "Internal program 4"
+        },
+        {
+          "min": "180",
+          "max": "199",
+          "name": "Internal program 5"
+        },
+        {
+          "min": "200",
+          "max": "219",
+          "name": "Internal program 6"
+        },
+        {
+          "min": "220",
+          "max": "239",
+          "name": "Internal program 7"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound active"
+        }
+      ]
+    },
+    {
+      "name": "Speed of pan/tilt movement",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "225",
+          "name": "Max to min speed"
+        },
+        {
+          "min": "226",
+          "max": "235",
+          "name": "Blackout by movement"
+        },
+        {
+          "min": "236",
+          "max": "245",
+          "name": "Blackout by wheel movement"
+        },
+        {
+          "min": "246",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 8,
+      "channels": [
+        "Pan",
+        "Barrel rotation",
+        "Color",
+        "Gobo",
+        "Gobo rotation",
+        "Shutter/Strobe",
+        "Reset/Internal programs",
+        "Speed of pan/tilt movement"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "MSD 250W",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "13.6",
+      "width": "292",
+      "height": "571",
+      "depth": "229"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Barrel",
+      "panMax": "180",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "390",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

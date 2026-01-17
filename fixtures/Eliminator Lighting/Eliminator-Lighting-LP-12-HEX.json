@@ -1,0 +1,157 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eliminator Lighting",
+  "model": "LP 12 HEX",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Andrew Pavlin",
+  "channels": [
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red Dimmer",
+      "type": "Red"
+    },
+    {
+      "name": "Green Dimmer",
+      "type": "Green"
+    },
+    {
+      "name": "Blue Dimmer",
+      "type": "Blue"
+    },
+    {
+      "name": "White Dimmer",
+      "type": "White"
+    },
+    {
+      "name": "Amber Dimmer",
+      "type": "Amber"
+    },
+    {
+      "name": "UV Dimmer",
+      "type": "UV"
+    },
+    {
+      "name": "Change Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No Function"
+        },
+        {
+          "min": "16",
+          "max": "75",
+          "name": "Jump Change Mode, slow to fast"
+        },
+        {
+          "min": "76",
+          "max": "135",
+          "name": "Pulse Change Mode, slow to fast"
+        },
+        {
+          "min": "136",
+          "max": "195",
+          "name": "Fade Change, slow to fast"
+        },
+        {
+          "min": "196",
+          "max": "255",
+          "name": "Sound Active Pulse Mode"
+        }
+      ]
+    },
+    {
+      "name": "Sound Active Pulse Mode Speed/Sensitivty",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sound Active Pulse Mode Speed/Sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Flash/Strobe speed",
+      "type": "Shutter"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 6,
+      "channels": [
+        "Red Dimmer",
+        "Green Dimmer",
+        "Blue Dimmer",
+        "White Dimmer",
+        "Amber Dimmer",
+        "UV Dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 8,
+      "channels": [
+        "Master Dimmer",
+        "Red Dimmer",
+        "Green Dimmer",
+        "Blue Dimmer",
+        "White Dimmer",
+        "Amber Dimmer",
+        "UV Dimmer",
+        "Flash/Strobe speed"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Master Dimmer",
+        "Red Dimmer",
+        "Green Dimmer",
+        "Blue Dimmer",
+        "White Dimmer",
+        "Amber Dimmer",
+        "UV Dimmer",
+        "Change Mode",
+        "Sound Active Pulse Mode Speed/Sensitivty",
+        "Flash/Strobe speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.5",
+      "width": "280",
+      "height": "68",
+      "depth": "247"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "25",
+      "degreesMax": "25"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "72",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

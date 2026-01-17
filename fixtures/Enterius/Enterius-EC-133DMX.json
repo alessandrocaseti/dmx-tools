@@ -1,0 +1,83 @@
+{
+  "version": "1.2",
+  "manufacturer": "Enterius",
+  "model": "EC-133DMX",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Krzysztof Ratynski",
+  "channels": [
+    {
+      "name": "Channel 1",
+      "type": "Intensity"
+    },
+    {
+      "name": "Channel 2",
+      "type": "Intensity"
+    },
+    {
+      "name": "Channel 3",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red brightness",
+      "type": "Red"
+    },
+    {
+      "name": "Green brightness",
+      "type": "Green"
+    },
+    {
+      "name": "Blue brightness",
+      "type": "Blue"
+    }
+  ],
+  "modes": [
+    {
+      "name": "3 channel dimmer",
+      "totalChannels": 3,
+      "channels": [
+        "Channel 1",
+        "Channel 2",
+        "Channel 3"
+      ]
+    },
+    {
+      "name": "RGB controller",
+      "totalChannels": 3,
+      "channels": [
+        "Red brightness",
+        "Green brightness",
+        "Blue brightness"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "0.1",
+      "width": "87",
+      "height": "35",
+      "depth": "59"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "252",
+      "dmxConnector": "Other"
+    }
+  }
+}

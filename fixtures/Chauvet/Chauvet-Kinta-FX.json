@@ -1,0 +1,431 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "Kinta FX",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Dave Wilson",
+  "channels": [
+    {
+      "name": "Auto Program",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "44",
+          "name": "Beams/Laser/Strobe"
+        },
+        {
+          "min": "45",
+          "max": "79",
+          "name": "Beams/Strobe"
+        },
+        {
+          "min": "80",
+          "max": "114",
+          "name": "Beams/Laser"
+        },
+        {
+          "min": "115",
+          "max": "149",
+          "name": "Laser/Strobe"
+        },
+        {
+          "min": "150",
+          "max": "184",
+          "name": "Beams Only"
+        },
+        {
+          "min": "185",
+          "max": "219",
+          "name": "Strobe Only"
+        },
+        {
+          "min": "220",
+          "max": "255",
+          "name": "Laser Only"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "250",
+          "name": "Auto Program Speed (Slow to Fast)"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "Sound Active Sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "Manual LED Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "20",
+          "name": "Red"
+        },
+        {
+          "min": "21",
+          "max": "35",
+          "name": "Green"
+        },
+        {
+          "min": "36",
+          "max": "50",
+          "name": "Blue"
+        },
+        {
+          "min": "51",
+          "max": "65",
+          "name": "White"
+        },
+        {
+          "min": "66",
+          "max": "80",
+          "name": "Red/Green"
+        },
+        {
+          "min": "81",
+          "max": "95",
+          "name": "Red/Blue"
+        },
+        {
+          "min": "96",
+          "max": "110",
+          "name": "Red/White"
+        },
+        {
+          "min": "111",
+          "max": "125",
+          "name": "Green/Blue"
+        },
+        {
+          "min": "126",
+          "max": "140",
+          "name": "Green/White"
+        },
+        {
+          "min": "141",
+          "max": "155",
+          "name": "Blue/White"
+        },
+        {
+          "min": "156",
+          "max": "170",
+          "name": "Red/Green/Blue"
+        },
+        {
+          "min": "171",
+          "max": "185",
+          "name": "Red/Green/White"
+        },
+        {
+          "min": "186",
+          "max": "200",
+          "name": "Green/Blue/White"
+        },
+        {
+          "min": "201",
+          "max": "215",
+          "name": "Red/Green/White"
+        },
+        {
+          "min": "216",
+          "max": "230",
+          "name": "Automatic 4 Colour Chase"
+        },
+        {
+          "min": "231",
+          "max": "255",
+          "name": "Automatic 7 Colour Chase"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter"
+    },
+    {
+      "name": "Motor",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Indexing"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Pattern Options",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Pattern 1 Speed (Slow - Fast)"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Pattern 2 Speed (Slow - Fast)"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Pattern 3 Speed (Slow - Fast)"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Pattern 4 Speed (Slow - Fast)"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Pattern 5 Speed (Slow - Fast)"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Pattern 6 Speed (Slow - Fast)"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Pattern 7 Speed (Slow - Fast)"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Pattern 8 Speed (Slow - Fast)"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Pattern 9 Speed (Slow - Fast)"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Pattern 10 Speed (Slow - Fast)"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "Pattern 11 Speed (Slow - Fast)"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "Pattern 12 Speed (Slow - Fast)"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "Pattern 13 Speed (Slow - Fast)"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "Pattern 14 Speed (Slow - Fast)"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "Pattern 15 Speed (Slow - Fast)"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "Pattern 16 Speed (Slow - Fast)"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "Pattern 17 Speed (Slow - Fast)"
+        },
+        {
+          "min": "180",
+          "max": "255",
+          "name": "Pattern 18 Speed (Slow - Fast) Solid On"
+        }
+      ]
+    },
+    {
+      "name": "Laser Colours",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Blackout"
+        },
+        {
+          "min": "10",
+          "max": "49",
+          "name": "Red"
+        },
+        {
+          "min": "50",
+          "max": "89",
+          "name": "Green"
+        },
+        {
+          "min": "90",
+          "max": "129",
+          "name": "Red/Green"
+        },
+        {
+          "min": "130",
+          "max": "169",
+          "name": "Red On/Green Strobe"
+        },
+        {
+          "min": "170",
+          "max": "209",
+          "name": "Green On/Red Strobe"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "Red & Green Alternating Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Laser Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "254",
+          "name": "Strobe Speed (Slow - Fast: 0-30Hz)"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Laser Rotation",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotate Clockwise (Fast - Slow)"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotate Anti-Clockwise (Slow - Fast)"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 9,
+      "channels": [
+        "Auto Program",
+        "Program Speed",
+        "Manual LED Colour",
+        "Strobe",
+        "Motor",
+        "Pattern Options",
+        "Laser Colours",
+        "Laser Strobe",
+        "Laser Rotation"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 2,
+      "channels": [
+        "Auto Program",
+        "Program Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.7",
+      "width": "262",
+      "height": "187",
+      "depth": "187"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "55",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

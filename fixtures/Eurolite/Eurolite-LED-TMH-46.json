@@ -1,0 +1,311 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED TMH-46",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jakob Frank",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "249",
+          "name": "Strobe with increasing speed"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Motion Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "44",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "45",
+          "max": "74",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "75",
+          "max": "104",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "105",
+          "max": "128",
+          "name": "Internal program 4"
+        },
+        {
+          "min": "129",
+          "max": "157",
+          "name": "Sound controlled internal program 1"
+        },
+        {
+          "min": "158",
+          "max": "187",
+          "name": "Sound controlled internal program 2"
+        },
+        {
+          "min": "188",
+          "max": "217",
+          "name": "Sound controlled internal program 3"
+        },
+        {
+          "min": "218",
+          "max": "255",
+          "name": "Sound controlled internal program 4"
+        }
+      ]
+    },
+    {
+      "name": "Motion Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Decreasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Color Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No function"
+        },
+        {
+          "min": "1",
+          "max": "7",
+          "name": "Color fade"
+        },
+        {
+          "min": "8",
+          "max": "39",
+          "name": "Internal program 1"
+        },
+        {
+          "min": "40",
+          "max": "72",
+          "name": "Internal program 2"
+        },
+        {
+          "min": "73",
+          "max": "105",
+          "name": "Internal program 3"
+        },
+        {
+          "min": "106",
+          "max": "138",
+          "name": "Internal program 4"
+        },
+        {
+          "min": "139",
+          "max": "140",
+          "name": "Internal program 5"
+        },
+        {
+          "min": "141",
+          "max": "167",
+          "name": "Sound controlled internal program 1"
+        },
+        {
+          "min": "168",
+          "max": "195",
+          "name": "Sound controlled internal program 2"
+        },
+        {
+          "min": "196",
+          "max": "223",
+          "name": "Sound controlled internal program 3"
+        },
+        {
+          "min": "224",
+          "max": "251",
+          "name": "Sound controlled internal program 4"
+        },
+        {
+          "min": "252",
+          "max": "255",
+          "name": "Sound controlled internal program 5"
+        }
+      ]
+    },
+    {
+      "name": "Color Macro Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Increasing speed"
+        }
+      ]
+    },
+    {
+      "name": "Reset",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "249",
+          "name": "No function"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Reset"
+        }
+      ]
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "UV",
+      "type": "UV"
+    },
+    {
+      "name": "Pan/Tilt speed",
+      "type": "Speed"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Motion Macros",
+        "Motion Macro Speed",
+        "Color Macros",
+        "Color Macro Speed",
+        "Reset"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 18,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Pan/Tilt speed",
+        "Dimmer",
+        "Strobe",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Amber",
+        "UV",
+        "Motion Macros",
+        "Motion Macro Speed",
+        "Color Macros",
+        "Color Macro Speed",
+        "Reset"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "1.5",
+      "width": "145",
+      "height": "180",
+      "depth": "140"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "24",
+      "degreesMax": "24"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "220"
+    },
+    "technical": {
+      "powerConsumption": "45",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

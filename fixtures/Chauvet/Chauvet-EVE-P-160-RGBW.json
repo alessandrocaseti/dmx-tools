@@ -1,0 +1,311 @@
+{
+  "version": "1.2",
+  "manufacturer": "Chauvet",
+  "model": "EVE P-160 RGBW",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Max Wheatley",
+  "channels": [
+    {
+      "name": "Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "White",
+      "type": "White"
+    },
+    {
+      "name": "Colour Macros",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Color macros"
+        }
+      ]
+    },
+    {
+      "name": "Colour temperature",
+      "type": "Intensity",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "No function"
+        },
+        {
+          "min": "6",
+          "max": "25",
+          "name": "2800k"
+        },
+        {
+          "min": "26",
+          "max": "50",
+          "name": "3000k"
+        },
+        {
+          "min": "51",
+          "max": "76",
+          "name": "3200k"
+        },
+        {
+          "min": "77",
+          "max": "100",
+          "name": "3500k"
+        },
+        {
+          "min": "101",
+          "max": "125",
+          "name": "4000k"
+        },
+        {
+          "min": "126",
+          "max": "150",
+          "name": "4500k"
+        },
+        {
+          "min": "151",
+          "max": "175",
+          "name": "5000k"
+        },
+        {
+          "min": "176",
+          "max": "200",
+          "name": "5600k"
+        },
+        {
+          "min": "201",
+          "max": "225",
+          "name": "6000k"
+        },
+        {
+          "min": "226",
+          "max": "250",
+          "name": "6500k"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "No function"
+        },
+        {
+          "min": "16",
+          "max": "255",
+          "name": "Strobe, Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Automatic programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "No function"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "0-100%\n   \n  "
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "100-0%\n   \n  "
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "100-0-100%\n   \n  "
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Colour fade\n   \n  "
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "7 colour snap program\n   \n  "
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "18 colour snap program\n   \n  "
+        },
+        {
+          "min": "224",
+          "max": "249",
+          "name": "Sound activated 1\n   \n  "
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Soiund Activated 2\n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Program speed - Slow to fast"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Dimmer speed set for display"
+        },
+        {
+          "min": "52",
+          "max": "101",
+          "name": "Dimmer speed mode off"
+        },
+        {
+          "min": "102",
+          "max": "152",
+          "name": "Dimmer speed mode 1 (fast)"
+        },
+        {
+          "min": "153",
+          "max": "203",
+          "name": "Dimmer speed mode 2 (medium)"
+        },
+        {
+          "min": "204",
+          "max": "255",
+          "name": "Dimmer speed mode 3 (slow)"
+        }
+      ]
+    },
+    {
+      "name": "No function",
+      "type": "Unknown"
+    },
+    {
+      "name": "Sound Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "Sound Sensitivity OFF"
+        },
+        {
+          "min": "11",
+          "max": "255",
+          "name": "Sound Sensitivity, low to high"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 11,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Colour Macros",
+        "Colour temperature",
+        "Strobe",
+        "Automatic programs",
+        "No function",
+        "Dimmer speed"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 6,
+      "channels": [
+        "Dimmer",
+        "Red",
+        "Green",
+        "Blue",
+        "White",
+        "Strobe"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "4880",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.6",
+      "width": "245",
+      "height": "305",
+      "depth": "220"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "23",
+      "degreesMax": "48"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "160",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

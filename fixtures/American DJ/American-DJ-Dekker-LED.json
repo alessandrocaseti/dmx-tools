@@ -1,0 +1,191 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "Dekker LED",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "bobert",
+  "channels": [
+    {
+      "name": "1 Motor Function",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No Rotation"
+        },
+        {
+          "min": "1",
+          "max": "127",
+          "name": "Clockwise Slow-Fast"
+        },
+        {
+          "min": "128",
+          "max": "255",
+          "name": "Counter Clockwise Fast-Slow"
+        }
+      ]
+    },
+    {
+      "name": "2 Red Intensity",
+      "type": "Red"
+    },
+    {
+      "name": "3 Green Intensity",
+      "type": "Green"
+    },
+    {
+      "name": "4 Blue Intensity",
+      "type": "Blue"
+    },
+    {
+      "name": "5 White Intensity",
+      "type": "White"
+    },
+    {
+      "name": "6 Master Intensity",
+      "type": "Unknown"
+    },
+    {
+      "name": "7 Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No Program"
+        },
+        {
+          "min": "1",
+          "max": "26",
+          "name": "4 Color Fade Change"
+        },
+        {
+          "min": "27",
+          "max": "51",
+          "name": "9 Color Fade Change"
+        },
+        {
+          "min": "52",
+          "max": "76",
+          "name": "4 Color Loop Change"
+        },
+        {
+          "min": "77",
+          "max": "101",
+          "name": "9 Color Loop Change"
+        },
+        {
+          "min": "102",
+          "max": "126",
+          "name": "Strobe 1 Dim-Bright"
+        },
+        {
+          "min": "127",
+          "max": "151",
+          "name": "Strobe 2 Bright-Dim"
+        },
+        {
+          "min": "152",
+          "max": "176",
+          "name": "Strobe 3 Dim-Bright-Dim"
+        },
+        {
+          "min": "177",
+          "max": "201",
+          "name": "Strobe 4 W/O Dim Effect"
+        },
+        {
+          "min": "202",
+          "max": "226",
+          "name": "Strobe 5 With 9 Color"
+        },
+        {
+          "min": "227",
+          "max": "254",
+          "name": "Strobe 6 With Gradual Dim"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "All Programs Will Cycle"
+        }
+      ]
+    },
+    {
+      "name": "8 Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "No Program"
+        },
+        {
+          "min": "1",
+          "max": "254",
+          "name": "Slow-Fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "DMX 8CH",
+      "totalChannels": 8,
+      "channels": [
+        "1 Motor Function",
+        "2 Red Intensity",
+        "3 Green Intensity",
+        "4 Blue Intensity",
+        "5 White Intensity",
+        "6 Master Intensity",
+        "7 Programs",
+        "8 Program Speed"
+      ]
+    },
+    {
+      "name": "DMX 2CH",
+      "totalChannels": 2,
+      "channels": [
+        "7 Programs",
+        "8 Program Speed"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.85",
+      "width": "279",
+      "height": "260",
+      "depth": "249"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "0",
+      "degreesMax": "0"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "25",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

@@ -1,0 +1,737 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "COB Cannon Wash ST",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "David Grc",
+  "channels": [
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Red fine",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Green fine",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Blue fine",
+      "type": "Blue"
+    },
+    {
+      "name": "Amber",
+      "type": "Amber"
+    },
+    {
+      "name": "Amber fine",
+      "type": "Amber"
+    },
+    {
+      "name": "Shutter / Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "LED OFF"
+        },
+        {
+          "min": "32",
+          "max": "63",
+          "name": "LED ON"
+        },
+        {
+          "min": "64",
+          "max": "95",
+          "name": "Strobe Effect SLOW to FAST"
+        },
+        {
+          "min": "96",
+          "max": "127",
+          "name": "LED ON"
+        },
+        {
+          "min": "128",
+          "max": "159",
+          "name": "Strobe Pulse SLOW to FAST"
+        },
+        {
+          "min": "160",
+          "max": "191",
+          "name": "LED ON"
+        },
+        {
+          "min": "192",
+          "max": "223",
+          "name": "Random Strobe SLOW to FAST"
+        },
+        {
+          "min": "224",
+          "max": "255",
+          "name": "LED ON"
+        }
+      ]
+    },
+    {
+      "name": "Color macro",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "OFF"
+        },
+        {
+          "min": "1",
+          "max": "4",
+          "name": "Color Macro 1"
+        },
+        {
+          "min": "5",
+          "max": "8",
+          "name": "Color Macro 2"
+        },
+        {
+          "min": "9",
+          "max": "12",
+          "name": "Color Macro 3"
+        },
+        {
+          "min": "13",
+          "max": "16",
+          "name": "Color Macro 4"
+        },
+        {
+          "min": "17",
+          "max": "20",
+          "name": "Color Macro 5"
+        },
+        {
+          "min": "21",
+          "max": "24",
+          "name": "Color Macro 6"
+        },
+        {
+          "min": "25",
+          "max": "28",
+          "name": "Color Macro 7"
+        },
+        {
+          "min": "29",
+          "max": "32",
+          "name": "Color Macro 8"
+        },
+        {
+          "min": "33",
+          "max": "36",
+          "name": "Color Macro 9"
+        },
+        {
+          "min": "37",
+          "max": "40",
+          "name": "Color Macro 10"
+        },
+        {
+          "min": "41",
+          "max": "44",
+          "name": "Color Macro 11"
+        },
+        {
+          "min": "45",
+          "max": "48",
+          "name": "Color Macro 12"
+        },
+        {
+          "min": "49",
+          "max": "52",
+          "name": "Color Macro 13"
+        },
+        {
+          "min": "53",
+          "max": "56",
+          "name": "Color Macro 14"
+        },
+        {
+          "min": "57",
+          "max": "60",
+          "name": "Color Macro 15"
+        },
+        {
+          "min": "61",
+          "max": "64",
+          "name": "Color Macro 16"
+        },
+        {
+          "min": "65",
+          "max": "68",
+          "name": "Color Macro 17"
+        },
+        {
+          "min": "69",
+          "max": "72",
+          "name": "Color Macro 18"
+        },
+        {
+          "min": "73",
+          "max": "76",
+          "name": "Color Macro 19"
+        },
+        {
+          "min": "77",
+          "max": "80",
+          "name": "Color Macro 20"
+        },
+        {
+          "min": "81",
+          "max": "84",
+          "name": "Color Macro 21"
+        },
+        {
+          "min": "85",
+          "max": "88",
+          "name": "Color Macro 22"
+        },
+        {
+          "min": "89",
+          "max": "92",
+          "name": "Color Macro 23"
+        },
+        {
+          "min": "93",
+          "max": "96",
+          "name": "Color Macro 24"
+        },
+        {
+          "min": "97",
+          "max": "100",
+          "name": "Color Macro 25"
+        },
+        {
+          "min": "101",
+          "max": "104",
+          "name": "Color Macro 26"
+        },
+        {
+          "min": "105",
+          "max": "108",
+          "name": "Color Macro 27"
+        },
+        {
+          "min": "109",
+          "max": "112",
+          "name": "Color Macro 28"
+        },
+        {
+          "min": "113",
+          "max": "116",
+          "name": "Color Macro 29"
+        },
+        {
+          "min": "117",
+          "max": "120",
+          "name": "Color Macro 30"
+        },
+        {
+          "min": "121",
+          "max": "124",
+          "name": "Color Macro 31"
+        },
+        {
+          "min": "125",
+          "max": "128",
+          "name": "Color Macro 32"
+        },
+        {
+          "min": "129",
+          "max": "132",
+          "name": "Color Macro 33"
+        },
+        {
+          "min": "133",
+          "max": "136",
+          "name": "Color Macro 34"
+        },
+        {
+          "min": "137",
+          "max": "140",
+          "name": "Color Macro 35"
+        },
+        {
+          "min": "141",
+          "max": "144",
+          "name": "Color Macro 36"
+        },
+        {
+          "min": "145",
+          "max": "148",
+          "name": "Color Macro 37"
+        },
+        {
+          "min": "149",
+          "max": "152",
+          "name": "Color Macro 38"
+        },
+        {
+          "min": "153",
+          "max": "156",
+          "name": "Color Macro 39"
+        },
+        {
+          "min": "157",
+          "max": "160",
+          "name": "Color Macro 40"
+        },
+        {
+          "min": "161",
+          "max": "164",
+          "name": "Color Macro 41"
+        },
+        {
+          "min": "165",
+          "max": "168",
+          "name": "Color Macro 42"
+        },
+        {
+          "min": "169",
+          "max": "172",
+          "name": "Color Macro 43"
+        },
+        {
+          "min": "173",
+          "max": "176",
+          "name": "Color Macro 44"
+        },
+        {
+          "min": "177",
+          "max": "180",
+          "name": "Color Macro 45"
+        },
+        {
+          "min": "181",
+          "max": "184",
+          "name": "Color Macro 46"
+        },
+        {
+          "min": "185",
+          "max": "188",
+          "name": "Color Macro 47"
+        },
+        {
+          "min": "189",
+          "max": "192",
+          "name": "Color Macro 48"
+        },
+        {
+          "min": "193",
+          "max": "196",
+          "name": "Color Macro 49"
+        },
+        {
+          "min": "197",
+          "max": "200",
+          "name": "Color Macro 50"
+        },
+        {
+          "min": "201",
+          "max": "204",
+          "name": "Color Macro 51"
+        },
+        {
+          "min": "205",
+          "max": "208",
+          "name": "Color Macro 52"
+        },
+        {
+          "min": "209",
+          "max": "212",
+          "name": "Color Macro 53"
+        },
+        {
+          "min": "213",
+          "max": "216",
+          "name": "Color Macro 54"
+        },
+        {
+          "min": "217",
+          "max": "220",
+          "name": "Color Macro 55"
+        },
+        {
+          "min": "221",
+          "max": "224",
+          "name": "Color Macro 56"
+        },
+        {
+          "min": "225",
+          "max": "228",
+          "name": "Color Macro 57"
+        },
+        {
+          "min": "229",
+          "max": "232",
+          "name": "Color Macro 58"
+        },
+        {
+          "min": "233",
+          "max": "236",
+          "name": "Color Macro 59"
+        },
+        {
+          "min": "237",
+          "max": "240",
+          "name": "Color Macro 60"
+        },
+        {
+          "min": "241",
+          "max": "244",
+          "name": "Color Macro 61"
+        },
+        {
+          "min": "245",
+          "max": "248",
+          "name": "Color Macro 62"
+        },
+        {
+          "min": "249",
+          "max": "252",
+          "name": "Color Macro 63"
+        },
+        {
+          "min": "253",
+          "max": "255",
+          "name": "Color Macro 64"
+        }
+      ]
+    },
+    {
+      "name": "Master dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Master dimmer fine",
+      "type": "Intensity"
+    },
+    {
+      "name": "Dimming Modes",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theater"
+        },
+        {
+          "min": "101",
+          "max": "120",
+          "name": "Stage 2"
+        },
+        {
+          "min": "121",
+          "max": "255",
+          "name": "Default to unit setting"
+        }
+      ]
+    },
+    {
+      "name": "Program Selection Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "51",
+          "name": "Standard Dim"
+        },
+        {
+          "min": "52",
+          "max": "102",
+          "name": "Color Macro"
+        },
+        {
+          "min": "103",
+          "max": "153",
+          "name": "Color Jump"
+        },
+        {
+          "min": "154",
+          "max": "204",
+          "name": "Color Dream"
+        },
+        {
+          "min": "205",
+          "max": "255",
+          "name": "Sound Active"
+        }
+      ]
+    },
+    {
+      "name": "Color Jump/Color Dream/Sound Active",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Color Jump/Color Dream/Sound Active 1"
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Color Jump/Color Dream/Sound Active 2"
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Color Jump/Color Dream/Sound Active 3"
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Color Jump/Color Dream/Sound Active 4"
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Color Jump/Color Dream/Sound Active 5"
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Color Jump/Color Dream/Sound Active 6"
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Color Jump/Color Dream/Sound Active 7"
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Color Jump/Color Dream/Sound Active 8"
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "Color Jump/Color Dream/Sound Active 9"
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Color Jump/Color Dream/Sound Active 10"
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Color Jump/Color Dream/Sound Active 11"
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Color Jump/Color Dream/Sound Active 12"
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Color Jump/Color Dream/Sound Active 13"
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Color Jump/Color Dream/Sound Active 14"
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Color Jump/Color Dream/Sound Active 15"
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Color Jump/Color Dream/Sound Active 16"
+        }
+      ]
+    },
+    {
+      "name": "Speed / Sensitivity",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "31",
+          "name": "Sound mode Sensitivity OFF / Color modes Speed SLOW to FAST"
+        },
+        {
+          "min": "32",
+          "max": "255",
+          "name": "Sound mode Sensitivity HIGH to LOW / Color modes Speed SLOW to FAST"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Color macro",
+        "Shutter / Strobe",
+        "Master dimmer"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 6,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Master dimmer",
+        "Master dimmer fine"
+      ]
+    },
+    {
+      "name": "Mode 4",
+      "totalChannels": 7,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Shutter / Strobe",
+        "Master dimmer",
+        "Master dimmer fine"
+      ]
+    },
+    {
+      "name": "Mode 5",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Shutter / Strobe",
+        "Master dimmer",
+        "Master dimmer fine",
+        "Dimming Modes"
+      ]
+    },
+    {
+      "name": "8A channel",
+      "totalChannels": 8,
+      "channels": [
+        "Red",
+        "Red fine",
+        "Green",
+        "Green fine",
+        "Blue",
+        "Blue fine",
+        "Amber",
+        "Amber fine"
+      ]
+    },
+    {
+      "name": "Mode 7",
+      "totalChannels": 10,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Shutter / Strobe",
+        "Master dimmer",
+        "Master dimmer fine",
+        "Program Selection Mode",
+        "Color Jump/Color Dream/Sound Active",
+        "Speed / Sensitivity"
+      ]
+    },
+    {
+      "name": "Mode 8",
+      "totalChannels": 11,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue",
+        "Amber",
+        "Shutter / Strobe",
+        "Master dimmer",
+        "Master dimmer fine",
+        "Program Selection Mode",
+        "Color Jump/Color Dream/Sound Active",
+        "Speed / Sensitivity",
+        "Dimming Modes"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "3",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "4.1",
+      "width": "190",
+      "height": "190",
+      "depth": "218"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "80"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "148",
+      "dmxConnector": "3-pin and 5-pin"
+    }
+  }
+}

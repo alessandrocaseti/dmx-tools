@@ -1,0 +1,408 @@
+{
+  "version": "1.2",
+  "manufacturer": "American DJ",
+  "model": "XS 400",
+  "type": "Moving Head",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jared",
+  "channels": [
+    {
+      "name": "Pan",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt",
+      "type": "Tilt"
+    },
+    {
+      "name": "Tilt Continuous Rotation",
+      "type": "Tilt",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "55",
+          "name": "No function"
+        },
+        {
+          "min": "56",
+          "max": "127",
+          "name": "Clockwise Rotation"
+        },
+        {
+          "min": "128",
+          "max": "199",
+          "name": "Counter-Clockwise Rotation"
+        },
+        {
+          "min": "200",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Tilt Continuous Rotation Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Red LED",
+      "type": "Red"
+    },
+    {
+      "name": "Green LED",
+      "type": "Green"
+    },
+    {
+      "name": "Blue LED",
+      "type": "Blue"
+    },
+    {
+      "name": "White LED",
+      "type": "White"
+    },
+    {
+      "name": "Color Macros & Effects",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "10",
+          "name": "No function"
+        },
+        {
+          "min": "11",
+          "max": "20",
+          "name": "Red"
+        },
+        {
+          "min": "21",
+          "max": "30",
+          "name": "Green"
+        },
+        {
+          "min": "31",
+          "max": "40",
+          "name": "Red & Green"
+        },
+        {
+          "min": "41",
+          "max": "50",
+          "name": "Blue"
+        },
+        {
+          "min": "51",
+          "max": "60",
+          "name": "Red & Blue"
+        },
+        {
+          "min": "61",
+          "max": "70",
+          "name": "Green & Blue"
+        },
+        {
+          "min": "71",
+          "max": "80",
+          "name": "Red & Green & Blue"
+        },
+        {
+          "min": "81",
+          "max": "123",
+          "name": "Single Color Change Slow - Fast"
+        },
+        {
+          "min": "124",
+          "max": "166",
+          "name": "Color Mix Slow - Fast"
+        },
+        {
+          "min": "167",
+          "max": "209",
+          "name": "Color Fade Slow - Fast"
+        },
+        {
+          "min": "210",
+          "max": "249",
+          "name": "Color Change Slow - Fast"
+        },
+        {
+          "min": "250",
+          "max": "255",
+          "name": "Sound Active Color Effect"
+        }
+      ]
+    },
+    {
+      "name": "Strobing",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "7",
+          "name": "Blackout"
+        },
+        {
+          "min": "8",
+          "max": "139",
+          "name": "Strobing Slow - Fast"
+        },
+        {
+          "min": "140",
+          "max": "189",
+          "name": "Slow open - Fast close"
+        },
+        {
+          "min": "190",
+          "max": "231",
+          "name": "Fast Open - Slow Close"
+        },
+        {
+          "min": "232",
+          "max": "255",
+          "name": "Random Strobe"
+        }
+      ]
+    },
+    {
+      "name": "Master Dimmer",
+      "type": "Intensity"
+    },
+    {
+      "name": "Programs",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "15",
+          "name": "Nothing"
+        },
+        {
+          "min": "16",
+          "max": "40",
+          "name": "Program 1"
+        },
+        {
+          "min": "41",
+          "max": "65",
+          "name": "Program 2"
+        },
+        {
+          "min": "66",
+          "max": "90",
+          "name": "Program 3"
+        },
+        {
+          "min": "91",
+          "max": "115",
+          "name": "Program 4"
+        },
+        {
+          "min": "116",
+          "max": "140",
+          "name": "Program 5"
+        },
+        {
+          "min": "141",
+          "max": "165",
+          "name": "Program 6"
+        },
+        {
+          "min": "166",
+          "max": "190",
+          "name": "Program 7"
+        },
+        {
+          "min": "191",
+          "max": "215",
+          "name": "Program 8"
+        },
+        {
+          "min": "216",
+          "max": "240",
+          "name": "Random Program Playing 5 Times Each"
+        },
+        {
+          "min": "241",
+          "max": "255",
+          "name": "Random Program Playing 2 Mins. Each"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Slow - Fast"
+        }
+      ]
+    },
+    {
+      "name": "Pan/Tilt Speed",
+      "type": "Speed"
+    },
+    {
+      "name": "Special Functions",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "69",
+          "name": "No function"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Blackout With Pan/Tilt Movement"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "No function"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Blackout with RGBW Value Changes"
+        },
+        {
+          "min": "100",
+          "max": "199",
+          "name": "No function"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "Reset All"
+        },
+        {
+          "min": "210",
+          "max": "255",
+          "name": "No function"
+        }
+      ]
+    },
+    {
+      "name": "Dimmer Mode",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "20",
+          "name": "Standard"
+        },
+        {
+          "min": "21",
+          "max": "40",
+          "name": "Stage"
+        },
+        {
+          "min": "41",
+          "max": "60",
+          "name": "TV"
+        },
+        {
+          "min": "61",
+          "max": "80",
+          "name": "Architectural"
+        },
+        {
+          "min": "81",
+          "max": "100",
+          "name": "Theatre"
+        },
+        {
+          "min": "101",
+          "max": "255",
+          "name": "Default Dimmer Setting"
+        }
+      ]
+    },
+    {
+      "name": "Pan Fine",
+      "type": "Pan"
+    },
+    {
+      "name": "Tilt Fine",
+      "type": "Tilt"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 16,
+      "channels": [
+        "Pan",
+        "Tilt",
+        "Tilt Continuous Rotation",
+        "Tilt Continuous Rotation Speed",
+        "Red LED",
+        "Green LED",
+        "Blue LED",
+        "White LED",
+        "Color Macros & Effects",
+        "Strobing",
+        "Master Dimmer",
+        "Programs",
+        "Program Speed",
+        "Pan/Tilt Speed",
+        "Special Functions",
+        "Dimmer Mode"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 18,
+      "channels": [
+        "Pan",
+        "Pan Fine",
+        "Tilt",
+        "Tilt Fine",
+        "Tilt Continuous Rotation",
+        "Tilt Continuous Rotation Speed",
+        "Red LED",
+        "Green LED",
+        "Blue LED",
+        "White LED",
+        "Color Macros & Effects",
+        "Strobing",
+        "Master Dimmer",
+        "Programs",
+        "Program Speed",
+        "Pan/Tilt Speed",
+        "Special Functions",
+        "Dimmer Mode"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "6",
+      "width": "169",
+      "height": "284",
+      "depth": "123"
+    },
+    "lens": {
+      "name": "Fresnel",
+      "degreesMin": "5",
+      "degreesMax": "5"
+    },
+    "focus": {
+      "type": "Head",
+      "panMax": "540",
+      "tiltMax": "999"
+    },
+    "technical": {
+      "powerConsumption": "40",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

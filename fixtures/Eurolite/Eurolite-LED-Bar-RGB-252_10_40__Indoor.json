@@ -1,0 +1,280 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED Bar RGB 252/10 40° Indoor",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jannis Achstetter",
+  "channels": [
+    {
+      "name": "Mode",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "0",
+          "name": "Black out"
+        },
+        {
+          "min": "1",
+          "max": "15",
+          "name": "Dimmer 1\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n  "
+        },
+        {
+          "min": "16",
+          "max": "31",
+          "name": "Dimmer 2\n   \n   \n   \n   \n   \n  "
+        },
+        {
+          "min": "32",
+          "max": "47",
+          "name": "Red\n   \n  "
+        },
+        {
+          "min": "48",
+          "max": "63",
+          "name": "Green\n   \n  "
+        },
+        {
+          "min": "64",
+          "max": "79",
+          "name": "Blue\n   \n  "
+        },
+        {
+          "min": "80",
+          "max": "95",
+          "name": "Purple\n   \n  "
+        },
+        {
+          "min": "96",
+          "max": "111",
+          "name": "Yellow\n   \n  "
+        },
+        {
+          "min": "112",
+          "max": "127",
+          "name": "Cyan\n   \n  "
+        },
+        {
+          "min": "128",
+          "max": "143",
+          "name": "White\n   \n  "
+        },
+        {
+          "min": "144",
+          "max": "159",
+          "name": "Color change\n   \n   \n  "
+        },
+        {
+          "min": "160",
+          "max": "175",
+          "name": "Color flow\n   \n   \n  "
+        },
+        {
+          "min": "176",
+          "max": "191",
+          "name": "Color dream\n   \n   \n  "
+        },
+        {
+          "min": "192",
+          "max": "207",
+          "name": "Multi flow\n   \n   \n  "
+        },
+        {
+          "min": "208",
+          "max": "223",
+          "name": "Dream flow\n   \n   \n   \n  "
+        },
+        {
+          "min": "224",
+          "max": "239",
+          "name": "Two color flow\n   \n   \n   \n   \n  "
+        },
+        {
+          "min": "240",
+          "max": "255",
+          "name": "Sound activity\n   \n  "
+        }
+      ]
+    },
+    {
+      "name": "All dimm",
+      "type": "Unknown"
+    },
+    {
+      "name": "Flash",
+      "type": "Unknown"
+    },
+    {
+      "name": "Red 1",
+      "type": "Red"
+    },
+    {
+      "name": "Green 1",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 1",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 2",
+      "type": "Red"
+    },
+    {
+      "name": "Green 2",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 2",
+      "type": "Blue"
+    },
+    {
+      "name": "Red 3",
+      "type": "Red"
+    },
+    {
+      "name": "Green 3",
+      "type": "Green"
+    },
+    {
+      "name": "Blue 3",
+      "type": "Blue"
+    },
+    {
+      "name": "No function 2",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function 3",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function 4",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function 5",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function 6",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function 7",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function 8",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function 9",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function 10",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function 11",
+      "type": "Unknown"
+    },
+    {
+      "name": "No function 12",
+      "type": "Unknown"
+    },
+    {
+      "name": "Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Speed"
+        }
+      ]
+    },
+    {
+      "name": "Sensitivity",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Sound sensitivity"
+        }
+      ]
+    },
+    {
+      "name": "All Red",
+      "type": "Red"
+    },
+    {
+      "name": "All Green",
+      "type": "Green"
+    },
+    {
+      "name": "All Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Select color",
+      "type": "Color"
+    },
+    {
+      "name": "Select color 2",
+      "type": "Color"
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 12,
+      "channels": [
+        "Mode",
+        "No function 2",
+        "No function 3",
+        "No function 4",
+        "No function 5",
+        "No function 6",
+        "No function 7",
+        "No function 8",
+        "No function 9",
+        "No function 10",
+        "No function 11",
+        "No function 12"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "4500"
+    },
+    "dimensions": {
+      "weight": "2.5",
+      "width": "1070",
+      "height": "90",
+      "depth": "65"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "40",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "50",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

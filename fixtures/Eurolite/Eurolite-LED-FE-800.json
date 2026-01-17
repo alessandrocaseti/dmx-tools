@@ -1,0 +1,220 @@
+{
+  "version": "1.2",
+  "manufacturer": "Eurolite",
+  "model": "LED FE-800",
+  "type": "Other",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Clausi4711",
+  "channels": [
+    {
+      "name": "Colour",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "5",
+          "name": "Blackout"
+        },
+        {
+          "min": "6",
+          "max": "10",
+          "name": "Red"
+        },
+        {
+          "min": "11",
+          "max": "15",
+          "name": "Green"
+        },
+        {
+          "min": "16",
+          "max": "21",
+          "name": "Blue"
+        },
+        {
+          "min": "22",
+          "max": "27",
+          "name": "White"
+        },
+        {
+          "min": "28",
+          "max": "33",
+          "name": "Amber"
+        },
+        {
+          "min": "34",
+          "max": "39",
+          "name": "Green+Blue"
+        },
+        {
+          "min": "40",
+          "max": "45",
+          "name": "Red+Blue"
+        },
+        {
+          "min": "46",
+          "max": "51",
+          "name": "Red+Green"
+        },
+        {
+          "min": "52",
+          "max": "57",
+          "name": "Red+White"
+        },
+        {
+          "min": "58",
+          "max": "63",
+          "name": "Red+Amber"
+        },
+        {
+          "min": "64",
+          "max": "69",
+          "name": "Green+White"
+        },
+        {
+          "min": "70",
+          "max": "75",
+          "name": "Green+Amber"
+        },
+        {
+          "min": "76",
+          "max": "81",
+          "name": "Blue+White"
+        },
+        {
+          "min": "82",
+          "max": "87",
+          "name": "Blue+Amber"
+        },
+        {
+          "min": "88",
+          "max": "93",
+          "name": "All LED ON"
+        },
+        {
+          "min": "94",
+          "max": "123",
+          "name": "Program with one Colour"
+        },
+        {
+          "min": "124",
+          "max": "185",
+          "name": "Program with two Colour"
+        },
+        {
+          "min": "186",
+          "max": "218",
+          "name": "fast auto Programs"
+        },
+        {
+          "min": "219",
+          "max": "250",
+          "name": "slow auto Programs"
+        },
+        {
+          "min": "251",
+          "max": "255",
+          "name": "music controlled"
+        }
+      ]
+    },
+    {
+      "name": "Program Speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Auto Program Speed Slow->Fast"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "Off"
+        },
+        {
+          "min": "10",
+          "max": "254",
+          "name": "Flash Speed Slow->Fast"
+        },
+        {
+          "min": "255",
+          "max": "255",
+          "name": "Flash, music-controlled"
+        }
+      ]
+    },
+    {
+      "name": "Rotation",
+      "type": "Effect",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "4",
+          "name": "Stop"
+        },
+        {
+          "min": "5",
+          "max": "127",
+          "name": "Rotoation Clockwise Slow > Fast"
+        },
+        {
+          "min": "128",
+          "max": "133",
+          "name": "Stop"
+        },
+        {
+          "min": "134",
+          "max": "255",
+          "name": "Rotation Counter-Clockwise Slow->Fast"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 4,
+      "channels": [
+        "Colour",
+        "Program Speed",
+        "Strobe",
+        "Rotation"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "3.5",
+      "width": "320",
+      "height": "310",
+      "depth": "175"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "140",
+      "degreesMax": "140"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "25",
+      "dmxConnector": "3-pin"
+    }
+  }
+}

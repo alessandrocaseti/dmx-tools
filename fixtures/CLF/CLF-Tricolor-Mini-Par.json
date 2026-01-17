@@ -1,0 +1,278 @@
+{
+  "version": "1.2",
+  "manufacturer": "CLF",
+  "model": "Tricolor Mini Par",
+  "type": "Par",
+  "image": "",
+  "productPage": "",
+  "manual": "",
+  "author": "Jaron Blazer",
+  "channels": [
+    {
+      "name": "Dimming",
+      "type": "Intensity"
+    },
+    {
+      "name": "Red",
+      "type": "Red"
+    },
+    {
+      "name": "Green",
+      "type": "Green"
+    },
+    {
+      "name": "Blue",
+      "type": "Blue"
+    },
+    {
+      "name": "Macro color control",
+      "type": "Color",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "255",
+          "name": "Macro color control"
+        }
+      ]
+    },
+    {
+      "name": "Strobe",
+      "type": "Shutter",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Strobe (0-20Hz)"
+        }
+      ]
+    },
+    {
+      "name": "Auto & Custom program",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "9",
+          "name": "No function"
+        },
+        {
+          "min": "10",
+          "max": "19",
+          "name": "Out1 AUTO1"
+        },
+        {
+          "min": "20",
+          "max": "29",
+          "name": "Out2 AUTO2"
+        },
+        {
+          "min": "30",
+          "max": "39",
+          "name": "Out3 AUTO3"
+        },
+        {
+          "min": "40",
+          "max": "49",
+          "name": "Out4 AUTO4"
+        },
+        {
+          "min": "50",
+          "max": "59",
+          "name": "Out5 AUTO5"
+        },
+        {
+          "min": "60",
+          "max": "69",
+          "name": "Out6 AUTO6"
+        },
+        {
+          "min": "70",
+          "max": "79",
+          "name": "Out7 AUTO7"
+        },
+        {
+          "min": "80",
+          "max": "89",
+          "name": "Out8 AUTO8"
+        },
+        {
+          "min": "90",
+          "max": "99",
+          "name": "Out9 AUTO9"
+        },
+        {
+          "min": "100",
+          "max": "109",
+          "name": "Out10 AUTO10"
+        },
+        {
+          "min": "110",
+          "max": "119",
+          "name": "cust1 custom program1"
+        },
+        {
+          "min": "120",
+          "max": "129",
+          "name": "cust2 custom program2"
+        },
+        {
+          "min": "130",
+          "max": "139",
+          "name": "cust3 custom program3"
+        },
+        {
+          "min": "140",
+          "max": "149",
+          "name": "cust4 custom program4"
+        },
+        {
+          "min": "150",
+          "max": "159",
+          "name": "cust5 custom program5"
+        },
+        {
+          "min": "160",
+          "max": "169",
+          "name": "cust6 custom program6"
+        },
+        {
+          "min": "170",
+          "max": "179",
+          "name": "cust7 custom program7"
+        },
+        {
+          "min": "180",
+          "max": "189",
+          "name": "cust8 custom program8"
+        },
+        {
+          "min": "190",
+          "max": "199",
+          "name": "cust9 custom program9"
+        },
+        {
+          "min": "200",
+          "max": "209",
+          "name": "cust10 custom program10"
+        },
+        {
+          "min": "210",
+          "max": "219",
+          "name": "choose 01 program of sound controlling"
+        },
+        {
+          "min": "220",
+          "max": "229",
+          "name": "choose 02 program of sound controlling"
+        },
+        {
+          "min": "230",
+          "max": "255",
+          "name": "choose 03 program of sound controlling"
+        }
+      ]
+    },
+    {
+      "name": "Auto speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "0-100% (only when using ch. 7)"
+        }
+      ]
+    },
+    {
+      "name": "Dimming speed",
+      "type": "Speed",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "Dimming speed"
+        }
+      ]
+    },
+    {
+      "name": "ID",
+      "type": "Maintenance",
+      "capabilities": [
+        {
+          "min": "0",
+          "max": "255",
+          "name": "ID address selection"
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "name": "Mode 1",
+      "totalChannels": 3,
+      "channels": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 2",
+      "totalChannels": 4,
+      "channels": [
+        "Dimming",
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "name": "Mode 3",
+      "totalChannels": 10,
+      "channels": [
+        "Dimming",
+        "Red",
+        "Green",
+        "Blue",
+        "Macro color control",
+        "Strobe",
+        "Auto & Custom program",
+        "Auto speed",
+        "Dimming speed",
+        "ID"
+      ]
+    }
+  ],
+  "physical": {
+    "bulb": {
+      "type": "LED",
+      "lumens": "0",
+      "colourTemperature": "0"
+    },
+    "dimensions": {
+      "weight": "2",
+      "width": "200",
+      "height": "240",
+      "depth": "178"
+    },
+    "lens": {
+      "name": "Other",
+      "degreesMin": "20",
+      "degreesMax": "40"
+    },
+    "focus": {
+      "type": "Fixed",
+      "panMax": "0",
+      "tiltMax": "0"
+    },
+    "technical": {
+      "powerConsumption": "35",
+      "dmxConnector": "3-pin"
+    }
+  }
+}
