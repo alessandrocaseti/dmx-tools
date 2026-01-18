@@ -69,7 +69,7 @@
 [] CMD Commands / status messages
 [x] Powered by info text
 [] Fixture header infos (patch, version, qxf author, website, manual)
-[] QXF converter 1.2
+[x] QXF converter 1.2
 [] Convert all QLC+ 5.1.0 fixtures to database version 1.2
 [] Add fixture to favorites
 

@@ -366,72 +366,17 @@ document.addEventListener("DOMContentLoaded", function()
                         case 'Shutter': currentIcon = ''; break;
                         case 'Prism': currentIcon = ''; break;
                         case 'Beam': currentIcon = ''; break;
-                        case 'Red':
-                        {
-                            currentIcon = '';
-                            iconColor = 'red';
-                            break;
-                        }
-                        case 'Green':
-                        {
-                            currentIcon = '';
-                            iconColor = 'lime';
-                            break;
-                        }
-                        case 'Blue':
-                        {
-                            currentIcon = '';
-                            iconColor = 'blue';
-                            break;
-                        }
-                        case 'White':
-                        {
-                            currentIcon = '';
-                            iconColor = 'white';
-                            break;
-                        }
-                        case 'Amber':
-                        {
-                            currentIcon = '';
-                            iconColor = 'darkorange';
-                            break;
-                        }
-                        case 'UV':
-                        {
-                            currentIcon = '';
-                            iconColor = 'indigo';
-                            break;
-                        }
-                        case 'Indigo':
-                        {
-                            currentIcon = '';
-                            iconColor = 'indigo';
-                            break;
-                        }
-                        case 'Lime':
-                        {
-                            currentIcon = '';
-                            iconColor = 'palegreen';
-                            break;
-                        }
-                        case 'Cyan':
-                        {
-                            currentIcon = '';
-                            iconColor = 'cyan';
-                            break;
-                        }
-                        case 'Magenta':
-                        {
-                            currentIcon = '';
-                            iconColor = 'magenta';
-                            break;
-                        }
-                        case 'Yellow':
-                        {
-                            currentIcon = '';
-                            iconColor = 'yellow';
-                            break;
-                        }
+                        case 'Red': { currentIcon = ''; iconColor = 'red'; break; }
+                        case 'Green': { currentIcon = ''; iconColor = 'lime'; break; }
+                        case 'Blue': { currentIcon = ''; iconColor = 'blue'; break; }
+                        case 'White': { currentIcon = ''; iconColor = 'white'; break; }
+                        case 'Amber': { currentIcon = ''; iconColor = 'darkorange'; break; }
+                        case 'UV': { currentIcon = ''; iconColor = 'indigo'; break; }
+                        case 'Indigo': { currentIcon = ''; iconColor = 'indigo'; break; }
+                        case 'Lime': { currentIcon = ''; iconColor = 'palegreen'; break; }
+                        case 'Cyan': { currentIcon = ''; iconColor = 'cyan'; break; }
+                        case 'Magenta': { currentIcon = ''; iconColor = 'magenta'; break; }
+                        case 'Yellow': { currentIcon = ''; iconColor = 'yellow'; break; }
                         default : currentIcon = ''; break;
                     }
                     channelsHTML += `
