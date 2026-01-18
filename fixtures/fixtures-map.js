@@ -35,7 +35,7 @@ const fixtureFolders =
     "Color Imagination",
     "ColorKey",
     "Contest",
-    "Dia",
+    "Dia Lighting",
     "DNA",
     "DTS",
     "Dune Lighting",
@@ -787,7 +787,7 @@ const folderFiles =
         "Contest-irLED64-18x10FIVE.json",
         "Contest-LedColor.json"
     ],
-    "Dia":
+    "Dia Lighting":
     [
         "Dia-Lighting-Diapro-Spot-LED-300.json"
     ],
