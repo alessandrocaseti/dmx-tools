@@ -67,6 +67,89 @@ function editFixture()
     };
 }
 
+function addToFavorites()
+{
+    setCmdMessage('Fixture added to favorites.', 'ADD TO LIST');
+    //
+}
+
+function getFavorites()
+{
+    try {
+        const raw = localStorage.getItem('dmx_favorites');
+        return raw ? JSON.parse(raw) : [];
+    } catch (e) { return []; }
+}
+
+function saveFavorites(list)
+{
+    try { localStorage.setItem('dmx_favorites', JSON.stringify(list)); } catch (e) { }
+}
+
+function isFavorite(folder, file)
+{
+    const favs = getFavorites();
+    return favs.some(f => f.folder === folder && f.file === file);
+}
+
+function addToFavorites()
+{
+    if (!currentFolder || !currentFile)
+    {
+        setCmdMessage('No fixture selected to add to favorites.', 'ERROR');
+        return;
+    }
+
+    const folder = currentFolder;
+    const file = currentFile;
+    const favs = getFavorites();
+
+    if (favs.some(f => f.folder === folder && f.file === file))
+    {
+        // REMOVE from favorites:
+        const remaining = favs.filter(f => !(f.folder === folder && f.file === file));
+        saveFavorites(remaining);
+        setCmdMessage('Fixture removed from favorites.', 'FAVORITE');
+        try 
+        {
+            const favBtn = document.querySelector('.hero-card[data-action="favorite"]');
+            if (favBtn) 
+            {
+                favBtn.classList.remove('active');
+                favBtn.classList.remove('hero-card-on');
+                favBtn.setAttribute('aria-pressed','false');
+                const title = favBtn.querySelector('.hero-card-title');
+                if (title) { title.textContent = 'Add to favorites'; }
+            }
+        } catch (e) { }
+
+        return;
+    }
+
+    const entry = { folder, file, addedAt: (new Date()).toISOString() };
+    favs.push(entry);
+    saveFavorites(favs);
+    try 
+    {
+        const favBtn = document.querySelector('.hero-card[data-action="favorite"]');
+        if (favBtn) 
+        {
+            favBtn.classList.remove('active');
+            favBtn.classList.add('hero-card-on');
+            favBtn.setAttribute('aria-pressed','false');
+            const title = favBtn.querySelector('.hero-card-title');
+            if (title) { title.textContent = 'Added to favorites'; }
+        }
+    } catch (e) { }
+    setCmdMessage('Fixture added to favorites.', 'FAVORITE');
+
+    // update favorite button state if present
+    try {
+        const favBtn = document.querySelector('.hero-card[data-action="favorite"]');
+        if (favBtn) { favBtn.classList.add('active'); favBtn.setAttribute('aria-pressed','true'); }
+    } catch (e) { }
+}
+
 function getFixtureName(folder, file)
 {
     let displayName = file.replace('.json', '');
@@ -341,11 +424,15 @@ document.addEventListener("DOMContentLoaded", function()
             detailsDiv.className = "fixture-details";
             let author = data.author;
             let fxtversion = data.version;
+
+            let favText = 'Add to favorites';
+            let favCard = 'hero-card';
+            if(isFavorite(folder, file)) { favText = "Added to favorites"; favCard = 'hero-card hero-card-on'; }
             let cardsHTML = `
                 <div class="hero-cards">
-                    <button class="hero-card">
+                    <button class="${favCard}" data-action="favorite" onClick="addToFavorites();" aria-pressed="false">
                         <span class="hero-card-icon"></span>
-                        <span class="hero-card-title">Add to favorites</span>
+                        <span class="hero-card-title">${favText}</span>
                     </button>
                     <button class="hero-card">
                         <span class="hero-card-icon"></span>

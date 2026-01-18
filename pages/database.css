@@ -409,9 +409,13 @@
     cursor: pointer;
     flex: 1 1 0;
     min-width: 120px;
-    transition: all 0.3s ease, transform 120ms ease, box-shadow 120ms ease;
+    transition: all 0.3s ease, transform 120ms ease, box-shadow 120ms ease, border .6s ease;
     justify-content: center;
     text-align: center;
+}
+
+.hero-card-on{
+    border: 1px solid var(--colore-giallo);
 }
 .hero-card:hover {
     transform: translateY(-4px);
