@@ -339,6 +339,32 @@ document.addEventListener("DOMContentLoaded", function()
 
             const detailsDiv = document.createElement("div");
             detailsDiv.className = "fixture-details";
+            let author = data.author;
+            let fxtversion = data.version;
+            let cardsHTML = `
+                <div class="hero-cards">
+                    <button class="hero-card">
+                        <span class="hero-card-icon"></span>
+                        <span class="hero-card-title">Add to favorites</span>
+                    </button>
+                    <button class="hero-card">
+                        <span class="hero-card-icon"></span>
+                        <span class="hero-card-title">Add to patch list</span>
+                    </button>
+                    <button class="hero-card" onClick="editFixture();">
+                        <span class="hero-card-icon"></span>
+                        <span class="hero-card-title">Edit definition</span>
+                    </button>
+                    <button class="hero-card">
+                        <span class="hero-card-icon"></span>
+                        <span class="hero-card-title">Product page</span>
+                    </button>
+                    <button class="hero-card">
+                        <span class="hero-card-icon"></span>
+                        <span class="hero-card-title">Fixture manual</span>
+                    </button>
+                </div>
+            `;
 
             let channelsHTML = '';
             if (data.channels && data.channels.length > 0) 
@@ -481,14 +507,15 @@ document.addEventListener("DOMContentLoaded", function()
                 <h3 style="text-align: right; line-height: 0%;margin-top: -20px;">Type: ${data.type || 'N/A'}</h3>
                 </div>   
                 <div class="separator" style="margin-top: -16px;"></div>
+                ${cardsHTML}
                 ${channelsHTML}
                 ${modesHTML}
                 ${physicalHTML}
                 <div class="bottomControlsDiv">
-                    <button id="databaseEditButton" onClick="editFixture();" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Edit this fixture</span>
-                    </button>
+                    <div style="display: flex; flex-direction: row; gap: 24px;">
+                    <p>Fixture definition author: ${author || 'Unknown'}</p>
+                    <p>Version: ${fxtversion || 'Unknown'}</p>
+                    </div>
                     <a href="https://github.com/mcallegari/qlcplus" target="_blank" rel="noopener noreferrer" class="poweredByButton">Powered by QLC+</a>
                 </div>
             `;

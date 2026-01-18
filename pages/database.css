@@ -112,8 +112,7 @@
     color: var(--colore-giallo);
 }
 
-.fixture-details .channel-name 
-{
+.fixture-details .channel-name {
     font-weight: bold;
     text-align: left;
 }
@@ -386,5 +385,64 @@
             "brand brand"
             "fixtures website";
         gap: 8px 12px;
+    }
+}
+
+/* Hero cards for fixture details (static buttons) */
+.hero-cards {
+    display: flex;
+    gap: 12px;
+    margin: 32px 0 22px 0;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.hero-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 64px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #202020;
+    color: var(--colore-testo, #eee);
+    border: 1px solid rgba(255,255,255,0.04);
+    cursor: pointer;
+    flex: 1 1 0;
+    min-width: 120px;
+    transition: all 0.3s ease, transform 120ms ease, box-shadow 120ms ease;
+    justify-content: center;
+    text-align: center;
+}
+.hero-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    .hero-card-icon {
+        color: #000;
+        font-weight: 600;
+    }
+}
+.hero-card:active {
+    transform: translateY(-1px);
+}
+.hero-card-icon {
+    font-family: IconFont;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0.95;
+    font-weight: 500;
+    color: var(--colore-giallo);
+}
+.hero-card-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.hero-card-link {
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .hero-card {
+        flex: 1 1 100%;
+        min-width: 0;
     }
 }

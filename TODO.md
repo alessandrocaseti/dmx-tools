@@ -53,7 +53,9 @@
 [] CMD Messages
 [] CMD Commands
 [] Beam dynamic graph visualizer
-[] Select fixture angle from database
+[x] Select fixture angle from database
+[] Redesign dialog and implement searchbox
+[] Better handling of no-info fixtures
 [] Test values
 
 ## Fixture Database
