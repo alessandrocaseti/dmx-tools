@@ -58,14 +58,9 @@ function updateBackButton()
 
 function editFixture()
 {
-    const editBtn = document.getElementById("databaseEditButton");
-
-    if(editBtn)
-    {
-        setCmdMessage('Opened fixture JSON file in a new browser page.', 'EDIT FIXTURE');
-        window.open('https://github.com/alessandrocaseti/dmx-tools/blob/main/fixtures/' + currentFolder + '/' + currentFile, '_blank').focus();
-        return;
-    };
+    setCmdMessage('Opened fixture JSON file in a new browser page.', 'EDIT FIXTURE');
+    window.open('https://github.com/alessandrocaseti/dmx-tools/blob/main/fixtures/' + currentFolder + '/' + currentFile, '_blank').focus();
+    return;
 }
 
 function addToFavorites()
