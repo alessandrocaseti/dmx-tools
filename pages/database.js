@@ -58,8 +58,26 @@ function updateBackButton()
 
 function editFixture()
 {
-    setCmdMessage('Opened fixture JSON file in a new browser page.', 'EDIT FIXTURE');
+    setCmdMessage('Opened fixture JSON file in a new browser tab.', 'EDIT FIXTURE');
     window.open('https://github.com/alessandrocaseti/dmx-tools/blob/main/fixtures/' + currentFolder + '/' + currentFile, '_blank').focus();
+    return;
+}
+ 
+function searchProductPage(name, folder)
+{
+    const url = "https://www.google.com/search?q="
+    const link = url + folder + ' ' + name;
+    window.open(link, '_blank').focus();
+    setCmdMessage('Searched for product page in a new browser tab.', 'PRODUCT PAGE');
+    return;
+}
+
+function searchManual(name, folder)
+{
+    const url = "https://www.google.com/search?q="
+    const link = url + folder + ' ' + name + ' filetype:pdf';
+    window.open(link, '_blank').focus();
+    setCmdMessage('Searched for fixture manual in a new browser tab.', 'FIXTURE MANUAL');
     return;
 }
 
@@ -441,11 +459,11 @@ document.addEventListener("DOMContentLoaded", function()
                         <span class="hero-card-icon"></span>
                         <span class="hero-card-title">Edit definition</span>
                     </button>
-                    <button class="hero-card">
+                    <button class="hero-card" onclick="searchProductPage('${getFixtureName(folder, file)}', '${folder}');">
                         <span class="hero-card-icon"></span>
                         <span class="hero-card-title">Product page</span>
                     </button>
-                    <button class="hero-card">
+                    <button class="hero-card" onclick="searchManual('${getFixtureName(folder, file)}', '${folder}');">
                         <span class="hero-card-icon"></span>
                         <span class="hero-card-title">Fixture manual</span>
                     </button>
