@@ -276,12 +276,32 @@
     margin-top: 0px;
 }
 
-#fixture-searchbox
+#filterfixdiv
 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
     margin-left: auto;
     margin-top: 0px;
+}
+
+#fixture-searchbox
+{
     width: 200px;
     margin-right: 1px;
+}
+
+#favsButton
+{
+    font-family: IconFont;
+}
+
+.showFavs
+{
+    background-color: var(--colore-giallo);
+    color: #000;
 }
 
 .brand-hero

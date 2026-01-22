@@ -1,6 +1,7 @@
 // DMX TOOLS - DEVELOPED BY ALESSANDRO CASETI
 
 let currentView = "folders"; // "folders", "files", "details"
+let filter = "none";
 let currentFolder = "";
 let currentFile = "";
 let currentFixturesCount = 0;
@@ -174,6 +175,8 @@ document.addEventListener("DOMContentLoaded", function()
         {
             loadFiles(currentFolder);
         }
+        favsbtn.classList.remove("showFavs");
+        filter = "none";
     };
     
     // --- Search ---
@@ -299,7 +302,7 @@ document.addEventListener("DOMContentLoaded", function()
 
     function countFixtures()
     {
-        const sbox =  document.getElementById("fixture-searchbox");
+        const sbox =  document.getElementById("filterfixdiv");
 
         if (currentView === "details") 
         {
@@ -308,7 +311,7 @@ document.addEventListener("DOMContentLoaded", function()
         } 
         else 
         {
-            sbox.style.display = "block";
+            sbox.style.display = "flex";
         }
 
         // Se non ci sono le variabili globali attese, metti a zero
@@ -402,6 +405,7 @@ document.addEventListener("DOMContentLoaded", function()
 
     function loadFixtureDetails(folder, file) 
     {
+        favsbtn.classList.remove("showFavs");
         currentView = "details";
         currentFile = file;
         currentFolder = folder;
@@ -626,5 +630,158 @@ document.addEventListener("DOMContentLoaded", function()
             updateAddressBar();
             updateBackButton();
         });
+    }
+    
+    const favsbtn = document.getElementById("favsButton");
+    favsbtn.onclick = function()
+    {
+        showFavorites();
+    };
+
+    function showFavorites()
+    {
+        if(filter === "none")
+        {
+                const favs = getFavorites();
+                favsbtn.classList.add("showFavs");
+
+                const databaseButtonsDiv = document.getElementById("databaseButtons");
+                const brandHeroDiv = document.getElementById("brandHeroDiv");
+                if (databaseButtonsDiv) { databaseButtonsDiv.innerHTML = ''; }
+
+            if (!favs || favs.length === 0)
+            {
+                if (databaseButtonsDiv)
+                {
+                    const empty = document.createElement('div');
+                    empty.className = 'empty-message';
+                    empty.style.width = '100%';
+                    empty.style.textAlign = 'center';
+                    empty.style.padding = '28px';
+                    empty.textContent = '- No favorites -';
+                    databaseButtonsDiv.appendChild(empty);
+                }
+                currentView = "folders";
+                currentFolder = "";
+                currentFile = "";
+                currentFixturesCount = 0;
+                updateAddressBar();
+                updateBackButton();
+                filter = "favs";
+                return;
+            }
+            if(currentView === "folders")
+            {            
+                // Unique folders in favorites (preserve order of appearance)
+                const folderOrder = [];
+                favs.forEach(f => { if (!folderOrder.includes(f.folder)) folderOrder.push(f.folder); });
+
+                // Create folder buttons for favorites
+                folderOrder.forEach(folder =>
+                {
+                    const folderCount = favs.filter(f => f.folder === folder).length;
+                    const folderButton = document.createElement("button");
+                    folderButton.className = "folderButton";
+                    folderButton.innerText = folder + (folderCount > 0 ? ` (${folderCount})` : '');
+                    folderButton.onclick = () =>
+                    {
+                        // Show only favorite files for this folder
+                        if (databaseButtonsDiv) databaseButtonsDiv.innerHTML = '';
+                        if (brandHeroDiv) brandHeroDiv.innerHTML = '';
+
+                        const meta = (typeof brandMetadata !== 'undefined' && brandMetadata[folder]) ? brandMetadata[folder] : { name: folder, country: "Unknown", website: "" };
+                        if (brandHeroDiv)
+                        {
+                            const brandHero = document.createElement("div");
+                            brandHero.className = "brand-hero";
+                            brandHero.innerHTML = `
+                                <div class="brandContainer">
+                                    <h2 class="brand-name">${meta.name}</h2>
+                                    <div class="brand-fixtures">Fixtures: <strong id="currentBrandFixtures" style="margin-left:6px;"></strong></div>
+                                    <div class="brand-country">Country: <strong style="margin-left:6px;">${meta.country}</strong></div>
+                                    ${meta.website ? `<a href="${meta.website}" target="_blank" rel="noopener noreferrer" class="brand-website">Visit website</a>` : ""}
+                                </div>
+                            `;
+                            brandHeroDiv.appendChild(brandHero);
+                        }
+
+                        const files = favs.filter(f => f.folder === folder).map(f => f.file);
+                        files.forEach(file =>
+                        {
+                            const fileButton = document.createElement("button");
+                            fileButton.className = "fileButton";
+                            fileButton.innerText = getFixtureName(folder, file);
+                            fileButton.onclick = () => loadFixtureDetails(folder, file);
+                            if (databaseButtonsDiv) databaseButtonsDiv.appendChild(fileButton);
+                        });
+
+                        currentView = "files";
+                        currentFolder = folder;
+                        currentFile = "";
+                        currentFixturesCount = files.length;
+                        updateAddressBar();
+                        updateBackButton();
+                    };
+
+                    if (databaseButtonsDiv) databaseButtonsDiv.appendChild(folderButton);
+                });
+
+                currentFolder = "";
+                currentFile = "";
+                currentFixturesCount = favs.length;
+                updateAddressBar();
+                updateBackButton();
+                filter = "favs";
+            }
+            else if(currentView === "files")
+            {
+                // Show only favorite files for the currently selected brand (keep the brand hero)
+                const favFiles = favs.filter(f => f.folder === currentFolder).map(f => f.file);
+                if (databaseButtonsDiv) databaseButtonsDiv.innerHTML = '';
+
+                if (!favFiles || favFiles.length === 0)
+                {
+                    if (databaseButtonsDiv)
+                    {
+                        const empty = document.createElement('div');
+                        empty.className = 'empty-message';
+                        empty.style.width = '100%';
+                        empty.style.textAlign = 'center';
+                        empty.style.padding = '28px';
+                        empty.textContent = '- No favorites for this brand -';
+                        databaseButtonsDiv.appendChild(empty);
+                    }
+                    currentView = "files";
+                    currentFixturesCount = 0;
+                    updateAddressBar();
+                    updateBackButton();
+                    filter = "favs";
+                    return;
+                }
+
+                favFiles.forEach(file =>
+                {
+                    const fileButton = document.createElement("button");
+                    fileButton.className = "fileButton";
+                    fileButton.innerText = getFixtureName(currentFolder, file);
+                    fileButton.onclick = () => loadFixtureDetails(currentFolder, file);
+                    if (databaseButtonsDiv) databaseButtonsDiv.appendChild(fileButton);
+                });
+
+                currentView = "files";
+                currentFile = "";
+                currentFixturesCount = favFiles.length;
+                updateAddressBar();
+                updateBackButton();
+                filter = "favs";
+            }
+        }
+        else
+        {
+            filter = "none";
+            favsbtn.classList.remove("showFavs");
+            if(currentView === "folders") { loadFolders(); }
+            else if(currentView === "files") { loadFiles(currentFolder); }
+        }
     }
 });

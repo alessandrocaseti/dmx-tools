@@ -724,7 +724,10 @@
                     <span class="buttonText">Back</span>
                 </button>
                 <span id="databaseAddressBar" style="font-size: 20px; margin-top: -20px; color: #707070; user-select: none;"></span>
-                <input type="text" placeholder="Search..." id="fixture-searchbox" autocomplete="off">
+                <div id="filterfixdiv">
+                    <button class="defaultButton" id="favsButton" onclick="showFavorites()"></button>
+                    <input type="text" placeholder="Search..." id="fixture-searchbox" autocomplete="off">
+                </div>
             </div>
             <div id="brandHeroDiv"></div>
             <div id="databaseButtons"></div>
