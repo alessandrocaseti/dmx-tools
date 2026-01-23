@@ -206,6 +206,9 @@ document.addEventListener("DOMContentLoaded", function()
 
     function performSearch(query)
     {
+        favsbtn.classList.remove("showFavs");
+        filter = "none";
+
         const q = (query || '').trim().toLowerCase();
         if (!q)
         {
@@ -267,6 +270,7 @@ document.addEventListener("DOMContentLoaded", function()
             empty.style.padding = '28px';
             empty.textContent = '- No results -';
             databaseButtonsDiv.appendChild(empty);
+            currentView = "folders";
             currentFixturesCount = 0;
             updateAddressBar();
             updateBackButton();
@@ -655,12 +659,12 @@ document.addEventListener("DOMContentLoaded", function()
     {
         if(filter === "none")
         {
-                const favs = getFavorites();
-                favsbtn.classList.add("showFavs");
-
-                const databaseButtonsDiv = document.getElementById("databaseButtons");
-                const brandHeroDiv = document.getElementById("brandHeroDiv");
-                if (databaseButtonsDiv) { databaseButtonsDiv.innerHTML = ''; }
+            const favs = getFavorites();
+            favsbtn.classList.add("showFavs");
+            document.getElementById("fixture-searchbox").value = "";
+            const databaseButtonsDiv = document.getElementById("databaseButtons");
+            const brandHeroDiv = document.getElementById("brandHeroDiv");
+            if (databaseButtonsDiv) { databaseButtonsDiv.innerHTML = ''; }
 
             if (!favs || favs.length === 0)
             {
