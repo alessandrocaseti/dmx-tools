@@ -391,14 +391,14 @@ document.addEventListener("DOMContentLoaded", function()
         const brandHero = document.createElement("div");
         brandHero.className = "brand-hero";
 
-        const meta = brandMetadata[folder] || { name: folder, country: "Unknown", website: "" };
+        const meta = brandMetadata[folder] || { country: "Unknown", website: "Unknown" };
 
         brandHero.innerHTML = `
             <div class="brandContainer">
-                <h2 class="brand-name">${meta.name}</h2>
+                <h2 class="brand-name">${folder}</h2>
                 <div class="brand-fixtures">Fixtures: <strong id="currentBrandFixtures" style="margin-left:6px;"></strong></div>
                 <div class="brand-country">Country: <strong style="margin-left:6px;">${meta.country}</strong></div>
-                ${meta.website ? `<a href="${meta.website}" target="_blank" rel="noopener noreferrer" class="brand-website">Visit website</a>` : ""}
+                ${meta.website ? `<a href="${meta.website}" target="_blank" rel="noopener noreferrer" class="brand-website"><span class="brand-website-icon">  </span>Visit website</a>` : "Website undefined"}
             </div>
         `;
 
@@ -706,17 +706,17 @@ document.addEventListener("DOMContentLoaded", function()
                         if (databaseButtonsDiv) databaseButtonsDiv.innerHTML = '';
                         if (brandHeroDiv) brandHeroDiv.innerHTML = '';
 
-                        const meta = (typeof brandMetadata !== 'undefined' && brandMetadata[folder]) ? brandMetadata[folder] : { name: folder, country: "Unknown", website: "" };
+                        const meta = (typeof brandMetadata !== 'undefined' && brandMetadata[folder]) ? brandMetadata[folder] : { country: "Unknown", website: "Unknown" };
                         if (brandHeroDiv)
                         {
                             const brandHero = document.createElement("div");
                             brandHero.className = "brand-hero";
                             brandHero.innerHTML = `
                                 <div class="brandContainer">
-                                    <h2 class="brand-name">${meta.name}</h2>
+                                    <h2 class="brand-name">${folder}</h2>
                                     <div class="brand-fixtures">Fixtures: <strong id="currentBrandFixtures" style="margin-left:6px;"></strong></div>
                                     <div class="brand-country">Country: <strong style="margin-left:6px;">${meta.country}</strong></div>
-                                    ${meta.website ? `<a href="${meta.website}" target="_blank" rel="noopener noreferrer" class="brand-website">Visit website</a>` : ""}
+                                    ${meta.website ? `<a href="${meta.website}" target="_blank" rel="noopener noreferrer" class="brand-website"><span class="brand-website-icon">  </span>Visit website</a>` : "Website undefined"}
                                 </div>
                             `;
                             brandHeroDiv.appendChild(brandHero);
