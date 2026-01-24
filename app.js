@@ -34,6 +34,9 @@ function navigateTo(page)
     document.getElementById('database').style.display = 'none';
     document.getElementById('databaseNavButton').classList.remove('selectedNavButton');
     document.getElementById('databaseNavButton').classList.add('unselectedNavButton');
+    document.getElementById('settings').style.display = 'none';
+    document.getElementById('settingsNavButton').classList.remove('selectedNavButton');
+    document.getElementById('settingsNavButton').classList.add('unselectedNavButton');
 
     currentPage = page;
 
@@ -108,6 +111,15 @@ function navigateTo(page)
             document.getElementById('cmdIcon').innerHTML = '';
             return;
         }
+
+        case 'settings':
+        {
+            document.getElementById('settings').style.display = 'block';
+            document.getElementById('settingsNavButton').classList.remove('unselectedNavButton');
+            document.getElementById('settingsNavButton').classList.add('selectedNavButton');
+            document.getElementById('cmdIcon').innerHTML = '';
+            return;
+        }
     }
 }
 
@@ -153,6 +165,12 @@ function NextPage()
 
         case 'database':
         {
+            navigateTo('settings');
+            return;
+        }
+
+        case 'settings':
+        {
             navigateTo('home');
             return;
         }
@@ -165,7 +183,7 @@ function PreviousPage()
     {
         case 'home':
         {
-            navigateTo('database');
+            navigateTo('settings');
             return;
         }
 
@@ -204,6 +222,11 @@ function PreviousPage()
             navigateTo('beam');
             return;
         }
+
+        case 'settings':
+        {
+            navigateTo('database');
+            return;
+        }
     }
 }
-

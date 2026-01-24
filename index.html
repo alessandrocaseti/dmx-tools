@@ -75,12 +75,10 @@
                     <span class="buttonIcon"></span>
                     <span class="buttonText">Fixture Database</span>
                 </button>
-            </div>
-            <!-- Bottom Links -->
-            <div style="display: flex; flex-direction: row; gap: 8px; justify-content: center; bottom: 12vh; margin-top: 32vh; align-items: center;">
-                <a onclick="about()" target="_blank" class="defaultLink">About</a>
-                <h4 style="color: #666;user-select: none;">•</h4>
-                <a href="https://github.com/alessandrocaseti/dmx-tools" target="_blank" class="defaultLink">GitHub</a>
+                <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('settings')" id="settingsNavButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">Control Center</span>
+                </button>
             </div>
         </nav>
 
@@ -731,6 +729,18 @@
             </div>
             <div id="brandHeroDiv"></div>
             <div id="databaseButtons"></div>
+            <div style="margin-bottom: 30vh;" class="web-only"></div>
+        </div>
+
+        <!-- Settings -->
+        <div id="settings" class="web-only defaultPage" style="display: none;">
+            <h1 class="pageTitle">Control Center</h1>
+            <!-- Bottom Links -->
+            <div style="display: flex; flex-direction: row; gap: 8px; justify-content: center; bottom: 12vh; margin-top: 32vh; align-items: center;">
+                <a onclick="about()" target="_blank" class="defaultLink">About</a>
+                <h4 style="color: #666;user-select: none;">•</h4>
+                <a href="https://github.com/alessandrocaseti/dmx-tools" target="_blank" class="defaultLink">GitHub</a>
+            </div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
         </div>
 
