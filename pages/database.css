@@ -85,7 +85,7 @@
     background-color: #202020;
     border-radius: 6px;
     margin-bottom: 8px;
-    padding: 12px;
+    padding: 10px 16px;
     cursor: pointer;
     user-select: none;
     transition: all 0.3s ease;
@@ -94,6 +94,33 @@
 .channel-item:hover
 {
     background-color: #2c2c2c;
+}
+
+.chs-hd-div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.chsBtn
+{
+    background-color: transparent;
+    margin-left: auto;
+    font-size: 16px;
+    font-family: IconFont;
+    font-weight: 500;
+    padding: 5px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.toggled
+{
+    background-color: var(--colore-giallo);
+    color: #000;
 }
 
 .fixture-details .channel-header 
@@ -113,7 +140,8 @@
     color: var(--colore-giallo);
 }
 
-.fixture-details .channel-name {
+.fixture-details .channel-name 
+{
     font-weight: bold;
     text-align: left;
 }
@@ -216,6 +244,11 @@
     border-radius: 6px;
 }
 
+.physical-details br 
+{
+    user-select: none;
+}
+
 .modes-container 
 {
     display: grid;
@@ -246,15 +279,15 @@
 .mode-channel 
 {
     background-color: #2c2c2c;
-    padding: 6px 12px;  /* ← Aumenta il padding verticale */
+    padding: 6px 12px;
     border-radius: 4px;
     font-size: 14px;
     margin-bottom: 6px;
     display: grid;
     grid-template-columns: 24px minmax(160px, 260px) 1fr 80px;
-    align-items: center;  /* ← Cambia da start a center */
+    align-items: center;
     gap: 8px;
-    min-height: 16px;  /* ← Usa min-height invece di line-height */
+    min-height: 16px;
     overflow: hidden;
     max-height: 16px;
 }
@@ -311,7 +344,7 @@
     align-items: center;
     margin: 0 auto;
     max-width: 75%;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 .brandContainer
@@ -387,7 +420,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 48px;
+    height: 24px;
+    margin-top: 64px;
     align-items: center;
 }
 
@@ -410,15 +444,17 @@
     }
 }
 
-/* Hero cards for fixture details (static buttons) */
-.hero-cards {
+.hero-cards 
+{
     display: flex;
     gap: 12px;
     margin: 32px 0 22px 0;
     flex-wrap: wrap;
     width: 100%;
 }
-.hero-card {
+
+.hero-card 
+{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -436,21 +472,29 @@
     text-align: center;
 }
 
-.hero-card-on{
+.hero-card-on
+{
     border: 1px solid var(--colore-giallo);
 }
-.hero-card:hover {
+
+.hero-card:hover 
+{
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    .hero-card-icon {
+    .hero-card-icon 
+    {
         color: #000;
         font-weight: 600;
     }
 }
-.hero-card:active {
+
+.hero-card:active 
+{
     transform: translateY(-1px);
 }
-.hero-card-icon {
+
+.hero-card-icon 
+{
     font-family: IconFont;
     font-size: 18px;
     text-align: center;
@@ -458,16 +502,22 @@
     font-weight: 500;
     color: var(--colore-giallo);
 }
-.hero-card-title {
+
+.hero-card-title 
+{
     font-size: 16px;
     font-weight: 500;
 }
-.hero-card-link {
+
+.hero-card-link 
+{
     text-decoration: none;
 }
 
-@media (max-width: 700px) {
-    .hero-card {
+@media (max-width: 700px) 
+{
+    .hero-card 
+    {
         flex: 1 1 100%;
         min-width: 0;
     }

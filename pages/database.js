@@ -477,12 +477,20 @@ document.addEventListener("DOMContentLoaded", function()
             let channelsHTML = '';
             if (data.channels && data.channels.length > 0) 
             {
-                channelsHTML = '<h3>Channels</h3><div class="separator"></div><div class="channels-container">';
+                channelsHTML = `
+                <div class="chs-hd-div">
+                    <h3>Channels</h3>
+                    <div style="display: flex; gap: 12px; margin-left: auto">
+                        <button class="defaultButton chsBtn" id="channelsHideBtn" title="Hide channels with no capabilities"></button>
+                        <button class="defaultButton chsBtn" id="channelsExpandBtn" title="Expand all channels with available capabilities"></button>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="channels-container">`;
                 data.channels.forEach(channel => 
                 {
-                    let capabilitiesCount = channel.capabilities ? channel.capabilities.length : 0;
-                    if(capabilitiesCount === 1) capabilitiesCount += ' capability';
-                    else capabilitiesCount += ' capabilities';
+                    const capsNum = channel.capabilities ? channel.capabilities.length : 0;
+                    const capabilitiesCount = (capsNum === 1) ? '1 capability' : capsNum + ' capabilities';
 
                     let currentIcon = '';
                     let iconColor = 'yellow';
@@ -514,7 +522,7 @@ document.addEventListener("DOMContentLoaded", function()
                         default : currentIcon = ''; break;
                     }
                     channelsHTML += `
-                        <div class="channel-item">
+                        <div class="channel-item" data-caps="${capsNum}">
                             <div class="channel-header">
                                 <span class="channel-icon" style="color: ${iconColor}">${currentIcon}</span>
                                 <span class="channel-type">${channel.type}</span>
@@ -632,6 +640,41 @@ document.addEventListener("DOMContentLoaded", function()
 
             const channelItems = detailsDiv.querySelectorAll('.channel-item');
             channelItems.forEach(item => { item.addEventListener('click', () => { item.classList.toggle('expanded'); }); });
+
+            // Hide channels without capabilities toggle
+            const hideBtn = detailsDiv.querySelector('#channelsHideBtn');
+            if (hideBtn) 
+            {
+                hideBtn.setAttribute('aria-pressed', 'false');
+                hideBtn.addEventListener('click', () => 
+                {
+                    const active = hideBtn.classList.toggle('toggled');
+                    hideBtn.setAttribute('aria-pressed', active ? 'true' : 'false');
+                    const items = detailsDiv.querySelectorAll('.channel-item');
+                    items.forEach(it => 
+                    {
+                        if ((it.dataset.caps || '0') === '0') { it.style.display = active ? 'none' : ''; }
+                    });
+                });
+            }
+
+            // Expand/contract all channels that have at least one capability
+            const expandBtn = detailsDiv.querySelector('#channelsExpandBtn');
+            if (expandBtn) 
+            {
+                expandBtn.setAttribute('aria-pressed', 'false');
+                expandBtn.addEventListener('click', () => 
+                {
+                    const active = expandBtn.classList.toggle('toggled');
+                    expandBtn.setAttribute('aria-pressed', active ? 'true' : 'false');
+                    const items = detailsDiv.querySelectorAll('.channel-item');
+                    items.forEach(it => 
+                    {
+                        const num = parseInt(it.dataset.caps || '0', 10);
+                        if (num > 0) { if (active) it.classList.add('expanded'); else it.classList.remove('expanded'); }
+                    });
+                });
+            }
             
             updateAddressBar();
             updateBackButton();
