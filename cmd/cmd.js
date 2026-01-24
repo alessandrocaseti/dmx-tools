@@ -2,6 +2,23 @@
 
 // Command prompt main functions
 
+document.addEventListener('keydown', function(e)
+{
+    try 
+    {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C'))
+        {
+            const input = document.getElementById('cmdInput');
+            if (input)
+            {
+                e.preventDefault();
+                input.focus();
+                input.select();
+            }
+        }
+    } catch (err) { /* ignore */ }
+});
+
 String.prototype.toProperCase = function () 
 {
     return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
