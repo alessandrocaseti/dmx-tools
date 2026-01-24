@@ -595,7 +595,7 @@ document.addEventListener("DOMContentLoaded", function()
                 if (data.physical.bulb) 
                 {
                     physicalHTML += `
-                        <div><strong>Bulb</strong><br><br> ${data.physical.bulb.type || 'N/A'} W</div>
+                        <div><strong>Bulb</strong><br><br> ${data.physical.bulb.type || 'N/A'}</div>
                         <div><strong>Luminous Flux</strong><br><br> ${data.physical.bulb.lumens || 'N/A'} lm</div>
                         <div><strong>Color Temperature</strong><br><br> ${data.physical.bulb.colourTemperature || 'N/A'} K</div>
                     `;
@@ -627,10 +627,12 @@ document.addEventListener("DOMContentLoaded", function()
                 ${channelsHTML}
                 ${modesHTML}
                 ${physicalHTML}
+                <div class="separator" style="margin-top: 48px;"></div>
                 <div class="bottomControlsDiv">
-                    <div style="display: flex; flex-direction: row; gap: 24px;">
-                    <p>Fixture definition author: ${author || 'Unknown'}</p>
-                    <p>Version: ${fxtversion || 'Unknown'}</p>
+                    <div style="display: flex; flex-direction: row; gap: 12px;">
+                        <p>Fixture definition author: ${author || 'Unknown'}</p>
+                        <p>|</p>
+                        <p>Version: ${fxtversion || 'Unknown'}</p>
                     </div>
                     <a href="https://github.com/mcallegari/qlcplus" target="_blank" rel="noopener noreferrer" class="poweredByButton">Powered by QLC+</a>
                 </div>
