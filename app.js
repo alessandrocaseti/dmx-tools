@@ -19,6 +19,9 @@ function navigateTo(page)
     document.getElementById('patch').style.display = 'none';
     document.getElementById('patchNavButton').classList.remove('selectedNavButton');
     document.getElementById('patchNavButton').classList.add('unselectedNavButton');
+    document.getElementById('universe').style.display = 'none';
+    document.getElementById('universeNavButton').classList.remove('selectedNavButton');
+    document.getElementById('universeNavButton').classList.add('unselectedNavButton');
     document.getElementById('dip').style.display = 'none';
     document.getElementById('dipNavButton').classList.remove('selectedNavButton');
     document.getElementById('dipNavButton').classList.add('unselectedNavButton');
@@ -57,6 +60,15 @@ function navigateTo(page)
             document.getElementById('patchNavButton').classList.remove('unselectedNavButton');
             document.getElementById('patchNavButton').classList.add('selectedNavButton');
             document.getElementById('cmdIcon').innerHTML = '';
+            return;
+        }
+
+        case 'universe':
+        {
+            document.getElementById('universe').style.display = 'block';
+            document.getElementById('universeNavButton').classList.remove('unselectedNavButton');
+            document.getElementById('universeNavButton').classList.add('selectedNavButton');
+            document.getElementById('cmdIcon').innerHTML = '';
             return;
         }
         
@@ -135,6 +147,12 @@ function NextPage()
 
         case 'patch':
         {
+            navigateTo('universe');
+            return;
+        }
+
+        case 'universe':
+        {
             navigateTo('dip');
             return;
         }
@@ -192,10 +210,16 @@ function PreviousPage()
             navigateTo('home');
             return;
         }
+
+        case 'universe':
+        {
+            navigateTo('patch');
+            return;
+        }
         
         case 'dip':
         {
-            navigateTo('patch');
+            navigateTo('universe');
             return;
         }
 

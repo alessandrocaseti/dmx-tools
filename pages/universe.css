@@ -1,0 +1,111 @@
+/* Universe grid styling */
+.universeGrid {
+	width: 90%;
+	margin: 16px auto;
+	position: relative;
+	border: 1px solid #333;
+	background: #0f0f12;
+	padding: 8px;
+	border-radius: 6px;
+}
+
+.universeGridInner {
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-auto-rows: 28px;
+	gap: 4px;
+	position: relative;
+}
+
+.universeCell {
+	background: #111;
+	color: #ababab;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	border: 1px solid #222;
+	user-select: none;
+}
+
+.universeCell.cellHighlight {
+	outline: 2px solid var(--colore-giallo);
+	background: #222;
+}
+
+.universeCell.cellHighlightStart {
+	outline: 2px solid var(--colore-giallo);
+	background: rgba(255,235,59,0.14);
+}
+.universeCell.cellHighlightRange {
+	background: rgba(255,235,59,0.08);
+}
+.universeCell.cellHighlightInvalid {
+	outline: 2px dashed rgba(220,80,80,0.9);
+	background: rgba(220,80,80,0.12);
+}
+
+.universeCell.occupied {
+	background: rgba(255,235,59,0.12);
+	color: #fff;
+	border-color: rgba(255,235,59,0.12);
+}
+
+.fixtureLayer {
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	pointer-events: none; /* segments enable pointer events selectively */
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-auto-rows: 28px;
+	gap: 4px;
+}
+
+.fixtureSegment {
+	border-radius: 4px;
+	opacity: 0.95;
+	border: 2px solid rgba(0,0,0,0.25);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.25) inset;
+	display: flex;
+	align-items: center;
+	padding-left: 6px;
+	font-size: 12px;
+	color: #fff;
+	pointer-events: auto;
+	cursor: grab;
+	overflow: hidden;
+}
+
+.fixtureLabel {
+	pointer-events: none;
+	font-weight: 700;
+	font-size: 10px;
+	padding: 2px 4px;
+	border-radius: 4px;
+}
+
+.fixtureSegment.dragging {
+	opacity: 0.9;
+	cursor: grabbing;
+	transform: scale(1.02);
+}
+
+.fixtureSegment::after {
+	content: attr(data-name);
+	font-weight: 600;
+	font-size: 11px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/* small screens: allow scroll */
+@media (max-width: 900px) {
+	.universeGridInner { grid-auto-rows: 22px; }
+	.fixtureLayer { grid-auto-rows: 22px; }
+	.universeGrid { width: 100%; }
+}
