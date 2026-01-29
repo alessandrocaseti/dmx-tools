@@ -155,6 +155,7 @@ let doc = false;
 let rename = false;
 let freeze = false;
 let nav = false;
+let vectorShift = false;
 
 function resetCmd(freezeTrigger = true)
 {
@@ -183,6 +184,20 @@ function unfocusCmd()
     document.getElementById('command-bar').style.backgroundColor = '#0f0f0f';
     return;
 }
+
+// Initiate vector shift flow from UI
+function startVectorShift()
+{
+    // only allow when on universe page
+    if (typeof currentPage !== 'undefined' && currentPage !== 'universe') {
+        setCmdMessage('Vector shift is only available on the Universe page.', 'ERROR');
+        return;
+    }
+    vectorShift = true;
+    setCmdMessage('Enter vector value. (syntax: + or - {offset} OR -sf {targetStart}):', 'VECTOR SHIFT');
+    startDotAnimation();
+}
+window.startVectorShift = startVectorShift;
 
 function handleCommand(event)
 {
@@ -319,6 +334,58 @@ function handleCommand(event)
                 setCmdMessage('Invalid syntax. Please insert the event / place / author names separated by a slash.', 'ERROR');
                 startDotAnimation();
                 doc = true;
+            }
+            return;
+        }
+
+        else if (vectorShift)
+        {
+            // consume one input for the vector value
+            vectorShift = false;
+            let raw = rawCommand.trim();
+            // allow optional + sign
+            if (command.startsWith('-sf'))
+            {
+                // syntax: -sf {targetStart}
+                let value = rawCommand.slice(3).trim();
+                if (!value)
+                {
+                    setCmdMessage('Invalid syntax. Use -sf {targetStart}.', 'ERROR');
+                    return;
+                }
+                if (isNaN(value))
+                {
+                    setCmdMessage('Invalid start address. Please enter a number between 1 and 512.', 'ERROR');
+                    return;
+                }
+                const target = parseInt(value, 10);
+                if (window.universeController && typeof window.universeController.shiftFrom === 'function')
+                {
+                    window.universeController.shiftFrom(target);
+                }
+                else
+                {
+                    setCmdMessage('Universe controller not available.', 'ERROR');
+                }
+                return;
+            }
+            if (raw.startsWith('+')) raw = raw.slice(1);
+            if (!raw || isNaN(raw))
+            {
+                setCmdMessage('Invalid vector value. Please enter a numeric offset (e.g. +200 or -50).', 'ERROR');
+                startDotAnimation();
+                vectorShift = true;
+                return;
+            }
+            const offset = parseInt(raw, 10);
+            // delegate to universe controller if present
+            if (window.universeController && typeof window.universeController.applyVectorShift === 'function')
+            {
+                window.universeController.applyVectorShift(offset);
+            }
+            else
+            {
+                setCmdMessage('Universe controller not available.', 'ERROR');
             }
             return;
         }

@@ -412,6 +412,85 @@
 			}
 		};
 
+		// apply vector shift to all units in currentUniverse
+		universeController.applyVectorShift = (offset) => {
+			if (!offset || isNaN(offset)) {
+				setCmdMessage('Invalid vector offset.', 'ERROR');
+				return;
+			}
+			offset = parseInt(offset, 10);
+			// collect units that belong to the target universe
+			const shifting = units.filter(u => {
+				const eff = (movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo;
+				return eff === currentUniverse;
+			});
+			if (shifting.length === 0) {
+				setCmdMessage('No fixtures found in current universe to shift.', 'WARNING');
+				return;
+			}
+			// compute proposed new ranges and validate
+			const proposed = shifting.map(u => {
+				const curStart = (movedMap[u.unitId] && movedMap[u.unitId].canaleStart) ? movedMap[u.unitId].canaleStart : u.canaleStart;
+				return { unit: u, newStart: curStart + offset, newEnd: curStart + offset + u.canali - 1 };
+			});
+			// check bounds
+			for (const p of proposed) {
+				if (p.newStart < 1 || p.newEnd > TOTAL) {
+					setCmdMessage(`Shift would move ${p.unit.nome} out of range (${p.newStart} - ${p.newEnd}).`, 'ERROR');
+					return;
+				}
+			}
+			// build occupied ranges for other units in the same universe
+			const others = units.filter(u2 => {
+				const eff2 = (movedMap[u2.unitId] && movedMap[u2.unitId].universo) ? movedMap[u2.unitId].universo : u2.universo;
+				return eff2 === currentUniverse && !shifting.some(s => s.unitId === u2.unitId);
+			}).map(u2 => {
+				const s = (movedMap[u2.unitId] && movedMap[u2.unitId].canaleStart) ? movedMap[u2.unitId].canaleStart : u2.canaleStart;
+				return { start: s, end: s + u2.canali - 1, nome: u2.nome };
+			});
+			// check collisions
+			for (const p of proposed) {
+				for (const o of others) {
+					if (!(p.newEnd < o.start || p.newStart > o.end)) {
+						setCmdMessage(`Shift would conflict: ${p.unit.nome} (${p.newStart}-${p.newEnd}) overlaps ${o.nome} (${o.start}-${o.end}).`, 'ERROR');
+						return;
+					}
+				}
+			}
+			// all good: apply movedMap overrides
+			proposed.forEach(p => {
+				movedMap[p.unit.unitId] = { canaleStart: p.newStart, universo: currentUniverse };
+			});
+			buildUnits();
+			renderGrid();
+			setCmdMessage(`Applied vector shift of ${offset} channels to ${proposed.length} fixture(s) in universe ${currentUniverse}.`, 'VECTOR SHIFT');
+		};
+
+		// shift so that the earliest fixture in currentUniverse starts at targetStart
+		universeController.shiftFrom = (targetStart) => {
+			let v = parseInt(targetStart, 10);
+			if (isNaN(v)) {
+				setCmdMessage('Invalid target start value.', 'ERROR');
+				return;
+			}
+			if (v < 1 || v > TOTAL) {
+				setCmdMessage('Target start out of range (1 - ' + TOTAL + ').', 'ERROR');
+				return;
+			}
+			// find minimal start among units in currentUniverse
+			const inUniverse = units.filter(u => {
+				const eff = (movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo;
+				return eff === currentUniverse;
+			});
+			if (inUniverse.length === 0) { setCmdMessage('No fixtures found in current universe.', 'WARNING'); return; }
+			const starts = inUniverse.map(u => (movedMap[u.unitId] && movedMap[u.unitId].canaleStart) ? movedMap[u.unitId].canaleStart : u.canaleStart);
+			const minStart = Math.min.apply(null, starts);
+			const offset = v - minStart;
+			if (offset === 0) { setCmdMessage('Fixtures already start at ' + v + '.', 'WARNING'); return; }
+			// delegate to applyVectorShift which will validate and apply
+			universeController.applyVectorShift(offset);
+		};
+
 		function updateUniverseButtons() {
 			const prev = document.getElementById('prevUniBtn');
 			const next = document.getElementById('nextUniBtn');
