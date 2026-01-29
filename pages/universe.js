@@ -5,6 +5,12 @@
 	const TOTAL = COLS * ROWS;
 
 	let container;
+
+	// Universe controller
+	let currentUniverse = 1;
+	const MAX_UNIVERSE = 1024;
+
+	let universeController = null;
 	let units = []; // expanded units derived from listaFixture
 	let movedMap = {}; // unitId -> new start channel override
 
@@ -208,7 +214,7 @@
 		units.forEach(u => {
 			const override = movedMap[u.unitId];
 			const effectiveUniverse = override && override.universo ? override.universo : u.universo;
-			if (effectiveUniverse !== 1) return; // only render universe 1 for now
+			if (effectiveUniverse !== currentUniverse) return;
 			const start = override && override.canaleStart ? override.canaleStart : u.canaleStart;
 			const end = start + u.canali - 1;
 
@@ -268,14 +274,21 @@
 		const start = Math.max(1, Math.min(TOTAL - unit.canali + 1, desiredStart));
 		const end = start + unit.canali - 1;
 		if (start < 1 || end > TOTAL) return { valid: false, reason: `Address out of range (${start} - ${end})` };
+
+		// determine target universe for this move: use currentUniverse (UI) unless
+		// the unit already has an override specifying a universe
+		const unitOverride = movedMap[unit.unitId];
+		const targetUniverse = unitOverride && unitOverride.universo ? unitOverride.universo : currentUniverse;
 		// check against other units (consider movedMap overrides)
 		for (let i = 0; i < units.length; i++) {
 			const u2 = units[i];
 			if (u2.unitId === unit.unitId) continue; // allow overlap with self
 			const override = movedMap[u2.unitId];
+			const effectiveUniverse2 = override && override.universo ? override.universo : u2.universo;
+			// only consider conflicts for units in the same universe as the target
+			if (effectiveUniverse2 !== targetUniverse) continue;
 			const s2 = override && override.canaleStart ? override.canaleStart : u2.canaleStart;
 			const e2 = s2 + u2.canali - 1;
-			// same universe only (we're only rendering universe 1 currently)
 			if (!(s2 <= end && e2 >= start)) continue;
 			return { valid: false, reason: `Channels ${s2.toString().padStart(3,'0')} - ${e2.toString().padStart(3,'0')} are already occupied by ${u2.nome}` };
 		}
@@ -349,7 +362,7 @@
 					setCmdMessage(`Cannot move ${unit.nome}: ${check.reason}`, 'ERROR');
 				} else {
 					// record move for visual feedback
-					movedMap[unit.unitId] = { canaleStart: bounded, universo: 1 };
+					movedMap[unit.unitId] = { canaleStart: bounded, universo: currentUniverse };
 					// apply the move to the global patch list so updatePatch() reflects the change
 					applyMoveToLista(unit, bounded);
 					// rebuild units and UI
@@ -365,6 +378,64 @@
 	function init() {
 		container = document.querySelector('.universeGrid');
 		if (!container) return;
+
+		// Initialize universe controller and bind UI
+		universeController = {
+			setUniverse: (u) => {
+				let v = parseInt(u);
+				if (isNaN(v)) v = 1;
+				if (v < 1) v = 1;
+				if (v > MAX_UNIVERSE) v = MAX_UNIVERSE;
+				currentUniverse = v;
+				const input = document.getElementById('uniSelect');
+				if (input) input.value = currentUniverse;
+				// re-render grid with new universe
+				buildUnits();
+				renderGrid();
+				updateUniverseButtons();
+				setCmdMessage(`Universe set to ${currentUniverse}.`, 'UNIVERSE');
+			},
+			updateFromInput: () => {
+				const input = document.getElementById('uniSelect');
+				if (!input) return;
+				let v = parseInt(input.value);
+				if (isNaN(v)) v = 1;
+				if (v < 1) v = 1;
+				if (v > MAX_UNIVERSE) v = MAX_UNIVERSE;
+				universeController.setUniverse(v);
+			},
+			incrementUniverse: () => {
+				if (currentUniverse < MAX_UNIVERSE) universeController.setUniverse(currentUniverse + 1);
+			},
+			decrementUniverse: () => {
+				if (currentUniverse > 1) universeController.setUniverse(currentUniverse - 1);
+			}
+		};
+
+		function updateUniverseButtons() {
+			const prev = document.getElementById('prevUniBtn');
+			const next = document.getElementById('nextUniBtn');
+			if (prev) prev.disabled = currentUniverse <= 1;
+			if (next) next.disabled = currentUniverse >= MAX_UNIVERSE;
+		}
+
+		// Bind UI controls
+		const uniInput = document.getElementById('uniSelect');
+		if (uniInput) {
+			uniInput.setAttribute('min', '1');
+			uniInput.setAttribute('max', String(MAX_UNIVERSE));
+			uniInput.value = currentUniverse;
+			uniInput.addEventListener('input', () => { universeController.updateFromInput(); });
+		}
+
+		const prevBtn = document.getElementById('prevUniBtn');
+		if (prevBtn) prevBtn.addEventListener('click', () => { universeController.decrementUniverse(); });
+		const nextBtn = document.getElementById('nextUniBtn');
+		if (nextBtn) nextBtn.addEventListener('click', () => { universeController.incrementUniverse(); });
+
+		// Expose controller
+		window.universeController = universeController;
+		updateUniverseButtons();
 		buildUnits();
 		renderGrid();
 
