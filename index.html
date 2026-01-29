@@ -372,9 +372,41 @@
         <!-- Universe View -->
         <div id="universe" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Universe View</h1>
-            <div class="universeGrid">
-
+            <div style="align-items: center; display: flex; flex-direction: row; justify-content: center; margin-top: 36px;">
+                <div style="display: flex; flex-direction: row; align-items: center; gap: 16px">
+                    <label for="dmxAddress">Universe</label>
+                    <button onclick="" disabled id="prevUniBtn" style="font-size: 18px; font-family: 'IconFont';"></button>
+                    <input type="number" id="uniSelect" min="1" max="1024" value="1" placeholder="1-1024">
+                    <button onclick="" id="nextUniBtn" style="font-size: 18px; font-family: 'IconFont';"></button>
+                </div>
+                <div style=" margin-left:16px; display: flex; flex-direction: row; align-items: center; gap: 16px">
+                    <button onclick="setCmdMessage('To be implemented', 'CROSS_UNIVERSE_SHIFT')" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Cross-universe shift</span>
+                    </button>
+                    <button onclick="setCmdMessage('To be implemented', 'SHIFT')" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Vector shift</span>
+                    </button>
+                    <button onclick="setCmdMessage('To be implemented', 'INSERT_GAP')" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Insert gaps</span>
+                    </button>
+                    <button onclick="setCmdMessage('To be implemented', 'COLLAPSE_GAPS')" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Collapse gaps</span>
+                    </button>
+                    <button onclick="setCmdMessage('To be implemented', 'MERGE')" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Merge universes</span>
+                    </button>
+                    <button onclick="setCmdMessage('To be implemented', 'EXPORT')" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Export</span>
+                    </button>
+                </div>
             </div>
+            <div class="universeGrid"></div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
         </div>
 

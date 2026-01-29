@@ -71,7 +71,7 @@ function navigateTo(page)
             document.getElementById('cmdIcon').innerHTML = '';
             return;
         }
-        
+        // layout icon: 
         case 'dip':
         {
             document.getElementById('dip').style.display = 'block';
