@@ -33,10 +33,14 @@ class BeamCalculator
             lux: 0
         };
         this.currentUnit = 'm';
-        this.userScale = 1;
+        this.userScale = 1.75;
         this.dragging = null;
         this.lockedValue = null; // 'angle', 'distance', 'diameter', or null
         this.dragStart = { y: 0, angle: 0 };
+        this._savedViewBox = null;
+        this._freezeView = false;
+        // Positive moves the graph up (fixture closer to top), leaving more space below
+        this.viewTopOffset = 1.5;
 
         this.limits = 
         {
@@ -54,6 +58,7 @@ class BeamCalculator
     {
         this.setupSVG();
         this.bindEvents();
+        if (this.scaleSlider) this.scaleSlider.value = this.userScale;
         this.updateFromInput('angle');
         this.updateLockUI();
         this.setActiveUnit(true);
@@ -399,19 +404,26 @@ class BeamCalculator
 
         if (worldWidth / worldHeight > aspectRatio) { worldHeight = worldWidth / aspectRatio; } 
         else { worldWidth = worldHeight * aspectRatio; }
-        
+
         worldWidth /= this.userScale;
         worldHeight /= this.userScale;
 
-        const viewBox = 
-        [
+        const minY = -padding + (this.viewTopOffset || 0);
+        const viewBox = [
             -worldWidth / 2,
-            -padding,
+            minY,
             worldWidth,
             worldHeight
         ].join(' ');
 
-        this.svg.setAttribute('viewBox', viewBox);
+        // If a drag is in progress and we've frozen the view, reuse the saved viewBox
+        if (this._freezeView && this._savedViewBox) {
+            this.svg.setAttribute('viewBox', this._savedViewBox);
+        } else {
+            this.svg.setAttribute('viewBox', viewBox);
+            this._savedViewBox = viewBox;
+        }
+
         this.updateLabels(distance, diameter, angle);
     }
     
@@ -446,6 +458,12 @@ class BeamCalculator
 
     handleWheel(e) 
     {
+        // While dragging handles, ignore wheel events to avoid resizing the view
+        if (this.dragging) {
+            e.preventDefault();
+            return;
+        }
+
         e.preventDefault();
         const delta = e.deltaY > 0 ? 0.05 : -0.05;
         this.userScale -= delta;
@@ -468,6 +486,9 @@ class BeamCalculator
                 this.dragStart.y = pt.y;
                 this.dragStart.angle = this.beam.angle;
             }
+            // Freeze the current viewBox so dragging handles doesn't resize/zoom the SVG
+            this._savedViewBox = this.svg.getAttribute('viewBox') || null;
+            this._freezeView = true;
         }
     }
 
@@ -545,6 +566,8 @@ class BeamCalculator
             document.body.classList.remove('dragging');
             this.dragging = null;
             this.scaleSlider.disabled = false;
+            this._freezeView = false;
+            this._savedViewBox = null;
         }
     }
 

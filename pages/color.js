@@ -720,7 +720,7 @@ class EnhancedColorConverter
                     </div>
                 </div>
                 <div class="saved-color-actions">
-                    <button class="iconButton" onclick="colorConverter.loadColor(${index})">
+                    <button class="iconButton" onclick="setCmdMessage('To be implemented.', 'LINK TO PALETTE')">
                             <span class="buttonIcon"></span>
                             <span class="buttonText">Link</span>
                     </button>

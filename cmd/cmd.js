@@ -165,6 +165,7 @@ function resetCmd(freezeTrigger = true)
     doc = false;
     rename = false;
     nav = false;
+    vectorShift = false;
     if (freezeTrigger) freeze = false;
 }
 
