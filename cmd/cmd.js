@@ -186,14 +186,9 @@ function unfocusCmd()
     return;
 }
 
-// Initiate vector shift flow from UI
 function startVectorShift()
 {
-    // only allow when on universe page
-    if (typeof currentPage !== 'undefined' && currentPage !== 'universe') {
-        setCmdMessage('Vector shift is only available on the Universe page.', 'ERROR');
-        return;
-    }
+    setCmdMessage('Vector shift is only available on the Universe page.', 'ERROR');
     vectorShift = true;
     setCmdMessage('Enter vector value. (syntax: + or - {offset} OR -sf {targetStart}):', 'VECTOR SHIFT');
     startDotAnimation();
@@ -653,7 +648,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command.startsWith('load') || command.startsWith('-l') && currentPage === 'dip')
+        else if ((command.startsWith('load') || command.startsWith('-l')) && currentPage === 'dip')
         {
             let value = rawCommand.slice(4).trim();
             if(command.startsWith('-l'))
@@ -875,6 +870,12 @@ function handleCommand(event)
             return;
         }
 
+        else if (command === 'vec' && currentPage === 'universe')
+        {
+            startVectorShift();
+            return;
+        }
+
         else if (command === 'help')
         {
             switch(currentPage)
@@ -885,6 +886,9 @@ function handleCommand(event)
                 case 'patch':
                     setCmdMessage('Available patch commands: add, remove, color, rename, patch, update, stats, docset, export, clear.', 'HELP');
                     return;
+                case 'universe':
+                    setCmdMessage('Available universe commands: vec.', 'HELP');
+                    return;
                 case 'dip':
                     setCmdMessage('Available DIP commands: clear -d (or --cd), clear -a (or --ca), store (or --s), flip (or --f), load (or -l) {address}, increment (or +), decrement (or -).', 'HELP');
                     return;
@@ -893,6 +897,12 @@ function handleCommand(event)
                     return;
                 case 'beam':
                     setCmdMessage('Available beam commands: set (or -s) {parameter} {value}, clear, lock (or -l) {parameter}, ft (or feet), m (or meters).', 'HELP');
+                    return;
+                case 'database':
+                    setCmdMessage('Available database commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload, liveclock.', 'HELP');
+                    return;
+                case 'settings':
+                    setCmdMessage('Available settings commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload, liveclock.', 'HELP');
                     return;
                 default:
                     setCmdMessage('Available generic commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload, liveclock.', 'HELP');
@@ -907,28 +917,28 @@ function handleCommand(event)
 
         else if (command === 'github')
         {
-            setCmdMessage('Opened GitHub repository in a new browser page.', 'GITHUB');
+            setCmdMessage('Opened GitHub repository in a new browser tab.', 'GITHUB');
             window.open('https://www.github.com/alessandrocaseti/dmx-tools', '_blank').focus();
             return;
         }
 
         else if (command === 'liveclock')
         {
-            setCmdMessage('Opened liveclock app in a new browser page.', 'LIVECLOCK');
+            setCmdMessage('Opened liveclock app in a new browser tab.', 'LIVECLOCK');
             window.open('https://alessandrocaseti.github.io/live-clock', '_blank').focus();
             return;
         }
 
         else if (command === 'qxf')
         {
-            setCmdMessage('Opened QXF to JSON converter in a new browser page.', 'QXF');
+            setCmdMessage('Opened QXF to JSON converter in a new browser tab.', 'QXF');
             window.open('qxf_converter/index.html', '_blank').focus();
             return;
         }
 
         else if (command === 'qxf--test')
         {
-            setCmdMessage('Downloaded a text QXF file & opened QXF to JSON converter in a new browser page.', 'QXF TEST');
+            setCmdMessage('Downloaded a text QXF file & opened QXF to JSON converter in a new browser tab.', 'QXF TEST');
             window.open('qxf_converter/index.html', '_blank').focus();
             const link = document.createElement('a');
             link.href = 'qxf_converter/utils/test.qxf';

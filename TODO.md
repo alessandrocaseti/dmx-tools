@@ -6,6 +6,7 @@
 [] Undo/redo mechanism via CMD
 [] CMD history is saved in localstorage (?)
 [x] Main version
+[] >> and << commands
 [] Create custom tags for controls (?)
 
 ## Patch
@@ -21,9 +22,13 @@
 [] Create page
 [] Create Universe grid (32x16)
 [] Create Universe selection item
-[] Ability to move fixtures between the universe
+[x] Ability to move fixtures between the universe
 [] Ability to cut / copy / paste / remove fixtures from the grid/patch
 [] Overlapping errors when channel conflicts happen
+[] Cross-universe shift
+[] Gaps management
+[] Cmd selection features
+[] Patch page sync
 
 ## DIP
 
@@ -74,10 +79,12 @@
 [x] QXF converter 1.2
 [] Convert all QLC+ 5.1.0 fixtures to database version 1.2
 [x] Add fixture to favorites
+[] Patch fixture
+[] Redesign physical properties layout
 
 ## Settings
 
-[] Create page
+[x] Create page
 [] Freeze CMD setting
 [] CMD commands table
 [] Ask before clearing (via CMD)
