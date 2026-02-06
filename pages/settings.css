@@ -18,13 +18,21 @@
     background: var(--foreground);
 }
 
+.cardIcon
+{
+    font-family: IconFont, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: var(--colore-primary);
+    margin-left: 24px;
+}
+
 .setting-info
 {
     display: flex;
     justify-content: left;
     flex-direction: column;
     gap: 0px;
-    margin-left: 18px;
+    margin-left: 32px;
     line-height: 0.7;
 }
 
@@ -59,7 +67,7 @@
     .clickableCardIcon
     {
         color: var(--colore-hover);
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 }
 

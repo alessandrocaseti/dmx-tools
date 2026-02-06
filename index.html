@@ -793,6 +793,7 @@
                 <div class="cards-container" id="cards-container">
 
                     <div class="settingsCard">
+                        <div class="cardIcon"></div>
                         <div class="setting-info">
                             <h2>Appearance</h2>
                             <h3>Change the theme of the application</h3>
@@ -808,6 +809,7 @@
                     </div>
 
                     <div class="settingsCard">
+                        <div class="cardIcon"></div>
                         <div class="setting-info">
                             <h2>Ask for confirmation</h2>
                             <h3>Confirm via a terminal prompt before performing destructive actions</h3>
@@ -820,6 +822,7 @@
                     </div>
 
                     <div class="settingsCard clickableCard" onclick="TODO('CmdList')">
+                        <div class="cardIcon"></div>
                         <div class="setting-info">
                             <h2>Commands list</h2>
                             <h3>View the full list of available terminal commands, grouped by page</h3>
@@ -830,6 +833,7 @@
                     </div>
 
                     <div class="settingsCard clickableCard" onclick="viewCmdLogs()">
+                        <div class="cardIcon"></div>
                         <div class="setting-info">
                             <h2>Command prompt logs</h2>
                             <h3>View the full list of executed terminal commands</h3>
@@ -840,8 +844,9 @@
                     </div>
 
                     <div class="settingsCard">
+                        <div class="cardIcon"></div>
                         <div class="setting-info">
-                            <h2>App data</h2>
+                            <h2>Restore app data</h2>
                             <h3>Clear all application data stored inside your browser's localstorage folder</h3>
                         </div>
                         <div class="setting-item">
@@ -853,6 +858,7 @@
                     </div> 
 
                     <div class="settingsCard">
+                        <div class="cardIcon"></div>
                         <div class="setting-info">
                             <h2>Liveclock</h2>
                             <h3>Open liveclock app in a new browser tab</h3>
@@ -866,6 +872,7 @@
                     </div>
 
                     <div class="settingsCard">
+                        <div class="cardIcon"></div>
                         <div class="setting-info">
                             <h2>About</h2>
                             <h3>DMX Tools - Free DMX utilities</h3>
@@ -878,7 +885,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="cmdLogs">
+                <div id="cmdLogs" style="display: none;">
                     <button onclick="showSettings()" class="iconButton">
                         <span class="buttonIcon"></span>
                         <span class="buttonText">Back</span>
