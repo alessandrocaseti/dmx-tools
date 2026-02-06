@@ -36,6 +36,42 @@ function isHexColor(hex)
     return typeof hex === 'string' && hex.length === 6 && !isNaN(Number('0x' + hex))
 }
 
+// --- localStorage helpers for CMD logs & inputs ---
+function _getLocalArray(key) {
+    try {
+        const v = localStorage.getItem(key);
+        return v ? JSON.parse(v) : [];
+    } catch (e) {
+        return [];
+    }
+}
+
+function _pushLocalArray(key, obj) {
+    try {
+        const arr = _getLocalArray(key);
+        arr.push(obj);
+        localStorage.setItem(key, JSON.stringify(arr));
+        if((key === 'cmdLogs' || key === 'cmdInputs') && cmdLogsView) { viewCmdLogs(); } 
+    } catch (e) {
+        // ignore storage errors
+    }
+}
+
+function pushCmdLog(message, type) {
+    _pushLocalArray('cmdLogs', { message: message || '', type: type || 'WELCOME', date: new Date().toISOString() });
+}
+
+function pushCmdInput(input, lastCmdType) {
+    _pushLocalArray('cmdInputs', { input: input || '', type: lastCmdType || 'UNKNOWN', date: new Date().toISOString() });
+}
+
+function clearCmdLogs() {
+    localStorage.removeItem('cmdLogs');
+    localStorage.removeItem('cmdInputs');
+    document.getElementById('logsContainer').innerHTML = '';
+    viewCmdLogs();
+}
+
 let specialBackground = false;
 
 function startDotAnimation() 
@@ -73,6 +109,8 @@ function stopDotAnimation()
 
 function setCmdMessage(msg, type)
 {   
+    // store inside localstorage
+    try { pushCmdLog(msg, type); } catch (e) { /* ignore */ }
     stopDotAnimation();
     const container = document.getElementById('cmdListContainer2');
     const cmdMsg = document.createElement('p');
@@ -203,6 +241,8 @@ function handleCommand(event)
         const cmdInput = document.getElementById('cmdInput');
         const command = cmdInput.value.trim().toLowerCase();
         const rawCommand = cmdInput.value.trim();
+        // store user input in localstorage
+        try { pushCmdInput(rawCommand, document.getElementById('cmdMsgType').innerHTML); } catch (e) { /* ignore */ }
         cmdInput.value = '';
         focusCmd(false);
 

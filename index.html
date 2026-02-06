@@ -790,7 +790,7 @@
         <div id="settings" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Control Center</h1>
             <div class="defaultPageContent">
-                <div class="cards-container">
+                <div class="cards-container" id="cards-container">
 
                     <div class="settingsCard">
                         <div class="setting-info">
@@ -829,9 +829,9 @@
                         </div>
                     </div>
 
-                    <div class="settingsCard clickableCard" onclick="TODO('CmdLogs')">
+                    <div class="settingsCard clickableCard" onclick="viewCmdLogs()">
                         <div class="setting-info">
-                            <h2>Command logs</h2>
+                            <h2>Command prompt logs</h2>
                             <h3>View the full list of executed terminal commands</h3>
                         </div>
                         <div class="setting-item">
@@ -878,8 +878,21 @@
                         </div>
                     </div>
                 </div>
+                <div id="cmdLogs">
+                    <button onclick="showSettings()" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Back</span>
+                    </button>
+                    <button onclick="clearCmdLogs()" class="iconButton">
+                        <span class="buttonIcon"></span>
+                        <span class="buttonText">Clear logs</span>
+                    </button>
+                    <h1 style="margin-top: 48px;">Terminal logs</h1>
+                    <div class="separator"></div>
+                    <div id="logsContainer" style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;"></div>
+                </div>
             </div>
-            <div>
+            <div id="ac">
                 <img src="assets/ac.png">
                 <p style="font-size: 1.2em; color: gray; margin-top: -48px; user-select: none;">Developed by Alessandro Caseti</p>
             </div>
