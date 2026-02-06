@@ -51,3 +51,15 @@ function targetPage(offset)
     setCmdMessage("Navigated to " + currentPage + ".", "NAV");
     navigateTo(pages[(pages.indexOf(currentPage) + offset + pages.length) % pages.length]);
 }
+
+function TODO(feature)
+{
+    setCmdMessage("This feature is not yet implemented.", feature.toUpperCase());
+    return;
+}
+
+function openLiveclock()
+{
+    setCmdMessage('Opened liveclock app in a new browser tab.', 'LIVECLOCK');
+    window.open('https://alessandrocaseti.github.io/live-clock', '_blank').focus();
+}

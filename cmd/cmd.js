@@ -935,8 +935,7 @@ function handleCommand(event)
 
         else if (command === 'liveclock')
         {
-            setCmdMessage('Opened liveclock app in a new browser tab.', 'LIVECLOCK');
-            window.open('https://alessandrocaseti.github.io/live-clock', '_blank').focus();
+            openLiveclock();
             return;
         }
 

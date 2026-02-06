@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="elements/scrollbar.css">
         <link rel="stylesheet" href="elements/select.css">
         <link rel="stylesheet" href="elements/slider.css">
+        <link rel="stylesheet" href="elements/switch.css">
         <link rel="stylesheet" href="elements/table.css">
         <link rel="stylesheet" href="elements/text.css">
         <link rel="stylesheet" href="export/pdf.css">
@@ -27,6 +28,7 @@
         <link rel="stylesheet" href="pages/power.css">
         <link rel="stylesheet" href="pages/beam.css">
         <link rel="stylesheet" href="pages/database.css">
+        <link rel="stylesheet" href="pages/settings.css">
         <link rel="stylesheet" href="cmd/cmd.css">
         <link rel="icon" href="assets/dmxtools-logo.png" type="image/x-icon">
         <script src="app.js"></script>
@@ -38,6 +40,7 @@
         <script src="pages/power.js"></script>
         <script src="pages/beam.js"></script>
         <script src="pages/database.js"></script>
+        <script src="pages/settings.js"></script>
         <script src="fixtures/brands-map.js"></script>
         <script src="fixtures/fixtures-map.js"></script>
         <script src="cmd/cmd.js"></script>
@@ -287,35 +290,37 @@
                     <label for="fixType">Type</label>
 
                     <div class="selectDiv">
-                        <select id="fixType" required style="width: 16vh; height: 36px; padding-right: 28px;">
-                            <option value="Beam">Beam</option>
-                            <option value="Spot">Spot</option>
-                            <option value="Wash">Wash</option>
-                            <option value="Dimmer">Dimmer</option>
-                            <option value="Blinder">Blinder</option>
-                            <option value="Strobe">Strobe</option>
-                            <option value="Scanner">Scanner</option>
-                            <option value="Par">Par</option>
-                            <option value="FX Fog">FX Fog</option>
-                            <option value="FX Haze">FX Haze</option>
-                            <option value="FX Spark">FX Spark</option>
-                            <option value="FX CO2">FX CO2</option>
-                            <option value="FX Fire">FX Fire</option>
-                            <option value="FX Pyro">FX Pyro</option>
-                            <option value="FX Confetti">FX Confetti</option>
-                            <option value="Spotlight">Spotlight</option>
-                            <option value="Led Bar">Led Bar</option>
-                            <option value="Moving Bar">Moving Bar</option>
-                            <option value="Moving Panel">Moving Panel</option>
-                            <option value="Laser">Laser</option>
-                            <option value="Fan">Fan</option>
-                            <option value="RGB">RGB</option>
-                            <option value="RGBW">RGBW</option>
-                            <option value="RGBWAV">RGBWAV</option>
-                            <option value="Effect">Effect</option>
-                            <option value="Other">Other</option>
-                        </select>
-                        <span class="selectArrow"></span>
+                        <div class="selectDiv">
+                            <select id="fixType" required style="width: 16vh; height: 36px; padding-right: 28px;">
+                                <option value="Beam">Beam</option>
+                                <option value="Spot">Spot</option>
+                                <option value="Wash">Wash</option>
+                                <option value="Dimmer">Dimmer</option>
+                                <option value="Blinder">Blinder</option>
+                                <option value="Strobe">Strobe</option>
+                                <option value="Scanner">Scanner</option>
+                                <option value="Par">Par</option>
+                                <option value="FX Fog">FX Fog</option>
+                                <option value="FX Haze">FX Haze</option>
+                                <option value="FX Spark">FX Spark</option>
+                                <option value="FX CO2">FX CO2</option>
+                                <option value="FX Fire">FX Fire</option>
+                                <option value="FX Pyro">FX Pyro</option>
+                                <option value="FX Confetti">FX Confetti</option>
+                                <option value="Spotlight">Spotlight</option>
+                                <option value="Led Bar">Led Bar</option>
+                                <option value="Moving Bar">Moving Bar</option>
+                                <option value="Moving Panel">Moving Panel</option>
+                                <option value="Laser">Laser</option>
+                                <option value="Fan">Fan</option>
+                                <option value="RGB">RGB</option>
+                                <option value="RGBW">RGBW</option>
+                                <option value="RGBWAV">RGBWAV</option>
+                                <option value="Effect">Effect</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="selectPatchArrow"></span>
+                        </div>
                     </div>
 
                     <label for="fixQty">Quantity</label>
@@ -784,16 +789,104 @@
         <!-- Settings -->
         <div id="settings" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Control Center</h1>
-            <!-- Bottom Links -->
-            <div style="display: flex; flex-direction: row; gap: 8px; justify-content: center; bottom: 12vh; margin-top: 32vh; align-items: center;">
-                <a onclick="about()" target="_blank" class="defaultLink">About</a>
-                <h4 style="color: #666;user-select: none;">•</h4>
-                <a href="https://github.com/alessandrocaseti/dmx-tools" target="_blank" class="defaultLink">GitHub</a>
+            <div class="defaultPageContent">
+                <div class="cards-container">
+
+                    <div class="settingsCard">
+                        <div class="setting-info">
+                            <h2>Appearance</h2>
+                            <h3>Change the theme of the application</h3>
+                        </div>
+                        <div class="setting-item">
+                            <select id="themeSelect" onchange="TODO('Theme')" style="width: 200px; height: 36px; margin-right: 0px;">
+                                <option value="dark">Dark</option>
+                                <option value="light">Light</option>
+                                <option value="system">System Default</option>
+                            </select>
+                            <span class="selectArrow"></span>
+                        </div>
+                    </div>
+
+                    <div class="settingsCard">
+                        <div class="setting-info">
+                            <h2>Ask for confirmation</h2>
+                            <h3>Confirm via a terminal prompt before performing destructive actions</h3>
+                        </div>
+                        <div class="setting-item">
+                            <div class="switch" onclick="this.classList.toggle('on'); TODO('Ask for confirmation')">
+                            <div class="switchLever"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settingsCard clickableCard" onclick="TODO('CmdList')">
+                        <div class="setting-info">
+                            <h2>Commands list</h2>
+                            <h3>View the full list of available terminal commands, grouped by page</h3>
+                        </div>
+                        <div class="setting-item">
+                            <p class="clickableCardIcon"></p>
+                        </div>
+                    </div>
+
+                    <div class="settingsCard clickableCard" onclick="TODO('CmdLogs')">
+                        <div class="setting-info">
+                            <h2>Command logs</h2>
+                            <h3>View the full list of executed terminal commands</h3>
+                        </div>
+                        <div class="setting-item">
+                            <p class="clickableCardIcon"></p>
+                        </div>
+                    </div>
+
+                    <div class="settingsCard">
+                        <div class="setting-info">
+                            <h2>App data</h2>
+                            <h3>Clear all application data stored inside your browser's localstorage folder</h3>
+                        </div>
+                        <div class="setting-item">
+                            <button onclick="TODO('Clear app data')" class="iconButton">
+                                <span class="buttonIcon"></span>
+                                <span class="buttonText">Clear data</span>
+                            </button>
+                        </div>
+                    </div> 
+
+                    <div class="settingsCard">
+                        <div class="setting-info">
+                            <h2>Liveclock</h2>
+                            <h3>Open liveclock app in a new browser tab</h3>
+                        </div>
+                        <div class="setting-item">
+                            <button onclick="openLiveclock()" class="iconButton">
+                                <span class="buttonIcon"></span>
+                                <span class="buttonText">Open app</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="settingsCard">
+                        <div class="setting-info">
+                            <h2>About</h2>
+                            <h3>DMX Tools - Free DMX utilities</h3>
+                        </div>
+                        <div class="setting-item">
+                            <button onclick="TODO('About')" class="iconButton">
+                                <span class="buttonIcon"></span>
+                                <span class="buttonText">App info</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="assets/ac.png">
+                <p style="font-size: 1.2em; color: gray; margin-top: -48px; user-select: none;">Developed by Alessandro Caseti</p>
             </div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
         </div>
 
-        <!-- Command Bar -->
+        <!-- Terminal -->
         <div id="command-bar" class="web-only" onclick="focusCmd()">
             <div style="display: flex; flex-direction: row; align-items: center; gap: 12px;">
                 <p style="color: yellow; user-select: none;" id="cmdTitle">CMD • Current message</p>
@@ -804,7 +897,7 @@
             <div class="cmdListContainer">
                 <p class="command-msg">></p>
                 <div id="cmdListContainer2" style="display: flex; flex-direction: row;">
-                    <p class="command-msg" id="cmdMsg">Welcome on DMX tools! Start by indicating the project details and then proceed to set up your fixture list.</p>
+                    <p class="command-msg" id="cmdMsg">Welcome to DMX tools! Start by indicating the project details and then proceed to set up your fixture list.</p>
                     <p class="command-msg dot" id="dot">></p>
                 </div>
                 <input type="text" id="cmdInput" onblur="unfocusCmd()" onfocus="focusCmd(true)" onkeydown="handleCommand(event)" style="margin-top: -4px;caret-color: yellow;flex-grow: 1; margin-left: -4px; border: none; outline: none; background-color: transparent; color: yellow; font-family: 'Roboto Mono';">

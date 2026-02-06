@@ -21,7 +21,7 @@ select:focus
     outline: none;
 }
 
-.selectArrow
+.selectPatchArrow
 {
     position:absolute;
     right:16px;
@@ -32,6 +32,17 @@ select:focus
     pointer-events:none;
     color:#ffeb3b;
     user-select: none;
+}
+
+.selectArrow
+{
+    position:absolute;
+    font-family:IconFont;
+    pointer-events:none;
+    color:#ffeb3b;
+    user-select: none;
+    margin-left: -24px;
+    margin-top: 10px;
 }
 
 .selectDiv
