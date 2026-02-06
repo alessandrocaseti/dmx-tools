@@ -31,7 +31,7 @@ function isBinaryString(str)
     return binaryPattern.test(str); // Test if the string matches the pattern
 }
 
-function isHexColor (hex) 
+function isHexColor(hex) 
 {
     return typeof hex === 'string' && hex.length === 6 && !isNaN(Number('0x' + hex))
 }
@@ -926,12 +926,6 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'about')
-        {
-            about();
-            return;
-        }
-
         else if (command === 'github')
         {
             setCmdMessage('Opened GitHub repository in a new browser tab.', 'GITHUB');
@@ -964,19 +958,19 @@ function handleCommand(event)
             return;
         }
 
+        else if (command === 'about')
+        {
+            about(); return;
+        }
+
         else if (command === 'reload')
         {
             location.reload(); return;
         }
 
-        else if (command === 'skibidiboppi')
+        else if (command === 'skibidipatching')
         {
-            setCmdMessage('Forza Napoli.', 'SKIBIDIBOPPI'); return;
-        }
-
-        else if (command === 'forza napoli')
-        {
-            setCmdMessage('Skibidiboppi.', 'FORZA NAPOLI'); return;
+            setCmdMessage('Volevo un server...', 'SKIBIDIPATCHING'); return;
         }
 
         else

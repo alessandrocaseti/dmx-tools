@@ -43,6 +43,8 @@
 [] Lee and Rosco color palettes (maybe not)
 [] Link to palette
 [x] Saved colors order
+[] Fix hue slider + add ability to use mouse wheel to scroll
+[] Hue and picker styling improvements
 
 ## Power
 
@@ -87,6 +89,7 @@
 [x] Create page
 [] Freeze CMD setting
 [] CMD commands table
+[] View CMD logs
 [] Ask before clearing (via CMD)
 [] About section
-[] Nexus project
+[] ****** project

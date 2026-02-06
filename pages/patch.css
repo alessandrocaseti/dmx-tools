@@ -99,3 +99,94 @@
     vertical-align:middle;
     margin-right:0px;
 }
+
+.colorBtn.default 
+{
+    background: var(--colore-bg-scuro);
+    border: 1px solid var(--colore-bordo);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.4s, color 0.4s;
+    margin: 0 auto 0 auto !important;
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorBtn.default:hover
+{
+    background: var(--colore-giallo);
+    color: var(--colore-bg-scuro);
+}
+
+.colorButtonIcon 
+{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: IconFont;
+}
+
+.colorCircle 
+{
+    border: none;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 0 auto !important;
+    min-width: 22px;
+    max-width: 22px;
+    min-height: 22px;
+    max-height: 22px;
+}
+
+.colorBtn:focus .colorCircle,
+.colorBtn:hover .colorCircle
+{
+    outline: 2px solid var(--colore-giallo);
+    box-shadow: 0 0 0 2px #ffeb3b44;
+}
+
+#patchOptions 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+label[for="showImagesCheckbox"], #patchOptions label 
+{
+    color: var(--colore-giallo);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    user-select: none;
+}
+
+#fixType 
+{
+    padding-right: 32px !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--colore-bordo);
+    color: var(--colore-testo-chiaro);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#fixType:focus 
+{
+    border: 1.5px solid var(--colore-giallo);
+    box-shadow: 0 0 0 2px #ffeb3b44;
+    outline: none;
+}
+
+.typeText
+{
+    margin-left: 16px;
+}
