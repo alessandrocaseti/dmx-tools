@@ -910,9 +910,16 @@ function handleCommand(event)
             }
         }
 
+        else if (command === 'help --all' || command === 'help -a')
+        {
+            setCmdMessage('Available generic commands: nav (or -n {page} or < or >), freeze, unfreeze, help, about, github, reset, reload, liveclock.', 'HELP');
+            return;
+        }
+
         else if (command === 'about')
         {
-            about(); return;
+            about();
+            return;
         }
 
         else if (command === 'github')
@@ -936,7 +943,7 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === 'qxf--test')
+        else if (command === 'qxf --test' || command === 'qxf -t')
         {
             setCmdMessage('Downloaded a text QXF file & opened QXF to JSON converter in a new browser tab.', 'QXF TEST');
             window.open('qxf_converter/index.html', '_blank').focus();
