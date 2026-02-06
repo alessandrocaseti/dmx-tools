@@ -6,8 +6,8 @@
 [] Undo/redo mechanism via CMD
 [] CMD history is saved in localstorage (?)
 [x] Main version
-[] >> and << commands
-[] Create custom tags for controls (?)
+[x] >> and << commands
+[] Create custom tags for HTML controls (?)
 
 ## Patch
 

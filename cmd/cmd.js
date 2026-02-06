@@ -448,17 +448,27 @@ function handleCommand(event)
             return;
         }
 
-        else if (command === '>' )
+        else if (command.startsWith('>'))
         {
-            NextPage();
-            setCmdMessage("Navigated to " + currentPage + ".", "NAV")
+            let offset = 0;
+            for (let i = 0; i < command.length; i++) 
+            {
+                if (command[i] === '>') offset++;
+                else break;
+            }
+            targetPage(offset);
             return;
         }
 
-        else if (command === '<' )
+        else if (command.startsWith('<'))
         {
-            PreviousPage();
-            setCmdMessage("Navigated to " + currentPage + ".", "NAV")
+            let offset = 0;
+            for (let i = 0; i < command.length; i++) 
+            {
+                if (command[i] === '<') offset++;
+                else break;
+            }
+            targetPage(-offset);
             return;
         }
 
