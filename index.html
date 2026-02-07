@@ -809,13 +809,42 @@
                     </div>
 
                     <div class="settingsCard">
+                        <div class="cardIcon"></div>
+                        <div class="setting-info">
+                            <h2>Performance mode</h2>
+                            <h3>Improve performance by attenuating background tasks and animations</h3>
+                        </div>
+                        <div class="setting-item">
+                            <select id="performanceSelect" onchange="TODO('PERFORMANCE')" style="width: 200px; height: 36px; margin-right: 0px;">
+                                <option value="on">Dynamic</option>
+                                <option value="off">Fully Disabled</option>
+                                <option value="on">Fully Enabled</option>
+                            </select>
+                            <span class="selectArrow"></span>
+                        </div>
+                    </div>
+
+                    <div class="settingsCard">
                         <div class="cardIcon"></div>
                         <div class="setting-info">
                             <h2>Ask for confirmation</h2>
                             <h3>Confirm via a terminal prompt before performing destructive actions</h3>
                         </div>
                         <div class="setting-item">
-                            <div class="switch" onclick="this.classList.toggle('on'); TODO('Ask for confirmation')">
+                            <div class="switch on" onclick="this.classList.toggle('on'); TODO('Ask for confirmation')">
+                                <div class="switchLever"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settingsCard">
+                        <div class="cardIcon"></div>
+                        <div class="setting-info">
+                            <h2>Command prompt advices</h2>
+                            <h3>Enable terminal to prompt messages when executing ordinary actions</h3>
+                        </div>
+                        <div class="setting-item">
+                            <div class="switch on" onclick="this.classList.toggle('on'); TODO('Freeze_CMD')">
                                 <div class="switchLever"></div>
                             </div>
                         </div>
@@ -833,7 +862,7 @@
                     </div>
 
                     <div class="settingsCard clickableCard" onclick="viewCmdLogs()">
-                        <div class="cardIcon"></div>
+                        <div class="cardIcon"></div>
                         <div class="setting-info">
                             <h2>Command prompt logs</h2>
                             <h3>View the full list of executed terminal commands</h3>
@@ -847,7 +876,7 @@
                         <div class="cardIcon"></div>
                         <div class="setting-info">
                             <h2>Restore app data</h2>
-                            <h3>Clear all application data stored inside your browser's localstorage folder</h3>
+                            <h3>Clear all application data stored inside your browser's local storage folder</h3>
                         </div>
                         <div class="setting-item">
                             <button onclick="TODO('Clear app data')" class="iconButton">
@@ -878,8 +907,8 @@
                             <h3>DMX Tools - Free DMX utilities</h3>
                         </div>
                         <div class="setting-item">
-                            <button onclick="TODO('About')" class="iconButton">
-                                <span class="buttonIcon"></span>
+                            <button onclick="about()" class="iconButton">
+                                <span class="buttonIcon"></span>
                                 <span class="buttonText">App info</span>
                             </button>
                         </div>
@@ -891,10 +920,12 @@
                             <span class="buttonIcon"></span>
                             <span class="buttonText">Back</span>
                         </button>
-                        <button onclick="clearCmdLogs()" class="iconButton" style="margin-left: auto;">
-                            <span class="buttonIcon"></span>
-                            <span class="buttonText">Clear logs</span>
-                        </button>
+                        <div style="margin-left: auto; display: flex; flex-direction: row;">
+                            <button onclick="clearCmdLogs()" class="iconButton">
+                                <span class="buttonIcon"></span>
+                                <span class="buttonText">Clear logs</span>
+                            </button>
+                        </div>
                     </div>
                     <div class="separator" style="margin-top: 24px;"></div>
                     <div id="logsContainer" style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;"></div>

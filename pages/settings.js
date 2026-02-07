@@ -10,10 +10,12 @@ function showSettings()
     document.getElementById('logsContainer').innerHTML = '';
     cmdLogsView = false;
     document.getElementById('settingsPageTitle').innerHTML = 'Control Center';
+    window.scrollTo(0, 0);
 }
 
 function viewCmdLogs() 
 {
+    window.scrollTo(0, 0);
     document.getElementById('settingsPageTitle').innerHTML = 'Terminal Logs';
     document.getElementById('cards-container').style.display = 'none';
     document.getElementById('cmdLogs').style.display = 'block';
