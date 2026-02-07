@@ -788,7 +788,7 @@
 
         <!-- Settings -->
         <div id="settings" class="web-only defaultPage" style="display: none;">
-            <h1 class="pageTitle">Control Center</h1>
+            <h1 class="pageTitle" id="settingsPageTitle">Control Center</h1>
             <div class="defaultPageContent">
                 <div class="cards-container" id="cards-container">
 
@@ -816,7 +816,7 @@
                         </div>
                         <div class="setting-item">
                             <div class="switch" onclick="this.classList.toggle('on'); TODO('Ask for confirmation')">
-                            <div class="switchLever"></div>
+                                <div class="switchLever"></div>
                             </div>
                         </div>
                     </div>
@@ -855,7 +855,7 @@
                                 <span class="buttonText">Clear data</span>
                             </button>
                         </div>
-                    </div> 
+                    </div>
 
                     <div class="settingsCard">
                         <div class="cardIcon"></div>
@@ -886,16 +886,17 @@
                     </div>
                 </div>
                 <div id="cmdLogs" style="display: none;">
-                    <button onclick="showSettings()" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Back</span>
-                    </button>
-                    <button onclick="clearCmdLogs()" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Clear logs</span>
-                    </button>
-                    <h1 style="margin-top: 48px;">Terminal logs</h1>
-                    <div class="separator"></div>
+                    <div class="cmdLogsButtonsDiv">
+                        <button onclick="showSettings()" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Back</span>
+                        </button>
+                        <button onclick="clearCmdLogs()" class="iconButton" style="margin-left: auto;">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Clear logs</span>
+                        </button>
+                    </div>
+                    <div class="separator" style="margin-top: 24px;"></div>
                     <div id="logsContainer" style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;"></div>
                 </div>
             </div>

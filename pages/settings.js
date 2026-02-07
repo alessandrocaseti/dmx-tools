@@ -2,20 +2,25 @@
 
 let cmdLogsView = false;
 
-function showSettings() {
+function showSettings() 
+{
     document.getElementById('cards-container').style.display = 'flex';
     document.getElementById('cmdLogs').style.display = 'none';
     document.getElementById('ac').style.display = 'block';
     document.getElementById('logsContainer').innerHTML = '';
     cmdLogsView = false;
+    document.getElementById('settingsPageTitle').innerHTML = 'Control Center';
 }
 
-function viewCmdLogs() {
+function viewCmdLogs() 
+{
+    document.getElementById('settingsPageTitle').innerHTML = 'Terminal Logs';
     document.getElementById('cards-container').style.display = 'none';
     document.getElementById('cmdLogs').style.display = 'block';
     document.getElementById('ac').style.display = 'none';
     document.getElementById('logsContainer').innerHTML = '';
     cmdLogsView = true;
+
     if(!localStorage.getItem('cmdLogs') && !localStorage.getItem('cmdInputs')) 
     {
         const noLogsElement = document.createElement('p');
@@ -26,18 +31,21 @@ function viewCmdLogs() {
         return;
     }
 
-    // Combina tutti i log (cmdLogs e cmdInputs)
     const allLogs = [];
     
-    for (let log of _getLocalArray('cmdLogs')) {
-        allLogs.push({
+    for (let log of _getLocalArray('cmdLogs')) 
+    {
+        allLogs.push
+        ({
             date: log.date,
             text: `[${log.type}] ${log.message}`
         });
     }
 
-    for (let log of _getLocalArray('cmdInputs')) {
-        allLogs.push({
+    for (let log of _getLocalArray('cmdInputs')) 
+    {
+        allLogs.push
+        ({
             date: log.date,
             text: `User typed "${log.input}" while CMD was on the [${log.type}] state`
         });
@@ -47,9 +55,11 @@ function viewCmdLogs() {
     allLogs.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     // Visualizza i log ordinati
-    for (let log of allLogs) {
+    for (let log of allLogs) 
+    {
         const logElement = document.createElement('p');
         logElement.textContent = `${log.text} (${new Date(log.date).toLocaleString()})`;
+        logElement.className = 'log-item';
         document.getElementById('logsContainer').appendChild(logElement);
     }
 
