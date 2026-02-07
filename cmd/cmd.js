@@ -265,9 +265,9 @@ function handleCommand(event)
         {
             nav = false;
 
-            if (!command || command!== 'home' && command!== 'patch'  && command!== 'dip'  && command!== 'color' && command!== 'power' && command!== 'beam' && command!== 'database')
+            if (!command || !pages.includes(command))
             {
-                setCmdMessage('Invalid page name. Enter a page between home, patch, dip, color, power, beam or database.', 'ERROR');
+                setCmdMessage('Invalid page name. Enter a page between home, patch, universe, dip, color, power, beam, database or settings.', 'ERROR');
                 startDotAnimation();
                 nav = true;
             }
@@ -470,7 +470,7 @@ function handleCommand(event)
         else if (command === 'nav')
         {
             nav = true;
-            setCmdMessage("Select page: home, patch, dip, color, power, beam, database.", "NAV")
+            setCmdMessage("Select page: home, patch, universe, dip, color, power, beam, database or settings.", "NAV")
             startDotAnimation();
             return;
         }
@@ -480,7 +480,7 @@ function handleCommand(event)
             const page = rawCommand.slice(3).trim().toLowerCase();
             if (!page || page!== 'home' && page!== 'patch'  && page!== 'dip'  && page!== 'color' && page!== 'power' && page!== 'beam' && page!== 'database')
             {
-                setCmdMessage('Invalid page name. Enter a page between home, patch, dip, color, power, beam or database.', 'ERROR');
+                setCmdMessage('Invalid page name.', 'ERROR');
                 return;
             }
             navigateTo(page);

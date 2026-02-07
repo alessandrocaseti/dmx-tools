@@ -48,8 +48,9 @@ function navigateTo(page)
 
 function targetPage(offset)
 {
-    setCmdMessage("Navigated to " + currentPage + ".", "NAV");
-    navigateTo(pages[(pages.indexOf(currentPage) + offset + pages.length) % pages.length]);
+    const newPage = pages[(pages.indexOf(currentPage) + offset + pages.length) % pages.length];
+    setCmdMessage("Navigated to " + newPage + ".", "NAV");
+    navigateTo(newPage);
 }
 
 function TODO(feature)
