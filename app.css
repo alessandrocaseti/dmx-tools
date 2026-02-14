@@ -31,7 +31,11 @@ img
     -webkit-user-drag: none;
 }
 
-html { overflow-y: scroll; }
+html 
+{ 
+    scroll-behavior: smooth; 
+    overflow-y: scroll; 
+}
 
 body
 {

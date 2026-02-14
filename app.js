@@ -1,7 +1,7 @@
 /// DMX TOOLS - DEVELOPED BY ALESSANDRO CASETI ///
 
 // App info
-
+// TODO: replace with metadata object
 const appName = 'DMX Tools';
 const version = '1.0.0 Alpha 2';
 const date = '06/02/2026';
