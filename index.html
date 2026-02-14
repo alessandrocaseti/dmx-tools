@@ -850,7 +850,7 @@
                         </div>
                     </div>
 
-                    <div class="settingsCard clickableCard" onclick="TODO('CmdList')">
+                    <div class="settingsCard clickableCard" onclick="viewCmdCommands()">
                         <div class="cardIcon"></div>
                         <div class="setting-info">
                             <h2>Commands list</h2>
@@ -913,6 +913,15 @@
                             </button>
                         </div>
                     </div>
+                </div>
+                <div id="cmdCommands" style="display: none;">
+                    <div class="cmdCommandsButtonsDiv">
+                        <button onclick="showSettings()" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Back</span>
+                        </button>
+                    </div>
+                    <div class="separator" style="margin-top: 24px;"></div>
                 </div>
                 <div id="cmdLogs" style="display: none;">
                     <div class="cmdLogsButtonsDiv">

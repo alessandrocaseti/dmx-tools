@@ -1,16 +1,28 @@
 // DMX TOOLS
 
 let cmdLogsView = false;
-
+let cmdCommandsView = false;
 function showSettings() 
 {
     document.getElementById('cards-container').style.display = 'flex';
     document.getElementById('cmdLogs').style.display = 'none';
+    document.getElementById('cmdCommands').style.display = 'none';
     document.getElementById('ac').style.display = 'block';
     document.getElementById('logsContainer').innerHTML = '';
     cmdLogsView = false;
+    cmdCommandsView = false;
     document.getElementById('settingsPageTitle').innerHTML = 'Control Center';
     window.scrollTo(0, 0);
+}
+
+function viewCmdCommands()
+{
+    window.scrollTo(0, 0);
+    document.getElementById('settingsPageTitle').innerHTML = 'Terminal Commands';
+    document.getElementById('cards-container').style.display = 'none';
+    document.getElementById('cmdCommands').style.display = 'block';
+    document.getElementById('ac').style.display = 'none';
+    cmdCommandsView = true;
 }
 
 function viewCmdLogs() 
@@ -64,5 +76,4 @@ function viewCmdLogs()
         logElement.className = 'log-item';
         document.getElementById('logsContainer').appendChild(logElement);
     }
-
 }
