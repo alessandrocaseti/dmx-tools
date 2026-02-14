@@ -77,3 +77,82 @@ function viewCmdLogs()
         document.getElementById('logsContainer').appendChild(logElement);
     }
 }
+
+function downloadAppData()
+{
+    const metadata = {
+        appName: 'DMX Tools',
+        appVersion: (window.APP_VERSION || 'dev'),
+        userAgent: (navigator && navigator.userAgent) ? navigator.userAgent : '',
+        notes: ''
+    };
+
+    // Use exposed helpers from export/dmxt_file.js
+    const xml = (typeof exportLocalStorageToXML === 'function')
+        ? exportLocalStorageToXML({ metadata })
+        : (window.exportLocalStorageToXML ? window.exportLocalStorageToXML({ metadata }) : null);
+
+    if (!xml) {
+        alert('Export function not available. Make sure export/dmxt_file.js is loaded.');
+        return;
+    }
+
+    const filename = `dmxtools_user_data.dmxtd`;
+
+    if (typeof downloadDMXTD === 'function') {
+        downloadDMXTD(filename, xml);
+    } else if (window.downloadDMXTD) {
+        window.downloadDMXTD(filename, xml);
+    } else {
+        // fallback: create blob and download
+        const blob = new Blob([xml], { type: 'application/xml' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+}
+
+function loadAppData()
+{
+    // Create a hidden file input that accepts only .dmxtd files
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.dmxtd';
+    input.title = 'Dmx Tools data configuration file';
+    input.style.display = 'none';
+    document.body.appendChild(input);
+
+    input.addEventListener('change', (evt) => {
+        const file = input.files && input.files[0];
+        if (!file) {
+            document.body.removeChild(input);
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = () => {
+            const filename = file.name || 'unknown';
+            const message = `Loaded DMXTD file: ${filename}`;
+            if (typeof setCmdMessage === 'function') {
+                setCmdMessage(message, 'IMPORT DATA');
+            } else if (window && typeof window.setCmdMessage === 'function') {
+                window.setCmdMessage(message);
+            } else {
+                console.log(message);
+            }
+
+            // cleanup
+            document.body.removeChild(input);
+        };
+
+        reader.readAsText(file);
+    });
+
+    // Trigger the file dialog
+    input.click();
+}
