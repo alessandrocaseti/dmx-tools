@@ -608,12 +608,14 @@ class EnhancedColorConverter
 
         const color = 
         {
+            id: this.savedColors.length + 1,
             name: inputName,
             rgb: this.currentColor,
             hsl: this.rgbToHsl(this.currentColor.r, this.currentColor.g, this.currentColor.b),
             cmy: this.rgbToCmy(this.currentColor.r, this.currentColor.g, this.currentColor.b),
             cmyk: this.rgbToCmyk(this.currentColor.r, this.currentColor.g, this.currentColor.b),
-            hex: this.rgbToHex(this.currentColor.r, this.currentColor.g, this.currentColor.b)
+            hex: this.rgbToHex(this.currentColor.r, this.currentColor.g, this.currentColor.b),
+            palette: this.currentColor.palette || 'None'
         };
 
         setCmdMessage(`Color "${inputName}" (${color.hex}) saved successfully.`, 'SAVE');
