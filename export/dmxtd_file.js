@@ -101,19 +101,20 @@ function exportLocalStorageToXML(options = {})
 	const metadata = options.metadata || {};
 	const schemeVersion = '1.0'
 	let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-	xml += `<dmxtd version="${_escapeXml(schemeVersion)}" exportedAt="${_escapeXml(exportedAt)}"`;
-	if (origin) xml += ` origin="${_escapeXml(origin)}"`;
+	xml += '<!DOCTYPE dmxtd">\n';
+	xml += `<dmxtd Version="${_escapeXml(schemeVersion)}" DateExported="${_escapeXml(exportedAt)}"`;
+	if (origin) xml += ` Origin="${_escapeXml(origin)}"`;
 	xml += '>' + '\n';
 
-	// metadata
-	xml += '  <metadata>\n';
-	xml += `    <appName>${_escapeXml(appName)}</appName>\n`;
-	xml += `    <appVersion>${_escapeXml(version)}</appVersion>\n`;
-	xml += `    <author>${_escapeXml(author)}</author>\n`;
-	if (metadata.notes) xml += `    <notes>${_escapeXml(metadata.notes)}</notes>\n`;
-	xml += '  </metadata>\n';
+	xml += '  <Metadata>\n';
+	xml += `    <AppName>${_escapeXml(appName)}</AppName>\n`;
+	xml += `    <AppDescription>${_escapeXml(description)}</AppDescription>\n`;
+	xml += `    <AppVersion>${_escapeXml(version)}</AppVersion>\n`;
+	xml += `    <FileDescription>${_escapeXml(fileExtensions.appData.description)}</FileDescription>\n`;
+	if (metadata.notes) xml += `    <Note>${_escapeXml(metadata.notes)}</Note>\n`;
+	xml += '  </Metadata>\n';
 
-	xml += '  <localStorage>\n';
+	xml += '  <Engine>\n';
 
 	if (typeof window !== 'undefined' && window.localStorage) {
 		for (let i = 0; i < window.localStorage.length; i++) {
@@ -172,8 +173,8 @@ function exportLocalStorageToXML(options = {})
 					if (Array.isArray(parsed)) {
 						for (const item of parsed) {
 							const itemType = item && item.input !== undefined ? 'input' : 'message';
-							const dateAttr = item && item.date ? ` date="${_escapeXml(item.date)}"` : '';
-							xml += `    <CmdLog type="${_escapeXml(itemType)}"${dateAttr}>\n`;
+							const dateAttr = item && item.date ? ` Date="${_escapeXml(item.date)}"` : '';
+							xml += `    <CmdLog Type="${_escapeXml(itemType)}"${dateAttr}>\n`;
 							if (item && item.type) xml += `      <State>${_escapeXml(item.type)}</State>\n`;
 							if (itemType === 'input' && item && item.input !== undefined) xml += `      <Value>${_escapeXml(item.input)}</Value>\n`;
 							else if (item && (item.message !== undefined || item.msg !== undefined)) xml += `      <Value>${_escapeXml(item.message || item.msg)}</Value>\n`;
@@ -189,48 +190,54 @@ function exportLocalStorageToXML(options = {})
 			}
 
 			// Local colors mapping
-			if (!handled && kLower.match(/localcolou?r|color|colors/)) {
-				try {
+			if (!handled && kLower.match(/localcolou?r|color|colors/)) 
+			{
+				try 
+				{
 					const parsed = JSON.parse(value);
 					const items = Array.isArray(parsed) ? parsed : (parsed && typeof parsed === 'object' ? Object.values(parsed) : null);
-					if (items && Array.isArray(items)) {
-						for (const c of items) {
+					if (items && Array.isArray(items)) 
+					{
+						xml += '    <ColorManager>\n';
+						for (const c of items) 
+						{
 							const idAttr = c && (c.id !== undefined) ? ` id="${_escapeXml(String(c.id))}"` : '';
 							const nameAttr = c && (c.name || c.title) ? ` name="${_escapeXml(c.name || c.title)}"` : '';
 							const paletteAttr = c && (c.palette || c.paletteName) ? ` palette="${_escapeXml(c.palette || c.paletteName)}"` : '';
-							xml += `    <LocalColor${idAttr}${nameAttr}${paletteAttr}>\n`;
+							xml += `      <LocalColor${idAttr}${nameAttr}${paletteAttr}>\n`;
 
 							// RGB detection: direct r,g,b or nested rgb object or array
 							const rgb = (c && c.r !== undefined && c.g !== undefined && c.b !== undefined) ? { r: c.r, g: c.g, b: c.b }
 								: (c && c.rgb && c.rgb.r !== undefined && c.rgb.g !== undefined && c.rgb.b !== undefined) ? c.rgb
 								: (c && c.rgb && Array.isArray(c.rgb) && c.rgb.length >= 3) ? { r: c.rgb[0], g: c.rgb[1], b: c.rgb[2] }
 								: null;
-							if (rgb) xml += `      <RGB r="${_escapeXml(String(rgb.r))}" g="${_escapeXml(String(rgb.g))}" b="${_escapeXml(String(rgb.b))}" />\n`;
+							if (rgb) xml += `	<RGB R="${_escapeXml(String(rgb.r))}" B="${_escapeXml(String(rgb.g))}" B="${_escapeXml(String(rgb.b))}" />\n`;
 
 							// CMY and CMYK detection
 							const cmy = (c && c.c !== undefined && c.m !== undefined && c.y !== undefined) ? { c: c.c, m: c.m, y: c.y }
 								: (c && c.cmy && c.cmy.c !== undefined && c.cmy.m !== undefined && c.cmy.y !== undefined) ? c.cmy
 								: null;
-							if (cmy) xml += `      <CMY c="${_escapeXml(String(cmy.c))}" m="${_escapeXml(String(cmy.m))}" y="${_escapeXml(String(cmy.y))}" />\n`;
+							if (cmy) xml += `	<CMY C="${_escapeXml(String(cmy.c))}" M="${_escapeXml(String(cmy.m))}" Y="${_escapeXml(String(cmy.y))}" />\n`;
 
 							const cmyk = (c && c.c !== undefined && c.m !== undefined && c.y !== undefined && c.k !== undefined) ? { c: c.c, m: c.m, y: c.y, k: c.k }
 								: (c && c.cmyk && c.cmyk.c !== undefined && c.cmyk.m !== undefined && c.cmyk.y !== undefined && c.cmyk.k !== undefined) ? c.cmyk
 								: null;
-							if (cmyk) xml += `      <CMYK c="${_escapeXml(String(cmyk.c))}" m="${_escapeXml(String(cmyk.m))}" y="${_escapeXml(String(cmyk.y))}" k="${_escapeXml(String(cmyk.k))}" />\n`;
+							if (cmyk) xml += `	<CMYK C="${_escapeXml(String(cmyk.c))}" M="${_escapeXml(String(cmyk.m))}" Y="${_escapeXml(String(cmyk.y))}" K="${_escapeXml(String(cmyk.k))}" />\n`;
 
 							// HSL detection
 							const hsl = (c && c.h !== undefined && c.s !== undefined && c.l !== undefined) ? { h: c.h, s: c.s, l: c.l }
 								: (c && c.hsl && c.hsl.h !== undefined && c.hsl.s !== undefined && c.hsl.l !== undefined) ? c.hsl
 								: null;
-							if (hsl) xml += `      <HSL h="${_escapeXml(String(hsl.h))}" s="${_escapeXml(String(hsl.s))}" l="${_escapeXml(String(hsl.l))}" />\n`;
+							if (hsl) xml += `	<HSL H="${_escapeXml(String(hsl.h))}" S="${_escapeXml(String(hsl.s))}" L="${_escapeXml(String(hsl.l))}" />\n`;
 
 							// HEX detection
 							const hex = (c && c.hex) ? c.hex : (c && c.hexValue) ? c.hexValue : (c && c.hexCode) ? c.hexCode : (c && c.value && typeof c.value === 'string' && c.value.startsWith('#')) ? c.value : null;
-							if (hex) xml += `      <HEX value="${_escapeXml(hex)}" />\n`;
+							if (hex) xml += `	<HEX Value="${_escapeXml(hex)}" />\n`;
 
-							xml += '    </LocalColor>\n';
+							xml += '      </LocalColor>\n';
 						}
 						handled = true;
+						xml += '    </ColorManager>\n';
 					}
 				} catch (e) {}
 			}
@@ -281,7 +288,7 @@ function exportLocalStorageToXML(options = {})
 		}
 	}
 
-	xml += '  </localStorage>\n';
+	xml += '  </Engine>\n';
 	xml += '</dmxtd>\n';
 
 	return xml;

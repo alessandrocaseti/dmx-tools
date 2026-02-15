@@ -1,20 +1,20 @@
 const fileExtensions =
 {
-    appdata:
-    [
-        ext = 'dmxtd',
-        title = 'DMX Tools application data file'
-    ],
+    appData:
+    {
+        extension : 'dmxtd',
+        description : 'DMX Tools application data file'
+    },
 
     project:
-    [
-        ext = 'dmxtp',
-        title = 'DMX Tools project file'
-    ],
+    {
+        extension : 'dmxtp',
+        description : 'DMX Tools project file'
+    },
 
     user:
-    [
-        ext = 'dmxtu',
-        title = 'DMX Tools user data file'
-    ]
+    {
+        extension : 'dmxtu',
+        description : 'DMX Tools user data file'
+    }
 }

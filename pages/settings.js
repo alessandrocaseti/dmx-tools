@@ -97,7 +97,7 @@ function downloadAppData()
         return;
     }
 
-    const filename = `dmxtools_user_data.dmxtd`;
+    const filename = `dmxtools_appdata.dmxtd`;
 
     if (typeof downloadDMXTD === 'function') {
         downloadDMXTD(filename, xml);
