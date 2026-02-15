@@ -12,6 +12,7 @@ const author = 'Alessandro Caseti';
 
 let currentPage = 'home';
 let pages = ['home', 'patch', 'universe', 'dip', 'color', 'power', 'beam', 'database', 'settings'];
+let pageNames = ['Get Started', 'DMX Patch', 'Universe View', 'DIP Switch', 'Color Converter', 'Power Calculator', 'Beam Preview', 'Fixture Database', 'Control Center'];
 let icons = ['', '', '', '', '', '', '', '', ''];
 // layout icon: 
 
@@ -45,6 +46,8 @@ function navigateTo(page)
     document.getElementById(page + 'NavButton').classList.remove('unselectedNavButton');
     document.getElementById(page + 'NavButton').classList.add('selectedNavButton');
     document.getElementById('cmdIcon').innerHTML = icons[pages.indexOf(page)];
+
+    document.title = pageNames[pages.indexOf(page)] + ' - ' + appName;
 }
 
 function targetPage(offset)
