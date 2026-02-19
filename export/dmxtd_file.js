@@ -101,7 +101,7 @@ function exportLocalStorageToXML(options = {})
 	const metadata = options.metadata || {};
 	const schemeVersion = '1.0'
 	let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-	xml += '<!DOCTYPE dmxtd">\n';
+	xml += '<!DOCTYPE dmxtd>\n';
 	xml += `<dmxtd Version="${_escapeXml(schemeVersion)}" DateExported="${_escapeXml(exportedAt)}"`;
 	if (origin) xml += ` Origin="${_escapeXml(origin)}"`;
 	xml += '>' + '\n';
@@ -201,7 +201,7 @@ function exportLocalStorageToXML(options = {})
 								: (c && c.rgb && c.rgb.r !== undefined && c.rgb.g !== undefined && c.rgb.b !== undefined) ? c.rgb
 								: (c && c.rgb && Array.isArray(c.rgb) && c.rgb.length >= 3) ? { r: c.rgb[0], g: c.rgb[1], b: c.rgb[2] }
 								: null;
-							if (rgb) xml += `	<RGB R="${_escapeXml(String(rgb.r))}" B="${_escapeXml(String(rgb.g))}" B="${_escapeXml(String(rgb.b))}" />\n`;
+							if (rgb) xml += `	<RGB R="${_escapeXml(String(rgb.r))}" G="${_escapeXml(String(rgb.g))}" B="${_escapeXml(String(rgb.b))}" />\n`;
 
 							// CMY and CMYK detection
 							const cmy = (c && c.c !== undefined && c.m !== undefined && c.y !== undefined) ? { c: c.c, m: c.m, y: c.y }
