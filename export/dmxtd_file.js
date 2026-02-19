@@ -165,28 +165,18 @@ function exportLocalStorageToXML(options = {})
 			// Special mappings
 			const kLower = String(key).toLowerCase();
 			let handled = false;
+			// Accumulator for terminal/cmd logs so we can emit them once
+			if (typeof terminalEntries === 'undefined') var terminalEntries = [];
 
-			if (kLower.match(/cmd.*(log|logs|message|messages|input|inputs)/)) {
-				// unify command logs and inputs into <CmdLog>
+			if (kLower.match(/cmd.*(logs|inputs)/)) {
 				try {
 					const parsed = JSON.parse(value);
 					if (Array.isArray(parsed)) {
-						for (const item of parsed) {
-							const itemType = item && item.input !== undefined ? 'input' : 'message';
-							const dateAttr = item && item.date ? ` Date="${_escapeXml(item.date)}"` : '';
-							xml += `    <CmdLog Type="${_escapeXml(itemType)}"${dateAttr}>\n`;
-							if (item && item.type) xml += `      <State>${_escapeXml(item.type)}</State>\n`;
-							if (itemType === 'input' && item && item.input !== undefined) xml += `      <Value>${_escapeXml(item.input)}</Value>\n`;
-							else if (item && (item.message !== undefined || item.msg !== undefined)) xml += `      <Value>${_escapeXml(item.message || item.msg)}</Value>\n`;
-							else if (item && item.text !== undefined) xml += `      <Value>${_escapeXml(item.text)}</Value>\n`;
-							else if (item && item.input === undefined && item.message === undefined) xml += `      <Value>${_escapeXml(JSON.stringify(item))}</Value>\n`;
-							xml += '    </CmdLog>\n';
-						}
+						// accumulate items and defer emission until after the loop
+						for (const item of parsed) terminalEntries.push(item);
 						handled = true;
 					}
-				} catch (e) {
-					// fall through to default handling
-				}
+				} catch (e) { /* fall through to default handling */ }
 			}
 
 			// Local colors mapping
@@ -201,9 +191,9 @@ function exportLocalStorageToXML(options = {})
 						xml += '    <ColorManager>\n';
 						for (const c of items) 
 						{
-							const idAttr = c && (c.id !== undefined) ? ` id="${_escapeXml(String(c.id))}"` : '';
-							const nameAttr = c && (c.name || c.title) ? ` name="${_escapeXml(c.name || c.title)}"` : '';
-							const paletteAttr = c && (c.palette || c.paletteName) ? ` palette="${_escapeXml(c.palette || c.paletteName)}"` : '';
+							const idAttr = c && (c.id !== undefined) ? ` ID="${_escapeXml(String(c.id))}"` : '';
+							const nameAttr = c && (c.name || c.title) ? ` Name="${_escapeXml(c.name || c.title)}"` : '';
+							const paletteAttr = c && (c.palette || c.paletteName) ? ` Palette="${_escapeXml(c.palette || c.paletteName)}"` : '';
 							xml += `      <LocalColor${idAttr}${nameAttr}${paletteAttr}>\n`;
 
 							// RGB detection: direct r,g,b or nested rgb object or array
@@ -243,24 +233,26 @@ function exportLocalStorageToXML(options = {})
 			}
 
 			// Favorite fixtures mapping
-					if (!handled && kLower.match(/favorite|favorites|favoritefixture|favoritefixtures/)) {
-				try {
+			if (!handled && kLower.match(/favorite|favorites|favoritefixture|favoritefixtures/)) 
+			{
+				try 
+				{
 					const parsed = JSON.parse(value);
 					const items = Array.isArray(parsed) ? parsed : (parsed && typeof parsed === 'object' ? Object.values(parsed) : null);
-					if (items && Array.isArray(items)) {
-						for (const f of items) {
-							const brandVal = f && (f.brand || f.manufacturer || f.make || f.vendor) ? (f.brand || f.manufacturer || f.make || f.vendor) : null;
-							const dateVal = f && (f.dateAdded || f.addedAt || f.date || f.created) ? (f.dateAdded || f.addedAt || f.date || f.created) : null;
-							const brandAttr = brandVal ? ` brand="${_escapeXml(brandVal)}"` : '';
-							const dateAttr = dateVal ? ` dateAdded="${_escapeXml(dateVal)}"` : '';
-							xml += `    <FavoriteFixture${brandAttr}${dateAttr}>\n`;
-							if (f && f.file) xml += `      <File>${_escapeXml(f.file)}</File>\n`;
-							else if (f && f.filename) xml += `      <File>${_escapeXml(f.filename)}</File>\n`;
-							else if (f && f.filepath) xml += `      <File>${_escapeXml(f.filepath)}</File>\n`;
-							else if (f && f.name) xml += `      <File>${_escapeXml(f.name)}</File>\n`;
-							xml += '    </FavoriteFixture>\n';
+					if (items && Array.isArray(items)) 
+					{
+						xml += '    <FixtureManager>\n';
+						for (const f of items) 
+						{
+							const dateVal = f.addedAt;
+							const dateAttr = dateVal ? ` DateAdded="${_escapeXml(dateVal)}"` : '';
+							xml += `      <FavoriteFixture${dateAttr}>\n`;
+							if (f && f.folder) xml += `        <Brand>${_escapeXml(f.folder)}</Brand>\n`;
+							if (f && f.file) xml += `        <File>${_escapeXml(f.file)}</File>\n`;
+							xml += '      </FavoriteFixture>\n';
 						}
 						handled = true;
+						xml += '    </FixtureManager>\n';
 					}
 				} catch (e) {}
 			}
@@ -318,24 +310,3 @@ if (typeof window !== 'undefined') {
 if (typeof module !== 'undefined' && module.exports) {
 	module.exports = Object.assign(module.exports || {}, { exportLocalStorageToXML, downloadDMXTD });
 }
-
-/*
-
-<LocalColor id="0" name="Example" palette"none">
-	<RGB r="255" g="255" b="255" />
-	<CMY c="0" m="0" y="0" />
-	<CMYK c="0" m="0" y="0" k="255" />
-	<HSL h="50" s="100" l="0" />
-	<HEX value="#ffffff" />
-</LocalColor>
-
-<CmdLog type="message / input" date="">
-	<State>TYPE_STATE</State>
-	<Value>This is the input or the message</Value>
-</CmdLog>
-
-<FavoriteFixture brand="" dateAdded="">
-	<File>filename.js</File>
-</FavoriteFixture>
-
-*/
