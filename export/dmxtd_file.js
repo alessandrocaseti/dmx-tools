@@ -280,6 +280,31 @@ function exportLocalStorageToXML(options = {})
 		}
 	}
 
+	// If we accumulated any terminal/cmd entries, emit them once here
+	if (typeof terminalEntries !== 'undefined' && terminalEntries.length > 0) 
+	{
+		// sort by date if present to preserve chronological order
+		terminalEntries.sort((a, b) => 
+		{
+			if (a && a.date && b && b.date) return new Date(a.date) - new Date(b.date);
+			return 0;
+		});
+		xml += '    <Terminal>\n';
+		for (const item of terminalEntries) 
+		{
+			const itemType = item && item.input !== undefined ? 'input' : 'message';
+			const dateAttr = item && item.date ? ` Date="${_escapeXml(item.date)}"` : '';
+			xml += `      <CmdLog Type="${_escapeXml(itemType)}"${dateAttr}>\n`;
+			if (item && item.type) xml += `        <State>${_escapeXml(item.type)}</State>\n`;
+			if (itemType === 'input' && item && item.input !== undefined) xml += `        <Value>${_escapeXml(item.input)}</Value>\n`;
+			else if (item && (item.message !== undefined || item.msg !== undefined)) xml += `        <Value>${_escapeXml(item.message || item.msg)}</Value>\n`;
+			else if (item && item.text !== undefined) xml += `        <Value>${_escapeXml(item.text)}</Value>\n`;
+			else if (item && item.input === undefined && item.message === undefined) xml += `        <Value>${_escapeXml(JSON.stringify(item))}</Value>\n`;
+			xml += '      </CmdLog>\n';
+		}
+		xml += '    </Terminal>\n';
+	}
+
 	xml += '  </Engine>\n';
 	xml += '</dmxtd>\n';
 
