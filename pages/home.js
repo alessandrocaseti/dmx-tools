@@ -5,7 +5,15 @@ function scrollToFeatures()
     const featuresSection = document.getElementById('featuresSection');
     if (featuresSection) { featuresSection.scrollIntoView({ behavior: 'smooth' }); }
 }
+// Keep only a single anchor: from top/video to the hero slogan section.
 function scrollToHero () {
+    const el = document.getElementById('homeHeroSection') || document.getElementById('homeHero');
+    if (!el) return;
+    // If we found the hero section container, scroll to its top. Otherwise scroll to the hero element.
+    const target = el === document.getElementById('homeHero') ? el : document.getElementById('homeHeroSection');
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 
 // Animazione zoom su scroll per homeHeroBg
 window.addEventListener('scroll', function () {

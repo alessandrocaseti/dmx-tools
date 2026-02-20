@@ -90,10 +90,7 @@ function _inferType(value) {
 	}
 }
 
-/**
- * Collects window.localStorage and serializes it to a DMXTD XML string.
- * options: { version?: string, origin?: string, metadata?: {appName, appVersion, author, notes} }
- */
+
 function exportLocalStorageToXML(options = {}) 
 {
 	const exportedAt = new Date().toISOString();
@@ -102,7 +99,7 @@ function exportLocalStorageToXML(options = {})
 	const schemeVersion = '1.0'
 	let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
 	xml += '<!DOCTYPE dmxtd>\n';
-	xml += `<dmxtd Version="${_escapeXml(schemeVersion)}" DateExported="${_escapeXml(exportedAt)}"`;
+	xml += `<dmxtd xmlns="http://dmxtools.vercel.app/dmxtd" Version="${_escapeXml(schemeVersion)}" DateExported="${_escapeXml(exportedAt)}"`;
 	if (origin) xml += ` Origin="${_escapeXml(origin)}"`;
 	xml += '>' + '\n';
 
