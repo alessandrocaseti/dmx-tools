@@ -102,7 +102,7 @@
                 <!-- Floating div above video -->
                 <div class="blink homeCard" style="position: absolute; left: 50%; bottom: 150px; transform: translateX(-75%); z-index: 2; text-align: center;">
                     <span style="color: #ffeb3b; font-size: 1.2em; font-weight: bold;">Explore features</span><br>
-                    <button onclick="scrollToFeatures()" style="background: none; border: none; cursor: pointer; margin-top: 8px;">
+                    <button onclick="scrollToHero()" style="background: none; border: none; cursor: pointer; margin-top: 8px;">
                         <span style="font-size: 2.5em; color: #ffeb3b; font-family: 'IconFont';"></span>
                     </button>
                 </div>
@@ -118,7 +118,7 @@
             <!-- Spazio per scrollare sotto il video -->
             <div style="margin-top: 100vh;"></div>
             <!-- Hero Slogan Section -->
-            <div id="homeHero" style="position: relative; height: 70vh; width: 100%;">
+            <div id="homeHeroSection" style="position: relative; height: 70vh; width: 100%;">
                 <div style="display: flex; justify-content: center; align-items: center; height: 100%">
                     <h1 class="fade-in chrome" id="heroTitle" style="margin-top: -400px; font-size: 4em; font-weight: bold; margin-bottom: 0; opacity: 1; z-index: 1;">The #1 all-in-one tool for lighting designers</h1>
                 </div>
@@ -195,7 +195,7 @@
                     <span class="buttonText">Star on GitHub</span>
                 </button>
             </div>
-            <div id="featureCards" style="margin-bottom: 16vh;" class="web-only"></div>
+            <div id="featureCardsBottom" style="margin-bottom: 16vh;" class="web-only"></div>
         </div>
 
         <!-- DMX Patch -->
@@ -891,13 +891,13 @@
                     <div class="settingsCard">
                         <div class="cardIcon"></div>
                         <div class="setting-info">
-                            <h2>Load app data</h2>
+                            <h2>Import app data</h2>
                             <h3>Select a .dmxtd file to load all of your stored custom information</h3>
                         </div>
                         <div class="setting-item">
                             <button onclick="loadAppData()" class="iconButton">
                                 <span class="buttonIcon"></span>
-                                <span class="buttonText">Import data</span>
+                                <span class="buttonText">Load data</span>
                             </button>
                         </div>
                     </div>

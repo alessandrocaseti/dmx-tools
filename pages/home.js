@@ -5,10 +5,10 @@ function scrollToFeatures()
     const featuresSection = document.getElementById('featuresSection');
     if (featuresSection) { featuresSection.scrollIntoView({ behavior: 'smooth' }); }
 }
+function scrollToHero () {
 
 // Animazione zoom su scroll per homeHeroBg
-window.addEventListener('scroll', function () 
-{
+window.addEventListener('scroll', function () {
     const img = document.getElementById('homeHeroBg');
     if (!img) return;
     const scrollY = window.scrollY || window.pageYOffset;
@@ -23,17 +23,14 @@ window.addEventListener('scroll', function ()
     if (heroTitle && !heroTitle.classList.contains('visible')) { heroTitle.classList.add('visible'); }
 
     // Mostra le card quando sono visibili nello scroll, con delay sequenziale
-    featureCards.forEach(function (card, i) 
-    {
+    featureCards.forEach(function (card, i) {
         const rect = card.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 60) 
-        {
+        if (rect.top < window.innerHeight - 60) {
             card.style.transitionDelay = (i * 0.15) + 's';
             card.style.opacity = '1';
             card.classList.add('visible');
         }
-        else 
-        {
+        else {
             card.style.opacity = '0';
             card.classList.remove('visible');
         }
@@ -43,6 +40,7 @@ window.addEventListener('scroll', function ()
 // Mostra il titolo subito all'avvio
 window.addEventListener('DOMContentLoaded', function () 
 {
+    window.scrollTo(0, 0);
     const heroTitle = document.getElementById('heroTitle');
     if (heroTitle) heroTitle.classList.add('visible');
     const featureCards = document.querySelectorAll('#featureCards .fade-in'); // Applica il delay alle card all'avvio
