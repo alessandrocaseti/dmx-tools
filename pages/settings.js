@@ -156,3 +156,27 @@ function loadAppData()
     // Trigger the file dialog
     input.click();
 }
+
+function clearAppData()
+{
+    // Ask the user via CMD and handle the asynchronous response via callback
+    if (window.askViaCmdWithCallback) {
+        askViaCmdWithCallback("Are you sure you want to clear all app data?", "WARNING", function(answer) {
+            if (answer) {
+                setCmdMessage('Clearing all app data...', 'CLEAR');
+                try { localStorage.clear(); } catch (e) { /* ignore */ }
+                setCmdMessage('All application data cleared.', 'CLEAR');
+            } else {
+                setCmdMessage('User cancelled. Aborting task.', 'WARNING');
+            }
+        });
+    } else {
+        // Fallback: original synchronous flow (legacy)
+        askViaCmd("Are you sure you want to clear all app data?", "WARNING");
+        if (askInput) {
+            setCmdMessage("User said yes", 'TEST');
+        } else {
+            setCmdMessage("User said no. Aborting task.", 'TEST');
+        }
+    }
+}

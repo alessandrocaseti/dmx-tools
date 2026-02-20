@@ -36,45 +36,66 @@ function isHexColor(hex)
     return typeof hex === 'string' && hex.length === 6 && !isNaN(Number('0x' + hex))
 }
 
-// --- localStorage helpers for CMD logs & inputs ---
-function _getLocalArray(key) {
-    try {
+function _getLocalArray(key) 
+{
+    try 
+    {
         const v = localStorage.getItem(key);
         return v ? JSON.parse(v) : [];
-    } catch (e) {
-        return [];
-    }
+    } catch (e) { return []; }
 }
 
-function _pushLocalArray(key, obj) {
-    try {
+function _pushLocalArray(key, obj) 
+{
+    try 
+    {
         const arr = _getLocalArray(key);
         arr.push(obj);
         localStorage.setItem(key, JSON.stringify(arr));
         if((key === 'cmdLogs' || key === 'cmdInputs') && cmdLogsView) { viewCmdLogs(); } 
-    } catch (e) {
-        // ignore storage errors
-    }
+    } catch (e) { }
 }
 
-function pushCmdLog(message, type) {
+function pushCmdLog(message, type) 
+{
     _pushLocalArray('cmdLogs', { message: message || '', type: type || 'WELCOME', date: new Date().toISOString() });
 }
 
-function pushCmdInput(input, lastCmdType) {
+function pushCmdInput(input, lastCmdType) 
+{
     _pushLocalArray('cmdInputs', { input: input || '', type: lastCmdType || 'UNKNOWN', date: new Date().toISOString() });
 }
 
-function clearCmdLogs() {
+function clearCmdLogs() 
+{
     localStorage.removeItem('cmdLogs');
     localStorage.removeItem('cmdInputs');
     document.getElementById('logsContainer').innerHTML = '';
     viewCmdLogs();
 }
 
+function askViaCmd(question, state)
+{
+    setCmdMessage(question + " Y/N", state);
+    startDotAnimation();
+    ask = true;
+}
+
+// Optional callback version: askViaCmd(question, state, callback)
+// If a callback is provided it will be invoked with a boolean argument (true for yes, false for no)
+let askCallback = null;
+function askViaCmdWithCallback(question, state, callback)
+{
+    setCmdMessage(question + " Y/N", state);
+    startDotAnimation();
+    ask = true;
+    askCallback = (typeof callback === 'function') ? callback : null;
+}
+window.askViaCmdWithCallback = askViaCmdWithCallback;
+
 let specialBackground = false;
 
-function startDotAnimation() 
+function startDotAnimation(askState = false) 
 {
     const dotText = document.getElementById('dot');
     const container = document.getElementById('cmdMsgTypeContainer');
@@ -186,6 +207,8 @@ function setCmdMessage(msg, type)
     }
 }
 
+let askInput = false;
+let ask = false;
 let remove = false;
 let add = false;
 let color = false;
@@ -197,6 +220,9 @@ let vectorShift = false;
 
 function resetCmd(freezeTrigger = true)
 {
+    ask = false;
+    askInput = false;
+    specialBackground = false;
     remove = false;
     add = false;
     color = false;
@@ -259,6 +285,34 @@ function handleCommand(event)
             resetCmd();
             setCmdMessage("Successfully resetted command prompt.", "RESET")
             return;
+        }
+
+        else if (ask)
+        {
+            ask = false;
+            switch(command)
+            {
+                case 'y':
+                case 'yes':
+                    askInput = true;
+                    break;
+                case 'n':
+                case 'no':
+                    askInput = false;
+                    break;
+                default:
+                    setCmdMessage("Invalid answer. Please enter 'y' or 'n'.", "ERROR");
+                    startDotAnimation();
+                    ask = true;
+                    return;
+            }
+            // If a callback was provided, call it with the user's answer
+            try {
+                if (typeof askCallback === 'function') {
+                    askCallback(!!askInput);
+                }
+            } catch (e) { /* ignore callback errors */ }
+            askCallback = null;
         }
 
         else if (nav)
