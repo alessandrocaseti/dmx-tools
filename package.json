@@ -1,0 +1,24 @@
+{
+  "name": "dmx-tools",
+  "version": "1.0.0",
+  "description": "Free DMX Utilities developed by Alessandro Caseti",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessandrocaseti/dmx-tools.git"
+  },
+  "author": "Alessandro Caseti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alessandrocaseti/dmx-tools/issues"
+  },
+  "homepage": "https://github.com/alessandrocaseti/dmx-tools#readme",
+  "dependencies": {
+    "electron": "^40.6.1"
+  }
+}
