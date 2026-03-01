@@ -6,8 +6,9 @@ function createWindow()
     ({
         width: 1920,
         height: 1080,
+        title: 'DMX Tools',
         show: false,
-        icon: 'assets/icon.ico',
+        icon: "assets/icon.ico",
         webPreferences: { nodeIntegration: true }
     })
     win.maximize()

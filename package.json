@@ -28,12 +28,14 @@
   "build":
   {
     "appId": "dmxtools",
-    "productName": "dmxtools",
+    "productName": "DMX Tools",
     "directories":{
       "output": "dist"
     },
     "win":{
-      "target":"nsis"
+      "target":"nsis",
+      "publisherName": "Alessandro Caseti",
+      "icon": "assets/icon.ico"
     },
     "mac":{
       "target":"dmg"
