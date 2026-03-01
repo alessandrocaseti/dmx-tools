@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
-    "vercel-build": "echo \"Skipping electron build on Vercel\"",
+    "vercel-build": "echo \"Skipping build on Vercel; using repository files as output\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
