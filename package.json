@@ -19,6 +19,26 @@
   },
   "homepage": "https://github.com/alessandrocaseti/dmx-tools#readme",
   "dependencies": {
-    "electron": "^40.6.1"
+  },
+  "devDependencies": {
+    "electron": "^40.6.1",
+    "electron-builder": "^26.8.1"
+  },
+  "build":
+  {
+    "appId": "dmxtools",
+    "productName": "dmxtools",
+    "directories":{
+      "output": "dist"
+    },
+    "win":{
+      "target":"nsis"
+    },
+    "mac":{
+      "target":"dmg"
+    },
+    "linux":{
+    "target":"AppImage"
+    }
   }
 }
