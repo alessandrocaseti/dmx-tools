@@ -1076,6 +1076,8 @@ function handleCommand(event)
 
 function about()
 {
-    setCmdMessage(appName  + ' - Developed by ' + author + '. ' + 'Version ' + version + ' - ' + date + '.', 'ABOUT');
+    let env = ' [WEB]'
+    if (isDesktop()) { env = ' [DESKTOP]' }
+    setCmdMessage(appName  + ' - Developed by ' + author + '. ' + 'Version ' + version + ' - ' + date + env + '.', 'ABOUT');
     return;
 }
