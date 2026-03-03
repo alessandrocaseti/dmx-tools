@@ -16,15 +16,6 @@ let pageNames = ['Get Started', 'DMX Patch', 'Universe View', 'DIP Switch', 'Col
 let icons = ['', '', '', '', '', '', '', '', ''];
 // layout icon: 
 
-function isDesktop()
-{
-    try {
-        if (typeof process !== 'undefined' && process.versions && process.versions.electron) return true;
-        if (typeof navigator === 'object' && navigator.userAgent && navigator.userAgent.indexOf('Electron') !== -1) return true;
-    } catch (e) {}
-    return false;
-}
-
 function navigationError(p)
 {
     console.error('Navigation error: page "' + p + '" does not exist.');

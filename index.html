@@ -46,6 +46,7 @@
         <script src="cmd/cmd.js"></script>
         <script src="export/dmxtd_file.js"></script>
         <script src="export/filemanager.js"></script>
+        <script src="desktop.js"></script>
     </head>
 
     <body>
@@ -55,6 +56,7 @@
             <div style="margin-top: 24px; display: flex; flex-direction: row; gap: 16px; margin-left: 12px;">
                 <img src="assets/dmxtools-banner.png" width="235" height="65" style="margin-top: 12px; margin-left: -8px;">
             </div>
+            <p class="desktop-only">Desktop Version</p>
             <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 16px; justify-content: center; align-items: center;">
                 <button class="navButton selectedNavButton iconButton" onclick="navigateTo('home')" id="homeNavButton">
                     <span class="buttonIcon"></span>
@@ -87,6 +89,10 @@
                 <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('database')" id="databaseNavButton">
                     <span class="buttonIcon"></span>
                     <span class="buttonText">Fixture Database</span>
+                </button>
+                <button class="navButton unselectedNavButton iconButton desktop-only" onclick="navigateTo('artnet')" id="artnetNavButton">
+                    <span class="buttonIcon"></span>
+                    <span class="buttonText">ArtNet Decoder</span>
                 </button>
                 <button class="navButton unselectedNavButton iconButton" onclick="navigateTo('settings')" id="settingsNavButton">
                     <span class="buttonIcon"></span>
