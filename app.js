@@ -11,9 +11,10 @@ const author = 'Alessandro Caseti';
 // Main & navigation functions
 
 let currentPage = 'home';
-let pages = ['home', 'patch', 'universe', 'dip', 'color', 'power', 'beam', 'database', 'settings'];
-let pageNames = ['Get Started', 'DMX Patch', 'Universe View', 'DIP Switch', 'Color Converter', 'Power Calculator', 'Beam Preview', 'Fixture Database', 'Control Center'];
-let icons = ['', '', '', '', '', '', '', '', ''];
+let pages = ['home', 'patch', 'universe', 'dip', 'color', 'power', 'beam', 'database', 'artnet', 'settings'];
+let desktopPages = ['artnet'];
+let pageNames = ['Get Started', 'DMX Patch', 'Universe View', 'DIP Switch', 'Color Converter', 'Power Calculator', 'Beam Preview', 'Fixture Database', 'ArtNet Decoder', 'Control Center'];
+let icons = ['', '', '', '', '', '', '', '', '', ''];
 // layout icon: 
 
 function navigationError(p)

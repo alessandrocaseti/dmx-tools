@@ -327,6 +327,11 @@ function handleCommand(event)
             }
             else
             {
+                if(!isDesktop() && desktopPages.includes(command))
+                {
+                    setCmdMessage('This feature is available only in the desktop version', 'ERROR');
+                    return;
+                }
                 navigateTo(command);
                 setCmdMessage('Navigated to ' + command + '.', 'NAV');
             }
@@ -532,9 +537,14 @@ function handleCommand(event)
         else if (command.startsWith('-n'))
         {
             const page = rawCommand.slice(3).trim().toLowerCase();
-            if (!page || page!== 'home' && page!== 'patch'  && page!== 'dip'  && page!== 'color' && page!== 'power' && page!== 'beam' && page!== 'database')
+            if (!page || !pages.includes(page))
             {
                 setCmdMessage('Invalid page name.', 'ERROR');
+                return;
+            }
+            if(!isDesktop() && desktopPages.includes(page))
+            {
+                setCmdMessage('This feature is available only in the desktop version', 'ERROR');
                 return;
             }
             navigateTo(page);
