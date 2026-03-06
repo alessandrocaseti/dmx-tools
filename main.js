@@ -36,8 +36,31 @@ ipcMain.on('start-artnet', (event, bindAddr = '0.0.0.0') => {
         }
         artnetSocket = dgram.createSocket({ type: 'udp4', reuseAddr: true });
 
+        const sender = event && event.sender ? event.sender : null;
+        function safeSend(channel, payload) {
+            try {
+                if (!sender) return;
+                if (typeof sender.isDestroyed === 'function') {
+                    if (sender.isDestroyed()) return;
+                } else if (sender.isDestroyed) {
+                    if (sender.isDestroyed) return;
+                }
+                sender.send(channel, payload);
+            } catch (e) { /* ignore send after destroy */ }
+        }
+
+        // if the renderer that requested start is destroyed, close the socket
+        try {
+            if (sender && typeof sender.once === 'function') {
+                sender.once('destroyed', () => {
+                    try { if (artnetSocket) artnetSocket.close(); } catch (e) {}
+                    artnetSocket = null; boundAddress = null;
+                });
+            }
+        } catch (e) {}
+
         artnetSocket.on('error', (err) => {
-            event.sender.send('artnet-status', { type: 'error', message: String(err) });
+            safeSend('artnet-status', { type: 'error', message: String(err) });
             try { artnetSocket.close(); } catch (e) {}
             artnetSocket = null;
         });
@@ -53,19 +76,19 @@ ipcMain.on('start-artnet', (event, bindAddr = '0.0.0.0') => {
                     const net = msg[15];
                     const length = msg.readUInt16BE(16);
                     const data = Array.from(msg.slice(18, 18 + length));
-                    event.sender.send('artnet-packet', { type: 'dmx', id, opcode, sequence, physical, subUni, net, length, data, rinfo });
+                    safeSend('artnet-packet', { type: 'dmx', id, opcode, sequence, physical, subUni, net, length, data, rinfo });
                 } else {
-                    event.sender.send('artnet-packet', { type: 'raw', id, opcode, hex: msg.toString('hex'), length: msg.length, rinfo });
+                    safeSend('artnet-packet', { type: 'raw', id, opcode, hex: msg.toString('hex'), length: msg.length, rinfo });
                 }
             } catch (e) {
-                event.sender.send('artnet-status', { type: 'error', message: 'Failed to parse packet: ' + String(e) });
+                safeSend('artnet-status', { type: 'error', message: 'Failed to parse packet: ' + String(e) });
             }
         });
 
         const onBind = () => {
             try { artnetSocket.setBroadcast(true); } catch (e) {}
             boundAddress = bindAddr || '0.0.0.0';
-            event.sender.send('artnet-status', { type: 'info', message: `Bound ${boundAddress}:6454` });
+            safeSend('artnet-status', { type: 'info', message: `Bound ${boundAddress}:6454` });
         };
 
         if (!bindAddr || bindAddr === '0.0.0.0') artnetSocket.bind(6454, onBind);

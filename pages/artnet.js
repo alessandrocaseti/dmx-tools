@@ -14,12 +14,14 @@ function initializeArtNet() {
 		if (!controls && logger && logger.parentNode) {
 			controls = document.createElement('div');
 			controls.id = 'artnet-controls';
-			controls.innerHTML = `
-				<div style="color:#ffd1a9;">ArtNet desktop features are unavailable because require is not exposed in this renderer.</div>
-				<button id="artnet-ipc-try">Attempt IPC Start</button>
-				<button id="artnet-ipc-copy">Show Troubleshoot</button>
-				<span id="artnet-status"></span>
-			`;
+				controls.innerHTML = `
+					<button id="artnet-ipc-try">Start receiving</button>
+					<span id="artnet-conn-badge" style="margin-left:8px; padding:2px 6px; border-radius:4px; background:#f88; color:#300;">NOT CONNECTED</span>
+					<button id="artnet-toggle-logging" style="margin-left:8px;">Stop logging</button>
+					<span id="artnet-status"></span>
+					<span id="artnet-speed" style="margin-left:8px;">--</span>
+					<button id="artnet-clear-logs" style="margin-left:4px;">Clear logs</button>
+				`;
 			logger.parentNode.insertBefore(controls, logger);
 		}
 
@@ -70,11 +72,49 @@ function initializeArtNet() {
 
 			function addLog(html) {
 				if (!logger) return;
+				if (window._artnetLoggingPaused) return;
 				const entry = document.createElement('div');
 				entry.className = 'artnet-entry';
 				entry.innerHTML = html;
 				logger.prepend(entry);
 				while (logger.children.length > 200) logger.removeChild(logger.lastChild);
+			}
+
+			// logging controls & speed tracking (IPC renderer path)
+			window._artnetLoggingPaused = false;
+			window._artnetPackets = 0;
+			window._artnetBytes = 0;
+			window._artnetLastPackets = 0;
+			window._artnetLastBytes = 0;
+			window._artnetSpeedInterval = null;
+
+			function setConnectionBadge(text, ok) {
+				const b = document.getElementById('artnet-conn-badge');
+				if (!b) return;
+				b.textContent = text;
+				b.style.background = ok ? '#8f8' : '#f88';
+				b.style.color = ok ? '#030' : '#300';
+			}
+
+			function startSpeedInterval() {
+				if (window._artnetSpeedInterval) return;
+				window._artnetLastPackets = window._artnetPackets;
+				window._artnetLastBytes = window._artnetBytes;
+				window._artnetSpeedInterval = setInterval(() => {
+					const sp = window._artnetPackets - window._artnetLastPackets;
+					const sb = window._artnetBytes - window._artnetLastBytes;
+					window._artnetLastPackets = window._artnetPackets;
+					window._artnetLastBytes = window._artnetBytes;
+					const speedElem = document.getElementById('artnet-speed');
+					if (speedElem) {
+						const mbps = (sb / 1024 / 1024).toFixed(3);
+						speedElem.textContent = `${sp} pk/s ${mbps} MB/s`;
+					}
+				}, 1000);
+			}
+
+			function stopSpeedInterval() {
+				if (window._artnetSpeedInterval) { clearInterval(window._artnetSpeedInterval); window._artnetSpeedInterval = null; }
 			}
 
 			if (window.electronAPI && typeof window.electronAPI.onPacket === 'function') {
@@ -103,6 +143,12 @@ function initializeArtNet() {
 							html += `<div class="artnet-body"><div><b>Header</b>: ${String(id).replace(/\0/g, '')} <b>Bytes</b>: ${packet.length || 0}</div>`;
 							html += `<div class="artnet-data"><b>Raw (hex)</b>: ${packet.hex || ''}</div></div>`;
 						}
+						// update counters for speed display
+						window._artnetPackets = (window._artnetPackets || 0) + 1;
+						const bcount = (packet && packet.length) ? packet.length : (packet && packet.data ? packet.data.length : 0);
+						window._artnetBytes = (window._artnetBytes || 0) + (bcount || 0);
+						setConnectionBadge('OK', true);
+						startSpeedInterval();
 						addLog(html);
 					} catch (e) {
 						addLog(`<div class="artnet-meta">Error parsing IPC packet: ${String(e)}</div>`);
@@ -112,8 +158,30 @@ function initializeArtNet() {
 			if (window.electronAPI && typeof window.electronAPI.onStatus === 'function') {
 				window.electronAPI.onStatus((st) => {
 					setStatus(st && st.message ? st.message : String(st));
+					if (st && st.connected) {
+						setConnectionBadge('OK', true);
+						startSpeedInterval();
+					} else if (st && st.message && /bound|connected/i.test(st.message)) {
+						setConnectionBadge('OK', true);
+						startSpeedInterval();
+					} else if (st && st.message && /error|failed/i.test(st.message)) {
+						setConnectionBadge('Not connected', false);
+						stopSpeedInterval();
+					}
 				});
 			}
+
+			// wire up IPC renderer logging controls
+			const ipcToggle = document.getElementById('artnet-toggle-logging');
+			const ipcClear = document.getElementById('artnet-clear-logs');
+			if (ipcToggle) ipcToggle.addEventListener('click', () => {
+				window._artnetLoggingPaused = !window._artnetLoggingPaused;
+				ipcToggle.textContent = window._artnetLoggingPaused ? 'Resume logging' : 'Stop logging';
+			});
+			if (ipcClear) ipcClear.addEventListener('click', () => {
+				if (logger) logger.innerHTML = '';
+				window._artnetPackets = 0; window._artnetBytes = 0; window._artnetLastPackets = 0; window._artnetLastBytes = 0;
+			});
 		} catch (e) {
 			console.warn('Failed to register IPC listeners', e);
 		}
@@ -135,12 +203,16 @@ function initializeArtNet() {
 			controls = document.createElement('div');
 			controls.id = 'artnet-controls';
 			controls.innerHTML = `
-				<label>Interface: <select id="artnet-iface"></select></label>
-				<button id="artnet-bind">Bind</button>
-				<button id="artnet-poll">Send Poll</button>
-				<button id="artnet-refresh">Refresh</button>
-				<span id="artnet-status"></span>
-			`;
+					<label>Interface: <select id="artnet-iface"></select></label>
+					<button id="artnet-bind">Bind</button>
+					<button id="artnet-poll">Send Poll</button>
+					<button id="artnet-refresh">Refresh</button>
+					<span id="artnet-status"></span>
+					<span id="artnet-conn-badge" style="margin-left:8px; padding:2px 6px; border-radius:4px; background:#f88; color:#300;">Not connected</span>
+					<span id="artnet-speed" style="margin-left:8px;">--</span>
+					<button id="artnet-toggle-logging" style="margin-left:8px;">Stop logging</button>
+					<button id="artnet-clear-logs" style="margin-left:4px;">Clear logs</button>
+				`;
 			logger.parentNode.insertBefore(controls, logger);
 		}
 
@@ -156,12 +228,48 @@ function initializeArtNet() {
 
 		function addLog(html) {
 			if (!logger) return;
+			if (window._artnetLoggingPaused) return;
 			const entry = document.createElement('div');
 			entry.className = 'artnet-entry';
 			entry.innerHTML = html;
 			logger.prepend(entry);
 			while (logger.children.length > 200) logger.removeChild(logger.lastChild);
 		}
+
+		// logging controls & speed tracking (native socket path)
+		window._artnetLoggingPaused = false;
+		window._artnetPackets = 0;
+		window._artnetBytes = 0;
+		window._artnetLastPackets = 0;
+		window._artnetLastBytes = 0;
+		window._artnetSpeedInterval = null;
+
+		function setConnectionBadge(text, ok) {
+			const b = document.getElementById('artnet-conn-badge');
+			if (!b) return;
+			b.textContent = text;
+			b.style.background = ok ? '#8f8' : '#f88';
+			b.style.color = ok ? '#030' : '#300';
+		}
+
+		function startSpeedInterval() {
+			if (window._artnetSpeedInterval) return;
+			window._artnetLastPackets = window._artnetPackets;
+			window._artnetLastBytes = window._artnetBytes;
+			window._artnetSpeedInterval = setInterval(() => {
+				const sp = window._artnetPackets - window._artnetLastPackets;
+				const sb = window._artnetBytes - window._artnetLastBytes;
+				window._artnetLastPackets = window._artnetPackets;
+				window._artnetLastBytes = window._artnetBytes;
+				const speedElem = document.getElementById('artnet-speed');
+				if (speedElem) {
+					const mbps = (sb / 1024 / 1024).toFixed(3);
+					speedElem.textContent = `${sp}/s ${mbps} MB/s`;
+				}
+			}, 1000);
+		}
+
+		function stopSpeedInterval() { if (window._artnetSpeedInterval) { clearInterval(window._artnetSpeedInterval); window._artnetSpeedInterval = null; } }
 
 		function listInterfaces() {
 			const nets = os.networkInterfaces();
@@ -201,10 +309,18 @@ function initializeArtNet() {
 				try { socket.close(); } catch (e) {}
 				socket = null;
 				setStatus('Socket error');
+				setConnectionBadge('Not connected', false);
+				stopSpeedInterval();
 			});
 
 			socket.on('message', (msg, rinfo) => {
+				// update counters for speed display even if logging is paused
+				window._artnetPackets = (window._artnetPackets || 0) + 1;
+				window._artnetBytes = (window._artnetBytes || 0) + (msg && msg.length ? msg.length : 0);
+				setConnectionBadge('OK', true);
+				startSpeedInterval();
 				try {
+					if (window._artnetLoggingPaused) return;
 					const now = new Date().toLocaleTimeString();
 					const id = msg.slice(0, 8).toString('ascii');
 					const opcode = msg.length >= 10 ? msg.readUInt16LE(8) : 0;
@@ -240,6 +356,8 @@ function initializeArtNet() {
 				try { socket.setBroadcast(true); } catch (e) {}
 				addLog(`<div class="artnet-meta">Bound ArtNet on ${bindAddr || '0.0.0.0'}:6454</div>`);
 				setStatus(`Bound ${bindAddr || '0.0.0.0'}`);
+				setConnectionBadge('OK', true);
+				startSpeedInterval();
 			};
 
 			try {
@@ -285,11 +403,24 @@ function initializeArtNet() {
 		if (pollBtn) pollBtn.addEventListener('click', () => sendOpPoll());
 		if (refreshBtn) refreshBtn.addEventListener('click', () => { populateIfaceSelect(); addLog('<div class="artnet-meta">Refreshed interfaces</div>'); });
 
+		// Toggle / Clear logging buttons (native)
+		const toggleBtn = document.getElementById('artnet-toggle-logging');
+		const clearBtn = document.getElementById('artnet-clear-logs');
+		if (toggleBtn) toggleBtn.addEventListener('click', () => {
+			window._artnetLoggingPaused = !window._artnetLoggingPaused;
+			toggleBtn.textContent = window._artnetLoggingPaused ? 'Resume logging' : 'Stop logging';
+		});
+		if (clearBtn) clearBtn.addEventListener('click', () => {
+			if (logger) logger.innerHTML = '';
+			window._artnetPackets = 0; window._artnetBytes = 0; window._artnetLastPackets = 0; window._artnetLastBytes = 0;
+		});
+
 		// initial bind
 		createAndBind('0.0.0.0');
 
 		window.addEventListener('beforeunload', () => {
 			try { if (socket) socket.close(); } catch (e) {}
+			stopSpeedInterval();
 		});
 
 	} catch (err) {
