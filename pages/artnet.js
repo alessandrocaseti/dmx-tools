@@ -5,13 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-function initializeArtNet() {
-	// If `require` is not available in the renderer (common with contextIsolation),
-	// show troubleshooting UI and allow attempting an IPC-based start.
-	if (typeof require !== 'function') {
+function initializeArtNet() 
+{
+	if (typeof require !== 'function') 
+	{
 		const logger = document.getElementById('artnet-logger');
 		let controls = document.getElementById('artnet-controls');
-		if (!controls && logger && logger.parentNode) {
+		if (!controls && logger && logger.parentNode) 
+		{
 			controls = document.createElement('div');
 			controls.id = 'artnet-controls';
 				controls.innerHTML = `
@@ -21,8 +22,57 @@ function initializeArtNet() {
 					<span id="artnet-status"></span>
 					<span id="artnet-speed" style="margin-left:8px;">--</span>
 					<button id="artnet-clear-logs" style="margin-left:4px;">Clear logs</button>
+					<button id="artnet-toggle-view">Toggle Universe / Logs View</button>
 				`;
 			logger.parentNode.insertBefore(controls, logger);
+			// ---- Universe view toggle (do NOT clear logs) ----
+			(function() {
+			const loggerEl = document.getElementById('artnet-logger');
+			const controls = document.getElementById('artnet-controls');
+			if (!controls || !loggerEl) return;
+
+			// Ensure toggle button has a stable id (reuse existing Toggle button if present)
+			let toggleBtn = document.getElementById('artnet-toggle-view');
+			if (!toggleBtn) {
+				toggleBtn = Array.from(controls.querySelectorAll('button')).find(b => /toggle\s+universe/i.test(b.textContent));
+				if (toggleBtn) toggleBtn.id = 'artnet-toggle-view';
+				else {
+				toggleBtn = document.createElement('button');
+				toggleBtn.id = 'artnet-toggle-view';
+				toggleBtn.textContent = 'Show Universe';
+				controls.appendChild(toggleBtn);
+				}
+			}
+
+			// Create hidden universe panel (if not already present)
+			if (!document.getElementById('artnet-universe')) {
+				const uni = document.createElement('div');
+				uni.id = 'artnet-universe';
+				uni.style.display = 'none';
+				uni.style.border = '1px dashed #666';
+				uni.style.padding = '8px';
+				uni.style.marginTop = '8px';
+				uni.innerHTML = '<div class="universe-placeholder">Universe view placeholder</div>';
+				if (loggerEl.parentNode) loggerEl.parentNode.insertBefore(uni, loggerEl.nextSibling);
+			}
+
+			// Toggle handler: only toggles visibility — does NOT clear logger contents
+			toggleBtn.addEventListener('click', () => {
+				const uni = document.getElementById('artnet-universe');
+				const loggerEl = document.getElementById('artnet-logger');
+				if (!uni || !loggerEl) return;
+				const showingUniverse = uni.style.display !== 'none';
+				if (showingUniverse) {
+				uni.style.display = 'none';
+				loggerEl.style.display = '';
+				toggleBtn.textContent = 'Show Universe';
+				} else {
+				uni.style.display = '';
+				loggerEl.style.display = 'none';
+				toggleBtn.textContent = 'Show Logs';
+				}
+			});
+			})();
 		}
 
 		const tryBtn = document.getElementById('artnet-ipc-try');
@@ -30,23 +80,54 @@ function initializeArtNet() {
 		const status = document.getElementById('artnet-status');
 		function setStatus(t) { if (status) status.textContent = t; }
 
-		if (tryBtn) tryBtn.addEventListener('click', () => {
-			setStatus('Attempting IPC start...');
-			try {
-				if (window.electronAPI && typeof window.electronAPI.startArtNet === 'function') {
-					window.electronAPI.startArtNet(); setStatus('IPC: startArtNet() called'); return;
-				}
-				if (window.ipcRenderer && typeof window.ipcRenderer.send === 'function') {
-					window.ipcRenderer.send('start-artnet'); setStatus('ipcRenderer: start-artnet sent'); return;
-				}
-				if (window.api && typeof window.api.startArtNet === 'function') {
-					window.api.startArtNet(); setStatus('api.startArtNet() called'); return;
-				}
-				setStatus('No IPC bridge found');
-			} catch (e) { setStatus('IPC attempt failed: ' + String(e)); }
+		if (tryBtn) tryBtn.addEventListener('click', () => 
+		{
+			// toggle start/stop receiving via IPC
+			window._artnetIPCRunning = window._artnetIPCRunning || false;
+			if (!window._artnetIPCRunning) {
+				setStatus('Attempting IPC start...');
+				try {
+					if (window.electronAPI && typeof window.electronAPI.startArtNet === 'function') {
+						window.electronAPI.startArtNet(); setStatus('IPC: startArtNet() called');
+					} else if (window.ipcRenderer && typeof window.ipcRenderer.send === 'function') {
+						window.ipcRenderer.send('start-artnet'); setStatus('ipcRenderer: start-artnet sent');
+					} else if (window.api && typeof window.api.startArtNet === 'function') {
+						window.api.startArtNet(); setStatus('api.startArtNet() called');
+					} else {
+						setStatus('No IPC bridge found');
+					}
+				} catch (e) { setStatus('IPC attempt failed: ' + String(e)); }
+				window._artnetIPCRunning = true;
+				tryBtn.textContent = 'Stop receiving';
+			} else {
+				// stop receiving
+				try {
+					if (window.electronAPI && typeof window.electronAPI.stopArtNet === 'function') {
+						window.electronAPI.stopArtNet();
+					} else if (window.ipcRenderer && typeof window.ipcRenderer.send === 'function') {
+						window.ipcRenderer.send('stop-artnet');
+					} else if (window.api && typeof window.api.stopArtNet === 'function') {
+						window.api.stopArtNet();
+					}
+				} catch (e) { /* ignore */ }
+				window._artnetIPCRunning = false;
+				tryBtn.textContent = 'Start receiving';
+				// reset UI to uninitialized state
+				setConnectionBadge('NOT CONNECTED', false);
+				const speedElem = document.getElementById('artnet-speed'); if (speedElem) speedElem.textContent = '--';
+				setStatus('Stopped');
+				// reset counters and logging state
+				window._artnetPackets = 0; window._artnetBytes = 0; window._artnetLastPackets = 0; window._artnetLastBytes = 0;
+				window._artnetLoggingPaused = false;
+				// restore logging toggle button text
+				const ipcToggleBtn = document.getElementById('artnet-toggle-logging'); if (ipcToggleBtn) ipcToggleBtn.textContent = 'Stop logging';
+				// stop speed updates
+				if (window._artnetSpeedInterval) { clearInterval(window._artnetSpeedInterval); window._artnetSpeedInterval = null; }
+			}
 		});
 
-		if (copyBtn) copyBtn.addEventListener('click', () => {
+		if (copyBtn) copyBtn.addEventListener('click', () => 
+		{
 			const msg = `To enable ArtNet in the desktop app, either:\n` +
 				`1) Enable nodeIntegration in your BrowserWindow (not recommended):\n` +
 				`   new BrowserWindow({ webPreferences: { nodeIntegration: true } })\n` +
@@ -59,9 +140,11 @@ function initializeArtNet() {
 		});
 
 		// If an IPC bridge is available, register to receive packets and status updates
-		try {
+		try 
+		{
 			// small helpers for the IPC branch (renderer without require)
-			function fmtHex(buf, maxLen = 48) {
+			function fmtHex(buf, maxLen = 48) 
+			{
 				if (!buf) return '';
 				const len = Math.min((buf.length || 0), maxLen);
 				const parts = [];
@@ -70,7 +153,8 @@ function initializeArtNet() {
 				return parts.join(' ');
 			}
 
-			function addLog(html) {
+			function addLog(html) 
+			{
 				if (!logger) return;
 				if (window._artnetLoggingPaused) return;
 				const entry = document.createElement('div');
@@ -88,7 +172,8 @@ function initializeArtNet() {
 			window._artnetLastBytes = 0;
 			window._artnetSpeedInterval = null;
 
-			function setConnectionBadge(text, ok) {
+			function setConnectionBadge(text, ok) 
+			{
 				const b = document.getElementById('artnet-conn-badge');
 				if (!b) return;
 				b.textContent = text;
@@ -96,30 +181,37 @@ function initializeArtNet() {
 				b.style.color = ok ? '#030' : '#300';
 			}
 
-			function startSpeedInterval() {
+			function startSpeedInterval() 
+			{
 				if (window._artnetSpeedInterval) return;
 				window._artnetLastPackets = window._artnetPackets;
 				window._artnetLastBytes = window._artnetBytes;
-				window._artnetSpeedInterval = setInterval(() => {
+				window._artnetSpeedInterval = setInterval(() => 
+				{
 					const sp = window._artnetPackets - window._artnetLastPackets;
 					const sb = window._artnetBytes - window._artnetLastBytes;
 					window._artnetLastPackets = window._artnetPackets;
 					window._artnetLastBytes = window._artnetBytes;
 					const speedElem = document.getElementById('artnet-speed');
-					if (speedElem) {
+					if (speedElem) 
+					{
 						const mbps = (sb / 1024 / 1024).toFixed(3);
 						speedElem.textContent = `${sp} pk/s ${mbps} MB/s`;
 					}
 				}, 1000);
 			}
 
-			function stopSpeedInterval() {
+			function stopSpeedInterval() 
+			{
 				if (window._artnetSpeedInterval) { clearInterval(window._artnetSpeedInterval); window._artnetSpeedInterval = null; }
 			}
 
-			if (window.electronAPI && typeof window.electronAPI.onPacket === 'function') {
-				window.electronAPI.onPacket((packet) => {
-					try {
+			if (window.electronAPI && typeof window.electronAPI.onPacket === 'function') 
+			{
+				window.electronAPI.onPacket((packet) => 
+				{
+					try 
+					{
 						const now = new Date().toLocaleTimeString();
 						const OPCODES = { 0x2000: 'OpPoll', 0x2100: 'OpPollReply', 0x5000: 'OpDmx' };
 						const rinfo = (packet && packet.rinfo) ? packet.rinfo : { address: '', port: '' };
@@ -127,7 +219,8 @@ function initializeArtNet() {
 						const opcode = packet && packet.opcode ? packet.opcode : 0;
 						const opname = OPCODES[opcode] || 'Unknown';
 						let html = `<div class="artnet-meta"><b>${now}</b> — <b>from</b>: ${rinfo.address}:${rinfo.port} — <b>${opname}</b> (0x${opcode.toString(16)})</div>`;
-						if (packet && packet.type === 'dmx') {
+						if (packet && packet.type === 'dmx') 
+						{
 							const sequence = packet.sequence;
 							const physical = packet.physical;
 							const subUni = packet.subUni;
@@ -139,7 +232,9 @@ function initializeArtNet() {
 							const decVals = Array.from(data.slice(0, 24)).map((v) => v.toString());
 							html += `<div class="artnet-data"><b>DMX</b>: ${decVals.join(', ')}${data.length > 24 ? ', ...' : ''}</div>`;
 							html += `</div>`;
-						} else {
+						} 
+						else 
+						{
 							html += `<div class="artnet-body"><div><b>Header</b>: ${String(id).replace(/\0/g, '')} <b>Bytes</b>: ${packet.length || 0}</div>`;
 							html += `<div class="artnet-data"><b>Raw (hex)</b>: ${packet.hex || ''}</div></div>`;
 						}
@@ -150,12 +245,11 @@ function initializeArtNet() {
 						setConnectionBadge('OK', true);
 						startSpeedInterval();
 						addLog(html);
-					} catch (e) {
-						addLog(`<div class="artnet-meta">Error parsing IPC packet: ${String(e)}</div>`);
-					}
+					} catch (e) { addLog(`<div class="artnet-meta">Error parsing IPC packet: ${String(e)}</div>`); }
 				});
 			}
-			if (window.electronAPI && typeof window.electronAPI.onStatus === 'function') {
+			if (window.electronAPI && typeof window.electronAPI.onStatus === 'function') 
+			{
 				window.electronAPI.onStatus((st) => {
 					setStatus(st && st.message ? st.message : String(st));
 					if (st && st.connected) {
@@ -174,22 +268,23 @@ function initializeArtNet() {
 			// wire up IPC renderer logging controls
 			const ipcToggle = document.getElementById('artnet-toggle-logging');
 			const ipcClear = document.getElementById('artnet-clear-logs');
-			if (ipcToggle) ipcToggle.addEventListener('click', () => {
+			if (ipcToggle) ipcToggle.addEventListener('click', () => 
+			{
 				window._artnetLoggingPaused = !window._artnetLoggingPaused;
 				ipcToggle.textContent = window._artnetLoggingPaused ? 'Resume logging' : 'Stop logging';
 			});
-			if (ipcClear) ipcClear.addEventListener('click', () => {
+			if (ipcClear) ipcClear.addEventListener('click', () => 
+			{
 				if (logger) logger.innerHTML = '';
 				window._artnetPackets = 0; window._artnetBytes = 0; window._artnetLastPackets = 0; window._artnetLastBytes = 0;
 			});
-		} catch (e) {
-			console.warn('Failed to register IPC listeners', e);
-		}
+		} catch (e) { console.warn('Failed to register IPC listeners', e); }
 
 		return;
 	}
 
-	try {
+	try 
+	{
 		const dgram = require('dgram');
 		const os = require('os');
 
@@ -199,7 +294,8 @@ function initializeArtNet() {
 
 		// Insert controls area if not present
 		let controls = document.getElementById('artnet-controls');
-		if (!controls && logger && logger.parentNode) {
+		if (!controls && logger && logger.parentNode) 
+		{
 			controls = document.createElement('div');
 			controls.id = 'artnet-controls';
 			controls.innerHTML = `
@@ -218,7 +314,8 @@ function initializeArtNet() {
 
 		const OPCODES = { 0x2000: 'OpPoll', 0x2100: 'OpPollReply', 0x5000: 'OpDmx' };
 
-		function fmtHex(buf, maxLen = 48) {
+		function fmtHex(buf, maxLen = 48) 
+		{
 			const len = Math.min(buf.length, maxLen);
 			const parts = [];
 			for (let i = 0; i < len; i++) parts.push(buf[i].toString(16).padStart(2, '0'));
@@ -226,7 +323,8 @@ function initializeArtNet() {
 			return parts.join(' ');
 		}
 
-		function addLog(html) {
+		function addLog(html) 
+		{
 			if (!logger) return;
 			if (window._artnetLoggingPaused) return;
 			const entry = document.createElement('div');
@@ -244,7 +342,8 @@ function initializeArtNet() {
 		window._artnetLastBytes = 0;
 		window._artnetSpeedInterval = null;
 
-		function setConnectionBadge(text, ok) {
+		function setConnectionBadge(text, ok) 
+		{
 			const b = document.getElementById('artnet-conn-badge');
 			if (!b) return;
 			b.textContent = text;
@@ -252,7 +351,8 @@ function initializeArtNet() {
 			b.style.color = ok ? '#030' : '#300';
 		}
 
-		function startSpeedInterval() {
+		function startSpeedInterval() 
+		{
 			if (window._artnetSpeedInterval) return;
 			window._artnetLastPackets = window._artnetPackets;
 			window._artnetLastBytes = window._artnetBytes;
@@ -262,7 +362,8 @@ function initializeArtNet() {
 				window._artnetLastPackets = window._artnetPackets;
 				window._artnetLastBytes = window._artnetBytes;
 				const speedElem = document.getElementById('artnet-speed');
-				if (speedElem) {
+				if (speedElem) 
+				{
 					const mbps = (sb / 1024 / 1024).toFixed(3);
 					speedElem.textContent = `${sp}/s ${mbps} MB/s`;
 				}
@@ -271,10 +372,12 @@ function initializeArtNet() {
 
 		function stopSpeedInterval() { if (window._artnetSpeedInterval) { clearInterval(window._artnetSpeedInterval); window._artnetSpeedInterval = null; } }
 
-		function listInterfaces() {
+		function listInterfaces() 
+		{
 			const nets = os.networkInterfaces();
 			const addrs = [];
-			Object.keys(nets).forEach((name) => {
+			Object.keys(nets).forEach((name) => 
+			{
 				nets[name].forEach((info) => {
 					if (info.family === 'IPv4') addrs.push({ name, address: info.address, internal: info.internal });
 				});
@@ -423,7 +526,5 @@ function initializeArtNet() {
 			stopSpeedInterval();
 		});
 
-	} catch (err) {
-		console.error('ArtNet desktop module failed to initialize:', err);
-	}
+	} catch (err) { console.error('ArtNet desktop module failed to initialize:', err) }
 }

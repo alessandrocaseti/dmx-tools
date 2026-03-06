@@ -10,8 +10,8 @@
 	margin-top: 24px;
 }
 
-.artnet-entry{
-	border-bottom: 1px solid rgba(255,255,255,0.04);
+.artnet-entry
+{
 	padding:12px 10px;
 	margin-bottom:8px;
 	background: rgba(255,255,255,0.01);
@@ -19,16 +19,19 @@
 	transition: background .15s ease, transform .08s ease;
 }
 
-.artnet-meta{
+.artnet-meta
+{
 	color: #9fd3ff;
 	font-size:13px;
 	margin-bottom:6px;
 	display:flex;
 	justify-content:space-between;
+	align-items:center;
 	gap:12px;
 }
 
-.artnet-body{
+.artnet-body
+{
 	margin-left:4px;
 	display:flex;
 	flex-wrap:wrap;
