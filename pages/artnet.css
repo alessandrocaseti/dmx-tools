@@ -1,0 +1,84 @@
+
+#artnet-logger{
+	max-height:520px;
+	overflow:auto;
+	padding:12px 14px;
+	background: linear-gradient(180deg,#0b0e12 0%, #070709 100%);
+	color: #e6e6e6;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, monospace;
+	font-size:14px;
+	border-radius:10px;
+	box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+
+.artnet-entry{
+	border-bottom: 1px solid rgba(255,255,255,0.04);
+	padding:12px 10px;
+	margin-bottom:8px;
+	background: rgba(255,255,255,0.01);
+	border-left: 4px solid rgba(159,211,255,0.06);
+	transition: background .15s ease, transform .08s ease;
+}
+
+.artnet-meta{
+	color: #9fd3ff;
+	font-size:13px;
+	margin-bottom:6px;
+	display:flex;
+	justify-content:space-between;
+	gap:12px;
+}
+
+.artnet-body{
+	margin-left:4px;
+	display:flex;
+	flex-wrap:wrap;
+	gap:8px 12px;
+	align-items:center;
+}
+
+.artnet-data{
+	margin-top:6px;
+	color:#dcdcdc;
+	font-family: monospace;
+	background: rgba(255,255,255,0.03);
+	padding:8px 10px;
+	border-radius:6px;
+	overflow:auto;
+	max-width:100%;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+.artnet-entry b{ color:#ffffff; }
+
+#artnet-controls{
+	display:flex;
+	gap:10px;
+	align-items:center;
+	padding:12px 14px;
+	background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+	border-radius:8px;
+}
+
+#artnet-controls select{ background:#0b0b0c; color:#fff; border:1px solid rgba(255,255,255,0.06); padding:8px 10px; border-radius:6px; min-width:220px; }
+#artnet-controls button{ background:#0f62fe; color:#fff; border:0; padding:8px 10px; border-radius:6px; cursor:pointer; box-shadow: 0 3px 8px rgba(15,98,254,0.14); }
+#artnet-controls button:hover{ background:#0953c6; transform:translateY(-1px); }
+#artnet-status{ color:#9fd3ff; font-size:13px; margin-left:6px; }
+
+/* Distinguish parameter labels inside body */
+.artnet-body b{ color:#cbeeff; display:inline-block; min-width:70px; }
+
+/* Make DMX values stand out */
+.artnet-data b{ color:#ffffff; margin-right:6px; }
+.artnet-data::-webkit-scrollbar{ height:8px; }
+.artnet-data::-webkit-scrollbar-thumb{ background: rgba(255,255,255,0.06); border-radius:4px; }
+
+/* Hover highlight for entries */
+.artnet-entry:hover{ background: rgba(255,255,255,0.02); }
+
+@media (max-width: 800px) {
+	#artnet-logger{ max-height:360px; }
+	#artnet-controls select{ min-width:140px; }
+}
+
