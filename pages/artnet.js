@@ -15,21 +15,20 @@ function initializeArtNet()
 		const uni = document.createElement('div');
 		uni.id = 'artnet-universe';
 		uni.style.display = 'none';
-		uni.style.border = '1px dashed #666';
-		uni.style.padding = '8px';
-		uni.style.marginTop = '8px';
+		uni.style.marginTop = '16px';
 		uni.innerHTML = `
-			<div id="artnet-universe-controls" style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-				<label style="white-space:nowrap;">Universe (fixed):</label>
+			<div id="artnet-universe-controls" style="display:flex;align-items:center;gap:8px;margin-top:16px; justify-content:center;">
+				<label style="white-space:nowrap;">Universe 1</label>
 				<span id="artnet-universe-current" style="min-width:220px;display:inline-block;">Net 0 Sub 0</span>
 				<span id="artnet-universe-summary" style="margin-left:8px;">No data</span>
 			</div>
-			<div id="artnet-universe-grid" style="display:grid;grid-template-columns:repeat(16,1fr);grid-auto-rows:minmax(44px,auto);gap:8px;width:100%;">
+			<div id="artnet-universe-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(48px,1fr));grid-auto-rows:minmax(44px,auto);gap:6px;width:120%;margin-top:16px;position:relative;left:50%;transform:translateX(-50%);">
 			</div>
 			<style>
-				#artnet-universe-grid .universe-cell{background:#111;color:#ddd;padding:10px;border-radius:6px;font-size:13px;display:flex;flex-direction:column;align-items:flex-start;min-height:44px}
+				#artnet-universe-grid{overflow:visible}
+				#artnet-universe-grid .universe-cell{background:#111;color:#ddd;padding:6px;border-radius:6px;font-size:12px;display:flex;flex-direction:column;align-items:flex-start;min-height:36px}
 				#artnet-universe-grid .univ-chan{font-weight:700;color:#bbb}
-				#artnet-universe-grid .univ-val{font-size:14px;margin-top:8px}
+				#artnet-universe-grid .univ-val{font-size:12px;margin-top:6px}
 			</style>
 		`;
 		loggerEl.parentNode.insertBefore(uni, loggerEl.nextSibling);
@@ -60,7 +59,7 @@ function initializeArtNet()
 				const cell = grid.children[i]; if (!cell) continue;
 				cell.querySelector('.univ-val').textContent = v;
 				const pct = Math.round((v/255)*100);
-				cell.style.background = v>0?`linear-gradient(180deg,#114422 ${pct}%, #111 ${pct}% )`:'#111';
+				cell.style.background = v>0?`linear-gradient(to top,#114422 ${pct}%, #111 ${pct}% )`:'#111';
 			}
 			summary.textContent = `Universe ${key} — ${data.length || 0} channels`;
 		}
@@ -112,23 +111,22 @@ function initializeArtNet()
 					uni.style.border = '1px dashed #666';
 					uni.style.padding = '8px';
 					uni.style.marginTop = '8px';
-					uni.innerHTML = `
-						<div id="artnet-universe-controls" style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-							<label style="white-space:nowrap;">Universe (fixed):</label>
-							<span id="artnet-universe-current" style="min-width:100%;display:inline-block;">Net 0 Sub 0</span>
-							<span id="artnet-universe-summary" style="margin-left:8px;">No data</span>
-						</div>
-						<div id="artnet-universe-grid" style="display:grid;grid-template-columns:repeat(32,1fr);gap:6px;max-height:360px;overflow:auto;">
-							<!-- 512 channel cells injected by script -->
-						</div>
-						<style>
-							#artnet-universe-grid .universe-cell{background:#111;color:#ddd;padding:6px;border-radius:4px;font-size:11px;display:flex;flex-direction:column;align-items:flex-start;}
-							#artnet-universe-grid .univ-chan{font-weight:600;color:#999;}
-							#artnet-universe-grid .univ-val{font-size:12px;margin-top:6px}
-						</style>
-					`;
-					logger.parentNode.insertBefore(uni, logger.nextSibling);
-					// initialize cells and helpers (same logic as IPC branch)
+						uni.innerHTML = `
+							<div id="artnet-universe-controls" style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+								<label style="white-space:nowrap;">Universe (fixed):</label>
+								<span id="artnet-universe-current" style="min-width:220px;display:inline-block;">Net 0 Sub 0</span>
+								<span id="artnet-universe-summary" style="margin-left:8px;">No data</span>
+							</div>
+							<div id="artnet-universe-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(48px,1fr));grid-auto-rows:minmax(44px,auto);gap:6px;width:120%;position:relative;left:50%;transform:translateX(-50%);">
+								<!-- 512 channel cells injected by script -->
+							</div>
+							<style>
+								#artnet-universe-grid{overflow:visible}
+								#artnet-universe-grid .universe-cell{background:#111;color:#ddd;padding:6px;border-radius:6px;font-size:12px;display:flex;flex-direction:column;align-items:flex-start;min-height:36px}
+								#artnet-universe-grid .univ-chan{font-weight:700;color:#bbb}
+								#artnet-universe-grid .univ-val{font-size:12px;margin-top:6px}
+							</style>
+						`;
 					(function initUniverseUI(){
 						const grid = document.getElementById('artnet-universe-grid');
 						const FIXED_UNIV_KEY = '0:0';
@@ -153,7 +151,7 @@ function initializeArtNet()
 								return;
 							}
 							const data = window._artnetUniverseData[key];
-							for (let i=0;i<512;i++){ const v = data[i] || 0; const cell = grid.children[i]; if (!cell) continue; cell.querySelector('.univ-val').textContent = v; const pct = Math.round((v/255)*100); cell.style.background = v>0?`linear-gradient(180deg,#114422 ${pct}%, #111 ${pct}% )`:'#111'; }
+							for (let i=0;i<512;i++){ const v = data[i] || 0; const cell = grid.children[i]; if (!cell) continue; cell.querySelector('.univ-val').textContent = v; const pct = Math.round((v/255)*100); cell.style.background = v>0?`linear-gradient(to top,#114422 ${pct}%, #111 ${pct}% )`:'#111'; }
 							summary.textContent = `Universe ${key} — ${data.length || 0} channels`;
 						}
 					})();
@@ -192,12 +190,13 @@ function initializeArtNet()
 						<span id="artnet-universe-current" style="min-width:220px;display:inline-block;">Net 0 Sub 0</span>
 						<span id="artnet-universe-summary" style="margin-left:8px;">No data</span>
 					</div>
-					<div id="artnet-universe-grid" style="display:grid;grid-template-columns:repeat(32,1fr);gap:6px;max-height:360px;overflow:auto;">
+					<div id="artnet-universe-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(48px,1fr));grid-auto-rows:minmax(44px,auto);gap:6px;width:120%;position:relative;left:50%;transform:translateX(-50%);">
 						<!-- 512 channel cells injected by script -->
 					</div>
 					<style>
-						#artnet-universe-grid .universe-cell{background:#111;color:#ddd;padding:6px;border-radius:4px;font-size:11px;display:flex;flex-direction:column;align-items:flex-start}
-						#artnet-universe-grid .univ-chan{font-weight:600;color:#999}
+						#artnet-universe-grid{overflow:visible}
+						#artnet-universe-grid .universe-cell{background:#111;color:#ddd;padding:6px;border-radius:6px;font-size:12px;display:flex;flex-direction:column;align-items:flex-start;min-height:36px}
+						#artnet-universe-grid .univ-chan{font-weight:700;color:#bbb}
 						#artnet-universe-grid .univ-val{font-size:12px;margin-top:6px}
 					</style>
 				`;
@@ -229,7 +228,7 @@ function initializeArtNet()
 							return;
 						}
 						const data = window._artnetUniverseData[key];
-						for (let i=0;i<512;i++){ const v = data[i] || 0; const cell = grid.children[i]; if (!cell) continue; cell.querySelector('.univ-val').textContent = v; const pct = Math.round((v/255)*100); cell.style.background = v>0?`linear-gradient(180deg,#114422 ${pct}%, #111 ${pct}% )`:'#111'; }
+						for (let i=0;i<512;i++){ const v = data[i] || 0; const cell = grid.children[i]; if (!cell) continue; cell.querySelector('.univ-val').textContent = v; const pct = Math.round((v/255)*100); cell.style.background = v>0?`linear-gradient(to top,#114422 ${pct}%, #111 ${pct}% )`:'#111'; }
 						summary.textContent = `Universe ${key} — ${data.length || 0} channels`;
 					}
 				})();
