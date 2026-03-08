@@ -7,6 +7,85 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initializeArtNet() 
 {
+	// Centralized Universe UI initializer and DMX handler
+	function ensureUniverseUI() {
+		if (document.getElementById('artnet-universe')) return;
+		const loggerEl = document.getElementById('artnet-logger');
+		if (!loggerEl || !loggerEl.parentNode) return;
+		const uni = document.createElement('div');
+		uni.id = 'artnet-universe';
+		uni.style.display = 'none';
+		uni.style.border = '1px dashed #666';
+		uni.style.padding = '8px';
+		uni.style.marginTop = '8px';
+		uni.innerHTML = `
+			<div id="artnet-universe-controls" style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+				<label style="white-space:nowrap;">Universe (fixed):</label>
+				<span id="artnet-universe-current" style="min-width:220px;display:inline-block;">Net 0 Sub 0</span>
+				<span id="artnet-universe-summary" style="margin-left:8px;">No data</span>
+			</div>
+			<div id="artnet-universe-grid" style="display:grid;grid-template-columns:repeat(16,1fr);grid-auto-rows:minmax(44px,auto);gap:8px;width:100%;">
+			</div>
+			<style>
+				#artnet-universe-grid .universe-cell{background:#111;color:#ddd;padding:10px;border-radius:6px;font-size:13px;display:flex;flex-direction:column;align-items:flex-start;min-height:44px}
+				#artnet-universe-grid .univ-chan{font-weight:700;color:#bbb}
+				#artnet-universe-grid .univ-val{font-size:14px;margin-top:8px}
+			</style>
+		`;
+		loggerEl.parentNode.insertBefore(uni, loggerEl.nextSibling);
+
+		const grid = document.getElementById('artnet-universe-grid');
+		const FIXED_UNIV_KEY = '0:0';
+		// create 512 cells once
+		for (let i = 1; i <= 512; i++) {
+			const c = document.createElement('div');
+			c.className = 'universe-cell';
+			c.dataset.chan = i;
+			c.innerHTML = `<div class="univ-chan">${i}</div><div class="univ-val">-</div>`;
+			grid.appendChild(c);
+		}
+
+		window._artnetUniverseData = window._artnetUniverseData || {};
+
+		function renderUniverse(key) {
+			const summary = document.getElementById('artnet-universe-summary');
+			if (!key || !window._artnetUniverseData[key]) {
+				Array.from(grid.children).forEach((cell)=>{ cell.querySelector('.univ-val').textContent='-'; cell.style.background='#111'; });
+				summary.textContent = 'No data for selected universe';
+				return;
+			}
+			const data = window._artnetUniverseData[key];
+			for (let i=0;i<512;i++){
+				const v = data[i] || 0;
+				const cell = grid.children[i]; if (!cell) continue;
+				cell.querySelector('.univ-val').textContent = v;
+				const pct = Math.round((v/255)*100);
+				cell.style.background = v>0?`linear-gradient(180deg,#114422 ${pct}%, #111 ${pct}% )`:'#111';
+			}
+			summary.textContent = `Universe ${key} — ${data.length || 0} channels`;
+		}
+
+		// expose fixed key and renderer globally for other branches
+		window._artnetFixedUniverseKey = FIXED_UNIV_KEY;
+		window._artnetRenderUniverse = renderUniverse;
+
+		// no selector: always show the fixed universe
+
+		// handler to be called by packet processors
+		window._artnetHandleDMX = function(net, subUni, data) {
+			try {
+				const darr = (data && data.length) ? Uint8Array.from(data) : new Uint8Array(0);
+				window._artnetUniverseData[FIXED_UNIV_KEY] = darr;
+				const summary = document.getElementById('artnet-universe-current');
+				if (summary) summary.textContent = `Net ${net} Sub ${subUni}`;
+				renderUniverse(FIXED_UNIV_KEY);
+			} catch (e) { /* ignore */ }
+		};
+
+	}
+
+	// ensure UI is present early so packet handlers can call the central updater
+	try { ensureUniverseUI(); } catch (e) { /* ignore */ }
 	if (typeof require !== 'function') 
 	{
 		const logger = document.getElementById('artnet-logger');
@@ -22,9 +101,63 @@ function initializeArtNet()
 					<span id="artnet-status"></span>
 					<span id="artnet-speed" style="margin-left:8px;">--</span>
 					<button id="artnet-clear-logs" style="margin-left:4px;">Clear logs</button>
-					<button id="artnet-toggle-view">Toggle Universe / Logs View</button>
+					<button id="artnet-toggle-view">Show universe</button>
 				`;
 			logger.parentNode.insertBefore(controls, logger);
+				// Create hidden universe panel for native mode (if not already present)
+				if (!document.getElementById('artnet-universe')) {
+					const uni = document.createElement('div');
+					uni.id = 'artnet-universe';
+					uni.style.display = 'none';
+					uni.style.border = '1px dashed #666';
+					uni.style.padding = '8px';
+					uni.style.marginTop = '8px';
+					uni.innerHTML = `
+						<div id="artnet-universe-controls" style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+							<label style="white-space:nowrap;">Universe (fixed):</label>
+							<span id="artnet-universe-current" style="min-width:100%;display:inline-block;">Net 0 Sub 0</span>
+							<span id="artnet-universe-summary" style="margin-left:8px;">No data</span>
+						</div>
+						<div id="artnet-universe-grid" style="display:grid;grid-template-columns:repeat(32,1fr);gap:6px;max-height:360px;overflow:auto;">
+							<!-- 512 channel cells injected by script -->
+						</div>
+						<style>
+							#artnet-universe-grid .universe-cell{background:#111;color:#ddd;padding:6px;border-radius:4px;font-size:11px;display:flex;flex-direction:column;align-items:flex-start;}
+							#artnet-universe-grid .univ-chan{font-weight:600;color:#999;}
+							#artnet-universe-grid .univ-val{font-size:12px;margin-top:6px}
+						</style>
+					`;
+					logger.parentNode.insertBefore(uni, logger.nextSibling);
+					// initialize cells and helpers (same logic as IPC branch)
+					(function initUniverseUI(){
+						const grid = document.getElementById('artnet-universe-grid');
+						const FIXED_UNIV_KEY = '0:0';
+						if (!grid) return;
+						for (let i = 1; i <= 512; i++) {
+							const c = document.createElement('div');
+							c.className = 'universe-cell';
+							c.dataset.chan = i;
+							c.innerHTML = `<div class="univ-chan">${i}</div><div class="univ-val">0</div>`;
+							grid.appendChild(c);
+						}
+						window._artnetUniverseData = window._artnetUniverseData || {};
+						window._artnetRenderUniverse = renderUniverse;
+						// if there is existing data for the fixed key, render it
+						try { if (window._artnetUniverseData[FIXED_UNIV_KEY]) renderUniverse(FIXED_UNIV_KEY); } catch (e) { /* ignore */ }
+						function renderUniverse(key) {
+							const grid = document.getElementById('artnet-universe-grid');
+							const summary = document.getElementById('artnet-universe-summary');
+							if (!key || !window._artnetUniverseData[key]) {
+								Array.from(grid.children).forEach((cell)=>{ cell.querySelector('.univ-val').textContent='-'; cell.style.background='#111'; });
+								summary.textContent = 'No data for selected universe';
+								return;
+							}
+							const data = window._artnetUniverseData[key];
+							for (let i=0;i<512;i++){ const v = data[i] || 0; const cell = grid.children[i]; if (!cell) continue; cell.querySelector('.univ-val').textContent = v; const pct = Math.round((v/255)*100); cell.style.background = v>0?`linear-gradient(180deg,#114422 ${pct}%, #111 ${pct}% )`:'#111'; }
+							summary.textContent = `Universe ${key} — ${data.length || 0} channels`;
+						}
+					})();
+				}
 			// ---- Universe view toggle (do NOT clear logs) ----
 			(function() {
 			const loggerEl = document.getElementById('artnet-logger');
@@ -52,8 +185,54 @@ function initializeArtNet()
 				uni.style.border = '1px dashed #666';
 				uni.style.padding = '8px';
 				uni.style.marginTop = '8px';
-				uni.innerHTML = '<div class="universe-placeholder">Universe view placeholder</div>';
+				// Universe UI: selector + 512-channel grid
+				uni.innerHTML = `
+					<div id="artnet-universe-controls" style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+						<label style="white-space:nowrap;">Universe (fixed):</label>
+						<span id="artnet-universe-current" style="min-width:220px;display:inline-block;">Net 0 Sub 0</span>
+						<span id="artnet-universe-summary" style="margin-left:8px;">No data</span>
+					</div>
+					<div id="artnet-universe-grid" style="display:grid;grid-template-columns:repeat(32,1fr);gap:6px;max-height:360px;overflow:auto;">
+						<!-- 512 channel cells injected by script -->
+					</div>
+					<style>
+						#artnet-universe-grid .universe-cell{background:#111;color:#ddd;padding:6px;border-radius:4px;font-size:11px;display:flex;flex-direction:column;align-items:flex-start}
+						#artnet-universe-grid .univ-chan{font-weight:600;color:#999}
+						#artnet-universe-grid .univ-val{font-size:12px;margin-top:6px}
+					</style>
+				`;
 				if (loggerEl.parentNode) loggerEl.parentNode.insertBefore(uni, loggerEl.nextSibling);
+				// initialize cells and helpers
+				(function initUniverseUI(){
+					const grid = document.getElementById('artnet-universe-grid');
+					const FIXED_UNIV_KEY = '0:0';
+					if (!grid) return;
+					for (let i = 1; i <= 512; i++) {
+						const c = document.createElement('div');
+						c.className = 'universe-cell';
+						c.dataset.chan = i;
+						c.innerHTML = `<div class="univ-chan">${i}</div><div class="univ-val">0</div>`;
+						grid.appendChild(c);
+					}
+					window._artnetUniverseData = window._artnetUniverseData || {};
+					window._artnetRenderUniverse = renderUniverse;
+					try { if (window._artnetUniverseData[FIXED_UNIV_KEY]) renderUniverse(FIXED_UNIV_KEY); } catch (e) { /* ignore */ }
+					window._artnetRenderUniverse = renderUniverse;
+					// render any already-received data for the fixed universe
+					try { if (window._artnetUniverseData[FIXED_UNIV_KEY]) renderUniverse(FIXED_UNIV_KEY); } catch (e) { /* ignore */ }
+					function renderUniverse(key) {
+						const grid = document.getElementById('artnet-universe-grid');
+						const summary = document.getElementById('artnet-universe-summary');
+						if (!key || !window._artnetUniverseData[key]) {
+							Array.from(grid.children).forEach((cell)=>{ cell.querySelector('.univ-val').textContent='-'; cell.style.background='#111'; });
+							summary.textContent = 'No data for selected universe';
+							return;
+						}
+						const data = window._artnetUniverseData[key];
+						for (let i=0;i<512;i++){ const v = data[i] || 0; const cell = grid.children[i]; if (!cell) continue; cell.querySelector('.univ-val').textContent = v; const pct = Math.round((v/255)*100); cell.style.background = v>0?`linear-gradient(180deg,#114422 ${pct}%, #111 ${pct}% )`:'#111'; }
+						summary.textContent = `Universe ${key} — ${data.length || 0} channels`;
+					}
+				})();
 			}
 
 			// Toggle handler: only toggles visibility — does NOT clear logger contents
@@ -232,6 +411,9 @@ function initializeArtNet()
 							const decVals = Array.from(data.slice(0, 24)).map((v) => v.toString());
 							html += `<div class="artnet-data"><b>DMX</b>: ${decVals.join(', ')}${data.length > 24 ? ', ...' : ''}</div>`;
 							html += `</div>`;
+
+							// route DMX to centralized UI handler (fixed-universe)
+							try { if (typeof window._artnetHandleDMX === 'function') window._artnetHandleDMX(net, subUni, data); else { const FIXED_UNIV_KEY = '0:0'; window._artnetUniverseData = window._artnetUniverseData || {}; window._artnetUniverseData[FIXED_UNIV_KEY] = data; try { const summary = document.getElementById('artnet-universe-current'); if (summary) summary.textContent = `Net ${net} Sub ${subUni}`; if (typeof renderUniverse === 'function') renderUniverse(FIXED_UNIV_KEY); } catch (e) {} } } catch (e) {}
 						} 
 						else 
 						{
@@ -443,6 +625,39 @@ function initializeArtNet()
 						const decVals = Array.from(data.slice(0, 24)).map((v) => v.toString());
 						html += `<div class="artnet-data"><b>DMX</b>: ${decVals.join(', ')}${data.length > 24 ? ', ...' : ''}</div>`;
 						html += `</div>`;
+
+						// ensure UI exists and route DMX data to centralized handler
+						try { ensureUniverseUI(); } catch(e) {}
+						try {
+							// debug: show received universe key and length in a small overlay
+							try {
+								const dbgId = 'artnet-universe-debug';
+								let dbg = document.getElementById(dbgId);
+								if (!dbg) {
+									dbg = document.createElement('div'); dbg.id = dbgId;
+									dbg.style.position = 'fixed'; dbg.style.right = '12px'; dbg.style.bottom = '12px'; dbg.style.background = 'rgba(0,0,0,0.7)'; dbg.style.color = '#fff'; dbg.style.padding = '8px 10px'; dbg.style.borderRadius = '6px'; dbg.style.fontSize = '12px'; dbg.style.zIndex = 9999; dbg.style.maxWidth = '360px'; dbg.style.maxHeight = '160px'; dbg.style.overflow = 'auto'; document.body.appendChild(dbg);
+								}
+								dbg.innerText = `Received ${net}:${subUni} len=${data.length || 0}`;
+							} catch (e) {}
+							if (typeof window._artnetHandleDMX === 'function') window._artnetHandleDMX(net, subUni, data);
+							else { const FIXED_UNIV_KEY = '0:0'; window._artnetUniverseData = window._artnetUniverseData || {}; window._artnetUniverseData[FIXED_UNIV_KEY] = data; try { const summary = document.getElementById('artnet-universe-current'); if (summary) summary.textContent = `Net ${net} Sub ${subUni}`; if (typeof renderUniverse === 'function') renderUniverse(FIXED_UNIV_KEY); } catch (e) {} }
+						} catch (e) {}
+
+						// ensure UI exists and route DMX data to centralized handler (native path)
+						try { ensureUniverseUI(); } catch(e) {}
+						try {
+							try {
+								const dbgId = 'artnet-universe-debug';
+								let dbg = document.getElementById(dbgId);
+								if (!dbg) {
+									dbg = document.createElement('div'); dbg.id = dbgId;
+									dbg.style.position = 'fixed'; dbg.style.right = '12px'; dbg.style.bottom = '12px'; dbg.style.background = 'rgba(0,0,0,0.7)'; dbg.style.color = '#fff'; dbg.style.padding = '8px 10px'; dbg.style.borderRadius = '6px'; dbg.style.fontSize = '12px'; dbg.style.zIndex = 9999; dbg.style.maxWidth = '360px'; dbg.style.maxHeight = '160px'; dbg.style.overflow = 'auto'; document.body.appendChild(dbg);
+								}
+								dbg.innerText = `Received ${net}:${subUni} len=${data.length || 0}`;
+							} catch (e) {}
+							if (typeof window._artnetHandleDMX === 'function') window._artnetHandleDMX(net, subUni, data);
+							else { const FIXED_UNIV_KEY = '0:0'; window._artnetUniverseData = window._artnetUniverseData || {}; window._artnetUniverseData[FIXED_UNIV_KEY] = data; try { const summary = document.getElementById('artnet-universe-current'); if (summary) summary.textContent = `Net ${net} Sub ${subUni}`; if (typeof renderUniverse === 'function') renderUniverse(FIXED_UNIV_KEY); } catch (e) {} }
+						} catch (e) {}
 					} else {
 						html += `<div class="artnet-body"><div><b>Header</b>: ${id.replace(/\0/g, '')} <b>Bytes</b>: ${msg.length}</div>`;
 						html += `<div class="artnet-data"><b>Raw (hex)</b>: ${fmtHex(msg, 96)}</div></div>`;
