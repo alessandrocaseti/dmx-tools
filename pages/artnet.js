@@ -294,6 +294,7 @@ function initializeArtNet()
 				setConnectionBadge('NOT CONNECTED', false);
 				const speedElem = document.getElementById('artnet-speed'); if (speedElem) speedElem.textContent = '--';
 				setStatus('Stopped');
+				try { setCmdMessage('ArtNet connection closed', 'ARTNET'); } catch (e) {}
 				// reset counters and logging state
 				window._artnetPackets = 0; window._artnetBytes = 0; window._artnetLastPackets = 0; window._artnetLastBytes = 0;
 				window._artnetLoggingPaused = false;
@@ -364,6 +365,8 @@ function initializeArtNet()
 				if (window._artnetSpeedInterval) return;
 				window._artnetLastPackets = window._artnetPackets;
 				window._artnetLastBytes = window._artnetBytes;
+				window._artnetZeroStart = null;
+				window._artnetDisconnected = window._artnetDisconnected || false;
 				window._artnetSpeedInterval = setInterval(() => 
 				{
 					const sp = window._artnetPackets - window._artnetLastPackets;
@@ -375,6 +378,24 @@ function initializeArtNet()
 					{
 						const mbps = (sb / 1024 / 1024).toFixed(3);
 						speedElem.textContent = `${sp} pk/s ${mbps} MB/s`;
+					}
+					const now = Date.now();
+					if (sp === 0) {
+						if (!window._artnetZeroStart) window._artnetZeroStart = now;
+					} else {
+						window._artnetZeroStart = null;
+						if (window._artnetDisconnected) {
+							window._artnetDisconnected = false;
+							setConnectionBadge('OK', true);
+							try { setCmdMessage('ArtNet connection opened', 'ARTNET'); } catch (e) {}
+						}
+					}
+					if (window._artnetZeroStart && (now - window._artnetZeroStart) >= 5000) {
+						if (!window._artnetDisconnected) {
+							window._artnetDisconnected = true;
+							setConnectionBadge('DISCONNECTED', false);
+							try { setCmdMessage('ArtNet signal disconnected - no packets received for 5s', 'ARTNET'); } catch (e) {}
+						}
 					}
 				}, 1000);
 			}
@@ -425,6 +446,11 @@ function initializeArtNet()
 						window._artnetBytes = (window._artnetBytes || 0) + (bcount || 0);
 						setConnectionBadge('OK', true);
 						startSpeedInterval();
+						// if we had been marked disconnected, notify and clear state
+						if (window._artnetDisconnected) {
+							window._artnetDisconnected = false;
+							try { setCmdMessage('ArtNet connection opened', 'ARTNET'); } catch (e) {}
+						}
 						addLog(html);
 					} catch (e) { addLog(`<div class="artnet-meta">Error parsing IPC packet: ${String(e)}</div>`); }
 				});
@@ -436,12 +462,15 @@ function initializeArtNet()
 					if (st && st.connected) {
 						setConnectionBadge('OK', true);
 						startSpeedInterval();
+							try { setCmdMessage('ArtNet connection opened', 'ARTNET'); } catch (e) {}
 					} else if (st && st.message && /bound|connected/i.test(st.message)) {
 						setConnectionBadge('OK', true);
 						startSpeedInterval();
+							try { setCmdMessage('ArtNet connection opened', 'ARTNET'); } catch (e) {}
 					} else if (st && st.message && /error|failed/i.test(st.message)) {
-						setConnectionBadge('Not connected', false);
+						setConnectionBadge('CLOSED', false);
 						stopSpeedInterval();
+							try { setCmdMessage('ArtNet connection closed', 'ARTNET'); } catch (e) {}
 					}
 				});
 			}
@@ -453,6 +482,7 @@ function initializeArtNet()
 			{
 				window._artnetLoggingPaused = !window._artnetLoggingPaused;
 				ipcToggle.textContent = window._artnetLoggingPaused ? 'Resume logging' : 'Stop logging';
+				try { setCmdMessage(window._artnetLoggingPaused ? 'ArtNet logging disabled' : 'ArtNet logging enabled', 'ARTNET'); } catch (e) {}
 			});
 			if (ipcClear) ipcClear.addEventListener('click', () => 
 			{
@@ -537,6 +567,8 @@ function initializeArtNet()
 			if (window._artnetSpeedInterval) return;
 			window._artnetLastPackets = window._artnetPackets;
 			window._artnetLastBytes = window._artnetBytes;
+			window._artnetZeroStart = null;
+			window._artnetDisconnected = window._artnetDisconnected || false;
 			window._artnetSpeedInterval = setInterval(() => {
 				const sp = window._artnetPackets - window._artnetLastPackets;
 				const sb = window._artnetBytes - window._artnetLastBytes;
@@ -547,6 +579,24 @@ function initializeArtNet()
 				{
 					const mbps = (sb / 1024 / 1024).toFixed(3);
 					speedElem.textContent = `${sp}/s ${mbps} MB/s`;
+				}
+				const now = Date.now();
+				if (sp === 0) {
+					if (!window._artnetZeroStart) window._artnetZeroStart = now;
+				} else {
+					window._artnetZeroStart = null;
+					if (window._artnetDisconnected) {
+						window._artnetDisconnected = false;
+						setConnectionBadge('OK', true);
+						try { setCmdMessage('ArtNet connection opened', 'ARTNET'); } catch (e) {}
+					}
+				}
+				if (window._artnetZeroStart && (now - window._artnetZeroStart) >= 5000) {
+					if (!window._artnetDisconnected) {
+						window._artnetDisconnected = true;
+						setConnectionBadge('Disconnected', false);
+						try { setCmdMessage('ArtNet disconnected (no packets for 5s)', 'ARTNET'); } catch (e) {}
+					}
 				}
 			}, 1000);
 		}
@@ -594,6 +644,8 @@ function initializeArtNet()
 				socket = null;
 				setStatus('Socket error');
 				setConnectionBadge('Not connected', false);
+				window._artnetDisconnected = true;
+				try { setCmdMessage('ArtNet connection closed', 'ARTNET'); } catch (e) {}
 				stopSpeedInterval();
 			});
 
@@ -603,6 +655,11 @@ function initializeArtNet()
 				window._artnetBytes = (window._artnetBytes || 0) + (msg && msg.length ? msg.length : 0);
 				setConnectionBadge('OK', true);
 				startSpeedInterval();
+				// notify on transition from disconnected
+				if (window._artnetDisconnected) {
+					window._artnetDisconnected = false;
+					try { setCmdMessage('ArtNet connection opened', 'ARTNET'); } catch (e) {}
+				}
 				try {
 					if (window._artnetLoggingPaused) return;
 					const now = new Date().toLocaleTimeString();
@@ -675,6 +732,7 @@ function initializeArtNet()
 				setStatus(`Bound ${bindAddr || '0.0.0.0'}`);
 				setConnectionBadge('OK', true);
 				startSpeedInterval();
+					try { setCmdMessage('ArtNet connection opened', 'ARTNET'); } catch (e) {}
 			};
 
 			try {
@@ -726,6 +784,7 @@ function initializeArtNet()
 		if (toggleBtn) toggleBtn.addEventListener('click', () => {
 			window._artnetLoggingPaused = !window._artnetLoggingPaused;
 			toggleBtn.textContent = window._artnetLoggingPaused ? 'Resume logging' : 'Stop logging';
+			try { setCmdMessage(window._artnetLoggingPaused ? 'ArtNet logging disabled' : 'ArtNet logging enabled', 'ARTNET'); } catch (e) {}
 		});
 		if (clearBtn) clearBtn.addEventListener('click', () => {
 			if (logger) logger.innerHTML = '';

@@ -26,8 +26,6 @@
 		let canaleCorrente = 1;
 		let id = 0;
 		const lista = getLista();
-		console.log('Universe: buildUnits - listaFixture present?', !!lista);
-		console.log('Universe: listaFixture sample', lista && lista.slice && lista.slice(0,6));
 		if (!lista) return;
 		for (let fi = 0; fi < lista.length; fi++) {
 			const f = lista[fi];
@@ -185,7 +183,6 @@
 
 	function renderGrid() {
 		clearGrid();
-		console.log('Universe: rendering grid; units count=', units.length);
 		// create cells
 		const grid = document.createElement('div');
 		grid.className = 'universeGridInner';
@@ -267,7 +264,6 @@
 				firstSegment = false;
 			}
 		});
-		console.log('Universe: placed segments=', segCount);
 	}
 
 	function canMoveUnitTo(unit, desiredStart) {
@@ -393,7 +389,6 @@
 				buildUnits();
 				renderGrid();
 				updateUniverseButtons();
-				setCmdMessage(`Universe set to ${currentUniverse}.`, 'UNIVERSE');
 			},
 			updateFromInput: () => {
 				const input = document.getElementById('uniSelect');

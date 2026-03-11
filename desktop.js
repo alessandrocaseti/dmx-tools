@@ -27,7 +27,21 @@ function applyDesktopOnly()
             if (desktop) { el.style.display = 'none'; } 
             else { el.style.display = ''; }
         }
+        setPlatformIdentifier();
     } catch (e) { }
+}
+
+function setPlatformIdentifier()
+{
+    const idt = document.getElementById('platform-identifier')
+    if(isDesktop())
+    {
+        idt.innerHTML = '[Desktop]';
+    }
+    else
+    {
+        idt.innerHTML = '[Web]';
+    }
 }
 
 if (typeof document !== 'undefined') 
