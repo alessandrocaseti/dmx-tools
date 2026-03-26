@@ -95,7 +95,7 @@ function initializeArtNet()
 			controls.id = 'artnet-controls';
 				controls.innerHTML = `
 					<button id="artnet-ipc-try">Start receiving</button>
-					<span id="artnet-conn-badge" style="margin-left:8px; padding:2px 6px; border-radius:4px; background:#f88; color:#300;">NOT CONNECTED</span>
+					<span id="artnet-conn-badge" style="margin-left:8px; user-select:none; padding:2px 6px; border-radius:4px; background:#f88; color:#300;">NOT CONNECTED</span>
 					<button id="artnet-toggle-logging" style="margin-left:8px;">Stop logging</button>
 					<span id="artnet-status"></span>
 					<span id="artnet-speed" style="margin-left:8px;">--</span>

@@ -69,3 +69,9 @@ function openLiveclock()
     setCmdMessage('Opened liveclock app in a new browser tab.', 'LIVECLOCK');
     window.open('https://alessandrocaseti.github.io/live-clock', '_blank').focus();
 }
+
+function downloadDesktopApp()
+{
+    setCmdMessage('Opened Google Drive page to download desktop app in a new browser tab.', 'DOWNLOAD');
+    window.open('https://drive.google.com/uc?export=download&id=1cnJzx98se39DLo2MQbFRBEBt8R7bOVFo', '_blank').focus();
+}
