@@ -4,8 +4,8 @@
 // TODO: replace with metadata object
 const appName = 'DMX Tools';
 const description = 'Free DMX utilities developed by Alessandro Caseti'
-const version = '1.0.0 Alpha 2';
-const date = '06/02/2026';
+const version = '1.0.0 Alpha 3';
+const date = '26/03/2026';
 const author = 'Alessandro Caseti';
 
 // Main & navigation functions
