@@ -11,12 +11,12 @@ const author = 'Alessandro Caseti';
 // Main & navigation functions
 
 let currentPage = 'home';
-let pages = ['home', 'patch', 'universe', 'dip', 'color', 'power', 'beam', 'database', 'artnet', 'settings'];
-let desktopPages = ['artnet'];
-let pageNames = ['Get Started', 'DMX Patch', 'Universe View', 'DIP Switch', 'Color Converter', 'Power Calculator', 'Beam Preview', 'Fixture Database', 'ArtNet Decoder', 'Control Center'];
-let icons = ['', '', '', '', '', '', '', '', '', ''];
+const pages = ['home', 'patch', 'universe', 'dip', 'color', 'power', 'beam', 'database', 'artnet-decoder', 'settings'];
+const desktopPages = ['artnet-decoder'];
+const pageNames = ['Get Started', 'DMX Patch', 'Universe View', 'DIP Switch', 'Color Converter', 'Power Calculator', 'Beam Preview', 'Fixture Database', 'ArtNet Decoder', 'Control Center'];
+const icons = ['', '', '', '', '', '', '', '', '', ''];
 // layout icon: 
-
+// TODO: replace with navigation object
 function navigationError(p)
 {
     console.error('Navigation error: page "' + p + '" does not exist.');
