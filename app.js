@@ -73,5 +73,5 @@ function openLiveclock()
 function downloadDesktopApp()
 {
     setCmdMessage('Opened Google Drive page to download desktop app in a new browser tab.', 'DOWNLOAD');
-    window.open('https://drive.google.com/uc?export=download&id=1cnJzx98se39DLo2MQbFRBEBt8R7bOVFo', '_blank').focus();
+    window.open('https://dl.dropboxusercontent.com/scl/fi/jvxuua38fqf8j3981ply0/dmxtools-1.0.0-alpha-setup.zip?rlkey=wd57ly9d38ps37f9rd7tb5grj&st=hj5imc2a&dl=0', '_blank').focus();
 }
