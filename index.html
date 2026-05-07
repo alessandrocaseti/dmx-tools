@@ -561,7 +561,7 @@
                 </div>
 
                 <div class="saved-colors-section">
-                    <h2 style="margin-top: 6vh;">Saved colors</h2>
+                    <h2 style="margin-top: 6vh;">Color manager</h2>
                     <div class="save-color-form">
                         <input type="text" id="colorName" placeholder="Color name" style="width: 180px; margin-right: 8px;" autocomplete="off">
                         <button onclick="saveColor()" class="iconButton">
@@ -572,10 +572,15 @@
                             <span class="buttonIcon"></span>
                             <span class="buttonText">Clear list</span>
                         </button>
+                        <button id="togglePalettesBtn" onclick="" class="iconButton" style="margin-left: 8px;">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">View palettes</span>
+                        </button>
                     </div>
                     <div style="margin-top: 2vh;" id="savedColorsList">
                         <p class="empty-message">No saved colors yet</p>
                     </div>
+                    <div style="margin-top: 2vh; display: none;" id="savedPalettesList"></div>
                 </div>
             </div>
             <div style="margin-bottom: 30vh;" class="web-only"></div>
@@ -774,6 +779,16 @@
                         <span class="buttonText">Import</span>
                     </button>
                 </div>
+            </div>
+        </div>
+
+        <!-- Palette Link dialog -->
+        <div id="paletteLinkModal" class="modal">
+            <div class="modal-content" style="width: 600px;">
+                <span class="close-button" onclick="colorConverter.closePaletteDialog()"></span>
+                <h2>Link Color to Palette</h2>
+                <div class="separator"></div>
+                <div id="paletteLinkList"></div>
             </div>
         </div>
 

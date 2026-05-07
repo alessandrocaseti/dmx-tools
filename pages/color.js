@@ -43,6 +43,7 @@ class EnhancedColorConverter
     {
         this.currentColor = { r: 255, g: 0, b: 0 };
         this.savedColors = this.loadSavedColors();
+        this.savedPalettes = this.loadSavedPalettes();
         this.isDragging = false;
         this.dragTarget = null;
         this.hue = 0;
@@ -57,6 +58,11 @@ class EnhancedColorConverter
         this.setupInputListeners();
         this.updateAllValues();
         this.renderSavedColors();
+        this.renderSavedPalettes();
+
+        // wire palette toggle button
+        const toggleBtn = document.getElementById('togglePalettesBtn');
+        if (toggleBtn) { toggleBtn.addEventListener('click', () => this.togglePalettesView()); }
     }
 
     // RGB -> CMYK
@@ -621,7 +627,11 @@ class EnhancedColorConverter
         setCmdMessage(`Color "${inputName}" (${color.hex}) saved successfully.`, 'SAVE');
         this.savedColors.unshift(color);
         this.saveSavedColors();
+        // Update palettes derived from colors and re-render both lists
+        this.mergePalettesFromColors();
+        this.saveSavedPalettes();
         this.renderSavedColors();
+        this.renderSavedPalettes();
         document.getElementById('colorName').value = '';
     }
 
@@ -722,10 +732,10 @@ class EnhancedColorConverter
                     </div>
                 </div>
                 <div class="saved-color-actions">
-                    <button class="iconButton" onclick="setCmdMessage('To be implemented.', 'LINK TO PALETTE')">
+                        <button class="iconButton" onclick="colorConverter.openPaletteDialog(${index})">
                             <span class="buttonIcon"></span>
                             <span class="buttonText">Link</span>
-                    </button>
+                        </button>
                     <button class="iconButton" onclick="colorConverter.loadColor(${index})">
                             <span class="buttonIcon"></span>
                             <span class="buttonText">Load</span>
@@ -748,6 +758,318 @@ class EnhancedColorConverter
     {
         const saved = localStorage.getItem('savedColors');
         return saved ? JSON.parse(saved) : [];
+    }
+
+    /***** Palettes management *****/
+    loadSavedPalettes()
+    {
+        const saved = localStorage.getItem('savedPalettes');
+        if (saved) return JSON.parse(saved);
+        // generate from existing saved colors if available
+        return this.generatePalettesFromColors();
+    }
+
+    saveSavedPalettes()
+    {
+        localStorage.setItem('savedPalettes', JSON.stringify(this.savedPalettes || []));
+    }
+
+    generatePalettesFromColors()
+    {
+        const groups = {};
+        (this.savedColors || []).forEach(c => {
+            const name = (c.palette && c.palette !== 'None') ? c.palette : null;
+            if (!name) return;
+            if (!groups[name]) groups[name] = [];
+            groups[name].push(c);
+        });
+        const palettes = Object.keys(groups).map((name, idx) => ({ id: idx + 1, name, colors: groups[name].map(c => ({ name: c.name, hex: c.hex })), favorite: false }));
+        return palettes;
+    }
+
+    mergePalettesFromColors()
+    {
+        const generated = this.generatePalettesFromColors();
+        // Keep favorites if palette name matches
+        const existing = this.savedPalettes || [];
+        const merged = generated.map(g => {
+            const prev = existing.find(p => p.name === g.name);
+            return { id: prev ? prev.id : g.id, name: g.name, colors: g.colors, favorite: prev ? prev.favorite : false };
+        });
+        this.savedPalettes = merged;
+    }
+
+    renderSavedPalettes()
+    {
+        const container = document.getElementById('savedPalettesList');
+        if (!container) return;
+        if (!this.savedPalettes || this.savedPalettes.length === 0)
+        {
+            container.innerHTML = '<p class="palette-empty">No palettes yet</p>';
+            return;
+        }
+
+        container.innerHTML = '';
+        const list = document.createElement('div');
+        list.className = 'palette-list';
+
+        this.savedPalettes.forEach((p, idx) => {
+            const item = document.createElement('div');
+            item.className = 'palette-item';
+            item.dataset.index = idx;
+
+            const header = document.createElement('div');
+            header.className = 'palette-header';
+
+            const title = document.createElement('div');
+            title.className = 'palette-title';
+            const expandBtn = document.createElement('button');
+            expandBtn.className = 'iconButton';
+            expandBtn.innerHTML = '<span class="buttonIcon"></span><span class="buttonText">' + p.name + '</span>';
+            expandBtn.addEventListener('click', () => this.togglePaletteExpand(idx));
+            title.appendChild(expandBtn);
+
+            const actions = document.createElement('div');
+            actions.className = 'palette-actions';
+
+            const favBtn = document.createElement('button');
+            favBtn.className = 'iconButton';
+            favBtn.title = 'Toggle favorite';
+            favBtn.innerHTML = '<span class="buttonIcon">' + (p.favorite ? '' : '') + '</span>';
+            favBtn.addEventListener('click', (e) => { e.stopPropagation(); this.toggleFavoritePalette(idx); });
+
+            const renameBtn = document.createElement('button');
+            renameBtn.className = 'iconButton';
+            renameBtn.title = 'Rename';
+            renameBtn.innerHTML = '<span class="buttonIcon"></span>';
+            renameBtn.addEventListener('click', (e) => { e.stopPropagation(); this.renamePalette(idx); });
+
+            const delBtn = document.createElement('button');
+            delBtn.className = 'iconButton';
+            delBtn.title = 'Delete';
+            delBtn.innerHTML = '<span class="buttonIcon"></span>';
+            delBtn.addEventListener('click', (e) => { e.stopPropagation(); this.deletePalette(idx); });
+
+            actions.appendChild(favBtn);
+            actions.appendChild(renameBtn);
+            actions.appendChild(delBtn);
+
+            header.appendChild(title);
+            header.appendChild(actions);
+
+            item.appendChild(header);
+
+            // Colors container (collapsed by default)
+            const colorsDiv = document.createElement('div');
+            colorsDiv.className = 'palette-colors';
+            colorsDiv.style.display = 'none';
+
+            if (p.colors && p.colors.length > 0) {
+                p.colors.forEach(c => {
+                    const thumb = document.createElement('div');
+                    thumb.className = 'palette-color-thumb';
+                    thumb.style.backgroundColor = c.hex;
+                    thumb.title = c.name + ' ' + c.hex;
+                    thumb.innerText = '';
+                    colorsDiv.appendChild(thumb);
+                });
+            } else {
+                const empty = document.createElement('div');
+                empty.className = 'palette-empty';
+                empty.innerText = '- No colors -';
+                colorsDiv.appendChild(empty);
+            }
+
+            item.appendChild(colorsDiv);
+            list.appendChild(item);
+        });
+
+        container.appendChild(list);
+    }
+
+    togglePalettesView()
+    {
+        const colorsDiv = document.getElementById('savedColorsList');
+        const palettesDiv = document.getElementById('savedPalettesList');
+        const btn = document.getElementById('togglePalettesBtn');
+        if (!colorsDiv || !palettesDiv || !btn) return;
+
+        if (palettesDiv.style.display === 'none' || palettesDiv.style.display === '') {
+            colorsDiv.style.display = 'none';
+            palettesDiv.style.display = 'block';
+            btn.querySelector('.buttonText').innerText = 'View colors';
+        } else {
+            palettesDiv.style.display = 'none';
+            colorsDiv.style.display = 'block';
+            btn.querySelector('.buttonText').innerText = 'View palettes';
+        }
+    }
+
+    togglePaletteExpand(index)
+    {
+        const list = document.querySelectorAll('.palette-item');
+        const item = list[index];
+        if (!item) return;
+        const colorsDiv = item.querySelector('.palette-colors');
+        if (!colorsDiv) return;
+        colorsDiv.style.display = colorsDiv.style.display === 'none' ? 'flex' : 'none';
+    }
+
+    renamePalette(index)
+    {
+        const p = this.savedPalettes[index];
+        if (!p) return;
+        const newName = prompt('Rename palette', p.name);
+        if (newName && newName.trim()) {
+            // update palette name and also update any savedColors using that palette name
+            const oldName = p.name;
+            p.name = newName.trim();
+            (this.savedColors || []).forEach(c => { if (c.palette === oldName) c.palette = p.name; });
+            this.saveSavedPalettes();
+            this.saveSavedColors();
+            this.renderSavedPalettes();
+            this.renderSavedColors();
+            setCmdMessage(`Palette renamed to "${p.name}"`, 'EDIT');
+        }
+    }
+
+    toggleFavoritePalette(index)
+    {
+        const p = this.savedPalettes[index];
+        if (!p) return;
+        p.favorite = !p.favorite;
+        this.saveSavedPalettes();
+        this.renderSavedPalettes();
+    }
+
+    deletePalette(index)
+    {
+        const p = this.savedPalettes[index];
+        if (!p) return;
+        if (!confirm(`Delete palette "${p.name}"? This will not delete the individual colors.`)) return;
+        // remove palette association from colors
+        (this.savedColors || []).forEach(c => { if (c.palette === p.name) c.palette = 'None'; });
+        this.savedPalettes.splice(index, 1);
+        this.saveSavedPalettes();
+        this.saveSavedColors();
+        this.renderSavedPalettes();
+        this.renderSavedColors();
+        setCmdMessage(`Palette "${p.name}" deleted.`, 'DELETE');
+    }
+
+    openPaletteDialog(colorIndex)
+    {
+        const modal = document.getElementById('paletteLinkModal');
+        if (!modal) return;
+        this._paletteDialogColorIndex = colorIndex;
+        this.renderPaletteLinkList();
+        modal.style.display = 'flex';
+        setTimeout(() => { modal.classList.add('show'); }, 10);
+    }
+
+    closePaletteDialog()
+    {
+        const modal = document.getElementById('paletteLinkModal');
+        if (!modal) return;
+        modal.classList.remove('show');
+        setTimeout(() => { modal.style.display = 'none'; }, 200);
+    }
+
+    renderPaletteLinkList()
+    {
+        const list = document.getElementById('paletteLinkList');
+        if (!list) return;
+        const idx = this._paletteDialogColorIndex;
+        const color = (this.savedColors || [])[idx];
+
+        let html = `
+            <div style="display:flex;gap:8px;align-items:center;margin-bottom:12px;">
+                <input id="newPaletteName" placeholder="New palette name" style="flex:1;padding:6px;">
+                <button id="createPaletteBtn" class="iconButton"><span class="buttonIcon"></span><span class="buttonText">Create</span></button>
+            </div>
+        `;
+
+        if (this.savedPalettes && this.savedPalettes.length > 0)
+        {
+            html += '<div class="palette-list-dialog">';
+            this.savedPalettes.forEach((p, i) => {
+                const preview = (p.colors && p.colors[0]) ? `<div style="width:28px;height:18px;background:${p.colors[0].hex};border:1px solid #ccc"></div>` : `<div style="width:28px;height:18px;border:1px solid #ccc"></div>`;
+                html += `
+                    <div class="palette-row" style="display:flex;align-items:center;justify-content:space-between;padding:6px;border-radius:4px;margin-bottom:6px;">
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            ${preview}
+                            <strong>${p.name}</strong>
+                            <span style="color:#707070;margin-left:8px;">(${p.colors ? p.colors.length : 0})</span>
+                        </div>
+                        <div>
+                            <button class="iconButton assignPaletteBtn" data-idx="${i}" data-name="${p.name}"><span class="buttonText">Assign</span></button>
+                        </div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+        }
+
+        html += `
+            <div style="margin-top:10px;display:flex;gap:8px;">
+                <button id="assignNoneBtn" class="iconButton"><span class="buttonText">Unlink (None)</span></button>
+                <button id="closePaletteDialogBtn" class="iconButton"><span class="buttonText">Close</span></button>
+            </div>
+        `;
+
+        list.innerHTML = html;
+
+        const createBtn = document.getElementById('createPaletteBtn');
+        if (createBtn) createBtn.addEventListener('click', () => this.createPaletteFromDialog());
+
+        const assignBtns = list.querySelectorAll('.assignPaletteBtn');
+        assignBtns.forEach(b => b.addEventListener('click', (e) => {
+            const i = parseInt(b.dataset.idx);
+            const name = b.dataset.name;
+            this.assignPaletteToColor(this._paletteDialogColorIndex, name);
+        }));
+
+        const noneBtn = document.getElementById('assignNoneBtn');
+        if (noneBtn) noneBtn.addEventListener('click', () => this.assignPaletteToColor(this._paletteDialogColorIndex, 'None'));
+
+        const closeBtn = document.getElementById('closePaletteDialogBtn');
+        if (closeBtn) closeBtn.addEventListener('click', () => this.closePaletteDialog());
+    }
+
+    assignPaletteToColor(colorIndex, paletteName)
+    {
+        const c = (this.savedColors || [])[colorIndex];
+        if (!c) return;
+        c.palette = paletteName;
+        this.saveSavedColors();
+        this.mergePalettesFromColors();
+        this.saveSavedPalettes();
+        this.renderSavedColors();
+        this.renderSavedPalettes();
+        setCmdMessage(`Color "${c.name}" linked to palette "${paletteName}".`, 'LINK');
+        this.closePaletteDialog();
+    }
+
+    createPaletteFromDialog()
+    {
+        const input = document.getElementById('newPaletteName');
+        if (!input) return;
+        const name = input.value.trim();
+        if (!name) { setCmdMessage('Please enter a palette name.', 'ERROR'); return; }
+        if ((this.savedPalettes || []).some(p => p.name.toLowerCase() === name.toLowerCase())) { setCmdMessage('Palette already exists.', 'ERROR'); return; }
+        const idx = this._paletteDialogColorIndex;
+        const color = (this.savedColors || [])[idx];
+        const nextId = (this.savedPalettes && this.savedPalettes.length) ? Math.max(...this.savedPalettes.map(p => p.id)) + 1 : 1;
+        const newPalette = { id: nextId, name, colors: color ? [{ name: color.name, hex: color.hex }] : [], favorite: false };
+        this.savedPalettes = this.savedPalettes || [];
+        this.savedPalettes.push(newPalette);
+        if (color) color.palette = name;
+        this.saveSavedPalettes();
+        this.saveSavedColors();
+        this.renderSavedPalettes();
+        this.renderSavedColors();
+        setCmdMessage(`Palette "${name}" created.`, 'SAVE');
+        this.closePaletteDialog();
     }
 }
 
