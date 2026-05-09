@@ -890,6 +890,58 @@
 				}
 			};
 		}
+
+		// export/print for Universe
+		window.startUniverseExport = async function() {
+			// ensure grid is up to date
+			buildUnits();
+			renderGrid();
+
+			// inject temporary print-override so #universe (which is .web-only) is printed
+			let css = document.getElementById('universePrintOverride');
+			if (!css) {
+				css = document.createElement('style');
+				css.id = 'universePrintOverride';
+				css.textContent = `@media print { #universe { display: block !important; } #universe .web-only { display: block !important; } }`;
+				document.head.appendChild(css);
+			}
+
+			// populate same header fields used by patch export if present
+			try {
+				const evento = document.getElementById('evento')?.value || '';
+				const luogo = document.getElementById('luogo')?.value || '';
+				const autore = document.getElementById('autorePatch')?.value || '';
+				if (document.getElementById('eventoPrint')) document.getElementById('eventoPrint').textContent = evento || 'Not specified';
+				if (document.getElementById('luogoPrint')) document.getElementById('luogoPrint').textContent = luogo || 'Not specified';
+				if (document.getElementById('autorePatchPrint')) document.getElementById('autorePatchPrint').textContent = autore || 'Not specified';
+				if (typeof setStats === 'function') setStats();
+			} catch (e) { /* ignore */ }
+
+			// hide selection visuals for print
+			if (selectingBox) selectingBox.classList.remove('visible');
+
+			// request doc number like patch export if available
+			if (typeof getSetDocNumber === 'function') {
+				if(window.location.protocol.startsWith("http") && window.location.hostname !== "localhost" && window.location.href !== "http://127.0.0.1:5500/index.html") {
+					await getSetDocNumber();
+				} else {
+					if (typeof simulateOverlay === 'function') await simulateOverlay();
+				}
+			}
+
+			// cleanup helper
+			const cleanup = () => {
+				const el = document.getElementById('universePrintOverride');
+				if (el && el.parentNode) el.parentNode.removeChild(el);
+				window.removeEventListener('afterprint', cleanup);
+			};
+			window.addEventListener('afterprint', cleanup);
+
+			// trigger print
+			window.print();
+			// fallback cleanup
+			setTimeout(cleanup, 2000);
+		};
 	}
 
 	document.addEventListener('DOMContentLoaded', init);

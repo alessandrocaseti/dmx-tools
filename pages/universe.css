@@ -117,6 +117,30 @@
 	.universeGrid { width: 100%; }
 }
 
+/* Print layout for Universe (A4) */
+@media print {
+	@page { size: A4 portrait; margin: 20mm; }
+
+	body, html { background: #fff !important; color: #000 !important; }
+	.web-only { display: none !important; }
+	.print-only { display: block !important; }
+
+	/* Universe grid fits to page */
+	#universe .universeGrid { width: 100% !important; margin: 0 auto !important; border: none !important; padding: 0 !important; }
+	#universe .universeGridInner { grid-template-columns: repeat(16, 1fr); grid-auto-rows: 10px !important; gap: 2px !important; }
+	#universe .fixtureLayer { left: 8px; top: 8px; right: 8px; bottom: 8px; }
+	#universe .fixtureSegment { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; border: 1px solid #222 !important; box-shadow: none !important; font-size: 8px !important; padding-left: 4px !important; }
+	#universe .fixtureLabel { font-size: 8px !important; padding: 2px !important; }
+
+	/* Hide interactive UI elements */
+	.selectionBox { display: none !important; }
+	#fixtureSelection { display: none !important; }
+	#uniSelect, #prevUniBtn, #nextUniBtn, .iconButton { display: none !important; }
+
+	/* Print header inserted dynamically */
+	#universePrintHeader { display: block !important; text-align: center; margin-bottom: 12px !important; font-weight: 700 !important; }
+}
+
 /* Selection rectangle styling */
 .selectionBox {
 	position: absolute;
