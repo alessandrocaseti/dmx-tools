@@ -11,6 +11,11 @@
 	const MAX_UNIVERSE = 1024;
 
 	let universeController = null;
+	let selectedUnits = new Set(); // unitId set for selection
+	let selectMode = false;
+	let selectingBox = null;
+	let isSelectingRect = false;
+	let selectStart = null;
 	let units = []; // expanded units derived from listaFixture
 	let movedMap = {}; // unitId -> new start channel override
 
@@ -201,6 +206,21 @@
 		const segLayer = document.createElement('div');
 		segLayer.className = 'fixtureLayer';
 		container.appendChild(segLayer);
+		// ensure selectingBox is present in DOM (renderGrid clears container.innerHTML earlier)
+		if (selectingBox && container && !container.contains(selectingBox)) {
+			container.appendChild(selectingBox);
+		}
+		// ensure selection box exists on top
+		if (!selectingBox && container) {
+			selectingBox = document.createElement('div');
+			selectingBox.className = 'selectionBox';
+				selectingBox.style.position = 'absolute';
+				selectingBox.style.pointerEvents = 'none';
+				selectingBox.style.border = '2px dashed yellow';
+				selectingBox.style.background = 'rgba(255,255,0,0.08)';
+			container.style.position = container.style.position || 'relative';
+			container.appendChild(selectingBox);
+		}
 
 		// clear previous occupied flags
 		// (cells were just created, but keep the logic for re-render)
@@ -259,6 +279,27 @@
 				seg.dataset.end = segEndChannel;
 				seg.dataset.channels = u.canali;
 				makeDraggable(seg, u);
+				// reflect existing selection visually
+				if (selectedUnits.has(u.unitId)) {
+					seg.classList.add('selectedFixture');
+					seg.style.outline = '2px solid yellow';
+				}
+				// selection click handler
+				seg.addEventListener('click', (ev) => {
+					ev.stopPropagation();
+					if (!selectMode) return;
+					const uid = u.unitId;
+					if (selectedUnits.has(uid)) {
+						selectedUnits.delete(uid);
+						seg.classList.remove('selectedFixture');
+						seg.style.outline = '';
+					} else {
+						selectedUnits.add(uid);
+						seg.classList.add('selectedFixture');
+						seg.style.outline = '2px solid yellow';
+					}
+					updateSelectedList();
+				});
 				segLayer.appendChild(seg);
 				segCount++;
 				firstSegment = false;
@@ -414,11 +455,16 @@
 				return;
 			}
 			offset = parseInt(offset, 10);
-			// collect units that belong to the target universe
-			const shifting = units.filter(u => {
-				const eff = (movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo;
-				return eff === currentUniverse;
-			});
+			// determine target units: selected if any, otherwise all units in current universe
+			let shifting = [];
+			if (selectedUnits.size > 0) {
+				shifting = units.filter(u => selectedUnits.has(u.unitId));
+			} else {
+				shifting = units.filter(u => {
+					const eff = (movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo;
+					return eff === currentUniverse;
+				});
+			}
 			if (shifting.length === 0) {
 				setCmdMessage('No fixtures found in current universe to shift.', 'WARNING');
 				return;
@@ -435,7 +481,7 @@
 					return;
 				}
 			}
-			// build occupied ranges for other units in the same universe
+			// build occupied ranges for other units in the same universe (excluding shifting set)
 			const others = units.filter(u2 => {
 				const eff2 = (movedMap[u2.unitId] && movedMap[u2.unitId].universo) ? movedMap[u2.unitId].universo : u2.universo;
 				return eff2 === currentUniverse && !shifting.some(s => s.unitId === u2.unitId);
@@ -461,6 +507,178 @@
 			setCmdMessage(`Applied vector shift of ${offset} channels to ${proposed.length} fixture(s) in universe ${currentUniverse}.`, 'VECTOR SHIFT');
 		};
 
+		// cross-universe shift: move selected (or all in current) fixtures to a target universe.start
+		universeController.crossUniverseShift = (targetUniverse, targetStart) => {
+			let tu = parseInt(targetUniverse, 10);
+			let ts = parseInt(targetStart, 10);
+			if (isNaN(tu) || isNaN(ts)) { setCmdMessage('Invalid target universe or start address.', 'ERROR'); return; }
+			if (tu < 1 || tu > MAX_UNIVERSE) { setCmdMessage('Target universe out of range.', 'ERROR'); return; }
+			if (ts < 1 || ts > TOTAL) { setCmdMessage('Target start out of range (1 - ' + TOTAL + ').', 'ERROR'); return; }
+			// determine targets: selected if any, otherwise all units in current universe
+			let targets = [];
+			if (selectedUnits.size > 0) targets = units.filter(u => selectedUnits.has(u.unitId));
+			else targets = units.filter(u => {
+				const eff = (movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo;
+				return eff === currentUniverse;
+			});
+			if (targets.length === 0) { setCmdMessage('No fixtures found to shift.', 'WARNING'); return; }
+			// sort by current start
+			targets.sort((a,b) => {
+				const sa = (movedMap[a.unitId] && movedMap[a.unitId].canaleStart) ? movedMap[a.unitId].canaleStart : a.canaleStart;
+				const sb = (movedMap[b.unitId] && movedMap[b.unitId].canaleStart) ? movedMap[b.unitId].canaleStart : b.canaleStart;
+				return sa - sb;
+			});
+			// compute proposed positions starting at ts
+			let cur = ts;
+			const proposed = [];
+			for (let i = 0; i < targets.length; i++) {
+				const u = targets[i];
+				proposed.push({ unit: u, newStart: cur, newEnd: cur + u.canali - 1 });
+				cur = cur + u.canali;
+			}
+			// validate bounds
+			for (const p of proposed) {
+				if (p.newStart < 1 || p.newEnd > TOTAL) { setCmdMessage(`Cross-universe shift would move ${p.unit.nome} out of range (${p.newStart} - ${p.newEnd}).`, 'ERROR'); return; }
+			}
+			// check collisions with existing fixtures in target universe (excluding moving units)
+			const others = units.filter(u2 => {
+				const eff2 = (movedMap[u2.unitId] && movedMap[u2.unitId].universo) ? movedMap[u2.unitId].universo : u2.universo;
+				return eff2 === tu && !targets.some(t => t.unitId === u2.unitId);
+			}).map(u2 => {
+				const s = (movedMap[u2.unitId] && movedMap[u2.unitId].canaleStart) ? movedMap[u2.unitId].canaleStart : u2.canaleStart;
+				return { start: s, end: s + u2.canali - 1, nome: u2.nome };
+			});
+			for (const p of proposed) {
+				for (const o of others) {
+					if (!(p.newEnd < o.start || p.newStart > o.end)) {
+						setCmdMessage(`Cross-shift would conflict: ${p.unit.nome} (${p.newStart}-${p.newEnd}) overlaps ${o.nome} (${o.start}-${o.end}) in universe ${tu}.`, 'ERROR');
+						return;
+					}
+				}
+			}
+			// apply movedMap overrides
+			proposed.forEach(p => {
+				movedMap[p.unit.unitId] = { canaleStart: p.newStart, universo: tu };
+			});
+			buildUnits();
+			renderGrid();
+			setCmdMessage(`Moved ${proposed.length} fixture(s) to universe ${tu} starting at ${ts}.`, 'CROSS SHIFT');
+		};
+
+		// toggle selection mode
+		universeController.toggleSelectMode = () => {
+			selectMode = !selectMode;
+			const selDiv = document.getElementById('fixtureSelection');
+			if (selectMode) {
+				// show selection UI
+				if (selDiv) selDiv.classList.add('visible');
+				if (selectingBox) selectingBox.classList.add('visible');
+				setCmdMessage('Selection enabled. Click fixtures or drag to select.', 'SELECT');
+			} else {
+				// hide selection UI and clear selection
+				if (selDiv) selDiv.classList.remove('visible');
+				if (selectingBox) selectingBox.classList.remove('visible');
+				selectedUnits.clear();
+				renderGrid();
+				setCmdMessage('Selection disabled.', 'SELECT');
+			}
+			// refresh selected list display
+			updateSelectedList();
+		};
+
+		// insert gaps of given size between selected fixtures (or all fixtures if none selected)
+		universeController.insertGaps = (gapSize = 1) => {
+			gapSize = parseInt(gapSize, 10) || 1;
+			// choose target set
+			let targets = [];
+			if (selectedUnits.size > 0) targets = units.filter(u => selectedUnits.has(u.unitId));
+			else targets = units.filter(u => ((movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo) === currentUniverse);
+			if (targets.length === 0) { setCmdMessage('No fixtures to insert gaps for.', 'WARNING'); return; }
+			// sort by current start
+			targets.sort((a,b) => {
+				const sa = (movedMap[a.unitId] && movedMap[a.unitId].canaleStart) ? movedMap[a.unitId].canaleStart : a.canaleStart;
+				const sb = (movedMap[b.unitId] && movedMap[b.unitId].canaleStart) ? movedMap[b.unitId].canaleStart : b.canaleStart;
+				return sa - sb;
+			});
+			// compute desired starts for targets (pack with gap)
+			const base = (movedMap[targets[0].unitId] && movedMap[targets[0].unitId].canaleStart) ? movedMap[targets[0].unitId].canaleStart : targets[0].canaleStart;
+			let cur = base;
+			const proposed = [];
+			for (let i=0;i<targets.length;i++){
+				const u = targets[i];
+				proposed.push({ unit: u, newStart: cur, newEnd: cur + u.canali - 1 });
+				cur = cur + u.canali + gapSize;
+			}
+			// validate bounds
+			for (const p of proposed) {
+				if (p.newStart < 1 || p.newEnd > TOTAL) { setCmdMessage('Insert gaps would move ' + p.unit.nome + ' out of range.', 'ERROR'); return; }
+			}
+			// ensure no collisions with other units in same universe (we will shift others forward if needed)
+			let others = units.filter(u => {
+				const eff = (movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo;
+				return eff === currentUniverse && !targets.some(t => t.unitId === u.unitId);
+			});
+			// apply proposed positions
+			proposed.forEach(p => { movedMap[p.unit.unitId] = { canaleStart: p.newStart, universo: currentUniverse }; });
+			// now, for each other unit, if it collides with any proposed, push it forward just enough
+			others.sort((a,b) => { const sa=(movedMap[a.unitId]&&movedMap[a.unitId].canaleStart)?movedMap[a.unitId].canaleStart:a.canaleStart; const sb=(movedMap[b.unitId]&&movedMap[b.unitId].canaleStart)?movedMap[b.unitId].canaleStart:b.canaleStart; return sa-sb; });
+			for (const o of others) {
+				let s = (movedMap[o.unitId] && movedMap[o.unitId].canaleStart) ? movedMap[o.unitId].canaleStart : o.canaleStart;
+				let e = s + o.canali -1;
+				for (const p of proposed) {
+					if (!(e < p.newStart || s > p.newEnd)) {
+						// overlap -> move this other unit to just after p
+						s = p.newEnd + 1;
+						e = s + o.canali -1;
+					}
+				}
+				if (e > TOTAL) { setCmdMessage('Cannot insert gaps: not enough space to move other fixtures.', 'ERROR'); return; }
+				movedMap[o.unitId] = { canaleStart: s, universo: currentUniverse };
+			}
+			buildUnits(); renderGrid();
+			setCmdMessage('Inserted gaps of ' + gapSize + ' channels for ' + proposed.length + ' fixture(s).', 'UPDATE');
+		};
+
+		// collapse gaps: pack selected or all fixtures contiguously starting at minimal start
+		universeController.collapseGaps = () => {
+			let targets = [];
+			if (selectedUnits.size > 0) targets = units.filter(u => selectedUnits.has(u.unitId));
+			else targets = units.filter(u => ((movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo) === currentUniverse);
+			if (targets.length === 0) { setCmdMessage('No fixtures to collapse.', 'WARNING'); return; }
+			// sort by start
+			targets.sort((a,b) => {
+				const sa = (movedMap[a.unitId] && movedMap[a.unitId].canaleStart) ? movedMap[a.unitId].canaleStart : a.canaleStart;
+				const sb = (movedMap[b.unitId] && movedMap[b.unitId].canaleStart) ? movedMap[b.unitId].canaleStart : b.canaleStart;
+				return sa - sb;
+			});
+			const base = (movedMap[targets[0].unitId] && movedMap[targets[0].unitId].canaleStart) ? movedMap[targets[0].unitId].canaleStart : targets[0].canaleStart;
+			let cur = base;
+			const proposed = [];
+			for (let i=0;i<targets.length;i++){
+				const u = targets[i];
+				proposed.push({ unit: u, newStart: cur, newEnd: cur + u.canali -1 });
+				cur = cur + u.canali;
+			}
+			// check for bounds
+			for (const p of proposed) { if (p.newEnd > TOTAL) { setCmdMessage('Cannot collapse: would exceed universe size.', 'ERROR'); return; } }
+			// ensure no collisions with non-targets; if non-targets overlap, abort to avoid unexpected large shifts
+			const nonTargets = units.filter(u => ((movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo) === currentUniverse && !targets.some(t=>t.unitId===u.unitId));
+			for (const nt of nonTargets) {
+				const s = (movedMap[nt.unitId] && movedMap[nt.unitId].canaleStart) ? movedMap[nt.unitId].canaleStart : nt.canaleStart;
+				const e = s + nt.canali -1;
+				for (const p of proposed) {
+					if (!(e < p.newStart || s > p.newEnd)) {
+						setCmdMessage('Cannot collapse gaps because other fixtures would overlap selected ones. Select all fixtures or move blockers first.', 'ERROR');
+						return;
+					}
+				}
+			}
+			// apply
+			proposed.forEach(p => { movedMap[p.unit.unitId] = { canaleStart: p.newStart, universo: currentUniverse }; });
+			buildUnits(); renderGrid();
+			setCmdMessage('Collapsed gaps for ' + proposed.length + ' fixture(s).', 'UPDATE');
+		};
+
 		// shift so that the earliest fixture in currentUniverse starts at targetStart
 		universeController.shiftFrom = (targetStart) => {
 			let v = parseInt(targetStart, 10);
@@ -472,11 +690,16 @@
 				setCmdMessage('Target start out of range (1 - ' + TOTAL + ').', 'ERROR');
 				return;
 			}
-			// find minimal start among units in currentUniverse
-			const inUniverse = units.filter(u => {
-				const eff = (movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo;
-				return eff === currentUniverse;
-			});
+			// determine target set for shiftFrom: selected if any, otherwise all units in current universe
+			let inUniverse = [];
+			if (selectedUnits.size > 0) {
+				inUniverse = units.filter(u => selectedUnits.has(u.unitId));
+			} else {
+				inUniverse = units.filter(u => {
+					const eff = (movedMap[u.unitId] && movedMap[u.unitId].universo) ? movedMap[u.unitId].universo : u.universo;
+					return eff === currentUniverse;
+				});
+			}
 			if (inUniverse.length === 0) { setCmdMessage('No fixtures found in current universe.', 'WARNING'); return; }
 			const starts = inUniverse.map(u => (movedMap[u.unitId] && movedMap[u.unitId].canaleStart) ? movedMap[u.unitId].canaleStart : u.canaleStart);
 			const minStart = Math.min.apply(null, starts);
@@ -509,6 +732,97 @@
 
 		// Expose controller
 		window.universeController = universeController;
+		// clear selection helper
+		universeController.clearSelection = () => {
+			selectedUnits.clear();
+			renderGrid();
+			updateSelectedList();
+			setCmdMessage('Selection cleared.', 'SELECT');
+		};
+		// helper to update selected list UI
+		function updateSelectedList() {
+			const el = document.getElementById('selectedFixturesList');
+			if (!el) return;
+			if (selectedUnits.size === 0) {
+				el.innerHTML = '<span class="empty-message">No fixtures selected</span>';
+				return;
+			}
+			const names = [];
+			units.forEach(u => { if (selectedUnits.has(u.unitId)) names.push(u.nome); });
+			el.textContent = names.slice(0,8).join(', ');
+			if (names.length > 8) el.textContent += ' ... (' + names.length + ')';
+		}
+		window.universeController.updateSelectedList = updateSelectedList;
+
+		// Pointer-based rectangular selection handlers
+		function toLocal(e) { const r = container.getBoundingClientRect(); return { x: e.clientX - r.left + container.scrollLeft, y: e.clientY - r.top + container.scrollTop }; }
+		container.addEventListener('pointerdown', (ev) => {
+			if (!selectMode) return;
+			// start rectangular selection only on left button
+			if (ev.button !== 0) return;
+			ev.preventDefault();
+			isSelectingRect = true;
+			selectStart = toLocal(ev);
+			if (selectingBox) {
+				selectingBox.style.left = selectStart.x + 'px';
+				selectingBox.style.top = selectStart.y + 'px';
+				selectingBox.style.width = '0px';
+				selectingBox.style.height = '0px';
+				selectingBox.classList.add('visible');
+			}
+			container.setPointerCapture(ev.pointerId);
+		});
+
+		document.addEventListener('pointermove', (ev) => {
+			if (!isSelectingRect || !selectStart) return;
+			const p = toLocal(ev);
+			const x = Math.min(p.x, selectStart.x);
+			const y = Math.min(p.y, selectStart.y);
+			const w = Math.abs(p.x - selectStart.x);
+			const h = Math.abs(p.y - selectStart.y);
+			if (selectingBox) {
+				selectingBox.style.left = x + 'px';
+				selectingBox.style.top = y + 'px';
+				selectingBox.style.width = w + 'px';
+				selectingBox.style.height = h + 'px';
+			}
+		});
+
+		document.addEventListener('pointerup', (ev) => {
+			if (!isSelectingRect || !selectStart) return;
+			isSelectingRect = false;
+			if (selectingBox) selectingBox.classList.remove('visible');
+			// compute selection rect in viewport coords
+			const rect = { left: selectStart.x, top: selectStart.y, right: selectStart.x, bottom: selectStart.y };
+			const p = toLocal(ev);
+			rect.left = Math.min(selectStart.x, p.x);
+			rect.top = Math.min(selectStart.y, p.y);
+			rect.right = Math.max(selectStart.x, p.x);
+			rect.bottom = Math.max(selectStart.y, p.y);
+			// convert to absolute page coordinates for intersection checks
+			const containerRect = container.getBoundingClientRect();
+			const selAbs = { left: containerRect.left + rect.left - container.scrollLeft, top: containerRect.top + rect.top - container.scrollTop, right: containerRect.left + rect.right - container.scrollLeft, bottom: containerRect.top + rect.bottom - container.scrollTop };
+			// find fixture segments that intersect
+			const segs = container.querySelectorAll('.fixtureSegment');
+			let any = false;
+			segs.forEach(s => {
+				const r = s.getBoundingClientRect();
+				const intersects = !(r.right < selAbs.left || r.left > selAbs.right || r.bottom < selAbs.top || r.top > selAbs.bottom);
+				if (intersects) {
+					const uid = parseInt(s.dataset.unitId, 10);
+					selectedUnits.add(uid);
+					any = true;
+				}
+			});
+			// reflect selection visually
+			if (any) {
+				renderGrid();
+				updateSelectedList();
+			} else {
+				setCmdMessage('No fixtures selected by rectangle.', 'WARNING');
+			}
+			selectStart = null;
+		});
 		updateUniverseButtons();
 		buildUnits();
 		renderGrid();
@@ -553,6 +867,29 @@
 			buildUnits();
 			renderGrid();
 		});
+
+		// ensure select button reflects mode when first init
+		const selectBtn = document.getElementById('selectFixturesBtn');
+		if (selectBtn) {
+			// make it toggle 'active' class and inline styles when selectMode changes via controller
+			const origToggle = universeController.toggleSelectMode;
+			universeController.toggleSelectMode = () => {
+				origToggle();
+				if (selectMode) {
+					selectBtn.classList.add('active');
+					selectBtn.style.background = 'rgba(255,235,59,0.08)';
+					selectBtn.style.border = '1px solid rgb(255,235,59)';
+					selectBtn.style.color = 'rgb(255,235,59)';
+					selectBtn.style.boxShadow = '0 0 8px #ffeb3b33';
+				} else {
+					selectBtn.classList.remove('active');
+					selectBtn.style.background = '';
+					selectBtn.style.border = '';
+					selectBtn.style.color = '';
+					selectBtn.style.boxShadow = '';
+				}
+			};
+		}
 	}
 
 	document.addEventListener('DOMContentLoaded', init);

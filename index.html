@@ -390,37 +390,47 @@
         <div id="universe" class="web-only defaultPage" style="display: none;">
             <h1 class="pageTitle">Universe View</h1>
             <div style="align-items: center; display: flex; flex-direction: row; justify-content: center; margin-top: 36px;">
-                <div style="display: flex; flex-direction: row; align-items: center; gap: 16px">
-                    <label for="dmxAddress">Universe</label>
-                    <button onclick="" disabled id="prevUniBtn" style="font-size: 18px; font-family: 'IconFont';"></button>
-                    <input type="number" id="uniSelect" min="1" max="1024" value="1" placeholder="1-1024">
-                    <button onclick="" id="nextUniBtn" style="font-size: 18px; font-family: 'IconFont';"></button>
-                </div>
-                <div style=" margin-left:16px; display: flex; flex-direction: row; align-items: center; gap: 16px">
-                    <button onclick="setCmdMessage('To be implemented', 'CROSS_UNIVERSE_SHIFT')" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Cross-universe shift</span>
-                    </button>
-                    <button onclick="startVectorShift()" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Vector shift</span>
-                    </button>
-                    <button onclick="setCmdMessage('To be implemented', 'INSERT_GAP')" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Insert gaps</span>
-                    </button>
-                    <button onclick="setCmdMessage('To be implemented', 'COLLAPSE_GAPS')" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Collapse gaps</span>
-                    </button>
-                    <button onclick="setCmdMessage('To be implemented', 'SELECT')" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Select fixtures</span>
-                    </button>
-                    <button onclick="setCmdMessage('To be implemented', 'EXPORT')" class="iconButton">
-                        <span class="buttonIcon"></span>
-                        <span class="buttonText">Export</span>
-                    </button>
+                <div style="display: flex; flex-direction: column;">
+                    <div style=" margin-left:16px; display: flex; flex-direction: row; align-items: center; gap: 16px">
+                        <div style="display: flex; flex-direction: row; align-items: center; gap: 16px">
+                            <label for="dmxAddress">Universe</label>
+                            <button onclick="" disabled id="prevUniBtn" style="font-size: 18px; font-family: 'IconFont';"></button>
+                            <input type="number" id="uniSelect" min="1" max="1024" value="1" placeholder="1-1024">
+                            <button onclick="" id="nextUniBtn" style="font-size: 18px; font-family: 'IconFont';"></button>
+                        </div>
+                        <button onclick="startCrossUniverseShift()" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Cross-universe shift</span>
+                        </button>
+                        <button onclick="startVectorShift()" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Vector shift</span>
+                        </button>
+                        <button onclick="startInsertGaps()" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Insert gaps</span>
+                        </button>
+                        <button onclick="window.universeController && window.universeController.collapseGaps()" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Collapse gaps</span>
+                        </button>
+                        <button id="selectFixturesBtn" onclick="window.universeController && window.universeController.toggleSelectMode()" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Select fixtures</span>
+                        </button>
+                        <button onclick="setCmdMessage('To be implemented', 'EXPORT')" class="iconButton">
+                            <span class="buttonIcon"></span>
+                            <span class="buttonText">Export</span>
+                        </button>
+                    </div>
+                    <div id="fixtureSelection" style="align-items: center; flex-direction: row; justify-content: center; margin-top: 36px;">
+                        <div style="margin-left:12px; color: #ddd; font-size: 0.9em; max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                            <span id="selectedFixturesList" class="empty-message">No fixtures selected</span>
+                        </div>
+                        <div style="margin-left:12px;">
+                            <button id="clearSelectionBtn" class="iconButton" onclick="window.universeController && window.universeController.clearSelection()">Clear</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="universeGrid"></div>

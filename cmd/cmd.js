@@ -217,6 +217,8 @@ let rename = false;
 let freeze = false;
 let nav = false;
 let vectorShift = false;
+let insertGaps = false;
+let crossUniverseShift = false;
 
 function resetCmd(freezeTrigger = true)
 {
@@ -258,6 +260,24 @@ function startVectorShift()
     startDotAnimation();
 }
 window.startVectorShift = startVectorShift;
+
+function startInsertGaps()
+{
+    setCmdMessage('Insert gaps is available on the Universe page.', 'INFO');
+    insertGaps = true;
+    setCmdMessage('Enter gap size (number of channels, e.g. 1):', 'INSERT GAPS');
+    startDotAnimation();
+}
+window.startInsertGaps = startInsertGaps;
+
+function startCrossUniverseShift()
+{
+    setCmdMessage('Cross-universe shift is only available on the Universe page.', 'ERROR');
+    crossUniverseShift = true;
+    setCmdMessage('Enter target in format {universe}.{start} e.g. 2.10', 'CROSS_UNIVERSE_SHIFT');
+    startDotAnimation();
+}
+window.startCrossUniverseShift = startCrossUniverseShift;
 
 function handleCommand(event)
 {
@@ -477,6 +497,54 @@ function handleCommand(event)
             if (window.universeController && typeof window.universeController.applyVectorShift === 'function')
             {
                 window.universeController.applyVectorShift(offset);
+            }
+            else
+            {
+                setCmdMessage('Universe controller not available.', 'ERROR');
+            }
+            return;
+        }
+
+        else if (crossUniverseShift)
+        {
+            crossUniverseShift = false;
+            const raw = rawCommand.trim();
+            if (!raw || raw.indexOf('.') === -1)
+            {
+                setCmdMessage('Invalid syntax. Use {universe}.{start} e.g. 2.10', 'ERROR');
+                return;
+            }
+            const parts = raw.split('.').map(s => s.trim());
+            if (parts.length !== 2) { setCmdMessage('Invalid syntax. Use {universe}.{start} e.g. 2.10', 'ERROR'); return; }
+            const u = parseInt(parts[0], 10);
+            const s = parseInt(parts[1], 10);
+            if (isNaN(u) || isNaN(s)) { setCmdMessage('Universe and start must be numbers.', 'ERROR'); return; }
+            if (window.universeController && typeof window.universeController.crossUniverseShift === 'function')
+            {
+                window.universeController.crossUniverseShift(u, s);
+            }
+            else
+            {
+                setCmdMessage('Universe controller not available.', 'ERROR');
+            }
+            return;
+        }
+
+        else if (insertGaps)
+        {
+            insertGaps = false;
+            let raw = rawCommand.trim();
+            if (!raw || isNaN(raw))
+            {
+                setCmdMessage('Invalid gap value. Please enter a positive integer.', 'ERROR');
+                startDotAnimation();
+                insertGaps = true;
+                return;
+            }
+            const gap = parseInt(raw, 10);
+            if (window.universeController && typeof window.universeController.insertGaps === 'function')
+            {
+                window.universeController.insertGaps(gap);
             }
             else
             {
