@@ -3,6 +3,11 @@
 // DMX Patch functions
 
 let listaFixture = []; // Fixture list
+// keep a window-level reference so the Universe view can mutate the same array
+function syncWindowLista() {
+    try { window.listaFixture = listaFixture; } catch (e) { /* ignore */ }
+}
+syncWindowLista();
 let patchedFixtures = []; // Detailed fixture list for every unit
 let docID = "0000"; // Document ID
 
@@ -164,6 +169,8 @@ function setStats(index)
     if(universi.size > 1) { unitext = "universes"; }
     if(totCanali > 1) { chanText = "channels"; }
 
+    const now = new Date();
+    const formattedDateTime = now.toLocaleDateString('it-IT') + ' ' + now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
     document.getElementById('dmxFootprint').textContent = universi.size + " " + unitext + " : " + totCanali + " " + chanText;
     document.getElementById('totFixturePrint').textContent = totFixture;
 
@@ -262,6 +269,7 @@ function aggiungiFixture(name, type, qty, channels)
 
     const colore = randomColor();
     listaFixture.push({ nome, tipo, numero, canali, colore });
+    syncWindowLista();
     updatePatch();
     setCmdMessage(`Added fixture(s): ${nome} (${tipo}, ${numero} unit(s), ${canali} channel(s) per unit)`, 'ADD'); //TODO singular or plural based on quantity
 }
@@ -269,6 +277,7 @@ function aggiungiFixture(name, type, qty, channels)
 function clearAll() 
 {
     listaFixture = [];
+    syncWindowLista();
     document.getElementById('patchList').innerHTML = '';
     document.getElementById('patchOptions').style.display = "none";
     document.getElementById('fixName').value = "";
@@ -355,48 +364,83 @@ function removeFixture(id)
 {
     setCmdMessage(`Successfully removed fixture(s): ${listaFixture[id].nome}`, 'REMOVE');
     listaFixture.splice(id, 1);
+    syncWindowLista();
     updatePatch();
 }
 
 function calcolaPatchDMXMulti(listaFixture) 
 {
     const MAX_CANALI = 512;
-    let risultato = [];
+
+    // Build a flat list of instances from the grouped listaFixture
+    const instances = [];
+    for (let gi = 0; gi < listaFixture.length; gi++) {
+        const f = listaFixture[gi];
+        for (let inst = 1; inst <= f.numero; inst++) {
+            instances.push({
+                groupIndex: gi,
+                instanceIndex: inst - 1,
+                tipo: f.tipo,
+                nome: f.nome + (f.numero > 1 ? ` ${inst}` : ''),
+                canali: f.canali,
+                colore: f.colore
+            });
+        }
+    }
+
+    // If the Universe module has already expanded instances and exposed them,
+    // prefer that authoritative view (it includes moved/overrides)
+    // Prefer the Universe-expanded instance list when available — it contains
+    // authoritative per-instance `universo` and `canaleStart` values (including
+    // moved/overrides). Use it whenever present.
+    if (window.universeUnits && Array.isArray(window.universeUnits) && window.universeUnits.length > 0) {
+        return window.universeUnits.map(u => ({
+            id: typeof u.unitId !== 'undefined' ? u.unitId : null,
+            tipo: u.tipo,
+            nome: u.nome,
+            universo: u.universo,
+            canale: (u.canaleStart || u.canaleStart === 0) ? String(u.canaleStart).padStart(3,'0') : (u.canale ? String(u.canale).padStart(3,'0') : '001'),
+            colore: u.colore
+        }));
+    }
+
+    // Fallback: compute sequential packing if universeUnits is not available
+    const risultato = [];
     let universo = 1;
     let canaleCorrente = 1;
     let count = 1;
-    for (const fixture of listaFixture) 
-    {
-        for (let i = 1; i <= fixture.numero; i++) 
-        {
-            if (canaleCorrente + fixture.canali - 1 > MAX_CANALI) 
-            {
-                universo++;
-                canaleCorrente = 1;
-            }
 
-            let canaleFormattato = canaleCorrente.toString().padStart(3, '0');
-            let nomeFixture = fixture.nome;
-            if (fixture.numero > 1) { nomeFixture += ` ${i}`; }
-
-            risultato.push
-            ({
-                id: count -1,
-                tipo: fixture.tipo,
-                nome: nomeFixture,
-                universo: universo,
-                canale: canaleFormattato,
-                colore: fixture.colore
-            });
-
-            canaleCorrente += fixture.canali;
-            count++;
+    for (const fixture of instances) {
+        if (canaleCorrente + fixture.canali - 1 > MAX_CANALI) {
+            universo++;
+            canaleCorrente = 1;
         }
+
+        risultato.push({
+            id: count - 1,
+            tipo: fixture.tipo,
+            nome: fixture.nome,
+            universo: universo,
+            canale: canaleCorrente.toString().padStart(3, '0'),
+            colore: fixture.colore
+        });
+
+        canaleCorrente += fixture.canali;
+        count++;
     }
+
     return risultato;
 }
 
 function updatePatchedFixtures() {
+    // If Universe exposed a different authoritative lista, adopt it so moved addresses
+    // performed in the Universe view are reflected here immediately.
+    if (window.listaFixture && Array.isArray(window.listaFixture)) {
+        // adopt universe list (replace local reference)
+        listaFixture = window.listaFixture;
+    }
+    // ensure window reference is up-to-date
+    syncWindowLista();
     patchedFixtures = calcolaPatchDMXMulti(listaFixture);
 }
 
@@ -516,5 +560,14 @@ function updateIconColor()
         setCmdMessage(`Fixture icons disabled`, 'UPDATE');
     }
 }
+
+// When the Universe view updates addresses/overrides, refresh the patch
+window.addEventListener('universeUpdated', () => {
+    try {
+        updatePatch();
+    } catch (e) {
+        console.warn('universeUpdated handler failed:', e);
+    }
+});
 
 window.onload = updatePatch(); // Inizializza la tabella fixture all'avvio

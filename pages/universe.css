@@ -119,11 +119,6 @@
 
 /* Print layout for Universe (A4) */
 @media print {
-	@page { size: A4 portrait; margin: 20mm; }
-
-	body, html { background: #fff !important; color: #000 !important; }
-	.web-only { display: none !important; }
-	.print-only { display: block !important; }
 
 	/* Universe grid fits to page */
 	#universe .universeGrid { width: 100% !important; margin: 0 auto !important; border: none !important; padding: 0 !important; }

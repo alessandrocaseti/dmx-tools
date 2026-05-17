@@ -53,6 +53,16 @@
 				canaleCorrente += f.canali;
 			}
 		}
+		// expose current expanded units and movedMap to the global scope so other modules
+		// (eg. the patch view) can read authoritative per-instance addresses and universes
+		// This keeps the universe as the source-of-truth for addressing overrides.
+		try {
+			window.universeUnits = units.slice();
+			window.universeMovedMap = Object.assign({}, movedMap);
+			window.dispatchEvent(new Event('universeUpdated'));
+		} catch (e) {
+			// ignore if window is not available (should not happen in browser)
+		}
 	}
 
 	function applyMoveToLista(unit, newStart) {
