@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function()
             setStats();
 
             // Evitiamo di raggiungere il limite mensile di chiamate API durante lo sviluppo locale
-            if(window.location.protocol.startsWith("http") && window.location.hostname !== "localhost" && window.location.href !== "http://127.0.0.1:5500/index.html") 
+            if(window.location.protocol.startsWith("http") && window.location.hostname !== "localhost" && !window.location.href.startsWith('http://127.0.0.1')) 
             {
                 await getSetDocNumber(); // Esegui la chiamata API
             } 

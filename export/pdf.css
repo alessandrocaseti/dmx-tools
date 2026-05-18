@@ -5,20 +5,18 @@
         size: A4 portrait;
         font-family: 'Inter', sans-serif;
         margin-top: 12mm;
-        margin-bottom: 12mm;
+        margin-bottom: 10mm;
     }
     
     @page:first
     {
-        size: A4 portrait;
-        margin-bottom: 12mm;
-        margin-top: 12mm;
+    
     }
 
     body, html
     {
         margin: 0 !important;
-        padding: 0 !important;
+        padding: 0 0 20mm 0 !important;
         width: 100% !important;
         background: #fff !important;
         color: #000 !important;
@@ -50,6 +48,7 @@
         min-width: 100% !important;
         max-width: 100% !important;
         padding: 0px;
+        padding-bottom: 20mm !important;
     }
 
     /* Evita che la tabella patch vada a capo dopo il titolo in stampa/PDF */
@@ -93,6 +92,7 @@
         max-width: 100% !important;
         margin: 0px;
         margin-top: 20px !important;
+        margin-bottom: 48mm !important;
     }
     .patchTable th
     {
@@ -294,4 +294,52 @@
         margin-right:0px;
     }
 
+    /* Print footer repeated on every printed page with page number */
+    .print-footer
+    {
+        position: fixed !important;
+        bottom: 2mm;
+        margin-bottom: -6mm !important;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        font-size: 1em;
+        font-weight: 500;
+        min-width: 100%;
+        padding-top: 4px;
+        height: 12mm;
+        border-top: 1px solid #222; /* visible separator on every page */
+        z-index: 9999 !important;
+    }
+
+    .print-footer a
+    {
+        font-size: 1em;
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .print-footer .footer-left
+    {
+        margin-right: auto;
+    }
+
+    .print-footer .footer-right
+    {
+        margin-left: auto;
+        position: relative;
+    }
+
+    .print-footer .footer-right::after
+    {
+        counter-increment: page;
+        content: "Page " counter(page) " / " attr(data-total-pages);
+        display: inline-block;
+        margin-left: 8px;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
 }

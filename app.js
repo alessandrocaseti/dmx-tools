@@ -144,3 +144,55 @@ function downloadDesktopApp()
     setCmdMessage('Opened Google Drive page to download desktop app in a new browser tab.', 'DOWNLOAD');
     window.open('https://dl.dropboxusercontent.com/scl/fi/jvxuua38fqf8j3981ply0/dmxtools-1.0.0-alpha-setup.zip?rlkey=wd57ly9d38ps37f9rd7tb5grj&st=hj5imc2a&dl=0', '_blank').focus();
 }
+
+// Print footer total pages calculation (fallback for browsers lacking counter(pages))
+(function() 
+{
+    function computeTotalPages() 
+    {
+        const footerRights = document.querySelectorAll('.print-footer .footer-right');
+        const footers = document.querySelectorAll('.print-footer');
+        if (( (!footerRights || footerRights.length === 0) ) && ( !footers || footers.length === 0 )) return;
+
+        const pxPerMm = (function() 
+        {
+            const div = document.createElement('div');
+            div.style.position = 'absolute';
+            div.style.visibility = 'hidden';
+            div.style.height = '1mm';
+            document.body.appendChild(div);
+            const h = div.getBoundingClientRect().height || div.offsetHeight || 3.78;
+            document.body.removeChild(div);
+            return h;
+        })();
+
+        const pageHeightMm = 297; /* A4 */
+        const marginTopMm = 12; /* matches export/pdf.css */
+        const marginBottomMm = 4; /* matches export/pdf.css */
+        const pageHeightPx = pageHeightMm * pxPerMm;
+        const contentHeightPx = Math.max(1, pageHeightPx - (marginTopMm + marginBottomMm) * pxPerMm);
+
+        const docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+        const totalPages = Math.max(1, Math.ceil(docHeight / contentHeightPx));
+
+        // Prefer setting the attribute on the dedicated right span if present
+        if (footerRights && footerRights.length) {
+            footerRights.forEach(fr => fr.setAttribute('data-total-pages', totalPages));
+        }
+        // Keep backward-compatible attribute on the container as well
+        if (footers && footers.length) {
+            footers.forEach(f => f.setAttribute('data-total-pages', totalPages));
+        }
+    }
+
+    window.addEventListener('beforeprint', computeTotalPages);
+    window.addEventListener('DOMContentLoaded', computeTotalPages);
+
+    // Compute before print when the export/print button is clicked
+    document.addEventListener('click', function(e) 
+    {
+        const t = e.target;
+        if (!t) return;
+        if (t.id === 'exportPdfBtn' || (t.closest && t.closest('#exportPdfBtn'))) { computeTotalPages(); }
+    });
+})();
