@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
-    "vercel-build": "echo \"Skipping build on Vercel; using repository files as output\"",
+    "vercel-build": "node scripts/vercel-build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

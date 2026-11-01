@@ -6,16 +6,17 @@ const out = path.join(root, 'public');
 
 const itemsToCopy = [
   'index.html',
-  'app.html',
   'app.css',
   'app.js',
-  'main.js',
+  'desktop.js',
+  'cmd',
   'assets',
-  'pages',
-  'images',
-  'fonts',
-  'export',
   'elements',
+  'export',
+  'fixtures',
+  'fonts',
+  'images',
+  'pages',
   'qxf_converter'
 ];
 
@@ -36,19 +37,17 @@ function copyRecursive(src, dest) {
   }
 }
 
+fs.rmSync(out, { recursive: true, force: true });
 ensureDir(out);
 
 for (const item of itemsToCopy) {
   const src = path.join(root, item);
-  if (fs.existsSync(src)) {
-    const dest = path.join(out, item);
-    try {
-      copyRecursive(src, dest);
-      console.log('copied', item);
-    } catch (err) {
-      console.error('failed to copy', item, err.message);
-    }
+  if (!fs.existsSync(src)) {
+    throw new Error(`Required web build input is missing: ${item}`);
   }
+
+  copyRecursive(src, path.join(out, item));
+  console.log('copied', item);
 }
 
 console.log('\nPublic directory created at:', out);
