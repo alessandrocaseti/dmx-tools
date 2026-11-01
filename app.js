@@ -168,7 +168,7 @@ function downloadDesktopApp()
 
         const pageHeightMm = 297; /* A4 */
         const marginTopMm = 12; /* matches export/pdf.css */
-        const marginBottomMm = 4; /* matches export/pdf.css */
+        const marginBottomMm = 10; /* matches export/pdf.css */
         const pageHeightPx = pageHeightMm * pxPerMm;
         const contentHeightPx = Math.max(1, pageHeightPx - (marginTopMm + marginBottomMm) * pxPerMm);
 
